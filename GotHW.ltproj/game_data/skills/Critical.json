@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Critical",
+        "name": "Critical",
+        "desc": "Grants the ability to crit more often.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            0
+        ],
+        "components": [
+            [
+                "alternate_crit_accuracy_formula",
+                "CRITSKL"
+            ]
+        ]
+    }
+]

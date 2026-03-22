@@ -1,0 +1,235 @@
+[
+    {
+        "name": "ErinysRecruit",
+        "trigger": "on_talk",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Lewyn' and unit2.nid == 'Erinys'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Lewyn",
+                    "Left",
+                    "Erinys",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Wait... Erinys?!{br}The hell are you doing here?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Huh? Aren't you... It can't be! Prince Lewyn?!{w}{br}... What exactly are you wearing, milord?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "What, this? I'm a bard now. You know, walking the land, spreading songs and cheer?{w}{br}What do you say: perfect, or perfect?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Er... Perfect? But why, milord...{w}{br}Aren't you supposed to be held captive at Evans?{w}{br}I got here as fast as I could, but...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "I'm imprisoned at Evans, am I?{br}Where'd you here that one?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "King Chagall of Agustria said so.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Chagall? Hah! Hate to break it to you, Erinys,{br}but you've been tricked!{w}{br}It's nice and all that you're so ready to trust,{w}{br}but you wouldn't last ten seconds out there in the city!{w}{br}It'd eat you and your innocence alive.{br}You might even end up like Sylvia...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Silvia, milord...?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Oh, Sylvia's... Er, it's not important.{w}{br}Point is, what are you doing all the way out here?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Isn't it obvious?{w}{br}I'm here to find and bring you home, milord.{w}{br}It's been two years since you fled Silesse.{w}{br}Her Majesty is gravely worried about you.{w}{br}Please, milord. Come home with me.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Do you have any idea what that'd do to Silesse, Erinys?{w}{br}If I go back, I'll have no choice but to take the throne.{w}{br}It's my father's last will, but my uncles would never accept it.{w}{br}Just one false step and we'd have a civil war, just like here.{w}{br}And it's always the common folk who suffer for it!{w}{br}If there are people who want to be kings or whatever, great!{w}{br}Out here, though, I'm free, and I like it that way.{w}{br}I don't want a thing to do with that throne.{w}{br}For the good of Silesse, just give it to one of my uncles.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "I can't allow that, milord.{w}{br}You know as well as I do that the kings of Silesse must descent from Forseti, the wind god.{w}{br}You, milord, are the sole living scion of his lineage.{w}{br}None of your uncles bear it.{br}You, milord, are Silesse's future!{w}{br}Yourself and your uncles aside, all Silesse wishes to see you claim the throne.{w}{br}And... and your mother, the queen, was in tears when she sent me...{w}{br}Please, milord... Come back.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Erinys... Ugh, don't you start crying too!{w}{br}Give me a break... I can't stand to see a woman in tears...{w}{br}Okay, fine... I'll think about going home.{w}{br}Just... Give me some time to muster the nerve, alright?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Thank you. In that case, I'm staying with you until you're ready, milord.{w}{br}I'll send a messenger back to Silesse to report that you're safe.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Wow, you're persistent, I'll grant you that.{w}{br}All right, I think I'll stay with Sigurd's army for now.{w}{br}He's a pretty neat guy to work with, not to mention his army's full of beauties!{w}{br}Hey, Erinys, you could stand to get to know some of the ladies here.{w}{br}Maybe their stylishness could rub off on you a bit!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Yes, milord...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Hey, I'm just kidding, Erinys! Relax a bit!{br}Don't take everything so seriously!{w}{br}...Heh, nobody in the world's as sweet as you.{br}Don't you ever change a thing.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Y-yes, sir... I mean, no, milord...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Lewyn",
+                    "Erinys"
+                ]
+            ],
+            [
+                "change_team",
+                [
+                    "Erinys",
+                    "player"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Erinys",
+                    "None"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Lewyn",
+                    "Erinys"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

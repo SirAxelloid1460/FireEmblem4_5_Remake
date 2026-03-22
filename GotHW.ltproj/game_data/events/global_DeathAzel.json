@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathAzel",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Azel'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Azel",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Lord Sigurd...{br}The rest... is up to you...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Azel",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Azel"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Azel"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathElliot",
+        "trigger": "unit_death",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Elliot'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Elliot",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Elliot",
+                    "Gah! Blast... Why must...{br}everything... go Eldigan's",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Elliot",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Elliot"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Elliot"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

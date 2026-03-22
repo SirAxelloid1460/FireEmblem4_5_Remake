@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Ambush_proc",
+        "name": "Ambush",
+        "desc": "Always attacks first even on defense if HP is below half.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            1
+        ],
+        "components": [
+            [
+                "vantage",
+                null
+            ],
+            [
+                "hidden",
+                null
+            ]
+        ]
+    }
+]

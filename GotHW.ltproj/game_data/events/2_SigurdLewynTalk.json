@@ -1,0 +1,181 @@
+[
+    {
+        "name": "SigurdLewynTalk",
+        "trigger": "on_talk",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Sigurd' and unit2.nid == 'Lewyn'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Sigurd",
+                    "Left",
+                    "Lewyn",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Lewyn, I presume? The one who's been helping defend the villages? I appreciate the aid.{w}{br}As I understan it, you're a bard, but you also wield magic? That's unusual.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Something like that. I guess it's a hobby.{br}You're that Sigurd fellow, aren't you?{w}{br}It's obvious what your little hobby is: war!{w}{br}Clearly you've got so much spare time, you spend it starting war after war!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Come again?{br}You seem angre, but-{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Don't play dumb! Think about the people of all the countries that you're flattening!{w}{br}You come barging in, swords flashing,{w}{br}and all you do is ruin the lives of normal folk who're trying to make a living here!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "You're right. My apologies, Lewyn...{w}{br}I didn't even think about that, but I can't stand knowing I've done  this to them.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Words are just words without actions backing them up.{w}{br}If you really feel so bad, then why not pull your army out?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Mm, you're right... Very well. I'll consult with my troops and arrange a retreat.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Wait, are you serious about this?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Of course. I've been mulling over retreating for a while already,{w}{br}and you just gave me the answer to all of this.{w}{br}I've had enough of the war approach.{w}I think I'd rather seek a diplomatic answer.{w}{br}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Yeah, no.{w}{br}Trying to get through to Chagall now would be a total waste of everyone's time.{w}{br}Besides, if you lot pull out now,{w}{br}then nothing stands between a peeved king and all the citizens who've help you so far.{w}{br}Are you sure you're okay with leaving them all hanging like that?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Well, no, but.. Er.. I..{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Ahahaha! Y'know, I guess I was wrong about you.{w}{br}Alright, Sigurd. Say, why don't I help you finish this fight up?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Er... Okay, I suppose... Who are you, anyway?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Who, me? Just a wayward troubadour, my friend...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Sigurd",
+                    "Lewyn"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Sigurd",
+                    "Lewyn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

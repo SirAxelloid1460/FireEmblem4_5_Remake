@@ -1,0 +1,158 @@
+[
+    {
+        "name": "Outro",
+        "trigger": "level_end",
+        "level_nid": "1",
+        "condition": "True",
+        "commands": [
+            [
+                "center_cursor",
+                [
+                    "8,26"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "remove_all_units",
+                []
+            ],
+            [
+                "music",
+                [
+                    "243 - Victory 1"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Oifaye1",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Oifaye1",
+                    "Sire, we've found a casualty in the palace.{w}{br}It's... It's King Batur himself.{w}{br}He's severely wounded.{w}{br}By the look of it, he's well beyond help.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Oifaye1"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "KingBatur",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "King Batur! Are you alright?{br}Please, come on... you can make it!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "KingBatur",
+                    "Hnnh... Lord... Sigurd?.{w}{br}I am so sorry for doing all of this to you...{br}I let Sandima... lead me astray...{w}{br}He... he abused my trust...{w} and won over my sons...{w}{br}all to seize control of Verdane for himself...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "I understand, Your Highness,{w} but you need to rest now.{w}{br}Please, you mustn't stress yourself further.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "KingBatur",
+                    "No... It's too late for me... Heed my word, Sigurd,{w} for there is one final thing I must tell you...{w}{br}The misery here...{w} the grief spreading across Jugdral...{w} it is all the will of the Dark Priesthood...{w}{br}They blight our world from the shadows, all...{w}{br}all in the name of the revival of their dark god, Loptyr...{w}{br}Sandima... was one of them...{w}{br}He twitsted us to war with Grannvale...{br}for the sake of the cult's madness.{w}{br}The... the dark priests...{w}{br}they infect every corner of our world... Sigurd...{w}{br}Stay vigilant, lest you be tricked too!{w}{br}I... I failed the people of Verdane...{w} Sigurd, I beg you...{w} Make this right... Protect... my... people...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "KingBatur"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Oh... Your Highness...{w}{br}The Dark Priesthood?{br}What in the blazes is happening...?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Sigurd"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "unlock_support_rank",
+                [
+                    "Sigurd",
+                    "Deirdre",
+                    "Married"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

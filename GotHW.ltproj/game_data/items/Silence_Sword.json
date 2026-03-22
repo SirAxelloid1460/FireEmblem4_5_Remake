@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Silence Sword",
+        "name": "Silence Sword",
+        "desc": "People cannot speak when hit by this sword.",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            11
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                8
+            ],
+            [
+                "hit",
+                70
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                50
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                12
+            ],
+            [
+                "status_on_hit",
+                "Silence"
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                15000
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

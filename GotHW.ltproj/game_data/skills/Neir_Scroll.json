@@ -1,0 +1,35 @@
+[
+    {
+        "nid": "Neir Scroll",
+        "name": "Neir Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "HP",
+                        10
+                    ],
+                    [
+                        "STR",
+                        10
+                    ],
+                    [
+                        "SKL",
+                        -10
+                    ],
+                    [
+                        "DEF",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "name": "FightChagallLachesis",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "check_pair('Chagall1','Lachesis')",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Chagall1",
+                    "Left",
+                    "Lachesis",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Chagall1",
+                    "Hey, aren\u2019t you Eldigan\u2019s sister? How dare you rise up against me!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "You\u2019re not MY king! Return my brother to me this instant!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Chagall1",
+                    "Lachesis"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

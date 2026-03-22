@@ -1,0 +1,151 @@
+[
+    {
+        "name": "LachesisRecruit",
+        "trigger": "on_talk",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Sigurd' and unit2.nid == 'Lachesis'",
+        "commands": [
+            [
+                "music",
+                [
+                    "244 - Victory 2"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Sigurd",
+                    "Right",
+                    "Lachesis",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "Sir Sigurd! Thank goodness you're here!{w}{br}Things were looking so bleak for a moment...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "I'm glad to see you're safe, Lachesis.{br}What about Eldigan? Is he still being held?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "Yes, he's still in Agusty... It's as if all the lords of Agustria have turned on us.{w}{br}Please, Sir Sigurd... Lend us your might.{w}{br}No matter what it takes, my brother must be saved.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Of course. I'vee no fondness for bringing war to foreign lands,{w}{br}but in this case we've little choice.{w}{br}His Majesty, King Azmur, is aware of King Imca's assassination,{w}{br}and of Chagall's hand in it.{w}{br}He's received word of Chagall's ambitions to invade Grannvale itself,{w}{br}and has already approved military action.{w}{br}His Majesty also believes Eldigan's rescue to be vital if we're to put an end to hostilities.{w}{br}Rest assured, Lachesis.{br}I swear that I'll save Eldigan...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Sigurd",
+                    "Lachesis"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "change_ai",
+                [
+                    "Lachesis",
+                    "None"
+                ]
+            ],
+            [
+                "change_team",
+                [
+                    "Lachesis",
+                    "player"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Dew",
+                    "Lachesis"
+                ]
+            ],
+            [
+                "give_skill",
+                [
+                    "Eve",
+                    "Canto_Plus",
+                    "no_banner"
+                ]
+            ],
+            [
+                "give_skill",
+                [
+                    "Eva",
+                    "Canto_Plus",
+                    "no_banner"
+                ]
+            ],
+            [
+                "give_skill",
+                [
+                    "AlvaFE4",
+                    "Canto_Plus",
+                    "no_banner"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Eve",
+                    "ProtectLachesis"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Eva",
+                    "ProtectLachesis"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "AlvaFE4",
+                    "ProtectLachesis"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Sigurd",
+                    "Lachesis"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

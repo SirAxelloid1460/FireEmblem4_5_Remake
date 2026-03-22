@@ -1,0 +1,146 @@
+[
+    {
+        "name": "AzelSigurdTalk",
+        "trigger": "on_talk",
+        "level_nid": "0",
+        "condition": "unit.nid == 'Azel' and unit2.nid == 'Sigurd'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Azel",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Lord Sigurd!{br}I'm so relieved to see you're unharmed.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Azel? Azel of Velthomer?{br}What are you doing here?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "I'm here with Lex.{br}We want to do whatever we can to fight the Verdanite invasion.{w}{br}Please, allow us to fight by your side.{br}We won't let you down!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Of course! I couldn't ask for better help.{br}But what of your brother, Lord Arvis?{w}{br}Is he alright with you helping out?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "No... He's been tasked with command of the Royal Guard.{w}{br}He made it clear that I wasn't supposed to leave Belhalla at all{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Did he, now? I can only imagine the scolding that you'll be in for later!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "I know this is a dreadful thing to say, but to be honest, I'm terrified of Arvis...{w}{br}Sometimes, when I'm around him, I...{br}I feel as if I'm only a nuisance to him.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Is that right...?{br}Well, whatever your reasons, I'm just glad that you're here, Azel.{w}{br}You're more that welcome to stay for as long as you want.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Thank you, sir!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Sigurd"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Wow, he's just like all the rumors say!{br}He's nothing like Arvis...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Azel"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Azel",
+                    "Sigurd"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

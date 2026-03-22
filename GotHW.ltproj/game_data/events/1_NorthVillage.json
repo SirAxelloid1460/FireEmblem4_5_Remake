@@ -1,0 +1,184 @@
+[
+    {
+        "name": "NorthVillage",
+        "trigger": "Visit",
+        "level_nid": "1",
+        "condition": "region.nid == 'NorthVillage'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "OldLady2",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldLady2",
+                    "Barely a month goes by without him settin' his army on us. It's terrifyin'!{w}{br} King Batur, his father, used to do such a fine job of keepin' him in check.{w}{br}I can hardly image what's goin' on...{br}Anyway, glad you stopped by!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "OldLady2",
+                    "{unit}"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.level_vars['NorthDestructible'] == 1"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthDestructible'] == 2"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthDestructible'] == 3"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthDestructible'] == 4"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthDestructible'] == 5"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthDestructible'] == 6"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthDestructible'] == 7"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthDestructible'] == 8"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthDestructible'] == 9"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "give_money",
+                [
+                    "5000"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "show_layer",
+                [
+                    "NorthClosed"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "NorthDestructible"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "NorthVillage"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Elite Sword",
+        "name": "Elite Sword",
+        "desc": "An uncommon sword only wielded by experts",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            29
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                9
+            ],
+            [
+                "hit",
+                65
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                40
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                9
+            ],
+            [
+                "status_on_equip",
+                "Shield Ring"
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                5800
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

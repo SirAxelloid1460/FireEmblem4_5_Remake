@@ -1,0 +1,87 @@
+[
+    {
+        "nid": "EldiganEnemy",
+        "name": "Eldigan",
+        "desc": "Known as Lionheart, the King Lion of Agustria, he is the bravest paladin in Agustria.",
+        "variant": "",
+        "level": 23,
+        "klass": "APaladin",
+        "tags": [
+            "HezulHeir"
+        ],
+        "bases": {
+            "HP": 65,
+            "STR": 22,
+            "MAG": 7,
+            "SKL": 18,
+            "SPD": 20,
+            "LCK": 7,
+            "DEF": 24,
+            "RES": 20,
+            "CON": 11,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 50,
+            "SPD": 30,
+            "LCK": 40,
+            "DEF": 40,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Mystletainn",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                1023
+            ],
+            "Lance": [
+                true,
+                226
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "EldiganEnemyPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

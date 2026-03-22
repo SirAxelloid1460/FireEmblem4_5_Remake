@@ -1,0 +1,90 @@
+[
+    {
+        "nid": "Knight Killer",
+        "name": "Knight Killer",
+        "desc": "A long spear that strikes knights from afar",
+        "icon_nid": "Lance",
+        "icon_index": [
+            0,
+            4
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                12
+            ],
+            [
+                "hit",
+                60
+            ],
+            [
+                "weapon_type",
+                "Lance"
+            ],
+            [
+                "weapon_rank",
+                "B"
+            ],
+            [
+                "uses",
+                35
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                14
+            ],
+            [
+                "effective",
+                10
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                4025
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "effective_tag",
+                [
+                    "Mounted"
+                ]
+            ],
+            [
+                "effective_multiplier",
+                1
+            ]
+        ]
+    }
+]

@@ -1,0 +1,94 @@
+[
+    {
+        "nid": "Ethlyn",
+        "name": "Ethlyn",
+        "desc": "Sigurd's little sister and wife of Quan of Leonster.",
+        "variant": "Female",
+        "level": 1,
+        "klass": "Troubadour",
+        "tags": [],
+        "bases": {
+            "HP": 28,
+            "STR": 9,
+            "MAG": 8,
+            "SKL": 11,
+            "SPD": 12,
+            "LCK": 8,
+            "DEF": 4,
+            "RES": 6,
+            "CON": 5,
+            "MOV": 80
+        },
+        "growths": {
+            "HP": 60,
+            "STR": 15,
+            "MAG": 20,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 20,
+            "DEF": 20,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Slim Sword",
+                false
+            ],
+            [
+                "Heal",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Critical"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                226
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                true,
+                51
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "EthlynPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

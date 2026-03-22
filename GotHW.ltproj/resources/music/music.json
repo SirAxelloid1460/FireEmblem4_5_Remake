@@ -1,0 +1,842 @@
+[
+    [
+        "101 - Beginning",
+        false,
+        false
+    ],
+    [
+        "101 - Beginning0",
+        false,
+        false
+    ],
+    [
+        "102 - Fire Emblem Theme",
+        false,
+        false
+    ],
+    [
+        "103 - Jugdral Chronology",
+        false,
+        false
+    ],
+    [
+        "104 - Glorious Grandbell",
+        false,
+        false
+    ],
+    [
+        "105 - Prologue (Birth of the Holy Knight)",
+        false,
+        false
+    ],
+    [
+        "106 - Chapter 1 (Girl of the Spirit Forest)",
+        false,
+        false
+    ],
+    [
+        "107 - Chapter 2 (Disturbance in Agustria)",
+        false,
+        false
+    ],
+    [
+        "108 - Chapter 3 (Lion King Eltshan)",
+        false,
+        false
+    ],
+    [
+        "109 - Chapter 4 (Dance in the Skies)",
+        false,
+        false
+    ],
+    [
+        "110 - Flowing of Time",
+        false,
+        false
+    ],
+    [
+        "111 - Chapter 5 (Doors of Destiny)",
+        false,
+        false
+    ],
+    [
+        "112 - Conspiracy",
+        false,
+        false
+    ],
+    [
+        "113 - Beloved One",
+        false,
+        false
+    ],
+    [
+        "114 - End of Despair",
+        false,
+        false
+    ],
+    [
+        "115 - When the Rush Comes",
+        false,
+        false
+    ],
+    [
+        "116 - Chapter 6 (Light Inheritor)",
+        false,
+        false
+    ],
+    [
+        "117 - Chapter 7 (Crossing the Desert)",
+        false,
+        false
+    ],
+    [
+        "118 - Chapter 8 (Dragon Knights of Thracia)",
+        false,
+        false
+    ],
+    [
+        "119 - Chapter 9 (For Whose Sake)",
+        false,
+        false
+    ],
+    [
+        "120 - Chapter 10 (Light and Dark)",
+        false,
+        false
+    ],
+    [
+        "121 - Towards the Light",
+        false,
+        false
+    ],
+    [
+        "122 - Final Chapter (The Final Holy War)",
+        false,
+        false
+    ],
+    [
+        "123 - The Continent Afterward",
+        false,
+        false
+    ],
+    [
+        "124 - Calling of Peace",
+        false,
+        false
+    ],
+    [
+        "125 - Music Box",
+        false,
+        false
+    ],
+    [
+        "126 - Ending Ballade",
+        false,
+        false
+    ],
+    [
+        "201 - Victory is Near",
+        false,
+        false
+    ],
+    [
+        "202 - Verdane Army",
+        false,
+        false
+    ],
+    [
+        "203 - Agustria Army",
+        false,
+        false
+    ],
+    [
+        "204 - Agustria Army (Pirates)",
+        false,
+        false
+    ],
+    [
+        "205 - Silesia Army",
+        false,
+        false
+    ],
+    [
+        "206 - Yied Army",
+        false,
+        false
+    ],
+    [
+        "207 - Isaac Army",
+        false,
+        false
+    ],
+    [
+        "208 - Manster Army",
+        false,
+        false
+    ],
+    [
+        "209 - Thracia Army",
+        false,
+        false
+    ],
+    [
+        "210 - Miletos Army",
+        false,
+        false
+    ],
+    [
+        "211 - Grandbell Army 1",
+        false,
+        false
+    ],
+    [
+        "212 - Grandbell Army 2",
+        false,
+        false
+    ],
+    [
+        "213 - Allied Army",
+        false,
+        false
+    ],
+    [
+        "214 - Neutral Army",
+        false,
+        false
+    ],
+    [
+        "215 - Ally Attack",
+        false,
+        false
+    ],
+    [
+        "216 - Enemy Attack",
+        false,
+        false
+    ],
+    [
+        "217 - Mid-Boss",
+        false,
+        false
+    ],
+    [
+        "218 - Fateful Showdown",
+        false,
+        false
+    ],
+    [
+        "219 - From Enemy to Friend",
+        false,
+        false
+    ],
+    [
+        "220 - Versus Alvis",
+        false,
+        false
+    ],
+    [
+        "221 - Versus Yurius",
+        false,
+        false
+    ],
+    [
+        "222 - Fighting Dancer",
+        false,
+        false
+    ],
+    [
+        "223 - Supporting Dancer",
+        false,
+        false
+    ],
+    [
+        "224 - White Magic",
+        false,
+        false
+    ],
+    [
+        "225 - Valkyrie Staff",
+        false,
+        false
+    ],
+    [
+        "226 - Level Up!",
+        false,
+        false
+    ],
+    [
+        "227 - Unit Change",
+        false,
+        false
+    ],
+    [
+        "228 - Arena (Entrance)",
+        false,
+        false
+    ],
+    [
+        "229 - Arena (Match)",
+        false,
+        false
+    ],
+    [
+        "230 - Verdane Castle Town",
+        false,
+        false
+    ],
+    [
+        "231 - Grandbell Castle Town",
+        false,
+        false
+    ],
+    [
+        "232 - Agustria Castle Town",
+        false,
+        false
+    ],
+    [
+        "233 - Silesia Castle Town",
+        false,
+        false
+    ],
+    [
+        "234 - Isaac Castle Town",
+        false,
+        false
+    ],
+    [
+        "235 - Yied Castle Town",
+        false,
+        false
+    ],
+    [
+        "236 - Manster Castle Town",
+        false,
+        false
+    ],
+    [
+        "237 - Thracia Castle Town",
+        false,
+        false
+    ],
+    [
+        "238 - Miletos Castle Town",
+        false,
+        false
+    ],
+    [
+        "239 - Crisis 1",
+        false,
+        false
+    ],
+    [
+        "240 - Crisis 2",
+        false,
+        false
+    ],
+    [
+        "241 - A New Advance",
+        false,
+        false
+    ],
+    [
+        "242 - The Final Challenge ~ Advance",
+        false,
+        false
+    ],
+    [
+        "243 - Victory 1",
+        false,
+        false
+    ],
+    [
+        "244 - Victory 2",
+        false,
+        false
+    ],
+    [
+        "245 - Enemy Message 1",
+        false,
+        false
+    ],
+    [
+        "246 - Enemy Message 2",
+        false,
+        false
+    ],
+    [
+        "247 - Enemy Message 3",
+        false,
+        false
+    ],
+    [
+        "248 - Emperor Alvis",
+        false,
+        false
+    ],
+    [
+        "249 - Loputo",
+        false,
+        false
+    ],
+    [
+        "301 - Recruitment",
+        false,
+        false
+    ],
+    [
+        "302 - Yurius",
+        false,
+        false
+    ],
+    [
+        "303 - Foolish Soldiers",
+        false,
+        false
+    ],
+    [
+        "304 - Dew and Patty",
+        false,
+        false
+    ],
+    [
+        "305 - Shops",
+        false,
+        false
+    ],
+    [
+        "306 - Lover 1",
+        false,
+        false
+    ],
+    [
+        "307 - Lover 2",
+        false,
+        false
+    ],
+    [
+        "308 - Lover 3",
+        false,
+        false
+    ],
+    [
+        "309 - Lover 4",
+        false,
+        false
+    ],
+    [
+        "310 - Conversation 1",
+        false,
+        false
+    ],
+    [
+        "311 - Conversation 2",
+        false,
+        false
+    ],
+    [
+        "312 - Speak of Legends",
+        false,
+        false
+    ],
+    [
+        "313 - Decision 1",
+        false,
+        false
+    ],
+    [
+        "314 - Decision 2",
+        false,
+        false
+    ],
+    [
+        "315 - Decision 3",
+        false,
+        false
+    ],
+    [
+        "316 - Levin Speaks",
+        false,
+        false
+    ],
+    [
+        "317 - Tinny's Theme",
+        false,
+        false
+    ],
+    [
+        "318 - Adean's Theme",
+        false,
+        false
+    ],
+    [
+        "319 - Diadora's Theme",
+        false,
+        false
+    ],
+    [
+        "320 - Yuria's Theme",
+        false,
+        false
+    ],
+    [
+        "321 - Celice's Theme",
+        false,
+        false
+    ],
+    [
+        "322 - Time Of Sadness 1",
+        false,
+        false
+    ],
+    [
+        "323 - Time Of Sadness 2 (Game Over...)",
+        false,
+        false
+    ],
+    [
+        "324 - Gold Axe, Silver Axe\u00fc\u00b6\u00fc\u00b6",
+        false,
+        false
+    ],
+    [
+        "325 - Thoughts Going Around",
+        false,
+        false
+    ],
+    [
+        "326 - Agustria Palace",
+        false,
+        false
+    ],
+    [
+        "327 - Silesia Palace",
+        false,
+        false
+    ],
+    [
+        "328 - Manster Palace",
+        false,
+        false
+    ],
+    [
+        "329 - Isaac Palace",
+        false,
+        false
+    ],
+    [
+        "330 - New Thracia Palace",
+        false,
+        false
+    ],
+    [
+        "331 - Verdane Palace",
+        false,
+        false
+    ],
+    [
+        "332 - Jungby Palace",
+        false,
+        false
+    ],
+    [
+        "333 - Freege Palace",
+        false,
+        false
+    ],
+    [
+        "334 - Dozel Palace",
+        false,
+        false
+    ],
+    [
+        "335 - Edda Palace",
+        false,
+        false
+    ],
+    [
+        "336 - Velthomer Palace",
+        false,
+        false
+    ],
+    [
+        "337 - Chalphy Palace",
+        false,
+        false
+    ],
+    [
+        "338 - Wind Warrior Holsety",
+        false,
+        false
+    ],
+    [
+        "339 - Part 1 Map Melody",
+        false,
+        false
+    ],
+    [
+        "Chapter Sound",
+        false,
+        false
+    ],
+    [
+        "To A Higher Place",
+        false,
+        false
+    ],
+    [
+        "Airship Thunderchild",
+        false,
+        false
+    ],
+    [
+        "All Aboard to Rogueport",
+        false,
+        false
+    ],
+    [
+        "Ambient Forest",
+        false,
+        false
+    ],
+    [
+        "Awakening - Easy Now",
+        false,
+        false
+    ],
+    [
+        "Awakening - Know Peace",
+        false,
+        false
+    ],
+    [
+        "Awakening - SSupport",
+        false,
+        false
+    ],
+    [
+        "Best Detectives",
+        false,
+        false
+    ],
+    [
+        "Brave Story - Hare",
+        false,
+        false
+    ],
+    [
+        "Brave Story 12",
+        false,
+        false
+    ],
+    [
+        "Brave Story 27",
+        false,
+        false
+    ],
+    [
+        "Brave Story 33",
+        false,
+        false
+    ],
+    [
+        "Brave Story 61",
+        false,
+        false
+    ],
+    [
+        "Chariot Chase",
+        false,
+        false
+    ],
+    [
+        "Climbing the Ginso Tree",
+        false,
+        false
+    ],
+    [
+        "Combat Theme 2",
+        false,
+        false
+    ],
+    [
+        "Combat Theme 4",
+        false,
+        false
+    ],
+    [
+        "Comfort's Call",
+        false,
+        false
+    ],
+    [
+        "Corruption Melody",
+        false,
+        false
+    ],
+    [
+        "Dragon Boy",
+        false,
+        false
+    ],
+    [
+        "Durchriss",
+        false,
+        false
+    ],
+    [
+        "Fire Treasure (1)",
+        false,
+        false
+    ],
+    [
+        "Fire Treasure",
+        false,
+        false
+    ],
+    [
+        "Flight over Venice",
+        false,
+        false
+    ],
+    [
+        "Game Over",
+        false,
+        false
+    ],
+    [
+        "Good Theme",
+        false,
+        false
+    ],
+    [
+        "Helms Deep",
+        false,
+        false
+    ],
+    [
+        "Helms Deep-intro",
+        false,
+        false
+    ],
+    [
+        "Hum of the Streets",
+        false,
+        false
+    ],
+    [
+        "In the Midst",
+        false,
+        false
+    ],
+    [
+        "Jazz Noir",
+        false,
+        false
+    ],
+    [
+        "Lady Eboshi",
+        false,
+        false
+    ],
+    [
+        "Land Below Flow",
+        false,
+        false
+    ],
+    [
+        "Meet the Sage",
+        false,
+        false
+    ],
+    [
+        "Midna's Theme",
+        false,
+        false
+    ],
+    [
+        "Mount Briggs",
+        false,
+        false
+    ],
+    [
+        "One Summer's Day (Extended)",
+        false,
+        false
+    ],
+    [
+        "One Summer's Day",
+        false,
+        false
+    ],
+    [
+        "Preparing for Battle",
+        false,
+        false
+    ],
+    [
+        "Sootballs",
+        false,
+        false
+    ],
+    [
+        "Stalwarts Unite",
+        false,
+        false
+    ],
+    [
+        "The Abyssal Plains",
+        false,
+        false
+    ],
+    [
+        "The Crowfather",
+        false,
+        false
+    ],
+    [
+        "The High Seas",
+        false,
+        false
+    ],
+    [
+        "The Journey to the West",
+        false,
+        false
+    ],
+    [
+        "The Makers Guardian",
+        false,
+        false
+    ],
+    [
+        "The Task at Hand",
+        false,
+        false
+    ],
+    [
+        "To A New Journey",
+        false,
+        false
+    ],
+    [
+        "Toorimichi",
+        false,
+        false
+    ],
+    [
+        "Wild Arms Town",
+        false,
+        false
+    ],
+    [
+        "Xing Symphony",
+        false,
+        false
+    ],
+    [
+        "Young Man from the East",
+        false,
+        false
+    ]
+]

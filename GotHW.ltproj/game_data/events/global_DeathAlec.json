@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathAlec",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Alec'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Alec",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Alec",
+                    "Gah... Got unlucky...{br}Lord Sigurd...{br}Good luck out there...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Alec",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Alec"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Alec"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

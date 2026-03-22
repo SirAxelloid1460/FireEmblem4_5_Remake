@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathGandolf",
+        "trigger": "unit_death",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Gandolf'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Gandolf",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Gandolf",
+                    "No... {br}This can't... be...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Gandolf",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Gandolf"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Gandolf"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

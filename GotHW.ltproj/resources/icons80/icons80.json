@@ -1,0 +1,230 @@
+[
+    {
+        "nid": "Generic_Portrait_Citizen",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_APaladin",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Archer",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Armour",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_AThief",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Ballistae",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Bandit",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Barbarian",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Bard",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Baron",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Berserker",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Bishop",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_BowKnight",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_BThief",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Cavalier",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_CavalierA",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_CavalierB",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_CavalierL",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_CavalierS",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Dancer",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_DarkBishop",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_DarkPrince",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_DarkSage",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_DragonKnight",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_DragonMaster",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_DragonRider",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_DukeKnight",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Emperor",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Falconknight",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Fighter",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_ForrestKnight",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_General",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_GreatKnight",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Hero",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_HighPriest",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_LightPriest",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_LoptoMage",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_LordKnight",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Mage",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_MageFighter",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_MageKnight",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_MasterKnight",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_PegasusKnight",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_PegasusRider",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Pirate",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_PreHero",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Priest",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Princess",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Queen",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Rogue",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Sage",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Sniper",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Soldier",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Swordfighter",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Swordmaster",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Troubadour",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Generic_Portrait_Warrior",
+        "subicon_dict": {}
+    }
+]

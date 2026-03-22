@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightChagall1",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "(unit.nid == 'Chagall1' or unit2.nid == 'Chagall1') and check_pair('Chagall1','Lachesis') == False and check_pair('Chagall1','Erinys') == False and (unit.team == 'player' or unit2.team == 'player')",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Chagall1",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Chagall1",
+                    "Grr... Don\u2019t underestimate me! Do you really think you can defeat me!?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Chagall1"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 21
+    }
+]

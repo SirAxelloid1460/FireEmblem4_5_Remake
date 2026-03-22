@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightClement",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "(unit.nid == 'Clement' or unit2.nid == 'Clement') and (unit.team == 'player' or unit2.team == 'player')",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Clement",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Clement",
+                    "You invaders!! ...since it's come to this, I'll fight you!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Clement"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

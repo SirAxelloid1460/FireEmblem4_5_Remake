@@ -1,0 +1,87 @@
+[
+    {
+        "nid": "Claude",
+        "name": "Claude",
+        "desc": "Duke of Edda Castle and priest of Bragi Church, of whom he's direct descendant.",
+        "variant": "",
+        "level": 1,
+        "klass": "HighPriest",
+        "tags": [
+            "BragiHeir"
+        ],
+        "bases": {
+            "HP": 34,
+            "STR": 0,
+            "MAG": 21,
+            "SKL": 14,
+            "SPD": 15,
+            "LCK": 9,
+            "DEF": 5,
+            "RES": 20,
+            "CON": 11,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 70,
+            "STR": 10,
+            "MAG": 40,
+            "SKL": 20,
+            "SPD": 30,
+            "LCK": 50,
+            "DEF": 20,
+            "RES": 50,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Valkyrie",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                true,
+                1023
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                true,
+                51
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "ClaudePortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

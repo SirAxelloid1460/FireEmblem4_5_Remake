@@ -1,0 +1,126 @@
+[
+    {
+        "name": "DeathSylvia",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Sylvia'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Sylvia",
+                    "FarRight"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "check_pair('Sylvia', 'Claude') and item == 'Married'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "W-Why... Why am I... Claude... Do something! Please...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "check_pair('Sylvia', 'Lex') and item == 'Married'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "W-Why... Why am I... Lex... Do something! Please...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "check_pair('Sylvia', 'Dew') and item == 'Married'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "W-Why... Why am I... Dew... Do something! Please...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "check_pair('Sylvia', 'Alec') and item == 'Married'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "W-Why... Why am I... Alec... Do something! Please...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "W-Why... Why am I...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "expression",
+                [
+                    "Sylvia",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Sylvia"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Sylvia"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

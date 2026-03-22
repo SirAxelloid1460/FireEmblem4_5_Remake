@@ -1,0 +1,89 @@
+[
+    {
+        "nid": "Kinbois",
+        "name": "Kinbois",
+        "desc": "Second son of King Batur of Verdane, and Gandolf and Jamke's brother.",
+        "variant": "",
+        "level": 10,
+        "klass": "Warrior",
+        "tags": [],
+        "bases": {
+            "HP": 50,
+            "STR": 14,
+            "MAG": 0,
+            "SKL": 8,
+            "SPD": 13,
+            "LCK": 0,
+            "DEF": 9,
+            "RES": 4,
+            "CON": 13,
+            "MOV": 70
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 50,
+            "SPD": 30,
+            "LCK": 40,
+            "DEF": 40,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Silver Axe",
+                false
+            ],
+            [
+                "Hand Axe",
+                true
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                true,
+                226
+            ],
+            "Bow": [
+                true,
+                126
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "KinboisPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

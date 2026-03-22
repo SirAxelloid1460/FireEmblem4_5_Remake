@@ -1,0 +1,134 @@
+[
+    {
+        "name": "DeathFinn",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Finn'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "int(game.level.nid) < 6"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Finn",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Finn",
+                    "...My apologies, Lord Sigurd.{br}With a wound like this,{br}I can fight no longer.{w}{br}I should return to Lenster at once...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Finn",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Finn"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "int(game.level.nid) >= 6 and game.level.nid != ['7','9','11']"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Finn",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Finn",
+                    "Lord Quan... Lady Ethlyn... Please forgive me...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Finn",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Finn"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "add_portrait",
+                [
+                    "Finn",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Finn",
+                    "Lord Leif... Y-You must... fulfill your Lord Father's dying wish...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Finn",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Finn"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "kill_unit",
+                [
+                    "Finn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

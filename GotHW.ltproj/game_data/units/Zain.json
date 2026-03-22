@@ -1,0 +1,89 @@
+[
+    {
+        "nid": "Zain",
+        "name": "Zain",
+        "desc": "Knight of Agustria under the orders of his liege King Chagall.",
+        "variant": null,
+        "level": 13,
+        "klass": "DukeKnight",
+        "tags": [],
+        "bases": {
+            "HP": 61,
+            "STR": 18,
+            "MAG": 2,
+            "SKL": 13,
+            "SPD": 13,
+            "LCK": 0,
+            "DEF": 14,
+            "RES": 5,
+            "CON": 8,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 50,
+            "SPD": 30,
+            "LCK": 40,
+            "DEF": 40,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Knight Killer",
+                false
+            ],
+            [
+                "Javelin",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                true,
+                226
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "ZainPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

@@ -1,0 +1,55 @@
+[
+    {
+        "nid": "Elite_Skill",
+        "name": "Elite",
+        "desc": "Wildly increases a units potential and growth speed",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            1
+        ],
+        "components": [
+            [
+                "exp_multiplier",
+                2.0
+            ],
+            [
+                "growth_change",
+                [
+                    [
+                        "HP",
+                        10
+                    ],
+                    [
+                        "STR",
+                        10
+                    ],
+                    [
+                        "MAG",
+                        10
+                    ],
+                    [
+                        "SKL",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        10
+                    ],
+                    [
+                        "LCK",
+                        10
+                    ],
+                    [
+                        "DEF",
+                        10
+                    ],
+                    [
+                        "RES",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    }
+]

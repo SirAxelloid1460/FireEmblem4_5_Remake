@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathChagall-1",
+        "trigger": "unit_death",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Chagall1'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Chagall1",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Chagall1",
+                    "Uuh... W, wait... ...spare my life...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Chagall1",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Chagall1"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Chagall1"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

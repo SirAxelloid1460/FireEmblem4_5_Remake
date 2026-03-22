@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathBeowulf",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Beowulf'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Beowulf",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Beowulf",
+                    "Tch... Guess I'm all outta luck now...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Beowulf",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Beowulf"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Beowulf"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

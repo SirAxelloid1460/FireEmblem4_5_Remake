@@ -1,0 +1,96 @@
+[
+    {
+        "name": "PhillipAttack",
+        "trigger": "enemy_turn_change",
+        "level_nid": "2",
+        "condition": "unit.position[0] <= 22 and unit.position[1] <= 46 and unit.team == 'player'",
+        "commands": [
+            [
+                "change_ai",
+                [
+                    "Phillip",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_1",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_2",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_3",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_4",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_5",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_6",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_7",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_8",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_9",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_10",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Phillip_11",
+                    "Attack"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Inmortal",
+        "name": "Inmortal",
+        "desc": "Once per chapter, if this unit would die, instead they survive with 1 HP.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            0
+        ],
+        "components": [
+            [
+                "miracle",
+                null
+            ]
+        ]
+    }
+]

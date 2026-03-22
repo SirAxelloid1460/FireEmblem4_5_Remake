@@ -1,0 +1,76 @@
+[
+    {
+        "nid": "Silence",
+        "name": "Silence",
+        "desc": "Seals an enemy's magic powers.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            10
+        ],
+        "components": [
+            [
+                "exp",
+                75
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "status_on_hit",
+                "Silence"
+            ],
+            [
+                "uses",
+                3
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                16710
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                10
+            ]
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightAyra",
+        "trigger": "combat_start",
+        "level_nid": "1",
+        "condition": "(unit.nid == 'Ayra' or unit2.nid == 'Ayra') and game.get_unit('Ayra').team == 'enemy'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Ayra",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "You stand between me and Shannan's future...{w}{br}Farewell!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Ayra"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

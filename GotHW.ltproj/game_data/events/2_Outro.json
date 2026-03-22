@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Outro",
+        "trigger": "level_end",
+        "level_nid": "2",
+        "condition": "True",
+        "commands": [
+            [
+                "center_cursor",
+                [
+                    "52,7"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "remove_all_units",
+                []
+            ],
+            [
+                "music",
+                [
+                    "243 - Victory 1"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.check_alive('Eva') and game.check_alive('AlvaFE4') and game.check_alive('Eve')"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Eva",
+                    "Left",
+                    "Lachesis",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eva",
+                    "Milady, we three shall return to Nordion.{w}{br}Before we leave, however,{w}{br}we have something for you.{w}{br}This ring will help you fight more like a mounted knight.{w}{br}Put it in and it will allow you to keep moving after fighting or healing.{w}{br}I know it will prove highly useful to you.{w}{br}Take care, milady!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Lachesis",
+                    "Knight Ring"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Eva",
+                    "Lachesis"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "250"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Oifaye1",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Oifaye1",
+                    "Sire, King Chagall survived the battle, but was badly wounded.{w}{br}He's currently being attended to by a royal priest.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "From what I heard, somebody pulled him from the battlefield when he was defeated.{w}{br}Who in the world would've done that...?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Oifaye1"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "EldiganAlly",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "EldiganAlly",
+                    "That was me, Sigurd. I recued King Chagall.{w}{br}I preserved the life of the last survivor of the Agusty Dynasty.{w}{br}No matter how unwise his decisions,{w}{br}no matter how ill his temper,{w}{br}I cannot sit in silence and allow my liege to die.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Hm? Eldigan?! You're safe!!{br}Thank the gods!{w}{br}I've been looking everywhere for you, since I heard you'd been arrested.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "EldiganAlly",
+                    "I suppose I was... But.. what is the meaning of this, Sigurd?{w}{br}Why is your army swarming the capital the first thing I find upon release?{w}{br}Why are reports saying our castles are now under the rule of Grannvale officers,{w}{br}as if we are a mere tributary state?{w}{br}I'm indisposed for barely any time at all,{w}{br}only to find Grannvale has made itself at home in Agustria behing my back!{w}{br}There had better be a damned good explanation for all of this, Sigurd,{w}{br}or there will be consequences.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "I'm so sorry, Eldigan. You're absolutely right:{w}{br}None of this makes sense to me, either.{w}{br}As if out of nowhere, the entirety of Agustria suddenly turned against us.{w}{br}We had no choice.{w}{br}I've been ordered to remain here with my army for the time being...{w}{br}to maintain peace and order.{w}{br}Eldigan, please. I know this is a dreadful situation, but one year is all I need.{w}{br}I can restore the country's peace to normal and repair our diplomatic ties,{w}{br}but only if I'm allowed time to do it.{w}{br}Once our time is through, we'll leave your country with no objections.{w}{br}My king and I pledge our word.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "EldiganAlly",
+                    "Hm... I suppose I've little choice but to take you at your word.{w}{br}Very well: you have your year.{w}{br}I shall relocate the king to the northern Madino Castle,{w}{br}for his own protection.{w}{br}I'll also leave my Cross Knights stationed at Fort Silvail.{w}{br}Offer the slightest provocation,{w}{br}and your forces will have us to answer to.{w}{br}Remember, I'm holding you to your word.{w}{br}Break your promise, and we will break you.{w}{br}Am I making myself clear, Sigurd?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Of course. You know I'm not about to betray you.{w}{br}Please, Eldigan. You have to trust me!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "EldiganAlly",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

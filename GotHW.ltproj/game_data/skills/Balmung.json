@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Balmung",
+        "name": "Balmung",
+        "desc": "Holy Sword Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        20
+                    ]
+                ]
+            ]
+        ]
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathDew",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Dew'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Dew",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Dew",
+                    "How unlucky... ...I've blundered once too much...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Dew",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Dew"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Dew"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

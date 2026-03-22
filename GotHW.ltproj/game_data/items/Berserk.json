@@ -1,0 +1,76 @@
+[
+    {
+        "nid": "Berserk",
+        "name": "Berserk",
+        "desc": "Unleashes target's fury against who's near.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            12
+        ],
+        "components": [
+            [
+                "exp",
+                75
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "B"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "status_on_hit",
+                "Berserk"
+            ],
+            [
+                "uses",
+                3
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                18000
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                10
+            ]
+        ]
+    }
+]

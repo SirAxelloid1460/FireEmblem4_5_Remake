@@ -1,0 +1,48 @@
+[
+    {
+        "name": "FightMacbethLewyn",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "check_pair('Macbeth','Lewyn')",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Macbeth",
+                    "Left",
+                    "Lewyn",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Macbeth",
+                    "H-huh? Who are you?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "You're Macbeth? You're not qualified to be lord. It's about time you were... retired...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Macbeth",
+                    "Lewyn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

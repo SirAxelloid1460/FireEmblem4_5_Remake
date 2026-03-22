@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Thrud Scroll",
+        "name": "Thrud Scroll",
+        "desc": "",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            24
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Thrud Scroll"
+            ]
+        ]
+    }
+]

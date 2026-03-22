@@ -1,0 +1,59 @@
+[
+    {
+        "name": "ArdenRing",
+        "trigger": "unit_wait",
+        "level_nid": "2",
+        "condition": "region.nid == 'BeachRing' and unit.nid == 'Arden'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Arden",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Arden",
+                    "...Sigh. I don't get it. No matter how hard I train or how strong I get,{w}{br}I'm still the butt of every joke 'round here.{w}{br}Maybe if I were more like Alec and Noish, with how they can always be in the front line...{w}{br}That'd be all I need to get a bit of respect, methinks... {w}and maybe a cute lass while I'm at it.. Hee hee.{w}{br}But I'm still just me... Back to the ol' grind, I suppose...{w}{br}Hang on? What's this little ring thing?{w}{br}Ooh, maybe it's one of those magical ones I keep hearing about.{w}{br}That'd be grand, wouldn't it? let's try her on...{w}{br}Hm... Hwooooarh! W-what's this power I'm feeling?!{w}{br}Is this what Alec and Noish feel like all the time while on their horses?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Arden"
+                ]
+            ],
+            [
+                "change_stats",
+                [
+                    "Arden",
+                    "MOV,20",
+                    "immediate"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "wait",
+                [
+                    "100"
+                ]
+            ],
+            [
+                "alert",
+                [
+                    "\"Arden's movement has been enhanced!!\""
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

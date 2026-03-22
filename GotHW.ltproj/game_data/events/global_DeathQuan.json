@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathQuan",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Quan'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Quan",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Agh...{br}What happened...?",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Quan",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Quan"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Quan"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

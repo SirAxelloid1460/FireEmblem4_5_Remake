@@ -1,0 +1,94 @@
+[
+    {
+        "name": "TownTutorial",
+        "trigger": "Enter",
+        "level_nid": "0",
+        "condition": "region.nid == 'TownTutorial'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Oifaye1",
+                    "Left",
+                    "{unit}",
+                    "Right"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "unit.name == 'Sigurd'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Oifaye1",
+                    "Sire, might I recommend stopping by the castle town once you're rested?{w}{br}To see you unharmed should help calm and reassure your citizens.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Oifaye1",
+                    "Oh hey, can you tell Lord Sigurd to come around when he has some time?{w}{br} To see him unharmed should help calm and reassure the citizens.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Oifaye1",
+                    "{unit}"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Narrator",
+                    "I've got to say that the Castle-Town System from FE4 is not available right now,{w} but you can access the respective Shops and Arenas from Chapters 1 to 10{w} in the Preparation-Base before the battle starts.{w}{br}Also there, you'll have the option to repair every unit's equipment for a certain amount of gold.{w}{br}Make sure you use it, there is no other way to repair them.{w}",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20
+    }
+]

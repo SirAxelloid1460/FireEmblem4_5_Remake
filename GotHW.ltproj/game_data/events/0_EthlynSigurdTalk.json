@@ -1,0 +1,131 @@
+[
+    {
+        "name": "EthlynSigurdTalk",
+        "trigger": "on_talk",
+        "level_nid": "0",
+        "condition": "unit.nid == 'Ethlyn' and unit2.nid == 'Sigurd'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Ethlyn",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "Sigurd!{br}Oh, you're unharmed!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "It's great to see you, too, Ethlyn.{br}Thanks so much for coming.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "I just couldn't stay away when I heard of Verdane's attacks...{w}{br}It's such a relief to know you're okay.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Oh, come now.{br}Did you really think I was about to lose to Verdane?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "I'd heard that Chalphy barely has any soldiers left behind, given that most of the army is away in Isaac.{w}{br}And let's face it, I can't remember the last time you didn't just leap straight into a crisis without thinking.{w}{br}With Father away at war... I knew I had to come. Someone has to save you from yourself, after all.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Heh heh.{br}Wow, it feels as if I was getting this very lecture only yesterday!{w}{br}I swear, after Mother passed away, it was you who single-handedly kept us in check.{w}{br}Once you went off to marry Quan, we could've sworn that Father finally had a proper little lady for a daughter...{w}{br}But no, nothing's changed after all!{br}I feel so sorry for Quan... Ahahahaha!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "Sigurd, I'm only what you and Father made me!{br} If I'm a fusspot, then it's squarely your fault!{w}{br}Perhaps if the two of you hadn't been so unkempt...{w}{br}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Heh, perhaps you're right.{br}Listen, Ethlyn...{w}{br}We might not act like it, but everything you've done means the world to us.{w}{br}I'm so sorry for all the trouble I've always caused you... And thank you so much for coming.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "Sigurd...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Ethlyn",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Ethlyn",
+                    "Sigurd"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

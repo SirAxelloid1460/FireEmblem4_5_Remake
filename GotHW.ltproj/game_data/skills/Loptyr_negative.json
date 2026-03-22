@@ -1,0 +1,35 @@
+[
+    {
+        "nid": "Loptyr_negative",
+        "name": "Loptyr_negative",
+        "desc": "Unholy Dark Magic Effect.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            6
+        ],
+        "components": [
+            [
+                "stat_multiplier",
+                [
+                    [
+                        "STR",
+                        0.5
+                    ],
+                    [
+                        "MAG",
+                        0.5
+                    ]
+                ]
+            ],
+            [
+                "time",
+                6
+            ],
+            [
+                "negative",
+                null
+            ]
+        ]
+    }
+]

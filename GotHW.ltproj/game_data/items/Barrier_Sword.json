@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Barrier Sword",
+        "name": "Barrier Sword",
+        "desc": "An anti-mages sword.",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            8
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                10
+            ],
+            [
+                "hit",
+                70
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                50
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                3
+            ],
+            [
+                "status_on_equip",
+                "Barrier Sword"
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                12000
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

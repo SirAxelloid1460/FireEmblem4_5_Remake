@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightElliot",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "(unit.nid == 'Elliot' or unit2.nid == 'Elliot') and check_pair('Elliot','Lachesis') == False and (unit.team == 'player' or unit2.team == 'player')",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Elliot",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Elliot",
+                    "Gah... Grannvale!{w}{br}Don't interfere with this,{w}{br}unless you want me to wipe the floor with you too!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Elliot"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 21
+    }
+]

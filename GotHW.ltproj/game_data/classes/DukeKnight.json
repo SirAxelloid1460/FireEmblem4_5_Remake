@@ -1,0 +1,127 @@
+[
+    {
+        "nid": "DukeKnight",
+        "name": "Duke Knight",
+        "desc": "An honorific bestowed upon the best of Lance Knights.",
+        "tier": 2,
+        "movement_group": "Light Cav",
+        "promotes_from": "CavalierL",
+        "turns_into": [],
+        "tags": [
+            "Mounted"
+        ],
+        "max_level": 19,
+        "bases": {
+            "HP": 39,
+            "STR": 9,
+            "MAG": 1,
+            "SKL": 8,
+            "SPD": 8,
+            "LCK": 0,
+            "DEF": 8,
+            "RES": 8,
+            "CON": 8,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 30,
+            "MAG": 10,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 0,
+            "DEF": 30,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 4,
+            "MAG": 1,
+            "SKL": 3,
+            "SPD": 2,
+            "LCK": 0,
+            "DEF": 2,
+            "RES": 3,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 80,
+            "STR": 27,
+            "MAG": 15,
+            "SKL": 22,
+            "SPD": 22,
+            "LCK": 30,
+            "DEF": 23,
+            "RES": 18,
+            "CON": 8,
+            "MOV": 90
+        },
+        "learned_skills": [
+            [
+                1,
+                "Canto_Plus"
+            ]
+        ],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                true,
+                226
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_DukeKnight",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "DukeKnight",
+        "combat_anim_nid": "DukeKnight",
+        "fields": []
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightGerrard",
+        "trigger": "combat_start",
+        "level_nid": "0",
+        "condition": "(unit.nid == 'Gerrard' or unit2.nid == 'Gerrard') and check_pair('Gerrard', 'Midir') == False",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Gerrard",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Gerrard",
+                    "Grannvale dogs... damn you!",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Gerrard"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 21
+    }
+]

@@ -1,0 +1,127 @@
+[
+    {
+        "nid": "BPaladin",
+        "name": "Paladin",
+        "desc": "Mounted healers with superior selfdefense abilities.",
+        "tier": 2,
+        "movement_group": "Light Cav",
+        "promotes_from": "Troubadour",
+        "turns_into": [],
+        "tags": [
+            "Mounted"
+        ],
+        "max_level": 19,
+        "bases": {
+            "HP": 46,
+            "STR": 5,
+            "MAG": 10,
+            "SKL": 11,
+            "SPD": 11,
+            "LCK": 0,
+            "DEF": 7,
+            "RES": 12,
+            "CON": 11,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 10,
+            "MAG": 30,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 0,
+            "DEF": 10,
+            "RES": 30,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 4,
+            "MAG": 3,
+            "SKL": 2,
+            "SPD": 3,
+            "LCK": 0,
+            "DEF": 4,
+            "RES": 2,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 80,
+            "STR": 20,
+            "MAG": 24,
+            "SKL": 24,
+            "SPD": 24,
+            "LCK": 30,
+            "DEF": 20,
+            "RES": 24,
+            "CON": 11,
+            "MOV": 90
+        },
+        "learned_skills": [
+            [
+                1,
+                "Canto_Plus"
+            ]
+        ],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                126
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                true,
+                51
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_APaladin",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "BPaladin",
+        "combat_anim_nid": "PaladinFemale",
+        "fields": []
+    }
+]

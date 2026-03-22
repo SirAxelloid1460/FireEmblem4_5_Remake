@@ -1,0 +1,122 @@
+[
+    {
+        "name": "DeirdreEthlynTalk",
+        "trigger": "on_talk",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Deirdre' and unit2.nid == 'Ethlyn'",
+        "commands": [
+            [
+                "music",
+                [
+                    "308 - Lover 3"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Ethlyn",
+                    "Left",
+                    "Deirdre",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "How are you faring so far, Deirdre?{w}{br}I know my brother is worried something fierce about you risking your life like this.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Deirdre",
+                    "Ethlyn...? Thank you for asking,{br} but I'm doing just fine for now.{w}{br}Everything will be alright. I can feel it.{w}{br}So long as I'm at Sigurd's side, our happiness will see us through.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "I don't think I've ever seen Sigurd as happy as he's been since he met you.{w}{br}He's practically a changed man!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Deirdre",
+                    "Ethlyn... Here, I'd like you have this.{br}I've been meaning to give it to you for a while.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "Oh? ...Is-is this a light sword?!{w}{br}Wow... These are so rare and hard to come by!{w}{br}Are you sure you want to give me this?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Deirdre",
+                    "Of course. I know it will serve you well.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "I can't thank you enough, Deirdre!{br}I'll always treasure it!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Deirdre",
+                    "Ethlyn"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "give_item",
+                [
+                    "Ethlyn",
+                    "Light Sword"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Deirdre",
+                    "Ethlyn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

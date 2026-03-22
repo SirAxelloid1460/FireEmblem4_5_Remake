@@ -1,0 +1,111 @@
+[
+    {
+        "name": "LexSigurdTalk",
+        "trigger": "on_talk",
+        "level_nid": "0",
+        "condition": "unit.nid == 'Lex' and unit2.nid == 'Sigurd'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Lex",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "It's been a while, huh, Lord Sigurd?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Lex!{br}I take it you're here to help as well?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "Yeah, Azel dragged me into it.{br}I swear, I can't say 'No' to that twerp!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Hahaha...{br}You haven't changed a bit, have you, Lex?{w}{br}But what about your father, Lord Langbalt?{br}Does he know you've come here?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "Oh, hell no!{br}You know as well as I how much my father loathes yours.{w}{br}There's no way he'd ever let me help House Chalphy, even if his life depended on it.{w}{br}I had to slip out behind his back.{w}{br}Just so we're clear, Sigurd, I'm not here for you.{br}Azel's my best friend, and he really wanted to help. That's all.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Heh. A bit harsh, but thanks for coming all the same.{br}Any help is greatly appreciated.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "Well, I'll do what I can.{br}Those Verdane dogs have had their run of our land for long enough!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Lex",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Lex",
+                    "Sigurd"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

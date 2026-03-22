@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightDiMaggio",
+        "trigger": "combat_start",
+        "level_nid": "0",
+        "condition": "unit.nid == 'DiMaggio' or unit2.nid == 'DiMaggio'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "DiMaggio",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "DiMaggio",
+                    "So ya made it here, ya Grannvaleian cowards...{w}{br}I, Lord DiMaggio, will finish you",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "DiMaggio"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,121 @@
+[
+    {
+        "name": "SylviaSigurdTalk",
+        "trigger": "on_talk",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Sylvia' and unit2.nid == 'Sigurd'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Sylvia",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "Eee! It's the great Lord Sigurd!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Er... Hello, there? You're a dancer, right?{w}{br}The battlefield is too dangerous for the likes of you.{w}{br}Go back to the castle.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "Come on, sir! Don'tcha know who I am?{w}{br}I'm Sylviaaaaaaaa!{w}{br}You can call me Silvie if ya want, though!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Look, I'm sorry, but I really don't have the time to look after children.{w}{br}Be a good little girl and run along back to the castle, alright?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "Rrrgh... Good little girl?! Look at me!{w}{br}How d'you look at someone this hot and think \"little girl\"?!{w}{br}What's wrong with you?{w}{br}Never thought ya'd be such a borin' old stiff, just like everyone else 'round here...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Enough! I have work to do.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "Sigh... Oh, well. Back to being a lone, delicate flower, sprouting in a battlefield...{w}{br}My beauty is nothing to the tide of bodies...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Ugh... What in the world is...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Sigurd",
+                    "Lewyn"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Sylvia",
+                    "Sigurd"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

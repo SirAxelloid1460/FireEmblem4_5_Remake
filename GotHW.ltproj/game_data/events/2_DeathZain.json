@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathZain",
+        "trigger": "unit_death",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Zain'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Zain",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Zain",
+                    "Guh\u2026 Is the end of Augustria\u2026?",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Zain",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Zain"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Zain"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

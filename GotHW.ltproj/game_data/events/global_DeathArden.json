@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathArden",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Arden'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Arden",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Arden",
+                    "Lord Sigurd...{br}My life was yours...{br}I don't regret a thing...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Arden",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Arden"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Arden"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

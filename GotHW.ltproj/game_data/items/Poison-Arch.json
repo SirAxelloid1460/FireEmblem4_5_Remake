@@ -1,0 +1,82 @@
+[
+    {
+        "nid": "Poison-Arch",
+        "name": "Poison-Arch",
+        "desc": "Light Ballista Arch impregnated with poison",
+        "icon_nid": "Bow",
+        "icon_index": [
+            0,
+            15
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                5
+            ],
+            [
+                "hit",
+                50
+            ],
+            [
+                "weapon_type",
+                "Bow"
+            ],
+            [
+                "uses",
+                255
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                20
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "status_on_hit",
+                "Poisoned"
+            ],
+            [
+                "value",
+                66300
+            ],
+            [
+                "min_range",
+                3
+            ],
+            [
+                "max_range",
+                10
+            ],
+            [
+                "prf_tags",
+                [
+                    "Ballistae"
+                ]
+            ]
+        ]
+    }
+]

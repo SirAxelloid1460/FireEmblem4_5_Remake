@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightBeowulf",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "(unit.nid == 'Beowulf' or unit2.nid == 'Beowulf') and game.get_unit('Beowulf').team == 'enemy' and (unit.team == 'player' or unit2.team == 'player')",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Beowulf",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Beowulf",
+                    "Don't hold this against me... it's just how I make a living.!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Beowulf"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 21
+    }
+]

@@ -1,0 +1,111 @@
+[
+    {
+        "name": "AlecSylviaTalk",
+        "trigger": "on_talk",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Alec' and unit2.nid == 'Sylvia'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Alec",
+                    "Left",
+                    "Sylvia",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Alec",
+                    "Hey! You're Sylvia, aren't you?{w}{br}Excuse me for being so forward, but you're adorable!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "Finally! Here I was, thinkin' this army's nothin' but stiff and borin' military types.{w}{br}It's about time someone appreciated me!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Alec",
+                    "Heh, I guess I'm the only decent guy around here. Glad I found you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "Thanks! Me, too!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Alec",
+                    "I guess we'll be here a while, so how about dinner sometime?{w}{br}Bet that'd be nice.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sylvia",
+                    "Ooh, yeah! Maybe I'll dance for you too!{w}{br}I've got _a special one_ that nobody's seen yet.{w}{br}It's kinda embarassing, 'cause it's VERY special.{w}{br}Maybe I'll show it to ya, though!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Alec",
+                    "Y-you will? Oh, I can't wait!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Alec",
+                    "Sylvia"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Alec",
+                    "Sylvia"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "nid": "Resistance Earring",
+        "name": "Resistance Earring",
+        "desc": "Permanently increases its user's resistance by 2.",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            7
+        ],
+        "components": [
+            [
+                "usable",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "permanent_stat_change",
+                [
+                    [
+                        "RES",
+                        2
+                    ]
+                ]
+            ],
+            [
+                "usable_in_base",
+                null
+            ],
+            [
+                "value",
+                8000
+            ]
+        ]
+    }
+]

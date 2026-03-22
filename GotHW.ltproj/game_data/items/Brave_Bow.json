@@ -1,0 +1,92 @@
+[
+    {
+        "nid": "Brave Bow",
+        "name": "Brave Bow",
+        "desc": "Allows two consecutive hits.",
+        "icon_nid": "Bow",
+        "icon_index": [
+            0,
+            3
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                12
+            ],
+            [
+                "hit",
+                85
+            ],
+            [
+                "weapon_type",
+                "Bow"
+            ],
+            [
+                "weapon_rank",
+                "B"
+            ],
+            [
+                "uses",
+                55
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "brave",
+                null
+            ],
+            [
+                "weight",
+                9
+            ],
+            [
+                "crit",
+                20
+            ],
+            [
+                "effective",
+                0
+            ],
+            [
+                "effective_tag",
+                []
+            ],
+            [
+                "effective_multiplier",
+                1
+            ],
+            [
+                "value",
+                7975
+            ],
+            [
+                "min_range",
+                2
+            ],
+            [
+                "max_range",
+                2
+            ]
+        ]
+    }
+]

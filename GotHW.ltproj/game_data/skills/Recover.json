@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Recover",
+        "name": "Recover",
+        "desc": "Regenerates all HP every turn.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            2
+        ],
+        "components": [
+            [
+                "regeneration",
+                1.0000000000000002
+            ]
+        ]
+    }
+]

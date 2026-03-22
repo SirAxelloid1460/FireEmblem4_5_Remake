@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathJamke",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Jamke'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Jamke",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Jamke",
+                    "Urgh... I'm already done for...?",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Jamke",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Jamke"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Jamke"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

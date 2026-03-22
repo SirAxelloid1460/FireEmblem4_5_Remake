@@ -1,0 +1,12 @@
+[
+    {
+        "nid": "Sigurd",
+        "name": "Sigurd's Army",
+        "leader": "Eirika"
+    },
+    {
+        "nid": "Seliph",
+        "name": "Liberation Army",
+        "leader": "Sigurd"
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "name": "FightGandolfAzel",
+        "trigger": "combat_start",
+        "level_nid": "1",
+        "condition": "check_pair('Gandolf', 'Azel')",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Gandolf",
+                    "Left",
+                    "Azel",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Gandolf",
+                    "And what are you supposed to be?{w}{br}You've got nerve, brat!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "So you're Gandolf...{br}How dare you harm Aideen!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Gandolf",
+                    "Azel"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

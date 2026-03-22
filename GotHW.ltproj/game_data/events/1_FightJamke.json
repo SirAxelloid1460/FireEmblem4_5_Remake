@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightJamke",
+        "trigger": "combat_start",
+        "level_nid": "1",
+        "condition": "(unit.nid == 'Jamke' or unit2.nid == 'Jamke') and game.get_unit('Jamke').team == 'enemy'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Jamke",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Jamke",
+                    "I don't want to hurt you!{br}Begone from this land at once!",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Jamke"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

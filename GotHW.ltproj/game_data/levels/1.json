@@ -1,0 +1,2819 @@
+[
+    {
+        "nid": "1",
+        "name": "The Spirit Forest's Maiden",
+        "tilemap": "Chapter1",
+        "bg_tilemap": null,
+        "party": "Sigurd",
+        "music": {
+            "player_phase": "106 - Chapter 1 (Girl of the Spirit Forest)",
+            "enemy_phase": "202 - Verdane Army",
+            "other_phase": "213 - Allied Army",
+            "enemy2_phase": "214 - Neutral Army",
+            "player_battle": "215 - Ally Attack",
+            "enemy_battle": "216 - Enemy Attack",
+            "other_battle": "215 - Ally Attack",
+            "enemy2_battle": null
+        },
+        "objective": {
+            "simple": "Seize Verdane",
+            "win": "Seize Verdane",
+            "loss": "Lord dies"
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "units": [
+            {
+                "nid": "Sigurd",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Noish",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Alec",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Arden",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Quan",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Finn",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Ethlyn",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Lex",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Azel",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Midir",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Ayra",
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    56,
+                    43
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Jamke",
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    11,
+                    33
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Gandolf",
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    23,
+                    51
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Kinbois",
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    53,
+                    38
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "FakeElliot",
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    21,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "GenoaGuard",
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    56,
+                    42
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Sandima",
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    8,
+                    26
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Aideen",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    34,
+                    50
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Dew",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    33,
+                    50
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Deirdre",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "EldiganAlly",
+                "team": "other",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    15,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "NordionGuard",
+                "team": "other",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    28,
+                    10
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Bandit_1",
+                "variant": null,
+                "level": 1,
+                "klass": "Bandit",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueVillage",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    48,
+                    25
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Bandit_2",
+                "variant": null,
+                "level": 1,
+                "klass": "Bandit",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueVillage",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    20,
+                    44
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_1",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    51,
+                    36
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_2",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    52,
+                    36
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_3",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    53,
+                    36
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_4",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    54,
+                    36
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_5",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    55,
+                    36
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_6",
+                "variant": null,
+                "level": 5,
+                "klass": "Fighter",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    53,
+                    37
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_7",
+                "variant": null,
+                "level": 5,
+                "klass": "Fighter",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    52,
+                    38
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_8",
+                "variant": null,
+                "level": 5,
+                "klass": "Fighter",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    54,
+                    38
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_9",
+                "variant": null,
+                "level": 1,
+                "klass": "Archer",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    51,
+                    37
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_10",
+                "variant": null,
+                "level": 1,
+                "klass": "Archer",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    52,
+                    37
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_11",
+                "variant": null,
+                "level": 1,
+                "klass": "Archer",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    54,
+                    37
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_12",
+                "variant": null,
+                "level": 1,
+                "klass": "Archer",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    55,
+                    37
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_13",
+                "variant": null,
+                "level": 5,
+                "klass": "Fighter",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ],
+                    [
+                        "Hand Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    55,
+                    43
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_14",
+                "variant": null,
+                "level": 5,
+                "klass": "Fighter",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ],
+                    [
+                        "Hand Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    57,
+                    43
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Genoa_15",
+                "variant": null,
+                "level": 5,
+                "klass": "Fighter",
+                "faction": "Genoa",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ],
+                    [
+                        "Hand Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    56,
+                    44
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MarphaDew_1",
+                "variant": null,
+                "level": 5,
+                "klass": "Fighter",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Steel Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueDew",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    27,
+                    50
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MarphaDew_2",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueDew",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    27,
+                    49
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MarphaDew_3",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueDew",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    27,
+                    48
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MarphaDew_4",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueDew",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    28,
+                    48
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MarphaDew_5",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueDew",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    28,
+                    49
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MarphaDew_6",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueDew",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    28,
+                    50
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MarphaDew_7",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueDew",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    28,
+                    51
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MarphaDew_8",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueDew",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    28,
+                    52
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MarphaDew_9",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueDew",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    27,
+                    52
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MarphaDew_10",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueDew",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    27,
+                    51
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_1",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    22,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_2",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    22,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_3",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    22,
+                    3
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_4",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    22,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_5",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    21,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_6",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    20,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_7",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    20,
+                    3
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_8",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    21,
+                    3
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_9",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    21,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_10",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    20,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_11",
+                "variant": null,
+                "level": 1,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    20,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eldigan_1",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Nordion",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    15,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eldigan_2",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Nordion",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    16,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eldigan_3",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Nordion",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    17,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eldigan_4",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Nordion",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    17,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eldigan_5",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Nordion",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    17,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eldigan_6",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Nordion",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    16,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eldigan_7",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Nordion",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    15,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eldigan_8",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Nordion",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    16,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Marpha_1",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    21,
+                    52
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Marpha_2",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    21,
+                    53
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Marpha_3",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    22,
+                    53
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Marpha_4",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    23,
+                    54
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Marpha_5",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    24,
+                    53
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Marpha_6",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    25,
+                    53
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Marpha_7",
+                "variant": null,
+                "level": 1,
+                "klass": "Barbarian",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    25,
+                    52
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Marpha_8",
+                "variant": null,
+                "level": 1,
+                "klass": "Archer",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    22,
+                    52
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Marpha_9",
+                "variant": null,
+                "level": 1,
+                "klass": "Archer",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    23,
+                    53
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Marpha_10",
+                "variant": null,
+                "level": 1,
+                "klass": "Archer",
+                "faction": "Marpha",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    24,
+                    52
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_1",
+                "variant": null,
+                "level": 5,
+                "klass": "Archer",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    6,
+                    27
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_2",
+                "variant": null,
+                "level": 5,
+                "klass": "Archer",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    7,
+                    27
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_3",
+                "variant": null,
+                "level": 5,
+                "klass": "Archer",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    7,
+                    28
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_4",
+                "variant": null,
+                "level": 5,
+                "klass": "Archer",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    8,
+                    28
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_5",
+                "variant": null,
+                "level": 5,
+                "klass": "Archer",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    8,
+                    29
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_6",
+                "variant": null,
+                "level": 5,
+                "klass": "Archer",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    9,
+                    28
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_7",
+                "variant": null,
+                "level": 5,
+                "klass": "Archer",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    9,
+                    27
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_8",
+                "variant": null,
+                "level": 5,
+                "klass": "Archer",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    27
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_9",
+                "variant": null,
+                "level": 10,
+                "klass": "Fighter",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Steel Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    6,
+                    28
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_10",
+                "variant": null,
+                "level": 10,
+                "klass": "Fighter",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Steel Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    28
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_11",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    10,
+                    32
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_12",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    12,
+                    32
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_13",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    7,
+                    33
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_14",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    9,
+                    33
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_15",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    13,
+                    33
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_16",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    15,
+                    33
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_17",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    10,
+                    34
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_18",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    12,
+                    34
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_19",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    9,
+                    35
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_20",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    11,
+                    35
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Verdane_21",
+                "variant": null,
+                "level": 10,
+                "klass": "Barbarian",
+                "faction": "Verdane",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "Verdane1",
+                "starting_position": [
+                    13,
+                    35
+                ],
+                "starting_traveler": null,
+                "generic": true
+            }
+        ],
+        "regions": [
+            {
+                "nid": "Evans",
+                "region_type": "event",
+                "position": [
+                    45,
+                    13
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Enemy_Seize",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Return",
+                "region_type": "normal",
+                "position": [
+                    45,
+                    13
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Genoa",
+                "region_type": "event",
+                "position": [
+                    56,
+                    42
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Seize",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Marpha",
+                "region_type": "event",
+                "position": [
+                    23,
+                    51
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Seize",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Verdane",
+                "region_type": "event",
+                "position": [
+                    8,
+                    26
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Seize",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F1",
+                "region_type": "formation",
+                "position": [
+                    47,
+                    15
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F2",
+                "region_type": "formation",
+                "position": [
+                    47,
+                    14
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F3",
+                "region_type": "formation",
+                "position": [
+                    46,
+                    15
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F4",
+                "region_type": "formation",
+                "position": [
+                    46,
+                    14
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F5",
+                "region_type": "formation",
+                "position": [
+                    45,
+                    14
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F6",
+                "region_type": "formation",
+                "position": [
+                    44,
+                    15
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F7",
+                "region_type": "formation",
+                "position": [
+                    44,
+                    14
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F8",
+                "region_type": "formation",
+                "position": [
+                    43,
+                    15
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F9",
+                "region_type": "formation",
+                "position": [
+                    43,
+                    14
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "NorthVillage",
+                "region_type": "event",
+                "position": [
+                    46,
+                    31
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "NorthDestructible",
+                "region_type": "event",
+                "position": [
+                    46,
+                    31
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "CenterVillage",
+                "region_type": "event",
+                "position": [
+                    35,
+                    52
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "CenterDestructible",
+                "region_type": "event",
+                "position": [
+                    35,
+                    52
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "SouthVillage",
+                "region_type": "event",
+                "position": [
+                    8,
+                    58
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "SouthDestructible",
+                "region_type": "event",
+                "position": [
+                    8,
+                    58
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "LadyLake",
+                "region_type": "normal",
+                "position": [
+                    27,
+                    37
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "DeirdreForest1",
+                "region_type": "normal",
+                "position": [
+                    13,
+                    44
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "DeirdreForest2",
+                "region_type": "normal",
+                "position": [
+                    13,
+                    43
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            }
+        ],
+        "unit_groups": [
+            {
+                "nid": "Bandits",
+                "units": [
+                    "Bandit_1",
+                    "Bandit_2"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "Genoa",
+                "units": [
+                    "Genoa_1",
+                    "Genoa_2",
+                    "Genoa_3",
+                    "Genoa_4",
+                    "Genoa_5",
+                    "Genoa_6",
+                    "Genoa_7",
+                    "Genoa_8",
+                    "Genoa_9",
+                    "Genoa_10",
+                    "Genoa_11",
+                    "Genoa_12",
+                    "Kinbois"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "DA",
+                "units": [
+                    "Dew",
+                    "Aideen"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "Marpha",
+                "units": [
+                    "Marpha_1",
+                    "Marpha_2",
+                    "Marpha_3",
+                    "Marpha_4",
+                    "Marpha_5",
+                    "Marpha_6",
+                    "Marpha_7",
+                    "Marpha_8",
+                    "Marpha_9",
+                    "Marpha_10"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "ElliotGroup",
+                "units": [
+                    "FakeElliot",
+                    "Elliot_1",
+                    "Elliot_2",
+                    "Elliot_3",
+                    "Elliot_4",
+                    "Elliot_5",
+                    "Elliot_6",
+                    "Elliot_7",
+                    "Elliot_8",
+                    "Elliot_9",
+                    "Elliot_10",
+                    "Elliot_11"
+                ],
+                "positions": {
+                    "FakeElliot": [
+                        23,
+                        8
+                    ],
+                    "Elliot_1": [
+                        23,
+                        7
+                    ],
+                    "Elliot_2": [
+                        25,
+                        7
+                    ],
+                    "Elliot_3": [
+                        24,
+                        7
+                    ],
+                    "Elliot_4": [
+                        24,
+                        8
+                    ],
+                    "Elliot_5": [
+                        24,
+                        9
+                    ],
+                    "Elliot_6": [
+                        25,
+                        8
+                    ],
+                    "Elliot_7": [
+                        25,
+                        9
+                    ],
+                    "Elliot_8": [
+                        26,
+                        9
+                    ],
+                    "Elliot_9": [
+                        25,
+                        10
+                    ],
+                    "Elliot_10": [
+                        27,
+                        10
+                    ],
+                    "Elliot_11": [
+                        27,
+                        9
+                    ]
+                }
+            },
+            {
+                "nid": "EldiganGroup",
+                "units": [
+                    "EldiganAlly",
+                    "Eldigan_1",
+                    "Eldigan_2",
+                    "Eldigan_3",
+                    "Eldigan_4",
+                    "Eldigan_5",
+                    "Eldigan_6",
+                    "Eldigan_7",
+                    "Eldigan_8"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "DAJ",
+                "units": [
+                    "Dew",
+                    "Aideen",
+                    "Jamke"
+                ],
+                "positions": {
+                    "Dew": [
+                        30,
+                        51
+                    ],
+                    "Aideen": [
+                        31,
+                        51
+                    ],
+                    "Jamke": [
+                        31,
+                        50
+                    ]
+                }
+            },
+            {
+                "nid": "MarphaDew",
+                "units": [
+                    "MarphaDew_1",
+                    "MarphaDew_2",
+                    "MarphaDew_3",
+                    "MarphaDew_4",
+                    "MarphaDew_5",
+                    "MarphaDew_6",
+                    "MarphaDew_7",
+                    "MarphaDew_8",
+                    "MarphaDew_9",
+                    "MarphaDew_10"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "Genoa2",
+                "units": [
+                    "Genoa_13",
+                    "Genoa_14",
+                    "Genoa_15",
+                    "Ayra"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "SandimaGroup",
+                "units": [
+                    "Verdane_1",
+                    "Verdane_2",
+                    "Verdane_3",
+                    "Verdane_4",
+                    "Verdane_5",
+                    "Verdane_6",
+                    "Verdane_7",
+                    "Verdane_8",
+                    "Verdane_9",
+                    "Verdane_10"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "JamkeSpawn",
+                "units": [
+                    "Jamke",
+                    "Verdane_11",
+                    "Verdane_12"
+                ],
+                "positions": {}
+            }
+        ]
+    }
+]

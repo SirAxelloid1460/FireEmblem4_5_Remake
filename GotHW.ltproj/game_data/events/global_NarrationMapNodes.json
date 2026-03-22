@@ -1,0 +1,178 @@
+[
+    {
+        "name": "NarrationMapNodes",
+        "trigger": null,
+        "level_nid": null,
+        "condition": "True",
+        "commands": [
+            [
+                "if",
+                [
+                    "game.level.nid == '1'"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Chalphy (0)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Jungby (1)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Evans (7)"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "####"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level.nid == '2'"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Chalphy (0)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Jungby (1)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Evans (7)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Genoa (29)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Marpha (28)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Verdane (27)"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "####"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level.nid == '3'"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Evans (7)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Nordion (8)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Heirhein (9)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Mackily (10)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Agusty (11)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Anphony (12)"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "####"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level.nid == '4'"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "####"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level.nid == '5'"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "####"
+                ]
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20
+    }
+]

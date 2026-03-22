@@ -1,0 +1,89 @@
+[
+    {
+        "name": "DewAideenTalk",
+        "trigger": "on_talk",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Dew' and unit2.nid == 'Aideen'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Dew",
+                    "Left",
+                    "Aideen",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Dew",
+                    "Hey! Miss Aideen!{br}I got something good to give you.{w}{br}look, I picked up this odd cane.{w}{br}It won't do much good if I just hold on to it, will it?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Oh? This is a Warp staff.{w}{br}Where did you find it, Dew?.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Dew",
+                    "Oh...er...I...{w}{br}I found it just over there!{br}Yeah! That's right. Weird, isn't it?{w}{br}I betcha one of the gods left it over there.{w}{br}Juuuuust for you!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Oh, Dew... Having a staff like this{br}ought to be a great help for everybody.{w}{br}Thank you. I'll cherish it.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Dew",
+                    "Aideen"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Aideen",
+                    "Warp",
+                    "no_choice"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Dew",
+                    "Aideen"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

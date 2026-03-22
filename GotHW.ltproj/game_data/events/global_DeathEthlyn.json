@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathEthlyn",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Ethlyn'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Ethlyn",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "Ahhh...{br}Oh, Quan...{br}Help me... Please...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Ethlyn",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Ethlyn"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Ethlyn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathLewyn",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Lewyn'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Lewyn",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lewyn",
+                    "Urgh... I... I still have things I must do... I CANNOT die...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Lewyn",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Lewyn"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Lewyn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

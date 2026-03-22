@@ -1,0 +1,108 @@
+[
+    {
+        "name": "QuanFinnTalk",
+        "trigger": "on_talk",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Quan' and unit2.nid == 'Finn'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Quan",
+                    "Left",
+                    "Finn",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Finn, this will likely be a very long battle.{w}{br}My apologies for bringing you into it.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Finn",
+                    "I am but your humble servant, milord.{w}{br}I would go anywhere, should my master will it.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Thank you, Finn.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Finn",
+                    "Even so, I am but a page...{w}{br}It honors me to have your confidence, but I doubt I'll be of much use to you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Is that so?{w}{br}In that case, what better time than now is there for a spot of hands-on training?{w}{br}Draw, Finn!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Finn",
+                    "Yes, sir!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Quan",
+                    "Finn"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Quan",
+                    "Finn"
+                ]
+            ],
+            [
+                "change_stats",
+                [
+                    "Finn",
+                    "STR,1,SKL,1,DEF,1"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

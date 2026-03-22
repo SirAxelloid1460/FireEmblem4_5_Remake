@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathNoish",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Noish'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Noish",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Noish",
+                    "Lord Sigurd...{br}My apologies...{br}Take care of yourself...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Noish",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Noish"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Noish"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

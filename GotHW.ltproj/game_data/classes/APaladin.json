@@ -1,0 +1,127 @@
+[
+    {
+        "nid": "APaladin",
+        "name": "Paladin",
+        "desc": "Mounted knights with superior abilities.",
+        "tier": 2,
+        "movement_group": "Light Cav",
+        "promotes_from": "Cavalier",
+        "turns_into": [],
+        "tags": [
+            "Mounted"
+        ],
+        "max_level": 19,
+        "bases": {
+            "HP": 46,
+            "STR": 10,
+            "MAG": 5,
+            "SKL": 11,
+            "SPD": 11,
+            "LCK": 0,
+            "DEF": 12,
+            "RES": 7,
+            "CON": 11,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 30,
+            "MAG": 10,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 0,
+            "DEF": 30,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 2,
+            "MAG": 3,
+            "SKL": 3,
+            "SPD": 3,
+            "LCK": 0,
+            "DEF": 3,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 80,
+            "STR": 24,
+            "MAG": 20,
+            "SKL": 24,
+            "SPD": 24,
+            "LCK": 30,
+            "DEF": 24,
+            "RES": 20,
+            "CON": 11,
+            "MOV": 90
+        },
+        "learned_skills": [
+            [
+                1,
+                "Canto_Plus"
+            ]
+        ],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                126
+            ],
+            "Lance": [
+                true,
+                126
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_APaladin",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "APaladin",
+        "combat_anim_nid": "Paladin",
+        "fields": []
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightKinbois",
+        "trigger": "combat_start",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Kinbois' or unit2.nid == 'Kinbois'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Kinbois",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Kinbois",
+                    "Pointing your little stick at me?{w}{br}That's precious, that is!{w}{br}I'll cave your head right in!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Kinbois"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

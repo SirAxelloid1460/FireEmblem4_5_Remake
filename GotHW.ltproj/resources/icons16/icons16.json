@@ -1,0 +1,66 @@
+[
+    {
+        "nid": "wexp_icons",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Anima",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Axe",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Boosters",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Bow",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Consumable",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Dark",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Lance",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Light",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Neutral",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Staff",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Sword",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Valuable",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Skills",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "Affinity",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "FE5rewarp",
+        "subicon_dict": {}
+    }
+]

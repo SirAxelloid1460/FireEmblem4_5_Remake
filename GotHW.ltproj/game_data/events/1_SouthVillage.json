@@ -1,0 +1,184 @@
+[
+    {
+        "name": "SouthVillage",
+        "trigger": "Visit",
+        "level_nid": "1",
+        "condition": "region.nid == 'SouthVillage'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "OldMan3",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldMan3",
+                    "Just t'the north a here is this mighty woodland. S'called the spirit forest.{w}{br}Once upon a time, I lived there too, in this li'l hamlet deep within.{w}{br}Th' village is home to the last kin o' the dark one of old, Loptyr.{w}{br}They say it all started with Saint Maira,{w}{br}exiled by the empire for darin' to sympathize with mortal men.{w}{br}In my day, there was this gorgeous girl livin' there called Cigyun:{w}{br}the last heir o' Loptyr's bloodline, she was.{w}{br}She lived 'er life under close guard,{w}{br}the villagers wary o' lettin' the blood o' Loptyr loose into the world.{w}{br}Alas, Cigyun grew weary o' the tedious forest life an' she left it all behind,{w}{br}breakin' ancient commandments.{w}{br}A couple o' years later, she came back, 'cept now she was pregnant.{w}{br}Never said who the father was, mind.{w}{br}Before long Cigyun died, even as she gave birth t' her daughter.{w}{br}From what I 'eard, the hamlet's old prophet took 'er in and raised the girl as 'er own.{w}{br}If the little girl's still alive, she'd 'ave to be 'bout seventeen or eighteen by now...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "OldMan3",
+                    "{unit}"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.level_vars['SouthDestructible'] == 1"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['SouthDestructible'] == 2"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['SouthDestructible'] == 3"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['SouthDestructible'] == 4"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['SouthDestructible'] == 5"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['SouthDestructible'] == 6"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['SouthDestructible'] == 7"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['SouthDestructible'] == 8"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['SouthDestructible'] == 9"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "give_money",
+                [
+                    "5000"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "show_layer",
+                [
+                    "SouthClosed"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "SouthDestructible"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "SouthVillage"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

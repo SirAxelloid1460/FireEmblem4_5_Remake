@@ -1,0 +1,39 @@
+[
+    {
+        "name": "ReturnSR",
+        "trigger": null,
+        "level_nid": null,
+        "condition": "True",
+        "commands": [
+            [
+                "if",
+                [
+                    "'Return' in [region.nid for region in game.current_level.regions]"
+                ]
+            ],
+            [
+                "level_var",
+                [
+                    "ReturnLocation",
+                    "{eval:game.current_level.regions.get('Return').position}"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "move_unit",
+                [
+                    "{unit2}",
+                    "{eval:game.level_vars['ReturnLocation']}",
+                    "warp",
+                    "closest",
+                    "no_block"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20
+    }
+]

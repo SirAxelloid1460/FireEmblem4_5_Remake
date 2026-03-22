@@ -1,0 +1,88 @@
+[
+    {
+        "name": "QuanFinnTalk",
+        "trigger": "on_talk",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Quan' and unit2.nid == 'Finn'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Quan",
+                    "Left",
+                    "Finn",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Finn, these Agustrians are proving to be far worthier opponents{w}{br}than the thugs of Verdane, woudn't you say?{w}{br}For stronger enemies, what could be more fitting than a stronger weapon?{w}{br}Let's see how you fare with this.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Finn",
+                    "Is that... a Brave Lance?!{w}{br}Are you sure you want to entrust me with such a rarity?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Of course. You are House Lenster's most promising young knight.{w}{br}You are our future, and I'd sooner see you live this day.{w}{br}Arming you properly is the best I can do to help for now, so yes.{w}{br}Take this spear.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Finn",
+                    "What an honor, milord!!{br}Thank you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Quan",
+                    "Finn"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Finn",
+                    "Brave Lance"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Quan",
+                    "Finn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Charisma",
+        "name": "Charisma",
+        "desc": "Gives allies in a close area better chances of hitting and avoiding",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            1
+        ],
+        "components": [
+            [
+                "aura",
+                "Charisma_child"
+            ],
+            [
+                "aura_range",
+                3
+            ],
+            [
+                "aura_target",
+                "Ally"
+            ]
+        ]
+    }
+]

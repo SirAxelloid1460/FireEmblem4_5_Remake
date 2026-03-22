@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightMacbeth",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "(unit.nid == 'Macbeth' or unit2.nid == 'Macbeth') and check_pair('Macbeth','Lewyn') == False and (unit.team == 'player' or unit2.team == 'player')",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Macbeth",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Macbeth",
+                    "Grannvale's here? It can't be...{w}{br}What do those mercenaries think I'm paying them for!?{w}{br}Ooh... It looks like I'll have to settle this myself!!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Macbeth"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 21
+    }
+]

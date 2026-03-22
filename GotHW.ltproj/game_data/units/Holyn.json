@@ -1,0 +1,90 @@
+[
+    {
+        "nid": "Holyn",
+        "name": "Holyn",
+        "desc": "The son of the Lord of Sophara Castle in Isaach and a distant relative of Ayra.",
+        "variant": "",
+        "level": 1,
+        "klass": "PreHero",
+        "tags": [],
+        "bases": {
+            "HP": 40,
+            "STR": 14,
+            "MAG": 0,
+            "SKL": 17,
+            "SPD": 17,
+            "LCK": 4,
+            "DEF": 11,
+            "RES": 1,
+            "CON": 6,
+            "MOV": 60
+        },
+        "growths": {
+            "HP": 70,
+            "STR": 30,
+            "MAG": 5,
+            "SKL": 60,
+            "SPD": 30,
+            "LCK": 20,
+            "DEF": 20,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Steel Blade",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Luna"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                226
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "HolynPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "nid": "Phillip",
+        "name": "Phillip",
+        "desc": "One of the retainers of Lord Boldor of Heirhein Castle.",
+        "variant": "",
+        "level": 8,
+        "klass": "General",
+        "tags": [],
+        "bases": {
+            "HP": 58,
+            "STR": 15,
+            "MAG": 1,
+            "SKL": 11,
+            "SPD": 10,
+            "LCK": 0,
+            "DEF": 17,
+            "RES": 4,
+            "CON": 15,
+            "MOV": 50
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 50,
+            "SPD": 30,
+            "LCK": 40,
+            "DEF": 40,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Silver Lance",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                226
+            ],
+            "Lance": [
+                true,
+                226
+            ],
+            "Axe": [
+                true,
+                126
+            ],
+            "Bow": [
+                true,
+                126
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "PhillipPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

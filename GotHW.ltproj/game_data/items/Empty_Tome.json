@@ -1,0 +1,50 @@
+[
+    {
+        "nid": "Empty Tome",
+        "name": "Empty Tome",
+        "desc": "An ancient book.",
+        "icon_nid": "Neutral",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                0
+            ],
+            [
+                "hit",
+                0
+            ],
+            [
+                "weapon_rank",
+                "D"
+            ],
+            [
+                "weight",
+                0
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                1000
+            ]
+        ]
+    }
+]

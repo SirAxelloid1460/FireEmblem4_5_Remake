@@ -1,0 +1,94 @@
+[
+    {
+        "nid": "Lachesis",
+        "name": "Lachesis",
+        "desc": "The princess of Nordion and the younger half-sister of Eldigan.",
+        "variant": "",
+        "level": 1,
+        "klass": "Princess",
+        "tags": [],
+        "bases": {
+            "HP": 26,
+            "STR": 9,
+            "MAG": 10,
+            "SKL": 9,
+            "SPD": 13,
+            "LCK": 5,
+            "DEF": 7,
+            "RES": 9,
+            "CON": 6,
+            "MOV": 60
+        },
+        "growths": {
+            "HP": 60,
+            "STR": 50,
+            "MAG": 15,
+            "SKL": 10,
+            "SPD": 20,
+            "LCK": 40,
+            "DEF": 20,
+            "RES": 15,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Prayer Sword",
+                false
+            ],
+            [
+                "Heal",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Charisma"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                226
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                true,
+                51
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "LachesisPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

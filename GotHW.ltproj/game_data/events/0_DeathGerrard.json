@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathGerrard",
+        "trigger": "unit_death",
+        "level_nid": "0",
+        "condition": "unit.nid == 'Gerrard'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Gerrard",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Gerrard",
+                    "Too bad for you... {br}That dame of yours ain't here.{w}{br}Prince Gandolf's got her.",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Gerrard",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Gerrard"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Gerrard"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Ichival",
+        "name": "Yewfelle",
+        "desc": "Holy Bow Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        15
+                    ]
+                ]
+            ]
+        ]
+    }
+]

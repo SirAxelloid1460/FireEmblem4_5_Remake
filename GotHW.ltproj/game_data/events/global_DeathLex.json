@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathLex",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Lex'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Lex",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "I... I'm a fool, am I not?{br}...Sigurd, please...{br}Just let me go in peace...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Lex",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Lex"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Lex"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,89 @@
+[
+    {
+        "nid": "Chagall2",
+        "name": "Chagall",
+        "desc": "Arrogant and foolish king of Agustria and his father's murder suspect.",
+        "variant": null,
+        "level": 15,
+        "klass": "Baron",
+        "tags": [],
+        "bases": {
+            "HP": 70,
+            "STR": 19,
+            "MAG": 9,
+            "SKL": 14,
+            "SPD": 14,
+            "LCK": 0,
+            "DEF": 19,
+            "RES": 9,
+            "CON": 15,
+            "MOV": 50
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 50,
+            "SPD": 30,
+            "LCK": 40,
+            "DEF": 40,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Silver Blade",
+                true
+            ],
+            [
+                "Bolganone",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                226
+            ],
+            "Lance": [
+                true,
+                226
+            ],
+            "Axe": [
+                true,
+                226
+            ],
+            "Bow": [
+                true,
+                226
+            ],
+            "Staff": [
+                true,
+                226
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                true,
+                226
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "Chagall2Portrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

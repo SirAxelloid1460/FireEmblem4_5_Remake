@@ -1,0 +1,68 @@
+[
+    {
+        "nid": "Rest",
+        "name": "Rest",
+        "desc": "Removes all negative status of an ally (except stone)",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            9
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                8
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "exp",
+                50
+            ],
+            [
+                "value",
+                6600
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "restore",
+                null
+            ]
+        ]
+    }
+]

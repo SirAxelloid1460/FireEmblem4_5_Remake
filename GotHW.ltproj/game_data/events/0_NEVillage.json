@@ -1,0 +1,184 @@
+[
+    {
+        "name": "NEVillage",
+        "trigger": "Visit",
+        "level_nid": "0",
+        "condition": "region.nid == 'NorthEast'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "OldMan3",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldMan3",
+                    "Pay attention, kid! Weapons aren't created equal.{w} See, swords best axes, axes best lances, and lances best swords.{w}{br}This right here's why you've gotta use your{br}head before you blunder into battle.{w}{br}Speaking of battle, if you ever find yourself{br}hurting out there...{w} a fort is the best place to go.{w} It ain't free, mind. Every bit of health you regain there will cost five gold pieces.{w}{br}But you can't put a price on your health.",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "OldMan3",
+                    "{unit}"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.level_vars['NorthEastDestructible'] == 1"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthEastDestructible'] == 2"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthEastDestructible'] == 3"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthEastDestructible'] == 4"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthEastDestructible'] == 5"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthEastDestructible'] == 6"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthEastDestructible'] == 7"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthEastDestructible'] == 8"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['NorthEastDestructible'] == 9"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "give_money",
+                [
+                    "5000"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "show_layer",
+                [
+                    "NEClosed"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "NorthEastDestructible"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "NorthEastVillage"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

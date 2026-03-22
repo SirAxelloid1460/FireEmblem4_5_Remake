@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightGandolf",
+        "trigger": "combat_start",
+        "level_nid": "1",
+        "condition": "(unit.nid == 'Gandolf' or unit2.nid == 'Gandolf') and check_pair('Gandolf', 'Midir') == False and check_pair('Gandolf', 'Azel') == False",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Gandolf",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Gandolf",
+                    "So ya made it here, ya Grannvaleian cowards...{w}{br}I, Lord Gandolf, will finish you",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Gandolf"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 21
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "name": "DewLachesisTalk",
+        "trigger": "on_talk",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Dew' and unit2.nid == 'Lachesis'",
+        "commands": [
+            [
+                "music",
+                [
+                    "304 - Dew and Patty"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Dew",
+                    "Left",
+                    "Lachesis",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Dew",
+                    "Hey! Lachesis! They y'are!{w}{br}Check out this little beauty of a sword!{br}Thought I'd give it to ya.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "Oh? I can't say I've seen a blade so peculiar before. Does it have a name?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Dew",
+                    "It's called a Thief Sword. Wanna gut the bad guys? This thing's yer best friend.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "Er... Thank you. Although, why are you giving this to me?{w}{br}I'm hardly complaining, but surely you need a decent sword?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Dew",
+                    "Nah, I'm not bothered. There ain't any point in me keeping it.{w}{br}Let's just say it does a lot more than just stab... Heh. See ya around!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Dew",
+                    "Lachesis"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Lachesis",
+                    "Thief Sword"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Dew",
+                    "Lachesis"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Charisma_child",
+        "name": "Charisma",
+        "desc": "Gives allies in a close area better chances of hitting and avoiding",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            1
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "hit",
+                15
+            ],
+            [
+                "avoid",
+                15
+            ]
+        ]
+    }
+]

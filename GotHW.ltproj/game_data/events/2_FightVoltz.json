@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightVoltz",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "(unit.nid == 'Voltz' or unit2.nid == 'Voltz') and check_pair('Voltz','Beowulf') == False  and (unit.team == 'player' or unit2.team == 'player')",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Voltz",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Voltz",
+                    "You seem like decent folk, but a job's a job.{br}{w} Too bad.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Voltz"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 21
+    }
+]

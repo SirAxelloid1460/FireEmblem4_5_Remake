@@ -1,0 +1,48 @@
+[
+    {
+        "nid": "Torch",
+        "name": "Torch",
+        "desc": "",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            18
+        ],
+        "components": [
+            [
+                "target_tile",
+                null
+            ],
+            [
+                "status_on_hit",
+                "Torch"
+            ],
+            [
+                "uses",
+                5
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                5
+            ],
+            [
+                "exp",
+                30
+            ]
+        ]
+    }
+]

@@ -1,0 +1,187 @@
+[
+    {
+        "name": "Credits",
+        "trigger": null,
+        "level_nid": null,
+        "condition": "True",
+        "commands": [
+            [
+                "change_background",
+                [
+                    "BlackBackground"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "MORE YET TO COME",
+                    " ",
+                    "wait",
+                    "center"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "A Remake By",
+                    "Axelloid1460",
+                    "wait"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Lex Talionis Engine By",
+                    "rainlash",
+                    "wait"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Programming",
+                    "rainlash,mag,Axelloid1460,KD,Beccarte,TheeBill,LordTweed,ZessDynamite,Klokinator,rainlash,Nemid,Legendary Super Shaggy,Lorwyn Boi"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Testing",
+                    "Axelloid1460"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Map Design",
+                    "TheArkiterK,Axelloid1460"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Information Resources",
+                    "Serenes Forest,Fire Emblem Wiki,LordGlenn"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Map Sprites & Custom Class Cards",
+                    "Serenes Forest,FEuniverse,Axelloid1460,Lexou,Jirbytaylor,RobertFPY,flasuban,Tordo45,IS,DerTheVaporeon,Pikmin1211,Hypergammaspaces,L95,Someone Unknown,FEGirls,CamusZekeSirius,Rexacuse,Peerless,Alusq,WarPath,Yangfly Master,Cath,Chad,Rasdel,Agro,Yggdra,Aruka,Kenpuhu,Smug_mug,BatimaTheBat,Jeorge Reds,Cipher,Lee,Sephie,Eldrich Abomination,MeatofJustice,Leif,Nuramon,Its_Just_Jay,SamirPlayz,N426,Mikey_Seregon,StreetHero,FEGirls,Blood,Rasdel,Huichelaar,CamusZekeSirius,Seal,Mobile21,SALVAGED,Teraspark"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Additional Spriting Resources",
+                    "FEuniverse"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Custom Item Sprites",
+                    "Axelloid1460,FEuniverse"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Portrait Design",
+                    "Axelloid1460,Treasure Artwork Compilation,Melia,TheBlindArcher,Nayr,BoneSethMan,Vampire Elf,Aeorys Kirru,Blackavar,TheeBill,Renoud,Blade,Atey,Nobody,flyingace24,Dalsin,MageKnight404,Jeigan,Leo Valkirye,SquareRootOfPi,Miss Tama,Kai Shinen,Arcfalchion,Zelkami,NoetherianRing,Ruby,Sterling Glovner,Vilkalizer,Wasdye,Obsidian Daddy,TBA,Vyland"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Custom Combat Animations",
+                    "FEuniverse,Serenes Forest,Iscaneus,Nuramon,FEGirls,IS,Axelloid1460,Leo-Link,Primefusion,Seal,tristan_hollow,Greentea,Temp,helmfried,Shtick,Circleseverywhere,Rusell Clark,Maiser6,N426,Sacred War,The_Big_Dedester,Dolkar,St Jack,Feaw,Eldrich Abomination,Skitty,Swain,Wan,Black Mage,Teraspark,Kenpuhu,Aruka,eCut,Obs,Sorcress,CamusZekeSirius,Teraspark,TBA,Vilkalizer,Deranger"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "ENGLISH Writing and Translations",
+                    "Project Naga,Axelloid1460"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Music",
+                    "FE4 OST"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Additional Tools",
+                    "Python,Pygame,GIMP,Audacity,Freemake Video Converter 4.0.0,Sublime Text Editor,IDLE"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Disclaimer",
+                    "Many assets are copyrighted or trademarked by Nintendo and their respective owners. This Fire Emblem 4 remake is a non-profit fangame, released for free, and developed using Python, Pygame and the Lex Talionis engine.",
+                    "wait",
+                    "center"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "SPECIAL THANKS TO",
+                    "Beccarte for tolerating my constants 'Help' cries and being such a tremendous programmer",
+                    "wait",
+                    "center"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    " ",
+                    "Vyland for his constant help with the mouth and blinking animations",
+                    "wait",
+                    "center"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "THANKS FOR HAVING PLAYED",
+                    "-------------------------------------------------------------",
+                    "wait",
+                    "center"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "6000"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20
+    }
+]

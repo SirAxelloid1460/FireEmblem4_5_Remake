@@ -1,0 +1,82 @@
+[
+    {
+        "nid": "Mjolnir",
+        "name": "Mjolnir",
+        "desc": "Holy thunder of the crusader Thrud.",
+        "icon_nid": "Anima",
+        "icon_index": [
+            0,
+            8
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                25
+            ],
+            [
+                "hit",
+                90
+            ],
+            [
+                "weapon_type",
+                "Anima"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                50
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                12
+            ],
+            [
+                "status_on_equip",
+                "Mjolnir"
+            ],
+            [
+                "crit",
+                30
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                2
+            ],
+            [
+                "prf_tags",
+                [
+                    "ThrudHeir"
+                ]
+            ]
+        ]
+    }
+]

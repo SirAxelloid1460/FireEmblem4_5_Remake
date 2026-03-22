@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathSandima",
+        "trigger": "unit_death",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Sandima'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Sandima",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sandima",
+                    "Archbishop Manfroy...{br}F-forgive...Me...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Sandima",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Sandima"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Sandima"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

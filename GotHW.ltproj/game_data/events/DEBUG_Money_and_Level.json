@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Money and Level",
+        "trigger": "level_start",
+        "level_nid": "DEBUG",
+        "condition": "True",
+        "commands": [
+            [
+                "autolevel_to",
+                [
+                    "Tailtiu",
+                    "3",
+                    "fixed"
+                ]
+            ],
+            [
+                "autolevel_to",
+                [
+                    "Claude",
+                    "5",
+                    "fixed"
+                ]
+            ],
+            [
+                "autolevel_to",
+                [
+                    "Brigid",
+                    "7",
+                    "fixed"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

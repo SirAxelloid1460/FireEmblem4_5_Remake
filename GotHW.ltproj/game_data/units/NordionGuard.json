@@ -1,0 +1,89 @@
+[
+    {
+        "nid": "NordionGuard",
+        "name": "Cross Knight",
+        "desc": "Elite Cavaliers and Paladins that make up the main body of the Nordion army.",
+        "variant": "",
+        "level": 20,
+        "klass": "Cavalier",
+        "tags": [],
+        "bases": {
+            "HP": 50,
+            "STR": 13,
+            "MAG": 2,
+            "SKL": 12,
+            "SPD": 12,
+            "LCK": 0,
+            "DEF": 12,
+            "RES": 2,
+            "CON": 10,
+            "MOV": 80
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 30,
+            "SPD": 40,
+            "LCK": 10,
+            "DEF": 50,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Steel Sword",
+                false
+            ],
+            [
+                "Javelin",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                126
+            ],
+            "Lance": [
+                true,
+                51
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "NordionGuardPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

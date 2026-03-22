@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathMidir",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Midir'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Midir",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Midir",
+                    "Ohh...{br}My apologies, Lord Sigurd...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Midir",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Midir"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Midir"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

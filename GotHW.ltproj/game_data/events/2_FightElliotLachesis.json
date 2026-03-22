@@ -1,0 +1,48 @@
+[
+    {
+        "name": "FightElliotLachesis",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "check_pair('Elliot','Lachesis')",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Elliot",
+                    "Left",
+                    "Lachesis",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Elliot",
+                    "Princess Lachesis...{w}{br}This has gone far enough.{br}If you'll become my wife, I'll spare you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "You filthy...! Become your wife!?{br}I'd rather die!!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Elliot",
+                    "Lachesis"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]
