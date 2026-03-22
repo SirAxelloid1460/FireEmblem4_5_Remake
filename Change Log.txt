@@ -1,0 +1,111 @@
+CHANGE LOG
+############################################################################################################################################################
+v1.3.15.28
+- "Chapter 2x The Corair Isles" and "Chapter 3 The Gates of Kelbeth" added, 2 new playable character and 2 Boss
+- Fixed Bug with house events on Chapter 1
+- Added tiny gold rewards for saving houses and villages
+- Safy has been barely buffed on her growths
+- Safy, Lifis and Shiva has also been buffed due to the new method of autoleveling from Level 1 to their respective starting levels
+
+############################################################################################################################################################
+v1.2.2.2
+- "Chapter 2 The Coastal Village" added, 1 new playable character and 1 Boss
+- Ronan has been buffed a bit, his lowest stats are now as high as his class standard's and his growths in MAG and STR have been switched
+- Fixed Visit events on Chapter 1, now houses can be visited
+
+############################################################################################################################################################
+v1.1.7.8
+- "Chapter 1 The Warrior of Fiana" added, 6 new playable characters and 1 Boss!
+- Wrath-skilled units are now more deadly when they trigger the skill
+- Fixed Spell animation for Flame Sword
+
+############################################################################################################################################################
+v0.3.97.85
+
+- "Chapter 2 Crisis in Agustria" added, 6 new playable characters and 4 Bosses!
+- Lightly Buffed Player (and recruitable) Units' stats
+- Canto+ on tier 1 units changed to normal Canto, only tier 2 and 3 cavalry and fliers have Canto+ now
+- Added Blacksmith menu at the Preparation Base
+- Added new event to recruit Holyn
+- All movement stats has been set graphically to their normal values (no more 90 movement points for cavalry or so)
+- Nerfed Eva, Eve and Alva's Attack and AttackSpeed, for they could survive Heirhein's siege without getting damaged, now they'll get hurt
+- Buffed Heirhein units, for Dew could kill them almost alone, now they are stronger but may give much more experience
+- Buffed Lachesis, Lewyn and Sylvia, for they where too weak even against Chapter 2 Bandits
+- Lex's Axe Lake event changed from Search Event to Wait Event
+- Changed Arden's Pursuit Ring event (and respective dialogue and item) to an increment of 2 in his MOV stat, for Pursuit is no more, this way he'll be more useful in battle being able to go to the vanguard for once
+- Changed AI Neutral enemies next to Anphony from retreating to Anphony and then attacking to directly attacking
+- Added all classes left with their map and battle animations (or placeholder animations)
+- Added "Holy" weapon experience level for Sigurd, Quan and all Crusader Heirs
+- Added Charge, Ambush and many other skills with their original Icons
+- Fixed weapons crit stat showing
+- Swapped Noish and Alec base SKL and scaling percentages so Noish can do some better use of his Critical Skill, without getting too broken (13 crit chance at Prologue, while Ethlyn gets 26 because of the Slim Sword)
+- New not-so-provisional Portraits (community- and self-made, many still without mouth animations), yet still WIP
+- New Mug Design
+- New Animation for Sigurd (and LordKnights) without Tyrfing
+- Villages finally give the corresponding gold to their destruction level
+- Base Promotions and Language are not working yet in the new LT, will be added in later versions
+- Deleted Spanish and German folders, languages will be re-added in later versions when I find a way to
+- Deleted Intro, new LT does not yet support the event that triggered it, and it gave too many loading time problems
+- Max Level for Tier 2 from 15 to 20, for promotion resets the unit's level, units now will autopromote when hitting level 20, but without getting the stats up from levelling from 19 to 20, they will simply autopromote and get the stats update from the class upgrade
+- Added some Class and Unit Descriptions missing, still working in the ones left
+- Added missing Magic Combat Animations (self-formated so they may show errors, please tell me if so)
+- Fixed animations not showing up for magic classes
+- Buffed Forts now regen 75% HP
+- Buffed Castle regen from 15% HP to 20% HP  but gives 20 Avoid instead of 30
+- Buffed Heal Wands EXP gain, now healers will get extra exp for each HP point healed
+- Buffed Elite Skill, now gives also an amplification of 10% to the growth rates
+- Elite Skill Description updated
+- Experience will again depend on level and tier difference, so Sigurd and Quan (for example) will be getting way less experience from each fighting tier 1 units, but Finn (as the lowest starting level of tier 1 units) will level up way easier and quicker
+- Fixed Bug with Bandits AI
+
+############################################################################################################################################################
+v0.2.3.1
+
+- "Chapter 1 The Spirit Forest's Maiden" added, 5 new playable characters and 3 Bosses!
+- Nerfed Kinbois and Gandolf, for they were too difficult to kill or at least survive one battle against them. (Be careful, they still can kill you easily XD)
+- Nerfed Critical skill (Noish and Ethlyn were like: BasicAttack, Critical, BasicAttack, Critical, Critical, Basic Attack.)
+- Added Support Bonus and weapon A Rank Bonus to critical rate
+- New Provisional Portraits (some with mouth movement, and most with some lack of consistency between their styles)
+- Changed Lex' Lake event --> In SNES he had a Dialogue with the Lake Lady and due to his honesty he got a Brave Axe; Now that Dialogue has a Question with 3 options to choose to prove the player's honesty, if they are they get the Brave Axe, if not they lose the Iron Axe
+- Preparation-Base System added instead of the Castle-Town System
+- AutoRepairs with AutoCharge when entering the Preparation-Base (Make sure you do not spend to much money elsewhere 7u7)
+- Fixed Gerrard not displaying info pre-battle.
+- Fixed Bug where Sigurd got the Regeneration Skill permanently after leaving a seized castle
+- Added Languages Switch. Now the game is playable in English (All engine), Spanish and German (Both only for Dialogues, Item and Class Names and Descriptions).
+
+############################################################################################################################################################
+v0.1.5.3
+
+- Added the intro pre-title screen. Some Minimap Fixes
+
+############################################################################################################################################################
+v0.1.4 to 1.5.2
+
+- Current Portraits are Provisional, for I'm still working on some new more GBA ones based on the Original Artworks.
+
+- v0.1.4.3 Fixed Azel, Midir, Gandolf and others stats. Fixed Center-East Village crashing when visiting. Fixed (hopefully) Gerrard battle quotes display. Fixed executable version
+- v0.1.4.4 Items and battle menu’s portraits fixed.
+
+- "Prologue" added, with 10 playable characters and 2 Bosses!
+- GBA Skills System instead of original (Most turned into global pasives from SNES to GBA)
+- Re-balanced weapons (averaged Might, Weight, Hit %, Rank Level, Value and Uses), classes (averaged Stats from FE4 units and FE5 units), stats, items and skills!
+- Original Sound Tracks from Fire Emblem 4 and (later) Fire Emblem 5!
+- HP bars on map!
+- Simplified Supports System (taken to GBA style) and “relationships”!
+- Merged some conceptually repeated classes* (stats averaged):
+	- Lance Armour + Sword Armour + Axe Armour + Bow Armour ------------> Armour (now can use all this 4 weapons)
+	- Archer + Bow Fighter + Hunter ------------------------------------------------------------> Archer
+	- Mage + Fire Mage + Thunder Mage + Wind Mage ------------------------------> Mage
+	- Long Arch + Poison Arch + Killer Arch + Iron Arch + Great Arch ---------> Ballista (poison, killer and iron are now items)
+	- Axe Knight, Lance Knight, Archer Knight, Free Knight and Social Knight (Cavalier) are exceptions due to they have their own and specific promotion classes
+  Total Reduction -> From 72 classes to 60
+- Merged Fire, Thunder and Wind magic into Anima magic
+- Renamed some (not all of them for lore purpouses) classes to its GBA versions:
+	- Junior Lord ------------------------> Lord
+	- Social Knight ---------------------> Cavalier
+	- Forrest -------------------------------> Hero
+	- Thief Fighter ----------------------> Rogue
+	- *Dark Mage -----------------------> Dark Sage (is much more powerful than a normal mage to be called it’s dark version, it’s more relative to the sage itself) (Not in GBA but you get the idea XD)
+- Units may auto-promote when reached Lvl.15(tier 0)/Lvl.30(tier1)
+- No more Individual Storage, Individual Money and Only Couple Trades, now all units can trade with each other and the storage is shared by all units. Money is general, and adding new characters to your army gives you a certain amount of money. (Just as in GBA)
+- There are now 2 difficulties: Hard and Elite (still W.I.P though)
