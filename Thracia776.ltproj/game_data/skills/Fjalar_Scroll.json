@@ -1,0 +1,35 @@
+[
+    {
+        "nid": "Fjalar Scroll",
+        "name": "Fjalar Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "STR",
+                        5
+                    ],
+                    [
+                        "MAG",
+                        5
+                    ],
+                    [
+                        "SKL",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    }
+]

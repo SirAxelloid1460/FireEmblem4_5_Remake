@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Vendor",
+        "trigger": "Vendor",
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "shop",
+                [
+                    "{unit}",
+                    "Vulnerary",
+                    "vendor"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20
+    }
+]

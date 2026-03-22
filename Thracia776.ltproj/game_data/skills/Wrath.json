@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Wrath",
+        "name": "Wrath",
+        "desc": "User will perform more accurate critical attacks more often when their HP is below 50%",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            2
+        ],
+        "components": [
+            [
+                "condition",
+                "unit.get_hp() <= unit.get_max_hp() / 2"
+            ],
+            [
+                "alternate_accuracy_formula",
+                "HIT_WRATH"
+            ],
+            [
+                "alternate_crit_accuracy_formula",
+                "HIT_WRATH"
+            ]
+        ]
+    }
+]

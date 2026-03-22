@@ -1,0 +1,76 @@
+[
+    {
+        "nid": "Killer Sword",
+        "name": "Killer Sword",
+        "desc": "A sword so sharp that cuts when only by watching it",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            27
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                9
+            ],
+            [
+                "hit",
+                80
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                30
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "crit",
+                30
+            ],
+            [
+                "value",
+                3900
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

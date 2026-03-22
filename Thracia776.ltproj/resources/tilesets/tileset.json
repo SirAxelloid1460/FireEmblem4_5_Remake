@@ -1,0 +1,207 @@
+[
+    {
+        "nid": "GradoKeep",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "MapSprite",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T1",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T2",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T2x",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T3",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T4",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T4x",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T5",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T6",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T7",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T8",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T8x",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T9",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T10",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T11",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T11x",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T12",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T12x",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T13",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T14",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T14x",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T15",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T16A",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T16B",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T17A",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T17B",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T18",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T19",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T20",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T21",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T21x",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T22",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T23",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T24",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "T24x",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "TF",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "WorldMap",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "ChronologyBackground",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "Thracia777",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "Thracia778",
+        "terrain_grid": {},
+        "autotiles": {}
+    }
+]

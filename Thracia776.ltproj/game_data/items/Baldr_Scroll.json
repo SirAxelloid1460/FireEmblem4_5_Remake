@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Baldr Scroll",
+        "name": "Baldr Scroll",
+        "desc": "",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            18
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Baldr Scroll"
+            ]
+        ]
+    }
+]

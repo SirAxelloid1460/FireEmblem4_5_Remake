@@ -1,0 +1,394 @@
+[
+    {
+        "nid": "CritSpark",
+        "frame_x": 3,
+        "frame_y": 5,
+        "num_frames": 15,
+        "speed": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+    },
+    {
+        "nid": "BlueDot",
+        "frame_x": 1,
+        "frame_y": 8,
+        "num_frames": 8,
+        "speed": "80"
+    },
+    {
+        "nid": "RedDot",
+        "frame_x": 1,
+        "frame_y": 8,
+        "num_frames": 8,
+        "speed": "80"
+    },
+    {
+        "nid": "HitSpark",
+        "frame_x": 3,
+        "frame_y": 5,
+        "num_frames": 14,
+        "speed": "2,2,2,2,2,2,1,1,1,1,1,1,1,1"
+    },
+    {
+        "nid": "LevelUpArrow",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelDownArrow",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelUpBattle",
+        "frame_x": 5,
+        "frame_y": 11,
+        "num_frames": 52,
+        "speed": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1"
+    },
+    {
+        "nid": "LevelUpMap",
+        "frame_x": 5,
+        "frame_y": 5,
+        "num_frames": 25,
+        "speed": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,44"
+    },
+    {
+        "nid": "LevelUpNumber1",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelUpNumber2",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelUpNumber3",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelUpNumber4",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelUpNumber5",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelUpNumber6",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelUpNumber7",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelDownNumber1",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelDownNumber2",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelDownNumber3",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelDownNumber4",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelDownNumber5",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelDownNumber6",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "LevelDownNumber7",
+        "frame_x": 10,
+        "frame_y": 1,
+        "num_frames": 10,
+        "speed": "32"
+    },
+    {
+        "nid": "MapBigHealTrans",
+        "frame_x": 5,
+        "frame_y": 4,
+        "num_frames": 16,
+        "speed": "24"
+    },
+    {
+        "nid": "MapMediumHealTrans",
+        "frame_x": 5,
+        "frame_y": 4,
+        "num_frames": 16,
+        "speed": "24"
+    },
+    {
+        "nid": "MapMiss",
+        "frame_x": 1,
+        "frame_y": 13,
+        "num_frames": 13,
+        "speed": "1,1,1,1,1,1,1,1,1,10,3,3,3"
+    },
+    {
+        "nid": "MapNoDamage",
+        "frame_x": 1,
+        "frame_y": 12,
+        "num_frames": 12,
+        "speed": "1,1,1,1,1,1,1,1,10,3,3,3"
+    },
+    {
+        "nid": "MapSmallHealTrans",
+        "frame_x": 5,
+        "frame_y": 4,
+        "num_frames": 16,
+        "speed": "24"
+    },
+    {
+        "nid": "MissBlue",
+        "frame_x": 5,
+        "frame_y": 4,
+        "num_frames": 20,
+        "speed": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,23"
+    },
+    {
+        "nid": "MissRed",
+        "frame_x": 5,
+        "frame_y": 4,
+        "num_frames": 20,
+        "speed": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,23"
+    },
+    {
+        "nid": "MissGreen",
+        "frame_x": 5,
+        "frame_y": 4,
+        "num_frames": 20,
+        "speed": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,23"
+    },
+    {
+        "nid": "NoDamageBlue",
+        "frame_x": 5,
+        "frame_y": 5,
+        "num_frames": 25,
+        "speed": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,48"
+    },
+    {
+        "nid": "NoDamageRed",
+        "frame_x": 5,
+        "frame_y": 5,
+        "num_frames": 25,
+        "speed": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,48"
+    },
+    {
+        "nid": "NoDamageGreen",
+        "frame_x": 5,
+        "frame_y": 5,
+        "num_frames": 25,
+        "speed": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,48"
+    },
+    {
+        "nid": "StatUpSpark",
+        "frame_x": 11,
+        "frame_y": 1,
+        "num_frames": 11,
+        "speed": "32"
+    },
+    {
+        "nid": "Snag",
+        "frame_x": 5,
+        "frame_y": 13,
+        "num_frames": 64,
+        "speed": "16"
+    },
+    {
+        "nid": "MapStun",
+        "frame_x": 5,
+        "frame_y": 2,
+        "num_frames": 7,
+        "speed": "150"
+    },
+    {
+        "nid": "MapStatDecrease",
+        "frame_x": 11,
+        "frame_y": 1,
+        "num_frames": 11,
+        "speed": "150"
+    },
+    {
+        "nid": "OverchargeAura",
+        "frame_x": 1,
+        "frame_y": 3,
+        "num_frames": 3,
+        "speed": "150"
+    },
+    {
+        "nid": "Warp",
+        "frame_x": 18,
+        "frame_y": 1,
+        "num_frames": 18,
+        "speed": "25"
+    },
+    {
+        "nid": "Swoosh",
+        "frame_x": 6,
+        "frame_y": 1,
+        "num_frames": 6,
+        "speed": "50"
+    },
+    {
+        "nid": "MapSpiritbane",
+        "frame_x": 5,
+        "frame_y": 4,
+        "num_frames": 20,
+        "speed": "24"
+    },
+    {
+        "nid": "MapSilence",
+        "frame_x": 4,
+        "frame_y": 1,
+        "num_frames": 4,
+        "speed": "150"
+    },
+    {
+        "nid": "MapProvoke",
+        "frame_x": 3,
+        "frame_y": 1,
+        "num_frames": 3,
+        "speed": "150"
+    },
+    {
+        "nid": "MapPoison",
+        "frame_x": 5,
+        "frame_y": 2,
+        "num_frames": 8,
+        "speed": "150"
+    },
+    {
+        "nid": "MapPoisonShock",
+        "frame_x": 5,
+        "frame_y": 2,
+        "num_frames": 9,
+        "speed": "48"
+    },
+    {
+        "nid": "MapFrostbite",
+        "frame_x": 11,
+        "frame_y": 1,
+        "num_frames": 11,
+        "speed": "150"
+    },
+    {
+        "nid": "MapFlying",
+        "frame_x": 3,
+        "frame_y": 3,
+        "num_frames": 9,
+        "speed": "150"
+    },
+    {
+        "nid": "MapBerserk",
+        "frame_x": 5,
+        "frame_y": 2,
+        "num_frames": 9,
+        "speed": "150"
+    },
+    {
+        "nid": "AOE_Blizzard",
+        "frame_x": 12,
+        "frame_y": 1,
+        "num_frames": 12,
+        "speed": "32"
+    },
+    {
+        "nid": "AOE_Fireball",
+        "frame_x": 12,
+        "frame_y": 1,
+        "num_frames": 12,
+        "speed": "32"
+    },
+    {
+        "nid": "AOE_Mend",
+        "frame_x": 12,
+        "frame_y": 1,
+        "num_frames": 12,
+        "speed": "32"
+    },
+    {
+        "nid": "AOE_Meteor",
+        "frame_x": 12,
+        "frame_y": 1,
+        "num_frames": 12,
+        "speed": "32"
+    },
+    {
+        "nid": "AOE_Sandblast",
+        "frame_x": 12,
+        "frame_y": 1,
+        "num_frames": 12,
+        "speed": "32"
+    },
+    {
+        "nid": "AOE_Rally",
+        "frame_x": 12,
+        "frame_y": 1,
+        "num_frames": 12,
+        "speed": "32"
+    },
+    {
+        "nid": "AOE_Reinforce",
+        "frame_x": 12,
+        "frame_y": 1,
+        "num_frames": 12,
+        "speed": "32"
+    },
+    {
+        "nid": "AOE_Wyrmsfire",
+        "frame_x": 12,
+        "frame_y": 1,
+        "num_frames": 12,
+        "speed": "32"
+    }
+]

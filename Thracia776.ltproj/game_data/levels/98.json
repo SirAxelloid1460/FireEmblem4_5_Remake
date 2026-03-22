@@ -1,0 +1,30 @@
+[
+    {
+        "nid": "98",
+        "name": "More yet to come",
+        "tilemap": "MTC--WIP",
+        "bg_tilemap": null,
+        "party": "LeafParty",
+        "music": {
+            "player_phase": null,
+            "enemy_phase": null,
+            "other_phase": null,
+            "enemy2_phase": null,
+            "player_battle": null,
+            "enemy_battle": null,
+            "other_battle": null,
+            "enemy2_battle": null
+        },
+        "objective": {
+            "simple": "",
+            "win": "",
+            "loss": ""
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "units": [],
+        "regions": [],
+        "unit_groups": []
+    }
+]

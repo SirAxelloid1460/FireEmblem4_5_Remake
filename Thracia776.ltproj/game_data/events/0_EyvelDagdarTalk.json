@@ -1,0 +1,75 @@
+[
+    {
+        "name": "EyvelDagdarTalk",
+        "trigger": "on_talk",
+        "level_nid": "0",
+        "condition": "unit.nid == 'Eyvel' and unit2.nid == 'Dagdar'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Eyvel",
+                    "Left",
+                    "Dagdar",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eyvel",
+                    "Dagdar!? You... came to fight with us?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Dagdar",
+                    "Eyvel! Does me heart good to see you in one piece!{w}{br}Listen, ya have any idea {w}why the Empire would come all the way out here?{w}{br}It have anything to do {br}with... the boy?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eyvel",
+                    "Yeah. The little Lord Leif, he's... {w}he's not just some nobleman.{w}{br}He's the heir of House Leonster.{w}{br}I've been helping him hide from the Empire.{w}{br}I'm sorry... I shouldn't have kept it from you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Dagdar",
+                    "Mm, I figured as much.{w}{br}Well, no use worryin' about it now.{w}{br}Long as I get to cut down{w}{br}some of those Imperial dastards meself, we're even.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Eyvel",
+                    "Dagdar"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Eyvel",
+                    "Dagdar"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

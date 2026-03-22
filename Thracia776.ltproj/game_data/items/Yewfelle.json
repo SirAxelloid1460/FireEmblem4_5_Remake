@@ -1,0 +1,86 @@
+[
+    {
+        "nid": "Yewfelle",
+        "name": "Yewfelle",
+        "desc": "Holy Bow used by crusader Ulir.",
+        "icon_nid": "Bow",
+        "icon_index": [
+            0,
+            10
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                30
+            ],
+            [
+                "hit",
+                70
+            ],
+            [
+                "weapon_type",
+                "Bow"
+            ],
+            [
+                "uses",
+                50
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                13
+            ],
+            [
+                "crit",
+                15
+            ],
+            [
+                "status_on_equip",
+                "Ichival"
+            ],
+            [
+                "effective",
+                0
+            ],
+            [
+                "effective_tag",
+                []
+            ],
+            [
+                "min_range",
+                2
+            ],
+            [
+                "max_range",
+                2
+            ],
+            [
+                "prf_tags",
+                [
+                    "UlirHeir"
+                ]
+            ]
+        ]
+    }
+]

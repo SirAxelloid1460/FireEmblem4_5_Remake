@@ -1,0 +1,94 @@
+[
+    {
+        "nid": "Mareeta",
+        "name": "Mareeta",
+        "desc": "Adoptive daughter of Eyvel and a naturally gifted swordfigther of the Fiana Freeblades.",
+        "variant": "",
+        "level": 2,
+        "klass": "Swordfighter",
+        "tags": [],
+        "bases": {
+            "HP": 23,
+            "STR": 4,
+            "MAG": 1,
+            "SKL": 8,
+            "SPD": 13,
+            "LCK": 7,
+            "DEF": 3,
+            "RES": 4,
+            "CON": 6,
+            "MOV": 60
+        },
+        "growths": {
+            "HP": 65,
+            "STR": 60,
+            "MAG": 15,
+            "SKL": 75,
+            "SPD": 80,
+            "LCK": 60,
+            "DEF": 20,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Mareeta's Sword",
+                false
+            ],
+            [
+                "Vulnerary",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Luna"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                51
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "MareetaPortrait",
+        "affinity": "Light",
+        "fields": []
+    }
+]

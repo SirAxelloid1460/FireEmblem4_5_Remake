@@ -1,0 +1,31 @@
+[
+    {
+        "nid": "Blaggi Scroll",
+        "name": "Blaggi Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "STR",
+                        -10
+                    ],
+                    [
+                        "MAG",
+                        10
+                    ],
+                    [
+                        "LCK",
+                        30
+                    ]
+                ]
+            ]
+        ]
+    }
+]

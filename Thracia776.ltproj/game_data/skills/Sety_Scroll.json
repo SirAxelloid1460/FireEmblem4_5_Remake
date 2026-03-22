@@ -1,0 +1,31 @@
+[
+    {
+        "nid": "Sety Scroll",
+        "name": "Sety Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            6
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "HP",
+                        -10
+                    ],
+                    [
+                        "MAG",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        30
+                    ]
+                ]
+            ]
+        ]
+    }
+]

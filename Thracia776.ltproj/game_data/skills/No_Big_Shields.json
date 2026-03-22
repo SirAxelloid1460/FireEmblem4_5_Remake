@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "No Big Shields",
+        "name": "No Big Shields",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ]
+        ]
+    }
+]

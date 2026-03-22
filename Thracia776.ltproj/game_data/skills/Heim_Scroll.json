@@ -1,0 +1,31 @@
+[
+    {
+        "nid": "Heim Scroll",
+        "name": "Heim Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "MAG",
+                        30
+                    ],
+                    [
+                        "LCK",
+                        10
+                    ],
+                    [
+                        "DEF",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    }
+]

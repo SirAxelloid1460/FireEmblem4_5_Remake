@@ -1,0 +1,76 @@
+[
+    {
+        "nid": "Great Lance",
+        "name": "Great Lance",
+        "desc": "",
+        "icon_nid": "Lance",
+        "icon_index": [
+            0,
+            10
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                18
+            ],
+            [
+                "hit",
+                60
+            ],
+            [
+                "weapon_type",
+                "Lance"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                20
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                18
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                2200
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

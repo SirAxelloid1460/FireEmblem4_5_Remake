@@ -1,0 +1,66 @@
+[
+    {
+        "name": "House6B",
+        "trigger": "Visit",
+        "level_nid": "0",
+        "condition": "region.nid == 'House6' and unit.nid != 'Halvan'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "House"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "YoungLady2",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "YoungLady2",
+                    "Hey, hey, have you seen my big brother Halvan?{w}{br}He's got me awful scared...{w}{br}I hope he's all right...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "YoungLady2",
+                    "{unit}"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "has_finished",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20
+    }
+]

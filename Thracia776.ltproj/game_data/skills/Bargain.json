@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Bargain",
+        "name": "Bargain",
+        "desc": "Can buy items at reduced prices.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            1
+        ],
+        "components": [
+            [
+                "change_buy_price",
+                0.49999999999999994
+            ]
+        ]
+    }
+]

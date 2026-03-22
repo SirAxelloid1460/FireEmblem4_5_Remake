@@ -1,0 +1,78 @@
+[
+    {
+        "nid": "Killer-Arch",
+        "name": "Killer-Arch",
+        "desc": "Improved Ballista Arch. Letally Precise",
+        "icon_nid": "Bow",
+        "icon_index": [
+            0,
+            14
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                10
+            ],
+            [
+                "hit",
+                65
+            ],
+            [
+                "weapon_type",
+                "Bow"
+            ],
+            [
+                "uses",
+                255
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                30
+            ],
+            [
+                "crit",
+                20
+            ],
+            [
+                "value",
+                68850
+            ],
+            [
+                "min_range",
+                3
+            ],
+            [
+                "max_range",
+                10
+            ],
+            [
+                "prf_tags",
+                [
+                    "Ballistae"
+                ]
+            ]
+        ]
+    }
+]

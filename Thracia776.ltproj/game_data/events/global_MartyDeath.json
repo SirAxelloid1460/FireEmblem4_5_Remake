@@ -1,0 +1,35 @@
+[
+    {
+        "name": "MartyDeath",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Marty'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Marty",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Marty",
+                    "Man... Why me? Ugh...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Marty"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

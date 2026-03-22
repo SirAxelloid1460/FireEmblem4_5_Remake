@@ -1,0 +1,48 @@
+[
+    {
+        "nid": "Knight Proof",
+        "name": "Knight's Proof",
+        "desc": "Promotes base class units that have reached their max level to an advanced class",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            10
+        ],
+        "components": [
+            [
+                "usable",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "usable_in_base",
+                null
+            ],
+            [
+                "value",
+                10000
+            ],
+            [
+                "promote",
+                null
+            ]
+        ]
+    }
+]

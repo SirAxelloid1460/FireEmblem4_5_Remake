@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Magic Ring",
+        "name": "Magic Ring",
+        "desc": "Grants Magic +5.",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            5
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Magic Ring"
+            ],
+            [
+                "value",
+                2000
+            ]
+        ]
+    }
+]

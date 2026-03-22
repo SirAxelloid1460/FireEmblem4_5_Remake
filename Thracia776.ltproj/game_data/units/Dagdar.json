@@ -1,0 +1,94 @@
+[
+    {
+        "nid": "Dagdar",
+        "name": "Dagdar",
+        "desc": "Leader of the reformed Mount Violdrake Bandits and the father of Tanya.",
+        "variant": "",
+        "level": 1,
+        "klass": "Warrior",
+        "tags": [],
+        "bases": {
+            "HP": 44,
+            "STR": 16,
+            "MAG": 1,
+            "SKL": 11,
+            "SPD": 13,
+            "LCK": 1,
+            "DEF": 13,
+            "RES": 9,
+            "CON": 13,
+            "MOV": 70
+        },
+        "growths": {
+            "HP": 15,
+            "STR": 10,
+            "MAG": 5,
+            "SKL": 10,
+            "SPD": 10,
+            "LCK": 30,
+            "DEF": 10,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Hammer",
+                false
+            ],
+            [
+                "Hand Axe",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Charge"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                226
+            ],
+            "Bow": [
+                false,
+                51
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "DagdarPortrait",
+        "affinity": "Ice",
+        "fields": []
+    }
+]

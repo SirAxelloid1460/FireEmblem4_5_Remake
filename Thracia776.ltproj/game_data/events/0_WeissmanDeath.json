@@ -1,0 +1,35 @@
+[
+    {
+        "name": "WeissmanDeath",
+        "trigger": "unit_death",
+        "level_nid": "0",
+        "condition": "unit.nid == 'Weissman'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Weissman",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Weissman",
+                    "D-Damn... You'll... live to regret this...{w}{br}all of you...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Weissman"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

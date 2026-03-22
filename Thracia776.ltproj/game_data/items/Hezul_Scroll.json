@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Hezul Scroll",
+        "name": "Hezul Scroll",
+        "desc": "",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            19
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Hezul Scroll"
+            ]
+        ]
+    }
+]

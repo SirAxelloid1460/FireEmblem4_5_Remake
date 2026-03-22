@@ -1,0 +1,36 @@
+[
+    {
+        "nid": "Broken Staff",
+        "name": "Broken Staff",
+        "desc": "",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            19
+        ],
+        "components": [
+            [
+                "weight",
+                7
+            ],
+            [
+                "uses",
+                0
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                0
+            ]
+        ]
+    }
+]

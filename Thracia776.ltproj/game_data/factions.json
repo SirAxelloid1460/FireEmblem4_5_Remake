@@ -1,0 +1,62 @@
+[
+    {
+        "nid": "Nature",
+        "name": "Nature",
+        "desc": "",
+        "icon_nid": "BlankEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Loptyr",
+        "name": "Loptyr",
+        "desc": "",
+        "icon_nid": "LoptyrEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Thracia",
+        "name": "Thracia",
+        "desc": "",
+        "icon_nid": "ThraciaEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Player",
+        "name": "Player",
+        "desc": "",
+        "icon_nid": "PlayerEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Ally",
+        "name": "Ally",
+        "desc": "",
+        "icon_nid": "AllyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Manster",
+        "name": "Manster",
+        "desc": "",
+        "icon_nid": "MansterEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    }
+]

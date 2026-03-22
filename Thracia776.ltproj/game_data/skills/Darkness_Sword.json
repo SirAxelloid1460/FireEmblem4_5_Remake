@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Darkness Sword",
+        "name": "Darkness Sword",
+        "desc": "Doubles damage done and halves received",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            34
+        ],
+        "components": [
+            [
+                "damage_multiplier",
+                2.0000000000000013
+            ],
+            [
+                "resist_multiplier",
+                0.5
+            ]
+        ]
+    }
+]

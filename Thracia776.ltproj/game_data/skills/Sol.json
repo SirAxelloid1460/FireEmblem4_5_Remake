@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Sol",
+        "name": "Sun",
+        "desc": "SKL%. to recover HP equal to damage dealt to enemy.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            1
+        ],
+        "components": [
+            [
+                "proc_rate",
+                "SKILL"
+            ],
+            [
+                "attack_proc",
+                "Sol_proc"
+            ]
+        ]
+    }
+]

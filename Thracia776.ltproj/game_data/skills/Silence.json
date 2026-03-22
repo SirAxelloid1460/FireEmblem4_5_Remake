@@ -1,0 +1,30 @@
+[
+    {
+        "nid": "Silence",
+        "name": "Silence",
+        "desc": "Unit cannot use magic.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            3
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "cannot_use_magic_items",
+                null
+            ],
+            [
+                "time",
+                5
+            ],
+            [
+                "display_skill_icon_in_combat",
+                null
+            ]
+        ]
+    }
+]

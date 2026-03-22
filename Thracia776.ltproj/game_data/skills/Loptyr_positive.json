@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Loptyr_positive",
+        "name": "Loptyr_positive",
+        "desc": "Unholy Dark Magic Skill.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            6
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        5
+                    ],
+                    [
+                        "RES",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    }
+]

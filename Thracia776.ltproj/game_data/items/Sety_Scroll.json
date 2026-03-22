@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Sety Scroll",
+        "name": "Sety Scroll",
+        "desc": "",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            26
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Sety Scroll"
+            ]
+        ]
+    }
+]

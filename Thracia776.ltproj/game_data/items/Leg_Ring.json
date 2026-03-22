@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Leg Ring",
+        "name": "Leg Ring",
+        "desc": "Increases Movement Capacity.",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            5
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Leg Ring"
+            ],
+            [
+                "value",
+                2000
+            ]
+        ]
+    }
+]

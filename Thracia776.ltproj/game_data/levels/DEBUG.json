@@ -1,0 +1,99 @@
+[
+    {
+        "nid": "DEBUG",
+        "name": "DEBUG",
+        "tilemap": "DEBUG",
+        "bg_tilemap": null,
+        "party": "LeafParty",
+        "music": {
+            "player_phase": null,
+            "enemy_phase": null,
+            "other_phase": null,
+            "enemy2_phase": null,
+            "player_battle": null,
+            "enemy_battle": null,
+            "other_battle": null,
+            "enemy2_battle": null
+        },
+        "objective": {
+            "simple": "",
+            "win": "",
+            "loss": ""
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "units": [
+            {
+                "nid": "Osian",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "101",
+                "variant": null,
+                "level": 7,
+                "klass": "PreHero",
+                "faction": "Nature",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eyvel",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    9,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": false
+            }
+        ],
+        "regions": [
+            {
+                "nid": "ArcherRegion",
+                "region_type": "normal",
+                "position": [
+                    9,
+                    5
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            }
+        ],
+        "unit_groups": []
+    }
+]

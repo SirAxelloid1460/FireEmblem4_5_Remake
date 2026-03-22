@@ -1,0 +1,84 @@
+[
+    {
+        "nid": "Killer Bow",
+        "name": "Killer Bow",
+        "desc": "A letally precise steel bow.",
+        "icon_nid": "Bow",
+        "icon_index": [
+            0,
+            4
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                12
+            ],
+            [
+                "hit",
+                80
+            ],
+            [
+                "weapon_type",
+                "Bow"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                35
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                6
+            ],
+            [
+                "crit",
+                30
+            ],
+            [
+                "effective",
+                0
+            ],
+            [
+                "effective_tag",
+                []
+            ],
+            [
+                "value",
+                6650
+            ],
+            [
+                "min_range",
+                2
+            ],
+            [
+                "max_range",
+                2
+            ]
+        ]
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "name": "New Event",
+        "trigger": "level_start",
+        "level_nid": "DEBUG",
+        "condition": "True",
+        "commands": [],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "nid": "Return2",
+        "name": "Return",
+        "desc": "Sends an ally back to the Main Castle",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            5
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "global_range",
+                null
+            ],
+            [
+                "unload_unit",
+                null
+            ],
+            [
+                "target_tile",
+                null
+            ],
+            [
+                "empty_tile_target_restrict",
+                null
+            ]
+        ]
+    }
+]

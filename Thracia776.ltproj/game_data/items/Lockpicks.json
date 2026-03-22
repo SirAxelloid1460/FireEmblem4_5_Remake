@@ -1,0 +1,40 @@
+[
+    {
+        "nid": "Lockpicks",
+        "name": "Lockpicks",
+        "desc": "Opens locked bridges, doors and chests.",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            6
+        ],
+        "components": [
+            [
+                "uses",
+                30
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                6000
+            ],
+            [
+                "min_range",
+                0
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Aura",
+        "name": "Aura",
+        "desc": "One of the most powerful Light tomes.",
+        "icon_nid": "Light",
+        "icon_index": [
+            0,
+            2
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                20
+            ],
+            [
+                "hit",
+                90
+            ],
+            [
+                "weapon_type",
+                "Light"
+            ],
+            [
+                "weapon_rank",
+                "A"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                65
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                16
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                9750
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                2
+            ]
+        ]
+    }
+]

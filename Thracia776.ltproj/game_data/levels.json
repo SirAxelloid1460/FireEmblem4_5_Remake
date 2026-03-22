@@ -1,0 +1,771 @@
+[
+    {
+        "nid": "1",
+        "name": "Ch. 1: The Warrior of Fiana",
+        "tilemap": "T1",
+        "party": "Leif",
+        "music": {
+            "player_phase": "109 Base",
+            "enemy_phase": "117 Base A",
+            "other_phase": null,
+            "enemy2_phase": "117 Base A",
+            "player_battle": "215 - Ally Attack",
+            "enemy_battle": "216 - Enemy Attack",
+            "other_battle": "215 - Ally Attack",
+            "enemy2_battle": "216 - Enemy Attack"
+        },
+        "objective": {
+            "simple": "Seize the Mansion",
+            "win": "Seize Mansion",
+            "loss": "Lord dies"
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "units": [
+            {
+                "nid": "Weissman",
+                "team": "enemy",
+                "ai": "Guard",
+                "ai_group": null,
+                "starting_position": [
+                    17,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Marty",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    4,
+                    7
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Dagdar",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    5,
+                    8
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Tanya",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    5,
+                    9
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Leaf",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    3,
+                    19
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Finn",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    2,
+                    19
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Halvan",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    2,
+                    18
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Eyvel",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    3,
+                    18
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Osian",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    4,
+                    18
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Weissman_1",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Short Lance",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Guard",
+                "ai_group": null,
+                "starting_position": [
+                    8,
+                    5
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_2",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Short Lance",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Guard",
+                "ai_group": null,
+                "starting_position": [
+                    12,
+                    6
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_3",
+                "variant": null,
+                "level": 5,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Short Lance",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Defend",
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    8
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_4",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        true
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Guard",
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    10
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_5",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Short Lance",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Defend",
+                "ai_group": null,
+                "starting_position": [
+                    8,
+                    14
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_6",
+                "variant": null,
+                "level": 5,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ],
+                    [
+                        "Vulnerary",
+                        true
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Defend",
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    12
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_7",
+                "variant": null,
+                "level": 10,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Guard",
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    16
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_8",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Short Lance",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Defend",
+                "ai_group": null,
+                "starting_position": [
+                    15,
+                    12
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_9",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Defend",
+                "ai_group": null,
+                "starting_position": [
+                    18,
+                    13
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_10",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Short Lance",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Guard",
+                "ai_group": null,
+                "starting_position": [
+                    18,
+                    10
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_11",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Short Lance",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Defend",
+                "ai_group": null,
+                "starting_position": [
+                    17,
+                    8
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_12",
+                "variant": null,
+                "level": 3,
+                "klass": "Archer",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Short Bow",
+                        false
+                    ],
+                    [
+                        "Vulnerary",
+                        true
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Guard",
+                "ai_group": null,
+                "starting_position": [
+                    9,
+                    10
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_13",
+                "variant": null,
+                "level": 1,
+                "klass": "Archer",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Defend",
+                "ai_group": null,
+                "starting_position": [
+                    11,
+                    12
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Weissman_14",
+                "variant": null,
+                "level": 1,
+                "klass": "Archer",
+                "faction": "Manster",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "Defend",
+                "ai_group": null,
+                "starting_position": [
+                    16,
+                    8
+                ],
+                "starting_traveler": null,
+                "name": "Manster",
+                "desc": "",
+                "generic": true
+            },
+            {
+                "nid": "Mareeta",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Nanna",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Raydrik",
+                "team": "enemy",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            }
+        ],
+        "regions": [
+            {
+                "nid": "House1",
+                "region_type": "event",
+                "position": [
+                    8,
+                    5
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "only_once": true
+            },
+            {
+                "nid": "House3",
+                "region_type": "event",
+                "position": [
+                    9,
+                    10
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "only_once": true
+            },
+            {
+                "nid": "House4",
+                "region_type": "event",
+                "position": [
+                    13,
+                    10
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "only_once": true
+            },
+            {
+                "nid": "House5",
+                "region_type": "event",
+                "position": [
+                    13,
+                    16
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "only_once": true
+            },
+            {
+                "nid": "House6",
+                "region_type": "event",
+                "position": [
+                    18,
+                    10
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "only_once": true
+            },
+            {
+                "nid": "FianaSeize",
+                "region_type": "event",
+                "position": [
+                    17,
+                    5
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Seize",
+                "condition": "unit.team == 'player'",
+                "only_once": true
+            },
+            {
+                "nid": "Vendor",
+                "region_type": "event",
+                "position": [
+                    12,
+                    6
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Vendor",
+                "condition": "True",
+                "only_once": false
+            }
+        ],
+        "unit_groups": [
+            {
+                "nid": "LeafSpawn",
+                "units": [
+                    "Leaf",
+                    "Finn",
+                    "Halvan",
+                    "Eyvel",
+                    "Osian"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "Guards",
+                "units": [
+                    "Weissman_11",
+                    "Weissman_14"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "DagdarSpawn",
+                "units": [
+                    "Dagdar",
+                    "Tanya"
+                ],
+                "positions": {
+                    "Tanya": [
+                        5,
+                        8
+                    ],
+                    "Dagdar": [
+                        4,
+                        7
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "nid": "98",
+        "name": "More yet to come",
+        "tilemap": "MTC--WIP",
+        "party": "Leif",
+        "music": {
+            "player_phase": null,
+            "enemy_phase": null,
+            "other_phase": null,
+            "enemy2_phase": null,
+            "player_battle": null,
+            "enemy_battle": null,
+            "other_battle": null,
+            "enemy2_battle": null
+        },
+        "objective": {
+            "simple": "",
+            "win": "",
+            "loss": ""
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "units": [],
+        "regions": [],
+        "unit_groups": []
+    },
+    {
+        "nid": "DEBUG",
+        "name": "DEBUG",
+        "tilemap": "DEBUG",
+        "party": "Leif",
+        "music": {
+            "player_phase": null,
+            "enemy_phase": null,
+            "other_phase": null,
+            "enemy2_phase": null,
+            "player_battle": null,
+            "enemy_battle": null,
+            "other_battle": null,
+            "enemy2_battle": null
+        },
+        "objective": {
+            "simple": "",
+            "win": "",
+            "loss": ""
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "units": [
+            {
+                "nid": "101",
+                "variant": null,
+                "level": 1,
+                "klass": "Emperor",
+                "faction": "Nature",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "team": "enemy",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    4
+                ],
+                "starting_traveler": null,
+                "name": null,
+                "desc": null,
+                "generic": true
+            },
+            {
+                "nid": "Eyvel",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "0",
+                "team": "player",
+                "ai": "None",
+                "ai_group": null,
+                "starting_position": [
+                    8,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": false
+            }
+        ],
+        "regions": [
+            {
+                "nid": "ArcherRegion",
+                "region_type": "normal",
+                "position": [
+                    9,
+                    5
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "only_once": false
+            }
+        ],
+        "unit_groups": []
+    }
+]

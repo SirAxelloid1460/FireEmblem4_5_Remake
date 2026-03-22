@@ -1,0 +1,99 @@
+[
+    {
+        "name": "House6A",
+        "trigger": "Visit",
+        "level_nid": "0",
+        "condition": "region.nid == 'House6' and unit.nid == 'Halvan'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "House"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "YoungLady2",
+                    "Right",
+                    "Halvan",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "YoungLady2",
+                    "Big Brother! I've got something special for you!{w}{br}You can use this to keep yourself safe, right?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Halvan",
+                    "An... axe? Where in the world did you get such a fine weapon?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "YoungLady2",
+                    "Darnedest thing...{br}{w}I was walkin' past the lake up on the mountain,{w}{br}when this strange ol' crone just floated outta the water!{w}{br}She gave it to me, then vanished, quick as you can blink!{br}{w}I been keepin' it for you, an' takin' real good care of it.{w}Now go put it to use, an' make me proud!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "YoungLady2",
+                    "Halvan"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Halvan",
+                    "Brave Axe"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "has_finished",
+                [
+                    "Halvan"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "House4"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

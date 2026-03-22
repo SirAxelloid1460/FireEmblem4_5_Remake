@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Devil Axe",
+        "name": "Devil Axe",
+        "desc": "A malevolent weapon that can hurt it's user sometimes.",
+        "icon_nid": "Axe",
+        "icon_index": [
+            0,
+            6
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                20
+            ],
+            [
+                "hit",
+                50
+            ],
+            [
+                "weapon_type",
+                "Axe"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                20
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "status_on_hit",
+                "Devil"
+            ],
+            [
+                "weight",
+                20
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                1200
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

@@ -1,0 +1,120 @@
+[
+    {
+        "nid": "Bishop",
+        "name": "Bishop",
+        "desc": "A seasoned healer with great magical powers and enough selfdefense capacities.",
+        "tier": 2,
+        "movement_group": "Mages",
+        "promotes_from": null,
+        "turns_into": [],
+        "tags": [],
+        "max_level": 19,
+        "bases": {
+            "HP": 58,
+            "STR": 0,
+            "MAG": 17,
+            "SKL": 13,
+            "SPD": 8,
+            "LCK": 0,
+            "DEF": 5,
+            "RES": 13,
+            "CON": 6,
+            "MOV": 70
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 10,
+            "MAG": 30,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 0,
+            "DEF": 10,
+            "RES": 30,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 80,
+            "STR": 15,
+            "MAG": 27,
+            "SKL": 22,
+            "SPD": 20,
+            "LCK": 25,
+            "DEF": 20,
+            "RES": 23,
+            "CON": 6,
+            "MOV": 70
+        },
+        "learned_skills": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                true,
+                226
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                true,
+                126
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_Bishop",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "Bishop",
+        "combat_anim_nid": "Bishop",
+        "fields": []
+    }
+]

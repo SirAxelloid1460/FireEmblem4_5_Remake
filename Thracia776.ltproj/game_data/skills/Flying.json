@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Flying",
+        "name": "Flying",
+        "desc": "Can fly.",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": [
+            [
+                "ignore_terrain",
+                null
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    }
+]

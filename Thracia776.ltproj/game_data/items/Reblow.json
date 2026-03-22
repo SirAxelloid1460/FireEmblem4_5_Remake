@@ -1,0 +1,72 @@
+[
+    {
+        "nid": "Reblow",
+        "name": "Reblow",
+        "desc": "Restores a bit of HP to an ally in the entore battlefield.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            3
+        ],
+        "components": [
+            [
+                "exp",
+                30
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "B"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                12
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                7704
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "global_range",
+                null
+            ],
+            [
+                "magic_heal",
+                10
+            ]
+        ]
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "nid": "Vulnerary",
+        "name": "Vulnerary",
+        "desc": "Restores all HP.",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "usable",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "heal",
+                100
+            ],
+            [
+                "uses",
+                3
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                300
+            ],
+            [
+                "map_hit_add_blend",
+                [
+                    15,
+                    235,
+                    255
+                ]
+            ],
+            [
+                "map_hit_sfx",
+                "HP_Recovery"
+            ]
+        ]
+    }
+]

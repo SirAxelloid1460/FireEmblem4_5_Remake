@@ -1,0 +1,125 @@
+[
+    {
+        "nid": "Dancer",
+        "name": "Dancer",
+        "desc": "Special people who can bend anima magic to their will.",
+        "tier": 2,
+        "movement_group": "Mages",
+        "promotes_from": "BThief",
+        "turns_into": [],
+        "tags": [],
+        "max_level": 19,
+        "bases": {
+            "HP": 27,
+            "STR": 2,
+            "MAG": 0,
+            "SKL": 1,
+            "SPD": 6,
+            "LCK": 0,
+            "DEF": 1,
+            "RES": 4,
+            "CON": 6,
+            "MOV": 70
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 10,
+            "MAG": 30,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 0,
+            "DEF": 10,
+            "RES": 30,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 80,
+            "STR": 19,
+            "MAG": 18,
+            "SKL": 18,
+            "SPD": 21,
+            "LCK": 25,
+            "DEF": 18,
+            "RES": 18,
+            "CON": 6,
+            "MOV": 70
+        },
+        "learned_skills": [
+            [
+                1,
+                "Refresh"
+            ]
+        ],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                51
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_Dancer",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "Dancer",
+        "combat_anim_nid": "Dancer",
+        "fields": []
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "nid": "ChangeSwordmaster",
+        "name": "Change to Swordmaster",
+        "desc": "Allows Eyvel to change her class to Swordmaster.",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            7
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_unit",
+                null
+            ],
+            [
+                "min_range",
+                0
+            ],
+            [
+                "max_range",
+                0
+            ],
+            [
+                "prf_unit",
+                [
+                    "Eyvel"
+                ]
+            ],
+            [
+                "force_class_change",
+                "Swordmaster"
+            ]
+        ]
+    }
+]

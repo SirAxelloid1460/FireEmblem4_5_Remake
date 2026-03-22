@@ -1,0 +1,78 @@
+[
+    {
+        "nid": "Gae Bolg",
+        "name": "Gae Bolg",
+        "desc": "Sacred lance of the crusader Nj\u00f6run.",
+        "icon_nid": "Lance",
+        "icon_index": [
+            0,
+            8
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                25
+            ],
+            [
+                "hit",
+                85
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "uses",
+                70
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                8
+            ],
+            [
+                "status_on_equip",
+                "Gae Bolg"
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "prf_tags",
+                [
+                    "Nj\u00f6runHeir"
+                ]
+            ]
+        ]
+    }
+]

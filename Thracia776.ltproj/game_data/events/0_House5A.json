@@ -1,0 +1,149 @@
+[
+    {
+        "name": "House5A",
+        "trigger": "Visit",
+        "level_nid": "0",
+        "condition": "region.nid == 'House5' and unit.nid == 'Osian'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "House"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Man5",
+                    "Left",
+                    "Osian",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Man5",
+                    "You pullin' your weight in the Freeblades, boy?{w}{br}Last thing the Commander Eyvel needs is to babysit you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Osian",
+                    "We're risking life and limb to protect the village,{w}{br}and you're giving me a lecture?{w}{br}You've got a strange sense of gratitude, old man.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Man5",
+                    "Not even the Empire knockin' down our front door{w}{br}can stop that fool mouth of yours, I see.{w}{br}Well, no point in draggin' this out.{w}{br}Here. This is what you came for, right?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Osian",
+                    "For once you read my mind.{w}{br}When a fight breaks out,{w}{br}I just feel off without this axe at my side.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Man5",
+                    "Which don't explain why you forget it at home half the damn time!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Osian",
+                    "Hey, I came her efor the axe, not to get chewed out!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Man5",
+                    "If that's all you wanted, then get going!{w}{br}Go on, now! Don't keep the Commander waitin' on you!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Osian",
+                    "You don't need to tell me twice!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Man5",
+                    "Osian"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "give_item",
+                [
+                    "Osian",
+                    "Pugi"
+                ]
+            ],
+            [
+                "has_finished",
+                [
+                    "Osian"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "House5"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]
