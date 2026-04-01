@@ -1,0 +1,88 @@
+[
+    {
+        "nid": "Earth Sword",
+        "name": "Earth Sword",
+        "desc": "A sword capable of terraforming",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            16
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                12
+            ],
+            [
+                "hit",
+                90
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "uses",
+                50
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                5
+            ],
+            [
+                "status_on_equip",
+                "No Big Shields"
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                12000
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                2
+            ],
+            [
+                "lifelink",
+                1.0
+            ],
+            [
+                "battle_cast_anim",
+                "Resire"
+            ],
+            [
+                "magic_at_range",
+                null
+            ]
+        ]
+    }
+]

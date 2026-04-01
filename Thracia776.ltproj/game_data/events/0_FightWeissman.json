@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightWeissman",
+        "trigger": "combat_start",
+        "level_nid": "0",
+        "condition": "unit.nid == 'Weissman' or unit2.nid == 'Weissman'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Weissman",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Weissman",
+                    "Do you fools realise what you're doing?!{w}{br}If I die, so do the women we took!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Weissman"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

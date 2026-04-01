@@ -1,0 +1,39 @@
+[
+    {
+        "name": "LeifDeath",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Leif'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Leif",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Leif",
+                    "Everyone... I'm...sorry...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Leif"
+                ]
+            ],
+            [
+                "lose_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

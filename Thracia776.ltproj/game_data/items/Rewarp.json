@@ -1,0 +1,79 @@
+[
+    {
+        "nid": "Rewarp",
+        "name": "Rewarp",
+        "desc": "Moves user to an empty square",
+        "icon_nid": "FE5rewarp",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "D"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                4
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                10000
+            ],
+            [
+                "wexp",
+                7
+            ],
+            [
+                "exp",
+                15
+            ],
+            [
+                "no_ai",
+                null
+            ],
+            [
+                "min_range",
+                0
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "max_range",
+                0
+            ],
+            [
+                "sequence_item",
+                [
+                    "Rewarp1",
+                    "Rewarp2"
+                ]
+            ]
+        ]
+    }
+]

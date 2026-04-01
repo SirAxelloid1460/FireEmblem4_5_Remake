@@ -1,0 +1,104 @@
+[
+    {
+        "nid": "Eyvel",
+        "name": "Eyvel",
+        "desc": "Fiercely protective leader of the Fiana Freeblades. Responsible and dutiful as a mother.",
+        "variant": "Female",
+        "level": 1,
+        "klass": "Swordmaster",
+        "tags": [],
+        "bases": {
+            "HP": 43,
+            "STR": 21,
+            "MAG": 1,
+            "SKL": 26,
+            "SPD": 25,
+            "LCK": 9,
+            "DEF": 15,
+            "RES": 9,
+            "CON": 8,
+            "MOV": 70
+        },
+        "growths": {
+            "HP": 60,
+            "STR": 25,
+            "MAG": 15,
+            "SKL": 25,
+            "SPD": 15,
+            "LCK": 50,
+            "DEF": 15,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Iron Blade",
+                false
+            ],
+            [
+                "Flame Sword",
+                false
+            ],
+            [
+                "Key",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                20,
+                "ChangeSniper"
+            ],
+            [
+                20,
+                "ChangeSwordmaster"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                226
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                1023
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [
+            "Sniper"
+        ],
+        "portrait_nid": "EyvelPortrait",
+        "affinity": "Wind",
+        "fields": []
+    }
+]

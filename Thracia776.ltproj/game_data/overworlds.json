@@ -1,0 +1,232 @@
+[
+    {
+        "nid": "Thracia",
+        "name": "Thracia",
+        "tilemap": "Thracia",
+        "music": "104 World Map A",
+        "overworld_nodes": [
+            {
+                "nid": "0",
+                "name": "Darna",
+                "pos": [
+                    3,
+                    2
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "1",
+                "name": "Peruluka",
+                "pos": [
+                    0,
+                    20
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "2",
+                "name": "Lenster",
+                "pos": [
+                    15,
+                    4
+                ],
+                "icon": "map_node",
+                "level": "98",
+                "menu_options": []
+            },
+            {
+                "nid": "3",
+                "name": "Conote",
+                "pos": [
+                    24,
+                    6
+                ],
+                "icon": "map_node",
+                "level": "98",
+                "menu_options": []
+            },
+            {
+                "nid": "4",
+                "name": "Danzich",
+                "pos": [
+                    19,
+                    7
+                ],
+                "icon": "map_node",
+                "level": "98",
+                "menu_options": []
+            },
+            {
+                "nid": "5",
+                "name": "Manster",
+                "pos": [
+                    21,
+                    10
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "6",
+                "name": "Nohrden",
+                "pos": [
+                    12,
+                    6
+                ],
+                "icon": "map_node",
+                "level": "98",
+                "menu_options": []
+            },
+            {
+                "nid": "7",
+                "name": "Alster",
+                "pos": [
+                    15,
+                    12
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "8",
+                "name": "Melgen",
+                "pos": [
+                    5,
+                    15
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "9",
+                "name": "Dakia",
+                "pos": [
+                    10,
+                    17
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "10",
+                "name": "Dandrum",
+                "pos": [
+                    13,
+                    18
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "11",
+                "name": "Meace",
+                "pos": [
+                    17,
+                    16
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "12",
+                "name": "Kelbeth",
+                "pos": [
+                    24,
+                    13
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "13",
+                "name": "Iss",
+                "pos": [
+                    26,
+                    16
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "14",
+                "name": "Fiana",
+                "pos": [
+                    24,
+                    20
+                ],
+                "icon": "map_node",
+                "level": "1",
+                "menu_options": []
+            },
+            {
+                "nid": "15",
+                "name": "Kapathogia",
+                "pos": [
+                    14,
+                    22
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "16",
+                "name": "Luthecia",
+                "pos": [
+                    7,
+                    23
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "17",
+                "name": "Grutia",
+                "pos": [
+                    11,
+                    31
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "18",
+                "name": "Thracia",
+                "pos": [
+                    16,
+                    29
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "20",
+                "name": "Tahra",
+                "pos": [
+                    8,
+                    19
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            }
+        ],
+        "map_paths": {},
+        "border_tile_width": 0
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Circlet",
+        "name": "Circlet",
+        "desc": "Grants Prayer and Life skills.",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            16
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Circlet"
+            ],
+            [
+                "value",
+                2000
+            ]
+        ]
+    }
+]

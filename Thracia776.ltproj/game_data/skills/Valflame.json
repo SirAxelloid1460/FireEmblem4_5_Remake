@@ -1,0 +1,31 @@
+[
+    {
+        "nid": "Valflame",
+        "name": "Valflame",
+        "desc": "Holy Flame Magic Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            7,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        10
+                    ],
+                    [
+                        "DEF",
+                        15
+                    ],
+                    [
+                        "RES",
+                        15
+                    ]
+                ]
+            ]
+        ]
+    }
+]

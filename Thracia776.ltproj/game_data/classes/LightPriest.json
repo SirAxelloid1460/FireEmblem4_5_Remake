@@ -1,0 +1,122 @@
+[
+    {
+        "nid": "LightPriest",
+        "name": "Light Priest",
+        "desc": "Young devotes of light and anima who heal and fight with their magic.",
+        "tier": 1,
+        "movement_group": "Mages",
+        "promotes_from": null,
+        "turns_into": [
+            "Sage"
+        ],
+        "tags": [],
+        "max_level": 19,
+        "bases": {
+            "HP": 22,
+            "STR": 0,
+            "MAG": 5,
+            "SKL": 5,
+            "SPD": 6,
+            "LCK": 0,
+            "DEF": 2,
+            "RES": 7,
+            "CON": 6,
+            "MOV": 60
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 10,
+            "MAG": 30,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 0,
+            "DEF": 10,
+            "RES": 30,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 80,
+            "STR": 15,
+            "MAG": 23,
+            "SKL": 22,
+            "SPD": 22,
+            "LCK": 30,
+            "DEF": 18,
+            "RES": 25,
+            "CON": 6,
+            "MOV": 60
+        },
+        "learned_skills": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                true,
+                126
+            ],
+            "Light": [
+                true,
+                226
+            ],
+            "Anima": [
+                true,
+                51
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_LightPriest",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "LightPriest",
+        "combat_anim_nid": "LightPriest",
+        "fields": []
+    }
+]

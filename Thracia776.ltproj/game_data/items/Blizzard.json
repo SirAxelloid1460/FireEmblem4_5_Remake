@@ -1,0 +1,88 @@
+[
+    {
+        "nid": "Blizzard",
+        "name": "Blizzard",
+        "desc": "A cold wind that puts enemies to sleep.",
+        "icon_nid": "Anima",
+        "icon_index": [
+            0,
+            16
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                12
+            ],
+            [
+                "hit",
+                65
+            ],
+            [
+                "weapon_type",
+                "Anima"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                30
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                25
+            ],
+            [
+                "status_on_hit",
+                "Sleep"
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                65550
+            ],
+            [
+                "min_range",
+                3
+            ],
+            [
+                "max_range",
+                10
+            ],
+            [
+                "cannot_be_countered",
+                null
+            ]
+        ]
+    }
+]

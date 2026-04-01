@@ -1,0 +1,79 @@
+[
+    {
+        "name": "House4",
+        "trigger": "Visit",
+        "level_nid": "0",
+        "condition": "region.nid == 'House4'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "House"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Man5",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Man5",
+                    "Weapons can be mighty expensive, can't they?{w}{br}Most folk here gotta make do by nicking supplies from Imperial troops.{w}It's awful risky, but if you can capture an enemy alive,{w}{br}you get to help yourself to their stuff.{w}{br}Matter of fact,{w}{br}I got the drop of an Imperial soldier myself.{w}{br}Heard'im snoring from three houses away,{w}{br}so I took me a souvenir!{br}{w}...Not that it'll do me much good, though.{w}{br}Probably better off in your hands, I reckon.{w}{br}And hey, if you don't need it,{br}{w}you can just hawk it for somethin' you do need.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Man5",
+                    "{unit}"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Iron Sword"
+                ]
+            ],
+            [
+                "has_finished",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "House6"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

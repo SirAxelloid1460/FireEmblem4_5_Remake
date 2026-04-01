@@ -1,0 +1,38 @@
+[
+    {
+        "nid": "Rescue1",
+        "name": "Rescue",
+        "desc": "Brings an ally to a space adjacent to the user",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            7
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_equation_range",
+                "MAGIC_RANGE"
+            ],
+            [
+                "store_unit",
+                null
+            ]
+        ]
+    }
+]

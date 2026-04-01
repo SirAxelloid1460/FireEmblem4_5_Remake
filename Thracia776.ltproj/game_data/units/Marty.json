@@ -1,0 +1,85 @@
+[
+    {
+        "nid": "Marty",
+        "name": "Marty",
+        "desc": "Member of the Mount Violdrake Bandits and ally of the Fiana Freeblades. ",
+        "variant": "",
+        "level": 1,
+        "klass": "Bandit",
+        "tags": [],
+        "bases": {
+            "HP": 32,
+            "STR": 9,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 4,
+            "LCK": 6,
+            "DEF": 6,
+            "RES": 5,
+            "CON": 9,
+            "MOV": 60
+        },
+        "growths": {
+            "HP": 90,
+            "STR": 15,
+            "MAG": 5,
+            "SKL": 10,
+            "SPD": 15,
+            "LCK": 50,
+            "DEF": 40,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Steel Axe",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                51
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "MartyPortrait",
+        "affinity": "Ice",
+        "fields": []
+    }
+]

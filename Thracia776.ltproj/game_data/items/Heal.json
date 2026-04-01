@@ -1,0 +1,84 @@
+[
+    {
+        "nid": "Heal",
+        "name": "Live",
+        "desc": "Restores a bit of HP.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "value",
+                3605
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "D"
+            ],
+            [
+                "uses",
+                35
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "exp",
+                15
+            ],
+            [
+                "wexp",
+                2
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "map_hit_add_blend",
+                [
+                    25,
+                    216,
+                    178
+                ]
+            ],
+            [
+                "magic_heal",
+                10
+            ],
+            [
+                "magic",
+                null
+            ]
+        ]
+    }
+]

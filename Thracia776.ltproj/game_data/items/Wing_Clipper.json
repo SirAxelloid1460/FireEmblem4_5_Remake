@@ -1,0 +1,86 @@
+[
+    {
+        "nid": "Wing Clipper",
+        "name": "Wing Clipper",
+        "desc": "A long sword capable to reach the wings of flying enemies.",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            24
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                6
+            ],
+            [
+                "hit",
+                70
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "weapon_rank",
+                "B"
+            ],
+            [
+                "uses",
+                50
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "effective",
+                10
+            ],
+            [
+                "weight",
+                5
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                5000
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "effective_tag",
+                [
+                    "Flying"
+                ]
+            ]
+        ]
+    }
+]

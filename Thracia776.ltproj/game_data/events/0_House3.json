@@ -1,0 +1,79 @@
+[
+    {
+        "name": "House3",
+        "trigger": "Visit",
+        "level_nid": "0",
+        "condition": "region.nid == 'House3'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "House"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "OldLady1",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldLady1",
+                    "Y'all made it back! What a relief...{w}{br}But look, there's no Fiana Freeblades{w}{br}without Fiana, right?{br}{w}So don't just stop with them pirates{w}{br}-drive the Empire from our village, too!{w}{br}Not to imply that I ain't grateful, a' course.{w}{br}Take this with you.{w}{br}Use it if you get scraped up.{w}{br}We don't have much in the way of medicine,{br}{w}but it's the least we can do {w}after everythin' the Commander's done fer us.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "OldLady1",
+                    "{unit}"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Vulnerary"
+                ]
+            ],
+            [
+                "has_finished",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "House3"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

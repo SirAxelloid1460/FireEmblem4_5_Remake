@@ -1,0 +1,35 @@
+[
+    {
+        "name": "DagdarDeath",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Dagdar'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Dagdar",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Dagdar",
+                    "Well... I guess...that was my life...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Dagdar"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

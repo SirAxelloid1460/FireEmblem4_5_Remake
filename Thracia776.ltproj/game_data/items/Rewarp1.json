@@ -1,0 +1,38 @@
+[
+    {
+        "nid": "Rewarp1",
+        "name": "Rewarp1",
+        "desc": "Moves user to an empty square",
+        "icon_nid": "FE5rewarp",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "min_range",
+                0
+            ],
+            [
+                "store_unit",
+                null
+            ],
+            [
+                "max_range",
+                0
+            ]
+        ]
+    }
+]

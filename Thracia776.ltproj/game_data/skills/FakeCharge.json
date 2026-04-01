@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "FakeCharge",
+        "name": "Charge",
+        "desc": "Fights extra rounds if HP and Attack Speed are higher than enemy's.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            7,
+            1
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ]
+        ]
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "nid": "Refresh",
+        "name": "Dance",
+        "desc": "I done broked something.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            1
+        ],
+        "components": [
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "refresh",
+                null
+            ],
+            [
+                "spell",
+                null
+            ],
+            [
+                "exp",
+                15
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "map_hit_add_blend",
+                [
+                    8,
+                    255,
+                    247
+                ]
+            ],
+            [
+                "map_cast_sfx",
+                "RefreshDanceMap"
+            ],
+            [
+                "map_hit_sfx",
+                "RefreshDanceMap"
+            ]
+        ]
+    }
+]

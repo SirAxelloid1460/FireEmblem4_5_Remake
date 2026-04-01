@@ -1,0 +1,64 @@
+[
+    {
+        "nid": "Kia",
+        "name": "Kia",
+        "desc": "Removes Stone (Petrify) Status.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            16
+        ],
+        "components": [
+            [
+                "exp",
+                30
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                5
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "restore_specific",
+                "Petrify"
+            ]
+        ]
+    }
+]

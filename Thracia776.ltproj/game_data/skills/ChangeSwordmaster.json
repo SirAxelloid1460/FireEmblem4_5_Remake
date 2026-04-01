@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "ChangeSwordmaster",
+        "name": "Change to Swordmaster",
+        "desc": "Allows Eyvel to change her class to Swordmaster",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            7
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "ability",
+                "ChangeSwordmaster"
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    }
+]

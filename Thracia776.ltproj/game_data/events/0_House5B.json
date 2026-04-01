@@ -1,0 +1,66 @@
+[
+    {
+        "name": "House5B",
+        "trigger": "Visit",
+        "level_nid": "0",
+        "condition": "region.nid == 'House5' and unit.nid != 'Osian'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "House"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Man5",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Man5",
+                    "Where has that fool boy of mine gone off to in this fracas?.{w}{br}I swear, my Osian's gonna get himself killed one of these days...{w}{br}Those Verdane thugs are lucky Lord Byron isn't arounf with his holy sword, Tyrfing.{br}They wouldn't stand a chance!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Man5",
+                    "{unit}"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "has_finished",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20
+    }
+]

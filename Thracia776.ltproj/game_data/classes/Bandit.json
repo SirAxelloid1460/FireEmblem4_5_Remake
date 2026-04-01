@@ -1,0 +1,122 @@
+[
+    {
+        "nid": "Bandit",
+        "name": "Mountain Thie",
+        "desc": "A common outlaw who battles with an axe.",
+        "tier": 1,
+        "movement_group": "Light Foot",
+        "promotes_from": null,
+        "turns_into": [
+            "Warrior"
+        ],
+        "tags": [],
+        "max_level": 19,
+        "bases": {
+            "HP": 29,
+            "STR": 5,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 4,
+            "LCK": 0,
+            "DEF": 4,
+            "RES": 5,
+            "CON": 9,
+            "MOV": 60
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 30,
+            "MAG": 0,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 0,
+            "DEF": 30,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 80,
+            "STR": 20,
+            "MAG": 18,
+            "SKL": 18,
+            "SPD": 20,
+            "LCK": 30,
+            "DEF": 20,
+            "RES": 15,
+            "CON": 9,
+            "MOV": 60
+        },
+        "learned_skills": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                true,
+                126
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_Bandit",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "Bandit",
+        "combat_anim_nid": "Bandit",
+        "fields": []
+    }
+]

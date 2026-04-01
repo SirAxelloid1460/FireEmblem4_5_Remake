@@ -1,0 +1,164 @@
+[
+    {
+        "name": "Outro",
+        "trigger": "level_end",
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "201 Victory"
+                ]
+            ],
+            [
+                "center_cursor",
+                [
+                    "17,5",
+                    "immediate"
+                ]
+            ],
+            [
+                "remove_all_units",
+                []
+            ],
+            [
+                "music",
+                [
+                    "201 Victory"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Leif",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Leif",
+                    "Nanna! Mareeta! Where are you!? Please, answer me!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Eyvel",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eyvel",
+                    "Little Nan, Mareeta... Raydrik must've taken'em.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Leif",
+                    "What!? That means... they were taken to Manster, right?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eyvel",
+                    "Yeah -as bargaining chips,{br}{w}in case Weissman couldn't finish the job.{w}{br}It's sort of thing Raydrik would pull, all right.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Leif",
+                    "God's breath... Commander, we have to give chase!{w}{br}The two of them are counting on us!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eyvel",
+                    "Now look here, little Leif-{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Leif",
+                    "Commander, you yourself said it:{w}{br}I'm not a child anymore.{br}{w}Nanna and Mareeta were taken captive because of me{w}{br}-and I refuse to let anyone suffer in my place.{w}{br}I will never again let someone sacrifice their life in exchange for mine.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eyvel",
+                    "...I understand. We leave at dawn, then.{w}{br}I won't lie little Lord: this is gonna get rough.{w}{br}Get some rest while you can.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Leif",
+                    "Eyvel"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

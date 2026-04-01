@@ -1,0 +1,53 @@
+[
+    {
+        "nid": "HP Earring",
+        "name": "HP Earring",
+        "desc": "Permanently increases its user's maximum HP by 5.",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "usable",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "permanent_stat_change",
+                [
+                    [
+                        "HP",
+                        5
+                    ]
+                ]
+            ],
+            [
+                "usable_in_base",
+                null
+            ],
+            [
+                "value",
+                8000
+            ]
+        ]
+    }
+]

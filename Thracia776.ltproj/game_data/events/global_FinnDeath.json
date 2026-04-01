@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FinnDeath",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Finn'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Finn",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Finn",
+                    "Lord Leif... Please...fulfill...your father's...legacy...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Finn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

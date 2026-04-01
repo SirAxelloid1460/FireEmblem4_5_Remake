@@ -1,0 +1,35 @@
+[
+    {
+        "name": "TanyaDeath",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Tanya'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Tanya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Tanya",
+                    "No... Help me... O...sian..{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Tanya"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Holy Sword",
+        "name": "Holy Sword",
+        "desc": "",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            37
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                15
+            ],
+            [
+                "hit",
+                55
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "uses",
+                20
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                16
+            ],
+            [
+                "brave",
+                null
+            ],
+            [
+                "status_on_equip",
+                "Holy Sword"
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                2000
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

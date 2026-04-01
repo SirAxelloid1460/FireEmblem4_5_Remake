@@ -1,0 +1,78 @@
+[
+    {
+        "nid": "Tyrfing",
+        "name": "Tyrfing",
+        "desc": "Sacred sword of the crusader Baldr.",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            21
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                30
+            ],
+            [
+                "hit",
+                80
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "uses",
+                50
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "status_on_equip",
+                "Tyrfing"
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "prf_tags",
+                [
+                    "BaldrHeir"
+                ]
+            ]
+        ]
+    }
+]

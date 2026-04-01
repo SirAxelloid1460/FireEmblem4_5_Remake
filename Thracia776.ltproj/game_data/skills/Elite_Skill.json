@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Elite_Skill",
+        "name": "Elite",
+        "desc": "Doubles amount of experience received in battle.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            1
+        ],
+        "components": [
+            [
+                "exp_multiplier",
+                2.0
+            ]
+        ]
+    }
+]

@@ -1,0 +1,123 @@
+[
+    {
+        "nid": "Ballistae",
+        "name": "Ballistae",
+        "desc": "A common ballistae.",
+        "tier": 1,
+        "movement_group": "Armors",
+        "promotes_from": null,
+        "turns_into": [],
+        "tags": [
+            "ArenaIgnore",
+            "Ballistae"
+        ],
+        "max_level": 19,
+        "bases": {
+            "HP": 50,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 60,
+            "MOV": 0
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 30,
+            "MAG": 0,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 0,
+            "DEF": 30,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 50,
+            "STR": 35,
+            "MAG": 35,
+            "SKL": 35,
+            "SPD": 35,
+            "LCK": 35,
+            "DEF": 35,
+            "RES": 35,
+            "CON": 60,
+            "MOV": 0
+        },
+        "learned_skills": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                true,
+                1
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_Ballistae",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "Ballistician",
+        "combat_anim_nid": "Ballistae",
+        "fields": []
+    }
+]

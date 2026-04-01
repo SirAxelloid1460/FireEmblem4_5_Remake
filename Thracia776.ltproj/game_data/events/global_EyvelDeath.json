@@ -1,0 +1,41 @@
+[
+    {
+        "name": "EyvelDeath",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Eyvel'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Eyvel",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eyvel",
+                    "Everyone... S-Someday this will all just be a bad memory...{w}{br}So don't you give up. Never... give... up...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_unit",
+                [
+                    "Eyvel"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Eyvel"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

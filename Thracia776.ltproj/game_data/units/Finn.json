@@ -1,0 +1,94 @@
+[
+    {
+        "nid": "Finn",
+        "name": "Finn",
+        "desc": "Loyal and dutiful knight with undying loyalty to both Quan and Leif of Leonster.",
+        "variant": "",
+        "level": 1,
+        "klass": "CavalierL",
+        "tags": [],
+        "bases": {
+            "HP": 36,
+            "STR": 9,
+            "MAG": 0,
+            "SKL": 10,
+            "SPD": 13,
+            "LCK": 9,
+            "DEF": 8,
+            "RES": 5,
+            "CON": 8,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 65,
+            "STR": 35,
+            "MAG": 5,
+            "SKL": 35,
+            "SPD": 30,
+            "LCK": 50,
+            "DEF": 30,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Iron Lance",
+                false
+            ],
+            [
+                "Brave Lance",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Prayer"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                126
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "FinnPortrait",
+        "affinity": "Thunder",
+        "fields": []
+    }
+]

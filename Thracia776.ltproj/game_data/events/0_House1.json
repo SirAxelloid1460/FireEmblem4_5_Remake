@@ -1,0 +1,79 @@
+[
+    {
+        "name": "House1",
+        "trigger": "Visit",
+        "level_nid": "0",
+        "condition": "region.nid == 'House1'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "House"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "OldLady3",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldLady3",
+                    "Those Imperial dogs took Dame Mareeta and Lady Nanna{w}{br}-just snatched'em right up like was cattle!{w}{br}You're not gonna let'em get away with that, are you?{w}{br}If you're fixin' to fight the Empire, take this with you.{w}{br}This here ring's enchanted with some spell or another.{w}{br}But don't just wear it on your finger like some common bauble!{w}{br}You gotta actually USE it for it to do any good!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "OldLady3",
+                    "{unit}"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Life Ring"
+                ]
+            ],
+            [
+                "has_finished",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "House1"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

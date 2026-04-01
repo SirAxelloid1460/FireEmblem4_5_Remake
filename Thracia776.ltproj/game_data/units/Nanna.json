@@ -1,0 +1,94 @@
+[
+    {
+        "nid": "Nanna",
+        "name": "Nanna",
+        "desc": "Daugther of Lachesis of Nordion and Finn, and younger sister of Darmuid.",
+        "variant": "",
+        "level": 1,
+        "klass": "Troubadour",
+        "tags": [],
+        "bases": {
+            "HP": 29,
+            "STR": 6,
+            "MAG": 5,
+            "SKL": 8,
+            "SPD": 10,
+            "LCK": 13,
+            "DEF": 5,
+            "RES": 4,
+            "CON": 5,
+            "MOV": 80
+        },
+        "growths": {
+            "HP": 75,
+            "STR": 45,
+            "MAG": 10,
+            "SKL": 35,
+            "SPD": 35,
+            "LCK": 60,
+            "DEF": 25,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Earth Sword",
+                false
+            ],
+            [
+                "Mend",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Charisma"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                126
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                51
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "NannaPorrtrait",
+        "affinity": "Light",
+        "fields": []
+    }
+]

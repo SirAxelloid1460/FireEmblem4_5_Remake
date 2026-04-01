@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Power Ring",
+        "name": "Power Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    }
+]

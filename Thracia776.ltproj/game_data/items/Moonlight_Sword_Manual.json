@@ -1,0 +1,60 @@
+[
+    {
+        "nid": "Moonlight Sword Manual",
+        "name": "MoonSwd Man.",
+        "desc": "Teaches the Moonlight Sword Skill",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            18
+        ],
+        "components": [
+            [
+                "usable",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "usable_in_base",
+                null
+            ],
+            [
+                "value",
+                300
+            ],
+            [
+                "status_on_hit",
+                "Luna"
+            ],
+            [
+                "map_hit_add_blend",
+                [
+                    9,
+                    255,
+                    5
+                ]
+            ],
+            [
+                "map_hit_sfx",
+                "Quintessence"
+            ]
+        ]
+    }
+]

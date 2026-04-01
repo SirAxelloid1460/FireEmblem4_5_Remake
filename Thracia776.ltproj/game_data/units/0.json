@@ -1,0 +1,101 @@
+[
+    {
+        "nid": "0",
+        "name": "0",
+        "desc": "",
+        "variant": "Ishtar",
+        "level": 1,
+        "klass": "Tester",
+        "tags": [],
+        "bases": {
+            "HP": 100,
+            "STR": 10,
+            "MAG": 10,
+            "SKL": 10,
+            "SPD": 10,
+            "LCK": 10,
+            "DEF": 10,
+            "RES": 10,
+            "CON": 11,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Defender Sword",
+                false
+            ],
+            [
+                "Return",
+                false
+            ],
+            [
+                "Valflame",
+                false
+            ],
+            [
+                "Return Ring",
+                false
+            ],
+            [
+                "Ambush Manual",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                1023
+            ],
+            "Lance": [
+                false,
+                1023
+            ],
+            "Axe": [
+                false,
+                1023
+            ],
+            "Bow": [
+                false,
+                1023
+            ],
+            "Staff": [
+                false,
+                1023
+            ],
+            "Light": [
+                false,
+                1023
+            ],
+            "Anima": [
+                false,
+                1023
+            ],
+            "Dark": [
+                false,
+                1023
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "Fighter1",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

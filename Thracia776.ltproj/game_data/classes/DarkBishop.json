@@ -1,0 +1,120 @@
+[
+    {
+        "nid": "DarkBishop",
+        "name": "Dark Bishop",
+        "desc": "A seasoned healer with great magical powers and enough selfdefense capacities.",
+        "tier": 3,
+        "movement_group": "Mages",
+        "promotes_from": null,
+        "turns_into": [],
+        "tags": [],
+        "max_level": 19,
+        "bases": {
+            "HP": 66,
+            "STR": 0,
+            "MAG": 25,
+            "SKL": 17,
+            "SPD": 17,
+            "LCK": 0,
+            "DEF": 17,
+            "RES": 20,
+            "CON": 6,
+            "MOV": 70
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 10,
+            "MAG": 30,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 0,
+            "DEF": 10,
+            "RES": 30,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 80,
+            "STR": 20,
+            "MAG": 25,
+            "SKL": 23,
+            "SPD": 23,
+            "LCK": 25,
+            "DEF": 23,
+            "RES": 27,
+            "CON": 6,
+            "MOV": 70
+        },
+        "learned_skills": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                true,
+                226
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                true,
+                226
+            ],
+            "Dark": [
+                true,
+                226
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_DarkBishop",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "DarkBishop",
+        "combat_anim_nid": "DarkBishop",
+        "fields": []
+    }
+]

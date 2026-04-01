@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Luckily_Light",
+        "name": "Luckily Light",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "LCK",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    }
+]

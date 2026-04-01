@@ -1,0 +1,1406 @@
+[
+    {
+        "nid": "Boy5",
+        "blinking_offset": [
+            33,
+            42
+        ],
+        "smiling_offset": [
+            33,
+            58
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "Girl4",
+        "blinking_offset": [
+            33,
+            41
+        ],
+        "smiling_offset": [
+            33,
+            57
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "LakeLady",
+        "blinking_offset": [
+            32,
+            32
+        ],
+        "smiling_offset": [
+            32,
+            48
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "Man5",
+        "blinking_offset": [
+            35,
+            33
+        ],
+        "smiling_offset": [
+            35,
+            49
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "Man7",
+        "blinking_offset": [
+            31,
+            32
+        ],
+        "smiling_offset": [
+            31,
+            48
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "OldLady1",
+        "blinking_offset": [
+            38,
+            36
+        ],
+        "smiling_offset": [
+            38,
+            52
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "OldLady2",
+        "blinking_offset": [
+            32,
+            37
+        ],
+        "smiling_offset": [
+            32,
+            53
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "OldLady3",
+        "blinking_offset": [
+            32,
+            32
+        ],
+        "smiling_offset": [
+            32,
+            48
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "OldMan3",
+        "blinking_offset": [
+            24,
+            40
+        ],
+        "smiling_offset": [
+            16,
+            56
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "YoungLady2",
+        "blinking_offset": [
+            32,
+            40
+        ],
+        "smiling_offset": [
+            32,
+            56
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "YoungMan3",
+        "blinking_offset": [
+            34,
+            31
+        ],
+        "smiling_offset": [
+            34,
+            47
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "LeifPortrait",
+        "blinking_offset": [
+            24,
+            32
+        ],
+        "smiling_offset": [
+            24,
+            48
+        ],
+        "info_offset": 4
+    },
+    {
+        "nid": "FinnPortrait",
+        "blinking_offset": [
+            29,
+            23
+        ],
+        "smiling_offset": [
+            29,
+            39
+        ],
+        "info_offset": 4
+    },
+    {
+        "nid": "OsianPortrait",
+        "blinking_offset": [
+            22,
+            24
+        ],
+        "smiling_offset": [
+            22,
+            40
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "HalvanPortrait",
+        "blinking_offset": [
+            16,
+            24
+        ],
+        "smiling_offset": [
+            16,
+            40
+        ],
+        "info_offset": 5
+    },
+    {
+        "nid": "EyvelPortrait",
+        "blinking_offset": [
+            25,
+            24
+        ],
+        "smiling_offset": [
+            17,
+            40
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "DagdarPortrait",
+        "blinking_offset": [
+            22,
+            22
+        ],
+        "smiling_offset": [
+            22,
+            38
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "TanyaPortrait",
+        "blinking_offset": [
+            31,
+            32
+        ],
+        "smiling_offset": [
+            31,
+            48
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "MartyPortrait",
+        "blinking_offset": [
+            24,
+            16
+        ],
+        "smiling_offset": [
+            16,
+            40
+        ],
+        "info_offset": 2
+    },
+    {
+        "nid": "RonanPortrait",
+        "blinking_offset": [
+            25,
+            25
+        ],
+        "smiling_offset": [
+            25,
+            41
+        ],
+        "info_offset": 2
+    },
+    {
+        "nid": "SafyPortrait",
+        "blinking_offset": [
+            25,
+            33
+        ],
+        "smiling_offset": [
+            25,
+            49
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "LifisPortrait",
+        "blinking_offset": [
+            24,
+            32
+        ],
+        "smiling_offset": [
+            16,
+            48
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "MachyuaPortrait",
+        "blinking_offset": [
+            27,
+            29
+        ],
+        "smiling_offset": [
+            27,
+            45
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "BrightonPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 5
+    },
+    {
+        "nid": "LaraPortrait",
+        "blinking_offset": [
+            22,
+            30
+        ],
+        "smiling_offset": [
+            22,
+            46
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "FergusPortrait",
+        "blinking_offset": [
+            27,
+            26
+        ],
+        "smiling_offset": [
+            27,
+            42
+        ],
+        "info_offset": 5
+    },
+    {
+        "nid": "KarinPortrait",
+        "blinking_offset": [
+            24,
+            32
+        ],
+        "smiling_offset": [
+            16,
+            48
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "DalsinPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            16,
+            40
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "AsbelPortrait",
+        "blinking_offset": [
+            29,
+            33
+        ],
+        "smiling_offset": [
+            16,
+            49
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "AltenaPortrait",
+        "blinking_offset": [
+            28,
+            24
+        ],
+        "smiling_offset": [
+            28,
+            40
+        ],
+        "info_offset": 4
+    },
+    {
+        "nid": "NannaPorrtrait",
+        "blinking_offset": [
+            32,
+            32
+        ],
+        "smiling_offset": [
+            32,
+            48
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "HicksPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "ShivaPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "CarrionPortrait",
+        "blinking_offset": [
+            24,
+            32
+        ],
+        "smiling_offset": [
+            24,
+            48
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "SelphinaPortrait",
+        "blinking_offset": [
+            26,
+            29
+        ],
+        "smiling_offset": [
+            26,
+            45
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "CainPortrait",
+        "blinking_offset": [
+            26,
+            22
+        ],
+        "smiling_offset": [
+            26,
+            38
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "AlvaFE5Portrait",
+        "blinking_offset": [
+            24,
+            23
+        ],
+        "smiling_offset": [
+            24,
+            39
+        ],
+        "info_offset": 4
+    },
+    {
+        "nid": "RobertPortrait",
+        "blinking_offset": [
+            23,
+            25
+        ],
+        "smiling_offset": [
+            23,
+            41
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "FredPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            16,
+            40
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "OlwenPortrait",
+        "blinking_offset": [
+            24,
+            25
+        ],
+        "smiling_offset": [
+            24,
+            41
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "MareetaPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "SalemPortrait",
+        "blinking_offset": [
+            0,
+            0
+        ],
+        "smiling_offset": [
+            0,
+            0
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "PernePortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 5
+    },
+    {
+        "nid": "TroudePortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "TinaPortrait",
+        "blinking_offset": [
+            25,
+            34
+        ],
+        "smiling_offset": [
+            25,
+            50
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "GladePortrait",
+        "blinking_offset": [
+            27,
+            24
+        ],
+        "smiling_offset": [
+            27,
+            40
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "DeenPortrait",
+        "blinking_offset": [
+            23,
+            19
+        ],
+        "smiling_offset": [
+            23,
+            35
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "EdaPortrait",
+        "blinking_offset": [
+            30,
+            26
+        ],
+        "smiling_offset": [
+            30,
+            42
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "Miranda",
+        "blinking_offset": [
+            29,
+            29
+        ],
+        "smiling_offset": [
+            29,
+            45
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "HomerPortrait",
+        "blinking_offset": [
+            24,
+            33
+        ],
+        "smiling_offset": [
+            24,
+            49
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "LinoanPortrait",
+        "blinking_offset": [
+            24,
+            25
+        ],
+        "smiling_offset": [
+            24,
+            41
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "RalfPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "IliosPortrait",
+        "blinking_offset": [
+            28,
+            23
+        ],
+        "smiling_offset": [
+            28,
+            39
+        ],
+        "info_offset": 2
+    },
+    {
+        "nid": "SleufPortrait",
+        "blinking_offset": [
+            27,
+            25
+        ],
+        "smiling_offset": [
+            27,
+            41
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "MishaPortrait",
+        "blinking_offset": [
+            31,
+            29
+        ],
+        "smiling_offset": [
+            31,
+            45
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "SaraPortrait",
+        "blinking_offset": [
+            24,
+            31
+        ],
+        "smiling_offset": [
+            24,
+            47
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "ShannamPortrait",
+        "blinking_offset": [
+            22,
+            23
+        ],
+        "smiling_offset": [
+            22,
+            39
+        ],
+        "info_offset": 2
+    },
+    {
+        "nid": "XavierPortrait",
+        "blinking_offset": [
+            26,
+            24
+        ],
+        "smiling_offset": [
+            26,
+            40
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "AmaldaPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 4
+    },
+    {
+        "nid": "ConomorPortrait",
+        "blinking_offset": [
+            27,
+            22
+        ],
+        "smiling_offset": [
+            27,
+            38
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "DelmudPortrait",
+        "blinking_offset": [
+            23,
+            26
+        ],
+        "smiling_offset": [
+            23,
+            42
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "SaiasPortrait",
+        "blinking_offset": [
+            27,
+            25
+        ],
+        "smiling_offset": [
+            27,
+            41
+        ],
+        "info_offset": 5
+    },
+    {
+        "nid": "CedPortrait",
+        "blinking_offset": [
+            16,
+            16
+        ],
+        "smiling_offset": [
+            16,
+            32
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "GalzusPortrait",
+        "blinking_offset": [
+            24,
+            32
+        ],
+        "smiling_offset": [
+            16,
+            48
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "LewynPortrait",
+        "blinking_offset": [
+            27,
+            28
+        ],
+        "smiling_offset": [
+            27,
+            44
+        ],
+        "info_offset": 4
+    },
+    {
+        "nid": "SeliphPortrait",
+        "blinking_offset": [
+            28,
+            31
+        ],
+        "smiling_offset": [
+            28,
+            47
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "YuriaPortrait",
+        "blinking_offset": [
+            27,
+            30
+        ],
+        "smiling_offset": [
+            27,
+            46
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "BloomPortrait",
+        "blinking_offset": [
+            22,
+            24
+        ],
+        "smiling_offset": [
+            22,
+            40
+        ],
+        "info_offset": 4
+    },
+    {
+        "nid": "AugustPortrait",
+        "blinking_offset": [
+            18,
+            21
+        ],
+        "smiling_offset": [
+            18,
+            37
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "CoirprePortrait",
+        "blinking_offset": [
+            24,
+            32
+        ],
+        "smiling_offset": [
+            24,
+            48
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "IshtarPortrait",
+        "blinking_offset": [
+            28,
+            27
+        ],
+        "smiling_offset": [
+            28,
+            43
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "JuliusPortrait",
+        "blinking_offset": [
+            26,
+            26
+        ],
+        "smiling_offset": [
+            26,
+            42
+        ],
+        "info_offset": 4
+    },
+    {
+        "nid": "ManfroyPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 2
+    },
+    {
+        "nid": "HannibalPortrait",
+        "blinking_offset": [
+            16,
+            24
+        ],
+        "smiling_offset": [
+            16,
+            40
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "DryasPortrait",
+        "blinking_offset": [
+            25,
+            25
+        ],
+        "smiling_offset": [
+            25,
+            41
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "ArionPortrait",
+        "blinking_offset": [
+            16,
+            24
+        ],
+        "smiling_offset": [
+            16,
+            40
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "TravantPortrait",
+        "blinking_offset": [
+            23,
+            21
+        ],
+        "smiling_offset": [
+            23,
+            37
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "RaydrikPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "VeldPortrait",
+        "blinking_offset": [
+            19,
+            22
+        ],
+        "smiling_offset": [
+            19,
+            38
+        ],
+        "info_offset": 4
+    },
+    {
+        "nid": "KempfPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "ReinhardtPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "WeissmanPortrait",
+        "blinking_offset": [
+            24,
+            16
+        ],
+        "smiling_offset": [
+            24,
+            32
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "BandolPortrait",
+        "blinking_offset": [
+            24,
+            16
+        ],
+        "smiling_offset": [
+            24,
+            32
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "MerlockPortrait",
+        "blinking_offset": [
+            24,
+            16
+        ],
+        "smiling_offset": [
+            24,
+            32
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "FrausPortrait",
+        "blinking_offset": [
+            24,
+            16
+        ],
+        "smiling_offset": [
+            24,
+            32
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "CoddaPortrait",
+        "blinking_offset": [
+            29,
+            35
+        ],
+        "smiling_offset": [
+            29,
+            51
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "RinecokPortrait",
+        "blinking_offset": [
+            29,
+            35
+        ],
+        "smiling_offset": [
+            29,
+            51
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "MuaPortrait",
+        "blinking_offset": [
+            29,
+            35
+        ],
+        "smiling_offset": [
+            29,
+            51
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "AlfanPortrait",
+        "blinking_offset": [
+            29,
+            35
+        ],
+        "smiling_offset": [
+            29,
+            51
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "TrumanPortrait",
+        "blinking_offset": [
+            28,
+            23
+        ],
+        "smiling_offset": [
+            28,
+            39
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "LargoPortrait",
+        "blinking_offset": [
+            28,
+            23
+        ],
+        "smiling_offset": [
+            28,
+            39
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "BaldackPortrait",
+        "blinking_offset": [
+            28,
+            23
+        ],
+        "smiling_offset": [
+            28,
+            39
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "NicolovPortrait",
+        "blinking_offset": [
+            28,
+            23
+        ],
+        "smiling_offset": [
+            28,
+            39
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "BrookPortrait",
+        "blinking_offset": [
+            28,
+            23
+        ],
+        "smiling_offset": [
+            28,
+            39
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "MakroyPortrait",
+        "blinking_offset": [
+            25,
+            23
+        ],
+        "smiling_offset": [
+            25,
+            39
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "LobosPortrait",
+        "blinking_offset": [
+            25,
+            23
+        ],
+        "smiling_offset": [
+            25,
+            39
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "CowenPortrait",
+        "blinking_offset": [
+            20,
+            22
+        ],
+        "smiling_offset": [
+            20,
+            38
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "BucksPortrait",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            24,
+            40
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "DobalzarkPortrait",
+        "blinking_offset": [
+            22,
+            20
+        ],
+        "smiling_offset": [
+            22,
+            36
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "GomesPortrait",
+        "blinking_offset": [
+            25,
+            24
+        ],
+        "smiling_offset": [
+            25,
+            40
+        ],
+        "info_offset": 2
+    },
+    {
+        "nid": "ColhoPortrait",
+        "blinking_offset": [
+            30,
+            26
+        ],
+        "smiling_offset": [
+            30,
+            42
+        ],
+        "info_offset": 7
+    },
+    {
+        "nid": "RumeiPortrait",
+        "blinking_offset": [
+            29,
+            21
+        ],
+        "smiling_offset": [
+            29,
+            37
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "MuellerPortrait",
+        "blinking_offset": [
+            29,
+            21
+        ],
+        "smiling_offset": [
+            29,
+            37
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "SeimetolPortrait",
+        "blinking_offset": [
+            29,
+            21
+        ],
+        "smiling_offset": [
+            29,
+            37
+        ],
+        "info_offset": 1
+    },
+    {
+        "nid": "AizenauPortrait",
+        "blinking_offset": [
+            23,
+            24
+        ],
+        "smiling_offset": [
+            23,
+            40
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "PaulusPortrait",
+        "blinking_offset": [
+            23,
+            24
+        ],
+        "smiling_offset": [
+            23,
+            40
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "PalmanPortrait",
+        "blinking_offset": [
+            23,
+            24
+        ],
+        "smiling_offset": [
+            23,
+            40
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "AihimanPortrait",
+        "blinking_offset": [
+            24,
+            26
+        ],
+        "smiling_offset": [
+            24,
+            42
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "FardenPortrait",
+        "blinking_offset": [
+            25,
+            24
+        ],
+        "smiling_offset": [
+            25,
+            40
+        ],
+        "info_offset": 5
+    },
+    {
+        "nid": "ZilePortrait",
+        "blinking_offset": [
+            24,
+            22
+        ],
+        "smiling_offset": [
+            24,
+            38
+        ],
+        "info_offset": 6
+    },
+    {
+        "nid": "OltofPortrait",
+        "blinking_offset": [
+            26,
+            24
+        ],
+        "smiling_offset": [
+            26,
+            40
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "GustavPortrait",
+        "blinking_offset": [
+            27,
+            23
+        ],
+        "smiling_offset": [
+            27,
+            39
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "BaratPortrait",
+        "blinking_offset": [
+            23,
+            24
+        ],
+        "smiling_offset": [
+            23,
+            40
+        ],
+        "info_offset": 2
+    },
+    {
+        "nid": "RistPortrait",
+        "blinking_offset": [
+            26,
+            26
+        ],
+        "smiling_offset": [
+            26,
+            42
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "WolffPortrait",
+        "blinking_offset": [
+            26,
+            26
+        ],
+        "smiling_offset": [
+            26,
+            42
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "ZaomPortrait",
+        "blinking_offset": [
+            15,
+            22
+        ],
+        "smiling_offset": [
+            15,
+            38
+        ],
+        "info_offset": 3
+    },
+    {
+        "nid": "CorutaPortrait",
+        "blinking_offset": [
+            15,
+            22
+        ],
+        "smiling_offset": [
+            15,
+            38
+        ],
+        "info_offset": 3
+    }
+]

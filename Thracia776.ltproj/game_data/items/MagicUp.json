@@ -1,0 +1,72 @@
+[
+    {
+        "nid": "MagicUp",
+        "name": "Magic Up",
+        "desc": "Increases an ally's Magic by 7 for 7 turns.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            15
+        ],
+        "components": [
+            [
+                "exp",
+                30
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "status_on_hit",
+                "Magic Up"
+            ],
+            [
+                "uses",
+                5
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                2200
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

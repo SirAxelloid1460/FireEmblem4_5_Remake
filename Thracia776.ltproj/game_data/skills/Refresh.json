@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Refresh",
+        "name": "Dance",
+        "desc": "Allows adjacent units to move once more this turn.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            1
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ability",
+                "Refresh"
+            ]
+        ]
+    }
+]

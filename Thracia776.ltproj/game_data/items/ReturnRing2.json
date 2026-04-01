@@ -1,0 +1,42 @@
+[
+    {
+        "nid": "ReturnRing2",
+        "name": "Return Ring",
+        "desc": "Moves an ally to an empty square",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            8
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "unload_unit",
+                null
+            ],
+            [
+                "target_tile",
+                null
+            ],
+            [
+                "empty_tile_target_restrict",
+                null
+            ],
+            [
+                "global_range",
+                null
+            ]
+        ]
+    }
+]

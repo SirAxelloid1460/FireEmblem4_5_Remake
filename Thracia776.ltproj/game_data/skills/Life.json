@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Life",
+        "name": "Life",
+        "desc": "Regenerates HP every turn",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            2
+        ],
+        "components": [
+            [
+                "regeneration",
+                0.2
+            ]
+        ]
+    }
+]

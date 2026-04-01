@@ -1,0 +1,19 @@
+[
+    "map_node",
+    "castle",
+    "fort",
+    "town",
+    "cathedral",
+    "citadel",
+    "forest_temple",
+    "palace",
+    "pyramid",
+    "ruins",
+    "tower",
+    "woods",
+    "wm_blue_marker",
+    "wm_red_marker",
+    "wm_city_marker",
+    "wm_purple_marker",
+    "wm_blank_marker"
+]

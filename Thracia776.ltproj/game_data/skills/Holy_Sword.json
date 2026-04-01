@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Holy Sword",
+        "name": "Holy Sword",
+        "desc": "Enhances damage done and halves received",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            37
+        ],
+        "components": [
+            [
+                "damage",
+                20
+            ],
+            [
+                "resist_multiplier",
+                0.5
+            ]
+        ]
+    }
+]

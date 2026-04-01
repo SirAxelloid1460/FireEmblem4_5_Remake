@@ -1,0 +1,131 @@
+[
+    {
+        "nid": "DragonMaster",
+        "name": "Dragon Master",
+        "desc": "",
+        "tier": 2,
+        "movement_group": "Fliers",
+        "promotes_from": "DragonKnight",
+        "turns_into": [],
+        "tags": [
+            "Flying"
+        ],
+        "max_level": 19,
+        "bases": {
+            "HP": 66,
+            "STR": 20,
+            "MAG": 0,
+            "SKL": 15,
+            "SPD": 12,
+            "LCK": 0,
+            "DEF": 23,
+            "RES": 0,
+            "CON": 13,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 30,
+            "MAG": 10,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 10,
+            "DEF": 30,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 2,
+            "MAG": 0,
+            "SKL": 2,
+            "SPD": 1,
+            "LCK": 0,
+            "DEF": 3,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 80,
+            "STR": 27,
+            "MAG": 15,
+            "SKL": 24,
+            "SPD": 22,
+            "LCK": 30,
+            "DEF": 29,
+            "RES": 15,
+            "CON": 13,
+            "MOV": 90
+        },
+        "learned_skills": [
+            [
+                1,
+                "Flying"
+            ],
+            [
+                1,
+                "Canto_Plus"
+            ]
+        ],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                226
+            ],
+            "Lance": [
+                true,
+                226
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                true,
+                51
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_DragonMaster",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "DragonMaster",
+        "combat_anim_nid": "DragonMaster",
+        "fields": []
+    }
+]

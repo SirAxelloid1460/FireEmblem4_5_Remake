@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Dainn Scroll",
+        "name": "Dainn Scroll",
+        "desc": "",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Dainn Scroll"
+            ]
+        ]
+    }
+]

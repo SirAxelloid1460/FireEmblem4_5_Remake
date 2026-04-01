@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "ChangeSniper",
+        "name": "Change to Sniper",
+        "desc": "Allows Eyvel to change her class to Sniper",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            7
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "ability",
+                "ChangeSniper"
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    }
+]

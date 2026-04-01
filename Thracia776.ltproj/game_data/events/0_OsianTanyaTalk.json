@@ -1,0 +1,72 @@
+[
+    {
+        "name": "OsianTanyaTalk",
+        "trigger": "on_talk",
+        "level_nid": "0",
+        "condition": "unit.nid == 'Osian' and unit2.nid == 'Tanya'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Osian",
+                    "Left",
+                    "Tanya",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Osian",
+                    "Tanya? What are you doing here?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Tanya",
+                    "What does it look like, Osian?{w}{br}I'm here to help you guys, any way I can!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Osian",
+                    "\"Help any way you can\", huh?{w}{br}In that case, turn tail and march back home.{w}{br}That's the only way a kid like you could help-{w}{br}you'd just get in the way.",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Tanya",
+                    "You've got some nerve, Osian!{w}{br}You're just a kid yourself, you know!?{w}{br}You want me gone, I'm gone-{w}not all of us are as eager to throw ourselves {br}into danger as you!{w}"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Osian",
+                    "Tanya"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Osian",
+                    "Tanya"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

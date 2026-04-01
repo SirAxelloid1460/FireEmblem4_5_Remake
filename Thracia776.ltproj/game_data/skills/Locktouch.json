@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Locktouch",
+        "name": "Locktouch",
+        "desc": "Open doors and chests without a key.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            2
+        ],
+        "components": [
+            [
+                "locktouch",
+                null
+            ]
+        ]
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Brave Axe",
+        "name": "Brave Axe",
+        "desc": "Allows two consecutive hits.",
+        "icon_nid": "Axe",
+        "icon_index": [
+            0,
+            3
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                15
+            ],
+            [
+                "hit",
+                70
+            ],
+            [
+                "weapon_type",
+                "Axe"
+            ],
+            [
+                "weapon_rank",
+                "B"
+            ],
+            [
+                "uses",
+                55
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "brave",
+                null
+            ],
+            [
+                "weight",
+                12
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                7975
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

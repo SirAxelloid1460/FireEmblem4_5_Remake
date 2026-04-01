@@ -1,0 +1,30 @@
+[
+    {
+        "nid": "BlankEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "EnemyEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "LoptyrEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "PlayerEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "ThraciaEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "AllyEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "MansterEmblem",
+        "subicon_dict": {}
+    }
+]

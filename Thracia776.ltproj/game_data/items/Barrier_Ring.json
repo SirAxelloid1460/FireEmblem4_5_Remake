@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Barrier Ring",
+        "name": "Barrier Ring",
+        "desc": "Grants Resistance +5.",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            5
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Barrier Ring"
+            ],
+            [
+                "value",
+                2000
+            ]
+        ]
+    }
+]
