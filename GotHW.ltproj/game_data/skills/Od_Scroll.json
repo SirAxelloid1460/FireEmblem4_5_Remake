@@ -1,0 +1,23 @@
+[
+    {
+        "nid": "Od Scroll",
+        "name": "Od Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            7,
+            6
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "SKL",
+                        30
+                    ]
+                ]
+            ]
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "nid": "Devil",
+        "name": "Devil",
+        "desc": "",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": []
+    }
+]

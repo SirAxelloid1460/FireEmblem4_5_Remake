@@ -1,0 +1,84 @@
+[
+    {
+        "nid": "ThunderStorm",
+        "name": "ThunderStorm",
+        "desc": "An electric rain that penetrates even the stone.",
+        "icon_nid": "Anima",
+        "icon_index": [
+            0,
+            9
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                12
+            ],
+            [
+                "hit",
+                65
+            ],
+            [
+                "weapon_type",
+                "Anima"
+            ],
+            [
+                "weapon_rank",
+                "B"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                30
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                25
+            ],
+            [
+                "crit",
+                20
+            ],
+            [
+                "value",
+                65550
+            ],
+            [
+                "min_range",
+                3
+            ],
+            [
+                "max_range",
+                10
+            ],
+            [
+                "cannot_be_countered",
+                null
+            ]
+        ]
+    }
+]

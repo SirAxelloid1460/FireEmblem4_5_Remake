@@ -1,0 +1,87 @@
+[
+    {
+        "nid": "Brigid",
+        "name": "Brigid",
+        "desc": "Elder daughter of Duke Ring of Yngvi, twin sister of Edain, and half-sister of Andrei.",
+        "variant": "Female",
+        "level": 1,
+        "klass": "Sniper",
+        "tags": [
+            "UlirHeir"
+        ],
+        "bases": {
+            "HP": 40,
+            "STR": 20,
+            "MAG": 0,
+            "SKL": 22,
+            "SPD": 21,
+            "LCK": 7,
+            "DEF": 14,
+            "RES": 9,
+            "CON": 6,
+            "MOV": 70
+        },
+        "growths": {
+            "HP": 60,
+            "STR": 10,
+            "MAG": 20,
+            "SKL": 60,
+            "SPD": 40,
+            "LCK": 50,
+            "DEF": 10,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Steel Bow",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                true,
+                1023
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "BrigidPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

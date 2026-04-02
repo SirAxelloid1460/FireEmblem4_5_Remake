@@ -1,0 +1,102 @@
+[
+    {
+        "name": "MackilySeized",
+        "trigger": "Seize",
+        "level_nid": "2",
+        "condition": "'Lord' in unit.tags and region.nid == 'Mackily'",
+        "commands": [
+            [
+                "trigger_script",
+                [
+                    "KillMackilyLeft"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Sigurd",
+                    "Left",
+                    "Oifaye1",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Good. Mackily is ours.{w}{br}That leaves the capital, Agusty...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Oifaye1",
+                    "Indeed, sire, but don't get too careless.{w}{br}We've been informed that Agusty still hosts a sizable defensive force.{w}{br}We ought to take utmost care.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Mm, you're right. Who knows what that Chagall has up his sleeve...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Sigurd",
+                    "Oifaye1"
+                ]
+            ],
+            [
+                "level_var",
+                [
+                    "MackilySeized",
+                    "True"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Erinys",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "has_finished",
+                [
+                    "Sigurd"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

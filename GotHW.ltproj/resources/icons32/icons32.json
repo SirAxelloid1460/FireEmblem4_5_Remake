@@ -1,0 +1,42 @@
+[
+    {
+        "nid": "BlankEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "EnemyEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "FriegeEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "IsaachEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "LoptyrEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "PlayerEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "ThraciaEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "VelthomerEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "AllyEmblem",
+        "subicon_dict": {}
+    },
+    {
+        "nid": "JungbyEmblem",
+        "subicon_dict": {}
+    }
+]

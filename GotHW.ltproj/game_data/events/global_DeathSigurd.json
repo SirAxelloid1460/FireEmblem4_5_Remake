@@ -1,0 +1,100 @@
+[
+    {
+        "name": "DeathSigurd",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Sigurd'",
+        "commands": [
+            [
+                "music",
+                [
+                    "126 - Ending Ballade"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Sigurd",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Nngh...{br}Everyone...{br}Forgive me...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Sigurd",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Sigurd"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Sigurd"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "200"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Oifaye1",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Oifaye1",
+                    "Oh sire...{br}We have no hope of victory now...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Oifaye1",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Oifaye1"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "100"
+                ]
+            ],
+            [
+                "lose_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

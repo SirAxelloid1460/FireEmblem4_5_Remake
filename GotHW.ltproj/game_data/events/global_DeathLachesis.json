@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathLachesis",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Lachesis'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Lachesis",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "Ah... Eldie...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Lachesis",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Lachesis"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Lachesis"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

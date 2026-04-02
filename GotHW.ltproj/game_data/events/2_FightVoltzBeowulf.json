@@ -1,0 +1,48 @@
+[
+    {
+        "name": "FightVoltzBeowulf",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "check_pair('Voltz','Beowulf')",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Voltz",
+                    "Left",
+                    "Beowulf",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Voltz",
+                    "Heh... Beowulf.{br}You ain't even close to a match fer me yet.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Beowulf",
+                    "Oh, definitely...{br}But this is what they're payin' me for.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Voltz",
+                    "Beowulf"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

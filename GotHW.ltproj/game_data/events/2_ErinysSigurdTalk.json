@@ -1,0 +1,131 @@
+[
+    {
+        "name": "ErinysSigurdTalk",
+        "trigger": "on_talk",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Erinys' and unit2.nid == 'Sigurd'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Erinys",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Lord Sigurd, I presume?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "I am indeed. And you, madam?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "My name is Erinys. I'm a royal knight of Silesse.{w}{br}I wish to join your army, so as to keep an eye on Prince Lewyn.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Er... Prince Lewyn?{br}What are you on about?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "My lord Lewyn is the rightful heir to the Silessian crown.{w}{br}He is a scion of Sety, the Wind Crusader, and is the sole inheritor of his power.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Wait, THAT Lewyn?{w}{br}Heh... I knew there was something odd about him,{w} but I'd never have thought him to be Silessian royalty.{w}{br}Any idea why he's pretending to be a bard?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "That's a long story, sir,{w}{br}and I'm hardly the most qualified to tell it.{w}{br}Perhaps try asking him later, but for now...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Fair enough.{br}It's hardly my business, anyway.{w}{br}I'm glad you're here, Erinys.{w}{br}A pegasus knight among us would be a great help.{w}{br}Would you mind aiding us in battle?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Yes, sir! I'll do my part!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Erinys",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Erinys",
+                    "Sigurd"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Wrath",
+        "name": "Wrath",
+        "desc": "User will always be able to perform critical attacks when their HP is below 50%",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            2
+        ],
+        "components": [
+            [
+                "condition",
+                "unit.get_hp() < (unit.stats['HP']//2)+1"
+            ],
+            [
+                "guaranteed_crit",
+                null
+            ]
+        ]
+    }
+]

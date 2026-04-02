@@ -1,0 +1,89 @@
+[
+    {
+        "nid": "Voltz",
+        "name": "Voltz",
+        "desc": "Mercenary leader enlisted by Macbeth to defend Anphony.",
+        "variant": null,
+        "level": 10,
+        "klass": "ForrestKnight",
+        "tags": [],
+        "bases": {
+            "HP": 60,
+            "STR": 14,
+            "MAG": 2,
+            "SKL": 21,
+            "SPD": 18,
+            "LCK": 0,
+            "DEF": 14,
+            "RES": 5,
+            "CON": 12,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 50,
+            "SPD": 30,
+            "LCK": 40,
+            "DEF": 40,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Steel Blade",
+                false
+            ],
+            [
+                "Elite Ring",
+                true
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                226
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "VoltzPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

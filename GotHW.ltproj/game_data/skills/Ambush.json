@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Ambush",
+        "name": "Ambush",
+        "desc": "Always attacks first even on defense if HP is below half.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            1
+        ],
+        "components": [
+            [
+                "condition",
+                "unit.get_hp() < unit.stats['HP']//2"
+            ],
+            [
+                "defense_pre_proc",
+                "Ambush_proc"
+            ]
+        ]
+    }
+]

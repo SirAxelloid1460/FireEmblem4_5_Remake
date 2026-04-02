@@ -1,0 +1,76 @@
+[
+    {
+        "nid": "Dragon Lance",
+        "name": "Dragon Lance",
+        "desc": "",
+        "icon_nid": "Lance",
+        "icon_index": [
+            0,
+            15
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                16
+            ],
+            [
+                "hit",
+                65
+            ],
+            [
+                "weapon_type",
+                "Lance"
+            ],
+            [
+                "status_on_equip",
+                "Ambush"
+            ],
+            [
+                "brave",
+                null
+            ],
+            [
+                "uses",
+                60
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                12
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Return",
+        "name": "Return",
+        "desc": "Sends an ally back to the Main Castle",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            5
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "exp",
+                15
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "uses",
+                10
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                10000
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "D"
+            ],
+            [
+                "no_ai",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "wexp",
+                7
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "event_on_use",
+                "Global ReturnSR"
+            ]
+        ]
+    }
+]

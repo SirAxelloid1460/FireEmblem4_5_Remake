@@ -1,0 +1,76 @@
+[
+    {
+        "nid": "Iron Lance",
+        "name": "Iron Lance",
+        "desc": "",
+        "icon_nid": "Lance",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                9
+            ],
+            [
+                "hit",
+                75
+            ],
+            [
+                "weapon_type",
+                "Lance"
+            ],
+            [
+                "weapon_rank",
+                "D"
+            ],
+            [
+                "uses",
+                45
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                10
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                1620
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

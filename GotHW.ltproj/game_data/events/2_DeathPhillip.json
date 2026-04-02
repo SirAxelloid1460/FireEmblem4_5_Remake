@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathPhillip",
+        "trigger": "unit_death",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Phillip'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Phillip",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Phillip",
+                    "Lord... Boldor...{br}I beg... your pardon...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Phillip",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Phillip"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Phillip"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

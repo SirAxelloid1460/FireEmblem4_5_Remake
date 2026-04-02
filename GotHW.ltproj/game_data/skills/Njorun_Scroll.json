@@ -1,0 +1,39 @@
+[
+    {
+        "nid": "Njorun Scroll",
+        "name": "Nj\u00f6run Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "STR",
+                        30
+                    ],
+                    [
+                        "MAG",
+                        -10
+                    ],
+                    [
+                        "SPD",
+                        -10
+                    ],
+                    [
+                        "LCK",
+                        -5
+                    ],
+                    [
+                        "DEF",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    }
+]

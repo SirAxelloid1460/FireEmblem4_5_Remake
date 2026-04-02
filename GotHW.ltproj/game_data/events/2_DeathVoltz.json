@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathVoltz",
+        "trigger": "unit_death",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Voltz'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Voltz",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Voltz",
+                    "Th-this can't be... You got me...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Voltz",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Voltz"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Voltz"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "name": "MackilyConvo",
+        "trigger": "unit_wait",
+        "level_nid": "2",
+        "condition": "((unit.position[0] == 38 and unit.position[1] == 34) or (unit.position[0] == 39 and unit.position[1] == 35) or (unit.position[0] == 57 and unit.position[1] == 34) or (unit.position[0] == 56 and unit.position[1] == 35)) and game.level_vars['HeirheinSeized'] == True and unit.team == 'player' and game.level_vars['MackilyConvo'] == False",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "{unit}",
+                    "Left",
+                    "Soldier6",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Soldier6",
+                    "Sigh... Who in their right mind would want to be sent to this blasted outlook?{w}{br}To think that even at a time like this, I, the pride of the Agustrian ballisticians, am... Hm? Somebody there?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Soldier6",
+                    "Must've been the wind...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Soldier6"
+                ]
+            ],
+            [
+                "level_var",
+                [
+                    "MackilyConvo",
+                    "True"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

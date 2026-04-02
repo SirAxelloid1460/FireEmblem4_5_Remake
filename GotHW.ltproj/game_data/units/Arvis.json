@@ -1,0 +1,96 @@
+[
+    {
+        "nid": "Arvis",
+        "name": "Arvis",
+        "desc": "Velthomer's Duke and Azel's elder half-brother",
+        "variant": "",
+        "level": 25,
+        "klass": "Sage",
+        "tags": [
+            "FjalarHeir"
+        ],
+        "bases": {
+            "HP": 60,
+            "STR": 15,
+            "MAG": 30,
+            "SKL": 27,
+            "SPD": 30,
+            "LCK": 0,
+            "DEF": 8,
+            "RES": 22,
+            "CON": 6,
+            "MOV": 70
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 50,
+            "SPD": 30,
+            "LCK": 40,
+            "DEF": 40,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Valflame",
+                false
+            ],
+            [
+                "Recover Ring",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Awareness"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                true,
+                1023
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "ArvisPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

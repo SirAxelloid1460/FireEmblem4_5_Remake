@@ -1,0 +1,184 @@
+[
+    {
+        "name": "CWVillage",
+        "trigger": "Visit",
+        "level_nid": "0",
+        "condition": "region.nid == 'CenterWest'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Man7",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Man7",
+                    "Here - the whole village did their bit to raise some money for you.{w}{br}It's not much, but we hope it helps out there.{w}{br}Be sure to lend the other villages a hand, too.{br}I bet they'll be happy to help you out right back{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Man7",
+                    "{unit}"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.level_vars['CenterWestDestructible'] == 1"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterWestDestructible'] == 2"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterWestDestructible'] == 3"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterWestDestructible'] == 4"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterWestDestructible'] == 5"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterWestDestructible'] == 6"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterWestDestructible'] == 7"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterWestDestructible'] == 8"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterWestDestructible'] == 9"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "give_money",
+                [
+                    "5000"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "show_layer",
+                [
+                    "CWClosed"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "CenterWestDestructible"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "CenterWestVillage"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

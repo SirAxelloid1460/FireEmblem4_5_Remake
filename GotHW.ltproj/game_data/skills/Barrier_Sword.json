@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Barrier Sword",
+        "name": "Barrier Sword",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "RES",
+                        7
+                    ]
+                ]
+            ]
+        ]
+    }
+]

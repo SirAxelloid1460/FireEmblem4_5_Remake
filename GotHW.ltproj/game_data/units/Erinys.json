@@ -1,0 +1,85 @@
+[
+    {
+        "nid": "Erinys",
+        "name": "Erinys",
+        "desc": "One of the Four Heavenly Knights of Silesse and the younger sister of Mahnya.",
+        "variant": null,
+        "level": 1,
+        "klass": "PegasusKnight",
+        "tags": [],
+        "bases": {
+            "HP": 32,
+            "STR": 11,
+            "MAG": 1,
+            "SKL": 12,
+            "SPD": 18,
+            "LCK": 7,
+            "DEF": 9,
+            "RES": 9,
+            "CON": 11,
+            "MOV": 70
+        },
+        "growths": {
+            "HP": 50,
+            "STR": 30,
+            "MAG": 0,
+            "SKL": 20,
+            "SPD": 30,
+            "LCK": 20,
+            "DEF": 30,
+            "RES": 10,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Slim Lance",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                126
+            ],
+            "Lance": [
+                true,
+                126
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "ErinysPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

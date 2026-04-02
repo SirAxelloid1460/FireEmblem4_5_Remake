@@ -1,0 +1,82 @@
+[
+    {
+        "name": "RemoveNordionGuardTalk",
+        "trigger": null,
+        "level_nid": "1",
+        "condition": "True",
+        "commands": [
+            [
+                "remove_talk",
+                [
+                    "Sigurd",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Noish",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Alec",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Arden",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Quan",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Finn",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Ethlyn",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Lex",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Azel",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Midir",
+                    "NordionGuard"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

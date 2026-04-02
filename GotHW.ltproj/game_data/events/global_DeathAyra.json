@@ -1,0 +1,78 @@
+[
+    {
+        "name": "DeathAyra",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Ayra'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Ayra",
+                    "Right"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "unit.team == 'player'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "Shannan... Grow up well...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "Shannan... I've failed you... I'm sorry",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "expression",
+                [
+                    "Ayra",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Ayra"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Ayra"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

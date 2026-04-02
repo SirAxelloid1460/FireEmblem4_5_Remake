@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Hel",
+        "name": "Hel",
+        "desc": "Destroys enemies from inside.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            4
+        ],
+        "components": [
+            [
+                "dynamic_damage",
+                "target.get_hp() - unit.stats['MAG'] + target.stats['RES'] - 1"
+            ]
+        ]
+    }
+]

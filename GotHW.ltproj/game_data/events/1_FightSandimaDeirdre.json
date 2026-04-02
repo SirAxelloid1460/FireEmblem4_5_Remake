@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightSandimaDeirdre",
+        "trigger": "combat_start",
+        "level_nid": "1",
+        "condition": "check_pair('Sandima', 'Deirdre')",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Sandima",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sandima",
+                    "What's this?{br}A priestess, are you?{w}{br}Could it be... Might you be Deirdre...?{br}The cursed maiden...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Sandima"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

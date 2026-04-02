@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathFakeMidir",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'FakeMidir'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Midir",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Midir",
+                    "Grr... Lady Aideen...{br}Forgive Me!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Midir",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Midir"
+                ]
+            ],
+            [
+                "remove_unit",
+                [
+                    "FakeMidir"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Luna_proc",
+        "name": "Moonlight",
+        "desc": "SKL% to ignore enemy's Defense or Resistance.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            0
+        ],
+        "components": [
+            [
+                "dynamic_damage",
+                "combat_calcs.defense(unit, target, None, item)"
+            ],
+            [
+                "hidden",
+                null
+            ]
+        ]
+    }
+]

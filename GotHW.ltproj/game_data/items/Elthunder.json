@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Elthunder",
+        "name": "Elthunder",
+        "desc": "A strong Lightning that electrocutes enemies in less than a second.",
+        "icon_nid": "Anima",
+        "icon_index": [
+            0,
+            6
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                14
+            ],
+            [
+                "hit",
+                80
+            ],
+            [
+                "weapon_type",
+                "Anima"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                45
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "crit",
+                10
+            ],
+            [
+                "value",
+                4950
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                2
+            ]
+        ]
+    }
+]

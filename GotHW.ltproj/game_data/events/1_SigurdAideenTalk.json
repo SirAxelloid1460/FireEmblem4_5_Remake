@@ -1,0 +1,121 @@
+[
+    {
+        "name": "SigurdAideenTalk",
+        "trigger": "on_talk",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Sigurd' and unit2.nid == 'Aideen'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Sigurd",
+                    "Left",
+                    "Aideen",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Aideen? Thank goodness you're okay!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Lord Sigurd! So you came to my aid, did you?{w}{br}Please accept my apologies. I've put the people{br}of Chalphy through nothing but danger...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Don't worry about it.{br}Everyone will be glad to know that you're safe.{w}{br}You've nothing to worry about anymore.{w}{br}The road back to Jungby is secure for you, when you're ready.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "No, I wish to remain here.{br}Injuries are inevitable in war.{w}{br}As a humble servant to the gods, it is my duty{br}to stay here and aid your wounded.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Say, Aideen... As I recall, you declined to pursue{br}a knighthood and instead joined the clergy. Am I right?{w}I shouldn't be surprised, knowing how easily{br}people warm to you, and you them.{w}{br}I'd do well to learn from your example!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Thank you, Lord Sigurd, but that isn't entirely true{w}{br}Initially, I sought priesthood in a bid to help me{br}find my sister.{w}{br}Even now, I still believe this is the answer I seek.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "You mean Bridget...{br}I'd heard that she went missing as a child.{w}{br}So all this time, Aideen, you've been{br}praying for her sake, haven't you?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Yes. I know we'll meet someday.{w}{br}No matter what happens, I mush give her this:{br}her sacred birthright, the bow Yewfelle!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Sigurd",
+                    "Aideen"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Sigurd",
+                    "Aideen"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

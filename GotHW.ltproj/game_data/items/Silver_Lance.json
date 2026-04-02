@@ -1,0 +1,76 @@
+[
+    {
+        "nid": "Silver Lance",
+        "name": "Silver Lance",
+        "desc": "",
+        "icon_nid": "Lance",
+        "icon_index": [
+            0,
+            2
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                17
+            ],
+            [
+                "hit",
+                80
+            ],
+            [
+                "weapon_type",
+                "Lance"
+            ],
+            [
+                "weapon_rank",
+                "A"
+            ],
+            [
+                "uses",
+                35
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                10
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                4515
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    }
+]

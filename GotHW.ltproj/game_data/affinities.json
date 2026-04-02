@@ -1,0 +1,240 @@
+[
+    {
+        "nid": "None",
+        "name": "None",
+        "desc": "No affinity",
+        "bonus": [
+            {
+                "support_rank": "Lover",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Fire",
+        "name": "Fire",
+        "desc": "Grants increased might, accuracy, avoid, and crit rate.",
+        "bonus": [
+            {
+                "support_rank": "Lover",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "Affinity",
+        "icon_index": [
+            0,
+            4
+        ]
+    },
+    {
+        "nid": "Thunder",
+        "name": "Thunder",
+        "desc": "Grants increased defense, avoid, crit rate, and crit avoid.",
+        "bonus": [
+            {
+                "support_rank": "Lover",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "Affinity",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Wind",
+        "name": "Wind",
+        "desc": "Grants increased might, accuracy, crit rate, and crit avoid.",
+        "bonus": [
+            {
+                "support_rank": "Lover",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "Affinity",
+        "icon_index": [
+            0,
+            7
+        ]
+    },
+    {
+        "nid": "Ice",
+        "name": "Ice",
+        "desc": "Grants increased defense, accuracy, avoid, and crit avoid.",
+        "bonus": [
+            {
+                "support_rank": "Lover",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "Affinity",
+        "icon_index": [
+            0,
+            5
+        ]
+    },
+    {
+        "nid": "Dark",
+        "name": "Dark",
+        "desc": "Grants increased accuracy, avoid, crit rate, and crit avoid.",
+        "bonus": [
+            {
+                "support_rank": "Lover",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "Affinity",
+        "icon_index": [
+            0,
+            1
+        ]
+    },
+    {
+        "nid": "Light",
+        "name": "Light",
+        "desc": "Grants increased attack, defense, accuracy, and crit rate.",
+        "bonus": [
+            {
+                "support_rank": "Lover",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "Affinity",
+        "icon_index": [
+            0,
+            6
+        ]
+    }
+]

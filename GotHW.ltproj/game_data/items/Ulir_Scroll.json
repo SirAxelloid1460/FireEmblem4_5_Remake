@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Ulir Scroll",
+        "name": "Ulir Scroll",
+        "desc": "",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            23
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Ulir Scroll"
+            ]
+        ]
+    }
+]

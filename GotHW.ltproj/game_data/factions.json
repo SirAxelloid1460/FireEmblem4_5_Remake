@@ -1,0 +1,172 @@
+[
+    {
+        "nid": "Nature",
+        "name": "Nature",
+        "desc": "",
+        "icon_nid": "BlankEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Jungby",
+        "name": "Jungby",
+        "desc": "",
+        "icon_nid": "JungbyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Friege",
+        "name": "Friege",
+        "desc": "",
+        "icon_nid": "FriegeEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Isaach",
+        "name": "Isaach",
+        "desc": "",
+        "icon_nid": "IsaachEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Loptyr",
+        "name": "Loptyr",
+        "desc": "",
+        "icon_nid": "LoptyrEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Thracia",
+        "name": "Thracia",
+        "desc": "",
+        "icon_nid": "ThraciaEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Velthomer",
+        "name": "Velthomer",
+        "desc": "",
+        "icon_nid": "VelthomerEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Player",
+        "name": "Player",
+        "desc": "",
+        "icon_nid": "PlayerEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Nordion",
+        "name": "Nordion",
+        "desc": "",
+        "icon_nid": "AllyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Verdane",
+        "name": "Verdane",
+        "desc": "",
+        "icon_nid": "EnemyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Genoa",
+        "name": "Genoa",
+        "desc": "",
+        "icon_nid": "EnemyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Marpha",
+        "name": "Marpha",
+        "desc": "",
+        "icon_nid": "EnemyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Heirhein",
+        "name": "Heirhein",
+        "desc": "",
+        "icon_nid": "EnemyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Anphony",
+        "name": "Anphony",
+        "desc": "",
+        "icon_nid": "EnemyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Mackily",
+        "name": "Mackily",
+        "desc": "",
+        "icon_nid": "EnemyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Agusty",
+        "name": "Agusty",
+        "desc": "",
+        "icon_nid": "EnemyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Silesia",
+        "name": "Silesia",
+        "desc": "",
+        "icon_nid": "EnemyEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    }
+]

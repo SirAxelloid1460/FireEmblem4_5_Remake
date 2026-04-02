@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathDiMaggio",
+        "trigger": "unit_death",
+        "level_nid": "0",
+        "condition": "unit.nid == 'DiMaggio'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "DiMaggio",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "DiMaggio",
+                    "No... This can't be!",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "DiMaggio",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "DiMaggio"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "DiMaggio"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

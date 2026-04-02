@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightZain",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Zain' or unit2.nid == 'Zain') and (unit.team == 'player' or unit2.team == 'player')",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Zain",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Zain",
+                    "Damned Grannvaleians\u2026 This is a matter of my pride as a warrior! I\u2019ll finish this and wipe you all out!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Zain"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

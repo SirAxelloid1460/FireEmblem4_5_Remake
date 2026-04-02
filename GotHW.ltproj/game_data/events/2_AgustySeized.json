@@ -1,0 +1,16 @@
+[
+    {
+        "name": "AgustySeized",
+        "trigger": "Seize",
+        "level_nid": "2",
+        "condition": "'Lord' in unit.tags and region.nid == 'Agusty'",
+        "commands": [
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

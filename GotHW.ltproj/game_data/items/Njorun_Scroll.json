@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Njorun Scroll",
+        "name": "Nj\u00f6run Scroll",
+        "desc": "",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            21
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Njorun Scroll"
+            ]
+        ]
+    }
+]

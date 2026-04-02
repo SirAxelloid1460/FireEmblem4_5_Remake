@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Pavise_proc",
+        "name": "Great Shield",
+        "desc": "Proc. Ignore attacker's damage.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            1
+        ],
+        "components": [
+            [
+                "ignore_damage",
+                null
+            ]
+        ]
+    }
+]

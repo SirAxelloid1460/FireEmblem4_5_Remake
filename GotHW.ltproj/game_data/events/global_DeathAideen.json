@@ -1,0 +1,126 @@
+[
+    {
+        "name": "DeathAideen",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Aideen'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Aideen",
+                    "FarRight"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "check_pair('Aideen', 'Jamke') and item == 'Married'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "...Oh lords above... Protect my comrades... in my stead... Jamke... Forgive me... Please...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "check_pair('Aideen', 'Midir') and item == 'Married'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "...Oh lords above... Protect my comrades... in my stead... Midir... Forgive me... Please...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "check_pair('Aideen', 'Azel') and item == 'Married'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "...Oh lords above... Protect my comrades... in my stead... Azel... Forgive me... Please...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "check_pair('Aideen', 'Claude') and item == 'Married'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "...Oh lords above... Protect my comrades... in my stead... Claude... Forgive me... Please...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "...Oh lords above... Protect my comrades... in my stead...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "expression",
+                [
+                    "Aideen",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Aideen"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Aideen"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

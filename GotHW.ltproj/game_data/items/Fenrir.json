@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Fenrir",
+        "name": "Fenrir",
+        "desc": "The most basic Dark tome.",
+        "icon_nid": "Dark",
+        "icon_index": [
+            0,
+            1
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                9
+            ],
+            [
+                "hit",
+                80
+            ],
+            [
+                "weapon_type",
+                "Dark"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                30
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                20
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                65550
+            ],
+            [
+                "min_range",
+                3
+            ],
+            [
+                "max_range",
+                10
+            ]
+        ]
+    }
+]

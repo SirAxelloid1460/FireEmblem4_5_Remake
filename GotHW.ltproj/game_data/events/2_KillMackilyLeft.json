@@ -1,0 +1,102 @@
+[
+    {
+        "name": "KillMackilyLeft",
+        "trigger": null,
+        "level_nid": "2",
+        "condition": "True",
+        "commands": [
+            [
+                "kill_unit",
+                [
+                    "Mackily_1"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_2"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_3"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_4"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_5"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_6"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_7"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_8"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_9"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_10"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_11"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_12"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_13"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_14"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Mackily_15"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

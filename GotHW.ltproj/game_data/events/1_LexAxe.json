@@ -1,0 +1,151 @@
+[
+    {
+        "name": "LexAxe",
+        "trigger": "unit_wait",
+        "level_nid": "1",
+        "condition": "region.nid == 'LadyLake' and unit.nid == 'Lex' and unit.get_weapon().nid == 'Iron Axe'",
+        "commands": [
+            [
+                "center_cursor",
+                [
+                    "Lex"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "324 - Gold Axe, Silver Axe\u00fc\u00b6\u00fc\u00b6"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Lex",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "Ugh, dammit!{br}I dropped my axe!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "LakeLady",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "LakeLady",
+                    "What you dropped...{w}{br}Was it this golden axe?{w}{br}Or perhaps,{w}{br}this silver axe?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "HonestLex",
+                    "Which Axe is yours?",
+                    "Golden Axe,Silver Axe,None",
+                    "",
+                    "v",
+                    "center"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['HonestLex'] == 'None'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "Oh, no. My axe isn't anything as fine as those two.{w}{br}It's just a plain old iron axe.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "LakeLady",
+                    "Such an honest person... As a reward...{br}I present you with this brave axe...{w}{br}Farewell, Lord Lex...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "Er...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Lex",
+                    "LakeLady"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Lex",
+                    "Brave Axe"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "LakeLady",
+                    "Such a liar you've become...{w}{br}For this your axe will be completely lost.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Lex",
+                    "LakeLady"
+                ]
+            ],
+            [
+                "remove_item",
+                [
+                    "Lex",
+                    "Iron Axe"
+                ]
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

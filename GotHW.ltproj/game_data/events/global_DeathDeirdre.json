@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathDeirdre",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Deirdre'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Deirdre",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Deirdre",
+                    "Agh...{br}What happened...?",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Deirdre",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Deirdre"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Deirdre"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

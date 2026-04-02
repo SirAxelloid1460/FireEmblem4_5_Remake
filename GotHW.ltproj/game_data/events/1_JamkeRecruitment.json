@@ -1,0 +1,135 @@
+[
+    {
+        "name": "JamkeRecruitment",
+        "trigger": "on_talk",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Aideen' and unit2.nid == 'Jamke'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Aideen",
+                    "Left",
+                    "Jamke",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Hold, Prince Jamke!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Jamke",
+                    "Aideen!? What are you doing here?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "You said you would persuade your father, yet{br}instead you've taken to the field yourself.{w}{br}What is the matter with you?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Jamke",
+                    "My father is a changed man.{br}My words can no longer reach him...{w}{br}...It all started when that sorcerer, Sandima, arrived.{w}{br}My entire family now obeys his every word.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "That is why I ask...{br}Why have you taken to the field?{w}{br}Please, Jamke.{w}{br}Join us. Let's go to Verdane together.{w}{br}We can reason with the king, one more time.{br}We can put an end to this war!{w}{br}Lord Sigurd has no interest in invading{br}Verdane. He fought only to rescue me.{w}{br}Please listen, Jamke. Please... I beg of you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Jamke",
+                    "Fine... If you're willing to go so far,{br}then I'll stain my name with treason{w}{br}But it must be understood that I won't{br}let anyone lay a finger on my father.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Yes, I will promise you that.{w}{br}Thank you, Jamke.{br}You truly are a good person.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Jamke",
+                    "Aideen...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Aideen",
+                    "Jamke"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Jamke",
+                    "None"
+                ]
+            ],
+            [
+                "change_team",
+                [
+                    "Jamke",
+                    "player"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Aideen",
+                    "Jamke"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

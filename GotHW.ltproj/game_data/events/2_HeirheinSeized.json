@@ -1,0 +1,123 @@
+[
+    {
+        "name": "HeirheinSeized",
+        "trigger": "Seize",
+        "level_nid": "2",
+        "condition": "'Lord' in unit.tags and region.nid == 'Heirhein'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "OutsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Oifaye1",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Oifaye1",
+                    "Heirhein is secure, sire. What are you thinking for our next move?{w}{br}Do we pull out?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Hm... The imminent danger has passed.{br}Nordion should be safe now,{w}{br}but Eldigan is still being held in the capital. Furthermore...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Oifaye1",
+                    "Yes?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "I'm hearing that the frontier towns in the central forests are grappling with bandit raids.{w}{br}We can't afford to leave them be.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Oifaye1",
+                    "Agreen. It is crucial that we help the locals,{w}{br}that we might convince them we aren't their enemy.{w}{br}In that case, we must ride for the north at once.{w}{br}There's no time to waste. Let's go!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Oifaye1",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "has_finished",
+                [
+                    "Sigurd"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "level_var",
+                [
+                    "HeirheinSeized",
+                    "True"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightPhillip",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Phillip' or unit2.nid == 'Phillip' and (unit.team == 'player' or unit2.team == 'player')",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Phillip",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Phillip",
+                    "Warriors of Grannvale...{w}{br}So long as I draw breath,{br}you shall never reach Heirhein!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Phillip"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

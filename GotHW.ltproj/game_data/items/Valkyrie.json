@@ -1,0 +1,66 @@
+[
+    {
+        "nid": "Valkyrie",
+        "name": "Valkyrie",
+        "desc": "Resurrects 1 fallen ally.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            14
+        ],
+        "components": [
+            [
+                "exp",
+                150
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "status_on_hit",
+                "Valkyrie"
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                30000
+            ],
+            [
+                "prf_tags",
+                [
+                    "BragiHeir"
+                ]
+            ]
+        ]
+    }
+]

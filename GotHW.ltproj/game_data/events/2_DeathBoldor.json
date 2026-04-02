@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathBoldor",
+        "trigger": "unit_death",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Boldor'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Boldor",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Boldor",
+                    "Gah... My... castle...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Boldor",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Boldor"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Boldor"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

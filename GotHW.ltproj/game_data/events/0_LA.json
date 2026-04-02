@@ -1,0 +1,214 @@
+[
+    {
+        "name": "LA",
+        "trigger": "turn_change",
+        "level_nid": "0",
+        "condition": "game.turncount == 2",
+        "commands": [
+            [
+                "music",
+                [
+                    "301 - Recruitment"
+                ]
+            ],
+            [
+                "center_cursor",
+                [
+                    "43,0"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Azel",
+                    "41,0"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Lex",
+                    "40,0"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Azel",
+                    "44,3",
+                    "",
+                    "",
+                    "no_block"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Lex",
+                    "43,3"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "# Announcement"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Azel",
+                    "Left",
+                    "Lex",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Lex, looks like we made it in time.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "Geez... Looks like Sigurd is taking on the entire Verdane Army!{w}{br}He'll sure be happy to see us. You just can't stay out of these things, can you, Azel...?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Yeah, but with the military on engagement to Isaac, Grannvale's completely strapped!{w}{br}Sigurd and the few soldiers left in Chalphy are out there fighting for their lives!{w}{br}I can't just leave them hanging...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "Oh really... I'm not quite buying your story, Azel. What aren't you telling me?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Wh-what're you talking about!?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "I'd surmise that you're all worked up about Lady Aideen of Jungby. I know you like her.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Y-you're nuts!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "A-ha! Face is getting red there, buddy! You little player you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Lex, knock it off!{br}Now come on, lets get going.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lex",
+                    "Hahahaa... Alright, let's do this. Finally, a chance to kick some ass.",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Azel",
+                    "Lex"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "10000",
+                    "no_banner"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Lex",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Azel",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "autolevel_to",
+                [
+                    "Lex",
+                    "4",
+                    "fixed"
+                ]
+            ],
+            [
+                "autolevel_to",
+                [
+                    "Azel",
+                    "5",
+                    "fixed"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

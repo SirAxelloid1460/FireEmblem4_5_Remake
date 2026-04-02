@@ -1,0 +1,68 @@
+[
+    {
+        "nid": "Broken Bow",
+        "name": "Broken Bow",
+        "desc": "",
+        "icon_nid": "Bow",
+        "icon_index": [
+            0,
+            11
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                0
+            ],
+            [
+                "hit",
+                0
+            ],
+            [
+                "weapon_type",
+                "Bow"
+            ],
+            [
+                "weapon_rank",
+                "D"
+            ],
+            [
+                "uses",
+                0
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                25
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                0
+            ]
+        ]
+    }
+]

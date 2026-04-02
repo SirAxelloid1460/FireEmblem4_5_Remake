@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Mjolnir",
+        "name": "Mjolnir",
+        "desc": "Holy Thunder Magic Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            6
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        20
+                    ],
+                    [
+                        "SPD",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    }
+]

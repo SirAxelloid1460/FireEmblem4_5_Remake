@@ -1,0 +1,168 @@
+[
+    {
+        "name": "BeowulfLachesisTalk",
+        "trigger": "on_talk",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Beowulf' and unit2.nid == 'Lachesis'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Beowulf",
+                    "Left",
+                    "Lachesis",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Beowulf",
+                    "Hey, you! You're that Nordion lady, aren't ya?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "E-excuse me?! Such boorishness!{w}{br}What manner of lowlife is asking?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Beowulf",
+                    "Oh, er, sorry 'bout that, ma'am.{br}The name's Beowulf, a hired blade.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "What do you want?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Beowulf",
+                    "Uh... Well, I just wanted to give ya a quick heads up about fightin'.{w}{br}See, war ain't the fun games you're used to.{w}{br}And someone as green as you...{br}Well, you're just gonna get in the way.{w}{br}Besides, a princess's a princess.{br}Why not run along back to your castle now?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "H-how dare you! My business in battle is just that:{w}{br}MY business! Not yours!{br}I'll nail your foul mouth closed!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Beowulf",
+                    "Heh. You really are Eldigan's sister.{br}Shoulda known you wouldn't be a pushover.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "What's that? Do you know my brother?!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Beowulf",
+                    "Oh, yeah. Eldigan and me, we go way back.{w}{br}I'd never've been so nosy if he hadn't asked me to keep an eye on ya.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "Is that so? Oh, I'm sorry for snapping at you so-{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Beowulf",
+                    "Eh, I've seen a lot worse in me time.{w}{br}Hey, how about a quick battle lesson?{w}{br}Eldigan thought it'd be a big help.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lachesis",
+                    "Why, thank you. I'd like that.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Beowulf",
+                    "Lachesis"
+                ]
+            ],
+            [
+                "change_stats",
+                [
+                    "Lachesis",
+                    "STR,2,SKL,2,DEF,1"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Beowulf",
+                    "Lachesis"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

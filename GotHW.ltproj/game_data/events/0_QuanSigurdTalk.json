@@ -1,0 +1,151 @@
+[
+    {
+        "name": "QuanSigurdTalk",
+        "trigger": "on_talk",
+        "level_nid": "0",
+        "condition": "unit.nid == 'Quan' and unit2.nid == 'Sigurd'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Quan",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Sigurd!{br}Glad to see you in one piece.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Quan?{br}What are you-{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "We heard about the Verdane attack and couldn't just leave you be.{br}We're here to do what we can.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "But what about Lenster?{br}Aren't your hands full there, keeping an eye on Thracia?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Indeed.{br}That's why Finn is the only knight here with me.{w}{br}The Lance Knights are all back at home, under Father's command.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Is that so...{br}Quan, I'm sorry for pulling you into this mess, too. I know you're-{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Sorry?{br}Surely you jest, Sigurd!{w}{br}Don't you recall our old pledge?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Hm?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Come now!{br}How could you forget?{w}{br}All those years ago, when we were students at the Belhalla academy?{w}{br}You, me, and Eldigan.{br}Dear friends and fierce rivals in equal measure?{w}{br}Surely you recall that night, talking late about our hopes and dreams, and pledging our aid to one another in times of need?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Ah, of course!{br}I remember it well.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Excellent. Now, shall we?{br}With both of us here, what hope could those Verdanite savages possible have?{w}{br}Never forget, Sigurd.{br}I'm here for you, now and forever.{w}{br}I'll not let you lose to these lowlives!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Quan",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Quan",
+                    "Sigurd"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,880 @@
+[
+    {
+        "unit1": "Aideen",
+        "unit2": "Jamke",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Aideen",
+        "unit2": "Midir",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Aideen",
+        "unit2": "Azel",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Aideen",
+        "unit2": "Claude",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Ayra",
+        "unit2": "Lex",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Ayra",
+        "unit2": "Arden",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Ayra",
+        "unit2": "Holyn",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Lachesis",
+        "unit2": "Beowulf",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Lachesis",
+        "unit2": "Finn",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Lachesis",
+        "unit2": "Dew",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Lachesis",
+        "unit2": "Noish",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Sylvia",
+        "unit2": "Claude",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Sylvia",
+        "unit2": "Lex",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Sylvia",
+        "unit2": "Dew",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Sylvia",
+        "unit2": "Alec",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Tailtiu",
+        "unit2": "Azel",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Tailtiu",
+        "unit2": "Lex",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Tailtiu",
+        "unit2": "Noish",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Tailtiu",
+        "unit2": "Claude",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Brigid",
+        "unit2": "Dew",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Brigid",
+        "unit2": "Midir",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Brigid",
+        "unit2": "Jamke",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Brigid",
+        "unit2": "Holyn",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Brigid",
+        "unit2": "Alec",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Sigurd",
+        "unit2": "Deirdre",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Quan",
+        "unit2": "Ethlyn",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    },
+    {
+        "unit1": "Erinys",
+        "unit2": "Lewyn",
+        "one_way": false,
+        "requirements": [
+            {
+                "support_rank": "Lover",
+                "requirement": 200,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "Married",
+                "requirement": 250,
+                "gate": "",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ]
+    }
+]

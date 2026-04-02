@@ -1,0 +1,104 @@
+[
+    {
+        "nid": "Deirdre",
+        "name": "Deirdre",
+        "desc": "Living descendant of Saint Maera and daughter of Prince Kurth of Grannvale",
+        "variant": "Female",
+        "level": 1,
+        "klass": "LightPriest",
+        "tags": [
+            "HeimHeir"
+        ],
+        "bases": {
+            "HP": 26,
+            "STR": 0,
+            "MAG": 14,
+            "SKL": 9,
+            "SPD": 12,
+            "LCK": 6,
+            "DEF": 3,
+            "RES": 16,
+            "CON": 6,
+            "MOV": 60
+        },
+        "growths": {
+            "HP": 70,
+            "STR": 10,
+            "MAG": 70,
+            "SKL": 20,
+            "SPD": 10,
+            "LCK": 10,
+            "DEF": 10,
+            "RES": 70,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Silence",
+                false
+            ],
+            [
+                "Aura",
+                false
+            ],
+            [
+                "Circlet",
+                false
+            ],
+            [
+                "Vulnerary",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Awareness"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                true,
+                126
+            ],
+            "Light": [
+                true,
+                1023
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "DeirdrePortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

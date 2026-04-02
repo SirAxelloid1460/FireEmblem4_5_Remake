@@ -1,0 +1,184 @@
+[
+    {
+        "name": "CenterVillage",
+        "trigger": "Visit",
+        "level_nid": "1",
+        "condition": "region.nid == 'CenterVillage'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "OldLady2",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldLady2",
+                    "King Batur is as gentle as they come.{w}{br}Normally, at least, leading a war like this is the last thing he'd ever do.{w}{br}Mark my words: This is all the doing of Sandima, his sorcerous advisor. I can just feel it{w}{br}Eking out a living here's grown tougher and tougher since the day that man arrived,{w}{br} and save for the youngest son, Jamke, both king and country are at his every whim.{w}{br}Please, I beg you... Save our country!{br}Bring back the Verdane that once was!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "OldLady2",
+                    "{unit}"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.level_vars['CenterDestructible'] == 1"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterDestructible'] == 2"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterDestructible'] == 3"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterDestructible'] == 4"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterDestructible'] == 5"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterDestructible'] == 6"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterDestructible'] == 7"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterDestructible'] == 8"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['CenterDestructible'] == 9"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "give_money",
+                [
+                    "5000"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "show_layer",
+                [
+                    "CenterClosed"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "CenterDestructible"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "CenterVillage"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

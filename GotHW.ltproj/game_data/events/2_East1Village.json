@@ -1,0 +1,184 @@
+[
+    {
+        "name": "East1Village",
+        "trigger": "Visit",
+        "level_nid": "2",
+        "condition": "region.nid == 'East1Village'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "OldMan3",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldMan3",
+                    "Beware of Bishop Clement, the lord of Mackily Castle.{w}{br}That dastard wields a magical staff that they call a Sleep Staff.{w}{br}If you're not careful, you'll find yourseld snoozin' and wide open to bein' attacked.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "OldMan3",
+                    "{unit}"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.level_vars['East1Destructible'] == 1"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['East1Destructible'] == 2"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['East1Destructible'] == 3"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['East1Destructible'] == 4"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['East1Destructible'] == 5"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['East1Destructible'] == 6"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['East1Destructible'] == 7"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['East1Destructible'] == 8"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['East1Destructible'] == 9"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "give_money",
+                [
+                    "5000"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "show_layer",
+                [
+                    "E1Closed"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "East1Destructible"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "East1Village"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

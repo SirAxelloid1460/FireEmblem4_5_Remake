@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Luna",
+        "name": "Moonlight",
+        "desc": "SKL% to ignore enemy's Defense or Resistance.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            0
+        ],
+        "components": [
+            [
+                "proc_rate",
+                "SKILL"
+            ],
+            [
+                "attack_proc",
+                "Luna_proc"
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    }
+]

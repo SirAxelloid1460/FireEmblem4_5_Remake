@@ -1,0 +1,78 @@
+[
+    {
+        "name": "DeathErinys",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Erinys'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Erinys",
+                    "FarRight"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "unit.team == 'player'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Prince Lewyn, please forgive me...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Ah... Queen Lahna... Please forgive me...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "expression",
+                [
+                    "Erinys",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Erinys"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Erinys"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

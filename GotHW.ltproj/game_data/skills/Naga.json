@@ -1,0 +1,35 @@
+[
+    {
+        "nid": "Naga",
+        "name": "Naga",
+        "desc": "Holy Light Magic Skill. Negates Loptyr effect",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            6
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        20
+                    ],
+                    [
+                        "SPD",
+                        20
+                    ],
+                    [
+                        "DEF",
+                        20
+                    ],
+                    [
+                        "RES",
+                        20
+                    ]
+                ]
+            ]
+        ]
+    }
+]

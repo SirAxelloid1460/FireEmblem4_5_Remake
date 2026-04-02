@@ -1,0 +1,140 @@
+[
+    {
+        "nid": "Tester",
+        "name": "Tester",
+        "desc": "Tester",
+        "tier": 0,
+        "movement_group": "Light Foot",
+        "promotes_from": null,
+        "turns_into": [],
+        "tags": [
+            "Lord",
+            "Boss",
+            "Horse",
+            "Mounted",
+            "Dragon",
+            "Armor",
+            "AutoPromote",
+            "Flying",
+            "BaldrHeir",
+            "ArenaIgnore",
+            "Ballistae",
+            "Nj\u00f6runHeir",
+            "NeirHeir",
+            "FjalarHeir",
+            "HeimHeir",
+            "HezulHeir",
+            "SetyHeir",
+            "BragiHeir",
+            "UlirHeir"
+        ],
+        "max_level": 19,
+        "bases": {
+            "HP": 10,
+            "STR": 12,
+            "MAG": 23,
+            "SKL": 45,
+            "SPD": 44,
+            "LCK": 46,
+            "DEF": 53,
+            "RES": 2,
+            "CON": 13,
+            "MOV": 150
+        },
+        "growths": {
+            "HP": 100,
+            "STR": 100,
+            "MAG": 100,
+            "SKL": 100,
+            "SPD": 100,
+            "LCK": 100,
+            "DEF": 100,
+            "RES": 100,
+            "CON": 0,
+            "MOV": 0
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "max_stats": {
+            "HP": 1000,
+            "STR": 30,
+            "MAG": 30,
+            "SKL": 30,
+            "SPD": 30,
+            "LCK": 30,
+            "DEF": 30,
+            "RES": 30,
+            "CON": 25,
+            "MOV": 150
+        },
+        "learned_skills": [],
+        "wexp_gain": {
+            "Sword": [
+                2,
+                1023
+            ],
+            "Lance": [
+                2,
+                1023
+            ],
+            "Axe": [
+                2,
+                1023
+            ],
+            "Bow": [
+                2,
+                1023
+            ],
+            "Staff": [
+                2,
+                1023
+            ],
+            "Light": [
+                2,
+                1023
+            ],
+            "Anima": [
+                2,
+                1023
+            ],
+            "Dark": [
+                2,
+                1023
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "icon_nid": "Generic_Portrait_Citizen",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "Citizen",
+        "combat_anim_nid": "Tester",
+        "fields": []
+    }
+]

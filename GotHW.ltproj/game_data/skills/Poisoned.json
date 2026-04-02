@@ -1,0 +1,42 @@
+[
+    {
+        "nid": "Poisoned",
+        "name": "Poisoned",
+        "desc": "Deals damage each turn while poisoned",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            3
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "time",
+                6
+            ],
+            [
+                "gba_poison",
+                5
+            ],
+            [
+                "unit_anim",
+                "MapPoison"
+            ],
+            [
+                "unit_flickering_tint",
+                [
+                    85,
+                    0,
+                    127
+                ]
+            ],
+            [
+                "display_skill_icon_in_combat",
+                null
+            ]
+        ]
+    }
+]

@@ -1,0 +1,153 @@
+[
+    {
+        "name": "PreBase",
+        "trigger": "level_start",
+        "level_nid": "1",
+        "condition": "True",
+        "commands": [
+            [
+                "music",
+                [
+                    "230 - Verdane Castle Town"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "BlackBackground"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_convoy",
+                    "True"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_base_market",
+                    "True"
+                ]
+            ],
+            [
+                "add_market_item",
+                [
+                    "Slim Sword",
+                    "1"
+                ]
+            ],
+            [
+                "add_market_item",
+                [
+                    "Steel Axe",
+                    "1"
+                ]
+            ],
+            [
+                "add_market_item",
+                [
+                    "Iron Lance",
+                    "1"
+                ]
+            ],
+            [
+                "add_market_item",
+                [
+                    "Javelin",
+                    "1"
+                ]
+            ],
+            [
+                "add_market_item",
+                [
+                    "Vulnerary"
+                ]
+            ],
+            [
+                "trigger_script",
+                [
+                    "DebugLevels"
+                ]
+            ],
+            [
+                "change_tilemap",
+                [
+                    "Base"
+                ]
+            ],
+            [
+                "show_layer",
+                [
+                    "Evans",
+                    "immediate"
+                ]
+            ],
+            [
+                "trigger_script",
+                [
+                    "BasePeople"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "BaseFloor2"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Narrator",
+                    "Welcome to your Preparation-Base Menu!!{w} Here you can manage your units equipment{w} and buy some new items and equipment{w} -Arena is not yet accessible from the Base.{w}",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Narrator",
+                    " Events related to winning in the arena{w} will be re-imagined and re-added,{w} most probably, in the battle map.{w}",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Narrator",
+                    "Oh!! and now you can get your items repaired at the Manage Menu,{w} make sure to get in there before proceeding to the next chapter,{w} for there is no other way to repair them and shops...{w} do not have that many existances.",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "base",
+                [
+                    "BaseFloor2",
+                    "230 - Verdane Castle Town",
+                    "show_map"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 29
+    }
+]

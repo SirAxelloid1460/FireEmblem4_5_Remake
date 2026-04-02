@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightErinys",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "((unit.nid == 'Erinys' and unit.team == 'enemy') or (unit2.nid == 'Erinys' and unit2.team == 'enemy')) and check_pair('Erinys','Lewyn') == False",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Erinys",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Knights of Grannvale, return Prince Lewyn to us!!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Erinys"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 21
+    }
+]

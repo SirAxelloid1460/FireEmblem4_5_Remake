@@ -1,0 +1,96 @@
+[
+    {
+        "name": "MackilyAttack",
+        "trigger": "enemy_turn_change",
+        "level_nid": "2",
+        "condition": "unit.position[0] >= 38 and unit.position[1] <= 35 and game.level_vars['MackilySpawn'] == True",
+        "commands": [
+            [
+                "change_ai",
+                [
+                    "Mackily_1",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Mackily_2",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Mackily_3",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Mackily_4",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Mackily_5",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Mackily_6",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Mackily_7",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Mackily_8",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Mackily_9",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Mackily_10",
+                    "Attack"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "MackilyNeutral_1",
+                    "Guard"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "MackilyNeutral_2",
+                    "Guard"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

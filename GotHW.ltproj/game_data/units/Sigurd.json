@@ -1,0 +1,92 @@
+[
+    {
+        "nid": "Sigurd",
+        "name": "Sigurd",
+        "desc": "Chalphy's and Crusader Baldr's Heir. He's got a strong sense of justice.",
+        "variant": "",
+        "level": 1,
+        "klass": "LordKnight",
+        "tags": [
+            "Lord",
+            "BaldrHeir"
+        ],
+        "bases": {
+            "HP": 35,
+            "STR": 14,
+            "MAG": 0,
+            "SKL": 11,
+            "SPD": 12,
+            "LCK": 7,
+            "DEF": 9,
+            "RES": 3,
+            "CON": 7,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 50,
+            "SPD": 30,
+            "LCK": 40,
+            "DEF": 40,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Steel Lance",
+                false
+            ],
+            [
+                "Steel Sword",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                1023
+            ],
+            "Lance": [
+                true,
+                126
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "SigurdPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

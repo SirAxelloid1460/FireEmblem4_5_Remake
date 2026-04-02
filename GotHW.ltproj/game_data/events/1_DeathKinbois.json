@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathKinbois",
+        "trigger": "unit_death",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Kinbois'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Kinbois",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Kinbois",
+                    "No...urgh.",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Kinbois",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Kinbois"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Kinbois"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

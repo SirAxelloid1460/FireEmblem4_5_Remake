@@ -1,0 +1,76 @@
+[
+    {
+        "nid": "Recover",
+        "name": "Recover",
+        "desc": "Restores All HP.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            2
+        ],
+        "components": [
+            [
+                "exp",
+                25
+            ],
+            [
+                "weight",
+                7
+            ],
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "B"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                30
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                7650
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "heal",
+                1000
+            ],
+            [
+                "heal_exp",
+                null
+            ]
+        ]
+    }
+]

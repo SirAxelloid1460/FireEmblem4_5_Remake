@@ -1,0 +1,79 @@
+[
+    {
+        "nid": "Warp",
+        "name": "Warp",
+        "desc": "Moves an ally to an empty square",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            6
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "D"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                4
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "value",
+                10000
+            ],
+            [
+                "wexp",
+                7
+            ],
+            [
+                "exp",
+                15
+            ],
+            [
+                "no_ai",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "sequence_item",
+                [
+                    "Warp1",
+                    "Warp2"
+                ]
+            ]
+        ]
+    }
+]

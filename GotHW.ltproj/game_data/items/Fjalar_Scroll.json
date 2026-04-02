@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Fjalar Scroll",
+        "name": "Fjalar Scroll",
+        "desc": "",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            25
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Fjalar Scroll"
+            ]
+        ]
+    }
+]

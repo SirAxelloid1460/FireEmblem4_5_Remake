@@ -1,0 +1,48 @@
+[
+    {
+        "name": "FightGandolfMidir",
+        "trigger": "combat_start",
+        "level_nid": "1",
+        "condition": "check_pair('Gandolf', 'Midir')",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Gandolf",
+                    "Left",
+                    "Midir",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Gandolf",
+                    "You're that knight from earlier!?{w}{br}Ugh, I don't believe this...{w}{br}What are you doing still alive?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Midir",
+                    "Prepare yourself, Gandolf!{br}I'll never forgive you!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Gandolf",
+                    "Midir"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

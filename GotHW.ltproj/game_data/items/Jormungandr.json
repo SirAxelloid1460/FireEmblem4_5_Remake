@@ -1,0 +1,84 @@
+[
+    {
+        "nid": "Jormungandr",
+        "name": "Jormungandr",
+        "desc": "Poisons an enemy.",
+        "icon_nid": "Dark",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                21
+            ],
+            [
+                "hit",
+                80
+            ],
+            [
+                "weapon_type",
+                "Dark"
+            ],
+            [
+                "weapon_rank",
+                "D"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                35
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                27
+            ],
+            [
+                "status_on_hit",
+                "Poisoned"
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                65450
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                2
+            ]
+        ]
+    }
+]

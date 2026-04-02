@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Mystletainn",
+        "name": "Mystletainn",
+        "desc": "Holy Sword Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        20
+                    ],
+                    [
+                        "RES",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    }
+]

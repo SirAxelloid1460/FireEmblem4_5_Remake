@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathMacbeth",
+        "trigger": "unit_death",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Macbeth'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Macbeth",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Macbeth",
+                    "Why me... Umph...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Macbeth",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Macbeth"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Macbeth"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

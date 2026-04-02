@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightBoldor",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "(unit.nid == 'Boldor' or unit2.nid == 'Boldor') and (unit.team == 'player' or unit2.team == 'player')",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Boldor",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Boldor",
+                    "Grannvale's here already!?{w}{br}Blast... Why couldn't my men have been useful for once?{w}{br}Fine, I'll take this into my own hands!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Boldor"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

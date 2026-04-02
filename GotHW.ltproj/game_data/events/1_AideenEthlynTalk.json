@@ -1,0 +1,83 @@
+[
+    {
+        "name": "AideenEthlynTalk",
+        "trigger": "on_talk",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Aideen' and unit2.nid == 'Ethlyn'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Aideen",
+                    "Left",
+                    "Ethlyn",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "Aideen, are you okay?{br}When I heard you'd been abducted, I was so worried!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "You came to fight for me as well, Ethlyn?{br}Thank you... I'm sorry for your trouble.{w}{br}It's difficult to convey my thanks,{br}but please, accept this staff.{w}{br}I think you'll have more use for it than me.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ethlyn",
+                    "Is this... a Return staff!?{br}Oh, thank you, Aideen!{w}{br}I'll put it to good use to help us all.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Aideen",
+                    "Ethlyn"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "give_item",
+                [
+                    "Ethlyn",
+                    "Return",
+                    "no_choice"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Aideen",
+                    "Ethlyn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

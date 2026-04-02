@@ -1,0 +1,82 @@
+[
+    {
+        "name": "AddNordionGuardTalk",
+        "trigger": "level_start",
+        "level_nid": "1",
+        "condition": "True",
+        "commands": [
+            [
+                "add_talk",
+                [
+                    "Sigurd",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Noish",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Alec",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Arden",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Quan",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Finn",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Ethlyn",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Lex",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Azel",
+                    "NordionGuard"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Midir",
+                    "NordionGuard"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 27
+    }
+]

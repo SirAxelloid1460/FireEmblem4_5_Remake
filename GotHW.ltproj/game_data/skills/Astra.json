@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Astra",
+        "name": "Shooting Star",
+        "desc": "SKL%. to attack up to 5 consecutive times.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            2
+        ],
+        "components": [
+            [
+                "proc_rate",
+                "SKILL"
+            ],
+            [
+                "attack_proc",
+                "Astra_proc"
+            ]
+        ]
+    }
+]

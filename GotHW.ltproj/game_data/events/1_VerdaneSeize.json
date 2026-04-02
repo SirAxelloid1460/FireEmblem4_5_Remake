@@ -1,0 +1,16 @@
+[
+    {
+        "name": "VerdaneSeize",
+        "trigger": "Seize",
+        "level_nid": "1",
+        "condition": "'Lord' in unit.tags and region.nid == 'Verdane'",
+        "commands": [
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

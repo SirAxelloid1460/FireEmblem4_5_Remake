@@ -1,0 +1,90 @@
+[
+    {
+        "nid": "Midir",
+        "name": "Midir",
+        "desc": "Knight in the service of Grannvale's House Jungby, used to with bow fighting.",
+        "variant": null,
+        "level": 1,
+        "klass": "CavalierB",
+        "tags": [],
+        "bases": {
+            "HP": 32,
+            "STR": 9,
+            "MAG": 0,
+            "SKL": 7,
+            "SPD": 9,
+            "LCK": 3,
+            "DEF": 7,
+            "RES": 0,
+            "CON": 10,
+            "MOV": 80
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 30,
+            "SPD": 40,
+            "LCK": 10,
+            "DEF": 50,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Iron Bow",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Charge"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0
+            ],
+            "Lance": [
+                false,
+                0
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                true,
+                1
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "MidirPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

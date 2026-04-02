@@ -1,0 +1,89 @@
+[
+    {
+        "nid": "Eva",
+        "name": "Eva",
+        "desc": "Elite knight of Nordion and the middle triplet brother of Eve and Alva.",
+        "variant": null,
+        "level": 8,
+        "klass": "APaladin",
+        "tags": [],
+        "bases": {
+            "HP": 50,
+            "STR": 8,
+            "MAG": 6,
+            "SKL": 10,
+            "SPD": 10,
+            "LCK": 0,
+            "DEF": 14,
+            "RES": 6,
+            "CON": 11,
+            "MOV": 90
+        },
+        "growths": {
+            "HP": 110,
+            "STR": 50,
+            "MAG": 5,
+            "SKL": 30,
+            "SPD": 40,
+            "LCK": 10,
+            "DEF": 50,
+            "RES": 5,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Steel Sword",
+                false
+            ],
+            [
+                "Javelin",
+                false
+            ]
+        ],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                126
+            ],
+            "Lance": [
+                true,
+                126
+            ],
+            "Axe": [
+                false,
+                0
+            ],
+            "Bow": [
+                false,
+                0
+            ],
+            "Staff": [
+                false,
+                0
+            ],
+            "Light": [
+                false,
+                0
+            ],
+            "Anima": [
+                false,
+                0
+            ],
+            "Dark": [
+                false,
+                0
+            ],
+            "Default": [
+                false,
+                0
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "EvaPortrait",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

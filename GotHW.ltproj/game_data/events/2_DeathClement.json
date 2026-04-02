@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DeathClement",
+        "trigger": "unit_death",
+        "level_nid": "2",
+        "condition": "unit.nid == 'Clement'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Clement",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Clement",
+                    "Urgh... Don't forget me...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Clement",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Clement"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Clement"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

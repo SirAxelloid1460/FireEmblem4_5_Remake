@@ -1,0 +1,44 @@
+[
+    {
+        "name": "NordionGuardTalk",
+        "trigger": "on_talk",
+        "level_nid": "1",
+        "condition": "unit2.nid == 'NordionGuard'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "NordionGuard",
+                    "Left",
+                    "{unit}",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "NordionGuard",
+                    "Rest assured, Nordion has this region covered.{w}{br}Leave this point to us.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "NordionGuard",
+                    "{unit}"
+                ]
+            ],
+            [
+                "trigger_script",
+                [
+                    "RemoveNordionGuardTalk"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

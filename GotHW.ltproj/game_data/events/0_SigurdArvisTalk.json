@@ -1,0 +1,146 @@
+[
+    {
+        "name": "SigurdArvisTalk",
+        "trigger": "on_talk",
+        "level_nid": "0",
+        "condition": "unit.nid == 'Sigurd' and unit2.nid == 'Arvis'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Arvis",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Arvis",
+                    "It has been too long, Master Sigurd.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Lord Arvis?!{br}Why are you-{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Arvis",
+                    "His Majesty is concerned with the crisis here, and he bade me to come and observe.{w}{br}He also entrusted me with this -{br}a gift for you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "This is... a silver sword!{br}A gift from His Majesty? Oh, what an honor!{w}{br}Lord Arvis, be sure to pass my deepest gratitude for this onto the king!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Arvis",
+                    "Very well. Incidentally, Sigurd, rumor has it that my brother, Azel,{w} is among your forces. I presume this is true?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Mm, sorry about that.{br}It sounded as if he came behind your back,{w} but I couldn't turn hiim away.{w}{br}If at all possible, would you mind if he remained with me for a while longer?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Arvis",
+                    "I see... So long as you keep him safe, then.{w}{br}He and I may have different mothers, but Azel is still my only brother.{w}{br}I'd prefer if he remained by my side, but perhaps this is how it must be...{w}{br}I'll entrust Azel to you, Sigurd.{br}Be sure that he learns from this experience.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "You can leave it to me, Lord Arvis.{br}Once we're done here,{w} I'll do what I can to convince him to go home.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Arvis",
+                    "Good to hear it.{br}Now, I must return to his Majesty's side in the capital.{w}{br}I'm entrusting this crisis to you, Sigurd.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Arvis",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Sigurd",
+                    "Silver Sword"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Arvis",
+                    "32,0",
+                    "no_follow"
+                ]
+            ],
+            [
+                "remove_unit",
+                [
+                    "Arvis"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Sigurd",
+                    "Arvis"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

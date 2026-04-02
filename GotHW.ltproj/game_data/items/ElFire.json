@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "ElFire",
+        "name": "ElFire",
+        "desc": "A strong flame that burns enemies in matter of seconds.",
+        "icon_nid": "Anima",
+        "icon_index": [
+            0,
+            1
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                13
+            ],
+            [
+                "hit",
+                70
+            ],
+            [
+                "weapon_type",
+                "Anima"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                35
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                10
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                4550
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                2
+            ]
+        ]
+    }
+]

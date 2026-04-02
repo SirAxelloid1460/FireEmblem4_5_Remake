@@ -1,0 +1,65 @@
+[
+    {
+        "name": "ChangePortrait",
+        "trigger": "unit_wait",
+        "level_nid": "DEBUG",
+        "condition": "region.nid == 'Return'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "{unit}",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "{unit}",
+                    "So, this is my normal portrait",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "change_portrait",
+                [
+                    "{unit}",
+                    "ArdenPortrait"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "{unit}",
+                    "Now this is my new portrait",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

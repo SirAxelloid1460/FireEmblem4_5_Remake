@@ -1,0 +1,550 @@
+[
+    {
+        "nid": "Jugdral",
+        "name": "Jugdral",
+        "tilemap": "WorldMap",
+        "music": "104 - Glorious Grandbell",
+        "overworld_nodes": [
+            {
+                "nid": "0",
+                "name": "Chalphy",
+                "pos": [
+                    18,
+                    21
+                ],
+                "icon": "wm_city_marker",
+                "level": "0",
+                "menu_options": []
+            },
+            {
+                "nid": "1",
+                "name": "Jungby",
+                "pos": [
+                    14,
+                    22
+                ],
+                "icon": "wm_city_marker",
+                "level": "998",
+                "menu_options": []
+            },
+            {
+                "nid": "2",
+                "name": "Dozel",
+                "pos": [
+                    17,
+                    17
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "3",
+                "name": "Edda",
+                "pos": [
+                    21,
+                    19
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "4",
+                "name": "Belhalla",
+                "pos": [
+                    18,
+                    16
+                ],
+                "icon": "wm_purple_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "5",
+                "name": "Velthomer",
+                "pos": [
+                    21,
+                    14
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "6",
+                "name": "Freege",
+                "pos": [
+                    14,
+                    16
+                ],
+                "icon": "map_node",
+                "level": null,
+                "menu_options": []
+            },
+            {
+                "nid": "7",
+                "name": "Evans",
+                "pos": [
+                    10,
+                    22
+                ],
+                "icon": "wm_city_marker",
+                "level": "1",
+                "menu_options": []
+            },
+            {
+                "nid": "8",
+                "name": "Nordion",
+                "pos": [
+                    6,
+                    21
+                ],
+                "icon": "map_node",
+                "level": "2",
+                "menu_options": []
+            },
+            {
+                "nid": "9",
+                "name": "Heirhein",
+                "pos": [
+                    2,
+                    17
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "10",
+                "name": "New Location",
+                "pos": [
+                    8,
+                    16
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "11",
+                "name": "Agusty",
+                "pos": [
+                    9,
+                    14
+                ],
+                "icon": "wm_purple_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "12",
+                "name": "Anphony",
+                "pos": [
+                    4,
+                    13
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "13",
+                "name": "Silvail",
+                "pos": [
+                    5,
+                    11
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "14",
+                "name": "Madino",
+                "pos": [
+                    10,
+                    9
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "15",
+                "name": "Phinora",
+                "pos": [
+                    25,
+                    11
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "16",
+                "name": "Yied Shire",
+                "pos": [
+                    28,
+                    13
+                ],
+                "icon": "wm_purple_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "17",
+                "name": "Darna",
+                "pos": [
+                    28,
+                    16
+                ],
+                "icon": "wm_city_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "18",
+                "name": "Rivough",
+                "pos": [
+                    34,
+                    11
+                ],
+                "icon": "wm_city_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "19",
+                "name": "Isaach",
+                "pos": [
+                    36,
+                    8
+                ],
+                "icon": "wm_purple_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "20",
+                "name": "Sophara",
+                "pos": [
+                    32,
+                    7
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "21",
+                "name": "Lubeck",
+                "pos": [
+                    25,
+                    7
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "22",
+                "name": "Zaxon",
+                "pos": [
+                    22,
+                    8
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "23",
+                "name": "Silesia",
+                "pos": [
+                    17,
+                    10
+                ],
+                "icon": "wm_purple_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "24",
+                "name": "Sailane",
+                "pos": [
+                    15,
+                    8
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "25",
+                "name": "Thove",
+                "pos": [
+                    22,
+                    2
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "26",
+                "name": "Orgahill",
+                "pos": [
+                    11,
+                    5
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "27",
+                "name": "Verdane",
+                "pos": [
+                    4,
+                    24
+                ],
+                "icon": "wm_purple_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "28",
+                "name": "Marpha",
+                "pos": [
+                    7,
+                    28
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "29",
+                "name": "Genoa",
+                "pos": [
+                    12,
+                    27
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "30",
+                "name": "Rados",
+                "pos": [
+                    16,
+                    30
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "31",
+                "name": "Miletos",
+                "pos": [
+                    18,
+                    26
+                ],
+                "icon": "wm_purple_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "32",
+                "name": "Chronos",
+                "pos": [
+                    21,
+                    28
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "33",
+                "name": "Peruluka",
+                "pos": [
+                    26,
+                    25
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "34",
+                "name": "Melgen",
+                "pos": [
+                    28,
+                    23
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "35",
+                "name": "Tahra",
+                "pos": [
+                    30,
+                    25
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "36",
+                "name": "Luthecia",
+                "pos": [
+                    29,
+                    27
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "37",
+                "name": "Grutia",
+                "pos": [
+                    31,
+                    32
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "38",
+                "name": "Thracia",
+                "pos": [
+                    34,
+                    31
+                ],
+                "icon": "wm_purple_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "39",
+                "name": "Kapathogia",
+                "pos": [
+                    33,
+                    27
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "40",
+                "name": "Meace",
+                "pos": [
+                    34,
+                    24
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "41",
+                "name": "Alster",
+                "pos": [
+                    32,
+                    21
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "42",
+                "name": "Munster",
+                "pos": [
+                    36,
+                    20
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "43",
+                "name": "Conote",
+                "pos": [
+                    37,
+                    17
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "44",
+                "name": "Lenster",
+                "pos": [
+                    33,
+                    17
+                ],
+                "icon": "wm_purple_marker",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "45",
+                "name": "Ganeishire",
+                "pos": [
+                    36,
+                    4
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            },
+            {
+                "nid": "46",
+                "name": "Tirnanog",
+                "pos": [
+                    31,
+                    2
+                ],
+                "icon": "map_node",
+                "level": "DEBUG",
+                "menu_options": []
+            }
+        ],
+        "map_paths": {},
+        "border_tile_width": 0
+    },
+    {
+        "nid": "Chronology",
+        "name": "Chronology",
+        "tilemap": "Chronology",
+        "music": null,
+        "overworld_nodes": [
+            {
+                "nid": "0",
+                "name": "Blank",
+                "pos": [
+                    0,
+                    0
+                ],
+                "icon": "wm_blank_marker",
+                "level": "0",
+                "menu_options": []
+            }
+        ],
+        "map_paths": {},
+        "border_tile_width": 0
+    }
+]

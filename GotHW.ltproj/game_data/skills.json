@@ -1,0 +1,2263 @@
+[
+    {
+        "nid": "Canto",
+        "name": "Canto",
+        "desc": "Can move again after certain actions.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            0
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "canto",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Canto_Plus",
+        "name": "Canto+",
+        "desc": "Can move again after certain actions.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            0
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "canto_plus",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Regeneration",
+        "name": "Regeneration",
+        "desc": "Regenerate HP every turn.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            2
+        ],
+        "components": [
+            [
+                "regeneration",
+                0.25000000000000006
+            ]
+        ]
+    },
+    {
+        "nid": "Fort",
+        "name": "Fort",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            2
+        ],
+        "components": [
+            [
+                "regeneration",
+                0.7500000000000001
+            ],
+            [
+                "avoid",
+                20
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        3
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Throne",
+        "name": "Throne",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            2
+        ],
+        "components": [
+            [
+                "regeneration",
+                0.20000000000000007
+            ],
+            [
+                "avoid",
+                10
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        3
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Gate",
+        "name": "Gate",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            2
+        ],
+        "components": [
+            [
+                "regeneration",
+                0.20000000000000007
+            ],
+            [
+                "avoid",
+                20
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        3
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Forest",
+        "name": "Forest",
+        "desc": "",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                20
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Mountain",
+        "name": "Mountain",
+        "desc": "",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                30
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Peak",
+        "name": "Peak",
+        "desc": "",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                40
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        2
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Flying",
+        "name": "Flying",
+        "desc": "Can fly.",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": [
+            [
+                "ignore_terrain",
+                null
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Refresh",
+        "name": "Dance",
+        "desc": "Allows adjacent units to move once more this turn.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            1
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ability",
+                "Refresh"
+            ]
+        ]
+    },
+    {
+        "nid": "Poisoned",
+        "name": "Poisoned",
+        "desc": "Deals damage each turn while poisoned",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            3
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "time",
+                6
+            ],
+            [
+                "gba_poison",
+                5
+            ],
+            [
+                "unit_anim",
+                "MapPoison"
+            ],
+            [
+                "unit_flickering_tint",
+                [
+                    85,
+                    0,
+                    127
+                ]
+            ],
+            [
+                "display_skill_icon_in_combat",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Stunned",
+        "name": "Stunned",
+        "desc": "Unit cannot act.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            3
+        ],
+        "components": [
+            [
+                "time",
+                2
+            ],
+            [
+                "unselectable",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "MOV",
+                        -99
+                    ]
+                ]
+            ],
+            [
+                "cannot_use_items",
+                null
+            ],
+            [
+                "negative",
+                null
+            ],
+            [
+                "display_skill_icon_in_combat",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Sleep",
+        "name": "Sleep",
+        "desc": "Unit is asleep.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            3
+        ],
+        "components": [
+            [
+                "time",
+                5
+            ],
+            [
+                "unselectable",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "MOV",
+                        -99
+                    ]
+                ]
+            ],
+            [
+                "negative",
+                null
+            ],
+            [
+                "cannot_use_items",
+                null
+            ],
+            [
+                "display_skill_icon_in_combat",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Petrify",
+        "name": "Petrify",
+        "desc": "Unit is petrified. Cannot avoid enemy attacks and suffers -30 dodge.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            3
+        ],
+        "components": [
+            [
+                "time",
+                5
+            ],
+            [
+                "unselectable",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "MOV",
+                        -99
+                    ]
+                ]
+            ],
+            [
+                "cannot_use_items",
+                null
+            ],
+            [
+                "negative",
+                null
+            ],
+            [
+                "avoid",
+                -1000
+            ],
+            [
+                "crit_avoid",
+                -30
+            ],
+            [
+                "unit_flickering_tint",
+                [
+                    65,
+                    65,
+                    65
+                ]
+            ],
+            [
+                "display_skill_icon_in_combat",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Rescue",
+        "name": "Rescue",
+        "desc": "Unit is weighed down with a traveler.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_multiplier",
+                [
+                    [
+                        "SKL",
+                        0.5
+                    ],
+                    [
+                        "SPD",
+                        0.5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Steal",
+        "name": "Steal",
+        "desc": "Can steal items from enemies with lower speed.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            2
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Awareness",
+        "name": "Awareness",
+        "desc": "Grants immunity to critical hits.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            0
+        ],
+        "components": [
+            [
+                "crit_avoid",
+                1000
+            ]
+        ]
+    },
+    {
+        "nid": "Silence",
+        "name": "Silence",
+        "desc": "Unit cannot use magic.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            3
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "cannot_use_magic_items",
+                null
+            ],
+            [
+                "time",
+                5
+            ],
+            [
+                "display_skill_icon_in_combat",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Berserk",
+        "name": "Berserk",
+        "desc": "Unit is confused and can no longer tell friend from foe.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            4
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "time",
+                5
+            ],
+            [
+                "ignore_alliances",
+                null
+            ],
+            [
+                "unselectable",
+                null
+            ],
+            [
+                "change_ai",
+                "Pursue"
+            ],
+            [
+                "display_skill_icon_in_combat",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Torch",
+        "name": "Torch",
+        "desc": "Grants increased sight range in fog of war.",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": [
+            [
+                "decreasing_sight_range_bonus",
+                4
+            ],
+            [
+                "time",
+                4
+            ]
+        ]
+    },
+    {
+        "nid": "Devil",
+        "name": "Devil",
+        "desc": "",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": []
+    },
+    {
+        "nid": "Hel",
+        "name": "Hel",
+        "desc": "Destroys enemies from inside.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            4
+        ],
+        "components": [
+            [
+                "dynamic_damage",
+                "target.get_hp() - unit.stats['MAG'] + target.stats['RES'] - 1"
+            ]
+        ]
+    },
+    {
+        "nid": "Critical",
+        "name": "Critical",
+        "desc": "Grants the ability to crit more often.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            0
+        ],
+        "components": [
+            [
+                "alternate_crit_accuracy_formula",
+                "CRITSKL"
+            ]
+        ]
+    },
+    {
+        "nid": "Luna",
+        "name": "Moonlight",
+        "desc": "SKL% to ignore enemy's Defense or Resistance.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            0
+        ],
+        "components": [
+            [
+                "proc_rate",
+                "SKILL"
+            ],
+            [
+                "attack_proc",
+                "Luna_proc"
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Luna_proc",
+        "name": "Moonlight",
+        "desc": "SKL% to ignore enemy's Defense or Resistance.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            0
+        ],
+        "components": [
+            [
+                "dynamic_damage",
+                "combat_calcs.defense(target, None, None)"
+            ],
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Miracle",
+        "name": "Miracle",
+        "desc": "Once per chapter, if this unit would die, instead they survive with 1 HP.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            0
+        ],
+        "components": [
+            [
+                "miracle",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Prayer",
+        "name": "Prayer",
+        "desc": "Grants great Avoid for 1 turn when HP is under 10.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            7,
+            0
+        ],
+        "components": [
+            [
+                "dynamic_avoid",
+                "(11-self.get_hp())*10 if self.get_hp() <= 10"
+            ]
+        ]
+    },
+    {
+        "nid": "Ambush",
+        "name": "Ambush",
+        "desc": "Always attacks first even on defense if HP is below half.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            1
+        ],
+        "components": [
+            [
+                "condition",
+                "unit.get_hp() < unit.stats['HP']//2"
+            ],
+            [
+                "defense_pre_proc",
+                "Ambush_proc"
+            ]
+        ]
+    },
+    {
+        "nid": "Ambush_proc",
+        "name": "Ambush",
+        "desc": "Always attacks first even on defense if HP is below half.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            1
+        ],
+        "components": [
+            [
+                "vantage",
+                null
+            ],
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Elite_Skill",
+        "name": "Elite",
+        "desc": "Doubles amount of experience received in battle.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            1
+        ],
+        "components": [
+            [
+                "exp_multiplier",
+                2.0
+            ]
+        ]
+    },
+    {
+        "nid": "Pavise",
+        "name": "Great Shield",
+        "desc": "Proc. Ignore attacker's damage.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            1
+        ],
+        "components": [
+            [
+                "defense_proc",
+                "Pavise_proc"
+            ],
+            [
+                "proc_rate",
+                "LVL"
+            ]
+        ]
+    },
+    {
+        "nid": "Pavise_proc",
+        "name": "Great Shield",
+        "desc": "Proc. Ignore attacker's damage.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            1
+        ],
+        "components": [
+            [
+                "ignore_damage",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Sol",
+        "name": "Sun",
+        "desc": "SKL%. to recover HP equal to damage dealt to enemy.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            1
+        ],
+        "components": [
+            [
+                "proc_rate",
+                "SKILL"
+            ],
+            [
+                "attack_proc",
+                "Sol_proc"
+            ]
+        ]
+    },
+    {
+        "nid": "Sol_proc",
+        "name": "Sun",
+        "desc": "SKL%. to recover HP equal to damage dealt to enemy.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            1
+        ],
+        "components": [
+            [
+                "lifelink",
+                1.0
+            ],
+            [
+                "hit",
+                100
+            ]
+        ]
+    },
+    {
+        "nid": "Bargain",
+        "name": "Bargain",
+        "desc": "Can buy items at reduced prices.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            1
+        ],
+        "components": [
+            [
+                "change_buy_price",
+                0.49999999999999994
+            ]
+        ]
+    },
+    {
+        "nid": "Charisma",
+        "name": "Charisma",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            1
+        ],
+        "components": [
+            [
+                "aura",
+                "Charisma_child"
+            ],
+            [
+                "aura_range",
+                3
+            ],
+            [
+                "aura_target",
+                "Ally"
+            ]
+        ]
+    },
+    {
+        "nid": "Charisma_child",
+        "name": "Charisma",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            1
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "hit",
+                15
+            ],
+            [
+                "avoid",
+                15
+            ]
+        ]
+    },
+    {
+        "nid": "Charge",
+        "name": "Charge",
+        "desc": "Fights extra rounds if HP and Attack Speed are higher than enemy's.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            7,
+            1
+        ],
+        "components": []
+    },
+    {
+        "nid": "FakeCharge",
+        "name": "Charge",
+        "desc": "Fights extra rounds if HP and Attack Speed are higher than enemy's.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            7,
+            1
+        ],
+        "components": []
+    },
+    {
+        "nid": "Life",
+        "name": "Life",
+        "desc": "Regenerates HP every turn",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            2
+        ],
+        "components": [
+            [
+                "regeneration",
+                0.2
+            ]
+        ]
+    },
+    {
+        "nid": "Locktouch",
+        "name": "Locktouch",
+        "desc": "Open doors and chests without a key.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            2
+        ],
+        "components": [
+            [
+                "locktouch",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Wrath",
+        "name": "Wrath",
+        "desc": "User will always be able to perform critical attacks when their HP is below 50%",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            2
+        ],
+        "components": [
+            [
+                "condition",
+                "unit.get_hp() < (unit.stats['HP']//2)+1"
+            ],
+            [
+                "guaranteed_crit",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Astra",
+        "name": "Shooting Star",
+        "desc": "SKL%. to attack 5 consecutive times.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            2
+        ],
+        "components": [
+            [
+                "proc_rate",
+                "SKILL"
+            ],
+            [
+                "attack_proc",
+                "Astra_proc"
+            ]
+        ]
+    },
+    {
+        "nid": "Astra_proc",
+        "name": "Shooting Star",
+        "desc": "SKL%. to attack 5 consecutive times.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            2
+        ],
+        "components": [
+            [
+                "dynamic_multiattacks",
+                "5"
+            ]
+        ]
+    },
+    {
+        "nid": "Recover",
+        "name": "Recover",
+        "desc": "Regenerates all HP every turn.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            2
+        ],
+        "components": [
+            [
+                "regeneration",
+                1.0000000000000002
+            ]
+        ]
+    },
+    {
+        "nid": "Inmortal",
+        "name": "Inmortal",
+        "desc": "Once per chapter, if this unit would die, instead they survive with 1 HP.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            0
+        ],
+        "components": [
+            [
+                "miracle",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Return",
+        "name": "Return",
+        "desc": "",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Valkyrie",
+        "name": "Valkyrie",
+        "desc": "Resurrects a fallen ally",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Power Ring",
+        "name": "Power Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Magic Ring",
+        "name": "Magic Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Magic Up",
+        "name": "Magic Up",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        7
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Holy Ring",
+        "name": "Holy Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Skill Ring",
+        "name": "Skill Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Speed Ring",
+        "name": "Speed Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "SPD",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Shield Ring",
+        "name": "Shield Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Barrier Ring",
+        "name": "Barrier Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "RES",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Leg Ring",
+        "name": "Leg Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "MOV",
+                        3
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Luckily Light",
+        "name": "Power Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "LCK",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Defender Sword",
+        "name": "Defender Sword",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        7
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Barrier Sword",
+        "name": "Barrier Sword",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "RES",
+                        7
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "No Big Shields",
+        "name": "No Big Shields",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Tyrfing",
+        "name": "Tyrfing",
+        "desc": "Holy Sword Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        10
+                    ],
+                    [
+                        "RES",
+                        20
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Balmung",
+        "name": "Balmung",
+        "desc": "Holy Sword Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        20
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Mystletainn",
+        "name": "Mystletainn",
+        "desc": "Holy Sword Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        20
+                    ],
+                    [
+                        "RES",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Gae Bolg",
+        "name": "Gae Bolg",
+        "desc": "Holy Lance Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        10
+                    ],
+                    [
+                        "SKL",
+                        10
+                    ],
+                    [
+                        "DEF",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Gungnir",
+        "name": "Gungnir",
+        "desc": "Holy Lance Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        10
+                    ],
+                    [
+                        "DEF",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Helswath",
+        "name": "Helswath",
+        "desc": "Holy Axe Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        20
+                    ],
+                    [
+                        "RES",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Ichival",
+        "name": "Yewfelle",
+        "desc": "Holy Bow Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        15
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Valflame",
+        "name": "Valflame",
+        "desc": "Holy Flame Magic Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            7,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        10
+                    ],
+                    [
+                        "DEF",
+                        15
+                    ],
+                    [
+                        "RES",
+                        15
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Mjolnir",
+        "name": "Mjolnir",
+        "desc": "Holy Thunder Magic Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            6
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        20
+                    ],
+                    [
+                        "SPD",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Forseti",
+        "name": "Forseti",
+        "desc": "Holy Wind Magic Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            6
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        15
+                    ],
+                    [
+                        "SPD",
+                        20
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Naga",
+        "name": "Naga",
+        "desc": "Holy Light Magic Skill. Negates Loptyr effect",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            6
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        20
+                    ],
+                    [
+                        "SPD",
+                        20
+                    ],
+                    [
+                        "DEF",
+                        20
+                    ],
+                    [
+                        "RES",
+                        20
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Loptyr_positive",
+        "name": "Loptyr_positive",
+        "desc": "Unholy Dark Magic Skill.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            6
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        5
+                    ],
+                    [
+                        "RES",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Loptyr_negative",
+        "name": "Loptyr_negative",
+        "desc": "Unholy Dark Magic Effect.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            6
+        ],
+        "components": [
+            [
+                "stat_multiplier",
+                [
+                    [
+                        "STR",
+                        0.5
+                    ],
+                    [
+                        "MAG",
+                        0.5
+                    ]
+                ]
+            ],
+            [
+                "time",
+                6
+            ],
+            [
+                "negative",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Hezul Scroll",
+        "name": "Hezul Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            6
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "HP",
+                        30
+                    ],
+                    [
+                        "STR",
+                        10
+                    ],
+                    [
+                        "LCK",
+                        -10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Baldr Scroll",
+        "name": "Baldr Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            6
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "HP",
+                        5
+                    ],
+                    [
+                        "STR",
+                        5
+                    ],
+                    [
+                        "SKL",
+                        5
+                    ],
+                    [
+                        "SPD",
+                        5
+                    ],
+                    [
+                        "LCK",
+                        5
+                    ],
+                    [
+                        "DEF",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Sety Scroll",
+        "name": "Sety Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            6
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "HP",
+                        -10
+                    ],
+                    [
+                        "MAG",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        30
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Od Scroll",
+        "name": "Od Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            7,
+            6
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "SKL",
+                        30
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Neir Scroll",
+        "name": "Neir Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "HP",
+                        10
+                    ],
+                    [
+                        "STR",
+                        10
+                    ],
+                    [
+                        "SKL",
+                        -10
+                    ],
+                    [
+                        "DEF",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Fjalar Scroll",
+        "name": "Fjalar Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "STR",
+                        5
+                    ],
+                    [
+                        "MAG",
+                        5
+                    ],
+                    [
+                        "SKL",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Heim Scroll",
+        "name": "Heim Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            2,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "MAG",
+                        30
+                    ],
+                    [
+                        "LCK",
+                        10
+                    ],
+                    [
+                        "DEF",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Dainn Scroll",
+        "name": "Dainn Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "STR",
+                        5
+                    ],
+                    [
+                        "SPD",
+                        -10
+                    ],
+                    [
+                        "DEF",
+                        30
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Ulir Scroll",
+        "name": "Ulir Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "SKL",
+                        10
+                    ],
+                    [
+                        "SPD",
+                        10
+                    ],
+                    [
+                        "LCK",
+                        10
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Blaggi Scroll",
+        "name": "Blaggi Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "STR",
+                        -10
+                    ],
+                    [
+                        "MAG",
+                        10
+                    ],
+                    [
+                        "LCK",
+                        30
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Njorun Scroll",
+        "name": "Nj\u00f6run Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "STR",
+                        30
+                    ],
+                    [
+                        "MAG",
+                        -10
+                    ],
+                    [
+                        "SPD",
+                        -10
+                    ],
+                    [
+                        "LCK",
+                        -5
+                    ],
+                    [
+                        "DEF",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Thrud Scroll",
+        "name": "Thrud Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            7,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "HP",
+                        5
+                    ],
+                    [
+                        "STR",
+                        5
+                    ],
+                    [
+                        "MAG",
+                        5
+                    ],
+                    [
+                        "SKL",
+                        10
+                    ],
+                    [
+                        "LCK",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Circlet",
+        "name": "Circlet",
+        "desc": "Confers both Prayer and Life skill effects",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            16
+        ],
+        "components": [
+            [
+                "dynamic_avoid",
+                "(11-self.get_hp())*10 if self.get_hp() <= 10"
+            ],
+            [
+                "regeneration",
+                0.25
+            ]
+        ]
+    },
+    {
+        "nid": "Darkness Sword",
+        "name": "Darkness Sword",
+        "desc": "Doubles damage done and halves received",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            34
+        ],
+        "components": [
+            [
+                "damage_multiplier",
+                2.0000000000000013
+            ],
+            [
+                "resist_multiplier",
+                0.5
+            ]
+        ]
+    },
+    {
+        "nid": "Holy Sword",
+        "name": "Holy Sword",
+        "desc": "Enhances damage done and halves received",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            37
+        ],
+        "components": [
+            [
+                "damage",
+                20
+            ],
+            [
+                "resist_multiplier",
+                0.5
+            ]
+        ]
+    },
+    {
+        "nid": "Loptyr Sword",
+        "name": "Loptyr Sword",
+        "desc": "",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            39
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        20
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Bragi Sword",
+        "name": "Bragi Sword",
+        "desc": "",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            38
+        ],
+        "components": [
+            [
+                "dynamic_avoid",
+                "(11-self.get_hp())*10 if self.get_hp() <= 10"
+            ]
+        ]
+    },
+    {
+        "nid": "Avoid10",
+        "name": "Avoid10",
+        "desc": "",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            20
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                10
+            ]
+        ]
+    }
+]

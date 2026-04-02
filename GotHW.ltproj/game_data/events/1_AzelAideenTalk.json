@@ -1,0 +1,146 @@
+[
+    {
+        "name": "AzelAideenTalk",
+        "trigger": "on_talk",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Azel' and unit2.nid == 'Aideen'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Azel",
+                    "Left",
+                    "Aideen",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Ah, Lady Aideen! You're safe... Thank the gods...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Lord Azel?{br}Have you been fighting for Jungby as well?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "When the news of your abduction reached us,{br}the thought of you in danger while I just sat{w}{br}at home was unbearable!{w}{br}I came to Jungby as quickly as I could.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Hold on. You are the younger brother{br}of Lord Arvis of Velthomer, are you not?{w}{br}Did he allow you to come?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "No, I... I came without his consent.{w}{br}And he certainly won't be pleased.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Why would you do something so reckless, then?{w}{br}I thought you abhorred violence.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "Because I... er, well...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "Oh? What is it, Azel?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Azel",
+                    "It's... it's nothing... never mind.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Azel",
+                    "Aideen"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Midir",
+                    "Aideen"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Azel",
+                    "Aideen"
+                ]
+            ],
+            [
+                "increment_support_points",
+                [
+                    "Aideen",
+                    "Azel",
+                    "100"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

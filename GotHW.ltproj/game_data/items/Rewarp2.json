@@ -1,0 +1,42 @@
+[
+    {
+        "nid": "Rewarp2",
+        "name": "Rewarp",
+        "desc": "Moves user to an empty square",
+        "icon_nid": "FE5rewarp",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "unload_unit",
+                null
+            ],
+            [
+                "max_equation_range",
+                "MAGIC_RANGE"
+            ],
+            [
+                "target_tile",
+                null
+            ],
+            [
+                "empty_tile_target_restrict",
+                null
+            ]
+        ]
+    }
+]

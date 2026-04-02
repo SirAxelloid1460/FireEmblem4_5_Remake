@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Magic Ring",
+        "name": "Magic Ring",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    }
+]

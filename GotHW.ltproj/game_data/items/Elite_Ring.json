@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Elite Ring",
+        "name": "Elite Ring",
+        "desc": "Grants Elite skill.",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            5
+        ],
+        "components": [
+            [
+                "status_on_hold",
+                "Elite_Skill"
+            ],
+            [
+                "value",
+                2000
+            ]
+        ]
+    }
+]

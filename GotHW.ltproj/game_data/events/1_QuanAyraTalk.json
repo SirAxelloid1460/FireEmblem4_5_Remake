@@ -1,0 +1,201 @@
+[
+    {
+        "name": "QuanAyraTalk",
+        "trigger": "on_talk",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Ayra' and unit2.nid == 'Quan'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Quan",
+                    "Left",
+                    "Ayra",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Princess Ayra of Isaach, I presume?{br}I heard your story from Sigurd.{w}{br}I'm Quan of Lenster{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "A pleasure.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "I'd hate to press you for information so soon,{br}but there's something I'd like to know.{w}{br}Why did Isaach attack Darna in the first place?{w}{br}Surely you knew doing so would invoke the wrath of Grannvale.{w}{br}That King Mananan would commit such a{br}reckless act... The very idea defies belief.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "You knew my father, Sir Quan!?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "I'm afraid I never had the chance to meet him.{br}However, my father knows him well.{w}{br}He's always had only the utmost praise for him.{w}{br}He also speaks fondly of your brother,{br}Prince Mariccle.{w}{br}He's always said he's a fine young man{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "Is that so? It heartens me to hear it.{w}{br}Without any doubt, my father and Mariccle were{br}admirable men. Never would they condone{w}{br}such an assault on a defenseless city.{w}{br}In the matter of Darna, the patriarch of Rivough{br}acted alone and without our consent...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "I beg your pardon!?{br}Why haven't the Grannvalians heard this?{w}{br}Surely if Prince Kurth knew the truth,{br}he would refuse to continue the war.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "So, too, thought my father.{w}{br}Once he executed the Rivough patriarch,{w}{br}he departed for the Grannvale front, head in tow,{br} to negotiate with them.{w}{br}But...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "...Yes?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "My father, the king...{br}He was assassinated on the way.{w}{br}Once word of this returned to Isaach,{br}the people were utterly incensed.{w}{br}Mariccle set out, leading our entire army,{br}seeking vengeance against Grannvale.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Something is amiss here.{br}The murder of a king who seeks peace talks,{br}certainly isn't like Prince Kurth, either.{w}{br}Have you told Sigurd of this as well?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "No. Lord Sigurd carries enough of a burden{br}as it is. It's too late for my brother...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "Prince Mariccle was resigned to his death{br}when he engaged Grannvale, wasn't he...?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "My brother believed to the last that Isaach's hope{br}for the future rests in Shannan, his son.{w}{br}My role is to protect Shannan, and with him, the promise of Isaach's liberty...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Quan",
+                    "I see. Thank you for telling me, Princess Ayra.{w}{br}Someday, the world will know this truth,{br}and till that day comes, you mustn't give in.{w}{br}I will do all I can to help you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "Thank you, Sir Quan.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Quan",
+                    "Ayra"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Ayra",
+                    "Quan"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

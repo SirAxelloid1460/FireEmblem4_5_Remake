@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "StealAway",
+        "name": "Steal",
+        "desc": "Allows to steal items from units with lower speed",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            2
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ability",
+                "StealAway"
+            ]
+        ]
+    }
+]

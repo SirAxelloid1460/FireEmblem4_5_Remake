@@ -1,0 +1,191 @@
+[
+    {
+        "name": "Center3Village",
+        "trigger": "Visit",
+        "level_nid": "2",
+        "condition": "region.nid == 'Center3Village'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "OldMan3",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldMan3",
+                    "We can't thank you enough for helpin' us.{br}This here sword's the best we can do.{w}{br}It's an unusual sort, innit? They call it an armour cutter.{w}{br}In the right hands it'll cleave right through the thickest armor.{w}{br}If your hands aren't the right hands, though? Maybe it can make ya a quick but at the pawn shop in town.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "OldMan3",
+                    "{unit}"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Armour Cutter"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.level_vars['Center3Destructible'] == 1"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['Center3Destructible'] == 2"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "4000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['Center3Destructible'] == 3"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['Center3Destructible'] == 4"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "3000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['Center3Destructible'] == 5"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['Center3Destructible'] == 6"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['Center3Destructible'] == 7"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1500"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['Center3Destructible'] == 8"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.level_vars['Center3Destructible'] == 9"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "give_money",
+                [
+                    "5000"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "show_layer",
+                [
+                    "C3Closed"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "Center3Destructible"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "remove_region",
+                [
+                    "Center3Village"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

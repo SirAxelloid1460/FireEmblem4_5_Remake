@@ -1,0 +1,80 @@
+[
+    {
+        "nid": "Hel",
+        "name": "Hel",
+        "desc": "Brings enemy's HP to 1 (if enemy's HP is 1 does no damage).",
+        "icon_nid": "Dark",
+        "icon_index": [
+            0,
+            2
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "hit",
+                60
+            ],
+            [
+                "weapon_type",
+                "Dark"
+            ],
+            [
+                "weapon_rank",
+                "B"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                25
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "weight",
+                24
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                2
+            ],
+            [
+                "damage",
+                0
+            ],
+            [
+                "status_on_equip",
+                "Hel"
+            ]
+        ]
+    }
+]

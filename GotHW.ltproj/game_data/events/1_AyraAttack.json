@@ -1,0 +1,69 @@
+[
+    {
+        "name": "AyraAttack",
+        "trigger": "unit_wait",
+        "level_nid": "1",
+        "condition": "unit.position[0] >= 52 and unit.position[1] >36 and unit.team == 'player'",
+        "commands": [
+            [
+                "center_cursor",
+                [
+                    "Ayra"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Ayra",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ayra",
+                    "So it's finally time...{br}Woe be to all who cross me!",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Ayra"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Ayra",
+                    "Seize"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Genoa_13",
+                    "Seize"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Genoa_14",
+                    "Seize"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Genoa_15",
+                    "Seize"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "name": "FightSandima",
+        "trigger": "combat_start",
+        "level_nid": "1",
+        "condition": "(unit.nid == 'Sandima' or unit2.nid == 'Sandima') and check_pair('Sandima', 'Jamke') == False and check_pair('Sandima', 'Deirdre') == False",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Sandima",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sandima",
+                    "Kehehehehe... Allow me to teach you first-hand the horror of dark magic!",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Sandima"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 21
+    }
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "nid": "Dainn Scroll",
+        "name": "Dainn Scroll",
+        "desc": "Grants growth rate bonuses.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            7
+        ],
+        "components": [
+            [
+                "growth_change",
+                [
+                    [
+                        "STR",
+                        5
+                    ],
+                    [
+                        "SPD",
+                        -10
+                    ],
+                    [
+                        "DEF",
+                        30
+                    ]
+                ]
+            ]
+        ]
+    }
+]

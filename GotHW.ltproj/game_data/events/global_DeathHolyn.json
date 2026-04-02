@@ -1,0 +1,54 @@
+[
+    {
+        "name": "DeathHolyn",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Holyn'",
+        "commands": [
+            [
+                "music",
+                [
+                    "Brave Story 61"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Holyn",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Holyn",
+                    "Heh... I'm such a fool...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Holyn",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Holyn"
+                ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Holyn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

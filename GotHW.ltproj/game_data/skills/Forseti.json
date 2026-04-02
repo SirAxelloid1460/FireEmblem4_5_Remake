@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Forseti",
+        "name": "Forseti",
+        "desc": "Holy Wind Magic Skill",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            6
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        15
+                    ],
+                    [
+                        "SPD",
+                        20
+                    ]
+                ]
+            ]
+        ]
+    }
+]

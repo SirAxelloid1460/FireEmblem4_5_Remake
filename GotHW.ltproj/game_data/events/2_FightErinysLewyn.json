@@ -1,0 +1,38 @@
+[
+    {
+        "name": "FightErinysLewyn",
+        "trigger": "combat_start",
+        "level_nid": "2",
+        "condition": "check_pair('Erinys','Lewyn')",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Erinys",
+                    "Left",
+                    "Lewyn",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Erinys",
+                    "Prince Lewyn!? Th-this isn't possible...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Erinys",
+                    "Lewyn"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "nid": "Armour Cutter",
+        "name": "Armour Cutter",
+        "desc": "A powerful sword capable to cut knight's armors.",
+        "icon_nid": "Sword",
+        "icon_index": [
+            0,
+            23
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "damage",
+                8
+            ],
+            [
+                "hit",
+                65
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "weapon_rank",
+                "B"
+            ],
+            [
+                "uses",
+                40
+            ],
+            [
+                "uses_options",
+                [
+                    [
+                        "LoseUsesOnMiss (T/F)",
+                        "F",
+                        "Lose uses even on miss"
+                    ]
+                ]
+            ],
+            [
+                "effective",
+                10
+            ],
+            [
+                "weight",
+                9
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "value",
+                4600
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "effective_tag",
+                [
+                    "Armor"
+                ]
+            ],
+            [
+                "effective_multiplier",
+                1
+            ]
+        ]
+    }
+]

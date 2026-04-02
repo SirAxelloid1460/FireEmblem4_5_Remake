@@ -1,0 +1,86 @@
+[
+    {
+        "name": "MidirAideenTalk",
+        "trigger": "on_talk",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Midir' and unit2.nid == 'Aideen'",
+        "commands": [
+            [
+                "music",
+                [
+                    "241 - A New Advance"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Midir",
+                    "Left",
+                    "Aideen",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Midir",
+                    "Milady? You... You're safe!{br}Ahh... Thank the gods!{w}{br}I'm so sorry I failed to protect you.{br}Please, forgive me...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aideen",
+                    "The important part is that you're safe as well, Midir.{br}Please, don't worry about it.{w}{br}You gave your all to protect me,{br}and I couldn't thank you enough for that,{br}even if you didn't succeed.{w}{br}For now I'd like you to remain with Sigurd.{br}He could use your strength.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Midir",
+                    "Certainly, milady.{w}{br}He's done so much for me, for you,{br}and for all of Jungby.{w}{br}I'll do all I can to return his kindness.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Midir",
+                    "Aideen"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Midir",
+                    "Aideen"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "Azel",
+                    "Aideen"
+                ]
+            ],
+            [
+                "increment_support_points",
+                [
+                    "Aideen",
+                    "Midir",
+                    "100"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

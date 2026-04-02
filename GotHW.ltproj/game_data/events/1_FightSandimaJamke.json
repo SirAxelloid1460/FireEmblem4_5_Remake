@@ -1,0 +1,48 @@
+[
+    {
+        "name": "FightSandimaJamke",
+        "trigger": "combat_start",
+        "level_nid": "1",
+        "condition": "check_pair('Sandima', 'Jamke')",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Sandima",
+                    "Left",
+                    "Jamke",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sandima",
+                    "You're too late, Jamke.{w}{br}Your father has already passed on.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Jamke",
+                    "What!?{w} Sandima! You... You're MINE!!{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Sandima",
+                    "Jamke"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

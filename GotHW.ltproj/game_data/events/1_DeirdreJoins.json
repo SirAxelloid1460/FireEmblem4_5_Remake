@@ -1,0 +1,209 @@
+[
+    {
+        "name": "DeirdreJoins",
+        "trigger": "unit_wait",
+        "level_nid": "1",
+        "condition": "unit.nid == 'Sigurd' and (region.nid == 'DeirdreForest1' or region.nid == 'DeirdreForest2')",
+        "commands": [
+            [
+                "center_cursor",
+                [
+                    "Sigurd"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Deirdre",
+                    "14,43",
+                    "",
+                    "stack"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "region.nid == 'DeirdreForest1'"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Deirdre",
+                    "13,43",
+                    "",
+                    "stack"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    " or region.nid == 'DeirdreForest2'"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Deirdre",
+                    "13,43",
+                    "",
+                    "stack"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Deirdre",
+                    "13,42",
+                    "",
+                    "stack"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Deirdre",
+                    "Left",
+                    "Sigurd",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Deirdre",
+                    "Wait... Lord Sigurd...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Hm? Is that... Deirdre! Ah!{br}So this must be your spirit forest.{w}{br}Thank the gods!{w}{br}For a moment I thought that I might{br}never see you again.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Deirdre",
+                    "Milord, listen. The dark priest Sandima guards{br}Castle Verdane with his wicked magic.{w}{br}You must go no further. You would surely be killed.{w}{br}Please, you mustn't go...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "But I mustn't place my men in even greater{br}danger, either. I have no choice but to go.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Deirdre",
+                    "...I see. Then I will go with you.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "Excuse me?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Deirdre",
+                    "This is called a Silence staff.{w}{br}So long as my own power is enough{br}to pierce his magical resistances,{w}{br}it will seal his magic away.{br}Trust me, milord.{w}{br}I'll ensure his far spells never{w} harm anyone ever again.{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "I'd never imagined that you'd have such power...{br}But why... Why are you helping me?{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Deirdre",
+                    "...I tried to forget you all I could,{br}but it was all in vain.{w}{br}...I no longer know what I should do...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Sigurd",
+                    "What is it you're afraid of, Deirdre?{br}I don't understand.{w}{br}But if you and I feel the same way,{br}then surely we've nothing to fear.{w}{br}I... I love you, Deirdre...{w}",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Deirdre",
+                    "Sigurd"
+                ]
+            ],
+            [
+                "change_team",
+                [
+                    "Deirdre",
+                    "player"
+                ]
+            ],
+            [
+                "autolevel_to",
+                [
+                    "Deirdre",
+                    "3",
+                    "fixed"
+                ]
+            ],
+            [
+                "unlock_support_rank",
+                [
+                    "Sigurd",
+                    "Deirdre",
+                    "Lover"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20
+    }
+]

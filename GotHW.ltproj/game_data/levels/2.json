@@ -1,0 +1,4128 @@
+[
+    {
+        "nid": "2",
+        "name": "Crisis in Agustria",
+        "tilemap": "Chapter2",
+        "bg_tilemap": null,
+        "party": "Sigurd",
+        "music": {
+            "player_phase": "107 - Chapter 2 (Disturbance in Agustria)",
+            "enemy_phase": "203 - Agustria Army",
+            "other_phase": "213 - Allied Army",
+            "enemy2_phase": "214 - Neutral Army",
+            "player_battle": "215 - Ally Attack",
+            "enemy_battle": "216 - Enemy Attack",
+            "other_battle": "215 - Ally Attack",
+            "enemy2_battle": "229 - Arena (Match)"
+        },
+        "objective": {
+            "simple": "Seize Agusty",
+            "win": "Seize Agusty",
+            "loss": "Lord or Princess dies"
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "units": [
+            {
+                "nid": "Sigurd",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Noish",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Alec",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Arden",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Quan",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Finn",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Ethlyn",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Lex",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Azel",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Midir",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Aideen",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Dew",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Jamke",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Ayra",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Deirdre",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "EldiganAlly",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Lachesis",
+                "team": "other",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "AlvaFE4",
+                "team": "other",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    24,
+                    55
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Eva",
+                "team": "other",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    25,
+                    54
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Eve",
+                "team": "other",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    23,
+                    54
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Lewyn",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    38,
+                    25
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Sylvia",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    39,
+                    25
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Erinys",
+                "team": "enemy",
+                "ai": "Seize_Evans2-2",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    55,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Beowulf",
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    33,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Elliot",
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    12,
+                    40
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Phillip",
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    40
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Boldor",
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    4,
+                    33
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Macbeth",
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    11,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Voltz",
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    34,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Clement",
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    42,
+                    30
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Zain",
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    51,
+                    0
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Chagall1",
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    52,
+                    7
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "FakeHolyn",
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Holyn",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Phillip_1",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Steel Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    36
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phillip_2",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Steel Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    12,
+                    36
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phillip_3",
+                "variant": null,
+                "level": 12,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    11,
+                    37
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phillip_4",
+                "variant": null,
+                "level": 13,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Steel Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    11,
+                    38
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phillip_5",
+                "variant": null,
+                "level": 13,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Steel Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    11,
+                    42
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phillip_6",
+                "variant": null,
+                "level": 12,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    11,
+                    43
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phillip_7",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Steel Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    12,
+                    44
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phillip_8",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Steel Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    44
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phillip_9",
+                "variant": null,
+                "level": 20,
+                "klass": "Priest",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Recover",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Heal",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    11,
+                    40
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phillip_10",
+                "variant": null,
+                "level": 15,
+                "klass": "Ballistae",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron-Arch",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    39
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phillip_11",
+                "variant": null,
+                "level": 15,
+                "klass": "Ballistae",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron-Arch",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    41
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_1",
+                "variant": null,
+                "level": 15,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    12,
+                    38
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_2",
+                "variant": null,
+                "level": 15,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    38
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_3",
+                "variant": null,
+                "level": 15,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    39
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_4",
+                "variant": null,
+                "level": 15,
+                "klass": "CavalierA",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    12,
+                    39
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_5",
+                "variant": null,
+                "level": 15,
+                "klass": "CavalierA",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    40
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_6",
+                "variant": null,
+                "level": 15,
+                "klass": "CavalierA",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    12,
+                    41
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_7",
+                "variant": null,
+                "level": 15,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    41
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_8",
+                "variant": null,
+                "level": 15,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    42
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Elliot_9",
+                "variant": null,
+                "level": 15,
+                "klass": "CavalierL",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    12,
+                    42
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Boldor_1",
+                "variant": null,
+                "level": 13,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    5,
+                    34
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Boldor_2",
+                "variant": null,
+                "level": 13,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    4,
+                    35
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Boldor_3",
+                "variant": null,
+                "level": 13,
+                "klass": "Armour",
+                "faction": "Heirhein",
+                "starting_items": [
+                    [
+                        "Javelin",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    3,
+                    34
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Bandit_1",
+                "variant": null,
+                "level": 10,
+                "klass": "Bandit",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueVillage",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Bandit_2",
+                "variant": null,
+                "level": 10,
+                "klass": "Bandit",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueVillage",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Bandit_3",
+                "variant": null,
+                "level": 10,
+                "klass": "Bandit",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueVillage",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Bandit_4",
+                "variant": null,
+                "level": 10,
+                "klass": "Bandit",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueVillage",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Anphony_1",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Anphony_2",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    13,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Anphony_3",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    9,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Anphony_4",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    9,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Anphony_5",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Steel Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    12,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Anphony_6",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Steel Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Anphony_7",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Steel Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    11,
+                    7
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Anphony_8",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    12,
+                    7
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Anphony_9",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    7
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Anphony_10",
+                "variant": null,
+                "level": 14,
+                "klass": "Armour",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    11,
+                    8
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_1",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    29,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_2",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    30,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_3",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    31,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_4",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    32,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_5",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    33,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_6",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    34,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_7",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    35,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_8",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    36,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_9",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    37,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_10",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    38,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Voltz_11",
+                "variant": null,
+                "level": 17,
+                "klass": "CavalierS",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackGranvale",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    39,
+                    2
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_1",
+                "variant": null,
+                "level": 17,
+                "klass": "PreHero",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    40,
+                    32
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_2",
+                "variant": null,
+                "level": 17,
+                "klass": "PreHero",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    41,
+                    32
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_3",
+                "variant": null,
+                "level": 17,
+                "klass": "PreHero",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    42,
+                    33
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_4",
+                "variant": null,
+                "level": 17,
+                "klass": "PreHero",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    43,
+                    32
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_5",
+                "variant": null,
+                "level": 17,
+                "klass": "PreHero",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    44,
+                    32
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_6",
+                "variant": null,
+                "level": 17,
+                "klass": "Mage",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Fire",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    41,
+                    31
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_7",
+                "variant": null,
+                "level": 17,
+                "klass": "Mage",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Fire",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    42,
+                    32
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_8",
+                "variant": null,
+                "level": 17,
+                "klass": "Mage",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Fire",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    43,
+                    31
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_9",
+                "variant": null,
+                "level": 17,
+                "klass": "Archer",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    40,
+                    31
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_10",
+                "variant": null,
+                "level": 17,
+                "klass": "Archer",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    44,
+                    31
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_11",
+                "variant": null,
+                "level": 20,
+                "klass": "Ballistae",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron-Arch",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    42,
+                    35
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_12",
+                "variant": null,
+                "level": 20,
+                "klass": "Ballistae",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron-Arch",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    42,
+                    36
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_13",
+                "variant": null,
+                "level": 20,
+                "klass": "Ballistae",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron-Arch",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    42,
+                    37
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_14",
+                "variant": null,
+                "level": 20,
+                "klass": "Ballistae",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron-Arch",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    41,
+                    36
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mackily_15",
+                "variant": null,
+                "level": 20,
+                "klass": "Ballistae",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron-Arch",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    43,
+                    36
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_1",
+                "variant": null,
+                "level": 12,
+                "klass": "APaladin",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    59,
+                    11
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_2",
+                "variant": null,
+                "level": 12,
+                "klass": "DukeKnight",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    48,
+                    14
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_3",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    58,
+                    12
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_4",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    59,
+                    12
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_5",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    59,
+                    13
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_6",
+                "variant": null,
+                "level": 20,
+                "klass": "Cavalier",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    60,
+                    12
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_7",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierL",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    47,
+                    15
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_8",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierL",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    48,
+                    15
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_9",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierL",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    48,
+                    16
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_10",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierL",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    49,
+                    15
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_11",
+                "variant": null,
+                "level": 16,
+                "klass": "Armour",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    49,
+                    10
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_12",
+                "variant": null,
+                "level": 16,
+                "klass": "Armour",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    50,
+                    11
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_13",
+                "variant": null,
+                "level": 16,
+                "klass": "Armour",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    51,
+                    11
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_14",
+                "variant": null,
+                "level": 16,
+                "klass": "Armour",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    54,
+                    11
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_15",
+                "variant": null,
+                "level": 16,
+                "klass": "Armour",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    56,
+                    10
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_16",
+                "variant": null,
+                "level": 20,
+                "klass": "Ballistae",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron-Arch",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    51,
+                    8
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_17",
+                "variant": null,
+                "level": 20,
+                "klass": "Ballistae",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron-Arch",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    52,
+                    9
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Agusty_18",
+                "variant": null,
+                "level": 20,
+                "klass": "Ballistae",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron-Arch",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    53,
+                    8
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_1",
+                "variant": null,
+                "level": 20,
+                "klass": "Troubadour",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Heal",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    50,
+                    0
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_2",
+                "variant": null,
+                "level": 20,
+                "klass": "Troubadour",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Heal",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    51,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_3",
+                "variant": null,
+                "level": 20,
+                "klass": "Troubadour",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Heal",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    52,
+                    0
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_4",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierL",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    49,
+                    0
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_5",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierL",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    49,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_6",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierL",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    50,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_7",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierL",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    52,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_8",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierL",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    53,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_9",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierL",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    53,
+                    0
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_10",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierA",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    48,
+                    0
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_11",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierA",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    48,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_12",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierA",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    54,
+                    0
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_13",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierA",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    54,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_14",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierB",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    47,
+                    0
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_15",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierB",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    47,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_16",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierB",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    55,
+                    0
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Zain_17",
+                "variant": null,
+                "level": 20,
+                "klass": "CavalierB",
+                "faction": "Agusty",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Defend",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    55,
+                    1
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MackilyNeutral_1",
+                "variant": null,
+                "level": 12,
+                "klass": "Armour",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy2",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    39,
+                    34
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MackilyNeutral_2",
+                "variant": null,
+                "level": 12,
+                "klass": "Armour",
+                "faction": "Mackily",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy2",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    56,
+                    34
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "AnphonyNeutral_1",
+                "variant": null,
+                "level": 12,
+                "klass": "DukeKnight",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy2",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    9,
+                    21
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "AnphonyNeutral_2",
+                "variant": null,
+                "level": 16,
+                "klass": "CavalierL",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy2",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    8,
+                    21
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "AnphonyNeutral_3",
+                "variant": null,
+                "level": 16,
+                "klass": "CavalierL",
+                "faction": "Anphony",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy2",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    10,
+                    21
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Fury_1",
+                "variant": null,
+                "level": 10,
+                "klass": "PegasusKnight",
+                "faction": "Silesia",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize_Evans2",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    55,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Fury_2",
+                "variant": null,
+                "level": 10,
+                "klass": "PegasusKnight",
+                "faction": "Silesia",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize_Evans2",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    54,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Fury_3",
+                "variant": null,
+                "level": 10,
+                "klass": "PegasusKnight",
+                "faction": "Silesia",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize_Evans2",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    56,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Fury_4",
+                "variant": null,
+                "level": 10,
+                "klass": "PegasusKnight",
+                "faction": "Silesia",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Seize_Evans2",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": [
+                    55,
+                    7
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "AnphonyConquered_1",
+                "variant": null,
+                "level": 1,
+                "klass": "APaladin",
+                "faction": "Nature",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "AnphonyConquered_2",
+                "variant": null,
+                "level": 1,
+                "klass": "Cavalier",
+                "faction": "Nature",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Jirough",
+                "variant": null,
+                "level": 5,
+                "klass": "Fighter",
+                "faction": "Nature",
+                "starting_items": [
+                    [
+                        "Steel Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Mahatma",
+                "variant": null,
+                "level": 8,
+                "klass": "Mage",
+                "faction": "Nature",
+                "starting_items": [
+                    [
+                        "ElFire",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Rowyn",
+                "variant": null,
+                "level": 11,
+                "klass": "CavalierL",
+                "faction": "Nature",
+                "starting_items": [
+                    [
+                        "Steel Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Buchanan",
+                "variant": null,
+                "level": 12,
+                "klass": "Swordfighter",
+                "faction": "Nature",
+                "starting_items": [
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Heltzog",
+                "variant": null,
+                "level": 13,
+                "klass": "Armour",
+                "faction": "Nature",
+                "starting_items": [
+                    [
+                        "Steel Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Tyakov",
+                "variant": null,
+                "level": 14,
+                "klass": "Mage",
+                "faction": "Nature",
+                "starting_items": [
+                    [
+                        "Elthunder",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": null,
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            }
+        ],
+        "regions": [
+            {
+                "nid": "Return",
+                "region_type": "normal",
+                "position": [
+                    56,
+                    61
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Evans_S",
+                "region_type": "event",
+                "position": [
+                    56,
+                    61
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Enemy_Seize",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F1",
+                "region_type": "formation",
+                "position": [
+                    51,
+                    60
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F2",
+                "region_type": "formation",
+                "position": [
+                    52,
+                    59
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F3",
+                "region_type": "formation",
+                "position": [
+                    53,
+                    59
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F4",
+                "region_type": "formation",
+                "position": [
+                    54,
+                    59
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F5",
+                "region_type": "formation",
+                "position": [
+                    54,
+                    60
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F6",
+                "region_type": "formation",
+                "position": [
+                    54,
+                    61
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F7",
+                "region_type": "formation",
+                "position": [
+                    54,
+                    62
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F8",
+                "region_type": "formation",
+                "position": [
+                    53,
+                    62
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F9",
+                "region_type": "formation",
+                "position": [
+                    53,
+                    61
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F10",
+                "region_type": "formation",
+                "position": [
+                    53,
+                    60
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F11",
+                "region_type": "formation",
+                "position": [
+                    52,
+                    60
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F12",
+                "region_type": "formation",
+                "position": [
+                    52,
+                    61
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F13",
+                "region_type": "formation",
+                "position": [
+                    52,
+                    62
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "F14",
+                "region_type": "formation",
+                "position": [
+                    51,
+                    62
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": null,
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "HolynHouse",
+                "region_type": "event",
+                "position": [
+                    35,
+                    52
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Circus",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Nordion_S",
+                "region_type": "event",
+                "position": [
+                    24,
+                    53
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Enemy_Seize",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Heirhein",
+                "region_type": "event",
+                "position": [
+                    4,
+                    33
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Seize",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Anphony",
+                "region_type": "event",
+                "position": [
+                    11,
+                    5
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Seize",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Mackily",
+                "region_type": "event",
+                "position": [
+                    42,
+                    30
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Seize",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Agusty",
+                "region_type": "event",
+                "position": [
+                    52,
+                    7
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Seize",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "East1Village",
+                "region_type": "event",
+                "position": [
+                    39,
+                    24
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "East1Destructible",
+                "region_type": "event",
+                "position": [
+                    39,
+                    24
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "East2Village",
+                "region_type": "event",
+                "position": [
+                    34,
+                    28
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "East2Destructible",
+                "region_type": "event",
+                "position": [
+                    34,
+                    28
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "East3Village",
+                "region_type": "event",
+                "position": [
+                    36,
+                    31
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "East3Destructible",
+                "region_type": "event",
+                "position": [
+                    36,
+                    31
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "East4Village",
+                "region_type": "event",
+                "position": [
+                    33,
+                    34
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "East4Destructible",
+                "region_type": "event",
+                "position": [
+                    33,
+                    34
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Center1Village",
+                "region_type": "event",
+                "position": [
+                    29,
+                    30
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Center1Destructible",
+                "region_type": "event",
+                "position": [
+                    29,
+                    30
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Center2Village",
+                "region_type": "event",
+                "position": [
+                    27,
+                    36
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Center2Destructible",
+                "region_type": "event",
+                "position": [
+                    27,
+                    36
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Center3Village",
+                "region_type": "event",
+                "position": [
+                    26,
+                    39
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "Center3Destructible",
+                "region_type": "event",
+                "position": [
+                    26,
+                    39
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "West1Village",
+                "region_type": "event",
+                "position": [
+                    24,
+                    25
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "West1Destructible",
+                "region_type": "event",
+                "position": [
+                    24,
+                    25
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "West2Village",
+                "region_type": "event",
+                "position": [
+                    19,
+                    33
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "West2Destructible",
+                "region_type": "event",
+                "position": [
+                    19,
+                    33
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "West3Village",
+                "region_type": "event",
+                "position": [
+                    23,
+                    35
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "unit.team == 'player'",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
+            },
+            {
+                "nid": "West3destructible",
+                "region_type": "event",
+                "position": [
+                    23,
+                    35
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Destructible",
+                "condition": "unit.team == 'enemy'",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "BeachRing",
+                "region_type": "normal",
+                "position": [
+                    6,
+                    51
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            }
+        ],
+        "unit_groups": [
+            {
+                "nid": "AEE",
+                "units": [
+                    "AlvaFE4",
+                    "Eva",
+                    "Eve"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "Bandits",
+                "units": [
+                    "Bandit_1",
+                    "Bandit_2",
+                    "Bandit_3",
+                    "Bandit_4"
+                ],
+                "positions": {
+                    "Bandit_1": [
+                        13,
+                        5
+                    ],
+                    "Bandit_2": [
+                        12,
+                        6
+                    ],
+                    "Bandit_3": [
+                        11,
+                        7
+                    ],
+                    "Bandit_4": [
+                        10,
+                        6
+                    ]
+                }
+            },
+            {
+                "nid": "ElliotGroup",
+                "units": [
+                    "Elliot",
+                    "Elliot_1",
+                    "Elliot_2",
+                    "Elliot_3",
+                    "Elliot_4",
+                    "Elliot_5",
+                    "Elliot_6",
+                    "Elliot_7",
+                    "Elliot_8",
+                    "Elliot_9"
+                ],
+                "positions": {
+                    "Elliot": [
+                        17,
+                        43
+                    ],
+                    "Elliot_1": [
+                        17,
+                        41
+                    ],
+                    "Elliot_2": [
+                        18,
+                        41
+                    ],
+                    "Elliot_3": [
+                        18,
+                        42
+                    ],
+                    "Elliot_4": [
+                        17,
+                        42
+                    ],
+                    "Elliot_5": [
+                        18,
+                        43
+                    ],
+                    "Elliot_6": [
+                        17,
+                        44
+                    ],
+                    "Elliot_7": [
+                        18,
+                        44
+                    ],
+                    "Elliot_8": [
+                        18,
+                        45
+                    ],
+                    "Elliot_9": [
+                        17,
+                        45
+                    ]
+                }
+            },
+            {
+                "nid": "PhillipGroup",
+                "units": [
+                    "Phillip",
+                    "Phillip_1",
+                    "Phillip_2",
+                    "Phillip_3",
+                    "Phillip_4",
+                    "Phillip_5",
+                    "Phillip_6",
+                    "Phillip_7",
+                    "Phillip_8",
+                    "Phillip_9"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "BoldorGroup",
+                "units": [
+                    "Boldor",
+                    "Boldor_1",
+                    "Boldor_2",
+                    "Boldor_3"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "Neutral",
+                "units": [
+                    "MackilyNeutral_1",
+                    "MackilyNeutral_2",
+                    "AnphonyNeutral_1",
+                    "AnphonyNeutral_2",
+                    "AnphonyNeutral_3"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "AnphonySpawn",
+                "units": [
+                    "Anphony_1",
+                    "Anphony_2",
+                    "Anphony_3",
+                    "Anphony_4",
+                    "Anphony_5",
+                    "Anphony_6",
+                    "Anphony_7",
+                    "Anphony_8",
+                    "Anphony_9",
+                    "Anphony_10"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "LewynSylvia",
+                "units": [
+                    "Lewyn",
+                    "Sylvia"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "VoltzSpawn",
+                "units": [
+                    "Beowulf",
+                    "Voltz",
+                    "Voltz_1",
+                    "Voltz_2",
+                    "Voltz_3",
+                    "Voltz_4",
+                    "Voltz_5",
+                    "Voltz_6",
+                    "Voltz_7",
+                    "Voltz_8",
+                    "Voltz_9",
+                    "Voltz_10",
+                    "Voltz_11"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "FuryGroup",
+                "units": [
+                    "Erinys",
+                    "Fury_1",
+                    "Fury_2",
+                    "Fury_3",
+                    "Fury_4"
+                ],
+                "positions": {
+                    "Erinys": [
+                        60,
+                        6
+                    ],
+                    "Fury_1": [
+                        60,
+                        5
+                    ],
+                    "Fury_2": [
+                        59,
+                        6
+                    ],
+                    "Fury_3": [
+                        60,
+                        7
+                    ],
+                    "Fury_4": [
+                        61,
+                        6
+                    ]
+                }
+            },
+            {
+                "nid": "MackilySpawn",
+                "units": [
+                    "Mackily_1",
+                    "Mackily_2",
+                    "Mackily_3",
+                    "Mackily_4",
+                    "Mackily_5",
+                    "Mackily_6",
+                    "Mackily_7",
+                    "Mackily_8",
+                    "Mackily_9",
+                    "Mackily_10"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "AgustyArmor",
+                "units": [
+                    "Agusty_12",
+                    "Agusty_13",
+                    "Agusty_14",
+                    "Agusty_15"
+                ],
+                "positions": {}
+            },
+            {
+                "nid": "ZainGroup",
+                "units": [
+                    "Zain",
+                    "Zain_1",
+                    "Zain_2",
+                    "Zain_3",
+                    "Zain_4",
+                    "Zain_5",
+                    "Zain_6",
+                    "Zain_7",
+                    "Zain_8",
+                    "Zain_9",
+                    "Zain_10",
+                    "Zain_11",
+                    "Zain_12",
+                    "Zain_13",
+                    "Zain_14",
+                    "Zain_15",
+                    "Zain_16",
+                    "Zain_17"
+                ],
+                "positions": {}
+            }
+        ]
+    }
+]

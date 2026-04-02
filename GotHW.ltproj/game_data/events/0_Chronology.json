@@ -1,0 +1,230 @@
+[
+    {
+        "name": "Chronology",
+        "trigger": "level_start",
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [
+            [
+                "change_background",
+                [
+                    "BlackBackground"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_convoy",
+                    "True"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_supports",
+                    "True"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "overworld_cinematic",
+                [
+                    "Chronology"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "103 - Jugdral Chronology"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "move_cursor",
+                [
+                    "0,16",
+                    "2800"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#credits;THE JUGDRAL CHRONOLOGY;;;center"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "001",
+                    "The Kingdom of Grann is born on the Jun River's west banks."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "230",
+                    "Grann transitions into a republic."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "310",
+                    "Republic's territory expands. A golden age of prosperity begins."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "440",
+                    "Advent of the dark god -its vessel- Galle founds the Loptyrian Order."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "447",
+                    "Rise of the dark god's Deadlords.,The Grann Republic falls."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "448",
+                    "Archibishop Galle is crowned the first ruler of the Loptyr Empire."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "449",
+                    "The Great Purge.,Over 100.000 are murdered."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "452",
+                    "The Sorrow of Miletos. Children, are burned alive in droves as sacrifices to the dark god."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "453",
+                    "The Edda Massacre.,Over 10.000 victims of the Empire."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "535",
+                    "Prince Maira,rejects his royal,kin."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "611",
+                    "A resistance arises across Jugdral."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "632",
+                    "The Miracle of Darna.,The gods bestow their power upon twelve rebels.,The Twelve Crusaders."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "633",
+                    "The Holy War begins..."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "648",
+                    "Downfall of the Loptyr Empire.,Seven Crusaders unite to start a powerful new state.,The other five form independent kingdoms."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "649",
+                    "The Kingdom of Grannvale is born."
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "757",
+                    "Grannvale declares war on the eastern nation of Isaac."
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "An age of crisis begins...",
+                    " ",
+                    "wait",
+                    "center"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "8000"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "BlackBackground"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#change_tilemap;reload"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 22
+    }
+]
