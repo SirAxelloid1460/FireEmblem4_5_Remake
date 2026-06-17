@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bfhjc5ieuwqab"
+path="res://.godot/imported/311 - Conversation 2.ogg-75810c0670bbb6c6ea1b91ba2a616cbd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/311 - Conversation 2.ogg"
+dest_files=["res://.godot/imported/311 - Conversation 2.ogg-75810c0670bbb6c6ea1b91ba2a616cbd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

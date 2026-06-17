@@ -1,0 +1,253 @@
+{
+  "class": "Ballista",
+  "variant": "Generic",
+  "weapon": "Bow",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    3,
+    3
+  ],
+  "sheet_size": [
+    720,
+    480
+  ],
+  "frame_count": 8,
+  "frames": {
+    "Bow_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Bow_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Bow_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Bow_003": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Bow_004": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Bow_005": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Bow_006": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Bow_007": {
+      "tile": [
+        1,
+        2
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 23,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Arrow"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Bow_002"
+      },
+      {
+        "cmd": "screen_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_005"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_005"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_001"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 23,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Arrow"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Bow_002"
+      },
+      {
+        "cmd": "screen_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_005"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_005"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_001"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 26,
+        "frame": "Bow_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_006"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bieo1jlej0p82"
+path="res://.godot/imported/218 Ballad.ogg-6f0639e2f4816a268bda2f3ceb630421.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/218 Ballad.ogg"
+dest_files=["res://.godot/imported/218 Ballad.ogg-6f0639e2f4816a268bda2f3ceb630421.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

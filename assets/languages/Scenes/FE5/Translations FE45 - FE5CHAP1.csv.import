@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bl7whnn41w082"
+
+[deps]
+
+files=["res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation"]
+
+source_file="res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.csv"
+dest_files=["res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation"]
+
+[params]
+
+compress=true
+delimiter=0
+unescape_keys=false
+unescape_translations=true

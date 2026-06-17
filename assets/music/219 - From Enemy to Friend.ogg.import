@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b26014pe3vwr5"
+path="res://.godot/imported/219 - From Enemy to Friend.ogg-980b7638468e4504afe110d3581ade1d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/219 - From Enemy to Friend.ogg"
+dest_files=["res://.godot/imported/219 - From Enemy to Friend.ogg-980b7638468e4504afe110d3581ade1d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

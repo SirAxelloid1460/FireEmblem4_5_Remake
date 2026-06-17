@@ -1,0 +1,17 @@
+[
+ {
+  "nid": "Chapter3",
+  "size": [
+   62,
+   63
+  ],
+  "autotile_fps": 29,
+  "layers": [
+   {
+    "nid": "base",
+    "visible": true,
+    "terrain_grid": {}
+   }
+  ]
+ }
+]

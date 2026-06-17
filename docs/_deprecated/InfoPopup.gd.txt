@@ -1,0 +1,7 @@
+class_name InfoPopup
+extends AcceptDialog
+
+func setup(title: String, message: String):
+	self.title = title
+	dialog_text = message
+	popup_centered()

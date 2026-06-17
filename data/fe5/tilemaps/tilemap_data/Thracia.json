@@ -1,0 +1,17 @@
+[
+ {
+  "nid": "Thracia",
+  "size": [
+   37,
+   37
+  ],
+  "autotile_fps": 29,
+  "layers": [
+   {
+    "nid": "base",
+    "visible": true,
+    "terrain_grid": {}
+   }
+  ]
+ }
+]

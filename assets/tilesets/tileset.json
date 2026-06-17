@@ -1,0 +1,12 @@
+[
+    {
+        "nid": "BaseFloor",
+        "terrain_grid": {},
+        "autotiles": {}
+    },
+    {
+        "nid": "LayerTiles",
+        "terrain_grid": {},
+        "autotiles": {}
+    }
+]

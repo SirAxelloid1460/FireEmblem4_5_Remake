@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btb7ojty51hgr"
+path="res://.godot/imported/143 Loputo B.ogg-b40e920a15638da1a144bb975fd7e9bf.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/143 Loputo B.ogg"
+dest_files=["res://.godot/imported/143 Loputo B.ogg-b40e920a15638da1a144bb975fd7e9bf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cpvwbsqu2038t"
+path="res://.godot/imported/106 - Chapter 1 (Girl of the Spirit Forest).ogg-cf3fd431b308672011a2248d81de47ff.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/106 - Chapter 1 (Girl of the Spirit Forest).ogg"
+dest_files=["res://.godot/imported/106 - Chapter 1 (Girl of the Spirit Forest).ogg-cf3fd431b308672011a2248d81de47ff.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

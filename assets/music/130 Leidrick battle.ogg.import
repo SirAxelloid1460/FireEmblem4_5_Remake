@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btg1c68n7f6vi"
+path="res://.godot/imported/130 Leidrick battle.ogg-e408301d348fb4d92aaf1815b66d7091.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/130 Leidrick battle.ogg"
+dest_files=["res://.godot/imported/130 Leidrick battle.ogg-e408301d348fb4d92aaf1815b66d7091.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

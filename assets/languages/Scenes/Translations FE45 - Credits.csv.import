@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dwjppfxua186n"
+
+[deps]
+
+files=["res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.es.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation"]
+
+source_file="res://assets/languages/Scenes/Translations FE45 - Credits.csv"
+dest_files=["res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.es.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation"]
+
+[params]
+
+compress=true
+delimiter=0
+unescape_keys=false
+unescape_translations=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://by42ffn2p3yj7"
+path="res://.godot/imported/120 Dark Bishops.ogg-7fdcdbd6e0a6fc2e378b2ca81f4ea7f9.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/120 Dark Bishops.ogg"
+dest_files=["res://.godot/imported/120 Dark Bishops.ogg-7fdcdbd6e0a6fc2e378b2ca81f4ea7f9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://obs8p636oc1b"
+path="res://.godot/imported/136 Advance.ogg-35bf3e6c66143aa7d9b6dd67205137af.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/136 Advance.ogg"
+dest_files=["res://.godot/imported/136 Advance.ogg-35bf3e6c66143aa7d9b6dd67205137af.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,397 @@
+extends Node2D
+class_name CastlePreparation
+
+# Referencias a nodos
+@onready var camera: Camera2D = $Camera2D
+@onready var ui_layer: CanvasLayer = $UILayer
+@onready var unit_list: UnitListPanel = $UILayer/UnitListPanel
+@onready var location_menu: LocationMenu = $UILayer/LocationMenu
+@onready var gold_label: Label = $UILayer/GoldLabel
+@onready var preparation_menu: PreparationMenu = $UILayer/PreparationMenu
+
+# Datos del ejÃ©rcito
+var player_units: Array[Unit] = []
+var army_gold: int = 5000
+var convoy_items: Array[Item] = []
+var current_chapter: int = 1
+
+# Estado
+var selected_unit: Unit = null
+var current_location: String = ""
+var preparation_complete: bool = false
+
+# ConfiguraciÃ³n
+@export var next_battle_scene: String = "res://Scenes/battle.tscn"
+@export var allow_skip: bool = true
+
+# SeÃ±ales
+signal preparation_started
+signal preparation_completed
+signal unit_selected(unit: Unit)
+signal location_entered(location: String)
+signal gold_changed(new_amount: int)
+
+func _ready():
+	setup_ui()
+	load_army_data()
+	update_ui()
+	preparation_started.emit()
+	
+	# Mostrar mensaje de bienvenida
+	show_welcome_message()
+
+func setup_ui():
+	"""Configura la interfaz del castillo"""
+	# Configurar panel de unidades
+	if unit_list:
+		unit_list.unit_clicked.connect(_on_unit_selected)
+	
+	# Configurar menÃº de ubicaciones
+	if location_menu:
+		location_menu.location_selected.connect(_on_location_selected)
+	
+	# Configurar menÃº de preparaciÃ³n
+	if preparation_menu:
+		preparation_menu.start_battle_pressed.connect(_on_start_battle)
+		preparation_menu.manage_units_pressed.connect(_on_manage_units)
+		preparation_menu.save_game_pressed.connect(_on_save_game)
+
+func load_army_data():
+	"""Carga los datos del ejÃ©rcito desde el save o crea datos de prueba"""
+	# TODO: Cargar desde sistema de guardado
+	# Por ahora, crear datos de prueba
+	create_test_army()
+
+func create_test_army():
+	"""Crea un ejÃ©rcito de prueba"""
+	# Crear algunas unidades de ejemplo
+	var sigurd = create_test_unit("Sigurd", "Lord", 10, 5000)
+	var lex = create_test_unit("Lex", "Axe Knight", 8, 2000)
+	var azel = create_test_unit("Azel", "Mage", 6, 1500)
+	
+	player_units = [sigurd, lex, azel]
+	
+	# Oro inicial
+	army_gold = 5000
+	
+	# Items en convoy
+	convoy_items = []
+
+func create_test_unit(unit_name: String, unit_class: String, level: int, gold: int) -> Unit:
+	"""Crea una unidad de prueba"""
+	var unit = Unit.new()
+	unit.unit_name = unit_name
+	unit.unit_class = unit_class
+	unit.level = level
+	unit.is_player_unit = true
+	unit.max_hp = 20 + level * 2
+	unit.current_hp = unit.max_hp
+	unit.strength = 5 + level
+	unit.skill = 5 + level
+	unit.speed = 5 + level
+	unit.defense = 3 + level / 2
+	
+	# Oro personal (FE4 feature)
+	unit.personal_gold = gold
+	
+	return unit
+
+func update_ui():
+	"""Actualiza toda la interfaz"""
+	update_gold_display()
+	update_unit_list()
+
+func update_gold_display():
+	"""Actualiza el display de oro"""
+	if gold_label:
+		gold_label.text = "Oro del EjÃ©rcito: %d G" % army_gold
+
+func update_unit_list():
+	"""Actualiza la lista de unidades"""
+	if unit_list:
+		unit_list.populate_unit_list(player_units)
+
+func show_welcome_message():
+	"""Muestra mensaje de bienvenida al castillo"""
+	var message = """
+	[center][b]Castillo de %s[/b][/center]
+	
+	Bienvenido al castillo.
+	Prepara a tus unidades antes de la batalla.
+	
+	[b]Servicios disponibles:[/b]
+	â€¢ Tienda - Compra armas e items
+	â€¢ Herrero - Repara armas
+	â€¢ Arena - Entrena unidades
+	â€¢ Adivina - Lee estadÃ­sticas
+	â€¢ PromociÃ³n - Mejora tus unidades
+	â€¢ Convoy - Gestiona inventario
+	""" % get_castle_name()
+	
+	show_info_popup("PreparaciÃ³n", message)
+
+func get_castle_name() -> String:
+	"""Retorna el nombre del castillo segÃºn el capÃ­tulo"""
+	var castle_names = {
+		1: "Chalphy",
+		2: "Jungby",
+		3: "Agustria",
+		4: "Silesse",
+		5: "Leonster"
+	}
+	return castle_names.get(current_chapter, "PreparaciÃ³n")
+
+# ============================================
+# GESTIÃ“N DE UBICACIONES
+# ============================================
+
+func _on_location_selected(location: String):
+	"""Maneja cuando se selecciona una ubicaciÃ³n del castillo"""
+	if not selected_unit:
+		show_info_popup("Aviso", "Selecciona una unidad primero")
+		return
+	
+	current_location = location
+	location_entered.emit(location)
+	
+	match location:
+		"shop":
+			open_shop()
+		"blacksmith":
+			open_blacksmith()
+		"arena":
+			open_arena()
+		"fortune_teller":
+			open_fortune_teller()
+		"promotion":
+			open_promotion()
+		"convoy":
+			open_convoy()
+
+func open_shop():
+	"""Abre la tienda"""
+	var shop = ShopMenu.new()
+	shop.setup(selected_unit, army_gold)
+	shop.purchase_made.connect(_on_shop_purchase)
+	ui_layer.add_child(shop)
+
+func open_blacksmith():
+	"""Abre el herrero"""
+	var blacksmith = BlacksmithMenu.new()
+	blacksmith.setup(selected_unit)
+	blacksmith.repair_completed.connect(_on_weapon_repaired)
+	ui_layer.add_child(blacksmith)
+
+func open_arena():
+	"""Abre la arena"""
+	var arena = ArenaMenu.new()
+	arena.setup(selected_unit)
+	arena.battle_completed.connect(_on_arena_battle_completed)
+	ui_layer.add_child(arena)
+
+func open_fortune_teller():
+	"""Abre la adivina (ve estadÃ­sticas y crecimiento)"""
+	var fortune = FortuneTellerMenu.new()
+	fortune.setup(selected_unit)
+	ui_layer.add_child(fortune)
+
+func open_promotion():
+	"""Abre el menÃº de promociÃ³n"""
+	var promotion = PromotionMenu.new()
+	promotion.setup(selected_unit)
+	promotion.promotion_completed.connect(_on_unit_promoted)
+	ui_layer.add_child(promotion)
+
+func open_convoy():
+	"""Abre el convoy (inventario compartido)"""
+	var convoy = ConvoyMenu.new()
+	convoy.setup(selected_unit, convoy_items)
+	convoy.items_changed.connect(_on_convoy_items_changed)
+	ui_layer.add_child(convoy)
+
+# ============================================
+# CALLBACKS DE SERVICIOS
+# ============================================
+
+func _on_shop_purchase(item: Item, cost: int):
+	"""Maneja cuando se compra algo en la tienda"""
+	if selected_unit.personal_gold >= cost:
+		selected_unit.personal_gold -= cost
+		selected_unit.inventory.append(item)
+		update_ui()
+		show_info_popup("Compra exitosa", "%s comprÃ³ %s" % [selected_unit.unit_name, item.item_name])
+	else:
+		show_info_popup("Oro insuficiente", "No tienes suficiente oro")
+
+func _on_weapon_repaired(weapon: Weapon, cost: int):
+	"""Maneja cuando se repara un arma"""
+	if selected_unit.personal_gold >= cost:
+		selected_unit.personal_gold -= cost
+		weapon.current_durability = weapon.max_durability
+		update_ui()
+		show_info_popup("ReparaciÃ³n exitosa", "%s fue reparado" % weapon.weapon_name)
+
+func _on_arena_battle_completed(won: bool, gold_earned: int, exp_gained: int):
+	"""Maneja el resultado de una batalla en la arena"""
+	if won:
+		selected_unit.personal_gold += gold_earned
+		# TODO: Aplicar experiencia
+		show_info_popup("Â¡Victoria en la Arena!", 
+			"Ganaste %d G y %d EXP" % [gold_earned, exp_gained])
+	else:
+		show_info_popup("Derrota en la Arena", 
+			"%s fue derrotado en la arena" % selected_unit.unit_name)
+	
+	update_ui()
+
+func _on_unit_promoted(old_class: String, new_class: String):
+	"""Maneja cuando una unidad es promocionada"""
+	show_info_popup("Â¡PromociÃ³n!", 
+		"%s ha sido promocionado de %s a %s!" % [selected_unit.unit_name, old_class, new_class])
+	update_ui()
+
+func _on_convoy_items_changed(items: Array):
+	"""Maneja cambios en el convoy"""
+	convoy_items = items
+	update_ui()
+
+# ============================================
+# SELECCIÃ“N DE UNIDADES
+# ============================================
+
+func _on_unit_selected(unit: Unit):
+	"""Maneja cuando se selecciona una unidad"""
+	selected_unit = unit
+	unit_selected.emit(unit)
+	
+	# Mostrar informaciÃ³n de la unidad
+	show_unit_info(unit)
+
+func show_unit_info(unit: Unit):
+	"""Muestra informaciÃ³n detallada de la unidad"""
+	if unit_list:
+		unit_list.show_selected_unit_info(unit)
+
+# ============================================
+# GESTIÃ“N DE PREPARACIÃ“N
+# ============================================
+
+func _on_manage_units():
+	"""Abre el menÃº de gestiÃ³n de unidades"""
+	var manager = UnitManagerMenu.new()
+	manager.setup(player_units)
+	ui_layer.add_child(manager)
+
+func _on_save_game():
+	"""Guarda el progreso"""
+	save_preparation_data()
+	show_info_popup("Guardado", "Progreso guardado exitosamente")
+
+func save_preparation_data():
+	"""Guarda los datos de preparaciÃ³n"""
+	var save_data = {
+		"player_units": serialize_units(player_units),
+		"army_gold": army_gold,
+		"convoy_items": serialize_items(convoy_items),
+		"current_chapter": current_chapter
+	}
+	
+	# TODO: Integrar con sistema de guardado
+	print("Datos guardados: ", save_data)
+
+func serialize_units(units: Array[Unit]) -> Array:
+	"""Serializa unidades para guardado"""
+	var data = []
+	for unit in units:
+		data.append({
+			"name": unit.unit_name,
+			"class": unit.unit_class,
+			"level": unit.level,
+			"hp": unit.current_hp,
+			"gold": unit.personal_gold
+			# ... mÃ¡s datos
+		})
+	return data
+
+func serialize_items(items: Array) -> Array:
+	"""Serializa items para guardado"""
+	var data = []
+	for item in items:
+		data.append({
+			"name": item.item_name,
+			"type": item.item_type
+		})
+	return data
+
+# ============================================
+# INICIO DE BATALLA
+# ============================================
+
+func _on_start_battle():
+	"""Inicia la batalla cuando el jugador estÃ¡ listo"""
+	# ConfirmaciÃ³n
+	show_confirmation_dialog(
+		"Â¿Iniciar Batalla?",
+		"Â¿EstÃ¡s listo para comenzar la batalla?",
+		_confirm_start_battle
+	)
+
+func _confirm_start_battle():
+	"""Confirma y empieza la batalla"""
+	preparation_complete = true
+	preparation_completed.emit()
+	
+	# Guardar datos para la batalla
+	save_preparation_data()
+	
+	# TransiciÃ³n a la batalla
+	transition_to_battle()
+
+func transition_to_battle():
+	"""TransiciÃ³n a la escena de batalla"""
+	# Fade out
+	var fade = ColorRect.new()
+	fade.color = Color.BLACK
+	fade.modulate.a = 0
+	fade.set_anchors_preset(Control.PRESET_FULL_RECT)
+	ui_layer.add_child(fade)
+	
+	var tween = create_tween()
+	tween.tween_property(fade, "modulate:a", 1.0, 1.0)
+	await tween.finished
+	
+	# Cambiar a batalla
+	get_tree().change_scene_to_file(next_battle_scene)
+
+# ============================================
+# UTILIDADES UI
+# ============================================
+
+func show_info_popup(title: String, message: String):
+	"""Muestra un popup de informaciÃ³n"""
+	var popup = InfoPopup.new()
+	popup.setup(title, message)
+	ui_layer.add_child(popup)
+
+func show_confirmation_dialog(title: String, message: String, on_confirm: Callable):
+	"""Muestra un diÃ¡logo de confirmaciÃ³n"""
+	var dialog = ConfirmationDialog.new()
+	dialog.dialog_text = message
+	dialog.title = title
+	dialog.confirmed.connect(on_confirm)
+	ui_layer.add_child(dialog)
+	dialog.popup_centered()
+
+func _input(event):
+	"""Manejo de input"""
+	if event.is_action_pressed("ui_cancel"):
+		# Mostrar menÃº de confirmaciÃ³n para salir
+		show_confirmation_dialog(
+			"Volver al MenÃº",
+			"Â¿Seguro que quieres volver al menÃº principal?\n(Progreso no guardado se perderÃ¡)",
+			_return_to_menu
+		)
+
+func _return_to_menu():
+	"""Vuelve al menÃº principal"""
+	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")

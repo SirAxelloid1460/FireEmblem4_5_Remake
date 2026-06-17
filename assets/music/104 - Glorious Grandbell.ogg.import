@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bieuy47yrrk0j"
+path="res://.godot/imported/104 - Glorious Grandbell.ogg-658f5fdd4b1d958ca32d5aab260c4969.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/104 - Glorious Grandbell.ogg"
+dest_files=["res://.godot/imported/104 - Glorious Grandbell.ogg-658f5fdd4b1d958ca32d5aab260c4969.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

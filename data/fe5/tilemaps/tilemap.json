@@ -1,0 +1,74 @@
+[
+ {
+  "nid": "Chronology",
+  "size": [
+   15,
+   20
+  ],
+  "cells": 0
+ },
+ {
+  "nid": "T1",
+  "size": [
+   23,
+   21
+  ],
+  "cells": 483
+ },
+ {
+  "nid": "T2",
+  "size": [
+   24,
+   32
+  ],
+  "cells": 768
+ },
+ {
+  "nid": "T2x",
+  "size": [
+   32,
+   32
+  ],
+  "cells": 1024
+ },
+ {
+  "nid": "T3",
+  "size": [
+   25,
+   32
+  ],
+  "cells": 800
+ },
+ {
+  "nid": "T4",
+  "size": [
+   24,
+   30
+  ],
+  "cells": 556
+ },
+ {
+  "nid": "T4x",
+  "size": [
+   16,
+   24
+  ],
+  "cells": 351
+ },
+ {
+  "nid": "Thracia",
+  "size": [
+   37,
+   37
+  ],
+  "cells": 0
+ },
+ {
+  "nid": "WorldMap",
+  "size": [
+   41,
+   35
+  ],
+  "cells": 0
+ }
+]

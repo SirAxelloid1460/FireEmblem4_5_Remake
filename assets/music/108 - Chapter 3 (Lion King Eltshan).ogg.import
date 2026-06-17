@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dp2aoioldkt8n"
+path="res://.godot/imported/108 - Chapter 3 (Lion King Eltshan).ogg-9c9c9c5d68b198eebd3e6e6a7b684253.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/108 - Chapter 3 (Lion King Eltshan).ogg"
+dest_files=["res://.godot/imported/108 - Chapter 3 (Lion King Eltshan).ogg-9c9c9c5d68b198eebd3e6e6a7b684253.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,604 @@
+extends Control
+class_name MainMenu
+
+# ============================================================
+# MAIN MENU — estilo Fire Emblem, recreado desde cero
+# ============================================================
+# Flujo (dirigido por foco; soporta teclado/mando Y ratón):
+#   PRESS START  → (accept/click) →  MAIN
+#   MAIN:  New Game · Continue · Extras
+#       New Game → NEWGAME (Normal / Elite + descripción) → inicia Prólogo
+#       Extras   → EXTRAS  (Options · Credits · Sound Room)
+#   B/cancel retrocede en cada nivel.
+#
+# Animaciones: columnas que se DESLIZAN al entrar, fundidos (fade rect),
+# cursor (►) que sigue al botón con foco, "PRESS START" parpadeante.
+# Autocontenido: no depende de autoloads externos. Construido por código,
+# así que la escena .tscn solo necesita el nodo raíz con este script.
+#
+# Ganchos pendientes (cuando haya arte/audio): logo, fondo animado, SFX.
+# ============================================================
+
+# ----------------------- PALETA / ESTILO --------------------
+const COLOR_BG_TOP   := Color(0.04, 0.05, 0.12, 1.0)
+const COLOR_BG_BOT   := Color(0.10, 0.08, 0.20, 1.0)
+const COLOR_GOLD     := Color(1.00, 0.84, 0.36, 1.0)
+const COLOR_GOLD_DIM := Color(0.70, 0.60, 0.30, 1.0)
+const COLOR_TEXT     := Color(0.95, 0.95, 0.90, 1.0)
+const COLOR_DIM      := Color(0.62, 0.64, 0.74, 1.0)
+const COLOR_OUTLINE  := Color(0.0, 0.0, 0.0, 1.0)
+const COLOR_PANEL    := Color(0.07, 0.08, 0.17, 0.90)
+
+const SIZE_TITLE := 64
+const SIZE_SUB   := 22
+const SIZE_BTN   := 26
+const SIZE_DESC  := 18
+const OUTLINE_PX := 5
+
+const TITLE_MAIN := "FIRE EMBLEM"
+const TITLE_SUB  := "Genealogy of the Holy War   ·   Thracia 776"
+const GAME_SCENE := "res://Scenes/main_game.tscn"
+const CREDITS_SCRIPT := "res://Scripts/CreditsScreen.gd"
+
+# Música de fondo del menú: el tema principal de Fire Emblem, en bucle.
+const THEME_MUSIC := "res://assets/music/102 - Fire Emblem Theme.ogg"
+
+# Arte del título (FE4): fondo = ilustración del ejército; logo = "FIRE EMBLEM /
+# Genealogy" (41% transparente, deja ver el fondo); press_start = 8 frames 96×16.
+const TITLE_BG       := "res://assets/title/title1_background.png"
+const LOGO           := "res://assets/title/logo1.png"
+const PRESS_START_IMG := "res://assets/sprites/press_start.png"
+const PRESS_FRAMES   := 8
+const PRESS_SCALE    := 5
+
+# UI de botones estilo FE: placa ornamentada individual + cursor-espada.
+const PLATE      := "res://assets/menus/title_menu_dark.png"           # placa normal
+const PLATE_HL   := "res://assets/menus/title_menu_dark_highlight.png" # placa enfocada
+const SWORD      := "res://assets/menus/cursor_dragon.png"             # cursor-espada
+const SERIF_FONT := "res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
+const BTN_W := 620
+const BTN_H := 110
+const BTN_FONT := 54
+const SWORD_SCALE := 4
+const COLOR_BTN := Color(0.95, 0.93, 0.85, 1.0)   # crema (texto de botón)
+# Bobeo del cursor estilo GBA: ESCALONADO (no fluido), pero con escalones más
+# pequeños (8px) para que sea un pelo más fluido. ±24 px de recorrido.
+const CURSOR_BOB_SEQ := [0, 8, 16, 24, 16, 8, 0, -8, -16, -24, -16, -8]
+const CURSOR_STEP_TIME := 0.078   # s por escalón (~10% más lento que 0.07)
+
+const COL_WIDTH := 380.0
+const SLIDE_TIME := 0.28
+const FADE_TIME  := 0.30
+
+# Descripciones de dificultad (de translations.json de los .ltproj)
+const DESC_NORMAL := "Base SNES difficulty + balance fixes due to GBA mechanics."
+const DESC_ELITE  := "Base SNES difficulty without balance fixes. For veterans."
+
+# ----------------------- ESTADO -----------------------------
+enum St { PRESS_START, MAIN, NEWGAME, EXTRAS }
+var _state: int = St.PRESS_START
+var _busy: bool = false                       # bloquea input durante transiciones
+
+var _music: AudioStreamPlayer
+var _bg: ColorRect            # gradiente (fallback si falta la imagen de fondo)
+var _bg_img: TextureRect      # fondo del título (ilustración del ejército)
+var _title: TextureRect       # logo del juego
+var _subtitle: Label          # ya no se usa (el logo trae subtítulo); inerte
+var _press: TextureRect       # "Press Start" animado
+var _press_frame: int = 0
+var _press_dir: int = 1
+var _press_accum: float = 0.0
+var _fade: ColorRect
+var _cursor: TextureRect          # cursor-espada FE (cursor_dragon)
+var _cursor_target: Control = null         # botón enfocado al que sigue el cursor
+var _cursor_base: Vector2 = Vector2.ZERO   # posición centrada (sin bobeo)
+var _cursor_step: int = 0
+var _cursor_step_accum: float = 0.0
+var _desc: Label
+var _toast_lbl: Label
+
+var _main_col: VBoxContainer      # columna de placas (botones individuales)
+var _newgame_col: VBoxContainer
+var _extras_col: VBoxContainer
+
+var _difficulty: String = "Normal"
+
+
+# ============================================================
+# CONSTRUCCIÓN
+# ============================================================
+func _ready() -> void:
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_build_bg()
+	_build_music()
+	_build_title()
+	_build_press_start()
+	_build_columns()
+	_build_cursor()
+	_build_desc()
+	_build_toast()
+	_build_fade()
+
+	_show_only(null)            # oculta columnas
+	_press.visible = true       # el shimmer lo anima _process()
+
+	# Sin fundido de entrada: el corte desde Intro es directo (sin fade). El _fade
+	# sólo se usa en las transiciones internas del menú.
+	_fade.modulate.a = 0.0
+
+
+func _build_bg() -> void:
+	# Fondo del título: ilustración del ejército (escalada a pantalla, nearest).
+	if ResourceLoader.exists(TITLE_BG):
+		_bg_img = TextureRect.new()
+		_bg_img.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		_bg_img.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		_bg_img.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		_bg_img.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_bg_img.texture = load(TITLE_BG)
+		add_child(_bg_img)
+		return
+	# Fallback: gradiente procedural (si falta la imagen).
+	_bg = ColorRect.new()
+	_bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var sh := Shader.new()
+	sh.code = """
+	shader_type canvas_item;
+	uniform vec4 ctop : source_color;
+	uniform vec4 cbot : source_color;
+	void fragment() {
+		vec4 base = mix(ctop, cbot, UV.y);
+		float d = distance(UV, vec2(0.5));
+		base.rgb = mix(base.rgb, vec3(0.0), smoothstep(0.5, 1.05, d) * 0.6);
+		COLOR = base;
+	}
+	"""
+	var mat := ShaderMaterial.new()
+	mat.shader = sh
+	mat.set_shader_parameter("ctop", COLOR_BG_TOP)
+	mat.set_shader_parameter("cbot", COLOR_BG_BOT)
+	_bg.material = mat
+	add_child(_bg)
+
+
+## Música de fondo: el tema de Fire Emblem en bucle (en el bus "Music" si existe,
+## para que el volumen de Options lo controle).
+func _build_music() -> void:
+	if not ResourceLoader.exists(THEME_MUSIC):
+		return
+	_music = AudioStreamPlayer.new()
+	var stream = load(THEME_MUSIC)
+	if "loop" in stream:
+		stream.loop = true        # bucle sin cortes (Ogg Vorbis)
+	_music.stream = stream
+	if AudioServer.get_bus_index("Music") >= 0:
+		_music.bus = "Music"
+	add_child(_music)
+	_music.play()
+
+
+func _build_title() -> void:
+	# Logo del juego, superpuesto a pantalla completa (transparente deja ver el fondo).
+	_title = TextureRect.new()
+	_title.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_title.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	_title.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	_title.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	if ResourceLoader.exists(LOGO):
+		_title.texture = load(LOGO)
+	add_child(_title)
+	# _subtitle ya no se usa (el logo incluye el subtítulo); label inerte oculto.
+	_subtitle = Label.new()
+	_subtitle.visible = false
+	_subtitle.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(_subtitle)
+
+
+func _build_press_start() -> void:
+	# "Press Start" animado (8 frames de 96×16 apilados; shimmer ping-pong).
+	_press = TextureRect.new()
+	_press.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	_press.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_press.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	if ResourceLoader.exists(PRESS_START_IMG):
+		var at := AtlasTexture.new()
+		at.atlas = load(PRESS_START_IMG)
+		at.region = Rect2(0, 0, 96, 16)
+		_press.texture = at
+	var w := 96 * PRESS_SCALE
+	var h := 16 * PRESS_SCALE
+	_press.custom_minimum_size = Vector2(w, h)
+	_press.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
+	_press.offset_left = -w / 2.0
+	_press.offset_right = w / 2.0
+	_press.offset_top = -160 - h
+	_press.offset_bottom = -160
+	add_child(_press)
+
+
+func _process(delta: float) -> void:
+	_animate_press(delta)
+	_animate_cursor(delta)
+
+
+## Anima el shimmer del "Press Start" (sólo cuando está visible).
+func _animate_press(delta: float) -> void:
+	if _press == null or not _press.visible:
+		return
+	var at := _press.texture as AtlasTexture
+	if at == null:
+		return
+	_press_accum += delta
+	if _press_accum < 0.07:          # ~14 fps, como el original
+		return
+	_press_accum = 0.0
+	_press_frame += _press_dir
+	if _press_frame >= PRESS_FRAMES - 1:
+		_press_frame = PRESS_FRAMES - 1
+		_press_dir = -1
+	elif _press_frame <= 0:
+		_press_frame = 0
+		_press_dir = 1
+	at.region = Rect2(0, _press_frame * 16, 96, 16)
+
+
+## Bobeo vertical ESCALONADO (look GBA) + seguimiento del botón enfocado (para que
+## la espada acompañe a la columna mientras se desliza, sin quedarse fuera de pantalla).
+func _animate_cursor(delta: float) -> void:
+	if _cursor == null or not _cursor.visible:
+		return
+	if _cursor_target != null and is_instance_valid(_cursor_target):
+		_cursor_base = _cursor_base_for(_cursor_target)   # sigue al botón en vivo
+	_cursor_step_accum += delta
+	if _cursor_step_accum >= CURSOR_STEP_TIME:
+		_cursor_step_accum -= CURSOR_STEP_TIME
+		_cursor_step = (_cursor_step + 1) % CURSOR_BOB_SEQ.size()
+	_cursor.global_position = _cursor_base + Vector2(0, CURSOR_BOB_SEQ[_cursor_step])
+
+
+# --- Columnas de botones ---
+func _build_columns() -> void:
+	# "Continue" solo aparece si hay partida guardada (sin saves es ilógico).
+	var main_items: Array = [{ "id": "newgame", "text": "New Game" }]
+	if SaveSystem.has_save_file():
+		main_items.append({ "id": "continue", "text": "Continue" })
+	main_items.append({ "id": "extras", "text": "Extras" })
+	_main_col = _make_column(main_items)
+	_newgame_col = _make_column([
+		{ "id": "normal", "text": "Normal" },
+		{ "id": "elite",  "text": "Elite" },
+	])
+	_extras_col = _make_column([
+		{ "id": "options",   "text": "Options" },
+		{ "id": "credits",   "text": "Credits" },
+		{ "id": "soundroom", "text": "Sound Room" },
+	])
+
+
+## Stylebox de placa FE (title_menu_dark). Sin texture_margin => estira la placa
+## entera (borde ornamentado incluido), como en el diseño original.
+func _plate_sb(path: String) -> StyleBoxTexture:
+	var sb := StyleBoxTexture.new()
+	sb.texture = load(path)
+	sb.content_margin_left = 40
+	sb.content_margin_right = 40
+	sb.content_margin_top = 12
+	sb.content_margin_bottom = 16
+	return sb
+
+
+func _make_column(items: Array) -> VBoxContainer:
+	var col := VBoxContainer.new()
+	col.add_theme_constant_override("separation", 16)
+	col.visible = false
+	add_child(col)
+	for it in items:
+		col.add_child(_make_button(str(it["text"]), str(it["id"])))
+	return col
+
+
+func _make_button(text: String, id: String) -> Button:
+	var b := Button.new()
+	b.text = text
+	b.custom_minimum_size = Vector2(BTN_W, BTN_H)
+	b.alignment = HORIZONTAL_ALIGNMENT_CENTER
+	b.focus_mode = Control.FOCUS_ALL
+	b.mouse_filter = Control.MOUSE_FILTER_STOP
+	b.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	# Fuente serif estilo logo (small-caps).
+	var f := load(SERIF_FONT)
+	if f != null:
+		b.add_theme_font_override("font", f)
+	b.add_theme_font_size_override("font_size", BTN_FONT)
+	b.add_theme_color_override("font_color", COLOR_BTN)
+	b.add_theme_color_override("font_focus_color", Color.WHITE)
+	b.add_theme_color_override("font_hover_color", Color.WHITE)
+	b.add_theme_color_override("font_pressed_color", Color.WHITE)
+	b.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
+	b.add_theme_constant_override("outline_size", OUTLINE_PX + 1)
+	# Fondo = placa ornamentada; enfocada/hover => versión highlight.
+	b.add_theme_stylebox_override("normal", _plate_sb(PLATE))
+	b.add_theme_stylebox_override("hover", _plate_sb(PLATE_HL))
+	b.add_theme_stylebox_override("focus", _plate_sb(PLATE_HL))
+	b.add_theme_stylebox_override("pressed", _plate_sb(PLATE_HL))
+	b.set_meta("id", id)
+	b.pressed.connect(_on_button_pressed.bind(id))
+	b.focus_entered.connect(_on_button_focus.bind(b, id))
+	b.mouse_entered.connect(b.grab_focus)
+	return b
+
+
+func _build_cursor() -> void:
+	_cursor = TextureRect.new()
+	_cursor.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	_cursor.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	_cursor.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	if ResourceLoader.exists(SWORD):
+		_cursor.texture = load(SWORD)
+	_cursor.size = Vector2(32 * SWORD_SCALE, 28 * SWORD_SCALE)
+	_cursor.visible = false
+	add_child(_cursor)
+
+
+func _build_desc() -> void:
+	# Descripción de dificultad (solo en NEWGAME), en un recuadro FE para legibilidad.
+	_desc = Label.new()
+	_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_desc.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	_desc.add_theme_font_size_override("font_size", 24)
+	_desc.add_theme_color_override("font_color", COLOR_TEXT)
+	_desc.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
+	_desc.add_theme_constant_override("outline_size", OUTLINE_PX - 1)
+	# Recuadro de fondo: panel oscuro semitransparente con borde dorado tenue.
+	var sb := StyleBoxFlat.new()
+	sb.bg_color = Color(0.05, 0.06, 0.11, 0.85)
+	sb.set_border_width_all(2)
+	sb.border_color = COLOR_GOLD_DIM
+	sb.set_corner_radius_all(6)
+	sb.content_margin_left = 24
+	sb.content_margin_right = 24
+	sb.content_margin_top = 12
+	sb.content_margin_bottom = 12
+	_desc.add_theme_stylebox_override("normal", sb)
+	_desc.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
+	_desc.offset_left = 180
+	_desc.offset_right = -180
+	_desc.offset_top = -132
+	_desc.offset_bottom = -48
+	_desc.visible = false
+	add_child(_desc)
+
+
+func _build_toast() -> void:
+	_toast_lbl = Label.new()
+	_toast_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_toast_lbl.add_theme_font_size_override("font_size", SIZE_DESC)
+	_toast_lbl.add_theme_color_override("font_color", COLOR_GOLD)
+	_toast_lbl.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
+	_toast_lbl.add_theme_constant_override("outline_size", OUTLINE_PX - 1)
+	_toast_lbl.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
+	_toast_lbl.offset_top = -44
+	_toast_lbl.offset_bottom = -16
+	_toast_lbl.modulate.a = 0.0
+	add_child(_toast_lbl)
+
+
+func _build_fade() -> void:
+	_fade = ColorRect.new()
+	_fade.color = Color.BLACK
+	_fade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_fade.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(_fade)
+
+
+# ============================================================
+# NAVEGACIÓN / INPUT
+# ============================================================
+func _unhandled_input(event: InputEvent) -> void:
+	if _busy:
+		return
+	if _state == St.PRESS_START:
+		if event.is_action_pressed("ui_accept") or _is_confirm_click(event):
+			_goto(St.MAIN)
+		return
+	if event.is_action_pressed("ui_cancel"):
+		_on_cancel()
+
+
+func _is_confirm_click(event: InputEvent) -> bool:
+	return event is InputEventMouseButton and event.pressed \
+		and event.button_index == MOUSE_BUTTON_LEFT
+
+
+func _on_cancel() -> void:
+	match _state:
+		St.MAIN:
+			_goto(St.PRESS_START)
+		St.NEWGAME, St.EXTRAS:
+			_goto(St.MAIN)
+
+
+func _on_button_pressed(id: String) -> void:
+	if _busy:
+		return
+	match id:
+		"newgame":   _goto(St.NEWGAME)
+		"extras":    _goto(St.EXTRAS)
+		"continue":  _toast("Continue — coming soon")
+		"options":   _open_options()
+		"soundroom": _toast("Sound Room — coming soon")
+		"credits":   _open_credits()
+		"normal":    _start_game("Normal")
+		"elite":     _start_game("Elite")
+
+
+func _on_button_focus(b: Button, id: String) -> void:
+	_move_cursor_to(b)
+	if _state == St.NEWGAME:
+		_desc.text = DESC_NORMAL if id == "normal" else DESC_ELITE
+
+
+## Posición base (centrada) del cursor para un botón, a su izquierda.
+func _cursor_base_for(b: Control) -> Vector2:
+	var sw := 32 * SWORD_SCALE
+	var sh := 28 * SWORD_SCALE
+	return Vector2(b.global_position.x - sw + 24, b.global_position.y + (b.size.y - sh) * 0.5)
+
+
+func _move_cursor_to(b: Control) -> void:
+	if b == null or not is_instance_valid(b):
+		_cursor.visible = false
+		_cursor_target = null
+		return
+	_cursor.visible = true
+	_cursor_target = b           # _animate_cursor lo sigue en vivo (durante el slide)
+	_cursor_step = 0
+	_cursor_step_accum = 0.0
+	_cursor_base = _cursor_base_for(b)
+	_cursor.global_position = _cursor_base
+
+
+# ============================================================
+# TRANSICIONES DE ESTADO
+# ============================================================
+## Navegación entre paneles del menú: SIN fade (sólo deslizan las columnas).
+## El fade se reserva para las acciones terminales (ver _fade_to / _start_game / créditos).
+func _goto(new_state: int) -> void:
+	if _busy:
+		return
+	_state = new_state
+	_apply_state()
+
+
+## Fade del _fade rect a un alpha dado (await-able). Para acciones terminales.
+func _fade_to(a: float) -> void:
+	var t := create_tween()
+	t.tween_property(_fade, "modulate:a", a, FADE_TIME)
+	await t.finished
+
+
+func _apply_state() -> void:
+	var vw := get_viewport_rect().size.x
+	var center_x := (vw - BTN_W) * 0.5
+	match _state:
+		St.PRESS_START:
+			_show_only(null)
+			_title.visible = true        # logo visible
+			_press.visible = true
+			_cursor.visible = false
+		St.MAIN:
+			_press.visible = false
+			_title.visible = false       # tras Start el logo desaparece (sólo fondo)
+			_show_only(_main_col)
+			_slide_in(_main_col, -BTN_W - 240, center_x, 240)
+			_focus_first(_main_col)
+		St.NEWGAME:
+			_show_only(_newgame_col)
+			_desc.visible = true
+			_slide_in(_newgame_col, vw + 80, center_x, 280)
+			_focus_first(_newgame_col)
+		St.EXTRAS:
+			_show_only(_extras_col)
+			_slide_in(_extras_col, vw + 80, center_x, 240)
+			_focus_first(_extras_col)
+
+
+func _show_only(keep: Control) -> void:
+	for c in [_main_col, _newgame_col, _extras_col]:
+		if c != null:
+			c.visible = (c == keep)
+	if keep == null:
+		_cursor.visible = false
+		_desc.visible = false
+
+
+## Devuelve el primer botón de una columna (VBoxContainer > [Button...]).
+func _first_button(col: Control) -> Control:
+	if col != null and col.get_child_count() > 0 and col.get_child(0) is Control:
+		return col.get_child(0)
+	return null
+
+
+func _slide_in(col: Control, from_x: float, to_x: float, y: float) -> void:
+	col.position = Vector2(from_x, y)
+	var t := create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	t.tween_property(col, "position:x", to_x, SLIDE_TIME)
+	# El cursor sigue al botón en vivo (_animate_cursor), no hace falta recolocarlo.
+
+
+func _focus_first(col: Control) -> void:
+	var fb := _first_button(col)
+	if fb != null:
+		fb.grab_focus()
+		return
+	if col.get_child_count() > 0:
+		var first := col.get_child(0)
+		if first is Control:
+			(first as Control).grab_focus()
+
+
+# ============================================================
+# ACCIONES
+# ============================================================
+func _start_game(difficulty: String) -> void:
+	_difficulty = difficulty
+	# Guardamos la dificultad en el autoload GameMode (si existe) para que el
+	# runtime la lea; no rompe si GameMode no la usa todavía.
+	var gm := get_node_or_null("/root/GameMode")
+	if gm != null:
+		gm.set_meta("difficulty", difficulty)
+	_busy = true
+	var t := create_tween()
+	t.tween_property(_fade, "modulate:a", 1.0, FADE_TIME)
+	await t.finished
+	if ResourceLoader.exists(GAME_SCENE):
+		get_tree().change_scene_to_file(GAME_SCENE)
+	else:
+		_busy = false
+		var t2 := create_tween()
+		t2.tween_property(_fade, "modulate:a", 0.0, FADE_TIME)
+		_toast("No se encontró %s" % GAME_SCENE)
+
+
+func _open_options() -> void:
+	var opt := OptionsMenu.new()
+	add_child(opt)
+	_busy = true   # bloquea el menú mientras está abierto
+	opt.options_closed.connect(func(): _busy = false)
+
+
+func _open_credits() -> void:
+	var scr := load(CREDITS_SCRIPT)
+	if scr == null:
+		_toast("Credits no disponible")
+		return
+	_busy = true
+	await _fade_to(1.0)                       # fade a negro (transición a créditos)
+	var credits = scr.new()
+	add_child(credits)
+	move_child(credits, _fade.get_index())   # créditos justo debajo del _fade
+	if credits.has_signal("credits_finished"):
+		credits.credits_finished.connect(_on_credits_done.bind(credits))
+	if credits.has_method("show_credits"):
+		credits.show_credits()
+	await _fade_to(0.0)                       # revela los créditos
+
+
+## Al terminar los créditos: fade a negro, quitarlos y fade de vuelta al menú.
+func _on_credits_done(credits) -> void:
+	await _fade_to(1.0)
+	if is_instance_valid(credits):
+		credits.queue_free()
+	await _fade_to(0.0)
+	_busy = false
+
+
+func _toast(text: String) -> void:
+	_toast_lbl.text = text
+	_toast_lbl.modulate.a = 0.0
+	var t := create_tween()
+	t.tween_property(_toast_lbl, "modulate:a", 1.0, 0.18)
+	t.tween_interval(1.4)
+	t.tween_property(_toast_lbl, "modulate:a", 0.0, 0.4)

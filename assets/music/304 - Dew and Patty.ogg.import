@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dqwrvhbb3fgdg"
+path="res://.godot/imported/304 - Dew and Patty.ogg-ae8297f8c56d4805d0db19b3b2ae1d8e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/304 - Dew and Patty.ogg"
+dest_files=["res://.godot/imported/304 - Dew and Patty.ogg-ae8297f8c56d4805d0db19b3b2ae1d8e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

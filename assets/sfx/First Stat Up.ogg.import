@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cjeas1e6p4qks"
+path="res://.godot/imported/First Stat Up.ogg-4259d490dc6fbf4bab43a610b131b12a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/First Stat Up.ogg"
+dest_files=["res://.godot/imported/First Stat Up.ogg-4259d490dc6fbf4bab43a610b131b12a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

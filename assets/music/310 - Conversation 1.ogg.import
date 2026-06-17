@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bp7nan711hbwf"
+path="res://.godot/imported/310 - Conversation 1.ogg-1b0f1f95eb991daca2a4f20f680403eb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/310 - Conversation 1.ogg"
+dest_files=["res://.godot/imported/310 - Conversation 1.ogg-1b0f1f95eb991daca2a4f20f680403eb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

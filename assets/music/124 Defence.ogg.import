@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://csfwqxys80hyh"
+path="res://.godot/imported/124 Defence.ogg-f7bfd63057c58fb6f315d0f798949393.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/124 Defence.ogg"
+dest_files=["res://.godot/imported/124 Defence.ogg-f7bfd63057c58fb6f315d0f798949393.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

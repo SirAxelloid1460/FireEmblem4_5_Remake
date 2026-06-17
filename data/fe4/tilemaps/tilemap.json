@@ -1,0 +1,58 @@
+[
+ {
+  "nid": "Base",
+  "size": [
+   15,
+   10
+  ],
+  "cells": 0
+ },
+ {
+  "nid": "Chapter1",
+  "size": [
+   62,
+   63
+  ],
+  "cells": 3903
+ },
+ {
+  "nid": "Chapter2",
+  "size": [
+   62,
+   63
+  ],
+  "cells": 3905
+ },
+ {
+  "nid": "Chapter3",
+  "size": [
+   62,
+   63
+  ],
+  "cells": 0
+ },
+ {
+  "nid": "Chronology",
+  "size": [
+   15,
+   20
+  ],
+  "cells": 0
+ },
+ {
+  "nid": "Prologue",
+  "size": [
+   64,
+   32
+  ],
+  "cells": 2048
+ },
+ {
+  "nid": "WorldMap",
+  "size": [
+   41,
+   35
+  ],
+  "cells": 0
+ }
+]

@@ -1,0 +1,264 @@
+extends Control
+class_name ArenaMenu
+
+# Referencias UI
+@onready var unit_stats_panel: Panel = $Panel/HBox/LeftPanel
+@onready var opponent_panel: Panel = $Panel/HBox/RightPanel
+@onready var bet_slider: HSlider = $Panel/VBox/BetSlider
+@ontml:parameter>
+<parameter name="bet_label: Label = $Panel/VBox/BetLabel
+@onready var fight_button: Button = $Panel/VBox/FightButton
+@onready var leave_button: Button = $Panel/VBox/LeaveButton
+@onready var combat_log: RichTextLabel = $Panel/VBox/CombatLog
+
+# Datos
+var current_unit: Unit
+var arena_opponent: Unit
+var bet_amount: int = 0
+var max_bet: int = 500
+
+# Señales
+signal battle_completed(won: bool, gold_earned: int, exp_gained: int)
+signal arena_closed
+
+func _ready():
+	setup_signals()
+
+func setup(unit: Unit):
+	"""Configura la arena para la unidad"""
+	current_unit = unit
+	
+	# Configurar apuesta máxima basada en nivel
+	max_bet = current_unit.level * 50
+	bet_slider.max_value = max_bet
+	bet_slider.value = max_bet / 2
+	
+	# Generar oponente
+	generate_opponent()
+	
+	# Actualizar UI
+	update_ui()
+	
+	popup_centered()
+
+func setup_signals():
+	"""Conecta señales"""
+	fight_button.pressed.connect(_on_fight_pressed)
+	leave_button.pressed.connect(_on_leave_pressed)
+	bet_slider.value_changed.connect(_on_bet_changed)
+
+func generate_opponent():
+	"""Genera un oponente para la arena"""
+	arena_opponent = Unit.new()
+	
+	# Nivel similar al jugador (+/- 2)
+	var level_variance = randi_range(-2, 2)
+	arena_opponent.level = max(1, current_unit.level + level_variance)
+	
+	# Nombre aleatorio
+	var names = ["Guerrero", "Gladiador", "Campeón", "Veterano", "Mercenario"]
+	arena_opponent.unit_name = names[randi() % names.size()] + " Lv%d" % arena_opponent.level
+	arena_opponent.unit_class = "Fighter"
+	
+	# Stats basadas en nivel
+	arena_opponent.max_hp = 18 + arena_opponent.level * 2
+	arena_opponent.current_hp = arena_opponent.max_hp
+	arena_opponent.strength = 4 + arena_opponent.level
+	arena_opponent.skill = 4 + arena_opponent.level
+	arena_opponent.speed = 4 + arena_opponent.level
+	arena_opponent.defense = 2 + arena_opponent.level / 2
+	arena_opponent.luck = randi_range(0, 10)
+	
+	# Darle un arma
+	var weapon = Weapon.new()
+	weapon.weapon_name = "Iron Sword"
+	weapon.might = 5
+	weapon.accuracy = 90
+	arena_opponent.weapon = weapon
+
+func update_ui():
+	"""Actualiza la interfaz"""
+	update_unit_display()
+	update_opponent_display()
+	update_bet_display()
+
+func update_unit_display():
+	"""Muestra stats de la unidad del jugador"""
+	# TODO: Implementar panel con stats visuales
+	pass
+
+func update_opponent_display():
+	"""Muestra stats del oponente"""
+	# TODO: Implementar panel con stats visuales
+	pass
+
+func update_bet_display():
+	"""Actualiza el display de apuesta"""
+	bet_amount = int(bet_slider.value)
+	bet_label.text = "Apuesta: %d G (Ganas: %d G)" % [bet_amount, bet_amount * 2]
+
+func _on_bet_changed(value: float):
+	"""Maneja cambios en la apuesta"""
+	update_bet_display()
+
+func _on_fight_pressed():
+	"""Inicia el combate en la arena"""
+	if current_unit.personal_gold < bet_amount:
+		show_error("No tienes suficiente oro para apostar")
+		return
+	
+	# Deshabilitar botones durante combate
+	fight_button.disabled = true
+	leave_button.disabled = true
+	bet_slider.editable = false
+	
+	# Ejecutar combate
+	await execute_arena_combat()
+	
+	# Re-habilitar o cerrar
+	await get_tree().create_timer(2.0).timeout
+	_on_leave_pressed()
+
+func execute_arena_combat():
+	"""Ejecuta el combate de arena"""
+	combat_log.clear()
+	add_combat_log("[b][center]¡COMIENZA EL COMBATE![/center][/b]\n")
+	
+	await get_tree().create_timer(1.0).timeout
+	
+	# Calcular resultado del combate
+	var result = simulate_arena_battle()
+	
+	# Mostrar cada turno
+	for round_data in result["rounds"]:
+		add_combat_log(round_data["text"])
+		await get_tree().create_timer(0.5).timeout
+	
+	# Resultado final
+	if result["player_won"]:
+		var gold_won = bet_amount * 2
+		var exp_gained = calculate_exp_gain(arena_opponent.level)
+		
+		add_combat_log("\n[b][color=green]¡VICTORIA![/color][/b]")
+		add_combat_log("Ganaste %d G y %d EXP!" % [gold_won, exp_gained])
+		
+		current_unit.personal_gold += gold_won
+		battle_completed.emit(true, gold_won, exp_gained)
+	else:
+		add_combat_log("\n[b][color=red]DERROTA...[/color][/b]")
+		add_combat_log("Perdiste %d G" % bet_amount)
+		
+		current_unit.personal_gold -= bet_amount
+		battle_completed.emit(false, 0, 0)
+
+func simulate_arena_battle() -> Dictionary:
+	"""Simula una batalla de arena completa"""
+	var player_hp = current_unit.current_hp
+	var opponent_hp = arena_opponent.current_hp
+	
+	var rounds: Array[Dictionary] = []
+	var turn_count = 0
+	var max_turns = 20  # Límite de seguridad
+	
+	while player_hp > 0 and opponent_hp > 0 and turn_count < max_turns:
+		turn_count += 1
+		
+		# Turno del jugador
+		var player_attack = execute_attack(current_unit, arena_opponent)
+		if player_attack["hit"]:
+			opponent_hp -= player_attack["damage"]
+			rounds.append({
+				"text": "%s ataca! %d daño. (HP: %d)\n" % [
+					current_unit.unit_name,
+					player_attack["damage"],
+					max(0, opponent_hp)
+				]
+			})
+		else:
+			rounds.append({
+				"text": "%s ataca pero falla!\n" % current_unit.unit_name
+			})
+		
+		if opponent_hp <= 0:
+			break
+		
+		# Turno del oponente
+		var opponent_attack = execute_attack(arena_opponent, current_unit)
+		if opponent_attack["hit"]:
+			player_hp -= opponent_attack["damage"]
+			rounds.append({
+				"text": "%s ataca! %d daño. (HP: %d)\n" % [
+					arena_opponent.unit_name,
+					opponent_attack["damage"],
+					max(0, player_hp)
+				]
+			})
+		else:
+			rounds.append({
+				"text": "%s ataca pero falla!\n" % arena_opponent.unit_name
+			})
+		
+		if player_hp <= 0:
+			break
+	
+	return {
+		"player_won": player_hp > 0,
+		"rounds": rounds,
+		"final_player_hp": player_hp,
+		"final_opponent_hp": opponent_hp
+	}
+
+func execute_attack(attacker: Unit, defender: Unit) -> Dictionary:
+	"""Ejecuta un ataque individual"""
+	var hit_rate = attacker.calculate_hit_rate(defender, 1)
+	var hit_roll = randi() % 100
+	var did_hit = hit_roll < hit_rate
+	
+	var damage = 0
+	if did_hit:
+		damage = CombatSystem.calculate_damage(attacker, defender, false)
+	
+	return {
+		"hit": did_hit,
+		"damage": damage
+	}
+
+func calculate_exp_gain(opponent_level: int) -> int:
+	"""Calcula la EXP ganada"""
+	var level_diff = opponent_level - current_unit.level
+	var base_exp = 20
+	
+	# Más EXP si el oponente es más fuerte
+	if level_diff > 0:
+		base_exp += level_diff * 5
+	elif level_diff < 0:
+		base_exp += level_diff * 2
+		base_exp = max(5, base_exp)  # Mínimo 5 EXP
+	
+	return base_exp
+
+func add_combat_log(text: String):
+	"""Añade texto al log de combate"""
+	combat_log.append_text(text)
+	# Auto-scroll al final
+	combat_log.scroll_to_line(combat_log.get_line_count())
+
+func show_error(message: String):
+	"""Muestra mensaje de error"""
+	add_combat_log("[color=red]" + message + "[/color]\n")
+
+func _on_leave_pressed():
+	"""Sale de la arena"""
+	arena_closed.emit()
+	
+	var tween = create_tween()
+	tween.tween_property(self, "modulate:a", 0.0, 0.3)
+	await tween.finished
+	
+	queue_free()
+
+func _input(event):
+	"""Manejo de input"""
+	if event.is_action_pressed("ui_cancel"):
+		if not fight_button.disabled:  # Solo si no está en combate
+			_on_leave_pressed()

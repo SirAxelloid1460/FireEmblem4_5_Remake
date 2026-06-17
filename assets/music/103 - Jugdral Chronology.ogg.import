@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dstmccjsr1i6e"
+path="res://.godot/imported/103 - Jugdral Chronology.ogg-5afc634300e23d74972024b332915c80.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/103 - Jugdral Chronology.ogg"
+dest_files=["res://.godot/imported/103 - Jugdral Chronology.ogg-5afc634300e23d74972024b332915c80.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

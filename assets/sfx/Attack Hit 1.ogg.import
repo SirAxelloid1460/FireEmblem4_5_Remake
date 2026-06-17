@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://pa4gd4xejp3h"
+path="res://.godot/imported/Attack Hit 1.ogg-3f89f7ee66ada54518624a6dd183de76.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Attack Hit 1.ogg"
+dest_files=["res://.godot/imported/Attack Hit 1.ogg-3f89f7ee66ada54518624a6dd183de76.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

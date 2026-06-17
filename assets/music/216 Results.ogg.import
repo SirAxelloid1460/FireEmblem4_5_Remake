@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://clmvohtkacrit"
+path="res://.godot/imported/216 Results.ogg-5664ae3a52fb65552a036828a5f2bfc5.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/216 Results.ogg"
+dest_files=["res://.godot/imported/216 Results.ogg-5664ae3a52fb65552a036828a5f2bfc5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

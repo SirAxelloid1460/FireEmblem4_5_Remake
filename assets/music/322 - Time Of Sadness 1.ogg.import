@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cjmxu6g5ifbe4"
+path="res://.godot/imported/322 - Time Of Sadness 1.ogg-f608dcbf5c6174a02fc5d0724653c85b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/322 - Time Of Sadness 1.ogg"
+dest_files=["res://.godot/imported/322 - Time Of Sadness 1.ogg-f608dcbf5c6174a02fc5d0724653c85b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ptojq3mpmq5l"
+path="res://.godot/imported/The Battle Must Be Won.ogg-531c87716fe5de343273e844af2fd745.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/The Battle Must Be Won.ogg"
+dest_files=["res://.godot/imported/The Battle Must Be Won.ogg-531c87716fe5de343273e844af2fd745.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

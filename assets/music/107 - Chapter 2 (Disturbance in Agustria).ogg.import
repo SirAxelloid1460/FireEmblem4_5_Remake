@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://deuaedcw5mxx8"
+path="res://.godot/imported/107 - Chapter 2 (Disturbance in Agustria).ogg-ccf039fa57fd21b7656989e95b80c24d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/107 - Chapter 2 (Disturbance in Agustria).ogg"
+dest_files=["res://.godot/imported/107 - Chapter 2 (Disturbance in Agustria).ogg-ccf039fa57fd21b7656989e95b80c24d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

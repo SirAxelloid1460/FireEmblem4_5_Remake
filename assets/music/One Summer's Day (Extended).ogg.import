@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://8stx2nxivxfy"
+path="res://.godot/imported/One Summer's Day (Extended).ogg-2d55807e0e8fc19f925464ff9ef6fd2a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/One Summer's Day (Extended).ogg"
+dest_files=["res://.godot/imported/One Summer's Day (Extended).ogg-2d55807e0e8fc19f925464ff9ef6fd2a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

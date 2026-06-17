@@ -1,0 +1,879 @@
+{
+  "class": "Dancer",
+  "variant": "Generic",
+  "weapon": "Refresh",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    7,
+    7
+  ],
+  "sheet_size": [
+    1680,
+    1120
+  ],
+  "frame_count": 43,
+  "frames": {
+    "Refresh_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Refresh_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Refresh_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Refresh_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Refresh_004": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Refresh_005": {
+      "tile": [
+        5,
+        0
+      ]
+    },
+    "Refresh_006": {
+      "tile": [
+        6,
+        0
+      ]
+    },
+    "Refresh_007": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Refresh_008": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Refresh_009": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Refresh_010": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Refresh_011": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Refresh_012": {
+      "tile": [
+        5,
+        1
+      ]
+    },
+    "Refresh_013": {
+      "tile": [
+        6,
+        1
+      ]
+    },
+    "Refresh_014": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Refresh_015": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Refresh_016": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Refresh_017": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Refresh_018": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Refresh_019": {
+      "tile": [
+        5,
+        2
+      ]
+    },
+    "Refresh_020": {
+      "tile": [
+        6,
+        2
+      ]
+    },
+    "Refresh_021": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Refresh_022": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Refresh_023": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Refresh_024": {
+      "tile": [
+        3,
+        3
+      ]
+    },
+    "Refresh_025": {
+      "tile": [
+        4,
+        3
+      ]
+    },
+    "Refresh_026": {
+      "tile": [
+        5,
+        3
+      ]
+    },
+    "Refresh_027": {
+      "tile": [
+        6,
+        3
+      ]
+    },
+    "Refresh_028": {
+      "tile": [
+        0,
+        4
+      ]
+    },
+    "Refresh_029": {
+      "tile": [
+        1,
+        4
+      ]
+    },
+    "Refresh_030": {
+      "tile": [
+        2,
+        4
+      ]
+    },
+    "Refresh_031": {
+      "tile": [
+        3,
+        4
+      ]
+    },
+    "Refresh_032": {
+      "tile": [
+        4,
+        4
+      ]
+    },
+    "Refresh_033": {
+      "tile": [
+        5,
+        4
+      ]
+    },
+    "Refresh_034": {
+      "tile": [
+        6,
+        4
+      ]
+    },
+    "Refresh_035": {
+      "tile": [
+        0,
+        5
+      ]
+    },
+    "Refresh_036": {
+      "tile": [
+        1,
+        5
+      ]
+    },
+    "Refresh_037": {
+      "tile": [
+        2,
+        5
+      ]
+    },
+    "Refresh_038": {
+      "tile": [
+        3,
+        5
+      ]
+    },
+    "Refresh_039": {
+      "tile": [
+        4,
+        5
+      ]
+    },
+    "Refresh_040": {
+      "tile": [
+        5,
+        5
+      ]
+    },
+    "Refresh_041": {
+      "tile": [
+        6,
+        5
+      ]
+    },
+    "Refresh_042": {
+      "tile": [
+        0,
+        6
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 12,
+        "frame": "Refresh_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_007"
+      },
+      {
+        "cmd": "sound",
+        "id": "RefreshDance"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_017"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_018"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_019"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_020"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_021"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_022"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_023"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_027"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_028"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_027"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_028"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_022"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_019"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_020"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Refresh_021"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_035"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_036"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_037"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_038"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_040"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 50,
+        "frame": "Refresh_042"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_042"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_042"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 12,
+        "frame": "Refresh_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_007"
+      },
+      {
+        "cmd": "sound",
+        "id": "RefreshDance"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_017"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_018"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_019"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_020"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_021"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_022"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_023"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_027"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_028"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_027"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Refresh_028"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_022"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_019"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_020"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Refresh_021"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_035"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_036"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_037"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_038"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Refresh_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Refresh_040"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Refresh_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 50,
+        "frame": "Refresh_042"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_042"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Refresh_042"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Refresh_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Refresh_000"
+      }
+    ]
+  }
+}

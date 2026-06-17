@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c6xcq717ml2rd"
+path="res://.godot/imported/319 - Diadora's Theme.ogg-92423e02c2454d71918d7beebc34d7ac.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/319 - Diadora's Theme.ogg"
+dest_files=["res://.godot/imported/319 - Diadora's Theme.ogg-92423e02c2454d71918d7beebc34d7ac.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

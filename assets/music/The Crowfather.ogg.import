@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dohwi8pd7sdcq"
+path="res://.godot/imported/The Crowfather.ogg-c022f3acc280c93ab212980b7b6aa20d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/The Crowfather.ogg"
+dest_files=["res://.godot/imported/The Crowfather.ogg-c022f3acc280c93ab212980b7b6aa20d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

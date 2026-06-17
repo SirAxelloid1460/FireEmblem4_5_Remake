@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b7trjp2nygtvk"
+path="res://.godot/imported/Knight Step.ogg-d702e13d690cd95edf8eb43ae00dc1a1.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Knight Step.ogg"
+dest_files=["res://.godot/imported/Knight Step.ogg-d702e13d690cd95edf8eb43ae00dc1a1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,32 @@
+class_name UnitListPanel
+extends PanelContainer
+
+signal unit_clicked(unit: Unit)
+
+var unit_buttons: Array[Button] = []
+var unit_info_panel: Panel
+
+func populate_unit_list(units: Array[Unit]):
+	"""Puebla la lista con las unidades"""
+	# Limpiar botones existentes
+	for btn in unit_buttons:
+		btn.queue_free()
+	unit_buttons.clear()
+	
+	# Crear botones para cada unidad
+	for unit in units:
+		var btn = create_unit_button(unit)
+		unit_buttons.append(btn)
+
+func create_unit_button(unit: Unit) -> Button:
+	"""Crea un botÃ³n para una unidad"""
+	var btn = Button.new()
+	btn.text = "%s - Lv %d %s" % [unit.unit_name, unit.level, unit.unit_class]
+	btn.pressed.connect(func(): unit_clicked.emit(unit))
+	# AÃ±adir al contenedor
+	return btn
+
+func show_selected_unit_info(unit: Unit):
+	"""Muestra informaciÃ³n de la unidad seleccionada"""
+	# TODO: Implementar panel de informaciÃ³n
+	pass

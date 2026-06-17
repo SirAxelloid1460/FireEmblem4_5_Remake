@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bdvdq21jus0lj"
+path="res://.godot/imported/302 - Yurius.ogg-0511511d6ff0db8880edb21fbf851b77.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/302 - Yurius.ogg"
+dest_files=["res://.godot/imported/302 - Yurius.ogg-0511511d6ff0db8880edb21fbf851b77.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

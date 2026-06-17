@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://u443lm6dtyxf"
+path="res://.godot/imported/212 - Grandbell Army 2.ogg-89640727c74757768c650ffd1fe14a91.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/212 - Grandbell Army 2.ogg"
+dest_files=["res://.godot/imported/212 - Grandbell Army 2.ogg-89640727c74757768c650ffd1fe14a91.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

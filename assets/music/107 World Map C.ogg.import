@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b4bpyg5fajscc"
+path="res://.godot/imported/107 World Map C.ogg-1fc5d1624d491972678efd8f436aeb0a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/107 World Map C.ogg"
+dest_files=["res://.godot/imported/107 World Map C.ogg-1fc5d1624d491972678efd8f436aeb0a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

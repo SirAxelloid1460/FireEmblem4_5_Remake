@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://p8fugrujrjjy"
+path="res://.godot/imported/108 Sortie.ogg-9fe406fbd8ec964abcfd5324490dbb12.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/108 Sortie.ogg"
+dest_files=["res://.godot/imported/108 Sortie.ogg-9fe406fbd8ec964abcfd5324490dbb12.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

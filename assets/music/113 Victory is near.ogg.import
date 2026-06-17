@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bmarbe2f2vjt2"
+path="res://.godot/imported/113 Victory is near.ogg-89889af63c39432d9013e2ee1ae71ee5.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/113 Victory is near.ogg"
+dest_files=["res://.godot/imported/113 Victory is near.ogg-89889af63c39432d9013e2ee1ae71ee5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

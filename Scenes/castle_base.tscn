@@ -1,0 +1,500 @@
+[gd_scene load_steps=9 format=3 uid="uid://castle_base_scene"]
+
+[ext_resource type="Script" path="res://Scripts/CastleBase.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/ShopPanel.gd" id="2"]
+[ext_resource type="Script" path="res://Scripts/ConvoyPanel.gd" id="3"]
+[ext_resource type="Script" path="res://Scripts/ArenaPanel_FE4.gd" id="4"]
+[ext_resource type="Script" path="res://Scripts/BlacksmithPanel.gd" id="5"]
+[ext_resource type="Script" path="res://Scripts/FortuneTellerPanel.gd" id="6"]
+[ext_resource type="Script" path="res://Scripts/PromotionPanel.gd" id="7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.15, 0.12, 0.1, 0.95)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7, 0.6, 0.4, 1)
+
+[node name="CastleBase" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="LeftPanel" type="Panel" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/LeftPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 1)
+theme_override_font_sizes/font_size = 28
+text = "CASTILLO"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="GoldLabel" type="Label" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Oro: 5000 G"
+horizontal_alignment = 1
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="UnitsLabel" type="Label" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Unidades:"
+
+[node name="UnitList" type="ItemList" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CenterPanel" type="Panel" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/CenterPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DetailsLabel" type="Label" parent="MarginContainer/HBoxContainer/CenterPanel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 1)
+theme_override_font_sizes/font_size = 24
+text = "Detalles de Unidad"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/CenterPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="UnitDetailsPanel" type="Panel" parent="MarginContainer/HBoxContainer/CenterPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RightPanel" type="Panel" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/RightPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="FacilitiesLabel" type="Label" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 1)
+theme_override_font_sizes/font_size = 24
+text = "Facilidades"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="FacilityPanel" type="Panel" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="ShopButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "ðŸª Tienda"
+
+[node name="ConvoyButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "ðŸ“¦ Convoy"
+
+[node name="ArenaButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "âš”ï¸ Arena"
+
+[node name="BlacksmithButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "ðŸ”¨ HerrerÃ­a"
+
+[node name="FortuneButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "ðŸ”® Fortuna"
+
+[node name="PromoteButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "â­ PromociÃ³n"
+
+[node name="ManageButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "ðŸ‘¥ Gestionar"
+
+[node name="SaveButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "ðŸ’¾ Guardar"
+
+[node name="HSeparator3" type="HSeparator" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="StartBattleButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9, 0.7, 1)
+theme_override_font_sizes/font_size = 24
+text = "âš”ï¸ INICIAR BATALLA"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="ShopPanel" type="Panel" parent="."]
+script = ExtResource("2")
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 400.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ConvoyPanel" type="Panel" parent="."]
+script = ExtResource("3")
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 400.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ArenaPanel" type="Panel" parent="."]
+script = ExtResource("4")
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -250.0
+offset_right = 350.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlacksmithPanel" type="Panel" parent="."]
+script = ExtResource("5")
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -250.0
+offset_right = 350.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FortuneTellerPanel" type="Panel" parent="."]
+script = ExtResource("6")
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PromotionPanel" type="Panel" parent="."]
+script = ExtResource("7")
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -250.0
+offset_right = 400.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ShopPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="GoldLabel" type="Label" parent="ShopPanel/VBoxContainer"]
+layout_mode = 2
+text = "Oro: 0 G"
+
+[node name="ItemList" type="ItemList" parent="ShopPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ItemDetails" type="RichTextLabel" parent="ShopPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+bbcode_enabled = true
+
+[node name="ButtonContainer" type="HBoxContainer" parent="ShopPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="BuyButton" type="Button" parent="ShopPanel/VBoxContainer/ButtonContainer"]
+layout_mode = 2
+text = "Comprar"
+
+[node name="CloseButton" type="Button" parent="ShopPanel/VBoxContainer/ButtonContainer"]
+layout_mode = 2
+text = "Cerrar"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ConvoyPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ConvoyList" type="ItemList" parent="ConvoyPanel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="UnitInventory" type="ItemList" parent="ConvoyPanel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="HBoxContainer" parent="ConvoyPanel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -45.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TakeButton" type="Button" parent="ConvoyPanel/VBoxContainer"]
+layout_mode = 2
+text = "Tomar"
+
+[node name="StoreButton" type="Button" parent="ConvoyPanel/VBoxContainer"]
+layout_mode = 2
+text = "Guardar"
+
+[node name="CloseButton" type="Button" parent="ConvoyPanel/VBoxContainer"]
+layout_mode = 2
+text = "Cerrar"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ArenaPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 6
+
+[node name="ChampionIndicator" type="Label" parent="ArenaPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="OpponentList" type="ItemList" parent="ArenaPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OpponentDetails" type="RichTextLabel" parent="ArenaPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+bbcode_enabled = true
+
+[node name="BattlePreview" type="RichTextLabel" parent="ArenaPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+bbcode_enabled = true
+
+[node name="BetLabel" type="Label" parent="ArenaPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="ArenaPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="FightButton" type="Button" parent="ArenaPanel/VBoxContainer/ButtonContainer"]
+layout_mode = 2
+text = "Luchar"
+
+[node name="LeaveButton" type="Button" parent="ArenaPanel/VBoxContainer/ButtonContainer"]
+layout_mode = 2
+text = "Salir"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BlacksmithPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="WeaponList" type="ItemList" parent="BlacksmithPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CostLabel" type="Label" parent="BlacksmithPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="RepairButton" type="Button" parent="BlacksmithPanel/VBoxContainer"]
+layout_mode = 2
+text = "Reparar"
+
+[node name="CloseButton" type="Button" parent="BlacksmithPanel/VBoxContainer"]
+layout_mode = 2
+text = "Cerrar"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="FortuneTellerPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="FortuneText" type="RichTextLabel" parent="FortuneTellerPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+
+[node name="CloseButton" type="Button" parent="FortuneTellerPanel/VBoxContainer"]
+layout_mode = 2
+text = "Cerrar"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PromotionPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="BeforeStats" type="VBoxContainer" parent="PromotionPanel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AfterStats" type="VBoxContainer" parent="PromotionPanel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="HBoxContainer" parent="PromotionPanel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -45.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="PromoteButton" type="Button" parent="PromotionPanel/VBoxContainer"]
+layout_mode = 2
+text = "Promocionar"
+
+[node name="CancelButton" type="Button" parent="PromotionPanel/VBoxContainer"]
+layout_mode = 2
+text = "Cancelar"

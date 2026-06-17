@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8tt0uqmm4doj"
+path="res://.godot/imported/122 - Final Chapter (The Final Holy War).ogg-dc803a125268dc406f8126a50ebb3a6c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/122 - Final Chapter (The Final Holy War).ogg"
+dest_files=["res://.godot/imported/122 - Final Chapter (The Final Holy War).ogg-dc803a125268dc406f8126a50ebb3a6c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

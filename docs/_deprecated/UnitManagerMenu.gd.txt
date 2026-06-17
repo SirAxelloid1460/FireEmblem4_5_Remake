@@ -1,0 +1,90 @@
+extends Control
+class_name UnitManagerMenu
+
+## Menú de gestión del roster en la pantalla de preparación (CastlePreparation).
+## Lista las unidades del ejército y muestra sus stats. Es autosuficiente:
+## construye su propia UI en código, así funciona instanciado con .new().
+
+signal closed
+
+var _units: Array = []
+var _info_label: RichTextLabel
+var _list: ItemList
+
+func setup(units: Array) -> void:
+	_units = units
+
+func _ready() -> void:
+	set_anchors_preset(Control.PRESET_FULL_RECT)
+	_build_ui()
+	_populate()
+
+func _build_ui() -> void:
+	# Fondo oscuro semitransparente
+	var bg := ColorRect.new()
+	bg.color = Color(0, 0, 0, 0.7)
+	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
+	add_child(bg)
+
+	var panel := PanelContainer.new()
+	panel.set_anchors_preset(Control.PRESET_CENTER)
+	panel.custom_minimum_size = Vector2(640, 420)
+	add_child(panel)
+
+	var hbox := HBoxContainer.new()
+	panel.add_child(hbox)
+
+	# Lista de unidades (izquierda)
+	_list = ItemList.new()
+	_list.custom_minimum_size = Vector2(240, 360)
+	_list.item_selected.connect(_on_unit_selected)
+	hbox.add_child(_list)
+
+	# Panel de info (derecha)
+	var vbox := VBoxContainer.new()
+	hbox.add_child(vbox)
+
+	var title := Label.new()
+	title.text = "Gestión de Unidades"
+	title.add_theme_font_size_override("font_size", 24)
+	vbox.add_child(title)
+
+	_info_label = RichTextLabel.new()
+	_info_label.bbcode_enabled = true
+	_info_label.custom_minimum_size = Vector2(360, 320)
+	vbox.add_child(_info_label)
+
+	var close_btn := Button.new()
+	close_btn.text = "Cerrar"
+	close_btn.pressed.connect(_on_close_pressed)
+	vbox.add_child(close_btn)
+
+func _populate() -> void:
+	_list.clear()
+	for unit in _units:
+		_list.add_item("%s - Lv %d %s" % [unit.unit_name, unit.level, unit.unit_class])
+	if _units.size() > 0:
+		_list.select(0)
+		_show_unit_info(_units[0])
+
+func _on_unit_selected(index: int) -> void:
+	if index >= 0 and index < _units.size():
+		_show_unit_info(_units[index])
+
+func _show_unit_info(unit) -> void:
+	var t := "[b]%s[/b]\n" % unit.unit_name
+	t += "Clase: %s   Nivel: %d\n\n" % [unit.unit_class, unit.level]
+	t += "HP:  %d/%d\n" % [unit.current_hp, unit.max_hp]
+	t += "Fue: %d   Mag: %d\n" % [unit.strength, unit.magic]
+	t += "Hab: %d   Vel: %d\n" % [unit.skill, unit.speed]
+	t += "Suerte: %d\n" % unit.luck
+	t += "Def: %d   Res: %d\n" % [unit.defense, unit.resistance]
+	_info_label.text = t
+
+func _on_close_pressed() -> void:
+	closed.emit()
+	queue_free()
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		_on_close_pressed()

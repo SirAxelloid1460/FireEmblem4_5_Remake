@@ -1,0 +1,88 @@
+extends Control
+class_name FortuneTellerMenu
+
+@onready var stats_display: RichTextLabel = $Panel/VBox/StatsDisplay
+@onready var growth_display: RichTextLabel = $Panel/VBox/GrowthDisplay
+@onready var close_button: Button = $Panel/VBox/CloseButton
+
+var current_unit: Unit
+
+signal fortune_teller_closed
+
+func setup(unit: Unit):
+	current_unit = unit
+	display_unit_info()
+	popup_centered()
+
+func display_unit_info():
+	"""Muestra estadísticas y tasas de crecimiento"""
+	# Estadísticas actuales
+	var stats_text = "[center][b]%s - Lv %d %s[/b][/center]\n\n" % [
+		current_unit.unit_name,
+		current_unit.level,
+		current_unit.unit_class
+	]
+	
+	stats_text += "[b]Estadísticas Actuales:[/b]\n"
+	stats_text += "HP: %d/%d\n" % [current_unit.current_hp, current_unit.max_hp]
+	stats_text += "Fuerza: %d\n" % current_unit.strength
+	stats_text += "Magia: %d\n" % current_unit.magic
+	stats_text += "Habilidad: %d\n" % current_unit.skill
+	stats_text += "Velocidad: %d\n" % current_unit.speed
+	stats_text += "Suerte: %d\n" % current_unit.luck
+	stats_text += "Defensa: %d\n" % current_unit.defense
+	stats_text += "Resistencia: %d\n" % current_unit.resistance
+	
+	stats_display.text = stats_text
+	
+	# Tasas de crecimiento
+	var growth_rates = get_growth_rates(current_unit.unit_class)
+	var growth_text = "[b]Tasas de Crecimiento:[/b]\n\n"
+	
+	for stat_name in growth_rates.keys():
+		var rate = growth_rates[stat_name]
+		growth_text += "%s: %d%%\n" % [stat_name, rate]
+	
+	growth_display.text = growth_text
+
+func get_growth_rates(unit_class: String) -> Dictionary:
+	"""Retorna las tasas de crecimiento por clase"""
+	# Tasas de crecimiento estilo FE4
+	var growth_tables = {
+		"Lord": {
+			"HP": 80,
+			"Fuerza": 50,
+			"Magia": 30,
+			"Habilidad": 50,
+			"Velocidad": 50,
+			"Suerte": 40,
+			"Defensa": 30,
+			"Resistencia": 20
+		},
+		"Knight": {
+			"HP": 70,
+			"Fuerza": 40,
+			"Magia": 10,
+			"Habilidad": 40,
+			"Velocidad": 40,
+			"Suerte": 30,
+			"Defensa": 50,
+			"Resistencia": 15
+		},
+		"Mage": {
+			"HP": 50,
+			"Fuerza": 10,
+			"Magia": 60,
+			"Habilidad": 50,
+			"Velocidad": 40,
+			"Suerte": 30,
+			"Defensa": 20,
+			"Resistencia": 50
+		}
+	}
+	
+	return growth_tables.get(unit_class, growth_tables["Knight"])
+
+func _on_close_pressed():
+	fortune_teller_closed.emit()
+	queue_free()

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c3m8y0raw7pqo"
+path="res://.godot/imported/The High Seas.ogg-b800929e34c43d0c850889202b21c1db.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/The High Seas.ogg"
+dest_files=["res://.godot/imported/The High Seas.ogg-b800929e34c43d0c850889202b21c1db.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://0kupodb63d3p"
+path="res://.godot/imported/324 - Gold Axe, Silver Axeü¶ü¶.ogg-78525b061e8905a2c40bb80fd236d21b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/324 - Gold Axe, Silver Axeü¶ü¶.ogg"
+dest_files=["res://.godot/imported/324 - Gold Axe, Silver Axeü¶ü¶.ogg-78525b061e8905a2c40bb80fd236d21b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

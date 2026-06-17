@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cc8jniv2irmwi"
+path="res://.godot/imported/Hum of the Streets.ogg-99d305f62857c9cb5e2e5da164df6b7f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Hum of the Streets.ogg"
+dest_files=["res://.godot/imported/Hum of the Streets.ogg-99d305f62857c9cb5e2e5da164df6b7f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

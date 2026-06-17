@@ -1,0 +1,149 @@
+extends Control
+class_name PromotionMenu
+
+@onready var current_class_label: Label = $Panel/VBox/CurrentClassLabel
+@onready var promotion_options: VBoxContainer = $Panel/VBox/PromotionOptions
+@onready var stat_preview: RichTextLabel = $Panel/VBox/StatPreview
+@onready var promote_button: Button = $Panel/VBox/PromoteButton
+@onready var close_button: Button = $Panel/VBox/CloseButton
+
+var current_unit: Unit
+var selected_promotion: String = ""
+
+signal promotion_completed(old_class: String, new_class: String)
+signal promotion_closed
+
+func setup(unit: Unit):
+	current_unit = unit
+	check_promotion_eligibility()
+	popup_centered()
+
+func check_promotion_eligibility():
+	"""Verifica si la unidad puede promocionar"""
+	current_class_label.text = "Clase actual: %s Lv %d" % [
+		current_unit.unit_class,
+		current_unit.level
+	]
+	
+	# En FE4, promoción es en nivel 20+
+	if current_unit.level < 20:
+		show_ineligible_message()
+		return
+	
+	# Mostrar opciones de promoción
+	show_promotion_options()
+
+func show_ineligible_message():
+	"""Muestra mensaje de no elegibilidad"""
+	var label = Label.new()
+	label.text = "Necesitas nivel 20+ para promocionar"
+	label.add_theme_color_override("font_color", Color.RED)
+	promotion_options.add_child(label)
+	promote_button.disabled = true
+
+func show_promotion_options():
+	"""Muestra las opciones de promoción disponibles"""
+	var promotions = get_promotion_paths(current_unit.unit_class)
+	
+	if promotions.is_empty():
+		var label = Label.new()
+		label.text = "Esta clase no puede promocionar más"
+		promotion_options.add_child(label)
+		promote_button.disabled = true
+		return
+	
+	# Crear botones para cada opción
+	for promotion_class in promotions:
+		var btn = Button.new()
+		btn.text = promotion_class
+		btn.pressed.connect(func(): select_promotion(promotion_class))
+		promotion_options.add_child(btn)
+
+func get_promotion_paths(current_class: String) -> Array[String]:
+	"""Retorna las posibles promociones para una clase"""
+	var promotion_tree = {
+		"Lord": ["Master Lord", "Great Lord"],
+		"Knight": ["Paladin", "Great Knight"],
+		"Mage": ["Sage", "Mage Knight"],
+		"Fighter": ["Hero", "Warrior"],
+		"Cavalier": ["Paladin"],
+		"Pegasus Knight": ["Falcon Knight"]
+	}
+	
+	return promotion_tree.get(current_class, [])
+
+func select_promotion(promotion_class: String):
+	"""Selecciona una opción de promoción"""
+	selected_promotion = promotion_class
+	show_stat_preview(promotion_class)
+	promote_button.disabled = false
+
+func show_stat_preview(promotion_class: String):
+	"""Muestra preview de stats después de promoción"""
+	var bonuses = get_promotion_bonuses(promotion_class)
+	
+	var preview_text = "[b]Bonos de promoción:[/b]\n\n"
+	
+	for stat_name in bonuses.keys():
+		var bonus = bonuses[stat_name]
+		preview_text += "%s: +%d\n" % [stat_name, bonus]
+	
+	stat_preview.text = preview_text
+
+func get_promotion_bonuses(promotion_class: String) -> Dictionary:
+	"""Retorna los bonos de stats al promocionar"""
+	# Bonos típicos de FE4
+	return {
+		"HP": 3,
+		"Fuerza": 2,
+		"Magia": 2,
+		"Habilidad": 2,
+		"Velocidad": 2,
+		"Defensa": 2,
+		"Resistencia": 2
+	}
+
+func _on_promote_pressed():
+	"""Ejecuta la promoción"""
+	if selected_promotion == "":
+		return
+	
+	var old_class = current_unit.unit_class
+	
+	# Aplicar bonos
+	apply_promotion_bonuses()
+	
+	# Cambiar clase
+	current_unit.unit_class = selected_promotion
+	current_unit.level = 1  # Resetear nivel a 1 (estilo FE4)
+	
+	# Curar completamente
+	current_unit.current_hp = current_unit.max_hp
+	
+	promotion_completed.emit(old_class, selected_promotion)
+	
+	# Mostrar efecto de promoción
+	show_promotion_effect()
+
+func apply_promotion_bonuses():
+	"""Aplica los bonos de stats"""
+	var bonuses = get_promotion_bonuses(selected_promotion)
+	
+	current_unit.max_hp += bonuses.get("HP", 0)
+	current_unit.current_hp = current_unit.max_hp
+	current_unit.strength += bonuses.get("Fuerza", 0)
+	current_unit.magic += bonuses.get("Magia", 0)
+	current_unit.skill += bonuses.get("Habilidad", 0)
+	current_unit.speed += bonuses.get("Velocidad", 0)
+	current_unit.defense += bonuses.get("Defensa", 0)
+	current_unit.resistance += bonuses.get("Resistencia", 0)
+
+func show_promotion_effect():
+	"""Muestra efecto visual de promoción"""
+	# TODO: Añadir animación de promoción
+	await get_tree().create_timer(1.0).timeout
+	_on_close_pressed()
+
+func _on_close_pressed():
+	promotion_closed.emit()
+	queue_free()

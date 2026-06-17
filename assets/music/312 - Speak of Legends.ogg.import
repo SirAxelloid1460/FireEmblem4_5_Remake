@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0ijej1vexlj7"
+path="res://.godot/imported/312 - Speak of Legends.ogg-a4ae57b470ac54d46d861f635c439bbf.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/312 - Speak of Legends.ogg"
+dest_files=["res://.godot/imported/312 - Speak of Legends.ogg-a4ae57b470ac54d46d861f635c439bbf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

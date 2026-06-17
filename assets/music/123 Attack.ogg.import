@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bg7mx0ynb18ol"
+path="res://.godot/imported/123 Attack.ogg-a7d0eff10767d405d7eba33df5746699.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/123 Attack.ogg"
+dest_files=["res://.godot/imported/123 Attack.ogg-a7d0eff10767d405d7eba33df5746699.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,460 @@
+{
+  "class": "LordKnight",
+  "variant": "Seliph",
+  "weapon": "MagicSword",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    4,
+    3
+  ],
+  "sheet_size": [
+    960,
+    480
+  ],
+  "frame_count": 10,
+  "frames": {
+    "Sword_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Sword_029": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Sword_030": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Sword_031": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Sword_032": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Sword_033": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Sword_034": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Sword_035": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Sword_077": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Sword_078": {
+      "tile": [
+        1,
+        2
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_029"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 1"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_031"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 1"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_032"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 3"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 3"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_029"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 1"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_031"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 1"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_078"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_078"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_078"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_078"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_077"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_032"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 3"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 3"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 3"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 21,
+        "frame": "Sword_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_031"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 1"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ]
+  }
+}

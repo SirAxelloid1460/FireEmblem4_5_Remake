@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://rwd85jamccpv"
+path="res://.godot/imported/209 Meeting, reunion.ogg-72821de220cdc21b8d66cce5468cd870.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/209 Meeting, reunion.ogg"
+dest_files=["res://.godot/imported/209 Meeting, reunion.ogg-72821de220cdc21b8d66cce5468cd870.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

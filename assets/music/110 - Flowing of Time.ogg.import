@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cv46eqq1kjfxy"
+path="res://.godot/imported/110 - Flowing of Time.ogg-09d4d45fab72fe2b39e3cf66a0eb231e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/110 - Flowing of Time.ogg"
+dest_files=["res://.godot/imported/110 - Flowing of Time.ogg-09d4d45fab72fe2b39e3cf66a0eb231e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

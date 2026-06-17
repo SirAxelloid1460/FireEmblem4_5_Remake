@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b3mv3isejihw"
+path="res://.godot/imported/112 Adversity.ogg-81df8eae215a5ea008cadc925be9961f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/112 Adversity.ogg"
+dest_files=["res://.godot/imported/112 Adversity.ogg-81df8eae215a5ea008cadc925be9961f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

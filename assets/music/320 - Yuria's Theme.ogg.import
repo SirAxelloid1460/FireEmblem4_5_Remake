@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://23s4qwchaw1b"
+path="res://.godot/imported/320 - Yuria's Theme.ogg-431ed81e3a5a924976640e0f9d71fdd0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/320 - Yuria's Theme.ogg"
+dest_files=["res://.godot/imported/320 - Yuria's Theme.ogg-431ed81e3a5a924976640e0f9d71fdd0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

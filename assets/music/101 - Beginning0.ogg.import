@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://4v8gcqnjel3g"
+path="res://.godot/imported/101 - Beginning0.ogg-78e8ddf04cee7655aa12c6316b2e0b0e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/101 - Beginning0.ogg"
+dest_files=["res://.godot/imported/101 - Beginning0.ogg-78e8ddf04cee7655aa12c6316b2e0b0e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

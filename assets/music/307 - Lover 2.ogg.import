@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://co04gg1rcmkd6"
+path="res://.godot/imported/307 - Lover 2.ogg-273efa1572f5a4dee31a82b95ef9cf7a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/307 - Lover 2.ogg"
+dest_files=["res://.godot/imported/307 - Lover 2.ogg-273efa1572f5a4dee31a82b95ef9cf7a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

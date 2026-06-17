@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b11tjvsei7h3e"
+path="res://.godot/imported/314 - Decision 2.ogg-fd53fdb4459d0de8fe57c1e96c9cfe7b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/314 - Decision 2.ogg"
+dest_files=["res://.godot/imported/314 - Decision 2.ogg-fd53fdb4459d0de8fe57c1e96c9cfe7b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

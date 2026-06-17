@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://by84w4peoesr3"
+path="res://.godot/imported/225 - Valkyrie Staff.ogg-cda163db90ada913d891486b80f49882.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/225 - Valkyrie Staff.ogg"
+dest_files=["res://.godot/imported/225 - Valkyrie Staff.ogg-cda163db90ada913d891486b80f49882.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ct87375f1ehp6"
+path="res://.godot/imported/Heavy Spear Spin.ogg-01d263bb096c93023fe9609ed419dd1d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Heavy Spear Spin.ogg"
+dest_files=["res://.godot/imported/Heavy Spear Spin.ogg-01d263bb096c93023fe9609ed419dd1d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

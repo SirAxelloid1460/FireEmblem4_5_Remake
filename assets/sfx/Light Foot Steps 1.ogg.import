@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://kahnye2u7ak0"
+path="res://.godot/imported/Light Foot Steps 1.ogg-e1c13fa814bfa38653fed6081cf59e1f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Light Foot Steps 1.ogg"
+dest_files=["res://.godot/imported/Light Foot Steps 1.ogg-e1c13fa814bfa38653fed6081cf59e1f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

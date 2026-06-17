@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://delp5gdmc44d3"
+path="res://.godot/imported/Climbing the Ginso Tree.ogg-98626f97d2fdb0e7759165c291c354ee.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Climbing the Ginso Tree.ogg"
+dest_files=["res://.godot/imported/Climbing the Ginso Tree.ogg-98626f97d2fdb0e7759165c291c354ee.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

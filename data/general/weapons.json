@@ -1,0 +1,12975 @@
+[
+ {
+  "nid": "Armour Cutter",
+  "name": "Armour Cutter",
+  "desc": "A powerful sword capable to cut knight's armors.",
+  "weapon_type": "Sword",
+  "might": 8,
+  "hit": 65,
+  "weight": 9,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 40,
+  "worth": 4600,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [
+   "Armor"
+  ],
+  "effective_multiplier": 1,
+  "effective_bonus": 10,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    8
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "effective",
+    10
+   ],
+   [
+    "weight",
+    9
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    4600
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "effective_tag",
+    [
+     "Armor"
+    ]
+   ],
+   [
+    "effective_multiplier",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Aura",
+  "name": "Aura",
+  "desc": "One of the most powerful Light tomes.",
+  "weapon_type": "Light",
+  "might": 20,
+  "hit": 90,
+  "weight": 16,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 65,
+  "worth": 9750,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    20
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Light"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    65
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    16
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    9750
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Balmung",
+  "name": "Balmung",
+  "desc": "Sacred sword of the crusader Od.",
+  "weapon_type": "Sword",
+  "might": 30,
+  "hit": 90,
+  "weight": 3,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "OdHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Balmung",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    30
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    3
+   ],
+   [
+    "status_on_equip",
+    "Balmung"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "prf_tags",
+    [
+     "OdHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Barrier Sword",
+  "name": "Barrier Sword",
+  "desc": "An anti-mages sword.",
+  "weapon_type": "Sword",
+  "might": 10,
+  "hit": 70,
+  "weight": 3,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 50,
+  "worth": 12000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Barrier Sword",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    10
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    3
+   ],
+   [
+    "status_on_equip",
+    "Barrier Sword"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    12000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Battle Axe",
+  "name": "Battle Axe",
+  "desc": "An axe made specially for battle.",
+  "weapon_type": "Axe",
+  "might": 13,
+  "hit": 60,
+  "weight": 14,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 20,
+  "worth": 1000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    13
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    14
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Beo Sword",
+  "name": "Beo Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 16,
+  "hit": 70,
+  "weight": 13,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 60,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Wrath",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    16
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    60
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    13
+   ],
+   [
+    "status_on_equip",
+    "Wrath"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Berserk",
+  "name": "Berserk",
+  "desc": "Unleashes target's fury against who's near.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 3,
+  "worth": 18000,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Berserk",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    75
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "status_on_hit",
+    "Berserk"
+   ],
+   [
+    "uses",
+    3
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    18000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    10
+   ]
+  ]
+ },
+ {
+  "nid": "Berserk Sword",
+  "name": "Berserk Sword",
+  "desc": "People goes crazy when hit by this sword.",
+  "weapon_type": "Sword",
+  "might": 8,
+  "hit": 70,
+  "weight": 12,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 50,
+  "worth": 10000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Berserk",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    8
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    12
+   ],
+   [
+    "status_on_hit",
+    "Berserk"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    10000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Blaggi Sword",
+  "name": "Blaggi Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 15,
+  "hit": 70,
+  "weight": 12,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 60,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [
+   "Armor"
+  ],
+  "effective_multiplier": 1,
+  "effective_bonus": 5,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Bragi Sword",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    15
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    60
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    12
+   ],
+   [
+    "effective",
+    5
+   ],
+   [
+    "status_on_equip",
+    "Bragi Sword"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "effective_tag",
+    [
+     "Armor"
+    ]
+   ],
+   [
+    "effective_multiplier",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Blizzard",
+  "name": "Blizzard",
+  "desc": "A cold wind that puts enemies to sleep.",
+  "weapon_type": "Anima",
+  "might": 12,
+  "hit": 65,
+  "weight": 25,
+  "crit": 0,
+  "rng_min": 3,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 30,
+  "worth": 65550,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Sleep",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    25
+   ],
+   [
+    "status_on_hit",
+    "Sleep"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    65550
+   ],
+   [
+    "min_range",
+    3
+   ],
+   [
+    "max_range",
+    10
+   ],
+   [
+    "cannot_be_countered",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Bolganone",
+  "name": "Bolganone",
+  "desc": "One of the strongest flames of the world.",
+  "weapon_type": "Anima",
+  "might": 20,
+  "hit": 75,
+  "weight": 15,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 30,
+  "worth": 7200,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    20
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    15
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    7200
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Brave Axe",
+  "name": "Brave Axe",
+  "desc": "Allows two consecutive hits.",
+  "weapon_type": "Axe",
+  "might": 15,
+  "hit": 70,
+  "weight": 12,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 55,
+  "worth": 7975,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    15
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    55
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "weight",
+    12
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    7975
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Brave Bow",
+  "name": "Brave Bow",
+  "desc": "Allows two consecutive hits.",
+  "weapon_type": "Bow",
+  "might": 12,
+  "hit": 85,
+  "weight": 9,
+  "crit": 20,
+  "rng_min": 2,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 55,
+  "worth": 7975,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    85
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    55
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "weight",
+    9
+   ],
+   [
+    "crit",
+    20
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "value",
+    7975
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Brave Lance",
+  "name": "Brave Lance",
+  "desc": "Allows two consecutive hits.",
+  "weapon_type": "Lance",
+  "might": 14,
+  "hit": 75,
+  "weight": 11,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 55,
+  "worth": 8030,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    14
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    55
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "weight",
+    11
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    8030
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Brave Sword",
+  "name": "Brave Sword",
+  "desc": "Allows two consecutive hits.",
+  "weapon_type": "Sword",
+  "might": 13,
+  "hit": 80,
+  "weight": 9,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 55,
+  "worth": 8030,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    13
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    55
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "weight",
+    9
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    8030
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Broken Axe",
+  "name": "Broken Axe",
+  "desc": "",
+  "weapon_type": "Axe",
+  "might": 0,
+  "hit": 0,
+  "weight": 30,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 0,
+  "worth": 0,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    0
+   ],
+   [
+    "hit",
+    0
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    0
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    30
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Broken Bow",
+  "name": "Broken Bow",
+  "desc": "",
+  "weapon_type": "Bow",
+  "might": 0,
+  "hit": 0,
+  "weight": 25,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 0,
+  "worth": 0,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    0
+   ],
+   [
+    "hit",
+    0
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    0
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    25
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    0
+   ]
+  ]
+ },
+ {
+  "nid": "Broken Lance",
+  "name": "Broken Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 0,
+  "hit": 0,
+  "weight": 30,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 0,
+  "worth": 0,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    0
+   ],
+   [
+    "hit",
+    0
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    0
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    30
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Broken Sword",
+  "name": "Broken Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 0,
+  "hit": 0,
+  "weight": 30,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 0,
+  "worth": 0,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    0
+   ],
+   [
+    "hit",
+    0
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    0
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    30
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Darkness Sword",
+  "name": "Darkness Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 13,
+  "hit": 70,
+  "weight": 6,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 60,
+  "worth": -1,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Darkness Sword",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    13
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    60
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "status_on_equip",
+    "Darkness Sword"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "gba_steal",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Defender Sword",
+  "name": "Defender Sword",
+  "desc": "An very light sword for selfdefense",
+  "weapon_type": "Sword",
+  "might": 12,
+  "hit": 90,
+  "weight": 5,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 50,
+  "worth": 12000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Defender Sword",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    5
+   ],
+   [
+    "status_on_equip",
+    "Defender Sword"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    12000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Devil Axe",
+  "name": "Devil Axe",
+  "desc": "A malevolent weapon that can hurt it's user sometimes.",
+  "weapon_type": "Axe",
+  "might": 20,
+  "hit": 50,
+  "weight": 20,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 20,
+  "worth": 1200,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Devil",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    20
+   ],
+   [
+    "hit",
+    50
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "status_on_hit",
+    "Devil"
+   ],
+   [
+    "weight",
+    20
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1200
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "DireThunder",
+  "name": "DireThunder",
+  "desc": "Oswel Only. A thunder so fast that attacks twice in a second",
+  "weapon_type": "Anima",
+  "might": 30,
+  "hit": 60,
+  "weight": 20,
+  "crit": 15,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 30,
+  "worth": -1,
+  "magic": true,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    30
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    20
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "crit",
+    15
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Dragon Lance",
+  "name": "Dragon Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 16,
+  "hit": 65,
+  "weight": 12,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 60,
+  "worth": -1,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Ambush",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    16
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "status_on_equip",
+    "Ambush"
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "uses",
+    60
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    12
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Earth Sword",
+  "name": "Earth Sword",
+  "desc": "A sword capable of terraforming",
+  "weapon_type": "Sword",
+  "might": 12,
+  "hit": 90,
+  "weight": 5,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": 12000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "No Big Shields",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    5
+   ],
+   [
+    "status_on_equip",
+    "No Big Shields"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    12000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "lifelink",
+    1.0
+   ],
+   [
+    "battle_cast_anim",
+    "Resire"
+   ],
+   [
+    "magic_at_range",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "ElFire",
+  "name": "ElFire",
+  "desc": "A strong flame that burns enemies in matter of seconds.",
+  "weapon_type": "Anima",
+  "might": 13,
+  "hit": 70,
+  "weight": 10,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 35,
+  "worth": 4550,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    13
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    10
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    4550
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Elite Sword",
+  "name": "Elite Sword",
+  "desc": "An uncommon sword only wielded by experts",
+  "weapon_type": "Sword",
+  "might": 9,
+  "hit": 65,
+  "weight": 9,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 40,
+  "worth": 5800,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Shield Ring",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    9
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    9
+   ],
+   [
+    "status_on_equip",
+    "Shield Ring"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    5800
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Elthunder",
+  "name": "Elthunder",
+  "desc": "A strong Lightning that electrocutes enemies in less than a second.",
+  "weapon_type": "Anima",
+  "might": 14,
+  "hit": 80,
+  "weight": 7,
+  "crit": 10,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 45,
+  "worth": 4950,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    14
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    45
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "crit",
+    10
+   ],
+   [
+    "value",
+    4950
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Elwind",
+  "name": "Elwind",
+  "desc": "A strong wind that blows through everything.",
+  "weapon_type": "Anima",
+  "might": 14,
+  "hit": 80,
+  "weight": 4,
+  "crit": 10,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 45,
+  "worth": 4950,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    14
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    45
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    4
+   ],
+   [
+    "crit",
+    10
+   ],
+   [
+    "value",
+    4950
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Empty Tome",
+  "name": "Empty Tome",
+  "desc": "An ancient book.",
+  "weapon_type": "",
+  "might": 0,
+  "hit": 0,
+  "weight": 0,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 0,
+  "worth": 1000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    0
+   ],
+   [
+    "hit",
+    0
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "weight",
+    0
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1000
+   ]
+  ]
+ },
+ {
+  "nid": "Fenrir",
+  "name": "Fenrir",
+  "desc": "The most basic Dark tome.",
+  "weapon_type": "Dark",
+  "might": 9,
+  "hit": 80,
+  "weight": 20,
+  "crit": 0,
+  "rng_min": 3,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 30,
+  "worth": 65550,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    9
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Dark"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    20
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    65550
+   ],
+   [
+    "min_range",
+    3
+   ],
+   [
+    "max_range",
+    10
+   ]
+  ]
+ },
+ {
+  "nid": "Fire",
+  "name": "Fire",
+  "desc": "The most basic fire spell.",
+  "weapon_type": "Anima",
+  "might": 7,
+  "hit": 80,
+  "weight": 8,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 40,
+  "worth": 2600,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    7
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    8
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    2600
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Flame Sword",
+  "name": "Flame Sword",
+  "desc": "A sword fully covered in flames",
+  "weapon_type": "Sword",
+  "might": 12,
+  "hit": 90,
+  "weight": 5,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 50,
+  "worth": 12000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Magic Ring",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    5
+   ],
+   [
+    "status_on_equip",
+    "Magic Ring"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    12000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "magic_at_range",
+    null
+   ],
+   [
+    "battle_cast_anim",
+    "ElFire"
+   ]
+  ]
+ },
+ {
+  "nid": "Forseti",
+  "name": "Forseti",
+  "desc": "Holy flame of the crusader Sety.",
+  "weapon_type": "Anima",
+  "might": 25,
+  "hit": 90,
+  "weight": 5,
+  "crit": 25,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "SetyHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Canto",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    25
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    5
+   ],
+   [
+    "status_on_equip",
+    "Canto"
+   ],
+   [
+    "crit",
+    25
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "prf_tags",
+    [
+     "SetyHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Gae Bolg",
+  "name": "Gae Bolg",
+  "desc": "Sacred lance of the crusader Njörun.",
+  "weapon_type": "Sword",
+  "might": 25,
+  "hit": 85,
+  "weight": 8,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 70,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "NjörunHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Gae Bolg",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    25
+   ],
+   [
+    "hit",
+    85
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    70
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    8
+   ],
+   [
+    "status_on_equip",
+    "Gae Bolg"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "prf_tags",
+    [
+     "NjörunHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Grafcalibur",
+  "name": "Grafcalibur",
+  "desc": "Asvel only. A powerful blade of wind that cuts even steel.",
+  "weapon_type": "Anima",
+  "might": 13,
+  "hit": 100,
+  "weight": 3,
+  "crit": 40,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 40,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [
+   "Flying"
+  ],
+  "effective_multiplier": 1,
+  "effective_bonus": 10,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    13
+   ],
+   [
+    "hit",
+    100
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    3
+   ],
+   [
+    "effective",
+    10
+   ],
+   [
+    "crit",
+    40
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "effective_tag",
+    [
+     "Flying"
+    ]
+   ],
+   [
+    "effective_multiplier",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Great Bow",
+  "name": "Great Bow",
+  "desc": "A huge bow strong enough to mutilate enemies.",
+  "weapon_type": "Bow",
+  "might": 18,
+  "hit": 55,
+  "weight": 16,
+  "crit": -10,
+  "rng_min": 2,
+  "rng_max": 4,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 20,
+  "worth": 2200,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    18
+   ],
+   [
+    "hit",
+    55
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    16
+   ],
+   [
+    "crit",
+    -10
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "value",
+    2200
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    4
+   ]
+  ]
+ },
+ {
+  "nid": "Great Lance",
+  "name": "Great Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 18,
+  "hit": 60,
+  "weight": 18,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 20,
+  "worth": 2200,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    18
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    18
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    2200
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Great Sword",
+  "name": "Great Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 15,
+  "hit": 55,
+  "weight": 16,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 20,
+  "worth": 2000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    15
+   ],
+   [
+    "hit",
+    55
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    16
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    2000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Gungnir",
+  "name": "Gungnir",
+  "desc": "Sacred lance of the crusader Dainn.",
+  "weapon_type": "Lance",
+  "might": 25,
+  "hit": 85,
+  "weight": 8,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 70,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "DainnHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Gungnir",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    25
+   ],
+   [
+    "hit",
+    85
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "uses",
+    70
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    8
+   ],
+   [
+    "status_on_equip",
+    "Gungnir"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "prf_tags",
+    [
+     "DainnHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Hammer",
+  "name": "Hammer",
+  "desc": "A special axe preferred for those who are used to fight armored enemies.",
+  "weapon_type": "Axe",
+  "might": 12,
+  "hit": 50,
+  "weight": 18,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 20,
+  "worth": 1200,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [
+   "Armor"
+  ],
+  "effective_multiplier": 1,
+  "effective_bonus": 10,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    50
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    18
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "effective",
+    10
+   ],
+   [
+    "value",
+    1200
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "effective_tag",
+    [
+     "Armor"
+    ]
+   ],
+   [
+    "effective_multiplier",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Hand Axe",
+  "name": "Hand Axe",
+  "desc": "A short axe able to be thrown.",
+  "weapon_type": "Axe",
+  "might": 10,
+  "hit": 50,
+  "weight": 16,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 40,
+  "worth": 2000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    10
+   ],
+   [
+    "hit",
+    50
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    16
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    2000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Heal",
+  "name": "Live",
+  "desc": "Restores a bit of HP.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 35,
+  "worth": 3605,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 10,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "value",
+    3605
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "exp",
+    15
+   ],
+   [
+    "wexp",
+    2
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     25,
+     216,
+     178
+    ]
+   ],
+   [
+    "magic_heal",
+    10
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "heal_exp",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Hel",
+  "name": "Hel",
+  "desc": "Brings enemy's HP to 1 (if enemy's HP is 1 does no damage).",
+  "weapon_type": "Dark",
+  "might": 0,
+  "hit": 60,
+  "weight": 24,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 25,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Hel",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Dark"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    25
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    24
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "damage",
+    0
+   ],
+   [
+    "status_on_equip",
+    "Hel"
+   ]
+  ]
+ },
+ {
+  "nid": "Helswath",
+  "name": "Helswath",
+  "desc": "Holy axe of the crusader Neir.",
+  "weapon_type": "Axe",
+  "might": 30,
+  "hit": 70,
+  "weight": 20,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "NeirHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Helswath",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    30
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "status_on_equip",
+    "Helswath"
+   ],
+   [
+    "weight",
+    20
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "prf_tags",
+    [
+     "NeirHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Holy Sword",
+  "name": "Holy Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 15,
+  "hit": 55,
+  "weight": 16,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 20,
+  "worth": 2000,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Holy Sword",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    15
+   ],
+   [
+    "hit",
+    55
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    16
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "status_on_equip",
+    "Holy Sword"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    2000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Iron-Arch",
+  "name": "Iron-Arch",
+  "desc": "Improved Ballista Arch",
+  "weapon_type": "Bow",
+  "might": 10,
+  "hit": 70,
+  "weight": 30,
+  "crit": 0,
+  "rng_min": 3,
+  "rng_max": 15,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 255,
+  "worth": 65025,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "Ballistae"
+  ],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    10
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "uses",
+    255
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    30
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    65025
+   ],
+   [
+    "min_range",
+    3
+   ],
+   [
+    "max_range",
+    15
+   ],
+   [
+    "prf_tags",
+    [
+     "Ballistae"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Iron Axe",
+  "name": "Iron Axe",
+  "desc": "A common axe.",
+  "weapon_type": "Axe",
+  "might": 12,
+  "hit": 70,
+  "weight": 14,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 45,
+  "worth": 1125,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    45
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    14
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1125
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Iron Blade",
+  "name": "Iron Blade",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 12,
+  "hit": 60,
+  "weight": 11,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 50,
+  "worth": 2000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    11
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    2000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Iron Bow",
+  "name": "Iron Bow",
+  "desc": "A common bow.",
+  "weapon_type": "Bow",
+  "might": 9,
+  "hit": 75,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 2,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 45,
+  "worth": 1800,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    9
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    45
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1800
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Iron Lance",
+  "name": "Iron Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 9,
+  "hit": 75,
+  "weight": 10,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 45,
+  "worth": 1620,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    9
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    45
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    10
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1620
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Iron Sword",
+  "name": "Iron Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 6,
+  "hit": 75,
+  "weight": 5,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 45,
+  "worth": 1620,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    6
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    45
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    5
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1620
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Javelin",
+  "name": "Javelin",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 8,
+  "hit": 55,
+  "weight": 15,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 35,
+  "worth": 2100,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    8
+   ],
+   [
+    "hit",
+    55
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    15
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    2100
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Jormungandr",
+  "name": "Jormungandr",
+  "desc": "Poisons an enemy.",
+  "weapon_type": "Dark",
+  "might": 21,
+  "hit": 80,
+  "weight": 27,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 35,
+  "worth": 65450,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Poisoned",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    21
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Dark"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    27
+   ],
+   [
+    "status_on_hit",
+    "Poisoned"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    65450
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Kia",
+  "name": "Kia",
+  "desc": "Removes Stone (Petrify) Status.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 5,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    30
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    5
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "restore_specific",
+    "Petrify"
+   ]
+  ]
+ },
+ {
+  "nid": "Killer-Arch",
+  "name": "Killer-Arch",
+  "desc": "Improved Ballista Arch. Letally Precise",
+  "weapon_type": "Bow",
+  "might": 10,
+  "hit": 65,
+  "weight": 30,
+  "crit": 20,
+  "rng_min": 3,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 255,
+  "worth": 68850,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "Ballistae"
+  ],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    10
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "uses",
+    255
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    30
+   ],
+   [
+    "crit",
+    20
+   ],
+   [
+    "value",
+    68850
+   ],
+   [
+    "min_range",
+    3
+   ],
+   [
+    "max_range",
+    10
+   ],
+   [
+    "prf_tags",
+    [
+     "Ballistae"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Killer Axe",
+  "name": "Killer Axe",
+  "desc": "An axe light and sharp as no other.",
+  "weapon_type": "Axe",
+  "might": 12,
+  "hit": 75,
+  "weight": 10,
+  "crit": 30,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 20,
+  "worth": 2000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    10
+   ],
+   [
+    "crit",
+    30
+   ],
+   [
+    "value",
+    2000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Killer Bow",
+  "name": "Killer Bow",
+  "desc": "A letally precise steel bow.",
+  "weapon_type": "Bow",
+  "might": 12,
+  "hit": 80,
+  "weight": 6,
+  "crit": 30,
+  "rng_min": 2,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 35,
+  "worth": 6650,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "crit",
+    30
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "value",
+    6650
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Killer Lance",
+  "name": "Killer Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 12,
+  "hit": 80,
+  "weight": 10,
+  "crit": 30,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 20,
+  "worth": 3000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    10
+   ],
+   [
+    "crit",
+    30
+   ],
+   [
+    "value",
+    3000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Killer Sword",
+  "name": "Killer Sword",
+  "desc": "A sword so sharp that cuts when only by watching it",
+  "weapon_type": "Sword",
+  "might": 9,
+  "hit": 80,
+  "weight": 7,
+  "crit": 30,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 30,
+  "worth": 3900,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    9
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "crit",
+    30
+   ],
+   [
+    "value",
+    3900
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "King Sword",
+  "name": "King Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 13,
+  "hit": 70,
+  "weight": 10,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 60,
+  "worth": -1,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Charisma",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    13
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "uses",
+    60
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    10
+   ],
+   [
+    "status_on_equip",
+    "Charisma"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Knight Killer",
+  "name": "Knight Killer",
+  "desc": "A long spear that strikes knights from afar",
+  "weapon_type": "Lance",
+  "might": 12,
+  "hit": 60,
+  "weight": 14,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 35,
+  "worth": 4025,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [
+   "Mounted"
+  ],
+  "effective_multiplier": 1,
+  "effective_bonus": 10,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    14
+   ],
+   [
+    "effective",
+    10
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    4025
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "effective_tag",
+    [
+     "Mounted"
+    ]
+   ],
+   [
+    "effective_multiplier",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Libro",
+  "name": "Libro",
+  "desc": "Restores a bit of HP to an ally in a long range.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 12,
+  "worth": 7704,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 10,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    30
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    12
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    7704
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    10
+   ],
+   [
+    "magic_heal",
+    10
+   ],
+   [
+    "heal_exp",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Light Sword",
+  "name": "Light Sword",
+  "desc": "A sword that dispells darkness",
+  "weapon_type": "Sword",
+  "might": 12,
+  "hit": 90,
+  "weight": 5,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": 12000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Luckily Light",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    5
+   ],
+   [
+    "status_on_equip",
+    "Luckily Light"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    12000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "battle_cast_anim",
+    "Lightning"
+   ],
+   [
+    "magic_at_range",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Lightning",
+  "name": "Lightning",
+  "desc": "The most basic Light magic tome.",
+  "weapon_type": "Light",
+  "might": 11,
+  "hit": 80,
+  "weight": 6,
+  "crit": 20,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 35,
+  "worth": 4200,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    11
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Light"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "crit",
+    20
+   ],
+   [
+    "value",
+    4200
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Long-Arch",
+  "name": "Long-Arch",
+  "desc": "Base Ballista Arch.",
+  "weapon_type": "Bow",
+  "might": 10,
+  "hit": 75,
+  "weight": 25,
+  "crit": 0,
+  "rng_min": 3,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 255,
+  "worth": 63750,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "Ballistae"
+  ],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    10
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "uses",
+    255
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    25
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    63750
+   ],
+   [
+    "min_range",
+    3
+   ],
+   [
+    "max_range",
+    10
+   ],
+   [
+    "prf_tags",
+    [
+     "Ballistae"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Long Lance",
+  "name": "Long Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 11,
+  "hit": 65,
+  "weight": 13,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 20,
+  "worth": 1400,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    11
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    13
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1400
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Long Sword",
+  "name": "Long Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 10,
+  "hit": 65,
+  "weight": 12,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 30,
+  "worth": 25200,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    10
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    12
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    25200
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Longbow",
+  "name": "Longbow",
+  "desc": "Long bow used in archery competitions.",
+  "weapon_type": "Bow",
+  "might": 10,
+  "hit": 65,
+  "weight": 11,
+  "crit": 0,
+  "rng_min": 2,
+  "rng_max": 3,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 20,
+  "worth": 1400,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    10
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    11
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1400
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    3
+   ]
+  ]
+ },
+ {
+  "nid": "Loptous",
+  "name": "Loptous",
+  "desc": "Holy Dark tome of the crusader Loptyr. Increases Resistance and halves enemy's strength.",
+  "weapon_type": "Dark",
+  "might": 30,
+  "hit": 70,
+  "weight": 13,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 25,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "LoptosHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Loptyr_positive",
+  "status_on_hit": "Loptyr_negative",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    30
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Dark"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    25
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    13
+   ],
+   [
+    "status_on_hit",
+    "Loptyr_negative"
+   ],
+   [
+    "status_on_equip",
+    "Loptyr_positive"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "prf_tags",
+    [
+     "LoptosHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Loptyr Sword",
+  "name": "Loptyr Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 15,
+  "hit": 70,
+  "weight": 20,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 60,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Loptyr Sword",
+  "status_on_hit": "Loptyr_negative",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    15
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    60
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    20
+   ],
+   [
+    "status_on_hit",
+    "Loptyr_negative"
+   ],
+   [
+    "status_on_equip",
+    "Loptyr Sword"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "MagicUp",
+  "name": "Magic Up",
+  "desc": "Increases an ally's Magic by 7 for 7 turns.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 5,
+  "worth": 2200,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Magic Up",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    30
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "status_on_hit",
+    "Magic Up"
+   ],
+   [
+    "uses",
+    5
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    2200
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Mareeta's Sword",
+  "name": "Mareeta's Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 11,
+  "hit": 80,
+  "weight": 6,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 60,
+  "worth": -1,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Awareness",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    11
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    60
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "status_on_equip",
+    "Awareness"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Master Axe",
+  "name": "Master Axe",
+  "desc": "A powerful axe used only for the best.",
+  "weapon_type": "Axe",
+  "might": 15,
+  "hit": 55,
+  "weight": 16,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 20,
+  "worth": 3200,
+  "magic": false,
+  "brave": false,
+  "reaver": true,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    15
+   ],
+   [
+    "hit",
+    55
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "reaver",
+    null
+   ],
+   [
+    "weight",
+    16
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    3200
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Master Bow",
+  "name": "Master Bow",
+  "desc": "Allows two consecutive hits.",
+  "weapon_type": "Bow",
+  "might": 14,
+  "hit": 65,
+  "weight": 14,
+  "crit": 25,
+  "rng_min": 2,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 20,
+  "worth": 3000,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    14
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "weight",
+    14
+   ],
+   [
+    "crit",
+    25
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "value",
+    3000
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Master Lance",
+  "name": "Master Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 14,
+  "hit": 70,
+  "weight": 16,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 20,
+  "worth": 3400,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    14
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    16
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    3400
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Master Sword",
+  "name": "Master Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 16,
+  "hit": 60,
+  "weight": 12,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 30,
+  "worth": 12210,
+  "magic": false,
+  "brave": true,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    16
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "brave",
+    null
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    12
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    12210
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Mend",
+  "name": "Relive",
+  "desc": "Restores a lot of HP.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 30,
+  "worth": 6150,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 20,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "value",
+    6150
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "exp",
+    20
+   ],
+   [
+    "wexp",
+    4
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     13,
+     213,
+     213
+    ]
+   ],
+   [
+    "magic_heal",
+    20
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "heal_exp",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Meteor",
+  "name": "Meteor",
+  "desc": "A rain of stars that destroyes everything on its way.",
+  "weapon_type": "Anima",
+  "might": 12,
+  "hit": 65,
+  "weight": 30,
+  "crit": 0,
+  "rng_min": 3,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 20,
+  "worth": 65500,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Stun",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    30
+   ],
+   [
+    "status_on_hit",
+    "Stun"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    65500
+   ],
+   [
+    "min_range",
+    3
+   ],
+   [
+    "max_range",
+    10
+   ]
+  ]
+ },
+ {
+  "nid": "Mjolnir",
+  "name": "Mjolnir",
+  "desc": "Holy thunder of the crusader Thrud.",
+  "weapon_type": "Anima",
+  "might": 25,
+  "hit": 90,
+  "weight": 12,
+  "crit": 30,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "ThrudHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Mjolnir",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    25
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    12
+   ],
+   [
+    "status_on_equip",
+    "Mjolnir"
+   ],
+   [
+    "crit",
+    30
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "prf_tags",
+    [
+     "ThrudHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Mystletainn",
+  "name": "Mystletainn",
+  "desc": "Sacred sword of the crusader Hezul.",
+  "weapon_type": "Sword",
+  "might": 30,
+  "hit": 80,
+  "weight": 5,
+  "crit": 20,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "HezulHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Mystletainn",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    30
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    5
+   ],
+   [
+    "crit",
+    20
+   ],
+   [
+    "status_on_equip",
+    "Mystletainn"
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "prf_tags",
+    [
+     "HezulHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Naga",
+  "name": "Naga",
+  "desc": "Sacred Light Tome of the Crusader Heim. While equipped negates Loptos effect.",
+  "weapon_type": "Light",
+  "might": 30,
+  "hit": 80,
+  "weight": 12,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "HeimHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Naga",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    30
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Light"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    12
+   ],
+   [
+    "status_on_equip",
+    "Naga"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "prf_tags",
+    [
+     "HeimHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Poison-Arch",
+  "name": "Poison-Arch",
+  "desc": "Light Ballista Arch impregnated with poison",
+  "weapon_type": "Bow",
+  "might": 5,
+  "hit": 50,
+  "weight": 20,
+  "crit": 0,
+  "rng_min": 3,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 255,
+  "worth": 66300,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "Ballistae"
+  ],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Poisoned",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    5
+   ],
+   [
+    "hit",
+    50
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "uses",
+    255
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    20
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "status_on_hit",
+    "Poisoned"
+   ],
+   [
+    "value",
+    66300
+   ],
+   [
+    "min_range",
+    3
+   ],
+   [
+    "max_range",
+    10
+   ],
+   [
+    "prf_tags",
+    [
+     "Ballistae"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Poison Axe",
+  "name": "Poison Axe",
+  "desc": "A light axe impregnated with poison.",
+  "weapon_type": "Axe",
+  "might": 6,
+  "hit": 65,
+  "weight": 10,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 30,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Poisoned",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    6
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    10
+   ],
+   [
+    "status_on_hit",
+    "Poisoned"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Poison Bow",
+  "name": "Poison Bow",
+  "desc": "Inflicts poison on hit.",
+  "weapon_type": "Bow",
+  "might": 6,
+  "hit": 55,
+  "weight": 6,
+  "crit": 0,
+  "rng_min": 2,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 40,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Poisoned",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    6
+   ],
+   [
+    "hit",
+    55
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "status_on_hit",
+    "Poisoned"
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Poison Lance",
+  "name": "Poison Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 4,
+  "hit": 55,
+  "weight": 9,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 25,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Poisoned",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    4
+   ],
+   [
+    "hit",
+    55
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    25
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    9
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "status_on_hit",
+    "Poisoned"
+   ]
+  ]
+ },
+ {
+  "nid": "Poison Sword",
+  "name": "Poison Sword",
+  "desc": "An ordinary sword covered with poison",
+  "weapon_type": "Sword",
+  "might": 3,
+  "hit": 60,
+  "weight": 6,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 40,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Poisoned",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    3
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "status_on_hit",
+    "Poisoned"
+   ]
+  ]
+ },
+ {
+  "nid": "Pole Axe",
+  "name": "Pole Axe",
+  "desc": "A special axe preferred for those who are used to fight the enemy's cavalry.",
+  "weapon_type": "Axe",
+  "might": 15,
+  "hit": 60,
+  "weight": 17,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 20,
+  "worth": 2200,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [
+   "Horse"
+  ],
+  "effective_multiplier": 1,
+  "effective_bonus": 10,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    15
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    17
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "effective",
+    10
+   ],
+   [
+    "value",
+    2200
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "effective_tag",
+    [
+     "Horse"
+    ]
+   ],
+   [
+    "effective_multiplier",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Prayer Sword",
+  "name": "Prayer Sword",
+  "desc": "A light sword designed for female use.",
+  "weapon_type": "Sword",
+  "might": 12,
+  "hit": 70,
+  "weight": 3,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 50,
+  "worth": 8000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Prayer",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    3
+   ],
+   [
+    "status_on_equip",
+    "Prayer"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    8000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Pugi",
+  "name": "Pugi",
+  "desc": "Only Orsin. A highly versatile axe due to it's range, sharpness and power.",
+  "weapon_type": "Axe",
+  "might": 12,
+  "hit": 80,
+  "weight": 9,
+  "crit": 30,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 60,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [
+   "0"
+  ],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "uses",
+    60
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    9
+   ],
+   [
+    "crit",
+    30
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "prf_unit",
+    [
+     "0"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Rapier",
+  "name": "Rapier",
+  "desc": "A slim sword, weak but effective against horseback and armoured units.",
+  "weapon_type": "Sword",
+  "might": 4,
+  "hit": 90,
+  "weight": 3,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 20,
+  "worth": 1000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [
+   "Armor",
+   "Mounted"
+  ],
+  "effective_multiplier": 1,
+  "effective_bonus": 5,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    4
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    3
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "effective",
+    5
+   ],
+   [
+    "value",
+    1000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "effective_tag",
+    [
+     "Armor",
+     "Mounted"
+    ]
+   ],
+   [
+    "effective_multiplier",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Reblow",
+  "name": "Reblow",
+  "desc": "Restores a bit of HP to an ally in the entore battlefield.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 12,
+  "worth": 7704,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 10,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    30
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    12
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    7704
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "global_range",
+    null
+   ],
+   [
+    "magic_heal",
+    10
+   ],
+   [
+    "heal_exp",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Recover",
+  "name": "Recover",
+  "desc": "Restores All HP.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 30,
+  "worth": 7650,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 1000,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    25
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    7650
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "heal",
+    1000
+   ],
+   [
+    "heal_exp",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Repair",
+  "name": "Repair",
+  "desc": "Repairs an ally's weapon or staff.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 5,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    30
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    5
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "repair",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Rescue",
+  "name": "Rescue",
+  "desc": "Brings an ally to a space adjacent to the user",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 0,
+  "rng_equation": "MAGIC_RANGE",
+  "rank": "D",
+  "uses": 10,
+  "worth": 10000,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    15
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "uses",
+    10
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    10000
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "no_ai",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_equation_range",
+    "MAGIC_RANGE"
+   ],
+   [
+    "sequence_item",
+    [
+     "Rescue1",
+     "Rescue2"
+    ]
+   ],
+   [
+    "wexp",
+    7
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "spell",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Reserve",
+  "name": "Reserve",
+  "desc": "Restores some HP to an ally in a long range.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 12,
+  "worth": 7704,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 20,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    30
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    12
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    7704
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    10
+   ],
+   [
+    "magic_heal",
+    20
+   ],
+   [
+    "heal_exp",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Resire",
+  "name": "Resire",
+  "desc": "Recover HP equal to half damage dealt. Ignores Big Shield Skill",
+  "weapon_type": "Light",
+  "might": 13,
+  "hit": 65,
+  "weight": 12,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 55,
+  "worth": 7700,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    13
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Light"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    55
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    12
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    7700
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "lifelink",
+    1.0
+   ]
+  ]
+ },
+ {
+  "nid": "Rest",
+  "name": "Rest",
+  "desc": "Removes all negative status of an ally (except stone)",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 0,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 8,
+  "worth": 6600,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    8
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "exp",
+    50
+   ],
+   [
+    "value",
+    6600
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "restore",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Return",
+  "name": "Return",
+  "desc": "Sends an ally back to the Main Castle",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 10,
+  "worth": 10000,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "exp",
+    15
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "uses",
+    10
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    10000
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "no_ai",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "wexp",
+    7
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "event_on_use",
+    "Global ReturnSR"
+   ]
+  ]
+ },
+ {
+  "nid": "Rewarp",
+  "name": "Rewarp",
+  "desc": "Moves user to an empty square",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 0,
+  "crit": 0,
+  "rng_min": 0,
+  "rng_max": 0,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 4,
+  "worth": 10000,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    4
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    10000
+   ],
+   [
+    "wexp",
+    7
+   ],
+   [
+    "exp",
+    15
+   ],
+   [
+    "no_ai",
+    null
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "max_range",
+    0
+   ],
+   [
+    "sequence_item",
+    [
+     "Rewarp1",
+     "Rewarp2"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Short Bow",
+  "name": "Short Bow",
+  "desc": "Tiny bow used for hunting.",
+  "weapon_type": "Bow",
+  "might": 7,
+  "hit": 75,
+  "weight": 6,
+  "crit": 10,
+  "rng_min": 2,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 20,
+  "worth": 800,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    7
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "crit",
+    10
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "value",
+    800
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Short Lance",
+  "name": "Short Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 5,
+  "hit": 70,
+  "weight": 8,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 20,
+  "worth": 800,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    5
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    8
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    800
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Short Sword",
+  "name": "Short Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 5,
+  "hit": 75,
+  "weight": 3,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 40,
+  "worth": 1000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    5
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    3
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Silence",
+  "name": "Silence",
+  "desc": "Seals an enemy's magic powers.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 3,
+  "worth": 16710,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Silence",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    75
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "status_on_hit",
+    "Silence"
+   ],
+   [
+    "uses",
+    3
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    16710
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    10
+   ]
+  ]
+ },
+ {
+  "nid": "Silence Sword",
+  "name": "Silence Sword",
+  "desc": "People cannot speak when hit by this sword.",
+  "weapon_type": "Sword",
+  "might": 8,
+  "hit": 70,
+  "weight": 12,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 50,
+  "worth": 15000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Silence",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    8
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    12
+   ],
+   [
+    "status_on_hit",
+    "Silence"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    15000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Silver Axe",
+  "name": "Silver Axe",
+  "desc": "An axe used only by experts",
+  "weapon_type": "Axe",
+  "might": 20,
+  "hit": 65,
+  "weight": 15,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 35,
+  "worth": 4550,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    20
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    15
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    4550
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Silver Blade",
+  "name": "Silver Blade",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 20,
+  "hit": 65,
+  "weight": 8,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 40,
+  "worth": 10000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    20
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    8
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    10000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Silver Bow",
+  "name": "Silver Bow",
+  "desc": "A bow used only by experts.",
+  "weapon_type": "Bow",
+  "might": 16,
+  "hit": 70,
+  "weight": 8,
+  "crit": 0,
+  "rng_min": 2,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 35,
+  "worth": 4550,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    16
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    8
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    4550
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Silver Lance",
+  "name": "Silver Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 17,
+  "hit": 80,
+  "weight": 10,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 35,
+  "worth": 4515,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    17
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    10
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    4515
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Silver Sword",
+  "name": "Silver Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 14,
+  "hit": 70,
+  "weight": 6,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 35,
+  "worth": 4620,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    14
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    4620
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Sleep",
+  "name": "Sleep",
+  "desc": "Seals an enemy's energies to fight.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 3,
+  "worth": 16800,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Sleep",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    75
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "status_on_hit",
+    "Sleep"
+   ],
+   [
+    "uses",
+    3
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    16800
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    10
+   ]
+  ]
+ },
+ {
+  "nid": "Sleep Sword",
+  "name": "Sleep Sword",
+  "desc": "People goes to sleep when hit by this sword.",
+  "weapon_type": "Sword",
+  "might": 8,
+  "hit": 60,
+  "weight": 16,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 30,
+  "worth": 8550,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Sleep",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    8
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    16
+   ],
+   [
+    "status_on_hit",
+    "Sleep"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    8550
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Slim Lance",
+  "name": "Slim Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 7,
+  "hit": 95,
+  "weight": 6,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 35,
+  "worth": 2520,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    7
+   ],
+   [
+    "hit",
+    95
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    2520
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Slim Sword",
+  "name": "Slim Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 4,
+  "hit": 95,
+  "weight": 2,
+  "crit": 10,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 40,
+  "worth": 2800,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    4
+   ],
+   [
+    "hit",
+    95
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    2
+   ],
+   [
+    "crit",
+    10
+   ],
+   [
+    "value",
+    2800
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Steel Axe",
+  "name": "Steel Axe",
+  "desc": "An axe for fighting.",
+  "weapon_type": "Axe",
+  "might": 15,
+  "hit": 60,
+  "weight": 16,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 40,
+  "worth": 2400,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    15
+   ],
+   [
+    "hit",
+    60
+   ],
+   [
+    "weapon_type",
+    "Axe"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    16
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    2400
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Steel Blade",
+  "name": "Steel Blade",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 16,
+  "hit": 55,
+  "weight": 14,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 45,
+  "worth": 6030,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    16
+   ],
+   [
+    "hit",
+    55
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "uses",
+    45
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    14
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    6030
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Steel Bow",
+  "name": "Steel Bow",
+  "desc": "An improved bow.",
+  "weapon_type": "Bow",
+  "might": 12,
+  "hit": 65,
+  "weight": 10,
+  "crit": 0,
+  "rng_min": 2,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 40,
+  "worth": 3000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    10
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    3000
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Steel Lance",
+  "name": "Steel Lance",
+  "desc": "",
+  "weapon_type": "Lance",
+  "might": 13,
+  "hit": 70,
+  "weight": 13,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 40,
+  "worth": 3120,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    13
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Lance"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    13
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    3120
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Steel Sword",
+  "name": "Steel Sword",
+  "desc": "",
+  "weapon_type": "Sword",
+  "might": 10,
+  "hit": 65,
+  "weight": 8,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 40,
+  "worth": 2960,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    10
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    8
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    2960
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Thief Staff",
+  "name": "Thief Staff",
+  "desc": "Seals an enemy's magic powers.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 0,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "exp",
+    20
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    10
+   ],
+   [
+    "trade",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Thief Sword",
+  "name": "Thief Sword",
+  "desc": "A short sword designed for purse-stealing.",
+  "weapon_type": "Sword",
+  "might": 3,
+  "hit": 50,
+  "weight": 2,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 50,
+  "worth": 1000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    3
+   ],
+   [
+    "hit",
+    50
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    2
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    1000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "status_on_hold",
+    "Steal"
+   ],
+   [
+    "gba_steal",
+    null
+   ],
+   [
+    "steal",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Thoron",
+  "name": "Thoron",
+  "desc": "One of the strongest thunders ever seen.",
+  "weapon_type": "Anima",
+  "might": 19,
+  "hit": 70,
+  "weight": 8,
+  "crit": 20,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 35,
+  "worth": 7000,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    19
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    8
+   ],
+   [
+    "crit",
+    20
+   ],
+   [
+    "value",
+    7000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Thunder",
+  "name": "Thunder",
+  "desc": "The most basic thunder spell.",
+  "weapon_type": "Anima",
+  "might": 8,
+  "hit": 75,
+  "weight": 6,
+  "crit": 5,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 40,
+  "worth": 3200,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    8
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "crit",
+    5
+   ],
+   [
+    "value",
+    3200
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "ThunderStorm",
+  "name": "ThunderStorm",
+  "desc": "An electric rain that penetrates even the stone.",
+  "weapon_type": "Anima",
+  "might": 12,
+  "hit": 65,
+  "weight": 25,
+  "crit": 20,
+  "rng_min": 3,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 30,
+  "worth": 65550,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    65
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    25
+   ],
+   [
+    "crit",
+    20
+   ],
+   [
+    "value",
+    65550
+   ],
+   [
+    "min_range",
+    3
+   ],
+   [
+    "max_range",
+    10
+   ],
+   [
+    "cannot_be_countered",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Thunder Sword",
+  "name": "Thunder Sword",
+  "desc": "A sword that strikes quick as a thunder",
+  "weapon_type": "Sword",
+  "might": 12,
+  "hit": 90,
+  "weight": 5,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 50,
+  "worth": 12000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Skill Ring",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    5
+   ],
+   [
+    "status_on_equip",
+    "Skill Ring"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    12000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "battle_cast_anim",
+    "Elthunder"
+   ],
+   [
+    "magic_at_range",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Tornado",
+  "name": "Tornado",
+  "desc": "One of the strongest winds of the world.",
+  "weapon_type": "Anima",
+  "might": 19,
+  "hit": 75,
+  "weight": 6,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 35,
+  "worth": 7700,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    19
+   ],
+   [
+    "hit",
+    75
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    35
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    6
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    7700
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Tyrfing",
+  "name": "Tyrfing",
+  "desc": "Sacred sword of the crusader Baldr.",
+  "weapon_type": "Sword",
+  "might": 30,
+  "hit": 80,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "BaldrHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Tyrfing",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    30
+   ],
+   [
+    "hit",
+    80
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "status_on_equip",
+    "Tyrfing"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "prf_tags",
+    [
+     "BaldrHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Valflame",
+  "name": "Valflame",
+  "desc": "Holy flame of the crusader Fjalar.",
+  "weapon_type": "Anima",
+  "might": 25,
+  "hit": 85,
+  "weight": 15,
+  "crit": 20,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "FjalarHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Valflame",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    25
+   ],
+   [
+    "hit",
+    85
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    15
+   ],
+   [
+    "status_on_equip",
+    "Valflame"
+   ],
+   [
+    "crit",
+    20
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "prf_tags",
+    [
+     "FjalarHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Valkyrie",
+  "name": "Valkyrie",
+  "desc": "Resurrects 1 fallen ally.",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 7,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 1,
+  "worth": 30000,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "BragiHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Valkyrie",
+  "personal": true,
+  "components": [
+   [
+    "exp",
+    150
+   ],
+   [
+    "weight",
+    7
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "status_on_hit",
+    "Valkyrie"
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    30000
+   ],
+   [
+    "prf_tags",
+    [
+     "BragiHeir"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Warp",
+  "name": "Warp",
+  "desc": "Moves an ally to an empty square",
+  "weapon_type": "Staff",
+  "might": 0,
+  "hit": 0,
+  "weight": 0,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 4,
+  "worth": 10000,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": true,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "weapon_type",
+    "Staff"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    4
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    10000
+   ],
+   [
+    "wexp",
+    7
+   ],
+   [
+    "exp",
+    15
+   ],
+   [
+    "no_ai",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "sequence_item",
+    [
+     "Warp1",
+     "Warp2"
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Wind",
+  "name": "Wind",
+  "desc": "The most basic wind spell.",
+  "weapon_type": "Anima",
+  "might": 7,
+  "hit": 90,
+  "weight": 2,
+  "crit": 5,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "D",
+  "uses": 40,
+  "worth": 2600,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    7
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Anima"
+   ],
+   [
+    "weapon_rank",
+    "D"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    40
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    2
+   ],
+   [
+    "crit",
+    5
+   ],
+   [
+    "value",
+    2600
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ]
+  ]
+ },
+ {
+  "nid": "Wind Sword",
+  "name": "Wind Sword",
+  "desc": "A sword so light that commands the wind",
+  "weapon_type": "Sword",
+  "might": 12,
+  "hit": 90,
+  "weight": 5,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "C",
+  "uses": 50,
+  "worth": 12000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "Speed Ring",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    12
+   ],
+   [
+    "hit",
+    90
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "C"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    5
+   ],
+   [
+    "status_on_equip",
+    "Speed Ring"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    12000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "battle_cast_anim",
+    "Elwind"
+   ],
+   [
+    "magic_at_range",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Wing Clipper",
+  "name": "Wing Clipper",
+  "desc": "A long sword capable to reach the wings of flying enemies.",
+  "weapon_type": "Sword",
+  "might": 6,
+  "hit": 70,
+  "weight": 5,
+  "crit": 0,
+  "rng_min": 1,
+  "rng_max": 1,
+  "rng_equation": "",
+  "rank": "B",
+  "uses": 50,
+  "worth": 5000,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [
+   "Flying"
+  ],
+  "effective_multiplier": 1,
+  "effective_bonus": 10,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    6
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Sword"
+   ],
+   [
+    "weapon_rank",
+    "B"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "effective",
+    10
+   ],
+   [
+    "weight",
+    5
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "value",
+    5000
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "effective_tag",
+    [
+     "Flying"
+    ]
+   ],
+   [
+    "effective_multiplier",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Yewfelle",
+  "name": "Yewfelle",
+  "desc": "Holy Bow used by crusader Ulir.",
+  "weapon_type": "Bow",
+  "might": 30,
+  "hit": 70,
+  "weight": 13,
+  "crit": 15,
+  "rng_min": 2,
+  "rng_max": 2,
+  "rng_equation": "",
+  "rank": "",
+  "uses": 50,
+  "worth": -1,
+  "magic": false,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [
+   "UlirHeir"
+  ],
+  "prf_units": [],
+  "status_on_equip": "Ichival",
+  "status_on_hit": "",
+  "personal": true,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    30
+   ],
+   [
+    "hit",
+    70
+   ],
+   [
+    "weapon_type",
+    "Bow"
+   ],
+   [
+    "uses",
+    50
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    13
+   ],
+   [
+    "crit",
+    15
+   ],
+   [
+    "status_on_equip",
+    "Ichival"
+   ],
+   [
+    "effective",
+    0
+   ],
+   [
+    "effective_tag",
+    []
+   ],
+   [
+    "effective_multiplier",
+    1
+   ],
+   [
+    "min_range",
+    2
+   ],
+   [
+    "max_range",
+    2
+   ],
+   [
+    "prf_tags",
+    [
+     "UlirHeir"
+    ]
+   ]
+  ]
+ }
+]

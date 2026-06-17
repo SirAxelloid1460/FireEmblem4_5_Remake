@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://2pvw6cqfixfi"
+path="res://.godot/imported/Fire Treasure.ogg-16406c2c7a7bd02c26f00a3f087cfa36.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Fire Treasure.ogg"
+dest_files=["res://.godot/imported/Fire Treasure.ogg-16406c2c7a7bd02c26f00a3f087cfa36.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

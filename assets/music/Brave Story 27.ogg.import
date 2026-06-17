@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bhvquagnp7pm5"
+path="res://.godot/imported/Brave Story 27.ogg-a352de1570d058a7e456562a21147e4f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Brave Story 27.ogg"
+dest_files=["res://.godot/imported/Brave Story 27.ogg-a352de1570d058a7e456562a21147e4f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

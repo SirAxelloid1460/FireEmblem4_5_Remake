@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bwr712v52s3ng"
+path="res://.godot/imported/211 Church.ogg-c19f242bcce7e1775ac4b1f3cceb8a75.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/211 Church.ogg"
+dest_files=["res://.godot/imported/211 Church.ogg-c19f242bcce7e1775ac4b1f3cceb8a75.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

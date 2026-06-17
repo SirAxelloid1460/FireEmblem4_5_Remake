@@ -1,0 +1,3357 @@
+[
+ {
+  "nid": "Ambush Manual",
+  "name": "Amb. Manual",
+  "desc": "Teaches the Ambush Skill",
+  "category": "Consumable",
+  "worth": 300,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "Ambush",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    300
+   ],
+   [
+    "status_on_hit",
+    "Ambush"
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     9,
+     255,
+     5
+    ]
+   ],
+   [
+    "map_hit_sfx",
+    "Quintessence"
+   ]
+  ]
+ },
+ {
+  "nid": "Awareness Manual",
+  "name": "Aware. Manual",
+  "desc": "Teaches the Awareness Skill",
+  "category": "Consumable",
+  "worth": 300,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "Awareness",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    300
+   ],
+   [
+    "status_on_hit",
+    "Awareness"
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     9,
+     255,
+     5
+    ]
+   ],
+   [
+    "map_hit_sfx",
+    "Quintessence"
+   ]
+  ]
+ },
+ {
+  "nid": "Baldr Scroll",
+  "name": "Baldr Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Baldr Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Baldr Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Bargain Manual",
+  "name": "Barg. Manual",
+  "desc": "Teaches the Bargain Skill",
+  "category": "Consumable",
+  "worth": 300,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "Bargain",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    300
+   ],
+   [
+    "status_on_hit",
+    "Bargain"
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     9,
+     255,
+     5
+    ]
+   ],
+   [
+    "map_hit_sfx",
+    "Quintessence"
+   ]
+  ]
+ },
+ {
+  "nid": "Bargain Ring",
+  "name": "Bargain Ring",
+  "desc": "Grants Bargain skill.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Bargain",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Bargain"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Barrier Ring",
+  "name": "Barrier Ring",
+  "desc": "Grants Resistance +5.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Barrier Ring",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Barrier Ring"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Blaggi Scroll",
+  "name": "Blaggi Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Blaggi Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Blaggi Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Broken Staff",
+  "name": "Broken Staff",
+  "desc": "",
+  "category": "Staff",
+  "worth": 0,
+  "uses": 0,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "weight",
+    7
+   ],
+   [
+    "uses",
+    0
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    0
+   ]
+  ]
+ },
+ {
+  "nid": "Circlet",
+  "name": "Circlet",
+  "desc": "Grants Prayer and Life skills.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Circlet",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Circlet"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Dainn Scroll",
+  "name": "Dainn Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Dainn Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Dainn Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Defense Earring",
+  "name": "Defense Earring",
+  "desc": "Permanently increases its user's defense by 2.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "DEF": 2
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "DEF",
+      2
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Elite Manual",
+  "name": "Elite Manual",
+  "desc": "Teaches the Elite Skill",
+  "category": "Consumable",
+  "worth": 300,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "Elite_Skill",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    300
+   ],
+   [
+    "status_on_hit",
+    "Elite_Skill"
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     9,
+     255,
+     5
+    ]
+   ],
+   [
+    "map_hit_sfx",
+    "Quintessence"
+   ]
+  ]
+ },
+ {
+  "nid": "Elite Ring",
+  "name": "Elite Ring",
+  "desc": "Grants Elite skill.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Elite_Skill",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Elite_Skill"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Fjalar Scroll",
+  "name": "Fjalar Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Fjalar Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Fjalar Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "HP Earring",
+  "name": "HP Earring",
+  "desc": "Permanently increases its user's maximum HP by 5.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "HP": 5
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "HP",
+      5
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Heim Scroll",
+  "name": "Heim Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Heim Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Heim Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Hezul Scroll",
+  "name": "Hezul Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Hezul Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Hezul Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Key",
+  "name": "Key",
+  "desc": "Opens locked bridges, doors and chests.",
+  "category": "Consumable",
+  "worth": 600,
+  "uses": 3,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "uses",
+    3
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    600
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Knight Proof",
+  "name": "Knight's Proof",
+  "desc": "Promotes base class units that have reached their max level to an advanced class",
+  "category": "Boosters",
+  "worth": 10000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": true,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    10000
+   ],
+   [
+    "promote",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Knight Ring",
+  "name": "Knight Ring",
+  "desc": "Grants Canto skill.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Canto+",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Canto+"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Leg Ring",
+  "name": "Leg Ring",
+  "desc": "Increases Movement Capacity.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Leg Ring",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Leg Ring"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Life Ring",
+  "name": "Life Ring",
+  "desc": "Grants Life skill.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Life",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Life"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Lockpicks",
+  "name": "Lockpicks",
+  "desc": "Opens locked bridges, doors and chests.",
+  "category": "Consumable",
+  "worth": 6000,
+  "uses": 30,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "uses",
+    30
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    6000
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Luck Earring",
+  "name": "Luck Earring",
+  "desc": "Permanently increases its user's luck by 2.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "LCK": 2
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "LCK",
+      2
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Magic Earring",
+  "name": "Magic Earring",
+  "desc": "Permanently increases its user's magic by 2.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "MAG": 2
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "MAG",
+      2
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Magic Ring",
+  "name": "Magic Ring",
+  "desc": "Grants Magic +5.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Magic Ring",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Magic Ring"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Moonlight Sword Manual",
+  "name": "MoonSwd Man.",
+  "desc": "Teaches the Moonlight Sword Skill",
+  "category": "Consumable",
+  "worth": 300,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "Luna",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    300
+   ],
+   [
+    "status_on_hit",
+    "Luna"
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     9,
+     255,
+     5
+    ]
+   ],
+   [
+    "map_hit_sfx",
+    "Quintessence"
+   ]
+  ]
+ },
+ {
+  "nid": "Neir Scroll",
+  "name": "Neir Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Neir Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Neir Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Njorun Scroll",
+  "name": "Njörun Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Njorun Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Njorun Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Od Scroll",
+  "name": "Od Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Od Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Od Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Power Ring",
+  "name": "Power Ring",
+  "desc": "Grants Strength +5.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Power Ring",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Power Ring"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Prayer Manual",
+  "name": "Prayer Manual",
+  "desc": "Teaches the Prayer Skill",
+  "category": "Consumable",
+  "worth": 300,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "Prayer",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    300
+   ],
+   [
+    "status_on_hit",
+    "Prayer"
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     9,
+     255,
+     5
+    ]
+   ],
+   [
+    "map_hit_sfx",
+    "Quintessence"
+   ]
+  ]
+ },
+ {
+  "nid": "Prayer Ring",
+  "name": "Prayer Ring",
+  "desc": "Grants Prayer skill.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Prayer",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Prayer"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Recover Ring",
+  "name": "Recover Ring",
+  "desc": "Grants Recover skill.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Recover",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Recover"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Refresh",
+  "name": "Dance",
+  "desc": "I done broked something.",
+  "category": "Skills",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "refresh",
+    null
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "exp",
+    34
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     8,
+     255,
+     247
+    ]
+   ],
+   [
+    "map_cast_sfx",
+    "RefreshDanceMap"
+   ],
+   [
+    "map_hit_sfx",
+    "RefreshDanceMap"
+   ]
+  ]
+ },
+ {
+  "nid": "Rescue1",
+  "name": "Rescue",
+  "desc": "Brings an ally to a space adjacent to the user",
+  "category": "Staff",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_equation_range",
+    "MAGIC_RANGE"
+   ],
+   [
+    "store_unit",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Rescue2",
+  "name": "Rescue",
+  "desc": "Brings an ally to a space adjacent to the user",
+  "category": "Staff",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "target_tile",
+    null
+   ],
+   [
+    "unload_unit",
+    null
+   ],
+   [
+    "empty_tile_target_restrict",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Resistance Earring",
+  "name": "Resistance Earring",
+  "desc": "Permanently increases its user's resistance by 2.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "RES": 2
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "RES",
+      2
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Return Ring",
+  "name": "Return Ring",
+  "desc": "Moves an ally to an empty square",
+  "category": "Boosters",
+  "worth": 10000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "value",
+    10000
+   ],
+   [
+    "wexp",
+    7
+   ],
+   [
+    "exp",
+    15
+   ],
+   [
+    "no_ai",
+    null
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "max_range",
+    0
+   ],
+   [
+    "event_on_use",
+    "Global ReturnSR"
+   ],
+   [
+    "target_ally",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Rewarp1",
+  "name": "Rewarp1",
+  "desc": "Moves user to an empty square",
+  "category": "FE5rewarp",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "store_unit",
+    null
+   ],
+   [
+    "max_range",
+    0
+   ]
+  ]
+ },
+ {
+  "nid": "Rewarp2",
+  "name": "Rewarp",
+  "desc": "Moves user to an empty square",
+  "category": "FE5rewarp",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "unload_unit",
+    null
+   ],
+   [
+    "max_equation_range",
+    "MAGIC_RANGE"
+   ],
+   [
+    "target_tile",
+    null
+   ],
+   [
+    "empty_tile_target_restrict",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Sety Scroll",
+  "name": "Sety Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Sety Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Sety Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Shield Ring",
+  "name": "Shield Ring",
+  "desc": "Grants Defense +5.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Shield Ring",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Shield Ring"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Skill Earring",
+  "name": "Skill Earring",
+  "desc": "Permanently increases its user's skill by 3.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "SKL": 3
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "SKL",
+      3
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Skill Ring",
+  "name": "Skill Ring",
+  "desc": "Grants Skill +5.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Skill Ring",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Skill Ring"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Speed Earring",
+  "name": "Speed Earring",
+  "desc": "Permanently increases its user's speed by 2.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "SPD": 2
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "SPD",
+      2
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Speed Ring",
+  "name": "Speed Ring",
+  "desc": "Grants Speed +5.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Speed Ring",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Speed Ring"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Steal",
+  "name": "Steal",
+  "desc": "I done broked something.",
+  "category": "Skills",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "exp",
+    10
+   ],
+   [
+    "steal",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "StealAway",
+  "name": "Steal",
+  "desc": "I done broked something.",
+  "category": "Skills",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    10
+   ],
+   [
+    "spell",
+    null
+   ],
+   [
+    "steal",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Strength Earring",
+  "name": "Strength Earring",
+  "desc": "Permanently increases its user's strength by 2.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "STR": 2
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "STR",
+      2
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Sun Sword Manual",
+  "name": "SunSwd Man.",
+  "desc": "Teaches the Sun Sword Skill",
+  "category": "Consumable",
+  "worth": 300,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "Sol",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    300
+   ],
+   [
+    "status_on_hit",
+    "Sol"
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     9,
+     255,
+     5
+    ]
+   ],
+   [
+    "map_hit_sfx",
+    "Quintessence"
+   ]
+  ]
+ },
+ {
+  "nid": "Thief Ring",
+  "name": "Thief Ring",
+  "desc": "Grants Steal skill.",
+  "category": "Boosters",
+  "worth": 2000,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Steal",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Steal"
+   ],
+   [
+    "value",
+    2000
+   ]
+  ]
+ },
+ {
+  "nid": "Thrud Scroll",
+  "name": "Thrud Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Thrud Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Thrud Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Torch",
+  "name": "Torch",
+  "desc": "",
+  "category": "Staff",
+  "worth": -1,
+  "uses": 5,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "Torch",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "target_tile",
+    null
+   ],
+   [
+    "status_on_hit",
+    "Torch"
+   ],
+   [
+    "uses",
+    5
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    5
+   ],
+   [
+    "exp",
+    30
+   ]
+  ]
+ },
+ {
+  "nid": "Ulir Scroll",
+  "name": "Ulir Scroll",
+  "desc": "",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "Ulir Scroll",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "status_on_hold",
+    "Ulir Scroll"
+   ]
+  ]
+ },
+ {
+  "nid": "Vulnerary",
+  "name": "Vulnerary",
+  "desc": "Restores all HP.",
+  "category": "Consumable",
+  "worth": 300,
+  "uses": 3,
+  "heal": 100,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "heal",
+    100
+   ],
+   [
+    "uses",
+    3
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    300
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     15,
+     235,
+     255
+    ]
+   ],
+   [
+    "map_hit_sfx",
+    "HP_Recovery"
+   ]
+  ]
+ },
+ {
+  "nid": "Warp1",
+  "name": "Warp",
+  "desc": "Moves an ally to an empty square",
+  "category": "Staff",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "store_unit",
+    null
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Warp2",
+  "name": "Warp",
+  "desc": "Moves an ally to an empty square",
+  "category": "Staff",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "unload_unit",
+    null
+   ],
+   [
+    "max_equation_range",
+    "MAGIC_RANGE"
+   ],
+   [
+    "target_tile",
+    null
+   ],
+   [
+    "empty_tile_target_restrict",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Wrath Manual",
+  "name": "Wrath Manual",
+  "desc": "Teaches the Wrath Skill",
+  "category": "Consumable",
+  "worth": 300,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "Wrath",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    300
+   ],
+   [
+    "status_on_hit",
+    "Wrath"
+   ],
+   [
+    "map_hit_add_blend",
+    [
+     9,
+     255,
+     5
+    ]
+   ],
+   [
+    "map_hit_sfx",
+    "Quintessence"
+   ]
+  ]
+ },
+ {
+  "nid": "Ankle_Bracelet",
+  "name": "Ankle Bracelet",
+  "desc": "Permanently increases its user's resistance by 2.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "MOV": 2
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "MOV",
+      2
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Bridge_Key",
+  "name": "Bridge Key",
+  "desc": "Opens locked bridges, doors and chests.",
+  "category": "Consumable",
+  "worth": 600,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    600
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "can_unlock",
+    "True"
+   ]
+  ]
+ },
+ {
+  "nid": "ChangeSniper",
+  "name": "Change to Sniper",
+  "desc": "Allows Eyvel to change her class to Sniper.",
+  "category": "Consumable",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_unit",
+    null
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "max_range",
+    0
+   ],
+   [
+    "prf_unit",
+    [
+     "Eyvel"
+    ]
+   ],
+   [
+    "force_class_change",
+    "Sniper"
+   ]
+  ]
+ },
+ {
+  "nid": "ChangeSwordmaster",
+  "name": "Change to Swordmaster",
+  "desc": "Allows Eyvel to change her class to Swordmaster.",
+  "category": "Consumable",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_unit",
+    null
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "max_range",
+    0
+   ],
+   [
+    "prf_unit",
+    [
+     "Eyvel"
+    ]
+   ],
+   [
+    "force_class_change",
+    "Swordmaster"
+   ]
+  ]
+ },
+ {
+  "nid": "Chest_Key",
+  "name": "Chest Key",
+  "desc": "Opens locked bridges, doors and chests.",
+  "category": "Consumable",
+  "worth": 600,
+  "uses": 20,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "uses",
+    20
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    600
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "can_unlock",
+    "True"
+   ]
+  ]
+ },
+ {
+  "nid": "Door_Key",
+  "name": "Door Key",
+  "desc": "Opens locked bridges, doors and chests.",
+  "category": "Consumable",
+  "worth": 600,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "value",
+    600
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "max_range",
+    1
+   ],
+   [
+    "can_unlock",
+    "True"
+   ]
+  ]
+ },
+ {
+  "nid": "Life_Earring",
+  "name": "Life Earring",
+  "desc": "Permanently increases its user's maximum HP by 7.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "HP": 7
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "HP",
+      7
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Luck_Earring",
+  "name": "Luck Earring",
+  "desc": "Permanently increases its user's luck by 3.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "LCK": 3
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "LCK",
+      3
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Magic_Earring",
+  "name": "Magic Earring",
+  "desc": "Permanently increases its user's magic by 2.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "MAG": 2
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "MAG",
+      2
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Power_Earring",
+  "name": "Power Earring",
+  "desc": "Permanently increases its user's strength by 3.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "STR": 3
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "STR",
+      3
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Resistance_Earring",
+  "name": "Resistance Earring",
+  "desc": "Permanently increases its user's resistance by 3.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "RES": 3
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "RES",
+      3
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Return1",
+  "name": "Return",
+  "desc": "Sends an ally back to the Main Castle",
+  "category": "Staff",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "store_unit",
+    null
+   ],
+   [
+    "max_range",
+    1
+   ]
+  ]
+ },
+ {
+  "nid": "Return2",
+  "name": "Return",
+  "desc": "Sends an ally back to the Main Castle",
+  "category": "Staff",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "global_range",
+    null
+   ],
+   [
+    "unload_unit",
+    null
+   ],
+   [
+    "target_tile",
+    null
+   ],
+   [
+    "empty_tile_target_restrict",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "ReturnRing1",
+  "name": "Return Ring",
+  "desc": "Moves an ally to an empty square",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "min_range",
+    0
+   ],
+   [
+    "store_unit",
+    null
+   ],
+   [
+    "max_range",
+    0
+   ]
+  ]
+ },
+ {
+  "nid": "ReturnRing2",
+  "name": "Return Ring",
+  "desc": "Moves an ally to an empty square",
+  "category": "Boosters",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "spell",
+    null
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "unload_unit",
+    null
+   ],
+   [
+    "target_tile",
+    null
+   ],
+   [
+    "empty_tile_target_restrict",
+    null
+   ],
+   [
+    "global_range",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Shield_Earring",
+  "name": "Shield Earring",
+  "desc": "Permanently increases its user's defense by 2.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "DEF": 2
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "DEF",
+      2
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Skill_Earring",
+  "name": "Skill Earring",
+  "desc": "Permanently increases its user's skill by 3.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "SKL": 3
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "SKL",
+      3
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Speed_Earring",
+  "name": "Speed Earring",
+  "desc": "Permanently increases its user's speed by 3.",
+  "category": "Boosters",
+  "worth": 8000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {
+   "SPD": 3
+  },
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    1
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "permanent_stat_change",
+    [
+     [
+      "SPD",
+      3
+     ]
+    ]
+   ],
+   [
+    "usable_in_base",
+    null
+   ],
+   [
+    "value",
+    8000
+   ]
+  ]
+ },
+ {
+  "nid": "Torch_item",
+  "name": "Torch",
+  "desc": "Increases the vision sight by 5 squares.",
+  "category": "FE5rewarp",
+  "worth": 500,
+  "uses": 3,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
+    3
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ],
+     [
+      "OneLossPerCombat (T/F)",
+      "F",
+      "Doubling doesn't cost extra uses"
+     ]
+    ]
+   ],
+   [
+    "self_status_on_hit",
+    "Torch"
+   ],
+   [
+    "value",
+    500
+   ]
+  ]
+ },
+ {
+  "nid": "Torch_staff",
+  "name": "Torch",
+  "desc": "",
+  "category": "Staff",
+  "worth": -1,
+  "uses": 5,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "Torch",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "target_tile",
+    null
+   ],
+   [
+    "status_on_hit",
+    "Torch"
+   ],
+   [
+    "uses",
+    5
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "min_range",
+    1
+   ],
+   [
+    "max_range",
+    5
+   ],
+   [
+    "exp",
+    30
+   ]
+  ]
+ }
+]

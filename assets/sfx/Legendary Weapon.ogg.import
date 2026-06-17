@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0h040egxjl7"
+path="res://.godot/imported/Legendary Weapon.ogg-4ad6b50d7b967b2d410823c49d947768.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Legendary Weapon.ogg"
+dest_files=["res://.godot/imported/Legendary Weapon.ogg-4ad6b50d7b967b2d410823c49d947768.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

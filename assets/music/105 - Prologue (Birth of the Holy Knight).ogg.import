@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d2wvc88aro56j"
+path="res://.godot/imported/105 - Prologue (Birth of the Holy Knight).ogg-a81c43282594d6a765d6012d0ae11b3c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/105 - Prologue (Birth of the Holy Knight).ogg"
+dest_files=["res://.godot/imported/105 - Prologue (Birth of the Holy Knight).ogg-a81c43282594d6a765d6012d0ae11b3c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

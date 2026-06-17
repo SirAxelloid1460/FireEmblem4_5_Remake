@@ -1,0 +1,27 @@
+class_name LocationMenu
+extends Control
+
+signal location_selected(location: String)
+
+var location_buttons: Dictionary = {}
+
+func _ready():
+	create_location_buttons()
+
+func create_location_buttons():
+	"""Crea botones para cada ubicaciÃ³n"""
+	var locations = {
+		"shop": "Tienda",
+		"blacksmith": "Herrero",
+		"arena": "Arena",
+		"fortune_teller": "Adivina",
+		"promotion": "PromociÃ³n",
+		"convoy": "Convoy"
+	}
+	
+	for loc_id in locations.keys():
+		var btn = Button.new()
+		btn.text = locations[loc_id]
+		btn.pressed.connect(func(): location_selected.emit(loc_id))
+		location_buttons[loc_id] = btn
+		# AÃ±adir a contenedor

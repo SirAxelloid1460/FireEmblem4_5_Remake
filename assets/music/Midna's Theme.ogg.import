@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://qvbilb5pay8u"
+path="res://.godot/imported/Midna's Theme.ogg-b7f57d8ae8010e5c686f591eaba99ef5.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Midna's Theme.ogg"
+dest_files=["res://.godot/imported/Midna's Theme.ogg-b7f57d8ae8010e5c686f591eaba99ef5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ghehl7h62rb1"
+path="res://.godot/imported/237 - Thracia Castle Town.ogg-a2452fc31478e34b881c7d4a81970d9f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/237 - Thracia Castle Town.ogg"
+dest_files=["res://.godot/imported/237 - Thracia Castle Town.ogg-a2452fc31478e34b881c7d4a81970d9f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

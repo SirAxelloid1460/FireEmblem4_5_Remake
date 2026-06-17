@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctmd5lds2cgj6"
+path="res://.godot/imported/Stalwarts Unite.ogg-801f4001d2d6c132f307ea82863dfa2e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Stalwarts Unite.ogg"
+dest_files=["res://.godot/imported/Stalwarts Unite.ogg-801f4001d2d6c132f307ea82863dfa2e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

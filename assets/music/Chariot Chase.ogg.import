@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://7yyfox7hp2yo"
+path="res://.godot/imported/Chariot Chase.ogg-d0bbb44dc2fce82a091f4e90e557f682.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Chariot Chase.ogg"
+dest_files=["res://.godot/imported/Chariot Chase.ogg-d0bbb44dc2fce82a091f4e90e557f682.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

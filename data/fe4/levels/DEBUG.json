@@ -1,0 +1,139 @@
+[
+ {
+  "nid": "DEBUG",
+  "name": "DEBUG",
+  "tilemap": "DEBUG",
+  "party": "Sigurd",
+  "music": {
+   "player_phase": null,
+   "enemy_phase": null,
+   "other_phase": null,
+   "enemy2_phase": null,
+   "player_battle": null,
+   "enemy_battle": null,
+   "other_battle": null,
+   "enemy2_battle": null
+  },
+  "objective": {
+   "simple": "",
+   "win": "",
+   "loss": ""
+  },
+  "roam": false,
+  "roam_unit": null,
+  "go_to_overworld": false,
+  "units": [
+   {
+    "nid": "102",
+    "variant": null,
+    "level": 1,
+    "klass": "Bandit",
+    "faction": "Nature",
+    "starting_items": [
+     [
+      "Hand Axe",
+      false
+     ]
+    ],
+    "team": "enemy",
+    "ai": "PursueVillage",
+    "ai_group": null,
+    "starting_position": [
+     13,
+     8
+    ],
+    "starting_traveler": null,
+    "generic": true
+   },
+   {
+    "nid": "103",
+    "variant": null,
+    "level": 1,
+    "klass": "Bandit",
+    "faction": "Nature",
+    "starting_items": [
+     [
+      "Hand Axe",
+      false
+     ]
+    ],
+    "team": "enemy",
+    "ai": "PursueVillage",
+    "ai_group": null,
+    "starting_position": [
+     12,
+     7
+    ],
+    "starting_traveler": null,
+    "generic": true
+   }
+  ],
+  "regions": [
+   {
+    "nid": "Arena",
+    "region_type": "event",
+    "position": [
+     7,
+     3
+    ],
+    "size": [
+     1,
+     1
+    ],
+    "sub_nid": "Arena",
+    "condition": "unit.team == 'player'",
+    "only_once": false,
+    "interrupt_move": false
+   },
+   {
+    "nid": "Return",
+    "region_type": "normal",
+    "position": [
+     10,
+     4
+    ],
+    "size": [
+     1,
+     1
+    ],
+    "sub_nid": "",
+    "condition": "True",
+    "only_once": false,
+    "interrupt_move": false
+   },
+   {
+    "nid": "DebugDestructible",
+    "region_type": "event",
+    "position": [
+     0,
+     8
+    ],
+    "size": [
+     1,
+     1
+    ],
+    "sub_nid": "Destructible",
+    "condition": "unit.team == 'enemy'",
+    "only_once": false,
+    "interrupt_move": false
+   },
+   {
+    "nid": "DebugDestructible2",
+    "region_type": "event",
+    "position": [
+     0,
+     7
+    ],
+    "size": [
+     1,
+     1
+    ],
+    "sub_nid": "Destructible",
+    "condition": "unit.team == 'enemy'",
+    "only_once": false,
+    "interrupt_move": false
+   }
+  ],
+  "unit_groups": []
+ }
+]

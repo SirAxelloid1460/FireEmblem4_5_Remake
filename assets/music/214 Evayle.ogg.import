@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cc03mtr3xogae"
+path="res://.godot/imported/214 Evayle.ogg-6233964ed04ce169e0a279647fe0bcbb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/214 Evayle.ogg"
+dest_files=["res://.godot/imported/214 Evayle.ogg-6233964ed04ce169e0a279647fe0bcbb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

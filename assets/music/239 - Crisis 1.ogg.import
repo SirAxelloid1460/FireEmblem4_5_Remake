@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c6h4ohgwajmu5"
+path="res://.godot/imported/239 - Crisis 1.ogg-ce70e441431816b896b8d2d7ad447bbe.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/239 - Crisis 1.ogg"
+dest_files=["res://.godot/imported/239 - Crisis 1.ogg-ce70e441431816b896b8d2d7ad447bbe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

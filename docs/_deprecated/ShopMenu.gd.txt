@@ -1,0 +1,259 @@
+extends Control
+class_name ShopMenu
+
+# Referencias UI
+@onready var item_list: ItemList = $Panel/VBox/ItemList
+@onready var unit_gold_label: Label = $Panel/VBox/TopBar/UnitGoldLabel
+@onready var item_description: RichTextLabel = $Panel/VBox/ItemDescription
+@onready var buy_button: Button = $Panel/VBox/BottomBar/BuyButton
+@onready var close_button: Button = $Panel/VBox/BottomBar/CloseButton
+
+# Datos
+var current_unit: Unit
+var army_gold: int
+var shop_inventory: Array[Dictionary] = []
+var selected_item_index: int = -1
+
+# Señales
+signal purchase_made(item: Item, cost: int)
+signal shop_closed
+
+func _ready():
+	setup_ui()
+	setup_signals()
+
+func setup(unit: Unit, gold: int):
+	"""Configura la tienda con la unidad y oro disponible"""
+	current_unit = unit
+	army_gold = gold
+	
+	# Generar inventario de la tienda
+	generate_shop_inventory()
+	populate_item_list()
+	update_gold_display()
+	
+	popup_centered()
+
+func setup_ui():
+	"""Configura el estilo de la interfaz"""
+	# Configurar panel
+	modulate = Color(1, 1, 1, 0)
+	var tween = create_tween()
+	tween.tween_property(self, "modulate:a", 1.0, 0.3)
+
+func setup_signals():
+	"""Conecta señales"""
+	buy_button.pressed.connect(_on_buy_pressed)
+	close_button.pressed.connect(_on_close_pressed)
+	item_list.item_selected.connect(_on_item_selected)
+
+func generate_shop_inventory():
+	"""Genera el inventario de la tienda basado en el capítulo"""
+	shop_inventory = [
+		{
+			"name": "Iron Sword",
+			"type": "weapon",
+			"cost": 460,
+			"description": "Espada básica de hierro",
+			"might": 5,
+			"accuracy": 90,
+			"weapon_type": "Sword"
+		},
+		{
+			"name": "Steel Sword",
+			"type": "weapon",
+			"cost": 800,
+			"description": "Espada de acero más poderosa",
+			"might": 8,
+			"accuracy": 85,
+			"weapon_type": "Sword"
+		},
+		{
+			"name": "Iron Lance",
+			"type": "weapon",
+			"cost": 400,
+			"description": "Lanza básica de hierro",
+			"might": 7,
+			"accuracy": 80,
+			"weapon_type": "Lance"
+		},
+		{
+			"name": "Steel Lance",
+			"type": "weapon",
+			"cost": 760,
+			"description": "Lanza de acero mejorada",
+			"might": 10,
+			"accuracy": 75,
+			"weapon_type": "Lance"
+		},
+		{
+			"name": "Iron Axe",
+			"type": "weapon",
+			"cost": 440,
+			"description": "Hacha básica de hierro",
+			"might": 8,
+			"accuracy": 70,
+			"weapon_type": "Axe"
+		},
+		{
+			"name": "Hand Axe",
+			"type": "weapon",
+			"cost": 300,
+			"description": "Hacha arrojadiza (Rango 1-2)",
+			"might": 6,
+			"accuracy": 65,
+			"weapon_type": "Axe",
+			"range_max": 2
+		},
+		{
+			"name": "Vulnerary",
+			"type": "item",
+			"cost": 600,
+			"description": "Restaura 10 HP",
+			"heal_amount": 10
+		},
+		{
+			"name": "Elixir",
+			"type": "item",
+			"cost": 3000,
+			"description": "Restaura toda la HP",
+			"heal_amount": 999
+		}
+	]
+
+func populate_item_list():
+	"""Puebla la lista de items"""
+	item_list.clear()
+	
+	for i in range(shop_inventory.size()):
+		var item_data = shop_inventory[i]
+		var text = "%s - %d G" % [item_data["name"], item_data["cost"]]
+		item_list.add_item(text)
+		
+		# Deshabilitar si no se puede comprar
+		if current_unit.personal_gold < item_data["cost"]:
+			item_list.set_item_disabled(i, true)
+			item_list.set_item_custom_fg_color(i, Color(0.5, 0.5, 0.5))
+
+func update_gold_display():
+	"""Actualiza el display de oro"""
+	if current_unit:
+		unit_gold_label.text = "%s: %d G" % [current_unit.unit_name, current_unit.personal_gold]
+
+func _on_item_selected(index: int):
+	"""Maneja cuando se selecciona un item"""
+	selected_item_index = index
+	show_item_description(shop_inventory[index])
+	
+	# Habilitar/deshabilitar botón de compra
+	var can_afford = current_unit.personal_gold >= shop_inventory[index]["cost"]
+	buy_button.disabled = not can_afford
+
+func show_item_description(item_data: Dictionary):
+	"""Muestra la descripción del item seleccionado"""
+	var desc = "[b]%s[/b]\n" % item_data["name"]
+	desc += "Precio: %d G\n\n" % item_data["cost"]
+	desc += item_data["description"] + "\n\n"
+	
+	if item_data["type"] == "weapon":
+		desc += "[b]Estadísticas:[/b]\n"
+		desc += "Poder: %d\n" % item_data.get("might", 0)
+		desc += "Precisión: %d%%\n" % item_data.get("accuracy", 0)
+		desc += "Tipo: %s\n" % item_data.get("weapon_type", "")
+		
+		if item_data.has("range_max") and item_data["range_max"] > 1:
+			desc += "Rango: 1-%d\n" % item_data["range_max"]
+	
+	elif item_data["type"] == "item":
+		desc += "[b]Efecto:[/b]\n"
+		if item_data.has("heal_amount"):
+			desc += "Cura %d HP\n" % item_data["heal_amount"]
+	
+	item_description.text = desc
+
+func _on_buy_pressed():
+	"""Maneja la compra de un item"""
+	if selected_item_index < 0:
+		return
+	
+	var item_data = shop_inventory[selected_item_index]
+	
+	# Verificar si puede pagar
+	if current_unit.personal_gold < item_data["cost"]:
+		show_error("Oro insuficiente")
+		return
+	
+	# Verificar espacio en inventario
+	if current_unit.inventory.size() >= 8:  # FE4 tiene límite de 8 items
+		show_error("Inventario lleno")
+		return
+	
+	# Crear el item
+	var item = create_item_from_data(item_data)
+	
+	# Emitir señal de compra
+	purchase_made.emit(item, item_data["cost"])
+	
+	# Actualizar UI
+	current_unit.personal_gold -= item_data["cost"]
+	update_gold_display()
+	populate_item_list()
+	
+	show_purchase_confirmation(item_data["name"])
+
+func create_item_from_data(data: Dictionary) -> Item:
+	"""Crea un objeto Item desde los datos"""
+	if data["type"] == "weapon":
+		var weapon = Weapon.new()
+		weapon.weapon_name = data["name"]
+		weapon.weapon_type = data.get("weapon_type", "Sword")
+		weapon.might = data.get("might", 5)
+		weapon.accuracy = data.get("accuracy", 90)
+		weapon.range_min = 1
+		weapon.range_max = data.get("range_max", 1)
+		weapon.max_durability = 50
+		weapon.current_durability = 50
+		return weapon
+	else:
+		var item = Item.new()
+		item.item_name = data["name"]
+		item.item_type = data.get("type", "Consumable")
+		item.description = data.get("description", "")
+		return item
+
+func show_purchase_confirmation(item_name: String):
+	"""Muestra confirmación de compra"""
+	var label = Label.new()
+	label.text = "¡%s comprado!" % item_name
+	label.add_theme_color_override("font_color", Color.GREEN)
+	add_child(label)
+	
+	var tween = create_tween()
+	tween.tween_property(label, "modulate:a", 0.0, 1.5)
+	tween.tween_callback(label.queue_free)
+
+func show_error(message: String):
+	"""Muestra mensaje de error"""
+	var label = Label.new()
+	label.text = message
+	label.add_theme_color_override("font_color", Color.RED)
+	add_child(label)
+	
+	var tween = create_tween()
+	tween.tween_property(label, "modulate:a", 0.0, 1.5)
+	tween.tween_callback(label.queue_free)
+
+func _on_close_pressed():
+	"""Cierra la tienda"""
+	shop_closed.emit()
+	
+	var tween = create_tween()
+	tween.tween_property(self, "modulate:a", 0.0, 0.3)
+	await tween.finished
+	
+	queue_free()
+
+func _input(event):
+	"""Manejo de input"""
+	if event.is_action_pressed("ui_cancel"):
+		_on_close_pressed()

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cqu2b0qkac63t"
+path="res://.godot/imported/Land Below Flow.ogg-5609463338f102bdead6cea7bda9f4d2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Land Below Flow.ogg"
+dest_files=["res://.godot/imported/Land Below Flow.ogg-5609463338f102bdead6cea7bda9f4d2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

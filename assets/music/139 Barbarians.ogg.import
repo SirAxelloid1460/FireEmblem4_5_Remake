@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dlfxd3tgl0a1g"
+path="res://.godot/imported/139 Barbarians.ogg-87acc4374f723223ffae682b93f9e14a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/139 Barbarians.ogg"
+dest_files=["res://.godot/imported/139 Barbarians.ogg-87acc4374f723223ffae682b93f9e14a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

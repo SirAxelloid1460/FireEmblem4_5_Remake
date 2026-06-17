@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dspsa42hcbu6g"
+path="res://.godot/imported/Lady Eboshi.ogg-81eb047661aeebf2f6a05a17f9d048e3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Lady Eboshi.ogg"
+dest_files=["res://.godot/imported/Lady Eboshi.ogg-81eb047661aeebf2f6a05a17f9d048e3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

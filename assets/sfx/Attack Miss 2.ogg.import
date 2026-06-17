@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bxfpurgrtmglv"
+path="res://.godot/imported/Attack Miss 2.ogg-f992d370db77c0f14c2f58fc65dada5f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Attack Miss 2.ogg"
+dest_files=["res://.godot/imported/Attack Miss 2.ogg-f992d370db77c0f14c2f58fc65dada5f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

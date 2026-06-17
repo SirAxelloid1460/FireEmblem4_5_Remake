@@ -1,0 +1,19 @@
+{
+  "nid": "title_background",
+  "frame_count": 33,
+  "frame_size": [
+    240,
+    160
+  ],
+  "sheet_size": [
+    1440,
+    960
+  ],
+  "layout": "grid",
+  "grid": [
+    6,
+    6
+  ],
+  "fps": 8,
+  "loop": true
+}

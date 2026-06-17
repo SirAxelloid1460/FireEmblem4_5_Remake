@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://br7nhcqekhhlk"
+path="res://.godot/imported/To A Higher Place.ogg-4770f5bffd6ed40af8dd30ab70085a8b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/To A Higher Place.ogg"
+dest_files=["res://.godot/imported/To A Higher Place.ogg-4770f5bffd6ed40af8dd30ab70085a8b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

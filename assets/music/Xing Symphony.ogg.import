@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b3vw0axa2nck3"
+path="res://.godot/imported/Xing Symphony.ogg-1448c257c8189317441fe66f28f201c8.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Xing Symphony.ogg"
+dest_files=["res://.godot/imported/Xing Symphony.ogg-1448c257c8189317441fe66f28f201c8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

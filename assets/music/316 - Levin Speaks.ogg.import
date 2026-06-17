@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bnmmuoerxogwo"
+path="res://.godot/imported/316 - Levin Speaks.ogg-2ef7aece17ba3f3b80986eceebfae8a3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/316 - Levin Speaks.ogg"
+dest_files=["res://.godot/imported/316 - Levin Speaks.ogg-2ef7aece17ba3f3b80986eceebfae8a3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

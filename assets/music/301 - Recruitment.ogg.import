@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bnu1yhwf17qog"
+path="res://.godot/imported/301 - Recruitment.ogg-1969943a65e28183f86ddd8a1b35d613.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/301 - Recruitment.ogg"
+dest_files=["res://.godot/imported/301 - Recruitment.ogg-1969943a65e28183f86ddd8a1b35d613.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

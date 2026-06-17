@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ba4rga8vb5t0s"
+path="res://.godot/imported/309 - Lover 4.ogg-9dc211c12eb05b458fce21081851e02c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/309 - Lover 4.ogg"
+dest_files=["res://.godot/imported/309 - Lover 4.ogg-9dc211c12eb05b458fce21081851e02c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

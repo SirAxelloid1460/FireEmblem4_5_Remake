@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dv1w8slt4jqnl"
+path="res://.godot/imported/336 - Velthomer Palace.ogg-6dc9a9f2635fdba0b29397c3e69250cf.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/336 - Velthomer Palace.ogg"
+dest_files=["res://.godot/imported/336 - Velthomer Palace.ogg-6dc9a9f2635fdba0b29397c3e69250cf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

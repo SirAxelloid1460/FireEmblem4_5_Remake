@@ -1,0 +1,23 @@
+[
+ {
+  "nid": "1",
+  "name": "Ch. 1: The Warrior of Fiana",
+  "tilemap": "T1",
+  "units": 26,
+  "regions": 7
+ },
+ {
+  "nid": "98",
+  "name": "More yet to come",
+  "tilemap": "MTC--WIP",
+  "units": 0,
+  "regions": 0
+ },
+ {
+  "nid": "DEBUG",
+  "name": "DEBUG",
+  "tilemap": "DEBUG",
+  "units": 3,
+  "regions": 1
+ }
+]

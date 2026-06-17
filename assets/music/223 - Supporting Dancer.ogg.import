@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://grn5q646h7u5"
+path="res://.godot/imported/223 - Supporting Dancer.ogg-3822445680db934e1b62af090ff26f0d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/223 - Supporting Dancer.ogg"
+dest_files=["res://.godot/imported/223 - Supporting Dancer.ogg-3822445680db934e1b62af090ff26f0d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

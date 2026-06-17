@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://h20w82552uwm"
+path="res://.godot/imported/325 - Thoughts Going Around.ogg-5374eabde58db486bf3a1aea21babc7c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/325 - Thoughts Going Around.ogg"
+dest_files=["res://.godot/imported/325 - Thoughts Going Around.ogg-5374eabde58db486bf3a1aea21babc7c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

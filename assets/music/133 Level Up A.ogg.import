@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bemwcmdu870y"
+path="res://.godot/imported/133 Level Up A.ogg-c5008868da2f29f5b1bc20300cc7beef.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/133 Level Up A.ogg"
+dest_files=["res://.godot/imported/133 Level Up A.ogg-c5008868da2f29f5b1bc20300cc7beef.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dfjdnj0ya0ctr"
+path="res://.godot/imported/Shadow of the Enemy.ogg-90e0ad1406d36d0bc80657756b4b1a77.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Shadow of the Enemy.ogg"
+dest_files=["res://.godot/imported/Shadow of the Enemy.ogg-90e0ad1406d36d0bc80657756b4b1a77.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

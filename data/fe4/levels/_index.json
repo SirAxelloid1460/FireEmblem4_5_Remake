@@ -1,0 +1,44 @@
+[
+ {
+  "nid": "0",
+  "name": "Birth of a Crusader",
+  "tilemap": "Prologue",
+  "units": 63,
+  "regions": 14
+ },
+ {
+  "nid": "1",
+  "name": "The Spirit Forest's Maiden",
+  "tilemap": "Chapter1",
+  "units": 99,
+  "regions": 23
+ },
+ {
+  "nid": "2",
+  "name": "Crisis in Agustria",
+  "tilemap": "Chapter2",
+  "units": 149,
+  "regions": 43
+ },
+ {
+  "nid": "998",
+  "name": "More yet to come",
+  "tilemap": "MTC--WIP",
+  "units": 0,
+  "regions": 0
+ },
+ {
+  "nid": "DEBUG",
+  "name": "DEBUG",
+  "tilemap": "DEBUG",
+  "units": 2,
+  "regions": 4
+ },
+ {
+  "nid": "999",
+  "name": "Base",
+  "tilemap": "Base",
+  "units": 24,
+  "regions": 0
+ }
+]

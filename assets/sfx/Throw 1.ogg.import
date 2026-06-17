@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://1hfjjg7yi4c"
+path="res://.godot/imported/Throw 1.ogg-23c429e1e15bde4579a9c55400ef380a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Throw 1.ogg"
+dest_files=["res://.godot/imported/Throw 1.ogg-23c429e1e15bde4579a9c55400ef380a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

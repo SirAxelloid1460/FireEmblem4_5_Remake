@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://blebdcimrjc76"
+path="res://.godot/imported/206 Conquest.ogg-31cc99a2d962914f6fc71e8ef65c0d7a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/206 Conquest.ogg"
+dest_files=["res://.godot/imported/206 Conquest.ogg-31cc99a2d962914f6fc71e8ef65c0d7a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

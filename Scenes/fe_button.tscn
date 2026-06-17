@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/FEButton.gd" id="1"]
+
+[node name="FEButton" type="Button"]
+custom_minimum_size = Vector2(320, 48)
+text = "Button"
+script = ExtResource("1")

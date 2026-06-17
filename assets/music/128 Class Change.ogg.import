@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://h40ejujj5j48"
+path="res://.godot/imported/128 Class Change.ogg-d17b5efddbba67e5d823f08b8a15d956.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/128 Class Change.ogg"
+dest_files=["res://.godot/imported/128 Class Change.ogg-d17b5efddbba67e5d823f08b8a15d956.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

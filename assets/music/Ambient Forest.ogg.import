@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://wldp41b3604v"
+path="res://.godot/imported/Ambient Forest.ogg-bc1170e1eaeb3a38cd284292dfae6aac.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Ambient Forest.ogg"
+dest_files=["res://.godot/imported/Ambient Forest.ogg-bc1170e1eaeb3a38cd284292dfae6aac.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

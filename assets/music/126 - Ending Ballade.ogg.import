@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bv4ne0arbfmhf"
+path="res://.godot/imported/126 - Ending Ballade.ogg-4f2c670d12f753d60d27ebadfc0fd52b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/126 - Ending Ballade.ogg"
+dest_files=["res://.godot/imported/126 - Ending Ballade.ogg-4f2c670d12f753d60d27ebadfc0fd52b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

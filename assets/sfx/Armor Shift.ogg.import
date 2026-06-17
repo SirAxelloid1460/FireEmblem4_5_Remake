@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bh35r0ibchyvc"
+path="res://.godot/imported/Armor Shift.ogg-a0a0e44237fd8721ba35a7ca5c7027ba.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Armor Shift.ogg"
+dest_files=["res://.godot/imported/Armor Shift.ogg-a0a0e44237fd8721ba35a7ca5c7027ba.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

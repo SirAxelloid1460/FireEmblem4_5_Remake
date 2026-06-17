@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://de8fg45movkx1"
+path="res://.godot/imported/122 Final chapter.ogg-6502c129e1953c4d8239dffdd761ea8d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/122 Final chapter.ogg"
+dest_files=["res://.godot/imported/122 Final chapter.ogg-6502c129e1953c4d8239dffdd761ea8d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

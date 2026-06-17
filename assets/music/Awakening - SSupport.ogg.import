@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bycv5ln06nf5x"
+path="res://.godot/imported/Awakening - SSupport.ogg-b67952e1827ff1519ef813d15f084aea.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Awakening - SSupport.ogg"
+dest_files=["res://.godot/imported/Awakening - SSupport.ogg-b67952e1827ff1519ef813d15f084aea.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

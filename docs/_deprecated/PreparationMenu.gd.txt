@@ -1,0 +1,10 @@
+class_name PreparationMenu
+extends Control
+
+signal start_battle_pressed
+signal manage_units_pressed
+signal save_game_pressed
+
+func _ready():
+	# Crear botones
+	pass

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fh5r404oxtwa"
+path="res://.godot/imported/Helms Deep-intro.ogg-9deee4b58dd3498d2fda49db15904454.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Helms Deep-intro.ogg"
+dest_files=["res://.godot/imported/Helms Deep-intro.ogg-9deee4b58dd3498d2fda49db15904454.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

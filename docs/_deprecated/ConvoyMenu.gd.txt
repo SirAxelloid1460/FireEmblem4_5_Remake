@@ -1,0 +1,317 @@
+extends Control
+class_name ConvoyMenu
+
+# Referencias UI
+@onready var unit_inventory_list: ItemList = $Panel/HBox/LeftPanel/UnitInventory
+@onready var convoy_list: ItemList = $Panel/HBox/RightPanel/ConvoyList
+@onready var unit_label: Label = $Panel/HBox/LeftPanel/UnitLabel
+@onready var convoy_label: Label = $Panel/HBox/RightPanel/ConvoyLabel
+@onready var item_description: RichTextLabel = $Panel/VBox/ItemDescription
+@onready var to_convoy_button: Button = $Panel/VBox/ButtonRow/ToConvoyButton
+@onready var to_unit_button: Button = $Panel/VBox/ButtonRow/ToUnitButton
+@onready var close_button: Button = $Panel/VBox/ButtonRow/CloseButton
+
+# Datos
+var current_unit: Unit
+var convoy_items: Array = []
+var selected_unit_item_index: int = -1
+var selected_convoy_item_index: int = -1
+
+# Límites
+const MAX_UNIT_INVENTORY: int = 8  # FE4 límite
+const MAX_CONVOY_SIZE: int = 200   # Convoy gigante de FE4
+
+# Señales
+signal items_changed(new_convoy_items: Array)
+signal convoy_closed
+
+func _ready():
+	setup_signals()
+
+func setup(unit: Unit, convoy: Array):
+	"""Configura el convoy con la unidad y items"""
+	current_unit = unit
+	convoy_items = convoy.duplicate()
+	
+	update_displays()
+	popup_centered()
+
+func setup_signals():
+	"""Conecta señales"""
+	unit_inventory_list.item_selected.connect(_on_unit_item_selected)
+	convoy_list.item_selected.connect(_on_convoy_item_selected)
+	to_convoy_button.pressed.connect(_on_to_convoy_pressed)
+	to_unit_button.pressed.connect(_on_to_unit_pressed)
+	close_button.pressed.connect(_on_close_pressed)
+
+func update_displays():
+	"""Actualiza ambas listas"""
+	update_unit_inventory()
+	update_convoy_list()
+	update_labels()
+
+func update_unit_inventory():
+	"""Actualiza la lista de inventario de la unidad"""
+	unit_inventory_list.clear()
+	
+	for i in range(current_unit.inventory.size()):
+		var item = current_unit.inventory[i]
+		var text = get_item_display_text(item)
+		unit_inventory_list.add_item(text)
+
+func update_convoy_list():
+	"""Actualiza la lista del convoy"""
+	convoy_list.clear()
+	
+	for i in range(convoy_items.size()):
+		var item = convoy_items[i]
+		var text = get_item_display_text(item)
+		convoy_list.add_item(text)
+	
+	# Mostrar slots vacíos disponibles
+	var used_slots = convoy_items.size()
+	var available_slots = MAX_CONVOY_SIZE - used_slots
+	if available_slots > 0:
+		convoy_list.add_item("--- %d espacios libres ---" % available_slots)
+		convoy_list.set_item_disabled(convoy_list.item_count - 1, true)
+
+func get_item_display_text(item) -> String:
+	"""Genera texto de display para un item"""
+	if item is Weapon:
+		return "%s (%d/%d)" % [item.weapon_name, item.current_durability, item.max_durability]
+	else:
+		return item.item_name
+
+func update_labels():
+	"""Actualiza las etiquetas de información"""
+	unit_label.text = "%s - Inventario (%d/%d)" % [
+		current_unit.unit_name,
+		current_unit.inventory.size(),
+		MAX_UNIT_INVENTORY
+	]
+	
+	convoy_label.text = "Convoy (%d/%d)" % [
+		convoy_items.size(),
+		MAX_CONVOY_SIZE
+	]
+
+func _on_unit_item_selected(index: int):
+	"""Maneja selección de item del inventario de la unidad"""
+	selected_unit_item_index = index
+	selected_convoy_item_index = -1
+	convoy_list.deselect_all()
+	
+	var item = current_unit.inventory[index]
+	show_item_description(item)
+	
+	# Habilitar botón de mover a convoy si hay espacio
+	to_convoy_button.disabled = convoy_items.size() >= MAX_CONVOY_SIZE
+
+func _on_convoy_item_selected(index: int):
+	"""Maneja selección de item del convoy"""
+	# Verificar que no sea el slot de "espacios libres"
+	if index >= convoy_items.size():
+		return
+	
+	selected_convoy_item_index = index
+	selected_unit_item_index = -1
+	unit_inventory_list.deselect_all()
+	
+	var item = convoy_items[index]
+	show_item_description(item)
+	
+	# Habilitar botón de mover a unidad si hay espacio
+	to_unit_button.disabled = current_unit.inventory.size() >= MAX_UNIT_INVENTORY
+
+func show_item_description(item):
+	"""Muestra descripción detallada del item"""
+	var desc = "[b]%s[/b]\n\n" % (item.weapon_name if item is Weapon else item.item_name)
+	
+	if item is Weapon:
+		desc += "[b]Arma[/b]\n"
+		desc += "Tipo: %s\n" % item.weapon_type
+		desc += "Poder: %d\n" % item.might
+		desc += "Precisión: %d%%\n" % item.accuracy
+		desc += "Crítico: %d\n" % item.critical
+		desc += "Peso: %d\n" % item.weight
+		desc += "Durabilidad: %d/%d\n" % [item.current_durability, item.max_durability]
+		
+		if item.range_max > 1:
+			desc += "Rango: %d-%d\n" % [item.range_min, item.range_max]
+		
+		# Mostrar valor de venta (FE4: mitad del precio de compra)
+		desc += "\nValor: ~%d G\n" % (estimate_weapon_value(item) / 2)
+		
+	else:
+		desc += "[b]Item[/b]\n"
+		desc += "Tipo: %s\n" % item.item_type
+		if item.description:
+			desc += "\n%s\n" % item.description
+	
+	# Mostrar quién puede usar el item
+	desc += "\n[b]Usuarios:[/b]\n"
+	desc += get_compatible_users(item)
+	
+	item_description.text = desc
+
+func estimate_weapon_value(weapon: Weapon) -> int:
+	"""Estima el valor de un arma"""
+	var base_values = {
+		"Iron": 400,
+		"Steel": 700,
+		"Silver": 1500
+	}
+	
+	for tier in base_values.keys():
+		if tier in weapon.weapon_name:
+			return base_values[tier]
+	
+	return 500
+
+func get_compatible_users(item) -> String:
+	"""Retorna lista de unidades que pueden usar el item"""
+	if not item is Weapon:
+		return "Todos"
+	
+	var weapon: Weapon = item
+	var compatible = []
+	
+	# Verificar compatibilidad por tipo de arma
+	# TODO: Implementar sistema de weapon ranks de FE4
+	compatible.append(current_unit.unit_name)  # Por ahora, solo la unidad actual
+	
+	if compatible.is_empty():
+		return "Ninguna unidad"
+	
+	return ", ".join(compatible)
+
+func _on_to_convoy_pressed():
+	"""Mueve item del inventario de la unidad al convoy"""
+	if selected_unit_item_index < 0:
+		return
+	
+	if convoy_items.size() >= MAX_CONVOY_SIZE:
+		show_error("Convoy lleno")
+		return
+	
+	# Mover item
+	var item = current_unit.inventory[selected_unit_item_index]
+	current_unit.inventory.remove_at(selected_unit_item_index)
+	convoy_items.append(item)
+	
+	# Actualizar UI
+	selected_unit_item_index = -1
+	update_displays()
+	
+	# Emitir cambio
+	items_changed.emit(convoy_items)
+
+func _on_to_unit_pressed():
+	"""Mueve item del convoy al inventario de la unidad"""
+	if selected_convoy_item_index < 0:
+		return
+	
+	if current_unit.inventory.size() >= MAX_UNIT_INVENTORY:
+		show_error("Inventario de unidad lleno")
+		return
+	
+	# Verificar si la unidad puede usar el item
+	var item = convoy_items[selected_convoy_item_index]
+	if not can_unit_use_item(current_unit, item):
+		show_error("%s no puede usar este item" % current_unit.unit_name)
+		return
+	
+	# Mover item
+	convoy_items.remove_at(selected_convoy_item_index)
+	current_unit.inventory.append(item)
+	
+	# Actualizar UI
+	selected_convoy_item_index = -1
+	update_displays()
+	
+	# Emitir cambio
+	items_changed.emit(convoy_items)
+
+func can_unit_use_item(unit: Unit, item) -> bool:
+	"""Verifica si una unidad puede usar un item"""
+	if not item is Weapon:
+		return true  # Items consumibles pueden ser usados por todos
+	
+	var weapon: Weapon = item
+	
+	# TODO: Implementar sistema de weapon ranks
+	# Por ahora, verificación simple por tipo de arma y clase
+	
+	var class_weapon_compatibility = {
+		"Lord": ["Sword"],
+		"Knight": ["Lance", "Sword"],
+		"Mage": ["Magic"],
+		"Fighter": ["Axe"],
+		"Cavalier": ["Lance", "Sword"],
+		"Pegasus Knight": ["Lance"]
+	}
+	
+	var compatible_weapons = class_weapon_compatibility.get(unit.unit_class, [])
+	return weapon.weapon_type in compatible_weapons
+
+func show_error(message: String):
+	"""Muestra mensaje de error"""
+	var label = Label.new()
+	label.text = message
+	label.add_theme_color_override("font_color", Color.RED)
+	label.position = Vector2(400, 300)
+	add_child(label)
+	
+	var tween = create_tween()
+	tween.tween_property(label, "modulate:a", 0.0, 2.0)
+	tween.tween_callback(label.queue_free)
+
+func _on_close_pressed():
+	"""Cierra el convoy"""
+	convoy_closed.emit()
+	
+	var tween = create_tween()
+	tween.tween_property(self, "modulate:a", 0.0, 0.3)
+	await tween.finished
+	
+	queue_free()
+
+func _input(event):
+	"""Manejo de input"""
+	if event.is_action_pressed("ui_cancel"):
+		_on_close_pressed()
+
+
+# ============================================
+# QUICK SWAP FEATURE (Intercambio rápido)
+# ============================================
+
+func swap_items_between_units(unit1: Unit, item1_index: int, unit2: Unit, item2_index: int):
+	"""Intercambia items entre dos unidades directamente"""
+	if item1_index < 0 or item1_index >= unit1.inventory.size():
+		return false
+	if item2_index < 0 or item2_index >= unit2.inventory.size():
+		return false
+	
+	var temp = unit1.inventory[item1_index]
+	unit1.inventory[item1_index] = unit2.inventory[item2_index]
+	unit2.inventory[item2_index] = temp
+	
+	return true
+
+func optimize_inventory():
+	"""Auto-organiza el inventario (armas primero, items después)"""
+	var weapons = []
+	var items = []
+	
+	for item in current_unit.inventory:
+		if item is Weapon:
+			weapons.append(item)
+		else:
+			items.append(item)
+	
+	# Ordenar armas por poder
+	weapons.sort_custom(func(a, b): return a.might > b.might)
+	
+	current_unit.inventory = weapons + items
+	update_displays()

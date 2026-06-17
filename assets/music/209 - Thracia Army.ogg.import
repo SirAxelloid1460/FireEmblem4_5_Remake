@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cdakiegy4764g"
+path="res://.godot/imported/209 - Thracia Army.ogg-9cfb4c47b0ca3215f5fc724b15c2332e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/209 - Thracia Army.ogg"
+dest_files=["res://.godot/imported/209 - Thracia Army.ogg-9cfb4c47b0ca3215f5fc724b15c2332e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dhxmgpya024x0"
+path="res://.godot/imported/234 - Isaac Castle Town.ogg-1efb4c25d77469b2cdeb591c563278db.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/234 - Isaac Castle Town.ogg"
+dest_files=["res://.godot/imported/234 - Isaac Castle Town.ogg-1efb4c25d77469b2cdeb591c563278db.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

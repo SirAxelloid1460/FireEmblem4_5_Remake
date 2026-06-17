@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://crramvky048ae"
+path="res://.godot/imported/Awakening - Know Peace.ogg-b26cdbccf85aa0da9085a58c7d0fedec.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Awakening - Know Peace.ogg"
+dest_files=["res://.godot/imported/Awakening - Know Peace.ogg-b26cdbccf85aa0da9085a58c7d0fedec.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

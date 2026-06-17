@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bkgjn3b37lbky"
+path="res://.godot/imported/210 - Miletos Army.ogg-16894b6c878a0f5a59b3541263f92fdc.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/210 - Miletos Army.ogg"
+dest_files=["res://.godot/imported/210 - Miletos Army.ogg-16894b6c878a0f5a59b3541263f92fdc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

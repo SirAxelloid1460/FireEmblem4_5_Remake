@@ -1,0 +1,2022 @@
+[
+ {
+  "nid": "Ambush",
+  "name": "Ambush",
+  "desc": "Always attacks first even on defense if HP is below half.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "condition",
+    "unit.get_hp() < unit.stats['HP']//2"
+   ],
+   [
+    "defense_pre_proc",
+    "Ambush_proc"
+   ]
+  ]
+ },
+ {
+  "nid": "Ambush_proc",
+  "name": "Ambush",
+  "desc": "Always attacks first even on defense if HP is below half.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "vantage",
+    null
+   ],
+   [
+    "hidden",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Astra",
+  "name": "Shooting Star",
+  "desc": "SKL%. to attack up to 5 consecutive times.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "proc_rate",
+    "SKILL"
+   ],
+   [
+    "attack_proc",
+    "Astra_proc"
+   ]
+  ]
+ },
+ {
+  "nid": "Astra_proc",
+  "name": "Shooting Star",
+  "desc": "SKL%. to attack up to 5 consecutive times.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "dynamic_multiattacks",
+    "5"
+   ]
+  ]
+ },
+ {
+  "nid": "Avoid10",
+  "name": "Avoid10",
+  "desc": "",
+  "icon_nid": "Consumable",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "avoid",
+    10
+   ]
+  ]
+ },
+ {
+  "nid": "Awareness",
+  "name": "Awareness",
+  "desc": "Grants immunity to critical hits.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "crit_avoid",
+    1000
+   ]
+  ]
+ },
+ {
+  "nid": "Baldr Scroll",
+  "name": "Baldr Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "HP",
+      5
+     ],
+     [
+      "STR",
+      5
+     ],
+     [
+      "SKL",
+      5
+     ],
+     [
+      "SPD",
+      5
+     ],
+     [
+      "LCK",
+      5
+     ],
+     [
+      "DEF",
+      5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Balmung",
+  "name": "Balmung",
+  "desc": "Holy Sword Skill",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "SKL",
+      10
+     ],
+     [
+      "SPD",
+      20
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Bargain",
+  "name": "Bargain",
+  "desc": "Can buy items at reduced prices.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "change_buy_price",
+    0.49999999999999994
+   ]
+  ]
+ },
+ {
+  "nid": "Barrier Ring",
+  "name": "Barrier Ring",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "RES",
+      5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Barrier Sword",
+  "name": "Barrier Sword",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "RES",
+      7
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Berserk",
+  "name": "Berserk",
+  "desc": "Unit is confused and can no longer tell friend from foe.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "negative",
+    null
+   ],
+   [
+    "time",
+    5
+   ],
+   [
+    "ignore_alliances",
+    null
+   ],
+   [
+    "unselectable",
+    null
+   ],
+   [
+    "change_ai",
+    "Pursue"
+   ],
+   [
+    "display_skill_icon_in_combat",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Blaggi Scroll",
+  "name": "Blaggi Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "STR",
+      -10
+     ],
+     [
+      "MAG",
+      10
+     ],
+     [
+      "LCK",
+      30
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Bragi Sword",
+  "name": "Bragi Sword",
+  "desc": "",
+  "icon_nid": "Sword",
+  "components": [
+   [
+    "dynamic_avoid",
+    "(11-self.get_hp())*10 if self.get_hp() <= 10"
+   ]
+  ]
+ },
+ {
+  "nid": "Canto",
+  "name": "Canto",
+  "desc": "Can move again after certain actions.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "class_skill",
+    null
+   ],
+   [
+    "canto",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Canto_Plus",
+  "name": "Canto+",
+  "desc": "Can move again after certain actions.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "class_skill",
+    null
+   ],
+   [
+    "canto_plus",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Charge",
+  "name": "Charge",
+  "desc": "Fights extra rounds if HP and Attack Speed are higher than enemy's.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Charisma",
+  "name": "Charisma",
+  "desc": "Gives allies in a close area better chances of hitting and avoiding",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "aura",
+    "Charisma_child"
+   ],
+   [
+    "aura_range",
+    3
+   ],
+   [
+    "aura_target",
+    "Ally"
+   ]
+  ]
+ },
+ {
+  "nid": "Charisma_child",
+  "name": "Charisma",
+  "desc": "Gives allies in a close area better chances of hitting and avoiding",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "hit",
+    15
+   ],
+   [
+    "avoid",
+    15
+   ]
+  ]
+ },
+ {
+  "nid": "Circlet",
+  "name": "Circlet",
+  "desc": "Confers both Prayer and Life skill effects",
+  "icon_nid": "Boosters",
+  "components": [
+   [
+    "dynamic_avoid",
+    "(11-self.get_hp())*10 if self.get_hp() <= 10"
+   ],
+   [
+    "regeneration",
+    0.25
+   ]
+  ]
+ },
+ {
+  "nid": "Critical",
+  "name": "Critical",
+  "desc": "Grants the ability to crit more often.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "alternate_crit_accuracy_formula",
+    "CRITSKL"
+   ]
+  ]
+ },
+ {
+  "nid": "Dainn Scroll",
+  "name": "Dainn Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "STR",
+      5
+     ],
+     [
+      "SPD",
+      -10
+     ],
+     [
+      "DEF",
+      30
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Darkness Sword",
+  "name": "Darkness Sword",
+  "desc": "Doubles damage done and halves received",
+  "icon_nid": "Sword",
+  "components": [
+   [
+    "damage_multiplier",
+    2.0000000000000013
+   ],
+   [
+    "resist_multiplier",
+    0.5
+   ]
+  ]
+ },
+ {
+  "nid": "Defender Sword",
+  "name": "Defender Sword",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "DEF",
+      7
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Devil",
+  "name": "Devil",
+  "desc": "",
+  "icon_nid": "Consumable",
+  "components": []
+ },
+ {
+  "nid": "Elite_Skill",
+  "name": "Elite",
+  "desc": "Wildly increases a units potential and growth speed",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "exp_multiplier",
+    2.0
+   ],
+   [
+    "growth_change",
+    [
+     [
+      "HP",
+      10
+     ],
+     [
+      "STR",
+      10
+     ],
+     [
+      "MAG",
+      10
+     ],
+     [
+      "SKL",
+      10
+     ],
+     [
+      "SPD",
+      10
+     ],
+     [
+      "LCK",
+      10
+     ],
+     [
+      "DEF",
+      10
+     ],
+     [
+      "RES",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "FakeCharge",
+  "name": "Charge",
+  "desc": "Fights extra rounds if HP and Attack Speed are higher than enemy's.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Fjalar Scroll",
+  "name": "Fjalar Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "STR",
+      5
+     ],
+     [
+      "MAG",
+      5
+     ],
+     [
+      "SKL",
+      10
+     ],
+     [
+      "SPD",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Flying",
+  "name": "Flying",
+  "desc": "Can fly.",
+  "icon_nid": "Consumable",
+  "components": [
+   [
+    "ignore_terrain",
+    null
+   ],
+   [
+    "class_skill",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Forest",
+  "name": "Forest",
+  "desc": "",
+  "icon_nid": "Consumable",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "avoid",
+    20
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "DEF",
+      1
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Forseti",
+  "name": "Forseti",
+  "desc": "Holy Wind Magic Skill",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "SKL",
+      15
+     ],
+     [
+      "SPD",
+      20
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Fort",
+  "name": "Fort",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "regeneration",
+    0.7500000000000001
+   ],
+   [
+    "avoid",
+    20
+   ],
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "DEF",
+      3
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Gae Bolg",
+  "name": "Gae Bolg",
+  "desc": "Holy Lance Skill",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "STR",
+      10
+     ],
+     [
+      "SKL",
+      10
+     ],
+     [
+      "DEF",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Gate",
+  "name": "Gate",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "regeneration",
+    0.20000000000000007
+   ],
+   [
+    "avoid",
+    20
+   ],
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "DEF",
+      3
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Gungnir",
+  "name": "Gungnir",
+  "desc": "Holy Lance Skill",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "STR",
+      10
+     ],
+     [
+      "SPD",
+      10
+     ],
+     [
+      "DEF",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Heim Scroll",
+  "name": "Heim Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "MAG",
+      30
+     ],
+     [
+      "LCK",
+      10
+     ],
+     [
+      "DEF",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Hel",
+  "name": "Hel",
+  "desc": "Destroys enemies from inside.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "dynamic_damage",
+    "target.get_hp() - unit.stats['MAG'] + target.stats['RES'] - 1"
+   ]
+  ]
+ },
+ {
+  "nid": "Helswath",
+  "name": "Helswath",
+  "desc": "Holy Axe Skill",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "DEF",
+      20
+     ],
+     [
+      "RES",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Hezul Scroll",
+  "name": "Hezul Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "HP",
+      30
+     ],
+     [
+      "STR",
+      10
+     ],
+     [
+      "LCK",
+      -10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Holy Ring",
+  "name": "Holy Ring",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "MAG",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Holy Sword",
+  "name": "Holy Sword",
+  "desc": "Enhances damage done and halves received",
+  "icon_nid": "Sword",
+  "components": [
+   [
+    "damage",
+    20
+   ],
+   [
+    "resist_multiplier",
+    0.5
+   ]
+  ]
+ },
+ {
+  "nid": "Ichival",
+  "name": "Yewfelle",
+  "desc": "Holy Bow Skill",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "STR",
+      10
+     ],
+     [
+      "SPD",
+      15
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Inmortal",
+  "name": "Inmortal",
+  "desc": "Once per chapter, if this unit would die, instead they survive with 1 HP.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "miracle",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Leg Ring",
+  "name": "Leg Ring",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "MOV",
+      30
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Life",
+  "name": "Life",
+  "desc": "Regenerates HP every turn",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "regeneration",
+    0.2
+   ]
+  ]
+ },
+ {
+  "nid": "Locktouch",
+  "name": "Locktouch",
+  "desc": "Open doors and chests without a key.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "locktouch",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Loptyr Sword",
+  "name": "Loptyr Sword",
+  "desc": "",
+  "icon_nid": "Sword",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "MAG",
+      20
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Loptyr_negative",
+  "name": "Loptyr_negative",
+  "desc": "Unholy Dark Magic Effect.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_multiplier",
+    [
+     [
+      "STR",
+      0.5
+     ],
+     [
+      "MAG",
+      0.5
+     ]
+    ]
+   ],
+   [
+    "time",
+    6
+   ],
+   [
+    "negative",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Loptyr_positive",
+  "name": "Loptyr_positive",
+  "desc": "Unholy Dark Magic Skill.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "MAG",
+      5
+     ],
+     [
+      "RES",
+      5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Luckily_Light",
+  "name": "Luckily Light",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "LCK",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Luna",
+  "name": "Moonlight",
+  "desc": "SKL% to ignore enemy's Defense or Resistance.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "proc_rate",
+    "SKILL"
+   ],
+   [
+    "attack_proc",
+    "Luna_proc"
+   ],
+   [
+    "class_skill",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Luna_proc",
+  "name": "Moonlight",
+  "desc": "SKL% to ignore enemy's Defense or Resistance.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "dynamic_damage",
+    "combat_calcs.defense(unit, target, None, item)"
+   ],
+   [
+    "hidden",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Magic Ring",
+  "name": "Magic Ring",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "MAG",
+      5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Magic Up",
+  "name": "Magic Up",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "MAG",
+      7
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Miracle",
+  "name": "Miracle",
+  "desc": "Once per chapter, if this unit would die, instead they survive with 1 HP.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "miracle",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Mjolnir",
+  "name": "Mjolnir",
+  "desc": "Holy Thunder Magic Skill",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "SKL",
+      20
+     ],
+     [
+      "SPD",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Mountain",
+  "name": "Mountain",
+  "desc": "",
+  "icon_nid": "Consumable",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "avoid",
+    30
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "DEF",
+      1
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Mystletainn",
+  "name": "Mystletainn",
+  "desc": "Holy Sword Skill",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "SKL",
+      20
+     ],
+     [
+      "RES",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Naga",
+  "name": "Naga",
+  "desc": "Holy Light Magic Skill. Negates Loptyr effect",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "SKL",
+      20
+     ],
+     [
+      "SPD",
+      20
+     ],
+     [
+      "DEF",
+      20
+     ],
+     [
+      "RES",
+      20
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Neir Scroll",
+  "name": "Neir Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "HP",
+      10
+     ],
+     [
+      "STR",
+      10
+     ],
+     [
+      "SKL",
+      -10
+     ],
+     [
+      "DEF",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Njorun Scroll",
+  "name": "Njörun Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "STR",
+      30
+     ],
+     [
+      "MAG",
+      -10
+     ],
+     [
+      "SPD",
+      -10
+     ],
+     [
+      "LCK",
+      -5
+     ],
+     [
+      "DEF",
+      5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "No Big Shields",
+  "name": "No Big Shields",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "NotHoly",
+  "name": "NotHoly",
+  "desc": "Does not let units go further a certain weapon rank.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "wexp_multiplier",
+    0
+   ],
+   [
+    "hidden",
+    null
+   ],
+   [
+    "condition",
+    "unit.wexp[item_system.weapon_type(unit,unit.get_weapon())] >= 226"
+   ]
+  ]
+ },
+ {
+  "nid": "Od Scroll",
+  "name": "Od Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "SKL",
+      30
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Pavise",
+  "name": "Great Shield",
+  "desc": "Proc. Ignore attacker's damage.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "defense_proc",
+    "Pavise_proc"
+   ],
+   [
+    "proc_rate",
+    "LVL"
+   ]
+  ]
+ },
+ {
+  "nid": "Pavise_proc",
+  "name": "Great Shield",
+  "desc": "Proc. Ignore attacker's damage.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "ignore_damage",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Peak",
+  "name": "Peak",
+  "desc": "",
+  "icon_nid": "Consumable",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "avoid",
+    40
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "DEF",
+      2
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Petrify",
+  "name": "Petrify",
+  "desc": "Unit is petrified. Cannot avoid enemy attacks and suffers -30 dodge.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "time",
+    5
+   ],
+   [
+    "unselectable",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "MOV",
+      -99
+     ]
+    ]
+   ],
+   [
+    "cannot_use_items",
+    null
+   ],
+   [
+    "negative",
+    null
+   ],
+   [
+    "avoid",
+    -1000
+   ],
+   [
+    "crit_avoid",
+    -30
+   ],
+   [
+    "unit_flickering_tint",
+    [
+     65,
+     65,
+     65
+    ]
+   ],
+   [
+    "display_skill_icon_in_combat",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Poisoned",
+  "name": "Poisoned",
+  "desc": "Deals damage each turn while poisoned",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "negative",
+    null
+   ],
+   [
+    "time",
+    6
+   ],
+   [
+    "gba_poison",
+    5
+   ],
+   [
+    "unit_anim",
+    "MapPoison"
+   ],
+   [
+    "unit_flickering_tint",
+    [
+     85,
+     0,
+     127
+    ]
+   ],
+   [
+    "display_skill_icon_in_combat",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Power Ring",
+  "name": "Power Ring",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "STR",
+      5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Prayer",
+  "name": "Prayer",
+  "desc": "Grants great Avoid for 1 turn when HP is under 10.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "dynamic_avoid",
+    "(11-self.get_hp())*10 if self.get_hp() <= 10"
+   ]
+  ]
+ },
+ {
+  "nid": "Recover",
+  "name": "Recover",
+  "desc": "Regenerates all HP every turn.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "regeneration",
+    1.0000000000000002
+   ]
+  ]
+ },
+ {
+  "nid": "Refresh",
+  "name": "Dance",
+  "desc": "Allows adjacent units to move once more this turn.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "class_skill",
+    null
+   ],
+   [
+    "ability",
+    "Refresh"
+   ]
+  ]
+ },
+ {
+  "nid": "Regeneration",
+  "name": "Regeneration",
+  "desc": "Regenerate HP every turn.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "regeneration",
+    0.25000000000000006
+   ]
+  ]
+ },
+ {
+  "nid": "Rescue",
+  "name": "Rescue",
+  "desc": "Unit is weighed down with a traveler.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_multiplier",
+    [
+     [
+      "SKL",
+      0.5
+     ],
+     [
+      "SPD",
+      0.5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Return",
+  "name": "Return",
+  "desc": "",
+  "icon_nid": "Consumable",
+  "components": [
+   [
+    "hidden",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Sety Scroll",
+  "name": "Sety Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "HP",
+      -10
+     ],
+     [
+      "MAG",
+      10
+     ],
+     [
+      "SPD",
+      30
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Shield Ring",
+  "name": "Shield Ring",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "DEF",
+      5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Silence",
+  "name": "Silence",
+  "desc": "Unit cannot use magic.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "negative",
+    null
+   ],
+   [
+    "cannot_use_magic_items",
+    null
+   ],
+   [
+    "time",
+    5
+   ],
+   [
+    "display_skill_icon_in_combat",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Skill Ring",
+  "name": "Skill Ring",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "SKL",
+      5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Sleep",
+  "name": "Sleep",
+  "desc": "Unit is asleep.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "time",
+    5
+   ],
+   [
+    "unselectable",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "MOV",
+      -99
+     ]
+    ]
+   ],
+   [
+    "negative",
+    null
+   ],
+   [
+    "cannot_use_items",
+    null
+   ],
+   [
+    "display_skill_icon_in_combat",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Sol",
+  "name": "Sun",
+  "desc": "SKL%. to recover HP equal to damage dealt to enemy.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "proc_rate",
+    "SKILL"
+   ],
+   [
+    "attack_proc",
+    "Sol_proc"
+   ]
+  ]
+ },
+ {
+  "nid": "Sol_proc",
+  "name": "Sun",
+  "desc": "SKL%. to recover HP equal to damage dealt to enemy.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "lifelink",
+    1.0
+   ],
+   [
+    "hit",
+    100
+   ]
+  ]
+ },
+ {
+  "nid": "Speed Ring",
+  "name": "Speed Ring",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "SPD",
+      5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Steal",
+  "name": "Steal",
+  "desc": "Allows to steal items from units with lower speed",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "class_skill",
+    null
+   ],
+   [
+    "ability",
+    "Steal"
+   ]
+  ]
+ },
+ {
+  "nid": "StealAway",
+  "name": "Steal",
+  "desc": "Allows to steal items from units with lower speed",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "class_skill",
+    null
+   ],
+   [
+    "ability",
+    "StealAway"
+   ]
+  ]
+ },
+ {
+  "nid": "Stunned",
+  "name": "Stunned",
+  "desc": "Unit cannot act.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "time",
+    2
+   ],
+   [
+    "unselectable",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "MOV",
+      -99
+     ]
+    ]
+   ],
+   [
+    "cannot_use_items",
+    null
+   ],
+   [
+    "negative",
+    null
+   ],
+   [
+    "display_skill_icon_in_combat",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Throne",
+  "name": "Throne",
+  "desc": "",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "regeneration",
+    0.20000000000000007
+   ],
+   [
+    "avoid",
+    10
+   ],
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "DEF",
+      3
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Thrud Scroll",
+  "name": "Thrud Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "HP",
+      5
+     ],
+     [
+      "STR",
+      5
+     ],
+     [
+      "MAG",
+      5
+     ],
+     [
+      "SKL",
+      10
+     ],
+     [
+      "LCK",
+      5
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Torch",
+  "name": "Torch",
+  "desc": "Grants increased sight range in fog of war.",
+  "icon_nid": "Consumable",
+  "components": [
+   [
+    "decreasing_sight_range_bonus",
+    4
+   ],
+   [
+    "time",
+    4
+   ]
+  ]
+ },
+ {
+  "nid": "Tyrfing",
+  "name": "Tyrfing",
+  "desc": "Holy Sword Skill",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "SKL",
+      10
+     ],
+     [
+      "SPD",
+      10
+     ],
+     [
+      "RES",
+      20
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Ulir Scroll",
+  "name": "Ulir Scroll",
+  "desc": "Grants growth rate bonuses.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "growth_change",
+    [
+     [
+      "SKL",
+      10
+     ],
+     [
+      "SPD",
+      10
+     ],
+     [
+      "LCK",
+      10
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Valflame",
+  "name": "Valflame",
+  "desc": "Holy Flame Magic Skill",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "stat_change",
+    [
+     [
+      "MAG",
+      10
+     ],
+     [
+      "DEF",
+      15
+     ],
+     [
+      "RES",
+      15
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "nid": "Valkyrie",
+  "name": "Valkyrie",
+  "desc": "Resurrects a fallen ally",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Wrath",
+  "name": "Wrath",
+  "desc": "User will always be able to perform critical attacks when their HP is below 50%",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "condition",
+    "unit.get_hp() <= unit.get_max_hp() / 3"
+   ],
+   [
+    "alternate_accuracy_formula",
+    "HIT_WRATH"
+   ],
+   [
+    "alternate_crit_accuracy_formula",
+    "WRATH"
+   ]
+  ]
+ },
+ {
+  "nid": "ChangeSniper",
+  "name": "Change to Sniper",
+  "desc": "Allows Eyvel to change her class to Sniper",
+  "icon_nid": "Consumable",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "ability",
+    "ChangeSniper"
+   ],
+   [
+    "class_skill",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "ChangeSwordmaster",
+  "name": "Change to Swordmaster",
+  "desc": "Allows Eyvel to change her class to Swordmaster",
+  "icon_nid": "Consumable",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "ability",
+    "ChangeSwordmaster"
+   ],
+   [
+    "class_skill",
+    null
+   ]
+  ]
+ }
+]

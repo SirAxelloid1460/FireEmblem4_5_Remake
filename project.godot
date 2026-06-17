@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="FE4 FE5 Remake"
+config/description="Remake fan híbrido de Fire Emblem 4 + 5 (port desde LT-maker)."
+run/main_scene="res://Scenes/intro.tscn"
+config/features=PackedStringArray("4.6", "Forward Plus")
+
+[autoload]
+
+AssetLoader="*res://Scripts/AssetLoader.gd"
+GameMode="*res://Scripts/GameMode.gd"
+Convoy="*res://Scripts/ConvoySystem.gd"
+GameDB="*res://Scripts/GameDatabase.gd"
+GameManager="*res://Scripts/GameManager.gd"
+FadeCanvas="*res://Scripts/FadeCanvas.gd"
+
+[debug]
+
+gdscript/warnings/treat_warnings_as_errors=false
+
+[display]
+
+window/size/viewport_width=1344
+window/size/viewport_height=896
+window/stretch/mode="canvas_items"
+
+[gui]
+
+theme/custom_font="res://assets/fonts/fire-emblem-8-text.ttf"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://assets/languages/Menus/Translations FE45 - MainMenu.en.translation", "res://assets/languages/Menus/Translations FE45 - MainMenu.es.translation", "res://assets/languages/Menus/Translations FE45 - MainMenu.fr.translation", "res://assets/languages/Menus/Translations FE45 - MainMenu.de.translation", "res://assets/languages/Menus/Translations FE45 - MainMenu.ja.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.es.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.fr.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.de.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.ja.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.es.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.fr.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.de.translation", "res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.ja.translation")

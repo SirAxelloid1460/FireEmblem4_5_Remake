@@ -1,0 +1,76 @@
+,en,es,de,ja,fr
+ENGLISH,English,,,,
+SPANISH,Español,,,,
+GERMAN,Deutsch,,,,
+JAPANESE,日本語,,,,
+FRENCH,Français,,,,
+,,,,,
+NEWGAME,New Game,Nueva Partida,Neues Spiel,新しいゲーム,Nouveau jeu
+CONTINUE,Continue,Continuar,Fortsetzen,続く,Continuer
+LOAD,Load Game,Cargar Partida,Spiel Laden,ゲームをロードする,Charger jeu
+RESTART,Restart Level,Reiniciar Nivel,Level Neustarten,"リスタートレベル",Niveau de redémarrage
+EXTRAS,Extras,Extras,Extras,"エクストラ",Extras
+,,,,,
+OPTIONS,Options,Opciones,Optionen,"オプション",Options
+CREDITS,Credits,Creditos,Credits,"クレジット",Credits
+SOUNDROOM,Sound Room,Sala de Sonido,Sound Room,"サウンドルーム",Salle de son
+,,,,,
+NORMAL,Normal,Normal,Normal,ノーマル,Normal
+ELITE,Elite,Elite,Profi,エリート,Elite
+NORMALDESC,GBA-like Rebalanced Experience,Experiencia reequilibrada tipo GBA,"GBA-ähnliche, neu ausbalancierte Erfahrung",GBAのようなバランス感覚,Expérience rééquilibrée de type GBA
+ELITEDESC,Harder Enemies since the beginning with an Original SNES-like scaling ,Enemigos más duros desde el principio con un escalado original tipo SNES ,Härtere Feinde von Anfang an mit einer Original SNES-ähnlichen Skalierung ,オリジナルのSNESのようなスケーリングで、当初よりハードな敵が登場 ,Harder Enemies depuis le début avec une échelle originale semblable à celle de la SNES 
+,,,,,
+,,,,,
+TTSMODE,Text To Speech Dialogue,Dialogos Text-To-Speech,Text-zu-Sprache-Dialog,,
+TTSDESC,Text-To-Speech On/Off,On/Off Text to Speech,Text-zu-Sprache Ein/Aus,,
+SCREENSIZE,Resolution,Resolución,Auflösung,,
+SCREENSIZEDESC,Change Game Resolution,Cambiar Resolucion del Juego,Spielauflösung ändern,,
+QSET,Graphic Quality Set,Set de Calidad Gráfica,Grafisches Qualitätsset,,
+QSETDESC,Change Graphic Quality Set,Cambiar Set de Calidad Gráfica,Grafisches Qualitätsset ändern,,
+QSETOPTION1,GBA,GBA,GBA,,GBA
+QSETOPTION2,Artwork Based,Basada en Arte,Kunstwerk basiert,,Basé sur d'art
+QSETOPTION3,HD,HD,HD,,HD
+ANIMATION,Animations,Animaciones,Animationen,,
+ANIMATIONDESC,Show combat animations,Mostras animaciones de batalla,Kampfanimationen anzeigen,,
+ANIMATIONOPTION1,Always,Siempre,Immer,,
+ANIMATIONOPTION2,Your Turn,Tu Turno,Dein Zug,,
+ANIMATIONOPTION3,Combat Only,Solo en Combate,Nur im Kampf,,
+ANIMATIONOPTION4,Never,Nunca,Nie,,
+BATTLEBG,Battle Background,Fondo de Batalla,Kampfhintergrund,,
+BATTLEBGDESC,Battle Background On/Off,On/Off Fondo de Batalla,Kampfhintergrund Ein/Aus,,
+UNITSPEED,Unit Speed,Velocidad Unidad,Entitätsgeschwindigkeit,,
+UNITSPEEDDESC,Change unit movement speed,Cambiar velocidad de movimiento,Entitätsgeschwindigkeit ändern,,
+TEXTSPEED,Text Speed,Velocidad Texto,Textgeschwindigkeit,,
+TEXTSPEEDDESC,Change Text Speed,Cambiar Velocidad del Texto,Textgeschwindigkeit ändern,,
+TERRAININFO,Terrain Info,Info del Terreno,Gelände-Info,,
+TERRAININFODESC,Terrain Info On/Off,On/Off Info del Terreno,Gelände-Info Ein/Aus,,
+GOALINFO,Goal Info,Info del Objetivo,Ziel-Info,,
+GOALINFODESC,Goal Info On/Off,On/Off Info del Objetivo,Ziel-Info Ein/Aus,,
+AUTOCURSOR,Autocursor,Auto-cursor,Auto-Cursor,,
+AUTOCURSORDESC,Cursor start on Main Hero On/Off,On/Off El Cursor empieza en el Heroe,Cursor start beim Haupthelden Ein/Aus,,
+HPBARTEAM,HP Map-Bars (Team),Barras de HP (Equipo),LP-Kartenleisten (Team),,
+HPBARTEAMDESC,Change which Team will display HP bars,Cambia que Equipo mostrará Barras de HP,"Ändert, welches Team LP-Kartenleisten anzeigt",,
+HPBARTEAMOPTION0,None,Ninguno,Keine,,
+HPBARTEAMOPTION1,All,Todos,Alle,,
+HPBARTEAMOPTION2,Player,Jugador,Spieler,,
+HPBARTEAMOPTION3,Ally,Aliado,Verbündete,,
+HPBARTEAMOPTION4,Enemy,Enemigo,Feinde,,
+HPBARKIND,HP Map-Bars (Unit),Barras de HP (Unidad),LP-Kartenleisten (Entität),,
+HPBARKINDDESC,Change which Units will display HP bars,Cambia que Unidades mostrarán Barras de HP,"Ändert, welche Entitäten LP-Kartenleisten anzeigen",,
+HPBARKINDOPTION1,Wounded,Heridas,Verwundete,,
+HPBARKINDOPTION2,All,Todas,Alle,,
+MUSICLEVEL,Music Volume,Volumen Musica,Musiklautstärke,,
+MUSICLEVELDESC,Change music volume,Cambia el Volumen de la Musica,Musiklautstärke ändern,,
+SOUNDLEVEL,SFX Volume,Volumen Efectos,SFX-Lautstärke,,
+SOUNDLEVELDESC,Change SFX volume,Cambia el Volumen de los Efectos,SFX-Lautstärke ändern,,
+TALKSOUND,Talk Sound,Sonido al Hablar,Sprechton,,
+TALKSOUNDDESC,Talk Sound On/Off,On/Off Sonido al Hablar,Sprechton Ein/Aus,,
+GRIDOPAC,Grid Opacity,Opacidad del Grid,Grid-Opazität,,
+GRIDOPACDESC,Changes Grid's opacity,Cambia la opacidad del Grid,Grid-Opazität ändern,,
+AUTOEND,Autoend Turn,Auto-Acabar Turno,Auto-Zugsende,,
+AUTOENDDESC,Ends turn when no moves are available,Acaba el turno cuando no hay mas que mover,"Zug-Beendet, wenn keine Züge verfügbar sind",,
+CONFIRMEND,Confirm End,Confirmar Final,Zugsende Bestätigen,,
+CONFIRMENDDESC,Ask again before manually ending turn,Confirmar al acabar el turno manualmente,"Zugs ""manuell beendet"" bestätigen",,
+HINTS,Tutorials,Tutoriales,Tutorials,,
+HINTSDESC,Show tutorials,Mostrar tutoriales,Tutorials anzeigen,,
+PLSRESET,"PLEASE, RESTART THE GAME TO APPLY THE RESOLUTION CHANGES PROPERLY","POR FAVOR, REINICIA EL JUEGO PARA APLICAR CORRECTAMENTE LOS CAMBIOS DE RESOLUCIÓN","BITTE STARTEN SIE DAS SPIEL NEU, DAMIT DIE AUFLÖSUNGSÄNDERUNGEN KORREKT ÜBERNOMMEN WERDEN.",解像度の変更を正しく適用するには、ゲームを再起動してください。,VEUILLEZ REDÉMARRER LE JEU POUR QUE LES CHANGEMENTS DE RÉSOLUTION SOIENT APPLIQUÉS CORRECTEMENT

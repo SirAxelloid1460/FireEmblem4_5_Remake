@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cqib0jmpsdw0x"
+path="res://.godot/imported/Experience Gain.ogg-919a97a5f2487e0b0c3cd493bf3352c3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Experience Gain.ogg"
+dest_files=["res://.godot/imported/Experience Gain.ogg-919a97a5f2487e0b0c3cd493bf3352c3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

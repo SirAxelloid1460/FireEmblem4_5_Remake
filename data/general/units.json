@@ -1,0 +1,3205 @@
+[
+ {
+  "nid": "Aideen",
+  "name": "Aideen",
+  "desc": "Sigurd's childhood friend and one of the two daughters of Duke Ring of Jungby.",
+  "klass": "Priest",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 28,
+   "STR": 0,
+   "MAG": 13,
+   "SKL": 8,
+   "SPD": 9,
+   "LCK": 11,
+   "DEF": 1,
+   "RES": 10,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 70,
+   "STR": 20,
+   "MAG": 30,
+   "SKL": 20,
+   "SPD": 30,
+   "LCK": 60,
+   "DEF": 20,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Mend"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Staff": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "AideenPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Alec",
+  "name": "Alec",
+  "desc": "Knight of Chalphy with a personality playful and teasing but, yet, loyal.",
+  "klass": "Cavalier",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 32,
+   "STR": 9,
+   "MAG": 0,
+   "SKL": 7,
+   "SPD": 10,
+   "LCK": 4,
+   "DEF": 7,
+   "RES": 0,
+   "CON": 10,
+   "MOV": 80
+  },
+  "growths": {
+   "HP": 70,
+   "STR": 30,
+   "MAG": 5,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 30,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Sword"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 126,
+   "Lance": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "AlecPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "AlvaFE4",
+  "name": "Alva",
+  "desc": "Elite knight of Nordion and younger triplet brother of Eve and Eva.",
+  "klass": "APaladin",
+  "level": 8,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 8,
+   "MAG": 6,
+   "SKL": 10,
+   "SPD": 10,
+   "LCK": 0,
+   "DEF": 14,
+   "RES": 6,
+   "CON": 11,
+   "MOV": 90
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 30,
+   "SPD": 40,
+   "LCK": 10,
+   "DEF": 50,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Sword",
+   "Javelin"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 126,
+   "Lance": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "AlvaFE4Portrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Arden",
+  "name": "Arden",
+  "desc": "The strongest, humblest and most reliable foot knight of Sigurd of Chalphy.",
+  "klass": "Armour",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 36,
+   "STR": 13,
+   "MAG": 0,
+   "SKL": 5,
+   "SPD": 4,
+   "LCK": 3,
+   "DEF": 13,
+   "RES": 0,
+   "CON": 10,
+   "MOV": 50
+  },
+  "growths": {
+   "HP": 90,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 10,
+   "SPD": 20,
+   "LCK": 10,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Sword"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Ambush"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "ArdenPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Arvis",
+  "name": "Arvis",
+  "desc": "Velthomer's Duke and Azel's elder half-brother",
+  "klass": "Sage",
+  "level": 25,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 15,
+   "MAG": 30,
+   "SKL": 27,
+   "SPD": 30,
+   "LCK": 0,
+   "DEF": 8,
+   "RES": 22,
+   "CON": 6,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Valflame",
+   "Recover Ring"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ]
+  ],
+  "wexp_gain": {
+   "Anima": 1023
+  },
+  "holy_blood": {
+   "Fjalar": "Major"
+  },
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "ArvisPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Ayra",
+  "name": "Ayra",
+  "desc": "The Isaachian princess master of the sword who fights for her homeland.",
+  "klass": "Swordfighter",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 32,
+   "STR": 11,
+   "MAG": 0,
+   "SKL": 16,
+   "SPD": 17,
+   "LCK": 3,
+   "DEF": 7,
+   "RES": 1,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 70,
+   "STR": 30,
+   "MAG": 5,
+   "SKL": 60,
+   "SPD": 30,
+   "LCK": 20,
+   "DEF": 20,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Blade"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ],
+   [
+    1,
+    "Astra"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "AyraPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Azel",
+  "name": "Azel",
+  "desc": "Nobleman of House Velthomer of Grannvale and the younger half-brother of Duke Arvis",
+  "klass": "Mage",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 30,
+   "STR": 0,
+   "MAG": 16,
+   "SKL": 7,
+   "SPD": 9,
+   "LCK": 2,
+   "DEF": 2,
+   "RES": 6,
+   "CON": 5,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 5,
+   "MAG": 50,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 10,
+   "RES": 45,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Fire"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Anima": 1
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "AzelPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Beowulf",
+  "name": "Beowulf",
+  "desc": "A mercenary from Conote alongside Voltz, his friend, and partner.",
+  "klass": "CavalierS",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 38,
+   "STR": 14,
+   "MAG": 0,
+   "SKL": 11,
+   "SPD": 11,
+   "LCK": 3,
+   "DEF": 10,
+   "RES": 0,
+   "CON": 10,
+   "MOV": 80
+  },
+  "growths": {
+   "HP": 80,
+   "STR": 40,
+   "MAG": 0,
+   "SKL": 40,
+   "SPD": 30,
+   "LCK": 20,
+   "DEF": 20,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Sword"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "BeowulfPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Boldor",
+  "name": "Boldor",
+  "desc": "Lord of Heirhein Castle, and the father of Elliot.",
+  "klass": "General",
+  "level": 12,
+  "gender": "M",
+  "bases": {
+   "HP": 64,
+   "STR": 14,
+   "MAG": 1,
+   "SKL": 10,
+   "SPD": 9,
+   "LCK": 0,
+   "DEF": 16,
+   "RES": 4,
+   "CON": 15,
+   "MOV": 50
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Bow",
+   "Steel Blade",
+   "Barrier Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 226,
+   "Lance": 226,
+   "Axe": 126,
+   "Bow": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "BoldorPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Brigid",
+  "name": "Brigid",
+  "desc": "Elder daughter of Duke Ring of Yngvi, twin sister of Edain, and half-sister of Andrei.",
+  "klass": "Sniper",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 40,
+   "STR": 20,
+   "MAG": 0,
+   "SKL": 22,
+   "SPD": 21,
+   "LCK": 7,
+   "DEF": 14,
+   "RES": 9,
+   "CON": 6,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 60,
+   "STR": 10,
+   "MAG": 20,
+   "SKL": 60,
+   "SPD": 40,
+   "LCK": 50,
+   "DEF": 10,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Bow"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Bow": 1023
+  },
+  "holy_blood": {
+   "Ulir": "Major"
+  },
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "BrigidPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Chagall",
+  "name": "Chagall",
+  "desc": "Arrogant and foolish king of Agustria and his father's murder suspect.",
+  "klass": "Baron",
+  "level": 15,
+  "gender": "M",
+  "bases": {
+   "HP": 70,
+   "STR": 19,
+   "MAG": 9,
+   "SKL": 14,
+   "SPD": 14,
+   "LCK": 0,
+   "DEF": 19,
+   "RES": 9,
+   "CON": 15,
+   "MOV": 50
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Silver Blade",
+   "Bolganone"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 226,
+   "Lance": 226,
+   "Axe": 226,
+   "Bow": 226,
+   "Staff": 226,
+   "Anima": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "Chagall2Portrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Claude",
+  "name": "Claude",
+  "desc": "Duke of Edda Castle and priest of Bragi Church, of whom he's direct descendant.",
+  "klass": "HighPriest",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 34,
+   "STR": 0,
+   "MAG": 21,
+   "SKL": 14,
+   "SPD": 15,
+   "LCK": 9,
+   "DEF": 5,
+   "RES": 20,
+   "CON": 11,
+   "MOV": 90
+  },
+  "growths": {
+   "HP": 70,
+   "STR": 10,
+   "MAG": 40,
+   "SKL": 20,
+   "SPD": 30,
+   "LCK": 50,
+   "DEF": 20,
+   "RES": 50,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Valkyrie"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Staff": 1023,
+   "Anima": 51
+  },
+  "holy_blood": {
+   "Bragi": "Major"
+  },
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "ClaudePortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Clement",
+  "name": "Clement",
+  "desc": "Lord of Mackily and the least ambitious lord of Agustria.",
+  "klass": "Bishop",
+  "level": 11,
+  "gender": "M",
+  "bases": {
+   "HP": 53,
+   "STR": 1,
+   "MAG": 15,
+   "SKL": 13,
+   "SPD": 10,
+   "LCK": 0,
+   "DEF": 4,
+   "RES": 13,
+   "CON": 6,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Sleep",
+   "Thunder"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Staff": 226,
+   "Anima": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "ClementPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Deirdre",
+  "name": "Deirdre",
+  "desc": "Living descendant of Saint Maera and daughter of Prince Kurth of Grannvale",
+  "klass": "LightPriest",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 26,
+   "STR": 0,
+   "MAG": 14,
+   "SKL": 9,
+   "SPD": 12,
+   "LCK": 6,
+   "DEF": 3,
+   "RES": 16,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 70,
+   "STR": 10,
+   "MAG": 70,
+   "SKL": 20,
+   "SPD": 10,
+   "LCK": 10,
+   "DEF": 10,
+   "RES": 70,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Silence",
+   "Aura",
+   "Circlet",
+   "Vulnerary"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ]
+  ],
+  "wexp_gain": {
+   "Staff": 126,
+   "Light": 1023
+  },
+  "holy_blood": {
+   "Heim": "Major"
+  },
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "DeirdrePortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Dew",
+  "name": "Dew",
+  "desc": "A little boy assigned to guard Aideen when they were realesed from Marpha.",
+  "klass": "AThief",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 28,
+   "STR": 3,
+   "MAG": 0,
+   "SKL": 6,
+   "SPD": 15,
+   "LCK": 12,
+   "DEF": 1,
+   "RES": 0,
+   "CON": 6,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 50,
+   "STR": 40,
+   "MAG": 10,
+   "SKL": 40,
+   "SPD": 40,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Sword",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "DewPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "DiMaggio",
+  "name": "DiMaggio",
+  "desc": "Bandit Cheif under Gandolf orders.",
+  "klass": "Fighter",
+  "level": 10,
+  "gender": "M",
+  "bases": {
+   "HP": 45,
+   "STR": 12,
+   "MAG": 0,
+   "SKL": 6,
+   "SPD": 13,
+   "LCK": 0,
+   "DEF": 11,
+   "RES": 1,
+   "CON": 8,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Axe"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Axe": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "DiMaggioPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Eldigan",
+  "name": "Eldigan",
+  "desc": "Known as Lionheart, the King Lion of Agustria, he is the bravest paladin in Agustria.",
+  "klass": "APaladin",
+  "level": 23,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 22,
+   "MAG": 7,
+   "SKL": 18,
+   "SPD": 20,
+   "LCK": 7,
+   "DEF": 24,
+   "RES": 20,
+   "CON": 11,
+   "MOV": 90
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Mystletainn"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 1023,
+   "Lance": 226
+  },
+  "holy_blood": {
+   "Hezul": "Major"
+  },
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "EldiganEnemyPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Elliot",
+  "name": "Elliot",
+  "desc": "A young upstart noble of Agustria, who fights for Lachesis's affections.",
+  "klass": "DukeKnight",
+  "level": 10,
+  "gender": "M",
+  "bases": {
+   "HP": 55,
+   "STR": 16,
+   "MAG": 1,
+   "SKL": 11,
+   "SPD": 11,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 4,
+   "CON": 8,
+   "MOV": 90
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Silver Lance"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Lance": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "ElliotPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Erinys",
+  "name": "Erinys",
+  "desc": "One of the Four Heavenly Knights of Silesse and the younger sister of Mahnya.",
+  "klass": "PegasusKnight",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 32,
+   "STR": 11,
+   "MAG": 1,
+   "SKL": 12,
+   "SPD": 18,
+   "LCK": 7,
+   "DEF": 9,
+   "RES": 9,
+   "CON": 11,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 50,
+   "STR": 30,
+   "MAG": 0,
+   "SKL": 20,
+   "SPD": 30,
+   "LCK": 20,
+   "DEF": 30,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Slim Lance"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 126,
+   "Lance": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "ErinysPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Ethlyn",
+  "name": "Ethlyn",
+  "desc": "Sigurd's little sister and wife of Quan of Lenster.",
+  "klass": "Troubadour",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 28,
+   "STR": 9,
+   "MAG": 8,
+   "SKL": 11,
+   "SPD": 12,
+   "LCK": 8,
+   "DEF": 4,
+   "RES": 6,
+   "CON": 5,
+   "MOV": 80
+  },
+  "growths": {
+   "HP": 60,
+   "STR": 15,
+   "MAG": 20,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 20,
+   "DEF": 20,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Slim Sword",
+   "Heal"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 226,
+   "Staff": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "EthlynPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Eva",
+  "name": "Eva",
+  "desc": "Elite knight of Nordion and the middle triplet brother of Eve and Alva.",
+  "klass": "APaladin",
+  "level": 8,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 8,
+   "MAG": 6,
+   "SKL": 10,
+   "SPD": 10,
+   "LCK": 0,
+   "DEF": 14,
+   "RES": 6,
+   "CON": 11,
+   "MOV": 90
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 30,
+   "SPD": 40,
+   "LCK": 10,
+   "DEF": 50,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Sword",
+   "Javelin"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 126,
+   "Lance": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "EvaPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Eve",
+  "name": "Eve",
+  "desc": "Elite knight of Nordion and the older triplet brother of Eva and Alva.",
+  "klass": "APaladin",
+  "level": 8,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 8,
+   "MAG": 6,
+   "SKL": 10,
+   "SPD": 10,
+   "LCK": 0,
+   "DEF": 14,
+   "RES": 6,
+   "CON": 11,
+   "MOV": 90
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 30,
+   "SPD": 40,
+   "LCK": 10,
+   "DEF": 50,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Sword",
+   "Javelin"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 126,
+   "Lance": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "EvePortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "FakeHolyn",
+  "name": "Cú Chulainn",
+  "desc": "The son of the Lord of Sophara Castle in Isaach and a distant relative of Ayra.",
+  "klass": "PreHero",
+  "level": 12,
+  "gender": "M",
+  "bases": {
+   "HP": 40,
+   "STR": 14,
+   "MAG": 0,
+   "SKL": 17,
+   "SPD": 17,
+   "LCK": 1,
+   "DEF": 11,
+   "RES": 1,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 70,
+   "STR": 30,
+   "MAG": 5,
+   "SKL": 60,
+   "SPD": 30,
+   "LCK": 20,
+   "DEF": 20,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Blade"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "FakeCharge"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "FakeHolynPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Finn",
+  "name": "Finn",
+  "desc": "A knight of Lenster, undyingly loyal to Quan and his family.",
+  "klass": "CavalierL",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 32,
+   "STR": 9,
+   "MAG": 0,
+   "SKL": 8,
+   "SPD": 10,
+   "LCK": 8,
+   "DEF": 7,
+   "RES": 0,
+   "CON": 10,
+   "MOV": 80
+  },
+  "growths": {
+   "HP": 70,
+   "STR": 30,
+   "MAG": 5,
+   "SKL": 40,
+   "SPD": 30,
+   "LCK": 50,
+   "DEF": 30,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Lance"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Miracle"
+   ]
+  ],
+  "wexp_gain": {
+   "Lance": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "Finn1Portrait",
+  "games": [
+   "FE4",
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Gandolf",
+  "name": "Gandolf",
+  "desc": "Elder son of King Batur of Verdane, and Kinbois and Jamke's brother.",
+  "klass": "Warrior",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 17,
+   "MAG": 0,
+   "SKL": 11,
+   "SPD": 13,
+   "LCK": 0,
+   "DEF": 13,
+   "RES": 5,
+   "CON": 13,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Hand Axe",
+   "Skill Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Axe": 226,
+   "Bow": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "GandolfPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "GenoaGuard",
+  "name": "Commander",
+  "desc": ".",
+  "klass": "Warrior",
+  "level": 10,
+  "gender": "M",
+  "bases": {
+   "HP": 45,
+   "STR": 12,
+   "MAG": 0,
+   "SKL": 8,
+   "SPD": 10,
+   "LCK": 0,
+   "DEF": 7,
+   "RES": 2,
+   "CON": 13,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 30,
+   "SPD": 40,
+   "LCK": 10,
+   "DEF": 50,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Hand Axe"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Axe": 226,
+   "Bow": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "Fighter1",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Gerrard",
+  "name": "Gerrard",
+  "desc": "Bandit Cheif under Gandolf orders.",
+  "klass": "Fighter",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 55,
+   "STR": 14,
+   "MAG": 0,
+   "SKL": 9,
+   "SPD": 16,
+   "LCK": 0,
+   "DEF": 14,
+   "RES": 2,
+   "CON": 8,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Axe",
+   "Hand Axe"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Axe": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "GerrardPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Holyn",
+  "name": "Holyn",
+  "desc": "The son of the Lord of Sophara Castle in Isaach and a distant relative of Ayra.",
+  "klass": "PreHero",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 40,
+   "STR": 14,
+   "MAG": 0,
+   "SKL": 17,
+   "SPD": 17,
+   "LCK": 4,
+   "DEF": 11,
+   "RES": 1,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 70,
+   "STR": 30,
+   "MAG": 5,
+   "SKL": 60,
+   "SPD": 30,
+   "LCK": 20,
+   "DEF": 20,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Blade"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Luna"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "HolynPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Jamke",
+  "name": "Jamke",
+  "desc": "Youngest Prince of Verdane, son of King Batur, and brother of Princes Kinbois and Gandolf.",
+  "klass": "Archer",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 36,
+   "STR": 11,
+   "MAG": 0,
+   "SKL": 14,
+   "SPD": 14,
+   "LCK": 4,
+   "DEF": 9,
+   "RES": 0,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 90,
+   "STR": 50,
+   "MAG": 0,
+   "SKL": 10,
+   "SPD": 35,
+   "LCK": 40,
+   "DEF": 30,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Killer Bow"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {
+   "Bow": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "JamkePortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Kinbois",
+  "name": "Kinbois",
+  "desc": "Second son of King Batur of Verdane, and Gandolf and Jamke's brother.",
+  "klass": "Warrior",
+  "level": 10,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 14,
+   "MAG": 0,
+   "SKL": 8,
+   "SPD": 13,
+   "LCK": 0,
+   "DEF": 9,
+   "RES": 4,
+   "CON": 13,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Silver Axe",
+   "Hand Axe"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Axe": 226,
+   "Bow": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "KinboisPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Lachesis",
+  "name": "Lachesis",
+  "desc": "The princess of Nordion and the younger half-sister of Eldigan.",
+  "klass": "Princess",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 26,
+   "STR": 9,
+   "MAG": 10,
+   "SKL": 9,
+   "SPD": 13,
+   "LCK": 5,
+   "DEF": 7,
+   "RES": 9,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 60,
+   "STR": 50,
+   "MAG": 15,
+   "SKL": 10,
+   "SPD": 20,
+   "LCK": 40,
+   "DEF": 20,
+   "RES": 15,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Prayer Sword",
+   "Heal"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charisma"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 226,
+   "Staff": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "LachesisPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Lewyn",
+  "name": "Lewyn",
+  "desc": "Son of Queen Lahna of Silesse and a direct descendant of Crusader Sety.",
+  "klass": "Bard",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 34,
+   "STR": 1,
+   "MAG": 14,
+   "SKL": 12,
+   "SPD": 18,
+   "LCK": 7,
+   "DEF": 7,
+   "RES": 9,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 90,
+   "STR": 10,
+   "MAG": 30,
+   "SKL": 40,
+   "SPD": 90,
+   "LCK": 20,
+   "DEF": 10,
+   "RES": 20,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Elwind"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {
+   "Anima": 1023
+  },
+  "holy_blood": {
+   "Sety": "Major"
+  },
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "Lewyn1Portrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Lex",
+  "name": "Lex",
+  "desc": "The youngest son of Langbalt, Duke of Dozel, heir of Neir and a hot-headed knight.",
+  "klass": "CavalierA",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 33,
+   "STR": 10,
+   "MAG": 0,
+   "SKL": 10,
+   "SPD": 11,
+   "LCK": 8,
+   "DEF": 9,
+   "RES": 0,
+   "CON": 10,
+   "MOV": 80
+  },
+  "growths": {
+   "HP": 90,
+   "STR": 40,
+   "MAG": 5,
+   "SKL": 20,
+   "SPD": 20,
+   "LCK": 20,
+   "DEF": 50,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Axe"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Ambush"
+   ],
+   [
+    1,
+    "Elite_Skill"
+   ]
+  ],
+  "wexp_gain": {
+   "Axe": 1023
+  },
+  "holy_blood": {
+   "Neir": "Major"
+  },
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "LexPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Macbeth",
+  "name": "Macbeth",
+  "desc": "Lord of Anphony's TownCastle.",
+  "klass": "General",
+  "level": 14,
+  "gender": "M",
+  "bases": {
+   "HP": 62,
+   "STR": 16,
+   "MAG": 2,
+   "SKL": 12,
+   "SPD": 11,
+   "LCK": 0,
+   "DEF": 18,
+   "RES": 5,
+   "CON": 15,
+   "MOV": 50
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Lance",
+   "Javelin",
+   "Shield Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 226,
+   "Lance": 226,
+   "Axe": 126,
+   "Bow": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "MacbethPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Midir",
+  "name": "Midir",
+  "desc": "Knight in the service of Grannvale's House Jungby, used to with bow fighting.",
+  "klass": "CavalierB",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 32,
+   "STR": 9,
+   "MAG": 0,
+   "SKL": 7,
+   "SPD": 9,
+   "LCK": 3,
+   "DEF": 7,
+   "RES": 0,
+   "CON": 10,
+   "MOV": 80
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 30,
+   "SPD": 40,
+   "LCK": 10,
+   "DEF": 50,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Bow"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {
+   "Bow": 1
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "MidirPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Noish",
+  "name": "Noish",
+  "desc": "Dutiful knight of Chalphy. He is calm and serious, with a strong sense of honor.",
+  "klass": "Cavalier",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 33,
+   "STR": 11,
+   "MAG": 0,
+   "SKL": 9,
+   "SPD": 8,
+   "LCK": 4,
+   "DEF": 8,
+   "RES": 0,
+   "CON": 10,
+   "MOV": 80
+  },
+  "growths": {
+   "HP": 80,
+   "STR": 40,
+   "MAG": 5,
+   "SKL": 40,
+   "SPD": 20,
+   "LCK": 20,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Sword"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ],
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 126,
+   "Lance": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "NoishPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "NordionGuard",
+  "name": "Cross Knight",
+  "desc": "Elite Cavaliers and Paladins that make up the main body of the Nordion army.",
+  "klass": "Cavalier",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 13,
+   "MAG": 2,
+   "SKL": 12,
+   "SPD": 12,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 2,
+   "CON": 10,
+   "MOV": 80
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 30,
+   "SPD": 40,
+   "LCK": 10,
+   "DEF": 50,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Sword",
+   "Javelin"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 126,
+   "Lance": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "NordionGuardPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Phillip",
+  "name": "Phillip",
+  "desc": "One of the retainers of Lord Boldor of Heirhein Castle.",
+  "klass": "General",
+  "level": 8,
+  "gender": "M",
+  "bases": {
+   "HP": 58,
+   "STR": 15,
+   "MAG": 1,
+   "SKL": 11,
+   "SPD": 10,
+   "LCK": 0,
+   "DEF": 17,
+   "RES": 4,
+   "CON": 15,
+   "MOV": 50
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Silver Lance"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 226,
+   "Lance": 226,
+   "Axe": 126,
+   "Bow": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "PhillipPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Quan",
+  "name": "Quan",
+  "desc": "Lenster's Prince and Gáe Bolg's inheritor. Husband of Ethlyn and old friend Sigurd.",
+  "klass": "DukeKnight",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 34,
+   "STR": 16,
+   "MAG": 0,
+   "SKL": 10,
+   "SPD": 10,
+   "LCK": 5,
+   "DEF": 10,
+   "RES": 3,
+   "CON": 8,
+   "MOV": 90
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 30,
+   "SPD": 40,
+   "LCK": 10,
+   "DEF": 50,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Lance",
+   "Javelin"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Lance": 1023
+  },
+  "holy_blood": {
+   "Njörun": "Major"
+  },
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "QuanPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Sandima",
+  "name": "Sandima",
+  "desc": "A member of the Loptyr Church, responsible for bewitching King Batur.",
+  "klass": "DarkSage",
+  "level": 10,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 1,
+   "MAG": 13,
+   "SKL": 11,
+   "SPD": 11,
+   "LCK": 0,
+   "DEF": 8,
+   "RES": 13,
+   "CON": 6,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Fenrir",
+   "Jormungandr",
+   "Magic Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Staff": 126,
+   "Dark": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "SandimaPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Sigurd",
+  "name": "Sigurd",
+  "desc": "Chalphy's and Crusader Baldr's Heir. He's got a strong sense of justice.",
+  "klass": "LordKnight",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 35,
+   "STR": 14,
+   "MAG": 0,
+   "SKL": 11,
+   "SPD": 12,
+   "LCK": 7,
+   "DEF": 9,
+   "RES": 3,
+   "CON": 7,
+   "MOV": 90
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Lance",
+   "Steel Sword"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 1023,
+   "Lance": 126
+  },
+  "holy_blood": {
+   "Baldr": "Major"
+  },
+  "tags": [
+   "Lord"
+  ],
+  "affinity": "Fire",
+  "portrait_nid": "SigurdPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Sylvia",
+  "name": "Sylvia",
+  "desc": "Traveling dancer who follows Lewyn and aids the war-suffering civilians.",
+  "klass": "Dancer",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 28,
+   "STR": 8,
+   "MAG": 2,
+   "SKL": 8,
+   "SPD": 12,
+   "LCK": 6,
+   "DEF": 5,
+   "RES": 5,
+   "CON": 6,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 50,
+   "STR": 10,
+   "MAG": 30,
+   "SKL": 10,
+   "SPD": 10,
+   "LCK": 30,
+   "DEF": 10,
+   "RES": 40,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Slim Sword"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Miracle"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "SylviaPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Tailtiu",
+  "name": "Tailtiu",
+  "desc": "First daughter of Reptor of Friege and younger sister of Bloom of Friege.",
+  "klass": "Mage",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 28,
+   "STR": 0,
+   "MAG": 10,
+   "SKL": 15,
+   "SPD": 10,
+   "LCK": 9,
+   "DEF": 1,
+   "RES": 9,
+   "CON": 5,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 60,
+   "STR": 10,
+   "MAG": 20,
+   "SKL": 60,
+   "SPD": 40,
+   "LCK": 50,
+   "DEF": 10,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Thoron",
+   "Thunder"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Wrath"
+   ]
+  ],
+  "wexp_gain": {
+   "Anima": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "TailtiuPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Voltz",
+  "name": "Voltz",
+  "desc": "Mercenary leader enlisted by Macbeth to defend Anphony.",
+  "klass": "ForrestKnight",
+  "level": 10,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 14,
+   "MAG": 2,
+   "SKL": 21,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 14,
+   "RES": 5,
+   "CON": 12,
+   "MOV": 90
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Blade",
+   "Elite Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "VoltzPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Zain",
+  "name": "Zain",
+  "desc": "Knight of Agustria under the orders of his liege King Chagall.",
+  "klass": "DukeKnight",
+  "level": 13,
+  "gender": "M",
+  "bases": {
+   "HP": 61,
+   "STR": 18,
+   "MAG": 2,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 0,
+   "DEF": 14,
+   "RES": 5,
+   "CON": 8,
+   "MOV": 90
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 30,
+   "LCK": 40,
+   "DEF": 40,
+   "RES": 5,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Knight Killer",
+   "Javelin"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Lance": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "ZainPortrait",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Bucks",
+  "name": "Bucks",
+  "desc": "",
+  "klass": "Warrior",
+  "level": 4,
+  "gender": "M",
+  "bases": {
+   "HP": 31,
+   "STR": 11,
+   "MAG": 3,
+   "SKL": 6,
+   "SPD": 8,
+   "LCK": 3,
+   "DEF": 8,
+   "RES": 9,
+   "CON": 13,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 100,
+   "STR": 30,
+   "MAG": 0,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 0,
+   "DEF": 30,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Axe",
+   "Iron Bow",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Axe": 51,
+   "Bow": 1
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Ice",
+  "portrait_nid": "BucksPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Coirpre",
+  "name": "Coirpre",
+  "desc": "Young priest of Bragi and a Minor inheritor of his blood.",
+  "klass": "Child",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 26,
+   "STR": 2,
+   "MAG": 8,
+   "SKL": 9,
+   "SPD": 9,
+   "LCK": 12,
+   "DEF": 3,
+   "RES": 8,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 80,
+   "STR": 30,
+   "MAG": 45,
+   "SKL": 45,
+   "SPD": 45,
+   "LCK": 60,
+   "DEF": 40,
+   "RES": 45,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [],
+  "learned_skills": [
+   [
+    1,
+    "Miracle"
+   ]
+  ],
+  "wexp_gain": {
+   "Staff": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Light",
+  "portrait_nid": "CoirprePortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Dagdar",
+  "name": "Dagdar",
+  "desc": "Leader of the reformed Mount Violdrake Bandits and the father of Tanya.",
+  "klass": "Warrior",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 44,
+   "STR": 16,
+   "MAG": 1,
+   "SKL": 11,
+   "SPD": 13,
+   "LCK": 1,
+   "DEF": 13,
+   "RES": 9,
+   "CON": 13,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 15,
+   "STR": 10,
+   "MAG": 5,
+   "SKL": 10,
+   "SPD": 10,
+   "LCK": 30,
+   "DEF": 10,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Hammer",
+   "Hand Axe"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {
+   "Axe": 226,
+   "Bow": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Ice",
+  "portrait_nid": "DagdarPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Eyvel",
+  "name": "Eyvel",
+  "desc": "Fiercely protective leader of the Fiana Freeblades. Responsible and dutiful as a mother.",
+  "klass": "Swordmaster",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 43,
+   "STR": 21,
+   "MAG": 1,
+   "SKL": 26,
+   "SPD": 25,
+   "LCK": 9,
+   "DEF": 15,
+   "RES": 9,
+   "CON": 8,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 60,
+   "STR": 25,
+   "MAG": 15,
+   "SKL": 25,
+   "SPD": 15,
+   "LCK": 50,
+   "DEF": 15,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Blade",
+   "Flame Sword",
+   "Iron Sword"
+  ],
+  "learned_skills": [
+   [
+    20,
+    "ChangeSniper"
+   ],
+   [
+    20,
+    "ChangeSwordmaster"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 226,
+   "Bow": 1023
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Wind",
+  "portrait_nid": "EyvelPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Halvan",
+  "name": "Halvan",
+  "desc": "He is a member of the Fiana Freeblades, and Osian's best friend.",
+  "klass": "Fighter",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 34,
+   "STR": 7,
+   "MAG": 0,
+   "SKL": 5,
+   "SPD": 8,
+   "LCK": 1,
+   "DEF": 5,
+   "RES": 4,
+   "CON": 8,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 80,
+   "STR": 40,
+   "MAG": 5,
+   "SKL": 20,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 30,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Axe"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Ambush"
+   ]
+  ],
+  "wexp_gain": {
+   "Axe": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "None",
+  "portrait_nid": "HalvanPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Lara",
+  "name": "Lara",
+  "desc": "Little girl who works as a thief and part of the Magi Squad.",
+  "klass": "BThief_Lara",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 14,
+   "STR": 0,
+   "MAG": 0,
+   "SKL": 1,
+   "SPD": 10,
+   "LCK": 6,
+   "DEF": 0,
+   "RES": 6,
+   "CON": 6,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 45,
+   "STR": 10,
+   "MAG": 10,
+   "SKL": 50,
+   "SPD": 70,
+   "LCK": 60,
+   "DEF": 20,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Slim Sword",
+   "Lockpicks"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 1
+  },
+  "holy_blood": {},
+  "tags": [
+   "Thief"
+  ],
+  "affinity": "Wind",
+  "portrait_nid": "LaraPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Leif",
+  "name": "Leif",
+  "desc": "Leif Faris Claus, son of Ethlyn of Chalphy and Quan of Lenster, heir of Lenster.",
+  "klass": "LordLeaf",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 33,
+   "STR": 10,
+   "MAG": 1,
+   "SKL": 7,
+   "SPD": 9,
+   "LCK": 7,
+   "DEF": 8,
+   "RES": 3,
+   "CON": 7,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 110,
+   "STR": 50,
+   "MAG": 8,
+   "SKL": 45,
+   "SPD": 45,
+   "LCK": 35,
+   "DEF": 40,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Sword",
+   "Light Sword"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 126
+  },
+  "holy_blood": {},
+  "tags": [
+   "Lord"
+  ],
+  "affinity": "Fire",
+  "portrait_nid": "LeifPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Lifis",
+  "name": "Lifis",
+  "desc": "Leader of the Lifis Pirates.",
+  "klass": "AThief",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 20,
+   "STR": 3,
+   "MAG": 0,
+   "SKL": 4,
+   "SPD": 10,
+   "LCK": 1,
+   "DEF": 3,
+   "RES": 6,
+   "CON": 6,
+   "MOV": 70
+  },
+  "growths": {
+   "HP": 65,
+   "STR": 35,
+   "MAG": 10,
+   "SKL": 25,
+   "SPD": 45,
+   "LCK": 5,
+   "DEF": 15,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Hezul Scroll",
+   "Lockpicks"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Wind",
+  "portrait_nid": "LifisPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Lobos",
+  "name": "Lobos",
+  "desc": "General under Raydrik's command.",
+  "klass": "General",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 26,
+   "STR": 8,
+   "MAG": 1,
+   "SKL": 6,
+   "SPD": 4,
+   "LCK": 3,
+   "DEF": 13,
+   "RES": 12,
+   "CON": 15,
+   "MOV": 50
+  },
+  "growths": {
+   "HP": 100,
+   "STR": 30,
+   "MAG": 0,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 0,
+   "DEF": 30,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Longbow",
+   "Short Lance"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 1,
+   "Lance": 1,
+   "Axe": 1,
+   "Bow": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Dark",
+  "portrait_nid": "LobosPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Mareeta",
+  "name": "Mareeta",
+  "desc": "Adoptive daughter of Eyvel and a naturally gifted swordfigther of the Fiana Freeblades.",
+  "klass": "Swordfighter",
+  "level": 2,
+  "gender": "F",
+  "bases": {
+   "HP": 23,
+   "STR": 4,
+   "MAG": 1,
+   "SKL": 8,
+   "SPD": 13,
+   "LCK": 7,
+   "DEF": 3,
+   "RES": 4,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 65,
+   "STR": 60,
+   "MAG": 15,
+   "SKL": 75,
+   "SPD": 80,
+   "LCK": 60,
+   "DEF": 20,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Mareeta's Sword",
+   "Vulnerary"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Luna"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Light",
+  "portrait_nid": "MareetaPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Marty",
+  "name": "Marty",
+  "desc": "Member of the Mount Violdrake Bandits and ally of the Fiana Freeblades. ",
+  "klass": "Bandit",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 32,
+   "STR": 9,
+   "MAG": 0,
+   "SKL": 0,
+   "SPD": 4,
+   "LCK": 6,
+   "DEF": 6,
+   "RES": 5,
+   "CON": 9,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 90,
+   "STR": 15,
+   "MAG": 5,
+   "SKL": 10,
+   "SPD": 15,
+   "LCK": 50,
+   "DEF": 40,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Steel Axe"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Axe": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Ice",
+  "portrait_nid": "MartyPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Nanna",
+  "name": "Nanna",
+  "desc": "Daugther of Lachesis of Nordion and Finn, and younger sister of Darmuid.",
+  "klass": "Troubadour",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 29,
+   "STR": 6,
+   "MAG": 5,
+   "SKL": 8,
+   "SPD": 10,
+   "LCK": 13,
+   "DEF": 5,
+   "RES": 4,
+   "CON": 5,
+   "MOV": 80
+  },
+  "growths": {
+   "HP": 75,
+   "STR": 45,
+   "MAG": 10,
+   "SKL": 35,
+   "SPD": 35,
+   "LCK": 60,
+   "DEF": 25,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Earth Sword",
+   "Mend"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charisma"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 126,
+   "Staff": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Light",
+  "portrait_nid": "NannaPorrtrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Osian",
+  "name": "Osian",
+  "desc": "Member of the Fiana Freeblades, shares a close relationship with Tanya.",
+  "klass": "Fighter",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 34,
+   "STR": 6,
+   "MAG": 0,
+   "SKL": 5,
+   "SPD": 8,
+   "LCK": 1,
+   "DEF": 4,
+   "RES": 4,
+   "CON": 8,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 85,
+   "STR": 30,
+   "MAG": 5,
+   "SKL": 25,
+   "SPD": 35,
+   "LCK": 55,
+   "DEF": 35,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Axe"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Wrath"
+   ]
+  ],
+  "wexp_gain": {
+   "Axe": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "OsianPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Raydrik",
+  "name": "Raydrik",
+  "desc": "Duke of Manster and ally of King Bloom.",
+  "klass": "Baron",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 16,
+   "MAG": 9,
+   "SKL": 12,
+   "SPD": 9,
+   "LCK": 6,
+   "DEF": 16,
+   "RES": 16,
+   "CON": 15,
+   "MOV": 50
+  },
+  "growths": {
+   "HP": 100,
+   "STR": 30,
+   "MAG": 0,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 0,
+   "DEF": 30,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Loptyr Sword"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 226,
+   "Lance": 226,
+   "Axe": 226,
+   "Bow": 226,
+   "Staff": 226,
+   "Anima": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Dark",
+  "portrait_nid": "RaydrikPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Ronan",
+  "name": "Ronan",
+  "desc": "A sixteen-year-old hunter from the village of Iss.",
+  "klass": "Archer",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 21,
+   "STR": 4,
+   "MAG": 0,
+   "SKL": 5,
+   "SPD": 6,
+   "LCK": 3,
+   "DEF": 2,
+   "RES": 3,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 40,
+   "STR": 55,
+   "MAG": 15,
+   "SKL": 45,
+   "SPD": 55,
+   "LCK": 20,
+   "DEF": 5,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Bow"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Bow": 1
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Light",
+  "portrait_nid": "RonanPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Safy",
+  "name": "Safy",
+  "desc": "Priestess of Tarrah, servant of Linoan and sister of Tina.",
+  "klass": "Priest",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 14,
+   "STR": 0,
+   "MAG": 6,
+   "SKL": 6,
+   "SPD": 7,
+   "LCK": 9,
+   "DEF": 0,
+   "RES": 3,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 45,
+   "STR": 5,
+   "MAG": 75,
+   "SKL": 45,
+   "SPD": 40,
+   "LCK": 5,
+   "DEF": 10,
+   "RES": 30,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Heal",
+   "Repair"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Staff": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Light",
+  "portrait_nid": "SafyPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Shiva",
+  "name": "Shiva",
+  "desc": "Mercenary from Savan, originally hired by the Lifis Pirates.",
+  "klass": "Swordfighter",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 24,
+   "STR": 6,
+   "MAG": 0,
+   "SKL": 9,
+   "SPD": 12,
+   "LCK": 5,
+   "DEF": 4,
+   "RES": 7,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 70,
+   "STR": 45,
+   "MAG": 5,
+   "SKL": 50,
+   "SPD": 35,
+   "LCK": 60,
+   "DEF": 30,
+   "RES": 20,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Killer Sword",
+   "Vulnerary"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Sol"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 126
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Thunder",
+  "portrait_nid": "ShivaPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Tanya",
+  "name": "Tanya",
+  "desc": "Tomboy daughter of Dagdar, raised among brigands. Shares a close bond with Osian.",
+  "klass": "Archer",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 21,
+   "STR": 4,
+   "MAG": 1,
+   "SKL": 6,
+   "SPD": 10,
+   "LCK": 6,
+   "DEF": 2,
+   "RES": 4,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 60,
+   "STR": 35,
+   "MAG": 15,
+   "SKL": 55,
+   "SPD": 70,
+   "LCK": 60,
+   "DEF": 15,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Bow",
+   "Key"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Bow": 1
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Fire",
+  "portrait_nid": "TanyaPortrait",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Weissman",
+  "name": "Weissman",
+  "desc": "A servant of Duke Raydrik of Manster.",
+  "klass": "Armour",
+  "level": 5,
+  "gender": "M",
+  "bases": {
+   "HP": 30,
+   "STR": 7,
+   "MAG": 3,
+   "SKL": 4,
+   "SPD": 2,
+   "LCK": 1,
+   "DEF": 11,
+   "RES": 5,
+   "CON": 10,
+   "MOV": 50
+  },
+  "growths": {
+   "HP": 100,
+   "STR": 30,
+   "MAG": 0,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 0,
+   "DEF": 30,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Long Sword"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Sword": 51
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "Dark",
+  "portrait_nid": "WeissmanPortrait",
+  "games": [
+   "FE5"
+  ]
+ }
+]

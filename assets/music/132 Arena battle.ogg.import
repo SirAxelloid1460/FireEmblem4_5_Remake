@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bet4gw2yknaa0"
+path="res://.godot/imported/132 Arena battle.ogg-5e008430a411061d9b0e65394bcde58a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/132 Arena battle.ogg"
+dest_files=["res://.godot/imported/132 Arena battle.ogg-5e008430a411061d9b0e65394bcde58a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

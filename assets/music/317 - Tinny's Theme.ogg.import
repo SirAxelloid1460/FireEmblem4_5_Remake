@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://crxmn3th32irc"
+path="res://.godot/imported/317 - Tinny's Theme.ogg-0c5c4cb0d242d919696a0b254965a750.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/317 - Tinny's Theme.ogg"
+dest_files=["res://.godot/imported/317 - Tinny's Theme.ogg-0c5c4cb0d242d919696a0b254965a750.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cig7xcxodtvxu"
+path="res://.godot/imported/Critical Hit 1.ogg-18ff615ccc09718e95d69e197b8b1a0e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Critical Hit 1.ogg"
+dest_files=["res://.godot/imported/Critical Hit 1.ogg-18ff615ccc09718e95d69e197b8b1a0e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

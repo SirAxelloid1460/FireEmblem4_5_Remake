@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://pd2ksb52yyxq"
+path="res://.godot/imported/142 Thracia.ogg-1b4af7a846e7dc261b09b295e101e515.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/142 Thracia.ogg"
+dest_files=["res://.godot/imported/142 Thracia.ogg-1b4af7a846e7dc261b09b295e101e515.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

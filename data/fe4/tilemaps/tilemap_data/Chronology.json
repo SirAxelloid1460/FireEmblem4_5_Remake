@@ -1,0 +1,17 @@
+[
+ {
+  "nid": "Chronology",
+  "size": [
+   15,
+   20
+  ],
+  "autotile_fps": 29,
+  "layers": [
+   {
+    "nid": "base",
+    "visible": true,
+    "terrain_grid": {}
+   }
+  ]
+ }
+]

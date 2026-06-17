@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://tkfnhabib6yk"
+path="res://.godot/imported/Grasp at Victory.ogg-483e0c9569478c7dbaf2f91640435bcb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Grasp at Victory.ogg"
+dest_files=["res://.godot/imported/Grasp at Victory.ogg-483e0c9569478c7dbaf2f91640435bcb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

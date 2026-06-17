@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bokywxkf635og"
+path="res://.godot/imported/208 - Manster Army.ogg-f48e22f06047530640013beb1cac4edd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/208 - Manster Army.ogg"
+dest_files=["res://.godot/imported/208 - Manster Army.ogg-f48e22f06047530640013beb1cac4edd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://buy030vcinw7d"
+path="res://.godot/imported/Mount Briggs.ogg-1e6fa23a8308b5788704da27612f484a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Mount Briggs.ogg"
+dest_files=["res://.godot/imported/Mount Briggs.ogg-1e6fa23a8308b5788704da27612f484a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

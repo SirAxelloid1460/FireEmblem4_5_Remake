@@ -1,0 +1,92 @@
+extends Control
+class_name BlacksmithMenu
+
+@onready var weapon_list: ItemList = $Panel/VBox/WeaponList
+@onready var repair_cost_label: Label = $Panel/VBox/RepairCostLabel
+@onready var repair_button: Button = $Panel/VBox/RepairButton
+@onready var close_button: Button = $Panel/VBox/CloseButton
+
+var current_unit: Unit
+var selected_weapon_index: int = -1
+
+signal repair_completed(weapon: Weapon, cost: int)
+signal blacksmith_closed
+
+func setup(unit: Unit):
+	current_unit = unit
+	populate_weapon_list()
+	popup_centered()
+
+func populate_weapon_list():
+	"""Muestra armas que necesitan reparación"""
+	weapon_list.clear()
+	
+	var weapons_found = false
+	for i in range(current_unit.inventory.size()):
+		var item = current_unit.inventory[i]
+		if item is Weapon:
+			weapons_found = true
+			var durability_percent = float(item.current_durability) / float(item.max_durability) * 100
+			var text = "%s - %d/%d (%.0f%%)" % [
+				item.weapon_name,
+				item.current_durability,
+				item.max_durability,
+				durability_percent
+			]
+			weapon_list.add_item(text)
+			
+			# Colorear según durabilidad
+			if durability_percent < 30:
+				weapon_list.set_item_custom_fg_color(i, Color.RED)
+			elif durability_percent < 60:
+				weapon_list.set_item_custom_fg_color(i, Color.YELLOW)
+	
+	if not weapons_found:
+		weapon_list.add_item("No hay armas para reparar")
+		weapon_list.set_item_disabled(0, true)
+
+func _on_weapon_selected(index: int):
+	"""Maneja selección de arma"""
+	selected_weapon_index = index
+	var weapon = get_selected_weapon()
+	
+	if weapon:
+		var repair_cost = calculate_repair_cost(weapon)
+		repair_cost_label.text = "Costo de reparación: %d G" % repair_cost
+		repair_button.disabled = current_unit.personal_gold < repair_cost
+
+func get_selected_weapon() -> Weapon:
+	"""Obtiene el arma seleccionada"""
+	if selected_weapon_index < 0:
+		return null
+	
+	var weapon_index = 0
+	for item in current_unit.inventory:
+		if item is Weapon:
+			if weapon_index == selected_weapon_index:
+				return item
+			weapon_index += 1
+	
+	return null
+
+func calculate_repair_cost(weapon: Weapon) -> int:
+	"""Calcula el costo de reparación"""
+	var durability_lost = weapon.max_durability - weapon.current_durability
+	var base_cost = 10  # Costo base por punto de durabilidad
+	return durability_lost * base_cost
+
+func _on_repair_pressed():
+	"""Repara el arma seleccionada"""
+	var weapon = get_selected_weapon()
+	if not weapon:
+		return
+	
+	var cost = calculate_repair_cost(weapon)
+	repair_completed.emit(weapon, cost)
+	
+	# Actualizar lista
+	populate_weapon_list()
+
+func _on_close_pressed():
+	blacksmith_closed.emit()
+	queue_free()
