@@ -1,0 +1,21 @@
+# ── Godot 4 ────────────────────────────────────────────────
+# Caché de importación: se regenera al abrir el proyecto y pesa mucho
+# (texturas/audio importados). NO versionar.
+.godot/
+
+# Exportaciones del juego.
+/build/
+/exports/
+mono_crash.*.json
+
+# ── Sistema operativo ──────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# ── NOTA IMPORTANTE ────────────────────────────────────────
+# Los `.import` y los `.translation` SÍ se versionan a propósito:
+# la importación de traducciones en este proyecto es frágil (los
+# `.translation` son productos de los `.csv` y no siempre regeneran).
+# Ver docs/HANDOFF.md §3. No añadir `*.import` ni `*.translation` aquí.
