@@ -161,3 +161,53 @@ No inventar datos/fórmulas: **cruzar siempre con LT** (engine `app.rar` → spr
 2. Pulir menú: gemas en placas, SFX de navegación/confirmación, cablear Continue/SoundRoom.
 3. Animación de **paso** de unidades (`move.png`) al moverse en el mapa.
 4. Combate del Prólogo (IA, victoria/derrota, báculos, retratos).
+
+---
+
+## 8) Sesión 2026‑06‑27 — animación de paso + pulido de menú (Sound Room, gemas, SFX)
+
+### Animación de paso de unidades (`move.png`) ✅  [pendiente #3 de §7]
+- `UnitMapSprite.gd`: soporte de la hoja de movimiento (192×160 → 4 dir × 4 frames,
+  celda **48×40**; filas LT/GBA **0=abajo 1=izq 2=der 3=arriba**). API nueva:
+  `start_move()` / `set_move_dir(dir)` / `end_move()` (constantes `DIR_DOWN/LEFT/RIGHT/UP`).
+  Anclaje de la celda de paso con `MOVE_FEET_NATIVE` (≈36) — *ajustable* si el roce con
+  el suelo difiere en alguna clase alta. Si la clase no tiene `move.png`, la unidad se
+  desliza con el idle (sin animar piernas) — degradación limpia.
+- `Unit.gd`: corrutina `animate_move_along(world_points, step_time)` que camina casilla a
+  casilla, orienta el sprite por el delta (`_dir_from_delta`) y reproduce **SFX de paso**
+  según tipo (`_step_sfx_name`: Flier/Mounted3/Armor1/Infantry2) vía `AssetLoader.get_sfx`
+  en el bus "SFX".
+- `GameManager.gd`: `move_selected_unit` ahora **espera la animación** antes de cerrar el
+  movimiento (guard `PlayerPhase.MOVING` para ignorar clics repetidos; limpia resaltados
+  mientras camina). La IA también anima: `execute_enemy_decision` es `await` y reconstruye
+  el path con `Pathfinding.find_path` antes de mover.
+
+### Pulido del MainMenu ✅  [pendiente #2 de §7, parcial]
+- **Gemas en placas**: `assets/menus/menu_gem_brown.png` (14×12, ×3) flanqueando el texto,
+  visibles sólo en la placa con foco (`_add_gems` / `_set_button_gems`, toggle en
+  focus_entered/exited).
+- **SFX de menú** (bus "SFX"): navegación `Select 5` (al cambiar de foco; se omite el tick
+  del auto‑foco al entrar a un panel vía `_skip_next_nav_sfx`), confirmación `Select 4`,
+  cancelación `Step Back 1`, error `Error` (acciones no disponibles). Helper `_play_sfx`.
+- **Sound Room** (`Scripts/SoundRoom.gd`, nuevo): pantalla por código (señal `closed`),
+  abierta con fade desde Extras (`_open_soundroom`, pausa/reanuda el tema del menú). Escanea
+  `assets/music/*.ogg`, lista con ventana de 12 + cursor (↑↓), Accept = play/stop (toggle,
+  loop, bus "Music"), Cancel = volver. Panel FE con borde dorado y fuente serif.
+
+### Continue — NO cableado (limitación real)
+- `SaveSystem.load_game()` es un **stub**: lee el `.save` pero **no restaura estado** de
+  juego (no hay pipeline de carga de capítulo/ejército). Cablear "Continue" de verdad
+  requiere primero construir ese pipeline. Por ahora el botón sólo aparece si hay save y
+  muestra "coming soon" con SFX de error. **Pendiente** para una sesión dedicada al guardado.
+
+### Validación
+- **Sin binario de Godot en el entorno remoto** → no se pudo compilar headless; revisión
+  estática (sin BOM, indentación con tabs, sin refs rotas ni colisiones de nombres). Conviene
+  re‑validar en el editor: F6 `main_game.tscn` (paso de unidades) y `main_menu.tscn`
+  (gemas/SFX/Sound Room).
+
+### Próximo
+1. Verificar en editor el anclaje de la celda de paso (`MOVE_FEET_NATIVE`) en clases altas.
+2. Cinemáticas Overworld → Map (sigue pendiente, #1 de §7).
+3. Pipeline de guardado/carga real para habilitar Continue.
+4. Combate del Prólogo (IA, victoria/derrota, báculos, retratos).

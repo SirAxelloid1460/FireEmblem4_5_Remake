@@ -207,32 +207,45 @@ func deselect_unit():
 	current_path.clear()
 
 func move_selected_unit(target: Vector2i):
-	"""Mueve la unidad seleccionada a la posición objetivo"""
+	"""Mueve la unidad seleccionada a la posición objetivo (con animación de paso)."""
 	if not selected_unit:
 		return
-	
+	if player_phase == PlayerPhase.MOVING:
+		return   # ya hay un movimiento en curso — ignora clics repetidos
+
 	var path = Pathfinding.find_path(grid, selected_unit.grid_position, target, selected_unit.movement, selected_unit)
-	
+
 	if path.size() == 0:
 		return
-	
-	# Mover la unidad
-	var from = selected_unit.grid_position
+
+	var unit := selected_unit
+	var from = unit.grid_position
+	# Bloquea el input y oculta los resaltados mientras la unidad camina.
+	player_phase = PlayerPhase.MOVING
+	reachable_tiles.clear()
+	attackable_tiles.clear()
+	# El grid lógico se actualiza ya; la animación es puramente visual.
 	grid.move_unit(from, target)
-	selected_unit.global_position = grid.grid_to_world(target)
-	selected_unit.has_moved = true
-	
-	unit_moved.emit(selected_unit, from, target)
-	
+
+	# Recorrido en coordenadas de mundo (sin la casilla de inicio, path[0]).
+	var pts: Array = []
+	for i in range(1, path.size()):
+		pts.append(grid.grid_to_world(path[i]))
+	await unit.animate_move_along(pts)
+	unit.global_position = grid.grid_to_world(target)   # asegura encaje exacto
+	unit.has_moved = true
+
+	unit_moved.emit(unit, from, target)
+
 	# Recalcular FoW del jugador — el movimiento puede revelar tiles.
 	if fow_system:
 		fow_system.update_team_vision("player", player_units)
-	
+
 	# Disparar eventos de región — si el tile destino tiene una región
 	# event-type asociada, EventSystem la procesa.
 	if event_system and current_objective:
-		_check_region_events(target, selected_unit)
-	
+		_check_region_events(target, unit)
+
 	# Mostrar menú de acciones
 	show_action_menu()
 
@@ -552,7 +565,7 @@ func execute_enemy_ai():
 		# Las ballistas controladas por el enemigo disparan según su preset
 		# pero respetando MOV=0 — el AIController ya filtra por movement.
 		var decision := ai_controller.decide_action(enemy, all_units)
-		execute_enemy_decision(enemy, decision)
+		await execute_enemy_decision(enemy, decision)
 		await get_tree().create_timer(0.3).timeout
 
 
@@ -564,12 +577,19 @@ func execute_enemy_decision(enemy: Unit, decision: Dictionary) -> void:
 	var moved_to: Vector2i = decision.get("moved_to", enemy.grid_position)
 	var attacked: Unit = decision.get("attacked")
 	
-	# Mover si la posición decidida es distinta.
+	# Mover si la posición decidida es distinta (con animación de paso).
 	if moved_to != enemy.grid_position:
-		grid.move_unit(enemy.grid_position, moved_to)
-		enemy.global_position = grid.grid_to_world(moved_to)
+		var from_pos: Vector2i = enemy.grid_position
+		var path = Pathfinding.find_path(grid, from_pos, moved_to, enemy.movement, enemy)
+		grid.move_unit(from_pos, moved_to)
 		# enemy.grid_position se actualiza automáticamente en grid.move_unit().
-		print("[AI] %s moves %s → %s" % [enemy.unit_name, enemy.grid_position, moved_to])
+		if enemy.has_method("animate_move_along") and path.size() > 1:
+			var pts: Array = []
+			for i in range(1, path.size()):
+				pts.append(grid.grid_to_world(path[i]))
+			await enemy.animate_move_along(pts)
+		enemy.global_position = grid.grid_to_world(moved_to)
+		print("[AI] %s moves %s → %s" % [enemy.unit_name, from_pos, moved_to])
 	
 	# Ejecutar la acción específica.
 	match action:
