@@ -114,6 +114,10 @@ func _ready():
 func _input(event):
 	if current_state != GameState.PLAYER_TURN:
 		return
+	# Durante un evento/diálogo (speak, cinemática) el input es del EventSystem
+	# (avanzar diálogo) — no mover unidades ni seleccionar.
+	if event_system != null and event_system.has_method("is_busy") and event_system.is_busy():
+		return
 	# Sin batalla activa (p.ej. el autoload mientras se ve el menú) → ignorar.
 	if player_units.is_empty() and enemy_units.is_empty():
 		return

@@ -69,6 +69,23 @@ var dialogue_box: Node = null
 # Convoy para give_item con inventario lleno.
 var convoy: Node = null
 
+# ── Presentación (comandos speak/music/transition/change_background) ──────────
+# Se crean bajo demanda en un CanvasLayer propio (screen-space), sin depender de
+# ninguna .tscn (patrón fiable del proyecto). Ver EventDialogue.gd.
+var _pres_layer: CanvasLayer = null
+var _dialogue: EventDialogue = null
+var _bg_rect: TextureRect = null
+var _fade_rect: ColorRect = null
+var _music_player: AudioStreamPlayer = null
+# Profundidad de ejecución de eventos: >0 mientras corre un evento (bloquea el
+# input de gameplay para no mover unidades durante una cinemática/diálogo).
+var _busy_depth: int = 0
+
+
+## True mientras se ejecuta algún evento (lo consulta GameManager._input).
+func is_busy() -> bool:
+	return _busy_depth > 0
+
 
 # ── Señales ──────────────────────────────────────────────────────────────────
 
@@ -123,6 +140,7 @@ func trigger_event(trigger_name: String, context: Dictionary = {}) -> Array:
 	var fired_now: Array = []
 	if not events_by_trigger.has(trigger_name):
 		return fired_now
+	_busy_depth += 1
 	for ev in events_by_trigger[trigger_name]:
 		var ev_name := str(ev.get("name", ""))
 		# only_once: si ya se disparó, saltar.
@@ -138,6 +156,15 @@ func trigger_event(trigger_name: String, context: Dictionary = {}) -> Array:
 		fired_events.append(ev_name)
 		fired_now.append(ev_name)
 		event_finished.emit(ev_name)
+	# Fin del lote de este trigger: limpiar la presentación para no dejar la
+	# pantalla tapada (diálogo, fondo o fundido a negro colgados).
+	if _dialogue != null and is_instance_valid(_dialogue):
+		_dialogue.finish()
+	if _bg_rect != null and is_instance_valid(_bg_rect):
+		_bg_rect.visible = false
+	if _fade_rect != null and is_instance_valid(_fade_rect):
+		_fade_rect.color.a = 0.0
+	_busy_depth -= 1
 	return fired_now
 
 
@@ -453,6 +480,14 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 			_cmd_unit_skill(args, context, true)
 		"remove_skill":
 			_cmd_unit_skill(args, context, false)
+		"music":
+			_cmd_music(args)
+		"music_clear":
+			_cmd_music_clear()
+		"transition":
+			await _cmd_transition(args)
+		"change_background":
+			_cmd_change_background(args)
 		"wait":
 			var ms: int = int(args[0]) if args.size() > 0 else 500
 			if game_manager and game_manager.has_method("get_tree"):
@@ -461,7 +496,7 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 		# (portraits, capas, animaciones de mapa, música, cinemáticas, tiendas,
 		#  base/prep, y unos pocos de gameplay que requieren sistemas no portados
 		#  todavía: change_ai, change_stats, interact_unit, trigger_script…).
-		"change_tilemap", "change_background", "transition", "music", "music_clear", "multi_add_portrait", "multi_remove_portrait", "add_portrait", "remove_portrait", "move_portrait", "change_portrait", "expression", "center_cursor", "move_cursor", "chapter_title", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "map_anim", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "trigger_script", "change_stats", "change_ai", "remove_group", "remove_item", "has_traded":
+		"change_tilemap", "multi_add_portrait", "multi_remove_portrait", "add_portrait", "remove_portrait", "move_portrait", "change_portrait", "expression", "center_cursor", "move_cursor", "chapter_title", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "map_anim", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "trigger_script", "change_stats", "change_ai", "remove_group", "remove_item", "has_traded":
 			pass
 		_:
 			# Comandos no reconocidos — log para detectar nuevos a implementar.
@@ -472,14 +507,116 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 # ── Comandos concretos ───────────────────────────────────────────────────────
 
 func _cmd_speak(args: Array, context: Dictionary) -> void:
-	if dialogue_box == null or args.size() < 2:
+	if args.is_empty():
 		return
-	var speaker := _resolve_token(str(args[0]), context)
-	var line := str(args[1])
-	if dialogue_box.has_method("show_line"):
-		await dialogue_box.show_line(speaker, line)
-	elif dialogue_box.has_method("speak"):
-		await dialogue_box.speak(speaker, line)
+	var token := str(args[0])
+	var nid := _resolve_token(token, context) if token.begins_with("{") else token
+	var line := str(args[1]) if args.size() >= 2 else ""
+	var portrait: Texture2D = null
+	if has_node("/root/AssetLoader"):
+		portrait = get_node("/root/AssetLoader").get_portrait(nid)
+	var side := "left" if CharacterDatabase.is_player_character(nid) else "right"
+	await _ensure_dialogue().play_line(nid, line, portrait, side)
+
+
+# ── Presentación: capa, diálogo, música, transiciones, fondo ─────────────────
+
+func _ensure_presentation() -> CanvasLayer:
+	if _pres_layer == null or not is_instance_valid(_pres_layer):
+		_pres_layer = CanvasLayer.new()
+		_pres_layer.name = "EventPresentation"
+		_pres_layer.layer = 20
+		add_child(_pres_layer)
+	return _pres_layer
+
+
+func _ensure_dialogue() -> EventDialogue:
+	if _dialogue == null or not is_instance_valid(_dialogue):
+		_dialogue = EventDialogue.new()
+		_ensure_presentation().add_child(_dialogue)
+	return _dialogue
+
+
+func _ensure_bg() -> TextureRect:
+	if _bg_rect == null or not is_instance_valid(_bg_rect):
+		_bg_rect = TextureRect.new()
+		_bg_rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		_bg_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		_bg_rect.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		_bg_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_bg_rect.visible = false
+		_ensure_presentation().add_child(_bg_rect)
+		_ensure_presentation().move_child(_bg_rect, 0)   # detrás del diálogo
+	return _bg_rect
+
+
+func _ensure_fade() -> ColorRect:
+	if _fade_rect == null or not is_instance_valid(_fade_rect):
+		_fade_rect = ColorRect.new()
+		_fade_rect.color = Color(0, 0, 0, 0)
+		_fade_rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		_fade_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_ensure_presentation().add_child(_fade_rect)   # encima de todo
+	return _fade_rect
+
+
+func _ensure_music() -> AudioStreamPlayer:
+	if _music_player == null or not is_instance_valid(_music_player):
+		_music_player = AudioStreamPlayer.new()
+		if AudioServer.get_bus_index("Music") >= 0:
+			_music_player.bus = "Music"
+		add_child(_music_player)
+	return _music_player
+
+
+func _cmd_music(args: Array) -> void:
+	if args.is_empty():
+		return
+	var nid := str(args[0])
+	var stream = null
+	if has_node("/root/AssetLoader"):
+		stream = get_node("/root/AssetLoader").get_music(nid)
+	if stream == null:
+		return
+	if "loop" in stream:
+		stream.loop = true
+	var p := _ensure_music()
+	p.stream = stream
+	p.play()
+
+
+func _cmd_music_clear() -> void:
+	if _music_player != null and is_instance_valid(_music_player):
+		_music_player.stop()
+
+
+## transition("Close"/"Open"[, ms]) — cubre/revela la pantalla con un fundido.
+func _cmd_transition(args: Array) -> void:
+	var mode := (str(args[0]).to_lower() if args.size() >= 1 else "close")
+	var dur := 0.4
+	if args.size() >= 2 and str(args[1]).is_valid_int():
+		dur = int(args[1]) / 1000.0
+	var rect := _ensure_fade()
+	var target := 0.0 if mode.begins_with("open") else 1.0
+	var t := create_tween()
+	t.tween_property(rect, "color:a", target, dur)
+	await t.finished
+
+
+## change_background(nid) — muestra un panorama a pantalla completa; vacío = oculta.
+func _cmd_change_background(args: Array) -> void:
+	var rect := _ensure_bg()
+	if args.is_empty() or str(args[0]) == "":
+		rect.visible = false
+		return
+	var tex: Texture2D = null
+	if has_node("/root/AssetLoader"):
+		tex = get_node("/root/AssetLoader").get_panorama(str(args[0]))
+	if tex == null:
+		rect.visible = false
+		return
+	rect.texture = tex
+	rect.visible = true
 
 
 func _cmd_give_item(args: Array, context: Dictionary) -> void:

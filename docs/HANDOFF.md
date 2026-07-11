@@ -264,13 +264,34 @@ Fuente auténtica: `GotHW.ltproj/game_data/events.json` (FE4, 167 eventos) y
   es no-op hasta cablear DialogueBox/portraits/capas. FE5 queda **preparado** (data en
   `data/fe5/events/`) pero sin bootstrap de escena propio todavía.
 
+### Presentación de eventos (speak/música/transición/fondo) ✅
+Los eventos ya no sólo corren su lógica: se **ven y se oyen**.
+- **`EventDialogue.gd`** (nuevo): caja de diálogo por código (sin depender de ninguna
+  `.tscn` — `DialogueBox.gd` sí dependía de una escena inexistente). Retrato izq/der,
+  máquina de escribir con "skip", indicador de continuar; limpia los códigos LT del texto
+  (`{w}`/`{br}`/… → se eliminan o pasan a salto de línea). `play_line()` es corrutina y
+  espera input del jugador.
+- **`EventSystem.gd`**: capa de presentación propia (`CanvasLayer`, screen-space) creada
+  bajo demanda. `_cmd_speak` ahora resuelve el **retrato** por nid (`AssetLoader.get_portrait`)
+  y el lado (`CharacterDatabase.is_player_character`), y muestra la línea. Nuevos comandos
+  reales: **`music`/`music_clear`** (bus "Music"), **`transition`** (fundido Close/Open) y
+  **`change_background`** (panorama a pantalla completa). Al terminar cada lote de evento se
+  **limpia la presentación** (diálogo/fondo/fundido) para no dejar la pantalla tapada.
+- **Bloqueo de input**: `EventSystem.is_busy()` (contador `_busy_depth`); `GameManager._input`
+  lo consulta y **no permite mover/seleccionar unidades durante un diálogo/cinemática**.
+- **Efecto hoy**: el **Intro del Prólogo FE4** (25 `speak`) reproduce su cutscene con retratos
+  (Midir, Ethlyn, Arvis…) y texto typewriter; los eventos de pueblo/talk muestran diálogo.
+- *Limitaciones conocidas*: el retrato se resuelve por el **nid del hablante**, no por el
+  `add_portrait` exacto de LT (que sigue no-op) — algunos personajes cuyo portrait nid difiere
+  del nid de unidad (p.ej. "Arvis"→ArvisYoung/Old) saldrán sin cara. `map_anim`/`show_layer`/
+  `expression`/posicionado de retratos siguen no-op. `{w}` intramedio no pausa (se limpia).
+
 ### Próximo
-1. Verificar en editor el anclaje de la celda de paso (`MOVE_FEET_NATIVE`) en clases altas.
-2. Cablear la **presentación** de eventos: `speak`→DialogueBox (con retratos por portrait
-   nid), `map_anim`/`show_layer`/`transition`/`music` → sistemas ya existentes. Es lo que
-   convierte los eventos de "lógica" a "cinemática" completa.
-3. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 (ya
-   disponible como eventos `Intro`/`Narration`/`Outro` en `data/fe4/events/`) y cablear
-   MainMenu → apertura → Prólogo.
-4. Pipeline de guardado/carga real para habilitar Continue.
-5. Ampliar el menú de acciones: Item/Staff (báculos), deshacer movimiento, retratos en combate.
+1. Verificar en editor: Prólogo FE4 (cutscene Intro con retratos/typewriter; input bloqueado
+   durante diálogo) y el anclaje de paso (`MOVE_FEET_NATIVE`).
+2. Retratos fieles: honrar `add_portrait`/`multi_add_portrait` (posición Left/Right y portrait
+   nid exacto) en vez de resolver por hablante; soportar `expression`.
+3. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 (ya en
+   `data/fe4/events/`: `Intro`/`Narration`/`Outro`) y cablear MainMenu → apertura → Prólogo.
+4. `map_anim`/`show_layer`/`hide_layer` sobre el mapa; `{w}` como pausa intramedio.
+5. Pipeline de guardado/carga real (Continue). Menú de acciones: Item/Staff, deshacer mov.
