@@ -251,12 +251,14 @@ Fuente auténtica: `GotHW.ltproj/game_data/events.json` (FE4, 167 eventos) y
     (`_compare_var`: ==, !=, >=, <=, >, <, numérico o string/bool). Es lo que usan los
     contadores de destructibles que alimentan los `if` (recompensas de pueblos).
   - **Cobertura de comandos**: los **66** tipos usados están cubiertos (0 caen en el
-    fallback). Nuevos handlers de gameplay: `win_game/lose_game` (victoria/derrota),
-    `inc_level_var`, `remove_region` (evita re-visitar pueblos), `add_tag`,
-    `give_skill/remove_skill`. El resto (portraits, capas, `map_anim`, transiciones,
-    música, cinemáticas, tiendas, base/prep, y algunos de gameplay que aún no tienen
-    subsistema: `change_ai`, `change_stats`, `interact_unit`, `trigger_script`) son
-    **no-op seguros** hasta portar esos sistemas.
+    fallback). Estado final: **43 implementados de verdad**, **19 no-op** documentados.
+    Reales incluyen gameplay (`add_unit/move/kill`, `spawn_group/remove_group`, `change_team`,
+    `change_ai`, `give/remove_skill`, `add_tag`, `remove_item`, `remove_region`,
+    `inc_level_var`, `win_game/lose_game`, `trigger_script`, support/money/vars) y presentación
+    (`speak`+retratos, `music`, `transition`, `change_background`, `map_anim`, `center_cursor`,
+    `chapter_title`). No-op (necesitan subsistema): `base/prep/shop/choice` (menús),
+    `expression` (frames de retrato), `show_layer/hide_layer` (capas de tilemap),
+    `change_stats`, `interact_unit`, `overworld_cinematic`, `credits`, efectos de pantalla.
 - **Qué corre de verdad hoy**: al arrancar el Prólogo (`PrologueTest` → FE4 cap 0), los
   eventos se cargan y disparan con **ramificación correcta** y efectos de **gameplay**
   (add_unit/move/kill, seize/visit por región, change_team, dinero, vars, support…).

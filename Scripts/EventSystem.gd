@@ -55,6 +55,10 @@ extends Node
 # Eventos cargados, indexados por trigger.
 #   { trigger_name → Array de event Dictionaries }
 var events_by_trigger: Dictionary = {}
+# Eventos indexados por nombre (para trigger_script).
+var events_by_name: Dictionary = {}
+# Anti-recursión de trigger_script.
+var _script_depth: int = 0
 
 # Eventos disparados (only_once, set_flag, etc.).
 var fired_events: Array = []
@@ -103,6 +107,7 @@ signal force_defeat()
 ## directorio /events/ filtrada por level_nid del capítulo actual.
 func load_chapter_events(events_data: Array, level_nid: String) -> void:
 	events_by_trigger.clear()
+	events_by_name.clear()
 	fired_events.clear()
 	level_vars.clear()
 	for ev in events_data:
@@ -113,6 +118,10 @@ func load_chapter_events(events_data: Array, level_nid: String) -> void:
 		var ev_level := str(raw_level) if raw_level != null else ""
 		if ev_level != "" and ev_level != level_nid and ev_level != "global":
 			continue
+		# Indexar por nombre (para trigger_script), incluso sin trigger de disparo.
+		var ev_name := str(ev.get("name", ""))
+		if ev_name != "":
+			events_by_name[ev_name] = ev
 		var trigger := str(ev.get("trigger", ""))
 		if trigger == "":
 			continue
@@ -506,6 +515,14 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 			await _cmd_center_cursor(args)
 		"chapter_title":
 			await _cmd_chapter_title()
+		"change_ai":
+			_cmd_change_ai(args, context)
+		"trigger_script":
+			await _cmd_trigger_script(args, context)
+		"remove_group":
+			_cmd_remove_group(args)
+		"remove_item":
+			_cmd_remove_item(args, context)
 		"wait":
 			var ms: int = int(args[0]) if args.size() > 0 else 500
 			if game_manager and game_manager.has_method("get_tree"):
@@ -514,7 +531,7 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 		# (portraits, capas, animaciones de mapa, música, cinemáticas, tiendas,
 		#  base/prep, y unos pocos de gameplay que requieren sistemas no portados
 		#  todavía: change_ai, change_stats, interact_unit, trigger_script…).
-		"change_tilemap", "expression", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "trigger_script", "change_stats", "change_ai", "remove_group", "remove_item", "has_traded":
+		"change_tilemap", "expression", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "change_stats", "has_traded":
 			pass
 		_:
 			# Comandos no reconocidos — log para detectar nuevos a implementar.
@@ -806,6 +823,70 @@ func _cmd_chapter_title() -> void:
 	t.parallel().tween_property(label, "modulate:a", 0.0, 0.5)
 	await t.finished
 	overlay.queue_free()
+
+
+## change_ai(unit, preset) — cambia el preset de IA de la unidad. El AIController
+## lo lee vía `unit.get_meta("ai_preset")`, así que basta con fijar la meta.
+func _cmd_change_ai(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	var unit = _resolve_unit(str(args[0]), context)
+	if unit == null:
+		return
+	unit.set_meta("ai_preset", str(args[1]))
+
+
+## trigger_script(name) — ejecuta los comandos del evento nombrado (eventos sin
+## trigger propio que se lanzan desde otros). Anti-recursión con _script_depth.
+func _cmd_trigger_script(args: Array, context: Dictionary) -> void:
+	if args.is_empty() or _script_depth > 8:
+		return
+	var ev = events_by_name.get(str(args[0]))
+	if ev == null:
+		return
+	_script_depth += 1
+	await _execute_commands(ev.get("commands", []), context)
+	_script_depth -= 1
+
+
+## remove_group(group_nid) — despawnea (silencioso) las unidades de un grupo,
+## p.ej. limpiar refuerzos. Reusa loaded_level.unit_groups vía _find_unit_group.
+func _cmd_remove_group(args: Array) -> void:
+	if args.is_empty() or game_manager == null:
+		return
+	var group := _find_unit_group(str(args[0]))
+	if group.is_empty():
+		return
+	for unit_nid in group.get("units", []):
+		var u = _resolve_unit(str(unit_nid), {})
+		if u == null:
+			continue
+		if "grid" in game_manager and game_manager.grid != null:
+			game_manager.grid.remove_unit(u.grid_position)
+		if "player_units" in game_manager:
+			game_manager.player_units.erase(u)
+		if "enemy_units" in game_manager:
+			game_manager.enemy_units.erase(u)
+		u.queue_free()
+
+
+## remove_item(unit, item) — quita un ítem del inventario de la unidad (por nombre).
+func _cmd_remove_item(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	var unit = _resolve_unit(str(args[0]), context)
+	if unit == null or not ("inventory" in unit):
+		return
+	var item_name := str(args[1])
+	for it in unit.inventory:
+		var nm := ""
+		if it is Object and "name" in it:
+			nm = str(it.name)
+		elif it is Dictionary:
+			nm = str(it.get("name", ""))
+		if nm == item_name:
+			unit.inventory.erase(it)
+			return
 
 
 func _cmd_give_item(args: Array, context: Dictionary) -> void:
