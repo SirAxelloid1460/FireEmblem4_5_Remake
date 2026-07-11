@@ -451,6 +451,8 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 			_cmd_move_portrait(args, context)
 		"change_portrait":
 			_cmd_change_portrait(args, context)
+		"expression":
+			_cmd_expression(args, context)
 		"give_item":
 			_cmd_give_item(args, context)
 		"give_gold", "give_money":
@@ -531,7 +533,7 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 		# (portraits, capas, animaciones de mapa, música, cinemáticas, tiendas,
 		#  base/prep, y unos pocos de gameplay que requieren sistemas no portados
 		#  todavía: change_ai, change_stats, interact_unit, trigger_script…).
-		"change_tilemap", "expression", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "change_stats", "has_traded":
+		"change_tilemap", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "change_stats", "has_traded":
 			pass
 		_:
 			# Comandos no reconocidos — log para detectar nuevos a implementar.
@@ -565,13 +567,35 @@ func _portrait_tex(nid: String) -> Texture2D:
 	return get_node("/root/AssetLoader").get_portrait(nid)
 
 
+var _portrait_offsets: Dictionary = {}
+var _offsets_loaded: bool = false
+
+## Offset de parpadeo (blinking_offset) de un retrato, o (-1,-1) si no hay dato.
+func _portrait_blink(nid: String) -> Vector2:
+	if not _offsets_loaded:
+		_offsets_loaded = true
+		var path := "res://data/general/portrait_offsets.json"
+		if FileAccess.file_exists(path):
+			var f := FileAccess.open(path, FileAccess.READ)
+			var d = JSON.parse_string(f.get_as_text())
+			f.close()
+			if d is Dictionary:
+				_portrait_offsets = d
+	var e = _portrait_offsets.get(nid)
+	if e is Dictionary and e.has("blink"):
+		var b = e["blink"]
+		if b is Array and b.size() >= 2:
+			return Vector2(float(b[0]), float(b[1]))
+	return Vector2(-1, -1)
+
+
 # ── Comandos de retrato (escenario del EventDialogue) ────────────────────────
 
 func _cmd_add_portrait(args: Array, context: Dictionary) -> void:
 	if args.size() < 2:
 		return
 	var nid := _portrait_nid(str(args[0]), context)
-	_ensure_dialogue().add_portrait(nid, str(args[1]), _portrait_tex(nid))
+	_ensure_dialogue().add_portrait(nid, str(args[1]), _portrait_tex(nid), _portrait_blink(nid))
 
 
 func _cmd_multi_add_portrait(args: Array, context: Dictionary) -> void:
@@ -579,8 +603,15 @@ func _cmd_multi_add_portrait(args: Array, context: Dictionary) -> void:
 	var i := 0
 	while i + 1 < args.size():
 		var nid := _portrait_nid(str(args[i]), context)
-		_ensure_dialogue().add_portrait(nid, str(args[i + 1]), _portrait_tex(nid))
+		_ensure_dialogue().add_portrait(nid, str(args[i + 1]), _portrait_tex(nid), _portrait_blink(nid))
 		i += 2
+
+
+## expression(unit, expr) — cambia el estado de ojos del retrato en escena.
+func _cmd_expression(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	_ensure_dialogue().set_expression(_portrait_nid(str(args[0]), context), str(args[1]))
 
 
 func _cmd_remove_portrait(args: Array, context: Dictionary) -> void:

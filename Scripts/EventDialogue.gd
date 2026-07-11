@@ -20,8 +20,12 @@ const COLOR_TEXT     := Color(0.96, 0.95, 0.90, 1.0)
 const COLOR_OUTLINE  := Color(0.0, 0.0, 0.0, 1.0)
 const CHAR_TIME := 0.028   # s por carácter
 
-# Hoja de retrato LT: cara principal 96×80 arriba-izquierda.
+# Hoja de retrato LT: cara principal 96×80 arriba-izquierda. Frames de parpadeo
+# (hoja de 144 ancho, ver app/events/event_portrait.py): se pegan en el
+# `blinking_offset` del retrato (data/general/portrait_offsets.json).
 const FACE_REGION := Rect2(0, 0, 96, 80)
+const FULLBLINK := Rect2(96, 80, 32, 16)   # ojos cerrados  → CloseEyes
+const HALFBLINK := Rect2(96, 64, 32, 16)   # ojos entrecerrados → HalfCloseEyes
 const PORTRAIT_SCALE := 3
 const DIM := Color(0.55, 0.55, 0.55, 1.0)   # retratos no-hablantes
 
@@ -108,7 +112,8 @@ func _build() -> void:
 # ── Escenario de retratos ────────────────────────────────────────────────────
 
 ## Coloca (o mueve) el retrato de `nid` en la posición `pos`. tex = hoja LT.
-func add_portrait(nid: String, pos: String, tex: Texture2D) -> void:
+func add_portrait(nid: String, pos: String, tex: Texture2D,
+		blink_offset: Vector2 = Vector2(-1, -1)) -> void:
 	if tex == null:
 		return
 	var rect: TextureRect = _portraits.get(nid)
@@ -122,9 +127,40 @@ func add_portrait(nid: String, pos: String, tex: Texture2D) -> void:
 		rect.scale = Vector2(PORTRAIT_SCALE, PORTRAIT_SCALE)
 		_stage.add_child(rect)
 		_portraits[nid] = rect
+		# Overlay de parpadeo (hijo → hereda escala/posición del retrato).
+		var blink := TextureRect.new()
+		blink.name = "Blink"
+		blink.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		blink.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		blink.visible = false
+		rect.add_child(blink)
 	_apply_face(rect, tex)
+	rect.set_meta("sheet", tex)
+	if blink_offset.x >= 0.0:
+		rect.set_meta("blink_offset", blink_offset)
 	_place(rect, pos)
 	visible = true
+
+
+## expression(nid, expr): estado de ojos del retrato en escena.
+##   CloseEyes → parpadeo cerrado; HalfCloseEyes → entrecerrado; otro → abierto.
+func set_expression(nid: String, expr: String) -> void:
+	var rect: TextureRect = _portraits.get(nid)
+	if rect == null or not is_instance_valid(rect):
+		return
+	var blink := rect.get_node_or_null("Blink") as TextureRect
+	if blink == null:
+		return
+	if (expr == "CloseEyes" or expr == "HalfCloseEyes") \
+			and rect.has_meta("sheet") and rect.has_meta("blink_offset"):
+		var at := AtlasTexture.new()
+		at.atlas = rect.get_meta("sheet")
+		at.region = FULLBLINK if expr == "CloseEyes" else HALFBLINK
+		blink.texture = at
+		blink.position = rect.get_meta("blink_offset")   # px nativos (padre escala)
+		blink.visible = true
+	else:
+		blink.visible = false
 
 
 func remove_portrait(nid: String) -> void:

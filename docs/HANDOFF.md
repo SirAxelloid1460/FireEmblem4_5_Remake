@@ -251,7 +251,11 @@ Fuente auténtica: `GotHW.ltproj/game_data/events.json` (FE4, 167 eventos) y
     (`_compare_var`: ==, !=, >=, <=, >, <, numérico o string/bool). Es lo que usan los
     contadores de destructibles que alimentan los `if` (recompensas de pueblos).
   - **Cobertura de comandos**: los **66** tipos usados están cubiertos (0 caen en el
-    fallback). Estado final: **43 implementados de verdad**, **19 no-op** documentados.
+    fallback). Estado: **44 implementados de verdad**, **18 no-op** documentados.
+    `expression` (parpadeo/ojos cerrados) YA es real: `tools/build_portrait_offsets.py`
+    genera `data/general/portrait_offsets.json` (blinking/smiling offset por retrato, del
+    `portraits.json` del `.ltproj`), y `EventDialogue.set_expression` compone el frame
+    `fullblink (96,80,32,16)` sobre la cara en su `blinking_offset` (layout LT de hoja 144).
     Reales incluyen gameplay (`add_unit/move/kill`, `spawn_group/remove_group`, `change_team`,
     `change_ai`, `give/remove_skill`, `add_tag`, `remove_item`, `remove_region`,
     `inc_level_var`, `win_game/lose_game`, `trigger_script`, support/money/vars) y presentación
