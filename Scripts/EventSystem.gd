@@ -430,6 +430,18 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 	match cmd:
 		"speak":
 			await _cmd_speak(args, context)
+		"add_portrait":
+			_cmd_add_portrait(args, context)
+		"multi_add_portrait":
+			_cmd_multi_add_portrait(args, context)
+		"remove_portrait":
+			_cmd_remove_portrait(args, context)
+		"multi_remove_portrait":
+			_cmd_multi_remove_portrait(args, context)
+		"move_portrait":
+			_cmd_move_portrait(args, context)
+		"change_portrait":
+			_cmd_change_portrait(args, context)
 		"give_item":
 			_cmd_give_item(args, context)
 		"give_gold", "give_money":
@@ -496,7 +508,7 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 		# (portraits, capas, animaciones de mapa, música, cinemáticas, tiendas,
 		#  base/prep, y unos pocos de gameplay que requieren sistemas no portados
 		#  todavía: change_ai, change_stats, interact_unit, trigger_script…).
-		"change_tilemap", "multi_add_portrait", "multi_remove_portrait", "add_portrait", "remove_portrait", "move_portrait", "change_portrait", "expression", "center_cursor", "move_cursor", "chapter_title", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "map_anim", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "trigger_script", "change_stats", "change_ai", "remove_group", "remove_item", "has_traded":
+		"change_tilemap", "expression", "center_cursor", "move_cursor", "chapter_title", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "map_anim", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "trigger_script", "change_stats", "change_ai", "remove_group", "remove_item", "has_traded":
 			pass
 		_:
 			# Comandos no reconocidos — log para detectar nuevos a implementar.
@@ -509,14 +521,69 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 func _cmd_speak(args: Array, context: Dictionary) -> void:
 	if args.is_empty():
 		return
-	var token := str(args[0])
-	var nid := _resolve_token(token, context) if token.begins_with("{") else token
+	var nid := _portrait_nid(str(args[0]), context)
 	var line := str(args[1]) if args.size() >= 2 else ""
-	var portrait: Texture2D = null
-	if has_node("/root/AssetLoader"):
-		portrait = get_node("/root/AssetLoader").get_portrait(nid)
-	var side := "left" if CharacterDatabase.is_player_character(nid) else "right"
-	await _ensure_dialogue().play_line(nid, line, portrait, side)
+	# Retrato de respaldo por si el hablante no estaba en escena (sin add_portrait).
+	var fallback := _portrait_tex(nid)
+	await _ensure_dialogue().play_line(nid, nid, line, fallback)
+
+
+## nid de retrato: resuelve tokens {unit}/{unit2} al nombre de la unidad.
+func _portrait_nid(token: String, context: Dictionary) -> String:
+	if token.begins_with("{"):
+		return _resolve_token(token, context)
+	return token
+
+
+## Textura del retrato de un nid (hoja LT), o null si no existe.
+func _portrait_tex(nid: String) -> Texture2D:
+	if nid == "" or not has_node("/root/AssetLoader"):
+		return null
+	return get_node("/root/AssetLoader").get_portrait(nid)
+
+
+# ── Comandos de retrato (escenario del EventDialogue) ────────────────────────
+
+func _cmd_add_portrait(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	var nid := _portrait_nid(str(args[0]), context)
+	_ensure_dialogue().add_portrait(nid, str(args[1]), _portrait_tex(nid))
+
+
+func _cmd_multi_add_portrait(args: Array, context: Dictionary) -> void:
+	# Pares [nid, pos, nid, pos, ...].
+	var i := 0
+	while i + 1 < args.size():
+		var nid := _portrait_nid(str(args[i]), context)
+		_ensure_dialogue().add_portrait(nid, str(args[i + 1]), _portrait_tex(nid))
+		i += 2
+
+
+func _cmd_remove_portrait(args: Array, context: Dictionary) -> void:
+	if args.is_empty():
+		return
+	_ensure_dialogue().remove_portrait(_portrait_nid(str(args[0]), context))
+
+
+func _cmd_multi_remove_portrait(args: Array, context: Dictionary) -> void:
+	for a in args:
+		_ensure_dialogue().remove_portrait(_portrait_nid(str(a), context))
+
+
+func _cmd_move_portrait(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	_ensure_dialogue().move_portrait(_portrait_nid(str(args[0]), context), str(args[1]))
+
+
+## change_portrait(unit, new_portrait_nid) — cambia la hoja del retrato en escena.
+func _cmd_change_portrait(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	var nid := _portrait_nid(str(args[0]), context)
+	var new_tex := _portrait_tex(str(args[1]))
+	_ensure_dialogue().change_portrait(nid, new_tex)
 
 
 # ── Presentación: capa, diálogo, música, transiciones, fondo ─────────────────

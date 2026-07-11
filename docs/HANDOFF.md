@@ -280,17 +280,27 @@ Los eventos ya no sólo corren su lógica: se **ven y se oyen**.
 - **Bloqueo de input**: `EventSystem.is_busy()` (contador `_busy_depth`); `GameManager._input`
   lo consulta y **no permite mover/seleccionar unidades durante un diálogo/cinemática**.
 - **Efecto hoy**: el **Intro del Prólogo FE4** (25 `speak`) reproduce su cutscene con retratos
-  (Midir, Ethlyn, Arvis…) y texto typewriter; los eventos de pueblo/talk muestran diálogo.
-- *Limitaciones conocidas*: el retrato se resuelve por el **nid del hablante**, no por el
-  `add_portrait` exacto de LT (que sigue no-op) — algunos personajes cuyo portrait nid difiere
-  del nid de unidad (p.ej. "Arvis"→ArvisYoung/Old) saldrán sin cara. `map_anim`/`show_layer`/
-  `expression`/posicionado de retratos siguen no-op. `{w}` intramedio no pausa (se limpia).
+  y texto typewriter; los eventos de pueblo/talk muestran diálogo.
+
+### Retratos fieles (escenario de retratos) ✅
+- **`EventDialogue.gd`**: escenario de retratos por nid. Honra **`add_portrait`/
+  `multi_add_portrait`/`remove_portrait`/`multi_remove_portrait`/`move_portrait`/
+  `change_portrait`** con posición real (slots `FarLeft/Left/MidLeft/MidRight/Right/FarRight`
+  o coordenada nativa `x,y` escalada). Los retratos del **lado derecho se voltean**
+  (`flip_h`) para mirar al centro. Cara = región **96×80** de la hoja LT (144×112),
+  escalada ×3. `speak` **resalta al hablante** (los demás se atenúan); si el hablante no
+  estaba en escena, se añade un retrato de respaldo. Al terminar el evento se limpian.
+- **`EventSystem.gd`**: `_cmd_add_portrait`/`_multi_*`/`_remove_*`/`_move_portrait`/
+  `_change_portrait` resuelven la textura por nid (`AssetLoader.get_portrait`, tokens
+  `{unit}` incluidos) y la pasan al escenario. `speak` usa el retrato ya en escena.
+- *Limitaciones*: `expression` (CloseEyes…) sigue no-op — requiere el layout de frames de
+  la hoja LT (parpadeo/boca). `map_anim`/`show_layer`/`hide_layer` sobre el mapa siguen
+  no-op; `{w}` intramedio no pausa (se limpia). Nombre mostrado = nid del hablante.
 
 ### Próximo
-1. Verificar en editor: Prólogo FE4 (cutscene Intro con retratos/typewriter; input bloqueado
-   durante diálogo) y el anclaje de paso (`MOVE_FEET_NATIVE`).
-2. Retratos fieles: honrar `add_portrait`/`multi_add_portrait` (posición Left/Right y portrait
-   nid exacto) en vez de resolver por hablante; soportar `expression`.
+1. Verificar en editor: Prólogo FE4 (cutscene Intro con retratos posicionados/typewriter;
+   input bloqueado durante diálogo) y el anclaje de paso (`MOVE_FEET_NATIVE`).
+2. `expression`: mapear frames de expresión (parpadeo/boca) de la hoja de retrato LT.
 3. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 (ya en
    `data/fe4/events/`: `Intro`/`Narration`/`Outro`) y cablear MainMenu → apertura → Prólogo.
 4. `map_anim`/`show_layer`/`hide_layer` sobre el mapa; `{w}` como pausa intramedio.

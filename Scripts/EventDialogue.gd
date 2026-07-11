@@ -1,13 +1,15 @@
 # EventDialogue.gd
 # ============================================================
-# Caja de diálogo para EVENTOS (comando `speak`), estilo FE, por código.
-# ============================================================
-# Presentador autocontenido (no depende de ninguna .tscn, en línea con el
-# patrón fiable del proyecto). Lo instancia EventSystem sobre un CanvasLayer y
-# lo maneja con `play_line()` (corrutina que espera input del jugador).
+# Presentación de diálogo de EVENTOS (comando `speak`) + escenario de retratos,
+# estilo FE, por código (sin depender de ninguna .tscn — patrón fiable del
+# proyecto). Lo instancia EventSystem sobre un CanvasLayer.
 #
-# Soporta retrato izquierda/derecha, efecto máquina de escribir con "skip", e
-# indicador de continuar. Limpia los códigos de control LT del texto ({w}/{br}…).
+# Escenario de retratos: add/remove/move/change_portrait colocan retratos por
+# slot (Left/Right/FarRight/… o coordenada nativa "x,y"); `speak` resalta al
+# hablante (los demás se atenúan). Retrato = cara principal 96×80 de la hoja LT
+# (144×112). Los del lado derecho se voltean para mirar al centro.
+#
+# La caja de texto tiene efecto máquina de escribir con "skip" y espera input.
 
 extends Control
 class_name EventDialogue
@@ -18,12 +20,17 @@ const COLOR_TEXT     := Color(0.96, 0.95, 0.90, 1.0)
 const COLOR_OUTLINE  := Color(0.0, 0.0, 0.0, 1.0)
 const CHAR_TIME := 0.028   # s por carácter
 
+# Hoja de retrato LT: cara principal 96×80 arriba-izquierda.
+const FACE_REGION := Rect2(0, 0, 96, 80)
+const PORTRAIT_SCALE := 3
+const DIM := Color(0.55, 0.55, 0.55, 1.0)   # retratos no-hablantes
+
 var _panel: PanelContainer
 var _name_label: Label
 var _text_label: RichTextLabel
 var _cont: Label
-var _port_left: TextureRect
-var _port_right: TextureRect
+var _stage: Control              # contenedor de retratos (detrás de la caja)
+var _portraits: Dictionary = {}  # nid -> TextureRect
 
 var _typing := false
 var _waiting := false
@@ -37,16 +44,13 @@ func _ready() -> void:
 
 
 func _build() -> void:
-	var vp := get_viewport_rect().size
 	var font = load(SERIF_FONT)
 
-	# Retratos (a los lados, sobre la caja).
-	_port_left = _make_portrait_rect()
-	_port_left.position = Vector2(40, vp.y - 520)
-	add_child(_port_left)
-	_port_right = _make_portrait_rect()
-	_port_right.position = Vector2(vp.x - 40 - 256, vp.y - 520)
-	add_child(_port_right)
+	# Escenario de retratos (debajo de la caja).
+	_stage = Control.new()
+	_stage.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_stage.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(_stage)
 
 	# Caja inferior.
 	_panel = PanelContainer.new()
@@ -101,41 +105,128 @@ func _build() -> void:
 	visible = false
 
 
-func _make_portrait_rect() -> TextureRect:
-	var t := TextureRect.new()
-	t.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	t.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	t.custom_minimum_size = Vector2(256, 256)
-	t.size = Vector2(256, 256)
-	t.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	t.visible = false
-	return t
+# ── Escenario de retratos ────────────────────────────────────────────────────
+
+## Coloca (o mueve) el retrato de `nid` en la posición `pos`. tex = hoja LT.
+func add_portrait(nid: String, pos: String, tex: Texture2D) -> void:
+	if tex == null:
+		return
+	var rect: TextureRect = _portraits.get(nid)
+	if rect == null or not is_instance_valid(rect):
+		rect = TextureRect.new()
+		rect.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		# La cara mide 96×80 (nativo); escalamos el nodo ×PORTRAIT_SCALE. Con el
+		# stretch por defecto (KEEP) el TextureRect se dibuja a tamaño de textura,
+		# y el `scale` del nodo lo agranda a 288×240 sin deformar.
+		rect.scale = Vector2(PORTRAIT_SCALE, PORTRAIT_SCALE)
+		_stage.add_child(rect)
+		_portraits[nid] = rect
+	_apply_face(rect, tex)
+	_place(rect, pos)
+	visible = true
 
 
-## Muestra una línea y espera al jugador. side: "left"/"right".
-func play_line(speaker_name: String, text: String, portrait: Texture2D,
-		side: String = "left") -> void:
+func remove_portrait(nid: String) -> void:
+	var rect: TextureRect = _portraits.get(nid)
+	if rect != null and is_instance_valid(rect):
+		rect.queue_free()
+	_portraits.erase(nid)
+
+
+func move_portrait(nid: String, pos: String) -> void:
+	var rect: TextureRect = _portraits.get(nid)
+	if rect != null and is_instance_valid(rect):
+		_place(rect, pos)
+
+
+## Cambia la hoja del retrato de `nid` (change_portrait) manteniendo su posición.
+func change_portrait(nid: String, tex: Texture2D) -> void:
+	var rect: TextureRect = _portraits.get(nid)
+	if rect != null and is_instance_valid(rect) and tex != null:
+		_apply_face(rect, tex)
+
+
+func clear_portraits() -> void:
+	for nid in _portraits.keys():
+		var rect: TextureRect = _portraits[nid]
+		if rect != null and is_instance_valid(rect):
+			rect.queue_free()
+	_portraits.clear()
+
+
+func _apply_face(rect: TextureRect, tex: Texture2D) -> void:
+	var at := AtlasTexture.new()
+	at.atlas = tex
+	at.region = FACE_REGION
+	rect.texture = at
+
+
+## Traduce un slot a posición de pantalla (+ flip si mira al centro desde la
+## derecha). Slots nombrados o coordenada nativa "x,y" (base 240×160).
+func _place(rect: TextureRect, pos: String) -> void:
+	var vp := get_viewport_rect().size
+	var pw := 96 * PORTRAIT_SCALE
+	var ph := 80 * PORTRAIT_SCALE
+	var y := vp.y - 220.0 - ph + 40.0   # justo por encima de la caja
+	var x := 48.0
+	var flip := false
+	match pos:
+		"FarLeft":
+			x = 8
+		"Left":
+			x = 48
+		"MidLeft":
+			x = vp.x * 0.28
+		"MidRight":
+			x = vp.x * 0.72 - pw
+			flip = true
+		"Right":
+			x = vp.x - pw - 48
+			flip = true
+		"FarRight":
+			x = vp.x - pw - 8
+			flip = true
+		_:
+			# Coordenada nativa "x,y" (240×160) → escala a pantalla (best effort).
+			var parts := str(pos).split(",")
+			if parts.size() == 2 and str(parts[0]).strip_edges().is_valid_int() \
+					and str(parts[1]).strip_edges().is_valid_int():
+				x = float(int(str(parts[0]).strip_edges())) / 240.0 * vp.x
+				y = float(int(str(parts[1]).strip_edges())) / 160.0 * vp.y
+	rect.position = Vector2(x, y)
+	rect.flip_h = flip
+
+
+## Resalta al hablante (los demás se atenúan). Si no está en escena y hay tex de
+## respaldo, lo añade a la izquierda para que igual se vea una cara.
+func _highlight(nid: String, fallback: Texture2D) -> void:
+	if not _portraits.has(nid) and fallback != null:
+		add_portrait(nid, "Left", fallback)
+	for k in _portraits.keys():
+		var rect: TextureRect = _portraits[k]
+		if rect != null and is_instance_valid(rect):
+			rect.modulate = Color.WHITE if k == nid else DIM
+
+
+# ── Diálogo ──────────────────────────────────────────────────────────────────
+
+## Muestra una línea del hablante `nid` y espera al jugador.
+func play_line(nid: String, speaker_name: String, text: String,
+		fallback: Texture2D = null) -> void:
 	visible = true
 	_name_label.text = speaker_name
-	# Retrato del hablante en el lado indicado; el otro se atenúa.
-	_port_left.visible = false
-	_port_right.visible = false
-	if portrait != null:
-		var pr := _port_right if side == "right" else _port_left
-		pr.texture = portrait
-		pr.visible = true
-
+	_highlight(nid, fallback)
 	var clean := _clean_text(text)
 	await _type(clean)
 	await _wait_for_input()
 	_cont.visible = false
 
 
-## Oculta la caja y los retratos (fin de la secuencia de un evento).
+## Fin de la secuencia del evento: oculta la caja y limpia los retratos.
 func finish() -> void:
 	visible = false
-	_port_left.visible = false
-	_port_right.visible = false
+	clear_portraits()
 
 
 func _type(txt: String) -> void:
