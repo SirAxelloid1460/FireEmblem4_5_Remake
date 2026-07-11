@@ -232,9 +232,45 @@ No inventar datos/fórmulas: **cruzar siempre con LT** (engine `app.rar` → spr
   una unidad con enemigo en rango → elegir Attack/Wait; clic derecho en targeting = volver) y
   `main_menu.tscn` (gemas/SFX/Sound Room).
 
+### Eventos nativos (FE4 + FE5) — porte desde LT ✅ (datos + lógica)
+Fuente auténtica: `GotHW.ltproj/game_data/events.json` (FE4, 167 eventos) y
+`Thracia776.ltproj/game_data/events.json` (FE5, 6). Están en las ramas `FE4`/`FE5`
+(builds de Lex Talionis) y el usuario los aportó.
+- **`tools/build_events.py`** (nuevo): lee el `events.json` del `.ltproj`, aplica
+  `NID_REMAP` (FakeMidir→Midir, Chagall1/2→Chagall, EldiganAlly/Enemy→Eldigan, Leaf→Leif)
+  tanto en args exactos como en **literales entrecomillados dentro de condiciones**
+  (`unit.nid == 'Chagall1'` → `'Chagall'`), y escribe `data/fe4/events/events.json` y
+  `data/fe5/events/events.json` (formato que ya consume `PrologueTest._load_all_events`).
+  Los **nombres de evento** conservan el token viejo (identificadores internos).
+- **`EventSystem.gd`** — mejoras clave para correr los eventos LT reales:
+  - **Control de flujo `if/elif/else/end`** (anidado) en `_run_block`/`_find_conditional`:
+    sólo se ejecuta la rama cuya condición se cumple. Antes se corrían todas. Validado
+    por simulación sobre los 173 eventos (sin errores de índice; 1 evento DEBUG `Shop`
+    con `if` sin `end` en el propio LT → se maneja con fallback, no rompe).
+  - **Condiciones subscript** `game.level_vars['k'] [op] N` y `game.game_vars['k']`
+    (`_compare_var`: ==, !=, >=, <=, >, <, numérico o string/bool). Es lo que usan los
+    contadores de destructibles que alimentan los `if` (recompensas de pueblos).
+  - **Cobertura de comandos**: los **66** tipos usados están cubiertos (0 caen en el
+    fallback). Nuevos handlers de gameplay: `win_game/lose_game` (victoria/derrota),
+    `inc_level_var`, `remove_region` (evita re-visitar pueblos), `add_tag`,
+    `give_skill/remove_skill`. El resto (portraits, capas, `map_anim`, transiciones,
+    música, cinemáticas, tiendas, base/prep, y algunos de gameplay que aún no tienen
+    subsistema: `change_ai`, `change_stats`, `interact_unit`, `trigger_script`) son
+    **no-op seguros** hasta portar esos sistemas.
+- **Qué corre de verdad hoy**: al arrancar el Prólogo (`PrologueTest` → FE4 cap 0), los
+  eventos se cargan y disparan con **ramificación correcta** y efectos de **gameplay**
+  (add_unit/move/kill, seize/visit por región, change_team, dinero, vars, support…).
+  La **presentación** (diálogos `speak`, retratos, `map_anim`, transiciones, cinemáticas)
+  es no-op hasta cablear DialogueBox/portraits/capas. FE5 queda **preparado** (data en
+  `data/fe5/events/`) pero sin bootstrap de escena propio todavía.
+
 ### Próximo
 1. Verificar en editor el anclaje de la celda de paso (`MOVE_FEET_NATIVE`) en clases altas.
-2. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 y **entonces**
-   cablear MainMenu → apertura → Prólogo (con fallback si falta asset/escena).
-3. Pipeline de guardado/carga real para habilitar Continue.
-4. Ampliar el menú de acciones: Item/Staff (báculos), deshacer movimiento, retratos en combate.
+2. Cablear la **presentación** de eventos: `speak`→DialogueBox (con retratos por portrait
+   nid), `map_anim`/`show_layer`/`transition`/`music` → sistemas ya existentes. Es lo que
+   convierte los eventos de "lógica" a "cinemática" completa.
+3. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 (ya
+   disponible como eventos `Intro`/`Narration`/`Outro` en `data/fe4/events/`) y cablear
+   MainMenu → apertura → Prólogo.
+4. Pipeline de guardado/carga real para habilitar Continue.
+5. Ampliar el menú de acciones: Item/Staff (báculos), deshacer movimiento, retratos en combate.

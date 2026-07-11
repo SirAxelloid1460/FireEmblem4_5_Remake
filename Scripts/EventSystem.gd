@@ -208,6 +208,18 @@ func _evaluate_condition(cond: String, context: Dictionary) -> bool:
 		# Buscar el operador y el operando.
 		return _eval_turncount_compare(cond)
 	# game.level_vars.get('X') == <value>
+	if cond.begins_with("game.level_vars[") or cond.begins_with("game.game_vars["):
+		var ob := cond.find("[")
+		var cb := cond.find("]", ob)
+		if ob < 0 or cb < 0:
+			return true
+		var vkey := cond.substr(ob + 1, cb - ob - 1).strip_edges() \
+				.trim_prefix("'").trim_suffix("'").trim_prefix("\"").trim_suffix("\"")
+		var vrest := cond.substr(cb + 1).strip_edges()
+		var vactual = level_vars.get(vkey, null)
+		if vrest == "":
+			return vactual != null and bool(vactual)
+		return _compare_var(vactual, vrest)
 	if cond.begins_with("game.level_vars.get("):
 		var open_paren := cond.find("(")
 		var close_paren := cond.find(")", open_paren)
@@ -270,17 +282,121 @@ func _eval_turncount_compare(cond: String) -> bool:
 	return false
 
 
+## Compara un valor de level_var contra el lado derecho de una condición
+## (`== 3`, `!= True`, `>= 5`, `< 2`...). Numérico si ambos lados lo son;
+## si no, comparación de strings (con True/False como bool).
+func _compare_var(actual, rest: String) -> bool:
+	var op := ""
+	for candidate in ["==", ">=", "<=", "!=", ">", "<"]:
+		if rest.begins_with(candidate):
+			op = candidate
+			rest = rest.substr(candidate.length()).strip_edges()
+			break
+	if op == "":
+		return actual != null and bool(actual)
+	var clean := rest.trim_prefix("'").trim_suffix("'").trim_prefix("\"").trim_suffix("\"")
+	# Booleanos.
+	if clean == "True":
+		return bool(actual) if op == "==" else not bool(actual)
+	if clean == "False":
+		return (not bool(actual)) if op == "==" else bool(actual)
+	# Numérico si el rhs es entero (los level_vars sin fijar valen 0).
+	if clean.is_valid_int():
+		var a := int(actual) if actual != null and str(actual).is_valid_int() else 0
+		var b := int(clean)
+		match op:
+			"==": return a == b
+			"!=": return a != b
+			">=": return a >= b
+			"<=": return a <= b
+			">":  return a > b
+			"<":  return a < b
+	# String.
+	match op:
+		"==": return str(actual) == clean
+		"!=": return str(actual) != clean
+	return false
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 # EJECUTOR DE COMANDOS
 # ══════════════════════════════════════════════════════════════════════════════
 
 func _execute_commands(commands: Array, context: Dictionary) -> void:
-	for cmd_entry in commands:
-		if not (cmd_entry is Array) or cmd_entry.size() < 1:
+	await _run_block(commands, 0, commands.size(), context)
+
+
+## Ejecuta commands[start, end) respetando bloques condicionales LT
+## (if / elif / else / end), anidamiento incluido. Sólo corre la rama cuya
+## condición se cumple; el resto se salta.
+func _run_block(commands: Array, start: int, end: int, context: Dictionary) -> void:
+	var i := start
+	while i < end:
+		var entry = commands[i]
+		if not (entry is Array) or entry.size() < 1:
+			i += 1
 			continue
-		var cmd := str(cmd_entry[0])
-		var args = cmd_entry[1] if cmd_entry.size() >= 2 else []
+		var cmd := str(entry[0])
+		if cmd == "if":
+			var block := _find_conditional(commands, i, end)
+			for clause in block["clauses"]:
+				if clause["is_else"] or _evaluate_condition(str(clause["cond"]), context):
+					await _run_block(commands, clause["body_start"], clause["body_end"], context)
+					break
+			i = block["after"]
+			continue
+		if cmd == "elif" or cmd == "else" or cmd == "end":
+			# Terminador suelto (no debería ocurrir a este nivel) — ignorar.
+			i += 1
+			continue
+		var args = entry[1] if entry.size() >= 2 else []
 		await _exec_one(cmd, args, context)
+		i += 1
+
+
+## Analiza una estructura if/elif/else/end desde `if_index`. Devuelve
+## { "clauses": [ { cond, is_else, body_start, body_end } ], "after": idx }
+## donde `after` es el índice tras el `end` correspondiente.
+func _find_conditional(commands: Array, if_index: int, end: int) -> Dictionary:
+	var clauses: Array = []
+	var if_entry = commands[if_index]
+	var cur_cond := "True"
+	if if_entry.size() >= 2 and if_entry[1] is Array and if_entry[1].size() >= 1:
+		cur_cond = str(if_entry[1][0])
+	var cur_is_else := false
+	var cur_body_start := if_index + 1
+	var depth := 0
+	var i := if_index + 1
+	while i < end:
+		var entry = commands[i]
+		var cmd := ""
+		if entry is Array and entry.size() >= 1:
+			cmd = str(entry[0])
+		if cmd == "if":
+			depth += 1
+		elif cmd == "end":
+			if depth == 0:
+				clauses.append({ "cond": cur_cond, "is_else": cur_is_else,
+						"body_start": cur_body_start, "body_end": i })
+				return { "clauses": clauses, "after": i + 1 }
+			depth -= 1
+		elif (cmd == "elif" or cmd == "else") and depth == 0:
+			clauses.append({ "cond": cur_cond, "is_else": cur_is_else,
+					"body_start": cur_body_start, "body_end": i })
+			if cmd == "elif":
+				cur_cond = "False"
+				if entry.size() >= 2 and entry[1] is Array and entry[1].size() >= 1:
+					cur_cond = str(entry[1][0])
+				cur_is_else = false
+			else:
+				cur_cond = "True"
+				cur_is_else = true
+			cur_body_start = i + 1
+		i += 1
+	# Sin 'end' correspondiente (malformado) — cerrar en el límite.
+	clauses.append({ "cond": cur_cond, "is_else": cur_is_else,
+			"body_start": cur_body_start, "body_end": end })
+	return { "clauses": clauses, "after": end }
 
 
 func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
@@ -323,12 +439,29 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 			force_victory.emit()
 		"defeat":
 			force_defeat.emit()
+		"win_game":
+			force_victory.emit()
+		"lose_game":
+			force_defeat.emit()
+		"inc_level_var":
+			_cmd_inc_level_var(args)
+		"remove_region":
+			_cmd_remove_region(args)
+		"add_tag":
+			_cmd_add_tag(args, context)
+		"give_skill":
+			_cmd_unit_skill(args, context, true)
+		"remove_skill":
+			_cmd_unit_skill(args, context, false)
 		"wait":
 			var ms: int = int(args[0]) if args.size() > 0 else 500
 			if game_manager and game_manager.has_method("get_tree"):
 				await game_manager.get_tree().create_timer(ms / 1000.0).timeout
-		# Comandos meramente visuales — silenciados sin ruido.
-		"change_tilemap", "change_background", "transition", "music", "multi_add_portrait", "multi_remove_portrait", "add_portrait", "remove_portrait", "center_cursor", "move_cursor", "chapter_title", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor":
+		# Comandos de presentación / aún sin subsistema — silenciados sin ruido.
+		# (portraits, capas, animaciones de mapa, música, cinemáticas, tiendas,
+		#  base/prep, y unos pocos de gameplay que requieren sistemas no portados
+		#  todavía: change_ai, change_stats, interact_unit, trigger_script…).
+		"change_tilemap", "change_background", "transition", "music", "music_clear", "multi_add_portrait", "multi_remove_portrait", "add_portrait", "remove_portrait", "move_portrait", "change_portrait", "expression", "center_cursor", "move_cursor", "chapter_title", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "map_anim", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "trigger_script", "change_stats", "change_ai", "remove_group", "remove_item", "has_traded":
 			pass
 		_:
 			# Comandos no reconocidos — log para detectar nuevos a implementar.
@@ -391,6 +524,64 @@ func _cmd_level_var(args: Array) -> void:
 	if args.size() < 2:
 		return
 	level_vars[str(args[0])] = args[1]
+
+
+## inc_level_var(key[, amount]) — incrementa un contador de nivel (usado por los
+## eventos de destructibles cuyos totales leen luego los bloques if/elif).
+func _cmd_inc_level_var(args: Array) -> void:
+	if args.is_empty():
+		return
+	var key := str(args[0])
+	var amount := 1
+	if args.size() >= 2 and str(args[1]).is_valid_int():
+		amount = int(args[1])
+	var cur = level_vars.get(key, 0)
+	var base := int(cur) if str(cur).is_valid_int() else 0
+	level_vars[key] = base + amount
+
+
+## remove_region(nid) — quita una región del capítulo (p.ej. tras visitar un
+## pueblo) para que no vuelva a dispararse su evento.
+func _cmd_remove_region(args: Array) -> void:
+	if args.is_empty() or game_manager == null:
+		return
+	if not game_manager.has_meta("chapter_regions"):
+		return
+	var nid := str(args[0])
+	var regions: Array = game_manager.get_meta("chapter_regions")
+	var kept: Array = []
+	for r in regions:
+		if r is Dictionary and str(r.get("nid", "")) == nid:
+			continue
+		kept.append(r)
+	game_manager.set_meta("chapter_regions", kept)
+
+
+## add_tag(unit, tag) — añade un tag a la unidad (Mounted/Boss/…) si no lo tiene.
+func _cmd_add_tag(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	var unit = _resolve_unit(str(args[0]), context)
+	if unit == null or not ("tags" in unit):
+		return
+	var tag := str(args[1])
+	if tag not in unit.tags:
+		unit.tags.append(tag)
+
+
+## give_skill/remove_skill(unit, skill) — modifica las skills de la unidad.
+func _cmd_unit_skill(args: Array, context: Dictionary, add: bool) -> void:
+	if args.size() < 2:
+		return
+	var unit = _resolve_unit(str(args[0]), context)
+	if unit == null:
+		return
+	var skill := str(args[1])
+	if add:
+		if unit.has_method("learn_skill"):
+			unit.learn_skill(skill)
+	elif unit.has_method("remove_skill"):
+		unit.remove_skill(skill)
 
 
 ## Formato canónico LT: ["nid", "x,y"] o ["nid", "x,y", "immediate"/"fade"/...]
