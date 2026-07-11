@@ -217,10 +217,19 @@ func play_line(nid: String, speaker_name: String, text: String,
 	visible = true
 	_name_label.text = speaker_name
 	_highlight(nid, fallback)
-	var clean := _clean_text(text)
-	await _type(clean)
-	await _wait_for_input()
-	_cont.visible = false
+	_text_label.text = ""
+	# {w} marca una pausa intramedio: el texto se va acumulando en la misma caja
+	# y en cada {w} se espera input antes de seguir escribiendo.
+	var parts := text.split("{w}")
+	for i in range(parts.size()):
+		var seg := _clean_seg(parts[i])
+		if seg == "" and i == parts.size() - 1:
+			break   # {w} final: no añadir una espera vacía extra
+		if seg != "":
+			await _type_append(seg)
+		_cont.visible = true
+		await _wait_for_input()
+		_cont.visible = false
 
 
 ## Fin de la secuencia del evento: oculta la caja y limpia los retratos.
@@ -229,19 +238,19 @@ func finish() -> void:
 	clear_portraits()
 
 
-func _type(txt: String) -> void:
+## Escribe `seg` (máquina de escribir) APPENDeando al texto ya visible.
+func _type_append(seg: String) -> void:
 	_typing = true
 	_skip = false
 	_cont.visible = false
-	_text_label.text = ""
-	for i in range(txt.length()):
+	var start := _text_label.text
+	for i in range(seg.length()):
 		if _skip:
-			_text_label.text = txt
+			_text_label.text = start + seg
 			break
-		_text_label.text += txt[i]
+		_text_label.text += seg[i]
 		await get_tree().create_timer(CHAR_TIME).timeout
 	_typing = false
-	_cont.visible = true
 
 
 func _wait_for_input() -> void:
@@ -263,11 +272,11 @@ func _unhandled_input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 
 
-## Limpia los códigos de control LT: {br}/{sub_break} → salto de línea; el resto
-## de tokens {..} (waits, colores, comandos de estilo) se eliminan.
-func _clean_text(s: String) -> String:
+## Limpia un segmento de texto LT SIN recortar bordes (para poder concatenar
+## segmentos separados por {w} sin perder espacios): {br}/{sub_break} → salto de
+## línea; el resto de tokens {..} (colores, estilos) se eliminan.
+func _clean_seg(s: String) -> String:
 	s = s.replace("{br}", "\n").replace("{sub_break}", "\n").replace("{clear}", "\n")
 	var re := RegEx.new()
 	re.compile("\\{[^}]*\\}")
-	s = re.sub(s, "", true)
-	return s.strip_edges()
+	return re.sub(s, "", true)

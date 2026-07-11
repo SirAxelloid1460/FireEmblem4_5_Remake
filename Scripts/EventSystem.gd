@@ -500,6 +500,12 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 			await _cmd_transition(args)
 		"change_background":
 			_cmd_change_background(args)
+		"map_anim":
+			await _cmd_map_anim(args)
+		"center_cursor", "move_cursor":
+			await _cmd_center_cursor(args)
+		"chapter_title":
+			await _cmd_chapter_title()
 		"wait":
 			var ms: int = int(args[0]) if args.size() > 0 else 500
 			if game_manager and game_manager.has_method("get_tree"):
@@ -508,7 +514,7 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 		# (portraits, capas, animaciones de mapa, música, cinemáticas, tiendas,
 		#  base/prep, y unos pocos de gameplay que requieren sistemas no portados
 		#  todavía: change_ai, change_stats, interact_unit, trigger_script…).
-		"change_tilemap", "expression", "center_cursor", "move_cursor", "chapter_title", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "map_anim", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "trigger_script", "change_stats", "change_ai", "remove_group", "remove_item", "has_traded":
+		"change_tilemap", "expression", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "trigger_script", "change_stats", "change_ai", "remove_group", "remove_item", "has_traded":
 			pass
 		_:
 			# Comandos no reconocidos — log para detectar nuevos a implementar.
@@ -684,6 +690,122 @@ func _cmd_change_background(args: Array) -> void:
 		return
 	rect.texture = tex
 	rect.visible = true
+
+
+# ── map_anim (animación de mapa one-shot en una casilla) ─────────────────────
+
+var _anim_defs: Dictionary = {}
+var _anim_defs_loaded: bool = false
+
+## Definición de una animación de mapa (frame_x/frame_y/num_frames) desde
+## assets/animations/animations.json.
+func _anim_def(nid: String):
+	if not _anim_defs_loaded:
+		_anim_defs_loaded = true
+		var path := "res://assets/animations/animations.json"
+		if FileAccess.file_exists(path):
+			var f := FileAccess.open(path, FileAccess.READ)
+			var arr = JSON.parse_string(f.get_as_text())
+			f.close()
+			if arr is Array:
+				for a in arr:
+					if a is Dictionary and a.has("nid"):
+						_anim_defs[str(a["nid"])] = a
+	return _anim_defs.get(nid)
+
+
+## map_anim(nid, "x,y") — reproduce la animación `nid` sobre la casilla dada.
+func _cmd_map_anim(args: Array) -> void:
+	if args.size() < 2 or game_manager == null:
+		return
+	var nid := str(args[0])
+	var d = _anim_def(nid)
+	var tex_path := "res://assets/animations/" + nid + ".png"
+	if d == null or not ResourceLoader.exists(tex_path):
+		return
+	var tex: Texture2D = load(tex_path)
+	var fx: int = int(d.get("frame_x", 1))
+	var fy: int = int(d.get("frame_y", 1))
+	var nframes: int = int(d.get("num_frames", fx * fy))
+	if fx <= 0 or fy <= 0 or nframes <= 0:
+		return
+	var cw := tex.get_width() / fx
+	var ch := tex.get_height() / fy
+	# Posición de mundo desde la casilla (usa el grid del GameManager si existe).
+	var cell := _parse_position(str(args[1]))
+	var world := Vector2.ZERO
+	if "grid" in game_manager and game_manager.grid != null:
+		world = game_manager.grid.grid_to_world(cell)
+	var spr := Sprite2D.new()
+	spr.texture = tex
+	spr.region_enabled = true
+	spr.centered = true
+	spr.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	spr.position = world
+	spr.z_index = 100
+	game_manager.add_child(spr)   # Node2D en el árbol → espacio de mundo (cámara)
+	for fr in range(nframes):
+		var col := fr % fx
+		var row := fr / fx
+		spr.region_rect = Rect2(col * cw, row * ch, cw, ch)
+		await get_tree().create_timer(0.06).timeout
+	spr.queue_free()
+
+
+## center_cursor/move_cursor("x,y"[, "immediate"]) — panea la cámara a la casilla.
+func _cmd_center_cursor(args: Array) -> void:
+	if game_manager == null or args.is_empty():
+		return
+	var vp := get_viewport()
+	if vp == null:
+		return
+	var cam := vp.get_camera_2d()
+	if cam == null or not ("grid" in game_manager) or game_manager.grid == null:
+		return
+	var world: Vector2 = game_manager.grid.grid_to_world(_parse_position(str(args[0])))
+	if args.size() >= 2 and str(args[1]) == "immediate":
+		cam.position = world
+		return
+	var t := create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	t.tween_property(cam, "position", world, 0.4)
+	await t.finished
+
+
+## chapter_title — rótulo con el nombre del capítulo (de LoadedLevel.name_str).
+func _cmd_chapter_title() -> void:
+	var title := ""
+	if game_manager != null and game_manager.loaded_level != null \
+			and "name_str" in game_manager.loaded_level:
+		title = str(game_manager.loaded_level.name_str)
+	if title == "":
+		return
+	var overlay := ColorRect.new()
+	overlay.color = Color(0, 0, 0, 0.0)
+	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	overlay.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_ensure_presentation().add_child(overlay)
+	var label := Label.new()
+	label.text = title
+	label.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	label.modulate.a = 0.0
+	var f = load("res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf")
+	if f != null:
+		label.add_theme_font_override("font", f)
+	label.add_theme_font_size_override("font_size", 64)
+	label.add_theme_color_override("font_color", Color(0.95, 0.90, 0.70, 1.0))
+	label.add_theme_color_override("font_outline_color", Color.BLACK)
+	label.add_theme_constant_override("outline_size", 6)
+	overlay.add_child(label)
+	var t := create_tween()
+	t.tween_property(overlay, "color:a", 0.6, 0.5)
+	t.parallel().tween_property(label, "modulate:a", 1.0, 0.5)
+	t.tween_interval(1.4)
+	t.tween_property(overlay, "color:a", 0.0, 0.5)
+	t.parallel().tween_property(label, "modulate:a", 0.0, 0.5)
+	await t.finished
+	overlay.queue_free()
 
 
 func _cmd_give_item(args: Array, context: Dictionary) -> void:

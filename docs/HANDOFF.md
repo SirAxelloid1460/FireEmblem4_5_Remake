@@ -294,14 +294,29 @@ Los eventos ya no sólo corren su lógica: se **ven y se oyen**.
   `_change_portrait` resuelven la textura por nid (`AssetLoader.get_portrait`, tokens
   `{unit}` incluidos) y la pasan al escenario. `speak` usa el retrato ya en escena.
 - *Limitaciones*: `expression` (CloseEyes…) sigue no-op — requiere el layout de frames de
-  la hoja LT (parpadeo/boca). `map_anim`/`show_layer`/`hide_layer` sobre el mapa siguen
-  no-op; `{w}` intramedio no pausa (se limpia). Nombre mostrado = nid del hablante.
+  la hoja LT (parpadeo/boca). Nombre mostrado = nid del hablante.
+
+### Más presentación: {w}, map_anim, cámara, rótulo ✅
+- **`{w}` (pausa intramedio)**: `EventDialogue.play_line` divide el texto en `{w}` y espera
+  input en cada uno, acumulando en la misma caja (pacing fiel). `_type_append`/`_clean_seg`
+  (sin recortar bordes para no perder espacios al concatenar).
+- **`map_anim(nid, "x,y")`**: reproduce la animación de mapa `nid` (de
+  `assets/animations/animations.json` + `<nid>.png`, rejilla `frame_x×frame_y`, `num_frames`)
+  como Sprite2D one-shot en la casilla (espacio de mundo, sobre el mapa). Ej.: `Snag` al
+  destruir un puente.
+- **`center_cursor`/`move_cursor("x,y"[, immediate])`**: panea la cámara del combate a la
+  casilla (tween sine, o snap con `immediate`) — enfoca la acción en cutscenes. La cámara del
+  juego se fija una vez al cargar, así que el tween no pelea con ningún controlador.
+- **`chapter_title`**: rótulo con el nombre del capítulo (`LoadedLevel.name_str`, p.ej.
+  "Birth of a Crusader"), fade-in/hold/fade-out sobre la capa de presentación.
 
 ### Próximo
-1. Verificar en editor: Prólogo FE4 (cutscene Intro con retratos posicionados/typewriter;
-   input bloqueado durante diálogo) y el anclaje de paso (`MOVE_FEET_NATIVE`).
+1. **Verificar en editor** (¡importante, ya van muchas features sin validar!): Prólogo FE4 —
+   cutscene Intro con retratos posicionados, `{w}`, paneo de cámara, `map_anim` y rótulo; que
+   el input quede bloqueado durante el diálogo. Y el anclaje de paso (`MOVE_FEET_NATIVE`).
 2. `expression`: mapear frames de expresión (parpadeo/boca) de la hoja de retrato LT.
-3. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 (ya en
+3. `show_layer`/`hide_layer`: capas de tile del mapa (requiere que el renderer del tilemap
+   soporte capas nombradas — no existe aún).
+4. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 (ya en
    `data/fe4/events/`: `Intro`/`Narration`/`Outro`) y cablear MainMenu → apertura → Prólogo.
-4. `map_anim`/`show_layer`/`hide_layer` sobre el mapa; `{w}` como pausa intramedio.
 5. Pipeline de guardado/carga real (Continue). Menú de acciones: Item/Staff, deshacer mov.
