@@ -200,14 +200,41 @@ No inventar datos/fórmulas: **cruzar siempre con LT** (engine `app.rar` → spr
   requiere primero construir ese pipeline. Por ahora el botón sólo aparece si hay save y
   muestra "coming soon" con SFX de error. **Pendiente** para una sesión dedicada al guardado.
 
+### Combate del Prólogo — menú de acciones ✅ (parcial)  [pendiente #4 de §7]
+- **`ActionMenu.gd`** (nuevo): menú flotante por código (screen‑space) con las acciones
+  de la unidad tras mover. Señal `action_selected(id)`. Navegable con ratón (clic/hover) y
+  teclado/mando (foco + accept; **B/cancel = Wait**). Se ancla junto a la unidad con la
+  transform de cámara, recortado a la vista.
+- **`GameManager.gd`**: `show_action_menu` ahora abre el `ActionMenu` (en un `CanvasLayer`
+  `UILayer` vía `_ensure_ui_layer`) con **Attack** (si hay enemigos en rango) y **Wait**, en
+  vez de forzar el ataque automático. `_on_action_selected` enruta a `enter_targeting_mode`
+  o `end_unit_action`. **Clic derecho en targeting** cancela el ataque y reabre el menú (ya
+  no se fuerza a atacar tras mover). `end_unit_action` cierra el menú por seguridad.
+- *Pendiente aquí*: acciones Item/Staff (báculos), **deshacer movimiento** desde el menú
+  (requiere reordenar los eventos de región para no dispararlos hasta confirmar), retratos
+  en combate.
+
+### Hallazgos / bloqueos en los otros pendientes (§8)
+- **Cinemáticas (Overworld → Map)**: la infra existe (`CinematicScene`/`WorldMap`/
+  `PrologueCinematic`/`ChapterOpeningCinematic`/`CinematicTransitions`/`DialogueBox`), **pero
+  el contenido de `PrologueCinematic.gd`/`ChapterOpeningCinematic.gd` es placeholder de
+  FE8** ("continente de Magvel", "Reino de Renais"). **No se cableó** porque inyectaría lore
+  de otro juego → viola la regla de oro (§6). Bloqueo real: hace falta el guión/plan auténtico
+  de FE4 (Grannvale/Verdane/Sigurd…) antes de conectar el flujo.
+- **Guardado/Continue**: `SaveSystem.load_game` sigue siendo stub; construir serializar/
+  restaurar estado es grande y entrelazado (GameManager/LevelLoader/Convoy) y **no se puede
+  validar sin editor** → no abordado en esta sesión para no arriesgar romper el proyecto.
+
 ### Validación
 - **Sin binario de Godot en el entorno remoto** → no se pudo compilar headless; revisión
   estática (sin BOM, indentación con tabs, sin refs rotas ni colisiones de nombres). Conviene
-  re‑validar en el editor: F6 `main_game.tscn` (paso de unidades) y `main_menu.tscn`
-  (gemas/SFX/Sound Room).
+  re‑validar en el editor: F6 `main_game.tscn` (paso de unidades + **menú de acciones**: mover
+  una unidad con enemigo en rango → elegir Attack/Wait; clic derecho en targeting = volver) y
+  `main_menu.tscn` (gemas/SFX/Sound Room).
 
 ### Próximo
 1. Verificar en editor el anclaje de la celda de paso (`MOVE_FEET_NATIVE`) en clases altas.
-2. Cinemáticas Overworld → Map (sigue pendiente, #1 de §7).
+2. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 y **entonces**
+   cablear MainMenu → apertura → Prólogo (con fallback si falta asset/escena).
 3. Pipeline de guardado/carga real para habilitar Continue.
-4. Combate del Prólogo (IA, victoria/derrota, báculos, retratos).
+4. Ampliar el menú de acciones: Item/Staff (báculos), deshacer movimiento, retratos en combate.

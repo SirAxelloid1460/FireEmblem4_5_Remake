@@ -120,6 +120,15 @@ func _input(event):
 
 	# Sólo clic IZQUIERDO. Ojo: la rueda del ratón también es InputEventMouseButton
 	# con pressed==true (button_index WHEEL_UP/DOWN), por eso hay que filtrar.
+	# Clic DERECHO en modo targeting = cancelar el ataque y volver al menú de
+	# acciones (no se fuerza a atacar tras mover).
+	if event is InputEventMouseButton and event.pressed \
+			and event.button_index == MOUSE_BUTTON_RIGHT \
+			and player_phase == PlayerPhase.TARGETING:
+		attackable_tiles.clear()
+		show_action_menu()
+		return
+
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		# event.position son COORDENADAS DE PANTALLA — hay que convertirlas
 		# a coordenadas de mundo respetando la cámara (zoom + posición).
@@ -277,18 +286,63 @@ func _check_region_events(pos: Vector2i, unit: Unit) -> void:
 				event_system.trigger_event(sub_nid,
 						{ "unit": unit, "region": r })
 
+var _action_menu: ActionMenu = null
+var ui_layer: CanvasLayer = null
+
+## Capa de pantalla (screen-space) para la UI de gameplay (menú de acciones).
+func _ensure_ui_layer() -> CanvasLayer:
+	if ui_layer == null or not is_instance_valid(ui_layer):
+		ui_layer = CanvasLayer.new()
+		ui_layer.name = "UILayer"
+		ui_layer.layer = 10
+		add_child(ui_layer)
+	return ui_layer
+
+
 func show_action_menu():
-	"""Muestra el menú de acciones después de mover"""
+	"""Muestra el menú de acciones (Attack/Wait…) tras mover la unidad."""
 	player_phase = PlayerPhase.ACTION_MENU
-	
-	# Por ahora, simplemente permitir atacar si hay enemigos en rango
+	if selected_unit == null:
+		return
+
+	# Opciones disponibles según el contexto de la unidad.
+	var options: Array = []
 	var enemies_in_range = get_enemies_in_attack_range(selected_unit)
-	
 	if enemies_in_range.size() > 0:
-		print("Enemies in range: ", enemies_in_range.size())
-		enter_targeting_mode()
-	else:
-		end_unit_action()
+		options.append({ "id": "attack", "text": "Attack" })
+	options.append({ "id": "wait", "text": "Wait" })
+
+	_close_action_menu()
+	_action_menu = ActionMenu.new()
+	_ensure_ui_layer().add_child(_action_menu)
+	_action_menu.setup(options, _unit_menu_anchor(selected_unit))
+	_action_menu.action_selected.connect(_on_action_selected)
+
+
+## Ancla de pantalla para el menú, junto a la unidad (con la transform de cámara).
+func _unit_menu_anchor(unit: Unit) -> Vector2:
+	var vp := get_viewport()
+	if vp == null:
+		return Vector2(-1, -1)
+	var xform := vp.get_canvas_transform()
+	var screen_pos: Vector2 = xform * unit.global_position
+	return screen_pos + Vector2(48, -24)
+
+
+func _close_action_menu() -> void:
+	if _action_menu != null and is_instance_valid(_action_menu):
+		_action_menu.queue_free()
+	_action_menu = null
+
+
+## Resuelve la acción elegida en el menú.
+func _on_action_selected(id: String) -> void:
+	_action_menu = null   # el menú se auto-libera tras emitir
+	match id:
+		"attack":
+			enter_targeting_mode()
+		_:  # "wait" y cualquier fallback seguro
+			end_unit_action()
 
 func enter_targeting_mode():
 	"""Entra en modo de selección de objetivo"""
@@ -460,9 +514,10 @@ func _record_mother_death(unit: Unit) -> void:
 
 func end_unit_action():
 	"""Finaliza la acción de la unidad actual"""
+	_close_action_menu()
 	if selected_unit:
 		selected_unit.end_turn()
-	
+
 	deselect_unit()
 	
 	# Verificar si todas las unidades del jugador actuaron
