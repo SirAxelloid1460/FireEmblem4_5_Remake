@@ -511,6 +511,12 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 			await _cmd_transition(args)
 		"change_background":
 			_cmd_change_background(args)
+		"fade_to_black":
+			await _cmd_transition(["close"])
+		"screen_shake":
+			await _cmd_screen_shake(args)
+		"remove_talk":
+			_cmd_remove_talk(args)
 		"map_anim":
 			await _cmd_map_anim(args)
 		"center_cursor", "move_cursor":
@@ -533,7 +539,7 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 		# (portraits, capas, animaciones de mapa, música, cinemáticas, tiendas,
 		#  base/prep, y unos pocos de gameplay que requieren sistemas no portados
 		#  todavía: change_ai, change_stats, interact_unit, trigger_script…).
-		"change_tilemap", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor", "show_layer", "hide_layer", "remove_talk", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "change_stats", "has_traded":
+		"change_tilemap", "comment", "credits", "overworld_cinematic", "end_skip", "reveal_overworld_node", "flicker_cursor", "show_layer", "hide_layer", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "change_stats", "has_traded":
 			pass
 		_:
 			# Comandos no reconocidos — log para detectar nuevos a implementar.
@@ -878,6 +884,31 @@ func _cmd_trigger_script(args: Array, context: Dictionary) -> void:
 	_script_depth += 1
 	await _execute_commands(ev.get("commands", []), context)
 	_script_depth -= 1
+
+
+## screen_shake([ms]) — sacude la cámara (usa Camera2D.offset, no toca position).
+func _cmd_screen_shake(args: Array) -> void:
+	var vp := get_viewport()
+	if vp == null:
+		return
+	var cam := vp.get_camera_2d()
+	if cam == null:
+		return
+	var dur := 0.4
+	if args.size() >= 1 and str(args[0]).is_valid_int():
+		dur = int(args[0]) / 1000.0
+	var steps: int = maxi(1, int(dur / 0.03))
+	for i in range(steps):
+		cam.offset = Vector2(randf_range(-6.0, 6.0), randf_range(-6.0, 6.0))
+		await get_tree().create_timer(0.03).timeout
+	cam.offset = Vector2.ZERO
+
+
+## remove_talk(u1, u2) — quita la pareja de conversación (inverso de add_talk).
+func _cmd_remove_talk(args: Array) -> void:
+	if args.size() < 2:
+		return
+	level_vars.erase("talk:%s:%s" % [str(args[0]), str(args[1])])
 
 
 ## remove_group(group_nid) — despawnea (silencioso) las unidades de un grupo,
