@@ -256,7 +256,7 @@ func _evaluate_condition(cond: String, context: Dictionary) -> bool:
 		if vrest == "":
 			return vactual != null and bool(vactual)
 		return _compare_var(vactual, vrest)
-	if cond.begins_with("game.level_vars.get("):
+	if cond.begins_with("game.level_vars.get(") or cond.begins_with("game.game_vars.get("):
 		var open_paren := cond.find("(")
 		var close_paren := cond.find(")", open_paren)
 		if open_paren < 0 or close_paren < 0:
@@ -531,6 +531,10 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 			_cmd_remove_group(args)
 		"remove_item":
 			_cmd_remove_item(args, context)
+		"choice":
+			await _cmd_choice(args, context)
+		"interact_unit":
+			_cmd_interact_unit(args, context)
 		"wait":
 			var ms: int = int(args[0]) if args.size() > 0 else 500
 			if game_manager and game_manager.has_method("get_tree"):
@@ -539,7 +543,7 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 		# (portraits, capas, animaciones de mapa, música, cinemáticas, tiendas,
 		#  base/prep, y unos pocos de gameplay que requieren sistemas no portados
 		#  todavía: change_ai, change_stats, interact_unit, trigger_script…).
-		"change_tilemap", "comment", "credits", "overworld_cinematic", "end_skip", "reveal_overworld_node", "flicker_cursor", "show_layer", "hide_layer", "add_market_item", "arrange_formation", "prep", "base", "shop", "choice", "interact_unit", "change_stats", "has_traded":
+		"change_tilemap", "comment", "credits", "overworld_cinematic", "end_skip", "reveal_overworld_node", "flicker_cursor", "show_layer", "hide_layer", "add_market_item", "arrange_formation", "prep", "base", "shop", "change_stats", "has_traded":
 			pass
 		_:
 			# Comandos no reconocidos — log para detectar nuevos a implementar.
@@ -949,6 +953,33 @@ func _cmd_remove_item(args: Array, context: Dictionary) -> void:
 		if nm == item_name:
 			unit.inventory.erase(it)
 			return
+
+
+## choice(nid, prompt, "Op1,Op2,...") — pregunta al jugador y guarda la opción
+## elegida en level_vars[nid] (que las condiciones leen como game.game_vars).
+func _cmd_choice(args: Array, context: Dictionary) -> void:
+	if args.size() < 3:
+		return
+	var nid := str(args[0])
+	var prompt := str(args[1])
+	var opts: Array = Array(str(args[2]).split(","))
+	var box := EventChoice.new()
+	_ensure_presentation().add_child(box)
+	var result = await box.ask(prompt, opts)
+	if nid != "":
+		level_vars[nid] = result
+
+
+## interact_unit(attacker, defender, ...) — combate scripted entre dos unidades.
+func _cmd_interact_unit(args: Array, context: Dictionary) -> void:
+	if args.size() < 2 or game_manager == null:
+		return
+	var atk = _resolve_unit(str(args[0]), context)
+	var def = _resolve_unit(str(args[1]), context)
+	if atk == null or def == null:
+		return
+	if game_manager.has_method("initiate_combat"):
+		game_manager.initiate_combat(atk, def)
 
 
 func _cmd_give_item(args: Array, context: Dictionary) -> void:
