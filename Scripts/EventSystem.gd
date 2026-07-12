@@ -55,6 +55,10 @@ extends Node
 # Eventos cargados, indexados por trigger.
 #   { trigger_name → Array de event Dictionaries }
 var events_by_trigger: Dictionary = {}
+# Eventos indexados por nombre (para trigger_script).
+var events_by_name: Dictionary = {}
+# Anti-recursión de trigger_script.
+var _script_depth: int = 0
 
 # Eventos disparados (only_once, set_flag, etc.).
 var fired_events: Array = []
@@ -68,6 +72,23 @@ var dialogue_box: Node = null
 
 # Convoy para give_item con inventario lleno.
 var convoy: Node = null
+
+# ── Presentación (comandos speak/music/transition/change_background) ──────────
+# Se crean bajo demanda en un CanvasLayer propio (screen-space), sin depender de
+# ninguna .tscn (patrón fiable del proyecto). Ver EventDialogue.gd.
+var _pres_layer: CanvasLayer = null
+var _dialogue: EventDialogue = null
+var _bg_rect: TextureRect = null
+var _fade_rect: ColorRect = null
+var _music_player: AudioStreamPlayer = null
+# Profundidad de ejecución de eventos: >0 mientras corre un evento (bloquea el
+# input de gameplay para no mover unidades durante una cinemática/diálogo).
+var _busy_depth: int = 0
+
+
+## True mientras se ejecuta algún evento (lo consulta GameManager._input).
+func is_busy() -> bool:
+	return _busy_depth > 0
 
 
 # ── Señales ──────────────────────────────────────────────────────────────────
@@ -86,6 +107,7 @@ signal force_defeat()
 ## directorio /events/ filtrada por level_nid del capítulo actual.
 func load_chapter_events(events_data: Array, level_nid: String) -> void:
 	events_by_trigger.clear()
+	events_by_name.clear()
 	fired_events.clear()
 	level_vars.clear()
 	for ev in events_data:
@@ -96,6 +118,10 @@ func load_chapter_events(events_data: Array, level_nid: String) -> void:
 		var ev_level := str(raw_level) if raw_level != null else ""
 		if ev_level != "" and ev_level != level_nid and ev_level != "global":
 			continue
+		# Indexar por nombre (para trigger_script), incluso sin trigger de disparo.
+		var ev_name := str(ev.get("name", ""))
+		if ev_name != "":
+			events_by_name[ev_name] = ev
 		var trigger := str(ev.get("trigger", ""))
 		if trigger == "":
 			continue
@@ -123,6 +149,7 @@ func trigger_event(trigger_name: String, context: Dictionary = {}) -> Array:
 	var fired_now: Array = []
 	if not events_by_trigger.has(trigger_name):
 		return fired_now
+	_busy_depth += 1
 	for ev in events_by_trigger[trigger_name]:
 		var ev_name := str(ev.get("name", ""))
 		# only_once: si ya se disparó, saltar.
@@ -138,6 +165,15 @@ func trigger_event(trigger_name: String, context: Dictionary = {}) -> Array:
 		fired_events.append(ev_name)
 		fired_now.append(ev_name)
 		event_finished.emit(ev_name)
+	# Fin del lote de este trigger: limpiar la presentación para no dejar la
+	# pantalla tapada (diálogo, fondo o fundido a negro colgados).
+	if _dialogue != null and is_instance_valid(_dialogue):
+		_dialogue.finish()
+	if _bg_rect != null and is_instance_valid(_bg_rect):
+		_bg_rect.visible = false
+	if _fade_rect != null and is_instance_valid(_fade_rect):
+		_fade_rect.color.a = 0.0
+	_busy_depth -= 1
 	return fired_now
 
 
@@ -208,7 +244,19 @@ func _evaluate_condition(cond: String, context: Dictionary) -> bool:
 		# Buscar el operador y el operando.
 		return _eval_turncount_compare(cond)
 	# game.level_vars.get('X') == <value>
-	if cond.begins_with("game.level_vars.get("):
+	if cond.begins_with("game.level_vars[") or cond.begins_with("game.game_vars["):
+		var ob := cond.find("[")
+		var cb := cond.find("]", ob)
+		if ob < 0 or cb < 0:
+			return true
+		var vkey := cond.substr(ob + 1, cb - ob - 1).strip_edges() \
+				.trim_prefix("'").trim_suffix("'").trim_prefix("\"").trim_suffix("\"")
+		var vrest := cond.substr(cb + 1).strip_edges()
+		var vactual = level_vars.get(vkey, null)
+		if vrest == "":
+			return vactual != null and bool(vactual)
+		return _compare_var(vactual, vrest)
+	if cond.begins_with("game.level_vars.get(") or cond.begins_with("game.game_vars.get("):
 		var open_paren := cond.find("(")
 		var close_paren := cond.find(")", open_paren)
 		if open_paren < 0 or close_paren < 0:
@@ -270,23 +318,141 @@ func _eval_turncount_compare(cond: String) -> bool:
 	return false
 
 
+## Compara un valor de level_var contra el lado derecho de una condición
+## (`== 3`, `!= True`, `>= 5`, `< 2`...). Numérico si ambos lados lo son;
+## si no, comparación de strings (con True/False como bool).
+func _compare_var(actual, rest: String) -> bool:
+	var op := ""
+	for candidate in ["==", ">=", "<=", "!=", ">", "<"]:
+		if rest.begins_with(candidate):
+			op = candidate
+			rest = rest.substr(candidate.length()).strip_edges()
+			break
+	if op == "":
+		return actual != null and bool(actual)
+	var clean := rest.trim_prefix("'").trim_suffix("'").trim_prefix("\"").trim_suffix("\"")
+	# Booleanos.
+	if clean == "True":
+		return bool(actual) if op == "==" else not bool(actual)
+	if clean == "False":
+		return (not bool(actual)) if op == "==" else bool(actual)
+	# Numérico si el rhs es entero (los level_vars sin fijar valen 0).
+	if clean.is_valid_int():
+		var a := int(actual) if actual != null and str(actual).is_valid_int() else 0
+		var b := int(clean)
+		match op:
+			"==": return a == b
+			"!=": return a != b
+			">=": return a >= b
+			"<=": return a <= b
+			">":  return a > b
+			"<":  return a < b
+	# String.
+	match op:
+		"==": return str(actual) == clean
+		"!=": return str(actual) != clean
+	return false
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 # EJECUTOR DE COMANDOS
 # ══════════════════════════════════════════════════════════════════════════════
 
 func _execute_commands(commands: Array, context: Dictionary) -> void:
-	for cmd_entry in commands:
-		if not (cmd_entry is Array) or cmd_entry.size() < 1:
+	await _run_block(commands, 0, commands.size(), context)
+
+
+## Ejecuta commands[start, end) respetando bloques condicionales LT
+## (if / elif / else / end), anidamiento incluido. Sólo corre la rama cuya
+## condición se cumple; el resto se salta.
+func _run_block(commands: Array, start: int, end: int, context: Dictionary) -> void:
+	var i := start
+	while i < end:
+		var entry = commands[i]
+		if not (entry is Array) or entry.size() < 1:
+			i += 1
 			continue
-		var cmd := str(cmd_entry[0])
-		var args = cmd_entry[1] if cmd_entry.size() >= 2 else []
+		var cmd := str(entry[0])
+		if cmd == "if":
+			var block := _find_conditional(commands, i, end)
+			for clause in block["clauses"]:
+				if clause["is_else"] or _evaluate_condition(str(clause["cond"]), context):
+					await _run_block(commands, clause["body_start"], clause["body_end"], context)
+					break
+			i = block["after"]
+			continue
+		if cmd == "elif" or cmd == "else" or cmd == "end":
+			# Terminador suelto (no debería ocurrir a este nivel) — ignorar.
+			i += 1
+			continue
+		var args = entry[1] if entry.size() >= 2 else []
 		await _exec_one(cmd, args, context)
+		i += 1
+
+
+## Analiza una estructura if/elif/else/end desde `if_index`. Devuelve
+## { "clauses": [ { cond, is_else, body_start, body_end } ], "after": idx }
+## donde `after` es el índice tras el `end` correspondiente.
+func _find_conditional(commands: Array, if_index: int, end: int) -> Dictionary:
+	var clauses: Array = []
+	var if_entry = commands[if_index]
+	var cur_cond := "True"
+	if if_entry.size() >= 2 and if_entry[1] is Array and if_entry[1].size() >= 1:
+		cur_cond = str(if_entry[1][0])
+	var cur_is_else := false
+	var cur_body_start := if_index + 1
+	var depth := 0
+	var i := if_index + 1
+	while i < end:
+		var entry = commands[i]
+		var cmd := ""
+		if entry is Array and entry.size() >= 1:
+			cmd = str(entry[0])
+		if cmd == "if":
+			depth += 1
+		elif cmd == "end":
+			if depth == 0:
+				clauses.append({ "cond": cur_cond, "is_else": cur_is_else,
+						"body_start": cur_body_start, "body_end": i })
+				return { "clauses": clauses, "after": i + 1 }
+			depth -= 1
+		elif (cmd == "elif" or cmd == "else") and depth == 0:
+			clauses.append({ "cond": cur_cond, "is_else": cur_is_else,
+					"body_start": cur_body_start, "body_end": i })
+			if cmd == "elif":
+				cur_cond = "False"
+				if entry.size() >= 2 and entry[1] is Array and entry[1].size() >= 1:
+					cur_cond = str(entry[1][0])
+				cur_is_else = false
+			else:
+				cur_cond = "True"
+				cur_is_else = true
+			cur_body_start = i + 1
+		i += 1
+	# Sin 'end' correspondiente (malformado) — cerrar en el límite.
+	clauses.append({ "cond": cur_cond, "is_else": cur_is_else,
+			"body_start": cur_body_start, "body_end": end })
+	return { "clauses": clauses, "after": end }
 
 
 func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 	match cmd:
 		"speak":
 			await _cmd_speak(args, context)
+		"add_portrait":
+			_cmd_add_portrait(args, context)
+		"multi_add_portrait":
+			_cmd_multi_add_portrait(args, context)
+		"remove_portrait":
+			_cmd_remove_portrait(args, context)
+		"multi_remove_portrait":
+			_cmd_multi_remove_portrait(args, context)
+		"move_portrait":
+			_cmd_move_portrait(args, context)
+		"change_portrait":
+			_cmd_change_portrait(args, context)
+		"expression":
+			_cmd_expression(args, context)
 		"give_item":
 			_cmd_give_item(args, context)
 		"give_gold", "give_money":
@@ -323,12 +489,61 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 			force_victory.emit()
 		"defeat":
 			force_defeat.emit()
+		"win_game":
+			force_victory.emit()
+		"lose_game":
+			force_defeat.emit()
+		"inc_level_var":
+			_cmd_inc_level_var(args)
+		"remove_region":
+			_cmd_remove_region(args)
+		"add_tag":
+			_cmd_add_tag(args, context)
+		"give_skill":
+			_cmd_unit_skill(args, context, true)
+		"remove_skill":
+			_cmd_unit_skill(args, context, false)
+		"music":
+			_cmd_music(args)
+		"music_clear":
+			_cmd_music_clear()
+		"transition":
+			await _cmd_transition(args)
+		"change_background":
+			_cmd_change_background(args)
+		"fade_to_black":
+			await _cmd_transition(["close"])
+		"screen_shake":
+			await _cmd_screen_shake(args)
+		"remove_talk":
+			_cmd_remove_talk(args)
+		"map_anim":
+			await _cmd_map_anim(args)
+		"center_cursor", "move_cursor":
+			await _cmd_center_cursor(args)
+		"chapter_title":
+			await _cmd_chapter_title()
+		"change_ai":
+			_cmd_change_ai(args, context)
+		"trigger_script":
+			await _cmd_trigger_script(args, context)
+		"remove_group":
+			_cmd_remove_group(args)
+		"remove_item":
+			_cmd_remove_item(args, context)
+		"choice":
+			await _cmd_choice(args, context)
+		"interact_unit":
+			_cmd_interact_unit(args, context)
 		"wait":
 			var ms: int = int(args[0]) if args.size() > 0 else 500
 			if game_manager and game_manager.has_method("get_tree"):
 				await game_manager.get_tree().create_timer(ms / 1000.0).timeout
-		# Comandos meramente visuales — silenciados sin ruido.
-		"change_tilemap", "change_background", "transition", "music", "multi_add_portrait", "multi_remove_portrait", "add_portrait", "remove_portrait", "center_cursor", "move_cursor", "chapter_title", "comment", "credits", "overworld_cinematic", "fade_to_black", "end_skip", "reveal_overworld_node", "screen_shake", "flicker_cursor":
+		# Comandos de presentación / aún sin subsistema — silenciados sin ruido.
+		# (portraits, capas, animaciones de mapa, música, cinemáticas, tiendas,
+		#  base/prep, y unos pocos de gameplay que requieren sistemas no portados
+		#  todavía: change_ai, change_stats, interact_unit, trigger_script…).
+		"change_tilemap", "comment", "credits", "overworld_cinematic", "end_skip", "reveal_overworld_node", "flicker_cursor", "show_layer", "hide_layer", "add_market_item", "arrange_formation", "prep", "base", "shop", "change_stats", "has_traded":
 			pass
 		_:
 			# Comandos no reconocidos — log para detectar nuevos a implementar.
@@ -339,14 +554,432 @@ func _exec_one(cmd: String, args: Array, context: Dictionary) -> void:
 # ── Comandos concretos ───────────────────────────────────────────────────────
 
 func _cmd_speak(args: Array, context: Dictionary) -> void:
-	if dialogue_box == null or args.size() < 2:
+	if args.is_empty():
 		return
-	var speaker := _resolve_token(str(args[0]), context)
-	var line := str(args[1])
-	if dialogue_box.has_method("show_line"):
-		await dialogue_box.show_line(speaker, line)
-	elif dialogue_box.has_method("speak"):
-		await dialogue_box.speak(speaker, line)
+	var nid := _portrait_nid(str(args[0]), context)
+	var line := str(args[1]) if args.size() >= 2 else ""
+	# Retrato de respaldo por si el hablante no estaba en escena (sin add_portrait).
+	var fallback := _portrait_tex(nid)
+	await _ensure_dialogue().play_line(nid, nid, line, fallback)
+
+
+## nid de retrato: resuelve tokens {unit}/{unit2} al nombre de la unidad.
+func _portrait_nid(token: String, context: Dictionary) -> String:
+	if token.begins_with("{"):
+		return _resolve_token(token, context)
+	return token
+
+
+## Textura del retrato de un nid (hoja LT), o null si no existe.
+func _portrait_tex(nid: String) -> Texture2D:
+	if nid == "" or not has_node("/root/AssetLoader"):
+		return null
+	return get_node("/root/AssetLoader").get_portrait(nid)
+
+
+var _portrait_offsets: Dictionary = {}
+var _offsets_loaded: bool = false
+
+## Offset de parpadeo (blinking_offset) de un retrato, o (-1,-1) si no hay dato.
+func _portrait_blink(nid: String) -> Vector2:
+	if not _offsets_loaded:
+		_offsets_loaded = true
+		var path := "res://data/general/portrait_offsets.json"
+		if FileAccess.file_exists(path):
+			var f := FileAccess.open(path, FileAccess.READ)
+			var d = JSON.parse_string(f.get_as_text())
+			f.close()
+			if d is Dictionary:
+				_portrait_offsets = d
+	var e = _portrait_offsets.get(nid)
+	if e is Dictionary and e.has("blink"):
+		var b = e["blink"]
+		if b is Array and b.size() >= 2:
+			return Vector2(float(b[0]), float(b[1]))
+	return Vector2(-1, -1)
+
+
+# ── Comandos de retrato (escenario del EventDialogue) ────────────────────────
+
+func _cmd_add_portrait(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	var nid := _portrait_nid(str(args[0]), context)
+	_ensure_dialogue().add_portrait(nid, str(args[1]), _portrait_tex(nid), _portrait_blink(nid))
+
+
+func _cmd_multi_add_portrait(args: Array, context: Dictionary) -> void:
+	# Pares [nid, pos, nid, pos, ...].
+	var i := 0
+	while i + 1 < args.size():
+		var nid := _portrait_nid(str(args[i]), context)
+		_ensure_dialogue().add_portrait(nid, str(args[i + 1]), _portrait_tex(nid), _portrait_blink(nid))
+		i += 2
+
+
+## expression(unit, expr) — cambia el estado de ojos del retrato en escena.
+func _cmd_expression(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	_ensure_dialogue().set_expression(_portrait_nid(str(args[0]), context), str(args[1]))
+
+
+func _cmd_remove_portrait(args: Array, context: Dictionary) -> void:
+	if args.is_empty():
+		return
+	_ensure_dialogue().remove_portrait(_portrait_nid(str(args[0]), context))
+
+
+func _cmd_multi_remove_portrait(args: Array, context: Dictionary) -> void:
+	for a in args:
+		_ensure_dialogue().remove_portrait(_portrait_nid(str(a), context))
+
+
+func _cmd_move_portrait(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	_ensure_dialogue().move_portrait(_portrait_nid(str(args[0]), context), str(args[1]))
+
+
+## change_portrait(unit, new_portrait_nid) — cambia la hoja del retrato en escena.
+func _cmd_change_portrait(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	var nid := _portrait_nid(str(args[0]), context)
+	var new_tex := _portrait_tex(str(args[1]))
+	_ensure_dialogue().change_portrait(nid, new_tex)
+
+
+# ── Presentación: capa, diálogo, música, transiciones, fondo ─────────────────
+
+func _ensure_presentation() -> CanvasLayer:
+	if _pres_layer == null or not is_instance_valid(_pres_layer):
+		_pres_layer = CanvasLayer.new()
+		_pres_layer.name = "EventPresentation"
+		_pres_layer.layer = 20
+		add_child(_pres_layer)
+	return _pres_layer
+
+
+func _ensure_dialogue() -> EventDialogue:
+	if _dialogue == null or not is_instance_valid(_dialogue):
+		_dialogue = EventDialogue.new()
+		_ensure_presentation().add_child(_dialogue)
+	return _dialogue
+
+
+func _ensure_bg() -> TextureRect:
+	if _bg_rect == null or not is_instance_valid(_bg_rect):
+		_bg_rect = TextureRect.new()
+		_bg_rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		_bg_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		_bg_rect.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		_bg_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_bg_rect.visible = false
+		_ensure_presentation().add_child(_bg_rect)
+		_ensure_presentation().move_child(_bg_rect, 0)   # detrás del diálogo
+	return _bg_rect
+
+
+func _ensure_fade() -> ColorRect:
+	if _fade_rect == null or not is_instance_valid(_fade_rect):
+		_fade_rect = ColorRect.new()
+		_fade_rect.color = Color(0, 0, 0, 0)
+		_fade_rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		_fade_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_ensure_presentation().add_child(_fade_rect)   # encima de todo
+	return _fade_rect
+
+
+func _ensure_music() -> AudioStreamPlayer:
+	if _music_player == null or not is_instance_valid(_music_player):
+		_music_player = AudioStreamPlayer.new()
+		if AudioServer.get_bus_index("Music") >= 0:
+			_music_player.bus = "Music"
+		add_child(_music_player)
+	return _music_player
+
+
+func _cmd_music(args: Array) -> void:
+	if args.is_empty():
+		return
+	var nid := str(args[0])
+	var stream = null
+	if has_node("/root/AssetLoader"):
+		stream = get_node("/root/AssetLoader").get_music(nid)
+	if stream == null:
+		return
+	if "loop" in stream:
+		stream.loop = true
+	var p := _ensure_music()
+	p.stream = stream
+	p.play()
+
+
+func _cmd_music_clear() -> void:
+	if _music_player != null and is_instance_valid(_music_player):
+		_music_player.stop()
+
+
+## transition("Close"/"Open"[, ms]) — cubre/revela la pantalla con un fundido.
+func _cmd_transition(args: Array) -> void:
+	var mode := (str(args[0]).to_lower() if args.size() >= 1 else "close")
+	var dur := 0.4
+	if args.size() >= 2 and str(args[1]).is_valid_int():
+		dur = int(args[1]) / 1000.0
+	var rect := _ensure_fade()
+	var target := 0.0 if mode.begins_with("open") else 1.0
+	var t := create_tween()
+	t.tween_property(rect, "color:a", target, dur)
+	await t.finished
+
+
+## change_background(nid) — muestra un panorama a pantalla completa; vacío = oculta.
+func _cmd_change_background(args: Array) -> void:
+	var rect := _ensure_bg()
+	if args.is_empty() or str(args[0]) == "":
+		rect.visible = false
+		return
+	var tex: Texture2D = null
+	if has_node("/root/AssetLoader"):
+		tex = get_node("/root/AssetLoader").get_panorama(str(args[0]))
+	if tex == null:
+		rect.visible = false
+		return
+	rect.texture = tex
+	rect.visible = true
+
+
+# ── map_anim (animación de mapa one-shot en una casilla) ─────────────────────
+
+var _anim_defs: Dictionary = {}
+var _anim_defs_loaded: bool = false
+
+## Definición de una animación de mapa (frame_x/frame_y/num_frames) desde
+## assets/animations/animations.json.
+func _anim_def(nid: String):
+	if not _anim_defs_loaded:
+		_anim_defs_loaded = true
+		var path := "res://assets/animations/animations.json"
+		if FileAccess.file_exists(path):
+			var f := FileAccess.open(path, FileAccess.READ)
+			var arr = JSON.parse_string(f.get_as_text())
+			f.close()
+			if arr is Array:
+				for a in arr:
+					if a is Dictionary and a.has("nid"):
+						_anim_defs[str(a["nid"])] = a
+	return _anim_defs.get(nid)
+
+
+## map_anim(nid, "x,y") — reproduce la animación `nid` sobre la casilla dada.
+func _cmd_map_anim(args: Array) -> void:
+	if args.size() < 2 or game_manager == null:
+		return
+	var nid := str(args[0])
+	var d = _anim_def(nid)
+	var tex_path := "res://assets/animations/" + nid + ".png"
+	if d == null or not ResourceLoader.exists(tex_path):
+		return
+	var tex: Texture2D = load(tex_path)
+	var fx: int = int(d.get("frame_x", 1))
+	var fy: int = int(d.get("frame_y", 1))
+	var nframes: int = int(d.get("num_frames", fx * fy))
+	if fx <= 0 or fy <= 0 or nframes <= 0:
+		return
+	var cw := tex.get_width() / fx
+	var ch := tex.get_height() / fy
+	# Posición de mundo desde la casilla (usa el grid del GameManager si existe).
+	var cell := _parse_position(str(args[1]))
+	var world := Vector2.ZERO
+	if "grid" in game_manager and game_manager.grid != null:
+		world = game_manager.grid.grid_to_world(cell)
+	var spr := Sprite2D.new()
+	spr.texture = tex
+	spr.region_enabled = true
+	spr.centered = true
+	spr.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	spr.position = world
+	spr.z_index = 100
+	game_manager.add_child(spr)   # Node2D en el árbol → espacio de mundo (cámara)
+	for fr in range(nframes):
+		var col := fr % fx
+		var row := fr / fx
+		spr.region_rect = Rect2(col * cw, row * ch, cw, ch)
+		await get_tree().create_timer(0.06).timeout
+	spr.queue_free()
+
+
+## center_cursor/move_cursor("x,y"[, "immediate"]) — panea la cámara a la casilla.
+func _cmd_center_cursor(args: Array) -> void:
+	if game_manager == null or args.is_empty():
+		return
+	var vp := get_viewport()
+	if vp == null:
+		return
+	var cam := vp.get_camera_2d()
+	if cam == null or not ("grid" in game_manager) or game_manager.grid == null:
+		return
+	var world: Vector2 = game_manager.grid.grid_to_world(_parse_position(str(args[0])))
+	if args.size() >= 2 and str(args[1]) == "immediate":
+		cam.position = world
+		return
+	var t := create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	t.tween_property(cam, "position", world, 0.4)
+	await t.finished
+
+
+## chapter_title — rótulo con el nombre del capítulo (de LoadedLevel.name_str).
+func _cmd_chapter_title() -> void:
+	var title := ""
+	if game_manager != null and game_manager.loaded_level != null \
+			and "name_str" in game_manager.loaded_level:
+		title = str(game_manager.loaded_level.name_str)
+	if title == "":
+		return
+	var overlay := ColorRect.new()
+	overlay.color = Color(0, 0, 0, 0.0)
+	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	overlay.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_ensure_presentation().add_child(overlay)
+	var label := Label.new()
+	label.text = title
+	label.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	label.modulate.a = 0.0
+	var f = load("res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf")
+	if f != null:
+		label.add_theme_font_override("font", f)
+	label.add_theme_font_size_override("font_size", 64)
+	label.add_theme_color_override("font_color", Color(0.95, 0.90, 0.70, 1.0))
+	label.add_theme_color_override("font_outline_color", Color.BLACK)
+	label.add_theme_constant_override("outline_size", 6)
+	overlay.add_child(label)
+	var t := create_tween()
+	t.tween_property(overlay, "color:a", 0.6, 0.5)
+	t.parallel().tween_property(label, "modulate:a", 1.0, 0.5)
+	t.tween_interval(1.4)
+	t.tween_property(overlay, "color:a", 0.0, 0.5)
+	t.parallel().tween_property(label, "modulate:a", 0.0, 0.5)
+	await t.finished
+	overlay.queue_free()
+
+
+## change_ai(unit, preset) — cambia el preset de IA de la unidad. El AIController
+## lo lee vía `unit.get_meta("ai_preset")`, así que basta con fijar la meta.
+func _cmd_change_ai(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	var unit = _resolve_unit(str(args[0]), context)
+	if unit == null:
+		return
+	unit.set_meta("ai_preset", str(args[1]))
+
+
+## trigger_script(name) — ejecuta los comandos del evento nombrado (eventos sin
+## trigger propio que se lanzan desde otros). Anti-recursión con _script_depth.
+func _cmd_trigger_script(args: Array, context: Dictionary) -> void:
+	if args.is_empty() or _script_depth > 8:
+		return
+	var ev = events_by_name.get(str(args[0]))
+	if ev == null:
+		return
+	_script_depth += 1
+	await _execute_commands(ev.get("commands", []), context)
+	_script_depth -= 1
+
+
+## screen_shake([ms]) — sacude la cámara (usa Camera2D.offset, no toca position).
+func _cmd_screen_shake(args: Array) -> void:
+	var vp := get_viewport()
+	if vp == null:
+		return
+	var cam := vp.get_camera_2d()
+	if cam == null:
+		return
+	var dur := 0.4
+	if args.size() >= 1 and str(args[0]).is_valid_int():
+		dur = int(args[0]) / 1000.0
+	var steps: int = maxi(1, int(dur / 0.03))
+	for i in range(steps):
+		cam.offset = Vector2(randf_range(-6.0, 6.0), randf_range(-6.0, 6.0))
+		await get_tree().create_timer(0.03).timeout
+	cam.offset = Vector2.ZERO
+
+
+## remove_talk(u1, u2) — quita la pareja de conversación (inverso de add_talk).
+func _cmd_remove_talk(args: Array) -> void:
+	if args.size() < 2:
+		return
+	level_vars.erase("talk:%s:%s" % [str(args[0]), str(args[1])])
+
+
+## remove_group(group_nid) — despawnea (silencioso) las unidades de un grupo,
+## p.ej. limpiar refuerzos. Reusa loaded_level.unit_groups vía _find_unit_group.
+func _cmd_remove_group(args: Array) -> void:
+	if args.is_empty() or game_manager == null:
+		return
+	var group := _find_unit_group(str(args[0]))
+	if group.is_empty():
+		return
+	for unit_nid in group.get("units", []):
+		var u = _resolve_unit(str(unit_nid), {})
+		if u == null:
+			continue
+		if "grid" in game_manager and game_manager.grid != null:
+			game_manager.grid.remove_unit(u.grid_position)
+		if "player_units" in game_manager:
+			game_manager.player_units.erase(u)
+		if "enemy_units" in game_manager:
+			game_manager.enemy_units.erase(u)
+		u.queue_free()
+
+
+## remove_item(unit, item) — quita un ítem del inventario de la unidad (por nombre).
+func _cmd_remove_item(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	var unit = _resolve_unit(str(args[0]), context)
+	if unit == null or not ("inventory" in unit):
+		return
+	var item_name := str(args[1])
+	for it in unit.inventory:
+		var nm := ""
+		if it is Object and "name" in it:
+			nm = str(it.name)
+		elif it is Dictionary:
+			nm = str(it.get("name", ""))
+		if nm == item_name:
+			unit.inventory.erase(it)
+			return
+
+
+## choice(nid, prompt, "Op1,Op2,...") — pregunta al jugador y guarda la opción
+## elegida en level_vars[nid] (que las condiciones leen como game.game_vars).
+func _cmd_choice(args: Array, context: Dictionary) -> void:
+	if args.size() < 3:
+		return
+	var nid := str(args[0])
+	var prompt := str(args[1])
+	var opts: Array = Array(str(args[2]).split(","))
+	var box := EventChoice.new()
+	_ensure_presentation().add_child(box)
+	var result = await box.ask(prompt, opts)
+	if nid != "":
+		level_vars[nid] = result
+
+
+## interact_unit(attacker, defender, ...) — combate scripted entre dos unidades.
+func _cmd_interact_unit(args: Array, context: Dictionary) -> void:
+	if args.size() < 2 or game_manager == null:
+		return
+	var atk = _resolve_unit(str(args[0]), context)
+	var def = _resolve_unit(str(args[1]), context)
+	if atk == null or def == null:
+		return
+	if game_manager.has_method("initiate_combat"):
+		game_manager.initiate_combat(atk, def)
 
 
 func _cmd_give_item(args: Array, context: Dictionary) -> void:
@@ -391,6 +1024,64 @@ func _cmd_level_var(args: Array) -> void:
 	if args.size() < 2:
 		return
 	level_vars[str(args[0])] = args[1]
+
+
+## inc_level_var(key[, amount]) — incrementa un contador de nivel (usado por los
+## eventos de destructibles cuyos totales leen luego los bloques if/elif).
+func _cmd_inc_level_var(args: Array) -> void:
+	if args.is_empty():
+		return
+	var key := str(args[0])
+	var amount := 1
+	if args.size() >= 2 and str(args[1]).is_valid_int():
+		amount = int(args[1])
+	var cur = level_vars.get(key, 0)
+	var base := int(cur) if str(cur).is_valid_int() else 0
+	level_vars[key] = base + amount
+
+
+## remove_region(nid) — quita una región del capítulo (p.ej. tras visitar un
+## pueblo) para que no vuelva a dispararse su evento.
+func _cmd_remove_region(args: Array) -> void:
+	if args.is_empty() or game_manager == null:
+		return
+	if not game_manager.has_meta("chapter_regions"):
+		return
+	var nid := str(args[0])
+	var regions: Array = game_manager.get_meta("chapter_regions")
+	var kept: Array = []
+	for r in regions:
+		if r is Dictionary and str(r.get("nid", "")) == nid:
+			continue
+		kept.append(r)
+	game_manager.set_meta("chapter_regions", kept)
+
+
+## add_tag(unit, tag) — añade un tag a la unidad (Mounted/Boss/…) si no lo tiene.
+func _cmd_add_tag(args: Array, context: Dictionary) -> void:
+	if args.size() < 2:
+		return
+	var unit = _resolve_unit(str(args[0]), context)
+	if unit == null or not ("tags" in unit):
+		return
+	var tag := str(args[1])
+	if tag not in unit.tags:
+		unit.tags.append(tag)
+
+
+## give_skill/remove_skill(unit, skill) — modifica las skills de la unidad.
+func _cmd_unit_skill(args: Array, context: Dictionary, add: bool) -> void:
+	if args.size() < 2:
+		return
+	var unit = _resolve_unit(str(args[0]), context)
+	if unit == null:
+		return
+	var skill := str(args[1])
+	if add:
+		if unit.has_method("learn_skill"):
+			unit.learn_skill(skill)
+	elif unit.has_method("remove_skill"):
+		unit.remove_skill(skill)
 
 
 ## Formato canónico LT: ["nid", "x,y"] o ["nid", "x,y", "immediate"/"fade"/...]

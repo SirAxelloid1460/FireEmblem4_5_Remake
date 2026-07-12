@@ -161,3 +161,176 @@ No inventar datos/fórmulas: **cruzar siempre con LT** (engine `app.rar` → spr
 2. Pulir menú: gemas en placas, SFX de navegación/confirmación, cablear Continue/SoundRoom.
 3. Animación de **paso** de unidades (`move.png`) al moverse en el mapa.
 4. Combate del Prólogo (IA, victoria/derrota, báculos, retratos).
+
+---
+
+## 8) Sesión 2026‑06‑27 — animación de paso + pulido de menú (Sound Room, gemas, SFX)
+
+### Animación de paso de unidades (`move.png`) ✅  [pendiente #3 de §7]
+- `UnitMapSprite.gd`: soporte de la hoja de movimiento (192×160 → 4 dir × 4 frames,
+  celda **48×40**; filas LT/GBA **0=abajo 1=izq 2=der 3=arriba**). API nueva:
+  `start_move()` / `set_move_dir(dir)` / `end_move()` (constantes `DIR_DOWN/LEFT/RIGHT/UP`).
+  Anclaje de la celda de paso con `MOVE_FEET_NATIVE` (≈36) — *ajustable* si el roce con
+  el suelo difiere en alguna clase alta. Si la clase no tiene `move.png`, la unidad se
+  desliza con el idle (sin animar piernas) — degradación limpia.
+- `Unit.gd`: corrutina `animate_move_along(world_points, step_time)` que camina casilla a
+  casilla, orienta el sprite por el delta (`_dir_from_delta`) y reproduce **SFX de paso**
+  según tipo (`_step_sfx_name`: Flier/Mounted3/Armor1/Infantry2) vía `AssetLoader.get_sfx`
+  en el bus "SFX".
+- `GameManager.gd`: `move_selected_unit` ahora **espera la animación** antes de cerrar el
+  movimiento (guard `PlayerPhase.MOVING` para ignorar clics repetidos; limpia resaltados
+  mientras camina). La IA también anima: `execute_enemy_decision` es `await` y reconstruye
+  el path con `Pathfinding.find_path` antes de mover.
+
+### Pulido del MainMenu ✅  [pendiente #2 de §7, parcial]
+- **Gemas en placas**: `assets/menus/menu_gem_brown.png` (14×12, ×3) flanqueando el texto,
+  visibles sólo en la placa con foco (`_add_gems` / `_set_button_gems`, toggle en
+  focus_entered/exited).
+- **SFX de menú** (bus "SFX"): navegación `Select 5` (al cambiar de foco; se omite el tick
+  del auto‑foco al entrar a un panel vía `_skip_next_nav_sfx`), confirmación `Select 4`,
+  cancelación `Step Back 1`, error `Error` (acciones no disponibles). Helper `_play_sfx`.
+- **Sound Room** (`Scripts/SoundRoom.gd`, nuevo): pantalla por código (señal `closed`),
+  abierta con fade desde Extras (`_open_soundroom`, pausa/reanuda el tema del menú). Escanea
+  `assets/music/*.ogg`, lista con ventana de 12 + cursor (↑↓), Accept = play/stop (toggle,
+  loop, bus "Music"), Cancel = volver. Panel FE con borde dorado y fuente serif.
+
+### Continue — NO cableado (limitación real)
+- `SaveSystem.load_game()` es un **stub**: lee el `.save` pero **no restaura estado** de
+  juego (no hay pipeline de carga de capítulo/ejército). Cablear "Continue" de verdad
+  requiere primero construir ese pipeline. Por ahora el botón sólo aparece si hay save y
+  muestra "coming soon" con SFX de error. **Pendiente** para una sesión dedicada al guardado.
+
+### Combate del Prólogo — menú de acciones ✅ (parcial)  [pendiente #4 de §7]
+- **`ActionMenu.gd`** (nuevo): menú flotante por código (screen‑space) con las acciones
+  de la unidad tras mover. Señal `action_selected(id)`. Navegable con ratón (clic/hover) y
+  teclado/mando (foco + accept; **B/cancel = Wait**). Se ancla junto a la unidad con la
+  transform de cámara, recortado a la vista.
+- **`GameManager.gd`**: `show_action_menu` ahora abre el `ActionMenu` (en un `CanvasLayer`
+  `UILayer` vía `_ensure_ui_layer`) con **Attack** (si hay enemigos en rango) y **Wait**, en
+  vez de forzar el ataque automático. `_on_action_selected` enruta a `enter_targeting_mode`
+  o `end_unit_action`. **Clic derecho en targeting** cancela el ataque y reabre el menú (ya
+  no se fuerza a atacar tras mover). `end_unit_action` cierra el menú por seguridad.
+- *Pendiente aquí*: acciones Item/Staff (báculos), **deshacer movimiento** desde el menú
+  (requiere reordenar los eventos de región para no dispararlos hasta confirmar), retratos
+  en combate.
+
+### Hallazgos / bloqueos en los otros pendientes (§8)
+- **Cinemáticas (Overworld → Map)**: la infra existe (`CinematicScene`/`WorldMap`/
+  `PrologueCinematic`/`ChapterOpeningCinematic`/`CinematicTransitions`/`DialogueBox`), **pero
+  el contenido de `PrologueCinematic.gd`/`ChapterOpeningCinematic.gd` es placeholder de
+  FE8** ("continente de Magvel", "Reino de Renais"). **No se cableó** porque inyectaría lore
+  de otro juego → viola la regla de oro (§6). Bloqueo real: hace falta el guión/plan auténtico
+  de FE4 (Grannvale/Verdane/Sigurd…) antes de conectar el flujo.
+- **Guardado/Continue**: `SaveSystem.load_game` sigue siendo stub; construir serializar/
+  restaurar estado es grande y entrelazado (GameManager/LevelLoader/Convoy) y **no se puede
+  validar sin editor** → no abordado en esta sesión para no arriesgar romper el proyecto.
+
+### Validación
+- **Sin binario de Godot en el entorno remoto** → no se pudo compilar headless; revisión
+  estática (sin BOM, indentación con tabs, sin refs rotas ni colisiones de nombres). Conviene
+  re‑validar en el editor: F6 `main_game.tscn` (paso de unidades + **menú de acciones**: mover
+  una unidad con enemigo en rango → elegir Attack/Wait; clic derecho en targeting = volver) y
+  `main_menu.tscn` (gemas/SFX/Sound Room).
+
+### Eventos nativos (FE4 + FE5) — porte desde LT ✅ (datos + lógica)
+Fuente auténtica: `GotHW.ltproj/game_data/events.json` (FE4, 167 eventos) y
+`Thracia776.ltproj/game_data/events.json` (FE5, 6). Están en las ramas `FE4`/`FE5`
+(builds de Lex Talionis) y el usuario los aportó.
+- **`tools/build_events.py`** (nuevo): lee el `events.json` del `.ltproj`, aplica
+  `NID_REMAP` (FakeMidir→Midir, Chagall1/2→Chagall, EldiganAlly/Enemy→Eldigan, Leaf→Leif)
+  tanto en args exactos como en **literales entrecomillados dentro de condiciones**
+  (`unit.nid == 'Chagall1'` → `'Chagall'`), y escribe `data/fe4/events/events.json` y
+  `data/fe5/events/events.json` (formato que ya consume `PrologueTest._load_all_events`).
+  Los **nombres de evento** conservan el token viejo (identificadores internos).
+- **`EventSystem.gd`** — mejoras clave para correr los eventos LT reales:
+  - **Control de flujo `if/elif/else/end`** (anidado) en `_run_block`/`_find_conditional`:
+    sólo se ejecuta la rama cuya condición se cumple. Antes se corrían todas. Validado
+    por simulación sobre los 173 eventos (sin errores de índice; 1 evento DEBUG `Shop`
+    con `if` sin `end` en el propio LT → se maneja con fallback, no rompe).
+  - **Condiciones subscript** `game.level_vars['k'] [op] N` y `game.game_vars['k']`
+    (`_compare_var`: ==, !=, >=, <=, >, <, numérico o string/bool). Es lo que usan los
+    contadores de destructibles que alimentan los `if` (recompensas de pueblos).
+  - **Cobertura de comandos**: los **66** tipos usados están cubiertos (0 caen en el
+    fallback). Estado: **47 implementados de verdad**, **15 no-op** documentados
+    (`choice` → `EventChoice.gd`; `interact_unit` → combate; `remove_talk`; etc.).
+    Los 15 no-op restantes **no son "un handler más"**: son el subsistema de castillo
+    (`base/prep/shop/arrange_formation/add_market_item` — que además **aún no es alcanzable**:
+    no existe el flujo entre-capítulos MainMenu→castillo), el roll de `credits` (final del
+    juego; `CreditsScreen.gd` ya existe suelto para el menú), capas de tilemap
+    (`show_layer/hide_layer` — sin soporte en el renderer), overworld, `change_tilemap`,
+    `change_stats`, y marcadores internos (`comment/end_skip/has_traded`). Antes de portarlos
+    conviene (a) validar el Prólogo en el editor y (b) construir el flujo de castillo.
+    `expression` (parpadeo/ojos cerrados) YA es real: `tools/build_portrait_offsets.py`
+    genera `data/general/portrait_offsets.json` (blinking/smiling offset por retrato, del
+    `portraits.json` del `.ltproj`), y `EventDialogue.set_expression` compone el frame
+    `fullblink (96,80,32,16)` sobre la cara en su `blinking_offset` (layout LT de hoja 144).
+    Reales incluyen gameplay (`add_unit/move/kill`, `spawn_group/remove_group`, `change_team`,
+    `change_ai`, `give/remove_skill`, `add_tag`, `remove_item`, `remove_region`,
+    `inc_level_var`, `win_game/lose_game`, `trigger_script`, support/money/vars) y presentación
+    (`speak`+retratos, `music`, `transition`, `change_background`, `map_anim`, `center_cursor`,
+    `chapter_title`). No-op (necesitan subsistema): `base/prep/shop/choice` (menús),
+    `expression` (frames de retrato), `show_layer/hide_layer` (capas de tilemap),
+    `change_stats`, `interact_unit`, `overworld_cinematic`, `credits`, efectos de pantalla.
+- **Qué corre de verdad hoy**: al arrancar el Prólogo (`PrologueTest` → FE4 cap 0), los
+  eventos se cargan y disparan con **ramificación correcta** y efectos de **gameplay**
+  (add_unit/move/kill, seize/visit por región, change_team, dinero, vars, support…).
+  La **presentación** (diálogos `speak`, retratos, `map_anim`, transiciones, cinemáticas)
+  es no-op hasta cablear DialogueBox/portraits/capas. FE5 queda **preparado** (data en
+  `data/fe5/events/`) pero sin bootstrap de escena propio todavía.
+
+### Presentación de eventos (speak/música/transición/fondo) ✅
+Los eventos ya no sólo corren su lógica: se **ven y se oyen**.
+- **`EventDialogue.gd`** (nuevo): caja de diálogo por código (sin depender de ninguna
+  `.tscn` — `DialogueBox.gd` sí dependía de una escena inexistente). Retrato izq/der,
+  máquina de escribir con "skip", indicador de continuar; limpia los códigos LT del texto
+  (`{w}`/`{br}`/… → se eliminan o pasan a salto de línea). `play_line()` es corrutina y
+  espera input del jugador.
+- **`EventSystem.gd`**: capa de presentación propia (`CanvasLayer`, screen-space) creada
+  bajo demanda. `_cmd_speak` ahora resuelve el **retrato** por nid (`AssetLoader.get_portrait`)
+  y el lado (`CharacterDatabase.is_player_character`), y muestra la línea. Nuevos comandos
+  reales: **`music`/`music_clear`** (bus "Music"), **`transition`** (fundido Close/Open) y
+  **`change_background`** (panorama a pantalla completa). Al terminar cada lote de evento se
+  **limpia la presentación** (diálogo/fondo/fundido) para no dejar la pantalla tapada.
+- **Bloqueo de input**: `EventSystem.is_busy()` (contador `_busy_depth`); `GameManager._input`
+  lo consulta y **no permite mover/seleccionar unidades durante un diálogo/cinemática**.
+- **Efecto hoy**: el **Intro del Prólogo FE4** (25 `speak`) reproduce su cutscene con retratos
+  y texto typewriter; los eventos de pueblo/talk muestran diálogo.
+
+### Retratos fieles (escenario de retratos) ✅
+- **`EventDialogue.gd`**: escenario de retratos por nid. Honra **`add_portrait`/
+  `multi_add_portrait`/`remove_portrait`/`multi_remove_portrait`/`move_portrait`/
+  `change_portrait`** con posición real (slots `FarLeft/Left/MidLeft/MidRight/Right/FarRight`
+  o coordenada nativa `x,y` escalada). Los retratos del **lado derecho se voltean**
+  (`flip_h`) para mirar al centro. Cara = región **96×80** de la hoja LT (144×112),
+  escalada ×3. `speak` **resalta al hablante** (los demás se atenúan); si el hablante no
+  estaba en escena, se añade un retrato de respaldo. Al terminar el evento se limpian.
+- **`EventSystem.gd`**: `_cmd_add_portrait`/`_multi_*`/`_remove_*`/`_move_portrait`/
+  `_change_portrait` resuelven la textura por nid (`AssetLoader.get_portrait`, tokens
+  `{unit}` incluidos) y la pasan al escenario. `speak` usa el retrato ya en escena.
+- *Limitaciones*: `expression` (CloseEyes…) sigue no-op — requiere el layout de frames de
+  la hoja LT (parpadeo/boca). Nombre mostrado = nid del hablante.
+
+### Más presentación: {w}, map_anim, cámara, rótulo ✅
+- **`{w}` (pausa intramedio)**: `EventDialogue.play_line` divide el texto en `{w}` y espera
+  input en cada uno, acumulando en la misma caja (pacing fiel). `_type_append`/`_clean_seg`
+  (sin recortar bordes para no perder espacios al concatenar).
+- **`map_anim(nid, "x,y")`**: reproduce la animación de mapa `nid` (de
+  `assets/animations/animations.json` + `<nid>.png`, rejilla `frame_x×frame_y`, `num_frames`)
+  como Sprite2D one-shot en la casilla (espacio de mundo, sobre el mapa). Ej.: `Snag` al
+  destruir un puente.
+- **`center_cursor`/`move_cursor("x,y"[, immediate])`**: panea la cámara del combate a la
+  casilla (tween sine, o snap con `immediate`) — enfoca la acción en cutscenes. La cámara del
+  juego se fija una vez al cargar, así que el tween no pelea con ningún controlador.
+- **`chapter_title`**: rótulo con el nombre del capítulo (`LoadedLevel.name_str`, p.ej.
+  "Birth of a Crusader"), fade-in/hold/fade-out sobre la capa de presentación.
+
+### Próximo
+1. **Verificar en editor** (¡importante, ya van muchas features sin validar!): Prólogo FE4 —
+   cutscene Intro con retratos posicionados, `{w}`, paneo de cámara, `map_anim` y rótulo; que
+   el input quede bloqueado durante el diálogo. Y el anclaje de paso (`MOVE_FEET_NATIVE`).
+2. `expression`: mapear frames de expresión (parpadeo/boca) de la hoja de retrato LT.
+3. `show_layer`/`hide_layer`: capas de tile del mapa (requiere que el renderer del tilemap
+   soporte capas nombradas — no existe aún).
+4. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 (ya en
+   `data/fe4/events/`: `Intro`/`Narration`/`Outro`) y cablear MainMenu → apertura → Prólogo.
+5. Pipeline de guardado/carga real (Continue). Menú de acciones: Item/Staff, deshacer mov.

@@ -461,6 +461,64 @@ func set_used_palette(used: bool) -> void:
 	if _map_sprite != null:
 		_map_sprite.set_used(used)
 
+
+# ── Animación de paso por el mapa ────────────────────────────────────────────
+const STEP_TIME := 0.13            # segundos por casilla recorrida
+var _step_player: AudioStreamPlayer = null
+
+## Camina la unidad a través de una lista de puntos de MUNDO (Vector2), casilla
+## a casilla, orientando el map sprite y reproduciendo el SFX de paso. Corrutina:
+## el llamador hace `await`. Si la clase no tiene map sprite, salta al destino.
+func animate_move_along(world_points: Array, step_time: float = STEP_TIME) -> void:
+	if world_points.is_empty():
+		return
+	if not _has_map_sprite or _map_sprite == null:
+		global_position = world_points[world_points.size() - 1]
+		return
+	_map_sprite.start_move()
+	var sfx_name := _step_sfx_name()
+	for p in world_points:
+		var to: Vector2 = p
+		_map_sprite.set_move_dir(_dir_from_delta(to - global_position))
+		_play_step_sfx(sfx_name)
+		var t := create_tween()
+		t.tween_property(self, "global_position", to, step_time)
+		await t.finished
+	_map_sprite.end_move()
+
+
+## Dirección de marcha (constantes de UnitMapSprite) a partir del desplazamiento.
+func _dir_from_delta(d: Vector2) -> int:
+	if absf(d.x) >= absf(d.y):
+		return UnitMapSprite.DIR_RIGHT if d.x > 0 else UnitMapSprite.DIR_LEFT
+	return UnitMapSprite.DIR_DOWN if d.y > 0 else UnitMapSprite.DIR_UP
+
+
+## SFX de paso según el tipo de unidad (tags Flying/Mounted/Armor).
+func _step_sfx_name() -> String:
+	if "Flying" in tags:
+		return "Map_Step_Flier"
+	if "Mounted" in tags:
+		return "Map_Step_Mounted3"
+	if "Armor" in tags:
+		return "Map_Step_Armor1"
+	return "Map_Step_Infantry2"
+
+
+func _play_step_sfx(sfx_name: String) -> void:
+	var stream: AudioStream = null
+	if has_node("/root/AssetLoader"):
+		stream = get_node("/root/AssetLoader").get_sfx(sfx_name)
+	if stream == null:
+		return
+	if _step_player == null:
+		_step_player = AudioStreamPlayer.new()
+		if AudioServer.get_bus_index("SFX") >= 0:
+			_step_player.bus = "SFX"
+		add_child(_step_player)
+	_step_player.stream = stream
+	_step_player.play()
+
 func _resolve_map_sprite_nid() -> String:
 	var ms := ""
 	if has_node("/root/GameDB"):

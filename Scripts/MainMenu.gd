@@ -55,7 +55,17 @@ const PRESS_SCALE    := 5
 const PLATE      := "res://assets/menus/title_menu_dark.png"           # placa normal
 const PLATE_HL   := "res://assets/menus/title_menu_dark_highlight.png" # placa enfocada
 const SWORD      := "res://assets/menus/cursor_dragon.png"             # cursor-espada
+const GEM        := "res://assets/menus/menu_gem_brown.png"            # gema de placa (14×12)
+const GEM_SCALE  := 3
 const SERIF_FONT := "res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
+
+# SFX del menú (ver assets/sfx/). Navegación al cambiar de foco, confirmación al
+# avanzar, cancelación al retroceder, error en acciones no disponibles.
+const SFX_NAV     := "Select 5"
+const SFX_CONFIRM := "Select 4"
+const SFX_CANCEL  := "Step Back 1"
+const SFX_ERROR   := "Error"
+const SOUNDROOM_SCRIPT := "res://Scripts/SoundRoom.gd"
 const BTN_W := 620
 const BTN_H := 110
 const BTN_FONT := 54
@@ -102,6 +112,9 @@ var _newgame_col: VBoxContainer
 var _extras_col: VBoxContainer
 
 var _difficulty: String = "Normal"
+
+var _sfx: AudioStreamPlayer                # reproductor de SFX del menú
+var _skip_next_nav_sfx: bool = false       # evita el tick de navegación en el auto-foco al entrar a un panel
 
 
 # ============================================================
@@ -323,10 +336,46 @@ func _make_button(text: String, id: String) -> Button:
 	b.add_theme_stylebox_override("focus", _plate_sb(PLATE_HL))
 	b.add_theme_stylebox_override("pressed", _plate_sb(PLATE_HL))
 	b.set_meta("id", id)
+	# Gemas ornamentales que flanquean el texto; sólo visibles en la placa enfocada.
+	_add_gems(b)
 	b.pressed.connect(_on_button_pressed.bind(id))
 	b.focus_entered.connect(_on_button_focus.bind(b, id))
+	b.focus_exited.connect(_set_button_gems.bind(b, false))
 	b.mouse_entered.connect(b.grab_focus)
 	return b
+
+
+## Crea dos gemas (izq/der) sobre la placa, ocultas por defecto. Se encienden
+## en la placa con foco (look FE de "entrada seleccionada").
+func _add_gems(b: Button) -> void:
+	if not ResourceLoader.exists(GEM):
+		return
+	var tex := load(GEM)
+	var gw := 14 * GEM_SCALE
+	var gh := 12 * GEM_SCALE
+	var y := (BTN_H - gh) * 0.5
+	for side in ["GemL", "GemR"]:
+		var g := TextureRect.new()
+		g.name = side
+		g.texture = tex
+		g.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		g.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		g.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		g.custom_minimum_size = Vector2(gw, gh)
+		g.size = Vector2(gw, gh)
+		g.position = Vector2(28 if side == "GemL" else BTN_W - 28 - gw, y)
+		g.visible = false
+		b.add_child(g)
+
+
+## Enciende/apaga las gemas de una placa.
+func _set_button_gems(b: Button, on: bool) -> void:
+	if b == null or not is_instance_valid(b):
+		return
+	for side in ["GemL", "GemR"]:
+		var g := b.get_node_or_null(side)
+		if g != null:
+			g.visible = on
 
 
 func _build_cursor() -> void:
@@ -401,6 +450,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	if _state == St.PRESS_START:
 		if event.is_action_pressed("ui_accept") or _is_confirm_click(event):
+			_play_sfx(SFX_CONFIRM)
 			_goto(St.MAIN)
 		return
 	if event.is_action_pressed("ui_cancel"):
@@ -415,8 +465,10 @@ func _is_confirm_click(event: InputEvent) -> bool:
 func _on_cancel() -> void:
 	match _state:
 		St.MAIN:
+			_play_sfx(SFX_CANCEL)
 			_goto(St.PRESS_START)
 		St.NEWGAME, St.EXTRAS:
+			_play_sfx(SFX_CANCEL)
 			_goto(St.MAIN)
 
 
@@ -424,20 +476,41 @@ func _on_button_pressed(id: String) -> void:
 	if _busy:
 		return
 	match id:
-		"newgame":   _goto(St.NEWGAME)
-		"extras":    _goto(St.EXTRAS)
-		"continue":  _toast("Continue — coming soon")
-		"options":   _open_options()
-		"soundroom": _toast("Sound Room — coming soon")
-		"credits":   _open_credits()
-		"normal":    _start_game("Normal")
-		"elite":     _start_game("Elite")
+		"newgame":   _play_sfx(SFX_CONFIRM); _goto(St.NEWGAME)
+		"extras":    _play_sfx(SFX_CONFIRM); _goto(St.EXTRAS)
+		"continue":  _play_sfx(SFX_ERROR);   _toast("Continue — coming soon")
+		"options":   _play_sfx(SFX_CONFIRM); _open_options()
+		"soundroom": _play_sfx(SFX_CONFIRM); _open_soundroom()
+		"credits":   _play_sfx(SFX_CONFIRM); _open_credits()
+		"normal":    _play_sfx(SFX_CONFIRM); _start_game("Normal")
+		"elite":     _play_sfx(SFX_CONFIRM); _start_game("Elite")
 
 
 func _on_button_focus(b: Button, id: String) -> void:
 	_move_cursor_to(b)
+	_set_button_gems(b, true)
+	# Tick de navegación, salvo el auto-foco al entrar a un panel (evita el doble
+	# sonido con el de confirmación que disparó la transición).
+	if _skip_next_nav_sfx:
+		_skip_next_nav_sfx = false
+	else:
+		_play_sfx(SFX_NAV)
 	if _state == St.NEWGAME:
 		_desc.text = DESC_NORMAL if id == "normal" else DESC_ELITE
+
+
+## Reproduce un SFX del menú (en el bus "SFX" si existe). name = nombre sin ext.
+func _play_sfx(sfx_name: String) -> void:
+	if _sfx == null:
+		_sfx = AudioStreamPlayer.new()
+		if AudioServer.get_bus_index("SFX") >= 0:
+			_sfx.bus = "SFX"
+		add_child(_sfx)
+	var path := "res://assets/sfx/%s.ogg" % sfx_name
+	if not ResourceLoader.exists(path):
+		return
+	_sfx.stream = load(path)
+	_sfx.play()
 
 
 ## Posición base (centrada) del cursor para un botón, a su izquierda.
@@ -529,6 +602,7 @@ func _slide_in(col: Control, from_x: float, to_x: float, y: float) -> void:
 
 
 func _focus_first(col: Control) -> void:
+	_skip_next_nav_sfx = true   # el auto-foco no debe sonar como navegación manual
 	var fb := _first_button(col)
 	if fb != null:
 		fb.grab_focus()
@@ -584,6 +658,35 @@ func _open_credits() -> void:
 	if credits.has_method("show_credits"):
 		credits.show_credits()
 	await _fade_to(0.0)                       # revela los créditos
+
+
+## Abre el Sound Room (overlay con fade). Pausa el tema del menú mientras está
+## abierto y lo reanuda al cerrar.
+func _open_soundroom() -> void:
+	var scr := load(SOUNDROOM_SCRIPT)
+	if scr == null:
+		_toast("Sound Room no disponible")
+		return
+	_busy = true
+	await _fade_to(1.0)                       # fade a negro
+	if _music != null and _music.playing:
+		_music.stream_paused = true           # silencia el tema del menú
+	var room = scr.new()
+	add_child(room)
+	move_child(room, _fade.get_index())       # el room queda justo debajo del _fade
+	if room.has_signal("closed"):
+		room.closed.connect(_on_soundroom_done.bind(room))
+	await _fade_to(0.0)                        # revela el Sound Room
+
+
+func _on_soundroom_done(room) -> void:
+	await _fade_to(1.0)
+	if is_instance_valid(room):
+		room.queue_free()
+	if _music != null:
+		_music.stream_paused = false          # reanuda el tema del menú
+	await _fade_to(0.0)
+	_busy = false
 
 
 ## Al terminar los créditos: fade a negro, quitarlos y fade de vuelta al menú.

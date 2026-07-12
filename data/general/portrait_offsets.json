@@ -1,0 +1,2002 @@
+{
+ "Sigurd": {
+  "blink": [
+   21,
+   24
+  ],
+  "smile": [
+   21,
+   40
+  ]
+ },
+ "Noish": {
+  "blink": [
+   26,
+   32
+  ],
+  "smile": [
+   26,
+   48
+  ]
+ },
+ "Alec": {
+  "blink": [
+   26,
+   32
+  ],
+  "smile": [
+   26,
+   48
+  ]
+ },
+ "Arden": {
+  "blink": [
+   25,
+   19
+  ],
+  "smile": [
+   25,
+   35
+  ]
+ },
+ "Quan": {
+  "blink": [
+   20,
+   20
+  ],
+  "smile": [
+   20,
+   36
+  ]
+ },
+ "Finn1": {
+  "blink": [
+   22,
+   24
+  ],
+  "smile": [
+   22,
+   40
+  ]
+ },
+ "Ethlyn": {
+  "blink": [
+   30,
+   29
+  ],
+  "smile": [
+   30,
+   45
+  ]
+ },
+ "Lex": {
+  "blink": [
+   23,
+   21
+  ],
+  "smile": [
+   23,
+   37
+  ]
+ },
+ "Azel": {
+  "blink": [
+   24,
+   26
+  ],
+  "smile": [
+   24,
+   42
+  ]
+ },
+ "Midir": {
+  "blink": [
+   28,
+   27
+  ],
+  "smile": [
+   28,
+   43
+  ]
+ },
+ "Aideen": {
+  "blink": [
+   31,
+   29
+  ],
+  "smile": [
+   31,
+   45
+  ]
+ },
+ "Dew": {
+  "blink": [
+   25,
+   31
+  ],
+  "smile": [
+   25,
+   47
+  ]
+ },
+ "Jamke": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Ayra": {
+  "blink": [
+   28,
+   27
+  ],
+  "smile": [
+   28,
+   43
+  ]
+ },
+ "Deirdre": {
+  "blink": [
+   24,
+   32
+  ],
+  "smile": [
+   24,
+   48
+  ]
+ },
+ "Holyn": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Lachesis": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Lewyn": {
+  "blink": [
+   27,
+   28
+  ],
+  "smile": [
+   27,
+   44
+  ]
+ },
+ "Sylvia": {
+  "blink": [
+   29,
+   32
+  ],
+  "smile": [
+   29,
+   48
+  ]
+ },
+ "Beowulf": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Erinys": {
+  "blink": [
+   25,
+   26
+  ],
+  "smile": [
+   25,
+   42
+  ]
+ },
+ "Tailtiu": {
+  "blink": [
+   27,
+   32
+  ],
+  "smile": [
+   27,
+   48
+  ]
+ },
+ "Brigid": {
+  "blink": [
+   22,
+   27
+  ],
+  "smile": [
+   22,
+   43
+  ]
+ },
+ "Claude": {
+  "blink": [
+   23,
+   25
+  ],
+  "smile": [
+   23,
+   41
+  ]
+ },
+ "NordionGuard": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Eldigan": {
+  "blink": [
+   27,
+   24
+  ],
+  "smile": [
+   27,
+   40
+  ]
+ },
+ "AlvaFE4": {
+  "blink": [
+   25,
+   27
+  ],
+  "smile": [
+   25,
+   43
+  ]
+ },
+ "Eva": {
+  "blink": [
+   28,
+   25
+  ],
+  "smile": [
+   28,
+   41
+  ]
+ },
+ "Eve": {
+  "blink": [
+   27,
+   23
+  ],
+  "smile": [
+   27,
+   39
+  ]
+ },
+ "FakeHolyn": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Byron": {
+  "blink": [
+   26,
+   23
+  ],
+  "smile": [
+   26,
+   39
+  ]
+ },
+ "KingAzmur": {
+  "blink": [
+   29,
+   18
+  ],
+  "smile": [
+   29,
+   34
+  ]
+ },
+ "KingBatur": {
+  "blink": [
+   21,
+   29
+  ],
+  "smile": [
+   21,
+   45
+  ]
+ },
+ "NobleMan": {
+  "blink": [
+   20,
+   24
+  ],
+  "smile": [
+   20,
+   40
+  ]
+ },
+ "Oifaye1": {
+  "blink": [
+   28,
+   27
+  ],
+  "smile": [
+   28,
+   43
+  ]
+ },
+ "PrinceKurth": {
+  "blink": [
+   24,
+   21
+  ],
+  "smile": [
+   24,
+   37
+  ]
+ },
+ "Ring": {
+  "blink": [
+   24,
+   23
+  ],
+  "smile": [
+   24,
+   39
+  ]
+ },
+ "ShannanKid": {
+  "blink": [
+   33,
+   42
+  ],
+  "smile": [
+   33,
+   58
+  ]
+ },
+ "Fighter1": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Soldier6": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Boy5": {
+  "blink": [
+   33,
+   42
+  ],
+  "smile": [
+   33,
+   58
+  ]
+ },
+ "Girl4": {
+  "blink": [
+   33,
+   41
+  ],
+  "smile": [
+   33,
+   57
+  ]
+ },
+ "LakeLady": {
+  "blink": [
+   32,
+   32
+  ],
+  "smile": [
+   32,
+   48
+  ]
+ },
+ "Man7": {
+  "blink": [
+   31,
+   32
+  ],
+  "smile": [
+   31,
+   48
+  ]
+ },
+ "OldLady2": {
+  "blink": [
+   32,
+   37
+  ],
+  "smile": [
+   32,
+   53
+  ]
+ },
+ "OldLady3": {
+  "blink": [
+   32,
+   32
+  ],
+  "smile": [
+   32,
+   48
+  ]
+ },
+ "OldMan3": {
+  "blink": [
+   24,
+   40
+  ],
+  "smile": [
+   16,
+   56
+  ]
+ },
+ "YoungLady2": {
+  "blink": [
+   32,
+   40
+  ],
+  "smile": [
+   32,
+   56
+  ]
+ },
+ "YoungMan3": {
+  "blink": [
+   34,
+   31
+  ],
+  "smile": [
+   34,
+   47
+  ]
+ },
+ "Armory": {
+  "blink": [
+   31,
+   31
+  ],
+  "smile": [
+   31,
+   47
+  ]
+ },
+ "Pawnbroker": {
+  "blink": [
+   27,
+   31
+  ],
+  "smile": [
+   27,
+   47
+  ]
+ },
+ "Arvis": {
+  "blink": [
+   25,
+   21
+  ],
+  "smile": [
+   25,
+   37
+  ]
+ },
+ "Boldor": {
+  "blink": [
+   19,
+   22
+  ],
+  "smile": [
+   19,
+   38
+  ]
+ },
+ "Chagall": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Clement": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "DiMaggio": {
+  "blink": [
+   21,
+   22
+  ],
+  "smile": [
+   21,
+   38
+  ]
+ },
+ "Elliot": {
+  "blink": [
+   25,
+   23
+  ],
+  "smile": [
+   25,
+   39
+  ]
+ },
+ "Gandolf": {
+  "blink": [
+   22,
+   26
+  ],
+  "smile": [
+   22,
+   42
+  ]
+ },
+ "Gerrard": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Kinbois": {
+  "blink": [
+   21,
+   24
+  ],
+  "smile": [
+   21,
+   40
+  ]
+ },
+ "Langbalt": {
+  "blink": [
+   23,
+   25
+  ],
+  "smile": [
+   23,
+   41
+  ]
+ },
+ "Macbeth": {
+  "blink": [
+   24,
+   25
+  ],
+  "smile": [
+   24,
+   41
+  ]
+ },
+ "Manfroy": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Phillip": {
+  "blink": [
+   24,
+   28
+  ],
+  "smile": [
+   24,
+   44
+  ]
+ },
+ "Reptor": {
+  "blink": [
+   37,
+   27
+  ],
+  "smile": [
+   37,
+   43
+  ]
+ },
+ "Sandima": {
+  "blink": [
+   29,
+   35
+  ],
+  "smile": [
+   29,
+   51
+  ]
+ },
+ "Voltz": {
+  "blink": [
+   23,
+   26
+  ],
+  "smile": [
+   23,
+   42
+  ]
+ },
+ "Zain": {
+  "blink": [
+   22,
+   22
+  ],
+  "smile": [
+   22,
+   38
+  ]
+ },
+ "RotPunkt": {
+  "blink": [
+   0,
+   0
+  ],
+  "smile": [
+   0,
+   0
+  ]
+ },
+ "BlauPunkt": {
+  "blink": [
+   0,
+   0
+  ],
+  "smile": [
+   0,
+   0
+  ]
+ },
+ "Route1-1": {
+  "blink": [
+   0,
+   0
+  ],
+  "smile": [
+   0,
+   0
+  ]
+ },
+ "Route1-2": {
+  "blink": [
+   0,
+   0
+  ],
+  "smile": [
+   0,
+   0
+  ]
+ },
+ "Route2-1": {
+  "blink": [
+   0,
+   0
+  ],
+  "smile": [
+   0,
+   0
+  ]
+ },
+ "Route2-2": {
+  "blink": [
+   0,
+   0
+  ],
+  "smile": [
+   0,
+   0
+  ]
+ },
+ "Route3-1": {
+  "blink": [
+   0,
+   0
+  ],
+  "smile": [
+   0,
+   0
+  ]
+ },
+ "Route3-2": {
+  "blink": [
+   0,
+   0
+  ],
+  "smile": [
+   0,
+   0
+  ]
+ },
+ "QueenLahna": {
+  "blink": [
+   22,
+   27
+  ],
+  "smile": [
+   22,
+   43
+  ]
+ },
+ "Annand": {
+  "blink": [
+   28,
+   22
+  ],
+  "smile": [
+   28,
+   38
+  ]
+ },
+ "Aida": {
+  "blink": [
+   29,
+   26
+  ],
+  "smile": [
+   29,
+   42
+  ]
+ },
+ "Travant": {
+  "blink": [
+   23,
+   21
+  ],
+  "smile": [
+   23,
+   37
+  ]
+ },
+ "Andrey": {
+  "blink": [
+   26,
+   28
+  ],
+  "smile": [
+   26,
+   44
+  ]
+ },
+ "Jacobi": {
+  "blink": [
+   19,
+   24
+  ],
+  "smile": [
+   19,
+   40
+  ]
+ },
+ "Papilio": {
+  "blink": [
+   23,
+   24
+  ],
+  "smile": [
+   23,
+   40
+  ]
+ },
+ "Magorn": {
+  "blink": [
+   23,
+   27
+  ],
+  "smile": [
+   23,
+   43
+  ]
+ },
+ "Cuvuli": {
+  "blink": [
+   23,
+   31
+  ],
+  "smile": [
+   23,
+   47
+  ]
+ },
+ "Dithorba": {
+  "blink": [
+   26,
+   29
+  ],
+  "smile": [
+   26,
+   45
+  ]
+ },
+ "Pamela": {
+  "blink": [
+   26,
+   23
+  ],
+  "smile": [
+   26,
+   39
+  ]
+ },
+ "Vaja": {
+  "blink": [
+   20,
+   30
+  ],
+  "smile": [
+   20,
+   46
+  ]
+ },
+ "Lamia": {
+  "blink": [
+   25,
+   29
+  ],
+  "smile": [
+   17,
+   45
+  ]
+ },
+ "Slyder": {
+  "blink": [
+   24,
+   23
+  ],
+  "smile": [
+   24,
+   39
+  ]
+ },
+ "Donovan": {
+  "blink": [
+   23,
+   23
+  ],
+  "smile": [
+   23,
+   39
+  ]
+ },
+ "Myos": {
+  "blink": [
+   27,
+   24
+  ],
+  "smile": [
+   27,
+   40
+  ]
+ },
+ "Daccar": {
+  "blink": [
+   22,
+   22
+  ],
+  "smile": [
+   22,
+   38
+  ]
+ },
+ "Dobarl": {
+  "blink": [
+   23,
+   28
+  ],
+  "smile": [
+   23,
+   44
+  ]
+ },
+ "Pizarl": {
+  "blink": [
+   24,
+   26
+  ],
+  "smile": [
+   24,
+   42
+  ]
+ },
+ "Man5": {
+  "blink": [
+   35,
+   33
+  ],
+  "smile": [
+   35,
+   49
+  ]
+ },
+ "OldLady1": {
+  "blink": [
+   38,
+   36
+  ],
+  "smile": [
+   38,
+   52
+  ]
+ },
+ "Leif": {
+  "blink": [
+   24,
+   32
+  ],
+  "smile": [
+   24,
+   48
+  ]
+ },
+ "Finn": {
+  "blink": [
+   29,
+   23
+  ],
+  "smile": [
+   29,
+   39
+  ]
+ },
+ "Osian": {
+  "blink": [
+   22,
+   24
+  ],
+  "smile": [
+   22,
+   40
+  ]
+ },
+ "Halvan": {
+  "blink": [
+   16,
+   24
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Eyvel": {
+  "blink": [
+   25,
+   24
+  ],
+  "smile": [
+   17,
+   40
+  ]
+ },
+ "Dagdar": {
+  "blink": [
+   22,
+   22
+  ],
+  "smile": [
+   22,
+   38
+  ]
+ },
+ "Tanya": {
+  "blink": [
+   31,
+   32
+  ],
+  "smile": [
+   31,
+   48
+  ]
+ },
+ "Marty": {
+  "blink": [
+   24,
+   16
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Ronan": {
+  "blink": [
+   25,
+   25
+  ],
+  "smile": [
+   25,
+   41
+  ]
+ },
+ "Safy": {
+  "blink": [
+   25,
+   33
+  ],
+  "smile": [
+   25,
+   49
+  ]
+ },
+ "Lifis": {
+  "blink": [
+   24,
+   32
+  ],
+  "smile": [
+   16,
+   48
+  ]
+ },
+ "Machyua": {
+  "blink": [
+   27,
+   29
+  ],
+  "smile": [
+   27,
+   45
+  ]
+ },
+ "Brighton": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Lara": {
+  "blink": [
+   22,
+   30
+  ],
+  "smile": [
+   22,
+   46
+  ]
+ },
+ "Fergus": {
+  "blink": [
+   27,
+   26
+  ],
+  "smile": [
+   27,
+   42
+  ]
+ },
+ "Karin": {
+  "blink": [
+   24,
+   32
+  ],
+  "smile": [
+   16,
+   48
+  ]
+ },
+ "Dalsin": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Asbel": {
+  "blink": [
+   29,
+   33
+  ],
+  "smile": [
+   16,
+   49
+  ]
+ },
+ "Altena": {
+  "blink": [
+   28,
+   24
+  ],
+  "smile": [
+   28,
+   40
+  ]
+ },
+ "NannaPorrtrait": {
+  "blink": [
+   32,
+   32
+  ],
+  "smile": [
+   32,
+   48
+  ]
+ },
+ "Hicks": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Shiva": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Carrion": {
+  "blink": [
+   24,
+   32
+  ],
+  "smile": [
+   24,
+   48
+  ]
+ },
+ "Selphina": {
+  "blink": [
+   26,
+   29
+  ],
+  "smile": [
+   26,
+   45
+  ]
+ },
+ "Cain": {
+  "blink": [
+   26,
+   22
+  ],
+  "smile": [
+   26,
+   38
+  ]
+ },
+ "AlvaFE5": {
+  "blink": [
+   24,
+   23
+  ],
+  "smile": [
+   24,
+   39
+  ]
+ },
+ "Robert": {
+  "blink": [
+   23,
+   25
+  ],
+  "smile": [
+   23,
+   41
+  ]
+ },
+ "Fred": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Olwen": {
+  "blink": [
+   24,
+   25
+  ],
+  "smile": [
+   24,
+   41
+  ]
+ },
+ "Mareeta": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Salem": {
+  "blink": [
+   0,
+   0
+  ],
+  "smile": [
+   0,
+   0
+  ]
+ },
+ "Perne": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Troude": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Tina": {
+  "blink": [
+   25,
+   34
+  ],
+  "smile": [
+   25,
+   50
+  ]
+ },
+ "Glade": {
+  "blink": [
+   27,
+   24
+  ],
+  "smile": [
+   27,
+   40
+  ]
+ },
+ "Deen": {
+  "blink": [
+   23,
+   19
+  ],
+  "smile": [
+   23,
+   35
+  ]
+ },
+ "Eda": {
+  "blink": [
+   30,
+   26
+  ],
+  "smile": [
+   30,
+   42
+  ]
+ },
+ "Miranda": {
+  "blink": [
+   29,
+   29
+  ],
+  "smile": [
+   29,
+   45
+  ]
+ },
+ "Homer": {
+  "blink": [
+   24,
+   33
+  ],
+  "smile": [
+   24,
+   49
+  ]
+ },
+ "Linoan": {
+  "blink": [
+   24,
+   25
+  ],
+  "smile": [
+   24,
+   41
+  ]
+ },
+ "Ralf": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Ilios": {
+  "blink": [
+   28,
+   23
+  ],
+  "smile": [
+   28,
+   39
+  ]
+ },
+ "Sleuf": {
+  "blink": [
+   27,
+   25
+  ],
+  "smile": [
+   27,
+   41
+  ]
+ },
+ "Misha": {
+  "blink": [
+   31,
+   29
+  ],
+  "smile": [
+   31,
+   45
+  ]
+ },
+ "Sara": {
+  "blink": [
+   24,
+   31
+  ],
+  "smile": [
+   24,
+   47
+  ]
+ },
+ "Shannam": {
+  "blink": [
+   22,
+   23
+  ],
+  "smile": [
+   22,
+   39
+  ]
+ },
+ "Xavier": {
+  "blink": [
+   26,
+   24
+  ],
+  "smile": [
+   26,
+   40
+  ]
+ },
+ "Amalda": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Conomor": {
+  "blink": [
+   27,
+   22
+  ],
+  "smile": [
+   27,
+   38
+  ]
+ },
+ "Delmud": {
+  "blink": [
+   23,
+   26
+  ],
+  "smile": [
+   23,
+   42
+  ]
+ },
+ "Saias": {
+  "blink": [
+   27,
+   25
+  ],
+  "smile": [
+   27,
+   41
+  ]
+ },
+ "Ced": {
+  "blink": [
+   16,
+   16
+  ],
+  "smile": [
+   16,
+   32
+  ]
+ },
+ "Galzus": {
+  "blink": [
+   24,
+   32
+  ],
+  "smile": [
+   16,
+   48
+  ]
+ },
+ "Seliph": {
+  "blink": [
+   28,
+   31
+  ],
+  "smile": [
+   28,
+   47
+  ]
+ },
+ "Yuria": {
+  "blink": [
+   27,
+   30
+  ],
+  "smile": [
+   27,
+   46
+  ]
+ },
+ "Bloom": {
+  "blink": [
+   22,
+   24
+  ],
+  "smile": [
+   22,
+   40
+  ]
+ },
+ "August": {
+  "blink": [
+   18,
+   21
+  ],
+  "smile": [
+   18,
+   37
+  ]
+ },
+ "Coirpre": {
+  "blink": [
+   24,
+   32
+  ],
+  "smile": [
+   24,
+   48
+  ]
+ },
+ "Ishtar": {
+  "blink": [
+   28,
+   27
+  ],
+  "smile": [
+   28,
+   43
+  ]
+ },
+ "Julius": {
+  "blink": [
+   26,
+   26
+  ],
+  "smile": [
+   26,
+   42
+  ]
+ },
+ "Hannibal": {
+  "blink": [
+   16,
+   24
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Dryas": {
+  "blink": [
+   25,
+   25
+  ],
+  "smile": [
+   25,
+   41
+  ]
+ },
+ "Arion": {
+  "blink": [
+   16,
+   24
+  ],
+  "smile": [
+   16,
+   40
+  ]
+ },
+ "Raydrik": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Veld": {
+  "blink": [
+   19,
+   22
+  ],
+  "smile": [
+   19,
+   38
+  ]
+ },
+ "Kempf": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Reinhardt": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Weissman": {
+  "blink": [
+   24,
+   16
+  ],
+  "smile": [
+   24,
+   32
+  ]
+ },
+ "Bandol": {
+  "blink": [
+   24,
+   16
+  ],
+  "smile": [
+   24,
+   32
+  ]
+ },
+ "Merlock": {
+  "blink": [
+   24,
+   16
+  ],
+  "smile": [
+   24,
+   32
+  ]
+ },
+ "Fraus": {
+  "blink": [
+   24,
+   16
+  ],
+  "smile": [
+   24,
+   32
+  ]
+ },
+ "Codda": {
+  "blink": [
+   29,
+   35
+  ],
+  "smile": [
+   29,
+   51
+  ]
+ },
+ "Rinecok": {
+  "blink": [
+   29,
+   35
+  ],
+  "smile": [
+   29,
+   51
+  ]
+ },
+ "Mua": {
+  "blink": [
+   29,
+   35
+  ],
+  "smile": [
+   29,
+   51
+  ]
+ },
+ "Alfan": {
+  "blink": [
+   29,
+   35
+  ],
+  "smile": [
+   29,
+   51
+  ]
+ },
+ "Truman": {
+  "blink": [
+   28,
+   23
+  ],
+  "smile": [
+   28,
+   39
+  ]
+ },
+ "Largo": {
+  "blink": [
+   28,
+   23
+  ],
+  "smile": [
+   28,
+   39
+  ]
+ },
+ "Baldack": {
+  "blink": [
+   28,
+   23
+  ],
+  "smile": [
+   28,
+   39
+  ]
+ },
+ "Nicolov": {
+  "blink": [
+   28,
+   23
+  ],
+  "smile": [
+   28,
+   39
+  ]
+ },
+ "Brook": {
+  "blink": [
+   28,
+   23
+  ],
+  "smile": [
+   28,
+   39
+  ]
+ },
+ "Makroy": {
+  "blink": [
+   25,
+   23
+  ],
+  "smile": [
+   25,
+   39
+  ]
+ },
+ "Lobos": {
+  "blink": [
+   25,
+   23
+  ],
+  "smile": [
+   25,
+   39
+  ]
+ },
+ "Cowen": {
+  "blink": [
+   20,
+   22
+  ],
+  "smile": [
+   20,
+   38
+  ]
+ },
+ "Bucks": {
+  "blink": [
+   24,
+   24
+  ],
+  "smile": [
+   24,
+   40
+  ]
+ },
+ "Dobalzark": {
+  "blink": [
+   22,
+   20
+  ],
+  "smile": [
+   22,
+   36
+  ]
+ },
+ "Gomes": {
+  "blink": [
+   25,
+   24
+  ],
+  "smile": [
+   25,
+   40
+  ]
+ },
+ "Colho": {
+  "blink": [
+   30,
+   26
+  ],
+  "smile": [
+   30,
+   42
+  ]
+ },
+ "Rumei": {
+  "blink": [
+   29,
+   21
+  ],
+  "smile": [
+   29,
+   37
+  ]
+ },
+ "Mueller": {
+  "blink": [
+   29,
+   21
+  ],
+  "smile": [
+   29,
+   37
+  ]
+ },
+ "Seimetol": {
+  "blink": [
+   29,
+   21
+  ],
+  "smile": [
+   29,
+   37
+  ]
+ },
+ "Aizenau": {
+  "blink": [
+   23,
+   24
+  ],
+  "smile": [
+   23,
+   40
+  ]
+ },
+ "Paulus": {
+  "blink": [
+   23,
+   24
+  ],
+  "smile": [
+   23,
+   40
+  ]
+ },
+ "Palman": {
+  "blink": [
+   23,
+   24
+  ],
+  "smile": [
+   23,
+   40
+  ]
+ },
+ "Aihiman": {
+  "blink": [
+   24,
+   26
+  ],
+  "smile": [
+   24,
+   42
+  ]
+ },
+ "Farden": {
+  "blink": [
+   25,
+   24
+  ],
+  "smile": [
+   25,
+   40
+  ]
+ },
+ "Zile": {
+  "blink": [
+   24,
+   22
+  ],
+  "smile": [
+   24,
+   38
+  ]
+ },
+ "Oltof": {
+  "blink": [
+   26,
+   24
+  ],
+  "smile": [
+   26,
+   40
+  ]
+ },
+ "Gustav": {
+  "blink": [
+   27,
+   23
+  ],
+  "smile": [
+   27,
+   39
+  ]
+ },
+ "Barat": {
+  "blink": [
+   23,
+   24
+  ],
+  "smile": [
+   23,
+   40
+  ]
+ },
+ "Rist": {
+  "blink": [
+   26,
+   26
+  ],
+  "smile": [
+   26,
+   42
+  ]
+ },
+ "Wolff": {
+  "blink": [
+   26,
+   26
+  ],
+  "smile": [
+   26,
+   42
+  ]
+ },
+ "Zaom": {
+  "blink": [
+   15,
+   22
+  ],
+  "smile": [
+   15,
+   38
+  ]
+ },
+ "Coruta": {
+  "blink": [
+   15,
+   22
+  ],
+  "smile": [
+   15,
+   38
+  ]
+ }
+}

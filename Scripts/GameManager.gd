@@ -114,12 +114,25 @@ func _ready():
 func _input(event):
 	if current_state != GameState.PLAYER_TURN:
 		return
+	# Durante un evento/diálogo (speak, cinemática) el input es del EventSystem
+	# (avanzar diálogo) — no mover unidades ni seleccionar.
+	if event_system != null and event_system.has_method("is_busy") and event_system.is_busy():
+		return
 	# Sin batalla activa (p.ej. el autoload mientras se ve el menú) → ignorar.
 	if player_units.is_empty() and enemy_units.is_empty():
 		return
 
 	# Sólo clic IZQUIERDO. Ojo: la rueda del ratón también es InputEventMouseButton
 	# con pressed==true (button_index WHEEL_UP/DOWN), por eso hay que filtrar.
+	# Clic DERECHO en modo targeting = cancelar el ataque y volver al menú de
+	# acciones (no se fuerza a atacar tras mover).
+	if event is InputEventMouseButton and event.pressed \
+			and event.button_index == MOUSE_BUTTON_RIGHT \
+			and player_phase == PlayerPhase.TARGETING:
+		attackable_tiles.clear()
+		show_action_menu()
+		return
+
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		# event.position son COORDENADAS DE PANTALLA — hay que convertirlas
 		# a coordenadas de mundo respetando la cámara (zoom + posición).
@@ -207,32 +220,45 @@ func deselect_unit():
 	current_path.clear()
 
 func move_selected_unit(target: Vector2i):
-	"""Mueve la unidad seleccionada a la posición objetivo"""
+	"""Mueve la unidad seleccionada a la posición objetivo (con animación de paso)."""
 	if not selected_unit:
 		return
-	
+	if player_phase == PlayerPhase.MOVING:
+		return   # ya hay un movimiento en curso — ignora clics repetidos
+
 	var path = Pathfinding.find_path(grid, selected_unit.grid_position, target, selected_unit.movement, selected_unit)
-	
+
 	if path.size() == 0:
 		return
-	
-	# Mover la unidad
-	var from = selected_unit.grid_position
+
+	var unit := selected_unit
+	var from = unit.grid_position
+	# Bloquea el input y oculta los resaltados mientras la unidad camina.
+	player_phase = PlayerPhase.MOVING
+	reachable_tiles.clear()
+	attackable_tiles.clear()
+	# El grid lógico se actualiza ya; la animación es puramente visual.
 	grid.move_unit(from, target)
-	selected_unit.global_position = grid.grid_to_world(target)
-	selected_unit.has_moved = true
-	
-	unit_moved.emit(selected_unit, from, target)
-	
+
+	# Recorrido en coordenadas de mundo (sin la casilla de inicio, path[0]).
+	var pts: Array = []
+	for i in range(1, path.size()):
+		pts.append(grid.grid_to_world(path[i]))
+	await unit.animate_move_along(pts)
+	unit.global_position = grid.grid_to_world(target)   # asegura encaje exacto
+	unit.has_moved = true
+
+	unit_moved.emit(unit, from, target)
+
 	# Recalcular FoW del jugador — el movimiento puede revelar tiles.
 	if fow_system:
 		fow_system.update_team_vision("player", player_units)
-	
+
 	# Disparar eventos de región — si el tile destino tiene una región
 	# event-type asociada, EventSystem la procesa.
 	if event_system and current_objective:
-		_check_region_events(target, selected_unit)
-	
+		_check_region_events(target, unit)
+
 	# Mostrar menú de acciones
 	show_action_menu()
 
@@ -264,18 +290,63 @@ func _check_region_events(pos: Vector2i, unit: Unit) -> void:
 				event_system.trigger_event(sub_nid,
 						{ "unit": unit, "region": r })
 
+var _action_menu: ActionMenu = null
+var ui_layer: CanvasLayer = null
+
+## Capa de pantalla (screen-space) para la UI de gameplay (menú de acciones).
+func _ensure_ui_layer() -> CanvasLayer:
+	if ui_layer == null or not is_instance_valid(ui_layer):
+		ui_layer = CanvasLayer.new()
+		ui_layer.name = "UILayer"
+		ui_layer.layer = 10
+		add_child(ui_layer)
+	return ui_layer
+
+
 func show_action_menu():
-	"""Muestra el menú de acciones después de mover"""
+	"""Muestra el menú de acciones (Attack/Wait…) tras mover la unidad."""
 	player_phase = PlayerPhase.ACTION_MENU
-	
-	# Por ahora, simplemente permitir atacar si hay enemigos en rango
+	if selected_unit == null:
+		return
+
+	# Opciones disponibles según el contexto de la unidad.
+	var options: Array = []
 	var enemies_in_range = get_enemies_in_attack_range(selected_unit)
-	
 	if enemies_in_range.size() > 0:
-		print("Enemies in range: ", enemies_in_range.size())
-		enter_targeting_mode()
-	else:
-		end_unit_action()
+		options.append({ "id": "attack", "text": "Attack" })
+	options.append({ "id": "wait", "text": "Wait" })
+
+	_close_action_menu()
+	_action_menu = ActionMenu.new()
+	_ensure_ui_layer().add_child(_action_menu)
+	_action_menu.setup(options, _unit_menu_anchor(selected_unit))
+	_action_menu.action_selected.connect(_on_action_selected)
+
+
+## Ancla de pantalla para el menú, junto a la unidad (con la transform de cámara).
+func _unit_menu_anchor(unit: Unit) -> Vector2:
+	var vp := get_viewport()
+	if vp == null:
+		return Vector2(-1, -1)
+	var xform := vp.get_canvas_transform()
+	var screen_pos: Vector2 = xform * unit.global_position
+	return screen_pos + Vector2(48, -24)
+
+
+func _close_action_menu() -> void:
+	if _action_menu != null and is_instance_valid(_action_menu):
+		_action_menu.queue_free()
+	_action_menu = null
+
+
+## Resuelve la acción elegida en el menú.
+func _on_action_selected(id: String) -> void:
+	_action_menu = null   # el menú se auto-libera tras emitir
+	match id:
+		"attack":
+			enter_targeting_mode()
+		_:  # "wait" y cualquier fallback seguro
+			end_unit_action()
 
 func enter_targeting_mode():
 	"""Entra en modo de selección de objetivo"""
@@ -447,9 +518,10 @@ func _record_mother_death(unit: Unit) -> void:
 
 func end_unit_action():
 	"""Finaliza la acción de la unidad actual"""
+	_close_action_menu()
 	if selected_unit:
 		selected_unit.end_turn()
-	
+
 	deselect_unit()
 	
 	# Verificar si todas las unidades del jugador actuaron
@@ -552,7 +624,7 @@ func execute_enemy_ai():
 		# Las ballistas controladas por el enemigo disparan según su preset
 		# pero respetando MOV=0 — el AIController ya filtra por movement.
 		var decision := ai_controller.decide_action(enemy, all_units)
-		execute_enemy_decision(enemy, decision)
+		await execute_enemy_decision(enemy, decision)
 		await get_tree().create_timer(0.3).timeout
 
 
@@ -564,12 +636,19 @@ func execute_enemy_decision(enemy: Unit, decision: Dictionary) -> void:
 	var moved_to: Vector2i = decision.get("moved_to", enemy.grid_position)
 	var attacked: Unit = decision.get("attacked")
 	
-	# Mover si la posición decidida es distinta.
+	# Mover si la posición decidida es distinta (con animación de paso).
 	if moved_to != enemy.grid_position:
-		grid.move_unit(enemy.grid_position, moved_to)
-		enemy.global_position = grid.grid_to_world(moved_to)
+		var from_pos: Vector2i = enemy.grid_position
+		var path = Pathfinding.find_path(grid, from_pos, moved_to, enemy.movement, enemy)
+		grid.move_unit(from_pos, moved_to)
 		# enemy.grid_position se actualiza automáticamente en grid.move_unit().
-		print("[AI] %s moves %s → %s" % [enemy.unit_name, enemy.grid_position, moved_to])
+		if enemy.has_method("animate_move_along") and path.size() > 1:
+			var pts: Array = []
+			for i in range(1, path.size()):
+				pts.append(grid.grid_to_world(path[i]))
+			await enemy.animate_move_along(pts)
+		enemy.global_position = grid.grid_to_world(moved_to)
+		print("[AI] %s moves %s → %s" % [enemy.unit_name, from_pos, moved_to])
 	
 	# Ejecutar la acción específica.
 	match action:
