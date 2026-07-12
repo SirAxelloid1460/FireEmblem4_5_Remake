@@ -251,7 +251,15 @@ Fuente auténtica: `GotHW.ltproj/game_data/events.json` (FE4, 167 eventos) y
     (`_compare_var`: ==, !=, >=, <=, >, <, numérico o string/bool). Es lo que usan los
     contadores de destructibles que alimentan los `if` (recompensas de pueblos).
   - **Cobertura de comandos**: los **66** tipos usados están cubiertos (0 caen en el
-    fallback). Estado: **44 implementados de verdad**, **18 no-op** documentados.
+    fallback). Estado: **47 implementados de verdad**, **15 no-op** documentados
+    (`choice` → `EventChoice.gd`; `interact_unit` → combate; `remove_talk`; etc.).
+    Los 15 no-op restantes **no son "un handler más"**: son el subsistema de castillo
+    (`base/prep/shop/arrange_formation/add_market_item` — que además **aún no es alcanzable**:
+    no existe el flujo entre-capítulos MainMenu→castillo), el roll de `credits` (final del
+    juego; `CreditsScreen.gd` ya existe suelto para el menú), capas de tilemap
+    (`show_layer/hide_layer` — sin soporte en el renderer), overworld, `change_tilemap`,
+    `change_stats`, y marcadores internos (`comment/end_skip/has_traded`). Antes de portarlos
+    conviene (a) validar el Prólogo en el editor y (b) construir el flujo de castillo.
     `expression` (parpadeo/ojos cerrados) YA es real: `tools/build_portrait_offsets.py`
     genera `data/general/portrait_offsets.json` (blinking/smiling offset por retrato, del
     `portraits.json` del `.ltproj`), y `EventDialogue.set_expression` compone el frame
