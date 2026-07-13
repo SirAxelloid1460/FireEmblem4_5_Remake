@@ -362,8 +362,20 @@ referencia.**
 - El resto (difficulty_modes Normal/Elite, factions, parties, tags, lore, raw_data…) queda
   como **datos disponibles** para cablear en la fase de correcciones.
 
-### Pendiente de CABLEADO (fase de correcciones, no de integración)
-1. **difficulty_modes**: aplicar `player_bases`/`enemy_bases`/growths de Normal vs Elite al
-   crear unidades (MainMenu ya pasa la dificultad a `GameMode`; falta que el spawn la lea).
-2. `factions`/`parties`/`tags`/`lore`/`raw_data`: exponerlos vía `GameDB` a quien los use
-   (facción por unidad, MarketList de tiendas en raw_data, biblioteca de lore, etc.).
+### Cableado hecho ✅
+1. **difficulty_modes** → `GameDB.build_project_data` lee la dificultad activa (meta
+   `difficulty` que fija MainMenu en `GameMode`; default "Normal") e incluye el modo entero
+   en `project_data["difficulty"]`. `LevelLoader.build_unit` llama a `_apply_difficulty`, que
+   suma `player_bases`/`enemy_bases`/`boss_bases` según bando/boss. (En FE4 las bases son 0 —
+   Normal/Elite difieren en `growths_choice`: Dynamic vs Random— así que el efecto visible
+   llega cuando se cablee el sistema de growths, que ya puede leer
+   `project_data["difficulty"]["growths_choice"]`.)
+2. **Tablas expuestas vía `GameDB`**: `get_table/get_table_indexed` + accesores
+   `get_factions/get_faction`, `get_parties/get_party`, `get_tags`, `get_lore/get_lore_entry`,
+   `get_affinities/get_affinity`, `get_raw_data`, `get_support_constants/get_support_constant`,
+   `get_difficulty_modes/get_difficulty_mode` (con caché). Listos para consumidores (facción de
+   unidad, MarketList de tiendas en `raw_data`, biblioteca de `lore`, etc.).
+
+### Pendiente
+3. **Combat anims/palettes**: los aporta el usuario (ports de assets grandes) — avisará cuando
+   estén listos para cablearlos.

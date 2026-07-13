@@ -249,11 +249,44 @@ static func build_unit(udef: Dictionary, project_data: Dictionary) -> Unit:
 	if ai_name in ["Boss", "Berserk", "JoshuaDefend"]:
 		unit.set_meta("is_boss", true)
 
+	# Bonus de dificultad (Normal/Elite) según bando/boss.
+	_apply_difficulty(unit, udef, project_data)
+
 	# Inicializar ballista si la clase lo es.
 	if BallistaSystem.is_ballista(unit):
 		BallistaSystem.initialize(unit, "enemy" if team == "enemy" else "player")
 
 	return unit
+
+
+## Suma los `*_bases` del modo de dificultad activo (project_data["difficulty"])
+## a los stats de la unidad: player→player_bases, boss→boss_bases, resto→enemy_bases.
+static func _apply_difficulty(unit: Unit, udef: Dictionary, project_data: Dictionary) -> void:
+	var diff = project_data.get("difficulty", {})
+	if not (diff is Dictionary) or diff.is_empty():
+		return
+	var team := str(udef.get("team", "enemy"))
+	var bases
+	if team == "player":
+		bases = diff.get("player_bases", {})
+	elif unit.has_meta("is_boss") and bool(unit.get_meta("is_boss")):
+		bases = diff.get("boss_bases", {})
+	else:
+		bases = diff.get("enemy_bases", {})
+	if not (bases is Dictionary):
+		return
+	if bases.has("HP"):
+		unit.max_hp += int(bases["HP"])
+		unit.current_hp = unit.max_hp
+	if bases.has("STR"): unit.strength     += int(bases["STR"])
+	if bases.has("MAG"): unit.magic        += int(bases["MAG"])
+	if bases.has("SKL"): unit.skill        += int(bases["SKL"])
+	if bases.has("SPD"): unit.speed        += int(bases["SPD"])
+	if bases.has("LCK"): unit.luck         += int(bases["LCK"])
+	if bases.has("DEF"): unit.defense      += int(bases["DEF"])
+	if bases.has("RES"): unit.resistance   += int(bases["RES"])
+	if bases.has("CON"): unit.constitution += int(bases["CON"])
+	if bases.has("MOV"): unit.movement     += int(bases["MOV"])
 
 
 ## Aplica los stats de una unidad GENÉRICA (la definición está en el cap).
