@@ -334,3 +334,36 @@ Los eventos ya no sólo corren su lógica: se **ven y se oyen**.
 4. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 (ya en
    `data/fe4/events/`: `Intro`/`Narration`/`Outro`) y cablear MainMenu → apertura → Prólogo.
 5. Pipeline de guardado/carga real (Continue). Menú de acciones: Item/Staff, deshacer mov.
+
+---
+
+## 9) Sesión 2026‑07 — integrar tablas de datos que faltaban de LT
+
+Auditoría de brecha `<ltproj>/game_data/*` vs `data/`: la data general (classes/weapons/
+items/skills/units), niveles y eventos **ya estaban completos** (los propios `.ltproj` sólo
+tienen construidos FE4 caps 0‑2 y FE5 cap 1 — no hay más capítulos que portar). Traducciones:
+integradas como recursos Godot (CSV→.translation). **La única brecha eran las tablas de
+referencia.**
+
+### Tablas portadas (FE4 + FE5) ✅
+- `tools/build_from_lt.py`: `TABLES` ampliado con **affinities, difficulty_modes, factions,
+  game_var_slots, lore, overworlds, parties, raw_data, support_constants, support_pairs,
+  support_ranks, tags**. `copy_tables` aplica `NID_REMAP` (unifica nids de unidad
+  referenciados, p.ej. support_pairs `unit1/unit2`, parties `leader`) y copia
+  `support_pairs`/`support_ranks` también a la **raíz** `data/<game>/` (donde las cargan los
+  bootstraps).
+- Generadas en `data/fe4/tables/`, `data/fe5/tables/` + `data/<game>/support_pairs.json` y
+  `support_ranks.json`.
+
+### Efecto
+- **Supports YA tienen datos**: `PrologueTest` carga `data/fe4/support_pairs.json` (27 pares)
+  y `support_ranks.json` (Lover/Married) → `SupportSystem.load_from_project` funciona (los
+  bonuses de afinidad ya estaban hardcodeados en `AFFINITY_BONUS`, coherente con el JSON LT).
+- El resto (difficulty_modes Normal/Elite, factions, parties, tags, lore, raw_data…) queda
+  como **datos disponibles** para cablear en la fase de correcciones.
+
+### Pendiente de CABLEADO (fase de correcciones, no de integración)
+1. **difficulty_modes**: aplicar `player_bases`/`enemy_bases`/growths de Normal vs Elite al
+   crear unidades (MainMenu ya pasa la dificultad a `GameMode`; falta que el spawn la lea).
+2. `factions`/`parties`/`tags`/`lore`/`raw_data`: exponerlos vía `GameDB` a quien los use
+   (facción por unidad, MarketList de tiendas en raw_data, biblioteca de lore, etc.).
