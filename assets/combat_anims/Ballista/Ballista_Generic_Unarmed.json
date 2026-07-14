@@ -1,0 +1,90 @@
+{
+  "class": "Ballista",
+  "variant": "Generic",
+  "weapon": "Unarmed",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    2,
+    2
+  ],
+  "sheet_size": [
+    480,
+    320
+  ],
+  "frame_count": 3,
+  "frames": {
+    "Bow_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Bow_006": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Bow_007": {
+      "tile": [
+        0,
+        1
+      ]
+    }
+  },
+  "poses": {
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 26,
+        "frame": "Bow_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_006"
+      }
+    ]
+  },
+  "generated_from": "Ballista_Generic_Bow.json"
+}
