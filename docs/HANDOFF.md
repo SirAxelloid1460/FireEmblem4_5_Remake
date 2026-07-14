@@ -376,6 +376,26 @@ referencia.**
    `get_difficulty_modes/get_difficulty_mode` (con caché). Listos para consumidores (facción de
    unidad, MarketList de tiendas en `raw_data`, biblioteca de `lore`, etc.).
 
+### Combat anims — wiring (assets ya pegados) ✅
+Los assets se guardan como `assets/combat_anims/{NID}_{Variant}/{NID}_{Variant}_{Weapon}.png`
++ `.json` (los genera `tools/build_combat_sheet.py`).
+- **Fix crítico**: `CombatAnimDatabase` buscaba en layout PLANO
+  (`combat_anims/{anim}.png`) pero los assets están en **subcarpeta** por variante.
+  Nuevo `_resolve_paths` busca `combat_anims/{NID}_{Variant}/{anim}.png` (folder = anim sin el
+  último `_{Weapon}`), con fallback al plano. Ahora `has_anim`/`load_anim`/`CombatAnimResolver`/
+  `CombatAnimTest` (F6) encuentran los assets.
+- **Enganche al combate**: `GameManager.initiate_combat` reproduce **`CombatAnimScene`** (sobre
+  un `CanvasLayer`, escala ×5 centrada, fondo oscuro) cuando **ambas** unidades resuelven a una
+  animación existente; si falta alguna, **combate instantáneo** (comportamiento previo). Toggle
+  `COMBAT_CINEMATIC` / escala `COMBAT_ANIM_SCALE`.
+- **HP sin doble conteo**: `calculate_combat` aplica el daño de inmediato; la cinemática necesita
+  reproducir desde el HP inicial → se **guarda el HP inicial, se restaura para la cinemática, y se
+  reaplica el HP final autoritativo** tras ella. Muertes/EXP/victoria se resuelven después.
+- **Input bloqueado** durante la cinemática (`_combat_busy` en `_input`); la IA `await`ea el
+  combate para no solapar dos peleas.
+- *A validar en editor*: escala/posición de la escena (`COMBAT_ANIM_SCALE`, centrado) y el timing
+  del HP en pantalla (la escena lleva su propio conteo; el autoritativo se reaplica al final).
+
 ### Pendiente
-3. **Combat anims/palettes**: los aporta el usuario (ports de assets grandes) — avisará cuando
-   estén listos para cablearlos.
+- **Combat palettes** (recolor por equipo/personaje en combate): `CombatPaletteSystem` existe;
+  cablear cuando el usuario aporte `assets/combat_palettes/palette_data/`.

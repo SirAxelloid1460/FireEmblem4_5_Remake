@@ -57,12 +57,28 @@ static var _cache: Dictionary = {}
 ##   "data":  Dictionary con la metadata del JSON ({} si no existe)
 ##   "ok":    bool — true si todo cargó correctamente
 ##   "name":  el anim_name pasado
+## Resuelve las rutas del sheet/JSON de una animación. Los assets se guardan en
+## una subcarpeta por variante — combat_anims/{NID}_{Variant}/{anim_name}.png —
+## (el folder = anim_name sin el último segmento _{Weapon}); con fallback al
+## layout plano combat_anims/{anim_name}.png.
+static func _resolve_paths(anim_name: String) -> Dictionary:
+	var folder := anim_name
+	var us := anim_name.rfind("_")
+	if us > 0:
+		folder = anim_name.substr(0, us)
+	var sub_png := ANIMS_ROOT + folder + "/" + anim_name + ".png"
+	if ResourceLoader.exists(sub_png):
+		return { "png": sub_png, "json": ANIMS_ROOT + folder + "/" + anim_name + ".json" }
+	return { "png": ANIMS_ROOT + anim_name + ".png", "json": ANIMS_ROOT + anim_name + ".json" }
+
+
 static func load_anim(anim_name: String) -> Dictionary:
 	if _cache.has(anim_name):
 		return _cache[anim_name]
 
-	var sheet_path: String = ANIMS_ROOT + anim_name + ".png"
-	var json_path: String  = ANIMS_ROOT + anim_name + ".json"
+	var paths := _resolve_paths(anim_name)
+	var sheet_path: String = paths["png"]
+	var json_path: String  = paths["json"]
 
 	var result: Dictionary = {
 		"sheet": null, "data": {}, "ok": false, "name": anim_name,
@@ -97,9 +113,8 @@ static func load_anim(anim_name: String) -> Dictionary:
 static func has_anim(anim_name: String) -> bool:
 	if _cache.has(anim_name):
 		return _cache[anim_name].get("ok", false)
-	var sheet_path: String = ANIMS_ROOT + anim_name + ".png"
-	var json_path: String  = ANIMS_ROOT + anim_name + ".json"
-	return ResourceLoader.exists(sheet_path) and FileAccess.file_exists(json_path)
+	var paths := _resolve_paths(anim_name)
+	return ResourceLoader.exists(paths["png"]) and FileAccess.file_exists(paths["json"])
 
 
 ## Devuelve un AtlasTexture para un frame concreto de la animación.

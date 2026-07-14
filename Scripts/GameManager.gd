@@ -118,6 +118,9 @@ func _input(event):
 	# (avanzar diálogo) — no mover unidades ni seleccionar.
 	if event_system != null and event_system.has_method("is_busy") and event_system.is_busy():
 		return
+	# Durante la cinemática de combate, ignorar clics del mapa.
+	if _combat_busy:
+		return
 	# Sin batalla activa (p.ej. el autoload mientras se ve el menú) → ignorar.
 	if player_units.is_empty() and enemy_units.is_empty():
 		return
@@ -414,11 +417,30 @@ func initiate_combat(attacker: Unit, defender: Unit):
 		event_system.trigger_event("combat_start",
 				{ "attacker": attacker, "defender": defender })
 	
+	# HP inicial (calculate_combat aplica el daño de inmediato; lo guardamos
+	# para poder REPRODUCIR el intercambio en la cinemática sin doble conteo).
+	var atk_hp0: int = attacker.current_hp
+	var def_hp0: int = defender.current_hp
+
 	# Ejecutar combate
 	var result = CombatSystem.calculate_combat(attacker, defender, distance, t_atk, t_def)
-	
+
 	print(result.get_summary())
-	
+
+	# Cinemática de combate (si AMBOS tienen animación resoluble). Restaura el HP
+	# inicial, reproduce los golpes, y reaplica el HP final autoritativo. Si falta
+	# alguna animación, se salta y el combate es instantáneo (comportamiento previo).
+	if COMBAT_CINEMATIC and _combat_anims_available(attacker, defender):
+		var atk_hp1: int = attacker.current_hp
+		var def_hp1: int = defender.current_hp
+		attacker.current_hp = atk_hp0
+		defender.current_hp = def_hp0
+		await _play_combat_cinematic(result)
+		attacker.current_hp = atk_hp1   # HP final autoritativo (de calculate_combat)
+		defender.current_hp = def_hp1
+		if attacker.has_method("update_visual"): attacker.update_visual()
+		if defender.has_method("update_visual"): defender.update_visual()
+
 	# Eliminar unidades muertas — los items van al convoy automáticamente.
 	if result.defender_died:
 		_handle_unit_death(defender)
@@ -452,6 +474,63 @@ func initiate_combat(attacker: Unit, defender: Unit):
 	
 	end_unit_action()
 	check_victory_conditions()
+
+
+# ── Cinemática de combate (animaciones LT) ───────────────────────────────────
+const COMBAT_CINEMATIC := true          # poner false para forzar combate instantáneo
+const COMBAT_ANIM_SCALE := 5.0          # 240×160 nativo ×5 ≈ 1200×800 (tunable)
+var _combat_busy: bool = false          # bloquea input del mapa durante la cinemática
+
+## True mientras se reproduce la cinemática de combate.
+func is_combat_busy() -> bool:
+	return _combat_busy
+
+
+## ¿Ambas unidades resuelven a una animación de combate existente?
+func _combat_anims_available(a: Unit, b: Unit) -> bool:
+	return _unit_has_anim(a) and _unit_has_anim(b)
+
+
+func _unit_has_anim(u: Unit) -> bool:
+	if u == null:
+		return false
+	var wt := ""
+	var ranged := false
+	var w = u.weapon if "weapon" in u else null
+	if w != null:
+		if "weapon_type" in w:
+			wt = str(w.weapon_type)
+		if "min_range" in w:
+			ranged = int(w.min_range) > 1
+	if wt == "":
+		wt = "Unarmed"
+	return CombatAnimDatabase.has_anim(CombatAnimResolver.resolve(u, wt, ranged))
+
+
+## Muestra la escena de combate animada (CombatAnimScene) sobre un CanvasLayer,
+## escalada y centrada, y espera a que termine. Fondo oscuro; degrada solo si
+## faltan nodos opcionales (background/flash/HP bars).
+func _play_combat_cinematic(result) -> void:
+	_combat_busy = true
+	var layer := CanvasLayer.new()
+	layer.name = "CombatCinematic"
+	layer.layer = 50
+	add_child(layer)
+	var bg := ColorRect.new()
+	bg.color = Color(0.05, 0.05, 0.07, 1.0)
+	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	layer.add_child(bg)
+	var scene := CombatAnimScene.new()
+	scene.scale = Vector2(COMBAT_ANIM_SCALE, COMBAT_ANIM_SCALE)
+	var vp := get_viewport().get_visible_rect().size
+	scene.position = Vector2(
+			(vp.x - 240.0 * COMBAT_ANIM_SCALE) * 0.5,
+			(vp.y - 160.0 * COMBAT_ANIM_SCALE) * 0.5)
+	layer.add_child(scene)
+	await scene.play_combat(result)
+	await get_tree().create_timer(0.35).timeout
+	layer.queue_free()
+	_combat_busy = false
 
 
 ## Maneja la muerte de una unidad: ballistas se destruyen sin más; las
@@ -655,7 +734,7 @@ func execute_enemy_decision(enemy: Unit, decision: Dictionary) -> void:
 		"Attack":
 			if attacked != null and attacked.current_hp > 0:
 				print("[AI] %s attacks %s!" % [enemy.unit_name, attacked.unit_name])
-				initiate_combat(enemy, attacked)
+				await initiate_combat(enemy, attacked)
 				return  # initiate_combat ya consume la acción.
 		"Steal":
 			var victim: Unit = decision.get("steal_target")

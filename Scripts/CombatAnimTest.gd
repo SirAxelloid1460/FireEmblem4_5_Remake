@@ -69,8 +69,9 @@ func _ready() -> void:
 	# Cargar y arrancar.
 	var anim := CombatAnimDatabase.load_anim(anim_name)
 	if not anim.get("ok", false):
+		var _folder := anim_name.substr(0, anim_name.rfind("_")) if anim_name.rfind("_") > 0 else anim_name
 		_info_label.text = "ERROR: anim '%s' no encontrada\n" % anim_name + \
-				"Esperaba res://assets/combat_anims/%s.png + .json" % anim_name
+				"Esperaba res://assets/combat_anims/%s/%s.png + .json" % [_folder, anim_name]
 		_info_label.add_theme_color_override("font_color", Color.RED)
 		push_error("[CombatAnimTest] anim '%s' no encontrada" % anim_name)
 		return
