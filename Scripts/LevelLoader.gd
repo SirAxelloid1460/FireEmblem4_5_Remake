@@ -238,10 +238,22 @@ static func build_unit(udef: Dictionary, project_data: Dictionary) -> Unit:
 		unit.set_meta("ai_group", str(udef["ai_group"]))
 
 	# Generic vs named.
-	if bool(udef.get("generic", false)):
+	var is_generic := bool(udef.get("generic", false))
+	if is_generic:
 		_apply_generic(unit, udef, project_data)
 	else:
 		_apply_named(unit, nid, project_data)
+
+	# Género: prioridad al override de la def del cap; si no, el de units.json
+	# (nombradas); default M para nombradas y U (universal) para genéricas.
+	var gender = udef.get("gender", null)
+	if gender == null and not is_generic:
+		var udb = project_data.get("units", {})
+		if udb is Dictionary and udb.has(nid) and udb[nid] is Dictionary:
+			gender = udb[nid].get("gender", null)
+	if gender == null:
+		gender = "U" if is_generic else "M"
+	unit.gender = str(gender).to_upper()
 
 	# Tag de boss si el preset AI lo indica explícitamente o el nid lo lleva.
 	# (LT marca bosses normalmente vía fields o ai dedicada — heurística.)
