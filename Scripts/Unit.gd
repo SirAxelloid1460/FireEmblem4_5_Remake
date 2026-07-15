@@ -137,6 +137,18 @@ func remove_temporary_skills_by_source(source: String) -> void:
 	for skill_id in to_remove:
 		_temp_skills.erase(skill_id)
 
+## Resuelve el autoload GameDB de forma robusta: funciona tanto si la unidad
+## está en el árbol (get_node) como si es un nodo suelto (roster reconstruido en
+## el castillo) — en ese caso se accede vía el SceneTree raíz.
+func _gamedb():
+	var n := get_node_or_null("/root/GameDB")
+	if n != null:
+		return n
+	var loop := Engine.get_main_loop()
+	if loop is SceneTree and loop.root != null:
+		return loop.root.get_node_or_null("GameDB")
+	return null
+
 # ── Efectos de equipo (status_on_hold / status_on_equip) ──────────────────────
 # Recalcula las skills temporales y los modificadores de stats derivados del
 # EQUIPO de la unidad (no de status ni de captura):
@@ -191,9 +203,9 @@ func _grant_equipment_skill(skill_id: String, mod_id: String) -> void:
 ## Extrae el componente stat_change de una skill de GameDB → {stat: delta}.
 func _skill_stat_change(skill_id: String) -> Dictionary:
 	var out := {}
-	if not has_node("/root/GameDB"):
+	if not (_gamedb() != null):
 		return out
-	var sk = get_node("/root/GameDB").get_skill(skill_id)
+	var sk = _gamedb().get_skill(skill_id)
 	if sk == null:
 		return out
 	var raw = sk.component_value("stat_change")
@@ -224,9 +236,9 @@ func _all_skill_ids() -> Array:
 ## (Life 0.2, Recover 1.0, Regeneration/Circlet 0.25…). 0.0 si ninguna regenera.
 func get_regen_fraction() -> float:
 	var best := 0.0
-	if not has_node("/root/GameDB"):
+	if not (_gamedb() != null):
 		return best
-	var db = get_node("/root/GameDB")
+	var db = _gamedb()
 	for sid in _all_skill_ids():
 		var sk = db.get_skill(sid)
 		if sk == null:
@@ -241,9 +253,9 @@ func get_regen_fraction() -> float:
 ## mayúsculas (HP/STR/MAG/SKL/SPD/LCK/DEF/RES). Usado por LevelUpScreen.
 func get_growth_bonuses() -> Dictionary:
 	var out := {}
-	if not has_node("/root/GameDB"):
+	if not (_gamedb() != null):
 		return out
-	var db = get_node("/root/GameDB")
+	var db = _gamedb()
 	for sid in _all_skill_ids():
 		var sk = db.get_skill(sid)
 		if sk == null:
@@ -260,12 +272,12 @@ func get_growth_bonuses() -> Dictionary:
 ##   0 = sin Canto; 1 = Canto (re-mover con el movimiento RESTANTE);
 ##   2 = Canto+ (re-mover con el movimiento COMPLETO).
 func canto_level() -> int:
-	if not has_node("/root/GameDB"):
+	if not (_gamedb() != null):
 		# Fallback por nid conocido si GameDB no está disponible.
 		if has_skill("Canto_Plus"): return 2
 		if has_skill("Canto"): return 1
 		return 0
-	var db = get_node("/root/GameDB")
+	var db = _gamedb()
 	var lvl := 0
 	for sid in _all_skill_ids():
 		var sk = db.get_skill(sid)
@@ -659,8 +671,8 @@ func _play_step_sfx(sfx_name: String) -> void:
 
 func _resolve_map_sprite_nid() -> String:
 	var ms := ""
-	if has_node("/root/GameDB"):
-		var cd = get_node("/root/GameDB").get_class_data(unit_class)  # UnitClassData o null
+	if (_gamedb() != null):
+		var cd = _gamedb().get_class_data(unit_class)  # UnitClassData o null
 		if cd != null:
 			ms = str(cd.map_sprite_nid)
 	if ms == "":
@@ -673,8 +685,8 @@ func _resolve_map_sprite_nid() -> String:
 ## Se lee de GameDB en cada llamada, de modo que una promoción (que cambia
 ## unit_class) actualiza la animación automáticamente.
 func resolve_combat_anim_nid() -> String:
-	if has_node("/root/GameDB"):
-		var cd = get_node("/root/GameDB").get_class_data(unit_class)  # UnitClassData o null
+	if (_gamedb() != null):
+		var cd = _gamedb().get_class_data(unit_class)  # UnitClassData o null
 		if cd != null and str(cd.combat_anim_nid) != "":
 			return str(cd.combat_anim_nid)
 	return unit_class   # fallback: el nid de clase suele coincidir

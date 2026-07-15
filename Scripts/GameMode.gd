@@ -364,6 +364,74 @@ func build_roster_units() -> Array:
 				out.append(u)
 	return out
 
+## Snapshot del roster para un nid, o {} si esa unidad no está en el roster.
+func get_roster_snapshot(nid: String) -> Dictionary:
+	for snap in roster:
+		if snap is Dictionary and str(snap.get("nid", "")) == nid:
+			return snap
+	return {}
+
+## Superpone la progresión persistida (stats/nivel/clase/skills/wexp/sangre/
+## inventario) sobre una unidad recién construida por el capítulo, conservando
+## su posición, equipo y AI. Cura al 100% (inicio de capítulo). Devuelve true si
+## la unidad estaba en el roster y se aplicó. Llamar ANTES de add_child para que
+## el map sprite se resuelva con la clase correcta (p.ej. tras promoción).
+func apply_roster_to_unit(unit) -> bool:
+	if unit == null:
+		return false
+	var snap := get_roster_snapshot(str(unit.unit_name))
+	if snap.is_empty():
+		return false
+	unit.unit_class = str(snap.get("unit_class", unit.unit_class))
+	unit.class_tier = int(snap.get("class_tier", unit.class_tier))
+	unit.level = int(snap.get("level", unit.level))
+	unit.max_hp = int(snap.get("max_hp", unit.max_hp))
+	unit.strength = int(snap.get("strength", unit.strength))
+	unit.magic = int(snap.get("magic", unit.magic))
+	unit.skill = int(snap.get("skill", unit.skill))
+	unit.speed = int(snap.get("speed", unit.speed))
+	unit.luck = int(snap.get("luck", unit.luck))
+	unit.defense = int(snap.get("defense", unit.defense))
+	unit.resistance = int(snap.get("resistance", unit.resistance))
+	unit.constitution = int(snap.get("constitution", unit.constitution))
+	unit.movement = int(snap.get("movement", unit.movement))
+	unit.current_hp = unit.max_hp   # inicio de capítulo: curado al 100%
+	if snap.get("skills") is Array:
+		for s in snap["skills"]:
+			unit.learn_skill(str(s))
+	if snap.get("wexp") is Dictionary:
+		unit.wexp = (snap["wexp"] as Dictionary).duplicate()
+	if snap.get("holy_blood") is Dictionary:
+		unit.holy_blood = (snap["holy_blood"] as Dictionary).duplicate()
+	# El inventario persistido reemplaza el starting_items del capítulo.
+	_restore_inventory(unit, snap)
+	if unit.has_method("refresh_item_effects"):
+		unit.refresh_item_effects()
+	return true
+
+## Reconstruye el inventario (+ arma equipada) de una unidad desde un snapshot.
+func _restore_inventory(unit, snap: Dictionary) -> void:
+	if not ("inventory" in unit):
+		return
+	unit.inventory.clear()
+	unit.weapon = null
+	var inv: Array = snap.get("inventory", [])
+	var equipped: int = int(snap.get("equipped", -1))
+	for i in inv.size():
+		if not (inv[i] is Dictionary):
+			continue
+		var item = _deserialize_item(inv[i])
+		if item == null:
+			continue
+		unit.inventory.append(item)
+		if i == equipped and item is Weapon:
+			unit.weapon = item
+	if unit.weapon == null:
+		for it in unit.inventory:
+			if it is Weapon:
+				unit.weapon = it
+				break
+
 ## Snapshot completo de una unidad (stats + skills + wexp + sangre + inventario
 ## por nid + índice del arma equipada).
 func _serialize_unit(u) -> Dictionary:
@@ -444,26 +512,12 @@ func _deserialize_unit(snap: Dictionary) -> Unit:
 		u.wexp = (snap["wexp"] as Dictionary).duplicate()
 	if snap.get("holy_blood") is Dictionary:
 		u.holy_blood = (snap["holy_blood"] as Dictionary).duplicate()
-	# Inventario + arma equipada.
-	var inv: Array = snap.get("inventory", [])
-	var equipped: int = int(snap.get("equipped", -1))
-	for i in inv.size():
-		if not (inv[i] is Dictionary):
-			continue
-		var item = _deserialize_item(inv[i])
-		if item == null:
-			continue
-		u.inventory.append(item)
-		if i == equipped and item is Weapon:
-			u.weapon = item
-	# Si no había arma marcada pero hay una en el inventario, equipar la primera.
-	if u.weapon == null:
-		for it in u.inventory:
-			if it is Weapon:
-				u.weapon = it
-				break
-	# NOTA: refresh_item_effects() se aplicará al entrar la unidad a un árbol
-	# (spawn de batalla); aquí es un nodo suelto y GameDB no es resoluble desde él.
+	# Inventario + arma equipada (compartido con apply_roster_to_unit).
+	_restore_inventory(u, snap)
+	# Reaplicar efectos pasivos de equipo (anillos on_hold, arma on_equip).
+	# Unit._gamedb() resuelve GameDB aun siendo un nodo suelto.
+	if u.has_method("refresh_item_effects"):
+		u.refresh_item_effects()
 	return u
 
 ## Reconstruye un ítem del inventario desde su snapshot (vía GameDB).

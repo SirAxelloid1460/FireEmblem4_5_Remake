@@ -1328,13 +1328,24 @@ func load_chapter(chapter_path: String, tilemap_data: Dictionary,
 	var loaded := LevelLoader.load_chapter(chapter_path, project_data,
 			tilemap_data, grid)
 	loaded_level = loaded  # para que EventSystem acceda a unit_groups, etc.
+	# Roster persistente: si existe, superponemos la progresión guardada sobre
+	# las unidades del jugador que ya aparecieron antes (ANTES de add_child, para
+	# que el map sprite se resuelva con la clase correcta si hubo promoción).
+	var gm = get_node_or_null("/root/GameMode")
+	var has_roster: bool = gm != null and gm.has_method("has_roster") and gm.has_roster()
 	# Distribuir unidades en player/enemy.
 	for u in loaded.units:
+		if u.is_player_unit and has_roster and gm.has_method("apply_roster_to_unit"):
+			gm.apply_roster_to_unit(u)
 		_ensure_unit_layer().add_child(u)  # cuelga de UnitLayer (Y-sort)
 		if u.is_player_unit:
 			player_units.append(u)
 		else:
 			enemy_units.append(u)
+	# Primer capítulo (roster vacío): sembrarlo con el ejército inicial para que
+	# el castillo y los capítulos siguientes dispongan del ejército real.
+	if not has_roster and gm != null and gm.has_method("capture_roster"):
+		gm.capture_roster(player_units)
 	
 	# 3. Configurar FoW del capítulo.
 	setup_fog_of_war({
