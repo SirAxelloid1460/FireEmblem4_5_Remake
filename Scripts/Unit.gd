@@ -200,7 +200,15 @@ func _skill_stat_change(skill_id: String) -> Dictionary:
 	if raw is Array:
 		for pair in raw:
 			if pair is Array and pair.size() >= 2:
-				out[str(pair[0])] = int(pair[1])
+				var stat := str(pair[0])
+				var val := int(pair[1])
+				# Convención LT: el MOV se almacena ×10 (LT no aceptaba decimales),
+				# igual que las bases de clase — ver LevelLoader (mov_raw/10). Sólo
+				# se decodifican magnitudes ≥10 (los bonuses reales son 1-5 → 10-50);
+				# valores pequeños ya están en unidades reales.
+				if stat == "MOV" and abs(val) >= 10:
+					val = int(round(val / 10.0))
+				out[stat] = val
 	return out
 
 # ══════════════════════════════════════════════════════════════════════════════
