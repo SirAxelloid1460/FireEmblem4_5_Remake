@@ -21,8 +21,8 @@
 ### FE4 gen2 hijos con herencia (stats dependen del padre elegido)
 Sin valor fijo en Serenes: **Lana, Larcei, Ulster, Skasaher, Lester, Fee, Arthur, Patty, Lene, Tine, Faval**. Requieren el sistema de herencia/sustitutos (los sustitutos SÍ están añadidos como fallback canónico).
 
-### Con padres FIJOS → SÍ tienen bases determinables (pendiente fetch dirigido)
-**Seliph** (protagonista, Sigurd×Deirdre) y **Altena** (Quan×Ethlyn). Se añadirán con un fetch específico de su página de personaje.
+### Seliph, Altena, Leif (gen2) — Serenes NO publica bases fijas
+Confirmado contra `characters/base-stats/fixed/` de Serenes: Seliph, Altena y Leif NO aparecen (sus stats se computan de los padres aunque estos sean fijos). No hay valor sourcable de las wikis indicadas. Opciones: (a) sistema de herencia, (b) el `.ltproj` original que sí les asignaba un default, o (c) otra fuente. **Leif ya está en la DB** (base asignada por LT).
 
 ### FE5 sin datos en la tabla base de Serenes
 **Saias** (no aparece en la tabla base-stats; requiere otra fuente).
