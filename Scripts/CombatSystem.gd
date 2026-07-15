@@ -239,7 +239,9 @@ static func execute_attack(atk: Unit, def: Unit, dist: int,
 	# Pavise (Great Shield): anula el daño con probabilidad = promedio de los
 	# niveles de defensor y atacante.  FE4/FE5 usan solo el nivel propio y FE8
 	# el del enemigo; como el port es a GBA tomamos la media de ambos.
-	if not nihil and not is_crit and _has_skill(def, "Pavise"):
+	# Resire (componente ignore_pavise) ANULA el Big Shield: no procea contra él.
+	if not nihil and not is_crit and _has_skill(def, "Pavise") \
+			and not _weapon_ignores_pavise(wpn):
 		var pavise_rate: int = (def.level + atk.level) / 2
 		if randi() % 100 < pavise_rate:
 			dmg = 0
@@ -414,6 +416,10 @@ static func _base_exp(atk: Unit, def: Unit) -> int:
 
 static func _has_skill(unit: Unit, id: String) -> bool:
 	return unit.has_method("has_skill") and unit.has_skill(id)
+
+## ¿El arma anula el Big Shield/Pavise del defensor? (Resire → ignore_pavise)
+static func _weapon_ignores_pavise(w) -> bool:
+	return w != null and w.has_method("get_component") and w.get_component("ignore_pavise") != null
 
 ## Lee un stat EFECTIVO (base + item bonuses + status modifiers): anillos
 ## on_hold (Power/Speed/… Ring), armas on_equip (Balmung SKL/SPD), Holy Water

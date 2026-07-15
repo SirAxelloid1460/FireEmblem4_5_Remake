@@ -9424,6 +9424,10 @@
    [
     "lifelink",
     0.5
+   ],
+   [
+    "ignore_pavise",
+    true
    ]
   ]
  },
