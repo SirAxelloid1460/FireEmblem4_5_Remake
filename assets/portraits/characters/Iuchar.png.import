@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvimob6i13mms"
-path="res://.godot/imported/Luchar.png-f55e9aecb157ada9b7ddcd6077574e56.ctex"
+path="res://.godot/imported/Iuchar.png-f55e9aecb157ada9b7ddcd6077574e56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Luchar.png"
-dest_files=["res://.godot/imported/Luchar.png-f55e9aecb157ada9b7ddcd6077574e56.ctex"]
+source_file="res://assets/portraits/characters/Iuchar.png"
+dest_files=["res://.godot/imported/Iuchar.png-f55e9aecb157ada9b7ddcd6077574e56.ctex"]
 
 [params]
 
