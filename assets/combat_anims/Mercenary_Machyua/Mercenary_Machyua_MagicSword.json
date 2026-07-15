@@ -1,0 +1,390 @@
+{
+  "class": "Mercenary",
+  "variant": "Machyua",
+  "weapon": "MagicSword",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    4,
+    3
+  ],
+  "sheet_size": [
+    960,
+    480
+  ],
+  "frame_count": 12,
+  "frames": {
+    "Sword_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Sword_119": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Sword_120": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Sword_121": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Sword_122": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Sword_123": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Sword_124": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Sword_125": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Sword_126": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Sword_127": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Sword_128": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Sword_129": {
+      "tile": [
+        3,
+        2
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_119"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_120"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_121"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_122"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_122"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_124"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_119"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_120"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_121"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_122"
+      },
+      {
+        "cmd": "sound",
+        "id": "ShamanRune"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_125"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_125"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_125"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_125"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_125"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_123"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_122"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_124"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_126"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_127"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_128"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_129"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 21,
+        "frame": "Sword_129"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_128"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_127"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_126"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_124"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ]
+  }
+}

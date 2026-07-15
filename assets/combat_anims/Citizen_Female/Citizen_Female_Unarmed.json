@@ -1,0 +1,230 @@
+{
+  "class": "Citizen",
+  "variant": "Female",
+  "weapon": "Unarmed",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    4,
+    3
+  ],
+  "sheet_size": [
+    960,
+    480
+  ],
+  "frame_count": 10,
+  "frames": {
+    "Unarmed_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Unarmed_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Unarmed_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Unarmed_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Unarmed_004": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Unarmed_005": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Unarmed_006": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Unarmed_007": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Unarmed_008": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Unarmed_009": {
+      "tile": [
+        1,
+        2
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Unarmed_000"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Unarmed_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Unarmed_000"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Unarmed_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Unarmed_003"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Unarmed_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Unarmed_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Unarmed_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 12,
+        "frame": "Unarmed_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Unarmed_008"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Unarmed_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_000"
+      }
+    ],
+    "Miss": [
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "miss"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 30,
+        "frame": "Unarmed_000"
+      }
+    ]
+  }
+}

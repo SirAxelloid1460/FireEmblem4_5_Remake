@@ -1,0 +1,46 @@
+{
+  "class": "Sage",
+  "variant": "Female",
+  "weapon": "Unarmed",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    1,
+    1
+  ],
+  "sheet_size": [
+    240,
+    160
+  ],
+  "frame_count": 1,
+  "frames": {
+    "Magic_000": {
+      "tile": [
+        0,
+        0
+      ]
+    }
+  },
+  "poses": {
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_000"
+      }
+    ]
+  },
+  "generated_from": "Sage_Female_MagicAnima.json"
+}

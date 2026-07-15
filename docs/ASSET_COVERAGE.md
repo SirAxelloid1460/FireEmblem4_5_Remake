@@ -7,9 +7,9 @@
 
 ## Resumen
 
-- Clases: **61** · con map sprite: **61** · con combat anim (Generic o género): **47**
+- Clases: **61** · con map sprite: **61** · con combat anim (Generic o género): **54**
 - Personajes: **122** · con retrato: **105**
-- Carpetas de combat anim: **126**
+- Carpetas de combat anim: **174**
 
 
 ## Clases
@@ -25,7 +25,7 @@
 | Ballistae | 1 | ✅ | ✅ | ⬜ | — | — | — |
 | Bandit | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
 | Barbarian | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
-| Bard | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Bard | 1 | ✅ | ✅ | ✅ | — | — | MagicAnima |
 | Cavalier | 1 | ✅ | ✅ | — | ✅ | ✅ | Javelin, Lance, MagicSword, Sword |
 | CavalierA | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
 | CavalierB | 1 | ✅ | ✅ | — | ✅ | ✅ | Bow |
@@ -37,7 +37,7 @@
 | LoptoMage | 1 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
 | LordLeaf | 1 | ✅ | ✅ | ⬜ | — | — | — |
 | LordSeliph | 1 | ✅ | ✅ | ⬜ | — | — | — |
-| Mage | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Mage | 1 | ✅ | ✅ | — | ✅ | ✅ | MagicAnima |
 | Mercenary | 1 | ✅ | ✅ | — | ✅ | ✅ | Axe, HandAxe, MagicSword, Sword |
 | PegasusKnight | 1 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
 | Pirate | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe, MagicStaff |
@@ -54,11 +54,11 @@
 | Dancer | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Refresh, Sword |
 | DarkMage | 2 | ✅ | ✅ | ✅ | — | — | MagicAnima |
 | DragonMaster | 2 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
-| DukeKnight | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| DukeKnight | 2 | ✅ | ✅ | ✅ | — | — | Javelin, Lance |
 | FalconKnight | 2 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
-| ForrestKnight | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| ForrestKnight | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Sword |
 | General | 2 | ✅ | ✅ | ✅ | — | — | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
-| GreatKnight | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| GreatKnight | 2 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
 | Hero | 2 | ✅ | ✅ | — | ✅ | ✅ | Axe, HandAxe, MagicSword, Sword |
 | HighPriest | 2 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
 | HighPriestess | 2 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
@@ -66,7 +66,7 @@
 | MageFighter | 2 | ✅ | ✅ | — | ✅ | ✅ | MagicAnima, MagicStaff, MagicSword, Sword |
 | MageKnight | 2 | ✅ | ✅ | — | ✅ | ✅ | MagicAnima, MagicSword, Sword |
 | MasterKnight | 2 | ✅ | ✅ | — | ✅ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
-| Paladin | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| Paladin | 2 | ✅ | ✅ | — | ✅ | ✅ | Javelin, Lance, MagicStaff, MagicSword, Sword |
 | Rogue | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Sword |
 | Sage | 2 | ✅ | ✅ | — | ✅ | ✅ | MagicAnima, MagicStaff |
 | Sniper | 2 | ✅ | ✅ | — | ✅ | ✅ | Bow |
@@ -76,7 +76,7 @@
 | DarkBishop | 3 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
 | DarkPrince | 3 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
 | Emperor | 3 | ✅ | ✅ | ✅ | — | — | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
-| Queen | 3 | ✅ | ✅ | ⬜ | — | — | — |
+| Queen | 3 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
 
 ## Personajes
 
@@ -90,8 +90,8 @@
 | Dalsin | Armour | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Weissman | Armour | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Marty | Bandit | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
-| Homer | Bard | M | ✅ | ⬜ | ⚠️ | MagicAnima, MagicStaff |
-| Lewyn | Bard | M | ⬜ | ⬜ | ⬜ | — |
+| Homer | Bard | M | ✅ | ⬜ | ✅ | MagicAnima |
+| Lewyn | Bard | M | ⬜ | ⬜ | ✅ | MagicAnima |
 | Chagall | Baron | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
 | Raydrik | Baron | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
 | Clement | Bishop | M | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
@@ -119,17 +119,17 @@
 | Sandima | DarkMage | M | ✅ | ⬜ | ✅ | MagicAnima |
 | Deen | DragonKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Eda | DragonRider | F | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
-| Elliot | DukeKnight | M | ✅ | ⬜ | ⬜ | — |
-| Glade | DukeKnight | M | ✅ | ⬜ | ⬜ | — |
-| Quan | DukeKnight | M | ✅ | ⬜ | ⬜ | — |
-| Zain | DukeKnight | M | ✅ | ⬜ | ⬜ | — |
+| Elliot | DukeKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance |
+| Glade | DukeKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance |
+| Quan | DukeKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance |
+| Zain | DukeKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance |
 | DiMaggio | Fighter | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
 | Gerrard | Fighter | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
 | Halvan | Fighter | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
 | Johalva | Fighter | M | ⬜ | ⬜ | ✅ | Axe, HandAxe |
 | Osian | Fighter | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
-| Delmud | ForrestKnight | M | ✅ | ⬜ | ⬜ | — |
-| Voltz | ForrestKnight | M | ✅ | ⬜ | ⬜ | — |
+| Delmud | ForrestKnight | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Voltz | ForrestKnight | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Boldor | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Hannibal | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Lobos | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
@@ -143,26 +143,26 @@
 | Salem | LoptoMage | M | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
 | Sigurd | LordKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Leif | LordLeaf | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
-| Amid | Mage | M | ✅ | ⬜ | ⚠️ | MagicAnima, MagicStaff, MagicSword, Sword |
-| Asbel | Mage | M | ✅ | ⬜ | ⚠️ | MagicAnima, MagicStaff |
-| Azel | Mage | M | ✅ | ⬜ | ⬜ | — |
-| Linda | Mage | F | ✅ | ⬜ | ⬜ | — |
-| Miranda | Mage | F | ✅ | ⬜ | ⚠️ | MagicAnima, MagicSword, Sword |
-| Tailtiu | Mage | M | ✅ | ⬜ | ⚠️ | MagicAnima, MagicStaff, MagicSword, Sword |
+| Amid | Mage | M | ✅ | ⬜ | ✅ | MagicAnima |
+| Asbel | Mage | M | ✅ | ⬜ | ✅ | MagicAnima |
+| Azel | Mage | M | ✅ | ⬜ | ✅ | MagicAnima |
+| Linda | Mage | F | ✅ | ⬜ | ✅ | MagicAnima |
+| Miranda | Mage | F | ✅ | ⬜ | ✅ | MagicAnima |
+| Tailtiu | Mage | M | ✅ | ⬜ | ✅ | MagicAnima |
 | Ilios | MageKnight | M | ✅ | ⬜ | ✅ | MagicAnima, MagicSword, Sword |
 | Olwen | MageKnight | F | ✅ | ⬜ | ✅ | MagicAnima, MagicSword, Sword |
 | FakeHolyn | Mercenary | M | ✅ | ⬜ | ✅ | Axe, HandAxe, MagicSword, Sword |
 | Galzus | Mercenary | M | ✅ | ⬜ | ✅ | Axe, HandAxe, MagicSword, Sword |
 | Holyn | Mercenary | M | ✅ | ⬜ | ✅ | Axe, HandAxe, MagicSword, Sword |
 | Ralf | Mercenary | M | ✅ | ⬜ | ✅ | Axe, HandAxe, MagicSword, Sword |
-| Alvar | Paladin | M | ✅ | ⬜ | ⬜ | — |
-| Amalda | Paladin | F | ✅ | ⬜ | ⬜ | — |
-| Conomor | Paladin | M | ✅ | ⬜ | ⬜ | — |
-| Eldigan | Paladin | M | ✅ | ⬜ | ⬜ | — |
-| Evan | Paladin | M | ✅ | ⬜ | ⬜ | — |
-| Evar | Paladin | M | ✅ | ⬜ | ⬜ | — |
-| Fred | Paladin | M | ✅ | ⬜ | ⬜ | — |
-| Oifey | Paladin | M | ⬜ | ⬜ | ⬜ | — |
+| Alvar | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Amalda | Paladin | F | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
+| Conomor | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Eldigan | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Evan | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Evar | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Fred | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Oifey | Paladin | M | ⬜ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Erinys | PegasusKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Femina | PegasusKnight | F | ⬜ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Misha | PegasusKnight | F | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
@@ -204,11 +204,3 @@
 | Gandolf | Warrior | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe |
 | GenoaGuard | Warrior | M | ⬜ | ⬜ | ✅ | Axe, Bow, HandAxe |
 | Kinbois | Warrior | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe |
-
-## ⚠️ Problemas detectados (el juego no encuentra estos anims)
-
-- 'Tailtiu' (Mage): anim en MageFighter_Tailtiu/ pero combat_anim_nid="Mage" -> el resolver busca Mage_Tailtiu (no existe). Renombrar la carpeta a Mage_Tailtiu o corregir combat_anim_nid.
-- 'Amid' (Mage): anim en MageFighter_Amid/ pero combat_anim_nid="Mage" -> el resolver busca Mage_Amid (no existe). Renombrar la carpeta a Mage_Amid o corregir combat_anim_nid.
-- 'Asbel' (Mage): anim en Sage_Asbel/ pero combat_anim_nid="Mage" -> el resolver busca Mage_Asbel (no existe). Renombrar la carpeta a Mage_Asbel o corregir combat_anim_nid.
-- 'Homer' (Bard): anim en Sage_Homer/ pero combat_anim_nid="Bard" -> el resolver busca Bard_Homer (no existe). Renombrar la carpeta a Bard_Homer o corregir combat_anim_nid.
-- 'Miranda' (Mage): anim en MageKnight_Miranda/ pero combat_anim_nid="Mage" -> el resolver busca Mage_Miranda (no existe). Renombrar la carpeta a Mage_Miranda o corregir combat_anim_nid.

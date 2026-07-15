@@ -1,0 +1,367 @@
+{
+  "class": "Queen",
+  "variant": "Generic",
+  "weapon": "MagicStaff",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    4,
+    4
+  ],
+  "sheet_size": [
+    960,
+    640
+  ],
+  "frame_count": 16,
+  "frames": {
+    "Staff_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Staff_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Staff_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Staff_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Staff_004": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Staff_005": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Staff_006": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Staff_007": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Staff_008": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Staff_009": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Staff_010": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Staff_011": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Staff_012": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Staff_013": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Staff_014": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Staff_015": {
+      "tile": [
+        3,
+        3
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Staff_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_006"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 12,
+        "frame": "Staff_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Staff_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Staff_011"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Staff_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Staff_013"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_013"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Staff_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Staff_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Staff_015"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Staff_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_006"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 12,
+        "frame": "Staff_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Staff_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Staff_011"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Staff_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Staff_013"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_013"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Staff_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Staff_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Staff_015"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Staff_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_000"
+      }
+    ]
+  }
+}

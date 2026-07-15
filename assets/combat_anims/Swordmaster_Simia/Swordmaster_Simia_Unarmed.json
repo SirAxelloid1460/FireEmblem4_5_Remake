@@ -1,0 +1,74 @@
+{
+  "class": "Swordmaster",
+  "variant": "Simia",
+  "weapon": "Unarmed",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    2,
+    1
+  ],
+  "sheet_size": [
+    480,
+    160
+  ],
+  "frame_count": 2,
+  "frames": {
+    "Sword_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Sword_089": {
+      "tile": [
+        1,
+        0
+      ]
+    }
+  },
+  "poses": {
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_089"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 29,
+        "frame": "Sword_089"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_089"
+      }
+    ]
+  },
+  "generated_from": "Swordmaster_Simia_MagicSword.json"
+}
