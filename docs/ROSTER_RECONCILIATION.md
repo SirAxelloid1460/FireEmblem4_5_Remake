@@ -1,38 +1,36 @@
 # Reconciliación del roster — FE4 + FE5
 
-> Generado contra las listas canónicas (Genealogy / Thracia 776) y los assets del repo.
-
-> Estado: **64 units** en la base de datos · **249 retratos** de personaje en assets.
+> Actualizado tras importar datos reales de Serenes Forest (bases + growths).
 
 
-## Personajes multi-aparición / cross-game (foco)
+## Estado actual: **122 units**
 
-| Personaje | FE4 | FE5 | En units.json | Retrato(s) | Nota |
-|---|---|---|---|---|---|
-| Finn | gen1+gen2 | sí | Finn (games FE4+FE5) ✅ | FinnYoung/FinnOld | alias Finn→FinnYoung añadido |
-| Leif | gen2 | protag. | Leif (games FE4+FE5, corregido) ✅ | Leif | games array corregido |
-| Nanna | gen2 | sí | Nanna (games FE4+FE5, corregido) ✅ | Nanna | games array corregido |
-| Oifey | gen1 NPC+gen2 | NPC | — (no unit) | OifayeYoung/OifayeOld | alias añadido; falta unit |
-| Lewyn | gen1 | (Sety=hijo) | Lewyn (FE4) ✅ | LewynYoung/LewynOld | alias Lewyn→LewynYoung añadido |
-| Arvis | gen1 boss | — | Arvis (FE4) ✅ | ArvisYoung/ArvisOld | alias Arvis→ArvisYoung añadido |
-| Shannan | gen1 kid+gen2 | — | — (no unit) | Shannan/ShannanKid | falta unit |
-| Robert | — | sí | — (no unit) | RobertFE4/RobertFE5 | diferencial por juego; falta unit |
-| Ced | gen2 | sí | — (no unit) | Ced | cross-game; falta unit |
-| Delmud | gen2 | sí | — (no unit) | Delmud | cross-game; falta unit |
-| Altena | gen2 | sí | — (no unit) | Altena/Altenna | 2 grafías; falta unit |
-| Hannibal | gen2 | sí | — (no unit) | Hannibal | cross-game; falta unit |
+- Solo FE4: 63
+- Solo FE5: 52
+- Cross-game (FE4+FE5): 7 → ['Finn', 'Leif', 'Nanna', 'Oifey', 'Hannibal', 'Delmud', 'Ced']
 
-## Cobertura de personajes JUGABLES (canon vs units.json)
 
-### FE4 Gen 1 — 24/24 en la DB
-_Completo._
+## Añadidos en esta tanda (58, datos reales de Serenes)
 
-### FE4 Gen 2 (hijos) — 4/26 en la DB
-**Faltan:** Seliph, Lana, Larcei, Ulster, Skasaher (sin retrato), Oifey (sin retrato), Diarmuid (sin retrato), Lester, Julia, Fee, Arthur, Johan (sin retrato), Johalva (sin retrato), Shannan, Patty, Ares, Lene, Tine, Faval, Ced, Hannibal, Altena (sin retrato)
+- **FE5 jugables**: ~35 (Asbel, Olwen, Fergus, Karin, Cain, Fred, Glade, Dean, Sara, Miranda, Misha, Xavier, Amalda, Conomor, Galzus, Sleuf, Linoan, Homer, Eda, Ralf, Ilios, Salem, Tina, Troude, Shannam, Pahn, Selphina, Carrion, Alva, Robert, Hicks, Dalsin, Brighton, Machyua, Cyas…).
+- **FE4 sustitutos + reclutas fijos**: Mana, Radney, Roddlevan, Tristan, Dimna, Femina, Amid, Daisy, Jeanne, Laylea, Linda, Asaello, Hawk, Sharlow, Oifey, Julia, Johan, Johalva, Shannan, Ares, Hannibal.
 
-### FE4 sustitutos — 0/18 en la DB
-**Faltan:** Muirne, Creidne, Dalvin, Roddlevan (sin retrato), Mana (sin retrato), Tristan, Deimne, Charlot, Femina (sin retrato), Amid, Daisy, Jeanne, Aless (sin retrato), Laylea, Linda, Asaello, Hawk, Sharlow (sin retrato)
 
-### FE5 — 15/54 en la DB
-**Faltan:** Brighton, Machyua, Fergus, Karin, Dalshin (sin retrato), Asbel, Hicks, Carrion, Selphina, Cain, Alva, Robert (sin retrato), Fred, Olwen, Salem, Pahn (sin retrato), Tina, Trude (sin retrato), Glade, Dean (sin retrato), Eda, Homer, Linoan, Ralf, Ilios, Sleuf, Sara, Miranda, Shanam (sin retrato), Misha, Xavier, Amalda, Conomor, Delmud, Cyas (sin retrato), Ced, Galzus, Saias, Altena (sin retrato)
+## Pendientes — NO añadidos (sin inventar stats)
+
+### FE4 gen2 hijos con herencia (stats dependen del padre elegido)
+Sin valor fijo en Serenes: **Lana, Larcei, Ulster, Skasaher, Lester, Fee, Arthur, Patty, Lene, Tine, Faval**. Requieren el sistema de herencia/sustitutos (los sustitutos SÍ están añadidos como fallback canónico).
+
+### Con padres FIJOS → SÍ tienen bases determinables (pendiente fetch dirigido)
+**Seliph** (protagonista, Sigurd×Deirdre) y **Altena** (Quan×Ethlyn). Se añadirán con un fetch específico de su página de personaje.
+
+### FE5 sin datos en la tabla base de Serenes
+**Saias** (no aparece en la tabla base-stats; requiere otra fuente).
+
+
+## Notas de datos
+- FE5: `MOV = Mov×10`, `CON = Build`, `RES = 0` (Serenes no lista Res en FE5; base canónico 0).
+- FE4: `CON`/`MOV` tomados de la clase (fijos por clase en FE4); `RES` = columna Mdf.
+- `wexp_gain`/`starting_items`/`affinity` vacíos (no provistos por Serenes) — el acceso a armas lo da la clase. `holy_blood` (FE4) parseado a dict {sangre: rango}.
+- 10 units nuevos sin retrato aún (renderizan en blanco, sin crash): Mana, Radney, Roddlevan, Dimna, Femina, Johan, Johalva, Sharlow, Pahn, Cyas.
 
