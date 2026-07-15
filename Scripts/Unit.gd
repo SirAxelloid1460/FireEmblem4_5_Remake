@@ -415,25 +415,32 @@ func can_equip(w: Weapon) -> bool:
 	return int(wexp.get(str(w.weapon_type), 0)) >= rank_requirement(required)
 
 ## ¿La unidad cumple la restricción personal del arma? true si el arma no es
-## prf, o si el nid de la unidad está en prf_unit, o si tiene alguno de los
-## prf_tags (tag de clase Ballistae, tag de heredero XxxHeir…).
+## prf, o si el nid de la unidad está en prf_unit, o si cumple algún prf_tag.
+## Los prf_tags "XxxHeir" (armas sagradas) NO son tags de clase: significan
+## "Major Blood del cruzado Xxx" (los datos no ponen un tag heredero en la
+## unidad, sino holy_blood). El resto de prf_tags sí son tags de clase (p.ej.
+## "Ballistae"). El prf_unit "0" es un placeholder de debug y se ignora.
 func _satisfies_prf(w) -> bool:
 	if w == null or not w.has_method("get_component"):
 		return true
-	var ptags = w.get_component("prf_tags")
-	var punits = w.get_component("prf_unit")
-	var restricted := (ptags is Array and not ptags.is_empty()) \
-			or (punits is Array and not punits.is_empty())
-	if not restricted:
+	var ptags: Array = w.get_component("prf_tags") if w.get_component("prf_tags") is Array else []
+	var raw_units = w.get_component("prf_unit")
+	var punits: Array = []
+	if raw_units is Array:
+		for u in raw_units:
+			if str(u) != "0":
+				punits.append(str(u))
+	if ptags.is_empty() and punits.is_empty():
 		return true
-	if punits is Array:
-		for u in punits:
-			if str(u) == unit_name:
+	if unit_name in punits:
+		return true
+	for t in ptags:
+		var ts := str(t)
+		if ts.ends_with("Heir"):
+			if has_major_blood(ts.substr(0, ts.length() - 4)):
 				return true
-	if ptags is Array:
-		for t in ptags:
-			if str(t) in tags:
-				return true
+		elif ts in tags:
+			return true
 	return false
 
 # ── Holy Blood ──────────────────────────────────────────────────────────────

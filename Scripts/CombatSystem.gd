@@ -357,13 +357,26 @@ static func _is_effective(wpn, def: Unit) -> bool:
 		if t in def.tags: return true
 	return false
 
-static func _tri_hit(a: Unit, d: Unit) -> int:
+## Ventaja de triángulo de `a` frente a `d`, con Reaver aplicado: si sólo UNO
+## de los dos lleva un arma reaver (Master Axe, etc.), el triángulo se INVIERTE
+## y se DUPLICA (estilo GBA). Si ambos o ninguno la llevan, es normal.
+static func _tri_bonus(a: Unit, d: Unit) -> int:
 	if not a.weapon or not d.weapon: return 0
-	return a.weapon.get_weapon_triangle_bonus(d.weapon) * TRIANGLE_HIT
+	var bonus: int = a.weapon.get_weapon_triangle_bonus(d.weapon)
+	if _is_reaver(a.weapon) != _is_reaver(d.weapon):
+		bonus = -bonus * 2
+	return bonus
+
+static func _is_reaver(w) -> bool:
+	if w == null: return false
+	if "reaver" in w and bool(w.reaver): return true
+	return w.has_method("has_component") and w.has_component("reaver")
+
+static func _tri_hit(a: Unit, d: Unit) -> int:
+	return _tri_bonus(a, d) * TRIANGLE_HIT
 
 static func _tri_dmg(a: Unit, d: Unit) -> int:
-	if not a.weapon or not d.weapon: return 0
-	return a.weapon.get_weapon_triangle_bonus(d.weapon) * TRIANGLE_DMG
+	return _tri_bonus(a, d) * TRIANGLE_DMG
 
 static func _true_hit(h: int) -> bool:
 	return ((randi() % 100) + (randi() % 100)) / 2 < h
