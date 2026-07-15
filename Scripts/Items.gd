@@ -44,6 +44,7 @@ class ItemData:
 	var heal_percent:     float       # 0.0–1.0 de HP máximo curado (1.0 = todo)
 	var heal_flat:        int         # HP fijos curados
 	var status_applied:   String      # Status negativo/positivo que aplica
+	var status_on_hit:    String      # skill enseñada (manuales en formato LT)
 	var event_on_use:     String      # ID de evento que dispara al usarse
 
 	func _init(p_id: String, p_name: String, p_desc: String,
@@ -63,6 +64,7 @@ class ItemData:
 		heal_percent   = 0.0
 		heal_flat      = 0
 		status_applied = ""
+		status_on_hit  = ""
 		event_on_use   = ""
 
 
@@ -533,11 +535,16 @@ class ItemSystem:
 				target.increase_stat_permanently(stat, item.stat_permanent[stat])
 			success = true
 
-		# Enseñar skill (manuales)
-		if item.skill_granted != "" and item.category == "manual":
-			for skill_id in item.skill_granted.split(","):
+		# Enseñar skill (manuales): por skill_granted o por status_on_hit (formato
+		# LT de items.json). Solo llega aquí un item "usable", así que esto NO
+		# afecta a los rings on_hold (que aplican su skill mientras se portan).
+		var taught: String = item.skill_granted
+		if taught == "" and item.status_on_hit != "":
+			taught = item.status_on_hit
+		if taught != "":
+			for skill_id in taught.split(","):
 				skill_id = skill_id.strip_edges()
-				if not target.has_skill(skill_id):
+				if skill_id != "" and not target.has_skill(skill_id):
 					target.learn_skill(skill_id)
 			success = true
 

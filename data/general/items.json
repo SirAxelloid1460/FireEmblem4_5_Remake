@@ -324,7 +324,7 @@
   "name": "Circlet",
   "desc": "Grants Prayer and Life skills.",
   "category": "Boosters",
-  "worth": 2000,
+  "worth": -1,
   "uses": -1,
   "heal": 0,
   "permanent_stat_change": {},
@@ -340,7 +340,7 @@
    ],
    [
     "value",
-    2000
+    -1
    ]
   ]
  },
@@ -672,6 +672,10 @@
    [
     "max_range",
     1
+   ],
+   [
+    "can_unlock",
+    "True"
    ]
   ]
  },
@@ -841,6 +845,10 @@
    [
     "max_range",
     1
+   ],
+   [
+    "can_unlock",
+    "True"
    ]
   ]
  },
@@ -2142,92 +2150,6 @@
    [
     "can_unlock",
     "True"
-   ]
-  ]
- },
- {
-  "nid": "ChangeSniper",
-  "name": "Change to Sniper",
-  "desc": "Allows Eyvel to change her class to Sniper.",
-  "category": "Consumable",
-  "worth": -1,
-  "uses": -1,
-  "heal": 0,
-  "permanent_stat_change": {},
-  "status_on_hold": "",
-  "status_on_hit": "",
-  "promote": false,
-  "restore": false,
-  "restore_specific": "",
-  "components": [
-   [
-    "spell",
-    null
-   ],
-   [
-    "target_unit",
-    null
-   ],
-   [
-    "min_range",
-    0
-   ],
-   [
-    "max_range",
-    0
-   ],
-   [
-    "prf_unit",
-    [
-     "Eyvel"
-    ]
-   ],
-   [
-    "force_class_change",
-    "Sniper"
-   ]
-  ]
- },
- {
-  "nid": "ChangeSwordmaster",
-  "name": "Change to Swordmaster",
-  "desc": "Allows Eyvel to change her class to Swordmaster.",
-  "category": "Consumable",
-  "worth": -1,
-  "uses": -1,
-  "heal": 0,
-  "permanent_stat_change": {},
-  "status_on_hold": "",
-  "status_on_hit": "",
-  "promote": false,
-  "restore": false,
-  "restore_specific": "",
-  "components": [
-   [
-    "spell",
-    null
-   ],
-   [
-    "target_unit",
-    null
-   ],
-   [
-    "min_range",
-    0
-   ],
-   [
-    "max_range",
-    0
-   ],
-   [
-    "prf_unit",
-    [
-     "Eyvel"
-    ]
-   ],
-   [
-    "force_class_change",
-    "Swordmaster"
    ]
   ]
  },
