@@ -1,0 +1,84 @@
+================================================================================
+ COMANDOS DE LAS TOOLS  —  FireEmblem4_5_Remake/tools
+================================================================================
+Todas se lanzan desde la RAÍZ del repo. Los generadores resuelven sus rutas
+relativas a su propia ubicación, así que el cwd no importa salvo para los
+argumentos que pases a mano.
+
+Los build_* que leen de LT-maker tienen rutas por defecto de la máquina del
+autor (D:\FEHW\lt-maker-moded\*.ltproj); en otra máquina hay que pasar las
+rutas como argumentos.
+
+
+================================================================================
+ 1) AUDITORÍA  (solo lectura — no modifican nada)
+================================================================================
+
+# Matriz de cobertura de assets (map sprites + combat anims + retratos).
+# Cruza classes.json / units.json contra assets/. Salida: docs/ASSET_COVERAGE.{xlsx,md}
+python tools/asset_coverage.py            # genera .xlsx + .md (por defecto)
+python tools/asset_coverage.py --no-md    # solo el .xlsx
+python tools/asset_coverage.py --no-xlsx  # solo el .md   (no requiere openpyxl)
+
+# Integridad referencial classes <-> units <-> map_sprites/ <-> combat_anims/.
+# Lista referencias colgantes y assets huérfanos. Salida: consola.
+python tools/audit_wiring.py
+
+# Auditoría global: TODA la data (units/classes/items/skills/weapons) contra
+# TODOS los assets (retratos, sprites, anims, iconos, audio).
+# Salida: consola + docs/RESOURCE_AUDIT.md
+python tools/resource_audit.py
+
+
+================================================================================
+ 2) GENERAR DATA DESDE LOS .ltproj  (fuente de verdad: LT-maker)
+================================================================================
+
+# TODO-EN-UNO: regenera classes/weapons/items/skills/units + tablas por juego
+# desde el game_data de ambos .ltproj. Reemplaza a build_data_from_spreadsheet
+# + build_units.
+python tools/build_from_lt.py [fe4_ltproj_dir] [fe5_ltproj_dir] [out_data_dir]
+
+# Unifica los units.json de FE4 y FE5 en data/general/units.json.
+python tools/build_units.py <fe4 units.json> <fe5 units.json> <outdir>
+
+# Genera data/<game>/levels/*.json (mapas/despliegues) desde los .ltproj.
+python tools/build_levels.py [fe4_ltproj] [fe5_ltproj] [out_data_dir]
+
+# Genera data/<game>/events/events.json desde los eventos del .ltproj.
+python tools/build_events.py --fe4 "<GotHW.ltproj>/game_data/events.json" \
+                             --fe5 "<Thracia776.ltproj>/game_data/events.json"
+
+# Genera data/<game> tilemaps desde los tilemap.json exportados.
+python tools/build_tilemaps.py [fe4_tilemap.json] [fe5_tilemap.json] [out_data_dir]
+
+# Genera data/general/portrait_offsets.json (offsets de parpadeo/boca) desde
+# los portraits.json de los .ltproj.
+python tools/build_portrait_offsets.py \
+    --fe4 "<GotHW.ltproj>/resources/portraits/portraits.json" \
+    --fe5 "<Thracia776.ltproj>/resources/portraits/portraits.json"
+
+
+================================================================================
+ 3) GENERAR / SINCRONIZAR DESDE EL SPREADSHEET (Genealogy + Thracia .xlsx)
+================================================================================
+
+# Genera data/general desde el .xlsx (fuente antigua; hoy preferir build_from_lt).
+python tools/build_data_from_spreadsheet.py "<ruta al .xlsx>" [outdir]
+
+# Sincroniza bases/caps/growths/mov/con/rangos de clase desde el .xlsx a
+# classes.json. Preserva id/name/desc/tier/promotion/skills/sprites.
+# Por defecto es DRY-RUN (no escribe); usa --write para aplicar.
+python tools/sync_classes_from_xlsx.py            # dry-run (solo muestra cambios)
+python tools/sync_classes_from_xlsx.py --write    # aplica los cambios
+
+
+================================================================================
+ 4) ASSETS
+================================================================================
+
+# Genera la animación "Unarmed" (Stand/Dodge/Miss) desde un sheet existente.
+python tools/build_unarmed.py <carpeta_de_una_anim>          # una anim
+python tools/build_unarmed.py <raíz_de_anims> --recursive    # todas (recursivo)
+python tools/build_unarmed.py <carpeta> --force              # regenera aunque exista
+python tools/build_unarmed.py <carpeta> --dry-run            # no escribe; solo lista
