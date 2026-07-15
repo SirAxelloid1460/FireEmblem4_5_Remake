@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx06g76k21lba"
-path="res://.godot/imported/PreHero-stand.png-623ff0855e950171a941b17cb87f1ac7.ctex"
+uid="uid://q8wg8y6dsj0"
+path="res://.godot/imported/MercenaryM-move.png-2fcca68a9315afba9acea14147c9de6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/PreHero-stand.png"
-dest_files=["res://.godot/imported/PreHero-stand.png-623ff0855e950171a941b17cb87f1ac7.ctex"]
+source_file="res://assets/map_sprites/MercenaryM-move.png"
+dest_files=["res://.godot/imported/MercenaryM-move.png-2fcca68a9315afba9acea14147c9de6b.ctex"]
 
 [params]
 

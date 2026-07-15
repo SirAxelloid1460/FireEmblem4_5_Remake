@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbjfwe8pt6cli"
-path="res://.godot/imported/PreHeroFemale-move.png-ca9a02eed2f2a32abcd30aad26a89b86.ctex"
+uid="uid://b7jmqkqp38vdy"
+path="res://.godot/imported/Generic_Portrait_Mercenary.png-161ab38b7ea10c6deb20ef68d8a9e7cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/PreHeroFemale-move.png"
-dest_files=["res://.godot/imported/PreHeroFemale-move.png-ca9a02eed2f2a32abcd30aad26a89b86.ctex"]
+source_file="res://assets/portraits/generic/Generic_Portrait_Mercenary.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Mercenary.png-161ab38b7ea10c6deb20ef68d8a9e7cb.ctex"]
 
 [params]
 
