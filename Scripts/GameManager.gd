@@ -901,6 +901,9 @@ func initiate_combat(attacker: Unit, defender: Unit):
 	if attacker.has_meta("support_bonus"): attacker.remove_meta("support_bonus")
 	if defender.has_meta("support_bonus"): defender.remove_meta("support_bonus")
 
+	# EXP + subida de nivel de los participantes del jugador que sobrevivan.
+	await _award_combat_exp(attacker, defender, result)
+
 	# Canto: en combate iniciado por el jugador (el atacante es la unidad
 	# seleccionada), si sobrevive y tiene la skill puede re-moverse.
 	if selected_unit == attacker and is_instance_valid(attacker) \
@@ -910,6 +913,30 @@ func initiate_combat(attacker: Unit, defender: Unit):
 		return
 	end_unit_action()
 	check_victory_conditions()
+
+
+# ── EXP y subida de nivel ────────────────────────────────────────────────────
+const LEVEL_UP_SCENE := preload("res://Scenes/level_up_screen.tscn")
+
+## Otorga la EXP del combate a los participantes del JUGADOR que sigan vivos y
+## muestra la pantalla de subida de nivel por cada nivel ganado.
+func _award_combat_exp(attacker, defender, result) -> void:
+	if attacker != null and is_instance_valid(attacker) and attacker.is_player_unit \
+			and attacker.current_hp > 0 and attacker.has_method("gain_exp"):
+		await _show_level_ups(attacker, attacker.gain_exp(int(result.exp_attacker)))
+	if defender != null and is_instance_valid(defender) and defender.is_player_unit \
+			and defender.current_hp > 0 and defender.has_method("gain_exp"):
+		await _show_level_ups(defender, defender.gain_exp(int(result.exp_defender)))
+
+## Reproduce la LevelUpScreen (una vez por nivel subido), esperando a cada una.
+func _show_level_ups(unit, gains_list: Array) -> void:
+	if gains_list == null or gains_list.is_empty():
+		return
+	for gains in gains_list:
+		var screen = LEVEL_UP_SCENE.instantiate()
+		_ensure_ui_layer().add_child(screen)
+		await screen.show_level_up(unit, gains)
+		screen.queue_free()
 
 
 # ── Cinemática de combate (animaciones LT) ───────────────────────────────────

@@ -12,6 +12,9 @@ class_name Unit
 @export var unit_class:    String = "Fighter"
 @export var class_tier:    int    = 1       # 0=trainee, 1=base, 2=promoted, 3=elite
 @export var level:         int    = 1
+## Experiencia acumulada hacia el próximo nivel (0-99). Al llegar a 100 sube de
+## nivel (ver gain_exp). Se nombra 'experience' para no colisionar con exp().
+@export var experience:    int    = 0
 @export var is_player_unit: bool  = true
 ## Equipo: "player" | "enemy" | "other" | "ally". Lo fija LevelLoader.build_unit.
 ## Determina la paleta del map sprite (ver team_palette_index).
@@ -107,6 +110,60 @@ func get_class_tier() -> int:
 
 func has_tag(tag: String) -> bool:
 	return tag in tags
+
+# ══════════════════════════════════════════════════════════════════════════════
+# EXPERIENCIA Y NIVEL
+# ══════════════════════════════════════════════════════════════════════════════
+
+## Nivel máximo alcanzable escalando EXP (cubre FE4 hasta 30; en FE5 la
+## promoción reinicia el nivel antes de llegar aquí).
+const MAX_LEVEL := 30
+
+signal leveled_up(new_level: int, gains: Dictionary)
+
+## Tasas de crecimiento base (personales) de la unidad, en claves MINÚSCULAS
+## (hp/str/…), como espera LevelUpScreen.calculate_stat_gains. Se leen del
+## UnitDef de GameDB; si no está, se usan las de la clase; si tampoco, {}.
+func get_growth_rates() -> Dictionary:
+	var up := {}
+	var db = _gamedb()
+	if db != null:
+		var ud = db.get_unit(unit_name)
+		if ud != null and ud.growths is Dictionary and not ud.growths.is_empty():
+			up = ud.growths
+		else:
+			var cd = db.get_class_data(unit_class)
+			if cd != null and "growths" in cd and cd.growths is Dictionary:
+				up = cd.growths
+	var out := {}
+	for k in up:
+		out[str(k).to_lower()] = int(up[k])
+	return out
+
+## Otorga EXP y sube de nivel tantas veces como corresponda (100 EXP = 1 nivel).
+## Cada subida tira ganancias vía LevelUpScreen.calculate_stat_gains (que ya
+## suma los growth_change de skills/scrolls) y las aplica. Devuelve la lista de
+## diccionarios de ganancias, una por nivel subido (vacía si no subió). Al tope
+## de nivel la EXP se descarta.
+func gain_exp(amount: int) -> Array:
+	var results: Array = []
+	if amount <= 0:
+		return results
+	if level >= MAX_LEVEL:
+		experience = 0
+		return results
+	experience += amount
+	var rates := get_growth_rates()
+	while experience >= 100 and level < MAX_LEVEL:
+		experience -= 100
+		var gains: Dictionary = LevelUpScreen.calculate_stat_gains(self, rates)
+		LevelUpScreen.apply_stat_gains(self, gains)
+		level += 1
+		results.append(gains)
+		leveled_up.emit(level, gains)
+	if level >= MAX_LEVEL:
+		experience = 0
+	return results
 
 # ══════════════════════════════════════════════════════════════════════════════
 # SKILLS

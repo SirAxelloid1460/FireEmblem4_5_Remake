@@ -385,6 +385,7 @@ func apply_roster_to_unit(unit) -> bool:
 	unit.unit_class = str(snap.get("unit_class", unit.unit_class))
 	unit.class_tier = int(snap.get("class_tier", unit.class_tier))
 	unit.level = int(snap.get("level", unit.level))
+	unit.experience = int(snap.get("experience", unit.experience))
 	unit.max_hp = int(snap.get("max_hp", unit.max_hp))
 	unit.strength = int(snap.get("strength", unit.strength))
 	unit.magic = int(snap.get("magic", unit.magic))
@@ -440,6 +441,7 @@ func _serialize_unit(u) -> Dictionary:
 		"unit_class": u.unit_class,
 		"class_tier": u.class_tier,
 		"level": u.level,
+		"experience": u.experience,
 		"gender": u.gender,
 		"affinity": u.affinity,
 		"team": u.team,
@@ -486,6 +488,7 @@ func _deserialize_unit(snap: Dictionary) -> Unit:
 	u.unit_class = str(snap.get("unit_class", ""))
 	u.class_tier = int(snap.get("class_tier", 1))
 	u.level = int(snap.get("level", 1))
+	u.experience = int(snap.get("experience", 0))
 	u.gender = str(snap.get("gender", "M"))
 	u.affinity = str(snap.get("affinity", ""))
 	u.team = str(snap.get("team", "player"))
