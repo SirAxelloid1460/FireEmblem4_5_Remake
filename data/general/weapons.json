@@ -516,7 +516,10 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Delmud",
+   "Fergus"
+  ],
   "status_on_equip": "Wrath,Vantage",
   "status_on_hit": "",
   "personal": false,
@@ -578,6 +581,13 @@
    [
     "max_range",
     1
+   ],
+   [
+    "prf_unit",
+    [
+     "Delmud",
+     "Fergus"
+    ]
    ]
   ]
  },
@@ -1884,7 +1894,9 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Mareeta"
+  ],
   "status_on_equip": "DarknessSword",
   "status_on_hit": "",
   "personal": false,
@@ -1954,6 +1966,12 @@
    [
     "gba_steal",
     null
+   ],
+   [
+    "prf_unit",
+    [
+     "Mareeta"
+    ]
    ]
   ]
  },
@@ -2361,7 +2379,10 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Lachesis",
+   "Nanna"
+  ],
   "status_on_equip": "",
   "status_on_hit": "",
   "personal": false,
@@ -2439,6 +2460,13 @@
    [
     "ignore_pavise",
     true
+   ],
+   [
+    "prf_unit",
+    [
+     "Lachesis",
+     "Nanna"
+    ]
    ]
   ]
  },
@@ -4416,7 +4444,9 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Olwen"
+  ],
   "status_on_equip": "HolySword",
   "status_on_hit": "",
   "personal": false,
@@ -4486,6 +4516,12 @@
    [
     "max_range",
     1
+   ],
+   [
+    "prf_unit",
+    [
+     "Olwen"
+    ]
    ]
   ]
  },
@@ -6166,7 +6202,10 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Ethlyn",
+   "Leif"
+  ],
   "status_on_equip": "Luckily Light",
   "status_on_hit": "",
   "personal": false,
@@ -6240,6 +6279,13 @@
    [
     "magic_at_range",
     null
+   ],
+   [
+    "prf_unit",
+    [
+     "Ethlyn",
+     "Leif"
+    ]
    ]
   ]
  },
@@ -6869,7 +6915,10 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Raydrik",
+   "Mus"
+  ],
   "status_on_equip": "Loptyr Sword",
   "status_on_hit": "Loptyr_negative",
   "personal": false,
@@ -6935,6 +6984,13 @@
    [
     "max_range",
     1
+   ],
+   [
+    "prf_unit",
+    [
+     "Raydrik",
+     "Mus"
+    ]
    ]
   ]
  },
@@ -7051,7 +7107,9 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Mareeta"
+  ],
   "status_on_equip": "Awareness",
   "status_on_hit": "",
   "personal": false,
@@ -7117,6 +7175,12 @@
    [
     "max_range",
     1
+   ],
+   [
+    "prf_unit",
+    [
+     "Mareeta"
+    ]
    ]
   ]
  },
