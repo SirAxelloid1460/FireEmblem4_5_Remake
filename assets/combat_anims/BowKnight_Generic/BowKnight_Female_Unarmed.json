@@ -1,0 +1,167 @@
+{
+  "class": "BowKnight",
+  "variant": "Female",
+  "weapon": "Unarmed",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    2,
+    2
+  ],
+  "sheet_size": [
+    480,
+    320
+  ],
+  "frame_count": 4,
+  "frames": {
+    "Unarmed_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Unarmed_000_under": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Unarmed_001": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Unarmed_002": {
+      "tile": [
+        1,
+        1
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Unarmed_000",
+        "frame_bottom": "Unarmed_000_under"
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Unarmed_000",
+          "Unarmed_000_under"
+        ]
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Unarmed_000",
+        "frame_bottom": "Unarmed_000_under"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Unarmed_000",
+        "frame_bottom": "Unarmed_000_under"
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Unarmed_000",
+          "Unarmed_000_under"
+        ]
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Unarmed_000",
+        "frame_bottom": "Unarmed_000_under"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Unarmed_000",
+        "frame_bottom": "Unarmed_000_under"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 27,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 1"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Unarmed_001"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Unarmed_000",
+        "frame_bottom": "Unarmed_000_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Unarmed_000",
+        "frame_bottom": "Unarmed_000_under"
+      }
+    ],
+    "Miss": [
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Unarmed_000",
+        "frame_bottom": "Unarmed_000_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Unarmed_000",
+        "frame_bottom": "Unarmed_000_under"
+      },
+      {
+        "cmd": "miss"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 30,
+        "frame_top": "Unarmed_000",
+        "frame_bottom": "Unarmed_000_under"
+      }
+    ]
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "class": "Warrior",
+  "variant": "Generic",
+  "weapon": "HandAxe",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    5,
+    4
+  ],
+  "sheet_size": [
+    1200,
+    640
+  ],
+  "frame_count": 20,
+  "frames": {
+    "Axe_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Axe_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Axe_003": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Axe_005": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Axe_022": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Axe_023": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Axe_024": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Axe_025": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Axe_026": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Axe_027": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Axe_028": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Axe_029": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Axe_064": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Axe_065": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Axe_066": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Axe_067": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Axe_068": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Axe_069": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Axe_070": {
+      "tile": [
+        3,
+        3
+      ]
+    },
+    "Axe_071": {
+      "tile": [
+        4,
+        3
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_001"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_005"
+      },
+      {
+        "cmd": "sound",
+        "id": "Axe Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_064"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_065"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "ThrowingAxe"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_066"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_066"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_067"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_068"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 15,
+        "frame": "Axe_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_069"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_069"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_022"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_023"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_027"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_028"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Axe_005"
+      },
+      {
+        "cmd": "sound",
+        "id": "Axe Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_064"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_065"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "ThrowingAxe"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_066"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_066"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_067"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_068"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 15,
+        "frame": "Axe_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_069"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_069"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_070"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_071"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 26,
+        "frame": "Axe_071"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_070"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_070"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_000"
+      }
+    ]
+  }
+}

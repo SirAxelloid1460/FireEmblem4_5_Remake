@@ -1,0 +1,788 @@
+{
+  "class": "Emperor",
+  "variant": "Generic",
+  "weapon": "Javelin",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    6,
+    6
+  ],
+  "sheet_size": [
+    1440,
+    960
+  ],
+  "frame_count": 36,
+  "frames": {
+    "Lance_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Lance_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Lance_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Lance_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Lance_004": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Lance_005": {
+      "tile": [
+        5,
+        0
+      ]
+    },
+    "Lance_006": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Lance_007": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Lance_008": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Lance_009": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Lance_029": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Lance_030": {
+      "tile": [
+        5,
+        1
+      ]
+    },
+    "Lance_031": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Lance_032": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Lance_033": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Lance_034": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Lance_035": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Lance_036": {
+      "tile": [
+        5,
+        2
+      ]
+    },
+    "Lance_037": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Lance_038": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Lance_039": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Lance_040": {
+      "tile": [
+        3,
+        3
+      ]
+    },
+    "Lance_041": {
+      "tile": [
+        4,
+        3
+      ]
+    },
+    "Lance_042": {
+      "tile": [
+        5,
+        3
+      ]
+    },
+    "Lance_043": {
+      "tile": [
+        0,
+        4
+      ]
+    },
+    "Lance_044": {
+      "tile": [
+        1,
+        4
+      ]
+    },
+    "Lance_045": {
+      "tile": [
+        2,
+        4
+      ]
+    },
+    "Lance_046": {
+      "tile": [
+        3,
+        4
+      ]
+    },
+    "Lance_047": {
+      "tile": [
+        4,
+        4
+      ]
+    },
+    "Lance_048": {
+      "tile": [
+        5,
+        4
+      ]
+    },
+    "Lance_049": {
+      "tile": [
+        0,
+        5
+      ]
+    },
+    "Lance_050": {
+      "tile": [
+        1,
+        5
+      ]
+    },
+    "Lance_051": {
+      "tile": [
+        2,
+        5
+      ]
+    },
+    "Lance_052": {
+      "tile": [
+        3,
+        5
+      ]
+    },
+    "Lance_053": {
+      "tile": [
+        4,
+        5
+      ]
+    },
+    "Lance_054": {
+      "tile": [
+        5,
+        5
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_001"
+      },
+      {
+        "cmd": "raw",
+        "code": "C46"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_003"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_008"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_009"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Javelin"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_045"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "screen_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_046"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_047"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_048"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_049"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_050"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_050"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_050"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_001"
+      },
+      {
+        "cmd": "raw",
+        "code": "C46"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 12,
+        "frame": "Lance_036"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_035"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_037"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_038"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_040"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_043"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_044"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_043"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_044"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_043"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Click"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_008"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_009"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Javelin"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_045"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "screen_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_046"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_047"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_048"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_049"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_050"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_050"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_050"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_001"
+      },
+      {
+        "cmd": "raw",
+        "code": "C46"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_051"
+      },
+      {
+        "cmd": "raw",
+        "code": "C46"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_052"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_053"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_054"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 14,
+        "frame": "Lance_054"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_051"
+      },
+      {
+        "cmd": "raw",
+        "code": "C46"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      }
+    ]
+  }
+}

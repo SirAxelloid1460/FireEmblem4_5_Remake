@@ -1,0 +1,279 @@
+{
+  "class": "Soldier",
+  "variant": "Generic",
+  "weapon": "Unarmed",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    4,
+    4
+  ],
+  "sheet_size": [
+    960,
+    640
+  ],
+  "frame_count": 13,
+  "frames": {
+    "Unarmed_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Unarmed_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Unarmed_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Unarmed_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Unarmed_012": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Unarmed_013": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Unarmed_014": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Unarmed_015": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Unarmed_016": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Unarmed_022": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Unarmed_023": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Unarmed_025": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Unarmed_026": {
+      "tile": [
+        0,
+        3
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "enemy_flash_white",
+        "ticks": 8
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "screen_flash_white",
+        "ticks": 4
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Unarmed_000"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "enemy_flash_white",
+        "ticks": 8
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "foreground_blend",
+        "ticks": 2,
+        "rgb": [
+          248,
+          248,
+          248
+        ]
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Unarmed_002"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_003"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_013"
+      },
+      {
+        "cmd": "sound",
+        "id": "Sword Whoosh"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Unarmed_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 25,
+        "frame": "Unarmed_014"
+      },
+      {
+        "cmd": "sound",
+        "id": "Sword Whoosh"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_016"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_023"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_023"
+      }
+    ],
+    "Miss": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Unarmed_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_025"
+      },
+      {
+        "cmd": "miss"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 30,
+        "frame": "Unarmed_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_026"
+      }
+    ]
+  }
+}

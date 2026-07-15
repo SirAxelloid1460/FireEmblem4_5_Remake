@@ -1,0 +1,175 @@
+{
+  "class": "Hero",
+  "variant": "Skasaher",
+  "weapon": "HandAxe",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    2,
+    2
+  ],
+  "sheet_size": [
+    480,
+    320
+  ],
+  "frame_count": 3,
+  "frames": {
+    "Handaxe_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Handaxe_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Handaxe_002": {
+      "tile": [
+        0,
+        1
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "over_frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Handaxe_001"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 1,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 4,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 4,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Handaxe_001"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Handaxe_001"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "over_frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Handaxe_001"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 1,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 4,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 4,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Handaxe_001"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Handaxe_001"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "over_frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Handaxe_001"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 1,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 26,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Handaxe_001"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Handaxe_001"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_000"
+      }
+    ]
+  }
+}

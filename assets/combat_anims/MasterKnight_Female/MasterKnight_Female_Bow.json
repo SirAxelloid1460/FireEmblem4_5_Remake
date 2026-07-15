@@ -1,0 +1,489 @@
+{
+  "class": "MasterKnight",
+  "variant": "Female",
+  "weapon": "Bow",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    5,
+    4
+  ],
+  "sheet_size": [
+    1200,
+    640
+  ],
+  "frame_count": 19,
+  "frames": {
+    "Bow_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Bow_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Bow_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Bow_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Bow_004": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Bow_005": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Bow_006": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Bow_007": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Bow_008": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Bow_009": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Bow_010": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Bow_011": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Bow_012": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Bow_013": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Bow_014": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Bow_015": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Bow_016": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Bow_017": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Bow_018": {
+      "tile": [
+        3,
+        3
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 3"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_004"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Bow_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_009"
+      },
+      {
+        "cmd": "sound",
+        "id": "Bow"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Bow_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 25,
+        "frame": "Bow_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_013"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Arrow"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_014"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_014"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_014"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 3"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 3"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_004"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Bow_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_010"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Shine"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Bow_010"
+      },
+      {
+        "cmd": "sound",
+        "id": "Bow"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 25,
+        "frame": "Bow_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_013"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Arrow"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_014"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_014"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_014"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 3"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_017"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Bow_018"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 22,
+        "frame": "Bow_018"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_017"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_000"
+      }
+    ]
+  }
+}

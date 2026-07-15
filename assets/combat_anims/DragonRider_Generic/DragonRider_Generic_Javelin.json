@@ -1,0 +1,324 @@
+{
+  "class": "DragonRider",
+  "variant": "Generic",
+  "weapon": "Javelin",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    4,
+    3
+  ],
+  "sheet_size": [
+    960,
+    480
+  ],
+  "frame_count": 12,
+  "frames": {
+    "Lance_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Lance_024": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Lance_025": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Lance_026": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Lance_027": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Lance_028": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Lance_029": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Lance_030": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Lance_031": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Lance_032": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Lance_033": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Lance_034": {
+      "tile": [
+        3,
+        2
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Lance_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 11,
+        "frame": "Lance_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_031"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Javelin"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_032"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_032"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_024"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_025"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_027"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_028"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_029"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_027"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_028"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Lance_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 12,
+        "frame": "Lance_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_031"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Javelin"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_032"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_032"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_024"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 26,
+        "frame": "Lance_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_033"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      }
+    ]
+  }
+}

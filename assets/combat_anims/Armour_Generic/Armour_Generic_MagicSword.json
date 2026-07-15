@@ -1,0 +1,332 @@
+{
+  "class": "Armour",
+  "variant": "Generic",
+  "weapon": "MagicSword",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    3,
+    3
+  ],
+  "sheet_size": [
+    720,
+    480
+  ],
+  "frame_count": 9,
+  "frames": {
+    "Sword_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Sword_039": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Sword_040": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Sword_041": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Sword_042": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Sword_043": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Sword_044": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Sword_045": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Sword_046": {
+      "tile": [
+        2,
+        2
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_040"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_041"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_042"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_042"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_040"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_040"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_041"
+      },
+      {
+        "cmd": "sound",
+        "id": "ShamanRune"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_043"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_043"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_043"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_043"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_042"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_042"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_040"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_044"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_045"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 22,
+        "frame": "Sword_045"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_046"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ]
+  }
+}

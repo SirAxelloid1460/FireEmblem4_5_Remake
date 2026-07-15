@@ -1,0 +1,3117 @@
+{
+  "class": "Hero",
+  "variant": "Dalvin",
+  "weapon": "Axe",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    15,
+    15
+  ],
+  "sheet_size": [
+    3600,
+    2400
+  ],
+  "frame_count": 221,
+  "frames": {
+    "Axe_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Axe_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Axe_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Axe_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Axe_004": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Axe_005": {
+      "tile": [
+        5,
+        0
+      ]
+    },
+    "Axe_006": {
+      "tile": [
+        6,
+        0
+      ]
+    },
+    "Axe_007": {
+      "tile": [
+        7,
+        0
+      ]
+    },
+    "Axe_008": {
+      "tile": [
+        8,
+        0
+      ]
+    },
+    "Axe_009": {
+      "tile": [
+        9,
+        0
+      ]
+    },
+    "Axe_010": {
+      "tile": [
+        10,
+        0
+      ]
+    },
+    "Axe_011": {
+      "tile": [
+        11,
+        0
+      ]
+    },
+    "Axe_012": {
+      "tile": [
+        12,
+        0
+      ]
+    },
+    "Axe_013": {
+      "tile": [
+        13,
+        0
+      ]
+    },
+    "Axe_014": {
+      "tile": [
+        14,
+        0
+      ]
+    },
+    "Axe_015": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Axe_016": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Axe_017": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Axe_018": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Axe_019": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Axe_020": {
+      "tile": [
+        5,
+        1
+      ]
+    },
+    "Axe_021": {
+      "tile": [
+        6,
+        1
+      ]
+    },
+    "Axe_021_under": {
+      "tile": [
+        7,
+        1
+      ]
+    },
+    "Axe_022": {
+      "tile": [
+        8,
+        1
+      ]
+    },
+    "Axe_022_under": {
+      "tile": [
+        9,
+        1
+      ]
+    },
+    "Axe_023": {
+      "tile": [
+        10,
+        1
+      ]
+    },
+    "Axe_023_under": {
+      "tile": [
+        11,
+        1
+      ]
+    },
+    "Axe_024": {
+      "tile": [
+        12,
+        1
+      ]
+    },
+    "Axe_024_under": {
+      "tile": [
+        13,
+        1
+      ]
+    },
+    "Axe_025": {
+      "tile": [
+        14,
+        1
+      ]
+    },
+    "Axe_025_under": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Axe_026": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Axe_026_under": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Axe_027": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Axe_027_under": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Axe_028": {
+      "tile": [
+        5,
+        2
+      ]
+    },
+    "Axe_028_under": {
+      "tile": [
+        6,
+        2
+      ]
+    },
+    "Axe_029": {
+      "tile": [
+        7,
+        2
+      ]
+    },
+    "Axe_029_under": {
+      "tile": [
+        8,
+        2
+      ]
+    },
+    "Axe_030": {
+      "tile": [
+        9,
+        2
+      ]
+    },
+    "Axe_030_under": {
+      "tile": [
+        10,
+        2
+      ]
+    },
+    "Axe_031": {
+      "tile": [
+        11,
+        2
+      ]
+    },
+    "Axe_031_under": {
+      "tile": [
+        12,
+        2
+      ]
+    },
+    "Axe_032": {
+      "tile": [
+        13,
+        2
+      ]
+    },
+    "Axe_032_under": {
+      "tile": [
+        14,
+        2
+      ]
+    },
+    "Axe_033": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Axe_034": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Axe_035": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Axe_036": {
+      "tile": [
+        3,
+        3
+      ]
+    },
+    "Axe_037": {
+      "tile": [
+        4,
+        3
+      ]
+    },
+    "Axe_038": {
+      "tile": [
+        5,
+        3
+      ]
+    },
+    "Axe_039": {
+      "tile": [
+        6,
+        3
+      ]
+    },
+    "Axe_040": {
+      "tile": [
+        7,
+        3
+      ]
+    },
+    "Axe_041": {
+      "tile": [
+        8,
+        3
+      ]
+    },
+    "Axe_042": {
+      "tile": [
+        9,
+        3
+      ]
+    },
+    "Axe_043": {
+      "tile": [
+        10,
+        3
+      ]
+    },
+    "Axe_044": {
+      "tile": [
+        11,
+        3
+      ]
+    },
+    "Axe_045": {
+      "tile": [
+        12,
+        3
+      ]
+    },
+    "Axe_046": {
+      "tile": [
+        13,
+        3
+      ]
+    },
+    "Axe_047": {
+      "tile": [
+        14,
+        3
+      ]
+    },
+    "Axe_048": {
+      "tile": [
+        0,
+        4
+      ]
+    },
+    "Axe_049": {
+      "tile": [
+        1,
+        4
+      ]
+    },
+    "Axe_050": {
+      "tile": [
+        2,
+        4
+      ]
+    },
+    "Axe_051": {
+      "tile": [
+        3,
+        4
+      ]
+    },
+    "Axe_052": {
+      "tile": [
+        4,
+        4
+      ]
+    },
+    "Axe_053": {
+      "tile": [
+        5,
+        4
+      ]
+    },
+    "Axe_054": {
+      "tile": [
+        6,
+        4
+      ]
+    },
+    "Axe_055": {
+      "tile": [
+        7,
+        4
+      ]
+    },
+    "Axe_056": {
+      "tile": [
+        8,
+        4
+      ]
+    },
+    "Axe_057": {
+      "tile": [
+        9,
+        4
+      ]
+    },
+    "Axe_058": {
+      "tile": [
+        10,
+        4
+      ]
+    },
+    "Axe_059": {
+      "tile": [
+        11,
+        4
+      ]
+    },
+    "Axe_060": {
+      "tile": [
+        12,
+        4
+      ]
+    },
+    "Axe_061": {
+      "tile": [
+        13,
+        4
+      ]
+    },
+    "Axe_062": {
+      "tile": [
+        14,
+        4
+      ]
+    },
+    "Axe_063": {
+      "tile": [
+        0,
+        5
+      ]
+    },
+    "Axe_064": {
+      "tile": [
+        1,
+        5
+      ]
+    },
+    "Axe_065": {
+      "tile": [
+        2,
+        5
+      ]
+    },
+    "Axe_066": {
+      "tile": [
+        3,
+        5
+      ]
+    },
+    "Axe_067": {
+      "tile": [
+        4,
+        5
+      ]
+    },
+    "Axe_068": {
+      "tile": [
+        5,
+        5
+      ]
+    },
+    "Axe_069": {
+      "tile": [
+        6,
+        5
+      ]
+    },
+    "Axe_070": {
+      "tile": [
+        7,
+        5
+      ]
+    },
+    "Axe_071": {
+      "tile": [
+        8,
+        5
+      ]
+    },
+    "Axe_072": {
+      "tile": [
+        9,
+        5
+      ]
+    },
+    "Axe_073": {
+      "tile": [
+        10,
+        5
+      ]
+    },
+    "Axe_074": {
+      "tile": [
+        11,
+        5
+      ]
+    },
+    "Axe_075": {
+      "tile": [
+        12,
+        5
+      ]
+    },
+    "Axe_076": {
+      "tile": [
+        13,
+        5
+      ]
+    },
+    "Axe_077": {
+      "tile": [
+        14,
+        5
+      ]
+    },
+    "Axe_078": {
+      "tile": [
+        0,
+        6
+      ]
+    },
+    "Axe_079": {
+      "tile": [
+        1,
+        6
+      ]
+    },
+    "Axe_080": {
+      "tile": [
+        2,
+        6
+      ]
+    },
+    "Axe_081": {
+      "tile": [
+        3,
+        6
+      ]
+    },
+    "Axe_082": {
+      "tile": [
+        4,
+        6
+      ]
+    },
+    "Axe_083": {
+      "tile": [
+        5,
+        6
+      ]
+    },
+    "Axe_084": {
+      "tile": [
+        6,
+        6
+      ]
+    },
+    "Axe_085": {
+      "tile": [
+        7,
+        6
+      ]
+    },
+    "Axe_086": {
+      "tile": [
+        8,
+        6
+      ]
+    },
+    "Axe_087": {
+      "tile": [
+        9,
+        6
+      ]
+    },
+    "Axe_088": {
+      "tile": [
+        10,
+        6
+      ]
+    },
+    "Axe_089": {
+      "tile": [
+        11,
+        6
+      ]
+    },
+    "Axe_090": {
+      "tile": [
+        12,
+        6
+      ]
+    },
+    "Axe_091": {
+      "tile": [
+        13,
+        6
+      ]
+    },
+    "Axe_092": {
+      "tile": [
+        14,
+        6
+      ]
+    },
+    "Axe_093": {
+      "tile": [
+        0,
+        7
+      ]
+    },
+    "Axe_094": {
+      "tile": [
+        1,
+        7
+      ]
+    },
+    "Axe_095": {
+      "tile": [
+        2,
+        7
+      ]
+    },
+    "Axe_096": {
+      "tile": [
+        3,
+        7
+      ]
+    },
+    "Axe_097": {
+      "tile": [
+        4,
+        7
+      ]
+    },
+    "Axe_098": {
+      "tile": [
+        5,
+        7
+      ]
+    },
+    "Axe_099": {
+      "tile": [
+        6,
+        7
+      ]
+    },
+    "Axe_100": {
+      "tile": [
+        7,
+        7
+      ]
+    },
+    "Axe_101": {
+      "tile": [
+        8,
+        7
+      ]
+    },
+    "Axe_102": {
+      "tile": [
+        9,
+        7
+      ]
+    },
+    "Axe_103": {
+      "tile": [
+        10,
+        7
+      ]
+    },
+    "Axe_104": {
+      "tile": [
+        11,
+        7
+      ]
+    },
+    "Axe_105": {
+      "tile": [
+        12,
+        7
+      ]
+    },
+    "Axe_106": {
+      "tile": [
+        13,
+        7
+      ]
+    },
+    "Axe_107": {
+      "tile": [
+        14,
+        7
+      ]
+    },
+    "Axe_108": {
+      "tile": [
+        0,
+        8
+      ]
+    },
+    "Axe_109": {
+      "tile": [
+        1,
+        8
+      ]
+    },
+    "Axe_110": {
+      "tile": [
+        2,
+        8
+      ]
+    },
+    "Axe_111": {
+      "tile": [
+        3,
+        8
+      ]
+    },
+    "Axe_112": {
+      "tile": [
+        4,
+        8
+      ]
+    },
+    "Axe_113": {
+      "tile": [
+        5,
+        8
+      ]
+    },
+    "Axe_114": {
+      "tile": [
+        6,
+        8
+      ]
+    },
+    "Axe_115": {
+      "tile": [
+        7,
+        8
+      ]
+    },
+    "Axe_116": {
+      "tile": [
+        8,
+        8
+      ]
+    },
+    "Axe_117": {
+      "tile": [
+        9,
+        8
+      ]
+    },
+    "Axe_118": {
+      "tile": [
+        10,
+        8
+      ]
+    },
+    "Axe_118_under": {
+      "tile": [
+        11,
+        8
+      ]
+    },
+    "Axe_119": {
+      "tile": [
+        12,
+        8
+      ]
+    },
+    "Axe_119_under": {
+      "tile": [
+        13,
+        8
+      ]
+    },
+    "Axe_120": {
+      "tile": [
+        14,
+        8
+      ]
+    },
+    "Axe_120_under": {
+      "tile": [
+        0,
+        9
+      ]
+    },
+    "Axe_121": {
+      "tile": [
+        1,
+        9
+      ]
+    },
+    "Axe_121_under": {
+      "tile": [
+        2,
+        9
+      ]
+    },
+    "Axe_122": {
+      "tile": [
+        3,
+        9
+      ]
+    },
+    "Axe_122_under": {
+      "tile": [
+        4,
+        9
+      ]
+    },
+    "Axe_123": {
+      "tile": [
+        5,
+        9
+      ]
+    },
+    "Axe_123_under": {
+      "tile": [
+        6,
+        9
+      ]
+    },
+    "Axe_124": {
+      "tile": [
+        7,
+        9
+      ]
+    },
+    "Axe_124_under": {
+      "tile": [
+        8,
+        9
+      ]
+    },
+    "Axe_125": {
+      "tile": [
+        9,
+        9
+      ]
+    },
+    "Axe_125_under": {
+      "tile": [
+        10,
+        9
+      ]
+    },
+    "Axe_126": {
+      "tile": [
+        11,
+        9
+      ]
+    },
+    "Axe_126_under": {
+      "tile": [
+        12,
+        9
+      ]
+    },
+    "Axe_127": {
+      "tile": [
+        13,
+        9
+      ]
+    },
+    "Axe_127_under": {
+      "tile": [
+        14,
+        9
+      ]
+    },
+    "Axe_128": {
+      "tile": [
+        0,
+        10
+      ]
+    },
+    "Axe_128_under": {
+      "tile": [
+        1,
+        10
+      ]
+    },
+    "Axe_129": {
+      "tile": [
+        2,
+        10
+      ]
+    },
+    "Axe_129_under": {
+      "tile": [
+        3,
+        10
+      ]
+    },
+    "Axe_130": {
+      "tile": [
+        4,
+        10
+      ]
+    },
+    "Axe_130_under": {
+      "tile": [
+        5,
+        10
+      ]
+    },
+    "Axe_131": {
+      "tile": [
+        6,
+        10
+      ]
+    },
+    "Axe_131_under": {
+      "tile": [
+        7,
+        10
+      ]
+    },
+    "Axe_132": {
+      "tile": [
+        8,
+        10
+      ]
+    },
+    "Axe_132_under": {
+      "tile": [
+        9,
+        10
+      ]
+    },
+    "Axe_133": {
+      "tile": [
+        10,
+        10
+      ]
+    },
+    "Axe_133_under": {
+      "tile": [
+        11,
+        10
+      ]
+    },
+    "Axe_134": {
+      "tile": [
+        12,
+        10
+      ]
+    },
+    "Axe_134_under": {
+      "tile": [
+        13,
+        10
+      ]
+    },
+    "Axe_135": {
+      "tile": [
+        14,
+        10
+      ]
+    },
+    "Axe_135_under": {
+      "tile": [
+        0,
+        11
+      ]
+    },
+    "Axe_136": {
+      "tile": [
+        1,
+        11
+      ]
+    },
+    "Axe_136_under": {
+      "tile": [
+        2,
+        11
+      ]
+    },
+    "Axe_137": {
+      "tile": [
+        3,
+        11
+      ]
+    },
+    "Axe_137_under": {
+      "tile": [
+        4,
+        11
+      ]
+    },
+    "Axe_138": {
+      "tile": [
+        5,
+        11
+      ]
+    },
+    "Axe_138_under": {
+      "tile": [
+        6,
+        11
+      ]
+    },
+    "Axe_139": {
+      "tile": [
+        7,
+        11
+      ]
+    },
+    "Axe_139_under": {
+      "tile": [
+        8,
+        11
+      ]
+    },
+    "Axe_140": {
+      "tile": [
+        9,
+        11
+      ]
+    },
+    "Axe_140_under": {
+      "tile": [
+        10,
+        11
+      ]
+    },
+    "Axe_141": {
+      "tile": [
+        11,
+        11
+      ]
+    },
+    "Axe_141_under": {
+      "tile": [
+        12,
+        11
+      ]
+    },
+    "Axe_142": {
+      "tile": [
+        13,
+        11
+      ]
+    },
+    "Axe_142_under": {
+      "tile": [
+        14,
+        11
+      ]
+    },
+    "Axe_143": {
+      "tile": [
+        0,
+        12
+      ]
+    },
+    "Axe_143_under": {
+      "tile": [
+        1,
+        12
+      ]
+    },
+    "Axe_144": {
+      "tile": [
+        2,
+        12
+      ]
+    },
+    "Axe_144_under": {
+      "tile": [
+        3,
+        12
+      ]
+    },
+    "Axe_145": {
+      "tile": [
+        4,
+        12
+      ]
+    },
+    "Axe_145_under": {
+      "tile": [
+        5,
+        12
+      ]
+    },
+    "Axe_146": {
+      "tile": [
+        6,
+        12
+      ]
+    },
+    "Axe_146_under": {
+      "tile": [
+        7,
+        12
+      ]
+    },
+    "Axe_147": {
+      "tile": [
+        8,
+        12
+      ]
+    },
+    "Axe_147_under": {
+      "tile": [
+        9,
+        12
+      ]
+    },
+    "Axe_148": {
+      "tile": [
+        10,
+        12
+      ]
+    },
+    "Axe_148_under": {
+      "tile": [
+        11,
+        12
+      ]
+    },
+    "Axe_149": {
+      "tile": [
+        12,
+        12
+      ]
+    },
+    "Axe_149_under": {
+      "tile": [
+        13,
+        12
+      ]
+    },
+    "Axe_150": {
+      "tile": [
+        14,
+        12
+      ]
+    },
+    "Axe_150_under": {
+      "tile": [
+        0,
+        13
+      ]
+    },
+    "Axe_151": {
+      "tile": [
+        1,
+        13
+      ]
+    },
+    "Axe_151_under": {
+      "tile": [
+        2,
+        13
+      ]
+    },
+    "Axe_152": {
+      "tile": [
+        3,
+        13
+      ]
+    },
+    "Axe_152_under": {
+      "tile": [
+        4,
+        13
+      ]
+    },
+    "Axe_153": {
+      "tile": [
+        5,
+        13
+      ]
+    },
+    "Axe_153_under": {
+      "tile": [
+        6,
+        13
+      ]
+    },
+    "Axe_154": {
+      "tile": [
+        7,
+        13
+      ]
+    },
+    "Axe_154_under": {
+      "tile": [
+        8,
+        13
+      ]
+    },
+    "Axe_155": {
+      "tile": [
+        9,
+        13
+      ]
+    },
+    "Axe_156": {
+      "tile": [
+        10,
+        13
+      ]
+    },
+    "Axe_157": {
+      "tile": [
+        11,
+        13
+      ]
+    },
+    "Axe_158": {
+      "tile": [
+        12,
+        13
+      ]
+    },
+    "Axe_159": {
+      "tile": [
+        13,
+        13
+      ]
+    },
+    "Axe_160": {
+      "tile": [
+        14,
+        13
+      ]
+    },
+    "Axe_161": {
+      "tile": [
+        0,
+        14
+      ]
+    },
+    "Axe_162": {
+      "tile": [
+        1,
+        14
+      ]
+    },
+    "Axe_163": {
+      "tile": [
+        2,
+        14
+      ]
+    },
+    "Axe_164": {
+      "tile": [
+        3,
+        14
+      ]
+    },
+    "Axe_165": {
+      "tile": [
+        4,
+        14
+      ]
+    },
+    "Axe_166": {
+      "tile": [
+        5,
+        14
+      ]
+    },
+    "Axe_167": {
+      "tile": [
+        6,
+        14
+      ]
+    },
+    "Axe_168": {
+      "tile": [
+        7,
+        14
+      ]
+    },
+    "Axe_169": {
+      "tile": [
+        8,
+        14
+      ]
+    },
+    "Axe_170": {
+      "tile": [
+        9,
+        14
+      ]
+    },
+    "Axe_171": {
+      "tile": [
+        10,
+        14
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_007"
+      },
+      {
+        "cmd": "sound",
+        "id": "Unsheathe"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_017"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_018"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_019"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_020"
+      },
+      {
+        "cmd": "enemy_flash_white",
+        "ticks": 8
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_020"
+      },
+      {
+        "cmd": "screen_flash_white",
+        "ticks": 4
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_021",
+        "frame_bottom": "Axe_021_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_022",
+        "frame_bottom": "Axe_022_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_023",
+        "frame_bottom": "Axe_023_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_024",
+        "frame_bottom": "Axe_024_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_025",
+        "frame_bottom": "Axe_025_under"
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Axe_025",
+          "Axe_025_under"
+        ]
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Axe_025",
+        "frame_bottom": "Axe_025_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_026",
+        "frame_bottom": "Axe_026_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_027",
+        "frame_bottom": "Axe_027_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_028",
+        "frame_bottom": "Axe_028_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_029",
+        "frame_bottom": "Axe_029_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_030",
+        "frame_bottom": "Axe_030_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_031",
+        "frame_bottom": "Axe_031_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Axe_032",
+        "frame_bottom": "Axe_032_under"
+      },
+      {
+        "cmd": "sound",
+        "id": "Step Back 1"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_036"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_037"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_038"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_040"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_043"
+      },
+      {
+        "cmd": "sound",
+        "id": "Sheathe"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_044"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_045"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_046"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_047"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_048"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_049"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_050"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_051"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_052"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_053"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_054"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_055"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_056"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_057"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_058"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_059"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_060"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_061"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_062"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_063"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_064"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_065"
+      },
+      {
+        "cmd": "sound",
+        "id": "Step Back 1"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Axe_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_067"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_068"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_069"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_070"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_071"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_072"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_073"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_074"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_075"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_076"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Axe_077"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_078"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_079"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_080"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_081"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_082"
+      },
+      {
+        "cmd": "sound",
+        "id": "Axe Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_083"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_084"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_085"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_086"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_087"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_088"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_089"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_090"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_091"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_092"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_093"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_094"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_095"
+      },
+      {
+        "cmd": "sound",
+        "id": "Step Back 1"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_096"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_097"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_098"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_099"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_100"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_101"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_102"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_103"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_104"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_105"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_106"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_107"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_108"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_109"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_110"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_111"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_112"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_113"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_114"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_115"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_116"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_117"
+      },
+      {
+        "cmd": "screen_shake"
+      },
+      {
+        "cmd": "enemy_flash_white",
+        "ticks": 8
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_117"
+      },
+      {
+        "cmd": "foreground_blend",
+        "ticks": 2,
+        "rgb": [
+          248,
+          248,
+          248
+        ]
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_118",
+        "frame_bottom": "Axe_118_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_119",
+        "frame_bottom": "Axe_119_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_120",
+        "frame_bottom": "Axe_120_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_121",
+        "frame_bottom": "Axe_121_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_122",
+        "frame_bottom": "Axe_122_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_119",
+        "frame_bottom": "Axe_119_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_120",
+        "frame_bottom": "Axe_120_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_121",
+        "frame_bottom": "Axe_121_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_122",
+        "frame_bottom": "Axe_122_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_119",
+        "frame_bottom": "Axe_119_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_120",
+        "frame_bottom": "Axe_120_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_121",
+        "frame_bottom": "Axe_121_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_122",
+        "frame_bottom": "Axe_122_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_119",
+        "frame_bottom": "Axe_119_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_120",
+        "frame_bottom": "Axe_120_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_121",
+        "frame_bottom": "Axe_121_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 3,
+        "frame_top": "Axe_122",
+        "frame_bottom": "Axe_122_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_123",
+        "frame_bottom": "Axe_123_under"
+      },
+      {
+        "cmd": "sound",
+        "id": "Step Back 1"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_124",
+        "frame_bottom": "Axe_124_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_125",
+        "frame_bottom": "Axe_125_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_126",
+        "frame_bottom": "Axe_126_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_127",
+        "frame_bottom": "Axe_127_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_128",
+        "frame_bottom": "Axe_128_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_129",
+        "frame_bottom": "Axe_129_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_130",
+        "frame_bottom": "Axe_130_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_131",
+        "frame_bottom": "Axe_131_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_132",
+        "frame_bottom": "Axe_132_under"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Push"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_133",
+        "frame_bottom": "Axe_133_under"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Click"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_134",
+        "frame_bottom": "Axe_134_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_135",
+        "frame_bottom": "Axe_135_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_136",
+        "frame_bottom": "Axe_136_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_137",
+        "frame_bottom": "Axe_137_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_138",
+        "frame_bottom": "Axe_138_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_139",
+        "frame_bottom": "Axe_139_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_140",
+        "frame_bottom": "Axe_140_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_141",
+        "frame_bottom": "Axe_141_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_135",
+        "frame_bottom": "Axe_135_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_136",
+        "frame_bottom": "Axe_136_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_137",
+        "frame_bottom": "Axe_137_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_142",
+        "frame_bottom": "Axe_142_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_143",
+        "frame_bottom": "Axe_143_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_144",
+        "frame_bottom": "Axe_144_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_145",
+        "frame_bottom": "Axe_145_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_146",
+        "frame_bottom": "Axe_146_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_147",
+        "frame_bottom": "Axe_147_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_148",
+        "frame_bottom": "Axe_148_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_149",
+        "frame_bottom": "Axe_149_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_150",
+        "frame_bottom": "Axe_150_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_142",
+        "frame_bottom": "Axe_142_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_151",
+        "frame_bottom": "Axe_151_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_150",
+        "frame_bottom": "Axe_150_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_152",
+        "frame_bottom": "Axe_152_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_149",
+        "frame_bottom": "Axe_149_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_153",
+        "frame_bottom": "Axe_153_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Axe_154",
+        "frame_bottom": "Axe_154_under"
+      },
+      {
+        "cmd": "sound",
+        "id": "Step Back 1"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_036"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_037"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_038"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_040"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_043"
+      },
+      {
+        "cmd": "sound",
+        "id": "Sheathe"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_044"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_045"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_046"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_047"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_048"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_049"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_050"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_051"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_052"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_053"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_054"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_055"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_056"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_057"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_058"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_059"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_060"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_061"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_062"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_063"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_064"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_065"
+      },
+      {
+        "cmd": "sound",
+        "id": "Step Back 1"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Axe_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_067"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_068"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_069"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_070"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_071"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_072"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "over_frame",
+        "ticks": 1,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 1,
+        "frame": "Axe_155"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 1,
+        "frame": "Axe_156"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 2,
+        "frame": "Axe_157"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Axe_158"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 23,
+        "frame": "Axe_158"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 2,
+        "frame": "Axe_157"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Axe_156"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Axe_159"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "over_frame",
+        "ticks": 3,
+        "frame": "Axe_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_000"
+      }
+    ],
+    "Miss": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_007"
+      },
+      {
+        "cmd": "sound",
+        "id": "Unsheathe"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_017"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_018"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_019"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_020"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_160"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_161"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_162"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_163"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_164"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_164"
+      },
+      {
+        "cmd": "miss"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 30,
+        "frame": "Axe_164"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_165"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_166"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_167"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_168"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_169"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_170"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_171"
+      },
+      {
+        "cmd": "sound",
+        "id": "Step Back 1"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_036"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_037"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_038"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_040"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_042"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_043"
+      },
+      {
+        "cmd": "sound",
+        "id": "Sheathe"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_044"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_045"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_046"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_047"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_048"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_049"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_050"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_051"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_052"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_053"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_054"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_055"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_056"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_057"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_058"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_059"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_060"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_061"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_062"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_063"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_064"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_065"
+      },
+      {
+        "cmd": "sound",
+        "id": "Step Back 1"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Axe_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_067"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_068"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_069"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_070"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_071"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_072"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_000"
+      }
+    ]
+  }
+}

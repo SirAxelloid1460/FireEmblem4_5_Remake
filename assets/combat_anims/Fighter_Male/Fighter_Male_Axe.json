@@ -1,0 +1,970 @@
+{
+  "class": "Fighter",
+  "variant": "Male",
+  "weapon": "Axe",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    8,
+    7
+  ],
+  "sheet_size": [
+    1920,
+    1120
+  ],
+  "frame_count": 50,
+  "frames": {
+    "Axe_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Axe_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Axe_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Axe_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Axe_004": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Axe_005": {
+      "tile": [
+        5,
+        0
+      ]
+    },
+    "Axe_006": {
+      "tile": [
+        6,
+        0
+      ]
+    },
+    "Axe_007": {
+      "tile": [
+        7,
+        0
+      ]
+    },
+    "Axe_008": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Axe_009": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Axe_010": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Axe_011": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Axe_012": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Axe_013": {
+      "tile": [
+        5,
+        1
+      ]
+    },
+    "Axe_014": {
+      "tile": [
+        6,
+        1
+      ]
+    },
+    "Axe_015": {
+      "tile": [
+        7,
+        1
+      ]
+    },
+    "Axe_015_under": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Axe_016": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Axe_016_under": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Axe_017": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Axe_018": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Axe_019": {
+      "tile": [
+        5,
+        2
+      ]
+    },
+    "Axe_020": {
+      "tile": [
+        6,
+        2
+      ]
+    },
+    "Axe_021": {
+      "tile": [
+        7,
+        2
+      ]
+    },
+    "Axe_022": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Axe_023": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Axe_024": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Axe_025": {
+      "tile": [
+        3,
+        3
+      ]
+    },
+    "Axe_026": {
+      "tile": [
+        4,
+        3
+      ]
+    },
+    "Axe_027": {
+      "tile": [
+        5,
+        3
+      ]
+    },
+    "Axe_028": {
+      "tile": [
+        6,
+        3
+      ]
+    },
+    "Axe_029": {
+      "tile": [
+        7,
+        3
+      ]
+    },
+    "Axe_030": {
+      "tile": [
+        0,
+        4
+      ]
+    },
+    "Axe_031": {
+      "tile": [
+        1,
+        4
+      ]
+    },
+    "Axe_032": {
+      "tile": [
+        2,
+        4
+      ]
+    },
+    "Axe_033": {
+      "tile": [
+        3,
+        4
+      ]
+    },
+    "Axe_034": {
+      "tile": [
+        4,
+        4
+      ]
+    },
+    "Axe_035": {
+      "tile": [
+        5,
+        4
+      ]
+    },
+    "Axe_036": {
+      "tile": [
+        6,
+        4
+      ]
+    },
+    "Axe_037": {
+      "tile": [
+        7,
+        4
+      ]
+    },
+    "Axe_038": {
+      "tile": [
+        0,
+        5
+      ]
+    },
+    "Axe_039": {
+      "tile": [
+        1,
+        5
+      ]
+    },
+    "Axe_040": {
+      "tile": [
+        2,
+        5
+      ]
+    },
+    "Axe_041": {
+      "tile": [
+        3,
+        5
+      ]
+    },
+    "Axe_042": {
+      "tile": [
+        4,
+        5
+      ]
+    },
+    "Axe_048": {
+      "tile": [
+        5,
+        5
+      ]
+    },
+    "Axe_049": {
+      "tile": [
+        6,
+        5
+      ]
+    },
+    "Axe_050": {
+      "tile": [
+        7,
+        5
+      ]
+    },
+    "Axe_051": {
+      "tile": [
+        0,
+        6
+      ]
+    },
+    "Axe_052": {
+      "tile": [
+        1,
+        6
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 10,
+        "frame": "Axe_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_013"
+      },
+      {
+        "cmd": "sound",
+        "id": "Axe Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_014"
+      },
+      {
+        "cmd": "enemy_flash_white",
+        "ticks": 8
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_014"
+      },
+      {
+        "cmd": "screen_flash_white",
+        "ticks": 4
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_015",
+        "frame_bottom": "Axe_015_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_016",
+        "frame_bottom": "Axe_016_under"
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Axe_016",
+          "Axe_016_under"
+        ]
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Axe_016",
+        "frame_bottom": "Axe_016_under"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_017"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_018"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_019"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_020"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_021"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_022"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 15,
+        "frame": "Axe_023"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_024"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Axe_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_027"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_028"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Axe_030"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Axe_030"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 17,
+        "frame": "Axe_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_033"
+      },
+      {
+        "cmd": "sound",
+        "id": "Axe Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_036"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_037"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_038"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_039"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_040"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_041"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_042"
+      },
+      {
+        "cmd": "sound",
+        "id": "Axe Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_014"
+      },
+      {
+        "cmd": "enemy_flash_white",
+        "ticks": 8
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_014"
+      },
+      {
+        "cmd": "foreground_blend",
+        "ticks": 2,
+        "rgb": [
+          248,
+          248,
+          248
+        ]
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 2,
+        "frame_top": "Axe_015",
+        "frame_bottom": "Axe_015_under"
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 1,
+        "frame_top": "Axe_016",
+        "frame_bottom": "Axe_016_under"
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Axe_016",
+          "Axe_016_under"
+        ]
+      },
+      {
+        "cmd": "dual_frame",
+        "ticks": 4,
+        "frame_top": "Axe_016",
+        "frame_bottom": "Axe_016_under"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_017"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_018"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_019"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_020"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_021"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_022"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 15,
+        "frame": "Axe_023"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_024"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Axe_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_027"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_028"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Axe_030"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Axe_030"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_048"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_049"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 26,
+        "frame": "Axe_049"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_048"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_048"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_000"
+      }
+    ],
+    "Miss": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 10,
+        "frame": "Axe_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_013"
+      },
+      {
+        "cmd": "sound",
+        "id": "Axe Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Axe_050"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_051"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Axe_051"
+      },
+      {
+        "cmd": "miss"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 30,
+        "frame": "Axe_051"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_052"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_022"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 15,
+        "frame": "Axe_023"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_024"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Axe_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Axe_027"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Axe_028"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Axe_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Axe_030"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Axe_030"
+      }
+    ]
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "class": "Thief",
+  "variant": "Generic",
+  "weapon": "MagicSword",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    3,
+    3
+  ],
+  "sheet_size": [
+    720,
+    480
+  ],
+  "frame_count": 9,
+  "frames": {
+    "Sword_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Sword_004": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Sword_029": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Sword_030": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Sword_031": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Sword_032": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Sword_033": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Sword_034": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Sword_035": {
+      "tile": [
+        2,
+        2
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_032"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_033"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_032"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 26,
+        "frame": "Sword_035"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_034"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_034"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ]
+  }
+}

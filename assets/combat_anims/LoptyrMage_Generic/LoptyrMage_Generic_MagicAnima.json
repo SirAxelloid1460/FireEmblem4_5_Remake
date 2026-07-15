@@ -1,0 +1,234 @@
+{
+  "class": "LoptyrMage",
+  "variant": "Generic",
+  "weapon": "MagicAnima",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    3,
+    3
+  ],
+  "sheet_size": [
+    720,
+    480
+  ],
+  "frame_count": 8,
+  "frames": {
+    "Magic_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Magic_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Magic_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Magic_003": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Magic_004": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Magic_005": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Magic_006": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Magic_007": {
+      "tile": [
+        1,
+        2
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Magic_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Magic_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Magic_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Magic_003"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 20,
+        "frame": "Magic_004"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_007"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Magic_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Magic_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Magic_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Magic_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Magic_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 32,
+        "frame": "Magic_004"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_004"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_007"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Magic_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_000"
+      }
+    ]
+  }
+}

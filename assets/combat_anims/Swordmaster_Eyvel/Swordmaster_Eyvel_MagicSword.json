@@ -1,0 +1,273 @@
+{
+  "class": "Swordmaster",
+  "variant": "Eyvel",
+  "weapon": "MagicSword",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    3,
+    3
+  ],
+  "sheet_size": [
+    720,
+    480
+  ],
+  "frame_count": 7,
+  "frames": {
+    "Sword_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Sword_064": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Sword_065": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Sword_066": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Sword_067": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Sword_068": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Sword_069": {
+      "tile": [
+        0,
+        2
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_064"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_064"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_064"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_064"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 12,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Push"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_064"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_064"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_067"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_068"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_069"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 25,
+        "frame": "Sword_069"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_067"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_067"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ]
+  }
+}

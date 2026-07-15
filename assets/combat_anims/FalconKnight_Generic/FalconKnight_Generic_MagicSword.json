@@ -1,0 +1,333 @@
+{
+  "class": "FalconKnight",
+  "variant": "Generic",
+  "weapon": "MagicSword",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    4,
+    3
+  ],
+  "sheet_size": [
+    960,
+    480
+  ],
+  "frame_count": 12,
+  "frames": {
+    "Sword_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Sword_057": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Sword_058": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Sword_059": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Sword_060": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Sword_061": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Sword_062": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Sword_063": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Sword_064": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Sword_065": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Sword_066": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Sword_067": {
+      "tile": [
+        3,
+        2
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "sound",
+        "id": "Unsheathe"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_057"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_058"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_059"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_060"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_060"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_060"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_059"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_058"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_057"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "sound",
+        "id": "Unsheathe"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_057"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_058"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_059"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_061"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_062"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_063"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_064"
+      },
+      {
+        "cmd": "sound",
+        "id": "ShamanRune"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_060"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Sword_065"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_059"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_058"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_057"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_067"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 24,
+        "frame": "Sword_067"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Sword_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Sword_000"
+      }
+    ]
+  }
+}

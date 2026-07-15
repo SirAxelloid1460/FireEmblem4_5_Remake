@@ -1,0 +1,592 @@
+{
+  "class": "General",
+  "variant": "Generic",
+  "weapon": "HandAxe",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    5,
+    5
+  ],
+  "sheet_size": [
+    1200,
+    800
+  ],
+  "frame_count": 22,
+  "frames": {
+    "Handaxe_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Handaxe_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Handaxe_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Handaxe_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Handaxe_004": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Handaxe_005": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Handaxe_005a": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Handaxe_006": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Handaxe_006a": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Handaxe_007": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Handaxe_008": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Handaxe_009": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Handaxe_010": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Handaxe_011": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Handaxe_012": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Handaxe_013": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Handaxe_014": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Handaxe_015": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Handaxe_016": {
+      "tile": [
+        3,
+        3
+      ]
+    },
+    "Handaxe_017": {
+      "tile": [
+        4,
+        3
+      ]
+    },
+    "Handaxe_018": {
+      "tile": [
+        0,
+        4
+      ]
+    },
+    "Handaxe_019": {
+      "tile": [
+        1,
+        4
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 12,
+        "frame": "Handaxe_003"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Swing"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_004"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "ThrowingAxe"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Handaxe_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Handaxe_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Handaxe_005a"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Handaxe_005a"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Handaxe_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Handaxe_006a"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_006a"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Handaxe_006a"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 10,
+        "frame": "Handaxe_009"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Handaxe_010"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Handaxe_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_017"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_012"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_017"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_017"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 16,
+        "frame": "Handaxe_003"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Swing"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_004"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "ThrowingAxe"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Handaxe_004"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Handaxe_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Handaxe_005a"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Handaxe_005a"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Handaxe_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Handaxe_006a"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_006a"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Handaxe_006a"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 10,
+        "frame": "Handaxe_009"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Handaxe_010"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_018"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_019"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 26,
+        "frame": "Handaxe_019"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_018"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_018"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_000"
+      }
+    ]
+  }
+}

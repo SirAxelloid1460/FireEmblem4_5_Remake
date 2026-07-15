@@ -1,0 +1,401 @@
+{
+  "class": "Fighter",
+  "variant": "Male",
+  "weapon": "HandAxe",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    5,
+    4
+  ],
+  "sheet_size": [
+    1200,
+    640
+  ],
+  "frame_count": 18,
+  "frames": {
+    "Handaxe_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Handaxe_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Handaxe_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Handaxe_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Handaxe_004": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Handaxe_005": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Handaxe_006": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Handaxe_007": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Handaxe_008": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Handaxe_009": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Handaxe_010": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Handaxe_011": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Handaxe_012": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Handaxe_013": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Handaxe_014": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Handaxe_015": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Handaxe_023": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Handaxe_024": {
+      "tile": [
+        2,
+        3
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_004"
+      },
+      {
+        "cmd": "sound",
+        "id": "Axe Pull"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "ThrowingAxe"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_006"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_006"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Handaxe_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Handaxe_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_001"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Handaxe_011"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Handaxe_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Handaxe_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Handaxe_014"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 15,
+        "frame": "Handaxe_015"
+      },
+      {
+        "cmd": "sound",
+        "id": "Axe Pull"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "ThrowingAxe"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_006"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_006"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Handaxe_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Handaxe_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_023"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 26,
+        "frame": "Handaxe_024"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_023"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_023"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Handaxe_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Handaxe_000"
+      }
+    ]
+  }
+}

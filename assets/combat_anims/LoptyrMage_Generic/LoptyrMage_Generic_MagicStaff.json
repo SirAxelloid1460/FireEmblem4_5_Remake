@@ -1,0 +1,217 @@
+{
+  "class": "LoptyrMage",
+  "variant": "Generic",
+  "weapon": "MagicStaff",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    3,
+    2
+  ],
+  "sheet_size": [
+    720,
+    320
+  ],
+  "frame_count": 6,
+  "frames": {
+    "Staff_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Staff_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Staff_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Staff_003": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Staff_004": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Staff_005": {
+      "tile": [
+        2,
+        1
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Staff_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Staff_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Staff_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Staff_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 20,
+        "frame": "Staff_004"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_005"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_005"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Staff_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Staff_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Staff_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Staff_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Staff_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 20,
+        "frame": "Staff_004"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_005"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_005"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_005"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Staff_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Staff_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Staff_000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,558 @@
+{
+  "class": "Soldier",
+  "variant": "Generic",
+  "weapon": "Javelin",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    7,
+    6
+  ],
+  "sheet_size": [
+    1680,
+    960
+  ],
+  "frame_count": 38,
+  "frames": {
+    "Lance_081": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Lance_082": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Lance_083": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Lance_084": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Lance_085": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Lance_086": {
+      "tile": [
+        5,
+        0
+      ]
+    },
+    "Lance_087": {
+      "tile": [
+        6,
+        0
+      ]
+    },
+    "Lance_088": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Lance_089": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Lance_090": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Lance_091": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Lance_092": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Lance_093": {
+      "tile": [
+        5,
+        1
+      ]
+    },
+    "Lance_094": {
+      "tile": [
+        6,
+        1
+      ]
+    },
+    "Lance_095": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Lance_096": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Lance_097": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Lance_098": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Lance_099": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Lance_100": {
+      "tile": [
+        5,
+        2
+      ]
+    },
+    "Lance_101": {
+      "tile": [
+        6,
+        2
+      ]
+    },
+    "Lance_102": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Lance_103": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Lance_104": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Lance_105": {
+      "tile": [
+        3,
+        3
+      ]
+    },
+    "Lance_106": {
+      "tile": [
+        4,
+        3
+      ]
+    },
+    "Lance_107": {
+      "tile": [
+        5,
+        3
+      ]
+    },
+    "Lance_108": {
+      "tile": [
+        6,
+        3
+      ]
+    },
+    "Lance_109": {
+      "tile": [
+        0,
+        4
+      ]
+    },
+    "Lance_110": {
+      "tile": [
+        1,
+        4
+      ]
+    },
+    "Lance_111": {
+      "tile": [
+        2,
+        4
+      ]
+    },
+    "Lance_112": {
+      "tile": [
+        3,
+        4
+      ]
+    },
+    "Lance_118": {
+      "tile": [
+        4,
+        4
+      ]
+    },
+    "Lance_119": {
+      "tile": [
+        5,
+        4
+      ]
+    },
+    "Lance_120": {
+      "tile": [
+        6,
+        4
+      ]
+    },
+    "Lance_121": {
+      "tile": [
+        0,
+        5
+      ]
+    },
+    "Lance_122": {
+      "tile": [
+        1,
+        5
+      ]
+    },
+    "Lance_125": {
+      "tile": [
+        2,
+        5
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_081"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Lance_082"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Lance_083"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 11,
+        "frame": "Lance_084"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_085"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Javelin"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_086"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_086"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_086"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Lance_087"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_088"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_089"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_090"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_090"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_091"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_092"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_093"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_094"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_095"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_096"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_097"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_098"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_099"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_100"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_101"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_102"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_103"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Lance_104"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 5,
+        "frame": "Lance_105"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 11,
+        "frame": "Lance_106"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Wing Flap"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_107"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Javelin"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_108"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_108"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_108"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Lance_109"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_110"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_111"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_112"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_112"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_118"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_119"
+      },
+      {
+        "cmd": "sound",
+        "id": "Sword Whoosh"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_120"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 25,
+        "frame": "Lance_120"
+      },
+      {
+        "cmd": "sound",
+        "id": "Sword Whoosh"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_121"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_122"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_122"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_125"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_125"
+      }
+    ]
+  }
+}

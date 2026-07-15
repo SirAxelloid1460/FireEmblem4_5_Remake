@@ -1,0 +1,205 @@
+{
+  "class": "DragonRider",
+  "variant": "Generic",
+  "weapon": "Unarmed",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    2,
+    2
+  ],
+  "sheet_size": [
+    480,
+    320
+  ],
+  "frame_count": 3,
+  "frames": {
+    "Unarmed_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Unarmed_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Unarmed_002": {
+      "tile": [
+        0,
+        1
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Unarmed_002"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "wait_for_hit",
+        "frames": [
+          "Unarmed_002"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 26,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_000"
+      }
+    ],
+    "Miss": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "miss"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 30,
+        "frame": "Unarmed_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Unarmed_001"
+      }
+    ]
+  }
+}

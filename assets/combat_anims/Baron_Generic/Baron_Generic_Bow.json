@@ -1,0 +1,784 @@
+{
+  "class": "Baron",
+  "variant": "Generic",
+  "weapon": "Bow",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    6,
+    6
+  ],
+  "sheet_size": [
+    1440,
+    960
+  ],
+  "frame_count": 36,
+  "frames": {
+    "Bow_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Bow_001": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Bow_002": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Bow_003": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Bow_004": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Bow_005": {
+      "tile": [
+        5,
+        0
+      ]
+    },
+    "Bow_006": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Bow_007": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Bow_008": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Bow_009": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Bow_010": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Bow_011": {
+      "tile": [
+        5,
+        1
+      ]
+    },
+    "Bow_012": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Bow_013": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Bow_014": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Bow_015": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Bow_016": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Bow_017": {
+      "tile": [
+        5,
+        2
+      ]
+    },
+    "Bow_018": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Bow_019": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Bow_020": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Bow_021": {
+      "tile": [
+        3,
+        3
+      ]
+    },
+    "Bow_022": {
+      "tile": [
+        4,
+        3
+      ]
+    },
+    "Bow_023": {
+      "tile": [
+        5,
+        3
+      ]
+    },
+    "Bow_024": {
+      "tile": [
+        0,
+        4
+      ]
+    },
+    "Bow_025": {
+      "tile": [
+        1,
+        4
+      ]
+    },
+    "Bow_026": {
+      "tile": [
+        2,
+        4
+      ]
+    },
+    "Bow_027": {
+      "tile": [
+        3,
+        4
+      ]
+    },
+    "Bow_028": {
+      "tile": [
+        4,
+        4
+      ]
+    },
+    "Bow_029": {
+      "tile": [
+        5,
+        4
+      ]
+    },
+    "Bow_030": {
+      "tile": [
+        0,
+        5
+      ]
+    },
+    "Bow_031": {
+      "tile": [
+        1,
+        5
+      ]
+    },
+    "Bow_032": {
+      "tile": [
+        2,
+        5
+      ]
+    },
+    "Bow_033": {
+      "tile": [
+        3,
+        5
+      ]
+    },
+    "Bow_034": {
+      "tile": [
+        4,
+        5
+      ]
+    },
+    "Bow_035": {
+      "tile": [
+        5,
+        5
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "raw",
+        "code": "C55"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_004"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 15,
+        "frame": "Bow_005"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_006"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_007"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_008"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_009"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_010"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_011"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_012"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_013"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 30,
+        "frame": "Bow_014"
+      },
+      {
+        "cmd": "sound",
+        "id": "Bow"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 20,
+        "frame": "Bow_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 32,
+        "frame": "Bow_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Bow_016"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_017"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Arrow"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 30,
+        "frame": "Bow_018"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_018"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_018"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_019"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_020"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_021"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_022"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_000"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "raw",
+        "code": "C55"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_003"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_004"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Bow_023"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_024"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Swing"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_027"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Swing"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_028"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_029"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_024"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Swing"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_025"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_026"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_027"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Swing"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_028"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_029"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_030"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Swing"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_033"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Swing"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_030"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_031"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_032"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_033"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 30,
+        "frame": "Bow_014"
+      },
+      {
+        "cmd": "sound",
+        "id": "Bow"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 20,
+        "frame": "Bow_015"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 32,
+        "frame": "Bow_016"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Bow_016"
+      },
+      {
+        "cmd": "sound",
+        "id": "Weapon Pull"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_017"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Arrow"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 30,
+        "frame": "Bow_018"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_018"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_018"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_019"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_020"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_021"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "platform_shake"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Bow_022"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Bow_000"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_034"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Bow_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 26,
+        "frame": "Bow_035"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_034"
+      },
+      {
+        "cmd": "sound",
+        "id": "Armor Shift"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_034"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Bow_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Bow_000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,876 @@
+{
+  "class": "MageFighter",
+  "variant": "Male",
+  "weapon": "MagicAnima",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    9,
+    8
+  ],
+  "sheet_size": [
+    2160,
+    1280
+  ],
+  "frame_count": 68,
+  "frames": {
+    "Magic_067": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Magic_068": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Magic_069": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Magic_070": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Magic_071": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Magic_072": {
+      "tile": [
+        5,
+        0
+      ]
+    },
+    "Magic_073": {
+      "tile": [
+        6,
+        0
+      ]
+    },
+    "Magic_074": {
+      "tile": [
+        7,
+        0
+      ]
+    },
+    "Magic_075": {
+      "tile": [
+        8,
+        0
+      ]
+    },
+    "Magic_076": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Magic_077": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Magic_078": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Magic_079": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Magic_080": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Magic_081": {
+      "tile": [
+        5,
+        1
+      ]
+    },
+    "Magic_082": {
+      "tile": [
+        6,
+        1
+      ]
+    },
+    "Magic_083": {
+      "tile": [
+        7,
+        1
+      ]
+    },
+    "Magic_084": {
+      "tile": [
+        8,
+        1
+      ]
+    },
+    "Magic_085": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Magic_086": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Magic_087": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Magic_088": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Magic_089": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Magic_090": {
+      "tile": [
+        5,
+        2
+      ]
+    },
+    "Magic_091": {
+      "tile": [
+        6,
+        2
+      ]
+    },
+    "Magic_092": {
+      "tile": [
+        7,
+        2
+      ]
+    },
+    "Magic_093": {
+      "tile": [
+        8,
+        2
+      ]
+    },
+    "Magic_094": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Magic_095": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Magic_096": {
+      "tile": [
+        2,
+        3
+      ]
+    },
+    "Magic_097": {
+      "tile": [
+        3,
+        3
+      ]
+    },
+    "Magic_098": {
+      "tile": [
+        4,
+        3
+      ]
+    },
+    "Magic_099": {
+      "tile": [
+        5,
+        3
+      ]
+    },
+    "Magic_100": {
+      "tile": [
+        6,
+        3
+      ]
+    },
+    "Magic_101": {
+      "tile": [
+        7,
+        3
+      ]
+    },
+    "Magic_102": {
+      "tile": [
+        8,
+        3
+      ]
+    },
+    "Magic_103": {
+      "tile": [
+        0,
+        4
+      ]
+    },
+    "Magic_104": {
+      "tile": [
+        1,
+        4
+      ]
+    },
+    "Magic_105": {
+      "tile": [
+        2,
+        4
+      ]
+    },
+    "Magic_106": {
+      "tile": [
+        3,
+        4
+      ]
+    },
+    "Magic_107": {
+      "tile": [
+        4,
+        4
+      ]
+    },
+    "Magic_108": {
+      "tile": [
+        5,
+        4
+      ]
+    },
+    "Magic_109": {
+      "tile": [
+        6,
+        4
+      ]
+    },
+    "Magic_110": {
+      "tile": [
+        7,
+        4
+      ]
+    },
+    "Magic_111": {
+      "tile": [
+        8,
+        4
+      ]
+    },
+    "Magic_112": {
+      "tile": [
+        0,
+        5
+      ]
+    },
+    "Magic_113": {
+      "tile": [
+        1,
+        5
+      ]
+    },
+    "Magic_114": {
+      "tile": [
+        2,
+        5
+      ]
+    },
+    "Magic_115": {
+      "tile": [
+        3,
+        5
+      ]
+    },
+    "Magic_116": {
+      "tile": [
+        4,
+        5
+      ]
+    },
+    "Magic_117": {
+      "tile": [
+        5,
+        5
+      ]
+    },
+    "Magic_118": {
+      "tile": [
+        6,
+        5
+      ]
+    },
+    "Magic_119": {
+      "tile": [
+        7,
+        5
+      ]
+    },
+    "Magic_120": {
+      "tile": [
+        8,
+        5
+      ]
+    },
+    "Magic_121": {
+      "tile": [
+        0,
+        6
+      ]
+    },
+    "Magic_122": {
+      "tile": [
+        1,
+        6
+      ]
+    },
+    "Magic_123": {
+      "tile": [
+        2,
+        6
+      ]
+    },
+    "Magic_124": {
+      "tile": [
+        3,
+        6
+      ]
+    },
+    "Magic_125": {
+      "tile": [
+        4,
+        6
+      ]
+    },
+    "Magic_126": {
+      "tile": [
+        5,
+        6
+      ]
+    },
+    "Magic_127": {
+      "tile": [
+        6,
+        6
+      ]
+    },
+    "Magic_128": {
+      "tile": [
+        7,
+        6
+      ]
+    },
+    "Magic_129": {
+      "tile": [
+        8,
+        6
+      ]
+    },
+    "Magic_130": {
+      "tile": [
+        0,
+        7
+      ]
+    },
+    "Magic_131": {
+      "tile": [
+        1,
+        7
+      ]
+    },
+    "Magic_132": {
+      "tile": [
+        2,
+        7
+      ]
+    },
+    "Magic_133": {
+      "tile": [
+        3,
+        7
+      ]
+    },
+    "Magic_144": {
+      "tile": [
+        4,
+        7
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Magic_067"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_068"
+      },
+      {
+        "cmd": "sound",
+        "id": "MageInit"
+      },
+      {
+        "cmd": "sound",
+        "id": "SageRune"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_069"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Magic_070"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_071"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 11,
+        "frame": "Magic_072"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_073"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_074"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_075"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_076"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_077"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_078"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_079"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_080"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_081"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_082"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_083"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_084"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Magic_085"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_086"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_087"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_088"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Magic_089"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_090"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_091"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Magic_092"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Magic_092"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Magic_093"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_094"
+      },
+      {
+        "cmd": "sound",
+        "id": "MageCrit"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_095"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_096"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_097"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_098"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_099"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_100"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_101"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_102"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_103"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_104"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_105"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_106"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_107"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 12,
+        "frame": "Magic_108"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 14,
+        "frame": "Magic_109"
+      },
+      {
+        "cmd": "sound",
+        "id": "MageInit"
+      },
+      {
+        "cmd": "sound",
+        "id": "SageRune"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_110"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 7,
+        "frame": "Magic_111"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_112"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 11,
+        "frame": "Magic_113"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_114"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_115"
+      },
+      {
+        "cmd": "spell",
+        "args": []
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_116"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_117"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_118"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_119"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_120"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_121"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_122"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_123"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_124"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_125"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Magic_126"
+      },
+      {
+        "cmd": "sound",
+        "id": "Foot Step"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_127"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_128"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Magic_129"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Magic_130"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_131"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Magic_132"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Magic_133"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Magic_133"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Magic_144"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Magic_144"
+      }
+    ]
+  }
+}
