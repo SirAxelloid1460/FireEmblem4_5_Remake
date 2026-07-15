@@ -369,6 +369,9 @@ func _return_to_home_castle(unit) -> void:
 
 var _action_menu: ActionMenu = null
 var ui_layer: CanvasLayer = null
+## Víctima elegida durante el flujo de robo (Steal), entre el submenú de
+## víctimas y el de ítems.
+var _steal_victim: Unit = null
 
 ## Capa de pantalla (screen-space) para la UI de gameplay (menú de acciones).
 func _ensure_ui_layer() -> CanvasLayer:
@@ -395,6 +398,10 @@ func show_action_menu():
 	if MapActions.can_refresh(selected_unit) \
 			and MapActions.get_refresh_targets(selected_unit, grid).size() > 0:
 		options.append({ "id": "dance", "text": "Dance" })
+	# Steal: solo si hay un enemigo adyacente con algún ítem robable.
+	if MapActions.can_steal(selected_unit) \
+			and _steal_victims(selected_unit).size() > 0:
+		options.append({ "id": "steal", "text": "Steal" })
 	if _unit_has_usable_item(selected_unit):
 		options.append({ "id": "item", "text": "Item" })
 	options.append({ "id": "wait", "text": "Wait" })
@@ -434,6 +441,8 @@ func _on_action_selected(id: String) -> void:
 			# FE4: refresca a todos los aliados adyacentes que ya actuaron.
 			MapActions.execute_refresh(selected_unit, grid, "fe4")
 			end_unit_action()
+		"steal":
+			_show_steal_menu(selected_unit)
 		_:  # "wait" y cualquier fallback seguro
 			end_unit_action()
 
@@ -588,6 +597,102 @@ func _on_item_menu_selected(id: String) -> void:
 		var items := _unit_usable_items(selected_unit)
 		if idx >= 0 and idx < items.size():
 			_use_consumable(selected_unit, items[idx])
+	end_unit_action()
+
+# ── Steal ─────────────────────────────────────────────────────────────────────
+
+## Nombre legible de un ítem (ConsumableData, Weapon o Item de runtime).
+func _item_display_name(it) -> String:
+	if it == null:
+		return "?"
+	if "name" in it and str(it.name) != "":
+		return str(it.name)
+	if "weapon_name" in it and str(it.weapon_name) != "":
+		return str(it.weapon_name)
+	if "item_name" in it and str(it.item_name) != "":
+		return str(it.item_name)
+	if "nid" in it:
+		return str(it.nid)
+	return str(it)
+
+## Enemigos adyacentes (Manhattan == 1) de los que `thief` puede robar algo:
+## con ítems robables y SPD del ladrón > SPD de la víctima (canon FE).
+func _steal_victims(thief) -> Array:
+	var out: Array = []
+	if grid == null or thief == null:
+		return out
+	var p: Vector2i = thief.grid_position
+	for d in [Vector2i(1, 0), Vector2i(-1, 0), Vector2i(0, 1), Vector2i(0, -1)]:
+		var u = grid.get_unit_at(p + d)
+		if u == null or u.is_player_unit == thief.is_player_unit:
+			continue
+		if thief.speed <= u.speed:
+			continue
+		if MapActions.get_stealable_items(thief, u).size() > 0:
+			out.append(u)
+	return out
+
+## Submenú de robo: elige víctima. Si hay una sola, salta directo a sus ítems.
+func _show_steal_menu(thief) -> void:
+	var victims := _steal_victims(thief)
+	if victims.is_empty():
+		show_action_menu()
+		return
+	if victims.size() == 1:
+		_show_steal_item_menu(thief, victims[0])
+		return
+	var options: Array = []
+	for i in victims.size():
+		options.append({ "id": "victim:%d" % i, "text": str(victims[i].unit_name) })
+	options.append({ "id": "back", "text": "Back" })
+	_close_action_menu()
+	_action_menu = ActionMenu.new()
+	_ensure_ui_layer().add_child(_action_menu)
+	_action_menu.setup(options, _unit_menu_anchor(thief))
+	_action_menu.action_selected.connect(_on_steal_victim_selected)
+
+func _on_steal_victim_selected(id: String) -> void:
+	_action_menu = null
+	if id == "back":
+		show_action_menu()
+		return
+	if id.begins_with("victim:"):
+		var idx := int(id.substr(7))
+		var victims := _steal_victims(selected_unit)
+		if idx >= 0 and idx < victims.size():
+			_show_steal_item_menu(selected_unit, victims[idx])
+			return
+	show_action_menu()
+
+## Submenú de robo: elige el ítem a robar de la víctima.
+func _show_steal_item_menu(thief, victim) -> void:
+	_steal_victim = victim
+	var items := MapActions.get_stealable_items(thief, victim)
+	if items.is_empty():
+		show_action_menu()
+		return
+	var options: Array = []
+	for i in items.size():
+		options.append({ "id": "steal:%d" % i, "text": _item_display_name(items[i]) })
+	options.append({ "id": "back", "text": "Back" })
+	_close_action_menu()
+	_action_menu = ActionMenu.new()
+	_ensure_ui_layer().add_child(_action_menu)
+	_action_menu.setup(options, _unit_menu_anchor(thief))
+	_action_menu.action_selected.connect(_on_steal_item_selected)
+
+func _on_steal_item_selected(id: String) -> void:
+	_action_menu = null
+	if id == "back":
+		_steal_victim = null
+		show_action_menu()
+		return
+	if id.begins_with("steal:") and _steal_victim != null:
+		var idx := int(id.substr(6))
+		var items := MapActions.get_stealable_items(selected_unit, _steal_victim)
+		if idx >= 0 and idx < items.size():
+			MapActions.execute_steal(selected_unit, _steal_victim, items[idx])
+	_steal_victim = null
 	end_unit_action()
 
 ## Aplica el efecto de un consumible sobre su portador y gasta un uso.

@@ -186,6 +186,11 @@ static func execute_steal(thief: Unit, victim: Unit, item,
 	# Transferir.
 	victim.inventory.erase(item)
 	thief.inventory.append(item)
+	# El ítem pudo cambiar de manos con un status_on_hold: recalcular pasivos.
+	if victim.has_method("refresh_item_effects"):
+		victim.refresh_item_effects()
+	if thief.has_method("refresh_item_effects"):
+		thief.refresh_item_effects()
 	# Steal consume la acción del turno (en FE clásico, Steal SÍ consume
 	# la acción — distinto de Open/Door, que en FE5 no la consumían).
 	thief.has_acted = true
