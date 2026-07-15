@@ -25,11 +25,14 @@ func _ready():
 	
 	hide()
 
-func open_shop(gold: int, unit: Unit = null):
-	"""Abre la tienda con el oro disponible"""
+var secret_shop: bool = false
+
+func open_shop(gold: int, unit: Unit = null, secret: bool = false):
+	"""Abre la tienda con el oro disponible. `secret` = Secret Shop (Member Card)."""
 	player_gold = gold
 	current_unit = unit
-	
+	secret_shop = secret
+
 	# Cargar items disponibles
 	load_shop_inventory()
 	
@@ -182,6 +185,22 @@ func load_shop_inventory():
 		"heal_amount": 99,
 		"uses": 1
 	})
+
+	# ── Secret Shop (solo con Member Card en el ejército) ──────────────────────
+	if secret_shop:
+		available_items.append({
+			"name": "Speed Ring", "type": "Item", "cost": 8000,
+			"description": "[Secret] +5 SPD mientras se porta.",
+		})
+		available_items.append({
+			"name": "Knight Proof", "type": "Item", "cost": 10000,
+			"description": "[Secret] Promociona una unidad apta.",
+		})
+		available_items.append({
+			"name": "Elixir", "type": "Item", "cost": 3000,
+			"description": "[Secret] Restaura toda la vida. Usos: 1",
+			"heal_amount": 99, "uses": 1
+		})
 
 func update_item_list():
 	"""Actualiza la lista visual de items"""

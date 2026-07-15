@@ -501,8 +501,9 @@ func _apply_item_status(unit, sid: String) -> void:
 		_:
 			unit.apply_status(sid, {})
 
-## Abre la casilla (puerta/cofre/puente): la vuelve transitable.
-func _unlock_tile(pos: Vector2i) -> void:
+## Abre la casilla (puerta/cofre/puente): la vuelve transitable. Si es un cofre
+## con contenido (tiles[pos]["contents"] = item_nid), lo entrega al que abre.
+func _unlock_tile(pos: Vector2i, opener = null) -> void:
 	if grid == null or not grid.tiles.has(pos):
 		return
 	var t: Dictionary = grid.tiles[pos]
@@ -511,10 +512,31 @@ func _unlock_tile(pos: Vector2i) -> void:
 	var terr := str(t.get("terrain_type", "plain"))
 	if terr == "door" or terr == "bridge":
 		t["terrain_type"] = "plain"    # queda abierta/transitable
-	# Cofres (chest): al abrirse se entregaría su contenido — PENDIENTE de
-	# modelar (chest contents en la data del nivel). Por ahora solo se abre.
+	elif terr == "chest":
+		# Contenido del cofre: el nivel lo define en tiles[pos]["contents"].
+		var contents := str(t.get("contents", ""))
+		if contents != "" and opener != null:
+			_give_item(opener, contents)
+			t["contents"] = ""         # cofre vaciado
 	if fow_system:
 		fow_system.update_team_vision("player", player_units)
+
+## Entrega un item (por nid) a la unidad; si el inventario está lleno, al convoy.
+func _give_item(unit, item_nid: String) -> void:
+	var gdb = get_node_or_null("/root/GameDB")
+	if gdb == null or not gdb.has_method("get_item"):
+		return
+	var item = gdb.get_item(item_nid)
+	if item == null:
+		return
+	if item is Resource:
+		item = item.duplicate(true)    # instancia propia (usos por-objeto)
+	if "inventory" in unit and unit.inventory.size() < 5:
+		unit.inventory.append(item)
+	else:
+		var convoy = get_node_or_null("/root/Convoy")
+		if convoy != null and convoy.has_method("deposit"):
+			convoy.deposit(item)
 
 ## Lee un componente [key, val] de un ConsumableData (formato LT). null si falta.
 func _item_component(it, key: String):
@@ -588,7 +610,7 @@ func _use_consumable(unit, item) -> void:
 	if _item_component(item, "can_unlock") != null:
 		var lock_pos := _adjacent_unlockable(unit)
 		if lock_pos != Vector2i(-1, -1):
-			_unlock_tile(lock_pos)
+			_unlock_tile(lock_pos, unit)
 	# Gastar un uso; si se agota, retirar del inventario.
 	if "uses" in item and int(item.uses) > 0:
 		item.uses = int(item.uses) - 1

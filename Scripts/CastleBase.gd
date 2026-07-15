@@ -269,11 +269,13 @@ func _on_unit_selected(index: int):
 # ============================================
 
 func _on_shop_button_pressed():
-	"""Abre la tienda del castillo"""
+	"""Abre la tienda del castillo. Con Member Card en el ejército se desbloquea
+	la Secret Shop (stock adicional)."""
 	facility_opened.emit("Shop")
 	hide_all_facility_panels()
 	shop_panel.show()
-	shop_panel.open_shop(army_gold, selected_unit)
+	var secret := _army_has_item("MemberCard")
+	shop_panel.open_shop(army_gold, selected_unit, secret)
 	shop_panel.item_purchased.connect(_on_item_purchased)
 
 func _on_convoy_button_pressed():
@@ -328,7 +330,10 @@ func _on_promotion_button_pressed():
 	if not can_promote(selected_unit):
 		show_message("%s no puede ser promocionado todavía" % selected_unit.unit_name)
 		return
-	
+	if not _army_has_item(["Knight Proof", "KnightProof"]):
+		show_message("Necesitas un Knight Proof para promocionar")
+		return
+
 	facility_opened.emit("Promotion")
 	hide_all_facility_panels()
 	promotion_panel.show()
@@ -434,10 +439,50 @@ func _on_weapon_repaired(weapon: Weapon, cost: int):
 	show_message("Arma reparada por %d oro" % cost)
 
 func _on_unit_promoted(old_class: String, new_class: String):
-	"""Cuando una unidad es promocionada"""
+	"""Cuando una unidad es promocionada — consume un Knight Proof."""
+	_army_consume_item(["Knight Proof", "KnightProof"])
 	show_message("%s ha sido promocionado a %s!" % [selected_unit.unit_name, new_class])
 	update_unit_details(selected_unit)
 	update_unit_list()
+
+
+# ── Helpers de inventario del ejército (Member Card, Knight Proof…) ───────────
+
+## nid de un item del inventario (ConsumableData/Item) o arma.
+func _item_nid(it) -> String:
+	if it == null:
+		return ""
+	if "nid" in it:
+		return str(it.nid)
+	if "weapon_name" in it:
+		return str(it.weapon_name)
+	return ""
+
+## ¿Alguna unidad del ejército (o el convoy) lleva alguno de estos nids?
+func _army_has_item(nids) -> bool:
+	var want: Array = nids if nids is Array else [nids]
+	for u in player_units:
+		for it in u.inventory:
+			if _item_nid(it) in want:
+				return true
+	for it in convoy_items:
+		if _item_nid(it) in want:
+			return true
+	return false
+
+## Gasta (borra) un item con alguno de estos nids. true si lo consumió.
+func _army_consume_item(nids) -> bool:
+	var want: Array = nids if nids is Array else [nids]
+	for u in player_units:
+		for it in u.inventory:
+			if _item_nid(it) in want:
+				u.inventory.erase(it)
+				return true
+	for it in convoy_items:
+		if _item_nid(it) in want:
+			convoy_items.erase(it)
+			return true
+	return false
 
 # ============================================
 # UTILIDADES
