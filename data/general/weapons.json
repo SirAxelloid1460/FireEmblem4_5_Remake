@@ -3287,7 +3287,7 @@
   "nid": "Gae Bolg",
   "name": "Gae Bolg",
   "desc": "Sacred lance of the crusader Njörun.",
-  "weapon_type": "Sword",
+  "weapon_type": "Lance",
   "might": 25,
   "hit": 85,
   "weight": 8,
@@ -3336,7 +3336,7 @@
    ],
    [
     "weapon_type",
-    "Sword"
+    "Lance"
    ],
    [
     "uses",
