@@ -3356,7 +3356,7 @@
   "learned_skills": [],
   "wexp_gain": {},
   "holy_blood": {
-   "Baldo": "Minor"
+   "Baldr": "Minor"
   },
   "tags": [],
   "affinity": "",
@@ -3485,8 +3485,8 @@
   "learned_skills": [],
   "wexp_gain": {},
   "holy_blood": {
-   "Narga": "Major",
-   "Fala": "Minor"
+   "Naga": "Major",
+   "Fjalar": "Minor"
   },
   "tags": [],
   "affinity": "",
@@ -3572,7 +3572,7 @@
   "learned_skills": [],
   "wexp_gain": {},
   "holy_blood": {
-   "Tordo": "Minor"
+   "Thrud": "Minor"
   },
   "tags": [],
   "affinity": "",
@@ -3704,7 +3704,7 @@
   "learned_skills": [],
   "wexp_gain": {},
   "holy_blood": {
-   "Odo": "Major"
+   "Od": "Major"
   },
   "tags": [],
   "affinity": "",
@@ -3918,7 +3918,7 @@
   "learned_skills": [],
   "wexp_gain": {},
   "holy_blood": {
-   "Tordo": "Minor"
+   "Thrud": "Minor"
   },
   "tags": [],
   "affinity": "",
