@@ -441,7 +441,7 @@ func _unit_usable_items(unit) -> Array:
 	if unit == null:
 		return out
 	for it in unit.inventory:
-		if _is_usable_consumable(it):
+		if _is_usable_consumable(it, unit):
 			out.append(it)
 	return out
 
@@ -449,7 +449,7 @@ func _unit_has_usable_item(unit) -> bool:
 	return not _unit_usable_items(unit).is_empty()
 
 ## ¿Es un consumible de auto-uso en el campo? (ConsumableData con efecto activo).
-func _is_usable_consumable(it) -> bool:
+func _is_usable_consumable(it, unit = null) -> bool:
 	if it == null or it is Weapon:
 		return false
 	if "status_on_hold" in it and str(it.status_on_hold) != "":
@@ -468,7 +468,39 @@ func _is_usable_consumable(it) -> bool:
 		return true
 	if _item_component(it, "event_on_use") != null:
 		return true   # Return Ring, etc.
+	# Llave/ganzúa: solo si hay una casilla adyacente cerrada que abrir.
+	if _item_component(it, "can_unlock") != null:
+		return unit != null and _adjacent_unlockable(unit) != Vector2i(-1, -1)
 	return false
+
+## Posición de una casilla adyacente CERRADA (puerta/cofre/puente bloqueado) que
+## una llave puede abrir, o (-1,-1). "Cerrada" = terreno door/chest/bridge y no
+## transitable (el mapa las coloca con walkable=false hasta abrirlas).
+func _adjacent_unlockable(unit) -> Vector2i:
+	if unit == null or grid == null:
+		return Vector2i(-1, -1)
+	for n in grid.get_neighbors(unit.grid_position):
+		if grid.tiles.has(n):
+			var t: Dictionary = grid.tiles[n]
+			var terr := str(t.get("terrain_type", "plain"))
+			if terr in ["door", "chest", "bridge"] and not bool(t.get("walkable", true)):
+				return n
+	return Vector2i(-1, -1)
+
+## Abre la casilla (puerta/cofre/puente): la vuelve transitable.
+func _unlock_tile(pos: Vector2i) -> void:
+	if grid == null or not grid.tiles.has(pos):
+		return
+	var t: Dictionary = grid.tiles[pos]
+	t["walkable"] = true
+	t["locked"] = false
+	var terr := str(t.get("terrain_type", "plain"))
+	if terr == "door" or terr == "bridge":
+		t["terrain_type"] = "plain"    # queda abierta/transitable
+	# Cofres (chest): al abrirse se entregaría su contenido — PENDIENTE de
+	# modelar (chest contents en la data del nivel). Por ahora solo se abre.
+	if fow_system:
+		fow_system.update_team_vision("player", player_units)
 
 ## Lee un componente [key, val] de un ConsumableData (formato LT). null si falta.
 func _item_component(it, key: String):
@@ -534,6 +566,11 @@ func _use_consumable(unit, item) -> void:
 	var ev = _item_component(item, "event_on_use")
 	if ev != null and str(ev) != "":
 		trigger_item_event(str(ev), unit, unit)
+	# Llave/ganzúa: abre la casilla cerrada adyacente.
+	if _item_component(item, "can_unlock") != null:
+		var lock_pos := _adjacent_unlockable(unit)
+		if lock_pos != Vector2i(-1, -1):
+			_unlock_tile(lock_pos)
 	# Gastar un uso; si se agota, retirar del inventario.
 	if "uses" in item and int(item.uses) > 0:
 		item.uses = int(item.uses) - 1
