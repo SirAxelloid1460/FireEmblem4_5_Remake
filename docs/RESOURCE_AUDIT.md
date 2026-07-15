@@ -4,7 +4,7 @@
 
 
 ## Inventario
-- Clases (classes.json): **63**
+- Clases (classes.json): **61**
 - Personajes (units.json): **122**
 - Items (items.json): **79**
 - Armas (weapons.json): **134**
@@ -21,15 +21,15 @@
 ## Personajes — cobertura de assets (122)
 - con retrato: **111/122** · sin retrato (11): GenoaGuard, Mana, Radney, Roddlevan, Dimna, Femina, Johan, Johalva, Sharlow, Pahn, Cyas
 - con map sprite: **122/122** · sin: —
-- con combat anim: **99/122** · sin (23): Alvar, Azel, Eldigan, Elliot, Evan, Evar, Lewyn, Quan, Tailtiu, Voltz, Zain, Coirpre, Oifey, Amid, Linda, Asbel, Fred, Glade, Homer, Miranda, Amalda, Conomor, Delmud
+- con combat anim: **100/122** · sin (22): Alvar, Azel, Eldigan, Elliot, Evan, Evar, Lewyn, Quan, Tailtiu, Voltz, Zain, Oifey, Amid, Linda, Asbel, Fred, Glade, Homer, Miranda, Amalda, Conomor, Delmud
 - starting_items colgantes: ninguno ✅
 - learned_skills colgantes: ninguno ✅
 
-## Clases — cobertura de assets (63)
-- con map sprite: **63/63** · sin: —
-- con combat anim base (Generic/Male/Female): **48/63**
-  · sin (15): Paladin, Ballistae, Bard, Child, Citizen, DukeKnight, ForrestKnight, GreatKnight, LordKnight, LordLeaf, LordSeliph, Mage, Princess, Queen, Tester
-- con retrato genérico: **53/63** · sin: Child, FalconKnight, HighPriestess, LightPriestess, LordLeaf, LordSeliph, Priestess, Tester, Dancer_Lara, Thief
+## Clases — cobertura de assets (60, excl. debug: Tester)
+- con map sprite: **60/60** · sin: —
+- con combat anim base (Generic/Male/Female): **47/60**
+  · sin (13): Paladin, Ballistae, Bard, Citizen, DukeKnight, ForrestKnight, GreatKnight, LordKnight, LordLeaf, LordSeliph, Mage, Princess, Queen
+- con retrato genérico: **53/60** · sin: FalconKnight, HighPriestess, LightPriestess, LordLeaf, LordSeliph, Priestess, Thief
 
 ## Integridad de referencias data→data
 - units.klass inexistente: ninguno ✅

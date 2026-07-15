@@ -101,18 +101,22 @@ line(f"- starting_items colgantes: {', '.join(sorted(set(u_bad_item))) or 'ningu
 line(f"- learned_skills colgantes: {', '.join(sorted(set(u_bad_skill))) or 'ninguno ✅'}")
 
 # ================= CLASSES =================
-sec("Clases — cobertura de assets (63)")
+# Tester es una clase DEBUG (para probar assets ajenos): no requiere recursos.
+IGNORE_CLASSES = {"Tester"}
+audited_classes = [c for c in classes if c["id"] not in IGNORE_CLASSES]
+sec(f"Clases — cobertura de assets ({len(audited_classes)}, excl. debug: {', '.join(sorted(IGNORE_CLASSES))})")
 c_no_ms, c_no_anim, c_no_gen = [], [], []
-for c in classes:
+for c in audited_classes:
     cid = c["id"]; msn = c.get("map_sprite_nid", cid); can = c.get("combat_anim_nid", cid)
     if msn not in ms_stand or msn not in ms_move: c_no_ms.append(f"{cid}({msn})")
     if not any(f"{can}_{v}" in ca_folders for v in ("Generic","Male","Female")):
         c_no_anim.append(cid)
     if cid not in gen_ports: c_no_gen.append(cid)
-line(f"- con map sprite: **{len(classes)-len(c_no_ms)}/{len(classes)}** · sin: {', '.join(c_no_ms) or '—'}")
-line(f"- con combat anim base (Generic/Male/Female): **{len(classes)-len(c_no_anim)}/{len(classes)}**")
+N = len(audited_classes)
+line(f"- con map sprite: **{N-len(c_no_ms)}/{N}** · sin: {', '.join(c_no_ms) or '—'}")
+line(f"- con combat anim base (Generic/Male/Female): **{N-len(c_no_anim)}/{N}**")
 line(f"  · sin ({len(c_no_anim)}): {', '.join(c_no_anim) or '—'}")
-line(f"- con retrato genérico: **{len(classes)-len(c_no_gen)}/{len(classes)}** · sin: {', '.join(c_no_gen) or '—'}")
+line(f"- con retrato genérico: **{N-len(c_no_gen)}/{N}** · sin: {', '.join(c_no_gen) or '—'}")
 
 # ================= DANGLING (data->data) =================
 sec("Integridad de referencias data→data")

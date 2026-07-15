@@ -2304,7 +2304,7 @@
   "nid": "Coirpre",
   "name": "Coirpre",
   "desc": "Young priest of Bragi and a Minor inheritor of his blood.",
-  "klass": "Child",
+  "klass": "Priest",
   "level": 1,
   "gender": "M",
   "bases": {

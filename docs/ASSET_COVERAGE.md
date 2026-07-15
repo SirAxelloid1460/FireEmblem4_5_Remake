@@ -7,7 +7,7 @@
 
 ## Resumen
 
-- Clases: **63** · con map sprite: **63** · con combat anim (Generic o género): **48**
+- Clases: **61** · con map sprite: **61** · con combat anim (Generic o género): **47**
 - Personajes: **122** · con retrato: **105**
 - Carpetas de combat anim: **126**
 
@@ -16,7 +16,6 @@
 
 | Clase | Tier | Map stand | Map move | Anim Generic | Anim Male | Anim Female | Armas de la anim |
 |---|---|---|---|---|---|---|---|
-| Child | 0 | ✅ | ✅ | ⬜ | — | — | — |
 | Citizen | 0 | ✅ | ✅ | ⬜ | — | — | — |
 | DragonRider | 0 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
 | PegasusRider | 0 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
@@ -53,7 +52,6 @@
 | Bishop | 2 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
 | BowKnight | 2 | ✅ | ✅ | ✅ | — | — | — |
 | Dancer | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Refresh, Sword |
-| Dancer_Lara | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Refresh, Sword |
 | DarkMage | 2 | ✅ | ✅ | ✅ | — | — | MagicAnima |
 | DragonMaster | 2 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
 | DukeKnight | 2 | ✅ | ✅ | ⬜ | — | — | — |
@@ -116,7 +114,6 @@
 | Beowulf | CavalierS | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Fergus | CavalierS | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Tristan | CavalierS | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
-| Coirpre | Child | M | ✅ | ⬜ | ⬜ | — |
 | Laylea | Dancer | F | ✅ | ⬜ | ✅ | MagicSword, Refresh, Sword |
 | Sylvia | Dancer | M | ✅ | ⬜ | ✅ | MagicSword, Refresh, Sword |
 | Sandima | DarkMage | M | ✅ | ⬜ | ✅ | MagicAnima |
@@ -170,6 +167,7 @@
 | Femina | PegasusKnight | F | ⬜ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Misha | PegasusKnight | F | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Karin | PegasusRider | F | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Coirpre | Priest | M | ✅ | ⬜ | ✅ | MagicStaff |
 | Sharlow | Priest | M | ⬜ | ⬜ | ✅ | MagicStaff |
 | Sleuf | Priest | M | ✅ | ⬜ | ✅ | MagicStaff |
 | Aideen | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
