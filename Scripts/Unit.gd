@@ -137,6 +137,72 @@ func remove_temporary_skills_by_source(source: String) -> void:
 	for skill_id in to_remove:
 		_temp_skills.erase(skill_id)
 
+# ── Efectos de equipo (status_on_hold / status_on_equip) ──────────────────────
+# Recalcula las skills temporales y los modificadores de stats derivados del
+# EQUIPO de la unidad (no de status ni de captura):
+#   · Cada item del inventario con `status_on_hold` (anillos pasivos, scrolls,
+#     Circlet…) concede su skill mientras se porta.
+#   · El arma equipada con `status_on_equip` (Holy/Darkness Sword…) concede su
+#     skill mientras está equipada.
+# Además, si la skill concedida lleva un componente `stat_change`, se aplica
+# como modificador de status (p.ej. Power Ring → +STR). Es IDEMPOTENTE: limpia
+# lo derivado antes de reconstruir, así que puede llamarse tras spawnear, tras
+# equipar/desequipar, tras usar un item o tras mover objetos entre unidades y el
+# convoy. NO toca los modificadores de captura ("Carrying") ni los de status.
+func refresh_item_effects() -> void:
+	# 1) Limpiar skills temporales y modificadores derivados de items/equipo.
+	remove_temporary_skills_by_source("item")
+	for mod_id in _stat_modifiers.keys():
+		var key := str(mod_id)
+		if key.begins_with("hold:") or key.begins_with("equip:"):
+			_stat_modifiers.erase(mod_id)
+	# 2) status_on_hold de cada item del inventario.
+	for it in inventory:
+		var sid := _equipment_skill_field(it, "status_on_hold")
+		if sid != "":
+			_grant_equipment_skill(sid, "hold:" + sid)
+	# 3) status_on_equip del arma equipada.
+	if weapon != null and weapon.has_method("get_component"):
+		var wsid = weapon.get_component("status_on_equip")
+		if wsid != null and str(wsid) != "":
+			_grant_equipment_skill(str(wsid), "equip:" + str(wsid))
+
+## Lee un campo de skill (status_on_hold/status_on_equip) de un item, tolerando
+## tanto ConsumableData/ItemData (propiedad tipada) como Dictionary.
+func _equipment_skill_field(it, field: String) -> String:
+	if it == null:
+		return ""
+	if it is Object and field in it:
+		return str(it.get(field))
+	if it is Dictionary:
+		return str(it.get(field, ""))
+	return ""
+
+## Concede una skill de equipo (temporal, source="item") y aplica su stat_change
+## como modificador de status si lo tiene.
+func _grant_equipment_skill(skill_id: String, mod_id: String) -> void:
+	if skill_id == "":
+		return
+	add_temporary_skill(skill_id, "item")
+	var deltas := _skill_stat_change(skill_id)
+	if not deltas.is_empty():
+		add_status_modifier(mod_id, deltas)
+
+## Extrae el componente stat_change de una skill de GameDB → {stat: delta}.
+func _skill_stat_change(skill_id: String) -> Dictionary:
+	var out := {}
+	if not has_node("/root/GameDB"):
+		return out
+	var sk = get_node("/root/GameDB").get_skill(skill_id)
+	if sk == null:
+		return out
+	var raw = sk.component_value("stat_change")
+	if raw is Array:
+		for pair in raw:
+			if pair is Array and pair.size() >= 2:
+				out[str(pair[0])] = int(pair[1])
+	return out
+
 # ══════════════════════════════════════════════════════════════════════════════
 # WEAPON RANK & HOLY BLOOD   (fiel a LT-maker + reglas FE4 LOCKED del brief §4)
 # ══════════════════════════════════════════════════════════════════════════════

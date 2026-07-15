@@ -101,7 +101,7 @@ static func calculate_combat(attacker: Unit, defender: Unit, distance: int,
 	# Pre-combat proc rolls
 	var atk_sword := "" if atk_proc_blocked else _roll_sword_skill(attacker)
 	var atk_adept := (not atk_proc_blocked) and _has_skill(attacker, "Adept") \
-			and randi() % 100 < attacker.skill
+			and randi() % 100 < _stat(attacker, "SKL")
 	var atk_desp  := (not atk_proc_blocked) \
 			and (_has_skill(attacker, "Desperation") or _has_skill(attacker, "Continue")) \
 			and attacker.current_hp <= attacker.max_hp / 2
@@ -252,7 +252,7 @@ static func execute_attack(atk: Unit, def: Unit, dist: int,
 
 	# Pavise: ((DEF+LVL)/2)% vs físico, ((RES+LVL)/2)% vs mágico
 	if not nihil and not is_crit and _has_skill(def, "Pavise"):
-		var pavise_rate: int = (def.resistance + def.level) / 2 if is_magic else (def.defense + def.level) / 2
+		var pavise_rate: int = (_stat(def, "RES") + def.level) / 2 if is_magic else (_stat(def, "DEF") + def.level) / 2
 		if randi() % 100 < pavise_rate:
 			dmg = 0
 
@@ -263,7 +263,7 @@ static func execute_attack(atk: Unit, def: Unit, dist: int,
 
 	# Miracle (LCK%): sobrevive golpe letal con 1 HP
 	if not nihil and dmg >= def.current_hp and _has_skill(def, "Miracle") \
-			and randi() % 100 < def.luck:
+			and randi() % 100 < _stat(def, "LCK"):
 		dmg = def.current_hp - 1
 
 	_gain_wexp(atk, wpn, true)
@@ -272,7 +272,7 @@ static func execute_attack(atk: Unit, def: Unit, dist: int,
 
 
 static func _roll_sword_skill(unit: Unit) -> String:
-	var s: int = unit.skill
+	var s: int = _stat(unit, "SKL")
 	if _has_skill(unit, "Astra") and randi() % 100 < s: return "Astra"
 	if _has_skill(unit, "Luna")  and randi() % 100 < s: return "Luna"
 	if _has_skill(unit, "Sol")   and randi() % 100 < s: return "Sol"
@@ -285,22 +285,24 @@ static func _can_double(unit: Unit, target: Unit, wpn) -> bool:
 
 
 static func calculate_attack_speed(unit: Unit) -> int:
-	if not unit.weapon: return unit.speed
-	var spd: int = unit.speed / 2 if _is_carrying(unit) else unit.speed
-	var con  := unit.magic if unit.weapon.is_magic else unit.constitution
+	# La penalización de captura (SPD/2) ya viene aplicada vía el modifier
+	# "Carrying" que lee get_effective_stat — no se vuelve a restar aquí.
+	if not unit.weapon: return _stat(unit, "SPD")
+	var spd: int = _stat(unit, "SPD")
+	var con  := _stat(unit, "MAG") if unit.weapon.is_magic else _stat(unit, "CON")
 	return spd - max(0, unit.weapon.weight - con)
 
 
 static func calculate_hit(atk: Unit, def: Unit, _dist: int,
 		t_def: Dictionary = {}) -> int:
 	if not atk.weapon: return 0
-	var hit: int = atk.weapon.accuracy + (atk.skill * 2) + (atk.luck / 2)
+	var hit: int = atk.weapon.accuracy + (_stat(atk, "SKL") * 2) + (_stat(atk, "LCK") / 2)
 	if _charisma_near(atk): hit += CHARISMA_BONUS
 	hit += _tri_hit(atk, def)
 	hit += _support_bonus(atk, "HIT")
 	var def_as: int = calculate_attack_speed(def)
 	# Captura: SPD/2 del atacante reduce su AS (ya incluido via flag en _calc_dmg)
-	var avoid: int = (def_as * 2) + def.luck + int(t_def.get("AVO", 0))
+	var avoid: int = (def_as * 2) + _stat(def, "LCK") + int(t_def.get("AVO", 0))
 	if _is_carrying(def): avoid = avoid / 2
 	if _charisma_near(def): avoid += CHARISMA_BONUS
 	avoid += _support_bonus(def, "AVO")
@@ -309,11 +311,12 @@ static func calculate_hit(atk: Unit, def: Unit, _dist: int,
 
 static func calculate_crit(atk: Unit, def: Unit) -> int:
 	if not atk.weapon: return 0
+	var atk_skl: int = _stat(atk, "SKL")
 	var crit: int = atk.weapon.critical + \
-			(int(atk.skill * 1.5) if _has_skill(atk, "Critical") else atk.skill / 2)
+			(int(atk_skl * 1.5) if _has_skill(atk, "Critical") else atk_skl / 2)
 	if _charisma_near(atk): crit += CHARISMA_BONUS
 	crit += _support_bonus(atk, "CRIT")
-	var ca: int = def.luck
+	var ca: int = _stat(def, "LCK")
 	if _charisma_near(def): ca += CHARISMA_BONUS
 	ca += _support_bonus(def, "DODGE")
 	return max(0, crit - ca)
@@ -325,13 +328,15 @@ static func _calc_dmg(atk: Unit, def: Unit, is_crit: bool, is_eff: bool,
 
 	var wpn = atk.weapon
 	var is_magic: bool = bool(wpn.is_magic) if wpn and "is_magic" in wpn else false
-	var stat_m: int = atk.magic if is_magic else atk.strength
-	if _is_carrying(atk): stat_m = stat_m / 2
-	# Captura FE5: STR/MAG a la mitad durante el intento
+	# STR/MAG efectivos: incluyen anillos on_hold, Holy Water y la penalización
+	# de captura ("Carrying" → STR/MAG a la mitad ya aplicada vía modifier).
+	var stat_m: int = _stat(atk, "MAG") if is_magic else _stat(atk, "STR")
+	# Captura FE5: STR/MAG a la mitad DURANTE el intento (estado transitorio,
+	# aún sin modifier — se resta aquí explícitamente).
 	if flags.get("is_capture_attempt", false): stat_m = stat_m / 2
 	var wep_m: int = int(wpn.might) if wpn else 0
 	var mt_total: int = wep_m + stat_m
-	var def_raw: int = def.resistance if is_magic else def.defense
+	var def_raw: int = _stat(def, "RES") if is_magic else _stat(def, "DEF")
 
 	var dmg_mult := 1.0; var def_mult := 1.0; var flat := 0
 	if   _has_skill(atk, "DarknessSword"): dmg_mult = 2.0; def_mult = 0.5
@@ -422,6 +427,27 @@ static func _base_exp(atk: Unit, def: Unit) -> int:
 
 static func _has_skill(unit: Unit, id: String) -> bool:
 	return unit.has_method("has_skill") and unit.has_skill(id)
+
+## Lee un stat EFECTIVO (base + item bonuses + status modifiers): anillos
+## on_hold (Power/Speed/… Ring), armas on_equip (Balmung SKL/SPD), Holy Water
+## (MAG), penalización de captura (Carrying). Fallback al campo crudo para
+## Units mínimas de test sin get_effective_stat. `key` ∈ {STR,MAG,SKL,SPD,LCK,
+## DEF,RES,CON,HP,MOV}.
+static func _stat(unit: Unit, key: String) -> int:
+	if unit.has_method("get_effective_stat"):
+		return unit.get_effective_stat(key)
+	match key:
+		"STR": return unit.strength
+		"MAG": return unit.magic
+		"SKL": return unit.skill
+		"SPD": return unit.speed
+		"LCK": return unit.luck
+		"DEF": return unit.defense
+		"RES": return unit.resistance
+		"CON": return unit.constitution
+		"HP":  return unit.max_hp
+		"MOV": return unit.movement
+	return 0
 
 static func _is_carrying(unit: Unit) -> bool:
 	return unit.has_method("is_carrying") and unit.is_carrying()

@@ -124,6 +124,9 @@ func transfer_unit_to_convoy(unit: Unit, item) -> bool:
 	# sistema debe re-evaluar weapon equipado tras la transferencia.
 	if "weapon" in unit and unit.weapon == item:
 		unit.weapon = null
+	# Recalcular efectos pasivos: el item ya no está en el inventario/equipo.
+	if unit.has_method("refresh_item_effects"):
+		unit.refresh_item_effects()
 	return true
 
 
@@ -142,6 +145,9 @@ func transfer_convoy_to_unit(unit: Unit, item, max_inventory: int = 5) -> bool:
 	if not withdraw(item):
 		return false
 	unit.inventory.append(item)
+	# Recalcular efectos pasivos: el item nuevo puede llevar status_on_hold.
+	if unit.has_method("refresh_item_effects"):
+		unit.refresh_item_effects()
 	return true
 
 

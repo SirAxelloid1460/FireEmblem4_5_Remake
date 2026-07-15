@@ -533,6 +533,9 @@ func _give_item(unit, item_nid: String) -> void:
 		item = item.duplicate(true)    # instancia propia (usos por-objeto)
 	if "inventory" in unit and unit.inventory.size() < 5:
 		unit.inventory.append(item)
+		# El item nuevo puede llevar status_on_hold — recalcular efectos.
+		if unit.has_method("refresh_item_effects"):
+			unit.refresh_item_effects()
 	else:
 		var convoy = get_node_or_null("/root/Convoy")
 		if convoy != null and convoy.has_method("deposit"):
@@ -616,6 +619,9 @@ func _use_consumable(unit, item) -> void:
 		item.uses = int(item.uses) - 1
 		if int(item.uses) <= 0:
 			unit.inventory.erase(item)
+	# Recalcular efectos pasivos (el inventario pudo cambiar).
+	if unit.has_method("refresh_item_effects"):
+		unit.refresh_item_effects()
 
 func enter_targeting_mode():
 	"""Entra en modo de selección de objetivo"""

@@ -268,6 +268,10 @@ static func build_unit(udef: Dictionary, project_data: Dictionary) -> Unit:
 	if BallistaSystem.is_ballista(unit):
 		BallistaSystem.initialize(unit, "enemy" if team == "enemy" else "player")
 
+	# Aplicar efectos pasivos del equipo (anillos on_hold, arma on_equip).
+	if unit.has_method("refresh_item_effects"):
+		unit.refresh_item_effects()
+
 	return unit
 
 
