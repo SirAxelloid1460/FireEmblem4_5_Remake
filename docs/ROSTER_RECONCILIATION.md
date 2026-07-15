@@ -3,10 +3,11 @@
 > Actualizado tras importar datos reales de Serenes Forest (bases + growths).
 
 
-## Estado actual: **128 units**
+## Estado actual: **129 units**
 
-> +1 Saias (FE5), +5 jefes (Julius, Manfroy, Travant, Ishtar, Veld) con stats
-> reales de Serenes Forest (boss-data FE4/FE5). Falta **Mus** (ver nota abajo).
+> +1 Saias (FE5), +6 jefes: Julius, Manfroy, Travant, Ishtar, Veld y **Mua**
+> (Dark Bishop, cap. 17A FE5) con stats reales de Serenes Forest. Falta **Mus**
+> (Dreadlord — sin fuente; ver nota abajo).
 
 - Solo FE4: 63
 - Solo FE5: 52
@@ -39,12 +40,17 @@ Confirmado contra `characters/base-stats/fixed/` de Serenes: Seliph, Altena y Le
 - Skills remapeados al set actual: `Pursuit`/`Continue` se omiten (doblaje por Δ SPD),
   `Ambush`→`Vantage`. Growths vacíos (los jefes no suben de nivel; sin fuente).
 
-### Pendiente de decisión — **Mus**
-El boss "Mua/Mus" de Serenes (cap. 17A FE5) es **Dark Bishop con tomos**
-(Jormungandr, Fenrir, Reserve, Warp), pero en el diseño previo **Mus** figura en
-los `prf_units` de la **Loptyr Sword** (arma de espada). Clase/rol no encajan;
-requiere aclarar identidad antes de añadirlo. La **Stone (petrify staff)** de
-Veld no existe en el dataset LT — omitida (no se inventan stats).
+### Mua ≠ Mus (aclarado por el autor)
+- **Mua**: Bishop de FE5 (Dark Bishop, cap. 17A) → añadido con stats de Serenes.
+- **Mus**: Dreadlord en FE4 y FE5, empuña la Loptyr Sword. **No hay clase
+  `Dreadlord` ni stats de Mus en Serenes/LT** → pendiente de datos del autor
+  (igual que Saias). Se mantiene en `prf_units` de la Loptyr Sword.
+
+### Stone / Petrify Tome — añadida
+Tomo Dark (no báculo): Rank A, Mt 1, Hit 100, Rng 3-10, Wt 20, Usos 5, sin
+precio. `status_on_hit = Petrify` (petrifica hasta fin de capítulo). Cableada al
+inventario de Veld. Pendiente: la mecánica "se convierte en Fenrir al ser
+robada" queda anotada en la desc pero sin wiring (steal-transform).
 
 
 ## Notas de datos

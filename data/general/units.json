@@ -5911,6 +5911,7 @@
   },
   "growths": {},
   "starting_items": [
+   "Stone",
    "Jormungandr",
    "Vulnerary"
   ],
@@ -5931,6 +5932,47 @@
   ],
   "affinity": "",
   "portrait_nid": "Veld",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Mua",
+  "name": "Mua",
+  "desc": "Dark Bishop of the Loptous cult (Thracia 776, ch. 17A).",
+  "klass": "DarkBishop",
+  "level": 12,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 3,
+   "MAG": 17,
+   "SKL": 14,
+   "SPD": 15,
+   "LCK": 8,
+   "DEF": 10,
+   "RES": 0,
+   "CON": 12,
+   "MOV": 60
+  },
+  "growths": {},
+  "starting_items": [
+   "Jormungandr",
+   "Fenrir",
+   "Reserve",
+   "Warp"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {
+   "Dark": 226,
+   "Staff": 226
+  },
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Mua",
   "games": [
    "FE5"
   ]

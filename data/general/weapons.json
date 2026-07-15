@@ -13133,5 +13133,102 @@
     ]
    ]
   ]
+ },
+ {
+  "nid": "Stone",
+  "name": "Stone",
+  "desc": "Dark tome that turns a target to stone for the rest of the chapter. Becomes Fenrir when stolen.",
+  "weapon_type": "Dark",
+  "might": 1,
+  "hit": 100,
+  "weight": 20,
+  "crit": 0,
+  "rng_min": 3,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 5,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Petrify",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    1
+   ],
+   [
+    "hit",
+    100
+   ],
+   [
+    "weapon_type",
+    "Dark"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    5
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    20
+   ],
+   [
+    "status_on_hit",
+    "Petrify"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    3
+   ],
+   [
+    "max_range",
+    10
+   ]
+  ]
  }
 ]
