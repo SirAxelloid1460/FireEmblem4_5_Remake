@@ -142,13 +142,13 @@ var credits_data: Array = [
 	{ "type": "grid", "columns": 4, "names": [
 		"Serenes Forest", "FEUniverse", "SirAxelloid1460", "Lexou",
 		"Jirbytaylor", "RobertFPY", "flasuban", "Tordo45",
-		"DerTheVaporeon", "Pikmin1211", "Hypergammaspaces", "L95",
+		"DerTheVaporeon", "Pikmin1211", "HyperGammaSpaces (HGS)", "L95",
 		"Someone Unknown", "FEGirls", "CamusZekeSirius", "Rexacuse",
 		"Peerless", "Alusq", "WarPath", "Yangfly Master",
 		"Cath", "Chad", "Rasdel", "Agro",
 		"Yggdra", "Aruka", "Kenpuhu", "Smug_mug",
 		"BatimaTheBat", "Jeorge_Reds", "Cipher", "Lee",
-		"Sephie", "Eldrich Abomination", "MeatofJustice", "Leif",
+		"Sephie", "Eldritch Abomination", "MeatofJustice", "Leif",
 		"Nuramon", "Its_Just_Jay", "SamirPlayz", "N426",
 		"Mikey_Seregon", "StreetHero", "Blood", "Huichelaar",
 		"Seal", "Mobile21", "Team SALVAGED", "Teraspark"
@@ -214,7 +214,8 @@ var credits_data: Array = [
 
 		["Barbarian", "HeadBand, Metal Bracers", "RRSKAI"],
 
-		["Bard", "Male", "Flasuban"],
+		["Bard", "Generics",      "Flasuban"],
+		["",     "Lewyn, Homer",  "Leo_Link, L95, Flasuban"],
 
 		["Baron", "Animation", "Leo_Link, Nuramon, Iscaneus, The_Big_Dededester"],
 		["",      "Handaxe, Sword, Lance, Magic",   "UltraFenix"],
@@ -229,7 +230,9 @@ var credits_data: Array = [
 		["Cavalier", "Original", "Team SALVAGED"],
 		["",         "Female",   "Flasuban"],
 
-		["Dancer", "Sword",     "Circleseverywhere, Sirkinite31"],
+		["Citizen", "Generics", "Nuramon"],
+
+		["Dancer", "Sword",     "Circleseverywhere, SirKnite31"],
 
 		["Dark Bishop", "Magic", "SHYUTERz, Blademaster"],
 		["",            "Staff", "Orihara_Saki"],
@@ -280,13 +283,14 @@ var credits_data: Array = [
 		["",     "Creidne",   "WarPath, Red Bean"],
 		["",     "Generics",  "Pikmin1211, Pushwall, St Jack, Swain, Itranc"],
 
-		["High Priest(ess)", "Animation", "MrNight48"],
-		["",                  "Fixed",     "DerTheVaporeon"],
+		["High Priest(ess)", "Generics", "MrNight48, DerTheVaporeon"],
 
 		["Lance Knight", "Animation", "Leo_Link"],
 		["",             "Script",    "Jj09"],
 
-		["Lightpriestess", "Staff", "Teraspark"],
+		["Lightpriestess", "Staff",           "Teraspark"],
+		["",               "Julia, Deirdre",  "GabrielKnight, SirKnite31, Seal, Sacred War"],
+		["",               "Linoan, Sara",    "Mikey_Seregon, Aviv"],
 
 		["Loptyr Mage", "Rip", "(Unknown)", { "name": { "italic": true, "dim": true } }],
 
@@ -297,10 +301,13 @@ var credits_data: Array = [
 		["",            "Sigurd",  "Caim Van Fang, Seliost1"],
 
 		["Mage", "Generics Fixed",   "Shin19"],
-		["",     "Short Hair Male",  "Omega Zero"],
-		["",     "Tailtiu",          "Yerek"],
-		["",     "Miranda",          "Leo_Link, L95"],
-		["",     "Arthur",           "Shin19, Saint Rubenio"],
+		["",     "Tailtiu",          "Leo_Link, L95"],
+		["",     "Linda, Tine",      "Yerek"],
+		["",     "Amid",             "Shin19, OmegaZero"],
+		["",     "Asbel",            "GabrielKnight"],
+		["",     "Azelle",           "Eldritch Abomination"],
+		["",     "Miranda",          "Flasuban, RRSKAI"],
+		["",     "Arthur",           "TytheBub"],
 
 		["Mage Fighter", "Female, Tailtiu",  "St Jack"],
 		["",             "Male",             "St Jack, The_Big_Dededester, Dolkar, CranJam"],
@@ -312,8 +319,12 @@ var credits_data: Array = [
 
 		["Master Knight", "Original", "tatata"],
 
-		["Mercenary", "Female", "Russell Clark, Orihara_Saki"],
-		["",          "Male",   "Alusq, Maiser6"],
+		["Mercenary", "Female",     "Zionzap, Reyk_Retro0337"],
+		["",          "Creidne",    "Russell Clark, Orihara_Saki"],
+		["",          "Machyua",    "Team SALVAGED, Jey the Count, Pushwall, Citrus"],
+		["",          "Holyn",      "Alusq, Maiser6"],
+		["",          "Dalvin",     "RRSKAI"],
+		["",          "Skasaher",   "Team SALVAGED, UltraFenix"],
 
 		["Paladin", "Female Staff",          "Primefusion"],
 		["",        "Ethlyn",                "Greentea, Brober"],
@@ -323,8 +334,7 @@ var credits_data: Array = [
 
 		["Pegasus Knight", "Generics", "Fiuke Bnuy, Jeorge_Reds"],
 
-		["Pegasus Rider", "Animation, Repalette", "Flasuban"],
-		["",              "Fixed",                "UltraFenix"],
+		["Pegasus Rider", "Generics", "Flasuban, UltraFenix"],
 
 		["Pirate", "Animation", "DerTheVaporeon"],
 
@@ -338,8 +348,7 @@ var credits_data: Array = [
 		["Princess", "Staff", "Lisandra_Brave"],
 		["",         "Sword", "RedBean"],
 
-		["Queen", "Original",  "TytheBub"],
-		["",      "Staff",     "Enthusiasm"],
+		["Queen", "Generics", "HyperGammaSpaces (HGS), Nuramon, Seliost1"],
 
 		["Rogue", "Lara",   "Leo_Link, TATUTA_CHANG"],
 		["",      "Patty",  "Pikmin1211, Maiser6, Ukelele, SD9k, Temp, Black Mage, Wan, Sme"],
@@ -347,7 +356,7 @@ var credits_data: Array = [
 
 		["Sage", "Ishtar",                       "L95, Brendor"],
 		["",     "Sara, Julia, Linoan",          "Yerek"],
-		["",     "Generics",                     "Aruka, Kenpuhu, Levin64, HyperGammaSpaces"],
+		["",     "Generics",                     "Aruka, Kenpuhu, Levin64, HyperGammaSpaces (HGS)"],
 		["",     "Ced, Asbel, Hawk, Homer",      "Greentea, DerTheVaporeon"],
 		["",     "Arvis (Young), Lewys",         "Faolin"],
 
@@ -361,7 +370,10 @@ var credits_data: Array = [
 
 		["Swordfighter", "Shiva",           "Leo_Link, Tsushi, Iscaneus"],
 		["",             "Troude",          "Leo_Link, UltraFenix"],
-		["",             "Female Pants",    "CelestiaHeart"],
+		["",             "Larcei",          "Seliost1"],
+		["",             "Ayra",            "Greentea, RobertFPY"],
+		["",             "Mareeta",         "Maiser6, Alice"],
+		["",             "Female",          "Maiser6"],
 
 		["Swordmaster", "Shiva",                        "Solusaeternus, SHYUTERz"],
 		["",            "Troude",                       "Greentea, RobertFPY, Itranc, Seliost1"],
@@ -373,7 +385,7 @@ var credits_data: Array = [
 		["",            "Female Pants",                 "Seliost1"],
 
 		["Thief", "Lara, Patty, Dew",   "Pikmin1211, Maiser6, Skitty, GabrielKnight"],
-		["",      "Daisy",              "Eldritch Abomination, GabrielKnight, Skitty, Mikey Séregon"],
+		["",      "Daisy",              "Eldritch Abomination, GabrielKnight, Skitty, Mikey_Seregon"],
 		["",      "Lifis",              "RedBean"],
 
 		["Warrior", "Handaxe",  "Yerek"],
