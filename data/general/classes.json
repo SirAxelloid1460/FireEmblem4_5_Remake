@@ -1123,7 +1123,7 @@
    ]
   ],
   "map_sprite_nid": "CavalierA",
-  "combat_anim_nid": "AxeCavalier"
+  "combat_anim_nid": "AxeKnight"
  },
  {
   "id": "CavalierB",
@@ -2907,7 +2907,7 @@
    ]
   ],
   "map_sprite_nid": "LordKnight",
-  "combat_anim_nid": "Lord Knight"
+  "combat_anim_nid": "LordKnight"
  },
  {
   "id": "LordLeaf",
@@ -2976,7 +2976,7 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "LordLeaf",
-  "combat_anim_nid": "LordLeaf"
+  "combat_anim_nid": "Prince"
  },
  {
   "id": "LordSeliph",

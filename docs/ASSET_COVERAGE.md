@@ -7,7 +7,7 @@
 
 ## Resumen
 
-- Clases: **66** · con map sprite: **66** · con combat anim genérica: **5**
+- Clases: **66** · con map sprite: **66** · con combat anim genérica: **6**
 - Personajes: **64** · con retrato: **59**
 - Carpetas de combat anim: **19**
 
@@ -31,7 +31,7 @@
 | Barbarian | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
 | Bard | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
 | Cavalier | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Javelin, Lance, MagicSword, Sword |
-| CavalierA | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
+| CavalierA | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, HandAxe |
 | CavalierB | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
 | CavalierL | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
 | CavalierS | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
@@ -107,7 +107,7 @@
 | Alec | Cavalier | M | ✅ | ⬜ | ⬜ | — |
 | Noish | Cavalier | M | ✅ | ⬜ | ⬜ | — |
 | NordionGuard | Cavalier | M | ⬜ | ⬜ | ⬜ | — |
-| Lex | CavalierA | M | ✅ | ⬜ | ⚠️ | Axe, HandAxe |
+| Lex | CavalierA | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
 | Midir | CavalierB | M | ✅ | ⬜ | ⬜ | — |
 | Finn | CavalierL | M | ⬜ | ⬜ | ⬜ | — |
 | Beowulf | CavalierS | M | ✅ | ⬜ | ⬜ | — |
@@ -128,8 +128,8 @@
 | Phillip | General | M | ✅ | ⬜ | ⬜ | — |
 | Claude | HighPriest | M | ✅ | ⬜ | ⬜ | — |
 | Deirdre | LightPriestess | F | ✅ | ⬜ | ⬜ | — |
-| Sigurd | LordKnight | M | ✅ | ⬜ | ⚠️ | Javelin, Lance, MagicSword, Sword |
-| Leif | LordLeaf | M | ✅ | ⬜ | ⚠️ | MagicSword, Sword |
+| Sigurd | LordKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Leif | LordLeaf | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Azel | Mage | M | ✅ | ⬜ | ⬜ | — |
 | Tailtiu | Mage | M | ✅ | ⬜ | ⬜ | — |
 | Erinys | PegasusKnight | M | ✅ | ⬜ | ⬜ | — |
@@ -137,7 +137,7 @@
 | Holyn | PreHero | M | ✅ | ⬜ | ⬜ | — |
 | Aideen | Priestess | F | ✅ | ⬜ | ⬜ | — |
 | Safy | Priestess | F | ✅ | ⬜ | ⬜ | — |
-| Lachesis | Princess | M | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
+| Lachesis | Princess | F | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
 | Arvis | Sage | M | ⬜ | ⬜ | ⬜ | — |
 | Brigid | Sniper | F | ✅ | ⬜ | ⬜ | — |
 | Ayra | Swordfighter | F | ✅ | ⬜ | ⬜ | — |
@@ -151,10 +151,3 @@
 | Gandolf | Warrior | M | ✅ | ⬜ | ⬜ | — |
 | GenoaGuard | Warrior | M | ⬜ | ⬜ | ⬜ | — |
 | Kinbois | Warrior | M | ✅ | ⬜ | ⬜ | — |
-
-## ⚠️ Problemas detectados (el juego no encuentra estos anims)
-
-- Clase **`LordKnight`**: `combat_anim_nid = "Lord Knight"` tiene un **espacio** → el resolver busca una carpeta con espacio que nunca existirá. Quitar el espacio.
-- **`Lex`** (CavalierA): anim en `assets/combat_anims/AxeKnight_Lex/` pero `combat_anim_nid="AxeCavalier"` → el resolver busca `AxeCavalier_Lex` (no existe). Renombrar la carpeta a `AxeCavalier_Lex` **o** corregir `combat_anim_nid`.
-- **`Sigurd`** (LordKnight): anim en `assets/combat_anims/LordKnight_Sigurd/` pero `combat_anim_nid="Lord Knight"` → el resolver busca `Lord Knight_Sigurd` (no existe). Renombrar la carpeta a `Lord Knight_Sigurd` **o** corregir `combat_anim_nid`.
-- **`Leif`** (LordLeaf): anim en `assets/combat_anims/Prince_Leif/` pero `combat_anim_nid="LordLeaf"` → el resolver busca `LordLeaf_Leif` (no existe). Renombrar la carpeta a `LordLeaf_Leif` **o** corregir `combat_anim_nid`.

@@ -1492,7 +1492,7 @@
   "desc": "The princess of Nordion and the younger half-sister of Eldigan.",
   "klass": "Princess",
   "level": 1,
-  "gender": "M",
+  "gender": "F",
   "bases": {
    "HP": 26,
    "STR": 9,
