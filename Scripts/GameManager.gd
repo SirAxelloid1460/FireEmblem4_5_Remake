@@ -293,6 +293,80 @@ func _check_region_events(pos: Vector2i, unit: Unit) -> void:
 				event_system.trigger_event(sub_nid,
 						{ "unit": unit, "region": r })
 
+
+# ══════════════════════════════════════════════════════════════════════════════
+# EVENTOS DE ITEM (Return Ring / báculo Return, etc.)
+# ══════════════════════════════════════════════════════════════════════════════
+
+## Punto de entrada que ItemSystem._fire_event llama al usar un item con
+## event_on_use. Despacha al handler concreto.
+func trigger_item_event(event_id: String, user, target) -> void:
+	match event_id:
+		"ReturnToHomeCastle":
+			# El Return Ring se auto-apunta (target == user → vuelve el portador);
+			# el báculo Return apunta a un aliado (vuelve el aliado).
+			_return_to_home_castle(target if target != null else user)
+		_:
+			push_warning("GameManager: evento de item no implementado '%s'" % event_id)
+
+## Posición del castillo principal del capítulo: la región llamada "Return"
+## (así se marca en los .ltproj de FE4/FE5). Fallback: primera región de
+## formación (zona de despliegue del jugador). (-1,-1) si no hay ninguna.
+func _home_castle_position() -> Vector2i:
+	if not has_meta("chapter_regions"):
+		return Vector2i(-1, -1)
+	var regions: Array = get_meta("chapter_regions")
+	for r in regions:
+		if r is Dictionary and str(r.get("nid", "")) == "Return":
+			return r.get("position", Vector2i(-1, -1))
+	for r in regions:
+		if r is Dictionary and str(r.get("region_type", "")) == "formation":
+			return r.get("position", Vector2i(-1, -1))
+	return Vector2i(-1, -1)
+
+## Casilla libre y caminable más cercana a `center` (BFS por anillos). El grid
+## debe tener la unidad ya retirada para no chocar consigo misma.
+func _nearest_free_tile(center: Vector2i) -> Vector2i:
+	if grid == null:
+		return Vector2i(-1, -1)
+	var visited := {center: true}
+	var queue: Array[Vector2i] = [center]
+	var guard := 0
+	while not queue.is_empty() and guard < 4000:
+		guard += 1
+		var p: Vector2i = queue.pop_front()
+		if grid.is_walkable(p):   # válida + sin unidad + terreno caminable
+			return p
+		for n in grid.get_neighbors(p):
+			if not visited.has(n):
+				visited[n] = true
+				queue.append(n)
+	return Vector2i(-1, -1)
+
+## Teleporta `unit` al castillo principal (o a la casilla libre más cercana).
+## Consume el turno de la unidad (has_moved). No hace nada si no hay castillo
+## o no hay casilla libre.
+func _return_to_home_castle(unit) -> void:
+	if unit == null or grid == null:
+		return
+	var home := _home_castle_position()
+	if home == Vector2i(-1, -1):
+		push_warning("GameManager: sin región 'Return'/formación; no se puede volver al castillo")
+		return
+	var from: Vector2i = unit.grid_position
+	grid.remove_unit(from)                  # retirar antes de buscar hueco
+	var dest := _nearest_free_tile(home)
+	if dest == Vector2i(-1, -1):
+		grid.place_unit(unit, from)         # revertir: vuelve a su sitio
+		push_warning("GameManager: sin casilla libre junto al castillo principal")
+		return
+	grid.place_unit(unit, dest)             # fija grid_position + global_position
+	unit.has_moved = true                   # gasta el turno
+	unit_moved.emit(unit, from, dest)
+	if fow_system:
+		fow_system.update_team_vision("player", player_units)
+
+
 var _action_menu: ActionMenu = null
 var ui_layer: CanvasLayer = null
 
