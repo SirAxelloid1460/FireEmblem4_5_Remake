@@ -6,7 +6,7 @@
 #   - Wrath: HP ≤ 1/3 (no 25%)
 #   - Charisma: +15 HIT/AVO/CRIT (fiel al LT real, no +10)
 #   - Rescue penalty: SPD/2 y STR/2 al cargar unidad
-#   - Pavise: ((DEF+LVL)/2)% vs físico, ((RES+LVL)/2)% vs mágico
+#   - Pavise: proc = promedio de niveles (def+atk)/2 % (port GBA)
 #   - Miracle añadido: LCK%, sobrevive golpe letal con 1 HP
 #   - Nihil (FE5): niega todas las proc del bando enemigo
 #   - Awareness (FE4): niega crít + sword skills + effectividad (distinto de Nihil)
@@ -230,16 +230,13 @@ static func execute_attack(atk: Unit, def: Unit, dist: int,
 	var is_eff := (not aware) and _is_effective(wpn, def)
 	var dmg    := _calc_dmg(atk, def, is_crit, is_eff, sword_skill, t_def, combat_flags)
 
-	# Pavise: ((DEF+LVL)/2)% vs físico, ((RES+LVL)/2)% vs mágico
+	# Pavise (Great Shield): anula el daño con probabilidad = promedio de los
+	# niveles de defensor y atacante.  FE4/FE5 usan solo el nivel propio y FE8
+	# el del enemigo; como el port es a GBA tomamos la media de ambos.
 	if not nihil and not is_crit and _has_skill(def, "Pavise"):
-		var pavise_rate: int = (_stat(def, "RES") + def.level) / 2 if is_magic else (_stat(def, "DEF") + def.level) / 2
+		var pavise_rate: int = (def.level + atk.level) / 2
 		if randi() % 100 < pavise_rate:
 			dmg = 0
-
-	# Big Shield (LVL%)
-	if not nihil and not is_crit and _has_skill(def, "Pavise") \
-			and randi() % 100 < def.level:
-		dmg = 0
 
 	# Miracle (LCK%): sobrevive golpe letal con 1 HP
 	if not nihil and dmg >= def.current_hp and _has_skill(def, "Miracle") \
