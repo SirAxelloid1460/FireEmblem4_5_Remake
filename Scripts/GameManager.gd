@@ -391,6 +391,8 @@ func show_action_menu():
 	var enemies_in_range = get_enemies_in_attack_range(selected_unit)
 	if enemies_in_range.size() > 0:
 		options.append({ "id": "attack", "text": "Attack" })
+	if _unit_has_usable_item(selected_unit):
+		options.append({ "id": "item", "text": "Item" })
 	options.append({ "id": "wait", "text": "Wait" })
 
 	_close_action_menu()
@@ -422,8 +424,121 @@ func _on_action_selected(id: String) -> void:
 	match id:
 		"attack":
 			enter_targeting_mode()
+		"item":
+			_show_item_menu(selected_unit)
 		_:  # "wait" y cualquier fallback seguro
 			end_unit_action()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# USO DE OBJETOS EN EL MAPA (acción "Item")
+# ══════════════════════════════════════════════════════════════════════════════
+
+## Consumibles del inventario que se pueden USAR en el campo sobre el portador
+## (no rings pasivos on_hold, no armas). Duck-typed sobre ConsumableData.
+func _unit_usable_items(unit) -> Array:
+	var out: Array = []
+	if unit == null:
+		return out
+	for it in unit.inventory:
+		if _is_usable_consumable(it):
+			out.append(it)
+	return out
+
+func _unit_has_usable_item(unit) -> bool:
+	return not _unit_usable_items(unit).is_empty()
+
+## ¿Es un consumible de auto-uso en el campo? (ConsumableData con efecto activo).
+func _is_usable_consumable(it) -> bool:
+	if it == null or it is Weapon:
+		return false
+	if "status_on_hold" in it and str(it.status_on_hold) != "":
+		return false   # ring pasivo: aplica su efecto mientras se porta, no se "usa"
+	if "uses" in it and int(it.uses) == 0:
+		return false
+	if "heal" in it and int(it.heal) > 0:
+		return true
+	if "status_on_hit" in it and str(it.status_on_hit) != "":
+		return true   # manual: enseña skill
+	if "permanent_stat_change" in it and not (it.permanent_stat_change as Dictionary).is_empty():
+		return true
+	if "restore_specific" in it and str(it.restore_specific) != "":
+		return true
+	if "restore" in it and bool(it.restore):
+		return true
+	if _item_component(it, "event_on_use") != null:
+		return true   # Return Ring, etc.
+	return false
+
+## Lee un componente [key, val] de un ConsumableData (formato LT). null si falta.
+func _item_component(it, key: String):
+	if not ("components" in it):
+		return null
+	for c in it.components:
+		if c is Array and c.size() >= 1 and str(c[0]) == key:
+			return c[1] if c.size() > 1 else true
+	return null
+
+## Submenú con los objetos usables del inventario.
+func _show_item_menu(unit) -> void:
+	var items := _unit_usable_items(unit)
+	if items.is_empty():
+		show_action_menu()
+		return
+	var options: Array = []
+	for i in items.size():
+		var it = items[i]
+		var nm: String = str(it.name) if ("name" in it and str(it.name) != "") else str(it.nid)
+		if "uses" in it and int(it.uses) > 0:
+			nm += "  (%d)" % int(it.uses)
+		options.append({ "id": "use:%d" % i, "text": nm })
+	options.append({ "id": "back", "text": "Back" })
+	_close_action_menu()
+	_action_menu = ActionMenu.new()
+	_ensure_ui_layer().add_child(_action_menu)
+	_action_menu.setup(options, _unit_menu_anchor(unit))
+	_action_menu.action_selected.connect(_on_item_menu_selected)
+
+func _on_item_menu_selected(id: String) -> void:
+	_action_menu = null
+	if id == "back":
+		show_action_menu()
+		return
+	if id.begins_with("use:"):
+		var idx := int(id.substr(4))
+		var items := _unit_usable_items(selected_unit)
+		if idx >= 0 and idx < items.size():
+			_use_consumable(selected_unit, items[idx])
+	end_unit_action()
+
+## Aplica el efecto de un consumible sobre su portador y gasta un uso.
+func _use_consumable(unit, item) -> void:
+	if unit == null or item == null:
+		return
+	if "heal" in item and int(item.heal) > 0:
+		unit.heal(int(item.heal))
+	# Manual: enseña la(s) skill(s) (status_on_hit).
+	if "status_on_hit" in item and str(item.status_on_hit) != "":
+		for sk in str(item.status_on_hit).split(","):
+			sk = sk.strip_edges()
+			if sk != "" and not unit.has_skill(sk):
+				unit.learn_skill(sk)
+	# Boost permanente de stats.
+	if "permanent_stat_change" in item:
+		for stat in (item.permanent_stat_change as Dictionary):
+			unit.increase_stat_permanently(str(stat), int(item.permanent_stat_change[stat]))
+	# Restaurar estados.
+	if "restore_specific" in item and str(item.restore_specific) != "":
+		unit.remove_status(str(item.restore_specific))
+	# Evento de item (Return Ring, etc.).
+	var ev = _item_component(item, "event_on_use")
+	if ev != null and str(ev) != "":
+		trigger_item_event(str(ev), unit, unit)
+	# Gastar un uso; si se agota, retirar del inventario.
+	if "uses" in item and int(item.uses) > 0:
+		item.uses = int(item.uses) - 1
+		if int(item.uses) <= 0:
+			unit.inventory.erase(item)
 
 func enter_targeting_mode():
 	"""Entra en modo de selección de objetivo"""

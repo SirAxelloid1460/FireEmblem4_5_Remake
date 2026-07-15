@@ -514,8 +514,9 @@ static func _instantiate_item(item_nid: String, items_db: Dictionary):
 		# weapon_type definido.
 		if "weapon_type" in entry and str(entry.weapon_type) != "":
 			return Weapon.from_item_data(entry)
-		# No es un arma — devolver el objeto tal cual (consumible).
-		return entry
+		# No es un arma — consumible. Se DUPLICA para que los usos (uses) sean
+		# por-instancia y no corrompan el recurso compartido de GameDB.
+		return entry.duplicate(true) if entry is Resource else entry
 	# 2. Datos LT crudos en Dictionary.
 	if _lt_is_weapon(entry):
 		return Weapon.from_lt(entry)
