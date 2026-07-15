@@ -28,7 +28,35 @@ FE5_DEFAULT = r"D:\FEHW\lt-maker-moded\Thracia776.ltproj"
 OUT_DEFAULT = os.path.join(os.path.dirname(__file__), "..", "data")
 
 STAT_KEYS = ["HP","STR","MAG","SKL","SPD","LCK","DEF","RES","CON","MOV"]
-TABLES = ["weapon_ranks","terrain","mcost","ai","equations","constants","stats","weapons"]
+TABLES = ["weapon_ranks","terrain","mcost","ai","equations","constants","stats","weapons",
+          # Tablas de referencia adicionales (soportes, dificultad, facciones, etc.).
+          "affinities","difficulty_modes","factions","game_var_slots","lore","overworlds",
+          "parties","raw_data","support_constants","support_pairs","support_ranks","tags"]
+
+# Tablas que además se copian a la RAÍZ de data/<game>/ (donde las cargan los
+# bootstraps, p.ej. PrologueTest lee data/fe4/support_pairs.json).
+ROOT_TABLES = ["support_pairs","support_ranks"]
+
+# Remap de nids de unidad (igual que build_levels/build_events) — para las
+# tablas que referencian unidades (support_pairs unit1/unit2, parties leader…).
+NID_REMAP = {
+    "FakeElliot": "Elliot", "FakeMidir": "Midir",
+    "Chagall1": "Chagall", "Chagall2": "Chagall",
+    "EldiganAlly": "Eldigan", "EldiganEnemy": "Eldigan",
+    "Leaf": "Leif",
+}
+
+
+def _remap_nids(obj):
+    """Reemplaza recursivamente strings que sean EXACTAMENTE un nid remapeado
+    (claves distintivas → seguro por coincidencia exacta)."""
+    if isinstance(obj, str):
+        return NID_REMAP.get(obj, obj)
+    if isinstance(obj, list):
+        return [_remap_nids(v) for v in obj]
+    if isinstance(obj, dict):
+        return {k: _remap_nids(v) for k, v in obj.items()}
+    return obj
 
 # Duplicados que sólo existían para sortear limitaciones de LT (versiones
 # Fake/ally/enemy por capítulo). En el motor nativo basta una entrada.
@@ -270,7 +298,11 @@ def copy_tables(proj, out_game_dir):
                 data = json.load(f)
             if t == "ai":
                 _remap_ai_teams(data)
+            data = _remap_nids(data)   # unifica nids de unidad referenciados
             dump(os.path.join(out_game_dir, "tables", t + ".json"), data)
+            # Algunas tablas también van a la raíz del juego (bootstraps).
+            if t in ROOT_TABLES:
+                dump(os.path.join(out_game_dir, t + ".json"), data)
             n += 1
     return n
 

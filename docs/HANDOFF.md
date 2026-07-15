@@ -334,3 +334,68 @@ Los eventos ya no sólo corren su lógica: se **ven y se oyen**.
 4. Reemplazar el contenido FE8 de las cinemáticas por el guión auténtico de FE4 (ya en
    `data/fe4/events/`: `Intro`/`Narration`/`Outro`) y cablear MainMenu → apertura → Prólogo.
 5. Pipeline de guardado/carga real (Continue). Menú de acciones: Item/Staff, deshacer mov.
+
+---
+
+## 9) Sesión 2026‑07 — integrar tablas de datos que faltaban de LT
+
+Auditoría de brecha `<ltproj>/game_data/*` vs `data/`: la data general (classes/weapons/
+items/skills/units), niveles y eventos **ya estaban completos** (los propios `.ltproj` sólo
+tienen construidos FE4 caps 0‑2 y FE5 cap 1 — no hay más capítulos que portar). Traducciones:
+integradas como recursos Godot (CSV→.translation). **La única brecha eran las tablas de
+referencia.**
+
+### Tablas portadas (FE4 + FE5) ✅
+- `tools/build_from_lt.py`: `TABLES` ampliado con **affinities, difficulty_modes, factions,
+  game_var_slots, lore, overworlds, parties, raw_data, support_constants, support_pairs,
+  support_ranks, tags**. `copy_tables` aplica `NID_REMAP` (unifica nids de unidad
+  referenciados, p.ej. support_pairs `unit1/unit2`, parties `leader`) y copia
+  `support_pairs`/`support_ranks` también a la **raíz** `data/<game>/` (donde las cargan los
+  bootstraps).
+- Generadas en `data/fe4/tables/`, `data/fe5/tables/` + `data/<game>/support_pairs.json` y
+  `support_ranks.json`.
+
+### Efecto
+- **Supports YA tienen datos**: `PrologueTest` carga `data/fe4/support_pairs.json` (27 pares)
+  y `support_ranks.json` (Lover/Married) → `SupportSystem.load_from_project` funciona (los
+  bonuses de afinidad ya estaban hardcodeados en `AFFINITY_BONUS`, coherente con el JSON LT).
+- El resto (difficulty_modes Normal/Elite, factions, parties, tags, lore, raw_data…) queda
+  como **datos disponibles** para cablear en la fase de correcciones.
+
+### Cableado hecho ✅
+1. **difficulty_modes** → `GameDB.build_project_data` lee la dificultad activa (meta
+   `difficulty` que fija MainMenu en `GameMode`; default "Normal") e incluye el modo entero
+   en `project_data["difficulty"]`. `LevelLoader.build_unit` llama a `_apply_difficulty`, que
+   suma `player_bases`/`enemy_bases`/`boss_bases` según bando/boss. (En FE4 las bases son 0 —
+   Normal/Elite difieren en `growths_choice`: Dynamic vs Random— así que el efecto visible
+   llega cuando se cablee el sistema de growths, que ya puede leer
+   `project_data["difficulty"]["growths_choice"]`.)
+2. **Tablas expuestas vía `GameDB`**: `get_table/get_table_indexed` + accesores
+   `get_factions/get_faction`, `get_parties/get_party`, `get_tags`, `get_lore/get_lore_entry`,
+   `get_affinities/get_affinity`, `get_raw_data`, `get_support_constants/get_support_constant`,
+   `get_difficulty_modes/get_difficulty_mode` (con caché). Listos para consumidores (facción de
+   unidad, MarketList de tiendas en `raw_data`, biblioteca de `lore`, etc.).
+
+### Combat anims — wiring (assets ya pegados) ✅
+Los assets se guardan como `assets/combat_anims/{NID}_{Variant}/{NID}_{Variant}_{Weapon}.png`
++ `.json` (los genera `tools/build_combat_sheet.py`).
+- **Fix crítico**: `CombatAnimDatabase` buscaba en layout PLANO
+  (`combat_anims/{anim}.png`) pero los assets están en **subcarpeta** por variante.
+  Nuevo `_resolve_paths` busca `combat_anims/{NID}_{Variant}/{anim}.png` (folder = anim sin el
+  último `_{Weapon}`), con fallback al plano. Ahora `has_anim`/`load_anim`/`CombatAnimResolver`/
+  `CombatAnimTest` (F6) encuentran los assets.
+- **Enganche al combate**: `GameManager.initiate_combat` reproduce **`CombatAnimScene`** (sobre
+  un `CanvasLayer`, escala ×5 centrada, fondo oscuro) cuando **ambas** unidades resuelven a una
+  animación existente; si falta alguna, **combate instantáneo** (comportamiento previo). Toggle
+  `COMBAT_CINEMATIC` / escala `COMBAT_ANIM_SCALE`.
+- **HP sin doble conteo**: `calculate_combat` aplica el daño de inmediato; la cinemática necesita
+  reproducir desde el HP inicial → se **guarda el HP inicial, se restaura para la cinemática, y se
+  reaplica el HP final autoritativo** tras ella. Muertes/EXP/victoria se resuelven después.
+- **Input bloqueado** durante la cinemática (`_combat_busy` en `_input`); la IA `await`ea el
+  combate para no solapar dos peleas.
+- *A validar en editor*: escala/posición de la escena (`COMBAT_ANIM_SCALE`, centrado) y el timing
+  del HP en pantalla (la escena lleva su propio conteo; el autoritativo se reaplica al final).
+
+### Pendiente
+- **Combat palettes** (recolor por equipo/personaje en combate): `CombatPaletteSystem` existe;
+  cablear cuando el usuario aporte `assets/combat_palettes/palette_data/`.

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0j4uoyb4kp6p"
-path="res://.godot/imported/Lucharba.png-beddc794e3b12e42be148bd62daaa13f.ctex"
+path="res://.godot/imported/Iucharba.png-beddc794e3b12e42be148bd62daaa13f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Lucharba.png"
-dest_files=["res://.godot/imported/Lucharba.png-beddc794e3b12e42be148bd62daaa13f.ctex"]
+source_file="res://assets/portraits/characters/Iucharba.png"
+dest_files=["res://.godot/imported/Iucharba.png-beddc794e3b12e42be148bd62daaa13f.ctex"]
 
 [params]
 

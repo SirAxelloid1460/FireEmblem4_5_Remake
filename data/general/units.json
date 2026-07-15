@@ -3,7 +3,7 @@
   "nid": "Aideen",
   "name": "Aideen",
   "desc": "Sigurd's childhood friend and one of the two daughters of Duke Ring of Jungby.",
-  "klass": "Priest",
+  "klass": "Priestess",
   "level": 1,
   "gender": "F",
   "bases": {
@@ -654,7 +654,7 @@
   "nid": "Deirdre",
   "name": "Deirdre",
   "desc": "Living descendant of Saint Maera and daughter of Prince Kurth of Grannvale",
-  "klass": "LightPriest",
+  "klass": "LightPriestess",
   "level": 1,
   "gender": "F",
   "bases": {
@@ -1492,7 +1492,7 @@
   "desc": "The princess of Nordion and the younger half-sister of Eldigan.",
   "klass": "Princess",
   "level": 1,
-  "gender": "M",
+  "gender": "F",
   "bases": {
    "HP": 26,
    "STR": 9,
@@ -3014,7 +3014,7 @@
   "nid": "Safy",
   "name": "Safy",
   "desc": "Priestess of Tarrah, servant of Linoan and sister of Tina.",
-  "klass": "Priest",
+  "klass": "Priestess",
   "level": 1,
   "gender": "F",
   "bases": {

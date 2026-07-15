@@ -84,6 +84,50 @@ func get_terrain(game: String, nid: String) -> Dictionary:
 func terrain_name(game: String, nid: String) -> String:
 	return str(get_terrain(game, nid).get("name", ""))
 
+
+# ── Tablas de referencia LT (factions/parties/tags/lore/affinities/…) ─────────
+# Cargadas bajo demanda de data/<game>/tables/<name>.json (Array), con caché.
+
+var _tables_cache: Dictionary = {}   # "game/name" -> Array
+
+## Devuelve una tabla como Array (o [] si no existe).
+func get_table(game: String, name: String) -> Array:
+	var key := "%s/%s" % [game, name]
+	if not _tables_cache.has(key):
+		_tables_cache[key] = _read_array("res://data/%s/tables/%s.json" % [game, name])
+	return _tables_cache[key]
+
+## La misma tabla indexada por 'nid'.
+func get_table_indexed(game: String, name: String) -> Dictionary:
+	var out := {}
+	for e in get_table(game, name):
+		if e is Dictionary:
+			out[str(e.get("nid", ""))] = e
+	return out
+
+## Accesores concretos.
+func get_factions(game: String) -> Array:       return get_table(game, "factions")
+func get_faction(game: String, nid: String) -> Dictionary: return get_table_indexed(game, "factions").get(nid, {})
+func get_parties(game: String) -> Array:         return get_table(game, "parties")
+func get_party(game: String, nid: String) -> Dictionary:   return get_table_indexed(game, "parties").get(nid, {})
+func get_tags(game: String) -> Array:            return get_table(game, "tags")           # Array[String]
+func get_lore(game: String) -> Array:            return get_table(game, "lore")
+func get_lore_entry(game: String, nid: String) -> Dictionary: return get_table_indexed(game, "lore").get(nid, {})
+func get_affinities(game: String) -> Array:      return get_table(game, "affinities")
+func get_affinity(game: String, nid: String) -> Dictionary: return get_table_indexed(game, "affinities").get(nid, {})
+func get_raw_data(game: String, nid: String) -> Dictionary: return get_table_indexed(game, "raw_data").get(nid, {})
+func get_support_constants(game: String) -> Array: return get_table(game, "support_constants")  # Array[[k,v]]
+func get_difficulty_modes(game: String) -> Array:  return get_table(game, "difficulty_modes")
+func get_difficulty_mode(game: String, nid: String) -> Dictionary:
+	return get_table_indexed(game, "difficulty_modes").get(nid, {})
+
+## Constante de soporte por clave (support_constants es Array de pares [k, v]).
+func get_support_constant(game: String, key: String, default_val = null):
+	for pair in get_support_constants(game):
+		if pair is Array and pair.size() >= 2 and str(pair[0]) == key:
+			return pair[1]
+	return default_val
+
 ## Carga el grid de un tilemap nativo (res://data/<game>/tilemaps) vía
 ## TilemapLoader → { width, height, terrain: {Vector2i: terrain_nid} }.
 ## {} si no existe (el caller hace fallback a mapa plano).
@@ -118,12 +162,19 @@ func build_project_data(game: String) -> Dictionary:
 		for e in _read_array("res://data/general/" + fname):
 			if e is Dictionary:
 				items[str(e.get("nid", ""))] = e
+	# Dificultad activa (Normal/Elite): la fija MainMenu como meta en GameMode.
+	# Se incluye el modo entero para que LevelLoader aplique player/enemy/boss_bases.
+	var diff_nid := "Normal"
+	var gm := get_node_or_null("/root/GameMode")
+	if gm != null and gm.has_meta("difficulty"):
+		diff_nid = str(gm.get_meta("difficulty"))
 	return {
 		"units": units,
 		"classes": _read_indexed("res://data/general/classes.json", "id"),
 		"items": items,
 		"terrain": _read_indexed("res://data/%s/tables/terrain.json" % game, "nid"),
 		"ai": _read_indexed("res://data/%s/tables/ai.json" % game, "nid"),
+		"difficulty": get_difficulty_mode(game, diff_nid),
 	}
 
 ## Lee un .json array y devuelve el Array (o [] si falla).
