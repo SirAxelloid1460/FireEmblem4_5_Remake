@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4rnssknmsqbr"
-path="res://.godot/imported/APaladin-stand.png-68d292067f9dd4749902b09f117938ae.ctex"
+uid="uid://c0oc3wlt8yban"
+path="res://.godot/imported/Generic_Portrait_DarkMage.png-195fdfedd10d68825977f34c461a44f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/APaladin-stand.png"
-dest_files=["res://.godot/imported/APaladin-stand.png-68d292067f9dd4749902b09f117938ae.ctex"]
+source_file="res://assets/portraits/generic/Generic_Portrait_DarkMage.png"
+dest_files=["res://.godot/imported/Generic_Portrait_DarkMage.png-195fdfedd10d68825977f34c461a44f5.ctex"]
 
 [params]
 

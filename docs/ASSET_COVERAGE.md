@@ -7,7 +7,7 @@
 
 ## Resumen
 
-- Clases: **64** · con map sprite: **64** · con combat anim (Generic o género): **47**
+- Clases: **63** · con map sprite: **63** · con combat anim (Generic o género): **48**
 - Personajes: **64** · con retrato: **59**
 - Carpetas de combat anim: **126**
 
@@ -49,14 +49,12 @@
 | Swordfighter | 1 | ✅ | ✅ | — | ✅ | ✅ | MagicSword, Sword |
 | Thief | 1 | ✅ | ✅ | ✅ | — | — | MagicSword, Sword |
 | Troubadour | 1 | ✅ | ✅ | ✅ | — | — | MagicStaff, MagicSword, Sword |
-| APaladin | 2 | ✅ | ✅ | ⬜ | — | — | — |
-| BPaladin | 2 | ✅ | ✅ | ⬜ | — | — | — |
 | Berserker | 2 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
 | Bishop | 2 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
 | BowKnight | 2 | ✅ | ✅ | ✅ | — | — | — |
 | Dancer | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Refresh, Sword |
 | Dancer_Lara | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Refresh, Sword |
-| DarkSage | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| DarkMage | 2 | ✅ | ✅ | ✅ | — | — | MagicAnima |
 | DragonMaster | 2 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
 | DukeKnight | 2 | ✅ | ✅ | ⬜ | — | — | — |
 | FalconKnight | 2 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
@@ -70,6 +68,7 @@
 | MageFighter | 2 | ✅ | ✅ | — | ✅ | ✅ | MagicAnima, MagicStaff, MagicSword, Sword |
 | MageKnight | 2 | ✅ | ✅ | — | ✅ | ✅ | MagicAnima, MagicSword, Sword |
 | MasterKnight | 2 | ✅ | ✅ | — | ✅ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
+| Paladin | 2 | ✅ | ✅ | ⬜ | — | — | — |
 | Rogue | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Sword |
 | Sage | 2 | ✅ | ✅ | — | ✅ | ✅ | MagicAnima, MagicStaff |
 | Sniper | 2 | ✅ | ✅ | — | ✅ | ✅ | Bow |
@@ -85,10 +84,6 @@
 
 | Personaje | Clase | Género | Retrato | Map propio | Combat anim | Armas de su anim |
 |---|---|---|---|---|---|---|
-| Alvar | APaladin | M | ✅ | ⬜ | ⬜ | — |
-| Eldigan | APaladin | M | ✅ | ⬜ | ⬜ | — |
-| Evan | APaladin | M | ✅ | ⬜ | ⬜ | — |
-| Evar | APaladin | M | ✅ | ⬜ | ⬜ | — |
 | Jamke | Archer | M | ✅ | ⬜ | ✅ | Bow |
 | Ronan | Archer | M | ✅ | ⬜ | ✅ | Bow |
 | Tanya | Archer | F | ✅ | ⬜ | ✅ | Bow |
@@ -108,7 +103,7 @@
 | Beowulf | CavalierS | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Coirpre | Child | M | ✅ | ⬜ | ⬜ | — |
 | Sylvia | Dancer | M | ✅ | ⬜ | ✅ | MagicSword, Refresh, Sword |
-| Sandima | DarkSage | M | ✅ | ⬜ | ⬜ | — |
+| Sandima | DarkMage | M | ✅ | ⬜ | ✅ | MagicAnima |
 | Elliot | DukeKnight | M | ✅ | ⬜ | ⬜ | — |
 | Quan | DukeKnight | M | ✅ | ⬜ | ⬜ | — |
 | Zain | DukeKnight | M | ✅ | ⬜ | ⬜ | — |
@@ -129,6 +124,10 @@
 | Tailtiu | Mage | M | ✅ | ⬜ | ⚠️ | MagicAnima, MagicStaff, MagicSword, Sword |
 | FakeHolyn | Mercenary | M | ✅ | ⬜ | ✅ | Axe, HandAxe, MagicSword, Sword |
 | Holyn | Mercenary | M | ✅ | ⬜ | ✅ | Axe, HandAxe, MagicSword, Sword |
+| Alvar | Paladin | M | ✅ | ⬜ | ⬜ | — |
+| Eldigan | Paladin | M | ✅ | ⬜ | ⬜ | — |
+| Evan | Paladin | M | ✅ | ⬜ | ⬜ | — |
+| Evar | Paladin | M | ✅ | ⬜ | ⬜ | — |
 | Erinys | PegasusKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Aideen | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
 | Safy | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |

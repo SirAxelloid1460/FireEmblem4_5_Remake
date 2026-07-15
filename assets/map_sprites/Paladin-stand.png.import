@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ec21qj38qs5m"
-path="res://.godot/imported/Paladin-stand.png-038405705e8095080590fca2dfc0106a.ctex"
+uid="uid://c4rnssknmsqbr"
+path="res://.godot/imported/Paladin-stand.png-68d292067f9dd4749902b09f117938ae.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/map_sprites/Paladin-stand.png"
-dest_files=["res://.godot/imported/Paladin-stand.png-038405705e8095080590fca2dfc0106a.ctex"]
+dest_files=["res://.godot/imported/Paladin-stand.png-68d292067f9dd4749902b09f117938ae.ctex"]
 
 [params]
 

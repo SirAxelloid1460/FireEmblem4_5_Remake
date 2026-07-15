@@ -1752,7 +1752,7 @@
     "nid": "Agusty_1",
     "variant": null,
     "level": 12,
-    "klass": "APaladin",
+    "klass": "Paladin",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2720,7 +2720,7 @@
     "nid": "AnphonyConquered_1",
     "variant": null,
     "level": 1,
-    "klass": "APaladin",
+    "klass": "Paladin",
     "faction": "Nature",
     "starting_items": [
      [

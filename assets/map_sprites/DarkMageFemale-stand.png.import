@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://k003snn222di"
-path="res://.godot/imported/Generic_Portrait_APaladin.png-3e77c6784cb2b04cffdcd34c5e61b4ef.ctex"
+uid="uid://6px3afg3l1mt"
+path="res://.godot/imported/DarkMageFemale-stand.png-18d59bdc809a0229298a7ea229ebaad7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_APaladin.png"
-dest_files=["res://.godot/imported/Generic_Portrait_APaladin.png-3e77c6784cb2b04cffdcd34c5e61b4ef.ctex"]
+source_file="res://assets/map_sprites/DarkMageFemale-stand.png"
+dest_files=["res://.godot/imported/DarkMageFemale-stand.png-18d59bdc809a0229298a7ea229ebaad7.ctex"]
 
 [params]
 

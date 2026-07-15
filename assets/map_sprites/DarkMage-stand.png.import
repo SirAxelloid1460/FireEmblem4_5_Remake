@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhg6cbnx0o4u6"
-path="res://.godot/imported/DarkSageF-move.png-6644e8aae52070e8982f10a7b85f3469.ctex"
+uid="uid://ctlcgbaqe6ncu"
+path="res://.godot/imported/DarkMage-stand.png-965d95fbc78e983649d5d2b011688bb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/DarkSageF-move.png"
-dest_files=["res://.godot/imported/DarkSageF-move.png-6644e8aae52070e8982f10a7b85f3469.ctex"]
+source_file="res://assets/map_sprites/DarkMage-stand.png"
+dest_files=["res://.godot/imported/DarkMage-stand.png-965d95fbc78e983649d5d2b011688bb2.ctex"]
 
 [params]
 

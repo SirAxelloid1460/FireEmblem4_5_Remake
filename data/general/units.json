@@ -101,7 +101,7 @@
   "nid": "Alvar",
   "name": "Alvar",
   "desc": "Elite knight of Nordion and younger triplet brother of Eve and Eva.",
-  "klass": "APaladin",
+  "klass": "Paladin",
   "level": 8,
   "gender": "M",
   "bases": {
@@ -804,7 +804,7 @@
   "nid": "Eldigan",
   "name": "Eldigan",
   "desc": "Known as Lionheart, the King Lion of Agustria, he is the bravest paladin in Agustria.",
-  "klass": "APaladin",
+  "klass": "Paladin",
   "level": 23,
   "gender": "M",
   "bases": {
@@ -999,7 +999,7 @@
   "nid": "Evan",
   "name": "Evan",
   "desc": "Elite knight of Nordion and the middle triplet brother of Eve and Alva.",
-  "klass": "APaladin",
+  "klass": "Paladin",
   "level": 8,
   "gender": "M",
   "bases": {
@@ -1047,7 +1047,7 @@
   "nid": "Evar",
   "name": "Evar",
   "desc": "Elite knight of Nordion and the older triplet brother of Eva and Alva.",
-  "klass": "APaladin",
+  "klass": "Paladin",
   "level": 8,
   "gender": "M",
   "bases": {
@@ -1957,7 +1957,7 @@
   "nid": "Sandima",
   "name": "Sandima",
   "desc": "A member of the Loptyr Church, responsible for bewitching King Batur.",
-  "klass": "DarkSage",
+  "klass": "DarkMage",
   "level": 10,
   "gender": "M",
   "bases": {

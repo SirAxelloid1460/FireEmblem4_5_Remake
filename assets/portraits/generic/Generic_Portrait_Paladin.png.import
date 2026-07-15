@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6px3afg3l1mt"
-path="res://.godot/imported/DarkSageFemale-stand.png-18d59bdc809a0229298a7ea229ebaad7.ctex"
+uid="uid://k003snn222di"
+path="res://.godot/imported/Generic_Portrait_Paladin.png-3e77c6784cb2b04cffdcd34c5e61b4ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/DarkSageFemale-stand.png"
-dest_files=["res://.godot/imported/DarkSageFemale-stand.png-18d59bdc809a0229298a7ea229ebaad7.ctex"]
+source_file="res://assets/portraits/generic/Generic_Portrait_Paladin.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Paladin.png-3e77c6784cb2b04cffdcd34c5e61b4ef.ctex"]
 
 [params]
 

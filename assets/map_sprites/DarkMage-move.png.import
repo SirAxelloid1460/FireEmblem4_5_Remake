@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cylvul2xvitv0"
-path="res://.godot/imported/DarkSageFemale-move.png-7ab407bbf2d78fd3dfaaa7b1cbc6fdfd.ctex"
+uid="uid://bgl7hajjq6fgx"
+path="res://.godot/imported/DarkMage-move.png-9f214dcddbdef88c43093d0dcc646b16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/DarkSageFemale-move.png"
-dest_files=["res://.godot/imported/DarkSageFemale-move.png-7ab407bbf2d78fd3dfaaa7b1cbc6fdfd.ctex"]
+source_file="res://assets/map_sprites/DarkMage-move.png"
+dest_files=["res://.godot/imported/DarkMage-move.png-9f214dcddbdef88c43093d0dcc646b16.ctex"]
 
 [params]
 
