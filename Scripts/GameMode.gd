@@ -44,6 +44,12 @@ var leif_party_snapshot: Array = []
 ## Flag que indica si Leif ya se unió a Seliph (endgame FE4).
 var leif_joined_seliph: bool = false
 
+## Roster persistente del ejército del jugador entre capítulos. Cada entrada es
+## un snapshot (Dictionary) de una unidad supersviviente, suficiente para
+## reconstruirla con build_roster_units(). Se captura al ganar un capítulo
+## (GameManager) y se recarga en el castillo (CastleBase).
+var roster: Array = []
+
 
 signal chapter_changed(new_chapter_id: String, new_index: int)
 signal mode_changed(new_mode: Mode)
@@ -325,6 +331,164 @@ func capture_leif_party(units: Array) -> void:
 ##   o el modo no es SAGA).
 func get_leif_reinforcements() -> Array:
 	return leif_party_snapshot if leif_joined_seliph else []
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ROSTER PERSISTENTE  (ejército del jugador entre capítulos)
+# ══════════════════════════════════════════════════════════════════════════════
+
+## ¿Hay un roster persistente cargado?
+func has_roster() -> bool:
+	return not roster.is_empty()
+
+## Serializa las unidades supervivientes de un capítulo al roster (reemplaza el
+## anterior). Se ignoran las caídas (current_hp <= 0).
+func capture_roster(units: Array) -> void:
+	roster.clear()
+	for u in units:
+		if u == null:
+			continue
+		if "current_hp" in u and int(u.current_hp) <= 0:
+			continue
+		roster.append(_serialize_unit(u))
+	print("[GameMode] Roster capturado: %d unidades" % roster.size())
+
+## Reconstruye Units nuevas a partir del roster (nodos sueltos listos para la UI
+## del castillo). Devuelve [] si el roster está vacío.
+func build_roster_units() -> Array:
+	var out: Array = []
+	for snap in roster:
+		if snap is Dictionary:
+			var u := _deserialize_unit(snap)
+			if u != null:
+				out.append(u)
+	return out
+
+## Snapshot completo de una unidad (stats + skills + wexp + sangre + inventario
+## por nid + índice del arma equipada).
+func _serialize_unit(u) -> Dictionary:
+	var snap := {
+		"nid": u.unit_name,
+		"unit_class": u.unit_class,
+		"class_tier": u.class_tier,
+		"level": u.level,
+		"gender": u.gender,
+		"affinity": u.affinity,
+		"team": u.team,
+		"is_player_unit": u.is_player_unit,
+		"max_hp": u.max_hp, "current_hp": u.current_hp,
+		"strength": u.strength, "magic": u.magic, "skill": u.skill,
+		"speed": u.speed, "luck": u.luck, "defense": u.defense,
+		"resistance": u.resistance, "constitution": u.constitution,
+		"movement": u.movement,
+		"tags": (u.tags.duplicate() if u.tags is Array else []),
+		"skills": (u.skills.duplicate() if u.skills is Array else []),
+		"wexp": (u.wexp.duplicate() if u.wexp is Dictionary else {}),
+		"holy_blood": (u.holy_blood.duplicate() if u.holy_blood is Dictionary else {}),
+		"inventory": [],
+		"equipped": -1,
+	}
+	if "inventory" in u and u.inventory is Array:
+		for it in u.inventory:
+			if it == null:
+				continue
+			var entry := _serialize_item(it)
+			if entry.is_empty():
+				continue
+			if "weapon" in u and u.weapon == it:
+				snap["equipped"] = snap["inventory"].size()
+			snap["inventory"].append(entry)
+	return snap
+
+## Serializa un ítem del inventario por nid + estado mutable (usos/durabilidad).
+func _serialize_item(it) -> Dictionary:
+	if it is Weapon:
+		return { "kind": "weapon", "nid": it.id, "uses": it.current_uses }
+	if "nid" in it:
+		var d := { "kind": "item", "nid": str(it.nid) }
+		if "uses" in it:
+			d["uses"] = int(it.uses)
+		return d
+	return {}
+
+## Reconstruye una Unit desde un snapshot.
+func _deserialize_unit(snap: Dictionary) -> Unit:
+	var u := Unit.new()
+	u.unit_name = str(snap.get("nid", ""))
+	u.unit_class = str(snap.get("unit_class", ""))
+	u.class_tier = int(snap.get("class_tier", 1))
+	u.level = int(snap.get("level", 1))
+	u.gender = str(snap.get("gender", "M"))
+	u.affinity = str(snap.get("affinity", ""))
+	u.team = str(snap.get("team", "player"))
+	u.is_player_unit = bool(snap.get("is_player_unit", true))
+	u.max_hp = int(snap.get("max_hp", 20))
+	u.current_hp = int(snap.get("current_hp", u.max_hp))
+	u.strength = int(snap.get("strength", 0))
+	u.magic = int(snap.get("magic", 0))
+	u.skill = int(snap.get("skill", 0))
+	u.speed = int(snap.get("speed", 0))
+	u.luck = int(snap.get("luck", 0))
+	u.defense = int(snap.get("defense", 0))
+	u.resistance = int(snap.get("resistance", 0))
+	u.constitution = int(snap.get("constitution", 0))
+	u.movement = int(snap.get("movement", 0))
+	u.tags.clear()
+	if snap.get("tags") is Array:
+		for t in snap["tags"]:
+			u.tags.append(str(t))
+	if snap.get("skills") is Array:
+		for s in snap["skills"]:
+			u.learn_skill(str(s))
+	if snap.get("wexp") is Dictionary:
+		u.wexp = (snap["wexp"] as Dictionary).duplicate()
+	if snap.get("holy_blood") is Dictionary:
+		u.holy_blood = (snap["holy_blood"] as Dictionary).duplicate()
+	# Inventario + arma equipada.
+	var inv: Array = snap.get("inventory", [])
+	var equipped: int = int(snap.get("equipped", -1))
+	for i in inv.size():
+		if not (inv[i] is Dictionary):
+			continue
+		var item = _deserialize_item(inv[i])
+		if item == null:
+			continue
+		u.inventory.append(item)
+		if i == equipped and item is Weapon:
+			u.weapon = item
+	# Si no había arma marcada pero hay una en el inventario, equipar la primera.
+	if u.weapon == null:
+		for it in u.inventory:
+			if it is Weapon:
+				u.weapon = it
+				break
+	# NOTA: refresh_item_effects() se aplicará al entrar la unidad a un árbol
+	# (spawn de batalla); aquí es un nodo suelto y GameDB no es resoluble desde él.
+	return u
+
+## Reconstruye un ítem del inventario desde su snapshot (vía GameDB).
+func _deserialize_item(entry: Dictionary):
+	if not has_node("/root/GameDB"):
+		return null
+	var db = get_node("/root/GameDB")
+	var nid := str(entry.get("nid", ""))
+	if nid == "":
+		return null
+	if str(entry.get("kind", "")) == "weapon":
+		var wd = db.get_weapon(nid)
+		if wd == null:
+			return null
+		var w = Weapon.from_data(wd)
+		if entry.has("uses"):
+			w.current_uses = int(entry["uses"])
+		return w
+	var cd = db.get_item(nid)
+	if cd == null:
+		return null
+	var inst = cd.duplicate(true) if cd is Resource else cd
+	if entry.has("uses") and "uses" in inst:
+		inst.uses = int(entry["uses"])
+	return inst
 
 
 # ══════════════════════════════════════════════════════════════════════════════

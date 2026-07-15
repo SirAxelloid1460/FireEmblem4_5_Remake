@@ -73,6 +73,14 @@ func _leave_castle() -> void:
 	var convoy := _get_convoy()
 	if convoy != null:
 		convoy.leave_castle()
+	# Persistir cambios hechos en el castillo (promociones, ítems) al roster.
+	_persist_roster()
+
+## Vuelca el ejército actual del castillo al roster persistente de GameMode.
+func _persist_roster() -> void:
+	var gm := _get_game_mode()
+	if gm != null and gm.has_method("capture_roster"):
+		gm.capture_roster(player_units)
 
 # ============================================
 # INICIALIZACIÓN
@@ -108,10 +116,31 @@ func setup_facility_buttons():
 			button.pressed.connect(facilities[button_name])
 
 func load_player_army():
-	"""Carga el ejército del jugador desde el estado del juego"""
-	# Esto debería cargar desde tu GameManager o SaveSystem
-	# Por ahora, crear unidades de ejemplo
-	
+	"""Carga el ejército del jugador desde el roster persistente (GameMode).
+
+	El roster se captura al ganar cada capítulo (GameManager._capture_roster)
+	y arrastra stats/nivel/skills/inventario entre batallas. Si está vacío
+	(primer arranque, sin ninguna batalla ganada aún), se usa un ejército de
+	ejemplo como fallback de desarrollo."""
+	player_units.clear()
+	var gm := _get_game_mode()
+	if gm != null and gm.has_method("has_roster") and gm.has_roster():
+		for u in gm.build_roster_units():
+			if u != null:
+				player_units.append(u)
+	if player_units.is_empty():
+		_load_placeholder_army()
+
+	# Cargar convoy inicial
+	load_convoy_items()
+
+## Resuelve el autoload GameMode (null si no está).
+func _get_game_mode():
+	return get_tree().get_root().get_node_or_null("GameMode")
+
+## Ejército de ejemplo — solo como fallback cuando no hay roster (probando la
+## escena en aislado o antes de la primera batalla).
+func _load_placeholder_army():
 	var unit1 = Unit.new()
 	unit1.unit_name = "Sigurd"
 	unit1.unit_class = "Lord"
@@ -124,7 +153,7 @@ func load_player_army():
 	unit1.defense = 8
 	unit1.resistance = 3
 	unit1.movement = 7
-	
+
 	var unit2 = Unit.new()
 	unit2.unit_name = "Arden"
 	unit2.unit_class = "Armor Knight"
@@ -137,12 +166,9 @@ func load_player_army():
 	unit2.defense = 12
 	unit2.resistance = 1
 	unit2.movement = 4
-	
+
 	player_units.append(unit1)
 	player_units.append(unit2)
-	
-	# Cargar convoy inicial
-	load_convoy_items()
 
 func load_convoy_items():
 	"""Carga los items del convoy del ejército"""
@@ -542,6 +568,8 @@ func show_message(text: String):
 
 func save_game():
 	"""Guarda el estado del juego"""
+	# Volcar el ejército actual al roster antes de serializar el guardado.
+	_persist_roster()
 	var save_data = {
 		"chapter": current_chapter,
 		"gold": army_gold,

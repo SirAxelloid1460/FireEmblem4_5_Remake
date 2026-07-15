@@ -1268,6 +1268,7 @@ func check_victory_conditions():
 	if enemy_units.is_empty():
 		current_state = GameState.VICTORY
 		game_state_changed.emit(GameState.VICTORY)
+		_capture_roster()
 		print("\n=== VICTORY! ===")
 	elif player_units.is_empty():
 		current_state = GameState.GAME_OVER
@@ -1393,6 +1394,7 @@ func _evaluate_objective() -> void:
 	if current_objective.check_victory(player_units, enemy_units, current_turn):
 		current_state = GameState.VICTORY
 		game_state_changed.emit(GameState.VICTORY)
+		_capture_roster()
 		print("\n=== VICTORY! [%s] ===" % current_objective.get_summary())
 		if event_system:
 			await event_system.trigger_event("level_end", {})
@@ -1425,6 +1427,14 @@ func _process_reinforcements() -> void:
 func _on_force_victory() -> void:
 	current_state = GameState.VICTORY
 	game_state_changed.emit(GameState.VICTORY)
+	_capture_roster()
+
+## Persiste a los supervivientes del capítulo en el roster de GameMode, para
+## que el castillo y el siguiente capítulo dispongan del ejército real.
+func _capture_roster() -> void:
+	var gm = get_node_or_null("/root/GameMode")
+	if gm != null and gm.has_method("capture_roster"):
+		gm.capture_roster(player_units)
 
 func _on_force_defeat() -> void:
 	current_state = GameState.GAME_OVER
