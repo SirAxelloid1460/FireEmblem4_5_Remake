@@ -1,5 +1,5 @@
 {
-  "class": "LoptyrMage",
+  "class": "HighPriest",
   "variant": "Generic",
   "weapon": "MagicStaff",
   "tile_size": [
@@ -12,14 +12,14 @@
   ],
   "padding": 0,
   "grid": [
-    3,
+    2,
     2
   ],
   "sheet_size": [
-    720,
+    480,
     320
   ],
-  "frame_count": 6,
+  "frame_count": 4,
   "frames": {
     "Staff_000": {
       "tile": [
@@ -35,25 +35,13 @@
     },
     "Staff_002": {
       "tile": [
-        2,
-        0
-      ]
-    },
-    "Staff_003": {
-      "tile": [
         0,
         1
       ]
     },
-    "Staff_004": {
+    "Staff_003": {
       "tile": [
         1,
-        1
-      ]
-    },
-    "Staff_005": {
-      "tile": [
-        2,
         1
       ]
     }
@@ -67,27 +55,13 @@
       },
       {
         "cmd": "frame",
-        "ticks": 5,
+        "ticks": 3,
         "frame": "Staff_001"
       },
       {
         "cmd": "frame",
-        "ticks": 5,
+        "ticks": 3,
         "frame": "Staff_002"
-      },
-      {
-        "cmd": "frame",
-        "ticks": 5,
-        "frame": "Staff_003"
-      },
-      {
-        "cmd": "frame",
-        "ticks": 20,
-        "frame": "Staff_004"
-      },
-      {
-        "cmd": "sound",
-        "id": "Heavy Wing Flap"
       },
       {
         "cmd": "spell",
@@ -95,8 +69,8 @@
       },
       {
         "cmd": "frame",
-        "ticks": 3,
-        "frame": "Staff_005"
+        "ticks": 4,
+        "frame": "Staff_003"
       },
       {
         "cmd": "start_loop"
@@ -104,7 +78,7 @@
       {
         "cmd": "frame",
         "ticks": 4,
-        "frame": "Staff_005"
+        "frame": "Staff_003"
       },
       {
         "cmd": "end_loop"
@@ -112,12 +86,22 @@
       {
         "cmd": "frame",
         "ticks": 4,
-        "frame": "Staff_005"
+        "frame": "Staff_003"
       },
       {
         "cmd": "frame",
-        "ticks": 5,
+        "ticks": 3,
+        "frame": "Staff_002"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
         "frame": "Staff_001"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Staff_000"
       },
       {
         "cmd": "frame",
@@ -137,37 +121,8 @@
         "frame": "Staff_000"
       },
       {
-        "cmd": "frame",
-        "ticks": 5,
-        "frame": "Staff_001"
-      },
-      {
-        "cmd": "frame",
-        "ticks": 5,
-        "frame": "Staff_002"
-      },
-      {
-        "cmd": "frame",
-        "ticks": 5,
-        "frame": "Staff_003"
-      },
-      {
-        "cmd": "frame",
-        "ticks": 20,
-        "frame": "Staff_004"
-      },
-      {
-        "cmd": "sound",
-        "id": "Heavy Wing Flap"
-      },
-      {
         "cmd": "spell",
         "args": []
-      },
-      {
-        "cmd": "frame",
-        "ticks": 3,
-        "frame": "Staff_005"
       },
       {
         "cmd": "start_loop"
@@ -175,7 +130,7 @@
       {
         "cmd": "frame",
         "ticks": 4,
-        "frame": "Staff_005"
+        "frame": "Staff_000"
       },
       {
         "cmd": "end_loop"
@@ -183,12 +138,12 @@
       {
         "cmd": "frame",
         "ticks": 4,
-        "frame": "Staff_005"
+        "frame": "Staff_000"
       },
       {
         "cmd": "frame",
-        "ticks": 5,
-        "frame": "Staff_001"
+        "ticks": 4,
+        "frame": "Staff_000"
       },
       {
         "cmd": "frame",
@@ -204,7 +159,7 @@
     "Stand": [
       {
         "cmd": "frame",
-        "ticks": 1,
+        "ticks": 3,
         "frame": "Staff_000"
       },
       {

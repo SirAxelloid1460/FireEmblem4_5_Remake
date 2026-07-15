@@ -128,23 +128,32 @@ def build_data():
             weapons_str(wsrc - {"Unarmed"}),
         ])
 
-    # Filas de personajes.
+    # Filas de personajes.  Resolución REAL igual que CombatAnimResolver:
+    #   {can}_{nid}  ->  {can}_{Male|Female}  ->  {can}_Generic
     char_rows = []
     for u in sorted(units, key=lambda x: (str(x.get("klass", "")), str(x.get("nid", "")))):
         nid = str(u.get("nid", ""))
         klass = str(u.get("klass", ""))
+        gender = str(u.get("gender", ""))
         can = can_by_class.get(klass, "")
-        prf_folder = next((f for f in sorted(ca_names) if f.endswith("_" + nid)), None)
-        if prf_folder is None:
-            anim_cell = NO
-        elif can and prf_folder == can + "_" + nid:
-            anim_cell = YES
+        prf = can + "_" + nid if can else ""
+        gvar = {"M": "Male", "F": "Female"}.get(gender, "")
+        gfolder = (can + "_" + gvar) if (can and gvar) else ""
+        gen = (can + "_Generic") if can else ""
+        if prf in ca_names:
+            anim_cell, used_folder = YES, prf              # anim propia PRF
+        elif gfolder in ca_names or gen in ca_names:
+            anim_cell = YES                                # resuelve por género/Generic
+            used_folder = gfolder if gfolder in ca_names else gen
         else:
-            anim_cell = WARN
+            # ¿hay algún asset {*}_{nid} que NO resuelve por combat_anim_nid?
+            stray = next((f for f in sorted(ca_names) if f.endswith("_" + nid)), None)
+            anim_cell = WARN if stray else NO
+            used_folder = stray if stray else ""
         char_rows.append([
-            nid, klass, str(u.get("gender", "")),
+            nid, klass, gender,
             mark(nid in portraits), mark(nid in stand), anim_cell,
-            weapons_str(ca.get(prf_folder, set()) - {"Unarmed"}) if prf_folder else "—",
+            weapons_str(ca.get(used_folder, set()) - {"Unarmed"}) if used_folder else "—",
         ])
 
     # Problemas (combat_anim_nid que rompe el resolver).
@@ -157,10 +166,18 @@ def build_data():
     for u in units:
         nid = str(u.get("nid", ""))
         klass = str(u.get("klass", ""))
+        gender = str(u.get("gender", ""))
         can = can_by_class.get(klass, "")
-        prf_folder = next((f for f in sorted(ca_names) if f.endswith("_" + nid)), None)
-        if prf_folder and can and prf_folder != can + "_" + nid:
-            problems.append(f"'{nid}' ({klass}): anim en {prf_folder}/ pero combat_anim_nid="
+        gvar = {"M": "Male", "F": "Female"}.get(gender, "")
+        resolves = can and (
+            (can + "_" + nid) in ca_names
+            or (gvar and (can + "_" + gvar) in ca_names)
+            or (can + "_Generic") in ca_names)
+        if resolves:
+            continue
+        stray = next((f for f in sorted(ca_names) if f.endswith("_" + nid)), None)
+        if stray:
+            problems.append(f"'{nid}' ({klass}): anim en {stray}/ pero combat_anim_nid="
                             f"\"{can}\" -> el resolver busca {can}_{nid} (no existe). "
                             f"Renombrar la carpeta a {can}_{nid} o corregir combat_anim_nid.")
 

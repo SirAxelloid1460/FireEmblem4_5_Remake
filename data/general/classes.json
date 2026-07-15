@@ -1053,7 +1053,7 @@
    ]
   ],
   "map_sprite_nid": "CavalierB",
-  "combat_anim_nid": "BowCavalier"
+  "combat_anim_nid": "ArcherKnight"
  },
  {
   "id": "CavalierL",
@@ -1127,7 +1127,7 @@
    ]
   ],
   "map_sprite_nid": "CavalierL",
-  "combat_anim_nid": "LanceCavalier"
+  "combat_anim_nid": "LanceKnight"
  },
  {
   "id": "CavalierS",
@@ -1201,7 +1201,7 @@
    ]
   ],
   "map_sprite_nid": "CavalierS",
-  "combat_anim_nid": "SwordCavalier"
+  "combat_anim_nid": "FreeKnight"
  },
  {
   "id": "Child",
@@ -3265,7 +3265,7 @@
    ]
   ],
   "map_sprite_nid": "PegasusKnight",
-  "combat_anim_nid": "PegasusKnightRider"
+  "combat_anim_nid": "PegasusKnight"
  },
  {
   "id": "PegasusRider",
@@ -3344,7 +3344,7 @@
    ]
   ],
   "map_sprite_nid": "PegasusRider",
-  "combat_anim_nid": "PegasusKnightRider"
+  "combat_anim_nid": "PegasusRider"
  },
  {
   "id": "Pirate",
@@ -3476,7 +3476,7 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Mercenary",
-  "combat_anim_nid": "Mercenary"
+  "combat_anim_nid": "Hero"
  },
  {
   "id": "Priest",
@@ -4085,7 +4085,7 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Swordfighter",
-  "combat_anim_nid": "Swordfighter"
+  "combat_anim_nid": "Swordmaster"
  },
  {
   "id": "Swordmaster",
