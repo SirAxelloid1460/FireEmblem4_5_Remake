@@ -141,40 +141,41 @@ func remove_temporary_skills_by_source(source: String) -> void:
 # WEAPON RANK & HOLY BLOOD   (fiel a LT-maker + reglas FE4 LOCKED del brief §4)
 # ══════════════════════════════════════════════════════════════════════════════
 #
-# Thresholds de wexp AUTORITATIVOS de LT (game_data/weapon_ranks.json, idéntico
-# en GotHW.ltproj y Thracia776.ltproj):
-#   D=1  C=51  B=126  A=226  Holy=1023
-# NO existen rangos "E" ni "S". El techo normal es A (226). "Holy" (1023) es un
-# rango especial que SÓLO alcanzan las unidades con Major Blood de un cruzado:
-# el resto lleva la habilidad NotHoly, que tapa el wexp en 226 (=A). Las armas
-# sagradas se restringen además por prf_tags (XxxHeir) en LT.
+# Thresholds de wexp:
+#   D=1  C=51  B=126  A=226  S=1023  Holy=1023
+# S es el rango tope NATURAL: CUALQUIER unidad puede alcanzarlo escalando wexp.
+# Holy es un S ESPECIAL que sólo tienen las unidades con Major Blood de un
+# cruzado, y lo tienen AUTOMÁTICAMENTE desde el inicio (no se gana por wexp; se
+# concede por la sangre). A wexp>=1023 una unidad normal muestra "S" y una con
+# Major Blood muestra "Holy". Las armas sagradas se restringen por prf_tags
+# (XxxHeir = heredero de ESE cruzado), así que el heredero las usa desde el
+# principio sin importar su wexp.
 
 const WEAPON_RANK_THRESHOLDS := {
-	"D": 1, "C": 51, "B": 126, "A": 226, "Holy": 1023
+	"D": 1, "C": 51, "B": 126, "A": 226, "S": 1023, "Holy": 1023
 }
-const WEAPON_RANK_ORDER := ["D", "C", "B", "A", "Holy"]
-const NOT_HOLY_CAP := 226  # wexp máximo (=A) para unidades con NotHoly
+const WEAPON_RANK_ORDER := ["D", "C", "B", "A", "S", "Holy"]
 
-## Gana wexp en un tipo de arma. Replica action.GainWexp + el componente NotHoly
-## de LT (wexp_multiplier 0 con condition wexp[type] >= 226). Las unidades sin
-## Major Blood llevan NotHoly y topan en A (226); las que tienen Major Blood
-## siguen subiendo hasta Holy (1023).
+## Gana wexp en un tipo de arma. Ya NO hay tope en A: toda unidad puede llegar
+## a S (1023) escalando. (Holy no se gana por wexp — es el S nato por sangre.)
 func gain_weapon_exp(weapon_type: String, amount: int) -> void:
 	if weapon_type == "":
 		return
-	var current := int(wexp.get(weapon_type, 0))
-	if has_skill("NotHoly") and current >= NOT_HOLY_CAP:
-		return
-	wexp[weapon_type] = current + max(0, amount)
+	wexp[weapon_type] = int(wexp.get(weapon_type, 0)) + max(0, amount)
 
 ## Rango (letra) que la unidad tiene en un tipo de arma según su wexp.
-## Pura búsqueda por umbral: "Holy" sólo a wexp>=1023, inalcanzable con NotHoly.
+## A wexp>=1023 el rango natural es S; las unidades con Major Blood lo muestran
+## como Holy (su S nato).
 func get_weapon_rank(weapon_type: String) -> String:
 	var w: int = int(wexp.get(weapon_type, 0))
 	var result := ""
 	for r in WEAPON_RANK_ORDER:
+		if r == "Holy":
+			continue  # Holy no se obtiene por wexp; se concede por sangre
 		if w >= int(WEAPON_RANK_THRESHOLDS[r]):
 			result = r
+	if result == "S" and has_major_blood():
+		result = "Holy"
 	return result
 
 ## Requirement numérico de un rango (para comparar can_equip).
@@ -189,8 +190,12 @@ func can_equip(w: Weapon) -> bool:
 	if w == null:
 		return false
 	var required: String = str(w.weapon_rank)
-	if required == "Holy" and (not has_major_blood() or has_skill("NotHoly")):
-		return false
+	# Armas Holy (S nato): sólo Major Blood, y las usan desde el inicio sin
+	# exigir wexp (el rango se concede por la sangre). En LT esto se refuerza
+	# además por prf_tags (XxxHeir).
+	if required == "Holy":
+		return has_major_blood()
+	# Rango S y por debajo: cualquiera que tenga el wexp del tipo suficiente.
 	return int(wexp.get(str(w.weapon_type), 0)) >= rank_requirement(required)
 
 # ── Holy Blood ──────────────────────────────────────────────────────────────
