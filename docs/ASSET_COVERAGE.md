@@ -7,81 +7,81 @@
 
 ## Resumen
 
-- Clases: **66** · con map sprite: **66** · con combat anim genérica: **27**
+- Clases: **66** · con map sprite: **66** · con combat anim (Generic o género): **36**
 - Personajes: **64** · con retrato: **59**
 - Carpetas de combat anim: **126**
 
 
 ## Clases
 
-| Clase | Tier | Map stand | Map move | Anim Generic | Anim Male | Anim Female | Armas anim genérica |
+| Clase | Tier | Map stand | Map move | Anim Generic | Anim Male | Anim Female | Armas de la anim |
 |---|---|---|---|---|---|---|---|
-| Child | 0 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Citizen | 0 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| DragonRider | 0 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Javelin, Lance, MagicSword, Sword |
-| PegasusRider | 0 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Tester | 0 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| AThief | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | MagicSword, Sword |
-| Archer | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Bow |
-| Armour | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
-| BThief | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| BThief_Lara | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Ballistae | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Bandit | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, HandAxe |
-| Barbarian | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, HandAxe |
-| Bard | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Cavalier | 1 | ✅ | ✅ | ⬜ | ✅ | ✅ | — |
-| CavalierA | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, HandAxe |
-| CavalierB | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| CavalierL | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| CavalierS | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| DragonKnight | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Javelin, Lance, MagicSword, Sword |
-| Fighter | 1 | ✅ | ✅ | ⬜ | ✅ | ✅ | — |
-| LightPriestess | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| LoptoMage | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| LordLeaf | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| LordSeliph | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Mage | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| PegasusKnight | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Pirate | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, HandAxe, MagicStaff |
-| PreHero | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Priest | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | MagicStaff |
-| Priestess | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | MagicStaff |
-| Princess | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Soldier | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Javelin, Lance |
-| Swordfighter | 1 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Troubadour | 1 | ✅ | ✅ | ✅ | ⬜ | ⬜ | MagicStaff, MagicSword, Sword |
-| APaladin | 2 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| BPaladin | 2 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Berserker | 2 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, HandAxe |
-| Bishop | 2 | ✅ | ✅ | ✅ | ⬜ | ⬜ | MagicAnima, MagicStaff |
-| BowKnight | 2 | ✅ | ✅ | ✅ | ⬜ | ⬜ | — |
-| Dancer | 2 | ✅ | ✅ | ✅ | ⬜ | ⬜ | MagicSword, Refresh, Sword |
-| Dancer_Lara | 2 | ✅ | ✅ | ✅ | ⬜ | ⬜ | MagicSword, Refresh, Sword |
-| DarkSage | 2 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| DragonMaster | 2 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Javelin, Lance, MagicSword, Sword |
-| DukeKnight | 2 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| FalconKnight | 2 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Javelin, Lance, MagicSword, Sword |
-| ForrestKnight | 2 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| General | 2 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
-| GreatKnight | 2 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| Hero | 2 | ✅ | ✅ | ⬜ | ✅ | ✅ | — |
-| HighPriest | 2 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| HighPriestess | 2 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| LordKnight | 2 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
-| MageFighter | 2 | ✅ | ✅ | ⬜ | ✅ | ✅ | — |
-| MageKnight | 2 | ✅ | ✅ | ⬜ | ✅ | ✅ | — |
-| MasterKnight | 2 | ✅ | ✅ | ⬜ | ✅ | ✅ | — |
-| Rogue | 2 | ✅ | ✅ | ✅ | ⬜ | ⬜ | MagicSword, Sword |
-| Sage | 2 | ✅ | ✅ | ⬜ | ✅ | ✅ | — |
-| Sniper | 2 | ✅ | ✅ | ⬜ | ✅ | ✅ | — |
-| Swordmaster | 2 | ✅ | ✅ | ⬜ | ✅ | ✅ | — |
-| Warrior | 2 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, Bow, HandAxe |
-| Baron | 3 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
-| DarkBishop | 3 | ✅ | ✅ | ✅ | ⬜ | ⬜ | MagicAnima, MagicStaff |
-| DarkPrince | 3 | ✅ | ✅ | ✅ | ⬜ | ⬜ | MagicAnima, MagicStaff |
-| Emperor | 3 | ✅ | ✅ | ✅ | ⬜ | ⬜ | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
-| Queen | 3 | ✅ | ✅ | ⬜ | ⬜ | ⬜ | — |
+| Child | 0 | ✅ | ✅ | ⬜ | — | — | — |
+| Citizen | 0 | ✅ | ✅ | ⬜ | — | — | — |
+| DragonRider | 0 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
+| PegasusRider | 0 | ✅ | ✅ | ⬜ | — | — | — |
+| Tester | 0 | ✅ | ✅ | ⬜ | — | — | — |
+| AThief | 1 | ✅ | ✅ | ✅ | — | — | MagicSword, Sword |
+| Archer | 1 | ✅ | ✅ | ✅ | — | — | Bow |
+| Armour | 1 | ✅ | ✅ | ✅ | — | — | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
+| BThief | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| BThief_Lara | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Ballistae | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Bandit | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
+| Barbarian | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
+| Bard | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Cavalier | 1 | ✅ | ✅ | — | ✅ | ✅ | Javelin, Lance, MagicSword, Sword |
+| CavalierA | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
+| CavalierB | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| CavalierL | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| CavalierS | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| DragonKnight | 1 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
+| Fighter | 1 | ✅ | ✅ | — | ✅ | ✅ | Axe, HandAxe |
+| LightPriestess | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| LoptoMage | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| LordLeaf | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| LordSeliph | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Mage | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| PegasusKnight | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Pirate | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe, MagicStaff |
+| PreHero | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Priest | 1 | ✅ | ✅ | ✅ | — | — | MagicStaff |
+| Priestess | 1 | ✅ | ✅ | ✅ | — | — | MagicStaff |
+| Princess | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Soldier | 1 | ✅ | ✅ | ✅ | — | — | Javelin, Lance |
+| Swordfighter | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Troubadour | 1 | ✅ | ✅ | ✅ | — | — | MagicStaff, MagicSword, Sword |
+| APaladin | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| BPaladin | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| Berserker | 2 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
+| Bishop | 2 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
+| BowKnight | 2 | ✅ | ✅ | ✅ | — | — | — |
+| Dancer | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Refresh, Sword |
+| Dancer_Lara | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Refresh, Sword |
+| DarkSage | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| DragonMaster | 2 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
+| DukeKnight | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| FalconKnight | 2 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
+| ForrestKnight | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| General | 2 | ✅ | ✅ | ✅ | — | — | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
+| GreatKnight | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| Hero | 2 | ✅ | ✅ | — | ✅ | ✅ | Axe, HandAxe, MagicSword, Sword |
+| HighPriest | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| HighPriestess | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| LordKnight | 2 | ✅ | ✅ | ⬜ | — | — | — |
+| MageFighter | 2 | ✅ | ✅ | — | ✅ | ✅ | MagicAnima, MagicStaff, MagicSword, Sword |
+| MageKnight | 2 | ✅ | ✅ | — | ✅ | ✅ | MagicAnima, MagicSword, Sword |
+| MasterKnight | 2 | ✅ | ✅ | — | ✅ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
+| Rogue | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Sword |
+| Sage | 2 | ✅ | ✅ | — | ✅ | ✅ | MagicAnima, MagicStaff |
+| Sniper | 2 | ✅ | ✅ | — | ✅ | ✅ | Bow |
+| Swordmaster | 2 | ✅ | ✅ | — | ✅ | ✅ | MagicSword, Sword |
+| Warrior | 2 | ✅ | ✅ | ✅ | — | — | Axe, Bow, HandAxe |
+| Baron | 3 | ✅ | ✅ | ✅ | — | — | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
+| DarkBishop | 3 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
+| DarkPrince | 3 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
+| Emperor | 3 | ✅ | ✅ | ✅ | — | — | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
+| Queen | 3 | ✅ | ✅ | ⬜ | — | — | — |
 
 ## Personajes
 

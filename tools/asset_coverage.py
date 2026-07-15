@@ -35,7 +35,7 @@ PT_DIR = os.path.join(ROOT, "assets", "portraits", "characters")
 OUT_MD = os.path.join(ROOT, "docs", "ASSET_COVERAGE.md")
 OUT_XLSX = os.path.join(ROOT, "docs", "ASSET_COVERAGE.xlsx")
 
-YES, NO, WARN = "✅", "⬜", "⚠️"
+YES, NO, WARN, NA = "✅", "⬜", "⚠️", "—"
 
 
 def load(path):
@@ -105,13 +105,27 @@ def build_data():
         cid = str(c.get("id", ""))
         msn = str(c.get("map_sprite_nid", cid))
         can = str(c.get("combat_anim_nid", cid))
-        gen_f = can + "_Generic"
+        gen = (can + "_Generic") in ca_names
+        male = (can + "_Male") in ca_names
+        fem = (can + "_Female") in ca_names
+        # Generic y Male/Female son rutas EXCLUYENTES: si hay Generic no hacen
+        # falta las de género (y viceversa). Lo no-necesario se marca "—".
+        if gen:
+            gcell, mcell, fcell = YES, NA, NA
+            wsrc = ca.get(can + "_Generic", set())
+        elif male or fem:
+            gcell = NA
+            mcell = YES if male else NO
+            fcell = YES if fem else NO
+            wsrc = ca.get(can + "_Male", set()) | ca.get(can + "_Female", set())
+        else:
+            gcell, mcell, fcell = NO, NA, NA   # sin cubrir → hace falta al menos Generic
+            wsrc = set()
         class_rows.append([
             cid, c.get("tier", ""),
             mark(msn in stand), mark(msn in move),
-            mark(gen_f in ca_names), mark((can + "_Male") in ca_names),
-            mark((can + "_Female") in ca_names),
-            weapons_str(ca.get(gen_f, set()) - {"Unarmed"}),
+            gcell, mcell, fcell,
+            weapons_str(wsrc - {"Unarmed"}),
         ])
 
     # Filas de personajes.
@@ -154,7 +168,9 @@ def build_data():
         "classes": len(classes),
         "classes_with_map": sum(1 for c in classes if str(c.get("map_sprite_nid", "")) in stand),
         "classes_with_generic_anim": sum(
-            1 for c in classes if (str(c.get("combat_anim_nid", "")) + "_Generic") in ca_names),
+            1 for c in classes
+            if any((str(c.get("combat_anim_nid", "")) + s) in ca_names
+                   for s in ("_Generic", "_Male", "_Female"))),
         "chars": len(units),
         "chars_with_portrait": sum(1 for u in units if str(u.get("nid", "")) in portraits),
         "anim_folders": len(ca),
@@ -163,7 +179,7 @@ def build_data():
 
 
 CLASS_HEADERS = ["Clase", "Tier", "Map stand", "Map move", "Anim Generic",
-                 "Anim Male", "Anim Female", "Armas anim genérica"]
+                 "Anim Male", "Anim Female", "Armas de la anim"]
 CHAR_HEADERS = ["Personaje", "Clase", "Género", "Retrato", "Map propio",
                 "Combat anim", "Armas de su anim"]
 # Columnas (0-based) que llevan marca ✅/⬜/⚠️ (para colorear).
@@ -183,7 +199,7 @@ def write_md(summary, class_rows, char_rows, problems):
              "coincide con `combat_anim_nid` (el juego no lo encuentra) · — = N/A\n")
     L.append("\n## Resumen\n")
     L.append(f"- Clases: **{summary['classes']}** · con map sprite: "
-             f"**{summary['classes_with_map']}** · con combat anim genérica: "
+             f"**{summary['classes_with_map']}** · con combat anim (Generic o género): "
              f"**{summary['classes_with_generic_anim']}**")
     L.append(f"- Personajes: **{summary['chars']}** · con retrato: "
              f"**{summary['chars_with_portrait']}**")
@@ -230,7 +246,8 @@ def write_xlsx(summary, class_rows, char_rows, problems):
     header_font = Font(bold=True, color="FFFFFF")
     fills = {YES: PatternFill("solid", fgColor="C6EFCE"),
              NO: PatternFill("solid", fgColor="F2F2F2"),
-             WARN: PatternFill("solid", fgColor="FFEB9C")}
+             WARN: PatternFill("solid", fgColor="FFEB9C"),
+             NA: PatternFill("solid", fgColor="FFFFFF")}   # neutro (no aplica)
     center = Alignment(horizontal="center", vertical="center")
     thin = Side(style="thin", color="D9D9D9")
     border = Border(left=thin, right=thin, top=thin, bottom=thin)
@@ -271,7 +288,7 @@ def write_xlsx(summary, class_rows, char_rows, problems):
     data = [
         ("Clases", summary["classes"]),
         ("  con map sprite", summary["classes_with_map"]),
-        ("  con combat anim genérica", summary["classes_with_generic_anim"]),
+        ("  con combat anim (Generic o género)", summary["classes_with_generic_anim"]),
         ("Personajes", summary["chars"]),
         ("  con retrato", summary["chars_with_portrait"]),
         ("Carpetas de combat anim", summary["anim_folders"]),
