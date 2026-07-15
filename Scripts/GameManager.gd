@@ -14,7 +14,8 @@ enum PlayerPhase {
 	UNIT_SELECTED,
 	MOVING,
 	ACTION_MENU,
-	TARGETING
+	TARGETING,
+	CANTO           # re-movimiento tras actuar (skill Canto/Canto+)
 }
 
 # Referencias
@@ -180,6 +181,14 @@ func handle_mouse_click(mouse_pos: Vector2):
 			if target and not target.is_player_unit and grid_pos in attackable_tiles:
 				initiate_combat(selected_unit, target)
 
+		PlayerPhase.CANTO:
+			# Re-movimiento tras actuar. Casilla válida → mover y terminar;
+			# cualquier otra → declinar Canto y quedarse donde está.
+			if grid_pos in reachable_tiles:
+				move_selected_unit(grid_pos)
+			else:
+				end_unit_action()
+
 func select_unit(unit: Unit):
 	"""Selecciona una unidad del jugador"""
 	if selected_unit:
@@ -188,7 +197,10 @@ func select_unit(unit: Unit):
 	selected_unit = unit
 	selected_unit.select()
 	player_phase = PlayerPhase.UNIT_SELECTED
-	
+	# Nueva activación: reinicia el estado de Canto.
+	_move_cost_spent = 0.0
+	_canto_used = false
+
 	# Calcular casillas alcanzables (pasando unit para que aliados se atraviesen).
 	reachable_tiles = Pathfinding.get_reachable_tiles(
 		grid, 
@@ -229,13 +241,21 @@ func move_selected_unit(target: Vector2i):
 	if player_phase == PlayerPhase.MOVING:
 		return   # ya hay un movimiento en curso — ignora clics repetidos
 
-	var path = Pathfinding.find_path(grid, selected_unit.grid_position, target, selected_unit.movement, selected_unit)
+	# En un re-movimiento de Canto, el presupuesto es el de Canto (restante o
+	# completo), no el movimiento total.
+	var is_canto := (player_phase == PlayerPhase.CANTO)
+	var budget: float = _canto_budget(selected_unit) if is_canto else float(selected_unit.movement)
+
+	var path = Pathfinding.find_path(grid, selected_unit.grid_position, target, budget, selected_unit)
 
 	if path.size() == 0:
 		return
 
 	var unit := selected_unit
 	var from = unit.grid_position
+	# El coste del PRIMER movimiento se guarda para el Canto restante.
+	if not is_canto:
+		_move_cost_spent = Pathfinding.path_cost(grid, path)
 	# Bloquea el input y oculta los resaltados mientras la unidad camina.
 	player_phase = PlayerPhase.MOVING
 	reachable_tiles.clear()
@@ -262,8 +282,13 @@ func move_selected_unit(target: Vector2i):
 	if event_system and current_objective:
 		_check_region_events(target, unit)
 
-	# Mostrar menú de acciones
-	show_action_menu()
+	if is_canto:
+		# Tras el re-movimiento de Canto la unidad termina su turno (no vuelve
+		# a actuar).
+		end_unit_action()
+	else:
+		# Mostrar menú de acciones
+		show_action_menu()
 
 
 ## Comprueba si el tile destino activa algún evento de región.  Llamado
@@ -293,8 +318,89 @@ func _check_region_events(pos: Vector2i, unit: Unit) -> void:
 				event_system.trigger_event(sub_nid,
 						{ "unit": unit, "region": r })
 
+
+# ══════════════════════════════════════════════════════════════════════════════
+# EVENTOS DE ITEM (Return Ring / báculo Return, etc.)
+# ══════════════════════════════════════════════════════════════════════════════
+
+## Punto de entrada que ItemSystem._fire_event llama al usar un item con
+## event_on_use. Despacha al handler concreto.
+func trigger_item_event(event_id: String, user, target) -> void:
+	match event_id:
+		"ReturnToHomeCastle":
+			# El Return Ring se auto-apunta (target == user → vuelve el portador);
+			# el báculo Return apunta a un aliado (vuelve el aliado).
+			_return_to_home_castle(target if target != null else user)
+		_:
+			push_warning("GameManager: evento de item no implementado '%s'" % event_id)
+
+## Posición del castillo principal del capítulo: la región llamada "Return"
+## (así se marca en los .ltproj de FE4/FE5). Fallback: primera región de
+## formación (zona de despliegue del jugador). (-1,-1) si no hay ninguna.
+func _home_castle_position() -> Vector2i:
+	if not has_meta("chapter_regions"):
+		return Vector2i(-1, -1)
+	var regions: Array = get_meta("chapter_regions")
+	for r in regions:
+		if r is Dictionary and str(r.get("nid", "")) == "Return":
+			return r.get("position", Vector2i(-1, -1))
+	for r in regions:
+		if r is Dictionary and str(r.get("region_type", "")) == "formation":
+			return r.get("position", Vector2i(-1, -1))
+	return Vector2i(-1, -1)
+
+## Casilla libre y caminable más cercana a `center` (BFS por anillos). El grid
+## debe tener la unidad ya retirada para no chocar consigo misma.
+func _nearest_free_tile(center: Vector2i) -> Vector2i:
+	if grid == null:
+		return Vector2i(-1, -1)
+	var visited := {center: true}
+	var queue: Array[Vector2i] = [center]
+	var guard := 0
+	while not queue.is_empty() and guard < 4000:
+		guard += 1
+		var p: Vector2i = queue.pop_front()
+		if grid.is_walkable(p):   # válida + sin unidad + terreno caminable
+			return p
+		for n in grid.get_neighbors(p):
+			if not visited.has(n):
+				visited[n] = true
+				queue.append(n)
+	return Vector2i(-1, -1)
+
+## Teleporta `unit` al castillo principal (o a la casilla libre más cercana).
+## Consume el turno de la unidad (has_moved). No hace nada si no hay castillo
+## o no hay casilla libre.
+func _return_to_home_castle(unit) -> void:
+	if unit == null or grid == null:
+		return
+	var home := _home_castle_position()
+	if home == Vector2i(-1, -1):
+		push_warning("GameManager: sin región 'Return'/formación; no se puede volver al castillo")
+		return
+	var from: Vector2i = unit.grid_position
+	grid.remove_unit(from)                  # retirar antes de buscar hueco
+	var dest := _nearest_free_tile(home)
+	if dest == Vector2i(-1, -1):
+		grid.place_unit(unit, from)         # revertir: vuelve a su sitio
+		push_warning("GameManager: sin casilla libre junto al castillo principal")
+		return
+	grid.place_unit(unit, dest)             # fija grid_position + global_position
+	unit.has_moved = true                   # gasta el turno
+	unit_moved.emit(unit, from, dest)
+	if fow_system:
+		fow_system.update_team_vision("player", player_units)
+
+
 var _action_menu: ActionMenu = null
 var ui_layer: CanvasLayer = null
+## Víctima elegida durante el flujo de robo (Steal), entre el submenú de
+## víctimas y el de ítems.
+var _steal_victim: Unit = null
+## Canto: coste del primer movimiento del turno (para el movimiento restante) y
+## si la unidad ya usó su re-movimiento en esta activación.
+var _move_cost_spent: float = 0.0
+var _canto_used: bool = false
 
 ## Capa de pantalla (screen-space) para la UI de gameplay (menú de acciones).
 func _ensure_ui_layer() -> CanvasLayer:
@@ -317,6 +423,16 @@ func show_action_menu():
 	var enemies_in_range = get_enemies_in_attack_range(selected_unit)
 	if enemies_in_range.size() > 0:
 		options.append({ "id": "attack", "text": "Attack" })
+	# Dance (Refresh): solo si hay aliados adyacentes que ya actuaron.
+	if MapActions.can_refresh(selected_unit) \
+			and MapActions.get_refresh_targets(selected_unit, grid).size() > 0:
+		options.append({ "id": "dance", "text": "Dance" })
+	# Steal: solo si hay un enemigo adyacente con algún ítem robable.
+	if MapActions.can_steal(selected_unit) \
+			and _steal_victims(selected_unit).size() > 0:
+		options.append({ "id": "steal", "text": "Steal" })
+	if _unit_has_usable_item(selected_unit):
+		options.append({ "id": "item", "text": "Item" })
 	options.append({ "id": "wait", "text": "Wait" })
 
 	_close_action_menu()
@@ -348,8 +464,321 @@ func _on_action_selected(id: String) -> void:
 	match id:
 		"attack":
 			enter_targeting_mode()
-		_:  # "wait" y cualquier fallback seguro
+		"item":
+			_show_item_menu(selected_unit)
+		"dance":
+			# FE4: refresca a todos los aliados adyacentes que ya actuaron.
+			MapActions.execute_refresh(selected_unit, grid, "fe4")
+			_end_action(true)
+		"steal":
+			_show_steal_menu(selected_unit)
+		_:  # "wait" y cualquier fallback seguro (sin Canto)
 			end_unit_action()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# USO DE OBJETOS EN EL MAPA (acción "Item")
+# ══════════════════════════════════════════════════════════════════════════════
+
+## Consumibles del inventario que se pueden USAR en el campo sobre el portador
+## (no rings pasivos on_hold, no armas). Duck-typed sobre ConsumableData.
+func _unit_usable_items(unit) -> Array:
+	var out: Array = []
+	if unit == null:
+		return out
+	for it in unit.inventory:
+		if _is_usable_consumable(it, unit):
+			out.append(it)
+	return out
+
+func _unit_has_usable_item(unit) -> bool:
+	return not _unit_usable_items(unit).is_empty()
+
+## ¿Es un consumible de auto-uso en el campo? (ConsumableData con efecto activo).
+func _is_usable_consumable(it, unit = null) -> bool:
+	if it == null or it is Weapon:
+		return false
+	if "status_on_hold" in it and str(it.status_on_hold) != "":
+		return false   # ring pasivo: aplica su efecto mientras se porta, no se "usa"
+	if "uses" in it and int(it.uses) == 0:
+		return false
+	if "heal" in it and int(it.heal) > 0:
+		return true
+	if "status_on_hit" in it and str(it.status_on_hit) != "":
+		return true   # manual: enseña skill
+	if "permanent_stat_change" in it and not (it.permanent_stat_change as Dictionary).is_empty():
+		return true
+	if "restore_specific" in it and str(it.restore_specific) != "":
+		return true
+	if "restore" in it and bool(it.restore):
+		return true
+	if _item_component(it, "event_on_use") != null:
+		return true   # Return Ring, etc.
+	if _item_component(it, "status_applied") != null:
+		return true   # Holy Water (buff temporal), etc.
+	if _item_component(it, "self_status_on_hit") != null:
+		return true   # Torch_item (aplica un status a sí mismo al usarse)
+	# Llave/ganzúa: solo si hay una casilla adyacente cerrada que abrir.
+	if _item_component(it, "can_unlock") != null:
+		return unit != null and _adjacent_unlockable(unit) != Vector2i(-1, -1)
+	return false
+
+## Posición de una casilla adyacente CERRADA (puerta/cofre/puente bloqueado) que
+## una llave puede abrir, o (-1,-1). "Cerrada" = terreno door/chest/bridge y no
+## transitable (el mapa las coloca con walkable=false hasta abrirlas).
+func _adjacent_unlockable(unit) -> Vector2i:
+	if unit == null or grid == null:
+		return Vector2i(-1, -1)
+	for n in grid.get_neighbors(unit.grid_position):
+		if grid.tiles.has(n):
+			var t: Dictionary = grid.tiles[n]
+			var terr := str(t.get("terrain_type", "plain"))
+			if terr in ["door", "chest", "bridge"] and not bool(t.get("walkable", true)):
+				return n
+	return Vector2i(-1, -1)
+
+## Aplica el status de un item consumible sobre la unidad.
+func _apply_item_status(unit, sid: String) -> void:
+	match sid:
+		"HolyWater":
+			# FE5: sube MAG +7 y decae 1/turno (Unit._apply_status_upkeep lo baja).
+			unit.add_status_modifier("HolyWater", {"MAG": 7})
+			unit.apply_status("HolyWater", {})
+		"CurePoison":
+			unit.remove_status("Poison")
+		"Torch":
+			# Bonus de visión temporal en la niebla (FogOfWarSystem lo decrece
+			# 1/turno vía tick_torches).
+			apply_torch_to(unit)
+		_:
+			unit.apply_status(sid, {})
+
+## Abre la casilla (puerta/cofre/puente): la vuelve transitable. Si es un cofre
+## con contenido (tiles[pos]["contents"] = item_nid), lo entrega al que abre.
+func _unlock_tile(pos: Vector2i, opener = null) -> void:
+	if grid == null or not grid.tiles.has(pos):
+		return
+	var t: Dictionary = grid.tiles[pos]
+	t["walkable"] = true
+	t["locked"] = false
+	var terr := str(t.get("terrain_type", "plain"))
+	if terr == "door" or terr == "bridge":
+		t["terrain_type"] = "plain"    # queda abierta/transitable
+	elif terr == "chest":
+		# Contenido del cofre: el nivel lo define en tiles[pos]["contents"].
+		var contents := str(t.get("contents", ""))
+		if contents != "" and opener != null:
+			_give_item(opener, contents)
+			t["contents"] = ""         # cofre vaciado
+	if fow_system:
+		fow_system.update_team_vision("player", player_units)
+
+## Entrega un item (por nid) a la unidad; si el inventario está lleno, al convoy.
+func _give_item(unit, item_nid: String) -> void:
+	var gdb = get_node_or_null("/root/GameDB")
+	if gdb == null or not gdb.has_method("get_item"):
+		return
+	var item = gdb.get_item(item_nid)
+	if item == null:
+		return
+	if item is Resource:
+		item = item.duplicate(true)    # instancia propia (usos por-objeto)
+	if "inventory" in unit and unit.inventory.size() < 5:
+		unit.inventory.append(item)
+		# El item nuevo puede llevar status_on_hold — recalcular efectos.
+		if unit.has_method("refresh_item_effects"):
+			unit.refresh_item_effects()
+	else:
+		var convoy = get_node_or_null("/root/Convoy")
+		if convoy != null and convoy.has_method("deposit"):
+			convoy.deposit(item)
+
+## Lee un componente [key, val] de un ConsumableData (formato LT). null si falta.
+func _item_component(it, key: String):
+	if not ("components" in it):
+		return null
+	for c in it.components:
+		if c is Array and c.size() >= 1 and str(c[0]) == key:
+			return c[1] if c.size() > 1 else true
+	return null
+
+## Submenú con los objetos usables del inventario.
+func _show_item_menu(unit) -> void:
+	var items := _unit_usable_items(unit)
+	if items.is_empty():
+		show_action_menu()
+		return
+	var options: Array = []
+	for i in items.size():
+		var it = items[i]
+		var nm: String = str(it.name) if ("name" in it and str(it.name) != "") else str(it.nid)
+		if "uses" in it and int(it.uses) > 0:
+			nm += "  (%d)" % int(it.uses)
+		options.append({ "id": "use:%d" % i, "text": nm })
+	options.append({ "id": "back", "text": "Back" })
+	_close_action_menu()
+	_action_menu = ActionMenu.new()
+	_ensure_ui_layer().add_child(_action_menu)
+	_action_menu.setup(options, _unit_menu_anchor(unit))
+	_action_menu.action_selected.connect(_on_item_menu_selected)
+
+func _on_item_menu_selected(id: String) -> void:
+	_action_menu = null
+	if id == "back":
+		show_action_menu()
+		return
+	if id.begins_with("use:"):
+		var idx := int(id.substr(4))
+		var items := _unit_usable_items(selected_unit)
+		if idx >= 0 and idx < items.size():
+			_use_consumable(selected_unit, items[idx])
+	_end_action(true)
+
+# ── Steal ─────────────────────────────────────────────────────────────────────
+
+## Nombre legible de un ítem (ConsumableData, Weapon o Item de runtime).
+func _item_display_name(it) -> String:
+	if it == null:
+		return "?"
+	if "name" in it and str(it.name) != "":
+		return str(it.name)
+	if "weapon_name" in it and str(it.weapon_name) != "":
+		return str(it.weapon_name)
+	if "item_name" in it and str(it.item_name) != "":
+		return str(it.item_name)
+	if "nid" in it:
+		return str(it.nid)
+	return str(it)
+
+## Enemigos adyacentes (Manhattan == 1) de los que `thief` puede robar algo:
+## con ítems robables y SPD del ladrón > SPD de la víctima (canon FE).
+func _steal_victims(thief) -> Array:
+	var out: Array = []
+	if grid == null or thief == null:
+		return out
+	var p: Vector2i = thief.grid_position
+	for d in [Vector2i(1, 0), Vector2i(-1, 0), Vector2i(0, 1), Vector2i(0, -1)]:
+		var u = grid.get_unit_at(p + d)
+		if u == null or u.is_player_unit == thief.is_player_unit:
+			continue
+		if thief.speed <= u.speed:
+			continue
+		if MapActions.get_stealable_items(thief, u).size() > 0:
+			out.append(u)
+	return out
+
+## Submenú de robo: elige víctima. Si hay una sola, salta directo a sus ítems.
+func _show_steal_menu(thief) -> void:
+	var victims := _steal_victims(thief)
+	if victims.is_empty():
+		show_action_menu()
+		return
+	if victims.size() == 1:
+		_show_steal_item_menu(thief, victims[0])
+		return
+	var options: Array = []
+	for i in victims.size():
+		options.append({ "id": "victim:%d" % i, "text": str(victims[i].unit_name) })
+	options.append({ "id": "back", "text": "Back" })
+	_close_action_menu()
+	_action_menu = ActionMenu.new()
+	_ensure_ui_layer().add_child(_action_menu)
+	_action_menu.setup(options, _unit_menu_anchor(thief))
+	_action_menu.action_selected.connect(_on_steal_victim_selected)
+
+func _on_steal_victim_selected(id: String) -> void:
+	_action_menu = null
+	if id == "back":
+		show_action_menu()
+		return
+	if id.begins_with("victim:"):
+		var idx := int(id.substr(7))
+		var victims := _steal_victims(selected_unit)
+		if idx >= 0 and idx < victims.size():
+			_show_steal_item_menu(selected_unit, victims[idx])
+			return
+	show_action_menu()
+
+## Submenú de robo: elige el ítem a robar de la víctima.
+func _show_steal_item_menu(thief, victim) -> void:
+	_steal_victim = victim
+	var items := MapActions.get_stealable_items(thief, victim)
+	if items.is_empty():
+		show_action_menu()
+		return
+	var options: Array = []
+	for i in items.size():
+		options.append({ "id": "steal:%d" % i, "text": _item_display_name(items[i]) })
+	options.append({ "id": "back", "text": "Back" })
+	_close_action_menu()
+	_action_menu = ActionMenu.new()
+	_ensure_ui_layer().add_child(_action_menu)
+	_action_menu.setup(options, _unit_menu_anchor(thief))
+	_action_menu.action_selected.connect(_on_steal_item_selected)
+
+func _on_steal_item_selected(id: String) -> void:
+	_action_menu = null
+	if id == "back":
+		_steal_victim = null
+		show_action_menu()
+		return
+	if id.begins_with("steal:") and _steal_victim != null:
+		var idx := int(id.substr(6))
+		var items := MapActions.get_stealable_items(selected_unit, _steal_victim)
+		if idx >= 0 and idx < items.size():
+			MapActions.execute_steal(selected_unit, _steal_victim, items[idx])
+	_steal_victim = null
+	_end_action(true)
+
+## Aplica el efecto de un consumible sobre su portador y gasta un uso.
+func _use_consumable(unit, item) -> void:
+	if unit == null or item == null:
+		return
+	if "heal" in item and int(item.heal) > 0:
+		unit.heal(int(item.heal))
+	# Torch (ítem/báculo): otorga bonus de visión temporal, NO es un manual.
+	# Se detecta por status_on_hit / self_status_on_hit == "Torch".
+	var applies_torch := (("status_on_hit" in item and str(item.status_on_hit) == "Torch")
+			or str(_item_component(item, "self_status_on_hit")) == "Torch"
+			or str(_item_component(item, "status_on_hit")) == "Torch")
+	if applies_torch:
+		_apply_item_status(unit, "Torch")
+	# Manual: enseña la(s) skill(s) (status_on_hit), excepto los que son status.
+	if "status_on_hit" in item and str(item.status_on_hit) != "":
+		for sk in str(item.status_on_hit).split(","):
+			sk = sk.strip_edges()
+			if sk == "Torch":
+				continue   # es un status temporal, ya aplicado arriba
+			if sk != "" and not unit.has_skill(sk):
+				unit.learn_skill(sk)
+	# Boost permanente de stats.
+	if "permanent_stat_change" in item:
+		for stat in (item.permanent_stat_change as Dictionary):
+			unit.increase_stat_permanently(str(stat), int(item.permanent_stat_change[stat]))
+	# Restaurar estados.
+	if "restore_specific" in item and str(item.restore_specific) != "":
+		unit.remove_status(str(item.restore_specific))
+	# Status aplicado por componente (Holy Water, etc.).
+	var sa = _item_component(item, "status_applied")
+	if sa != null and str(sa) != "":
+		_apply_item_status(unit, str(sa))
+	# Evento de item (Return Ring, etc.).
+	var ev = _item_component(item, "event_on_use")
+	if ev != null and str(ev) != "":
+		trigger_item_event(str(ev), unit, unit)
+	# Llave/ganzúa: abre la casilla cerrada adyacente.
+	if _item_component(item, "can_unlock") != null:
+		var lock_pos := _adjacent_unlockable(unit)
+		if lock_pos != Vector2i(-1, -1):
+			_unlock_tile(lock_pos, unit)
+	# Gastar un uso; si se agota, retirar del inventario.
+	if "uses" in item and int(item.uses) > 0:
+		item.uses = int(item.uses) - 1
+		if int(item.uses) <= 0:
+			unit.inventory.erase(item)
+	# Recalcular efectos pasivos (el inventario pudo cambiar).
+	if unit.has_method("refresh_item_effects"):
+		unit.refresh_item_effects()
 
 func enter_targeting_mode():
 	"""Entra en modo de selección de objetivo"""
@@ -471,7 +900,14 @@ func initiate_combat(attacker: Unit, defender: Unit):
 	# Limpiar el cache de support bonus tras combate.
 	if attacker.has_meta("support_bonus"): attacker.remove_meta("support_bonus")
 	if defender.has_meta("support_bonus"): defender.remove_meta("support_bonus")
-	
+
+	# Canto: en combate iniciado por el jugador (el atacante es la unidad
+	# seleccionada), si sobrevive y tiene la skill puede re-moverse.
+	if selected_unit == attacker and is_instance_valid(attacker) \
+			and attacker.current_hp > 0 and _can_canto(attacker):
+		check_victory_conditions()
+		_end_action(true)
+		return
 	end_unit_action()
 	check_victory_conditions()
 
@@ -594,6 +1030,40 @@ func _record_mother_death(unit: Unit) -> void:
 		}
 	else:
 		mother_states[unit.unit_name]["alive"] = false
+
+# ── Canto (re-movimiento tras actuar) ────────────────────────────────────────
+
+## Cierre de acción que ofrece Canto si procede. `allow_canto` es false para
+## acciones que NO habilitan re-movimiento (Wait).
+func _end_action(allow_canto: bool) -> void:
+	if allow_canto and _can_canto(selected_unit):
+		_begin_canto_move(selected_unit)
+		return
+	end_unit_action()
+
+## ¿La unidad puede re-moverse por Canto ahora (tiene la skill y no lo ha usado)?
+func _can_canto(unit) -> bool:
+	return unit != null and not _canto_used \
+			and unit.has_method("canto_level") and unit.canto_level() > 0
+
+## Presupuesto del re-movimiento: Canto+ = movimiento completo; Canto = restante.
+func _canto_budget(unit) -> float:
+	if unit.canto_level() >= 2:
+		return float(unit.movement)
+	return max(0.0, float(unit.movement) - _move_cost_spent)
+
+## Entra en modo de re-movimiento de Canto (una sola vez por activación).
+func _begin_canto_move(unit) -> void:
+	_canto_used = true
+	_close_action_menu()
+	var budget := _canto_budget(unit)
+	reachable_tiles = Pathfinding.get_reachable_tiles(grid, unit.grid_position, budget, unit)
+	reachable_tiles.erase(unit.grid_position)   # quedarse quieto no cuenta
+	attackable_tiles.clear()
+	if reachable_tiles.is_empty():
+		end_unit_action()
+		return
+	player_phase = PlayerPhase.CANTO
 
 func end_unit_action():
 	"""Finaliza la acción de la unidad actual"""
@@ -798,6 +1268,7 @@ func check_victory_conditions():
 	if enemy_units.is_empty():
 		current_state = GameState.VICTORY
 		game_state_changed.emit(GameState.VICTORY)
+		_capture_roster()
 		print("\n=== VICTORY! ===")
 	elif player_units.is_empty():
 		current_state = GameState.GAME_OVER
@@ -857,13 +1328,24 @@ func load_chapter(chapter_path: String, tilemap_data: Dictionary,
 	var loaded := LevelLoader.load_chapter(chapter_path, project_data,
 			tilemap_data, grid)
 	loaded_level = loaded  # para que EventSystem acceda a unit_groups, etc.
+	# Roster persistente: si existe, superponemos la progresión guardada sobre
+	# las unidades del jugador que ya aparecieron antes (ANTES de add_child, para
+	# que el map sprite se resuelva con la clase correcta si hubo promoción).
+	var gm = get_node_or_null("/root/GameMode")
+	var has_roster: bool = gm != null and gm.has_method("has_roster") and gm.has_roster()
 	# Distribuir unidades en player/enemy.
 	for u in loaded.units:
+		if u.is_player_unit and has_roster and gm.has_method("apply_roster_to_unit"):
+			gm.apply_roster_to_unit(u)
 		_ensure_unit_layer().add_child(u)  # cuelga de UnitLayer (Y-sort)
 		if u.is_player_unit:
 			player_units.append(u)
 		else:
 			enemy_units.append(u)
+	# Primer capítulo (roster vacío): sembrarlo con el ejército inicial para que
+	# el castillo y los capítulos siguientes dispongan del ejército real.
+	if not has_roster and gm != null and gm.has_method("capture_roster"):
+		gm.capture_roster(player_units)
 	
 	# 3. Configurar FoW del capítulo.
 	setup_fog_of_war({
@@ -923,6 +1405,7 @@ func _evaluate_objective() -> void:
 	if current_objective.check_victory(player_units, enemy_units, current_turn):
 		current_state = GameState.VICTORY
 		game_state_changed.emit(GameState.VICTORY)
+		_capture_roster()
 		print("\n=== VICTORY! [%s] ===" % current_objective.get_summary())
 		if event_system:
 			await event_system.trigger_event("level_end", {})
@@ -955,6 +1438,14 @@ func _process_reinforcements() -> void:
 func _on_force_victory() -> void:
 	current_state = GameState.VICTORY
 	game_state_changed.emit(GameState.VICTORY)
+	_capture_roster()
+
+## Persiste a los supervivientes del capítulo en el roster de GameMode, para
+## que el castillo y el siguiente capítulo dispongan del ejército real.
+func _capture_roster() -> void:
+	var gm = get_node_or_null("/root/GameMode")
+	if gm != null and gm.has_method("capture_roster"):
+		gm.capture_roster(player_units)
 
 func _on_force_defeat() -> void:
 	current_state = GameState.GAME_OVER

@@ -268,6 +268,10 @@ static func build_unit(udef: Dictionary, project_data: Dictionary) -> Unit:
 	if BallistaSystem.is_ballista(unit):
 		BallistaSystem.initialize(unit, "enemy" if team == "enemy" else "player")
 
+	# Aplicar efectos pasivos del equipo (anillos on_hold, arma on_equip).
+	if unit.has_method("refresh_item_effects"):
+		unit.refresh_item_effects()
+
 	return unit
 
 
@@ -398,9 +402,6 @@ static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> v
 		for hb in hb_data:
 			if hb is Array and hb.size() >= 2:
 				unit.holy_blood[str(hb[0])] = str(hb[1])
-	# Aplicar NotHoly (cap A=226) si no tiene Major Blood; habilita Holy si la tiene.
-	if unit.has_method("refresh_holy_status"):
-		unit.refresh_holy_status()
 	# Inventario inicial.
 	var items_db: Dictionary = project_data.get("items", {})
 	for entry in udata.get("starting_items", []):
@@ -514,8 +515,9 @@ static func _instantiate_item(item_nid: String, items_db: Dictionary):
 		# weapon_type definido.
 		if "weapon_type" in entry and str(entry.weapon_type) != "":
 			return Weapon.from_item_data(entry)
-		# No es un arma — devolver el objeto tal cual (consumible).
-		return entry
+		# No es un arma — consumible. Se DUPLICA para que los usos (uses) sean
+		# por-instancia y no corrompan el recurso compartido de GameDB.
+		return entry.duplicate(true) if entry is Resource else entry
 	# 2. Datos LT crudos en Dictionary.
 	if _lt_is_weapon(entry):
 		return Weapon.from_lt(entry)

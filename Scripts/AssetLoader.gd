@@ -151,11 +151,27 @@ var _map_sprite_cache: Dictionary = {}    # "nid:variant" → Texture2D
 # PORTRAITS
 # ══════════════════════════════════════════════════════════════════════════════
 
+## Alias de retrato para personajes con MÚLTIPLES apariciones cuyo arte está
+## diferenciado por edad/juego (no existe un "{nid}.png" plano).  Los eventos
+## los referencian por el token base (p.ej. "Lewyn"), así que aquí se mapea al
+## archivo diferenciado por defecto.  Se usa la forma de la 1ª generación de
+## FE4 (Young), que es el contenido construido actualmente.
+##   TODO: selección por juego (FE4→Young, FE5→Old) para cross-game como Finn.
+const PORTRAIT_ALIASES: Dictionary = {
+	"Arvis":  "ArvisYoung",
+	"Finn":   "FinnYoung",
+	"Lewyn":  "LewynYoung",
+	"Oifaye": "OifayeYoung",
+	"Oifey":  "OifayeYoung",
+	"Robert": "RobertFE5",   # Robert aparece en FE4 y FE5 (RobertFE4/RobertFE5)
+}
+
 ## Carga el retrato de un personaje.  Busca en este orden:
-##   1. portraits/characters/{nid}.png       (personajes principales)
-##   2. portraits/extra/{nid}.png            (NPCs y secundarios)
-##   3. portraits/{nid}Portrait.png          (compatibilidad legacy)
-##   4. portraits/{nid}.png                  (compatibilidad legacy)
+##   1. alias de personaje multi-aparición (PORTRAIT_ALIASES)
+##   2. portraits/characters/{nid}.png       (personajes principales)
+##   3. portraits/extra/{nid}.png            (NPCs y secundarios)
+##   4. portraits/{nid}Portrait.png          (compatibilidad legacy)
+##   5. portraits/{nid}.png                  (compatibilidad legacy)
 func get_portrait(character_nid: String) -> Texture2D:
 	if _portrait_cache.has(character_nid):
 		return _portrait_cache[character_nid]
@@ -166,6 +182,10 @@ func get_portrait(character_nid: String) -> Texture2D:
 		"res://assets/portraits/" + character_nid + "Portrait.png",
 		"res://assets/portraits/" + character_nid + ".png",
 	]
+	# Si el token base no tiene archivo propio pero es un personaje
+	# multi-aparición, resolver por su alias diferenciado.
+	if PORTRAIT_ALIASES.has(character_nid):
+		candidates.push_front(PATH_PORTRAITS_CHARS + PORTRAIT_ALIASES[character_nid] + ".png")
 	var tex: Texture2D = null
 	for path in candidates:
 		if ResourceLoader.exists(path):

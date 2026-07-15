@@ -72,6 +72,7 @@ static func _item_from_data(d) -> Item:
 	if d.heal_percent > 0.0:            it.set_meta("heal_percent", d.heal_percent)
 	if d.heal_flat > 0:                 it.set_meta("heal_flat", d.heal_flat)
 	if d.status_applied != "":          it.set_meta("status_applied", d.status_applied)
+	if d.status_on_hit != "":           it.set_meta("status_on_hit", d.status_on_hit)
 	if d.event_on_use != "":            it.set_meta("event_on_use", d.event_on_use)
 	return it
 

@@ -166,6 +166,10 @@ static func process_turn_regeneration(units: Array, grid: Grid) -> Array:
 		var terrain_id := get_terrain_at(grid, u.grid_position)
 		var data := get_terrain_data(terrain_id)
 		var pct: float = data.get("regen", 0.0)
+		# Regeneración por skill (Life/Recover/Regeneration/Circlet). No apila con
+		# el terreno: se toma la mayor de ambas.
+		if u.has_method("get_regen_fraction"):
+			pct = max(pct, u.get_regen_fraction())
 		if pct <= 0.0:
 			continue
 		var heal: int = max(1, int(u.max_hp * pct))

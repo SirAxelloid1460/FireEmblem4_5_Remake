@@ -73,6 +73,14 @@ func _leave_castle() -> void:
 	var convoy := _get_convoy()
 	if convoy != null:
 		convoy.leave_castle()
+	# Persistir cambios hechos en el castillo (promociones, ítems) al roster.
+	_persist_roster()
+
+## Vuelca el ejército actual del castillo al roster persistente de GameMode.
+func _persist_roster() -> void:
+	var gm := _get_game_mode()
+	if gm != null and gm.has_method("capture_roster"):
+		gm.capture_roster(player_units)
 
 # ============================================
 # INICIALIZACIÓN
@@ -108,10 +116,31 @@ func setup_facility_buttons():
 			button.pressed.connect(facilities[button_name])
 
 func load_player_army():
-	"""Carga el ejército del jugador desde el estado del juego"""
-	# Esto debería cargar desde tu GameManager o SaveSystem
-	# Por ahora, crear unidades de ejemplo
-	
+	"""Carga el ejército del jugador desde el roster persistente (GameMode).
+
+	El roster se captura al ganar cada capítulo (GameManager._capture_roster)
+	y arrastra stats/nivel/skills/inventario entre batallas. Si está vacío
+	(primer arranque, sin ninguna batalla ganada aún), se usa un ejército de
+	ejemplo como fallback de desarrollo."""
+	player_units.clear()
+	var gm := _get_game_mode()
+	if gm != null and gm.has_method("has_roster") and gm.has_roster():
+		for u in gm.build_roster_units():
+			if u != null:
+				player_units.append(u)
+	if player_units.is_empty():
+		_load_placeholder_army()
+
+	# Cargar convoy inicial
+	load_convoy_items()
+
+## Resuelve el autoload GameMode (null si no está).
+func _get_game_mode():
+	return get_tree().get_root().get_node_or_null("GameMode")
+
+## Ejército de ejemplo — solo como fallback cuando no hay roster (probando la
+## escena en aislado o antes de la primera batalla).
+func _load_placeholder_army():
 	var unit1 = Unit.new()
 	unit1.unit_name = "Sigurd"
 	unit1.unit_class = "Lord"
@@ -124,7 +153,7 @@ func load_player_army():
 	unit1.defense = 8
 	unit1.resistance = 3
 	unit1.movement = 7
-	
+
 	var unit2 = Unit.new()
 	unit2.unit_name = "Arden"
 	unit2.unit_class = "Armor Knight"
@@ -137,12 +166,9 @@ func load_player_army():
 	unit2.defense = 12
 	unit2.resistance = 1
 	unit2.movement = 4
-	
+
 	player_units.append(unit1)
 	player_units.append(unit2)
-	
-	# Cargar convoy inicial
-	load_convoy_items()
 
 func load_convoy_items():
 	"""Carga los items del convoy del ejército"""
@@ -269,11 +295,14 @@ func _on_unit_selected(index: int):
 # ============================================
 
 func _on_shop_button_pressed():
-	"""Abre la tienda del castillo"""
+	"""Abre la tienda del castillo. Con Member Card en el ejército se desbloquea
+	la Secret Shop (stock adicional)."""
 	facility_opened.emit("Shop")
 	hide_all_facility_panels()
 	shop_panel.show()
-	shop_panel.open_shop(army_gold, selected_unit)
+	var secret := _army_has_item("MemberCard")
+	var bargain := _army_has_bargain(selected_unit)
+	shop_panel.open_shop(army_gold, selected_unit, secret, bargain)
 	shop_panel.item_purchased.connect(_on_item_purchased)
 
 func _on_convoy_button_pressed():
@@ -328,7 +357,10 @@ func _on_promotion_button_pressed():
 	if not can_promote(selected_unit):
 		show_message("%s no puede ser promocionado todavía" % selected_unit.unit_name)
 		return
-	
+	if not _army_has_item(["Knight Proof", "KnightProof"]):
+		show_message("Necesitas un Knight Proof para promocionar")
+		return
+
 	facility_opened.emit("Promotion")
 	hide_all_facility_panels()
 	promotion_panel.show()
@@ -434,10 +466,63 @@ func _on_weapon_repaired(weapon: Weapon, cost: int):
 	show_message("Arma reparada por %d oro" % cost)
 
 func _on_unit_promoted(old_class: String, new_class: String):
-	"""Cuando una unidad es promocionada"""
+	"""Cuando una unidad es promocionada — consume un Knight Proof."""
+	_army_consume_item(["Knight Proof", "KnightProof"])
 	show_message("%s ha sido promocionado a %s!" % [selected_unit.unit_name, new_class])
 	update_unit_details(selected_unit)
 	update_unit_list()
+
+
+# ── Helpers de inventario del ejército (Member Card, Knight Proof…) ───────────
+
+## nid de un item del inventario (ConsumableData/Item) o arma.
+func _item_nid(it) -> String:
+	if it == null:
+		return ""
+	if "nid" in it:
+		return str(it.nid)
+	if "weapon_name" in it:
+		return str(it.weapon_name)
+	return ""
+
+## ¿Alguna unidad del ejército (o el convoy) lleva alguno de estos nids?
+func _army_has_item(nids) -> bool:
+	var want: Array = nids if nids is Array else [nids]
+	for u in player_units:
+		for it in u.inventory:
+			if _item_nid(it) in want:
+				return true
+	for it in convoy_items:
+		if _item_nid(it) in want:
+			return true
+	return false
+
+## ¿Se aplica el descuento de Bargain (mitad de precio) en la tienda?
+##   Sí si la unidad que abre la tienda tiene la skill Bargain, o si alguno de
+##   los lords (Sigurd/Seliph/Leif) del ejército la tiene.
+const _BARGAIN_LORDS := ["Sigurd", "Seliph", "Leif"]
+func _army_has_bargain(entering: Unit) -> bool:
+	if entering != null and entering.has_method("has_skill") and entering.has_skill("Bargain"):
+		return true
+	for u in player_units:
+		if u != null and u.unit_name in _BARGAIN_LORDS \
+				and u.has_method("has_skill") and u.has_skill("Bargain"):
+			return true
+	return false
+
+## Gasta (borra) un item con alguno de estos nids. true si lo consumió.
+func _army_consume_item(nids) -> bool:
+	var want: Array = nids if nids is Array else [nids]
+	for u in player_units:
+		for it in u.inventory:
+			if _item_nid(it) in want:
+				u.inventory.erase(it)
+				return true
+	for it in convoy_items:
+		if _item_nid(it) in want:
+			convoy_items.erase(it)
+			return true
+	return false
 
 # ============================================
 # UTILIDADES
@@ -483,6 +568,8 @@ func show_message(text: String):
 
 func save_game():
 	"""Guarda el estado del juego"""
+	# Volcar el ejército actual al roster antes de serializar el guardado.
+	_persist_roster()
 	var save_data = {
 		"chapter": current_chapter,
 		"gold": army_gold,

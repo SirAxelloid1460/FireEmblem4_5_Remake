@@ -241,7 +241,7 @@ func create_beowolf_unit() -> Dictionary:
 			"accuracy": 85,
 			"weight": 8
 		},
-		"skills": ["Adept"],  # Habilidad especial de FE4
+		"skills": [],
 		"portrait": "res://assets/portraits/beowolf.png"
 	}
 
@@ -294,7 +294,7 @@ func create_lex_unit() -> Dictionary:
 			"weight": 13,
 			"brave": true
 		},
-		"skills": ["Paragon"],  # Doble EXP
+		"skills": ["Elite_Skill"],  # Doble EXP
 		"portrait": "res://assets/portraits/lex.png"
 	}
 

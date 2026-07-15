@@ -183,6 +183,15 @@ static func _tile_cost(grid: Grid, pos: Vector2i) -> float:
 	return TerrainSystem.get_movement_cost(terrain_id)
 
 
+## Coste total de recorrer `path` (suma el coste de cada casilla excepto la de
+## inicio path[0], que no se "paga"). Útil para Canto (movimiento restante).
+static func path_cost(grid: Grid, path: Array) -> float:
+	var total := 0.0
+	for i in range(1, path.size()):
+		total += _tile_cost(grid, path[i])
+	return total
+
+
 static func heuristic(a: Vector2i, b: Vector2i) -> int:
 	return abs(a.x - b.x) + abs(a.y - b.y)
 

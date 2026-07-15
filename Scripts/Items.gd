@@ -44,6 +44,7 @@ class ItemData:
 	var heal_percent:     float       # 0.0–1.0 de HP máximo curado (1.0 = todo)
 	var heal_flat:        int         # HP fijos curados
 	var status_applied:   String      # Status negativo/positivo que aplica
+	var status_on_hit:    String      # skill enseñada (manuales en formato LT)
 	var event_on_use:     String      # ID de evento que dispara al usarse
 
 	func _init(p_id: String, p_name: String, p_desc: String,
@@ -63,6 +64,7 @@ class ItemData:
 		heal_percent   = 0.0
 		heal_flat      = 0
 		status_applied = ""
+		status_on_hit  = ""
 		event_on_use   = ""
 
 
@@ -114,7 +116,7 @@ static func _rings_equipment() -> Array[ItemData]:
 		"EliteRing", "Elite Ring",
 		"Bearer receives double EXP (max 100 per action).",
 		40000, -1, "ring", "on_hold")
-	elite_ring.skill_granted = "Elite"
+	elite_ring.skill_granted = "Elite_Skill"
 	rings.append(elite_ring)
 
 	# ── Thief Ring ────────────────────────────────────────────────────────────
@@ -382,7 +384,7 @@ static func _stat_boosters() -> Array[ItemData]:
 # Solo usables en castillo (usable_in_base = true, aunque aquí lo dejamos
 # flexible para que el GameManager decida el contexto).
 # En LT se implementaban como status_on_hit con la skill correspondiente.
-# ⚠️ Continue M y Moonlight Sw M son NUEVOS (no implementados en LT).
+# ⚠️ Moonlight Sw M es NUEVO (no implementado en LT).
 
 static func _skill_manuals() -> Array[ItemData]:
 	var manuals: Array[ItemData] = []
@@ -395,12 +397,10 @@ static func _skill_manuals() -> Array[ItemData]:
 		m.usable_in_base = false
 		return m
 
-	manuals.append(_mk.call("EliteM",      "Elite Manual",          "Elite"))
+	manuals.append(_mk.call("EliteM",      "Elite Manual",          "Elite_Skill"))
 	manuals.append(_mk.call("BargainM",    "Bargain Manual",        "Bargain"))
-	manuals.append(_mk.call("AmbushM",     "Ambush Manual",         "Ambush"))
+	manuals.append(_mk.call("VantageM",    "Vantage Manual",        "Vantage"))
 	manuals.append(_mk.call("WrathM",      "Wrath Manual",          "Wrath"))
-	manuals.append(_mk.call("ContinueM",   "Continue Manual",       "Continue",
-		"⚠️ NEW — Continue not in LT. Teaches the Continue skill (extra round if HP > enemy's)."))
 	manuals.append(_mk.call("PrayerM",     "Prayer Manual",         "Prayer"))
 	manuals.append(_mk.call("AwarenessM",  "Awareness Manual",      "Awareness"))
 	manuals.append(_mk.call("SunSwordM",   "Sun Sword Manual",      "Sol"))
@@ -533,11 +533,16 @@ class ItemSystem:
 				target.increase_stat_permanently(stat, item.stat_permanent[stat])
 			success = true
 
-		# Enseñar skill (manuales)
-		if item.skill_granted != "" and item.category == "manual":
-			for skill_id in item.skill_granted.split(","):
+		# Enseñar skill (manuales): por skill_granted o por status_on_hit (formato
+		# LT de items.json). Solo llega aquí un item "usable", así que esto NO
+		# afecta a los rings on_hold (que aplican su skill mientras se portan).
+		var taught: String = item.skill_granted
+		if taught == "" and item.status_on_hit != "":
+			taught = item.status_on_hit
+		if taught != "":
+			for skill_id in taught.split(","):
 				skill_id = skill_id.strip_edges()
-				if not target.has_skill(skill_id):
+				if skill_id != "" and not target.has_skill(skill_id):
 					target.learn_skill(skill_id)
 			success = true
 
@@ -571,7 +576,11 @@ class ItemSystem:
 	static func _fire_event(user, target, event_id: String) -> bool:
 		# El GameManager escucha esta señal y ejecuta el evento correspondiente
 		# Eventos implementados:
-		#   ReturnToHomeCastle  — teleporta al portador al Home Castle
+		#   ReturnToHomeCastle  — teleporta el TARGET al castillo principal del
+		#     capítulo. El Return Ring se auto-apunta (target = portador → vuelve
+		#     el portador); el báculo Return apunta a un aliado (vuelve el aliado).
+		#     PENDIENTE: GameManager.trigger_item_event + posición del castillo
+		#     principal (aún no modelada) para completar el warp.
 		#   UnlockAdjacent      — abre puerta/cofre/puente adyacente
 		#   PromoteUnit         — inicia la pantalla de promoción
 		#   ReviveUnit          — inicia la selección de unidad caída
@@ -615,11 +624,10 @@ class ItemSystem:
 #    En Godot: CastleBase.gd verifica if any(unit.has_item("MemberCard"))
 #    antes de mostrar el botón "Secret Shop" en la UI de tienda.
 #
-# 6. CONTINUE MANUAL
-#    Continue no estaba implementada como skill en LT.
-#    En Godot: Continue = si HP del atacante > HP del defensor Y AS atacante
-#    > AS defensor, inicia una ronda extra de combate (similar a Charge
-#    pero sin requerir la victoria del round anterior).
+# 6. VANTAGE MANUAL
+#    Vantage unifica los antiguos Ambush/Desperation/Continue.
+#    En Godot: si el defensor tiene Vantage y su HP <= 50%, golpea primero
+#    (ver CombatSystem).
 #
 # 7. MOONLIGHT SWORD MANUAL
 #    Aparece en el spreadsheet pero no estaba en el proyecto LT.

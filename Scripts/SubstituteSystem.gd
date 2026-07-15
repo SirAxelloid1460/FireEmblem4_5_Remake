@@ -194,12 +194,12 @@ const SUBSTITUTE_DEFS: Dictionary = {
 	"Linda": {
 		"replaces": "Tinny", "mother_id": "Tailtiu", "gender": "F",
 		"klass": "Mage", "tier": 1, "level": 5,
-		"desc": "Mage with the Paragon skill, capable of using Thoron unusually early.",
+		"desc": "Mage with the Elite skill, capable of using Thoron unusually early.",
 		"bases":   { "HP":20,"STR":2,"MAG":10,"SKL":7,"SPD":9,"LCK":3,"DEF":3,"RES":7,"CON":5 },
 		"growths": { "HP":55,"STR":10,"MAG":60,"SKL":35,"SPD":40,"LCK":25,"DEF":10,"RES":50 },
 		"holy_blood": {},
 		"start_items": ["Thunder"],
-		"skills": ["Paragon"],
+		"skills": ["Elite_Skill"],
 	},
 }
 

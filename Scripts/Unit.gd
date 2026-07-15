@@ -137,44 +137,199 @@ func remove_temporary_skills_by_source(source: String) -> void:
 	for skill_id in to_remove:
 		_temp_skills.erase(skill_id)
 
+## Resuelve el autoload GameDB de forma robusta: funciona tanto si la unidad
+## está en el árbol (get_node) como si es un nodo suelto (roster reconstruido en
+## el castillo) — en ese caso se accede vía el SceneTree raíz.
+func _gamedb():
+	var n := get_node_or_null("/root/GameDB")
+	if n != null:
+		return n
+	var loop := Engine.get_main_loop()
+	if loop is SceneTree and loop.root != null:
+		return loop.root.get_node_or_null("GameDB")
+	return null
+
+# ── Efectos de equipo (status_on_hold / status_on_equip) ──────────────────────
+# Recalcula las skills temporales y los modificadores de stats derivados del
+# EQUIPO de la unidad (no de status ni de captura):
+#   · Cada item del inventario con `status_on_hold` (anillos pasivos, scrolls,
+#     Circlet…) concede su skill mientras se porta.
+#   · El arma equipada con `status_on_equip` (Holy/Darkness Sword…) concede su
+#     skill mientras está equipada.
+# Además, si la skill concedida lleva un componente `stat_change`, se aplica
+# como modificador de status (p.ej. Power Ring → +STR). Es IDEMPOTENTE: limpia
+# lo derivado antes de reconstruir, así que puede llamarse tras spawnear, tras
+# equipar/desequipar, tras usar un item o tras mover objetos entre unidades y el
+# convoy. NO toca los modificadores de captura ("Carrying") ni los de status.
+func refresh_item_effects() -> void:
+	# 1) Limpiar skills temporales y modificadores derivados de items/equipo.
+	remove_temporary_skills_by_source("item")
+	for mod_id in _stat_modifiers.keys():
+		var key := str(mod_id)
+		if key.begins_with("hold:") or key.begins_with("equip:"):
+			_stat_modifiers.erase(mod_id)
+	# 2) status_on_hold de cada item del inventario.
+	for it in inventory:
+		var sid := _equipment_skill_field(it, "status_on_hold")
+		if sid != "":
+			_grant_equipment_skill(sid, "hold:" + sid)
+	# 3) status_on_equip del arma equipada.
+	if weapon != null and weapon.has_method("get_component"):
+		var wsid = weapon.get_component("status_on_equip")
+		if wsid != null and str(wsid) != "":
+			_grant_equipment_skill(str(wsid), "equip:" + str(wsid))
+
+## Lee un campo de skill (status_on_hold/status_on_equip) de un item, tolerando
+## tanto ConsumableData/ItemData (propiedad tipada) como Dictionary.
+func _equipment_skill_field(it, field: String) -> String:
+	if it == null:
+		return ""
+	if it is Object and field in it:
+		return str(it.get(field))
+	if it is Dictionary:
+		return str(it.get(field, ""))
+	return ""
+
+## Concede una skill de equipo (temporal, source="item") y aplica su stat_change
+## como modificador de status si lo tiene.
+func _grant_equipment_skill(skill_id: String, mod_id: String) -> void:
+	if skill_id == "":
+		return
+	add_temporary_skill(skill_id, "item")
+	var deltas := _skill_stat_change(skill_id)
+	if not deltas.is_empty():
+		add_status_modifier(mod_id, deltas)
+
+## Extrae el componente stat_change de una skill de GameDB → {stat: delta}.
+func _skill_stat_change(skill_id: String) -> Dictionary:
+	var out := {}
+	if not (_gamedb() != null):
+		return out
+	var sk = _gamedb().get_skill(skill_id)
+	if sk == null:
+		return out
+	var raw = sk.component_value("stat_change")
+	if raw is Array:
+		for pair in raw:
+			if pair is Array and pair.size() >= 2:
+				var stat := str(pair[0])
+				var val := int(pair[1])
+				# Convención LT: el MOV se almacena ×10 (LT no aceptaba decimales),
+				# igual que las bases de clase — ver LevelLoader (mov_raw/10). Sólo
+				# se decodifican magnitudes ≥10 (los bonuses reales son 1-5 → 10-50);
+				# valores pequeños ya están en unidades reales.
+				if stat == "MOV" and abs(val) >= 10:
+					val = int(round(val / 10.0))
+				out[stat] = val
+	return out
+
+## Todas las skills activas de la unidad: permanentes + temporales (items).
+func _all_skill_ids() -> Array:
+	var ids: Array = []
+	ids.append_array(skills)
+	for k in _temp_skills:
+		if not k in ids:
+			ids.append(k)
+	return ids
+
+## Mayor fracción de regeneración por turno entre las skills activas
+## (Life 0.2, Recover 1.0, Regeneration/Circlet 0.25…). 0.0 si ninguna regenera.
+func get_regen_fraction() -> float:
+	var best := 0.0
+	if not (_gamedb() != null):
+		return best
+	var db = _gamedb()
+	for sid in _all_skill_ids():
+		var sk = db.get_skill(sid)
+		if sk == null:
+			continue
+		var v = sk.component_value("regeneration")
+		if v != null:
+			best = max(best, float(v))
+	return best
+
+## Bonos de crecimiento (growth_change) sumados de todas las skills activas,
+## en puntos de % por stat (Elite +10 todos, scrolls de sangre…). Claves en
+## mayúsculas (HP/STR/MAG/SKL/SPD/LCK/DEF/RES). Usado por LevelUpScreen.
+func get_growth_bonuses() -> Dictionary:
+	var out := {}
+	if not (_gamedb() != null):
+		return out
+	var db = _gamedb()
+	for sid in _all_skill_ids():
+		var sk = db.get_skill(sid)
+		if sk == null:
+			continue
+		var gc = sk.component_value("growth_change")
+		if gc is Array:
+			for pair in gc:
+				if pair is Array and pair.size() >= 2:
+					var stat := str(pair[0])
+					out[stat] = int(out.get(stat, 0)) + int(pair[1])
+	return out
+
+## Nivel de Canto de la unidad según sus skills activas:
+##   0 = sin Canto; 1 = Canto (re-mover con el movimiento RESTANTE);
+##   2 = Canto+ (re-mover con el movimiento COMPLETO).
+func canto_level() -> int:
+	if not (_gamedb() != null):
+		# Fallback por nid conocido si GameDB no está disponible.
+		if has_skill("Canto_Plus"): return 2
+		if has_skill("Canto"): return 1
+		return 0
+	var db = _gamedb()
+	var lvl := 0
+	for sid in _all_skill_ids():
+		var sk = db.get_skill(sid)
+		if sk == null:
+			continue
+		if sk.has_component("canto_plus"):
+			lvl = max(lvl, 2)
+		elif sk.has_component("canto"):
+			lvl = max(lvl, 1)
+	return lvl
+
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 # WEAPON RANK & HOLY BLOOD   (fiel a LT-maker + reglas FE4 LOCKED del brief §4)
 # ══════════════════════════════════════════════════════════════════════════════
 #
-# Thresholds de wexp AUTORITATIVOS de LT (game_data/weapon_ranks.json, idéntico
-# en GotHW.ltproj y Thracia776.ltproj):
-#   D=1  C=51  B=126  A=226  Holy=1023
-# NO existen rangos "E" ni "S". El techo normal es A (226). "Holy" (1023) es un
-# rango especial que SÓLO alcanzan las unidades con Major Blood de un cruzado:
-# el resto lleva la habilidad NotHoly, que tapa el wexp en 226 (=A). Las armas
-# sagradas se restringen además por prf_tags (XxxHeir) en LT.
+# Thresholds de wexp:
+#   D=1  C=51  B=126  A=226  S=1023  Holy=1023
+# S es el rango tope NATURAL: CUALQUIER unidad puede alcanzarlo escalando wexp.
+# Holy es un S ESPECIAL que sólo tienen las unidades con Major Blood de un
+# cruzado, y lo tienen AUTOMÁTICAMENTE desde el inicio (no se gana por wexp; se
+# concede por la sangre). A wexp>=1023 una unidad normal muestra "S" y una con
+# Major Blood muestra "Holy". Las armas sagradas se restringen por prf_tags
+# (XxxHeir = heredero de ESE cruzado), así que el heredero las usa desde el
+# principio sin importar su wexp.
 
 const WEAPON_RANK_THRESHOLDS := {
-	"D": 1, "C": 51, "B": 126, "A": 226, "Holy": 1023
+	"D": 1, "C": 51, "B": 126, "A": 226, "S": 1023, "Holy": 1023
 }
-const WEAPON_RANK_ORDER := ["D", "C", "B", "A", "Holy"]
-const NOT_HOLY_CAP := 226  # wexp máximo (=A) para unidades con NotHoly
+const WEAPON_RANK_ORDER := ["D", "C", "B", "A", "S", "Holy"]
 
-## Gana wexp en un tipo de arma. Replica action.GainWexp + el componente NotHoly
-## de LT (wexp_multiplier 0 con condition wexp[type] >= 226). Las unidades sin
-## Major Blood llevan NotHoly y topan en A (226); las que tienen Major Blood
-## siguen subiendo hasta Holy (1023).
+## Gana wexp en un tipo de arma. Ya NO hay tope en A: toda unidad puede llegar
+## a S (1023) escalando. (Holy no se gana por wexp — es el S nato por sangre.)
 func gain_weapon_exp(weapon_type: String, amount: int) -> void:
 	if weapon_type == "":
 		return
-	var current := int(wexp.get(weapon_type, 0))
-	if has_skill("NotHoly") and current >= NOT_HOLY_CAP:
-		return
-	wexp[weapon_type] = current + max(0, amount)
+	wexp[weapon_type] = int(wexp.get(weapon_type, 0)) + max(0, amount)
 
 ## Rango (letra) que la unidad tiene en un tipo de arma según su wexp.
-## Pura búsqueda por umbral: "Holy" sólo a wexp>=1023, inalcanzable con NotHoly.
+## A wexp>=1023 el rango natural es S; las unidades con Major Blood lo muestran
+## como Holy (su S nato).
 func get_weapon_rank(weapon_type: String) -> String:
 	var w: int = int(wexp.get(weapon_type, 0))
 	var result := ""
 	for r in WEAPON_RANK_ORDER:
+		if r == "Holy":
+			continue  # Holy no se obtiene por wexp; se concede por sangre
 		if w >= int(WEAPON_RANK_THRESHOLDS[r]):
 			result = r
+	if result == "S" and has_major_blood():
+		result = "Holy"
 	return result
 
 ## Requirement numérico de un rango (para comparar can_equip).
@@ -189,8 +344,12 @@ func can_equip(w: Weapon) -> bool:
 	if w == null:
 		return false
 	var required: String = str(w.weapon_rank)
-	if required == "Holy" and (not has_major_blood() or has_skill("NotHoly")):
-		return false
+	# Armas Holy (S nato): sólo Major Blood, y las usan desde el inicio sin
+	# exigir wexp (el rango se concede por la sangre). En LT esto se refuerza
+	# además por prf_tags (XxxHeir).
+	if required == "Holy":
+		return has_major_blood()
+	# Rango S y por debajo: cualquiera que tenga el wexp del tipo suficiente.
 	return int(wexp.get(str(w.weapon_type), 0)) >= rank_requirement(required)
 
 # ── Holy Blood ──────────────────────────────────────────────────────────────
@@ -206,15 +365,6 @@ func has_minor_blood(blood: String = "") -> bool:
 	if blood != "":
 		return holy_blood.get(blood, "") == "Minor"
 	return "Minor" in holy_blood.values()
-
-## NotHoly = la unidad NO puede usar armas Holy★. La tienen automáticamente
-## todas las unidades SIN Major Blood (Minor o sin sangre). Llamar tras fijar
-## holy_blood (lo hace el importador LT al construir la unidad).
-func refresh_holy_status() -> void:
-	if has_major_blood():
-		remove_skill("NotHoly")
-	elif not has_skill("NotHoly"):
-		learn_skill("NotHoly")
 
 # ══════════════════════════════════════════════════════════════════════════════
 # STATS CON MODIFICADORES
@@ -521,8 +671,8 @@ func _play_step_sfx(sfx_name: String) -> void:
 
 func _resolve_map_sprite_nid() -> String:
 	var ms := ""
-	if has_node("/root/GameDB"):
-		var cd = get_node("/root/GameDB").get_class_data(unit_class)  # UnitClassData o null
+	if (_gamedb() != null):
+		var cd = _gamedb().get_class_data(unit_class)  # UnitClassData o null
 		if cd != null:
 			ms = str(cd.map_sprite_nid)
 	if ms == "":
@@ -535,8 +685,8 @@ func _resolve_map_sprite_nid() -> String:
 ## Se lee de GameDB en cada llamada, de modo que una promoción (que cambia
 ## unit_class) actualiza la animación automáticamente.
 func resolve_combat_anim_nid() -> String:
-	if has_node("/root/GameDB"):
-		var cd = get_node("/root/GameDB").get_class_data(unit_class)  # UnitClassData o null
+	if (_gamedb() != null):
+		var cd = _gamedb().get_class_data(unit_class)  # UnitClassData o null
 		if cd != null and str(cd.combat_anim_nid) != "":
 			return str(cd.combat_anim_nid)
 	return unit_class   # fallback: el nid de clase suele coincidir

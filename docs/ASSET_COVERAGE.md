@@ -7,8 +7,8 @@
 
 ## Resumen
 
-- Clases: **63** · con map sprite: **63** · con combat anim (Generic o género): **55**
-- Personajes: **64** · con retrato: **59**
+- Clases: **61** · con map sprite: **61** · con combat anim (Generic o género): **54**
+- Personajes: **122** · con retrato: **105**
 - Carpetas de combat anim: **174**
 
 
@@ -16,7 +16,6 @@
 
 | Clase | Tier | Map stand | Map move | Anim Generic | Anim Male | Anim Female | Armas de la anim |
 |---|---|---|---|---|---|---|---|
-| Child | 0 | ✅ | ✅ | ⬜ | — | — | — |
 | Citizen | 0 | ✅ | ✅ | ⬜ | — | — | — |
 | DragonRider | 0 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
 | PegasusRider | 0 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
@@ -53,7 +52,6 @@
 | Bishop | 2 | ✅ | ✅ | ✅ | — | — | MagicAnima, MagicStaff |
 | BowKnight | 2 | ✅ | ✅ | ✅ | — | — | — |
 | Dancer | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Refresh, Sword |
-| Dancer_Lara | 2 | ✅ | ✅ | ✅ | — | — | MagicSword, Refresh, Sword |
 | DarkMage | 2 | ✅ | ✅ | ✅ | — | — | MagicAnima |
 | DragonMaster | 2 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
 | DukeKnight | 2 | ✅ | ✅ | ✅ | — | — | Javelin, Lance |
@@ -84,64 +82,122 @@
 
 | Personaje | Clase | Género | Retrato | Map propio | Combat anim | Armas de su anim |
 |---|---|---|---|---|---|---|
+| Asaello | Archer | M | ✅ | ⬜ | ✅ | Bow |
 | Jamke | Archer | M | ✅ | ⬜ | ✅ | Bow |
 | Ronan | Archer | M | ✅ | ⬜ | ✅ | Bow |
 | Tanya | Archer | F | ✅ | ⬜ | ✅ | Bow |
 | Arden | Armour | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
+| Dalsin | Armour | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Weissman | Armour | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Marty | Bandit | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
+| Homer | Bard | M | ✅ | ⬜ | ✅ | MagicAnima |
 | Lewyn | Bard | M | ⬜ | ⬜ | ✅ | MagicAnima |
 | Chagall | Baron | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
 | Raydrik | Baron | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicAnima, MagicStaff, MagicSword, Sword |
 | Clement | Bishop | M | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
 | Alec | Cavalier | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Ares | Cavalier | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Carrion | Cavalier | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Noish | Cavalier | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | NordionGuard | Cavalier | M | ⬜ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Brighton | CavalierA | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
+| Hicks | CavalierA | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
+| Johan | CavalierA | M | ⬜ | ⬜ | ✅ | Axe, HandAxe |
 | Lex | CavalierA | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
+| Dimna | CavalierB | M | ⬜ | ⬜ | ✅ | Bow |
 | Midir | CavalierB | M | ✅ | ⬜ | ✅ | Bow |
+| Robert | CavalierB | M | ⬜ | ⬜ | ✅ | Bow |
+| Selphina | CavalierB | F | ✅ | ⬜ | ✅ | Bow |
+| Alva | CavalierL | M | ✅ | ⬜ | ✅ | Javelin, Lance |
+| Cain | CavalierL | M | ✅ | ⬜ | ✅ | Javelin, Lance |
 | Finn | CavalierL | M | ⬜ | ⬜ | ✅ | Javelin, Lance |
 | Beowulf | CavalierS | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
-| Coirpre | Child | M | ✅ | ⬜ | ⬜ | — |
+| Fergus | CavalierS | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Tristan | CavalierS | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Laylea | Dancer | F | ✅ | ⬜ | ✅ | MagicSword, Refresh, Sword |
 | Sylvia | Dancer | M | ✅ | ⬜ | ✅ | MagicSword, Refresh, Sword |
 | Sandima | DarkMage | M | ✅ | ⬜ | ✅ | MagicAnima |
+| Deen | DragonKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Eda | DragonRider | F | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Elliot | DukeKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance |
+| Glade | DukeKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance |
 | Quan | DukeKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance |
 | Zain | DukeKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance |
 | DiMaggio | Fighter | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
 | Gerrard | Fighter | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
 | Halvan | Fighter | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
+| Johalva | Fighter | M | ⬜ | ⬜ | ✅ | Axe, HandAxe |
 | Osian | Fighter | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
+| Delmud | ForrestKnight | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Voltz | ForrestKnight | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Boldor | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
+| Hannibal | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Lobos | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Macbeth | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Phillip | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
+| Xavier | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Claude | HighPriest | M | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
+| Cyas | HighPriest | M | ⬜ | ⬜ | ✅ | MagicAnima, MagicStaff |
 | Deirdre | LightPriestess | F | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
+| Julia | LightPriestess | F | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
+| Salem | LoptoMage | M | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
 | Sigurd | LordKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Leif | LordLeaf | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Amid | Mage | M | ✅ | ⬜ | ✅ | MagicAnima |
+| Asbel | Mage | M | ✅ | ⬜ | ✅ | MagicAnima |
 | Azel | Mage | M | ✅ | ⬜ | ✅ | MagicAnima |
+| Linda | Mage | F | ✅ | ⬜ | ✅ | MagicAnima |
+| Miranda | Mage | F | ✅ | ⬜ | ✅ | MagicAnima |
 | Tailtiu | Mage | M | ✅ | ⬜ | ✅ | MagicAnima |
+| Ilios | MageKnight | M | ✅ | ⬜ | ✅ | MagicAnima, MagicSword, Sword |
+| Olwen | MageKnight | F | ✅ | ⬜ | ✅ | MagicAnima, MagicSword, Sword |
 | FakeHolyn | Mercenary | M | ✅ | ⬜ | ✅ | Axe, HandAxe, MagicSword, Sword |
+| Galzus | Mercenary | M | ✅ | ⬜ | ✅ | Axe, HandAxe, MagicSword, Sword |
 | Holyn | Mercenary | M | ✅ | ⬜ | ✅ | Axe, HandAxe, MagicSword, Sword |
+| Ralf | Mercenary | M | ✅ | ⬜ | ✅ | Axe, HandAxe, MagicSword, Sword |
 | Alvar | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Amalda | Paladin | F | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
+| Conomor | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Eldigan | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Evan | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Evar | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Fred | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Oifey | Paladin | M | ⬜ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Erinys | PegasusKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Femina | PegasusKnight | F | ⬜ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Misha | PegasusKnight | F | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Karin | PegasusRider | F | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Coirpre | Priest | M | ✅ | ⬜ | ✅ | MagicStaff |
+| Sharlow | Priest | M | ⬜ | ⬜ | ✅ | MagicStaff |
+| Sleuf | Priest | M | ✅ | ⬜ | ✅ | MagicStaff |
 | Aideen | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
+| Linoan | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
+| Mana | Priestess | F | ⬜ | ⬜ | ✅ | MagicStaff |
 | Safy | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
+| Sara | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
+| Tina | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
 | Lachesis | Princess | F | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
+| Pahn | Rogue | M | ⬜ | ⬜ | ✅ | MagicSword, Sword |
 | Arvis | Sage | M | ⬜ | ⬜ | ✅ | MagicAnima, MagicStaff |
+| Ced | Sage | M | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
+| Hawk | Sage | M | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
 | Brigid | Sniper | F | ✅ | ⬜ | ✅ | Bow |
 | Ayra | Swordfighter | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Machyua | Swordfighter | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Mareeta | Swordfighter | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Radney | Swordfighter | F | ⬜ | ⬜ | ✅ | MagicSword, Sword |
+| Roddlevan | Swordfighter | M | ⬜ | ⬜ | ✅ | MagicSword, Sword |
 | Shiva | Swordfighter | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Troude | Swordfighter | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Eyvel | Swordmaster | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Shannam | Swordmaster | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Shannan | Swordmaster | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Daisy | Thief | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Dew | Thief | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Lara | Thief | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Lifis | Thief | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Ethlyn | Troubadour | F | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
+| Jeanne | Troubadour | F | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
 | Nanna | Troubadour | F | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
 | Bucks | Warrior | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe |
 | Dagdar | Warrior | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe |

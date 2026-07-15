@@ -1,37 +1,5 @@
 [
  {
-  "nid": "Ambush",
-  "name": "Ambush",
-  "desc": "Always attacks first even on defense if HP is below half.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "condition",
-    "unit.get_hp() < unit.stats['HP']//2"
-   ],
-   [
-    "defense_pre_proc",
-    "Ambush_proc"
-   ]
-  ]
- },
- {
-  "nid": "Ambush_proc",
-  "name": "Ambush",
-  "desc": "Always attacks first even on defense if HP is below half.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "vantage",
-    null
-   ],
-   [
-    "hidden",
-    null
-   ]
-  ]
- },
- {
   "nid": "Astra",
   "name": "Shooting Star",
   "desc": "SKL%. to attack up to 5 consecutive times.",
@@ -41,18 +9,6 @@
     "proc_rate",
     "SKILL"
    ],
-   [
-    "attack_proc",
-    "Astra_proc"
-   ]
-  ]
- },
- {
-  "nid": "Astra_proc",
-  "name": "Shooting Star",
-  "desc": "SKL%. to attack up to 5 consecutive times.",
-  "icon_nid": "Skills",
-  "components": [
    [
     "dynamic_multiattacks",
     "5"
@@ -153,7 +109,7 @@
   "components": [
    [
     "change_buy_price",
-    0.49999999999999994
+    0.5
    ]
   ]
  },
@@ -319,28 +275,12 @@
   "icon_nid": "Skills",
   "components": [
    [
-    "aura",
-    "Charisma_child"
-   ],
-   [
     "aura_range",
     3
    ],
    [
     "aura_target",
     "Ally"
-   ]
-  ]
- },
- {
-  "nid": "Charisma_child",
-  "name": "Charisma",
-  "desc": "Gives allies in a close area better chances of hitting and avoiding",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "hidden",
-    null
    ],
    [
     "hit",
@@ -406,7 +346,7 @@
   ]
  },
  {
-  "nid": "Darkness Sword",
+  "nid": "DarknessSword",
   "name": "Darkness Sword",
   "desc": "Doubles damage done and halves received",
   "icon_nid": "Sword",
@@ -737,7 +677,7 @@
  {
   "nid": "Hel",
   "name": "Hel",
-  "desc": "Destroys enemies from inside.",
+  "desc": "Reduces the target to 1 HP (leaves current HP - 1 damage); never kills.",
   "icon_nid": "Skills",
   "components": [
    [
@@ -814,7 +754,7 @@
   ]
  },
  {
-  "nid": "Holy Sword",
+  "nid": "HolySword",
   "name": "Holy Sword",
   "desc": "Enhances damage done and halves received",
   "icon_nid": "Sword",
@@ -847,18 +787,6 @@
       15
      ]
     ]
-   ]
-  ]
- },
- {
-  "nid": "Inmortal",
-  "name": "Inmortal",
-  "desc": "Once per chapter, if this unit would die, instead they survive with 1 HP.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "miracle",
-    null
    ]
   ]
  },
@@ -1006,28 +934,12 @@
     "SKILL"
    ],
    [
-    "attack_proc",
-    "Luna_proc"
-   ],
-   [
     "class_skill",
     null
-   ]
-  ]
- },
- {
-  "nid": "Luna_proc",
-  "name": "Moonlight",
-  "desc": "SKL% to ignore enemy's Defense or Resistance.",
-  "icon_nid": "Skills",
-  "components": [
+   ],
    [
     "dynamic_damage",
     "combat_calcs.defense(unit, target, None, item)"
-   ],
-   [
-    "hidden",
-    null
    ]
   ]
  },
@@ -1256,26 +1168,6 @@
   ]
  },
  {
-  "nid": "NotHoly",
-  "name": "NotHoly",
-  "desc": "Does not let units go further a certain weapon rank.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "wexp_multiplier",
-    0
-   ],
-   [
-    "hidden",
-    null
-   ],
-   [
-    "condition",
-    "unit.wexp[item_system.weapon_type(unit,unit.get_weapon())] >= 226"
-   ]
-  ]
- },
- {
   "nid": "Od Scroll",
   "name": "Od Scroll",
   "desc": "Grants growth rate bonuses.",
@@ -1299,21 +1191,9 @@
   "icon_nid": "Skills",
   "components": [
    [
-    "defense_proc",
-    "Pavise_proc"
-   ],
-   [
     "proc_rate",
     "LVL"
-   ]
-  ]
- },
- {
-  "nid": "Pavise_proc",
-  "name": "Great Shield",
-  "desc": "Proc. Ignore attacker's damage.",
-  "icon_nid": "Skills",
-  "components": [
+   ],
    [
     "ignore_damage",
     null
@@ -1683,18 +1563,6 @@
     "SKILL"
    ],
    [
-    "attack_proc",
-    "Sol_proc"
-   ]
-  ]
- },
- {
-  "nid": "Sol_proc",
-  "name": "Sun",
-  "desc": "SKL%. to recover HP equal to damage dealt to enemy.",
-  "icon_nid": "Skills",
-  "components": [
-   [
     "lifelink",
     1.0
    ],
@@ -1980,41 +1848,25 @@
   ]
  },
  {
-  "nid": "ChangeSniper",
-  "name": "Change to Sniper",
-  "desc": "Allows Eyvel to change her class to Sniper",
-  "icon_nid": "Consumable",
+  "nid": "Vantage",
+  "name": "Vantage",
+  "desc": "When HP <= 50%, the unit strikes first even when defending.",
+  "icon_nid": "Skills",
   "components": [
    [
-    "hidden",
-    null
-   ],
-   [
-    "ability",
-    "ChangeSniper"
-   ],
-   [
-    "class_skill",
+    "vantage",
     null
    ]
   ]
  },
  {
-  "nid": "ChangeSwordmaster",
-  "name": "Change to Swordmaster",
-  "desc": "Allows Eyvel to change her class to Swordmaster",
-  "icon_nid": "Consumable",
+  "nid": "Nihil",
+  "name": "Nihil",
+  "desc": "Negates all of the enemy side's proc skills.",
+  "icon_nid": "Skills",
   "components": [
    [
-    "hidden",
-    null
-   ],
-   [
-    "ability",
-    "ChangeSwordmaster"
-   ],
-   [
-    "class_skill",
+    "display_skill_icon_in_combat",
     null
    ]
   ]
