@@ -683,7 +683,7 @@
   "nid": "Knight Proof",
   "name": "Knight's Proof",
   "desc": "Promotes base class units that have reached their max level to an advanced class",
-  "category": "Boosters",
+  "category": "Promotion",
   "worth": 10000,
   "uses": 1,
   "heal": 0,
@@ -1773,7 +1773,7 @@
   "name": "Torch",
   "desc": "",
   "category": "Staff",
-  "worth": -1,
+  "worth": 2200,
   "uses": 5,
   "heal": 0,
   "permanent_stat_change": {},
@@ -2717,7 +2717,7 @@
   "desc": "Increases the vision sight by 5 squares.",
   "category": "FE5rewarp",
   "worth": 500,
-  "uses": 3,
+  "uses": 1,
   "heal": 0,
   "permanent_stat_change": {},
   "status_on_hold": "",
@@ -2736,7 +2736,7 @@
    ],
    [
     "uses",
-    3
+    1
    ],
    [
     "uses_options",
@@ -2764,31 +2764,31 @@
   ]
  },
  {
-  "nid": "Torch_staff",
-  "name": "Torch",
-  "desc": "",
-  "category": "Staff",
-  "worth": -1,
-  "uses": 5,
+  "nid": "Antidote",
+  "name": "Antidote",
+  "desc": "Cures poison.",
+  "category": "Consumable",
+  "worth": 1500,
+  "uses": 3,
   "heal": 0,
   "permanent_stat_change": {},
   "status_on_hold": "",
-  "status_on_hit": "Torch",
+  "status_on_hit": "",
   "promote": false,
   "restore": false,
-  "restore_specific": "",
+  "restore_specific": "Poison",
   "components": [
    [
-    "target_tile",
+    "usable",
     null
    ],
    [
-    "status_on_hit",
-    "Torch"
+    "target_ally",
+    null
    ],
    [
     "uses",
-    5
+    3
    ],
    [
     "uses_options",
@@ -2801,16 +2801,80 @@
     ]
    ],
    [
-    "min_range",
+    "value",
+    1500
+   ],
+   [
+    "restore_specific",
+    "Poison"
+   ]
+  ]
+ },
+ {
+  "nid": "HolyWater",
+  "name": "Holy Water",
+  "desc": "Temporarily raises Magic by 7, decreasing 1 each turn (offensive use in FE5).",
+  "category": "Consumable",
+  "worth": 1000,
+  "uses": 1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "usable",
+    null
+   ],
+   [
+    "target_ally",
+    null
+   ],
+   [
+    "uses",
     1
    ],
    [
-    "max_range",
-    5
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
    ],
    [
-    "exp",
-    30
+    "value",
+    1000
+   ],
+   [
+    "status_applied",
+    "HolyWater"
+   ]
+  ]
+ },
+ {
+  "nid": "MemberCard",
+  "name": "Member Card",
+  "desc": "Grants access to the Secret Shop at allied castles (passive while carried).",
+  "category": "Special",
+  "worth": -1,
+  "uses": -1,
+  "heal": 0,
+  "permanent_stat_change": {},
+  "status_on_hold": "",
+  "status_on_hit": "",
+  "promote": false,
+  "restore": false,
+  "restore_specific": "",
+  "components": [
+   [
+    "secret_shop",
+    "True"
    ]
   ]
  }

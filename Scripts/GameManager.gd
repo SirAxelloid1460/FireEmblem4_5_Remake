@@ -468,6 +468,8 @@ func _is_usable_consumable(it, unit = null) -> bool:
 		return true
 	if _item_component(it, "event_on_use") != null:
 		return true   # Return Ring, etc.
+	if _item_component(it, "status_applied") != null:
+		return true   # Holy Water (buff temporal), etc.
 	# Llave/ganzúa: solo si hay una casilla adyacente cerrada que abrir.
 	if _item_component(it, "can_unlock") != null:
 		return unit != null and _adjacent_unlockable(unit) != Vector2i(-1, -1)
@@ -486,6 +488,18 @@ func _adjacent_unlockable(unit) -> Vector2i:
 			if terr in ["door", "chest", "bridge"] and not bool(t.get("walkable", true)):
 				return n
 	return Vector2i(-1, -1)
+
+## Aplica el status de un item consumible sobre la unidad.
+func _apply_item_status(unit, sid: String) -> void:
+	match sid:
+		"HolyWater":
+			# FE5: sube MAG +7 y decae 1/turno (Unit._apply_status_upkeep lo baja).
+			unit.add_status_modifier("HolyWater", {"MAG": 7})
+			unit.apply_status("HolyWater", {})
+		"CurePoison":
+			unit.remove_status("Poison")
+		_:
+			unit.apply_status(sid, {})
 
 ## Abre la casilla (puerta/cofre/puente): la vuelve transitable.
 func _unlock_tile(pos: Vector2i) -> void:
@@ -562,6 +576,10 @@ func _use_consumable(unit, item) -> void:
 	# Restaurar estados.
 	if "restore_specific" in item and str(item.restore_specific) != "":
 		unit.remove_status(str(item.restore_specific))
+	# Status aplicado por componente (Holy Water, etc.).
+	var sa = _item_component(item, "status_applied")
+	if sa != null and str(sa) != "":
+		_apply_item_status(unit, str(sa))
 	# Evento de item (Return Ring, etc.).
 	var ev = _item_component(item, "event_on_use")
 	if ev != null and str(ev) != "":
