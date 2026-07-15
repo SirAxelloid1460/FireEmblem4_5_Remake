@@ -1,6 +1,6 @@
 [
  {
-  "id": "APaladin",
+  "id": "Paladin",
   "name": "Paladin",
   "desc": "Mounted knights with superior abilities.",
   "tier": 2,
@@ -69,80 +69,8 @@
     "Canto_Plus"
    ]
   ],
-  "map_sprite_nid": "APaladin",
+  "map_sprite_nid": "Paladin",
   "combat_anim_nid": "Paladin"
- },
- {
-  "id": "AThief",
-  "name": "Thief",
-  "desc": "A common robber who battles with swords or daggers.",
-  "tier": 1,
-  "movement_group": "Light Foot",
-  "promotes_from": "",
-  "turns_into": [
-   "Rogue"
-  ],
-  "tags": [],
-  "max_level": 19,
-  "bases": {
-   "HP": 19,
-   "STR": 1,
-   "MAG": 0,
-   "SKL": 2,
-   "SPD": 7,
-   "LCK": 0,
-   "DEF": 3,
-   "RES": 6,
-   "CON": 6,
-   "MOV": 60
-  },
-  "growths": {
-   "HP": 100,
-   "STR": 30,
-   "MAG": 0,
-   "SKL": 30,
-   "SPD": 30,
-   "LCK": 0,
-   "DEF": 30,
-   "RES": 10,
-   "CON": 0,
-   "MOV": 0
-  },
-  "promotion": {
-   "HP": 0,
-   "STR": 0,
-   "MAG": 0,
-   "SKL": 0,
-   "SPD": 0,
-   "LCK": 0,
-   "DEF": 0,
-   "RES": 0,
-   "CON": 0,
-   "MOV": 0
-  },
-  "caps": {
-   "HP": 80,
-   "STR": 18,
-   "MAG": 15,
-   "SKL": 18,
-   "SPD": 22,
-   "LCK": 30,
-   "DEF": 16,
-   "RES": 15,
-   "CON": 6,
-   "MOV": 60
-  },
-  "wexp_gain": {
-   "Sword": 51
-  },
-  "learned_skills": [
-   [
-    1,
-    "Steal"
-   ]
-  ],
-  "map_sprite_nid": "AThief",
-  "combat_anim_nid": "Thief"
  },
  {
   "id": "Archer",
@@ -282,151 +210,6 @@
   "learned_skills": [],
   "map_sprite_nid": "Armour",
   "combat_anim_nid": "Armour"
- },
- {
-  "id": "BPaladin",
-  "name": "Paladin",
-  "desc": "Mounted healers with superior selfdefense abilities.",
-  "tier": 2,
-  "movement_group": "Light Cav",
-  "promotes_from": "Troubadour",
-  "turns_into": [],
-  "tags": [
-   "Mounted"
-  ],
-  "max_level": 19,
-  "bases": {
-   "HP": 46,
-   "STR": 5,
-   "MAG": 10,
-   "SKL": 11,
-   "SPD": 11,
-   "LCK": 0,
-   "DEF": 7,
-   "RES": 12,
-   "CON": 11,
-   "MOV": 90
-  },
-  "growths": {
-   "HP": 100,
-   "STR": 10,
-   "MAG": 30,
-   "SKL": 30,
-   "SPD": 30,
-   "LCK": 0,
-   "DEF": 10,
-   "RES": 30,
-   "CON": 0,
-   "MOV": 0
-  },
-  "promotion": {
-   "HP": 0,
-   "STR": 4,
-   "MAG": 3,
-   "SKL": 2,
-   "SPD": 3,
-   "LCK": 0,
-   "DEF": 4,
-   "RES": 2,
-   "CON": 0,
-   "MOV": 0
-  },
-  "caps": {
-   "HP": 80,
-   "STR": 20,
-   "MAG": 24,
-   "SKL": 24,
-   "SPD": 24,
-   "LCK": 30,
-   "DEF": 20,
-   "RES": 24,
-   "CON": 11,
-   "MOV": 90
-  },
-  "wexp_gain": {
-   "Sword": 126,
-   "Staff": 51
-  },
-  "learned_skills": [
-   [
-    1,
-    "Canto_Plus"
-   ]
-  ],
-  "map_sprite_nid": "BPaladin",
-  "combat_anim_nid": "PaladinFemale"
- },
- {
-  "id": "BThief",
-  "name": "Thief",
-  "desc": "A common robber who battles with swords or daggers.",
-  "tier": 1,
-  "movement_group": "Light Foot",
-  "promotes_from": "",
-  "turns_into": [
-   "Dancer"
-  ],
-  "tags": [],
-  "max_level": 19,
-  "bases": {
-   "HP": 19,
-   "STR": 1,
-   "MAG": 0,
-   "SKL": 2,
-   "SPD": 7,
-   "LCK": 0,
-   "DEF": 3,
-   "RES": 6,
-   "CON": 6,
-   "MOV": 60
-  },
-  "growths": {
-   "HP": 100,
-   "STR": 30,
-   "MAG": 0,
-   "SKL": 30,
-   "SPD": 30,
-   "LCK": 0,
-   "DEF": 30,
-   "RES": 10,
-   "CON": 0,
-   "MOV": 0
-  },
-  "promotion": {
-   "HP": 0,
-   "STR": 0,
-   "MAG": 0,
-   "SKL": 0,
-   "SPD": 0,
-   "LCK": 0,
-   "DEF": 0,
-   "RES": 0,
-   "CON": 0,
-   "MOV": 0
-  },
-  "caps": {
-   "HP": 80,
-   "STR": 18,
-   "MAG": 15,
-   "SKL": 18,
-   "SPD": 22,
-   "LCK": 30,
-   "DEF": 16,
-   "RES": 15,
-   "CON": 6,
-   "MOV": 60
-  },
-  "wexp_gain": {
-   "Sword": 51
-  },
-  "learned_skills": [
-   [
-    1,
-    "Steal"
-   ]
-  ],
-  "map_sprite_nid": "BThief",
-  "combat_anim_nid": "ThiefFemale"
  },
  {
   "id": "Ballistae",
@@ -984,7 +767,7 @@
   "movement_group": "Light Cav",
   "promotes_from": "",
   "turns_into": [
-   "APaladin"
+   "Paladin"
   ],
   "tags": [
    "Mounted"
@@ -1197,7 +980,7 @@
    ]
   ],
   "map_sprite_nid": "CavalierB",
-  "combat_anim_nid": "BowCavalier"
+  "combat_anim_nid": "ArcherKnight"
  },
  {
   "id": "CavalierL",
@@ -1271,7 +1054,7 @@
    ]
   ],
   "map_sprite_nid": "CavalierL",
-  "combat_anim_nid": "LanceCavalier"
+  "combat_anim_nid": "LanceKnight"
  },
  {
   "id": "CavalierS",
@@ -1345,7 +1128,7 @@
    ]
   ],
   "map_sprite_nid": "CavalierS",
-  "combat_anim_nid": "SwordCavalier"
+  "combat_anim_nid": "FreeKnight"
  },
  {
   "id": "Child",
@@ -1483,7 +1266,7 @@
   "desc": "Special people who can bend anima magic to their will.",
   "tier": 2,
   "movement_group": "Mages",
-  "promotes_from": "BThief",
+  "promotes_from": "Thief",
   "turns_into": [],
   "tags": [],
   "max_level": 19,
@@ -1681,8 +1464,8 @@
   "combat_anim_nid": "DarkPrince"
  },
  {
-  "id": "DarkSage",
-  "name": "Dark Sage",
+  "id": "DarkMage",
+  "name": "Dark Mage",
   "desc": "A seasoned follower of the dark god Loptyr with great magical powers.",
   "tier": 2,
   "movement_group": "Mages",
@@ -1744,8 +1527,8 @@
    "Dark": 126
   },
   "learned_skills": [],
-  "map_sprite_nid": "DarkSage",
-  "combat_anim_nid": "DarkSage"
+  "map_sprite_nid": "DarkMage",
+  "combat_anim_nid": "DarkMage"
  },
  {
   "id": "DragonKnight",
@@ -2503,7 +2286,7 @@
   "desc": "",
   "tier": 2,
   "movement_group": "Light Foot",
-  "promotes_from": "PreHero",
+  "promotes_from": "Mercenary",
   "turns_into": [],
   "tags": [],
   "max_level": 19,
@@ -2774,7 +2557,7 @@
   "movement_group": "Mages",
   "promotes_from": "",
   "turns_into": [
-   "DarkSage"
+   "DarkMage"
   ],
   "tags": [],
   "max_level": 19,
@@ -3409,7 +3192,7 @@
    ]
   ],
   "map_sprite_nid": "PegasusKnight",
-  "combat_anim_nid": "PegasusKnightRider"
+  "combat_anim_nid": "PegasusKnight"
  },
  {
   "id": "PegasusRider",
@@ -3488,7 +3271,7 @@
    ]
   ],
   "map_sprite_nid": "PegasusRider",
-  "combat_anim_nid": "PegasusKnightRider"
+  "combat_anim_nid": "PegasusRider"
  },
  {
   "id": "Pirate",
@@ -3556,7 +3339,7 @@
   "combat_anim_nid": "Pirate"
  },
  {
-  "id": "PreHero",
+  "id": "Mercenary",
   "name": "Swordfighter",
   "desc": "A strong fighter who battles with mighty swords.",
   "tier": 1,
@@ -3619,8 +3402,8 @@
    "Sword": 226
   },
   "learned_skills": [],
-  "map_sprite_nid": "PreHero",
-  "combat_anim_nid": "PreHero"
+  "map_sprite_nid": "Mercenary",
+  "combat_anim_nid": "Hero"
  },
  {
   "id": "Priest",
@@ -3900,7 +3683,7 @@
   "desc": "",
   "tier": 2,
   "movement_group": "Light Foot",
-  "promotes_from": "AThief",
+  "promotes_from": "Thief",
   "turns_into": [],
   "tags": [],
   "max_level": 19,
@@ -4229,7 +4012,7 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Swordfighter",
-  "combat_anim_nid": "Swordfighter"
+  "combat_anim_nid": "Swordmaster"
  },
  {
   "id": "Swordmaster",
@@ -4396,7 +4179,7 @@
   "movement_group": "Mages",
   "promotes_from": "",
   "turns_into": [
-   "BPaladin"
+   "Paladin"
   ],
   "tags": [
    "Mounted"
@@ -4530,86 +4313,12 @@
   "combat_anim_nid": "Warrior"
  },
  {
-  "id": "BThief_Lara",
-  "name": "Thief",
-  "desc": "A common robber who battles with swords or daggers.",
-  "tier": 1,
-  "movement_group": "Light Foot",
-  "promotes_from": "",
-  "turns_into": [
-   "Dancer_Lara"
-  ],
-  "tags": [
-   "Thief"
-  ],
-  "max_level": 19,
-  "bases": {
-   "HP": 19,
-   "STR": 1,
-   "MAG": 0,
-   "SKL": 2,
-   "SPD": 7,
-   "LCK": 0,
-   "DEF": 3,
-   "RES": 6,
-   "CON": 6,
-   "MOV": 70
-  },
-  "growths": {
-   "HP": 100,
-   "STR": 30,
-   "MAG": 0,
-   "SKL": 30,
-   "SPD": 30,
-   "LCK": 0,
-   "DEF": 30,
-   "RES": 10,
-   "CON": 0,
-   "MOV": 0
-  },
-  "promotion": {
-   "HP": 0,
-   "STR": 0,
-   "MAG": 0,
-   "SKL": 0,
-   "SPD": 0,
-   "LCK": 0,
-   "DEF": 0,
-   "RES": 0,
-   "CON": 0,
-   "MOV": 0
-  },
-  "caps": {
-   "HP": 80,
-   "STR": 18,
-   "MAG": 15,
-   "SKL": 18,
-   "SPD": 22,
-   "LCK": 30,
-   "DEF": 16,
-   "RES": 15,
-   "CON": 6,
-   "MOV": 70
-  },
-  "wexp_gain": {
-   "Sword": 51
-  },
-  "learned_skills": [
-   [
-    1,
-    "Steal"
-   ]
-  ],
-  "map_sprite_nid": "BThief",
-  "combat_anim_nid": "ThiefFemale"
- },
- {
   "id": "Dancer_Lara",
   "name": "Dancer",
   "desc": "Special people who can bend anima magic to their will.",
   "tier": 2,
   "movement_group": "Mages",
-  "promotes_from": "BThief_Lara",
+  "promotes_from": "Thief",
   "turns_into": [
    "Rogue"
   ],
@@ -4676,5 +4385,79 @@
   ],
   "map_sprite_nid": "Dancer",
   "combat_anim_nid": "Dancer"
+ },
+ {
+  "id": "Thief",
+  "name": "Thief",
+  "desc": "A common robber who battles with swords or daggers.",
+  "tier": 1,
+  "movement_group": "Light Foot",
+  "promotes_from": "",
+  "turns_into": [
+   "Rogue"
+  ],
+  "tags": [
+   "Thief"
+  ],
+  "max_level": 19,
+  "bases": {
+   "HP": 19,
+   "STR": 1,
+   "MAG": 0,
+   "SKL": 2,
+   "SPD": 7,
+   "LCK": 0,
+   "DEF": 3,
+   "RES": 6,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 100,
+   "STR": 30,
+   "MAG": 0,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 0,
+   "DEF": 30,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "promotion": {
+   "HP": 0,
+   "STR": 0,
+   "MAG": 0,
+   "SKL": 0,
+   "SPD": 0,
+   "LCK": 0,
+   "DEF": 0,
+   "RES": 0,
+   "CON": 0,
+   "MOV": 0
+  },
+  "caps": {
+   "HP": 80,
+   "STR": 18,
+   "MAG": 15,
+   "SKL": 18,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 16,
+   "RES": 15,
+   "CON": 6,
+   "MOV": 60
+  },
+  "wexp_gain": {
+   "Sword": 51
+  },
+  "learned_skills": [
+   [
+    1,
+    "Steal"
+   ]
+  ],
+  "map_sprite_nid": "Thief",
+  "combat_anim_nid": "Thief"
  }
 ]

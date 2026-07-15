@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c80k8mwwulkr7"
-path="res://.godot/imported/Mercenary-move.png-e7f32a1ee8878494411fbc4409a8ecc0.ctex"
+uid="uid://g4t7bqkvdn8p"
+path="res://.godot/imported/Mercenary-move.png-2fd85a4b084016cdfd236073551928de.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/map_sprites/Mercenary-move.png"
-dest_files=["res://.godot/imported/Mercenary-move.png-e7f32a1ee8878494411fbc4409a8ecc0.ctex"]
+dest_files=["res://.godot/imported/Mercenary-move.png-2fd85a4b084016cdfd236073551928de.ctex"]
 
 [params]
 

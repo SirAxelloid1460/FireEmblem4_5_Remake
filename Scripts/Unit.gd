@@ -529,6 +529,18 @@ func _resolve_map_sprite_nid() -> String:
 		ms = unit_class   # fallback: el nid de clase suele coincidir (60/64)
 	return ms
 
+## nid base de la animación de combate de esta unidad.  El resolver construye
+## los nombres como {combat_anim_nid}_{Variant}_{Weapon}, así que NO debe usar
+## el nid de clase crudo (unit_class): p.ej. clase "CavalierA" -> anim "AxeKnight".
+## Se lee de GameDB en cada llamada, de modo que una promoción (que cambia
+## unit_class) actualiza la animación automáticamente.
+func resolve_combat_anim_nid() -> String:
+	if has_node("/root/GameDB"):
+		var cd = get_node("/root/GameDB").get_class_data(unit_class)  # UnitClassData o null
+		if cd != null and str(cd.combat_anim_nid) != "":
+			return str(cd.combat_anim_nid)
+	return unit_class   # fallback: el nid de clase suele coincidir
+
 func _resolve_cell_size() -> int:
 	var g = get_tree().get_first_node_in_group("grid")
 	if g != null and "cell_size" in g:

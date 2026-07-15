@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbvevwmgtnhll"
-path="res://.godot/imported/Paladin-move.png-4e925b354fb1bb141f16cb52a967f421.ctex"
+uid="uid://cf4qsv5t7jvo1"
+path="res://.godot/imported/PaladinFemale-stand.png-8b7450b3e138a88b72aa1c852c74c2b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Paladin-move.png"
-dest_files=["res://.godot/imported/Paladin-move.png-4e925b354fb1bb141f16cb52a967f421.ctex"]
+source_file="res://assets/map_sprites/PaladinFemale-stand.png"
+dest_files=["res://.godot/imported/PaladinFemale-stand.png-8b7450b3e138a88b72aa1c852c74c2b9.ctex"]
 
 [params]
 

@@ -13460,7 +13460,7 @@
       [
         "multi_add_portrait",
         [
-          "Eve",
+          "Evar",
           "Left",
           "Lachesis",
           "Right"
@@ -13469,7 +13469,7 @@
       [
         "speak",
         [
-          "Eve",
+          "Evar",
           "Milady! We've received word that Lord Eldigan was arrested in Agusty!{w}",
           "",
           "",
@@ -13489,7 +13489,7 @@
       [
         "speak",
         [
-          "Eve",
+          "Evar",
           "That isn't our only problem, milady.{w}{br}With Lord Eldigan gone, we need to be aware of Heirhein's movements.{w}{br}Knowing of his lordship's absence, a strike from them is inevitable.{w}{br}After the Verdane incident, they're most likely out for revenge on us.{w}{br}Especially Lord Elliot.{w}",
           "",
           "",
@@ -13509,7 +13509,7 @@
       [
         "speak",
         [
-          "Eve",
+          "Evar",
           "Er... Be that as it may,{w}{br}Lord Eldigan's Cross Knights are still dispatched to the north at Fort Silvail,{w}{br} well away from here.{w}{br}We three are all who remain.{br}Nordion is vulnerable, and they know it.{w}{br}Rest assured, my brothers and I will do all we can to defend the castle,{w}{br}but the odds are against us.{br}I'm sorry, milady.{w}",
           "",
           "",
@@ -13529,7 +13529,7 @@
       [
         "speak",
         [
-          "Eve",
+          "Evar",
           "We are not worthy of such kind words, milady.{w} Even so, Lord Eldigan handpicked us to defend you.{w}{br} Our lord gave us a task. and we will see it through.{w}{br}As paladins of Nordion, our lives are yours, no matter what.{w}{br}To our dying breaths, we live to defend you!{w}",
           "",
           "",
@@ -13539,7 +13539,7 @@
       [
         "multi_remove_portrait",
         [
-          "Eve",
+          "Evar",
           "Lachesis"
         ]
       ],
@@ -13560,7 +13560,7 @@
       [
         "add_unit",
         [
-          "Eve",
+          "Evar",
           "24,53",
           "",
           "stack"
@@ -13569,7 +13569,7 @@
       [
         "remove_skill",
         [
-          "Eve",
+          "Evar",
           "Canto_Plus",
           "no_banner"
         ]
@@ -13577,7 +13577,7 @@
       [
         "add_unit",
         [
-          "Eva",
+          "Evan",
           "24,53",
           "",
           "stack"
@@ -13586,7 +13586,7 @@
       [
         "remove_skill",
         [
-          "Eva",
+          "Evan",
           "Canto_Plus",
           "no_banner"
         ]
@@ -13594,7 +13594,7 @@
       [
         "add_unit",
         [
-          "AlvaFE4",
+          "Alvar",
           "24,53",
           "",
           "stack"
@@ -13603,7 +13603,7 @@
       [
         "remove_skill",
         [
-          "AlvaFE4",
+          "Alvar",
           "Canto_Plus",
           "no_banner"
         ]
@@ -27104,7 +27104,7 @@
       [
         "give_skill",
         [
-          "Eve",
+          "Evar",
           "Canto_Plus",
           "no_banner"
         ]
@@ -27112,7 +27112,7 @@
       [
         "give_skill",
         [
-          "Eva",
+          "Evan",
           "Canto_Plus",
           "no_banner"
         ]
@@ -27120,7 +27120,7 @@
       [
         "give_skill",
         [
-          "AlvaFE4",
+          "Alvar",
           "Canto_Plus",
           "no_banner"
         ]
@@ -27128,21 +27128,21 @@
       [
         "change_ai",
         [
-          "Eve",
+          "Evar",
           "ProtectLachesis"
         ]
       ],
       [
         "change_ai",
         [
-          "Eva",
+          "Evan",
           "ProtectLachesis"
         ]
       ],
       [
         "change_ai",
         [
-          "AlvaFE4",
+          "Alvar",
           "ProtectLachesis"
         ]
       ],

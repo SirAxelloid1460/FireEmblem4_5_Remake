@@ -98,10 +98,10 @@
   ]
  },
  {
-  "nid": "AlvaFE4",
-  "name": "Alva",
+  "nid": "Alvar",
+  "name": "Alvar",
   "desc": "Elite knight of Nordion and younger triplet brother of Eve and Eva.",
-  "klass": "APaladin",
+  "klass": "Paladin",
   "level": 8,
   "gender": "M",
   "bases": {
@@ -711,7 +711,7 @@
   "nid": "Dew",
   "name": "Dew",
   "desc": "A little boy assigned to guard Aideen when they were realesed from Marpha.",
-  "klass": "AThief",
+  "klass": "Thief",
   "level": 1,
   "gender": "M",
   "bases": {
@@ -804,7 +804,7 @@
   "nid": "Eldigan",
   "name": "Eldigan",
   "desc": "Known as Lionheart, the King Lion of Agustria, he is the bravest paladin in Agustria.",
-  "klass": "APaladin",
+  "klass": "Paladin",
   "level": 23,
   "gender": "M",
   "bases": {
@@ -996,10 +996,10 @@
   ]
  },
  {
-  "nid": "Eva",
-  "name": "Eva",
+  "nid": "Evan",
+  "name": "Evan",
   "desc": "Elite knight of Nordion and the middle triplet brother of Eve and Alva.",
-  "klass": "APaladin",
+  "klass": "Paladin",
   "level": 8,
   "gender": "M",
   "bases": {
@@ -1044,10 +1044,10 @@
   ]
  },
  {
-  "nid": "Eve",
-  "name": "Eve",
+  "nid": "Evar",
+  "name": "Evar",
   "desc": "Elite knight of Nordion and the older triplet brother of Eva and Alva.",
-  "klass": "APaladin",
+  "klass": "Paladin",
   "level": 8,
   "gender": "M",
   "bases": {
@@ -1095,7 +1095,7 @@
   "nid": "FakeHolyn",
   "name": "Cú Chulainn",
   "desc": "The son of the Lord of Sophara Castle in Isaach and a distant relative of Ayra.",
-  "klass": "PreHero",
+  "klass": "Mercenary",
   "level": 12,
   "gender": "M",
   "bases": {
@@ -1340,7 +1340,7 @@
   "nid": "Holyn",
   "name": "Holyn",
   "desc": "The son of the Lord of Sophara Castle in Isaach and a distant relative of Ayra.",
-  "klass": "PreHero",
+  "klass": "Mercenary",
   "level": 1,
   "gender": "M",
   "bases": {
@@ -1957,7 +1957,7 @@
   "nid": "Sandima",
   "name": "Sandima",
   "desc": "A member of the Loptyr Church, responsible for bewitching King Batur.",
-  "klass": "DarkSage",
+  "klass": "DarkMage",
   "level": 10,
   "gender": "M",
   "bases": {
@@ -2515,7 +2515,7 @@
   "nid": "Lara",
   "name": "Lara",
   "desc": "Little girl who works as a thief and part of the Magi Squad.",
-  "klass": "BThief_Lara",
+  "klass": "Thief",
   "level": 1,
   "gender": "F",
   "bases": {
@@ -2618,7 +2618,7 @@
   "nid": "Lifis",
   "name": "Lifis",
   "desc": "Leader of the Lifis Pirates.",
-  "klass": "AThief",
+  "klass": "Thief",
   "level": 1,
   "gender": "M",
   "bases": {

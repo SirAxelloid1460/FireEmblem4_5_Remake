@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbvevwmgtnhll"
-path="res://.godot/imported/Paladin-move.png-4e925b354fb1bb141f16cb52a967f421.ctex"
+uid="uid://dycbioti16yk5"
+path="res://.godot/imported/DarkMageF-stand.png-c6a8725902ff37c04b88977abdcd054d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Paladin-move.png"
-dest_files=["res://.godot/imported/Paladin-move.png-4e925b354fb1bb141f16cb52a967f421.ctex"]
+source_file="res://assets/map_sprites/DarkMageF-stand.png"
+dest_files=["res://.godot/imported/DarkMageF-stand.png-c6a8725902ff37c04b88977abdcd054d.ctex"]
 
 [params]
 

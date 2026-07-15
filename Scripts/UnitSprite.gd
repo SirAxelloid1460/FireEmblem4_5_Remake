@@ -66,7 +66,7 @@ func _ready() -> void:
 
 
 ## Carga los sprites de una clase y aplica el tinte de team.
-##   class_nid: "Cavalier", "Lord", "APaladin", etc.
+##   class_nid: "Cavalier", "Lord", "Paladin", etc.
 ##   team: "player" / "enemy" / "other" / "ally"
 ##   asset_root: ruta base donde están los archivos PNG (estructura plana
 ##               sin subcarpetas, como en el LT-maker original).

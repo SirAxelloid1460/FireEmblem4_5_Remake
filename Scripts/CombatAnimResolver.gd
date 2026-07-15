@@ -80,7 +80,12 @@ static func _resolve_weapon_token(weapon_type: String, ranged: bool) -> String:
 static func resolve(unit, weapon_type: String, ranged: bool) -> String:
 	if unit == null:
 		return ""
-	var nid: String = str(unit.unit_class) if "unit_class" in unit else ""
+	# Base de la anim = combat_anim_nid de la clase (NO el nid de clase crudo).
+	var nid: String = ""
+	if unit.has_method("resolve_combat_anim_nid"):
+		nid = str(unit.resolve_combat_anim_nid())
+	elif "unit_class" in unit:
+		nid = str(unit.unit_class)
 	if nid == "":
 		return ""
 
@@ -119,7 +124,11 @@ static func resolve(unit, weapon_type: String, ranged: bool) -> String:
 ##
 ## Devuelve un Array de Dicts: [{"name": String, "exists": bool}, ...].
 static func resolve_debug(unit, weapon_type: String, ranged: bool) -> Array:
-	var nid: String = str(unit.unit_class) if (unit and "unit_class" in unit) else ""
+	var nid: String = ""
+	if unit and unit.has_method("resolve_combat_anim_nid"):
+		nid = str(unit.resolve_combat_anim_nid())
+	elif unit and "unit_class" in unit:
+		nid = str(unit.unit_class)
 	var weapon_token: String = _resolve_weapon_token(weapon_type, ranged)
 	var char_name: String = str(unit.unit_name) if (unit and "unit_name" in unit) else ""
 	var gender: String = str(unit.gender).to_upper() if (unit and "gender" in unit) else "M"

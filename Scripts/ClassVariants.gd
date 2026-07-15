@@ -48,35 +48,34 @@ const VARIANTS: Dictionary = {
 	# ──────────────────────────────────────────────────────────────────────
 	# Paladin: masculinos físicos con lanza, femeninas mágicas con bastón.
 	#
-	# La data canónica del JSON corresponde al masculino (Sword + Lance,
-	# growths físicos).  Las femeninas overridan a Sword + Staff y growths
-	# mágicos.
+	# El JSON unificó APaladin (masc.) + BPaladin (fem.) en una sola clase
+	# "Paladin".  La data canónica del JSON corresponde al MASCULINO
+	# (Sword + Lance, STR/DEF).  Este override reproduce EXACTAMENTE los
+	# valores del antiguo BPaladin (Sword + Staff, MAG/RES) para las hembras.
+	#
+	# NOTA: apply_variants() todavía NO está cableado al spawn (LevelLoader),
+	# así que este override está latente — listo para cuando exista una unidad
+	# Paladin femenina y se enganche.  Todas las Paladin actuales son masc.
+	#
+	# LIMITACIÓN: _deep_merge fusiona dicts clave a clave y no puede BORRAR la
+	# "Lance" heredada del canon; se pone a 0 wexp (inservible de facto).  Al
+	# cablear apply_variants habrá que tratar wexp_gain como reemplazo total.
 	# ──────────────────────────────────────────────────────────────────────
 	"Paladin": [
 		{
 			"id":        "Paladin_Female",
 			"predicate": "_is_female",
 			"overrides": {
-				# Pierde Lance, gana Staff (Sword se mantiene).
+				# Pierde Lance (0), gana Staff; Sword se mantiene (canon 126).
 				"wexp_gain": {
-					"Lance": [false, 0],
-					"Staff": [true, 126],
+					"Lance": 0,
+					"Staff": 51,
 				},
-				# Reorienta growths hacia magia/resistencia.
-				#   STR 30 → 15  (menos físico)
-				#   MAG 10 → 35  (más mágica)
-				#   DEF 30 → 20  (menos defensa)
-				#   RES 10 → 30  (más resistencia)
-				#   SKL 30 → 35  (un poco más hábil)
-				#   SPD 30 → 35  (un poco más rápida)
-				"growths": {
-					"STR": 15,
-					"MAG": 35,
-					"SKL": 35,
-					"SPD": 35,
-					"DEF": 20,
-					"RES": 30,
-				},
+				# Bases/growths/caps exactos del antiguo BPaladin.
+				"bases":   {"STR": 5,  "MAG": 10, "DEF": 7,  "RES": 12},
+				"growths": {"STR": 10, "MAG": 30, "SKL": 30, "SPD": 30,
+							"DEF": 10, "RES": 30},
+				"caps":    {"MAG": 24, "DEF": 20, "RES": 24},
 			},
 		},
 	],
