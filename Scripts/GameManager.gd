@@ -1905,9 +1905,8 @@ func resolve_generation_2() -> Dictionary:
 		var state: Dictionary = mother_states.get(mother_id,
 			{ "alive": true, "married_to": "", "father_data": {} })
 		var pair := SubstituteSystem.resolve_gen2_units(mother_id, state)
-		# resolve_gen2_units devuelve null para canónicos (STUB) hasta que
-		# se implemente _build_canonical_child.  Solo añadimos lo que
-		# realmente sea sustituto.
+		# resolve_gen2_units devuelve null cuando no hay hijo/sustituto para ese
+		# género (p. ej. madre sin mapeo).  Solo añadimos entradas reales.
 		if pair.get("male") != null:
 			out[pair["male"]["nid"]] = pair["male"]["data"]
 		if pair.get("female") != null:
