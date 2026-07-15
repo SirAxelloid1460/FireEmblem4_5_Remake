@@ -1104,6 +1104,8 @@ func _unit_can_staff(unit) -> bool:
 		return _staff_empty_tiles().size() > 0
 	if eff == "valkyrie":
 		return _fallen_player_snaps.size() > 0
+	if eff == "heal_all":
+		return _staff_wounded_allies(unit).size() > 0
 	if eff == "warp":
 		return _staff_targets(unit, w).size() > 0 and _staff_empty_tiles().size() > 0
 	return _staff_targets(unit, w).size() > 0
@@ -1114,7 +1116,8 @@ func _staff_effect(w) -> String:
 		return ""
 	var id := str(w.id) if "id" in w else ""
 	match id:
-		"Heal", "Mend", "Recover", "Reserve", "Libro", "Reblow": return "heal"
+		"Reserve":     return "heal_all"   # AoE: cura a TODOS los aliados del mapa
+		"Heal", "Mend", "Recover", "Libro", "Reblow": return "heal"
 		"Silence", "Sleep", "Berserk": return "status_enemy"
 		"Return":      return "return"
 		"Rest":        return "rest"
@@ -1132,6 +1135,8 @@ func _staff_effect(w) -> String:
 	return ""
 
 ## Casillas dentro del rango del báculo (distancia Manhattan en [min,max]).
+## Itera el grid (no una caja ±hi), así un rango enorme (=mapa entero, p.ej.
+## Reblow/Reserve con max_range 99) es igual de barato.
 func _staff_range_tiles(user, w) -> Array:
 	var out: Array = []
 	if user == null or w == null or grid == null:
@@ -1140,14 +1145,11 @@ func _staff_range_tiles(user, w) -> Array:
 	var lo: int = max(1, lo_raw)
 	var hi: int = int(w.max_range) if "max_range" in w else 1
 	var p: Vector2i = user.grid_position
-	for dx in range(-hi, hi + 1):
-		for dy in range(-hi, hi + 1):
-			var d := abs(dx) + abs(dy)
-			if d < lo or d > hi:
-				continue
-			var t := p + Vector2i(dx, dy)
-			if grid.is_valid_position(t):
-				out.append(t)
+	for y in range(grid.grid_height):
+		for x in range(grid.grid_width):
+			var d := abs(x - p.x) + abs(y - p.y)
+			if d >= lo and d <= hi:
+				out.append(Vector2i(x, y))
 	return out
 
 ## Unidades objetivo válidas para un báculo (aliados heridos / con estado, o
@@ -1178,6 +1180,18 @@ func _staff_targets(user, w) -> Array:
 			out.append(u)
 	return out
 
+## Aliados vivos y heridos del mismo bando que `user` en TODO el mapa (báculo
+## Reserve, AoE de mapa completo).
+func _staff_wounded_allies(user) -> Array:
+	var out: Array = []
+	if user == null:
+		return out
+	var pool: Array = player_units if user.is_player_unit else enemy_units
+	for u in pool:
+		if u != null and u.current_hp > 0 and u.current_hp < u.max_hp:
+			out.append(u)
+	return out
+
 ## Todas las casillas vacías y transitables del mapa (destino de Warp/Rewarp).
 func _staff_empty_tiles() -> Array:
 	var out: Array = []
@@ -1200,6 +1214,12 @@ func _begin_staff(user) -> void:
 			_staff_show_fallen_menu(user)
 		"rewarp":
 			_staff_begin_tile(user)
+		"heal_all":
+			# AoE instantáneo: cura a todos los aliados heridos del mapa.
+			var amt := int(_staff_heal_amount(user, w) * 1.5)   # Reserve: (10+MAG)*1.5
+			for ally in _staff_wounded_allies(user):
+				ally.heal(amt)
+			_finish_staff(user)
 		"warp":
 			_staff_show_target_menu(user, _staff_targets(user, w))
 		_:

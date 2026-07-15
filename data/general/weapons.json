@@ -8872,7 +8872,7 @@
   "weight": 7,
   "crit": 0,
   "rng_min": 1,
-  "rng_max": 1,
+  "rng_max": 99,
   "rng_equation": "",
   "rank": "B",
   "uses": 12,
@@ -8952,6 +8952,10 @@
    [
     "heal_exp",
     null
+   ],
+   [
+    "max_range",
+    99
    ]
   ]
  },
@@ -9239,7 +9243,7 @@
   "weight": 7,
   "crit": 0,
   "rng_min": 1,
-  "rng_max": 10,
+  "rng_max": 99,
   "rng_equation": "",
   "rank": "B",
   "uses": 12,
@@ -9248,7 +9252,7 @@
   "brave": false,
   "reaver": false,
   "is_staff": true,
-  "heal": 20,
+  "heal": 10,
   "effective_tags": [],
   "effective_multiplier": 1,
   "effective_bonus": 0,
@@ -9310,11 +9314,11 @@
    ],
    [
     "max_range",
-    10
+    99
    ],
    [
     "magic_heal",
-    20
+    10
    ],
    [
     "heal_exp",
