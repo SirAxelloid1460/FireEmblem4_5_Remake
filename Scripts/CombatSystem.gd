@@ -197,6 +197,12 @@ static func _do(atk: Unit, def: Unit, dist: int, result: CombatResult,
 			if is_atk_side: result.defender_died = true
 			else:           result.attacker_died = true
 		if ar.skill_proc == "Sol": atk.heal(ar.damage)
+		# Lifelink de arma (nosferatu/Resire): el atacante recupera una fracción
+		# del daño infligido, según el valor del componente lifelink del arma.
+		if ar.damage > 0 and atk.weapon != null and atk.weapon.has_method("get_component"):
+			var ll = atk.weapon.get_component("lifelink")
+			if ll != null:
+				atk.heal(int(ceil(ar.damage * float(ll))))
 
 
 static func execute_attack(atk: Unit, def: Unit, dist: int,
