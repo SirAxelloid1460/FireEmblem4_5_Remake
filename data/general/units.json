@@ -5696,5 +5696,243 @@
   "games": [
    "FE5"
   ]
+ },
+ {
+  "nid": "Julius",
+  "name": "Julius",
+  "desc": "Emperor of Grannvale possessed by the dark god Loptous; son of Arvis and Deirdre.",
+  "klass": "DarkPrince",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 15,
+   "MAG": 25,
+   "SKL": 27,
+   "SPD": 27,
+   "LCK": 13,
+   "DEF": 25,
+   "RES": 30,
+   "CON": 5,
+   "MOV": 60
+  },
+  "growths": {},
+  "starting_items": [
+   "Loptous",
+   "Meteor"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Wrath"
+   ],
+   [
+    1,
+    "Awareness"
+   ],
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {
+   "Dark": 226,
+   "Anima": 226
+  },
+  "holy_blood": {
+   "Loptos": "Major",
+   "Fjalar": "Minor"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Julius",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Manfroy",
+  "name": "Manfroy",
+  "desc": "Archbishop of the Loptous cult who orchestrated Grannvale's fall.",
+  "klass": "DarkBishop",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 10,
+   "MAG": 29,
+   "SKL": 25,
+   "SPD": 24,
+   "LCK": 6,
+   "DEF": 23,
+   "RES": 27,
+   "CON": 5,
+   "MOV": 60
+  },
+  "growths": {},
+  "starting_items": [
+   "Fenrir",
+   "Jormungandr"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charisma"
+   ]
+  ],
+  "wexp_gain": {
+   "Dark": 226
+  },
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Manfroy",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Travant",
+  "name": "Travant",
+  "desc": "King of Thracia and wielder of Daínn's blood; Altena and Areone's adoptive father.",
+  "klass": "DragonMaster",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 24,
+   "MAG": 4,
+   "SKL": 21,
+   "SPD": 18,
+   "LCK": 6,
+   "DEF": 26,
+   "RES": 6,
+   "CON": 11,
+   "MOV": 80
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Lance",
+   "Power Ring"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ],
+   [
+    1,
+    "Vantage"
+   ]
+  ],
+  "wexp_gain": {
+   "Lance": 226
+  },
+  "holy_blood": {
+   "Dainn": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Travant",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Ishtar",
+  "name": "Ishtar",
+  "desc": "Princess of Friege and 'Goddess of Thunder'; Major Thrud blood, wields the Mjolnir.",
+  "klass": "Sage",
+  "level": 27,
+  "gender": "F",
+  "bases": {
+   "HP": 50,
+   "STR": 5,
+   "MAG": 28,
+   "SKL": 24,
+   "SPD": 30,
+   "LCK": 13,
+   "DEF": 10,
+   "RES": 26,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {},
+  "starting_items": [
+   "Mjolnir",
+   "Barrier Ring",
+   "Life Ring"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Vantage"
+   ]
+  ],
+  "wexp_gain": {
+   "Anima": 1023
+  },
+  "holy_blood": {
+   "Thrud": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Ishtar",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Veld",
+  "name": "Veld",
+  "desc": "Dark Bishop of the Loptous cult and final antagonist of Thracia 776.",
+  "klass": "DarkBishop",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 5,
+   "MAG": 20,
+   "SKL": 19,
+   "SPD": 20,
+   "LCK": 12,
+   "DEF": 15,
+   "RES": 0,
+   "CON": 11,
+   "MOV": 60
+  },
+  "growths": {},
+  "starting_items": [
+   "Jormungandr",
+   "Vulnerary"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Life"
+   ]
+  ],
+  "wexp_gain": {
+   "Anima": 226,
+   "Dark": 226,
+   "Staff": 226
+  },
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Veld",
+  "games": [
+   "FE5"
+  ]
  }
 ]

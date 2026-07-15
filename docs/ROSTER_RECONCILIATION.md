@@ -3,7 +3,10 @@
 > Actualizado tras importar datos reales de Serenes Forest (bases + growths).
 
 
-## Estado actual: **122 units**
+## Estado actual: **128 units**
+
+> +1 Saias (FE5), +5 jefes (Julius, Manfroy, Travant, Ishtar, Veld) con stats
+> reales de Serenes Forest (boss-data FE4/FE5). Falta **Mus** (ver nota abajo).
 
 - Solo FE4: 63
 - Solo FE5: 52
@@ -25,7 +28,23 @@ Sin valor fijo en Serenes: **Lana, Larcei, Ulster, Skasaher, Lester, Fee, Arthur
 Confirmado contra `characters/base-stats/fixed/` de Serenes: Seliph, Altena y Leif NO aparecen (sus stats se computan de los padres aunque estos sean fijos). No hay valor sourcable de las wikis indicadas. Opciones: (a) sistema de herencia, (b) el `.ltproj` original que sí les asignaba un default, o (c) otra fuente. **Leif ya está en la DB** (base asignada por LT).
 
 ### FE5 sin datos en la tabla base de Serenes
-**Saias** (no aparece en la tabla base-stats; requiere otra fuente).
+~~**Saias**~~ → añadido con datos provistos por el autor.
+
+### Jefes añadidos (boss-data de Serenes)
+- **Julius** (Dark Prince, cap. final FE4): Loptous + Meteor; sangre Loptos Major / Fjalar Minor.
+- **Manfroy** (Dark Bishop, cap. final FE4): Fenrir + Jormungandr.
+- **Travant** (Dragon Master, cap. 9 FE4): Silver Lance + Power Ring; sangre Dainn Major.
+- **Ishtar** (Sage, cap. 10 FE4): Mjolnir + Barrier/Life Ring; sangre Thrud Major.
+- **Veld** (Dark Bishop, cap. final FE5): Jormungandr + Vulnerary.
+- Skills remapeados al set actual: `Pursuit`/`Continue` se omiten (doblaje por Δ SPD),
+  `Ambush`→`Vantage`. Growths vacíos (los jefes no suben de nivel; sin fuente).
+
+### Pendiente de decisión — **Mus**
+El boss "Mua/Mus" de Serenes (cap. 17A FE5) es **Dark Bishop con tomos**
+(Jormungandr, Fenrir, Reserve, Warp), pero en el diseño previo **Mus** figura en
+los `prf_units` de la **Loptyr Sword** (arma de espada). Clase/rol no encajan;
+requiere aclarar identidad antes de añadirlo. La **Stone (petrify staff)** de
+Veld no existe en el dataset LT — omitida (no se inventan stats).
 
 
 ## Notas de datos
