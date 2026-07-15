@@ -6538,7 +6538,7 @@
   "rng_equation": "",
   "rank": "D",
   "uses": 30,
-  "worth": 25200,
+  "worth": 2520,
   "magic": false,
   "brave": false,
   "reaver": false,
@@ -6605,7 +6605,7 @@
    ],
    [
     "value",
-    25200
+    2520
    ],
    [
     "min_range",
