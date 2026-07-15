@@ -278,23 +278,29 @@ static func calculate_stat_gains(unit: Unit, growth_rates: Dictionary) -> Dictio
 	  Ejemplo: {"hp": 80, "str": 50, "spd": 60}
 	
 	Aplica los siguientes modificadores antes del roll:
-	- Elite skill: +10 % a TODAS las growths (FE5 — Elite_Skill 'growth_change'
-	  con valor 0.1 a todos los stats).  (Paragon quedó unificado en Elite.)
+	- growth_change de skills activas (Elite +10 a todas; scrolls de sangre
+	  como Baldr/Sety/… mientras se portan; etc.), sumado a cada growth.
 	
 	Retorna:
 	- Dictionary con las ganancias {stat_name: 0 o 1}
 	"""
 	var effective_rates := growth_rates.duplicate()
-	
-	# Elite: +10 % a todos los growths.  Esto es ADITIVO al rate
-	# (ej. STR 50 % → 60 %), no multiplicativo, igual que LT.
-	var has_elite := false
-	if unit != null:
-		has_elite = unit.has_skill("Elite_Skill")
-	if has_elite:
-		for stat in effective_rates.keys():
-			effective_rates[stat] = int(effective_rates[stat]) + 10
-	
+
+	# growth_change de skills activas: Elite (+10 todos), scrolls de sangre
+	# (Baldr/Sety/…) mientras se portan, etc.  ADITIVO al rate (ej. STR 50 →
+	# 60), no multiplicativo, igual que LT.  Las claves del skill son en
+	# mayúsculas (STR); las del rate en minúsculas (str).
+	var growth_key := {
+		"HP": "hp", "STR": "str", "MAG": "mag", "SKL": "skl",
+		"SPD": "spd", "LCK": "lck", "DEF": "def", "RES": "res",
+	}
+	if unit != null and unit.has_method("get_growth_bonuses"):
+		var bonuses: Dictionary = unit.get_growth_bonuses()
+		for up in bonuses:
+			var lo: String = growth_key.get(up, "")
+			if lo != "" and effective_rates.has(lo):
+				effective_rates[lo] = int(effective_rates[lo]) + int(bonuses[up])
+
 	var gains := {}
 	for stat in effective_rates.keys():
 		var growth_rate: int = int(effective_rates[stat])

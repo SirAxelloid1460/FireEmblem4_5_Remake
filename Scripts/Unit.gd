@@ -211,6 +211,52 @@ func _skill_stat_change(skill_id: String) -> Dictionary:
 				out[stat] = val
 	return out
 
+## Todas las skills activas de la unidad: permanentes + temporales (items).
+func _all_skill_ids() -> Array:
+	var ids: Array = []
+	ids.append_array(skills)
+	for k in _temp_skills:
+		if not k in ids:
+			ids.append(k)
+	return ids
+
+## Mayor fracción de regeneración por turno entre las skills activas
+## (Life 0.2, Recover 1.0, Regeneration/Circlet 0.25…). 0.0 si ninguna regenera.
+func get_regen_fraction() -> float:
+	var best := 0.0
+	if not has_node("/root/GameDB"):
+		return best
+	var db = get_node("/root/GameDB")
+	for sid in _all_skill_ids():
+		var sk = db.get_skill(sid)
+		if sk == null:
+			continue
+		var v = sk.component_value("regeneration")
+		if v != null:
+			best = max(best, float(v))
+	return best
+
+## Bonos de crecimiento (growth_change) sumados de todas las skills activas,
+## en puntos de % por stat (Elite +10 todos, scrolls de sangre…). Claves en
+## mayúsculas (HP/STR/MAG/SKL/SPD/LCK/DEF/RES). Usado por LevelUpScreen.
+func get_growth_bonuses() -> Dictionary:
+	var out := {}
+	if not has_node("/root/GameDB"):
+		return out
+	var db = get_node("/root/GameDB")
+	for sid in _all_skill_ids():
+		var sk = db.get_skill(sid)
+		if sk == null:
+			continue
+		var gc = sk.component_value("growth_change")
+		if gc is Array:
+			for pair in gc:
+				if pair is Array and pair.size() >= 2:
+					var stat := str(pair[0])
+					out[stat] = int(out.get(stat, 0)) + int(pair[1])
+	return out
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 # WEAPON RANK & HOLY BLOOD   (fiel a LT-maker + reglas FE4 LOCKED del brief §4)
 # ══════════════════════════════════════════════════════════════════════════════

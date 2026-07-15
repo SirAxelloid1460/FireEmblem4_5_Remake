@@ -487,6 +487,8 @@ func _is_usable_consumable(it, unit = null) -> bool:
 		return true   # Return Ring, etc.
 	if _item_component(it, "status_applied") != null:
 		return true   # Holy Water (buff temporal), etc.
+	if _item_component(it, "self_status_on_hit") != null:
+		return true   # Torch_item (aplica un status a sí mismo al usarse)
 	# Llave/ganzúa: solo si hay una casilla adyacente cerrada que abrir.
 	if _item_component(it, "can_unlock") != null:
 		return unit != null and _adjacent_unlockable(unit) != Vector2i(-1, -1)
@@ -515,6 +517,10 @@ func _apply_item_status(unit, sid: String) -> void:
 			unit.apply_status("HolyWater", {})
 		"CurePoison":
 			unit.remove_status("Poison")
+		"Torch":
+			# Bonus de visión temporal en la niebla (FogOfWarSystem lo decrece
+			# 1/turno vía tick_torches).
+			apply_torch_to(unit)
 		_:
 			unit.apply_status(sid, {})
 
@@ -701,10 +707,19 @@ func _use_consumable(unit, item) -> void:
 		return
 	if "heal" in item and int(item.heal) > 0:
 		unit.heal(int(item.heal))
-	# Manual: enseña la(s) skill(s) (status_on_hit).
+	# Torch (ítem/báculo): otorga bonus de visión temporal, NO es un manual.
+	# Se detecta por status_on_hit / self_status_on_hit == "Torch".
+	var applies_torch := (("status_on_hit" in item and str(item.status_on_hit) == "Torch")
+			or str(_item_component(item, "self_status_on_hit")) == "Torch"
+			or str(_item_component(item, "status_on_hit")) == "Torch")
+	if applies_torch:
+		_apply_item_status(unit, "Torch")
+	# Manual: enseña la(s) skill(s) (status_on_hit), excepto los que son status.
 	if "status_on_hit" in item and str(item.status_on_hit) != "":
 		for sk in str(item.status_on_hit).split(","):
 			sk = sk.strip_edges()
+			if sk == "Torch":
+				continue   # es un status temporal, ya aplicado arriba
 			if sk != "" and not unit.has_skill(sk):
 				unit.learn_skill(sk)
 	# Boost permanente de stats.
