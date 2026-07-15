@@ -517,7 +517,7 @@
   "effective_bonus": 0,
   "prf_tags": [],
   "prf_units": [],
-  "status_on_equip": "Wrath",
+  "status_on_equip": "Wrath,Vantage",
   "status_on_hit": "",
   "personal": false,
   "components": [
@@ -565,7 +565,7 @@
    ],
    [
     "status_on_equip",
-    "Wrath"
+    "Wrath,Vantage"
    ],
    [
     "crit",
@@ -797,8 +797,13 @@
   "effective_multiplier": 1,
   "effective_bonus": 5,
   "prf_tags": [],
-  "prf_units": [],
-  "status_on_equip": "Bragi Sword",
+  "prf_units": [
+   "Leif",
+   "Nanna",
+   "Fergus",
+   "Delmud"
+  ],
+  "status_on_equip": "Prayer,Blaggi",
   "status_on_hit": "",
   "personal": false,
   "components": [
@@ -850,7 +855,7 @@
    ],
    [
     "status_on_equip",
-    "Bragi Sword"
+    "Prayer,Blaggi"
    ],
    [
     "crit",
@@ -873,6 +878,15 @@
    [
     "effective_multiplier",
     1
+   ],
+   [
+    "prf_unit",
+    [
+     "Leif",
+     "Nanna",
+     "Fergus",
+     "Delmud"
+    ]
    ]
   ]
  },
@@ -2348,7 +2362,7 @@
   "effective_bonus": 0,
   "prf_tags": [],
   "prf_units": [],
-  "status_on_equip": "No Big Shields",
+  "status_on_equip": "",
   "status_on_hit": "",
   "personal": false,
   "components": [
@@ -2395,10 +2409,6 @@
     5
    ],
    [
-    "status_on_equip",
-    "No Big Shields"
-   ],
-   [
     "crit",
     0
    ],
@@ -2416,7 +2426,7 @@
    ],
    [
     "lifelink",
-    1.0
+    0.5
    ],
    [
     "battle_cast_anim",
@@ -2425,6 +2435,10 @@
    [
     "magic_at_range",
     null
+   ],
+   [
+    "ignore_pavise",
+    true
    ]
   ]
  },

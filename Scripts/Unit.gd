@@ -230,11 +230,15 @@ func refresh_item_effects() -> void:
 		var sid := _equipment_skill_field(it, "status_on_hold")
 		if sid != "":
 			_grant_equipment_skill(sid, "hold:" + sid)
-	# 3) status_on_equip del arma equipada.
+	# 3) status_on_equip del arma equipada (puede listar varias skills separadas
+	#    por coma, p.ej. Beo Sword = "Wrath,Vantage").
 	if weapon != null and weapon.has_method("get_component"):
 		var wsid = weapon.get_component("status_on_equip")
 		if wsid != null and str(wsid) != "":
-			_grant_equipment_skill(str(wsid), "equip:" + str(wsid))
+			for sk in str(wsid).split(","):
+				var s := sk.strip_edges()
+				if s != "":
+					_grant_equipment_skill(s, "equip:" + s)
 
 ## Lee un campo de skill (status_on_hold/status_on_equip) de un item, tolerando
 ## tanto ConsumableData/ItemData (propiedad tipada) como Dictionary.

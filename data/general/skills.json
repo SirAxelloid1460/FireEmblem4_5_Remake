@@ -1870,5 +1870,17 @@
     null
    ]
   ]
+ },
+ {
+  "nid": "Blaggi",
+  "name": "Blaggi",
+  "icon_nid": "Skills",
+  "desc": "Nullifies the Loptyr Sword's curse (immune to Loptyr_negative).",
+  "components": [
+   [
+    "hidden",
+    null
+   ]
+  ]
  }
 ]

@@ -208,7 +208,10 @@ static func _do(atk: Unit, def: Unit, dist: int, result: CombatResult,
 		# se aplica al defensor si sobrevive. "Devil" ya se gestiona aparte.
 		if def.current_hp > 0 and atk.weapon != null and "status_on_hit" in atk.weapon:
 			var soh := str(atk.weapon.status_on_hit)
-			if soh != "" and soh != "Devil":
+			# Blaggi (espada de Bragi) hace inmune a la maldición de la Loptyr
+			# Sword — anula su Loptyr_negative.
+			var blaggi_block := soh == "Loptyr_negative" and _has_skill(def, "Blaggi")
+			if soh != "" and soh != "Devil" and not blaggi_block:
 				def.apply_status_with_effects(soh, STATUS_ON_HIT_TURNS)
 		# Thief Sword (componente steal): roba un ítem si el defensor sobrevive.
 		if def.current_hp > 0 and atk.weapon != null and atk.weapon.has_method("has_component") \
