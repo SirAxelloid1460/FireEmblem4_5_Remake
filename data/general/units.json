@@ -5651,5 +5651,50 @@
   "games": [
    "FE5"
   ]
+ },
+ {
+  "nid": "Saias",
+  "name": "Saias",
+  "desc": "",
+  "klass": "HighPriest",
+  "level": 12,
+  "gender": "M",
+  "bases": {
+   "HP": 23,
+   "STR": 0,
+   "MAG": 18,
+   "SKL": 16,
+   "SPD": 12,
+   "LCK": 5,
+   "DEF": 4,
+   "RES": 0,
+   "CON": 5,
+   "MOV": 70
+  },
+  "growths": {},
+  "starting_items": [
+   "Lightning",
+   "Warp",
+   "Silence",
+   "Heal",
+   "Door_Key"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Nihil"
+   ]
+  ],
+  "wexp_gain": {
+   "Light": 226,
+   "Staff": 226
+  },
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "",
+  "portrait_nid": "Saias",
+  "games": [
+   "FE5"
+  ]
  }
 ]
