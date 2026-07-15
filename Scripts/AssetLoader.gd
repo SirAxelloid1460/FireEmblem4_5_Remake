@@ -163,6 +163,7 @@ const PORTRAIT_ALIASES: Dictionary = {
 	"Lewyn":  "LewynYoung",
 	"Oifaye": "OifayeYoung",
 	"Oifey":  "OifayeYoung",
+	"Robert": "RobertFE5",   # Robert aparece en FE4 y FE5 (RobertFE4/RobertFE5)
 }
 
 ## Carga el retrato de un personaje.  Busca en este orden:
