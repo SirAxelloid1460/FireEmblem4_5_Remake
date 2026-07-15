@@ -1,15 +1,15 @@
 [
  {
-  "nid": "Ambush Manual",
-  "name": "Amb. Manual",
-  "desc": "Teaches the Ambush Skill",
+  "nid": "Vantage Manual",
+  "name": "Vantage Manual",
+  "desc": "Teaches the Vantage Skill",
   "category": "Consumable",
   "worth": 300,
   "uses": 1,
   "heal": 0,
   "permanent_stat_change": {},
   "status_on_hold": "",
-  "status_on_hit": "Ambush",
+  "status_on_hit": "Vantage",
   "promote": false,
   "restore": false,
   "restore_specific": "",
@@ -46,7 +46,7 @@
    ],
    [
     "status_on_hit",
-    "Ambush"
+    "Vantage"
    ],
    [
     "map_hit_add_blend",

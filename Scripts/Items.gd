@@ -384,7 +384,7 @@ static func _stat_boosters() -> Array[ItemData]:
 # Solo usables en castillo (usable_in_base = true, aunque aquí lo dejamos
 # flexible para que el GameManager decida el contexto).
 # En LT se implementaban como status_on_hit con la skill correspondiente.
-# ⚠️ Continue M y Moonlight Sw M son NUEVOS (no implementados en LT).
+# ⚠️ Moonlight Sw M es NUEVO (no implementado en LT).
 
 static func _skill_manuals() -> Array[ItemData]:
 	var manuals: Array[ItemData] = []
@@ -399,10 +399,8 @@ static func _skill_manuals() -> Array[ItemData]:
 
 	manuals.append(_mk.call("EliteM",      "Elite Manual",          "Elite_Skill"))
 	manuals.append(_mk.call("BargainM",    "Bargain Manual",        "Bargain"))
-	manuals.append(_mk.call("AmbushM",     "Ambush Manual",         "Ambush"))
+	manuals.append(_mk.call("VantageM",    "Vantage Manual",        "Vantage"))
 	manuals.append(_mk.call("WrathM",      "Wrath Manual",          "Wrath"))
-	manuals.append(_mk.call("ContinueM",   "Continue Manual",       "Continue",
-		"⚠️ NEW — Continue not in LT. Teaches the Continue skill (extra round if HP > enemy's)."))
 	manuals.append(_mk.call("PrayerM",     "Prayer Manual",         "Prayer"))
 	manuals.append(_mk.call("AwarenessM",  "Awareness Manual",      "Awareness"))
 	manuals.append(_mk.call("SunSwordM",   "Sun Sword Manual",      "Sol"))
@@ -626,11 +624,10 @@ class ItemSystem:
 #    En Godot: CastleBase.gd verifica if any(unit.has_item("MemberCard"))
 #    antes de mostrar el botón "Secret Shop" en la UI de tienda.
 #
-# 6. CONTINUE MANUAL
-#    Continue no estaba implementada como skill en LT.
-#    En Godot: Continue = si HP del atacante > HP del defensor Y AS atacante
-#    > AS defensor, inicia una ronda extra de combate (similar a Charge
-#    pero sin requerir la victoria del round anterior).
+# 6. VANTAGE MANUAL
+#    Vantage unifica los antiguos Ambush/Desperation/Continue.
+#    En Godot: si el defensor tiene Vantage y su HP <= 50%, golpea primero
+#    (ver CombatSystem).
 #
 # 7. MOONLIGHT SWORD MANUAL
 #    Aparece en el spreadsheet pero no estaba en el proyecto LT.

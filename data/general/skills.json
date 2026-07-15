@@ -1,37 +1,5 @@
 [
  {
-  "nid": "Ambush",
-  "name": "Ambush",
-  "desc": "Always attacks first even on defense if HP is below half.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "condition",
-    "unit.get_hp() < unit.stats['HP']//2"
-   ],
-   [
-    "defense_pre_proc",
-    "Ambush_proc"
-   ]
-  ]
- },
- {
-  "nid": "Ambush_proc",
-  "name": "Ambush",
-  "desc": "Always attacks first even on defense if HP is below half.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "vantage",
-    null
-   ],
-   [
-    "hidden",
-    null
-   ]
-  ]
- },
- {
   "nid": "Astra",
   "name": "Shooting Star",
   "desc": "SKL%. to attack up to 5 consecutive times.",
@@ -737,7 +705,7 @@
  {
   "nid": "Hel",
   "name": "Hel",
-  "desc": "Destroys enemies from inside.",
+  "desc": "Reduces the target to 1 HP (leaves current HP - 1 damage); never kills.",
   "icon_nid": "Skills",
   "components": [
    [
@@ -847,18 +815,6 @@
       15
      ]
     ]
-   ]
-  ]
- },
- {
-  "nid": "Inmortal",
-  "name": "Inmortal",
-  "desc": "Once per chapter, if this unit would die, instead they survive with 1 HP.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "miracle",
-    null
    ]
   ]
  },
@@ -1252,26 +1208,6 @@
    [
     "hidden",
     null
-   ]
-  ]
- },
- {
-  "nid": "NotHoly",
-  "name": "NotHoly",
-  "desc": "Does not let units go further a certain weapon rank.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "wexp_multiplier",
-    0
-   ],
-   [
-    "hidden",
-    null
-   ],
-   [
-    "condition",
-    "unit.wexp[item_system.weapon_type(unit,unit.get_weapon())] >= 226"
    ]
   ]
  },
@@ -1980,46 +1916,6 @@
   ]
  },
  {
-  "nid": "ChangeSniper",
-  "name": "Change to Sniper",
-  "desc": "Allows Eyvel to change her class to Sniper",
-  "icon_nid": "Consumable",
-  "components": [
-   [
-    "hidden",
-    null
-   ],
-   [
-    "ability",
-    "ChangeSniper"
-   ],
-   [
-    "class_skill",
-    null
-   ]
-  ]
- },
- {
-  "nid": "ChangeSwordmaster",
-  "name": "Change to Swordmaster",
-  "desc": "Allows Eyvel to change her class to Swordmaster",
-  "icon_nid": "Consumable",
-  "components": [
-   [
-    "hidden",
-    null
-   ],
-   [
-    "ability",
-    "ChangeSwordmaster"
-   ],
-   [
-    "class_skill",
-    null
-   ]
-  ]
- },
- {
   "nid": "Vantage",
   "name": "Vantage",
   "desc": "When HP <= 50%, the unit strikes first even when defending.",
@@ -2027,18 +1923,6 @@
   "components": [
    [
     "vantage",
-    null
-   ]
-  ]
- },
- {
-  "nid": "Adept",
-  "name": "Adept",
-  "desc": "Chance (Skill%) to strike one extra time.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "display_skill_icon_in_combat",
     null
    ]
   ]
@@ -2052,42 +1936,6 @@
    [
     "display_skill_icon_in_combat",
     null
-   ]
-  ]
- },
- {
-  "nid": "Desperation",
-  "name": "Desperation",
-  "desc": "When HP is low, performs all of the unit's attacks before the enemy can counter.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "display_skill_icon_in_combat",
-    null
-   ]
-  ]
- },
- {
-  "nid": "Continue",
-  "name": "Continue",
-  "desc": "Grants an extra attack round under the right conditions (follow-up).",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "display_skill_icon_in_combat",
-    null
-   ]
-  ]
- },
- {
-  "nid": "Paragon",
-  "name": "Paragon",
-  "desc": "Doubles EXP gained.",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "exp_multiplier",
-    2.0
    ]
   ]
  }

@@ -10,8 +10,8 @@
 #   - Miracle añadido: LCK%, sobrevive golpe letal con 1 HP
 #   - Nihil (FE5): niega todas las proc del bando enemigo
 #   - Awareness (FE4): niega crít + sword skills + effectividad (distinto de Nihil)
-#   - Adept: SKL% → ataque extra inmediato antes del contraataque
-#   - Desperation/Continue: HP≤50% → segundo ataque por AS antes del contra
+#   - Vantage (unifica Ambush/Desperation): HP≤50% → el defensor golpea primero
+#   - Hel: el tomo homónimo deja al objetivo a 1 HP (nunca mata)
 #   - Sol/Luna/Astra: procean solo si el golpe acertaría (FE5 style)
 
 class_name CombatSystem
@@ -100,13 +100,8 @@ static func calculate_combat(attacker: Unit, defender: Unit, distance: int,
 
 	# Pre-combat proc rolls
 	var atk_sword := "" if atk_proc_blocked else _roll_sword_skill(attacker)
-	var atk_adept := (not atk_proc_blocked) and _has_skill(attacker, "Adept") \
-			and randi() % 100 < _stat(attacker, "SKL")
-	var atk_desp  := (not atk_proc_blocked) \
-			and (_has_skill(attacker, "Desperation") or _has_skill(attacker, "Continue")) \
-			and attacker.current_hp <= attacker.max_hp / 2
 
-	# Vantage: defensor ataca primero si HP <= 50%
+	# Vantage (unifica Ambush/Desperation): defensor ataca primero si HP <= 50%
 	if def_can_counter and not def_proc_blocked and _has_skill(defender, "Vantage") \
 			and defender.current_hp <= defender.max_hp / 2:
 		_do(defender, attacker, distance, result, false,
@@ -129,26 +124,11 @@ static func calculate_combat(attacker: Unit, defender: Unit, distance: int,
 			if result.defender_died:
 				_finalize_exp(result); return result
 
-		# Adept: 1 ataque extra SKL% antes del contra
-		if atk_adept:
-			_do(attacker, defender, distance, result, true,
-					terrain_atk, terrain_def, "Adept", atk_proc_blocked)
-			if result.defender_died:
-				_finalize_exp(result); return result
-
 		# Primer ataque normal
 		_do(attacker, defender, distance, result, true,
 				terrain_atk, terrain_def, atk_sword, atk_proc_blocked, combat_flags)
 		if result.defender_died:
 			_finalize_exp(result); return result
-
-	# Desperation/Continue: doble ataque ANTES del contra si HP<=50%
-	if atk_can_double and atk_desp and not result.defender_died:
-		_do(attacker, defender, distance, result, true,
-				terrain_atk, terrain_def, "", atk_proc_blocked)
-		if result.defender_died:
-			_finalize_exp(result); return result
-		atk_can_double = false
 
 	# Contraataque
 	if def_can_counter:
@@ -328,6 +308,10 @@ static func _calc_dmg(atk: Unit, def: Unit, is_crit: bool, is_eff: bool,
 
 	var wpn = atk.weapon
 	var is_magic: bool = bool(wpn.is_magic) if wpn and "is_magic" in wpn else false
+	# Hel (efecto del tomo homónimo): deja al objetivo a 1 HP; nunca mata.
+	#   HP objetivo != 1 → daño = HP_actual - 1;  si ya está a 1 → daño = 0.
+	if _has_skill(atk, "Hel"):
+		return def.current_hp - 1 if def.current_hp != 1 else 0
 	# STR/MAG efectivos: incluyen anillos on_hold, Holy Water y la penalización
 	# de captura ("Carrying" → STR/MAG a la mitad ya aplicada vía modifier).
 	var stat_m: int = _stat(atk, "MAG") if is_magic else _stat(atk, "STR")
@@ -416,7 +400,7 @@ static func _finalize_exp(result: CombatResult) -> void:
 	if result.defender_died and result.defender.has_meta("is_boss") \
 			and result.defender.get_meta("is_boss"):
 		exp_value += BOSS_BONUS_EXP
-	if _has_skill(result.attacker, "Elite_Skill") or _has_skill(result.attacker, "Paragon"):
+	if _has_skill(result.attacker, "Elite_Skill"):
 		exp_value = min(100, exp_value * 2)
 	result.exp_attacker = exp_value
 	if result.attacker_died:

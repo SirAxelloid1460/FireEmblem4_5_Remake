@@ -279,18 +279,18 @@ static func calculate_stat_gains(unit: Unit, growth_rates: Dictionary) -> Dictio
 	
 	Aplica los siguientes modificadores antes del roll:
 	- Elite skill: +10 % a TODAS las growths (FE5 — Elite_Skill 'growth_change'
-	  con valor 0.1 a todos los stats).  Equivalente a Paragon (mismo efecto).
+	  con valor 0.1 a todos los stats).  (Paragon quedó unificado en Elite.)
 	
 	Retorna:
 	- Dictionary con las ganancias {stat_name: 0 o 1}
 	"""
 	var effective_rates := growth_rates.duplicate()
 	
-	# Elite / Paragon: +10 % a todos los growths.  Esto es ADITIVO al rate
+	# Elite: +10 % a todos los growths.  Esto es ADITIVO al rate
 	# (ej. STR 50 % → 60 %), no multiplicativo, igual que LT.
 	var has_elite := false
 	if unit != null:
-		has_elite = unit.has_skill("Elite_Skill") or unit.has_skill("Paragon")
+		has_elite = unit.has_skill("Elite_Skill")
 	if has_elite:
 		for stat in effective_rates.keys():
 			effective_rates[stat] = int(effective_rates[stat]) + 10

@@ -286,15 +286,6 @@ func has_minor_blood(blood: String = "") -> bool:
 		return holy_blood.get(blood, "") == "Minor"
 	return "Minor" in holy_blood.values()
 
-## NotHoly = la unidad NO puede usar armas Holy★. La tienen automáticamente
-## todas las unidades SIN Major Blood (Minor o sin sangre). Llamar tras fijar
-## holy_blood (lo hace el importador LT al construir la unidad).
-func refresh_holy_status() -> void:
-	if has_major_blood():
-		remove_skill("NotHoly")
-	elif not has_skill("NotHoly"):
-		learn_skill("NotHoly")
-
 # ══════════════════════════════════════════════════════════════════════════════
 # STATS CON MODIFICADORES
 # ══════════════════════════════════════════════════════════════════════════════

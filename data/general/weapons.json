@@ -2251,7 +2251,7 @@
   "effective_bonus": 0,
   "prf_tags": [],
   "prf_units": [],
-  "status_on_equip": "Ambush",
+  "status_on_equip": "Vantage",
   "status_on_hit": "",
   "personal": false,
   "components": [
@@ -2281,7 +2281,7 @@
    ],
    [
     "status_on_equip",
-    "Ambush"
+    "Vantage"
    ],
    [
     "brave",

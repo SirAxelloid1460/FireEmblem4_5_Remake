@@ -402,9 +402,6 @@ static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> v
 		for hb in hb_data:
 			if hb is Array and hb.size() >= 2:
 				unit.holy_blood[str(hb[0])] = str(hb[1])
-	# Aplicar NotHoly (cap A=226) si no tiene Major Blood; habilita Holy si la tiene.
-	if unit.has_method("refresh_holy_status"):
-		unit.refresh_holy_status()
 	# Inventario inicial.
 	var items_db: Dictionary = project_data.get("items", {})
 	for entry in udata.get("starting_items", []):
