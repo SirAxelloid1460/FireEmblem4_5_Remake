@@ -102,24 +102,15 @@ var credits_data: Array = [
 	{ "type": "divider" },
 	{ "type": "spacer", "size": 40 },
 
-	# ---------- PROGRAMMING (LT ENGINE) ----------
-	# Contribuyentes del motor Lex Talionis (Python/Pygame).
-	{ "type": "header", "text": "PROGRAMMING (LT)" },
+	# ---------- PROGRAMMING ----------
+	# Original LT contributors + SirAxelloid1460 (Godot port)
+	{ "type": "header", "text": "PROGRAMMING" },
 	{ "type": "spacer", "size": 12 },
 	{ "type": "grid", "columns": 3, "names": [
-		"rainlash", "mag", "KD",
-		"Beccarte", "TheeBill", "LordTweed",
-		"ZessDynamite", "Klokinator", "Nemid",
-		"Legendary Super Shaggy", "Lorwyn Boi"
-	] },
-	{ "type": "spacer", "size": SECTION_GAP },
-
-	# ---------- PROGRAMMING (GODOT PORT) ----------
-	# Port y desarrollo del remake en Godot 4.
-	{ "type": "header", "text": "PROGRAMMING (GODOT)" },
-	{ "type": "spacer", "size": 12 },
-	{ "type": "grid", "columns": 2, "names": [
-		"SirAxelloid1460", "Claude (Anthropic)"
+		"rainlash", "mag", "SirAxelloid1460",
+		"KD", "Beccarte", "TheeBill",
+		"LordTweed", "ZessDynamite", "Klokinator",
+		"Nemid", "Legendary Super Shaggy", "Lorwyn Boi"
 	] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
@@ -145,22 +136,22 @@ var credits_data: Array = [
 	{ "type": "spacer", "size": 40 },
 
 	# ---------- MAP SPRITES & CUSTOM CLASS CARDS (52 contributors) ----------
-	{ "type": "header", "text": "MAP SPRITES & CUSTOM CLASS CARDS" },
+	{ "type": "header", "text": "MAP SPRITES" },
+	{ "type": "subheader", "text": "& Custom Class Cards" },
 	{ "type": "spacer", "size": 16 },
 	{ "type": "grid", "columns": 4, "names": [
 		"Serenes Forest", "FEUniverse", "SirAxelloid1460", "Lexou",
 		"Jirbytaylor", "RobertFPY", "flasuban", "Tordo45",
-		"IS", "DerTheVaporeon", "Pikmin1211", "Hypergammaspaces",
-		"L95", "Someone Unknown", "FEGirls", "CamusZekeSirius",
-		"Rexacuse", "Peerless", "Alusq", "WarPath",
-		"Yangfly Master", "Cath", "Chad", "Rasdel",
-		"Agro", "Yggdra", "Aruka", "Kenpuhu",
-		"Smug_mug", "BatimaTheBat", "Jeorge Reds", "Cipher",
-		"Lee", "Sephie", "Eldrich Abomination", "MeatofJustice",
-		"Leif", "Nuramon", "Its_Just_Jay", "SamirPlayz",
-		"N426", "Mikey_Seregon", "StreetHero", "Blood",
-		"Huichelaar", "Seal", "Mobile21", "Team SALVAGED",
-		"Teraspark"
+		"DerTheVaporeon", "Pikmin1211", "Hypergammaspaces", "L95",
+		"Someone Unknown", "FEGirls", "CamusZekeSirius", "Rexacuse",
+		"Peerless", "Alusq", "WarPath", "Yangfly Master",
+		"Cath", "Chad", "Rasdel", "Agro",
+		"Yggdra", "Aruka", "Kenpuhu", "Smug_mug",
+		"BatimaTheBat", "Jeorge_Reds", "Cipher", "Lee",
+		"Sephie", "Eldrich Abomination", "MeatofJustice", "Leif",
+		"Nuramon", "Its_Just_Jay", "SamirPlayz", "N426",
+		"Mikey_Seregon", "StreetHero", "Blood", "Huichelaar",
+		"Seal", "Mobile21", "Team SALVAGED", "Teraspark"
 	] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
@@ -207,153 +198,71 @@ var credits_data: Array = [
 	{ "type": "header", "text": "CUSTOM COMBAT ANIMATIONS" },
 	{ "type": "spacer", "size": 16 },
 	{ "type": "table", "rows": [
-		["Dancer", "Sword",     "Circleseverywhere, Sirkinite31"],
+		["Archer", "Generics",                          "Pushwall"],
+		["",       "Jamke, Febail, Ronan, Asaello",     "DerTheVaporeon"],
+		["",       "Tanya",                             "NamelessX"],
 
-		["Warrior", "Handaxe",  "Yerek"],
+		["Archer Knight", "Generics", "eCut, Pikmin1211, Maiser6"],
 
-		["Swordfighter", "Shiva",           "Leo_Link, Tsushi, Iscaneus"],
-		["",             "Troude",          "Leo_Link, UltraFenix"],
-		["",             "Female Pants",    "CelestiaHeart"],
+		["Armour", "Generics", "Iscaneus, Nuramon, Jeorge_Reds"],
 
-		["SwordMaster", "Shiva, Troude",  "Seliost1"],
-		["",            "Mareeta",        "RedBean, Jj09, UltraFenix"],
-		["",            "Female Pants",   "Seliost1"],
-
-		["Soldier", "Original", "AstraLunaSol"],
+		["Axe Knight", "Generic, Lex", "Leo_Link, Pushwall"],
 
 		["Ballista", "Repalette", "Pushwall"],
-
-		["Sniper", "Jamke",                    "ltranc, Pushwall"],
-		["",       "Tanya",                    "NamelessX"],
-		["",       "Febail, Ronan, Asaello",   "Greentea, HeroDW"],
-		["",       "Generics",                 "Meteor, Nuramon, Swain, Temp"],
-		["",       "Brigit",                   "IS, ShadowAllyX"],
-
-		["Sage", "Ishtar",                       "L95, Brendor"],
-		["",     "Sara, Julia, Linoan",          "Yerek"],
-		["",     "Generics",                     "Aruka, Kenpuhu, Levin64, HyperGammaSpaces"],
-		["",     "Ced, Asbel, Hawk, Homer",      "Greentea, DerTheVaporeon"],
-		["",     "Arvis (Young), Lewys",         "Faolin"],
-
-		["Thief", "Lara, Patty",   "Pikmin1211, Maiser6, Skitty, GabrielKnight"],
-		["",      "Daisy",         "Eldritch Abomination, GabrielKnight, Skitty, Mikey Séregon"],
-		["",      "Dew, Lifis",    "RedBean"],
-
-		["Rogue", "Lara, Patty, Daisy",  "Leo_Link, Epicer, Kanto Emblem, Sable Mage"],
-		["",      "Dew, Lifis",          "Leo_Link, Epicer, Kanto Emblem"],
-		["",      "Generic Female",      "Pikmin1211, Maiser6, Ukelele, SD9k, Temp, Black Mage, Wan, Sme"],
-
-		["Queen", "Original",  "TytheBub"],
-		["",      "Staff",     "Enthusiasm"],
-
-		["Dark Prince", "Fixed", "Shin19"],
-
-		["Lord Knight", "Seliph, Sigurd", "Obsidian Daddy, ZoramineFae"],
-
-		["Prince", "Leif", "Obsidian Daddy, Jj09"],
-
-		["Lord", "Animation", "UltraFenix"],
-		["",     "Still",     "Jeorge_Reds"],
-
-		["Princess", "Staff", "Lisandra_Brave"],
-
-		["Loptyr Mage", "Rip", "(Unknown)", { "name": { "italic": true, "dim": true } }],
-
-		["Lightpriestress", "Staff", "Teraspark"],
-
-		["Priest(ress)", "Short Hair Female",  "BatimaTheBat, Fiuke Bnuy"],
-		["",             "Safy",               "HeroDW"],
-		["",             "Sleuf",              "Flasuban, Eldritch Abomination"],
-		["",             "Male Repalette",     "Vilkalizer"],
-
-		["High Priest(ress)", "Animation", "MrNight48"],
-		["",                  "Fixed",     "DerTheVaporeon"],
-
-		["Hero", "Holyn, Skasaher, Dalvin", "Greentea, Seliost1"],
-		["",     "Machyua, Creidne",        "WarPath, Red Bean"],
-		["",     "Generics",                "Flasuban, Nuramon, Sax-Marine, Itranc"],
-
-		["Mercenary", "Female", "Russell Clark, Orihara_Saki"],
-		["",          "Male",   "Alusq, Maiser6"],
-
-		["Pirate", "Animation", "DerTheVaporeon"],
-
-		["Berserker", "Handaxe", "Yerek"],
-
-		["Mage", "Generics Fixed",   "Shin19"],
-		["",     "Short Hair Male",  "Omega Zero"],
-		["",     "Tailtiu",          "Yerek"],
-		["",     "Miranda",          "Leo_Link, L95"],
-		["",     "Arthur",           "Shin19, Saint Rubenio"],
-
-		["Bard", "Male", "Flasuban"],
 
 		["Bandit / Mtn. Thief", "Original", "Flasuban"],
 
 		["Barbarian", "HeadBand, Metal Bracers", "RRSKAI"],
 
+		["Bard", "Male", "Flasuban"],
+
+		["Baron", "Animation", "Leo_Link, Nuramon, Iscaneus, The_Big_Dededester"],
+		["",      "Handaxe, Sword, Lance, Magic",   "UltraFenix"],
+
+		["Berserker", "Handaxe", "Yerek"],
+
+		["Bishop", "Magic", "Marlon0024, Asael, Jj09, Huichelaar"],
+		["",       "Staff", "Marlon0024, Asael"],
+
+		["Bow Knight", "Original", "Pikmin1211, Maiser6"],
+
+		["Cavalier", "Original", "Team SALVAGED"],
+		["",         "Female",   "Flasuban"],
+
+		["Dancer", "Sword",     "Circleseverywhere, Sirkinite31"],
+
+		["Dark Bishop", "Magic", "SHYUTERz, Blademaster"],
+		["",            "Staff", "Orihara_Saki"],
+
+		["Dark Mage", "Generics, Salem", "BatimaTheBat, Leo_Link"],
+
+		["Dark Prince", "Generics", "Shin19"],
+
+		["Dragon Master", "Generics", "Nuramon"],
+
+		["Dragon Rider", "Sword", "Rawr776"],
+
 		["Duke Knight", "Animation",  "Leo_Link"],
 		["",            "Script",     "Enjin"],
 		["",            "Helmetless", "UltraFenix"],
 
-		["Great Knight", "Animation", "Leo_Link"],
-		["",             "Script",    "Jj09, UltraFenix, Vyland, apolo15"],
-
-		["Forrest Knight", "Animation", "Leo_Link, Pikmin1211"],
-
-		["Paladin", "Female Staff", "Primefusion"],
-
-		["Bow Knight", "Original", "Pikmin1211, Maiser6"],
-
-		["Archer Knight", "Original",  "eCut"],
-		["",              "Repalette", "Pikmin1211, Maiser6"],
-
-		["Master Knight", "Original", "tatata"],
-
-		["Axe Knight", "Animation", "Leo_Link"],
-		["",           "Script",    "Pushwall"],
-
-		["Lance Knight", "Animation", "Leo_Link"],
-		["",             "Script",    "Jj09"],
-
-		["Free Knight", "Animation", "Leo_Link"],
-		["",            "Script",    "Pushwall"],
-
-		["Cavalier", "Original", "Team SALVAGED"],
-
-		["Mage Knight", "Original",                       "Aruka"],
-		["",            "Magic, Staff, Modifications",    "DatonDemand"],
-		["",            "Script",                         "Vyland"],
-
-		["Pegasus Rider", "Animation", "Redbean"],
-		["",              "Script",    "Seliost1"],
-
-		["Pegasus Knight", "Animation, Repalette", "Flasuban"],
-		["",               "Fixed",                "UltraFenix"],
+		["Emperor", "Animation",              "Nuramon"],
+		["",        "Handaxe, Magic, Staff",  "UltraFenix"],
 
 		["Falcon Knight", "Original", "Dinar"],
 		["",              "Staff",    "CelestiaHeart"],
 
-		["Dragon Rider", "Sword", "Rawr776"],
+		["Fighter", "Osian",     "YellowToadstool"],
+		["",        "Male, DiMaggio",  "Leo_Link, Pushwall, UltraFenix"],
+		["",        "Female",    "FEGirls"],
+		["",        "Halvan",    "MK404, Glenwing"],
+		["",        "Iucharba",  "Waleed, Flasuban"],
+		["",        "Gerrard",   "Jey the Count"],
 
-		["Dragon Master", "Animation", "Nuramon"],
+		["Forrest Knight", "Animation", "Leo_Link, Pikmin1211"],
 
-		["Archer", "Generics",                          "Pushwall"],
-		["",       "Jamke, Febail, Ronan, Asaello",     "DerTheVaporeon"],
-		["",       "Tanya",                             "NamelessX"],
-
-		["Fighter", "Osian",        "YellowToadstool"],
-		["",        "Animation",    "Leo_Link"],
-		["",        "Color Fixes",  "Pushwall, UltraFenix"],
-
-		["Baron", "Animation", "Leo_Link, Nuramon, Iscaneus, The_Big_Dededester"],
-		["",      "Handaxe",   "UltraFenix"],
-
-		["Emperor", "Animation",              "Nuramon"],
-		["",        "Handaxe, Magic, Staff",  "UltraFenix"],
-
-		["Armour", "Base",               "Iscaneus"],
-		["",       "Animation, Script",  "Nuramon, Jeorge Reds"],
+		["Free Knight", "Animation", "Leo_Link"],
+		["",            "Script",    "Pushwall"],
 
 		["General", "Shield",            "TheBlindArcher, DerTheVaporeon, Nuramon"],
 		["",        "Sword",             "The_Big_Dededester"],
@@ -361,19 +270,116 @@ var credits_data: Array = [
 		["",        "Bow",               "tatata"],
 		["",        "Chainless Lance",   "Pushwall, Knabepicer"],
 
-		["Mage Fighter", "Female", "St Jack"],
-		["",             "Male",   "St Jack, The_Big_Dededester, Dolkar, CranJam"],
+		["Great Knight", "Animation", "Leo_Link"],
+		["",             "Script",    "Jj09, UltraFenix, Vyland, apolo15"],
 
-		["Dark Mage", "Generics, Salem", "BatimaTheBat, Leo_Link"],
+		["Hero", "Holyn",     "Greentea"],
+		["",     "Skasaher",  "Greentea, Seliost1"],
+		["",     "Dalvin",    "Nuramon"],
+		["",     "Machyua",   "Flasuban, Nuramon, Itranc"],
+		["",     "Creidne",   "WarPath, Red Bean"],
+		["",     "Generics",  "Pikmin1211, Pushwall, St Jack, Swain, Itranc"],
 
-		["Dark Bishop", "Magic", "SHYUTERz, Blademaster"],
-		["",            "Staff", "Orihara_Saki"],
+		["High Priest(ess)", "Animation", "MrNight48"],
+		["",                  "Fixed",     "DerTheVaporeon"],
 
-		["Bishop", "Magic", "Marlon0024, Asael, Jj09, Huichelaar"],
-		["",       "Staff", "Marlon0024, Asael"],
+		["Lance Knight", "Animation", "Leo_Link"],
+		["",             "Script",    "Jj09"],
+
+		["Lightpriestess", "Staff", "Teraspark"],
+
+		["Loptyr Mage", "Rip", "(Unknown)", { "name": { "italic": true, "dim": true } }],
+
+		["Lord", "Animation", "UltraFenix"],
+		["",     "Still",     "Jeorge_Reds"],
+
+		["Lord Knight", "Seliph",  "Obsidian Daddy, ZoramineFae"],
+		["",            "Sigurd",  "Caim Van Fang, Seliost1"],
+
+		["Mage", "Generics Fixed",   "Shin19"],
+		["",     "Short Hair Male",  "Omega Zero"],
+		["",     "Tailtiu",          "Yerek"],
+		["",     "Miranda",          "Leo_Link, L95"],
+		["",     "Arthur",           "Shin19, Saint Rubenio"],
+
+		["Mage Fighter", "Female, Tailtiu",  "St Jack"],
+		["",             "Male",             "St Jack, The_Big_Dededester, Dolkar, CranJam"],
+		["",             "Amid",             "Obsidian Daddy, StrudelMuffin, Maximus03, Card, Leo_Link, Feier"],
+
+		["Mage Knight", "Generics",                                                        "Aruka, DatonDemand, Vyland"],
+		["",            "Ovo",                                                             "Aruka, Kenpuhu, NamelessX"],
+		["",            "Arthur, Azelle, Olwen, Ilios, Kempf, Reinhart, Miranda, Musar",   "BatimaTheBat, UltraFenix, Aruka, Kenpuhu, Seal, Sacred War, Leo_Link"],
+
+		["Master Knight", "Original", "tatata"],
+
+		["Mercenary", "Female", "Russell Clark, Orihara_Saki"],
+		["",          "Male",   "Alusq, Maiser6"],
+
+		["Paladin", "Female Staff",          "Primefusion"],
+		["",        "Ethlyn",                "Greentea, Brober"],
+		["",        "Alvar, Evan, Evar",     "Aruka, Kenpuhu, Nuramon"],
+		["",        "Amalda, Nanna, Jeanne", "Team SALVAGED, Leo_Link, Flasuban, The_Big_Dededester, CelestiaHeart"],
+		["",        "Naoise, Alec",          "Greentea, RobertFPY"],
+
+		["Pegasus Knight", "Generics", "Fiuke Bnuy, Jeorge_Reds"],
+
+		["Pegasus Rider", "Animation, Repalette", "Flasuban"],
+		["",              "Fixed",                "UltraFenix"],
+
+		["Pirate", "Animation", "DerTheVaporeon"],
+
+		["Priest(ess)", "Short Hair Female",  "BatimaTheBat, Fiuke Bnuy"],
+		["",             "Safy",               "HeroDW"],
+		["",             "Sleuf",              "Flasuban, Eldritch Abomination"],
+		["",             "Male Repalette",     "Vilkalizer"],
+
+		["Prince", "Leif", "Obsidian Daddy, Jj09"],
+
+		["Princess", "Staff", "Lisandra_Brave"],
+		["",         "Sword", "RedBean"],
+
+		["Queen", "Original",  "TytheBub"],
+		["",      "Staff",     "Enthusiasm"],
+
+		["Rogue", "Lara",   "Leo_Link, TATUTA_CHANG"],
+		["",      "Patty",  "Pikmin1211, Maiser6, Ukelele, SD9k, Temp, Black Mage, Wan, Sme"],
+		["",      "Lifis",  "Dinar87, Seliost1"],
+
+		["Sage", "Ishtar",                       "L95, Brendor"],
+		["",     "Sara, Julia, Linoan",          "Yerek"],
+		["",     "Generics",                     "Aruka, Kenpuhu, Levin64, HyperGammaSpaces"],
+		["",     "Ced, Asbel, Hawk, Homer",      "Greentea, DerTheVaporeon"],
+		["",     "Arvis (Young), Lewys",         "Faolin"],
+
+		["Sniper", "Jamke",                    "Itranc, Pushwall"],
+		["",       "Tanya",                    "NamelessX"],
+		["",       "Febail, Ronan, Asaello",   "Greentea, HeroDW"],
+		["",       "Generics",                 "Meteor, Nuramon, Swain, Temp"],
+		["",       "Brigit",                   "ShadowAllyX"],
+
+		["Soldier", "Original", "AstraLunaSol"],
+
+		["Swordfighter", "Shiva",           "Leo_Link, Tsushi, Iscaneus"],
+		["",             "Troude",          "Leo_Link, UltraFenix"],
+		["",             "Female Pants",    "CelestiaHeart"],
+
+		["Swordmaster", "Shiva",                        "Solusaeternus, SHYUTERz"],
+		["",            "Troude",                       "Greentea, RobertFPY, Itranc, Seliost1"],
+		["",            "Mareeta",                      "RedBean, Jj09, UltraFenix"],
+		["",            "Eyvel",                        "Seliost1"],
+		["",            "Shannan, Shannam",             "Cybaster, Seliost1"],
+		["",            "Boyle, Lamia, Simia, Larcei",  "Seliost1"],
+		["",            "Ayra",                         "FE7if, BwdYeti, Seliost1"],
+		["",            "Female Pants",                 "Seliost1"],
+
+		["Thief", "Lara, Patty, Dew",   "Pikmin1211, Maiser6, Skitty, GabrielKnight"],
+		["",      "Daisy",              "Eldritch Abomination, GabrielKnight, Skitty, Mikey Séregon"],
+		["",      "Lifis",              "RedBean"],
+
+		["Warrior", "Handaxe",  "Yerek"],
 
 		["Global", "Repalette", "SirAxelloid1460"],
-	] },
+		] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
 	{ "type": "divider" },
@@ -601,15 +607,12 @@ func _build_scroll_content() -> void:
 				var grid := _make_grid(entry)
 				grid.position = Vector2(0, y)
 				container.add_child(grid)
-				# OJO: get_minimum_size() devuelve 0 justo tras fijar
-				# custom_minimum_size (recálculo diferido) → usamos el valor
-				# explícito que ya conocemos, así no se solapa la sección siguiente.
-				y += grid.custom_minimum_size.y + LINE_GAP
+				y += grid.get_minimum_size().y + LINE_GAP
 			"table":
 				var tbl := _make_table(entry)
 				tbl.position = Vector2(0, y)
 				container.add_child(tbl)
-				y += tbl.custom_minimum_size.y + LINE_GAP
+				y += tbl.get_minimum_size().y + LINE_GAP
 			_:
 				var lbl := _make_label(entry)
 				lbl.position = Vector2(0, y)
@@ -618,8 +621,8 @@ func _build_scroll_content() -> void:
 
 	_content_height = y
 	# Hacemos que el container se centre horizontalmente y tenga ancho de pista
-	container.custom_minimum_size = Vector2(_get_inner_width(), _content_height)
-	container.size = Vector2(_get_inner_width(), _content_height)
+	container.custom_minimum_size = Vector2(0, _content_height)
+	container.size = Vector2(_scroll_node.size.x, _content_height)
 	# Lo posicionamos justo bajo el área visible para que entre desde abajo
 	container.position = Vector2(0, _scroll_node.size.y)
 
@@ -646,12 +649,12 @@ func _make_label(entry: Dictionary) -> Label:
 			lbl.add_theme_font_size_override("font_size", SIZE_TEXT)
 			lbl.add_theme_color_override("font_color", COLOR_TEXT)
 
-	# Ancho fijo = área interior entre pilares; el texto va CENTER dentro de él,
-	# así queda centrado en pantalla. Sin anclas TOP_WIDE: mezclarlas con
-	# position/size manuales descuadraba todo el bloque hacia la derecha.
-	var w := _get_inner_width()
-	lbl.custom_minimum_size = Vector2(w, 0)
-	lbl.size = Vector2(w, 0)
+	# Centramos el label respecto a un ancho máximo
+	lbl.custom_minimum_size = Vector2(min(CONTENT_MAX_W, _get_inner_width()), 0)
+	# Lo desplazamos horizontalmente al centro tras conocer su tamaño
+	lbl.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
+	lbl.offset_left = 0
+	lbl.offset_right = 0
 	return lbl
 
 
@@ -668,11 +671,11 @@ func _make_grid(entry: Dictionary) -> Control:
 	var cell_height := SIZE_TEXT + 8
 
 	var wrapper := Control.new()
+	wrapper.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
 	wrapper.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 	var rows: int = int(ceil(float(names.size()) / float(columns)))
-	wrapper.custom_minimum_size = Vector2(inner_w, rows * cell_height)
-	wrapper.size = Vector2(inner_w, rows * cell_height)
+	wrapper.custom_minimum_size = Vector2(0, rows * cell_height)
 
 	for i in range(names.size()):
 		var col: int = i % columns
@@ -718,8 +721,8 @@ func _make_table(entry: Dictionary) -> Control:
 	var pad_left := 12.0
 
 	var wrapper := Control.new()
+	wrapper.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
 	wrapper.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	wrapper.size = Vector2(inner_w, 0)
 
 	# Pre-calcular cuántas líneas usa cada fila (según el número de autores)
 	# para saber el alto total y poder posicionar correctamente.
@@ -752,12 +755,11 @@ func _make_table(entry: Dictionary) -> Control:
 			lines_count = 1
 		var block_height := lines_count * line_height
 
-		# ASSET solo en la primera línea del bloque — alineado a la DERECHA
-		# (con un hueco de pad_left antes de la columna "work").
+		# ASSET solo en la primera línea del bloque
 		_add_table_cell(wrapper, asset_text,
-			Vector2(col_x_asset, y),
+			Vector2(col_x_asset + pad_left, y),
 			Vector2(col_w_asset - pad_left, line_height),
-			COLOR_HEADER, st_asset, HORIZONTAL_ALIGNMENT_RIGHT)
+			COLOR_HEADER, st_asset)
 
 		# WORK: una celda por sub-línea
 		for li in range(work_lines.size()):
@@ -775,7 +777,7 @@ func _make_table(entry: Dictionary) -> Control:
 
 		y += block_height
 
-	wrapper.custom_minimum_size = Vector2(inner_w, y)
+	wrapper.custom_minimum_size = Vector2(0, y)
 	return wrapper
 
 
@@ -799,7 +801,7 @@ func _wrap_csv(text: String, per_line: int) -> Array[String]:
 	return out
 
 
-func _add_table_cell(parent: Control, text: String, pos: Vector2, sz: Vector2, color: Color, style: Dictionary = {}, align: int = HORIZONTAL_ALIGNMENT_LEFT) -> void:
+func _add_table_cell(parent: Control, text: String, pos: Vector2, sz: Vector2, color: Color, style: Dictionary = {}) -> void:
 	# style admite estos flags opcionales:
 	#   "italic": bool   — sesga el texto horizontalmente para simular cursiva
 	#   "dim":    bool   — atenúa el color (útil para etiquetas tipo "Unknown")
@@ -812,7 +814,7 @@ func _add_table_cell(parent: Control, text: String, pos: Vector2, sz: Vector2, c
 
 	var lbl := Label.new()
 	lbl.text = final_text
-	lbl.horizontal_alignment = align
+	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.clip_text = true
 	lbl.add_theme_font_size_override("font_size", SIZE_TABLE)
@@ -841,9 +843,7 @@ func _make_divider() -> Control:
 	# Divisor dorado: línea con dos rombos en los extremos
 	var c := Control.new()
 	c.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	var w := _get_inner_width()
-	c.custom_minimum_size = Vector2(w, 8)
-	c.size = Vector2(w, 8)
+	c.custom_minimum_size = Vector2(0, 8)
 
 	var line := ColorRect.new()
 	line.color = COLOR_DIVIDER
@@ -980,11 +980,10 @@ func _finish() -> void:
 # ============================================================
 
 func _get_inner_width() -> float:
-	# Anchura disponible entre pilares. Usamos el tamaño del VIEWPORT (fiable en
-	# _ready, a diferencia de self.size que aún es 0 durante la construcción).
-	var w := get_viewport_rect().size.x - PILLAR_WIDTH * 2
+	# Anchura disponible entre pilares
+	var w := size.x - PILLAR_WIDTH * 2
 	if w <= 0:
-		w = 904  # Fallback (960 - 2*28)
+		w = 800  # Fallback antes de que se calcule el tamaño
 	return w
 
 
