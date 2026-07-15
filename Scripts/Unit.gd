@@ -256,6 +256,28 @@ func get_growth_bonuses() -> Dictionary:
 					out[stat] = int(out.get(stat, 0)) + int(pair[1])
 	return out
 
+## Nivel de Canto de la unidad según sus skills activas:
+##   0 = sin Canto; 1 = Canto (re-mover con el movimiento RESTANTE);
+##   2 = Canto+ (re-mover con el movimiento COMPLETO).
+func canto_level() -> int:
+	if not has_node("/root/GameDB"):
+		# Fallback por nid conocido si GameDB no está disponible.
+		if has_skill("Canto_Plus"): return 2
+		if has_skill("Canto"): return 1
+		return 0
+	var db = get_node("/root/GameDB")
+	var lvl := 0
+	for sid in _all_skill_ids():
+		var sk = db.get_skill(sid)
+		if sk == null:
+			continue
+		if sk.has_component("canto_plus"):
+			lvl = max(lvl, 2)
+		elif sk.has_component("canto"):
+			lvl = max(lvl, 1)
+	return lvl
+
+
 
 # ══════════════════════════════════════════════════════════════════════════════
 # WEAPON RANK & HOLY BLOOD   (fiel a LT-maker + reglas FE4 LOCKED del brief §4)

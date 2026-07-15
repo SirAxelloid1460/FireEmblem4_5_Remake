@@ -14,7 +14,8 @@ enum PlayerPhase {
 	UNIT_SELECTED,
 	MOVING,
 	ACTION_MENU,
-	TARGETING
+	TARGETING,
+	CANTO           # re-movimiento tras actuar (skill Canto/Canto+)
 }
 
 # Referencias
@@ -180,6 +181,14 @@ func handle_mouse_click(mouse_pos: Vector2):
 			if target and not target.is_player_unit and grid_pos in attackable_tiles:
 				initiate_combat(selected_unit, target)
 
+		PlayerPhase.CANTO:
+			# Re-movimiento tras actuar. Casilla válida → mover y terminar;
+			# cualquier otra → declinar Canto y quedarse donde está.
+			if grid_pos in reachable_tiles:
+				move_selected_unit(grid_pos)
+			else:
+				end_unit_action()
+
 func select_unit(unit: Unit):
 	"""Selecciona una unidad del jugador"""
 	if selected_unit:
@@ -188,7 +197,10 @@ func select_unit(unit: Unit):
 	selected_unit = unit
 	selected_unit.select()
 	player_phase = PlayerPhase.UNIT_SELECTED
-	
+	# Nueva activación: reinicia el estado de Canto.
+	_move_cost_spent = 0.0
+	_canto_used = false
+
 	# Calcular casillas alcanzables (pasando unit para que aliados se atraviesen).
 	reachable_tiles = Pathfinding.get_reachable_tiles(
 		grid, 
@@ -229,13 +241,21 @@ func move_selected_unit(target: Vector2i):
 	if player_phase == PlayerPhase.MOVING:
 		return   # ya hay un movimiento en curso — ignora clics repetidos
 
-	var path = Pathfinding.find_path(grid, selected_unit.grid_position, target, selected_unit.movement, selected_unit)
+	# En un re-movimiento de Canto, el presupuesto es el de Canto (restante o
+	# completo), no el movimiento total.
+	var is_canto := (player_phase == PlayerPhase.CANTO)
+	var budget: float = _canto_budget(selected_unit) if is_canto else float(selected_unit.movement)
+
+	var path = Pathfinding.find_path(grid, selected_unit.grid_position, target, budget, selected_unit)
 
 	if path.size() == 0:
 		return
 
 	var unit := selected_unit
 	var from = unit.grid_position
+	# El coste del PRIMER movimiento se guarda para el Canto restante.
+	if not is_canto:
+		_move_cost_spent = Pathfinding.path_cost(grid, path)
 	# Bloquea el input y oculta los resaltados mientras la unidad camina.
 	player_phase = PlayerPhase.MOVING
 	reachable_tiles.clear()
@@ -262,8 +282,13 @@ func move_selected_unit(target: Vector2i):
 	if event_system and current_objective:
 		_check_region_events(target, unit)
 
-	# Mostrar menú de acciones
-	show_action_menu()
+	if is_canto:
+		# Tras el re-movimiento de Canto la unidad termina su turno (no vuelve
+		# a actuar).
+		end_unit_action()
+	else:
+		# Mostrar menú de acciones
+		show_action_menu()
 
 
 ## Comprueba si el tile destino activa algún evento de región.  Llamado
@@ -372,6 +397,10 @@ var ui_layer: CanvasLayer = null
 ## Víctima elegida durante el flujo de robo (Steal), entre el submenú de
 ## víctimas y el de ítems.
 var _steal_victim: Unit = null
+## Canto: coste del primer movimiento del turno (para el movimiento restante) y
+## si la unidad ya usó su re-movimiento en esta activación.
+var _move_cost_spent: float = 0.0
+var _canto_used: bool = false
 
 ## Capa de pantalla (screen-space) para la UI de gameplay (menú de acciones).
 func _ensure_ui_layer() -> CanvasLayer:
@@ -440,10 +469,10 @@ func _on_action_selected(id: String) -> void:
 		"dance":
 			# FE4: refresca a todos los aliados adyacentes que ya actuaron.
 			MapActions.execute_refresh(selected_unit, grid, "fe4")
-			end_unit_action()
+			_end_action(true)
 		"steal":
 			_show_steal_menu(selected_unit)
-		_:  # "wait" y cualquier fallback seguro
+		_:  # "wait" y cualquier fallback seguro (sin Canto)
 			end_unit_action()
 
 
@@ -603,7 +632,7 @@ func _on_item_menu_selected(id: String) -> void:
 		var items := _unit_usable_items(selected_unit)
 		if idx >= 0 and idx < items.size():
 			_use_consumable(selected_unit, items[idx])
-	end_unit_action()
+	_end_action(true)
 
 # ── Steal ─────────────────────────────────────────────────────────────────────
 
@@ -699,7 +728,7 @@ func _on_steal_item_selected(id: String) -> void:
 		if idx >= 0 and idx < items.size():
 			MapActions.execute_steal(selected_unit, _steal_victim, items[idx])
 	_steal_victim = null
-	end_unit_action()
+	_end_action(true)
 
 ## Aplica el efecto de un consumible sobre su portador y gasta un uso.
 func _use_consumable(unit, item) -> void:
@@ -871,7 +900,14 @@ func initiate_combat(attacker: Unit, defender: Unit):
 	# Limpiar el cache de support bonus tras combate.
 	if attacker.has_meta("support_bonus"): attacker.remove_meta("support_bonus")
 	if defender.has_meta("support_bonus"): defender.remove_meta("support_bonus")
-	
+
+	# Canto: en combate iniciado por el jugador (el atacante es la unidad
+	# seleccionada), si sobrevive y tiene la skill puede re-moverse.
+	if selected_unit == attacker and is_instance_valid(attacker) \
+			and attacker.current_hp > 0 and _can_canto(attacker):
+		check_victory_conditions()
+		_end_action(true)
+		return
 	end_unit_action()
 	check_victory_conditions()
 
@@ -994,6 +1030,40 @@ func _record_mother_death(unit: Unit) -> void:
 		}
 	else:
 		mother_states[unit.unit_name]["alive"] = false
+
+# ── Canto (re-movimiento tras actuar) ────────────────────────────────────────
+
+## Cierre de acción que ofrece Canto si procede. `allow_canto` es false para
+## acciones que NO habilitan re-movimiento (Wait).
+func _end_action(allow_canto: bool) -> void:
+	if allow_canto and _can_canto(selected_unit):
+		_begin_canto_move(selected_unit)
+		return
+	end_unit_action()
+
+## ¿La unidad puede re-moverse por Canto ahora (tiene la skill y no lo ha usado)?
+func _can_canto(unit) -> bool:
+	return unit != null and not _canto_used \
+			and unit.has_method("canto_level") and unit.canto_level() > 0
+
+## Presupuesto del re-movimiento: Canto+ = movimiento completo; Canto = restante.
+func _canto_budget(unit) -> float:
+	if unit.canto_level() >= 2:
+		return float(unit.movement)
+	return max(0.0, float(unit.movement) - _move_cost_spent)
+
+## Entra en modo de re-movimiento de Canto (una sola vez por activación).
+func _begin_canto_move(unit) -> void:
+	_canto_used = true
+	_close_action_menu()
+	var budget := _canto_budget(unit)
+	reachable_tiles = Pathfinding.get_reachable_tiles(grid, unit.grid_position, budget, unit)
+	reachable_tiles.erase(unit.grid_position)   # quedarse quieto no cuenta
+	attackable_tiles.clear()
+	if reachable_tiles.is_empty():
+		end_unit_action()
+		return
+	player_phase = PlayerPhase.CANTO
 
 func end_unit_action():
 	"""Finaliza la acción de la unidad actual"""
