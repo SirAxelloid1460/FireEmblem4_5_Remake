@@ -23,7 +23,19 @@
 ## Pendientes — NO añadidos (sin inventar stats)
 
 ### FE4 gen2 hijos con herencia (stats dependen del padre elegido)
-Sin valor fijo en Serenes: **Lana, Larcei, Ulster, Skasaher, Lester, Fee, Arthur, Patty, Lene, Tine, Faval**. Requieren el sistema de herencia/sustitutos (los sustitutos SÍ están añadidos como fallback canónico).
+**Resuelto con modelo BASE + MODIFICADOR-POR-PADRE** (fuente: fireemblemwod).
+- Datos: `data/general/gen2_children.json` (14 hijos: Lester, Lana, Larcei, Ulster,
+  Delmud, Nanna, Coirpre, Lene, Ced, Fee, Faval, Patty, Arthur, Tine). Cada uno con
+  clase real, sangre personal, skills, arma, `max_stats` (tope de clase),
+  `base_stats`/`base_growths` (piso = mín entre padres) y `father_mods[padre]`
+  (deltas de base y growth + skills que aporta cada padre) para los 13 padres.
+- Resolución: `SubstituteSystem._build_canonical_child` →
+  `final = base + father_mods[padre]` (base clamped a `max_stats`; CON/MOV de la clase;
+  skills mapeadas al set actual: Ambush→Vantage, Pursuit/Continue descartadas).
+- Regenerar: `python tools/build_gen2_children.py`. Excel de referencia:
+  `docs/FE4_Gen2_Inheritance.xlsx` (`tools/build_gen2_xlsx.py`).
+- **Sustitutos**: siguen su modelo base(fijo) + modificador paterno (paternal_factor)
+  como fallback cuando la madre muere/no se casa.
 
 ### Seliph, Altena, Leif (gen2) — Serenes NO publica bases fijas
 Confirmado contra `characters/base-stats/fixed/` de Serenes: Seliph, Altena y Leif NO aparecen (sus stats se computan de los padres aunque estos sean fijos). No hay valor sourcable de las wikis indicadas. Opciones: (a) sistema de herencia, (b) el `.ltproj` original que sí les asignaba un default, o (c) otra fuente. **Leif ya está en la DB** (base asignada por LT).

@@ -327,15 +327,155 @@ const MOTHER_TO_CHILDREN: Dictionary = {
 ## Tope de growth tras sumar padre+madre (evita crecimientos absurdos).
 const GROWTH_CAP := 85
 
-## Construye los datos de un hijo CANÓNICO (madre viva y casada) según las
-## reglas de herencia de FE4:
-##   · growths[stat] = madre.growth + padre.growth  (tope GROWTH_CAP)
-##   · holy_blood = unión de ambos padres (dos Minor de la misma sangre → Major)
-##   · skills = base del rol + skills personales de madre y padre
-##   · clase/bases: se toman de la plantilla del sustituto del mismo rol (misma
-##     clase que el hijo canónico) — es la mejor fuente de bases disponible.
+# ── Herencia gen 2: BASE + MODIFICADORES por padre ───────────────────────────
+# Datos en data/general/gen2_children.json (generado por tools/build_gen2_children.py
+# desde la cosecha de fireemblemwod).  Modelo:
+#   final_base[s]   = clamp(base_stats[s]   + father_mods[father].base[s],   0, max_stats[s])
+#   final_growth[s] =        base_growths[s] + father_mods[father].growth[s]
+const GEN2_CHILDREN_PATH := "res://data/general/gen2_children.json"
+static var _gen2_defs: Dictionary = {}
+static var _gen2_loaded: bool = false
+
+const GEN2_STATS := ["HP", "STR", "MAG", "SKL", "SPD", "LCK", "DEF", "RES"]
+
+## Skills de la fuente FE4 → set actual (tras las consolidaciones de skills).
+## "" = descartar (p.ej. Pursuit/Continue: el doblaje ahora es por Δ SPD).
+const SKILL_ALIAS := {
+	"Ambush": "Vantage", "Desperation": "Vantage",
+	"Paragon": "Elite", "Elite": "Elite_Skill",
+	"Shooting Star Sword": "Astra",
+	"Moonlight Sword": "Luna",
+	"Sun Sword": "Sol",
+	"Pursuit": "", "Continue": "", "Adept": "",
+}
+
+static func _load_gen2_defs() -> Dictionary:
+	if _gen2_loaded:
+		return _gen2_defs
+	_gen2_loaded = true
+	if FileAccess.file_exists(GEN2_CHILDREN_PATH):
+		var f := FileAccess.open(GEN2_CHILDREN_PATH, FileAccess.READ)
+		if f != null:
+			var parsed = JSON.parse_string(f.get_as_text())
+			if parsed is Dictionary:
+				_gen2_defs = parsed
+	return _gen2_defs
+
+## CON/MOV desde la clase (la fuente FE4 de gen 2 no los lista).  MOV queda en
+## la convención ×10 de units.json (se divide en LevelLoader al construir).
+static func _class_con_mov(klass: String) -> Vector2i:
+	var loop := Engine.get_main_loop()
+	if loop is SceneTree and loop.root != null:
+		var db = loop.root.get_node_or_null("GameDB")
+		if db != null and db.has_method("get_class_data"):
+			var cd = db.get_class_data(klass)
+			if cd != null:
+				var b = cd.bases if "bases" in cd else {}
+				if b is Dictionary:
+					return Vector2i(int(b.get("CON", 0)), int(b.get("MOV", 0)))
+	return Vector2i(0, 0)
+
+## Conjunto de skill-nids válidos (para filtrar).  {} si GameDB no accesible
+## → en ese caso no filtramos (dejamos pasar el alias).
+static func _valid_skill_nids() -> Dictionary:
+	var loop := Engine.get_main_loop()
+	if loop is SceneTree and loop.root != null:
+		var db = loop.root.get_node_or_null("GameDB")
+		if db != null and "skills" in db and db.skills is Dictionary:
+			return db.skills
+	return {}
+
+static func _map_skill(name: String, valid: Dictionary) -> String:
+	var mapped := name
+	if SKILL_ALIAS.has(name):
+		mapped = SKILL_ALIAS[name]
+	if mapped == "":
+		return ""
+	if valid.is_empty() or valid.has(mapped):
+		return mapped
+	return ""
+
+## Construye los datos de un hijo CANÓNICO (madre viva y casada) con el modelo
+## BASE + MODIFICADOR-POR-PADRE (data/general/gen2_children.json):
+##   · bases   = base_stats + father_mods[padre].base   (tope max_stats de clase)
+##   · growths = base_growths + father_mods[padre].growth
+##   · CON/MOV = de la clase.  skills = personales + del padre (mapeadas al set
+##     actual).  holy_blood = personal del hijo + Minor de la Major del padre.
+## Si el padre no está en la tabla, se usa solo la base (modificador 0).
+## Si el hijo no está en la tabla JSON, cae al método legacy (plantilla sub).
 ## Devuelve {} si no hay hijo mapeado (el caller lo ignora).
 static func _build_canonical_child(mother_id: String, gender: String,
+		father: Dictionary) -> Dictionary:
+	if not MOTHER_TO_CHILDREN.has(mother_id):
+		return {}
+	var child_nid: String = MOTHER_TO_CHILDREN[mother_id].get(gender, "")
+	if child_nid == "":
+		return {}
+
+	var defs := _load_gen2_defs()
+	if not defs.has(child_nid):
+		return _build_canonical_child_legacy(mother_id, gender, father)
+
+	var d: Dictionary = defs[child_nid]
+	var father_nid: String = str(father.get("nid", "")) if father is Dictionary else ""
+	var mod: Dictionary = d.get("father_mods", {}).get(father_nid, {})
+	var mb: Dictionary = mod.get("base", {})
+	var mg: Dictionary = mod.get("growth", {})
+	var maxs: Dictionary = d.get("max_stats", {})
+	var base_s: Dictionary = d.get("base_stats", {})
+	var base_g: Dictionary = d.get("base_growths", {})
+
+	var bases := {}
+	var growths := {}
+	for s in GEN2_STATS:
+		var bv: int = int(base_s.get(s, 0)) + int(mb.get(s, 0))
+		if maxs.has(s):
+			bv = mini(bv, int(maxs[s]))
+		bases[s] = maxi(0, bv)
+		growths[s] = maxi(0, int(base_g.get(s, 0)) + int(mg.get(s, 0)))
+	# CON/MOV: horneados en el JSON desde la clase; fallback a GameDB si faltan.
+	if d.has("con") and d.has("mov"):
+		bases["CON"] = int(d["con"])
+		bases["MOV"] = int(d["mov"])
+	else:
+		var cm := _class_con_mov(str(d.get("klass", "")))
+		bases["CON"] = cm.x
+		bases["MOV"] = cm.y
+
+	# Skills: personales del hijo + las que aporta el padre, mapeadas.
+	var valid := _valid_skill_nids()
+	var skills := []
+	for src in [d.get("personal_skills", []), mod.get("skills", [])]:
+		if src is Array:
+			for sk in src:
+				var m := _map_skill(str(sk), valid)
+				if m != "" and not (m in skills):
+					skills.append(m)
+
+	# Sangre: personal del hijo + Minor de la Major del padre.
+	var blood := {}
+	for c in d.get("holy_blood", {}):
+		blood[str(c)] = str(d["holy_blood"][c])
+	if father is Dictionary and father.get("holy_blood", {}) is Dictionary:
+		for c in father["holy_blood"]:
+			if str(father["holy_blood"][c]).to_lower() == "major" and not blood.has(c):
+				blood[str(c)] = "Minor"
+
+	var tmpl := {
+		"klass": d.get("klass", "Mercenary"),
+		"bases": bases,
+		"growths": growths,
+		"holy_blood": blood,
+		"skills": skills,
+		"start_items": d.get("starting_items", []),
+	}
+	return { "nid": child_nid, "data": tmpl }
+
+
+## Método antiguo (fallback): reusa la plantilla del sustituto del mismo rol
+## para clase/bases y computa growths = madre+padre.  Se usa solo si el hijo no
+## está en gen2_children.json (p.ej. fallo de carga del JSON).
+static func _build_canonical_child_legacy(mother_id: String, gender: String,
 		father: Dictionary) -> Dictionary:
 	if not MOTHER_TO_CHILDREN.has(mother_id):
 		return {}
