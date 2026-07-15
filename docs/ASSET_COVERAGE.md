@@ -7,7 +7,7 @@
 
 ## Resumen
 
-- Clases: **66** · con map sprite: **66** · con combat anim (Generic o género): **36**
+- Clases: **64** · con map sprite: **64** · con combat anim (Generic o género): **36**
 - Personajes: **64** · con retrato: **59**
 - Carpetas de combat anim: **126**
 
@@ -21,11 +21,8 @@
 | DragonRider | 0 | ✅ | ✅ | ✅ | — | — | Javelin, Lance, MagicSword, Sword |
 | PegasusRider | 0 | ✅ | ✅ | ⬜ | — | — | — |
 | Tester | 0 | ✅ | ✅ | ⬜ | — | — | — |
-| AThief | 1 | ✅ | ✅ | ✅ | — | — | MagicSword, Sword |
 | Archer | 1 | ✅ | ✅ | ✅ | — | — | Bow |
 | Armour | 1 | ✅ | ✅ | ✅ | — | — | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
-| BThief | 1 | ✅ | ✅ | ⬜ | — | — | — |
-| BThief_Lara | 1 | ✅ | ✅ | ⬜ | — | — | — |
 | Ballistae | 1 | ✅ | ✅ | ⬜ | — | — | — |
 | Bandit | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
 | Barbarian | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe |
@@ -42,14 +39,15 @@
 | LordLeaf | 1 | ✅ | ✅ | ⬜ | — | — | — |
 | LordSeliph | 1 | ✅ | ✅ | ⬜ | — | — | — |
 | Mage | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Mercenary | 1 | ✅ | ✅ | ⬜ | — | — | — |
 | PegasusKnight | 1 | ✅ | ✅ | ⬜ | — | — | — |
 | Pirate | 1 | ✅ | ✅ | ✅ | — | — | Axe, HandAxe, MagicStaff |
-| PreHero | 1 | ✅ | ✅ | ⬜ | — | — | — |
 | Priest | 1 | ✅ | ✅ | ✅ | — | — | MagicStaff |
 | Priestess | 1 | ✅ | ✅ | ✅ | — | — | MagicStaff |
 | Princess | 1 | ✅ | ✅ | ⬜ | — | — | — |
 | Soldier | 1 | ✅ | ✅ | ✅ | — | — | Javelin, Lance |
 | Swordfighter | 1 | ✅ | ✅ | ⬜ | — | — | — |
+| Thief | 1 | ✅ | ✅ | ✅ | — | — | MagicSword, Sword |
 | Troubadour | 1 | ✅ | ✅ | ✅ | — | — | MagicStaff, MagicSword, Sword |
 | APaladin | 2 | ✅ | ✅ | ⬜ | — | — | — |
 | BPaladin | 2 | ✅ | ✅ | ⬜ | — | — | — |
@@ -87,18 +85,15 @@
 
 | Personaje | Clase | Género | Retrato | Map propio | Combat anim | Armas de su anim |
 |---|---|---|---|---|---|---|
-| AlvaFE4 | APaladin | M | ✅ | ⬜ | ⬜ | — |
+| Alvar | APaladin | M | ✅ | ⬜ | ⬜ | — |
 | Eldigan | APaladin | M | ✅ | ⬜ | ⬜ | — |
-| Eva | APaladin | M | ✅ | ⬜ | ⬜ | — |
-| Eve | APaladin | M | ✅ | ⬜ | ⬜ | — |
-| Dew | AThief | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
-| Lifis | AThief | M | ✅ | ⬜ | ⚠️ | MagicSword, Sword |
+| Evan | APaladin | M | ✅ | ⬜ | ⬜ | — |
+| Evar | APaladin | M | ✅ | ⬜ | ⬜ | — |
 | Jamke | Archer | M | ✅ | ⬜ | ✅ | Bow |
 | Ronan | Archer | M | ✅ | ⬜ | ✅ | Bow |
 | Tanya | Archer | F | ✅ | ⬜ | ✅ | Bow |
 | Arden | Armour | M | ✅ | ⬜ | ⬜ | — |
 | Weissman | Armour | M | ✅ | ⬜ | ⬜ | — |
-| Lara | BThief_Lara | F | ✅ | ⬜ | ⚠️ | MagicSword, Sword |
 | Marty | Bandit | M | ✅ | ⬜ | ⬜ | — |
 | Lewyn | Bard | M | ⬜ | ⬜ | ⬜ | — |
 | Chagall | Baron | M | ✅ | ⬜ | ⬜ | — |
@@ -132,9 +127,9 @@
 | Leif | LordLeaf | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Azel | Mage | M | ✅ | ⬜ | ⬜ | — |
 | Tailtiu | Mage | M | ✅ | ⬜ | ⚠️ | MagicAnima, MagicStaff, MagicSword, Sword |
+| FakeHolyn | Mercenary | M | ✅ | ⬜ | ⬜ | — |
+| Holyn | Mercenary | M | ✅ | ⬜ | ⚠️ | Axe, HandAxe, MagicSword, Sword |
 | Erinys | PegasusKnight | M | ✅ | ⬜ | ⬜ | — |
-| FakeHolyn | PreHero | M | ✅ | ⬜ | ⬜ | — |
-| Holyn | PreHero | M | ✅ | ⬜ | ⚠️ | Axe, HandAxe, MagicSword, Sword |
 | Aideen | Priestess | F | ✅ | ⬜ | ⬜ | — |
 | Safy | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
 | Lachesis | Princess | F | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
@@ -144,6 +139,9 @@
 | Mareeta | Swordfighter | F | ✅ | ⬜ | ⚠️ | MagicSword, Sword |
 | Shiva | Swordfighter | M | ✅ | ⬜ | ⚠️ | MagicSword, Sword |
 | Eyvel | Swordmaster | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Dew | Thief | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Lara | Thief | F | ✅ | ⬜ | ⚠️ | MagicSword, Sword |
+| Lifis | Thief | M | ✅ | ⬜ | ⚠️ | MagicSword, Sword |
 | Ethlyn | Troubadour | F | ✅ | ⬜ | ⬜ | — |
 | Nanna | Troubadour | F | ✅ | ⬜ | ⬜ | — |
 | Bucks | Warrior | M | ✅ | ⬜ | ⬜ | — |
@@ -155,9 +153,9 @@
 ## ⚠️ Problemas detectados (el juego no encuentra estos anims)
 
 - 'Ayra' (Swordfighter): anim en Swordmaster_Ayra/ pero combat_anim_nid="Swordfighter" -> el resolver busca Swordfighter_Ayra (no existe). Renombrar la carpeta a Swordfighter_Ayra o corregir combat_anim_nid.
-- 'Holyn' (PreHero): anim en Hero_Holyn/ pero combat_anim_nid="PreHero" -> el resolver busca PreHero_Holyn (no existe). Renombrar la carpeta a PreHero_Holyn o corregir combat_anim_nid.
+- 'Holyn' (Mercenary): anim en Hero_Holyn/ pero combat_anim_nid="Mercenary" -> el resolver busca Mercenary_Holyn (no existe). Renombrar la carpeta a Mercenary_Holyn o corregir combat_anim_nid.
 - 'Tailtiu' (Mage): anim en MageFighter_Tailtiu/ pero combat_anim_nid="Mage" -> el resolver busca Mage_Tailtiu (no existe). Renombrar la carpeta a Mage_Tailtiu o corregir combat_anim_nid.
-- 'Lara' (BThief_Lara): anim en Rogue_Lara/ pero combat_anim_nid="ThiefFemale" -> el resolver busca ThiefFemale_Lara (no existe). Renombrar la carpeta a ThiefFemale_Lara o corregir combat_anim_nid.
-- 'Lifis' (AThief): anim en Rogue_Lifis/ pero combat_anim_nid="Thief" -> el resolver busca Thief_Lifis (no existe). Renombrar la carpeta a Thief_Lifis o corregir combat_anim_nid.
+- 'Lara' (Thief): anim en Rogue_Lara/ pero combat_anim_nid="Thief" -> el resolver busca Thief_Lara (no existe). Renombrar la carpeta a Thief_Lara o corregir combat_anim_nid.
+- 'Lifis' (Thief): anim en Rogue_Lifis/ pero combat_anim_nid="Thief" -> el resolver busca Thief_Lifis (no existe). Renombrar la carpeta a Thief_Lifis o corregir combat_anim_nid.
 - 'Mareeta' (Swordfighter): anim en Swordmaster_Mareeta/ pero combat_anim_nid="Swordfighter" -> el resolver busca Swordfighter_Mareeta (no existe). Renombrar la carpeta a Swordfighter_Mareeta o corregir combat_anim_nid.
 - 'Shiva' (Swordfighter): anim en Swordmaster_Shiva/ pero combat_anim_nid="Swordfighter" -> el resolver busca Swordfighter_Shiva (no existe). Renombrar la carpeta a Swordfighter_Shiva o corregir combat_anim_nid.

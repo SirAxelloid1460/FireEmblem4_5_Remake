@@ -177,7 +177,7 @@
     "generic": false
    },
    {
-    "nid": "AlvaFE4",
+    "nid": "Alvar",
     "team": "ally",
     "ai": "None",
     "ai_group": null,
@@ -189,7 +189,7 @@
     "generic": false
    },
    {
-    "nid": "Eva",
+    "nid": "Evan",
     "team": "ally",
     "ai": "None",
     "ai_group": null,
@@ -201,7 +201,7 @@
     "generic": false
    },
    {
-    "nid": "Eve",
+    "nid": "Evar",
     "team": "ally",
     "ai": "None",
     "ai_group": null,
@@ -1422,7 +1422,7 @@
     "nid": "Mackily_1",
     "variant": null,
     "level": 17,
-    "klass": "PreHero",
+    "klass": "Mercenary",
     "faction": "Mackily",
     "starting_items": [
      [
@@ -1444,7 +1444,7 @@
     "nid": "Mackily_2",
     "variant": null,
     "level": 17,
-    "klass": "PreHero",
+    "klass": "Mercenary",
     "faction": "Mackily",
     "starting_items": [
      [
@@ -1466,7 +1466,7 @@
     "nid": "Mackily_3",
     "variant": null,
     "level": 17,
-    "klass": "PreHero",
+    "klass": "Mercenary",
     "faction": "Mackily",
     "starting_items": [
      [
@@ -1488,7 +1488,7 @@
     "nid": "Mackily_4",
     "variant": null,
     "level": 17,
-    "klass": "PreHero",
+    "klass": "Mercenary",
     "faction": "Mackily",
     "starting_items": [
      [
@@ -1510,7 +1510,7 @@
     "nid": "Mackily_5",
     "variant": null,
     "level": 17,
-    "klass": "PreHero",
+    "klass": "Mercenary",
     "faction": "Mackily",
     "starting_items": [
      [
@@ -3563,9 +3563,9 @@
    {
     "nid": "AEE",
     "units": [
-     "AlvaFE4",
-     "Eva",
-     "Eve"
+     "Alvar",
+     "Evan",
+     "Evar"
     ],
     "positions": {}
    },

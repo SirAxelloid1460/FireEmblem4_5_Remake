@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccn1uj5lq260u"
-path="res://.godot/imported/Eve.png-b3cb1622f50503830d1be48e5b9bebac.ctex"
+uid="uid://t66kmwblj0hv"
+path="res://.godot/imported/Alva.png-c2523ab9c4f329c115fdfba7c44e1b22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Eve.png"
-dest_files=["res://.godot/imported/Eve.png-b3cb1622f50503830d1be48e5b9bebac.ctex"]
+source_file="res://assets/portraits/characters/Alva.png"
+dest_files=["res://.godot/imported/Alva.png-c2523ab9c4f329c115fdfba7c44e1b22.ctex"]
 
 [params]
 

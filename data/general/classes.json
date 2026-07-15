@@ -73,78 +73,6 @@
   "combat_anim_nid": "Paladin"
  },
  {
-  "id": "AThief",
-  "name": "Thief",
-  "desc": "A common robber who battles with swords or daggers.",
-  "tier": 1,
-  "movement_group": "Light Foot",
-  "promotes_from": "",
-  "turns_into": [
-   "Rogue"
-  ],
-  "tags": [],
-  "max_level": 19,
-  "bases": {
-   "HP": 19,
-   "STR": 1,
-   "MAG": 0,
-   "SKL": 2,
-   "SPD": 7,
-   "LCK": 0,
-   "DEF": 3,
-   "RES": 6,
-   "CON": 6,
-   "MOV": 60
-  },
-  "growths": {
-   "HP": 100,
-   "STR": 30,
-   "MAG": 0,
-   "SKL": 30,
-   "SPD": 30,
-   "LCK": 0,
-   "DEF": 30,
-   "RES": 10,
-   "CON": 0,
-   "MOV": 0
-  },
-  "promotion": {
-   "HP": 0,
-   "STR": 0,
-   "MAG": 0,
-   "SKL": 0,
-   "SPD": 0,
-   "LCK": 0,
-   "DEF": 0,
-   "RES": 0,
-   "CON": 0,
-   "MOV": 0
-  },
-  "caps": {
-   "HP": 80,
-   "STR": 18,
-   "MAG": 15,
-   "SKL": 18,
-   "SPD": 22,
-   "LCK": 30,
-   "DEF": 16,
-   "RES": 15,
-   "CON": 6,
-   "MOV": 60
-  },
-  "wexp_gain": {
-   "Sword": 51
-  },
-  "learned_skills": [
-   [
-    1,
-    "Steal"
-   ]
-  ],
-  "map_sprite_nid": "AThief",
-  "combat_anim_nid": "Thief"
- },
- {
   "id": "Archer",
   "name": "Bow Fighter",
   "desc": "A regular archer recluited and trained to head-shot enemies.",
@@ -355,78 +283,6 @@
   ],
   "map_sprite_nid": "BPaladin",
   "combat_anim_nid": "PaladinFemale"
- },
- {
-  "id": "BThief",
-  "name": "Thief",
-  "desc": "A common robber who battles with swords or daggers.",
-  "tier": 1,
-  "movement_group": "Light Foot",
-  "promotes_from": "",
-  "turns_into": [
-   "Dancer"
-  ],
-  "tags": [],
-  "max_level": 19,
-  "bases": {
-   "HP": 19,
-   "STR": 1,
-   "MAG": 0,
-   "SKL": 2,
-   "SPD": 7,
-   "LCK": 0,
-   "DEF": 3,
-   "RES": 6,
-   "CON": 6,
-   "MOV": 60
-  },
-  "growths": {
-   "HP": 100,
-   "STR": 30,
-   "MAG": 0,
-   "SKL": 30,
-   "SPD": 30,
-   "LCK": 0,
-   "DEF": 30,
-   "RES": 10,
-   "CON": 0,
-   "MOV": 0
-  },
-  "promotion": {
-   "HP": 0,
-   "STR": 0,
-   "MAG": 0,
-   "SKL": 0,
-   "SPD": 0,
-   "LCK": 0,
-   "DEF": 0,
-   "RES": 0,
-   "CON": 0,
-   "MOV": 0
-  },
-  "caps": {
-   "HP": 80,
-   "STR": 18,
-   "MAG": 15,
-   "SKL": 18,
-   "SPD": 22,
-   "LCK": 30,
-   "DEF": 16,
-   "RES": 15,
-   "CON": 6,
-   "MOV": 60
-  },
-  "wexp_gain": {
-   "Sword": 51
-  },
-  "learned_skills": [
-   [
-    1,
-    "Steal"
-   ]
-  ],
-  "map_sprite_nid": "BThief",
-  "combat_anim_nid": "ThiefFemale"
  },
  {
   "id": "Ballistae",
@@ -1483,7 +1339,7 @@
   "desc": "Special people who can bend anima magic to their will.",
   "tier": 2,
   "movement_group": "Mages",
-  "promotes_from": "BThief",
+  "promotes_from": "Thief",
   "turns_into": [],
   "tags": [],
   "max_level": 19,
@@ -2503,7 +2359,7 @@
   "desc": "",
   "tier": 2,
   "movement_group": "Light Foot",
-  "promotes_from": "PreHero",
+  "promotes_from": "Mercenary",
   "turns_into": [],
   "tags": [],
   "max_level": 19,
@@ -3556,7 +3412,7 @@
   "combat_anim_nid": "Pirate"
  },
  {
-  "id": "PreHero",
+  "id": "Mercenary",
   "name": "Swordfighter",
   "desc": "A strong fighter who battles with mighty swords.",
   "tier": 1,
@@ -3619,8 +3475,8 @@
    "Sword": 226
   },
   "learned_skills": [],
-  "map_sprite_nid": "PreHero",
-  "combat_anim_nid": "PreHero"
+  "map_sprite_nid": "Mercenary",
+  "combat_anim_nid": "Mercenary"
  },
  {
   "id": "Priest",
@@ -3900,7 +3756,7 @@
   "desc": "",
   "tier": 2,
   "movement_group": "Light Foot",
-  "promotes_from": "AThief",
+  "promotes_from": "Thief",
   "turns_into": [],
   "tags": [],
   "max_level": 19,
@@ -4530,86 +4386,12 @@
   "combat_anim_nid": "Warrior"
  },
  {
-  "id": "BThief_Lara",
-  "name": "Thief",
-  "desc": "A common robber who battles with swords or daggers.",
-  "tier": 1,
-  "movement_group": "Light Foot",
-  "promotes_from": "",
-  "turns_into": [
-   "Dancer_Lara"
-  ],
-  "tags": [
-   "Thief"
-  ],
-  "max_level": 19,
-  "bases": {
-   "HP": 19,
-   "STR": 1,
-   "MAG": 0,
-   "SKL": 2,
-   "SPD": 7,
-   "LCK": 0,
-   "DEF": 3,
-   "RES": 6,
-   "CON": 6,
-   "MOV": 70
-  },
-  "growths": {
-   "HP": 100,
-   "STR": 30,
-   "MAG": 0,
-   "SKL": 30,
-   "SPD": 30,
-   "LCK": 0,
-   "DEF": 30,
-   "RES": 10,
-   "CON": 0,
-   "MOV": 0
-  },
-  "promotion": {
-   "HP": 0,
-   "STR": 0,
-   "MAG": 0,
-   "SKL": 0,
-   "SPD": 0,
-   "LCK": 0,
-   "DEF": 0,
-   "RES": 0,
-   "CON": 0,
-   "MOV": 0
-  },
-  "caps": {
-   "HP": 80,
-   "STR": 18,
-   "MAG": 15,
-   "SKL": 18,
-   "SPD": 22,
-   "LCK": 30,
-   "DEF": 16,
-   "RES": 15,
-   "CON": 6,
-   "MOV": 70
-  },
-  "wexp_gain": {
-   "Sword": 51
-  },
-  "learned_skills": [
-   [
-    1,
-    "Steal"
-   ]
-  ],
-  "map_sprite_nid": "BThief",
-  "combat_anim_nid": "ThiefFemale"
- },
- {
   "id": "Dancer_Lara",
   "name": "Dancer",
   "desc": "Special people who can bend anima magic to their will.",
   "tier": 2,
   "movement_group": "Mages",
-  "promotes_from": "BThief_Lara",
+  "promotes_from": "Thief",
   "turns_into": [
    "Rogue"
   ],
@@ -4676,5 +4458,79 @@
   ],
   "map_sprite_nid": "Dancer",
   "combat_anim_nid": "Dancer"
+ },
+ {
+  "id": "Thief",
+  "name": "Thief",
+  "desc": "A common robber who battles with swords or daggers.",
+  "tier": 1,
+  "movement_group": "Light Foot",
+  "promotes_from": "",
+  "turns_into": [
+   "Rogue"
+  ],
+  "tags": [
+   "Thief"
+  ],
+  "max_level": 19,
+  "bases": {
+   "HP": 19,
+   "STR": 1,
+   "MAG": 0,
+   "SKL": 2,
+   "SPD": 7,
+   "LCK": 0,
+   "DEF": 3,
+   "RES": 6,
+   "CON": 6,
+   "MOV": 60
+  },
+  "growths": {
+   "HP": 100,
+   "STR": 30,
+   "MAG": 0,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 0,
+   "DEF": 30,
+   "RES": 10,
+   "CON": 0,
+   "MOV": 0
+  },
+  "promotion": {
+   "HP": 0,
+   "STR": 0,
+   "MAG": 0,
+   "SKL": 0,
+   "SPD": 0,
+   "LCK": 0,
+   "DEF": 0,
+   "RES": 0,
+   "CON": 0,
+   "MOV": 0
+  },
+  "caps": {
+   "HP": 80,
+   "STR": 18,
+   "MAG": 15,
+   "SKL": 18,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 16,
+   "RES": 15,
+   "CON": 6,
+   "MOV": 60
+  },
+  "wexp_gain": {
+   "Sword": 51
+  },
+  "learned_skills": [
+   [
+    1,
+    "Steal"
+   ]
+  ],
+  "map_sprite_nid": "Thief",
+  "combat_anim_nid": "Thief"
  }
 ]
