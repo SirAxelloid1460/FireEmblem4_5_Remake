@@ -26,21 +26,33 @@ func _ready():
 	hide()
 
 var secret_shop: bool = false
+var bargain_active: bool = false
+# Multiplicador de precio de compra con Bargain (skill "Bargain": mitad de precio).
+const BARGAIN_MULT := 0.5
 
-func open_shop(gold: int, unit: Unit = null, secret: bool = false):
-	"""Abre la tienda con el oro disponible. `secret` = Secret Shop (Member Card)."""
+func open_shop(gold: int, unit: Unit = null, secret: bool = false, bargain: bool = false):
+	"""Abre la tienda con el oro disponible. `secret` = Secret Shop (Member Card),
+	`bargain` = descuento de la skill Bargain (mitad de precio)."""
 	player_gold = gold
 	current_unit = unit
 	secret_shop = secret
+	bargain_active = bargain
 
 	# Cargar items disponibles
 	load_shop_inventory()
-	
+	if bargain_active:
+		_apply_bargain_discount()
+
 	# Actualizar UI
 	update_item_list()
 	update_gold_display()
-	
+
 	show()
+
+## Aplica el descuento de Bargain a todos los precios cargados (mín. 1 G).
+func _apply_bargain_discount():
+	for item in available_items:
+		item["cost"] = maxi(1, int(round(int(item["cost"]) * BARGAIN_MULT)))
 
 func load_shop_inventory():
 	"""Carga el inventario de la tienda según el capítulo"""
@@ -219,6 +231,8 @@ func update_item_list():
 func update_gold_display():
 	"""Actualiza la visualización del oro"""
 	gold_label.text = "Oro disponible: %d G" % player_gold
+	if bargain_active:
+		gold_label.text += "   [Bargain -50%]"
 
 func _on_item_selected(index: int):
 	"""Cuando se selecciona un item de la lista"""

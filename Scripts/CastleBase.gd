@@ -275,7 +275,8 @@ func _on_shop_button_pressed():
 	hide_all_facility_panels()
 	shop_panel.show()
 	var secret := _army_has_item("MemberCard")
-	shop_panel.open_shop(army_gold, selected_unit, secret)
+	var bargain := _army_has_bargain(selected_unit)
+	shop_panel.open_shop(army_gold, selected_unit, secret, bargain)
 	shop_panel.item_purchased.connect(_on_item_purchased)
 
 func _on_convoy_button_pressed():
@@ -467,6 +468,19 @@ func _army_has_item(nids) -> bool:
 				return true
 	for it in convoy_items:
 		if _item_nid(it) in want:
+			return true
+	return false
+
+## ¿Se aplica el descuento de Bargain (mitad de precio) en la tienda?
+##   Sí si la unidad que abre la tienda tiene la skill Bargain, o si alguno de
+##   los lords (Sigurd/Seliph/Leif) del ejército la tiene.
+const _BARGAIN_LORDS := ["Sigurd", "Seliph", "Leif"]
+func _army_has_bargain(entering: Unit) -> bool:
+	if entering != null and entering.has_method("has_skill") and entering.has_skill("Bargain"):
+		return true
+	for u in player_units:
+		if u != null and u.unit_name in _BARGAIN_LORDS \
+				and u.has_method("has_skill") and u.has_skill("Bargain"):
 			return true
 	return false
 

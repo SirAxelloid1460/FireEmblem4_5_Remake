@@ -391,6 +391,10 @@ func show_action_menu():
 	var enemies_in_range = get_enemies_in_attack_range(selected_unit)
 	if enemies_in_range.size() > 0:
 		options.append({ "id": "attack", "text": "Attack" })
+	# Dance (Refresh): solo si hay aliados adyacentes que ya actuaron.
+	if MapActions.can_refresh(selected_unit) \
+			and MapActions.get_refresh_targets(selected_unit, grid).size() > 0:
+		options.append({ "id": "dance", "text": "Dance" })
 	if _unit_has_usable_item(selected_unit):
 		options.append({ "id": "item", "text": "Item" })
 	options.append({ "id": "wait", "text": "Wait" })
@@ -426,6 +430,10 @@ func _on_action_selected(id: String) -> void:
 			enter_targeting_mode()
 		"item":
 			_show_item_menu(selected_unit)
+		"dance":
+			# FE4: refresca a todos los aliados adyacentes que ya actuaron.
+			MapActions.execute_refresh(selected_unit, grid, "fe4")
+			end_unit_action()
 		_:  # "wait" y cualquier fallback seguro
 			end_unit_action()
 
