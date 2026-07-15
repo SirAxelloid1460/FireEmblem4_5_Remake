@@ -42,6 +42,15 @@ python tools/build_from_lt.py [fe4_ltproj_dir] [fe5_ltproj_dir] [out_data_dir]
 # Unifica los units.json de FE4 y FE5 en data/general/units.json.
 python tools/build_units.py <fe4 units.json> <fe5 units.json> <outdir>
 
+# Herencia gen 2 (FE4): convierte data/general/gen2_inheritance_source.json
+# (cosecha de fireemblemwod) en data/general/gen2_children.json con el modelo
+# BASE + MODIFICADOR-POR-PADRE que consume SubstituteSystem.
+python tools/build_gen2_children.py
+
+# Excel de referencia de la herencia gen 2 (una hoja por hijo: máximos, base,
+# growths y desglose por padre) -> docs/FE4_Gen2_Inheritance.xlsx
+python tools/build_gen2_xlsx.py
+
 # Genera data/<game>/levels/*.json (mapas/despliegues) desde los .ltproj.
 python tools/build_levels.py [fe4_ltproj] [fe5_ltproj] [out_data_dir]
 
