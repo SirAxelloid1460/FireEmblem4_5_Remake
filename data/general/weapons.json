@@ -9511,7 +9511,7 @@
  {
   "nid": "Return",
   "name": "Return",
-  "desc": "Sends an ally back to the Main Castle",
+  "desc": "El objetivo (aliado) vuelve al castillo principal del capítulo.",
   "weapon_type": "Staff",
   "might": 0,
   "hit": 0,
@@ -9601,7 +9601,7 @@
    ],
    [
     "event_on_use",
-    "Global ReturnSR"
+    "ReturnToHomeCastle"
    ]
   ]
  },

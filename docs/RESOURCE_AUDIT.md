@@ -6,7 +6,7 @@
 ## Inventario
 - Clases (classes.json): **61**
 - Personajes (units.json): **122**
-- Items (items.json): **74**
+- Items (items.json): **70**
 - Armas (weapons.json): **134**
 - Skills (skills.json): **97**
 - Retratos de personaje: **249**

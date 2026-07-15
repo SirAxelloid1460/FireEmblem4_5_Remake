@@ -571,7 +571,11 @@ class ItemSystem:
 	static func _fire_event(user, target, event_id: String) -> bool:
 		# El GameManager escucha esta señal y ejecuta el evento correspondiente
 		# Eventos implementados:
-		#   ReturnToHomeCastle  — teleporta al portador al Home Castle
+		#   ReturnToHomeCastle  — teleporta el TARGET al castillo principal del
+		#     capítulo. El Return Ring se auto-apunta (target = portador → vuelve
+		#     el portador); el báculo Return apunta a un aliado (vuelve el aliado).
+		#     PENDIENTE: GameManager.trigger_item_event + posición del castillo
+		#     principal (aún no modelada) para completar el warp.
 		#   UnlockAdjacent      — abre puerta/cofre/puente adyacente
 		#   PromoteUnit         — inicia la pantalla de promoción
 		#   ReviveUnit          — inicia la selección de unidad caída

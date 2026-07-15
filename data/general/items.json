@@ -1279,7 +1279,7 @@
  {
   "nid": "Return Ring",
   "name": "Return Ring",
-  "desc": "Moves an ally to an empty square",
+  "desc": "El portador vuelve al castillo principal del capítulo.",
   "category": "Boosters",
   "worth": 10000,
   "uses": -1,
@@ -1325,7 +1325,7 @@
    ],
    [
     "event_on_use",
-    "Global ReturnSR"
+    "ReturnToHomeCastle"
    ],
    [
     "target_ally",
@@ -2612,178 +2612,6 @@
    [
     "value",
     8000
-   ]
-  ]
- },
- {
-  "nid": "Return1",
-  "name": "Return",
-  "desc": "Sends an ally back to the Main Castle",
-  "category": "Staff",
-  "worth": -1,
-  "uses": -1,
-  "heal": 0,
-  "permanent_stat_change": {},
-  "status_on_hold": "",
-  "status_on_hit": "",
-  "promote": false,
-  "restore": false,
-  "restore_specific": "",
-  "components": [
-   [
-    "spell",
-    null
-   ],
-   [
-    "target_ally",
-    null
-   ],
-   [
-    "magic",
-    null
-   ],
-   [
-    "min_range",
-    1
-   ],
-   [
-    "store_unit",
-    null
-   ],
-   [
-    "max_range",
-    1
-   ]
-  ]
- },
- {
-  "nid": "Return2",
-  "name": "Return",
-  "desc": "Sends an ally back to the Main Castle",
-  "category": "Staff",
-  "worth": -1,
-  "uses": -1,
-  "heal": 0,
-  "permanent_stat_change": {},
-  "status_on_hold": "",
-  "status_on_hit": "",
-  "promote": false,
-  "restore": false,
-  "restore_specific": "",
-  "components": [
-   [
-    "spell",
-    null
-   ],
-   [
-    "magic",
-    null
-   ],
-   [
-    "min_range",
-    1
-   ],
-   [
-    "global_range",
-    null
-   ],
-   [
-    "unload_unit",
-    null
-   ],
-   [
-    "target_tile",
-    null
-   ],
-   [
-    "empty_tile_target_restrict",
-    null
-   ]
-  ]
- },
- {
-  "nid": "ReturnRing1",
-  "name": "Return Ring",
-  "desc": "Moves an ally to an empty square",
-  "category": "Boosters",
-  "worth": -1,
-  "uses": -1,
-  "heal": 0,
-  "permanent_stat_change": {},
-  "status_on_hold": "",
-  "status_on_hit": "",
-  "promote": false,
-  "restore": false,
-  "restore_specific": "",
-  "components": [
-   [
-    "spell",
-    null
-   ],
-   [
-    "target_ally",
-    null
-   ],
-   [
-    "magic",
-    null
-   ],
-   [
-    "min_range",
-    0
-   ],
-   [
-    "store_unit",
-    null
-   ],
-   [
-    "max_range",
-    0
-   ]
-  ]
- },
- {
-  "nid": "ReturnRing2",
-  "name": "Return Ring",
-  "desc": "Moves an ally to an empty square",
-  "category": "Boosters",
-  "worth": -1,
-  "uses": -1,
-  "heal": 0,
-  "permanent_stat_change": {},
-  "status_on_hold": "",
-  "status_on_hit": "",
-  "promote": false,
-  "restore": false,
-  "restore_specific": "",
-  "components": [
-   [
-    "spell",
-    null
-   ],
-   [
-    "magic",
-    null
-   ],
-   [
-    "min_range",
-    1
-   ],
-   [
-    "unload_unit",
-    null
-   ],
-   [
-    "target_tile",
-    null
-   ],
-   [
-    "empty_tile_target_restrict",
-    null
-   ],
-   [
-    "global_range",
-    null
    ]
   ]
  },
