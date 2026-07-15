@@ -2611,6 +2611,7 @@
   "affinity": "Fire",
   "portrait_nid": "LeifPortrait",
   "games": [
+   "FE4",
    "FE5"
   ]
  },
@@ -2859,6 +2860,7 @@
   "affinity": "Light",
   "portrait_nid": "NannaPorrtrait",
   "games": [
+   "FE4",
    "FE5"
   ]
  },
