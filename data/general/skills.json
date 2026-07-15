@@ -10,18 +10,6 @@
     "SKILL"
    ],
    [
-    "attack_proc",
-    "Astra_proc"
-   ]
-  ]
- },
- {
-  "nid": "Astra_proc",
-  "name": "Shooting Star",
-  "desc": "SKL%. to attack up to 5 consecutive times.",
-  "icon_nid": "Skills",
-  "components": [
-   [
     "dynamic_multiattacks",
     "5"
    ]
@@ -287,28 +275,12 @@
   "icon_nid": "Skills",
   "components": [
    [
-    "aura",
-    "Charisma_child"
-   ],
-   [
     "aura_range",
     3
    ],
    [
     "aura_target",
     "Ally"
-   ]
-  ]
- },
- {
-  "nid": "Charisma_child",
-  "name": "Charisma",
-  "desc": "Gives allies in a close area better chances of hitting and avoiding",
-  "icon_nid": "Skills",
-  "components": [
-   [
-    "hidden",
-    null
    ],
    [
     "hit",
@@ -962,28 +934,12 @@
     "SKILL"
    ],
    [
-    "attack_proc",
-    "Luna_proc"
-   ],
-   [
     "class_skill",
     null
-   ]
-  ]
- },
- {
-  "nid": "Luna_proc",
-  "name": "Moonlight",
-  "desc": "SKL% to ignore enemy's Defense or Resistance.",
-  "icon_nid": "Skills",
-  "components": [
+   ],
    [
     "dynamic_damage",
     "combat_calcs.defense(unit, target, None, item)"
-   ],
-   [
-    "hidden",
-    null
    ]
   ]
  },
@@ -1235,21 +1191,9 @@
   "icon_nid": "Skills",
   "components": [
    [
-    "defense_proc",
-    "Pavise_proc"
-   ],
-   [
     "proc_rate",
     "LVL"
-   ]
-  ]
- },
- {
-  "nid": "Pavise_proc",
-  "name": "Great Shield",
-  "desc": "Proc. Ignore attacker's damage.",
-  "icon_nid": "Skills",
-  "components": [
+   ],
    [
     "ignore_damage",
     null
@@ -1618,18 +1562,6 @@
     "proc_rate",
     "SKILL"
    ],
-   [
-    "attack_proc",
-    "Sol_proc"
-   ]
-  ]
- },
- {
-  "nid": "Sol_proc",
-  "name": "Sun",
-  "desc": "SKL%. to recover HP equal to damage dealt to enemy.",
-  "icon_nid": "Skills",
-  "components": [
    [
     "lifelink",
     1.0

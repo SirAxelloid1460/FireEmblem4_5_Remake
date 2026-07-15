@@ -26,7 +26,7 @@ func reload() -> void:
 	_load_terrains()
 	# Indexado por nid LT (único). Los eventos LT referencian items/skills por
 	# nid (give_item "Speed Ring", give_skill "Canto_Plus"); para casi todos los
-	# items nid == name. Skills SÍ comparten name (Luna/Luna_proc="Moonlight"),
+	# items nid == name. Algunos skills comparten name (p.ej. Canto/Canto+),
 	# por eso la clave debe ser nid, no name.
 	classes = _load("classes.json", UnitClassData, "id")
 	weapons = _load("weapons.json", WeaponData, "nid")
