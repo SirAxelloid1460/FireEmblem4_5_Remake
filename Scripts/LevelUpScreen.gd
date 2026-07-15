@@ -290,7 +290,7 @@ static func calculate_stat_gains(unit: Unit, growth_rates: Dictionary) -> Dictio
 	# (ej. STR 50 % → 60 %), no multiplicativo, igual que LT.
 	var has_elite := false
 	if unit != null:
-		has_elite = unit.has_skill("Elite") or unit.has_skill("Paragon")
+		has_elite = unit.has_skill("Elite_Skill") or unit.has_skill("Paragon")
 	if has_elite:
 		for stat in effective_rates.keys():
 			effective_rates[stat] = int(effective_rates[stat]) + 10

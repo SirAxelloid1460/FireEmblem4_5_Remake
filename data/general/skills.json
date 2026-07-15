@@ -406,7 +406,7 @@
   ]
  },
  {
-  "nid": "Darkness Sword",
+  "nid": "DarknessSword",
   "name": "Darkness Sword",
   "desc": "Doubles damage done and halves received",
   "icon_nid": "Sword",
@@ -814,7 +814,7 @@
   ]
  },
  {
-  "nid": "Holy Sword",
+  "nid": "HolySword",
   "name": "Holy Sword",
   "desc": "Enhances damage done and halves received",
   "icon_nid": "Sword",
@@ -2016,6 +2016,78 @@
    [
     "class_skill",
     null
+   ]
+  ]
+ },
+ {
+  "nid": "Vantage",
+  "name": "Vantage",
+  "desc": "When HP <= 50%, the unit strikes first even when defending.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "vantage",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Adept",
+  "name": "Adept",
+  "desc": "Chance (Skill%) to strike one extra time.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "display_skill_icon_in_combat",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Nihil",
+  "name": "Nihil",
+  "desc": "Negates all of the enemy side's proc skills.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "display_skill_icon_in_combat",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Desperation",
+  "name": "Desperation",
+  "desc": "When HP is low, performs all of the unit's attacks before the enemy can counter.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "display_skill_icon_in_combat",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Continue",
+  "name": "Continue",
+  "desc": "Grants an extra attack round under the right conditions (follow-up).",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "display_skill_icon_in_combat",
+    null
+   ]
+  ]
+ },
+ {
+  "nid": "Paragon",
+  "name": "Paragon",
+  "desc": "Doubles EXP gained.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "exp_multiplier",
+    2.0
    ]
   ]
  }

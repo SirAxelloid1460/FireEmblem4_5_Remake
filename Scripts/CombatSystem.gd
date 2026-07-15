@@ -257,7 +257,7 @@ static func execute_attack(atk: Unit, def: Unit, dist: int,
 			dmg = 0
 
 	# Big Shield (LVL%)
-	if not nihil and not is_crit and _has_skill(def, "BigShield") \
+	if not nihil and not is_crit and _has_skill(def, "Pavise") \
 			and randi() % 100 < def.level:
 		dmg = 0
 
@@ -411,7 +411,7 @@ static func _finalize_exp(result: CombatResult) -> void:
 	if result.defender_died and result.defender.has_meta("is_boss") \
 			and result.defender.get_meta("is_boss"):
 		exp_value += BOSS_BONUS_EXP
-	if _has_skill(result.attacker, "Elite") or _has_skill(result.attacker, "Paragon"):
+	if _has_skill(result.attacker, "Elite_Skill") or _has_skill(result.attacker, "Paragon"):
 		exp_value = min(100, exp_value * 2)
 	result.exp_attacker = exp_value
 	if result.attacker_died:

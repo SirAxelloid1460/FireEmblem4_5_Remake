@@ -1867,7 +1867,7 @@
   "effective_bonus": 0,
   "prf_tags": [],
   "prf_units": [],
-  "status_on_equip": "Darkness Sword",
+  "status_on_equip": "DarknessSword",
   "status_on_hit": "",
   "personal": false,
   "components": [
@@ -1919,7 +1919,7 @@
    ],
    [
     "status_on_equip",
-    "Darkness Sword"
+    "DarknessSword"
    ],
    [
     "crit",
@@ -4395,7 +4395,7 @@
   "effective_bonus": 0,
   "prf_tags": [],
   "prf_units": [],
-  "status_on_equip": "Holy Sword",
+  "status_on_equip": "HolySword",
   "status_on_hit": "",
   "personal": false,
   "components": [
@@ -4447,7 +4447,7 @@
    ],
    [
     "status_on_equip",
-    "Holy Sword"
+    "HolySword"
    ],
    [
     "crit",

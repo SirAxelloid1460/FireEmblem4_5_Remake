@@ -116,7 +116,7 @@ static func _rings_equipment() -> Array[ItemData]:
 		"EliteRing", "Elite Ring",
 		"Bearer receives double EXP (max 100 per action).",
 		40000, -1, "ring", "on_hold")
-	elite_ring.skill_granted = "Elite"
+	elite_ring.skill_granted = "Elite_Skill"
 	rings.append(elite_ring)
 
 	# ── Thief Ring ────────────────────────────────────────────────────────────
@@ -397,7 +397,7 @@ static func _skill_manuals() -> Array[ItemData]:
 		m.usable_in_base = false
 		return m
 
-	manuals.append(_mk.call("EliteM",      "Elite Manual",          "Elite"))
+	manuals.append(_mk.call("EliteM",      "Elite Manual",          "Elite_Skill"))
 	manuals.append(_mk.call("BargainM",    "Bargain Manual",        "Bargain"))
 	manuals.append(_mk.call("AmbushM",     "Ambush Manual",         "Ambush"))
 	manuals.append(_mk.call("WrathM",      "Wrath Manual",          "Wrath"))
