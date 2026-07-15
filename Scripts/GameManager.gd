@@ -15,7 +15,8 @@ enum PlayerPhase {
 	MOVING,
 	ACTION_MENU,
 	TARGETING,
-	CANTO           # re-movimiento tras actuar (skill Canto/Canto+)
+	CANTO,          # re-movimiento tras actuar (skill Canto/Canto+)
+	STAFF_TILE      # selección de casilla destino para báculos Warp/Rewarp
 }
 
 # Referencias
@@ -188,6 +189,12 @@ func handle_mouse_click(mouse_pos: Vector2):
 				move_selected_unit(grid_pos)
 			else:
 				end_unit_action()
+
+		PlayerPhase.STAFF_TILE:
+			# Warp/Rewarp: casilla destino (vacía y transitable).
+			if grid_pos in attackable_tiles:
+				_staff_place_at(grid_pos)
+			# clic fuera: se ignora (sigue eligiendo)
 
 func select_unit(unit: Unit):
 	"""Selecciona una unidad del jugador"""
@@ -401,6 +408,11 @@ var _steal_victim: Unit = null
 ## si la unidad ya usó su re-movimiento en esta activación.
 var _move_cost_spent: float = 0.0
 var _canto_used: bool = false
+## Báculos: arma en uso, aliado elegido (Warp, 2 pasos) y snapshots de aliados
+## caídos (para el báculo Valkyrie).
+var _staff_weapon = null
+var _staff_ally: Unit = null
+var _fallen_player_snaps: Array = []
 
 ## Capa de pantalla (screen-space) para la UI de gameplay (menú de acciones).
 func _ensure_ui_layer() -> CanvasLayer:
@@ -420,8 +432,12 @@ func show_action_menu():
 
 	# Opciones disponibles según el contexto de la unidad.
 	var options: Array = []
+	# Los báculos no atacan: sólo se ofrece Attack con un arma no-báculo.
+	var wielding_staff := selected_unit.weapon != null \
+			and ("weapon_type" in selected_unit.weapon) \
+			and str(selected_unit.weapon.weapon_type) == "Staff"
 	var enemies_in_range = get_enemies_in_attack_range(selected_unit)
-	if enemies_in_range.size() > 0:
+	if not wielding_staff and enemies_in_range.size() > 0:
 		options.append({ "id": "attack", "text": "Attack" })
 	# Dance (Refresh): solo si hay aliados adyacentes que ya actuaron.
 	if MapActions.can_refresh(selected_unit) \
@@ -431,6 +447,9 @@ func show_action_menu():
 	if MapActions.can_steal(selected_unit) \
 			and _steal_victims(selected_unit).size() > 0:
 		options.append({ "id": "steal", "text": "Steal" })
+	# Staff: solo si lleva un báculo equipado con usos y algo a lo que apuntar.
+	if _unit_can_staff(selected_unit):
+		options.append({ "id": "staff", "text": "Staff" })
 	if _unit_has_usable_item(selected_unit):
 		options.append({ "id": "item", "text": "Item" })
 	options.append({ "id": "wait", "text": "Wait" })
@@ -472,6 +491,8 @@ func _on_action_selected(id: String) -> void:
 			_end_action(true)
 		"steal":
 			_show_steal_menu(selected_unit)
+		"staff":
+			_begin_staff(selected_unit)
 		_:  # "wait" y cualquier fallback seguro (sin Canto)
 			end_unit_action()
 
@@ -1016,6 +1037,10 @@ func _handle_unit_death(unit: Unit) -> void:
 	grid.remove_unit(unit.grid_position)
 	if unit.is_player_unit:
 		player_units.erase(unit)
+		# Guardar snapshot para una posible resurrección (báculo Valkyrie).
+		var gm = get_node_or_null("/root/GameMode")
+		if gm != null and gm.has_method("_serialize_unit"):
+			_fallen_player_snaps.append(gm._serialize_unit(unit))
 		# Si era una madre potencial, marcarla muerta para gen 2.
 		_record_mother_death(unit)
 	else:
@@ -1057,6 +1082,338 @@ func _record_mother_death(unit: Unit) -> void:
 		}
 	else:
 		mother_states[unit.unit_name]["alive"] = false
+
+# ── Báculos (Staff) ──────────────────────────────────────────────────────────
+
+## Turnos que duran los status ofensivos de báculo (Silence/Sleep/Berserk).
+const STAFF_STATUS_TURNS := 5
+
+## ¿La unidad lleva un báculo equipado utilizable con algún objetivo válido?
+func _unit_can_staff(unit) -> bool:
+	if unit == null:
+		return false
+	var w = unit.weapon
+	if w == null or not ("weapon_type" in w) or str(w.weapon_type) != "Staff":
+		return false
+	if "current_uses" in w and int(w.current_uses) == 0:
+		return false
+	var eff := _staff_effect(w)
+	if eff == "":
+		return false
+	if eff == "rewarp":
+		return _staff_empty_tiles().size() > 0
+	if eff == "valkyrie":
+		return _fallen_player_snaps.size() > 0
+	if eff == "warp":
+		return _staff_targets(unit, w).size() > 0 and _staff_empty_tiles().size() > 0
+	return _staff_targets(unit, w).size() > 0
+
+## Clasifica el efecto de un báculo por su nid.
+func _staff_effect(w) -> String:
+	if w == null:
+		return ""
+	var id := str(w.id) if "id" in w else ""
+	match id:
+		"Heal", "Mend", "Recover", "Reserve", "Libro", "Reblow": return "heal"
+		"Silence", "Sleep", "Berserk": return "status_enemy"
+		"Return":      return "return"
+		"Rest":        return "rest"
+		"Kia":         return "kia"
+		"Repair":      return "repair"
+		"MagicUp":     return "magicup"
+		"Valkyrie":    return "valkyrie"
+		"Rescue":      return "rescue"
+		"Warp":        return "warp"
+		"Rewarp":      return "rewarp"
+		"Thief Staff": return "thief"
+	# Fallback: cualquier báculo con componente de cura.
+	if w.has_method("get_component") and (w.get_component("magic_heal") != null or w.get_component("heal") != null):
+		return "heal"
+	return ""
+
+## Casillas dentro del rango del báculo (distancia Manhattan en [min,max]).
+func _staff_range_tiles(user, w) -> Array:
+	var out: Array = []
+	if user == null or w == null or grid == null:
+		return out
+	var lo_raw: int = int(w.min_range) if "min_range" in w else 1
+	var lo: int = max(1, lo_raw)
+	var hi: int = int(w.max_range) if "max_range" in w else 1
+	var p: Vector2i = user.grid_position
+	for dx in range(-hi, hi + 1):
+		for dy in range(-hi, hi + 1):
+			var d := abs(dx) + abs(dy)
+			if d < lo or d > hi:
+				continue
+			var t := p + Vector2i(dx, dy)
+			if grid.is_valid_position(t):
+				out.append(t)
+	return out
+
+## Unidades objetivo válidas para un báculo (aliados heridos / con estado, o
+## enemigos, según el efecto).
+func _staff_targets(user, w) -> Array:
+	var eff := _staff_effect(w)
+	var out: Array = []
+	if eff == "" or eff == "valkyrie" or eff == "rewarp":
+		return out
+	var want_enemy := (eff == "status_enemy" or eff == "thief")
+	for t in _staff_range_tiles(user, w):
+		var u = grid.get_unit_at(t)
+		if u == null or u.current_hp <= 0:
+			continue
+		if want_enemy:
+			if u.is_player_unit == user.is_player_unit:
+				continue
+			if eff == "thief" and MapActions.get_stealable_items(user, u, false).is_empty():
+				continue
+			out.append(u)
+		else:
+			if u.is_player_unit != user.is_player_unit:
+				continue
+			if u == user and eff in ["rescue", "warp"]:
+				continue
+			if eff == "heal" and u.current_hp >= u.max_hp:
+				continue
+			out.append(u)
+	return out
+
+## Todas las casillas vacías y transitables del mapa (destino de Warp/Rewarp).
+func _staff_empty_tiles() -> Array:
+	var out: Array = []
+	if grid == null:
+		return out
+	for y in range(grid.grid_height):
+		for x in range(grid.grid_width):
+			var t := Vector2i(x, y)
+			if grid.is_walkable(t):
+				out.append(t)
+	return out
+
+## Inicia el uso del báculo equipado por `user`.
+func _begin_staff(user) -> void:
+	var w = user.weapon
+	_staff_weapon = w
+	_staff_ally = null
+	match _staff_effect(w):
+		"valkyrie":
+			_staff_show_fallen_menu(user)
+		"rewarp":
+			_staff_begin_tile(user)
+		"warp":
+			_staff_show_target_menu(user, _staff_targets(user, w))
+		_:
+			var targets := _staff_targets(user, w)
+			if targets.is_empty():
+				show_action_menu()
+				return
+			_staff_show_target_menu(user, targets)
+
+## Submenú para elegir la unidad objetivo del báculo.
+func _staff_show_target_menu(user, targets: Array) -> void:
+	if targets.is_empty():
+		show_action_menu()
+		return
+	var options: Array = []
+	for i in targets.size():
+		var t = targets[i]
+		options.append({ "id": "starget:%d" % i,
+				"text": "%s (%d/%d)" % [t.unit_name, t.current_hp, t.max_hp] })
+	options.append({ "id": "back", "text": "Back" })
+	_close_action_menu()
+	_action_menu = ActionMenu.new()
+	_ensure_ui_layer().add_child(_action_menu)
+	_action_menu.setup(options, _unit_menu_anchor(user))
+	_action_menu.action_selected.connect(_on_staff_target_selected)
+
+func _on_staff_target_selected(id: String) -> void:
+	_action_menu = null
+	if id == "back":
+		show_action_menu()
+		return
+	if id.begins_with("starget:"):
+		var idx := int(id.substr(8))
+		var targets := _staff_targets(selected_unit, _staff_weapon)
+		if idx >= 0 and idx < targets.size():
+			var target = targets[idx]
+			if _staff_effect(_staff_weapon) == "warp":
+				_staff_ally = target        # paso 2: elegir casilla destino
+				_staff_begin_tile(selected_unit)
+				return
+			_cast_staff(selected_unit, _staff_weapon, target)
+			_finish_staff(selected_unit)
+			return
+	show_action_menu()
+
+## Fase de selección de casilla destino (Warp mueve al aliado; Rewarp al usuario).
+func _staff_begin_tile(user) -> void:
+	attackable_tiles = _staff_empty_tiles()
+	if attackable_tiles.is_empty():
+		show_action_menu()
+		return
+	player_phase = PlayerPhase.STAFF_TILE
+
+func _staff_place_at(pos: Vector2i) -> void:
+	var mover: Unit = _staff_ally if _staff_ally != null else selected_unit
+	if mover != null and grid.is_walkable(pos):
+		grid.move_unit(mover.grid_position, pos)
+		mover.global_position = grid.grid_to_world(pos)
+		if mover.has_method("update_visual"):
+			mover.update_visual()
+		if fow_system:
+			fow_system.update_team_vision("player", player_units)
+	attackable_tiles.clear()
+	_finish_staff(selected_unit)
+
+## Aplica el efecto del báculo sobre el objetivo (unidades).
+func _cast_staff(user, w, target) -> void:
+	match _staff_effect(w):
+		"heal":
+			target.heal(_staff_heal_amount(user, w))
+		"status_enemy":
+			var sid := str(w.status_on_hit) if "status_on_hit" in w else ""
+			if sid != "" and _staff_status_hits(user, target):
+				_staff_apply_status(target, sid, STAFF_STATUS_TURNS)
+		"return":
+			_return_to_home_castle(target)
+		"rest":
+			target.clear_negative_statuses(true)   # todos menos Petrify
+		"kia":
+			target.remove_status("Petrify")
+			target.remove_status_modifier("Petrify")
+		"repair":
+			if target.weapon != null and "max_uses" in target.weapon \
+					and int(target.weapon.max_uses) > 0:
+				target.weapon.current_uses = int(target.weapon.max_uses)
+		"magicup":
+			target.add_status_modifier("MagicUp", {"MAG": 7})
+			target.apply_status("MagicUp", {"duration": 7})
+		"rescue":
+			var dest := _nearest_free_tile(user.grid_position)
+			if dest != Vector2i(-1, -1):
+				grid.move_unit(target.grid_position, dest)
+				target.global_position = grid.grid_to_world(dest)
+				if target.has_method("update_visual"):
+					target.update_visual()
+		"thief":
+			_staff_thief(user, target)
+
+## Cura de báculo: valor base + MAG del usuario (Recover = HP completo).
+func _staff_heal_amount(user, w) -> int:
+	var mag: int = user.get_effective_stat("MAG") if user.has_method("get_effective_stat") else 0
+	var mh = w.get_component("magic_heal") if w.has_method("get_component") else null
+	if mh != null:
+		return int(mh) + mag
+	var fixed = w.get_component("heal") if w.has_method("get_component") else null
+	if fixed != null:
+		return int(fixed)
+	if "heal" in w:
+		return int(w.heal)
+	return 0
+
+## Tirada de acierto de un báculo de estado (fórmula del proyecto, estilo FE):
+## 30 + (MAG - RES)*4 - LCK - distancia, acotada a [0,100].
+func _staff_status_hits(user, target) -> bool:
+	var mag: int = user.get_effective_stat("MAG")
+	var res: int = target.get_effective_stat("RES")
+	var lck: int = target.get_effective_stat("LCK")
+	var dist: int = abs(user.grid_position.x - target.grid_position.x) \
+			+ abs(user.grid_position.y - target.grid_position.y)
+	var hit := clampi(30 + (mag - res) * 4 - lck - dist, 0, 100)
+	return randi() % 100 < hit
+
+## Aplica un status de skill + su stat_change como modificador (se limpia al
+## expirar, ver Unit.tick_statuses).
+func _staff_apply_status(target, sid: String, turns: int) -> void:
+	target.apply_status(sid, {"duration": turns})
+	var gdb = get_node_or_null("/root/GameDB")
+	if gdb == null:
+		return
+	var sk = gdb.get_skill(sid)
+	if sk == null:
+		return
+	var sc = sk.component_value("stat_change")
+	if sc is Array:
+		var deltas := {}
+		for pair in sc:
+			if pair is Array and pair.size() >= 2:
+				deltas[str(pair[0])] = int(pair[1])
+		if not deltas.is_empty():
+			target.add_status_modifier(sid, deltas)
+
+## Thief Staff: roba un ítem a un enemigo en rango (sin chequeo de adyacencia/SPD).
+func _staff_thief(user, target) -> void:
+	var items := MapActions.get_stealable_items(user, target, false)
+	if items.is_empty():
+		return
+	if not ("inventory" in user) or user.inventory.size() >= 5:
+		return
+	var item = items[0]
+	target.inventory.erase(item)
+	user.inventory.append(item)
+	if user.has_method("refresh_item_effects"): user.refresh_item_effects()
+	if target.has_method("refresh_item_effects"): target.refresh_item_effects()
+
+## Submenú de resurrección (báculo Valkyrie): lista de aliados caídos.
+func _staff_show_fallen_menu(user) -> void:
+	if _fallen_player_snaps.is_empty():
+		show_action_menu()
+		return
+	var options: Array = []
+	for i in _fallen_player_snaps.size():
+		options.append({ "id": "revive:%d" % i,
+				"text": str(_fallen_player_snaps[i].get("nid", "?")) })
+	options.append({ "id": "back", "text": "Back" })
+	_close_action_menu()
+	_action_menu = ActionMenu.new()
+	_ensure_ui_layer().add_child(_action_menu)
+	_action_menu.setup(options, _unit_menu_anchor(user))
+	_action_menu.action_selected.connect(_on_staff_revive_selected)
+
+func _on_staff_revive_selected(id: String) -> void:
+	_action_menu = null
+	if id == "back":
+		show_action_menu()
+		return
+	if id.begins_with("revive:"):
+		var idx := int(id.substr(7))
+		if idx >= 0 and idx < _fallen_player_snaps.size():
+			if _staff_revive(selected_unit, _fallen_player_snaps[idx]):
+				_fallen_player_snaps.remove_at(idx)
+			_finish_staff(selected_unit)
+			return
+	show_action_menu()
+
+## Reconstruye y coloca a un aliado caído junto al usuario. true si lo revivió.
+func _staff_revive(user, snap) -> bool:
+	var gm = get_node_or_null("/root/GameMode")
+	if gm == null or not gm.has_method("_deserialize_unit"):
+		return false
+	var pos := _nearest_free_tile(user.grid_position)
+	if pos == Vector2i(-1, -1):
+		return false
+	var u = gm._deserialize_unit(snap)
+	if u == null:
+		return false
+	u.current_hp = u.max_hp
+	u.has_acted = true          # revive: no puede actuar este turno
+	u.has_moved = true
+	_ensure_unit_layer().add_child(u)
+	grid.place_unit(u, pos)
+	player_units.append(u)
+	if fow_system:
+		fow_system.update_team_vision("player", player_units)
+	return true
+
+## Cierra el uso del báculo: gasta un uso y termina la acción (permite Canto).
+func _finish_staff(user) -> void:
+	var w = _staff_weapon
+	if w != null and "current_uses" in w and int(w.current_uses) > 0:
+		w.current_uses = int(w.current_uses) - 1
+	_staff_weapon = null
+	_staff_ally = null
+	_end_action(true)
+
 
 # ── Canto (re-movimiento tras actuar) ────────────────────────────────────────
 

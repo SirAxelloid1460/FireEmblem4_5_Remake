@@ -509,6 +509,26 @@ func tick_statuses() -> void:
 				to_remove.append(s["id"])
 	for sid in to_remove:
 		remove_status(sid)
+		remove_status_modifier(sid)   # limpia el bono/penalización asociado (MagicUp, Sleep…)
+
+## Quita todos los status negativos (componente "negative" en GameDB) y su
+## modificador. Con keep_petrify conserva Petrify (el báculo Rest no lo cura;
+## Kia sí). Sin GameDB, considera negativos todos los status activos.
+func clear_negative_statuses(keep_petrify: bool = true) -> void:
+	var db = _gamedb()
+	var ids: Array = []
+	for s in _statuses:
+		ids.append(str(s["id"]))
+	for sid in ids:
+		if keep_petrify and sid == "Petrify":
+			continue
+		var negative := true
+		if db != null:
+			var sk = db.get_skill(sid)
+			negative = sk != null and sk.has_component("negative")
+		if negative:
+			remove_status(sid)
+			remove_status_modifier(sid)
 
 func _apply_status_upkeep(status: Dictionary) -> void:
 	var sid: String = status["id"]
