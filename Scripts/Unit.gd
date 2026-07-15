@@ -400,6 +400,11 @@ static func rank_requirement(rank: String) -> int:
 func can_equip(w: Weapon) -> bool:
 	if w == null:
 		return false
+	# Restricción prf: si el arma es personal (prf_tags/prf_unit), la unidad
+	# debe cumplirla — arches→clase Ballistae, Yewfelle→UlirHeir, armas
+	# sagradas→su heredero concreto.
+	if not _satisfies_prf(w):
+		return false
 	var required: String = str(w.weapon_rank)
 	# Armas Holy (S nato): sólo Major Blood, y las usan desde el inicio sin
 	# exigir wexp (el rango se concede por la sangre). En LT esto se refuerza
@@ -408,6 +413,28 @@ func can_equip(w: Weapon) -> bool:
 		return has_major_blood()
 	# Rango S y por debajo: cualquiera que tenga el wexp del tipo suficiente.
 	return int(wexp.get(str(w.weapon_type), 0)) >= rank_requirement(required)
+
+## ¿La unidad cumple la restricción personal del arma? true si el arma no es
+## prf, o si el nid de la unidad está en prf_unit, o si tiene alguno de los
+## prf_tags (tag de clase Ballistae, tag de heredero XxxHeir…).
+func _satisfies_prf(w) -> bool:
+	if w == null or not w.has_method("get_component"):
+		return true
+	var ptags = w.get_component("prf_tags")
+	var punits = w.get_component("prf_unit")
+	var restricted := (ptags is Array and not ptags.is_empty()) \
+			or (punits is Array and not punits.is_empty())
+	if not restricted:
+		return true
+	if punits is Array:
+		for u in punits:
+			if str(u) == unit_name:
+				return true
+	if ptags is Array:
+		for t in ptags:
+			if str(t) in tags:
+				return true
+	return false
 
 # ── Holy Blood ──────────────────────────────────────────────────────────────
 
@@ -511,6 +538,28 @@ func tick_statuses() -> void:
 		remove_status(sid)
 		remove_status_modifier(sid)   # limpia el bono/penalización asociado (MagicUp, Sleep…)
 
+## Aplica un status por su id + su componente stat_change como modificador (se
+## limpia al expirar, ver tick_statuses). `turns` = -1 dura hasta curarse. Lo
+## usan tanto los báculos como el status_on_hit de las armas.
+func apply_status_with_effects(status_id: String, turns: int = -1) -> void:
+	if status_id == "":
+		return
+	apply_status(status_id, {"duration": turns})
+	var db = _gamedb()
+	if db == null:
+		return
+	var sk = db.get_skill(status_id)
+	if sk == null:
+		return
+	var raw = sk.component_value("stat_change")
+	if raw is Array:
+		var deltas := {}
+		for pair in raw:
+			if pair is Array and pair.size() >= 2:
+				deltas[str(pair[0])] = int(pair[1])
+		if not deltas.is_empty():
+			add_status_modifier(status_id, deltas)
+
 ## Quita todos los status negativos (componente "negative" en GameDB) y su
 ## modificador. Con keep_petrify conserva Petrify (el báculo Rest no lo cura;
 ## Kia sí). Sin GameDB, considera negativos todos los status activos.
@@ -544,8 +593,8 @@ func _apply_status_upkeep(status: Dictionary) -> void:
 		"TorchVision":
 			# El radio de visión decrece 1 por turno (manejado por FogOfWarSystem)
 			pass
-		"Poison":
-			# Daño por turno
+		"Poisoned":
+			# Daño por turno (id unificado con la skill/arma "Poisoned").
 			take_damage(max(1, max_hp / 10))
 
 # ══════════════════════════════════════════════════════════════════════════════

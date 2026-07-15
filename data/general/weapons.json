@@ -1195,7 +1195,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -1264,7 +1266,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -3501,7 +3505,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -3566,7 +3572,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -4487,7 +4495,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
@@ -4560,6 +4570,12 @@
     "prf_tags",
     [
      "Ballistae"
+    ]
+   ],
+   [
+    "effective_tag",
+    [
+     "Flying"
     ]
    ]
   ]
@@ -4770,7 +4786,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -4831,7 +4849,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -5336,7 +5356,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
@@ -5409,6 +5431,12 @@
     "prf_tags",
     [
      "Ballistae"
+    ]
+   ],
+   [
+    "effective_tag",
+    [
+     "Flying"
     ]
    ]
   ]
@@ -5526,7 +5554,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -5591,7 +5621,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -6314,7 +6346,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
@@ -6387,6 +6421,12 @@
     "prf_tags",
     [
      "Ballistae"
+    ]
+   ],
+   [
+    "effective_tag",
+    [
+     "Flying"
     ]
    ]
   ]
@@ -6597,7 +6637,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -6658,7 +6700,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -7179,7 +7223,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -7248,7 +7294,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -7987,7 +8035,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
@@ -8064,6 +8114,12 @@
     "prf_tags",
     [
      "Ballistae"
+    ]
+   ],
+   [
+    "effective_tag",
+    [
+     "Flying"
     ]
    ]
   ]
@@ -8181,7 +8237,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -8246,7 +8304,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -9729,7 +9789,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -9794,7 +9856,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -10396,7 +10460,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -10457,7 +10523,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -11249,7 +11317,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -11310,7 +11380,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -12891,7 +12963,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
@@ -12958,7 +13032,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",

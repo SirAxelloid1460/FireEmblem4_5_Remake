@@ -450,6 +450,9 @@ func show_action_menu():
 	# Staff: solo si lleva un báculo equipado con usos y algo a lo que apuntar.
 	if _unit_can_staff(selected_unit):
 		options.append({ "id": "staff", "text": "Staff" })
+	# Capture: si hay una ballista enemiga/neutral adyacente.
+	if _adjacent_enemy_ballista(selected_unit) != null:
+		options.append({ "id": "capture", "text": "Capture" })
 	if _unit_has_usable_item(selected_unit):
 		options.append({ "id": "item", "text": "Item" })
 	options.append({ "id": "wait", "text": "Wait" })
@@ -493,6 +496,13 @@ func _on_action_selected(id: String) -> void:
 			_show_steal_menu(selected_unit)
 		"staff":
 			_begin_staff(selected_unit)
+		"capture":
+			var ball = _adjacent_enemy_ballista(selected_unit)
+			if ball != null and BallistaSystem.attempt_capture(selected_unit, ball, grid):
+				enemy_units.erase(ball)
+				if not ball in player_units:
+					player_units.append(ball)
+			end_unit_action()
 		_:  # "wait" y cualquier fallback seguro (sin Canto)
 			end_unit_action()
 
@@ -566,7 +576,8 @@ func _apply_item_status(unit, sid: String) -> void:
 			unit.add_status_modifier("HolyWater", {"MAG": 7})
 			unit.apply_status("HolyWater", {})
 		"CurePoison":
-			unit.remove_status("Poison")
+			unit.remove_status("Poisoned")
+			unit.remove_status_modifier("Poisoned")
 		"Torch":
 			# Bonus de visión temporal en la niebla (FogOfWarSystem lo decrece
 			# 1/turno vía tick_torches).
@@ -687,6 +698,18 @@ func _steal_victims(thief) -> Array:
 		if MapActions.get_stealable_items(thief, u).size() > 0:
 			out.append(u)
 	return out
+
+## Ballista enemiga o neutral adyacente (Manhattan 1) capturable, o null.
+func _adjacent_enemy_ballista(unit):
+	if unit == null or grid == null:
+		return null
+	var p: Vector2i = unit.grid_position
+	for d in [Vector2i(1, 0), Vector2i(-1, 0), Vector2i(0, 1), Vector2i(0, -1)]:
+		var u = grid.get_unit_at(p + d)
+		if u != null and BallistaSystem.is_ballista(u) and u.current_hp > 0 \
+				and BallistaSystem.get_state(u) != BallistaSystem.STATE_PLAYER:
+			return u
+	return null
 
 ## Submenú de robo: elige víctima. Si hay una sola, salta directo a sus ítems.
 func _show_steal_menu(thief) -> void:

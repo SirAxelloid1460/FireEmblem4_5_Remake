@@ -559,7 +559,8 @@ class ItemSystem:
 	static func _apply_status(target, status_id: String) -> bool:
 		match status_id:
 			"CurePoison":
-				target.remove_status("Poison")
+				target.remove_status("Poisoned")
+				target.remove_status_modifier("Poisoned")
 				return true
 			"HolyWater":
 				# Aplica status temporal con stat_change decreciente

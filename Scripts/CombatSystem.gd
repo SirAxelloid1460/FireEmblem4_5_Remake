@@ -31,6 +31,7 @@ const EFFECTIVE_BONUS    := 5
 const EFFECTIVE_DEF_DIV  := 2
 const EFFECTIVE_RES_DIV  := 3
 const ASTRA_HITS         := 5
+const STATUS_ON_HIT_TURNS := 5      # duración de un status infligido por arma
 
 class AttackResult:
 	var attacker_name: String
@@ -203,6 +204,12 @@ static func _do(atk: Unit, def: Unit, dist: int, result: CombatResult,
 			var ll = atk.weapon.get_component("lifelink")
 			if ll != null:
 				atk.heal(int(ceil(ar.damage * float(ll))))
+		# status_on_hit del arma (Poison/Sleep/Berserk/Silence/Stun/Loptyr…):
+		# se aplica al defensor si sobrevive. "Devil" ya se gestiona aparte.
+		if def.current_hp > 0 and atk.weapon != null and "status_on_hit" in atk.weapon:
+			var soh := str(atk.weapon.status_on_hit)
+			if soh != "" and soh != "Devil":
+				def.apply_status_with_effects(soh, STATUS_ON_HIT_TURNS)
 
 
 static func execute_attack(atk: Unit, def: Unit, dist: int,
