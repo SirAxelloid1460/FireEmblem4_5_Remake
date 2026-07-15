@@ -210,6 +210,10 @@ static func _do(atk: Unit, def: Unit, dist: int, result: CombatResult,
 			var soh := str(atk.weapon.status_on_hit)
 			if soh != "" and soh != "Devil":
 				def.apply_status_with_effects(soh, STATUS_ON_HIT_TURNS)
+		# Thief Sword (componente steal): roba un ítem si el defensor sobrevive.
+		if def.current_hp > 0 and atk.weapon != null and atk.weapon.has_method("has_component") \
+				and atk.weapon.has_component("steal"):
+			_steal_on_hit(atk, def)
 
 
 static func execute_attack(atk: Unit, def: Unit, dist: int,
@@ -220,7 +224,10 @@ static func execute_attack(atk: Unit, def: Unit, dist: int,
 	var wpn = atk.weapon
 	if not wpn:
 		return AttackResult.new(atk.unit_name, def.unit_name, 0, false, false)
-	var is_magic: bool = bool(wpn.is_magic) if "is_magic" in wpn else false
+	# La distancia se propaga a _calc_dmg para el daño mágico condicional
+	# (espadas con magic_at_range son mágicas sólo a rango >= 2).
+	combat_flags["dist"] = dist
+	var is_magic: bool = _is_magic_attack(wpn, dist)
 
 	var did_hit := sword_skill == "Sol" or \
 			_true_hit(calculate_hit(atk, def, dist, t_def))
@@ -319,7 +326,9 @@ static func _calc_dmg(atk: Unit, def: Unit, is_crit: bool, is_eff: bool,
 		flags: Dictionary = {}) -> int:
 
 	var wpn = atk.weapon
-	var is_magic: bool = bool(wpn.is_magic) if wpn and "is_magic" in wpn else false
+	# Daño mágico si el arma es mágica, o si tiene magic_at_range y se ataca a
+	# distancia >= 2 (espadas mágicas Flame/Thunder/Wind/Earth/Light).
+	var is_magic: bool = _is_magic_attack(wpn, int(flags.get("dist", 1)))
 	# Hel (efecto del tomo homónimo): deja al objetivo a 1 HP; nunca mata.
 	#   HP objetivo != 1 → daño = HP_actual - 1;  si ya está a 1 → daño = 0.
 	if _has_skill(atk, "Hel"):
@@ -371,6 +380,31 @@ static func _is_reaver(w) -> bool:
 	if w == null: return false
 	if "reaver" in w and bool(w.reaver): return true
 	return w.has_method("has_component") and w.has_component("reaver")
+
+## ¿El ataque hace daño mágico? Sí si el arma es mágica, o si tiene el
+## componente magic_at_range y se ataca a distancia >= 2 (espadas mágicas).
+static func _is_magic_attack(w, dist: int) -> bool:
+	if w == null:
+		return false
+	if "is_magic" in w and bool(w.is_magic):
+		return true
+	if w.has_method("has_component") and w.has_component("magic_at_range") and dist >= 2:
+		return true
+	return false
+
+## Thief Sword: roba un ítem del inventario del defensor (no equipado) si
+## sobrevive y el ladrón tiene hueco. Sin chequeo de SPD (el arma ya conecta).
+static func _steal_on_hit(thief: Unit, victim: Unit) -> void:
+	if not ("inventory" in thief) or thief.inventory.size() >= 5:
+		return
+	var items := MapActions.get_stealable_items(thief, victim, false)
+	if items.is_empty():
+		return
+	var item = items[0]
+	victim.inventory.erase(item)
+	thief.inventory.append(item)
+	if thief.has_method("refresh_item_effects"): thief.refresh_item_effects()
+	if victim.has_method("refresh_item_effects"): victim.refresh_item_effects()
 
 static func _tri_hit(a: Unit, d: Unit) -> int:
 	return _tri_bonus(a, d) * TRIANGLE_HIT
