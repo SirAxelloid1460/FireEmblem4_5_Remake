@@ -145,17 +145,19 @@ VERSIONED = [
         "fe4":  ([26, 3, 3, 6, 6, 0, 3, 3], [80, 18, 18, 21, 21, 30, 18, 18]),
         "fe5":  ([16, 2, 2, 2, 3, 0, 2, 0], [80, 20, 20, 20, 30, 20, 20, 0]),
     },
-    {  # Dragon Knight  (Wyvern Rider)
+    {  # Dragon Knight  (Wyvern Rider). Dragon Rider -> Dragon Knight (FE5 trainee).
         "ids": ["DragonKnight"],
         "saga": ([40, 10, 1, 7, 6, 0, 11, 0], [80, 25, 20, 22, 21, 30, 26, 15]),
         "fe4":  ([40, 10, 0, 7, 6, 0, 11, 0], [80, 25, 15, 22, 21, 30, 26, 15]),
         "fe5":  ([24, 7, 1, 6, 6, 0, 9, 0],   [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promotions": {"DragonRider": {"FE5": [2, 1, 3, 2, 2, 1, 1, 0]}},
     },
-    {  # Pegasus Knight
+    {  # Pegasus Knight. Pegasus Rider -> Pegasus Knight (FE5 trainee).
         "ids": ["PegasusKnight"],
         "saga": ([35, 7, 5, 7, 12, 0, 5, 7], [80, 22, 20, 22, 27, 30, 20, 22]),
         "fe4":  ([35, 7, 0, 7, 12, 0, 5, 7], [80, 22, 15, 22, 27, 30, 20, 22]),
         "fe5":  ([17, 4, 5, 5, 8, 0, 3, 0],  [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promotions": {"PegasusRider": {"FE5": [2, 2, 2, 2, 1, 1, 1, 0]}},
     },
     {  # Bard
         "ids": ["Bard"],
