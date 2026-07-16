@@ -298,6 +298,22 @@ VERSIONED = [
         "promotions": {"CavalierB": {
             "FE4": [3, 0, 2, 2, 2, 3, 1, 0], "FE5": [2, 1, 3, 2, 2, 1, 1, 0]}},
     },
+    {  # General  (Armour -> General)
+        "ids": ["General"],
+        "saga": ([40, 10, 1, 6, 5, 0, 12, 3], [80, 25, 20, 21, 20, 30, 27, 18]),
+        "fe4":  ([40, 10, 0, 6, 5, 0, 12, 3], [80, 25, 15, 21, 20, 30, 27, 18]),
+        "fe5":  ([26, 7, 1, 5, 2, 0, 12, 0],   [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promotions": {"Armour": {
+            "FE4": [1, 0, 1, 2, 2, 3, 0, 0], "FE5": [3, 1, 5, 2, 4, 1, 1, 0]}},
+    },
+    {  # Falcon Knight  (Pegasus Knight -> Falcon Knight). FE4 = SAGA.
+        "ids": ["FalconKnight"],
+        "saga": ([40, 7, 7, 12, 15, 0, 6, 12], [80, 22, 22, 25, 30, 30, 21, 27]),
+        "fe4":  ([40, 7, 7, 12, 15, 0, 6, 12], [80, 22, 22, 25, 30, 30, 21, 27]),
+        "fe5":  ([20, 6, 7, 7, 10, 0, 5, 0],    [80, 20, 20, 20, 20, 20, 20, 0]),
+        # FE4 daba solo estos gains; en el remake aplican en todos los modos.
+        "promotions": {"PegasusKnight": {"ALL": [0, 7, 5, 3, 1, 5, 0, 0]}},
+    },
     {  # Dark Bishop  (enemigo)
         "ids": ["DarkBishop"],
         "saga": ([40, 0, 15, 10, 10, 0, 10, 12], [80, 20, 30, 25, 25, 30, 25, 27]),
@@ -398,6 +414,12 @@ EXCLUSIVE = [
         "ids": ["Berserker"],
         "base": [32, 12, 0, 12, 10, 0, 8, 0],
         "cap":  [80, 20, 20, 20, 20, 20, 20, 0],
+    },
+    {  # Dragon Master (Wyvern Lord) — un set para todos los modos.
+        "ids": ["DragonMaster"],
+        "base": [40, 12, 0, 9, 7, 0, 14, 0],
+        "cap":  [80, 27, 15, 24, 22, 30, 29, 15],
+        "promotions": {"DragonKnight": {"ALL": [2, 0, 2, 1, 3, 0, 0, 0]}},
     },
     {  # Master Knight — un set para todos los modos (FE4 + FE5 buff: Leif
        # promociona Prince -> Master Knight). Dos clases de origen: Prince

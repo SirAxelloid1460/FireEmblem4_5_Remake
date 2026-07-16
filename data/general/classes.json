@@ -2505,14 +2505,14 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 28,
-   "STR": 9,
+   "HP": 40,
+   "STR": 12,
    "MAG": 0,
-   "SKL": 7,
+   "SKL": 9,
    "SPD": 7,
    "LCK": 0,
-   "DEF": 11,
-   "RES": 1,
+   "DEF": 14,
+   "RES": 0,
    "CON": 11,
    "MOV": 8
   },
@@ -2542,13 +2542,13 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 26,
+   "STR": 27,
    "MAG": 15,
-   "SKL": 25,
-   "SPD": 23,
+   "SKL": 24,
+   "SPD": 22,
    "LCK": 30,
-   "DEF": 28,
-   "RES": 21,
+   "DEF": 29,
+   "RES": 15,
    "CON": 11,
    "MOV": 8
   },
@@ -2567,7 +2567,19 @@
    ]
   ],
   "map_sprite_nid": "DragonMaster",
-  "combat_anim_nid": "DragonMaster"
+  "combat_anim_nid": "DragonMaster",
+  "promotion_gains": {
+   "DragonKnight": {
+    "STR": 2,
+    "MAG": 0,
+    "SKL": 2,
+    "SPD": 1,
+    "DEF": 3,
+    "RES": 0,
+    "MOV": 0,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "DragonRider",
@@ -3004,14 +3016,14 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 6,
+   "HP": 40,
+   "STR": 7,
    "MAG": 7,
-   "SKL": 8,
-   "SPD": 9,
+   "SKL": 12,
+   "SPD": 15,
    "LCK": 0,
-   "DEF": 5,
-   "RES": 6,
+   "DEF": 6,
+   "RES": 12,
    "CON": 6,
    "MOV": 8
   },
@@ -3042,11 +3054,11 @@
   "caps": {
    "HP": 80,
    "STR": 22,
-   "MAG": 21,
-   "SKL": 24,
-   "SPD": 27,
-   "LCK": 28,
-   "DEF": 22,
+   "MAG": 22,
+   "SKL": 25,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 21,
    "RES": 27,
    "CON": 6,
    "MOV": 8
@@ -3067,7 +3079,89 @@
    ]
   ],
   "map_sprite_nid": "FalconKnight",
-  "combat_anim_nid": "FalconKnight"
+  "combat_anim_nid": "FalconKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 7,
+     "MAG": 7,
+     "SKL": 12,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 12
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 22,
+     "SKL": 25,
+     "SPD": 30,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 27
+    },
+    "promotion_gains": {
+     "PegasusKnight": {
+      "STR": 0,
+      "MAG": 7,
+      "SKL": 5,
+      "SPD": 3,
+      "DEF": 1,
+      "RES": 5,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 6,
+     "MAG": 7,
+     "SKL": 7,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "PegasusKnight": {
+      "STR": 0,
+      "MAG": 7,
+      "SKL": 5,
+      "SPD": 3,
+      "DEF": 1,
+      "RES": 5,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "PegasusKnight": {
+    "STR": 0,
+    "MAG": 7,
+    "SKL": 5,
+    "SPD": 3,
+    "DEF": 1,
+    "RES": 5,
+    "MOV": 0,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Fighter",
@@ -3350,11 +3444,11 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 26,
-   "STR": 8,
+   "HP": 40,
+   "STR": 10,
    "MAG": 1,
-   "SKL": 5,
-   "SPD": 4,
+   "SKL": 6,
+   "SPD": 5,
    "LCK": 0,
    "DEF": 12,
    "RES": 3,
@@ -3388,12 +3482,12 @@
   "caps": {
    "HP": 80,
    "STR": 25,
-   "MAG": 18,
-   "SKL": 24,
-   "SPD": 22,
-   "LCK": 28,
+   "MAG": 20,
+   "SKL": 21,
+   "SPD": 20,
+   "LCK": 30,
    "DEF": 27,
-   "RES": 24,
+   "RES": 18,
    "CON": 13,
    "MOV": 5
   },
@@ -3410,7 +3504,89 @@
    ]
   ],
   "map_sprite_nid": "General",
-  "combat_anim_nid": "General"
+  "combat_anim_nid": "General",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 25,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 27,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "Armour": {
+      "STR": 1,
+      "MAG": 0,
+      "SKL": 1,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 26,
+     "STR": 7,
+     "MAG": 1,
+     "SKL": 5,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Armour": {
+      "STR": 3,
+      "MAG": 1,
+      "SKL": 5,
+      "SPD": 2,
+      "DEF": 4,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Armour": {
+    "STR": 3,
+    "MAG": 1,
+    "SKL": 5,
+    "SPD": 2,
+    "DEF": 4,
+    "RES": 3,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "GreatKnight",
