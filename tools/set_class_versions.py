@@ -29,6 +29,15 @@ def _find(data, cid):
     return c
 
 
+def _block(spec_tuple):
+    """(base, cap|None) -> bloque de versión; sin caps si cap es None (hereda)."""
+    base, cap = spec_tuple
+    blk = {"bases": d8(base)}
+    if cap is not None:
+        blk["caps"] = d8(cap)
+    return blk
+
+
 def _set8(cls, base, cap):
     cls.setdefault("bases", {})
     cls.setdefault("caps", {})
@@ -45,6 +54,12 @@ VERSIONED = [
         "saga": ([30, 5, 0, 5, 5, 0, 5, 0], [80, 20, 20, 20, 20, 30, 20, 20]),
         "fe4":  ([30, 5, 0, 5, 5, 0, 5, 0], [80, 20, 15, 20, 20, 30, 20, 15]),
         "fe5":  ([18, 4, 0, 2, 3, 0, 2, 0], [80, 20, 20, 20, 20, 20, 20, 20]),
+    },
+    {  # Thief  (FE5 sin caps → hereda SAGA)
+        "ids": ["Thief"],
+        "saga": ([26, 3, 0, 3, 7, 7, 1, 0], [80, 18, 15, 18, 22, 30, 16, 15]),
+        "fe4":  ([26, 3, 0, 3, 0, 7, 1, 0], [80, 18, 15, 18, 22, 30, 16, 15]),
+        "fe5":  ([15, 1, 0, 1, 7, 0, 0, 0], None),
     },
     {  # Prince (Leif)
         "ids": ["LordLeaf"],
@@ -77,8 +92,8 @@ def main():
             c = _find(data, cid)
             _set8(c, *spec["saga"])
             c["versions"] = {
-                "FE4": {"bases": d8(spec["fe4"][0]), "caps": d8(spec["fe4"][1])},
-                "FE5": {"bases": d8(spec["fe5"][0]), "caps": d8(spec["fe5"][1])},
+                "FE4": _block(spec["fe4"]),
+                "FE5": _block(spec["fe5"]),
             }
             print("versioned", cid)
     for spec in EXCLUSIVE:
