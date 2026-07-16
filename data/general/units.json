@@ -6438,5 +6438,3886 @@
   "games": [
    "FE4"
   ]
+ },
+ {
+  "nid": "Jacoban",
+  "name": "Jacoban",
+  "desc": "FE4 boss (3).",
+  "klass": "Hero",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 18,
+   "MAG": 5,
+   "SKL": 18,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 13,
+   "RES": 5,
+   "CON": 9,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [
+   "Thunder Sword"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Jacoban",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Papil",
+  "name": "Papil",
+  "desc": "FE4 boss (3).",
+  "klass": "DragonKnight",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 16,
+   "MAG": 2,
+   "SKL": 13,
+   "SPD": 12,
+   "LCK": 0,
+   "DEF": 17,
+   "RES": 2,
+   "CON": 10,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [
+   "Steel Sword",
+   "Life Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Papil",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Pizarl",
+  "name": "Pizarl",
+  "desc": "FE4 boss (3).",
+  "klass": "Warrior",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 17,
+   "MAG": 0,
+   "SKL": 11,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 16,
+   "RES": 5,
+   "CON": 13,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Axe"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Pizarl",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Dobarl",
+  "name": "Dobarl",
+  "desc": "FE4 boss (3).",
+  "klass": "Warrior",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 17,
+   "MAG": 0,
+   "SKL": 11,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 16,
+   "RES": 5,
+   "CON": 13,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Hand Axe"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Dobarl",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Cuvuli",
+  "name": "Cuvuli",
+  "desc": "FE4 boss (4).",
+  "klass": "Bishop",
+  "level": 22,
+  "gender": "M",
+  "bases": {
+   "HP": 57,
+   "STR": 2,
+   "MAG": 16,
+   "SKL": 14,
+   "SPD": 11,
+   "LCK": 0,
+   "DEF": 5,
+   "RES": 14,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Sleep",
+   "Reblow"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Cuvuli",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Deetver",
+  "name": "Deetver",
+  "desc": "FE4 boss (4).",
+  "klass": "FalconKnight",
+  "level": 21,
+  "gender": "M",
+  "bases": {
+   "HP": 61,
+   "STR": 13,
+   "MAG": 9,
+   "SKL": 16,
+   "SPD": 21,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 14,
+   "CON": 6,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Sword",
+   "Prayer Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Deetver",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Maios",
+  "name": "Maios",
+  "desc": "FE4 boss (4).",
+  "klass": "Baron",
+  "level": 22,
+  "gender": "M",
+  "bases": {
+   "HP": 67,
+   "STR": 18,
+   "MAG": 9,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 0,
+   "DEF": 18,
+   "RES": 9,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Tornado"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Maios",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Pamela",
+  "name": "Pamela",
+  "desc": "FE4 boss (4).",
+  "klass": "FalconKnight",
+  "level": 23,
+  "gender": "M",
+  "bases": {
+   "HP": 63,
+   "STR": 13,
+   "MAG": 9,
+   "SKL": 16,
+   "SPD": 21,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 14,
+   "CON": 6,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Lance",
+   "Shield Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Pamela",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Donovan",
+  "name": "Donovan",
+  "desc": "FE4 boss (4).",
+  "klass": "General",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 16,
+   "MAG": 2,
+   "SKL": 12,
+   "SPD": 11,
+   "LCK": 0,
+   "DEF": 18,
+   "RES": 5,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Steel Sword",
+   "Steel Bow"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Donovan",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Lamia",
+  "name": "Lamia",
+  "desc": "FE4 boss (4).",
+  "klass": "Swordmaster",
+  "level": 25,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 19,
+   "MAG": 2,
+   "SKL": 22,
+   "SPD": 22,
+   "LCK": 0,
+   "DEF": 14,
+   "RES": 5,
+   "CON": 7,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Blade",
+   "Life Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Lamia",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Daccar",
+  "name": "Daccar",
+  "desc": "FE4 boss (4).",
+  "klass": "Baron",
+  "level": 26,
+  "gender": "M",
+  "bases": {
+   "HP": 71,
+   "STR": 19,
+   "MAG": 9,
+   "SKL": 14,
+   "SPD": 14,
+   "LCK": 0,
+   "DEF": 19,
+   "RES": 9,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Blizzard",
+   "Tornado"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Daccar",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Slayder",
+  "name": "Slayder",
+  "desc": "FE4 boss (5).",
+  "klass": "GreatKnight",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 18,
+   "MAG": 2,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 0,
+   "DEF": 16,
+   "RES": 5,
+   "CON": 12,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Axe"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Slayder",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Andrey",
+  "name": "Andrey",
+  "desc": "FE4 boss (5).",
+  "klass": "BowKnight",
+  "level": 22,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 16,
+   "MAG": 2,
+   "SKL": 14,
+   "SPD": 14,
+   "LCK": 0,
+   "DEF": 14,
+   "RES": 5,
+   "CON": 8,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Shield Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Ulir": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Andrey",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Langobalt",
+  "name": "Langobalt",
+  "desc": "FE4 boss (5).",
+  "klass": "Baron",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 75,
+   "STR": 21,
+   "MAG": 10,
+   "SKL": 16,
+   "SPD": 16,
+   "LCK": 0,
+   "DEF": 21,
+   "RES": 10,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Neir": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Langobalt",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Magorn",
+  "name": "Magorn",
+  "desc": "FE4 boss (5).",
+  "klass": "DragonMaster",
+  "level": 25,
+  "gender": "M",
+  "bases": {
+   "HP": 70,
+   "STR": 19,
+   "MAG": 2,
+   "SKL": 16,
+   "SPD": 14,
+   "LCK": 0,
+   "DEF": 21,
+   "RES": 2,
+   "CON": 11,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Shield Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Magorn",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Vaha",
+  "name": "Vaha",
+  "desc": "FE4 boss (5).",
+  "klass": "MageFighter",
+  "level": 21,
+  "gender": "M",
+  "bases": {
+   "HP": 47,
+   "STR": 7,
+   "MAG": 16,
+   "SKL": 15,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 11,
+   "RES": 14,
+   "CON": 6,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Meteor",
+   "Prayer Sword"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Vaha",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Reptor",
+  "name": "Reptor",
+  "desc": "FE4 boss (5).",
+  "klass": "Baron",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 75,
+   "STR": 21,
+   "MAG": 30,
+   "SKL": 16,
+   "SPD": 16,
+   "LCK": 0,
+   "DEF": 21,
+   "RES": 10,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Life Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Thrud": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Reptor",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Harold",
+  "name": "Harold",
+  "desc": "FE4 boss (6).",
+  "klass": "General",
+  "level": 10,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 13,
+   "MAG": 1,
+   "SKL": 9,
+   "SPD": 8,
+   "LCK": 0,
+   "DEF": 15,
+   "RES": 4,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Steel Axe",
+   "Steel Bow",
+   "Return Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Harold",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Schmidt",
+  "name": "Schmidt",
+  "desc": "FE4 boss (6).",
+  "klass": "GreatKnight",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 18,
+   "MAG": 2,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 0,
+   "DEF": 16,
+   "RES": 5,
+   "CON": 12,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Schmidt",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Danann",
+  "name": "Danann",
+  "desc": "FE4 boss (6).",
+  "klass": "Baron",
+  "level": 25,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 21,
+   "MAG": 10,
+   "SKL": 14,
+   "SPD": 13,
+   "LCK": 0,
+   "DEF": 20,
+   "RES": 10,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Axe",
+   "Thief Sword"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Neir": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Danann",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Kutuzov",
+  "name": "Kutuzov",
+  "desc": "FE4 boss (7).",
+  "klass": "DarkBishop",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 2,
+   "MAG": 21,
+   "SKL": 16,
+   "SPD": 16,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 18,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Bargain Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Kutuzov",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Liza",
+  "name": "Liza",
+  "desc": "FE4 boss (7).",
+  "klass": "Mage",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 46,
+   "STR": 2,
+   "MAG": 13,
+   "SKL": 15,
+   "SPD": 12,
+   "LCK": 0,
+   "DEF": 3,
+   "RES": 11,
+   "CON": 6,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Elthunder",
+   "Shield Ring",
+   "Magic Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Liza",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Ishtore",
+  "name": "Ishtore",
+  "desc": "FE4 boss (7).",
+  "klass": "MageFighter",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 12,
+   "MAG": 19,
+   "SKL": 18,
+   "SPD": 18,
+   "LCK": 9,
+   "DEF": 14,
+   "RES": 14,
+   "CON": 6,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Thoron"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Thrud": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Ishtore",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Jabarro",
+  "name": "Jabarro",
+  "desc": "FE4 boss (7).",
+  "klass": "Ranger",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 14,
+   "MAG": 2,
+   "SKL": 21,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 14,
+   "RES": 5,
+   "CON": 9,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Sword",
+   "Skill Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Jabarro",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Bramsel",
+  "name": "Bramsel",
+  "desc": "FE4 boss (7).",
+  "klass": "General",
+  "level": 16,
+  "gender": "M",
+  "bases": {
+   "HP": 56,
+   "STR": 14,
+   "MAG": 1,
+   "SKL": 10,
+   "SPD": 9,
+   "LCK": 0,
+   "DEF": 16,
+   "RES": 4,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Knight Killer"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Bramsel",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Vampa",
+  "name": "Vampa",
+  "desc": "FE4 boss (8).",
+  "klass": "Mage",
+  "level": 22,
+  "gender": "M",
+  "bases": {
+   "HP": 52,
+   "STR": 3,
+   "MAG": 19,
+   "SKL": 16,
+   "SPD": 16,
+   "LCK": 7,
+   "DEF": 11,
+   "RES": 15,
+   "CON": 6,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Leg Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Vampa",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Eliu",
+  "name": "Eliu",
+  "desc": "FE4 boss (8).",
+  "klass": "Mage",
+  "level": 22,
+  "gender": "M",
+  "bases": {
+   "HP": 52,
+   "STR": 3,
+   "MAG": 16,
+   "SKL": 19,
+   "SPD": 16,
+   "LCK": 7,
+   "DEF": 11,
+   "RES": 15,
+   "CON": 6,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Elthunder",
+   "Leg Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Eliu",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Fetra",
+  "name": "Fetra",
+  "desc": "FE4 boss (8).",
+  "klass": "Mage",
+  "level": 22,
+  "gender": "M",
+  "bases": {
+   "HP": 52,
+   "STR": 3,
+   "MAG": 16,
+   "SKL": 16,
+   "SPD": 19,
+   "LCK": 7,
+   "DEF": 11,
+   "RES": 15,
+   "CON": 6,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Elwind",
+   "Leg Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Fetra",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Bloom",
+  "name": "Bloom",
+  "desc": "FE4 boss (8).",
+  "klass": "Baron",
+  "level": 25,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 21,
+   "MAG": 16,
+   "SKL": 13,
+   "SPD": 14,
+   "LCK": 3,
+   "DEF": 21,
+   "RES": 16,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Elthunder"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Thrud": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Bloom",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Muhammed",
+  "name": "Muhammed",
+  "desc": "FE4 boss (8).",
+  "klass": "General",
+  "level": 25,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 17,
+   "MAG": 2,
+   "SKL": 13,
+   "SPD": 12,
+   "LCK": 0,
+   "DEF": 19,
+   "RES": 5,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Muhammed",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Ovo",
+  "name": "Ovo",
+  "desc": "FE4 boss (8).",
+  "klass": "MageKnight",
+  "level": 22,
+  "gender": "M",
+  "bases": {
+   "HP": 62,
+   "STR": 11,
+   "MAG": 14,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 0,
+   "DEF": 9,
+   "RES": 11,
+   "CON": 7,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Elthunder",
+   "Shield Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Ovo",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Coruta",
+  "name": "Coruta",
+  "desc": "FE4 boss (8).",
+  "klass": "DragonKnight",
+  "level": 19,
+  "gender": "M",
+  "bases": {
+   "HP": 59,
+   "STR": 15,
+   "MAG": 1,
+   "SKL": 12,
+   "SPD": 11,
+   "LCK": 0,
+   "DEF": 16,
+   "RES": 1,
+   "CON": 10,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [
+   "Javelin"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Coruta",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Maikov",
+  "name": "Maikov",
+  "desc": "FE4 boss (8).",
+  "klass": "General",
+  "level": 24,
+  "gender": "M",
+  "bases": {
+   "HP": 64,
+   "STR": 17,
+   "MAG": 2,
+   "SKL": 13,
+   "SPD": 12,
+   "LCK": 0,
+   "DEF": 19,
+   "RES": 5,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Lance",
+   "Killer Bow"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Maikov",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Kanatz",
+  "name": "Kanatz",
+  "desc": "FE4 boss (9).",
+  "klass": "General",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 60,
+   "STR": 16,
+   "MAG": 2,
+   "SKL": 12,
+   "SPD": 11,
+   "LCK": 0,
+   "DEF": 18,
+   "RES": 5,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Lance",
+   "Javelin"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Kanatz",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Distler",
+  "name": "Distler",
+  "desc": "FE4 boss (9).",
+  "klass": "General",
+  "level": 22,
+  "gender": "M",
+  "bases": {
+   "HP": 62,
+   "STR": 16,
+   "MAG": 2,
+   "SKL": 12,
+   "SPD": 11,
+   "LCK": 0,
+   "DEF": 18,
+   "RES": 5,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Lance",
+   "Javelin",
+   "Return Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Distler",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Musar",
+  "name": "Musar",
+  "desc": "FE4 boss (9).",
+  "klass": "MageKnight",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 11,
+   "MAG": 23,
+   "SKL": 16,
+   "SPD": 20,
+   "LCK": 7,
+   "DEF": 17,
+   "RES": 19,
+   "CON": 7,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Tornado",
+   "Shield Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Sety": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Musar",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Juda",
+  "name": "Juda",
+  "desc": "FE4 boss (9).",
+  "klass": "DarkBishop",
+  "level": 22,
+  "gender": "M",
+  "bases": {
+   "HP": 62,
+   "STR": 2,
+   "MAG": 21,
+   "SKL": 16,
+   "SPD": 16,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 18,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Fenrir"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Juda",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Areone",
+  "name": "Areone",
+  "desc": "FE4 boss (F).",
+  "klass": "DragonMaster",
+  "level": 27,
+  "gender": "M",
+  "bases": {
+   "HP": 70,
+   "STR": 26,
+   "MAG": 6,
+   "SKL": 24,
+   "SPD": 21,
+   "LCK": 12,
+   "DEF": 27,
+   "RES": 9,
+   "CON": 11,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Gungnir"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Dainn": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Areone",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Ridale",
+  "name": "Ridale",
+  "desc": "FE4 boss (10).",
+  "klass": "Paladin",
+  "level": 28,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 21,
+   "MAG": 9,
+   "SKL": 21,
+   "SPD": 22,
+   "LCK": 15,
+   "DEF": 21,
+   "RES": 11,
+   "CON": 10,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Power Ring"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Ridale",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Hilda",
+  "name": "Hilda",
+  "desc": "FE4 boss (F).",
+  "klass": "Queen",
+  "level": 27,
+  "gender": "M",
+  "bases": {
+   "HP": 70,
+   "STR": 12,
+   "MAG": 30,
+   "SKL": 21,
+   "SPD": 24,
+   "LCK": 5,
+   "DEF": 19,
+   "RES": 30,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Bolganone",
+   "Reserve"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charisma"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Dainn": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Hilda",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Morigan",
+  "name": "Morigan",
+  "desc": "FE4 boss (10).",
+  "klass": "DarkBishop",
+  "level": 25,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 2,
+   "MAG": 22,
+   "SKL": 17,
+   "SPD": 17,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 19,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Fenrir"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Morigan",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Zaggam",
+  "name": "Zaggam",
+  "desc": "FE4 boss (10).",
+  "klass": "DarkBishop",
+  "level": 27,
+  "gender": "M",
+  "bases": {
+   "HP": 67,
+   "STR": 2,
+   "MAG": 23,
+   "SKL": 18,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 20,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Reserve"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Zaggam",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Boyce",
+  "name": "Boyce",
+  "desc": "FE4 boss (F).",
+  "klass": "Swordmaster",
+  "level": 27,
+  "gender": "M",
+  "bases": {
+   "HP": 72,
+   "STR": 26,
+   "MAG": 5,
+   "SKL": 28,
+   "SPD": 27,
+   "LCK": 11,
+   "DEF": 19,
+   "RES": 12,
+   "CON": 7,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Sword",
+   "Thunder Sword"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ],
+   [
+    1,
+    "Sol"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Boyce",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Rodan",
+  "name": "Rodan",
+  "desc": "FE4 boss (F).",
+  "klass": "Bishop",
+  "level": 28,
+  "gender": "M",
+  "bases": {
+   "HP": 63,
+   "STR": 2,
+   "MAG": 18,
+   "SKL": 16,
+   "SPD": 13,
+   "LCK": 0,
+   "DEF": 5,
+   "RES": 16,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Sleep",
+   "Elthunder"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Rodan",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Yupheel",
+  "name": "Yupheel",
+  "desc": "FE4 boss (F).",
+  "klass": "DarkBishop",
+  "level": 29,
+  "gender": "M",
+  "bases": {
+   "HP": 69,
+   "STR": 2,
+   "MAG": 23,
+   "SKL": 18,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 20,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Fenrir"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Yupheel",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Fisher",
+  "name": "Fisher",
+  "desc": "FE4 boss (F).",
+  "klass": "GreatKnight",
+  "level": 27,
+  "gender": "M",
+  "bases": {
+   "HP": 67,
+   "STR": 20,
+   "MAG": 2,
+   "SKL": 15,
+   "SPD": 15,
+   "LCK": 0,
+   "DEF": 18,
+   "RES": 5,
+   "CON": 12,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Axe",
+   "Shield Ring"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Fisher",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Burian",
+  "name": "Burian",
+  "desc": "FE4 boss (F).",
+  "klass": "MasterKnight",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 27,
+   "MAG": 14,
+   "SKL": 24,
+   "SPD": 26,
+   "LCK": 12,
+   "DEF": 27,
+   "RES": 17,
+   "CON": 10,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Life Ring"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Neir": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Burian",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Daggon",
+  "name": "Daggon",
+  "desc": "FE4 boss (F).",
+  "klass": "DarkBishop",
+  "level": 29,
+  "gender": "M",
+  "bases": {
+   "HP": 69,
+   "STR": 2,
+   "MAG": 23,
+   "SKL": 18,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 20,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Fenrir"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Daggon",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Scorpio",
+  "name": "Scorpio",
+  "desc": "FE4 boss (F).",
+  "klass": "MasterKnight",
+  "level": 29,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 26,
+   "MAG": 10,
+   "SKL": 22,
+   "SPD": 23,
+   "LCK": 12,
+   "DEF": 24,
+   "RES": 13,
+   "CON": 10,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Killer Bow",
+   "Life Ring"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Scorpio",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Baran",
+  "name": "Baran",
+  "desc": "FE4 boss (F).",
+  "klass": "DarkBishop",
+  "level": 29,
+  "gender": "M",
+  "bases": {
+   "HP": 69,
+   "STR": 2,
+   "MAG": 23,
+   "SKL": 18,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 12,
+   "RES": 20,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Fenrir"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Baran",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Meng",
+  "name": "Meng",
+  "desc": "FE4 boss (F).",
+  "klass": "FalconKnight",
+  "level": 25,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 19,
+   "MAG": 13,
+   "SKL": 23,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 21,
+   "RES": 27,
+   "CON": 6,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Earth Sword",
+   "Leg Ring"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ],
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Sety": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Meng",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Bleg",
+  "name": "Bleg",
+  "desc": "FE4 boss (F).",
+  "klass": "FalconKnight",
+  "level": 25,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 19,
+   "MAG": 13,
+   "SKL": 23,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 21,
+   "RES": 27,
+   "CON": 6,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Earth Sword",
+   "Leg Ring"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ],
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Sety": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Bleg",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Maybell",
+  "name": "Maybell",
+  "desc": "FE4 boss (F).",
+  "klass": "FalconKnight",
+  "level": 25,
+  "gender": "M",
+  "bases": {
+   "HP": 65,
+   "STR": 19,
+   "MAG": 13,
+   "SKL": 23,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 21,
+   "RES": 27,
+   "CON": 6,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Earth Sword",
+   "Leg Ring"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ],
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Sety": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Maybell",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Eins",
+  "name": "Eins",
+  "desc": "FE4 boss (F).",
+  "klass": "Baron",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 25,
+   "MAG": 20,
+   "SKL": 20,
+   "SPD": 20,
+   "LCK": 4,
+   "DEF": 25,
+   "RES": 20,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Lance"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Eins",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Zwei",
+  "name": "Zwei",
+  "desc": "FE4 boss (F).",
+  "klass": "Hero",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 25,
+   "MAG": 16,
+   "SKL": 25,
+   "SPD": 25,
+   "LCK": 4,
+   "DEF": 20,
+   "RES": 16,
+   "CON": 9,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Blade"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ],
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Zwei",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Drei",
+  "name": "Drei",
+  "desc": "FE4 boss (F).",
+  "klass": "Warrior",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 24,
+   "MAG": 13,
+   "SKL": 18,
+   "SPD": 25,
+   "LCK": 4,
+   "DEF": 23,
+   "RES": 16,
+   "CON": 13,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Axe"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Wrath"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Drei",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Vier",
+  "name": "Vier",
+  "desc": "FE4 boss (F).",
+  "klass": "HighPriest",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 13,
+   "MAG": 25,
+   "SKL": 22,
+   "SPD": 21,
+   "LCK": 4,
+   "DEF": 16,
+   "RES": 21,
+   "CON": 6,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Reserve"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Prayer"
+   ],
+   [
+    1,
+    "Life"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Vier",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Funf",
+  "name": "Funf",
+  "desc": "FE4 boss (F).",
+  "klass": "Sniper",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 25,
+   "MAG": 13,
+   "SKL": 25,
+   "SPD": 25,
+   "LCK": 4,
+   "DEF": 20,
+   "RES": 16,
+   "CON": 7,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [
+   "Killer Bow"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Funf",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Sechs",
+  "name": "Sechs",
+  "desc": "FE4 boss (F).",
+  "klass": "MageFighter",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 16,
+   "MAG": 25,
+   "SKL": 22,
+   "SPD": 25,
+   "LCK": 4,
+   "DEF": 18,
+   "RES": 23,
+   "CON": 6,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Thoron"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Wrath"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Thrud": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Sechs",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Sieben",
+  "name": "Sieben",
+  "desc": "FE4 boss (F).",
+  "klass": "Bishop",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 13,
+   "MAG": 23,
+   "SKL": 21,
+   "SPD": 18,
+   "LCK": 4,
+   "DEF": 16,
+   "RES": 21,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Bolganone"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Fjalar": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Sieben",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Acht",
+  "name": "Acht",
+  "desc": "FE4 boss (F).",
+  "klass": "Sage",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 13,
+   "MAG": 28,
+   "SKL": 25,
+   "SPD": 28,
+   "LCK": 4,
+   "DEF": 16,
+   "RES": 25,
+   "CON": 6,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Tornado"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Sety": "Major"
+  },
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Acht",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Neun",
+  "name": "Neun",
+  "desc": "FE4 boss (F).",
+  "klass": "Swordmaster",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 25,
+   "MAG": 13,
+   "SKL": 28,
+   "SPD": 28,
+   "LCK": 4,
+   "DEF": 20,
+   "RES": 16,
+   "CON": 7,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Sword"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ],
+   [
+    1,
+    "Life"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Neun",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Zehn",
+  "name": "Zehn",
+  "desc": "FE4 boss (F).",
+  "klass": "DarkBishop",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 13,
+   "MAG": 28,
+   "SKL": 23,
+   "SPD": 23,
+   "LCK": 4,
+   "DEF": 23,
+   "RES": 25,
+   "CON": 5,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [
+   [
+    1,
+    "Life"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Zehn",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Elf",
+  "name": "Elf",
+  "desc": "FE4 boss (F).",
+  "klass": "LightPriestess",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 13,
+   "MAG": 21,
+   "SKL": 20,
+   "SPD": 20,
+   "LCK": 4,
+   "DEF": 16,
+   "RES": 23,
+   "CON": 6,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Resire"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Elf",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Zwolf",
+  "name": "Zwolf",
+  "desc": "FE4 boss (F).",
+  "klass": "Rogue",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 80,
+   "STR": 20,
+   "MAG": 16,
+   "SKL": 20,
+   "SPD": 25,
+   "LCK": 4,
+   "DEF": 18,
+   "RES": 16,
+   "CON": 7,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [
+   [
+    1,
+    "Steal"
+   ],
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Zwolf",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Bachus",
+  "name": "Bachus",
+  "desc": "FE5 boss (2).",
+  "klass": "Warrior",
+  "level": 4,
+  "gender": "M",
+  "bases": {
+   "HP": 31,
+   "STR": 11,
+   "MAG": 3,
+   "SKL": 6,
+   "SPD": 8,
+   "LCK": 3,
+   "DEF": 9,
+   "RES": 0,
+   "CON": 14,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Iron Axe",
+   "Iron Bow",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Bachus",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Robos",
+  "name": "Robos",
+  "desc": "FE5 boss (3).",
+  "klass": "General",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 26,
+   "STR": 8,
+   "MAG": 1,
+   "SKL": 6,
+   "SPD": 4,
+   "LCK": 3,
+   "DEF": 13,
+   "RES": 0,
+   "CON": 12,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Short Lance"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Robos",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Bandol",
+  "name": "Bandol",
+  "desc": "FE5 boss (5).",
+  "klass": "General",
+  "level": 5,
+  "gender": "M",
+  "bases": {
+   "HP": 31,
+   "STR": 7,
+   "MAG": 3,
+   "SKL": 10,
+   "SPD": 4,
+   "LCK": 2,
+   "DEF": 14,
+   "RES": 0,
+   "CON": 14,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Long Sword",
+   "Hand Axe",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Bandol",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Trump",
+  "name": "Trump",
+  "desc": "FE5 boss (6).",
+  "klass": "General",
+  "level": 5,
+  "gender": "M",
+  "bases": {
+   "HP": 33,
+   "STR": 11,
+   "MAG": 3,
+   "SKL": 6,
+   "SPD": 5,
+   "LCK": 2,
+   "DEF": 12,
+   "RES": 0,
+   "CON": 14,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Great Sword",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Trump",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Aizenau",
+  "name": "Aizenau",
+  "desc": "FE5 boss (7).",
+  "klass": "Paladin",
+  "level": 6,
+  "gender": "M",
+  "bases": {
+   "HP": 38,
+   "STR": 12,
+   "MAG": 4,
+   "SKL": 12,
+   "SPD": 13,
+   "LCK": 3,
+   "DEF": 9,
+   "RES": 0,
+   "CON": 14,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [
+   "Great Lance",
+   "Javelin",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Aizenau",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Rumei",
+  "name": "Rumei",
+  "desc": "FE5 boss (8).",
+  "klass": "DragonKnight",
+  "level": 5,
+  "gender": "M",
+  "bases": {
+   "HP": 36,
+   "STR": 13,
+   "MAG": 2,
+   "SKL": 8,
+   "SPD": 7,
+   "LCK": 6,
+   "DEF": 9,
+   "RES": 0,
+   "CON": 9,
+   "MOV": 10
+  },
+  "growths": {},
+  "starting_items": [
+   "Knight Killer",
+   "Steel Lance",
+   "Iron Sword",
+   "Vulnerary",
+   "Knight Proof"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Rumei",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Gomez",
+  "name": "Gomez",
+  "desc": "FE5 boss (8x).",
+  "klass": "Warrior",
+  "level": 5,
+  "gender": "M",
+  "bases": {
+   "HP": 46,
+   "STR": 18,
+   "MAG": 3,
+   "SKL": 14,
+   "SPD": 14,
+   "LCK": 11,
+   "DEF": 12,
+   "RES": 0,
+   "CON": 19,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Steel Axe",
+   "Steel Bow"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Gomez",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Marlock",
+  "name": "Marlock",
+  "desc": "FE5 boss (9).",
+  "klass": "DragonKnight",
+  "level": 6,
+  "gender": "M",
+  "bases": {
+   "HP": 42,
+   "STR": 16,
+   "MAG": 3,
+   "SKL": 14,
+   "SPD": 14,
+   "LCK": 10,
+   "DEF": 14,
+   "RES": 0,
+   "CON": 16,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [
+   "Killer Lance",
+   "Javelin",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Marlock",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Dobalzark",
+  "name": "Dobalzark",
+  "desc": "FE5 boss (10).",
+  "klass": "DragonKnight",
+  "level": 8,
+  "gender": "M",
+  "bases": {
+   "HP": 31,
+   "STR": 10,
+   "MAG": 2,
+   "SKL": 12,
+   "SPD": 10,
+   "LCK": 5,
+   "DEF": 14,
+   "RES": 0,
+   "CON": 11,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Lance"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Dobalzark",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Largo",
+  "name": "Largo",
+  "desc": "FE5 boss (10).",
+  "klass": "General",
+  "level": 8,
+  "gender": "M",
+  "bases": {
+   "HP": 42,
+   "STR": 15,
+   "MAG": 3,
+   "SKL": 12,
+   "SPD": 9,
+   "LCK": 18,
+   "DEF": 17,
+   "RES": 0,
+   "CON": 17,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Great Lance",
+   "Great Bow",
+   "Knight Killer",
+   "Knight Proof"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Largo",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Kempf",
+  "name": "Kempf",
+  "desc": "FE5 boss (16A).",
+  "klass": "MageKnight",
+  "level": 10,
+  "gender": "M",
+  "bases": {
+   "HP": 40,
+   "STR": 13,
+   "MAG": 9,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 10,
+   "DEF": 10,
+   "RES": 0,
+   "CON": 14,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Poison Sword",
+   "Thoron"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Kempf",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Oltoph",
+  "name": "Oltoph",
+  "desc": "FE5 boss (11x).",
+  "klass": "Bishop",
+  "level": 8,
+  "gender": "M",
+  "bases": {
+   "HP": 30,
+   "STR": 4,
+   "MAG": 7,
+   "SKL": 7,
+   "SPD": 6,
+   "LCK": 5,
+   "DEF": 7,
+   "RES": 0,
+   "CON": 7,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Meteor",
+   "Reblow"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Oltoph",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Colho",
+  "name": "Colho",
+  "desc": "FE5 boss (12).",
+  "klass": "Warrior",
+  "level": 8,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 14,
+   "MAG": 1,
+   "SKL": 11,
+   "SPD": 12,
+   "LCK": 3,
+   "DEF": 11,
+   "RES": 0,
+   "CON": 18,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Poison Axe",
+   "Hammer",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Colho",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "List",
+  "name": "List",
+  "desc": "FE5 boss (13).",
+  "klass": "General",
+  "level": 12,
+  "gender": "M",
+  "bases": {
+   "HP": 46,
+   "STR": 14,
+   "MAG": 2,
+   "SKL": 11,
+   "SPD": 9,
+   "LCK": 6,
+   "DEF": 17,
+   "RES": 0,
+   "CON": 20,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Killer Lance",
+   "Poison Bow"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "List",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Baldack",
+  "name": "Baldack",
+  "desc": "FE5 boss (14).",
+  "klass": "General",
+  "level": 14,
+  "gender": "M",
+  "bases": {
+   "HP": 48,
+   "STR": 15,
+   "MAG": 3,
+   "SKL": 12,
+   "SPD": 10,
+   "LCK": 14,
+   "DEF": 18,
+   "RES": 0,
+   "CON": 20,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Lance",
+   "Killer Bow",
+   "Knight Killer",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Baldack",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Paulus",
+  "name": "Paulus",
+  "desc": "FE5 boss (14).",
+  "klass": "Baron",
+  "level": 14,
+  "gender": "M",
+  "bases": {
+   "HP": 44,
+   "STR": 19,
+   "MAG": 8,
+   "SKL": 14,
+   "SPD": 12,
+   "LCK": 8,
+   "DEF": 20,
+   "RES": 0,
+   "CON": 18,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Axe",
+   "Tornado",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Paulus",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Makroy",
+  "name": "Makroy",
+  "desc": "FE5 boss (14).",
+  "klass": "DragonKnight",
+  "level": 15,
+  "gender": "M",
+  "bases": {
+   "HP": 37,
+   "STR": 10,
+   "MAG": 2,
+   "SKL": 11,
+   "SPD": 11,
+   "LCK": 4,
+   "DEF": 12,
+   "RES": 0,
+   "CON": 16,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Lance",
+   "Javelin",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Makroy",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Codha",
+  "name": "Codha",
+  "desc": "FE5 boss (14x).",
+  "klass": "DarkBishop",
+  "level": 9,
+  "gender": "M",
+  "bases": {
+   "HP": 44,
+   "STR": 2,
+   "MAG": 13,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 11,
+   "DEF": 10,
+   "RES": 0,
+   "CON": 11,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Fenrir"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Codha",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Aihiman",
+  "name": "Aihiman",
+  "desc": "FE5 boss (14x).",
+  "klass": "Mercenary",
+  "level": 10,
+  "gender": "M",
+  "bases": {
+   "HP": 42,
+   "STR": 14,
+   "MAG": 1,
+   "SKL": 15,
+   "SPD": 16,
+   "LCK": 16,
+   "DEF": 11,
+   "RES": 0,
+   "CON": 16,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Poison Sword",
+   "Killer Axe",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Aihiman",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Zyle",
+  "name": "Zyle",
+  "desc": "FE5 boss (15).",
+  "klass": "Warrior",
+  "level": 18,
+  "gender": "M",
+  "bases": {
+   "HP": 54,
+   "STR": 20,
+   "MAG": 3,
+   "SKL": 15,
+   "SPD": 16,
+   "LCK": 9,
+   "DEF": 13,
+   "RES": 0,
+   "CON": 20,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Silver Axe",
+   "Pole Axe",
+   "Poison Bow",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Zyle",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Eyrios",
+  "name": "Eyrios",
+  "desc": "FE5 boss (16A).",
+  "klass": "MageKnight",
+  "level": 8,
+  "gender": "M",
+  "bases": {
+   "HP": 40,
+   "STR": 11,
+   "MAG": 9,
+   "SKL": 13,
+   "SPD": 14,
+   "LCK": 14,
+   "DEF": 10,
+   "RES": 0,
+   "CON": 6,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Sword",
+   "Thoron",
+   "Sun Sword Manual"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Prayer"
+   ],
+   [
+    1,
+    "Sol"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Eyrios",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Blume",
+  "name": "Blume",
+  "desc": "FE5 boss (16A).",
+  "klass": "General",
+  "level": 16,
+  "gender": "M",
+  "bases": {
+   "HP": 46,
+   "STR": 17,
+   "MAG": 5,
+   "SKL": 14,
+   "SPD": 10,
+   "LCK": 12,
+   "DEF": 18,
+   "RES": 0,
+   "CON": 19,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Lance",
+   "Master Bow",
+   "Knight Killer"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Blume",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Nikalaf",
+  "name": "Nikalaf",
+  "desc": "FE5 boss (17A).",
+  "klass": "General",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 54,
+   "STR": 15,
+   "MAG": 4,
+   "SKL": 12,
+   "SPD": 8,
+   "LCK": 13,
+   "DEF": 15,
+   "RES": 0,
+   "CON": 20,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Axe",
+   "Killer Axe",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Nikalaf",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Merlot",
+  "name": "Merlot",
+  "desc": "FE5 boss (17A).",
+  "klass": "MageKnight",
+  "level": 14,
+  "gender": "M",
+  "bases": {
+   "HP": 42,
+   "STR": 13,
+   "MAG": 10,
+   "SKL": 15,
+   "SPD": 13,
+   "LCK": 11,
+   "DEF": 10,
+   "RES": 0,
+   "CON": 14,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Sword",
+   "Thoron",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Merlot",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Rleve",
+  "name": "Rleve",
+  "desc": "FE5 boss (16B).",
+  "klass": "DarkBishop",
+  "level": 5,
+  "gender": "M",
+  "bases": {
+   "HP": 51,
+   "STR": 4,
+   "MAG": 12,
+   "SKL": 13,
+   "SPD": 10,
+   "LCK": 5,
+   "DEF": 10,
+   "RES": 0,
+   "CON": 8,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Berserk"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Rleve",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Pernell",
+  "name": "Pernell",
+  "desc": "FE5 boss (17B).",
+  "klass": "General",
+  "level": 14,
+  "gender": "M",
+  "bases": {
+   "HP": 46,
+   "STR": 16,
+   "MAG": 3,
+   "SKL": 13,
+   "SPD": 10,
+   "LCK": 8,
+   "DEF": 18,
+   "RES": 0,
+   "CON": 19,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Great Sword",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Pernell",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Gustaf",
+  "name": "Gustaf",
+  "desc": "FE5 boss (18).",
+  "klass": "Baron",
+  "level": 17,
+  "gender": "M",
+  "bases": {
+   "HP": 54,
+   "STR": 20,
+   "MAG": 13,
+   "SKL": 16,
+   "SPD": 12,
+   "LCK": 13,
+   "DEF": 20,
+   "RES": 0,
+   "CON": 20,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Lance",
+   "Thoron",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Gustaf",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Wolf",
+  "name": "Wolf",
+  "desc": "FE5 boss (19).",
+  "klass": "Baron",
+  "level": 15,
+  "gender": "M",
+  "bases": {
+   "HP": 56,
+   "STR": 20,
+   "MAG": 13,
+   "SKL": 18,
+   "SPD": 8,
+   "LCK": 10,
+   "DEF": 20,
+   "RES": 0,
+   "CON": 20,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Sword",
+   "Thoron",
+   "Meteor"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Wolf",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Baraat",
+  "name": "Baraat",
+  "desc": "FE5 boss (20).",
+  "klass": "Baron",
+  "level": 15,
+  "gender": "M",
+  "bases": {
+   "HP": 56,
+   "STR": 20,
+   "MAG": 13,
+   "SKL": 18,
+   "SPD": 8,
+   "LCK": 10,
+   "DEF": 20,
+   "RES": 0,
+   "CON": 20,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Axe",
+   "Reserve",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Baraat",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Seimetol",
+  "name": "Seimetol",
+  "desc": "FE5 boss (21).",
+  "klass": "DragonKnight",
+  "level": 13,
+  "gender": "M",
+  "bases": {
+   "HP": 48,
+   "STR": 15,
+   "MAG": 5,
+   "SKL": 12,
+   "SPD": 13,
+   "LCK": 14,
+   "DEF": 15,
+   "RES": 0,
+   "CON": 17,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [
+   "Killer Lance",
+   "Javelin",
+   "Vulnerary"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Prayer"
+   ],
+   [
+    1,
+    "Awareness"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Seimetol",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Fricke",
+  "name": "Fricke",
+  "desc": "FE5 boss (21).",
+  "klass": "Bishop",
+  "level": 19,
+  "gender": "M",
+  "bases": {
+   "HP": 44,
+   "STR": 4,
+   "MAG": 17,
+   "SKL": 12,
+   "SPD": 11,
+   "LCK": 10,
+   "DEF": 6,
+   "RES": 0,
+   "CON": 13,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [
+   "Blizzard",
+   "Tornado",
+   "Reserve"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Fricke",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Zaom",
+  "name": "Zaom",
+  "desc": "FE5 boss (21x).",
+  "klass": "Baron",
+  "level": 13,
+  "gender": "M",
+  "bases": {
+   "HP": 52,
+   "STR": 20,
+   "MAG": 9,
+   "SKL": 16,
+   "SPD": 11,
+   "LCK": 12,
+   "DEF": 20,
+   "RES": 0,
+   "CON": 20,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Sword",
+   "Blizzard",
+   "Tornado",
+   "Warp"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Zaom",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Reinhardt",
+  "name": "Reinhardt",
+  "desc": "FE5 boss (22).",
+  "klass": "MageKnight",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 48,
+   "STR": 13,
+   "MAG": 20,
+   "SKL": 15,
+   "SPD": 14,
+   "LCK": 18,
+   "DEF": 12,
+   "RES": 0,
+   "CON": 15,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Sword",
+   "Vulnerary"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Vantage"
+   ],
+   [
+    1,
+    "Charge"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Reinhardt",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Cohen",
+  "name": "Cohen",
+  "desc": "FE5 boss (22).",
+  "klass": "Baron",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 46,
+   "STR": 12,
+   "MAG": 12,
+   "SKL": 16,
+   "SPD": 8,
+   "LCK": 7,
+   "DEF": 15,
+   "RES": 0,
+   "CON": 14,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Blizzard",
+   "Berserk",
+   "Rest",
+   "Master Lance"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Cohen",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Empropus",
+  "name": "Empropus",
+  "desc": "FE5 boss (23).",
+  "klass": "DarkBishop",
+  "level": 13,
+  "gender": "M",
+  "bases": {
+   "HP": 56,
+   "STR": 4,
+   "MAG": 17,
+   "SKL": 15,
+   "SPD": 15,
+   "LCK": 13,
+   "DEF": 12,
+   "RES": 0,
+   "CON": 12,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Silence"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Empropus",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Farden",
+  "name": "Farden",
+  "desc": "FE5 boss (23).",
+  "klass": "Paladin",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 48,
+   "STR": 15,
+   "MAG": 5,
+   "SKL": 14,
+   "SPD": 16,
+   "LCK": 16,
+   "DEF": 13,
+   "RES": 0,
+   "CON": 17,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [
+   "Flame Sword",
+   "Master Lance",
+   "Vulnerary"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Farden",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Altenna",
+  "name": "Altenna",
+  "desc": "FE5 boss (23).",
+  "klass": "DragonKnight",
+  "level": 3,
+  "gender": "M",
+  "bases": {
+   "HP": 23,
+   "STR": 7,
+   "MAG": 3,
+   "SKL": 7,
+   "SPD": 9,
+   "LCK": 0,
+   "DEF": 11,
+   "RES": 0,
+   "CON": 8,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [
+   "Dragon Lance"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Altenna",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Ein",
+  "name": "Ein",
+  "desc": "FE5 boss (F).",
+  "klass": "Baron",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 56,
+   "STR": 16,
+   "MAG": 8,
+   "SKL": 12,
+   "SPD": 9,
+   "LCK": 6,
+   "DEF": 16,
+   "RES": 0,
+   "CON": 20,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [
+   [
+    1,
+    "Wrath"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Ein",
+  "games": [
+   "FE5"
+  ]
  }
 ]
