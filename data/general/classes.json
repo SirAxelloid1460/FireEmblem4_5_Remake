@@ -2642,12 +2642,12 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 7,
-   "MAG": 2,
-   "SKL": 5,
-   "SPD": 5,
-   "LCK": 0,
+   "HP": 30,
+   "STR": 8,
+   "MAG": 3,
+   "SKL": 7,
+   "SPD": 6,
+   "LCK": 7,
    "DEF": 3,
    "RES": 6,
    "CON": 7,
@@ -2678,13 +2678,13 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 22,
-   "MAG": 19,
-   "SKL": 21,
+   "HP": 80,
+   "STR": 23,
+   "MAG": 20,
+   "SKL": 22,
    "SPD": 21,
-   "LCK": 25,
-   "DEF": 21,
+   "LCK": 30,
+   "DEF": 22,
    "RES": 18,
    "CON": 7,
    "MOV": 5
@@ -2694,7 +2694,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "LordLeaf",
-  "combat_anim_nid": "Prince"
+  "combat_anim_nid": "Prince",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 8,
+     "MAG": 3,
+     "SKL": 7,
+     "SPD": 6,
+     "LCK": 7,
+     "DEF": 3,
+     "RES": 6
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 23,
+     "MAG": 18,
+     "SKL": 22,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 18
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 18,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "LordSeliph",
