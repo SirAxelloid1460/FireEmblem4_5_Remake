@@ -516,14 +516,14 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 19,
+   "HP": 30,
    "STR": 0,
-   "MAG": 4,
-   "SKL": 3,
-   "SPD": 7,
+   "MAG": 7,
+   "SKL": 7,
+   "SPD": 10,
    "LCK": 0,
-   "DEF": 1,
-   "RES": 2,
+   "DEF": 3,
+   "RES": 7,
    "CON": 6,
    "MOV": 6
   },
@@ -552,14 +552,14 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
-   "MAG": 21,
-   "SKL": 18,
-   "SPD": 24,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 23,
+   "HP": 80,
+   "STR": 20,
+   "MAG": 22,
+   "SKL": 22,
+   "SPD": 25,
+   "LCK": 30,
+   "DEF": 20,
+   "RES": 22,
    "CON": 6,
    "MOV": 6
   },
@@ -569,7 +569,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Bard",
-  "combat_anim_nid": "Bard"
+  "combat_anim_nid": "Bard",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 0,
+     "MAG": 7,
+     "SKL": 7,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 22,
+     "SKL": 22,
+     "SPD": 25,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 22
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 16,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Baron",
@@ -1848,13 +1894,13 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 7,
+   "HP": 40,
+   "STR": 10,
    "MAG": 1,
-   "SKL": 5,
-   "SPD": 5,
+   "SKL": 7,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 9,
+   "DEF": 11,
    "RES": 0,
    "CON": 10,
    "MOV": 7
@@ -1884,14 +1930,14 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 18,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 19,
+   "HP": 80,
+   "STR": 25,
+   "MAG": 20,
+   "SKL": 22,
+   "SPD": 21,
+   "LCK": 30,
+   "DEF": 26,
+   "RES": 15,
    "CON": 10,
    "MOV": 7
   },
@@ -1910,7 +1956,53 @@
    ]
   ],
   "map_sprite_nid": "DragonKnight",
-  "combat_anim_nid": "DragonKnight"
+  "combat_anim_nid": "DragonKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 0,
+     "SKL": 7,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 11,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 25,
+     "MAG": 15,
+     "SKL": 22,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 26,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 7,
+     "MAG": 1,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "DragonMaster",
@@ -2888,13 +2980,13 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 22,
+   "HP": 30,
    "STR": 0,
-   "MAG": 5,
-   "SKL": 5,
-   "SPD": 6,
+   "MAG": 8,
+   "SKL": 7,
+   "SPD": 7,
    "LCK": 0,
-   "DEF": 2,
+   "DEF": 3,
    "RES": 10,
    "CON": 6,
    "MOV": 6
@@ -2924,13 +3016,13 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
-   "MAG": 22,
-   "SKL": 21,
-   "SPD": 21,
-   "LCK": 25,
-   "DEF": 19,
+   "HP": 80,
+   "STR": 20,
+   "MAG": 23,
+   "SKL": 22,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 20,
    "RES": 25,
    "CON": 6,
    "MOV": 6
@@ -2942,7 +3034,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "LightPriestFemale",
-  "combat_anim_nid": "LightPriestess"
+  "combat_anim_nid": "LightPriestess",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 0,
+     "MAG": 8,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 10
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 23,
+     "SKL": 22,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 25
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 14,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "LoptoMage",
@@ -3663,14 +3801,14 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 19,
-   "STR": 5,
-   "MAG": 3,
-   "SKL": 5,
-   "SPD": 7,
+   "HP": 35,
+   "STR": 7,
+   "MAG": 5,
+   "SKL": 7,
+   "SPD": 12,
    "LCK": 0,
-   "DEF": 3,
-   "RES": 3,
+   "DEF": 5,
+   "RES": 7,
    "CON": 5,
    "MOV": 7
   },
@@ -3699,14 +3837,14 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 20,
-   "MAG": 18,
-   "SKL": 20,
-   "SPD": 21,
-   "LCK": 28,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 20,
+   "SKL": 22,
+   "SPD": 27,
+   "LCK": 30,
    "DEF": 20,
-   "RES": 21,
+   "RES": 22,
    "CON": 5,
    "MOV": 7
   },
@@ -3725,7 +3863,53 @@
    ]
   ],
   "map_sprite_nid": "PegasusKnight",
-  "combat_anim_nid": "PegasusKnight"
+  "combat_anim_nid": "PegasusKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 7,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 22,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 22
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 17,
+     "STR": 4,
+     "MAG": 5,
+     "SKL": 5,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "PegasusRider",
@@ -4091,14 +4275,14 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 19,
+   "HP": 26,
    "STR": 0,
-   "MAG": 3,
-   "SKL": 3,
-   "SPD": 3,
+   "MAG": 7,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
    "DEF": 1,
-   "RES": 6,
+   "RES": 7,
    "CON": 6,
    "MOV": 6
   },
@@ -4127,14 +4311,14 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
-   "MAG": 20,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 20,
-   "RES": 21,
+   "HP": 80,
+   "STR": 20,
+   "MAG": 22,
+   "SKL": 21,
+   "SPD": 21,
+   "LCK": 30,
+   "DEF": 22,
+   "RES": 22,
    "CON": 6,
    "MOV": 6
   },
@@ -4143,7 +4327,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Priest",
-  "combat_anim_nid": "Priest"
+  "combat_anim_nid": "Priest",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 26,
+     "STR": 0,
+     "MAG": 7,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 22,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 22
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 16,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Priestess",
@@ -4160,14 +4390,14 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 19,
+   "HP": 26,
    "STR": 0,
-   "MAG": 3,
-   "SKL": 3,
-   "SPD": 3,
+   "MAG": 7,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
    "DEF": 1,
-   "RES": 6,
+   "RES": 7,
    "CON": 6,
    "MOV": 6
   },
@@ -4196,14 +4426,14 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
-   "MAG": 20,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 20,
-   "RES": 21,
+   "HP": 80,
+   "STR": 20,
+   "MAG": 22,
+   "SKL": 21,
+   "SPD": 21,
+   "LCK": 30,
+   "DEF": 22,
+   "RES": 22,
    "CON": 6,
    "MOV": 6
   },
@@ -4212,7 +4442,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "PriestFemale",
-  "combat_anim_nid": "Priestess"
+  "combat_anim_nid": "Priestess",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 26,
+     "STR": 0,
+     "MAG": 7,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 22,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 22
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 16,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Princess",
@@ -4561,13 +4837,13 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 22,
-   "STR": 4,
+   "HP": 30,
+   "STR": 6,
    "MAG": 0,
-   "SKL": 1,
-   "SPD": 2,
+   "SKL": 5,
+   "SPD": 5,
    "LCK": 0,
-   "DEF": 2,
+   "DEF": 7,
    "RES": 0,
    "CON": 6,
    "MOV": 5
@@ -4597,9 +4873,9 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
+   "HP": 80,
    "STR": 20,
-   "MAG": 0,
+   "MAG": 20,
    "SKL": 20,
    "SPD": 20,
    "LCK": 20,
@@ -4613,7 +4889,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Soldier",
-  "combat_anim_nid": "Soldier"
+  "combat_anim_nid": "Soldier",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 6,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 7,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 20
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 20
+    }
+   }
+  }
  },
  {
   "id": "Swordfighter",
