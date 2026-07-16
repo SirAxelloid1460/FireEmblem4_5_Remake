@@ -808,13 +808,13 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 36,
-   "STR": 11,
-   "MAG": 5,
+   "HP": 45,
+   "STR": 12,
+   "MAG": 7,
    "SKL": 7,
-   "SPD": 5,
+   "SPD": 7,
    "LCK": 0,
-   "DEF": 14,
+   "DEF": 15,
    "RES": 7,
    "CON": 13,
    "MOV": 5
@@ -845,12 +845,12 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 24,
-   "MAG": 21,
-   "SKL": 21,
-   "SPD": 21,
-   "LCK": 25,
-   "DEF": 24,
+   "STR": 27,
+   "MAG": 22,
+   "SKL": 22,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 27,
    "RES": 22,
    "CON": 13,
    "MOV": 5
@@ -870,7 +870,53 @@
    ]
   ],
   "map_sprite_nid": "Baron",
-  "combat_anim_nid": "Baron"
+  "combat_anim_nid": "Baron",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 45,
+     "STR": 12,
+     "MAG": 7,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 27,
+     "MAG": 22,
+     "SKL": 22,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 27,
+     "RES": 22
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 26,
+     "STR": 10,
+     "MAG": 3,
+     "SKL": 6,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 15,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Berserker",

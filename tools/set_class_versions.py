@@ -345,6 +345,12 @@ VERSIONED = [
         # FE4 daba solo estos gains; en el remake aplican en todos los modos.
         "promotions": {"PegasusKnight": {"ALL": [0, 7, 5, 3, 1, 5, 0, 0]}},
     },
+    {  # Baron  (enemigo, tier 3)
+        "ids": ["Baron"],
+        "saga": ([45, 12, 7, 7, 7, 0, 15, 7], [80, 27, 22, 22, 22, 30, 27, 22]),
+        "fe4":  ([45, 12, 7, 7, 7, 0, 12, 7], [80, 27, 22, 22, 22, 30, 27, 22]),
+        "fe5":  ([26, 10, 3, 6, 3, 0, 15, 0], [80, 20, 20, 20, 20, 20, 20, 0]),
+    },
     {  # Dark Bishop  (enemigo)
         "ids": ["DarkBishop"],
         "saga": ([40, 0, 15, 10, 10, 0, 10, 12], [80, 20, 30, 25, 25, 30, 25, 27]),
