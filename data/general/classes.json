@@ -3056,14 +3056,14 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 18,
+   "HP": 26,
    "STR": 0,
-   "MAG": 2,
-   "SKL": 3,
-   "SPD": 3,
+   "MAG": 8,
+   "SKL": 7,
+   "SPD": 7,
    "LCK": 0,
    "DEF": 3,
-   "RES": 3,
+   "RES": 4,
    "CON": 6,
    "MOV": 5
   },
@@ -3092,13 +3092,13 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
-   "MAG": 20,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 19,
+   "HP": 80,
+   "STR": 20,
+   "MAG": 23,
+   "SKL": 22,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 20,
    "RES": 20,
    "CON": 6,
    "MOV": 5
@@ -3108,7 +3108,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Mage",
-  "combat_anim_nid": "Mage"
+  "combat_anim_nid": "Mage",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 26,
+     "STR": 0,
+     "MAG": 8,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 4
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 23,
+     "SKL": 22,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 16,
+     "RES": 20
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 17,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 2,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "MageFighter",
