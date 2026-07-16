@@ -20,20 +20,20 @@ func start_promotion(unit: Unit):
 	"""Inicia el proceso de promoción"""
 	current_unit = unit
 	
-	# Obtener datos de promoción
-	promotion_data = get_promotion_data(unit.unit_class)
-	
+	# Obtener datos de promoción (con el personaje, para overrides "Clase@Personaje").
+	promotion_data = get_promotion_data(unit.unit_class, unit.unit_name)
+
 	if promotion_data.is_empty():
 		return
 	
 	show_promotion_preview()
 	show()
 
-func get_promotion_data(base_class: String) -> Dictionary:
+func get_promotion_data(base_class: String, character: String = "") -> Dictionary:
 	"""Datos de promoción — fuente única: PromotionSystem (sin tabla duplicada).
 	Remapea el formato {promoted_class, bonuses:{...}} al formato plano que
 	usa este panel ({new_class, hp, str, ...})."""
-	var data = PromotionSystem.get_promotion_data(base_class)
+	var data = PromotionSystem.get_promotion_data(base_class, "", character)
 	if data.is_empty():
 		return {}
 	var flat := {"new_class": data["promoted_class"]}
@@ -82,23 +82,12 @@ func add_stat_label(container: VBoxContainer, text: String, color: Color = Color
 	container.add_child(label)
 
 func _on_promote_pressed():
-	"""Promociona la unidad"""
-	var old_class = current_unit.unit_class
-	
-	# Aplicar bonuses
-	current_unit.unit_class = promotion_data["new_class"]
-	current_unit.max_hp += promotion_data["hp"]
-	current_unit.current_hp = current_unit.max_hp
-	current_unit.strength += promotion_data["str"]
-	current_unit.magic += promotion_data["mag"]
-	current_unit.skill += promotion_data["skl"]
-	current_unit.speed += promotion_data["spd"]
-	current_unit.luck += promotion_data["lck"]
-	current_unit.defense += promotion_data["def"]
-	current_unit.resistance += promotion_data["res"]
-	current_unit.level = 1  # Resetear a nivel 1
-	
-	promotion_completed.emit(old_class, promotion_data["new_class"])
+	"""Promociona la unidad — aplica ganancias por modo, cambio de clase, caps y
+	nivel a través de PromotionSystem (fuente única)."""
+	var result := PromotionSystem.promote_unit(current_unit, promotion_data["new_class"])
+	if result.is_empty():
+		return
+	promotion_completed.emit(result["old_class"], result["new_class"])
 	hide()
 
 func _on_cancel_pressed():

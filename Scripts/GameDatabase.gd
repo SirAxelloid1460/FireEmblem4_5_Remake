@@ -10,6 +10,7 @@ extends Node
 const DATA_DIR := "res://data/general/"
 
 var classes: Dictionary = {}     # nid (id) -> UnitClassData
+var classes_raw: Dictionary = {} # nid (id) -> dict CRUDO (con versions/promotion_gains sin resolver)
 var weapons: Dictionary = {}     # nid      -> WeaponData
 var skills: Dictionary = {}      # nid      -> SkillData
 var items: Dictionary = {}       # nid      -> ConsumableData
@@ -29,6 +30,7 @@ func reload() -> void:
 	# items nid == name. Algunos skills comparten name (p.ej. Canto/Canto+),
 	# por eso la clave debe ser nid, no name.
 	classes = _load("classes.json", UnitClassData, "id")
+	classes_raw = _load_raw("classes.json", "id")
 	weapons = _load("weapons.json", WeaponData, "nid")
 	skills  = _load("skills.json",  SkillData, "nid")
 	items   = _load("items.json",   ConsumableData, "nid")
@@ -210,6 +212,65 @@ func _load(file_name: String, type, key_field: String) -> Dictionary:
 		var res = type.from_dict(entry)
 		out[entry.get(key_field, "")] = res
 	return out
+
+## Igual que _load pero conserva los dicts CRUDOS (sin tipar). Necesario para
+## clases: `versions`/`promotion_gains` no están en UnitClassData y hay que
+## resolverlos por modo de juego en runtime.
+func _load_raw(file_name: String, key_field: String) -> Dictionary:
+	var out := {}
+	var path := DATA_DIR + file_name
+	if not FileAccess.file_exists(path):
+		return out
+	var parsed = JSON.parse_string(FileAccess.get_file_as_string(path))
+	if typeof(parsed) != TYPE_ARRAY:
+		return out
+	for entry in parsed:
+		if typeof(entry) == TYPE_DICTIONARY:
+			out[entry.get(key_field, "")] = entry
+	return out
+
+# ── Resolución de clase por MODO de juego (FE4/FE5/SAGA) ──────────────────────
+# Reutiliza el deep-merge de LevelLoader._resolve_class_version sobre el dict
+# crudo: bases/caps/promotion/promotion_gains del bloque del modo activo pisan
+# el nivel superior (=SAGA por defecto).
+
+## Dict crudo de la clase resuelto para el modo activo (o {} si no existe).
+func resolved_class(nid: String) -> Dictionary:
+	var raw = classes_raw.get(nid, null)
+	if raw == null:
+		return {}
+	var r = LevelLoader._resolve_class_version(raw)
+	return r if r is Dictionary else {}
+
+## Topes de stat de la clase, resueltos por modo. {STAT(MAYÚS): int}.
+func class_caps(nid: String) -> Dictionary:
+	return resolved_class(nid).get("caps", {})
+
+## Ganancias de promoción al pasar source_nid -> dest_nid, resueltas por modo.
+## Toma el bloque `promotion_gains` del modo activo directamente (FE4/FE5 usan su
+## propio set completo; SAGA usa el nivel superior = max(FE4,FE5)), evitando
+## fugas de claves SAGA en modos con menos rutas.  Prioriza el override
+## "source@character" sobre "source".  Claves MAYÚSCULAS orden promo (sin HP).
+func promotion_gains(dest_nid: String, source_nid: String, character: String = "") -> Dictionary:
+	var raw = classes_raw.get(dest_nid, null)
+	if raw == null:
+		return {}
+	var mode := LevelLoader._current_game_mode()
+	var pg: Dictionary = {}
+	var versions = raw.get("versions", null)
+	if versions is Dictionary and versions.has(mode) and (versions[mode] is Dictionary) \
+			and versions[mode].has("promotion_gains"):
+		pg = versions[mode]["promotion_gains"]
+	else:
+		pg = raw.get("promotion_gains", {})
+	if not (pg is Dictionary):
+		return {}
+	var override_key := "%s@%s" % [source_nid, character]
+	if character != "" and pg.has(override_key):
+		return pg[override_key]
+	if pg.has(source_nid):
+		return pg[source_nid]
+	return {}
 
 # ── Accesores cómodos ─────────────────────────────────────────────────────────
 func get_class_data(nid: String) -> UnitClassData: return classes.get(nid, null)

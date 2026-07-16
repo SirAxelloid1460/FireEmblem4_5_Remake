@@ -158,12 +158,40 @@ func gain_exp(amount: int) -> Array:
 		experience -= 100
 		var gains: Dictionary = LevelUpScreen.calculate_stat_gains(self, rates)
 		LevelUpScreen.apply_stat_gains(self, gains)
+		clamp_to_caps()
 		level += 1
 		results.append(gains)
 		leveled_up.emit(level, gains)
 	if level >= MAX_LEVEL:
 		experience = 0
 	return results
+
+## Topes de stat de la clase actual, resueltos por modo de juego (FE4/FE5/SAGA).
+## {STAT(MAYÚS): int}, o {} si no hay GameDB / clase.
+func get_stat_caps() -> Dictionary:
+	var db = _gamedb()
+	if db == null or not db.has_method("class_caps"):
+		return {}
+	return db.class_caps(unit_class)
+
+## Recorta los stats de combate a los topes de la clase (por modo).  Se llama tras
+## cada subida de nivel y tras promocionar.  CON/MOV NO se recortan aquí (no son
+## stats de combate con crecimiento).  En FE5 RES existe como cap pero no se usa
+## defensivamente (MAG hace de defensa mágica); recortarlo es inocuo.
+func clamp_to_caps() -> void:
+	var caps := get_stat_caps()
+	if caps.is_empty():
+		return
+	if caps.has("HP"):
+		max_hp = min(max_hp, int(caps["HP"]))
+		current_hp = min(current_hp, max_hp)
+	if caps.has("STR"): strength   = min(strength,   int(caps["STR"]))
+	if caps.has("MAG"): magic      = min(magic,      int(caps["MAG"]))
+	if caps.has("SKL"): skill      = min(skill,      int(caps["SKL"]))
+	if caps.has("SPD"): speed      = min(speed,      int(caps["SPD"]))
+	if caps.has("LCK"): luck       = min(luck,       int(caps["LCK"]))
+	if caps.has("DEF"): defense    = min(defense,    int(caps["DEF"]))
+	if caps.has("RES"): resistance = min(resistance, int(caps["RES"]))
 
 # ══════════════════════════════════════════════════════════════════════════════
 # SKILLS

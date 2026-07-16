@@ -538,17 +538,10 @@ func hide_all_facility_panels():
 	promotion_panel.hide()
 
 func can_promote(unit: Unit) -> bool:
-	"""Verifica si una unidad puede ser promocionada"""
-	# Requisitos de FE4: nivel 20+, clase base
-	if unit.level < 20:
-		return false
-	
-	# Verificar si ya está promocionado
-	var promoted_classes = ["Paladin", "Great Knight", "Swordmaster", "Hero"]
-	if unit.unit_class in promoted_classes:
-		return false
-	
-	return true
+	"""Verifica si una unidad puede ser promocionada — delega en PromotionSystem,
+	que resuelve las rutas (`turns_into`) por modo de juego.  Una clase ya
+	promocionada (sin `turns_into`) devuelve false automáticamente."""
+	return PromotionSystem.can_promote(unit)
 
 func is_army_ready() -> bool:
 	"""Verifica si el ejército está listo para la batalla"""
