@@ -344,7 +344,9 @@ static func _calc_dmg(atk: Unit, def: Unit, is_crit: bool, is_eff: bool,
 	if flags.get("is_capture_attempt", false): stat_m = stat_m / 2
 	var wep_m: int = int(wpn.might) if wpn else 0
 	var mt_total: int = wep_m + stat_m
-	var def_raw: int = _stat(def, "RES") if is_magic else _stat(def, "DEF")
+	# Defensa mágica: en FE5 no existe RES → MAG hace de resistencia. En
+	# FE4/SAGA se usa RES normal.
+	var def_raw: int = _stat(def, _magic_def_stat()) if is_magic else _stat(def, "DEF")
 
 	var dmg_mult := 1.0; var def_mult := 1.0; var flat := 0
 	if   _has_skill(atk, "DarknessSword"): dmg_mult = 2.0; def_mult = 0.5
@@ -383,6 +385,18 @@ static func _is_reaver(w) -> bool:
 	if w == null: return false
 	if "reaver" in w and bool(w.reaver): return true
 	return w.has_method("has_component") and w.has_component("reaver")
+
+## Stat que actúa como defensa mágica según el modo de juego.
+##   FE5 (Thracia): RES no existe → MAG hace de resistencia mágica.
+##   FE4 / SAGA:    RES normal (como el resto de la saga).
+static func _magic_def_stat() -> String:
+	var loop := Engine.get_main_loop()
+	if loop is SceneTree and loop.root != null:
+		var gm = loop.root.get_node_or_null("GameMode")
+		if gm != null and "current_mode" in gm and int(gm.current_mode) == 1:  # Mode.FE5_ONLY
+			return "MAG"
+	return "RES"
+
 
 ## ¿El ataque hace daño mágico? Sí si el arma es mágica, o si tiene el
 ## componente magic_at_range y se ataca a distancia >= 2 (espadas mágicas).
