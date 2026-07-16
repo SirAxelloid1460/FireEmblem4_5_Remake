@@ -3499,6 +3499,18 @@
      "RES": 0
     }
    }
+  },
+  "promotion_gains": {
+   "LordSeliph": {
+    "STR": 5,
+    "MAG": 0,
+    "SKL": 2,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 3,
+    "LCK": 0
+   }
   }
  },
  {
@@ -4060,7 +4072,29 @@
    ]
   ],
   "map_sprite_nid": "MasterKnight",
-  "combat_anim_nid": "MasterKnight"
+  "combat_anim_nid": "MasterKnight",
+  "promotion_gains": {
+   "LordLeaf": {
+    "STR": 4,
+    "MAG": 4,
+    "SKL": 5,
+    "SPD": 6,
+    "DEF": 5,
+    "RES": 4,
+    "MOV": 3,
+    "LCK": 0
+   },
+   "Princess": {
+    "STR": 7,
+    "MAG": 0,
+    "SKL": 7,
+    "SPD": 4,
+    "DEF": 7,
+    "RES": 0,
+    "MOV": 3,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "PegasusKnight",
@@ -5433,7 +5467,31 @@
      "LCK": 20,
      "DEF": 20,
      "RES": 0
+    },
+    "promotion_gains": {
+     "Swordfighter": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 2,
+      "RES": 0,
+      "MOV": 1,
+      "LCK": 0
+     }
     }
+   }
+  },
+  "promotion_gains": {
+   "Swordfighter": {
+    "STR": 5,
+    "MAG": 0,
+    "SKL": 5,
+    "SPD": 5,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 0,
+    "LCK": 0
    }
   }
  },

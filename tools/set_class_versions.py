@@ -22,6 +22,20 @@ def d8(vals):
     return {S8[i]: int(vals[i]) for i in range(8)}
 
 
+# Orden de los bonos de promoción (distinto del de bases/caps).
+PS8 = ["STR", "MAG", "SKL", "SPD", "DEF", "RES", "MOV", "LCK"]
+
+
+def dp(vals):
+    """[8 gains] en orden Str·Mag·Skl·Spd·Def·Res·Mov·Lck -> dict."""
+    return {PS8[i]: int(vals[i]) for i in range(8)}
+
+
+def _promo_map(m):
+    """{from_class: [8 gains]} -> {from_class: {stat:gain}}."""
+    return {fc: dp(g) for fc, g in m.items()}
+
+
 def _find(data, cid):
     c = next((x for x in data if str(x.get("id")) == cid), None)
     if c is None:
@@ -139,17 +153,20 @@ VERSIONED = [
         "fe4":  ([35, 5, 0, 0, 7, 0, 5, 0], [80, 20, 15, 15, 22, 30, 20, 15]),
         "fe5":  ([22, 5, 0, 0, 0, 0, 3, 0], [80, 20, 20, 20, 20, 20, 20, 0]),
     },
-    {  # Lord Knight
+    {  # Lord Knight  (Seliph promociona de Lord)
         "ids": ["LordKnight"],
         "saga": ([40, 10, 1, 7, 7, 0, 7, 3], [80, 25, 20, 22, 22, 30, 22, 18]),
         "fe4":  ([40, 10, 0, 7, 7, 0, 7, 3], [80, 25, 15, 22, 22, 30, 22, 18]),
         "fe5":  ([18, 5, 1, 3, 4, 0, 4, 0],  [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promo": {"LordSeliph": [5, 0, 2, 2, 2, 3, 3, 0]},   # Str·Mag·Skl·Spd·Def·Res·Mov·Lck
     },
-    {  # Swordmaster
+    {  # Swordmaster  (SAGA/FE4 = Ayra/Larcei; FE5 = Shiva/Troude/Mareeta)
         "ids": ["Swordmaster"],
         "saga": ([40, 12, 1, 15, 15, 0, 7, 3], [80, 27, 20, 30, 30, 30, 22, 18]),
         "fe4":  ([40, 12, 0, 15, 15, 0, 7, 3], [80, 27, 15, 30, 30, 30, 22, 18]),
         "fe5":  ([24, 5, 1, 8, 10, 0, 4, 0],   [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promo": {"Swordfighter": [5, 0, 5, 5, 2, 3, 0, 0]},
+        "promo_by_game": {"FE5": {"Swordfighter": [2, 1, 3, 3, 2, 0, 1, 0]}},
     },
     {  # Dark Bishop  (enemigo)
         "ids": ["DarkBishop"],
@@ -253,10 +270,15 @@ EXCLUSIVE = [
         "cap":  [80, 20, 20, 20, 20, 20, 20, 0],
     },
     {  # Master Knight — un set para todos los modos (FE4 + FE5 buff: Leif
-       # promociona Prince -> Master Knight)
+       # promociona Prince -> Master Knight). Dos clases de origen: Prince
+       # (LordLeaf) y Princess.
         "ids": ["MasterKnight"],
         "base": [40, 12, 7, 12, 12, 0, 12, 7],
         "cap":  [80, 27, 22, 27, 27, 30, 27, 22],
+        "promo": {
+            "LordLeaf": [4, 4, 5, 6, 5, 4, 3, 0],   # Prince -> Master Knight
+            "Princess": [7, 0, 7, 4, 7, 0, 3, 0],   # Princess -> Master Knight
+        },
     },
 ]
 
@@ -271,12 +293,18 @@ def main():
                 "FE4": _block(spec["fe4"]),
                 "FE5": _block(spec["fe5"]),
             }
+            if "promo" in spec:                    # SAGA/nivel superior
+                c["promotion_gains"] = _promo_map(spec["promo"])
+            for game, m in spec.get("promo_by_game", {}).items():
+                c["versions"].setdefault(game, {})["promotion_gains"] = _promo_map(m)
             print("versioned", cid)
     for spec in EXCLUSIVE:
         for cid in spec["ids"]:
             c = _find(data, cid)
             _set8(c, spec["base"], spec["cap"])
             c.pop("versions", None)
+            if "promo" in spec:
+                c["promotion_gains"] = _promo_map(spec["promo"])
             print("exclusive", cid)
     json.dump(data, open(PATH, "w"), indent=1, ensure_ascii=False)
     open(PATH, "a").write("\n")
