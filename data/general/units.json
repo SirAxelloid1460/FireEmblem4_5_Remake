@@ -10972,23 +10972,23 @@
   ]
  },
  {
-  "nid": "Linecock",
-  "name": "Linecock",
-  "desc": "FE5 boss: Loptyrian Dark Bishop with Berserk staff (Ch.16B).",
-  "klass": "DarkBishop",
-  "level": 5,
+  "nid": "ZweiFE5",
+  "name": "Zwei",
+  "desc": "FE5 boss: Veld's Endgame guard (\"Two\"); stat-clone of Galzus.",
+  "klass": "Mercenary",
+  "level": 20,
   "gender": "M",
   "bases": {
-   "HP": 51,
-   "STR": 4,
-   "MAG": 12,
-   "SKL": 13,
-   "SPD": 10,
-   "LCK": 5,
-   "DEF": 10,
+   "HP": 54,
+   "STR": 20,
+   "MAG": 9,
+   "SKL": 20,
+   "SPD": 20,
+   "LCK": 17,
+   "DEF": 14,
    "RES": 0,
-   "CON": 8,
-   "MOV": 6
+   "CON": 18,
+   "MOV": 7
   },
   "growths": {},
   "starting_items": [],
@@ -11002,6 +11002,171 @@
   "portrait_nid": "",
   "games": [
    "FE5"
+  ]
+ },
+ {
+  "nid": "DreiFE5",
+  "name": "Drei",
+  "desc": "FE5 boss: Veld's Endgame guard (\"Three\").",
+  "klass": "Warrior",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 46,
+   "STR": 17,
+   "MAG": 4,
+   "SKL": 14,
+   "SPD": 11,
+   "LCK": 5,
+   "DEF": 13,
+   "RES": 0,
+   "CON": 18,
+   "MOV": 10
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "FunfFE5",
+  "name": "Fünf",
+  "desc": "FE5 boss: Veld's Endgame guard (\"Five\").",
+  "klass": "Sniper",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 31,
+   "STR": 12,
+   "MAG": 7,
+   "SKL": 19,
+   "SPD": 20,
+   "LCK": 13,
+   "DEF": 9,
+   "RES": 0,
+   "CON": 11,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "ElfFE5",
+  "name": "Elf",
+  "desc": "FE5 boss: Veld's Endgame guard (\"Eleven\").",
+  "klass": "Sage",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 36,
+   "STR": 3,
+   "MAG": 20,
+   "SKL": 20,
+   "SPD": 17,
+   "LCK": 13,
+   "DEF": 6,
+   "RES": 0,
+   "CON": 7,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "ZwolfFE5",
+  "name": "Zwölf",
+  "desc": "FE5 boss: Veld's Endgame guard (\"Twelve\").",
+  "klass": "Rogue",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 40,
+   "STR": 14,
+   "MAG": 9,
+   "SKL": 14,
+   "SPD": 20,
+   "LCK": 9,
+   "DEF": 12,
+   "RES": 0,
+   "CON": 16,
+   "MOV": 7
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "RobertFE4",
+  "name": "Robert",
+  "desc": "FE4 boss: Grannvale Paladin commander (Final Chapter, Belhalla).",
+  "klass": "Paladin",
+  "level": 26,
+  "gender": "M",
+  "bases": {
+   "HP": 70,
+   "STR": 21,
+   "MAG": 14,
+   "SKL": 22,
+   "SPD": 24,
+   "LCK": 15,
+   "DEF": 21,
+   "RES": 18,
+   "CON": 10,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE4"
   ]
  }
 ]
