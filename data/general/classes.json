@@ -816,14 +816,14 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 23,
+   "HP": 35,
    "STR": 0,
-   "MAG": 5,
-   "SKL": 5,
-   "SPD": 4,
+   "MAG": 10,
+   "SKL": 8,
+   "SPD": 5,
    "LCK": 0,
-   "DEF": 2,
-   "RES": 7,
+   "DEF": 3,
+   "RES": 8,
    "CON": 5,
    "MOV": 6
   },
@@ -852,14 +852,14 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 90,
-   "STR": 0,
-   "MAG": 24,
-   "SKL": 24,
-   "SPD": 23,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 28,
+   "HP": 80,
+   "STR": 20,
+   "MAG": 25,
+   "SKL": 23,
+   "SPD": 20,
+   "LCK": 30,
+   "DEF": 20,
+   "RES": 23,
    "CON": 5,
    "MOV": 6
   },
@@ -869,7 +869,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Bishop",
-  "combat_anim_nid": "Bishop"
+  "combat_anim_nid": "Bishop",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 0,
+     "MAG": 10,
+     "SKL": 8,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 8
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 25,
+     "SKL": 23,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 23
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 5,
+     "SKL": 2,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "BowKnight",
@@ -1736,13 +1782,13 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 35,
+   "HP": 40,
    "STR": 0,
-   "MAG": 12,
-   "SKL": 8,
-   "SPD": 8,
+   "MAG": 15,
+   "SKL": 10,
+   "SPD": 10,
    "LCK": 0,
-   "DEF": 8,
+   "DEF": 10,
    "RES": 12,
    "CON": 5,
    "MOV": 6
@@ -1772,13 +1818,13 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 90,
-   "STR": 0,
-   "MAG": 25,
-   "SKL": 23,
-   "SPD": 23,
-   "LCK": 25,
-   "DEF": 23,
+   "HP": 80,
+   "STR": 20,
+   "MAG": 30,
+   "SKL": 25,
+   "SPD": 25,
+   "LCK": 30,
+   "DEF": 25,
    "RES": 27,
    "CON": 5,
    "MOV": 6
@@ -1790,7 +1836,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "DarkBishop",
-  "combat_anim_nid": "DarkBishop"
+  "combat_anim_nid": "DarkBishop",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 12
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 30,
+     "SKL": 25,
+     "SPD": 25,
+     "LCK": 30,
+     "DEF": 25,
+     "RES": 27
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 30,
+     "STR": 0,
+     "MAG": 9,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "DarkPrince",
@@ -1803,13 +1895,13 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 40,
+   "HP": 50,
    "STR": 0,
-   "MAG": 18,
-   "SKL": 16,
-   "SPD": 16,
+   "MAG": 20,
+   "SKL": 20,
+   "SPD": 20,
    "LCK": 0,
-   "DEF": 15,
+   "DEF": 20,
    "RES": 15,
    "CON": 5,
    "MOV": 6
@@ -1839,13 +1931,13 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 90,
-   "STR": 18,
-   "MAG": 26,
-   "SKL": 24,
-   "SPD": 24,
-   "LCK": 25,
-   "DEF": 22,
+   "HP": 80,
+   "STR": 20,
+   "MAG": 30,
+   "SKL": 27,
+   "SPD": 27,
+   "LCK": 30,
+   "DEF": 25,
    "RES": 30,
    "CON": 5,
    "MOV": 6
@@ -1856,7 +1948,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "DarkPrince",
-  "combat_anim_nid": "DarkPrince"
+  "combat_anim_nid": "DarkPrince",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 12,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 15
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 30,
+     "SKL": 27,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 25,
+     "RES": 30
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 50,
+     "STR": 0,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "DarkMage",
@@ -2337,13 +2475,13 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 36,
-   "STR": 11,
-   "MAG": 8,
-   "SKL": 10,
-   "SPD": 9,
+   "HP": 45,
+   "STR": 15,
+   "MAG": 15,
+   "SKL": 15,
+   "SPD": 15,
    "LCK": 0,
-   "DEF": 14,
+   "DEF": 15,
    "RES": 15,
    "CON": 15,
    "MOV": 5
@@ -2373,14 +2511,14 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 90,
-   "STR": 25,
-   "MAG": 25,
-   "SKL": 25,
-   "SPD": 25,
-   "LCK": 25,
-   "DEF": 25,
-   "RES": 25,
+   "HP": 80,
+   "STR": 30,
+   "MAG": 30,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 30,
+   "RES": 30,
    "CON": 15,
    "MOV": 5
   },
@@ -2399,7 +2537,53 @@
    ]
   ],
   "map_sprite_nid": "Emperor",
-  "combat_anim_nid": "Emperor"
+  "combat_anim_nid": "Emperor",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 45,
+     "STR": 15,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 15,
+     "RES": 15
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 30,
+     "MAG": 30,
+     "SKL": 30,
+     "SPD": 30,
+     "LCK": 30,
+     "DEF": 30,
+     "RES": 30
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 26,
+     "STR": 7,
+     "MAG": 1,
+     "SKL": 5,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "FalconKnight",
@@ -4651,7 +4835,7 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 90,
+   "HP": 80,
    "STR": 20,
    "MAG": 30,
    "SKL": 25,
