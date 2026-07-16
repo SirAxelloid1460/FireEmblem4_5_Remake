@@ -5977,5 +5977,115 @@
   "games": [
    "FE5"
   ]
+ },
+ {
+  "nid": "Seliph",
+  "name": "Seliph",
+  "desc": "Heir of Chalphy and leader of the liberation army; Sigurd and Deirdre's son.",
+  "klass": "LordSeliph",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 31,
+   "STR": 8,
+   "MAG": 1,
+   "SKL": 8,
+   "SPD": 8,
+   "LCK": 10,
+   "DEF": 7,
+   "RES": 1,
+   "CON": 6,
+   "MOV": 5
+  },
+  "growths": {
+   "HP": 140,
+   "STR": 55,
+   "MAG": 30,
+   "SKL": 60,
+   "SPD": 35,
+   "LCK": 45,
+   "DEF": 45,
+   "RES": 30,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Silver Sword"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ]
+  ],
+  "wexp_gain": {
+   "Sword": 226
+  },
+  "holy_blood": {
+   "Baldr": "Major",
+   "Naga": "Minor"
+  },
+  "tags": [],
+  "affinity": "",
+  "portrait_nid": "Seliph",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Altena",
+  "name": "Altena",
+  "desc": "Princess of Thracia raised by Travant; wields the Gáe Bolg. Quan and Ethlyn's daughter.",
+  "klass": "DragonKnight",
+  "level": 17,
+  "gender": "F",
+  "bases": {
+   "HP": 51,
+   "STR": 23,
+   "MAG": 2,
+   "SKL": 17,
+   "SPD": 19,
+   "LCK": 13,
+   "DEF": 21,
+   "RES": 2,
+   "CON": 10,
+   "MOV": 7
+  },
+  "growths": {
+   "HP": 135,
+   "STR": 65,
+   "MAG": 7,
+   "SKL": 45,
+   "SPD": 60,
+   "LCK": 25,
+   "DEF": 55,
+   "RES": 12,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Gae Bolg",
+   "Steel Lance",
+   "Javelin"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Critical"
+   ]
+  ],
+  "wexp_gain": {
+   "Lance": 1023
+  },
+  "holy_blood": {
+   "Njörun": "Major",
+   "Baldr": "Minor"
+  },
+  "tags": [],
+  "affinity": "",
+  "portrait_nid": "Altena",
+  "games": [
+   "FE4"
+  ]
  }
 ]
