@@ -65,6 +65,24 @@ inventario de Veld. Pendiente: la mecánica "se convierte en Fenrir al ser
 robada" queda anotada en la desc pero sin wiring (steal-transform).
 
 
+## Personajes cross-game (versiones por juego FE4/FE5)
+En la saga combinada (`SAGA_MODE`) los personajes que aparecen en ambos juegos
+entran con su **versión más débil** y escalan a través de los dos juegos. Modelo:
+cada unidad cross-game lleva un campo `versions` en `units.json`:
+```
+"versions": {
+  "FE4": { "klass": ..., "level": ..., "bases": {...}, "growths": {...},
+           "learned_skills": [...], "starting_items": [...], "wexp_gain": {...},
+           "holy_blood": {...} },
+  "FE5": { ...igual... }
+}
+```
+`LevelLoader._resolve_game_version` elige: `FE4_ONLY`→FE4, `FE5_ONLY`→FE5,
+`SAGA_MODE`→la de menor suma de bases (desempate por nivel). El bloque elegido
+sobreescribe los campos que declara; el resto se hereda del nivel superior.
+Cross-game: **Finn, Leif, Nanna, Oifey, Hannibal, Delmud, Ced, Coirpre**
+(stats por versión pendientes de rellenar).
+
 ## Notas de datos
 - FE5: `MOV = Mov×10`, `CON = Build`, `RES = 0` (Serenes no lista Res en FE5; base canónico 0).
 - FE4: `CON`/`MOV` tomados de la clase (fijos por clase en FE4); `RES` = columna Mdf.

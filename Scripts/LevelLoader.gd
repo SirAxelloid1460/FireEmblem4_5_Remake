@@ -354,6 +354,10 @@ static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> v
 		push_warning("LevelLoader: unidad named '%s' no encontrada en project_data" % nid)
 		return
 	var udata: Dictionary = units_db[nid]
+	# Personajes cross-game (aparecen en FE4 y FE5): resuelve el bloque de
+	# versión según el modo de juego (FE4_ONLY→FE4, FE5_ONLY→FE5, SAGA→la más
+	# débil, que luego escala a través de ambos juegos).
+	udata = _resolve_game_version(udata)
 	unit.unit_class = str(udata.get("klass", "Soldier"))
 	unit.level      = int(udata.get("level", 1))
 	# Stats absolutos del personaje al nivel de aparición.
@@ -415,6 +419,70 @@ static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> v
 			unit.inventory.append(item)
 			if "weapon" in unit and unit.weapon == null and _is_weapon(item):
 				unit.weapon = item
+
+
+## ── Versiones por juego (personajes cross-game FE4/FE5) ──────────────────────
+## Una unidad con campo `versions` lleva bloques específicos por juego, p.ej.:
+##   "versions": {
+##     "FE4": { "klass": "CavalierS", "level": 1, "bases": {...}, ... },
+##     "FE5": { "klass": "Ranger",    "level": 3, "bases": {...}, ... }
+##   }
+## El bloque elegido SOBREESCRIBE los campos que declara sobre la unidad base
+## (klass/level/bases/growths/learned_skills/starting_items/wexp_gain/holy_blood);
+## los campos ausentes se heredan del nivel superior (portrait, tags, etc.).
+##   FE4_ONLY → FE4 · FE5_ONLY → FE5 · SAGA → la versión más débil (menor suma
+##   de bases; desempata por menor nivel), que luego escala a través de ambos.
+static func _resolve_game_version(udata: Dictionary) -> Dictionary:
+	var versions = udata.get("versions", null)
+	if not (versions is Dictionary) or (versions as Dictionary).is_empty():
+		return udata
+	var mode := _current_game_mode()
+	var chosen: Dictionary = {}
+	if mode == "FE4" and versions.has("FE4"):
+		chosen = versions["FE4"]
+	elif mode == "FE5" and versions.has("FE5"):
+		chosen = versions["FE5"]
+	else:
+		chosen = _weaker_version(versions)   # SAGA (o modo sin versión propia)
+	if not (chosen is Dictionary) or chosen.is_empty():
+		return udata
+	var merged := udata.duplicate(true)
+	for k in chosen:
+		merged[k] = chosen[k]
+	merged.erase("versions")
+	return merged
+
+## "FE4" | "FE5" | "SAGA" a partir de GameMode.current_mode (autoload).
+static func _current_game_mode() -> String:
+	var loop := Engine.get_main_loop()
+	if loop is SceneTree and loop.root != null:
+		var gm = loop.root.get_node_or_null("GameMode")
+		if gm != null and "current_mode" in gm:
+			match int(gm.current_mode):
+				0: return "FE4"   # Mode.FE4_ONLY
+				1: return "FE5"   # Mode.FE5_ONLY
+				2: return "SAGA"  # Mode.SAGA_MODE
+	return "SAGA"
+
+## Devuelve el bloque de versión con MENOR suma de bases (desempate: menor
+## nivel).  Es el arranque en SAGA: la versión más débil que luego escala.
+static func _weaker_version(versions: Dictionary) -> Dictionary:
+	var best: Dictionary = {}
+	var best_key := 1 << 30
+	for k in versions:
+		var v = versions[k]
+		if not (v is Dictionary):
+			continue
+		var b: Dictionary = v.get("bases", {})
+		var s := 0
+		for stat in ["HP", "STR", "MAG", "SKL", "SPD", "LCK", "DEF", "RES"]:
+			s += int(b.get(stat, 0))
+		# Empaqueta (suma_bases, nivel) para desempatar por nivel más bajo.
+		var score := s * 1000 + int(v.get("level", 1))
+		if score < best_key:
+			best_key = score
+			best = v
+	return best
 
 
 ## Aplica los stats base de una clase a la unidad (bases + max_stats sirven
