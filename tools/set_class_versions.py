@@ -36,6 +36,40 @@ def _promo_map(m):
     return {fc: dp(g) for fc, g in m.items()}
 
 
+def _pmax(lists):
+    """Máximo por-stat sobre varias listas de 8 gains."""
+    return [max(l[i] for l in lists) for i in range(8)]
+
+
+def _set_promotions(c, promotions, versioned):
+    """`promotions` = { origen: {"FE4":[8], "FE5":[8]} | {"ALL":[8]} }.
+    SAGA (nivel superior) = máximo por-stat de FE4 y FE5 (o el ALL / el único
+    juego dado).  Además, en clases versionadas, FE4/FE5 llevan su propio set.
+    """
+    saga, fe4, fe5 = {}, {}, {}
+    for key, gv in promotions.items():
+        if "ALL" in gv:
+            g = gv["ALL"]
+            saga[key] = dp(g)
+            if versioned:
+                fe4[key] = dp(g)
+                fe5[key] = dp(g)
+        else:
+            g4, g5 = gv.get("FE4"), gv.get("FE5")
+            if versioned and g4 is not None:
+                fe4[key] = dp(g4)
+            if versioned and g5 is not None:
+                fe5[key] = dp(g5)
+            saga[key] = dp(_pmax([g for g in (g4, g5) if g is not None]))
+    if saga:
+        c["promotion_gains"] = saga
+    if versioned:
+        if fe4:
+            c.setdefault("versions", {}).setdefault("FE4", {})["promotion_gains"] = fe4
+        if fe5:
+            c.setdefault("versions", {}).setdefault("FE5", {})["promotion_gains"] = fe5
+
+
 def _find(data, cid):
     c = next((x for x in data if str(x.get("id")) == cid), None)
     if c is None:
@@ -158,45 +192,45 @@ VERSIONED = [
         "saga": ([40, 10, 1, 7, 7, 0, 7, 3], [80, 25, 20, 22, 22, 30, 22, 18]),
         "fe4":  ([40, 10, 0, 7, 7, 0, 7, 3], [80, 25, 15, 22, 22, 30, 22, 18]),
         "fe5":  ([18, 5, 1, 3, 4, 0, 4, 0],  [80, 20, 20, 20, 20, 20, 20, 0]),
-        "promo": {"LordSeliph": [5, 0, 2, 2, 2, 3, 3, 0]},   # Str·Mag·Skl·Spd·Def·Res·Mov·Lck
+        # gains: Str·Mag·Skl·Spd·Def·Res·Mov·Lck; SAGA = max(FE4,FE5) por stat.
+        "promotions": {"LordSeliph": {"FE4": [5, 0, 2, 2, 2, 3, 3, 0]}},
     },
-    {  # Swordmaster  (SAGA/FE4 = Ayra/Larcei; FE5 = Shiva/Troude/Mareeta)
+    {  # Swordmaster  (FE4 = Ayra/Larcei; FE5 = Shiva/Troude/Mareeta)
         "ids": ["Swordmaster"],
         "saga": ([40, 12, 1, 15, 15, 0, 7, 3], [80, 27, 20, 30, 30, 30, 22, 18]),
         "fe4":  ([40, 12, 0, 15, 15, 0, 7, 3], [80, 27, 15, 30, 30, 30, 22, 18]),
         "fe5":  ([24, 5, 1, 8, 10, 0, 4, 0],   [80, 20, 20, 20, 20, 20, 20, 0]),
-        "promo": {"Swordfighter": [5, 0, 5, 5, 2, 3, 0, 0]},
-        "promo_by_game": {"FE5": {"Swordfighter": [2, 1, 3, 3, 2, 0, 1, 0]}},
+        "promotions": {"Swordfighter": {
+            "FE4": [5, 0, 5, 5, 2, 3, 0, 0], "FE5": [2, 1, 3, 3, 2, 0, 1, 0]}},
     },
     {  # Rogue  (Thief Fighter). Override por personaje: Dancer->Rogue solo Lara.
         "ids": ["Rogue"],
         "saga": ([30, 7, 3, 7, 12, 0, 5, 3], [80, 22, 20, 22, 27, 30, 20, 18]),
         "fe4":  ([30, 7, 3, 7, 12, 0, 5, 3], [80, 22, 18, 22, 27, 30, 20, 18]),
         "fe5":  ([18, 4, 1, 3, 9, 0, 2, 0],  [80, 20, 20, 20, 20, 20, 20, 0]),
-        "promo": {"Thief": [4, 3, 4, 5, 4, 3, 1, 0]},        # Thief->Rogue FE4
-        "promo_by_game": {"FE5": {
-            "Thief": [3, 1, 2, 2, 2, 1, 0, 0],               # Thief->Rogue FE5
-            "Dancer@Lara": [3, 1, 2, 2, 2, 1, 1, 0],         # solo Lara
-        }},
+        "promotions": {
+            "Thief": {"FE4": [4, 3, 4, 5, 4, 3, 1, 0], "FE5": [3, 1, 2, 2, 2, 1, 0, 0]},
+            "Dancer@Lara": {"FE5": [3, 1, 2, 2, 2, 1, 1, 0]},   # solo Lara
+        },
     },
     {  # Dancer. Solo Lara oscila hacia/desde Dancer en FE5 (gains negativos).
         "ids": ["Dancer"],
         "saga": ([26, 3, 0, 1, 7, 0, 1, 3], [80, 20, 20, 20, 22, 30, 20, 18]),
         "fe4":  ([26, 3, 0, 1, 7, 0, 1, 3], [80, 18, 15, 16, 22, 30, 16, 18]),
         "fe5":  ([14, 0, 0, 0, 2, 0, 0, 0], [80, 20, 20, 20, 20, 20, 20, 0]),
-        "promo_by_game": {"FE5": {
-            "Thief@Lara": [0, 0, -2, -5, 0, 0, -1, 0],
-            "Rogue@Lara": [0, 0, -2, -5, 0, 0, -1, 0],
-        }},
+        "promotions": {
+            "Thief@Lara": {"FE5": [0, 0, -2, -5, 0, 0, -1, 0]},
+            "Rogue@Lara": {"FE5": [0, 0, -2, -5, 0, 0, -1, 0]},
+        },
     },
     {  # Warrior  (orígenes Fighter y Bandit; sin etiqueta de juego → todos)
         "ids": ["Warrior"],
         "saga": ([40, 11, 1, 5, 12, 0, 10, 6], [80, 26, 20, 20, 27, 30, 25, 18]),
         "fe4":  ([40, 11, 0, 5, 12, 0, 10, 3], [80, 26, 15, 20, 27, 30, 25, 18]),
         "fe5":  ([28, 8, 1, 5, 6, 0, 6, 6],     [80, 20, 20, 20, 20, 20, 20, 0]),
-        "promo": {
-            "Fighter": [3, 0, 2, 2, 2, 3, 0, 0],
-            "Bandit":  [3, 1, 5, 6, 3, 1, 0, 0],
+        "promotions": {
+            "Fighter": {"ALL": [3, 0, 2, 2, 2, 3, 0, 0]},
+            "Bandit":  {"ALL": [3, 1, 5, 6, 3, 1, 0, 0]},
         },
     },
     {  # Sniper  (Archer -> Sniper, FE4/FE5)
@@ -204,25 +238,19 @@ VERSIONED = [
         "saga": ([40, 12, 1, 12, 12, 0, 7, 7], [80, 27, 20, 27, 27, 30, 22, 18]),
         "fe4":  ([40, 12, 0, 12, 12, 0, 7, 3], [80, 27, 15, 27, 27, 30, 22, 18]),
         "fe5":  ([22, 5, 1, 6, 8, 0, 3, 7],     [80, 20, 20, 20, 20, 20, 20, 0]),
-        "promo": {"Archer": [5, 0, 2, 2, 2, 3, 0, 0]},
-        "promo_by_game": {"FE5": {"Archer": [2, 1, 3, 3, 2, 1, 1, 0]}},
+        "promotions": {"Archer": {
+            "FE4": [5, 0, 2, 2, 2, 3, 0, 0], "FE5": [2, 1, 3, 3, 2, 1, 1, 0]}},
     },
     {  # Paladin  (Cavalier/Troubadour -> Paladin). FE4 = SAGA en base/caps.
         "ids": ["Paladin"],
         "saga": ([40, 9, 5, 9, 9, 0, 9, 5], [80, 24, 20, 24, 24, 30, 24, 20]),
         "fe4":  ([40, 9, 5, 9, 9, 0, 9, 5], [80, 24, 20, 24, 24, 30, 24, 20]),
         "fe5":  ([24, 5, 5, 6, 6, 0, 5, 0], [80, 20, 20, 20, 20, 20, 20, 0]),
-        "promo": {
-            "Cavalier":   [2, 5, 3, 3, 3, 5, 1, 0],   # FE4/SAGA
-            "Troubadour": [6, 2, 3, 3, 6, 2, 1, 0],   # Ethlyn/Jeanne (y Nanna FE4)
-            "Troubadour@Nanna": [6, 3, 3, 3, 6, 2, 1, 0],  # Nanna SAGA (Mag 3)
-        },
-        "promo_by_game": {
-            "FE4": {"Troubadour@Nanna": [6, 2, 3, 3, 6, 2, 1, 0]},  # Nanna FE4 = default
-            "FE5": {
-                "Cavalier":        [2, 1, 3, 2, 2, 1, 1, 0],
-                "Troubadour@Nanna": [1, 3, 1, 3, 1, 1, 1, 0],
-            },
+        "promotions": {
+            "Cavalier":   {"FE4": [2, 5, 3, 3, 3, 5, 1, 0], "FE5": [2, 1, 3, 2, 2, 1, 1, 0]},
+            "Troubadour": {"FE4": [6, 2, 3, 3, 6, 2, 1, 0]},   # Ethlyn/Jeanne
+            # Nanna: FE4 = default; FE5 propio; SAGA = max = [6,3,3,3,6,2,1,0].
+            "Troubadour@Nanna": {"FE4": [6, 2, 3, 3, 6, 2, 1, 0], "FE5": [1, 3, 1, 3, 1, 1, 1, 0]},
         },
     },
     {  # Hero  (FE4 "Forrest" / FE5 "Mercenary-Campeón")
@@ -231,11 +259,10 @@ VERSIONED = [
         "fe4":  ([40, 12, 3, 12, 12, 0, 7, 3], [80, 27, 18, 27, 27, 30, 22, 18]),
         "fe5":  ([24, 6, 1, 7, 9, 0, 5, 6],    [80, 20, 20, 20, 20, 20, 20, 0]),
         # promo rows traen 7 valores (sin Lck final) → padded con 0.
-        "promo": {
-            "Mercenary": [5, 3, 2, 2, 2, 3, 0, 0],   # Swordfighter(=Mercenary)->Hero FE4
-            "Fighter":   [2, 1, 3, 3, 3, 0, 0, 0],   # Fighter->Hero
+        "promotions": {
+            "Mercenary": {"FE4": [5, 3, 2, 2, 2, 3, 0, 0], "FE5": [3, 1, 2, 3, 3, 2, 0, 0]},
+            "Fighter":   {"ALL": [2, 1, 3, 3, 3, 0, 0, 0]},
         },
-        "promo_by_game": {"FE5": {"Mercenary": [3, 1, 2, 3, 3, 2, 0, 0]}},
     },
     {  # Dark Bishop  (enemigo)
         "ids": ["DarkBishop"],
@@ -344,9 +371,9 @@ EXCLUSIVE = [
         "ids": ["MasterKnight"],
         "base": [40, 12, 7, 12, 12, 0, 12, 7],
         "cap":  [80, 27, 22, 27, 27, 30, 27, 22],
-        "promo": {
-            "LordLeaf": [4, 4, 5, 6, 5, 4, 3, 0],   # Prince -> Master Knight
-            "Princess": [7, 0, 7, 4, 7, 0, 3, 0],   # Princess -> Master Knight
+        "promotions": {
+            "LordLeaf": {"ALL": [4, 4, 5, 6, 5, 4, 3, 0]},   # Prince -> Master Knight
+            "Princess": {"ALL": [7, 0, 7, 4, 7, 0, 3, 0]},   # Princess -> Master Knight
         },
     },
 ]
@@ -362,18 +389,16 @@ def main():
                 "FE4": _block(spec["fe4"]),
                 "FE5": _block(spec["fe5"]),
             }
-            if "promo" in spec:                    # SAGA/nivel superior
-                c["promotion_gains"] = _promo_map(spec["promo"])
-            for game, m in spec.get("promo_by_game", {}).items():
-                c["versions"].setdefault(game, {})["promotion_gains"] = _promo_map(m)
+            if "promotions" in spec:
+                _set_promotions(c, spec["promotions"], versioned=True)
             print("versioned", cid)
     for spec in EXCLUSIVE:
         for cid in spec["ids"]:
             c = _find(data, cid)
             _set8(c, spec["base"], spec["cap"])
             c.pop("versions", None)
-            if "promo" in spec:
-                c["promotion_gains"] = _promo_map(spec["promo"])
+            if "promotions" in spec:
+                _set_promotions(c, spec["promotions"], versioned=False)
             print("exclusive", cid)
     json.dump(data, open(PATH, "w"), indent=1, ensure_ascii=False)
     open(PATH, "a").write("\n")
