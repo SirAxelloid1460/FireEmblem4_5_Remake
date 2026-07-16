@@ -820,13 +820,13 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 21,
-   "STR": 5,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 3,
-   "SPD": 4,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 5,
+   "DEF": 6,
    "RES": 0,
    "CON": 8,
    "MOV": 7
@@ -856,14 +856,14 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 20,
-   "MAG": 18,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 20,
-   "RES": 19,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 20,
+   "SKL": 21,
+   "SPD": 21,
+   "LCK": 30,
+   "DEF": 21,
+   "RES": 15,
    "CON": 8,
    "MOV": 7
   },
@@ -878,7 +878,53 @@
    ]
   ],
   "map_sprite_nid": "Cavalier",
-  "combat_anim_nid": "Cavalier"
+  "combat_anim_nid": "Cavalier",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "CavalierA",
@@ -895,13 +941,13 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 25,
-   "STR": 5,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 5,
-   "SPD": 5,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 5,
+   "DEF": 6,
    "RES": 0,
    "CON": 8,
    "MOV": 6
@@ -931,12 +977,12 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 0,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 20,
    "SKL": 21,
    "SPD": 21,
-   "LCK": 25,
+   "LCK": 30,
    "DEF": 21,
    "RES": 15,
    "CON": 8,
@@ -952,7 +998,53 @@
    ]
   ],
   "map_sprite_nid": "CavalierA",
-  "combat_anim_nid": "AxeKnight"
+  "combat_anim_nid": "AxeKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "CavalierB",
@@ -969,13 +1061,13 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 5,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 5,
-   "SPD": 5,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 5,
+   "DEF": 6,
    "RES": 0,
    "CON": 8,
    "MOV": 7
@@ -1005,12 +1097,12 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 0,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 20,
    "SKL": 21,
    "SPD": 21,
-   "LCK": 25,
+   "LCK": 30,
    "DEF": 21,
    "RES": 15,
    "CON": 8,
@@ -1026,7 +1118,53 @@
    ]
   ],
   "map_sprite_nid": "CavalierB",
-  "combat_anim_nid": "ArcherKnight"
+  "combat_anim_nid": "ArcherKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "CavalierL",
@@ -1043,13 +1181,13 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 25,
-   "STR": 5,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 5,
-   "SPD": 5,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 5,
+   "DEF": 6,
    "RES": 0,
    "CON": 8,
    "MOV": 7
@@ -1079,9 +1217,9 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 0,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 20,
    "SKL": 21,
    "SPD": 21,
    "LCK": 30,
@@ -1100,7 +1238,53 @@
    ]
   ],
   "map_sprite_nid": "CavalierL",
-  "combat_anim_nid": "LanceKnight"
+  "combat_anim_nid": "LanceKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "CavalierS",
@@ -1117,13 +1301,13 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 25,
-   "STR": 5,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 5,
-   "SPD": 5,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 4,
+   "DEF": 6,
    "RES": 0,
    "CON": 8,
    "MOV": 7
@@ -1153,12 +1337,12 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 18,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 20,
    "SKL": 21,
    "SPD": 21,
-   "LCK": 25,
+   "LCK": 30,
    "DEF": 21,
    "RES": 15,
    "CON": 8,
@@ -1174,7 +1358,53 @@
    ]
   ],
   "map_sprite_nid": "CavalierS",
-  "combat_anim_nid": "FreeKnight"
+  "combat_anim_nid": "FreeKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Citizen",
@@ -4624,14 +4854,14 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 17,
-   "STR": 2,
+   "HP": 26,
+   "STR": 3,
    "MAG": 3,
-   "SKL": 4,
-   "SPD": 4,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 4,
-   "RES": 6,
+   "DEF": 3,
+   "RES": 3,
    "CON": 6,
    "MOV": 7
   },
@@ -4660,14 +4890,14 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
+   "HP": 80,
    "STR": 20,
    "MAG": 20,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 24,
+   "SKL": 21,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 20,
+   "RES": 18,
    "CON": 6,
    "MOV": 7
   },
@@ -4682,7 +4912,53 @@
    ]
   ],
   "map_sprite_nid": "Troubadour",
-  "combat_anim_nid": "Troubadour"
+  "combat_anim_nid": "Troubadour",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 26,
+     "STR": 3,
+     "MAG": 3,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 18,
+     "MAG": 18,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 18
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 16,
+     "STR": 2,
+     "MAG": 2,
+     "SKL": 2,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 30,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Warrior",
