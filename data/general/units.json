@@ -2348,7 +2348,23 @@
   "games": [
    "FE4",
    "FE5"
-  ]
+  ],
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 29,
+     "STR": 3,
+     "MAG": 8,
+     "SKL": 8,
+     "SPD": 8,
+     "LCK": 9,
+     "DEF": 2,
+     "RES": 8,
+     "CON": 6,
+     "MOV": 6
+    }
+   }
+  }
  },
  {
   "nid": "Dagdar",
@@ -6084,6 +6100,341 @@
   "tags": [],
   "affinity": "",
   "portrait_nid": "Altena",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Larcei",
+  "name": "Larcei",
+  "desc": "Ayra's daughter; a swift swordswoman.",
+  "klass": "Swordfighter",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 30,
+   "STR": 9,
+   "MAG": 0,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 8,
+   "DEF": 6,
+   "RES": 0,
+   "CON": 8,
+   "MOV": 5
+  },
+  "growths": {
+   "HP": 95,
+   "STR": 35,
+   "MAG": 5,
+   "SKL": 65,
+   "SPD": 40,
+   "LCK": 25,
+   "DEF": 30,
+   "RES": 7,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Blade"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Awareness"
+   ],
+   [
+    1,
+    "Astra"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Od": "Minor"
+  },
+  "tags": [],
+  "affinity": "",
+  "portrait_nid": "Larcei",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Lana",
+  "name": "Lana",
+  "desc": "Aideen's daughter; a healer.",
+  "klass": "Priest",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 29,
+   "STR": 1,
+   "MAG": 9,
+   "SKL": 7,
+   "SPD": 8,
+   "LCK": 12,
+   "DEF": 2,
+   "RES": 7,
+   "CON": 6,
+   "MOV": 6
+  },
+  "growths": {
+   "HP": 95,
+   "STR": 25,
+   "MAG": 30,
+   "SKL": 25,
+   "SPD": 40,
+   "LCK": 65,
+   "DEF": 30,
+   "RES": 7,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Heal",
+   "Warp"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Ulir": "Minor"
+  },
+  "tags": [],
+  "affinity": "",
+  "portrait_nid": "Lana",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Lester",
+  "name": "Lester",
+  "desc": "Aideen's son; a mounted archer.",
+  "klass": "CavalierB",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 30,
+   "STR": 9,
+   "MAG": 1,
+   "SKL": 8,
+   "SPD": 9,
+   "LCK": 10,
+   "DEF": 8,
+   "RES": 0,
+   "CON": 8,
+   "MOV": 7
+  },
+  "growths": {
+   "HP": 95,
+   "STR": 20,
+   "MAG": 15,
+   "SKL": 20,
+   "SPD": 35,
+   "LCK": 55,
+   "DEF": 30,
+   "RES": 7,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Iron Bow"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Ulir": "Minor"
+  },
+  "tags": [],
+  "affinity": "",
+  "portrait_nid": "Lester",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Ulster",
+  "name": "Ulster",
+  "desc": "Ayra's son; a swordsman.",
+  "klass": "Swordfighter",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 30,
+   "STR": 9,
+   "MAG": 0,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 8,
+   "DEF": 7,
+   "RES": 0,
+   "CON": 8,
+   "MOV": 5
+  },
+  "growths": {
+   "HP": 95,
+   "STR": 25,
+   "MAG": 2,
+   "SKL": 55,
+   "SPD": 35,
+   "LCK": 20,
+   "DEF": 30,
+   "RES": 7,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Od": "Minor"
+  },
+  "tags": [],
+  "affinity": "",
+  "portrait_nid": "Ulster",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Lene",
+  "name": "Lene",
+  "desc": "Sylvia's daughter; a dancer.",
+  "klass": "Dancer",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 29,
+   "STR": 4,
+   "MAG": 1,
+   "SKL": 2,
+   "SPD": 9,
+   "LCK": 10,
+   "DEF": 2,
+   "RES": 5,
+   "CON": 4,
+   "MOV": 7
+  },
+  "growths": {
+   "HP": 75,
+   "STR": 15,
+   "MAG": 30,
+   "SKL": 15,
+   "SPD": 20,
+   "LCK": 35,
+   "DEF": 20,
+   "RES": 42,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Defender Sword"
+  ],
+  "learned_skills": [
+   [
+    1,
+    "Prayer"
+   ]
+  ],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Bragi": "Minor"
+  },
+  "tags": [],
+  "affinity": "",
+  "portrait_nid": "Lene",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Fee",
+  "name": "Fee",
+  "desc": "Erinys's daughter; a pegasus knight.",
+  "klass": "PegasusKnight",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 35,
+   "STR": 9,
+   "MAG": 0,
+   "SKL": 9,
+   "SPD": 15,
+   "LCK": 8,
+   "DEF": 7,
+   "RES": 8,
+   "CON": 5,
+   "MOV": 7
+  },
+  "growths": {
+   "HP": 75,
+   "STR": 25,
+   "MAG": 10,
+   "SKL": 25,
+   "SPD": 40,
+   "LCK": 25,
+   "DEF": 40,
+   "RES": 12,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Slim Lance",
+   "Berserk Sword"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [],
+  "affinity": "",
+  "portrait_nid": "Fee",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Faval",
+  "name": "Faval",
+  "desc": "Brigid's son; an archer bearing the Ichival.",
+  "klass": "Archer",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 41,
+   "STR": 13,
+   "MAG": 1,
+   "SKL": 16,
+   "SPD": 16,
+   "LCK": 16,
+   "DEF": 10,
+   "RES": 0,
+   "CON": 6,
+   "MOV": 5
+  },
+  "growths": {
+   "HP": 115,
+   "STR": 25,
+   "MAG": 10,
+   "SKL": 25,
+   "SPD": 30,
+   "LCK": 75,
+   "DEF": 30,
+   "RES": 7,
+   "CON": 0,
+   "MOV": 0
+  },
+  "starting_items": [
+   "Silver Bow",
+   "Steel Bow"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Ulir": "Major"
+  },
+  "tags": [],
+  "affinity": "",
+  "portrait_nid": "Faval",
   "games": [
    "FE4"
   ]
