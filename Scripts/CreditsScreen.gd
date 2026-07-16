@@ -292,7 +292,7 @@ var credits_data: Array = [
 		["",               "Julia, Deirdre",  "GabrielKnight, SirKnite31, Seal, Sacred War"],
 		["",               "Linoan, Sara",    "Mikey_Seregon, Aviv"],
 
-		["Loptyr Mage", "Rip", "(Unknown)", { "name": { "italic": true, "dim": true } }],
+		["Loptrian Mage", "Rip", "(Unknown)", { "name": { "italic": true, "dim": true } }],
 
 		["Lord", "Animation", "UltraFenix"],
 		["",     "Still",     "Jeorge_Reds"],
