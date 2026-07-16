@@ -207,6 +207,20 @@ VERSIONED = [
         "promo": {"Archer": [5, 0, 2, 2, 2, 3, 0, 0]},
         "promo_by_game": {"FE5": {"Archer": [2, 1, 3, 3, 2, 1, 1, 0]}},
     },
+    {  # Paladin  (Cavalier/Troubadour -> Paladin). FE4 = SAGA en base/caps.
+        "ids": ["Paladin"],
+        "saga": ([40, 9, 5, 9, 9, 0, 9, 5], [80, 24, 20, 24, 24, 30, 24, 20]),
+        "fe4":  ([40, 9, 5, 9, 9, 0, 9, 5], [80, 24, 20, 24, 24, 30, 24, 20]),
+        "fe5":  ([24, 5, 5, 6, 6, 0, 5, 0], [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promo": {
+            "Cavalier":   [2, 5, 3, 3, 3, 5, 1, 0],   # FE4
+            "Troubadour": [6, 2, 3, 3, 6, 2, 1, 0],   # FE4: Ethlyn/Jeanne/Nanna
+        },
+        "promo_by_game": {"FE5": {
+            "Cavalier":        [2, 1, 3, 2, 2, 1, 1, 0],   # FE5
+            "Troubadour@Nanna": [1, 3, 1, 3, 1, 1, 1, 0],  # solo Nanna difiere en FE5
+        }},
+    },
     {  # Hero  (FE4 "Forrest" / FE5 "Mercenary-Campeón")
         "ids": ["Hero"],
         "saga": ([40, 12, 3, 12, 12, 0, 7, 6], [80, 27, 20, 27, 27, 30, 22, 18]),
