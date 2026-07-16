@@ -10278,41 +10278,6 @@
   ]
  },
  {
-  "nid": "Altenna",
-  "name": "Altenna",
-  "desc": "FE5 boss (23).",
-  "klass": "DragonKnight",
-  "level": 3,
-  "gender": "M",
-  "bases": {
-   "HP": 23,
-   "STR": 7,
-   "MAG": 3,
-   "SKL": 7,
-   "SPD": 9,
-   "LCK": 0,
-   "DEF": 11,
-   "RES": 0,
-   "CON": 8,
-   "MOV": 9
-  },
-  "growths": {},
-  "starting_items": [
-   "Dragon Lance"
-  ],
-  "learned_skills": [],
-  "wexp_gain": {},
-  "holy_blood": {},
-  "tags": [
-   "Boss"
-  ],
-  "affinity": "",
-  "portrait_nid": "Altenna",
-  "games": [
-   "FE5"
-  ]
- },
- {
   "nid": "Ein",
   "name": "Ein",
   "desc": "FE5 boss (F).",
