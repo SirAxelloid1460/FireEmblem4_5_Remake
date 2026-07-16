@@ -10524,5 +10524,372 @@
   "games": [
    "FE4"
   ]
+ },
+ {
+  "nid": "Mahnya",
+  "name": "Mahnya",
+  "desc": "FE4 NPC: Silesse pegasus knight who escorts Sigurd's army; slain in Ch.4.",
+  "klass": "FalconKnight",
+  "level": 25,
+  "gender": "F",
+  "bases": {
+   "HP": 65,
+   "STR": 14,
+   "MAG": 9,
+   "SKL": 17,
+   "SPD": 22,
+   "LCK": 0,
+   "DEF": 13,
+   "RES": 14,
+   "CON": 6,
+   "MOV": 8
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "NPC"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Vylon",
+  "name": "Vylon",
+  "desc": "FE4 NPC: Lord of Chalphy, Sigurd's father; delivers Tyrfing in Ch.5 before dying.",
+  "klass": "MasterKnight",
+  "level": 30,
+  "gender": "M",
+  "bases": {
+   "HP": 20,
+   "STR": 19,
+   "MAG": 14,
+   "SKL": 19,
+   "SPD": 19,
+   "LCK": 7,
+   "DEF": 19,
+   "RES": 14,
+   "CON": 10,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [
+   "Tyrfing"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {
+   "Baldr": "Major"
+  },
+  "tags": [
+   "NPC"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Ida",
+  "name": "Ida",
+  "desc": "FE4 NPC: Arvis's mage attendant (Aida); appears Ch.10.",
+  "klass": "MageFighter",
+  "level": 23,
+  "gender": "F",
+  "bases": {
+   "HP": 49,
+   "STR": 7,
+   "MAG": 16,
+   "SKL": 15,
+   "SPD": 18,
+   "LCK": 0,
+   "DEF": 11,
+   "RES": 14,
+   "CON": 6,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "NPC"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Palmark",
+  "name": "Palmark",
+  "desc": "FE4 NPC: bishop awaiting Seliph in Ch.10.",
+  "klass": "Bishop",
+  "level": 20,
+  "gender": "M",
+  "bases": {
+   "HP": 55,
+   "STR": 2,
+   "MAG": 16,
+   "SKL": 14,
+   "SPD": 11,
+   "LCK": 0,
+   "DEF": 5,
+   "RES": 14,
+   "CON": 5,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "NPC"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE4"
+  ]
+ },
+ {
+  "nid": "Gunna",
+  "name": "Gunna",
+  "desc": "FE5 NPC: green healer bishop.",
+  "klass": "Bishop",
+  "level": 1,
+  "gender": "F",
+  "bases": {
+   "HP": 20,
+   "STR": 0,
+   "MAG": 15,
+   "SKL": 12,
+   "SPD": 2,
+   "LCK": 3,
+   "DEF": 1,
+   "RES": 0,
+   "CON": 4,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "NPC"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Jabal",
+  "name": "Jabal",
+  "desc": "FE5 NPC: pirate appearing in Ch.9.",
+  "klass": "Pirate",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 32,
+   "STR": 6,
+   "MAG": 2,
+   "SKL": 3,
+   "SPD": 8,
+   "LCK": 3,
+   "DEF": 4,
+   "RES": 0,
+   "CON": 15,
+   "MOV": 5
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "NPC"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Shupel",
+  "name": "Shupel",
+  "desc": "FE5 boss: Baron (Ch.13).",
+  "klass": "Baron",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 30,
+   "STR": 10,
+   "MAG": 4,
+   "SKL": 11,
+   "SPD": 3,
+   "LCK": 1,
+   "DEF": 18,
+   "RES": 0,
+   "CON": 13,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Kant",
+  "name": "Kant",
+  "desc": "FE5 boss: General (Ch.11x).",
+  "klass": "General",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 42,
+   "STR": 11,
+   "MAG": 10,
+   "SKL": 11,
+   "SPD": 8,
+   "LCK": 13,
+   "DEF": 16,
+   "RES": 0,
+   "CON": 16,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Manhaim",
+  "name": "Manhaim",
+  "desc": "FE5 boss: General (Ch.14).",
+  "klass": "General",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 50,
+   "STR": 8,
+   "MAG": 12,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 15,
+   "DEF": 17,
+   "RES": 0,
+   "CON": 18,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Orbis",
+  "name": "Orbis",
+  "desc": "FE5 boss: Dragon Knight.",
+  "klass": "DragonKnight",
+  "level": 1,
+  "gender": "M",
+  "bases": {
+   "HP": 52,
+   "STR": 17,
+   "MAG": 4,
+   "SKL": 14,
+   "SPD": 15,
+   "LCK": 6,
+   "DEF": 16,
+   "RES": 0,
+   "CON": 20,
+   "MOV": 9
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Linecock",
+  "name": "Linecock",
+  "desc": "FE5 boss: Loptyrian Dark Bishop with Berserk staff (Ch.16B).",
+  "klass": "DarkBishop",
+  "level": 5,
+  "gender": "M",
+  "bases": {
+   "HP": 51,
+   "STR": 4,
+   "MAG": 12,
+   "SKL": 13,
+   "SPD": 10,
+   "LCK": 5,
+   "DEF": 10,
+   "RES": 0,
+   "CON": 8,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "",
+  "games": [
+   "FE5"
+  ]
  }
 ]

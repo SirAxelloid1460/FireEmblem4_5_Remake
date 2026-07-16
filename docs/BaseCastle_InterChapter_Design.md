@@ -58,15 +58,38 @@ Capítulo N (victoria) ─► GameManager captura roster + oro
 | **Arena** | arena FE4 (rondas crecientes, riesgo real, sin apuesta) | **BIFURCACIÓN — ver §6** |
 | **Guardar** | — | Save |
 
-## 6. Bifurcaciones a decidir (para ti)
-1. **Arena**: ¿la mantenemos y en qué forma?
-   - (a) Arena estilo **FE4 original**: peleas por rondas contra un rival del
-     mismo tier/nivel, ganas EXP+oro, con **riesgo de muerte** si pierdes.
-   - (b) Arena **sin riesgo** (derrota = solo pierdes la ronda, no la unidad).
-   - (c) **Sin arena** (se retira del Castillo Base por completo).
-2. **Disparo del menú**: ¿el Castillo Base se abre **entre TODOS** los capítulos
-   automáticamente, o solo en capítulos concretos (como FE4, donde solo algunos
-   castillos tienen tienda/arena)?
+## 6. Decisiones tomadas
+
+### 6.1 Disparo del menú
+El Castillo Base se abre **entre TODOS los capítulos** automáticamente, tras la
+victoria y antes de cargar el siguiente capítulo.
+
+### 6.2 Arena — modelo HÍBRIDO (decisión del usuario)
+Combina la arena original de FE4 (rivales fijos) con la arena tradicional GBA
+(genéricos random) por personaje:
+
+1. **Fase fija (rivales de la casa).** Cada capítulo tiene sus **7 NPC fijos**
+   propios (+ varios alternativos para los combates a distancia), tomados de la
+   tabla real de FE4: https://www.fireemblemwod.com/fe4/arena.htm
+   - Cada personaje que entra a la arena **empieza por el rival nº 1** y avanza
+     en orden al derrotarlos.
+   - El progreso es **por personaje** (cada uno lleva su propia cuenta de a qué
+     rival fijo ha llegado).
+2. **Fase tradicional (genéricos).** Una vez un personaje derrota a **los 7**
+   rivales fijos, su arena pasa a generar **enemigos genéricos aleatorios** de
+   **nivel = nivel del personaje + (1 a 3)**.
+3. **Límite de victorias.** Cada personaje puede ganar **hasta 10 veces en total**
+   por capítulo (fijas + genéricas combinadas).
+4. **Derrota ≠ muerte.** Perder un combate solo termina la ronda: se **vuelve al
+   menú de la Base** y el personaje **recupera todo su HP**. No hay permadeath en
+   la arena.
+5. **Reset.** El contador de victorias (y la fase fija/genérica) se **reinicia al
+   final de cada capítulo** — cada capítulo trae sus propios 7 rivales.
+
+Datos a construir (offline, sourced): tabla `arena/<cap>.json` con los 7 rivales
+fijos + alternativos a distancia por capítulo, desde el enlace de fireemblemwod.
+Estado runtime por personaje: `arena_fixed_index` (0..7) y `arena_wins` (0..10),
+reseteados en `end_chapter`.
 
 ## 7. Fuera de alcance de esta iteración
 - Balance económico (precios de tienda, coste de reparación, premios de arena).
