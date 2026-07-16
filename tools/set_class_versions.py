@@ -168,6 +168,27 @@ VERSIONED = [
         "promo": {"Swordfighter": [5, 0, 5, 5, 2, 3, 0, 0]},
         "promo_by_game": {"FE5": {"Swordfighter": [2, 1, 3, 3, 2, 0, 1, 0]}},
     },
+    {  # Rogue  (Thief Fighter). Override por personaje: Dancer->Rogue solo Lara.
+        "ids": ["Rogue"],
+        "saga": ([30, 7, 3, 7, 12, 0, 5, 3], [80, 22, 20, 22, 27, 30, 20, 18]),
+        "fe4":  ([30, 7, 3, 7, 12, 0, 5, 3], [80, 22, 18, 22, 27, 30, 20, 18]),
+        "fe5":  ([18, 4, 1, 3, 9, 0, 2, 0],  [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promo": {"Thief": [4, 3, 4, 5, 4, 3, 1, 0]},        # Thief->Rogue FE4
+        "promo_by_game": {"FE5": {
+            "Thief": [3, 1, 2, 2, 2, 1, 0, 0],               # Thief->Rogue FE5
+            "Dancer@Lara": [3, 1, 2, 2, 2, 1, 1, 0],         # solo Lara
+        }},
+    },
+    {  # Dancer. Solo Lara oscila hacia/desde Dancer en FE5 (gains negativos).
+        "ids": ["Dancer"],
+        "saga": ([26, 3, 0, 1, 7, 0, 1, 3], [80, 20, 20, 20, 22, 30, 20, 18]),
+        "fe4":  ([26, 3, 0, 1, 7, 0, 1, 3], [80, 18, 15, 16, 22, 30, 16, 18]),
+        "fe5":  ([14, 0, 0, 0, 2, 0, 0, 0], [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promo_by_game": {"FE5": {
+            "Thief@Lara": [0, 0, -2, -5, 0, 0, -1, 0],
+            "Rogue@Lara": [0, 0, -2, -5, 0, 0, -1, 0],
+        }},
+    },
     {  # Hero  (FE4 "Forrest" / FE5 "Mercenary-Campeón")
         "ids": ["Hero"],
         "saga": ([40, 12, 3, 12, 12, 0, 7, 6], [80, 27, 20, 27, 27, 30, 22, 18]),
