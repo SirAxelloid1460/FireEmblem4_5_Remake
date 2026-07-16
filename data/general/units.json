@@ -5558,7 +5558,7 @@
     }
    },
    "FE5": {
-    "klass": "ForrestKnight",
+    "klass": "Ranger",
     "bases": {
      "HP": 34,
      "STR": 18,
