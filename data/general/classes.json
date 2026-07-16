@@ -200,13 +200,13 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 30,
-   "STR": 5,
+   "HP": 40,
+   "STR": 9,
    "MAG": 0,
-   "SKL": 3,
-   "SPD": 1,
+   "SKL": 5,
+   "SPD": 3,
    "LCK": 0,
-   "DEF": 9,
+   "DEF": 10,
    "RES": 0,
    "CON": 12,
    "MOV": 4
@@ -236,14 +236,14 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 18,
+   "HP": 80,
+   "STR": 24,
+   "MAG": 20,
    "SKL": 20,
    "SPD": 20,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 19,
+   "LCK": 30,
+   "DEF": 25,
+   "RES": 15,
    "CON": 12,
    "MOV": 4
   },
@@ -255,7 +255,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Armour",
-  "combat_anim_nid": "Armour"
+  "combat_anim_nid": "Armour",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 9,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 24,
+     "MAG": 15,
+     "SKL": 20,
+     "SPD": 18,
+     "LCK": 30,
+     "DEF": 25,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 4,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Ballistae",
