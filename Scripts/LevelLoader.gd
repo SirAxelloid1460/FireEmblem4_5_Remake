@@ -312,7 +312,7 @@ static func _apply_generic(unit: Unit, udef: Dictionary, project_data: Dictionar
 	# Bases de la clase.
 	var classes: Dictionary = project_data.get("classes", {})
 	if classes.has(unit.unit_class):
-		_apply_class_data(unit, classes[unit.unit_class])
+		_apply_class_data(unit, _resolve_class_version(classes[unit.unit_class]))
 	# Skills iniciales — formato puede ser:
 	#   ["SkillName", ...]               (string suelto)
 	#   [[level, "SkillName"], ...]      (formato canónico LT)
@@ -366,7 +366,7 @@ static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> v
 	# Heredar tags de la clase (Mounted, Flying, etc.) sin sobrescribir stats.
 	var classes: Dictionary = project_data.get("classes", {})
 	if classes.has(unit.unit_class):
-		var cdata = classes[unit.unit_class]
+		var cdata = _resolve_class_version(classes[unit.unit_class])
 		var class_tags = cdata.get("tags", []) if cdata is Dictionary else cdata.tags
 		for tag in class_tags:
 			var s := str(tag)
@@ -451,6 +451,37 @@ static func _resolve_game_version(udata: Dictionary) -> Dictionary:
 		merged[k] = chosen[k]
 	merged.erase("versions")
 	return merged
+
+## Resuelve el bloque de stats de clase por modo. Una clase con campo
+## `versions` lleva sets por juego, p.ej.:
+##   "versions": { "FE4": {"bases":{...},"caps":{...},"promotion":{...}, ...},
+##                 "FE5": {...}, "SAGA": {...} }
+## El bloque del modo activo SOBREESCRIBE los campos que declara (bases, caps,
+## promotion, growths, wexp_gain, tags, …); los ausentes se heredan del nivel
+## superior de la clase.  Fallback: si el modo no tiene bloque, usa SAGA→FE4→el
+## primero disponible.  Sólo actúa sobre cdata en forma de Dictionary crudo.
+static func _resolve_class_version(cdata):
+	if not (cdata is Dictionary):
+		return cdata
+	var versions = (cdata as Dictionary).get("versions", null)
+	if not (versions is Dictionary) or (versions as Dictionary).is_empty():
+		return cdata
+	var mode := _current_game_mode()
+	var block = versions.get(mode, null)
+	if not (block is Dictionary):
+		block = versions.get("FE4", null)   # fallback razonable (escala base)
+	if not (block is Dictionary):
+		for k in versions:
+			block = versions[k]
+			break
+	if not (block is Dictionary):
+		return cdata
+	var merged: Dictionary = (cdata as Dictionary).duplicate(true)
+	for k in block:
+		merged[k] = block[k]
+	merged.erase("versions")
+	return merged
+
 
 ## "FE4" | "FE5" | "SAGA" a partir de GameMode.current_mode (autoload).
 static func _current_game_mode() -> String:
