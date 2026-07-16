@@ -1,7 +1,7 @@
 [
  {
   "nid": "Aideen",
-  "name": "Aideen",
+  "name": "Edain",
   "desc": "Sigurd's childhood friend and one of the two daughters of Duke Ring of Jungby.",
   "klass": "Priestess",
   "level": 1,
@@ -307,7 +307,7 @@
  },
  {
   "nid": "Azel",
-  "name": "Azel",
+  "name": "Azelle",
   "desc": "Nobleman of House Velthomer of Grannvale and the younger half-brother of Duke Arvis",
   "klass": "Mage",
   "level": 1,
@@ -555,7 +555,7 @@
  },
  {
   "nid": "Claude",
-  "name": "Claude",
+  "name": "Claud",
   "desc": "Duke of Edda Castle and priest of Bragi Church, of whom he's direct descendant.",
   "klass": "HighPriest",
   "level": 1,
@@ -1222,7 +1222,7 @@
  },
  {
   "nid": "Gandolf",
-  "name": "Gandolf",
+  "name": "Munnir",
   "desc": "Elder son of King Batur of Verdane, and Kinbois and Jamke's brother.",
   "klass": "Warrior",
   "level": 20,
@@ -1364,7 +1364,7 @@
  },
  {
   "nid": "Holyn",
-  "name": "Holyn",
+  "name": "Chulainn",
   "desc": "The son of the Lord of Sophara Castle in Isaach and a distant relative of Ayra.",
   "klass": "Mercenary",
   "level": 1,
@@ -1466,7 +1466,7 @@
  },
  {
   "nid": "Kinbois",
-  "name": "Kinbois",
+  "name": "Cimbaeth",
   "desc": "Second son of King Batur of Verdane, and Gandolf and Jamke's brother.",
   "klass": "Warrior",
   "level": 10,
@@ -1779,7 +1779,7 @@
  },
  {
   "nid": "Noish",
-  "name": "Noish",
+  "name": "Naoise",
   "desc": "Dutiful knight of Chalphy. He is calm and serious, with a strong sense of honor.",
   "klass": "Cavalier",
   "level": 1,
@@ -1883,7 +1883,7 @@
  },
  {
   "nid": "Phillip",
-  "name": "Phillip",
+  "name": "Philip",
   "desc": "One of the retainers of Lord Boldor of Heirhein Castle.",
   "klass": "General",
   "level": 8,
@@ -2082,7 +2082,7 @@
  },
  {
   "nid": "Sylvia",
-  "name": "Sylvia",
+  "name": "Silvia",
   "desc": "Traveling dancer who follows Lewyn and aids the war-suffering civilians.",
   "klass": "Dancer",
   "level": 1,
@@ -2185,7 +2185,7 @@
  },
  {
   "nid": "Voltz",
-  "name": "Voltz",
+  "name": "Waltz",
   "desc": "Mercenary leader enlisted by Macbeth to defend Anphony.",
   "klass": "Ranger",
   "level": 10,
@@ -2232,7 +2232,7 @@
  },
  {
   "nid": "Zain",
-  "name": "Zain",
+  "name": "Zane",
   "desc": "Knight of Agustria under the orders of his liege King Chagall.",
   "klass": "DukeKnight",
   "level": 13,
@@ -3162,7 +3162,7 @@
  },
  {
   "nid": "Weissman",
-  "name": "Weissman",
+  "name": "Weismann",
   "desc": "A servant of Duke Raydrik of Manster.",
   "klass": "Armour",
   "level": 5,
@@ -3208,7 +3208,7 @@
  },
  {
   "nid": "Mana",
-  "name": "Mana",
+  "name": "Muirne",
   "desc": "",
   "klass": "Priestess",
   "level": 1,
@@ -3250,7 +3250,7 @@
  },
  {
   "nid": "Radney",
-  "name": "Radney",
+  "name": "Creidne",
   "desc": "",
   "klass": "Swordfighter",
   "level": 1,
@@ -3292,7 +3292,7 @@
  },
  {
   "nid": "Roddlevan",
-  "name": "Roddlevan",
+  "name": "Dalvin",
   "desc": "",
   "klass": "Swordfighter",
   "level": 1,
@@ -3421,7 +3421,7 @@
  },
  {
   "nid": "Dimna",
-  "name": "Dimna",
+  "name": "Deimne",
   "desc": "",
   "klass": "CavalierB",
   "level": 1,
@@ -3508,7 +3508,7 @@
  },
  {
   "nid": "Femina",
-  "name": "Femina",
+  "name": "Hermina",
   "desc": "",
   "klass": "PegasusKnight",
   "level": 2,
@@ -3594,7 +3594,7 @@
  },
  {
   "nid": "Johan",
-  "name": "Johan",
+  "name": "Iuchar",
   "desc": "",
   "klass": "CavalierA",
   "level": 12,
@@ -3638,7 +3638,7 @@
  },
  {
   "nid": "Johalva",
-  "name": "Johalva",
+  "name": "Iucharba",
   "desc": "",
   "klass": "Fighter",
   "level": 12,
@@ -4067,7 +4067,7 @@
  },
  {
   "nid": "Sharlow",
-  "name": "Sharlow",
+  "name": "Charlot",
   "desc": "",
   "klass": "Priest",
   "level": 1,
@@ -4739,7 +4739,7 @@
  },
  {
   "nid": "Pahn",
-  "name": "Pahn",
+  "name": "Perne",
   "desc": "",
   "klass": "Rogue",
   "level": 3,
@@ -6136,7 +6136,7 @@
  },
  {
   "nid": "Mua",
-  "name": "Mua",
+  "name": "Moore",
   "desc": "Dark Bishop of the Loptous cult (Thracia 776, ch. 17A).",
   "klass": "DarkBishop",
   "level": 12,
@@ -6471,7 +6471,7 @@
  },
  {
   "nid": "Ulster",
-  "name": "Ulster",
+  "name": "Scáthach",
   "desc": "Ayra's son; a swordsman.",
   "klass": "Swordfighter",
   "level": 1,
@@ -6611,7 +6611,7 @@
  },
  {
   "nid": "Faval",
-  "name": "Faval",
+  "name": "Febail",
   "desc": "Brigid's son; an archer bearing the Ichival.",
   "klass": "Archer",
   "level": 1,
@@ -6659,7 +6659,7 @@
  },
  {
   "nid": "Jacoban",
-  "name": "Jacoban",
+  "name": "Jacobi",
   "desc": "FE4 boss (3).",
   "klass": "Hero",
   "level": 20,
@@ -6694,7 +6694,7 @@
  },
  {
   "nid": "Papil",
-  "name": "Papil",
+  "name": "Papilio",
   "desc": "FE4 boss (3).",
   "klass": "DragonKnight",
   "level": 20,
@@ -6730,7 +6730,7 @@
  },
  {
   "nid": "Pizarl",
-  "name": "Pizarl",
+  "name": "Pizare",
   "desc": "FE4 boss (3).",
   "klass": "Warrior",
   "level": 20,
@@ -6765,7 +6765,7 @@
  },
  {
   "nid": "Dobarl",
-  "name": "Dobarl",
+  "name": "Duvall",
   "desc": "FE4 boss (3).",
   "klass": "Warrior",
   "level": 20,
@@ -6836,7 +6836,7 @@
  },
  {
   "nid": "Deetver",
-  "name": "Deetver",
+  "name": "Díthorba",
   "desc": "FE4 boss (4).",
   "klass": "FalconKnight",
   "level": 21,
@@ -6872,7 +6872,7 @@
  },
  {
   "nid": "Maios",
-  "name": "Maios",
+  "name": "Myos",
   "desc": "FE4 boss (4).",
   "klass": "Baron",
   "level": 22,
@@ -7123,7 +7123,7 @@
  },
  {
   "nid": "Langobalt",
-  "name": "Langobalt",
+  "name": "Lombard",
   "desc": "FE4 boss (5).",
   "klass": "Baron",
   "level": 30,
@@ -7193,7 +7193,7 @@
  },
  {
   "nid": "Vaha",
-  "name": "Vaha",
+  "name": "Vaja",
   "desc": "FE4 boss (5).",
   "klass": "MageFighter",
   "level": 21,
@@ -7483,7 +7483,7 @@
  },
  {
   "nid": "Jabarro",
-  "name": "Jabarro",
+  "name": "Javarro",
   "desc": "FE4 boss (7).",
   "klass": "Ranger",
   "level": 20,
@@ -7554,7 +7554,7 @@
  },
  {
   "nid": "Vampa",
-  "name": "Vampa",
+  "name": "Banba",
   "desc": "FE4 boss (8).",
   "klass": "Mage",
   "level": 22,
@@ -7589,7 +7589,7 @@
  },
  {
   "nid": "Eliu",
-  "name": "Eliu",
+  "name": "Eriu",
   "desc": "FE4 boss (8).",
   "klass": "Mage",
   "level": 22,
@@ -7625,7 +7625,7 @@
  },
  {
   "nid": "Fetra",
-  "name": "Fetra",
+  "name": "Fotla",
   "desc": "FE4 boss (8).",
   "klass": "Mage",
   "level": 22,
@@ -7733,7 +7733,7 @@
  },
  {
   "nid": "Muhammed",
-  "name": "Muhammed",
+  "name": "Muhammad",
   "desc": "FE4 boss (8).",
   "klass": "General",
   "level": 25,
@@ -7802,7 +7802,7 @@
  },
  {
   "nid": "Coruta",
-  "name": "Coruta",
+  "name": "Coulter",
   "desc": "FE4 boss (8).",
   "klass": "DragonKnight",
   "level": 19,
@@ -7837,7 +7837,7 @@
  },
  {
   "nid": "Maikov",
-  "name": "Maikov",
+  "name": "Maykov",
   "desc": "FE4 boss (8).",
   "klass": "General",
   "level": 24,
@@ -7984,7 +7984,7 @@
  },
  {
   "nid": "Juda",
-  "name": "Juda",
+  "name": "Judah",
   "desc": "FE4 boss (9).",
   "klass": "DarkBishop",
   "level": 22,
@@ -8019,7 +8019,7 @@
  },
  {
   "nid": "Areone",
-  "name": "Areone",
+  "name": "Arion",
   "desc": "FE4 boss (F).",
   "klass": "DragonMaster",
   "level": 27,
@@ -8096,7 +8096,7 @@
  },
  {
   "nid": "Ridale",
-  "name": "Ridale",
+  "name": "Riddell",
   "desc": "FE4 boss (10).",
   "klass": "Paladin",
   "level": 28,
@@ -8179,7 +8179,7 @@
  },
  {
   "nid": "Morigan",
-  "name": "Morigan",
+  "name": "Morrigan",
   "desc": "FE4 boss (10).",
   "klass": "DarkBishop",
   "level": 25,
@@ -8214,7 +8214,7 @@
  },
  {
   "nid": "Zaggam",
-  "name": "Zaggam",
+  "name": "Zagam",
   "desc": "FE4 boss (10).",
   "klass": "DarkBishop",
   "level": 27,
@@ -8330,7 +8330,7 @@
  },
  {
   "nid": "Yupheel",
-  "name": "Yupheel",
+  "name": "Juphiel",
   "desc": "FE4 boss (F).",
   "klass": "DarkBishop",
   "level": 29,
@@ -8401,7 +8401,7 @@
  },
  {
   "nid": "Burian",
-  "name": "Burian",
+  "name": "Brian",
   "desc": "FE4 boss (F).",
   "klass": "MasterKnight",
   "level": 30,
@@ -8443,7 +8443,7 @@
  },
  {
   "nid": "Daggon",
-  "name": "Daggon",
+  "name": "Dagon",
   "desc": "FE4 boss (F).",
   "klass": "DarkBishop",
   "level": 29,
@@ -8478,7 +8478,7 @@
  },
  {
   "nid": "Scorpio",
-  "name": "Scorpio",
+  "name": "Scipio",
   "desc": "FE4 boss (F).",
   "klass": "MasterKnight",
   "level": 29,
@@ -8648,7 +8648,7 @@
  },
  {
   "nid": "Maybell",
-  "name": "Maybell",
+  "name": "Mabel",
   "desc": "FE4 boss (F).",
   "klass": "FalconKnight",
   "level": 25,
@@ -8695,7 +8695,7 @@
  },
  {
   "nid": "Eins",
-  "name": "Eins",
+  "name": "Mus",
   "desc": "FE4 boss (F).",
   "klass": "Baron",
   "level": 30,
@@ -8730,7 +8730,7 @@
  },
  {
   "nid": "Zwei",
-  "name": "Zwei",
+  "name": "Bovis",
   "desc": "FE4 boss (F).",
   "klass": "Hero",
   "level": 30,
@@ -8774,7 +8774,7 @@
  },
  {
   "nid": "Drei",
-  "name": "Drei",
+  "name": "Tigris",
   "desc": "FE4 boss (F).",
   "klass": "Warrior",
   "level": 30,
@@ -8814,7 +8814,7 @@
  },
  {
   "nid": "Vier",
-  "name": "Vier",
+  "name": "Lepus",
   "desc": "FE4 boss (F).",
   "klass": "HighPriest",
   "level": 30,
@@ -8858,7 +8858,7 @@
  },
  {
   "nid": "Funf",
-  "name": "Funf",
+  "name": "Draco",
   "desc": "FE4 boss (F).",
   "klass": "Sniper",
   "level": 30,
@@ -8898,7 +8898,7 @@
  },
  {
   "nid": "Sechs",
-  "name": "Sechs",
+  "name": "Anguilla",
   "desc": "FE4 boss (F).",
   "klass": "MageFighter",
   "level": 30,
@@ -8940,7 +8940,7 @@
  },
  {
   "nid": "Sieben",
-  "name": "Sieben",
+  "name": "Equus",
   "desc": "FE4 boss (F).",
   "klass": "Bishop",
   "level": 30,
@@ -8982,7 +8982,7 @@
  },
  {
   "nid": "Acht",
-  "name": "Acht",
+  "name": "Ovis",
   "desc": "FE4 boss (F).",
   "klass": "Sage",
   "level": 30,
@@ -9024,7 +9024,7 @@
  },
  {
   "nid": "Neun",
-  "name": "Neun",
+  "name": "Simia",
   "desc": "FE4 boss (F).",
   "klass": "Swordmaster",
   "level": 30,
@@ -9068,7 +9068,7 @@
  },
  {
   "nid": "Zehn",
-  "name": "Zehn",
+  "name": "Gallus",
   "desc": "FE4 boss (F).",
   "klass": "DarkBishop",
   "level": 30,
@@ -9106,7 +9106,7 @@
  },
  {
   "nid": "Elf",
-  "name": "Elf",
+  "name": "Canis",
   "desc": "FE4 boss (F).",
   "klass": "LightPriestess",
   "level": 30,
@@ -9146,7 +9146,7 @@
  },
  {
   "nid": "Zwolf",
-  "name": "Zwolf",
+  "name": "Porcus",
   "desc": "FE4 boss (F).",
   "klass": "Rogue",
   "level": 30,
@@ -9225,7 +9225,7 @@
  },
  {
   "nid": "Robos",
-  "name": "Robos",
+  "name": "Lobos",
   "desc": "FE5 boss (3).",
   "klass": "General",
   "level": 1,
@@ -9297,7 +9297,7 @@
  },
  {
   "nid": "Trump",
-  "name": "Trump",
+  "name": "Truman",
   "desc": "FE5 boss (6).",
   "klass": "General",
   "level": 5,
@@ -9333,7 +9333,7 @@
  },
  {
   "nid": "Aizenau",
-  "name": "Aizenau",
+  "name": "Eisenau",
   "desc": "FE5 boss (7).",
   "klass": "Paladin",
   "level": 6,
@@ -9445,7 +9445,7 @@
  },
  {
   "nid": "Marlock",
-  "name": "Marlock",
+  "name": "Merlock",
   "desc": "FE5 boss (9).",
   "klass": "DragonKnight",
   "level": 6,
@@ -9482,7 +9482,7 @@
  },
  {
   "nid": "Dobalzark",
-  "name": "Dobalzark",
+  "name": "Dvorak",
   "desc": "FE5 boss (10).",
   "klass": "DragonKnight",
   "level": 8,
@@ -9627,7 +9627,7 @@
  },
  {
   "nid": "Colho",
-  "name": "Colho",
+  "name": "Cullough",
   "desc": "FE5 boss (12).",
   "klass": "Warrior",
   "level": 8,
@@ -9775,7 +9775,7 @@
  },
  {
   "nid": "Makroy",
-  "name": "Makroy",
+  "name": "McCloy",
   "desc": "FE5 boss (14).",
   "klass": "DragonKnight",
   "level": 15,
@@ -9812,7 +9812,7 @@
  },
  {
   "nid": "Codha",
-  "name": "Codha",
+  "name": "Codda",
   "desc": "FE5 boss (14x).",
   "klass": "DarkBishop",
   "level": 9,
@@ -9847,7 +9847,7 @@
  },
  {
   "nid": "Aihiman",
-  "name": "Aihiman",
+  "name": "Eichmann",
   "desc": "FE5 boss (14x).",
   "klass": "Mercenary",
   "level": 10,
@@ -10141,7 +10141,7 @@
  },
  {
   "nid": "Baraat",
-  "name": "Baraat",
+  "name": "Baráth",
   "desc": "FE5 boss (20).",
   "klass": "Baron",
   "level": 15,
@@ -10672,7 +10672,7 @@
  },
  {
   "nid": "Vylon",
-  "name": "Vylon",
+  "name": "Byron",
   "desc": "FE4 NPC: Lord of Chalphy, Sigurd's father; delivers Tyrfing in Ch.5 before dying.",
   "klass": "MasterKnight",
   "level": 30,
@@ -10709,7 +10709,7 @@
  },
  {
   "nid": "Ida",
-  "name": "Ida",
+  "name": "Aida",
   "desc": "FE4 NPC: Arvis's mage attendant (Aida); appears Ch.10.",
   "klass": "MageFighter",
   "level": 23,
@@ -10742,7 +10742,7 @@
  },
  {
   "nid": "Palmark",
-  "name": "Palmark",
+  "name": "Palmarch",
   "desc": "FE4 NPC: bishop awaiting Seliph in Ch.10.",
   "klass": "Bishop",
   "level": 20,
@@ -11139,8 +11139,8 @@
  {
   "nid": "RobertFE4",
   "name": "Robert",
-  "desc": "FE4 boss: Grannvale Paladin commander (Final Chapter, Belhalla).",
-  "klass": "Paladin",
+  "desc": "FE4 boss: Grannvale Ranger commander (Final Chapter, Belhalla).",
+  "klass": "Ranger",
   "level": 26,
   "gender": "M",
   "bases": {
@@ -11152,7 +11152,7 @@
    "LCK": 15,
    "DEF": 21,
    "RES": 18,
-   "CON": 10,
+   "CON": 9,
    "MOV": 9
   },
   "growths": {},
