@@ -2826,12 +2826,12 @@
   "level": 1,
   "gender": "F",
   "bases": {
-   "HP": 29,
-   "STR": 6,
-   "MAG": 5,
+   "HP": 30,
+   "STR": 7,
+   "MAG": 3,
    "SKL": 8,
-   "SPD": 10,
-   "LCK": 13,
+   "SPD": 8,
+   "LCK": 10,
    "DEF": 5,
    "RES": 4,
    "CON": 5,
@@ -2870,7 +2870,23 @@
   "games": [
    "FE4",
    "FE5"
-  ]
+  ],
+  "versions": {
+   "FE5": {
+    "bases": {
+     "HP": 18,
+     "STR": 3,
+     "MAG": 5,
+     "SKL": 6,
+     "SPD": 7,
+     "LCK": 9,
+     "DEF": 3,
+     "RES": 4,
+     "CON": 5,
+     "MOV": 8
+    }
+   }
+  }
  },
  {
   "nid": "Osian",
