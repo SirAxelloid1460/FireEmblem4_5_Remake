@@ -92,6 +92,18 @@
      "LCK": 30,
      "DEF": 24,
      "RES": 20
+    },
+    "promotion_gains": {
+     "Troubadour@Nanna": {
+      "STR": 6,
+      "MAG": 2,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 6,
+      "RES": 2,
+      "MOV": 1,
+      "LCK": 0
+     }
     }
    },
    "FE5": {
@@ -153,6 +165,16 @@
    "Troubadour": {
     "STR": 6,
     "MAG": 2,
+    "SKL": 3,
+    "SPD": 3,
+    "DEF": 6,
+    "RES": 2,
+    "MOV": 1,
+    "LCK": 0
+   },
+   "Troubadour@Nanna": {
+    "STR": 6,
+    "MAG": 3,
     "SKL": 3,
     "SPD": 3,
     "DEF": 6,

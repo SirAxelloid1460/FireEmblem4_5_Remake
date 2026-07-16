@@ -213,13 +213,17 @@ VERSIONED = [
         "fe4":  ([40, 9, 5, 9, 9, 0, 9, 5], [80, 24, 20, 24, 24, 30, 24, 20]),
         "fe5":  ([24, 5, 5, 6, 6, 0, 5, 0], [80, 20, 20, 20, 20, 20, 20, 0]),
         "promo": {
-            "Cavalier":   [2, 5, 3, 3, 3, 5, 1, 0],   # FE4
-            "Troubadour": [6, 2, 3, 3, 6, 2, 1, 0],   # FE4: Ethlyn/Jeanne/Nanna
+            "Cavalier":   [2, 5, 3, 3, 3, 5, 1, 0],   # FE4/SAGA
+            "Troubadour": [6, 2, 3, 3, 6, 2, 1, 0],   # Ethlyn/Jeanne (y Nanna FE4)
+            "Troubadour@Nanna": [6, 3, 3, 3, 6, 2, 1, 0],  # Nanna SAGA (Mag 3)
         },
-        "promo_by_game": {"FE5": {
-            "Cavalier":        [2, 1, 3, 2, 2, 1, 1, 0],   # FE5
-            "Troubadour@Nanna": [1, 3, 1, 3, 1, 1, 1, 0],  # solo Nanna difiere en FE5
-        }},
+        "promo_by_game": {
+            "FE4": {"Troubadour@Nanna": [6, 2, 3, 3, 6, 2, 1, 0]},  # Nanna FE4 = default
+            "FE5": {
+                "Cavalier":        [2, 1, 3, 2, 2, 1, 1, 0],
+                "Troubadour@Nanna": [1, 3, 1, 3, 1, 1, 1, 0],
+            },
+        },
     },
     {  # Hero  (FE4 "Forrest" / FE5 "Mercenary-Campeón")
         "ids": ["Hero"],
