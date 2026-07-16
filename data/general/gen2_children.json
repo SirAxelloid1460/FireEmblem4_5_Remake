@@ -58,7 +58,7 @@
    "RES": 7
   },
   "con": 8,
-  "mov": 70,
+  "mov": 7,
   "father_mods": {
    "Noish": {
     "base": {
@@ -446,7 +446,7 @@
    "RES": 7
   },
   "con": 6,
-  "mov": 60,
+  "mov": 6,
   "father_mods": {
    "Noish": {
     "base": {
@@ -837,7 +837,7 @@
    "RES": 7
   },
   "con": 8,
-  "mov": 50,
+  "mov": 5,
   "father_mods": {
    "Noish": {
     "base": {
@@ -1225,7 +1225,7 @@
    "RES": 7
   },
   "con": 8,
-  "mov": 50,
+  "mov": 5,
   "father_mods": {
    "Noish": {
     "base": {
@@ -1616,7 +1616,7 @@
    "RES": 10
   },
   "con": 8,
-  "mov": 70,
+  "mov": 7,
   "father_mods": {
    "Noish": {
     "base": {
@@ -2010,7 +2010,7 @@
    "RES": 12
   },
   "con": 6,
-  "mov": 70,
+  "mov": 7,
   "father_mods": {
    "Noish": {
     "base": {
@@ -2400,7 +2400,7 @@
    "RES": 35
   },
   "con": 6,
-  "mov": 60,
+  "mov": 6,
   "father_mods": {
    "Noish": {
     "base": {
@@ -2791,7 +2791,7 @@
    "RES": 42
   },
   "con": 4,
-  "mov": 70,
+  "mov": 7,
   "father_mods": {
    "Noish": {
     "base": {
@@ -3179,7 +3179,7 @@
    "RES": 10
   },
   "con": 6,
-  "mov": 60,
+  "mov": 6,
   "father_mods": {
    "Noish": {
     "base": {
@@ -3568,7 +3568,7 @@
    "RES": 12
   },
   "con": 5,
-  "mov": 70,
+  "mov": 7,
   "father_mods": {
    "Noish": {
     "base": {
@@ -3959,7 +3959,7 @@
    "RES": 7
   },
   "con": 6,
-  "mov": 50,
+  "mov": 5,
   "father_mods": {
    "Noish": {
     "base": {
@@ -4344,7 +4344,7 @@
    "RES": 7
   },
   "con": 5,
-  "mov": 50,
+  "mov": 5,
   "father_mods": {
    "Noish": {
     "base": {
@@ -4736,7 +4736,7 @@
    "RES": 10
   },
   "con": 6,
-  "mov": 50,
+  "mov": 5,
   "father_mods": {
    "Noish": {
     "base": {
@@ -5127,7 +5127,7 @@
    "RES": 12
   },
   "con": 6,
-  "mov": 50,
+  "mov": 5,
   "father_mods": {
    "Noish": {
     "base": {

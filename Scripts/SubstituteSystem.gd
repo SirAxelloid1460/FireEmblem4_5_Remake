@@ -361,8 +361,8 @@ static func _load_gen2_defs() -> Dictionary:
 				_gen2_defs = parsed
 	return _gen2_defs
 
-## CON/MOV desde la clase (la fuente FE4 de gen 2 no los lista).  MOV queda en
-## la convención ×10 de units.json (se divide en LevelLoader al construir).
+## CON/MOV desde la clase (la fuente FE4 de gen 2 no los lista).  MOV en tiles
+## (valor real, sin escalado).
 static func _class_con_mov(klass: String) -> Vector2i:
 	var loop := Engine.get_main_loop()
 	if loop is SceneTree and loop.root != null:

@@ -347,7 +347,7 @@ static func _apply_generic(unit: Unit, udef: Dictionary, project_data: Dictionar
 ##   nivel de aparición — NO son deltas sobre la clase.  Por eso aquí
 ##   NO llamamos a _apply_class_data para los stats; solo heredamos los
 ##   tags de la clase (Mounted, Flying, etc.).
-##   El campo MOV viene escalado ×10 (90 = 9 tiles), lo dividimos.
+##   MOV se usa en su valor real (tiles), sin escalado.
 static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> void:
 	var units_db: Dictionary = project_data.get("units", {})
 	if not units_db.has(nid):
@@ -555,14 +555,12 @@ static func _apply_class_data(unit: Unit, cdata) -> void:
 			unit.learn_skill(skill_nid)
 
 
-## Mapea un Dictionary de bases LT a las propiedades concretas de Unit.
+## Mapea un Dictionary de bases a las propiedades concretas de Unit.
 ##
-## NOTA — escalado de MOV en datos LT:
-##   Los proyectos LT-maker guardan MOV escalado ×10 (Sigurd MOV 90, Cavalier
-##   80) porque LT usa costes int y necesita simular costes decimales como
-##   road=0.7 multiplicando todo por 10.  Aquí dividimos para usar floats
-##   nativos: Sigurd → 9.0, Cavalier → 8.0, etc.  TerrainSystem usa los
-##   costes decimales reales (plain=1.0, road=0.7, forest=2.0).
+## NOTA — MOV:
+##   MOV se almacena en su valor real en tiles (Sigurd 9, Cavalier 8).  Ya NO
+##   hay escalado ×10.  TerrainSystem usa los costes decimales reales
+##   (plain=1.0, road=0.7, forest=2.0).
 static func _apply_bases_to_unit(unit: Unit, bases: Dictionary) -> void:
 	if bases.has("HP"):  unit.max_hp = int(bases["HP"]); unit.current_hp = unit.max_hp
 	if bases.has("STR"): unit.strength = int(bases["STR"])
@@ -574,10 +572,8 @@ static func _apply_bases_to_unit(unit: Unit, bases: Dictionary) -> void:
 	if bases.has("RES"): unit.resistance = int(bases["RES"])
 	if bases.has("CON"): unit.constitution = int(bases["CON"])
 	if bases.has("MOV"):
-		# Datos LT vienen ×10.  Si parece pequeño (≤30) ya está en formato
-		# real y lo usamos tal cual (compat con escenarios de test/legacy).
-		var mov_raw: int = int(bases["MOV"])
-		unit.movement = float(mov_raw) / 10.0 if mov_raw > 30 else float(mov_raw)
+		# MOV se guarda ya en su valor real (tiles). Sin escalado ×10.
+		unit.movement = float(bases["MOV"])
 
 
 ## Factory inyectable para items.  Por defecto se usa el ItemDatabase del

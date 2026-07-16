@@ -144,8 +144,7 @@ def main():
             "max_stats": {s: int(ch.get("max_stats", {}).get(s, 0)) for s in STATS},
             "base_stats": base,
             "base_growths": gmin,
-            # CON/MOV vienen de la clase (la fuente FE4 no los lista). MOV en
-            # convención ×10 de units.json.
+            # CON/MOV vienen de la clase (la fuente FE4 no los lista). MOV en tiles (valor real).
             "con": int(cbase.get("CON", 0)),
             "mov": int(cbase.get("MOV", 0)),
             "father_mods": mods,

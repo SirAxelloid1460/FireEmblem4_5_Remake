@@ -21,7 +21,7 @@
    "DEF": 7,
    "RES": 5,
    "CON": 10,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 80,
@@ -57,7 +57,7 @@
    "DEF": 24,
    "RES": 24,
    "CON": 10,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 126,
@@ -94,7 +94,7 @@
    "DEF": 3,
    "RES": 0,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 80,
@@ -130,7 +130,7 @@
    "DEF": 20,
    "RES": 20,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Bow": 1
@@ -163,7 +163,7 @@
    "DEF": 9,
    "RES": 0,
    "CON": 12,
-   "MOV": 40
+   "MOV": 4
   },
   "growths": {
    "HP": 85,
@@ -199,7 +199,7 @@
    "DEF": 21,
    "RES": 19,
    "CON": 12,
-   "MOV": 40
+   "MOV": 4
   },
   "wexp_gain": {
    "Sword": 126,
@@ -301,7 +301,7 @@
    "DEF": 3,
    "RES": 0,
    "CON": 12,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 90,
@@ -337,7 +337,7 @@
    "DEF": 20,
    "RES": 18,
    "CON": 12,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Axe": 51
@@ -366,7 +366,7 @@
    "DEF": 5,
    "RES": 0,
    "CON": 12,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 95,
@@ -402,7 +402,7 @@
    "DEF": 20,
    "RES": 15,
    "CON": 12,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Axe": 126
@@ -433,7 +433,7 @@
    "DEF": 1,
    "RES": 2,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 70,
@@ -469,7 +469,7 @@
    "DEF": 21,
    "RES": 23,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 51,
@@ -501,7 +501,7 @@
    "DEF": 14,
    "RES": 7,
    "CON": 13,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 85,
@@ -537,7 +537,7 @@
    "DEF": 24,
    "RES": 22,
    "CON": 13,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 226,
@@ -576,7 +576,7 @@
    "DEF": 7,
    "RES": 0,
    "CON": 13,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 75,
@@ -612,7 +612,7 @@
    "DEF": 22,
    "RES": 22,
    "CON": 13,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Axe": 126
@@ -641,7 +641,7 @@
    "DEF": 2,
    "RES": 7,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 65,
@@ -677,7 +677,7 @@
    "DEF": 21,
    "RES": 28,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 126,
@@ -709,7 +709,7 @@
    "DEF": 7,
    "RES": 3,
    "CON": 8,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 85,
@@ -745,7 +745,7 @@
    "DEF": 22,
    "RES": 18,
    "CON": 8,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Bow": 226
@@ -783,7 +783,7 @@
    "DEF": 5,
    "RES": 0,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -819,7 +819,7 @@
    "DEF": 20,
    "RES": 19,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 126,
@@ -858,7 +858,7 @@
    "DEF": 5,
    "RES": 0,
    "CON": 8,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 80,
@@ -894,7 +894,7 @@
    "DEF": 21,
    "RES": 15,
    "CON": 8,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Axe": 126
@@ -932,7 +932,7 @@
    "DEF": 5,
    "RES": 0,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -968,7 +968,7 @@
    "DEF": 21,
    "RES": 15,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Bow": 1
@@ -1006,7 +1006,7 @@
    "DEF": 5,
    "RES": 0,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -1042,7 +1042,7 @@
    "DEF": 21,
    "RES": 15,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Lance": 126
@@ -1080,7 +1080,7 @@
    "DEF": 4,
    "RES": 0,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -1116,7 +1116,7 @@
    "DEF": 21,
    "RES": 15,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 126
@@ -1152,7 +1152,7 @@
    "DEF": 1,
    "RES": 1,
    "CON": 5,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 35,
@@ -1188,7 +1188,7 @@
    "DEF": 20,
    "RES": 10,
    "CON": 5,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {},
   "learned_skills": [],
@@ -1215,7 +1215,7 @@
    "DEF": 0,
    "RES": 2,
    "CON": 4,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 75,
@@ -1251,7 +1251,7 @@
    "DEF": 21,
    "RES": 23,
    "CON": 4,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 51
@@ -1285,7 +1285,7 @@
    "DEF": 8,
    "RES": 12,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 85,
@@ -1321,7 +1321,7 @@
    "DEF": 23,
    "RES": 27,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 226,
@@ -1352,7 +1352,7 @@
    "DEF": 15,
    "RES": 15,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 0,
@@ -1388,7 +1388,7 @@
    "DEF": 22,
    "RES": 30,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 226,
@@ -1418,7 +1418,7 @@
    "DEF": 6,
    "RES": 10,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 70,
@@ -1454,7 +1454,7 @@
    "DEF": 21,
    "RES": 25,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 51,
@@ -1489,7 +1489,7 @@
    "DEF": 9,
    "RES": 0,
    "CON": 10,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -1525,7 +1525,7 @@
    "DEF": 21,
    "RES": 19,
    "CON": 10,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 126,
@@ -1566,7 +1566,7 @@
    "DEF": 11,
    "RES": 1,
    "CON": 11,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 85,
@@ -1602,7 +1602,7 @@
    "DEF": 28,
    "RES": 21,
    "CON": 11,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226,
@@ -1645,7 +1645,7 @@
    "DEF": 8,
    "RES": 0,
    "CON": 10,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 95,
@@ -1681,7 +1681,7 @@
    "DEF": 23,
    "RES": 15,
    "CON": 10,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 51,
@@ -1722,7 +1722,7 @@
    "DEF": 7,
    "RES": 3,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 85,
@@ -1758,7 +1758,7 @@
    "DEF": 22,
    "RES": 18,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Lance": 226
@@ -1794,7 +1794,7 @@
    "DEF": 14,
    "RES": 15,
    "CON": 15,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 100,
@@ -1830,7 +1830,7 @@
    "DEF": 25,
    "RES": 25,
    "CON": 15,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 226,
@@ -1871,7 +1871,7 @@
    "DEF": 5,
    "RES": 6,
    "CON": 6,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 80,
@@ -1907,7 +1907,7 @@
    "DEF": 22,
    "RES": 27,
    "CON": 6,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226,
@@ -1950,7 +1950,7 @@
    "DEF": 3,
    "RES": 0,
    "CON": 11,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 90,
@@ -1986,7 +1986,7 @@
    "DEF": 21,
    "RES": 18,
    "CON": 11,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Axe": 51
@@ -2017,7 +2017,7 @@
    "DEF": 6,
    "RES": 0,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 80,
@@ -2053,7 +2053,7 @@
    "DEF": 22,
    "RES": 21,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226
@@ -2089,7 +2089,7 @@
    "DEF": 12,
    "RES": 3,
    "CON": 13,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 80,
@@ -2125,7 +2125,7 @@
    "DEF": 27,
    "RES": 24,
    "CON": 13,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 226,
@@ -2164,7 +2164,7 @@
    "DEF": 8,
    "RES": 3,
    "CON": 12,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 85,
@@ -2200,7 +2200,7 @@
    "DEF": 25,
    "RES": 22,
    "CON": 12,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226,
@@ -2235,7 +2235,7 @@
    "DEF": 7,
    "RES": 3,
    "CON": 9,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 85,
@@ -2271,7 +2271,7 @@
    "DEF": 23,
    "RES": 22,
    "CON": 9,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 226,
@@ -2301,7 +2301,7 @@
    "DEF": 2,
    "RES": 8,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 70,
@@ -2337,7 +2337,7 @@
    "DEF": 19,
    "RES": 23,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 51,
@@ -2368,7 +2368,7 @@
    "DEF": 2,
    "RES": 8,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 70,
@@ -2404,7 +2404,7 @@
    "DEF": 19,
    "RES": 23,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 51,
@@ -2437,7 +2437,7 @@
    "DEF": 2,
    "RES": 10,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 70,
@@ -2473,7 +2473,7 @@
    "DEF": 19,
    "RES": 25,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Dark": 51,
@@ -2506,7 +2506,7 @@
    "DEF": 1,
    "RES": 5,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 60,
@@ -2542,7 +2542,7 @@
    "DEF": 20,
    "RES": 20,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 1,
@@ -2576,7 +2576,7 @@
    "DEF": 5,
    "RES": 2,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 90,
@@ -2612,7 +2612,7 @@
    "DEF": 22,
    "RES": 22,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226,
@@ -2651,7 +2651,7 @@
    "DEF": 3,
    "RES": 6,
    "CON": 7,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 85,
@@ -2687,7 +2687,7 @@
    "DEF": 21,
    "RES": 18,
    "CON": 7,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 126
@@ -2720,7 +2720,7 @@
    "DEF": 5,
    "RES": 0,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 85,
@@ -2756,7 +2756,7 @@
    "DEF": 20,
    "RES": 20,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 126
@@ -2835,7 +2835,7 @@
    "DEF": 3,
    "RES": 3,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 65,
@@ -2871,7 +2871,7 @@
    "DEF": 19,
    "RES": 20,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Anima": 51
@@ -2900,7 +2900,7 @@
    "DEF": 6,
    "RES": 9,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 100,
@@ -2936,7 +2936,7 @@
    "DEF": 21,
    "RES": 24,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Sword": 51,
@@ -2969,7 +2969,7 @@
    "DEF": 4,
    "RES": 6,
    "CON": 7,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 65,
@@ -3005,7 +3005,7 @@
    "DEF": 21,
    "RES": 24,
    "CON": 7,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 126,
@@ -3040,7 +3040,7 @@
    "DEF": 12,
    "RES": 7,
    "CON": 10,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 80,
@@ -3076,7 +3076,7 @@
    "DEF": 27,
    "RES": 22,
    "CON": 10,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226,
@@ -3120,7 +3120,7 @@
    "DEF": 3,
    "RES": 3,
    "CON": 5,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 75,
@@ -3156,7 +3156,7 @@
    "DEF": 20,
    "RES": 21,
    "CON": 5,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 126,
@@ -3199,7 +3199,7 @@
    "DEF": 3,
    "RES": 5,
    "CON": 5,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 90,
@@ -3235,7 +3235,7 @@
    "DEF": 18,
    "RES": 20,
    "CON": 5,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 51,
@@ -3274,7 +3274,7 @@
    "DEF": 3,
    "RES": 0,
    "CON": 11,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 85,
@@ -3310,7 +3310,7 @@
    "DEF": 20,
    "RES": 18,
    "CON": 11,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Axe": 51
@@ -3341,7 +3341,7 @@
    "DEF": 3,
    "RES": 1,
    "CON": 8,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 75,
@@ -3377,7 +3377,7 @@
    "DEF": 20,
    "RES": 20,
    "CON": 8,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 126
@@ -3410,7 +3410,7 @@
    "DEF": 1,
    "RES": 6,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 65,
@@ -3446,7 +3446,7 @@
    "DEF": 20,
    "RES": 21,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Staff": 126
@@ -3479,7 +3479,7 @@
    "DEF": 1,
    "RES": 6,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 65,
@@ -3515,7 +3515,7 @@
    "DEF": 20,
    "RES": 21,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Staff": 126
@@ -3546,7 +3546,7 @@
    "DEF": 5,
    "RES": 7,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 100,
@@ -3582,7 +3582,7 @@
    "DEF": 20,
    "RES": 22,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 126,
@@ -3612,7 +3612,7 @@
    "DEF": 10,
    "RES": 15,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 100,
@@ -3648,7 +3648,7 @@
    "DEF": 25,
    "RES": 30,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 226,
@@ -3678,7 +3678,7 @@
    "DEF": 3,
    "RES": 2,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -3714,7 +3714,7 @@
    "DEF": 20,
    "RES": 19,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 226
@@ -3748,7 +3748,7 @@
    "DEF": 4,
    "RES": 7,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 65,
@@ -3784,7 +3784,7 @@
    "DEF": 20,
    "RES": 26,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 126,
@@ -3815,7 +3815,7 @@
    "DEF": 5,
    "RES": 4,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 75,
@@ -3851,7 +3851,7 @@
    "DEF": 23,
    "RES": 22,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Bow": 226
@@ -3880,7 +3880,7 @@
    "DEF": 2,
    "RES": 0,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 60,
@@ -3916,7 +3916,7 @@
    "DEF": 20,
    "RES": 20,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Lance": 51
@@ -3947,7 +3947,7 @@
    "DEF": 3,
    "RES": 1,
    "CON": 8,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 75,
@@ -3983,7 +3983,7 @@
    "DEF": 20,
    "RES": 20,
    "CON": 8,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 126
@@ -4012,7 +4012,7 @@
    "DEF": 5,
    "RES": 3,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -4048,7 +4048,7 @@
    "DEF": 22,
    "RES": 23,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 226
@@ -4097,7 +4097,7 @@
    "DEF": 53,
    "RES": 2,
    "CON": 13,
-   "MOV": 150
+   "MOV": 15
   },
   "growths": {
    "HP": 100,
@@ -4133,7 +4133,7 @@
    "DEF": 30,
    "RES": 30,
    "CON": 25,
-   "MOV": 150
+   "MOV": 15
   },
   "wexp_gain": {
    "Sword": 1023,
@@ -4173,7 +4173,7 @@
    "DEF": 4,
    "RES": 6,
    "CON": 6,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 60,
@@ -4209,7 +4209,7 @@
    "DEF": 21,
    "RES": 24,
    "CON": 6,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 126,
@@ -4244,7 +4244,7 @@
    "DEF": 6,
    "RES": 2,
    "CON": 13,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 90,
@@ -4280,7 +4280,7 @@
    "DEF": 25,
    "RES": 20,
    "CON": 13,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Axe": 126,
@@ -4314,7 +4314,7 @@
    "DEF": 1,
    "RES": 1,
    "CON": 5,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 75,
@@ -4350,7 +4350,7 @@
    "DEF": 19,
    "RES": 19,
    "CON": 5,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 51
