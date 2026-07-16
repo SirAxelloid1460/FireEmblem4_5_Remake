@@ -168,6 +168,18 @@ VERSIONED = [
         "promo": {"Swordfighter": [5, 0, 5, 5, 2, 3, 0, 0]},
         "promo_by_game": {"FE5": {"Swordfighter": [2, 1, 3, 3, 2, 0, 1, 0]}},
     },
+    {  # Hero  (FE4 "Forrest" / FE5 "Mercenary-Campeón")
+        "ids": ["Hero"],
+        "saga": ([40, 12, 3, 12, 12, 0, 7, 6], [80, 27, 20, 27, 27, 30, 22, 18]),
+        "fe4":  ([40, 12, 3, 12, 12, 0, 7, 3], [80, 27, 18, 27, 27, 30, 22, 18]),
+        "fe5":  ([24, 6, 1, 7, 9, 0, 5, 6],    [80, 20, 20, 20, 20, 20, 20, 0]),
+        # promo rows traen 7 valores (sin Lck final) → padded con 0.
+        "promo": {
+            "Mercenary": [5, 3, 2, 2, 2, 3, 0, 0],   # Swordfighter(=Mercenary)->Hero FE4
+            "Fighter":   [2, 1, 3, 3, 3, 0, 0, 0],   # Fighter->Hero
+        },
+        "promo_by_game": {"FE5": {"Mercenary": [3, 1, 2, 3, 3, 2, 0, 0]}},
+    },
     {  # Dark Bishop  (enemigo)
         "ids": ["DarkBishop"],
         "saga": ([40, 0, 15, 10, 10, 0, 10, 12], [80, 20, 30, 25, 25, 30, 25, 27]),
