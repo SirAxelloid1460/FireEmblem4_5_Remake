@@ -5310,14 +5310,14 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 7,
-   "MAG": 0,
-   "SKL": 7,
-   "SPD": 8,
+   "HP": 40,
+   "STR": 12,
+   "MAG": 1,
+   "SKL": 12,
+   "SPD": 12,
    "LCK": 0,
-   "DEF": 5,
-   "RES": 4,
+   "DEF": 7,
+   "RES": 7,
    "CON": 7,
    "MOV": 7
   },
@@ -5347,13 +5347,13 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 24,
-   "MAG": 0,
+   "STR": 27,
+   "MAG": 20,
    "SKL": 27,
    "SPD": 27,
-   "LCK": 28,
-   "DEF": 23,
-   "RES": 22,
+   "LCK": 30,
+   "DEF": 22,
+   "RES": 18,
    "CON": 7,
    "MOV": 7
   },
@@ -5362,7 +5362,77 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Sniper",
-  "combat_anim_nid": "Sniper"
+  "combat_anim_nid": "Sniper",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 12,
+     "MAG": 0,
+     "SKL": 12,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 7,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 27,
+     "MAG": 15,
+     "SKL": 27,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 18
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 22,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 6,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Archer": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Archer": {
+    "STR": 5,
+    "MAG": 0,
+    "SKL": 2,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 0,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Soldier",
@@ -5947,14 +6017,14 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 30,
-   "STR": 9,
-   "MAG": 0,
+   "HP": 40,
+   "STR": 11,
+   "MAG": 1,
    "SKL": 5,
-   "SPD": 7,
+   "SPD": 12,
    "LCK": 0,
-   "DEF": 6,
-   "RES": 2,
+   "DEF": 10,
+   "RES": 6,
    "CON": 13,
    "MOV": 6
   },
@@ -5984,13 +6054,13 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 27,
-   "MAG": 0,
-   "SKL": 24,
-   "SPD": 25,
-   "LCK": 28,
+   "STR": 26,
+   "MAG": 20,
+   "SKL": 20,
+   "SPD": 27,
+   "LCK": 30,
    "DEF": 25,
-   "RES": 20,
+   "RES": 18,
    "CON": 13,
    "MOV": 6
   },
@@ -6000,7 +6070,75 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Warrior",
-  "combat_anim_nid": "Warrior"
+  "combat_anim_nid": "Warrior",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 11,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 26,
+     "MAG": 15,
+     "SKL": 20,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 25,
+     "RES": 18
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 28,
+     "STR": 8,
+     "MAG": 1,
+     "SKL": 5,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 6
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  },
+  "promotion_gains": {
+   "Fighter": {
+    "STR": 3,
+    "MAG": 0,
+    "SKL": 2,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 0,
+    "LCK": 0
+   },
+   "Bandit": {
+    "STR": 3,
+    "MAG": 1,
+    "SKL": 5,
+    "SPD": 6,
+    "DEF": 3,
+    "RES": 1,
+    "MOV": 0,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Thief",
