@@ -5507,14 +5507,14 @@
   "level": 3,
   "gender": "M",
   "bases": {
-   "HP": 36,
-   "STR": 11,
-   "MAG": 5,
-   "SKL": 12,
-   "SPD": 12,
-   "LCK": 7,
-   "DEF": 9,
-   "RES": 0,
+   "HP": 54,
+   "STR": 28,
+   "MAG": 7,
+   "SKL": 21,
+   "SPD": 27,
+   "LCK": 22,
+   "DEF": 14,
+   "RES": 4,
    "CON": 11,
    "MOV": 10
   },
@@ -5540,7 +5540,39 @@
   "games": [
    "FE4",
    "FE5"
-  ]
+  ],
+  "versions": {
+   "FE4": {
+    "klass": "CavalierS",
+    "bases": {
+     "HP": 31,
+     "STR": 11,
+     "MAG": 0,
+     "SKL": 8,
+     "SPD": 9,
+     "LCK": 9,
+     "DEF": 8,
+     "RES": 0,
+     "CON": 11,
+     "MOV": 10
+    }
+   },
+   "FE5": {
+    "klass": "ForrestKnight",
+    "bases": {
+     "HP": 34,
+     "STR": 18,
+     "MAG": 0,
+     "SKL": 9,
+     "SPD": 15,
+     "LCK": 14,
+     "DEF": 10,
+     "RES": 4,
+     "CON": 11,
+     "MOV": 10
+    }
+   }
+  }
  },
  {
   "nid": "Cyas",
