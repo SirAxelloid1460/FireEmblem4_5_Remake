@@ -2357,13 +2357,13 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 32,
+   "HP": 40,
    "STR": 0,
-   "MAG": 8,
-   "SKL": 6,
-   "SPD": 6,
+   "MAG": 10,
+   "SKL": 8,
+   "SPD": 8,
    "LCK": 0,
-   "DEF": 6,
+   "DEF": 7,
    "RES": 10,
    "CON": 6,
    "MOV": 6
@@ -2394,12 +2394,12 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 0,
-   "MAG": 23,
-   "SKL": 22,
-   "SPD": 22,
-   "LCK": 25,
-   "DEF": 21,
+   "STR": 20,
+   "MAG": 25,
+   "SKL": 23,
+   "SPD": 23,
+   "LCK": 30,
+   "DEF": 22,
    "RES": 25,
    "CON": 6,
    "MOV": 6
@@ -2411,7 +2411,77 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "DarkMage",
-  "combat_anim_nid": "DarkMage"
+  "combat_anim_nid": "DarkMage",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 10,
+     "SKL": 8,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 7,
+     "RES": 10
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 25,
+     "SKL": 23,
+     "SPD": 23,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 25
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 0,
+     "MAG": 5,
+     "SKL": 4,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 4,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "LoptoMage": {
+      "STR": 0,
+      "MAG": 3,
+      "SKL": 2,
+      "SPD": 0,
+      "DEF": 4,
+      "RES": 1,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "LoptoMage": {
+    "STR": 0,
+    "MAG": 3,
+    "SKL": 2,
+    "SPD": 0,
+    "DEF": 4,
+    "RES": 1,
+    "MOV": 0,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "DragonKnight",

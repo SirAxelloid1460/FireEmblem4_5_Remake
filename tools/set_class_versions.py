@@ -345,6 +345,13 @@ VERSIONED = [
         # FE4 daba solo estos gains; en el remake aplican en todos los modos.
         "promotions": {"PegasusKnight": {"ALL": [0, 7, 5, 3, 1, 5, 0, 0]}},
     },
+    {  # Dark Mage  (Loptrian Mage -> Dark Mage; FE5 Salem. FE4 Sandima fijo.)
+        "ids": ["DarkMage"],
+        "saga": ([40, 0, 10, 8, 8, 0, 7, 10], [80, 20, 25, 23, 23, 30, 22, 25]),
+        "fe4":  ([40, 0, 10, 8, 8, 0, 7, 10], [80, 15, 25, 23, 23, 30, 22, 25]),
+        "fe5":  ([24, 0, 5, 4, 3, 0, 4, 0],    [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promotions": {"LoptoMage": {"FE5": [0, 3, 2, 0, 4, 1, 0, 0]}},
+    },
     {  # Baron  (enemigo, tier 3)
         "ids": ["Baron"],
         "saga": ([45, 12, 7, 7, 7, 0, 15, 7], [80, 27, 22, 22, 22, 30, 27, 22]),
