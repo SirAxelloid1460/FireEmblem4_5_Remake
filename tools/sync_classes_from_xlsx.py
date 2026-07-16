@@ -15,7 +15,7 @@ M = {  # Excel name -> DB id
  "Trobadour":"Troubadour","Free Knight":"CavalierS","Lance Knight":"CavalierL","Axe Knight":"CavalierA",
  "Archer Knight":"CavalierB","Armour":"Armour","Mage":"Mage","Bard":"Bard","Light Priestress":"LightPriestess",
  "Priest":"Priest","Loptous Mage":"LoptoMage","Dragon Knight":"DragonKnight","Pegasus Knight":"PegasusKnight",
- "Barbarian":"Barbarian","Pirate":"Pirate","Soldier":"Soldier","Warrior":"Warrior","Forrest Knight":"ForrestKnight",
+ "Barbarian":"Barbarian","Pirate":"Pirate","Soldier":"Soldier","Warrior":"Warrior","Forrest Knight":"Ranger",
  "Duke Knight":"DukeKnight","Great Knight":"GreatKnight","Lord Knight":"LordKnight","Swordmaster":"Swordmaster",
  "Hero":"Hero","Rogue":"Rogue","Dancer":"Dancer","Sniper":"Sniper","Paladin":"Paladin","Bow Knight":"BowKnight",
  "General":"General","Mage Fighter":"MageFighter","Mage Knight":"MageKnight","Sage":"Sage","High Priest":"HighPriest",

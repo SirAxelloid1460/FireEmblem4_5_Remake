@@ -3,9 +3,9 @@
   "generated_from": "gen2_inheritance_source.json (fireemblemwod)",
   "model": "final = base +/- father_mods[father]; growth idem; base = min Nv.1 entre padres",
   "class_map": {
-   "Arch Knight": "BowKnight",
+   "Arch Knight": "CavalierB",
    "Sword Fighter": "Swordfighter",
-   "Free Knight": "ForrestKnight",
+   "Free Knight": "CavalierS",
    "Bow Fighter": "Archer",
    "Priest": "Priest",
    "Troubadour": "Troubadour",
@@ -18,7 +18,7 @@
   "note": "Ajusta libremente base_stats/base_growths/father_mods; skills en crudo (nombres de la fuente)."
  },
  "Lester": {
-  "klass": "BowKnight",
+  "klass": "CavalierB",
   "klass_source": "Arch Knight",
   "holy_blood": {
    "Ulir": "Minor"
@@ -58,7 +58,7 @@
    "RES": 7
   },
   "con": 8,
-  "mov": 80,
+  "mov": 70,
   "father_mods": {
    "Noish": {
     "base": {
@@ -1575,7 +1575,7 @@
   }
  },
  "Delmud": {
-  "klass": "ForrestKnight",
+  "klass": "CavalierS",
   "klass_source": "Free Knight",
   "holy_blood": {
    "Hezul": "Minor"
@@ -1615,8 +1615,8 @@
    "DEF": 30,
    "RES": 10
   },
-  "con": 9,
-  "mov": 80,
+  "con": 8,
+  "mov": 70,
   "father_mods": {
    "Noish": {
     "base": {

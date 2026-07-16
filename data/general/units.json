@@ -2161,7 +2161,7 @@
   "nid": "Voltz",
   "name": "Voltz",
   "desc": "Mercenary leader enlisted by Macbeth to defend Anphony.",
-  "klass": "ForrestKnight",
+  "klass": "Ranger",
   "level": 10,
   "gender": "M",
   "bases": {
@@ -5487,7 +5487,7 @@
   "nid": "Delmud",
   "name": "Delmud",
   "desc": "",
-  "klass": "ForrestKnight",
+  "klass": "Ranger",
   "level": 3,
   "gender": "M",
   "bases": {

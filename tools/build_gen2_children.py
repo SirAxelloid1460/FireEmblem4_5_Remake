@@ -35,10 +35,10 @@ FATHER_MAP = {
 
 # Nombre de clase de la fuente -> id de classes.json (convención del proyecto).
 CLASS_MAP = {
-    "Arch Knight": "BowKnight",
+    "Arch Knight": "CavalierB",       # = "Archer Knight" (tier 1 mounted bow); Lester
     "Sword Fighter": "Swordfighter",
-    "Free Knight": "ForrestKnight",   # p.ej. Delmud ya usa ForrestKnight
-    "Bow Fighter": "Archer",
+    "Free Knight": "CavalierS",       # tier 1 sword cavalier; Delmud (NO es Ranger/tier2)
+    "Bow Fighter": "Archer",          # id "Archer" (name "Bow Fighter"); Faval
     "Priest": "Priest",
     "Troubadour": "Troubadour",
     "Dancer": "Dancer",

@@ -1064,7 +1064,7 @@
   "movement_group": "Light Cav",
   "promotes_from": "",
   "turns_into": [
-   "ForrestKnight"
+   "Ranger"
   ],
   "tags": [
    "Mounted"
@@ -1996,8 +1996,8 @@
   "combat_anim_nid": "Fighter"
  },
  {
-  "id": "ForrestKnight",
-  "name": "Forrest Knigh",
+  "id": "Ranger",
+  "name": "Ranger",
   "desc": "Mounted Swordfighters with superior abilities",
   "tier": 2,
   "movement_group": "Light Cav",
