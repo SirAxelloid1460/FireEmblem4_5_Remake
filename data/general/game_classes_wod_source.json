@@ -1,0 +1,3761 @@
+{
+  "classes": [
+    {
+      "name": "Junior Lord",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 5,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 5,
+        "LCK": 0,
+        "DEF": 5,
+        "CON": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "SKL": 2,
+        "SPD": 2,
+        "DEF": 2,
+        "CON": 3,
+        "MOV": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 20,
+        "MAG": 15,
+        "SKL": 20,
+        "SPD": 20,
+        "LCK": 30,
+        "DEF": 20
+      },
+      "weapons": {
+        "Sword": "B"
+      },
+      "promotes_to": "Lord Knight (Cost: 6000 gold)",
+      "special_ability": "Castle/Fort capture; game ends if unit dies"
+    },
+    {
+      "name": "Social Knight",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 7,
+        "MAG": 0,
+        "SKL": 6,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 6,
+        "RES": 0,
+        "MOV": 8
+      },
+      "promotion_bonuses": {
+        "STR": 2,
+        "MAG": 5,
+        "SKL": 3,
+        "SPD": 3,
+        "DEF": 3,
+        "RES": 5,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 15,
+        "SKL": 21,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 21,
+        "RES": 15
+      },
+      "weapons": {
+        "Sword": "B",
+        "Spear": "C"
+      },
+      "promotes_to": "Paladin (H) (Cost: 1000 gold)",
+      "special_ability": "After acting/attacking, can move with remaining movement"
+    },
+    {
+      "name": "Troubadour",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 26,
+        "STR": 3,
+        "MAG": 3,
+        "SKL": 6,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 3,
+        "RES": 3,
+        "MOV": 8
+      },
+      "promotion_bonuses": {
+        "STR": 6,
+        "MAG": 2,
+        "SKL": 3,
+        "SPD": 3,
+        "DEF": 6,
+        "RES": 2,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 18,
+        "MAG": 18,
+        "SKL": 21,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 18,
+        "RES": 18
+      },
+      "weapons": {
+        "Sword": "B",
+        "Staff": "C"
+      },
+      "promotes_to": "Paladin (M) (Cost: 1000 gold)",
+      "special_ability": "Post-action movement with remaining movement points"
+    },
+    {
+      "name": "Lance Knight",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 7,
+        "MAG": 0,
+        "SKL": 6,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 6,
+        "RES": 0,
+        "MOV": 8
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "SKL": 1,
+        "SPD": 1,
+        "DEF": 2,
+        "RES": 3,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 15,
+        "SKL": 21,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 21,
+        "RES": 15
+      },
+      "weapons": {
+        "Spear": "B"
+      },
+      "promotes_to": "Duke Knight (Cost: 1000 gold)",
+      "special_ability": "Post-action movement capability"
+    },
+    {
+      "name": "Arch Knight",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 7,
+        "MAG": 0,
+        "SKL": 6,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 6,
+        "RES": 0,
+        "MOV": 8
+      },
+      "promotion_bonuses": {
+        "STR": 3,
+        "SKL": 2,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 3,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 15,
+        "SKL": 21,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 21,
+        "RES": 15
+      },
+      "weapons": {
+        "Bow": "B"
+      },
+      "promotes_to": "Bow Knight (Cost: 1000 gold)",
+      "special_ability": "Post-action movement"
+    },
+    {
+      "name": "Axe Knight",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 7,
+        "MAG": 0,
+        "SKL": 6,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 6,
+        "RES": 0,
+        "MOV": 8
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "SKL": 1,
+        "SPD": 1,
+        "DEF": 4,
+        "RES": 3,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 15,
+        "SKL": 21,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 21,
+        "RES": 15
+      },
+      "weapons": {
+        "Axe": "B"
+      },
+      "promotes_to": "Great Knight (Cost: 1000 gold)",
+      "special_ability": "Post-action movement"
+    },
+    {
+      "name": "Free Knight",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 7,
+        "MAG": 0,
+        "SKL": 6,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 6,
+        "RES": 0,
+        "MOV": 8
+      },
+      "promotion_bonuses": {
+        "STR": 1,
+        "SKL": 9,
+        "SPD": 6,
+        "DEF": 2,
+        "RES": 3,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 15,
+        "SKL": 21,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 21,
+        "RES": 15
+      },
+      "weapons": {
+        "Sword": "B"
+      },
+      "promotes_to": "Forrest Knight (Cost: 1000 gold)",
+      "special_ability": "Post-action movement"
+    },
+    {
+      "name": "Pegasus Knight",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 35,
+        "STR": 7,
+        "MAG": 0,
+        "SKL": 7,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 7,
+        "MOV": 8
+      },
+      "promotion_bonuses": {
+        "MAG": 7,
+        "SKL": 5,
+        "SPD": 3,
+        "DEF": 1,
+        "RES": 5
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 15,
+        "SKL": 22,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 22
+      },
+      "weapons": {
+        "Sword": "B",
+        "Spear": "B"
+      },
+      "promotes_to": "Falcoknight (Cost: 3000 gold)",
+      "special_ability": "Post-action movement; unaffected by terrain (except healing terrain)"
+    },
+    {
+      "name": "Dragon Knight",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 40,
+        "STR": 10,
+        "MAG": 0,
+        "SKL": 7,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 11,
+        "RES": 0,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 2,
+        "SKL": 2,
+        "SPD": 1,
+        "DEF": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 25,
+        "MAG": 15,
+        "SKL": 22,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 26,
+        "RES": 15
+      },
+      "weapons": {
+        "Sword": "B",
+        "Spear": "B"
+      },
+      "promotes_to": "Dragon Master (Cost: 3000 gold)",
+      "special_ability": "Post-action movement; terrain immunity (except healing terrain)"
+    },
+    {
+      "name": "Bowfighter",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 7,
+        "MAG": 0,
+        "SKL": 10,
+        "SPD": 10,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "SKL": 2,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 15,
+        "SKL": 25,
+        "SPD": 25,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 15
+      },
+      "weapons": {
+        "Bow": "A"
+      },
+      "promotes_to": "Sniper (Cost: 1000 gold)",
+      "special_ability": "Pursuit (double attacks)"
+    },
+    {
+      "name": "Swordfighter",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 7,
+        "MAG": 0,
+        "SKL": 10,
+        "SPD": 10,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "SKL": 5,
+        "SPD": 5,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 15,
+        "SKL": 25,
+        "SPD": 25,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 15
+      },
+      "weapons": {
+        "Sword": "A"
+      },
+      "promotes_to": "Swordmaster or Forrest (Cost: 1000 gold); promotion bonus path2 (Forrest): STR5 MAG3 SKL2 SPD2 DEF2 RES3",
+      "special_ability": "Pursuit (double attacks)"
+    },
+    {
+      "name": "Axefighter",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 35,
+        "STR": 8,
+        "MAG": 0,
+        "SKL": 3,
+        "SPD": 10,
+        "LCK": 0,
+        "DEF": 8,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 3,
+        "SKL": 2,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 23,
+        "MAG": 15,
+        "SKL": 18,
+        "SPD": 25,
+        "LCK": 30,
+        "DEF": 23,
+        "RES": 15
+      },
+      "weapons": {
+        "Axe": "A"
+      },
+      "promotes_to": "Warrior (Cost: 2000 gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Sword Armour",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 40,
+        "STR": 9,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 3,
+        "LCK": 0,
+        "DEF": 10,
+        "RES": 0,
+        "MOV": 5
+      },
+      "promotion_bonuses": {
+        "STR": 1,
+        "SKL": 1,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 24,
+        "MAG": 15,
+        "SKL": 20,
+        "SPD": 18,
+        "LCK": 30,
+        "DEF": 25,
+        "RES": 15
+      },
+      "weapons": {
+        "Sword": "B"
+      },
+      "promotes_to": "General (Cost: 2000 gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Prince",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 8,
+        "MAG": 3,
+        "SKL": 7,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 3,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 4,
+        "MAG": 4,
+        "SKL": 5,
+        "SPD": 6,
+        "DEF": 5,
+        "RES": 4,
+        "MOV": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 23,
+        "MAG": 18,
+        "SKL": 22,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 22,
+        "RES": 18
+      },
+      "weapons": {
+        "Sword": "A"
+      },
+      "promotes_to": "Master Knight (H) (Cost: 5000 gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Princess",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 26,
+        "STR": 5,
+        "MAG": 7,
+        "SKL": 5,
+        "SPD": 8,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 7,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 7,
+        "SKL": 7,
+        "SPD": 4,
+        "DEF": 7,
+        "MOV": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 20,
+        "MAG": 22,
+        "SKL": 20,
+        "SPD": 23,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 22
+      },
+      "weapons": {
+        "Sword": "B",
+        "Staff": "C"
+      },
+      "promotes_to": "Master Knight (M) (Cost: 5000 gold)",
+      "special_ability": "Charisma (+10 evasion/accuracy to allies within 3 squares)"
+    },
+    {
+      "name": "Thief",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 26,
+        "STR": 3,
+        "MAG": 0,
+        "SKL": 3,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 1,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 4,
+        "MAG": 3,
+        "SKL": 4,
+        "SPD": 5,
+        "DEF": 4,
+        "RES": 3,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 18,
+        "MAG": 15,
+        "SKL": 18,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 16,
+        "RES": 15
+      },
+      "weapons": {
+        "Sword": "C"
+      },
+      "promotes_to": "Thief Fighter (Cost: 5000 gold)",
+      "special_ability": "Steal (money from enemies; distribute to allies)"
+    },
+    {
+      "name": "Mage",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 26,
+        "STR": 0,
+        "MAG": 7,
+        "SKL": 6,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 1,
+        "RES": 5,
+        "MOV": 5
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "MAG": 3,
+        "SKL": 1,
+        "SPD": 1,
+        "DEF": 4,
+        "RES": 2,
+        "MOV": 4
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 22,
+        "SKL": 21,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 16,
+        "RES": 20
+      },
+      "weapons": {
+        "Fire": "C",
+        "Wind": "C",
+        "Thunder": "C"
+      },
+      "promotes_to": "Mage Knight or Mage Fighter (Cost: 1000 gold); promotion bonus path2 (Mage Fighter): STR3 MAG5 SKL3 SPD6 DEF4 RES5 MOV1",
+      "special_ability": ""
+    },
+    {
+      "name": "Thunder Mage",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 26,
+        "STR": 0,
+        "MAG": 7,
+        "SKL": 9,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 1,
+        "RES": 5,
+        "MOV": 5
+      },
+      "promotion_bonuses": {
+        "STR": 3,
+        "MAG": 5,
+        "SPD": 6,
+        "DEF": 4,
+        "RES": 5,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 22,
+        "SKL": 24,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 16,
+        "RES": 20
+      },
+      "weapons": {
+        "Thunder": "B"
+      },
+      "promotes_to": "Mage Fighter (M) (Cost: 1000 gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Wind Mage",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 26,
+        "STR": 0,
+        "MAG": 7,
+        "SKL": 6,
+        "SPD": 9,
+        "LCK": 0,
+        "DEF": 1,
+        "RES": 5,
+        "MOV": 5
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "MAG": 5,
+        "SKL": 4,
+        "SPD": 4,
+        "DEF": 6,
+        "RES": 3,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 22,
+        "SKL": 21,
+        "SPD": 24,
+        "LCK": 30,
+        "DEF": 16,
+        "RES": 20
+      },
+      "weapons": {
+        "Wind": "B"
+      },
+      "promotes_to": "Mage Fighter (H) (Cost: 1000 gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Bard",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 0,
+        "MAG": 7,
+        "SKL": 7,
+        "SPD": 10,
+        "LCK": 0,
+        "DEF": 3,
+        "RES": 7,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "MAG": 8,
+        "SKL": 5,
+        "SPD": 5,
+        "RES": 5
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 22,
+        "SKL": 22,
+        "SPD": 25,
+        "LCK": 30,
+        "DEF": 18,
+        "RES": 22
+      },
+      "weapons": {
+        "Fire": "C",
+        "Wind": "C",
+        "Thunder": "C",
+        "Light": "C"
+      },
+      "promotes_to": "Sage (Cost: 2000 gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Priest/Cleric",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 26,
+        "STR": 0,
+        "MAG": 7,
+        "SKL": 6,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 1,
+        "RES": 7,
+        "MOV": 5
+      },
+      "promotion_bonuses": {
+        "MAG": 5,
+        "SKL": 3,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 22,
+        "SKL": 21,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 16,
+        "RES": 22
+      },
+      "weapons": {
+        "Staff": "B"
+      },
+      "promotes_to": "High Priest (Cost: 1000 gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Shaman",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 30,
+        "STR": 0,
+        "MAG": 8,
+        "SKL": 7,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 3,
+        "RES": 10,
+        "MOV": 5
+      },
+      "promotion_bonuses": {
+        "MAG": 7,
+        "SKL": 5,
+        "SPD": 8,
+        "RES": 2,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 23,
+        "SKL": 22,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 18,
+        "RES": 25
+      },
+      "weapons": {
+        "Staff": "B",
+        "Light": "A"
+      },
+      "promotes_to": "Sage (Julia only) (Cost: 2000 gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Dancer",
+      "game": "FE4",
+      "category": "unpromoted",
+      "bases": {
+        "HP": 26,
+        "STR": 3,
+        "MAG": 0,
+        "SKL": 1,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 1,
+        "RES": 3,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 18,
+        "MAG": 15,
+        "SKL": 16,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 16,
+        "RES": 18
+      },
+      "weapons": {
+        "Sword": "C"
+      },
+      "promotes_to": "Does not promote (Cost: 1000 gold)",
+      "special_ability": "Dance (restore turn to up to 4 nearby allies)"
+    },
+    {
+      "name": "Lord Knight",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 10,
+        "MAG": 0,
+        "SKL": 7,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 7,
+        "CON": 3,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "SKL": 2,
+        "SPD": 2,
+        "DEF": 2,
+        "CON": 3,
+        "MOV": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 25,
+        "MAG": 15,
+        "SKL": 22,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 22
+      },
+      "weapons": {
+        "Sword": "A",
+        "Spear": "B"
+      },
+      "promotes_to": "",
+      "special_ability": "Capture castles/forts; game over if killed"
+    },
+    {
+      "name": "Paladin (H)",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 9,
+        "MAG": 5,
+        "SKL": 9,
+        "SPD": 9,
+        "LCK": 0,
+        "DEF": 9,
+        "RES": 5,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 2,
+        "MAG": 5,
+        "SKL": 3,
+        "SPD": 3,
+        "DEF": 3,
+        "RES": 5,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 24,
+        "MAG": 20,
+        "SKL": 24,
+        "SPD": 24,
+        "LCK": 30,
+        "DEF": 24,
+        "RES": 20
+      },
+      "weapons": {
+        "Sword": "B",
+        "Spear": "B"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Paladin (M)",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 9,
+        "MAG": 5,
+        "SKL": 9,
+        "SPD": 9,
+        "LCK": 0,
+        "DEF": 9,
+        "RES": 5,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 6,
+        "MAG": 2,
+        "SKL": 3,
+        "SPD": 3,
+        "DEF": 6,
+        "RES": 2,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 24,
+        "MAG": 20,
+        "SKL": 24,
+        "SPD": 24,
+        "LCK": 30,
+        "DEF": 24,
+        "RES": 20
+      },
+      "weapons": {
+        "Sword": "B",
+        "Spear": "C",
+        "Staff": "C"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Duke Knight",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 12,
+        "MAG": 0,
+        "SKL": 7,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 8,
+        "RES": 3,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "SKL": 1,
+        "SPD": 1,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 27,
+        "MAG": 15,
+        "SKL": 22,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 23,
+        "RES": 18
+      },
+      "weapons": {
+        "Spear": "A"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Bow Knight",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 10,
+        "MAG": 0,
+        "SKL": 8,
+        "SPD": 8,
+        "LCK": 0,
+        "DEF": 8,
+        "RES": 3,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 3,
+        "SKL": 2,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 25,
+        "MAG": 15,
+        "SKL": 23,
+        "SPD": 23,
+        "LCK": 30,
+        "DEF": 23,
+        "RES": 18
+      },
+      "weapons": {
+        "Bow": "A"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Great Knight",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 12,
+        "MAG": 0,
+        "SKL": 7,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 10,
+        "RES": 3,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "SKL": 1,
+        "SPD": 1,
+        "DEF": 4,
+        "RES": 3,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 27,
+        "MAG": 15,
+        "SKL": 22,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 25,
+        "RES": 18
+      },
+      "weapons": {
+        "Axe": "A"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Forrest Knight",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 8,
+        "MAG": 0,
+        "SKL": 15,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 8,
+        "RES": 3,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 1,
+        "SKL": 9,
+        "SPD": 6,
+        "DEF": 2,
+        "RES": 3,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 23,
+        "MAG": 15,
+        "SKL": 30,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 23,
+        "RES": 18
+      },
+      "weapons": {
+        "Sword": "A"
+      },
+      "promotes_to": "",
+      "special_ability": "Continue (additional attacks)"
+    },
+    {
+      "name": "Falcoknight",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 7,
+        "MAG": 7,
+        "SKL": 12,
+        "SPD": 15,
+        "LCK": 0,
+        "DEF": 6,
+        "RES": 12,
+        "MOV": 8
+      },
+      "promotion_bonuses": {
+        "MAG": 7,
+        "SKL": 5,
+        "SPD": 3,
+        "DEF": 1,
+        "RES": 5
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 22,
+        "SKL": 25,
+        "SPD": 30,
+        "LCK": 30,
+        "DEF": 21,
+        "RES": 27
+      },
+      "weapons": {
+        "Sword": "A",
+        "Spear": "A",
+        "Staff": "C"
+      },
+      "promotes_to": "",
+      "special_ability": "Unaffected by terrain; Continue"
+    },
+    {
+      "name": "Dragon Master",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 12,
+        "MAG": 0,
+        "SKL": 9,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 14,
+        "RES": 0,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 2,
+        "SKL": 2,
+        "SPD": 1,
+        "DEF": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 27,
+        "MAG": 15,
+        "SKL": 24,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 29,
+        "RES": 15
+      },
+      "weapons": {
+        "Sword": "A",
+        "Spear": "A"
+      },
+      "promotes_to": "",
+      "special_ability": "Unaffected by terrain; Pursuit (double attacks)"
+    },
+    {
+      "name": "Sniper",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 12,
+        "MAG": 0,
+        "SKL": 12,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 3,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "SKL": 2,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 27,
+        "MAG": 15,
+        "SKL": 27,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 22,
+        "RES": 18
+      },
+      "weapons": {
+        "Bow": "A"
+      },
+      "promotes_to": "",
+      "special_ability": "Pursuit"
+    },
+    {
+      "name": "Swordmaster",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 12,
+        "MAG": 0,
+        "SKL": 15,
+        "SPD": 15,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 3,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "SKL": 5,
+        "SPD": 5,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 27,
+        "MAG": 15,
+        "SKL": 30,
+        "SPD": 30,
+        "LCK": 30,
+        "DEF": 22,
+        "RES": 18
+      },
+      "weapons": {
+        "Sword": "A"
+      },
+      "promotes_to": "",
+      "special_ability": "Pursuit; Continue"
+    },
+    {
+      "name": "Forrest (Swordmaster variant)",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 12,
+        "MAG": 3,
+        "SKL": 12,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 3,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "MAG": 3,
+        "SKL": 2,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 27,
+        "MAG": 18,
+        "SKL": 27,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 22,
+        "RES": 18
+      },
+      "weapons": {
+        "Sword": "A"
+      },
+      "promotes_to": "",
+      "special_ability": "Pursuit"
+    },
+    {
+      "name": "Warrior",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 11,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 10,
+        "RES": 3,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 3,
+        "SKL": 2,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 26,
+        "MAG": 15,
+        "SKL": 22,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 25,
+        "RES": 18
+      },
+      "weapons": {
+        "Axe": "A",
+        "Bow": "B"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "General",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 10,
+        "MAG": 0,
+        "SKL": 6,
+        "SPD": 5,
+        "LCK": 0,
+        "DEF": 12,
+        "RES": 3,
+        "MOV": 5
+      },
+      "promotion_bonuses": {
+        "STR": 1,
+        "SKL": 1,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 25,
+        "MAG": 15,
+        "SKL": 21,
+        "SPD": 20,
+        "LCK": 30,
+        "DEF": 27,
+        "RES": 18
+      },
+      "weapons": {
+        "Sword": "A",
+        "Spear": "A",
+        "Axe": "B",
+        "Bow": "B"
+      },
+      "promotes_to": "",
+      "special_ability": "Big Shield (block one attack)"
+    },
+    {
+      "name": "Thief Fighter",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 30,
+        "STR": 7,
+        "MAG": 3,
+        "SKL": 7,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 3,
+        "MOV": 7
+      },
+      "promotion_bonuses": {
+        "STR": 4,
+        "MAG": 3,
+        "SKL": 4,
+        "SPD": 5,
+        "DEF": 4,
+        "RES": 3,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 18,
+        "SKL": 22,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 18
+      },
+      "weapons": {
+        "Sword": "A"
+      },
+      "promotes_to": "",
+      "special_ability": "Steal (rob enemy funds); Pursuit"
+    },
+    {
+      "name": "Mage Knight",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 5,
+        "MAG": 10,
+        "SKL": 7,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 7,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "MAG": 3,
+        "SKL": 1,
+        "SPD": 1,
+        "DEF": 4,
+        "RES": 2,
+        "MOV": 4
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 20,
+        "MAG": 25,
+        "SKL": 22,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 22
+      },
+      "weapons": {
+        "Sword": "B",
+        "Fire": "B",
+        "Wind": "B",
+        "Thunder": "B"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Mage Fighter (H)",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 30,
+        "STR": 5,
+        "MAG": 12,
+        "SKL": 10,
+        "SPD": 10,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 7,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 5,
+        "MAG": 5,
+        "SKL": 4,
+        "SPD": 4,
+        "DEF": 6,
+        "RES": 3,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 20,
+        "MAG": 27,
+        "SKL": 25,
+        "SPD": 25,
+        "LCK": 30,
+        "DEF": 22,
+        "RES": 22
+      },
+      "weapons": {
+        "Sword": "C",
+        "Fire": "B",
+        "Wind": "B",
+        "Thunder": "B"
+      },
+      "promotes_to": "",
+      "special_ability": "Continue"
+    },
+    {
+      "name": "Mage Fighter (M)",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 26,
+        "STR": 3,
+        "MAG": 12,
+        "SKL": 9,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 10,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "STR": 3,
+        "MAG": 5,
+        "SKL": 3,
+        "SPD": 6,
+        "DEF": 4,
+        "RES": 5,
+        "MOV": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 18,
+        "MAG": 27,
+        "SKL": 24,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 25
+      },
+      "weapons": {
+        "Sword": "C",
+        "Fire": "B",
+        "Wind": "B",
+        "Thunder": "B",
+        "Staff": "B"
+      },
+      "promotes_to": "",
+      "special_ability": "Continue"
+    },
+    {
+      "name": "Master Knight (H)",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 12,
+        "MAG": 7,
+        "SKL": 12,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 12,
+        "RES": 7,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 4,
+        "MAG": 4,
+        "SKL": 5,
+        "SPD": 6,
+        "DEF": 5,
+        "RES": 4,
+        "MOV": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 27,
+        "MAG": 22,
+        "SKL": 27,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 27,
+        "RES": 22
+      },
+      "weapons": {
+        "Sword": "A",
+        "Spear": "A",
+        "Axe": "A",
+        "Bow": "A",
+        "Fire": "A",
+        "Wind": "A",
+        "Thunder": "A",
+        "Staff": "A",
+        "Light": "C"
+      },
+      "promotes_to": "",
+      "special_ability": "Pursuit; additional movement after attacking"
+    },
+    {
+      "name": "Master Knight (M)",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 40,
+        "STR": 12,
+        "MAG": 7,
+        "SKL": 12,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 12,
+        "RES": 7,
+        "MOV": 9
+      },
+      "promotion_bonuses": {
+        "STR": 7,
+        "SKL": 7,
+        "SPD": 4,
+        "DEF": 7,
+        "MOV": 3
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 27,
+        "MAG": 22,
+        "SKL": 27,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 27,
+        "RES": 22
+      },
+      "weapons": {
+        "Sword": "A",
+        "Spear": "A",
+        "Axe": "A",
+        "Bow": "A",
+        "Fire": "A",
+        "Wind": "A",
+        "Thunder": "A",
+        "Staff": "A",
+        "Light": "C"
+      },
+      "promotes_to": "",
+      "special_ability": "Pursuit; additional movement after attacking"
+    },
+    {
+      "name": "Sage",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 35,
+        "STR": 0,
+        "MAG": 15,
+        "SKL": 12,
+        "SPD": 15,
+        "LCK": 0,
+        "DEF": 3,
+        "RES": 12,
+        "MOV": 6
+      },
+      "promotion_bonuses": {
+        "MAG": 8,
+        "SKL": 5,
+        "SPD": 5,
+        "RES": 5
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 30,
+        "SKL": 27,
+        "SPD": 30,
+        "LCK": 30,
+        "DEF": 18,
+        "RES": 27
+      },
+      "weapons": {
+        "Fire": "B",
+        "Wind": "B",
+        "Thunder": "B",
+        "Staff": "B",
+        "Light": "B"
+      },
+      "promotes_to": "",
+      "special_ability": "Continue (promotion_bonuses shown are from Bard; from Shaman path: MAG7 SKL5 SPD8 RES2 MOV1)"
+    },
+    {
+      "name": "High Priest",
+      "game": "FE4",
+      "category": "promoted",
+      "bases": {
+        "HP": 35,
+        "STR": 0,
+        "MAG": 12,
+        "SKL": 9,
+        "SPD": 8,
+        "LCK": 0,
+        "DEF": 3,
+        "RES": 8,
+        "MOV": 5
+      },
+      "promotion_bonuses": {
+        "MAG": 5,
+        "SKL": 3,
+        "SPD": 2,
+        "DEF": 2,
+        "RES": 1
+      },
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 27,
+        "SKL": 24,
+        "SPD": 23,
+        "LCK": 30,
+        "DEF": 18,
+        "RES": 23
+      },
+      "weapons": {
+        "Fire": "C",
+        "Wind": "C",
+        "Thunder": "C",
+        "Staff": "A"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Civilian",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 20,
+        "STR": 0,
+        "MAG": 0,
+        "SKL": 0,
+        "SPD": 0,
+        "LCK": 0,
+        "DEF": 0,
+        "CON": 0,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 15,
+        "SKL": 15,
+        "SPD": 25,
+        "LCK": 30,
+        "DEF": 17
+      },
+      "weapons": {},
+      "promotes_to": "No promotion",
+      "special_ability": "Children adult stats: PV20 Vel10 Def2; Gold 0"
+    },
+    {
+      "name": "Lance Armour",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 40,
+        "STR": 9,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 3,
+        "LCK": 0,
+        "DEF": 10,
+        "RES": 0,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 24,
+        "MAG": 15,
+        "SKL": 20,
+        "SPD": 18,
+        "LCK": 30,
+        "DEF": 25,
+        "RES": 15
+      },
+      "weapons": {
+        "Spear": "B"
+      },
+      "promotes_to": "General",
+      "special_ability": "Gold 2000"
+    },
+    {
+      "name": "Bow Armour",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 40,
+        "STR": 9,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 3,
+        "LCK": 0,
+        "DEF": 10,
+        "RES": 0,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 24,
+        "MAG": 15,
+        "SKL": 20,
+        "SPD": 18,
+        "LCK": 30,
+        "DEF": 25,
+        "RES": 15
+      },
+      "weapons": {
+        "Bow": "B"
+      },
+      "promotes_to": "General",
+      "special_ability": "Gold 2000"
+    },
+    {
+      "name": "Axe Armour",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 40,
+        "STR": 9,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 3,
+        "LCK": 0,
+        "DEF": 10,
+        "RES": 0,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 24,
+        "MAG": 15,
+        "SKL": 20,
+        "SPD": 18,
+        "LCK": 30,
+        "DEF": 25,
+        "RES": 15
+      },
+      "weapons": {
+        "Axe": "B"
+      },
+      "promotes_to": "General",
+      "special_ability": "Gold 2000"
+    },
+    {
+      "name": "Baron",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 42,
+        "STR": 12,
+        "MAG": 7,
+        "SKL": 7,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 12,
+        "RES": 7,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 27,
+        "MAG": 22,
+        "SKL": 22,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 27,
+        "RES": 22
+      },
+      "weapons": {
+        "Sword": "A",
+        "Spear": "A",
+        "Axe": "A",
+        "Bow": "A",
+        "Fire": "A",
+        "Wind": "A",
+        "Thunder": "A",
+        "Staff": "A"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Big Shield; Gold 5000"
+    },
+    {
+      "name": "Emperor",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 45,
+        "STR": 15,
+        "MAG": 15,
+        "SKL": 15,
+        "SPD": 15,
+        "LCK": 0,
+        "DEF": 15,
+        "RES": 15,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 30,
+        "MAG": 30,
+        "SKL": 30,
+        "SPD": 30,
+        "LCK": 30,
+        "DEF": 30,
+        "RES": 30
+      },
+      "weapons": {
+        "Sword": "A",
+        "Spear": "A",
+        "Axe": "A",
+        "Bow": "A",
+        "Fire": "A",
+        "Wind": "A",
+        "Thunder": "A",
+        "Staff": "A"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Big Shield, Charisma (+10 evasion/hit to allies within 3 squares); Gold 6000"
+    },
+    {
+      "name": "Dragon Rider",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 35,
+        "STR": 9,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 5,
+        "LCK": 0,
+        "DEF": 8,
+        "RES": 0,
+        "MOV": 9
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 24,
+        "MAG": 15,
+        "SKL": 20,
+        "SPD": 20,
+        "LCK": 30,
+        "DEF": 23,
+        "RES": 15
+      },
+      "weapons": {
+        "Sword": "C",
+        "Spear": "C"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Can move after attacking if movement remains; unaffected by terrain except healing tiles; Gold 1000"
+    },
+    {
+      "name": "Mountain Thief",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 35,
+        "STR": 5,
+        "MAG": 0,
+        "SKL": 0,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 20,
+        "MAG": 15,
+        "SKL": 15,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 15
+      },
+      "weapons": {
+        "Axe": "B"
+      },
+      "promotes_to": "",
+      "special_ability": "Destroy villages; Gold 5000"
+    },
+    {
+      "name": "Barbarian",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 35,
+        "STR": 5,
+        "MAG": 0,
+        "SKL": 0,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 20,
+        "MAG": 15,
+        "SKL": 15,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 15
+      },
+      "weapons": {
+        "Axe": "B"
+      },
+      "promotes_to": "",
+      "special_ability": "Gold 5000"
+    },
+    {
+      "name": "Pirate",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 35,
+        "STR": 5,
+        "MAG": 0,
+        "SKL": 0,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 20,
+        "MAG": 15,
+        "SKL": 15,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 15
+      },
+      "weapons": {
+        "Axe": "B"
+      },
+      "promotes_to": "",
+      "special_ability": "Destroy villages, traverse water; Gold 5000"
+    },
+    {
+      "name": "Hunter",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 35,
+        "STR": 7,
+        "MAG": 0,
+        "SKL": 0,
+        "SPD": 7,
+        "LCK": 0,
+        "DEF": 5,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 22,
+        "MAG": 15,
+        "SKL": 15,
+        "SPD": 22,
+        "LCK": 30,
+        "DEF": 20,
+        "RES": 15
+      },
+      "weapons": {
+        "Bow": "A"
+      },
+      "promotes_to": "",
+      "special_ability": "Gold 1000"
+    },
+    {
+      "name": "Iron Arch",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 30,
+        "STR": 0,
+        "MAG": 0,
+        "SKL": 0,
+        "SPD": 0,
+        "LCK": 0,
+        "DEF": 10,
+        "RES": 0,
+        "MOV": 0
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 15,
+        "SKL": 15,
+        "SPD": 15,
+        "LCK": 30,
+        "DEF": 25,
+        "RES": 15
+      },
+      "weapons": {
+        "Bow": "A"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Uses crossbows; Gold 1000"
+    },
+    {
+      "name": "Long Arch",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 30,
+        "STR": 0,
+        "MAG": 0,
+        "SKL": 0,
+        "SPD": 0,
+        "LCK": 0,
+        "DEF": 0,
+        "RES": 0,
+        "MOV": 0
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 15,
+        "SKL": 15,
+        "SPD": 15,
+        "LCK": 30,
+        "DEF": 15,
+        "RES": 15
+      },
+      "weapons": {
+        "Bow": "A"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Uses crossbows; Gold 1000"
+    },
+    {
+      "name": "Killer Arch",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 30,
+        "STR": 0,
+        "MAG": 0,
+        "SKL": 0,
+        "SPD": 0,
+        "LCK": 0,
+        "DEF": 0,
+        "RES": 0,
+        "MOV": 0
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 15,
+        "SKL": 15,
+        "SPD": 15,
+        "LCK": 30,
+        "DEF": 15,
+        "RES": 15
+      },
+      "weapons": {
+        "Bow": "A"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Uses crossbows, critical hit chance; Gold 1000"
+    },
+    {
+      "name": "Fire Mage",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 26,
+        "STR": 0,
+        "MAG": 10,
+        "SKL": 6,
+        "SPD": 6,
+        "LCK": 0,
+        "DEF": 1,
+        "RES": 5,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 25,
+        "SKL": 21,
+        "SPD": 21,
+        "LCK": 30,
+        "DEF": 16,
+        "RES": 20
+      },
+      "weapons": {
+        "Fire": "B"
+      },
+      "promotes_to": "",
+      "special_ability": "Gold 1000"
+    },
+    {
+      "name": "Bishop",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 35,
+        "STR": 0,
+        "MAG": 10,
+        "SKL": 8,
+        "SPD": 5,
+        "LCK": 0,
+        "DEF": 3,
+        "RES": 8,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 25,
+        "SKL": 23,
+        "SPD": 20,
+        "LCK": 30,
+        "DEF": 18,
+        "RES": 23
+      },
+      "weapons": {
+        "Fire": "B",
+        "Wind": "B",
+        "Thunder": "B",
+        "Staff": "A"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Gold 3000"
+    },
+    {
+      "name": "Dark Mage",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 40,
+        "STR": 0,
+        "MAG": 10,
+        "SKL": 8,
+        "SPD": 8,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 10,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 25,
+        "SKL": 23,
+        "SPD": 23,
+        "LCK": 30,
+        "DEF": 22,
+        "RES": 25
+      },
+      "weapons": {
+        "Staff": "B",
+        "Dark": "B"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Gold 5000"
+    },
+    {
+      "name": "Dark Bishop",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 40,
+        "STR": 0,
+        "MAG": 15,
+        "SKL": 10,
+        "SPD": 10,
+        "LCK": 0,
+        "DEF": 10,
+        "RES": 12,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 30,
+        "SKL": 25,
+        "SPD": 25,
+        "LCK": 30,
+        "DEF": 25,
+        "RES": 27
+      },
+      "weapons": {
+        "Fire": "A",
+        "Wind": "A",
+        "Thunder": "A",
+        "Staff": "A",
+        "Dark": "A"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Pursuit (double attacks); Gold 5000"
+    },
+    {
+      "name": "Queen",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 35,
+        "STR": 5,
+        "MAG": 15,
+        "SKL": 10,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 10,
+        "RES": 15,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 20,
+        "MAG": 30,
+        "SKL": 25,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 25,
+        "RES": 30
+      },
+      "weapons": {
+        "Fire": "A",
+        "Wind": "A",
+        "Thunder": "A",
+        "Staff": "A"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Charisma (+10 evasion/hit to allies within 3 squares); Gold 6000"
+    },
+    {
+      "name": "Dark Prince",
+      "game": "FE4",
+      "category": "non_controllable",
+      "bases": {
+        "HP": 30,
+        "STR": 0,
+        "MAG": 15,
+        "SKL": 12,
+        "SPD": 12,
+        "LCK": 0,
+        "DEF": 10,
+        "RES": 15,
+        "MOV": 5
+      },
+      "promotion_bonuses": {},
+      "caps": {
+        "HP": 80,
+        "STR": 15,
+        "MAG": 30,
+        "SKL": 27,
+        "SPD": 27,
+        "LCK": 30,
+        "DEF": 25,
+        "RES": 30
+      },
+      "weapons": {
+        "Fire": "A",
+        "Wind": "A",
+        "Thunder": "A",
+        "Dark": "A"
+      },
+      "promotes_to": "No promotion",
+      "special_ability": "Gold 0"
+    },
+    {
+      "name": "Pegasus Rider",
+      "game": "FE4",
+      "category": "unused",
+      "bases": {
+        "HP": 30,
+        "STR": 6,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 10,
+        "LCK": 0,
+        "DEF": 3,
+        "CON": 5,
+        "MOV": 8
+      },
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "C",
+        "Spear": "C"
+      },
+      "promotes_to": "(Cost: 1000 Gold)",
+      "special_ability": "After acting/attacking, can move if movement remains; unaffected by terrain except HP-restoring terrain"
+    },
+    {
+      "name": "Soldier",
+      "game": "FE4",
+      "category": "unused",
+      "bases": {
+        "HP": 30,
+        "STR": 6,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 5,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "C"
+      },
+      "promotes_to": "(Cost: 1000 Gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Sword Soldier",
+      "game": "FE4",
+      "category": "unused",
+      "bases": {
+        "HP": 30,
+        "STR": 6,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 5,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "C"
+      },
+      "promotes_to": "(Cost: 1000 Gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Lance Soldier",
+      "game": "FE4",
+      "category": "unused",
+      "bases": {
+        "HP": 30,
+        "STR": 6,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 5,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "B"
+      },
+      "promotes_to": "(Cost: 1000 Gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Axe Soldier",
+      "game": "FE4",
+      "category": "unused",
+      "bases": {
+        "HP": 30,
+        "STR": 6,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 5,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Axe": "C"
+      },
+      "promotes_to": "(Cost: 1000 Gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Bow Soldier",
+      "game": "FE4",
+      "category": "unused",
+      "bases": {
+        "HP": 30,
+        "STR": 6,
+        "MAG": 0,
+        "SKL": 5,
+        "SPD": 5,
+        "LCK": 0,
+        "DEF": 7,
+        "RES": 0,
+        "MOV": 6
+      },
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "C"
+      },
+      "promotes_to": "(Cost: 1000 Gold)",
+      "special_ability": ""
+    },
+    {
+      "name": "Great Arch",
+      "game": "FE4",
+      "category": "unused",
+      "bases": {
+        "HP": 0,
+        "STR": 0,
+        "MAG": 0,
+        "SKL": 0,
+        "SPD": 0,
+        "LCK": 0,
+        "DEF": 0,
+        "RES": 0
+      },
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "A"
+      },
+      "promotes_to": "(Cost: 1000 Gold)",
+      "special_ability": "Use Ballistae; no attack animation available (page lists all stats as 0, movement not specified)"
+    },
+    {
+      "name": "Lord",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E"
+      },
+      "promotes_to": "Prince / Príncipe",
+      "special_ability": "Tomar Castillos y Fuertes. Si Muere el Juego Termina."
+    },
+    {
+      "name": "Lance Knight / Jinete lanza",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "E",
+        "Sword": "E"
+      },
+      "promotes_to": "Duke Knight / Paladin lanza",
+      "special_ability": "Movement after actions; can dismount (Sword E dismounted)"
+    },
+    {
+      "name": "Axe Knight / Jinete hachero",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Axe": "E",
+        "Sword": "E"
+      },
+      "promotes_to": "Great Knight / Paladin hacha",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Sword Knight / Jinete espada",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E"
+      },
+      "promotes_to": "Ranger / Paladin espada",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Cavalier / Jinete",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E",
+        "Spear": "E"
+      },
+      "promotes_to": "Paladin (M)",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Bow Knight (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "E"
+      },
+      "promotes_to": "Bow Knight",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Bow Knight (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "E"
+      },
+      "promotes_to": "Bow Knight",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Troubadour / Trovadora",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E",
+        "Staff": "E"
+      },
+      "promotes_to": "Paladin (F)",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Myrmidon / Mirmidon (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E"
+      },
+      "promotes_to": "Swordmaster / Espadachin (M)",
+      "special_ability": ""
+    },
+    {
+      "name": "Myrmidon / Mirmidon (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E"
+      },
+      "promotes_to": "Swordmaster / Espadachin (F), Hero / Campeon (F)",
+      "special_ability": ""
+    },
+    {
+      "name": "Archer / Arquero (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "E"
+      },
+      "promotes_to": "Sniper / Tirador (M)",
+      "special_ability": ""
+    },
+    {
+      "name": "Archer / Arquero (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "E"
+      },
+      "promotes_to": "Sniper / Tirador (F)",
+      "special_ability": ""
+    },
+    {
+      "name": "Axefighter / Luchador",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Axe": "E"
+      },
+      "promotes_to": "Hero / Campeon (M)",
+      "special_ability": ""
+    },
+    {
+      "name": "Brigand / Bandido",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Axe": "E"
+      },
+      "promotes_to": "Warrior / Guerrero",
+      "special_ability": "Puede Cruzar Montanas"
+    },
+    {
+      "name": "Axe Armor / Hachero acorazado",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Axe": "E"
+      },
+      "promotes_to": "General",
+      "special_ability": ""
+    },
+    {
+      "name": "Thief / Ladron (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E"
+      },
+      "promotes_to": "Rogue / Picaro (M)",
+      "special_ability": "Usa Ganzuas, puede Robar."
+    },
+    {
+      "name": "Thief / Ladron (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E"
+      },
+      "promotes_to": "Rogue / Picaro (F), Dancer / Bailarina",
+      "special_ability": "Usa Ganzuas, puede Robar."
+    },
+    {
+      "name": "Pegasus Rider / Jinete pegaso",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "E",
+        "Sword": "E"
+      },
+      "promotes_to": "Pegasus Knight / Caballera pegaso",
+      "special_ability": "Movement after actions; can dismount; terrain unaffected"
+    },
+    {
+      "name": "Dracorider / Jinete dragon (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "E",
+        "Sword": "E"
+      },
+      "promotes_to": "Dracoknight / Caballero dragon",
+      "special_ability": "Movement after actions; can dismount; terrain unaffected"
+    },
+    {
+      "name": "Mage / Mago",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "D",
+        "Fire": "E",
+        "Thunder": "E"
+      },
+      "promotes_to": "Sage / Sabio (M)",
+      "special_ability": ""
+    },
+    {
+      "name": "Priest / Sacerdote (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Staff": "E"
+      },
+      "promotes_to": "High Priest / Gran sacerdote (M)",
+      "special_ability": ""
+    },
+    {
+      "name": "Priest / Sacerdote (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Staff": "E"
+      },
+      "promotes_to": "High Priest / Gran sacerdote (F)",
+      "special_ability": ""
+    },
+    {
+      "name": "Loptrian Mage / Mago loptiano",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "E",
+        "Fire": "E",
+        "Thunder": "E",
+        "Dark": "C",
+        "Staff": "C"
+      },
+      "promotes_to": "Sorcerer / Hechicero",
+      "special_ability": ""
+    },
+    {
+      "name": "Bard / Bardo",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "E",
+        "Fire": "E",
+        "Thunder": "E",
+        "Light": "E"
+      },
+      "promotes_to": "Sage / Sabio (M)",
+      "special_ability": ""
+    },
+    {
+      "name": "Mage / Mago (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "D",
+        "Fire": "E",
+        "Thunder": "E"
+      },
+      "promotes_to": "Mage Knight / Jinete Mago (F)",
+      "special_ability": ""
+    },
+    {
+      "name": "Sister / Clerigo",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "E",
+        "Fire": "E",
+        "Thunder": "E",
+        "Light": "D",
+        "Staff": "E"
+      },
+      "promotes_to": "Sage / Sabio (F)",
+      "special_ability": ""
+    },
+    {
+      "name": "Prince / Principe",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Tomar Castillos y Fuertes. Si Muere el Juego Termina."
+    },
+    {
+      "name": "Duke Knight / Paladin lanza",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "D",
+        "Sword": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Great Knight / Paladin hacha",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Axe": "D",
+        "Sword": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Ranger / Paladin espada",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Paladin (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Paladin (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "D",
+        "Staff": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Bow Knight (M) [Promoted]",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Bow Knight (F) [Promoted]",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Swordmaster / Espadachin (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "C"
+      },
+      "promotes_to": "",
+      "special_ability": "Adept"
+    },
+    {
+      "name": "Swordmaster / Espadachin (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "C"
+      },
+      "promotes_to": "",
+      "special_ability": "Adept"
+    },
+    {
+      "name": "Sniper / Tirador (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "D"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Sniper / Tirador (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "D"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Hero / Campeon (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "D",
+        "Axe": "E"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Hero / Campeon (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "D",
+        "Axe": "E"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Warrior / Guerrero",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Axe": "D",
+        "Bow": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Cruza Montanas"
+    },
+    {
+      "name": "General",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E",
+        "Spear": "E",
+        "Axe": "E",
+        "Bow": "E"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Rogue / Picaro (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Usa Ganzuas, Steal y Vantage"
+    },
+    {
+      "name": "Rogue / Picaro (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Usa Ganzuas, Steal y Vantage"
+    },
+    {
+      "name": "Dancer / Bailarina",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Usa Ganzuas, Dance y Steal (solo si promociona de Thief)"
+    },
+    {
+      "name": "Pegasus Knight / Caballera pegaso",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "D",
+        "Sword": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount; terrain unaffected"
+    },
+    {
+      "name": "Dracoknight / Caballero dragon (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "D",
+        "Sword": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount; terrain unaffected"
+    },
+    {
+      "name": "Dracoknight / Caballero dragon (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "D",
+        "Sword": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount; terrain unaffected"
+    },
+    {
+      "name": "Sage / Sabio (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "D",
+        "Fire": "D",
+        "Thunder": "D",
+        "Light": "C",
+        "Staff": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Adept"
+    },
+    {
+      "name": "Sage / Sabio (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "D",
+        "Fire": "D",
+        "Thunder": "D",
+        "Light": "C",
+        "Staff": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Adept"
+    },
+    {
+      "name": "High Priest / Gran sacerdote (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Light": "E",
+        "Staff": "D"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "High Priestess / Gran sacerdotisa (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Light": "E",
+        "Staff": "D"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Sorcerer / Hechicero",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "E",
+        "Fire": "E",
+        "Thunder": "E",
+        "Dark": "C",
+        "Staff": "C"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Mage Knight / Jinete Mago (M)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E",
+        "Wind": "D",
+        "Fire": "D",
+        "Thunder": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Mage Knight / Jinete Mago (F)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "D",
+        "Wind": "D",
+        "Fire": "D",
+        "Thunder": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount"
+    },
+    {
+      "name": "Hunter / Cazador",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "D"
+      },
+      "promotes_to": "Warrior / Guerrero",
+      "special_ability": "Cruzar Montanas"
+    },
+    {
+      "name": "Pirate / Pirata",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Axe": "E"
+      },
+      "promotes_to": "Berserker / Barbaro",
+      "special_ability": "Cruzar Aguas"
+    },
+    {
+      "name": "Lance Armor / Lancero acorazado",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "E"
+      },
+      "promotes_to": "General",
+      "special_ability": ""
+    },
+    {
+      "name": "Sword Armor / Espadachin acorazado",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E"
+      },
+      "promotes_to": "General",
+      "special_ability": ""
+    },
+    {
+      "name": "Bow Armor / Arquero acorazado",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "E"
+      },
+      "promotes_to": "General",
+      "special_ability": ""
+    },
+    {
+      "name": "Dracorider / Jinete dragon (M) [Enemy]",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "E",
+        "Sword": "E"
+      },
+      "promotes_to": "Dracoknight / Caballero dragon (M)",
+      "special_ability": "Movement after actions; can dismount; terrain unaffected"
+    },
+    {
+      "name": "Mage / Mago (M) [Enemy]",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "E",
+        "Fire": "E",
+        "Thunder": "E"
+      },
+      "promotes_to": "Mage Knight / Jinete Mago",
+      "special_ability": ""
+    },
+    {
+      "name": "Mage / Mago (Trueno)",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "E",
+        "Fire": "E",
+        "Thunder": "D"
+      },
+      "promotes_to": "Sage / Sabio (M)",
+      "special_ability": ""
+    },
+    {
+      "name": "Berserker / Barbaro",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {},
+      "promotes_to": "",
+      "special_ability": "Cruzar Montanas y Agua, Wrath"
+    },
+    {
+      "name": "Bishop / Obispo",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "C",
+        "Fire": "C",
+        "Thunder": "C",
+        "Staff": "C"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Dark Bishop / Obispo oscuro",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "E",
+        "Fire": "E",
+        "Thunder": "E",
+        "Staff": "A",
+        "Dark": "A"
+      },
+      "promotes_to": "",
+      "special_ability": "Puede Usar las Magias Hel, Poison y Stone / Piedra"
+    },
+    {
+      "name": "Soldier / Soldado",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "E"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Baron",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "D",
+        "Spear": "D",
+        "Axe": "D",
+        "Bow": "D",
+        "Wind": "D",
+        "Fire": "D",
+        "Thunder": "D",
+        "Staff": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Pavise"
+    },
+    {
+      "name": "Long Arch",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Usa Ballestas"
+    },
+    {
+      "name": "Iron Arch",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Usa Ballestas"
+    },
+    {
+      "name": "Killer Arch",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "C"
+      },
+      "promotes_to": "",
+      "special_ability": "Usa Ballestas"
+    },
+    {
+      "name": "Poison Arch",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Bow": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Usa Ballestas"
+    },
+    {
+      "name": "Civilian",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {},
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Dark Prince",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Wind": "A",
+        "Fire": "A",
+        "Thunder": "A",
+        "Dark": "A",
+        "Staff": "A"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Lord Knight",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "C",
+        "Sword": "D",
+        "Staff": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount (Staff E dismounted)"
+    },
+    {
+      "name": "Junior Lord",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "B"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Master Knight",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "A",
+        "Spear": "D",
+        "Axe": "D",
+        "Bow": "D",
+        "Wind": "D",
+        "Fire": "D",
+        "Thunder": "D",
+        "Staff": "D"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Falcon Knight",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "C",
+        "Staff": "E",
+        "Sword": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount; terrain unaffected; Miracle"
+    },
+    {
+      "name": "Dragon Master",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Spear": "C",
+        "Sword": "D"
+      },
+      "promotes_to": "",
+      "special_ability": "Movement after actions; can dismount; terrain unaffected"
+    },
+    {
+      "name": "Forrest",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "D",
+        "Axe": "E"
+      },
+      "promotes_to": "",
+      "special_ability": ""
+    },
+    {
+      "name": "Emperor",
+      "game": "FE5",
+      "category": "fe5",
+      "bases": {},
+      "promotion_bonuses": {},
+      "caps": {},
+      "weapons": {
+        "Sword": "E",
+        "Spear": "E",
+        "Axe": "E",
+        "Bow": "E"
+      },
+      "promotes_to": "",
+      "special_ability": "Pavise y Charm"
+    }
+  ]
+}
