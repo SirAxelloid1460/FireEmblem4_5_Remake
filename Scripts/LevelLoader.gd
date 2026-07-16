@@ -456,29 +456,34 @@ static func _resolve_game_version(udata: Dictionary) -> Dictionary:
 ## `versions` lleva sets por juego, p.ej.:
 ##   "versions": { "FE4": {"bases":{...},"caps":{...},"promotion":{...}, ...},
 ##                 "FE5": {...}, "SAGA": {...} }
-## El bloque del modo activo SOBREESCRIBE los campos que declara (bases, caps,
-## promotion, growths, wexp_gain, tags, …); los ausentes se heredan del nivel
-## superior de la clase.  Fallback: si el modo no tiene bloque, usa SAGA→FE4→el
-## primero disponible.  Sólo actúa sobre cdata en forma de Dictionary crudo.
+## El bloque del modo activo SOBREESCRIBE los campos que declara.  Los dicts
+## anidados (bases/caps/promotion/growths/wexp_gain) se mezclan POR-STAT, así que
+## un bloque que solo trae 8 stats conserva CON/MOV (y demás) del nivel superior.
+## Si el modo NO tiene bloque propio, se usa el nivel superior tal cual (es el
+## valor por defecto / SAGA).  Sólo actúa sobre cdata en forma de Dictionary.
 static func _resolve_class_version(cdata):
 	if not (cdata is Dictionary):
 		return cdata
 	var versions = (cdata as Dictionary).get("versions", null)
 	if not (versions is Dictionary) or (versions as Dictionary).is_empty():
 		return cdata
-	var mode := _current_game_mode()
-	var block = versions.get(mode, null)
+	var block = versions.get(_current_game_mode(), null)
 	if not (block is Dictionary):
-		block = versions.get("FE4", null)   # fallback razonable (escala base)
-	if not (block is Dictionary):
-		for k in versions:
-			block = versions[k]
-			break
-	if not (block is Dictionary):
-		return cdata
+		# Modo sin bloque propio → nivel superior (default/SAGA), sin `versions`.
+		var base_only: Dictionary = (cdata as Dictionary).duplicate(true)
+		base_only.erase("versions")
+		return base_only
 	var merged: Dictionary = (cdata as Dictionary).duplicate(true)
 	for k in block:
-		merged[k] = block[k]
+		if k == "versions":
+			continue
+		if merged.has(k) and merged[k] is Dictionary and block[k] is Dictionary:
+			var sub: Dictionary = (merged[k] as Dictionary).duplicate(true)
+			for sk in block[k]:
+				sub[sk] = block[k][sk]
+			merged[k] = sub
+		else:
+			merged[k] = block[k]
 	merged.erase("versions")
 	return merged
 
