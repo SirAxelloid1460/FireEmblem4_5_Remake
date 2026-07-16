@@ -300,6 +300,35 @@ VERSIONED = [
         "promotions": {"CavalierB": {
             "FE4": [3, 0, 2, 2, 2, 3, 1, 0], "FE5": [2, 1, 3, 2, 2, 1, 1, 0]}},
     },
+    {  # Mage Knight  (Mage -> Mage Knight). FE4 = SAGA.
+        "ids": ["MageKnight"],
+        "saga": ([40, 5, 10, 7, 7, 0, 5, 7], [80, 20, 25, 22, 22, 30, 20, 22]),
+        "fe4":  ([40, 5, 10, 7, 7, 0, 5, 7], [80, 20, 25, 22, 22, 30, 20, 22]),
+        "fe5":  ([20, 3, 4, 5, 5, 0, 4, 0],  [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promotions": {"Mage": {
+            "FE4": [5, 3, 1, 1, 4, 2, 4, 0], "FE5": [3, 2, 3, 1, 3, 1, 2, 0]}},
+    },
+    {  # Sage  (Bard / Mage@Asbel / LightPriestess -> Sage)
+        "ids": ["Sage"],
+        "saga": ([35, 0, 15, 12, 15, 0, 4, 12], [80, 20, 30, 27, 30, 30, 20, 27]),
+        "fe4":  ([35, 0, 15, 12, 15, 0, 3, 12], [80, 15, 30, 27, 30, 30, 18, 27]),
+        "fe5":  ([20, 0, 7, 7, 10, 0, 4, 0],     [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promotions": {
+            "Bard":           {"FE4": [0, 8, 5, 5, 0, 5, 0, 0], "FE5": [0, 6, 6, 4, 4, 1, 1, 0]},
+            "Mage@Asbel":     {"FE5": [0, 5, 5, 6, 4, 1, 1, 0]},
+            "LightPriestess": {"FE4": [0, 7, 5, 8, 0, 2, 1, 0], "FE5": [0, 6, 5, 5, 3, 1, 2, 0]},
+        },
+    },
+    {  # High Priest / High Priestess  (Priest/Priestess -> High*)
+        "ids": ["HighPriest", "HighPriestess"],
+        "saga": ([35, 0, 12, 9, 8, 0, 3, 8], [80, 20, 27, 24, 23, 30, 20, 23]),
+        "fe4":  ([35, 0, 12, 9, 8, 0, 3, 8], [80, 15, 27, 24, 23, 30, 18, 23]),
+        "fe5":  ([18, 0, 6, 3, 3, 0, 1, 0],  [80, 20, 20, 20, 20, 20, 20, 0]),
+        "promotions": {
+            "Priest":    {"FE4": [0, 5, 3, 2, 2, 1, 0, 0], "FE5": [0, 3, 1, 1, 1, 0, 1, 0]},
+            "Priestess": {"FE4": [0, 5, 3, 2, 2, 1, 0, 0], "FE5": [0, 3, 1, 1, 1, 0, 1, 0]},
+        },
+    },
     {  # General  (Armour -> General)
         "ids": ["General"],
         "saga": ([40, 10, 1, 6, 5, 0, 12, 3], [80, 25, 20, 21, 20, 30, 27, 18]),
@@ -416,6 +445,13 @@ EXCLUSIVE = [
         "ids": ["Berserker"],
         "base": [32, 12, 0, 12, 10, 0, 8, 0],
         "cap":  [80, 20, 20, 20, 20, 20, 20, 0],
+    },
+    {  # Mage Fighter — exclusiva FE4. Mage -> Mage Fighter (gains unificados
+       # a los de Amid; en origen eran por-personaje con clases distintas).
+        "ids": ["MageFighter"],
+        "base": [30, 5, 12, 10, 12, 0, 7, 10],
+        "cap":  [80, 20, 27, 25, 27, 30, 22, 25],
+        "promotions": {"Mage": {"ALL": [5, 5, 4, 6, 6, 6, 1, 0]}},
     },
     {  # Dragon Master (Wyvern Lord) — un set para todos los modos.
         "ids": ["DragonMaster"],
