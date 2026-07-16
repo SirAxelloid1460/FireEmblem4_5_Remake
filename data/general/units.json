@@ -5592,18 +5592,6 @@
   "level": 14,
   "gender": "M",
   "bases": {
-   "HP": 32,
-   "STR": 3,
-   "MAG": 17,
-   "SKL": 16,
-   "SPD": 16,
-   "LCK": 10,
-   "DEF": 9,
-   "RES": 0,
-   "CON": 8,
-   "MOV": 8
-  },
-  "growths": {
    "HP": 54,
    "STR": 10,
    "MAG": 23,
@@ -5612,6 +5600,18 @@
    "LCK": 19,
    "DEF": 15,
    "RES": 17,
+   "CON": 8,
+   "MOV": 8
+  },
+  "growths": {
+   "HP": 75,
+   "STR": 10,
+   "MAG": 75,
+   "SKL": 75,
+   "SPD": 80,
+   "LCK": 65,
+   "DEF": 20,
+   "RES": 0,
    "CON": 0,
    "MOV": 0
   },
@@ -5628,7 +5628,7 @@
   ],
   "versions": {
    "FE4": {
-    "growths": {
+    "bases": {
      "HP": 56,
      "STR": 10,
      "MAG": 20,
@@ -5637,12 +5637,12 @@
      "LCK": 20,
      "DEF": 13,
      "RES": 21,
-     "CON": 0,
-     "MOV": 0
+     "CON": 8,
+     "MOV": 8
     }
    },
    "FE5": {
-    "growths": {
+    "bases": {
      "HP": 34,
      "STR": 4,
      "MAG": 20,
@@ -5651,8 +5651,8 @@
      "LCK": 20,
      "DEF": 8,
      "RES": 14,
-     "CON": 0,
-     "MOV": 0
+     "CON": 8,
+     "MOV": 8
     }
    }
   }
