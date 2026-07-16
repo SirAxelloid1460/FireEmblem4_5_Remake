@@ -2357,7 +2357,9 @@
    "CON": 0,
    "MOV": 0
   },
-  "starting_items": [],
+  "starting_items": [
+   "Reblow"
+  ],
   "learned_skills": [
    [
     1,
@@ -6225,7 +6227,8 @@
    "MOV": 0
   },
   "starting_items": [
-   "Iron Blade"
+   "Iron Blade",
+   "Brave Sword"
   ],
   "learned_skills": [
    [
@@ -6514,7 +6517,8 @@
   },
   "starting_items": [
    "Silver Bow",
-   "Steel Bow"
+   "Steel Bow",
+   "Yewfelle"
   ],
   "learned_skills": [],
   "wexp_gain": {},
