@@ -289,11 +289,20 @@ func _build_columns() -> void:
 	])
 
 
-## Stylebox de placa FE (title_menu_dark). Sin texture_margin => estira la placa
-## entera (borde ornamentado incluido), como en el diseño original.
+## Stylebox de placa FE (title_menu_dark, 136×24). Es un MARCO 9-patch con
+## volutas ornamentadas en las esquinas: hay que fijar los `texture_margin_*`
+## para que Godot mantenga las esquinas a tamaño nativo y solo estire el centro.
+## Sin ellos la textura entera se deforma y las volutas se embarran por todo el
+## botón (parecen "un fragmento de otra imagen").
 func _plate_sb(path: String) -> StyleBoxTexture:
 	var sb := StyleBoxTexture.new()
 	sb.texture = load(path)
+	# Márgenes 9-patch (fuente 136×24): esquinas ornamentadas fijas, centro estirable.
+	sb.texture_margin_left = 24
+	sb.texture_margin_right = 24
+	sb.texture_margin_top = 10
+	sb.texture_margin_bottom = 8
+	# Márgenes de contenido: dónde se asienta el texto dentro de la placa.
 	sb.content_margin_left = 40
 	sb.content_margin_right = 40
 	sb.content_margin_top = 12
