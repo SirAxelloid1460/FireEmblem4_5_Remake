@@ -91,6 +91,47 @@ fijos + alternativos a distancia por capítulo, desde el enlace de fireemblemwod
 Estado runtime por personaje: `arena_fixed_index` (0..7) y `arena_wins` (0..10),
 reseteados en `end_chapter`.
 
+## 6.3 Layout visual (referencia: Vestaria Saga)
+El usuario aportó una referencia (estilo *Vestaria Saga* de Kaga) para el aspecto
+del menú inter-capítulo:
+```
+┌───────────────────────────────────────────────────────────┐
+│ [HUD] oro · materiales · capacidad 95/150 · año/turno      │  ← barra superior
+├──────────────┬────────────────────────────────────────────┤
+│ Avanzar      │                                            │
+│ Organización │        MAPA DEL CAPÍTULO ACTUAL             │  ← fondo = mapa
+│ (Árbol tec.) │        (con bandera de posición)           │
+│ Mercado      │                                            │
+│ Info/Tutorial│                                            │
+│ Soporte      │                                            │
+│ Arena (gris) │  ← grisada si el cap no tiene arena        │
+│ Sistema      │                                            │
+├──────────────┴────────────────────────────────────────────┤
+│ Capítulo N: «título»                                       │
+│ [caja de narración / objetivo del capítulo]                │  ← pie
+└───────────────────────────────────────────────────────────┘
+```
+- Fondo: imagen del mapa del capítulo actual (AssetLoader.get_tilemap_image /
+  panorama), con marcador de la posición del jugador.
+- Columna izquierda: botones de facilidad (mapeo en la tabla de abajo).
+- Barra superior: recursos (oro, materiales, capacidad de ejército, fecha/turno).
+- Pie: título del capítulo + caja de narración/objetivo.
+- La **Arena se grisa** cuando `ArenaSystem.chapter_has_arena(cap)` es false
+  (Prólogo y Cap. 6 en FE4), tal como el botón 闘技場 aparece deshabilitado en la
+  referencia.
+
+### Mapeo de botones (referencia → facilidad)
+| Botón ref (JP / ES) | Facilidad del remake |
+|---|---|
+| 進軍 Avanzar | StartBattle → cargar siguiente capítulo |
+| 部隊編成 Organización | Manage (roster / equipar / convoy) |
+| 技術ツリー Árbol tecnológico | *(sin equivalente aún — candidato: meta-progresión / promoción)* |
+| 市場 Mercado | Shop |
+| チュートリアルと情報 Info | Ayuda / tutorial |
+| サポート Soporte | Conversaciones / supports |
+| 闘技場 Arena | Arena híbrida (§6.2) |
+| システム Sistema | Save / Load / Opciones |
+
 ## 7. Fuera de alcance de esta iteración
 - Balance económico (precios de tienda, coste de reparación, premios de arena).
 - Conversaciones de apoyo nuevas (solo se listarán las que ya existan como eventos).
