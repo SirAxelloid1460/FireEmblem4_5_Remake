@@ -87,7 +87,7 @@ func _leave_castle() -> void:
 
 ## Vuelca el ejército actual del castillo al roster persistente de GameMode.
 func _persist_roster() -> void:
-	var gm := _get_game_mode()
+	var gm = _get_game_mode()
 	if gm != null and gm.has_method("capture_roster"):
 		gm.capture_roster(player_units)
 
@@ -128,7 +128,7 @@ func setup_facility_buttons():
 ## y desactiva la Arena en capítulos sin arena (Prólogo/Cap.6 en FE4).
 func _populate_hud() -> void:
 	update_gold_display()
-	var gm := _get_game_mode()
+	var gm = _get_game_mode()
 	var entry: Dictionary = {}
 	if gm != null and gm.has_method("get_current_chapter_entry"):
 		entry = gm.get_current_chapter_entry()
@@ -154,7 +154,7 @@ func load_player_army():
 	(primer arranque, sin ninguna batalla ganada aún), se usa un ejército de
 	ejemplo como fallback de desarrollo."""
 	player_units.clear()
-	var gm := _get_game_mode()
+	var gm = _get_game_mode()
 	if gm != null and gm.has_method("has_roster") and gm.has_roster():
 		for u in gm.build_roster_units():
 			if u != null:

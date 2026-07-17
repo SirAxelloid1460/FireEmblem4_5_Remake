@@ -109,7 +109,7 @@ func _show_preview(opp: Dictionary, _is_generic: bool):
 	var p_dmg := CombatSystem._calc_dmg(current_unit, opp_unit, false,
 			CombatSystem._is_effective(current_unit.weapon, opp_unit), "", {}, {"dist": dist})
 
-	var can_counter := opp_unit.weapon != null and opp_unit.weapon.can_attack_at_range(dist)
+	var can_counter = opp_unit.weapon != null and opp_unit.weapon.can_attack_at_range(dist)
 	var t := "[b]%s[/b]  Dmg %d · Hit %d · Crit %d%s\n" % [
 			current_unit.unit_name, p_dmg, p_hit, p_crit, "  x2" if p_dbl else ""]
 	t += "vs [b]%s[/b]  " % str(opp.get("name", "Rival"))

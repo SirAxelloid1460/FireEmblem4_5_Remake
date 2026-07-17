@@ -782,7 +782,7 @@ func _use_consumable(unit, item) -> void:
 		unit.heal(int(item.heal))
 	# Torch (ítem/báculo): otorga bonus de visión temporal, NO es un manual.
 	# Se detecta por status_on_hit / self_status_on_hit == "Torch".
-	var applies_torch := (("status_on_hit" in item and str(item.status_on_hit) == "Torch")
+	var applies_torch = (("status_on_hit" in item and str(item.status_on_hit) == "Torch")
 			or str(_item_component(item, "self_status_on_hit")) == "Torch"
 			or str(_item_component(item, "status_on_hit")) == "Torch")
 	if applies_torch:
@@ -1170,7 +1170,7 @@ func _staff_range_tiles(user, w) -> Array:
 	var p: Vector2i = user.grid_position
 	for y in range(grid.grid_height):
 		for x in range(grid.grid_width):
-			var d := abs(x - p.x) + abs(y - p.y)
+			var d = abs(x - p.x) + abs(y - p.y)
 			if d >= lo and d <= hi:
 				out.append(Vector2i(x, y))
 	return out
