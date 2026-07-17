@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vfrari1mk2b8"
-path="res://.godot/imported/CavalierBF-stand.png-e1ca8d6cc308c66a5bffa271e83884c3.ctex"
+uid="uid://dokldqut4jt4u"
+path="res://.godot/imported/Generic_Portrait_CavalierB.png-dd9ad1c86d3e5a0df790b84ceb4a874e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/CavalierBF-stand.png"
-dest_files=["res://.godot/imported/CavalierBF-stand.png-e1ca8d6cc308c66a5bffa271e83884c3.ctex"]
+source_file="res://assets/portraits/generic/Generic_Portrait_ArcherKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_CavalierB.png-dd9ad1c86d3e5a0df790b84ceb4a874e.ctex"]
 
 [params]
 

@@ -10,7 +10,7 @@ metadata={
 
 [deps]
 
-source_file="res://assets/map_sprites/CavalierA-stand.png"
+source_file="res://assets/map_sprites/AxeKnight-stand.png"
 dest_files=["res://.godot/imported/CavalierA-stand.png-e4daf74f60243d6ba0fd60b66ccf89aa.ctex"]
 
 [params]

@@ -849,7 +849,7 @@ func _resolve_map_sprite_nid() -> String:
 
 ## nid base de la animación de combate de esta unidad.  El resolver construye
 ## los nombres como {combat_anim_nid}_{Variant}_{Weapon}, así que NO debe usar
-## el nid de clase crudo (unit_class): p.ej. clase "CavalierA" -> anim "AxeKnight".
+## el nid de clase crudo (unit_class): p.ej. clase "AxeKnight" -> anim "AxeKnight".
 ## Se lee de GameDB en cada llamada, de modo que una promoción (que cambia
 ## unit_class) actualiza la animación automáticamente.
 func resolve_combat_anim_nid() -> String:

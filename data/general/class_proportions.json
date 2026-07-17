@@ -224,7 +224,7 @@
   "sum_fe4": 55,
   "sum_fe5": 33
  },
- "CavalierA": {
+ "AxeKnight": {
   "ratio_base": {
    "HP": 1.5,
    "STR": 2.333,
@@ -249,7 +249,7 @@
   "sum_fe4": 55,
   "sum_fe5": 33
  },
- "CavalierB": {
+ "ArcherKnight": {
   "ratio_base": {
    "HP": 1.5,
    "STR": 2.333,
@@ -274,7 +274,7 @@
   "sum_fe4": 55,
   "sum_fe5": 34
  },
- "CavalierL": {
+ "LanceKnight": {
   "ratio_base": {
    "HP": 1.5,
    "STR": 2.333,
@@ -299,7 +299,7 @@
   "sum_fe4": 55,
   "sum_fe5": 33
  },
- "CavalierS": {
+ "FreeKnight": {
   "ratio_base": {
    "HP": 1.5,
    "STR": 2.333,

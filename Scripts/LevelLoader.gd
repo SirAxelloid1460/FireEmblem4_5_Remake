@@ -424,7 +424,7 @@ static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> v
 ## ── Versiones por juego (personajes cross-game FE4/FE5) ──────────────────────
 ## Una unidad con campo `versions` lleva bloques específicos por juego, p.ej.:
 ##   "versions": {
-##     "FE4": { "klass": "CavalierS", "level": 1, "bases": {...}, ... },
+##     "FE4": { "klass": "FreeKnight", "level": 1, "bases": {...}, ... },
 ##     "FE5": { "klass": "Ranger",    "level": 3, "bases": {...}, ... }
 ##   }
 ## El bloque elegido SOBREESCRIBE los campos que declara sobre la unidad base

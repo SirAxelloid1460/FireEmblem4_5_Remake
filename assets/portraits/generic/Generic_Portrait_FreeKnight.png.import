@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dshplshc58kig"
-path="res://.godot/imported/Generic_Portrait_CavalierL.png-80557082f8344f16e3e6cc6f779324cb.ctex"
+uid="uid://dfgcrusctcru0"
+path="res://.godot/imported/Generic_Portrait_CavalierS.png-06e50637fabafe15b339549bfff4957a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_CavalierL.png"
-dest_files=["res://.godot/imported/Generic_Portrait_CavalierL.png-80557082f8344f16e3e6cc6f779324cb.ctex"]
+source_file="res://assets/portraits/generic/Generic_Portrait_FreeKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_CavalierS.png-06e50637fabafe15b339549bfff4957a.ctex"]
 
 [params]
 

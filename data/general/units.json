@@ -356,7 +356,7 @@
   "nid": "Beowulf",
   "name": "Beowulf",
   "desc": "A mercenary from Conote alongside Voltz, his friend, and partner.",
-  "klass": "CavalierS",
+  "klass": "FreeKnight",
   "level": 1,
   "gender": "M",
   "bases": {
@@ -1147,7 +1147,7 @@
   "nid": "Finn",
   "name": "Finn",
   "desc": "A knight of Lenster, undyingly loyal to Quan and his family.",
-  "klass": "CavalierL",
+  "klass": "LanceKnight",
   "level": 1,
   "gender": "M",
   "bases": {
@@ -1623,7 +1623,7 @@
   "nid": "Lex",
   "name": "Lex",
   "desc": "The youngest son of Langbalt, Duke of Dozel, heir of Neir and a hot-headed knight.",
-  "klass": "CavalierA",
+  "klass": "AxeKnight",
   "level": 1,
   "gender": "M",
   "bases": {
@@ -1731,7 +1731,7 @@
   "nid": "Midir",
   "name": "Midir",
   "desc": "Knight in the service of Grannvale's House Jungby, used to with bow fighting.",
-  "klass": "CavalierB",
+  "klass": "ArcherKnight",
   "level": 1,
   "gender": "M",
   "bases": {
@@ -3392,7 +3392,7 @@
   "nid": "Tristan",
   "name": "Tristan",
   "desc": "",
-  "klass": "CavalierS",
+  "klass": "FreeKnight",
   "level": 3,
   "gender": "M",
   "bases": {
@@ -3434,7 +3434,7 @@
   "nid": "Dimna",
   "name": "Deimne",
   "desc": "",
-  "klass": "CavalierB",
+  "klass": "ArcherKnight",
   "level": 1,
   "gender": "M",
   "bases": {
@@ -3607,7 +3607,7 @@
   "nid": "Johan",
   "name": "Iuchar",
   "desc": "",
-  "klass": "CavalierA",
+  "klass": "AxeKnight",
   "level": 12,
   "gender": "M",
   "bases": {
@@ -4122,7 +4122,7 @@
   "nid": "Brighton",
   "name": "Brighton",
   "desc": "",
-  "klass": "CavalierA",
+  "klass": "AxeKnight",
   "level": 5,
   "gender": "M",
   "bases": {
@@ -4206,7 +4206,7 @@
   "nid": "Fergus",
   "name": "Fergus",
   "desc": "",
-  "klass": "CavalierS",
+  "klass": "FreeKnight",
   "level": 3,
   "gender": "M",
   "bases": {
@@ -4374,7 +4374,7 @@
   "nid": "Hicks",
   "name": "Hicks",
   "desc": "",
-  "klass": "CavalierA",
+  "klass": "AxeKnight",
   "level": 6,
   "gender": "M",
   "bases": {
@@ -4458,7 +4458,7 @@
   "nid": "Selphina",
   "name": "Selphina",
   "desc": "",
-  "klass": "CavalierB",
+  "klass": "ArcherKnight",
   "level": 8,
   "gender": "F",
   "bases": {
@@ -4500,7 +4500,7 @@
   "nid": "Cain",
   "name": "Cain",
   "desc": "",
-  "klass": "CavalierL",
+  "klass": "LanceKnight",
   "level": 2,
   "gender": "M",
   "bases": {
@@ -4542,7 +4542,7 @@
   "nid": "Alva",
   "name": "Alva",
   "desc": "",
-  "klass": "CavalierL",
+  "klass": "LanceKnight",
   "level": 2,
   "gender": "M",
   "bases": {
@@ -4584,7 +4584,7 @@
   "nid": "Robert",
   "name": "Robert",
   "desc": "",
-  "klass": "CavalierB",
+  "klass": "ArcherKnight",
   "level": 1,
   "gender": "M",
   "bases": {
@@ -5508,7 +5508,7 @@
   "nid": "Delmud",
   "name": "Delmud",
   "desc": "",
-  "klass": "CavalierS",
+  "klass": "FreeKnight",
   "level": 3,
   "gender": "M",
   "bases": {
@@ -6438,7 +6438,7 @@
   "nid": "Lester",
   "name": "Lester",
   "desc": "Aideen's son; a mounted archer.",
-  "klass": "CavalierB",
+  "klass": "ArcherKnight",
   "level": 1,
   "gender": "M",
   "bases": {

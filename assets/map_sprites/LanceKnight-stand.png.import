@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5wv8j1vcaso6"
-path="res://.godot/imported/CavalierBM-stand.png-140c8d0eae3053ee79e868a66e365349.ctex"
+uid="uid://dt35ewosfkbfk"
+path="res://.godot/imported/CavalierL-stand.png-30fe7e42488ab0f25d10131754af941d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/CavalierBM-stand.png"
-dest_files=["res://.godot/imported/CavalierBM-stand.png-140c8d0eae3053ee79e868a66e365349.ctex"]
+source_file="res://assets/map_sprites/LanceKnight-stand.png"
+dest_files=["res://.godot/imported/CavalierL-stand.png-30fe7e42488ab0f25d10131754af941d.ctex"]
 
 [params]
 

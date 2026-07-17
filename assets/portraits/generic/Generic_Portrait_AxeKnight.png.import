@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d22ppa2njga6i"
-path="res://.godot/imported/CavalierBFemale-move.png-24183aba84b0d9dad60c02e113150271.ctex"
+uid="uid://djwf5dfddlrie"
+path="res://.godot/imported/Generic_Portrait_CavalierA.png-322571074127f7976437b220873feb0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/CavalierBFemale-move.png"
-dest_files=["res://.godot/imported/CavalierBFemale-move.png-24183aba84b0d9dad60c02e113150271.ctex"]
+source_file="res://assets/portraits/generic/Generic_Portrait_AxeKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_CavalierA.png-322571074127f7976437b220873feb0f.ctex"]
 
 [params]
 

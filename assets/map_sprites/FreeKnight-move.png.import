@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxe72jetx28bq"
-path="res://.godot/imported/CavalierS-stand.png-c9de9f1756b823eb5052a5f16b44cbff.ctex"
+uid="uid://bxngupj0m2m6j"
+path="res://.godot/imported/CavalierS-move.png-2e1c638a69719d72793fcf2ebb4e9581.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/CavalierS-stand.png"
-dest_files=["res://.godot/imported/CavalierS-stand.png-c9de9f1756b823eb5052a5f16b44cbff.ctex"]
+source_file="res://assets/map_sprites/FreeKnight-move.png"
+dest_files=["res://.godot/imported/CavalierS-move.png-2e1c638a69719d72793fcf2ebb4e9581.ctex"]
 
 [params]
 

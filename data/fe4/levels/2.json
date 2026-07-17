@@ -620,7 +620,7 @@
     "nid": "Elliot_1",
     "variant": null,
     "level": 15,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -642,7 +642,7 @@
     "nid": "Elliot_2",
     "variant": null,
     "level": 15,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -664,7 +664,7 @@
     "nid": "Elliot_3",
     "variant": null,
     "level": 15,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -686,7 +686,7 @@
     "nid": "Elliot_4",
     "variant": null,
     "level": 15,
-    "klass": "CavalierA",
+    "klass": "AxeKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -708,7 +708,7 @@
     "nid": "Elliot_5",
     "variant": null,
     "level": 15,
-    "klass": "CavalierA",
+    "klass": "AxeKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -730,7 +730,7 @@
     "nid": "Elliot_6",
     "variant": null,
     "level": 15,
-    "klass": "CavalierA",
+    "klass": "AxeKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -752,7 +752,7 @@
     "nid": "Elliot_7",
     "variant": null,
     "level": 15,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -774,7 +774,7 @@
     "nid": "Elliot_8",
     "variant": null,
     "level": 15,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -796,7 +796,7 @@
     "nid": "Elliot_9",
     "variant": null,
     "level": 15,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -1180,7 +1180,7 @@
     "nid": "Voltz_1",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1202,7 +1202,7 @@
     "nid": "Voltz_2",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1224,7 +1224,7 @@
     "nid": "Voltz_3",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1246,7 +1246,7 @@
     "nid": "Voltz_4",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1268,7 +1268,7 @@
     "nid": "Voltz_5",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1290,7 +1290,7 @@
     "nid": "Voltz_6",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1312,7 +1312,7 @@
     "nid": "Voltz_7",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1334,7 +1334,7 @@
     "nid": "Voltz_8",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1356,7 +1356,7 @@
     "nid": "Voltz_9",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1378,7 +1378,7 @@
     "nid": "Voltz_10",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1400,7 +1400,7 @@
     "nid": "Voltz_11",
     "variant": null,
     "level": 17,
-    "klass": "CavalierS",
+    "klass": "FreeKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -1884,7 +1884,7 @@
     "nid": "Agusty_7",
     "variant": null,
     "level": 20,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -1906,7 +1906,7 @@
     "nid": "Agusty_8",
     "variant": null,
     "level": 20,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -1928,7 +1928,7 @@
     "nid": "Agusty_9",
     "variant": null,
     "level": 20,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -1950,7 +1950,7 @@
     "nid": "Agusty_10",
     "variant": null,
     "level": 20,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2214,7 +2214,7 @@
     "nid": "Zain_4",
     "variant": null,
     "level": 20,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2236,7 +2236,7 @@
     "nid": "Zain_5",
     "variant": null,
     "level": 20,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2258,7 +2258,7 @@
     "nid": "Zain_6",
     "variant": null,
     "level": 20,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2280,7 +2280,7 @@
     "nid": "Zain_7",
     "variant": null,
     "level": 20,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2302,7 +2302,7 @@
     "nid": "Zain_8",
     "variant": null,
     "level": 20,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2324,7 +2324,7 @@
     "nid": "Zain_9",
     "variant": null,
     "level": 20,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2346,7 +2346,7 @@
     "nid": "Zain_10",
     "variant": null,
     "level": 20,
-    "klass": "CavalierA",
+    "klass": "AxeKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2368,7 +2368,7 @@
     "nid": "Zain_11",
     "variant": null,
     "level": 20,
-    "klass": "CavalierA",
+    "klass": "AxeKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2390,7 +2390,7 @@
     "nid": "Zain_12",
     "variant": null,
     "level": 20,
-    "klass": "CavalierA",
+    "klass": "AxeKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2412,7 +2412,7 @@
     "nid": "Zain_13",
     "variant": null,
     "level": 20,
-    "klass": "CavalierA",
+    "klass": "AxeKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2434,7 +2434,7 @@
     "nid": "Zain_14",
     "variant": null,
     "level": 20,
-    "klass": "CavalierB",
+    "klass": "ArcherKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2456,7 +2456,7 @@
     "nid": "Zain_15",
     "variant": null,
     "level": 20,
-    "klass": "CavalierB",
+    "klass": "ArcherKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2478,7 +2478,7 @@
     "nid": "Zain_16",
     "variant": null,
     "level": 20,
-    "klass": "CavalierB",
+    "klass": "ArcherKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2500,7 +2500,7 @@
     "nid": "Zain_17",
     "variant": null,
     "level": 20,
-    "klass": "CavalierB",
+    "klass": "ArcherKnight",
     "faction": "Agusty",
     "starting_items": [
      [
@@ -2588,7 +2588,7 @@
     "nid": "AnphonyNeutral_2",
     "variant": null,
     "level": 16,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -2610,7 +2610,7 @@
     "nid": "AnphonyNeutral_3",
     "variant": null,
     "level": 16,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Anphony",
     "starting_items": [
      [
@@ -2796,7 +2796,7 @@
     "nid": "Rowyn",
     "variant": null,
     "level": 11,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Nature",
     "starting_items": [
      [
