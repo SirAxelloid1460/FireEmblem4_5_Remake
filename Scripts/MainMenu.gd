@@ -123,11 +123,11 @@ func _ready() -> void:
 	_build_bg()
 	_build_music()
 	_build_title()
-	_build_press_start()
 	# Niebla/nubes animada (misma que en los menús de arranque): va ENCIMA del
-	# fondo Y del logo, pero debajo de los botones/cursor. Su transparencia por
-	# luminancia deja ver el logo y el fondo por debajo.
+	# fondo y del logo, pero DEBAJO del "Press Start" y de los botones/cursor.
+	# Su transparencia sutil (por luminancia) deja ver el logo y el fondo.
 	add_child(TitleOverlay.new())
+	_build_press_start()
 	_build_columns()
 	_build_cursor()
 	_build_desc()

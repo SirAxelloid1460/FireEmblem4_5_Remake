@@ -44,14 +44,14 @@ func _has_preview_panel() -> bool:
 	return false
 
 
-# Recuadro centrado y ancho (sin panel-preview, sólo la lista).
+# Recuadro centrado y ANCHO: la opción más larga ("Genealogy of the Holy War")
+# necesita ancho de sobra para no recortarse.
 func _list_panel_rect() -> Array:
-	return [0.26, 0.22, 0.74, 0.80]
+	return [0.13, 0.28, 0.87, 0.72]
 
 
-# Fuente grande (3 opciones, cabe holgado en el recuadro centrado).
 func _option_font_size() -> int:
-	return 108
+	return 56
 
 
 func _bg_for_option(id: String) -> Texture2D:
