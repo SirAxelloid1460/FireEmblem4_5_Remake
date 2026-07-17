@@ -120,7 +120,7 @@ static func build_opponent_unit(opp: Dictionary):
 	u.luck = int(b.get("LCK", 0));    u.defense = int(b.get("DEF", 0))
 	u.resistance = int(b.get("RES", 0))
 	# CON del rival: base de su clase (los datos de arena no traen CON).
-	var db := _gamedb()
+	var db = _gamedb()
 	var con := 0
 	if db != null:
 		var cd = db.get_class_data(u.unit_class)
