@@ -95,7 +95,8 @@
   "portrait_nid": "AlecPortrait",
   "games": [
    "FE4"
-  ]
+  ],
+  "balance_note": "SKL intercambiado con Noish a propósito (balance). Natural Serenes: SKL Noish=7, Alec=9."
  },
  {
   "nid": "Alvar",
@@ -315,7 +316,7 @@
   "bases": {
    "HP": 30,
    "STR": 0,
-   "MAG": 16,
+   "MAG": 10,
    "SKL": 7,
    "SPD": 9,
    "LCK": 2,
@@ -951,7 +952,7 @@
   "gender": "F",
   "bases": {
    "HP": 28,
-   "STR": 9,
+   "STR": 5,
    "MAG": 8,
    "SKL": 11,
    "SPD": 12,
@@ -1375,7 +1376,7 @@
    "MAG": 0,
    "SKL": 17,
    "SPD": 17,
-   "LCK": 4,
+   "LCK": 1,
    "DEF": 11,
    "RES": 1,
    "CON": 6,
@@ -1521,8 +1522,8 @@
   "gender": "F",
   "bases": {
    "HP": 26,
-   "STR": 9,
-   "MAG": 10,
+   "STR": 6,
+   "MAG": 8,
    "SKL": 9,
    "SPD": 13,
    "LCK": 5,
@@ -1575,11 +1576,11 @@
   "bases": {
    "HP": 34,
    "STR": 1,
-   "MAG": 14,
+   "MAG": 12,
    "SKL": 12,
-   "SPD": 18,
+   "SPD": 16,
    "LCK": 7,
-   "DEF": 7,
+   "DEF": 5,
    "RES": 9,
    "CON": 6,
    "MOV": 6
@@ -1831,7 +1832,8 @@
   "portrait_nid": "NoishPortrait",
   "games": [
    "FE4"
-  ]
+  ],
+  "balance_note": "SKL intercambiado con Alec a propósito (balance). Natural Serenes: SKL Noish=7, Alec=9."
  },
  {
   "nid": "NordionGuard",
@@ -2089,12 +2091,12 @@
   "gender": "M",
   "bases": {
    "HP": 28,
-   "STR": 8,
-   "MAG": 2,
-   "SKL": 8,
+   "STR": 3,
+   "MAG": 0,
+   "SKL": 4,
    "SPD": 12,
    "LCK": 6,
-   "DEF": 5,
+   "DEF": 1,
    "RES": 5,
    "CON": 6,
    "MOV": 7
@@ -2429,7 +2431,8 @@
   "portrait_nid": "DagdarPortrait",
   "games": [
    "FE5"
-  ]
+  ],
+  "balance_note": "Ajustado (probable buff para igualar mínimos de genéricos de misma clase/nivel). Diferencias vs natural Serenes: HP 44(nat 43), STR 16(nat 14), SPD 13(nat 9), LCK 1(nat 2), DEF 13(nat 10).  Natural Serenes: HP43 STR14 MAG1 SKL11 SPD9 LCK2 DEF10."
  },
  {
   "nid": "Eyvel",
@@ -2478,7 +2481,8 @@
   "portrait_nid": "EyvelPortrait",
   "games": [
    "FE5"
-  ]
+  ],
+  "balance_note": "Ajustado (probable buff para igualar mínimos de genéricos de misma clase/nivel). Diferencias vs natural Serenes: HP 43(nat 28), STR 21(nat 9), MAG 1(nat 4), SKL 26(nat 18), SPD 25(nat 20), LCK 9(nat 10), DEF 15(nat 7).  Natural Serenes: HP28 STR9 MAG4 SKL18 SPD20 LCK10 DEF7."
  },
  {
   "nid": "Halvan",
@@ -2529,7 +2533,8 @@
   "portrait_nid": "HalvanPortrait",
   "games": [
    "FE5"
-  ]
+  ],
+  "balance_note": "Ajustado (probable buff para igualar mínimos de genéricos de misma clase/nivel). Diferencias vs natural Serenes: HP 34(nat 28), SKL 5(nat 7), SPD 8(nat 7), LCK 1(nat 2).  Natural Serenes: HP28 STR7 MAG0 SKL7 SPD7 LCK2 DEF5."
  },
  {
   "nid": "Lara",
@@ -2696,7 +2701,8 @@
   "portrait_nid": "LifisPortrait",
   "games": [
    "FE5"
-  ]
+  ],
+  "balance_note": "Ajustado (probable buff para igualar mínimos de genéricos de misma clase/nivel). Diferencias vs natural Serenes: DEF 3(nat 2).  Natural Serenes: HP20 STR3 MAG0 SKL4 SPD10 LCK1 DEF2."
  },
  {
   "nid": "Mareeta",
@@ -2748,7 +2754,8 @@
   "portrait_nid": "MareetaPortrait",
   "games": [
    "FE5"
-  ]
+  ],
+  "balance_note": "Ajustado (probable buff para igualar mínimos de genéricos de misma clase/nivel). Diferencias vs natural Serenes: HP 23(nat 22), STR 4(nat 3), SKL 8(nat 7).  Natural Serenes: HP22 STR3 MAG1 SKL7 SPD13 LCK7 DEF3."
  },
  {
   "nid": "Marty",
@@ -2794,7 +2801,8 @@
   "portrait_nid": "MartyPortrait",
   "games": [
    "FE5"
-  ]
+  ],
+  "balance_note": "Ajustado (probable buff para igualar mínimos de genéricos de misma clase/nivel). Diferencias vs natural Serenes: SPD 4(nat 0).  Natural Serenes: HP32 STR9 MAG0 SKL0 SPD0 LCK6 DEF6."
  },
  {
   "nid": "Nanna",
@@ -2915,7 +2923,8 @@
   "portrait_nid": "OsianPortrait",
   "games": [
    "FE5"
-  ]
+  ],
+  "balance_note": "Ajustado (probable buff para igualar mínimos de genéricos de misma clase/nivel). Diferencias vs natural Serenes: HP 34(nat 27), SKL 5(nat 7), SPD 8(nat 9), LCK 1(nat 3).  Natural Serenes: HP27 STR6 MAG0 SKL7 SPD9 LCK3 DEF4."
  },
  {
   "nid": "Raydrik",
@@ -3012,7 +3021,8 @@
   "portrait_nid": "RonanPortrait",
   "games": [
    "FE5"
-  ]
+  ],
+  "balance_note": "Ajustado (probable buff para igualar mínimos de genéricos de misma clase/nivel). Diferencias vs natural Serenes: HP 21(nat 20), SKL 5(nat 3), SPD 6(nat 7).  Natural Serenes: HP20 STR4 MAG0 SKL3 SPD7 LCK3 DEF2."
  },
  {
   "nid": "Safy",
@@ -3158,7 +3168,8 @@
   "portrait_nid": "TanyaPortrait",
   "games": [
    "FE5"
-  ]
+  ],
+  "balance_note": "Ajustado (probable buff para igualar mínimos de genéricos de misma clase/nivel). Diferencias vs natural Serenes: HP 21(nat 20), STR 4(nat 3).  Natural Serenes: HP20 STR3 MAG1 SKL6 SPD10 LCK6 DEF2."
  },
  {
   "nid": "Weissman",
