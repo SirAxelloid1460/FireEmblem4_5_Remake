@@ -1,0 +1,110 @@
+[
+  {
+    "name": "ElliotRuns",
+    "trigger": "combat_end",
+    "level_nid": "1",
+    "condition": "(unit1.nid == 'Elliot' or unit2.nid == 'Elliot') and unit.get_hp() <= 1",
+    "commands": [
+      [
+        "center_cursor",
+        [
+          "Elliot"
+        ]
+      ],
+      [
+        "add_portrait",
+        [
+          "Elliot",
+          "Right"
+        ]
+      ],
+      [
+        "speak",
+        [
+          "Elliot",
+          "Oof... Men, retreat!{w}{br}Mark my words, Eldigan!{br}This isn't over!{w}",
+          "",
+          "",
+          "noir"
+        ]
+      ],
+      [
+        "remove_portrait",
+        [
+          "Elliot"
+        ]
+      ],
+      [
+        "end_skip",
+        []
+      ],
+      [
+        "move_group",
+        [
+          "ElliotGroup",
+          "21,0",
+          "",
+          "stack"
+        ]
+      ],
+      [
+        "remove_group",
+        [
+          "ElliotGroup",
+          "fade"
+        ]
+      ],
+      [
+        "center_cursor",
+        [
+          "Eldigan"
+        ]
+      ],
+      [
+        "add_portrait",
+        [
+          "Eldigan",
+          "Right"
+        ]
+      ],
+      [
+        "speak",
+        [
+          "Eldigan",
+          "Elliot has fled? Very well.{w}{br}Leave him to lick his wounds.{w}{br}We're done here. Withdraw!{w}",
+          "",
+          "",
+          "noir"
+        ]
+      ],
+      [
+        "remove_portrait",
+        [
+          "Eldigan"
+        ]
+      ],
+      [
+        "end_skip",
+        []
+      ],
+      [
+        "move_group",
+        [
+          "EldiganGroup",
+          "13,5",
+          "",
+          "stack"
+        ]
+      ],
+      [
+        "remove_group",
+        [
+          "EldiganGroup",
+          "fade"
+        ]
+      ]
+    ],
+    "only_once": true,
+    "priority": 20
+  }
+]

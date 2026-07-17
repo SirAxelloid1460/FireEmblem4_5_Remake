@@ -1,0 +1,119 @@
+[
+  {
+    "name": "PreBase",
+    "trigger": "level_start",
+    "level_nid": "2",
+    "condition": "True",
+    "commands": [
+      [
+        "music",
+        [
+          "232 - Agustria Castle Town"
+        ]
+      ],
+      [
+        "change_background",
+        [
+          "BlackBackground"
+        ]
+      ],
+      [
+        "transition",
+        [
+          "close"
+        ]
+      ],
+      [
+        "comment",
+        [
+          "#game_var;_base_promote;True"
+        ]
+      ],
+      [
+        "game_var",
+        [
+          "_convoy",
+          "True"
+        ]
+      ],
+      [
+        "game_var",
+        [
+          "_base_market",
+          "True"
+        ]
+      ],
+      [
+        "add_market_item",
+        [
+          "Steel Sword"
+        ]
+      ],
+      [
+        "add_market_item",
+        [
+          "Steel Lance"
+        ]
+      ],
+      [
+        "add_market_item",
+        [
+          "Steel Bow"
+        ]
+      ],
+      [
+        "add_market_item",
+        [
+          "Thunder"
+        ]
+      ],
+      [
+        "comment",
+        [
+          "#add_to_market;Vulnerary"
+        ]
+      ],
+      [
+        "trigger_script",
+        [
+          "BaseRepair"
+        ]
+      ],
+      [
+        "change_tilemap",
+        [
+          "Base"
+        ]
+      ],
+      [
+        "show_layer",
+        [
+          "Evans",
+          "immediate"
+        ]
+      ],
+      [
+        "trigger_script",
+        [
+          "BasePeople"
+        ]
+      ],
+      [
+        "transition",
+        [
+          "open"
+        ]
+      ],
+      [
+        "base",
+        [
+          "BaseFloor2",
+          "232 - Agustria Castle Town",
+          "show_map"
+        ]
+      ]
+    ],
+    "only_once": true,
+    "priority": 29
+  }
+]

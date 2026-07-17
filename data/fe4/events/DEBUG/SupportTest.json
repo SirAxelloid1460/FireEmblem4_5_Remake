@@ -1,0 +1,27 @@
+[
+  {
+    "name": "SupportTest",
+    "trigger": "level_start",
+    "level_nid": "DEBUG",
+    "condition": "True",
+    "commands": [
+      [
+        "game_var",
+        [
+          "_supports",
+          "True"
+        ]
+      ],
+      [
+        "unlock_support_rank",
+        [
+          "Quan",
+          "Ethlyn",
+          "Married"
+        ]
+      ]
+    ],
+    "only_once": true,
+    "priority": 20
+  }
+]

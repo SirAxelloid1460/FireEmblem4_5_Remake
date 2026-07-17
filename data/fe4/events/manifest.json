@@ -1,0 +1,257 @@
+{
+  "_comment": "Manifest de eventos FE4. 'order' define, por nivel y por trigger, la SECUENCIA en que EventSystem dispara los eventos (un archivo por evento en events/<nivel>/<Nombre>.json). Editar esta lista reordena la ejecucion. Orden inicial = priority descendente (intencion LT). Los eventos sin trigger (script-only) no aparecen aqui: se invocan por nombre via el comando trigger_script.",
+  "order": {
+    "global": {
+      "level_start": [
+        "Debug Setup"
+      ],
+      "unit_death": [
+        "DeathSigurd",
+        "DeathAlec",
+        "DeathAyra",
+        "DeathJamke",
+        "DeathDew",
+        "DeathLachesis",
+        "DeathHolyn",
+        "DeathBeowulf",
+        "DeathLewyn",
+        "DeathSylvia",
+        "DeathErinys",
+        "DeathArden",
+        "DeathNoish",
+        "DeathAzel",
+        "DeathDeirdre",
+        "DeathLex",
+        "DeathQuan",
+        "DeathFinn",
+        "DeathEthlyn",
+        "DeathAideen",
+        "DeathMidir",
+        "DeathFakeMidir"
+      ],
+      "Quick_End": [
+        "Quick End"
+      ]
+    },
+    "0": {
+      "level_start": [
+        "Chronology",
+        "Narration",
+        "Intro",
+        "SetSupportValues"
+      ],
+      "enemy_turn_change": [
+        "Aideen's Kidnap",
+        "EvansSpawn"
+      ],
+      "Visit": [
+        "CWVillage",
+        "CEVillage",
+        "NWVillage",
+        "NEVillage",
+        "SVillage"
+      ],
+      "Enter": [
+        "TownTutorial"
+      ],
+      "Seize": [
+        "JungbySeize",
+        "EvansSeize"
+      ],
+      "combat_start": [
+        "FightDiMaggio",
+        "FightGerrardMidir",
+        "FightGerrard"
+      ],
+      "unit_death": [
+        "DeathDiMaggio",
+        "DeathGerrard"
+      ],
+      "turn_change": [
+        "LA",
+        "QFE"
+      ],
+      "on_talk": [
+        "LexSigurdTalk",
+        "AzelSigurdTalk",
+        "QuanSigurdTalk",
+        "EthlynSigurdTalk",
+        "SigurdArvisTalk"
+      ],
+      "level_end": [
+        "Outro"
+      ],
+      "Destructible": [
+        "Destructibles"
+      ]
+    },
+    "1": {
+      "Seize": [
+        "GenoaSeize",
+        "VerdaneSeize",
+        "MarphaSeize"
+      ],
+      "combat_start": [
+        "FightKinbois",
+        "FightJamke",
+        "FightAyra",
+        "FightGandolf",
+        "FightSandima",
+        "FightGandolfMidir",
+        "FightGandolfAzel",
+        "FightSandimaJamke",
+        "FightSandimaDeirdre"
+      ],
+      "unit_death": [
+        "DeathKinbois",
+        "DeathGandolf",
+        "DeathSandima"
+      ],
+      "on_talk": [
+        "AzelAideenTalk",
+        "MidirAideenTalk",
+        "DewAideenTalk",
+        "NordionGuardTalk",
+        "SigurdAideenTalk",
+        "QuanAyraTalk",
+        "QuanFinnTalk",
+        "JamkeRecruitment",
+        "AideenEthlynTalk"
+      ],
+      "level_start": [
+        "Narration",
+        "PreBase",
+        "Intro",
+        "AddNordionGuardTalk"
+      ],
+      "Visit": [
+        "NorthVillage",
+        "SouthVillage",
+        "CenterVillage"
+      ],
+      "unit_wait": [
+        "LexAxe",
+        "DeirdreJoins",
+        "AyraAttack"
+      ],
+      "combat_end": [
+        "ElliotRuns"
+      ],
+      "level_end": [
+        "Outro"
+      ],
+      "enemy_turn_change": [
+        "AyraRecruit"
+      ],
+      "turn_change": [
+        "AideenDewSpawn"
+      ],
+      "other_turn_change": [
+        "ElliotEldiganSpawn"
+      ],
+      "Destructible": [
+        "Destructibles"
+      ]
+    },
+    "2": {
+      "combat_start": [
+        "FightElliot",
+        "FightChagall1",
+        "FightPhillip",
+        "FightBoldor",
+        "FightMacbeth",
+        "FightVoltz",
+        "FightBeowulf",
+        "FightClement",
+        "FightZain",
+        "FightErinys",
+        "FightElliotLachesis",
+        "FightChagallErinys",
+        "FightChagallLachesis",
+        "FightMacbethLewyn",
+        "FightVoltzBeowulf",
+        "FightErinysLewyn"
+      ],
+      "unit_death": [
+        "DeathElliot",
+        "DeathPhillip",
+        "DeathBoldor",
+        "DeathMacbeth",
+        "DeathClement",
+        "DeathZain",
+        "DeathChagall-1",
+        "DeathVoltz"
+      ],
+      "on_talk": [
+        "BeowulfRecruit",
+        "DeirdreEthlynTalk",
+        "QuanFinnTalk",
+        "DewLachesisTalk",
+        "SigurdLewynTalk",
+        "SylviaSigurdTalk",
+        "BeowulfLachesisTalk",
+        "AlecSylviaTalk",
+        "ErinysRecruit",
+        "ErinysSigurdTalk",
+        "LachesisRecruit"
+      ],
+      "level_start": [
+        "Narration",
+        "PreBase",
+        "Intro"
+      ],
+      "Visit": [
+        "East1Village",
+        "West1Village",
+        "West2Village",
+        "West3Village",
+        "Center1Village",
+        "Center2Village",
+        "Center3Village",
+        "East2Village",
+        "East3Village",
+        "East4Village"
+      ],
+      "level_end": [
+        "Outro"
+      ],
+      "Seize": [
+        "HeirheinSeized",
+        "AnphonySeized",
+        "AgustySeized",
+        "MackilySeized"
+      ],
+      "enemy_turn_change": [
+        "ElliotAttack",
+        "PhillipAttack",
+        "VoltzSpawn",
+        "MackilySpawn",
+        "MackilyAttack",
+        "ZainAttack",
+        "OpenDoors",
+        "LewynSylviaSpawn"
+      ],
+      "unit_wait": [
+        "ArdenRing",
+        "MackilyConvo"
+      ],
+      "Destructible": [
+        "Destructibles"
+      ]
+    },
+    "998": {
+      "level_start": [
+        "Cursor"
+      ]
+    },
+    "DEBUG": {
+      "ChangePortrait": [
+        "ChangePortrait"
+      ],
+      "level_start": [
+        "SupportTest",
+        "Shop"
+      ]
+    }
+  }
+}

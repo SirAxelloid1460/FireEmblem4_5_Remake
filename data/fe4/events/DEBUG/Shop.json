@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Shop",
+    "trigger": "level_start",
+    "level_nid": "DEBUG",
+    "condition": "True",
+    "commands": [
+      [
+        "change_background",
+        [
+          "Town"
+        ]
+      ],
+      [
+        "multi_add_portrait",
+        [
+          "Armory",
+          "Left",
+          "Sigurd",
+          "Right"
+        ]
+      ],
+      [
+        "speak",
+        [
+          "Armory",
+          "Good day, sir! Preparing for battle?{w}{br}Then don't forget to come to my shop for some equipment!{w}"
+        ]
+      ],
+      [
+        "choice",
+        [
+          "Shop1",
+          "Enter Shop?",
+          "Yes,No",
+          "",
+          "v",
+          "center"
+        ]
+      ],
+      [
+        "if",
+        [
+          "game.game_vars.get('Shop1', None) == 'Yes'"
+        ]
+      ],
+      [
+        "choice",
+        [
+          "BuyEquipment",
+          "Buy Equipment",
+          "{eval:','.join([item.nid + '|' + item.Name for item in game.get_data('MarketListCh1')])}",
+          "",
+          "vert",
+          "top_left",
+          "",
+          "",
+          "persist"
+        ],
+        [
+          "BuyEquipment",
+          "Buy Equipment",
+          "{eval:','.join([item.nid + '|' + item.Name for item in game.get_data('MarketListCh1')])}",
+          "",
+          "vert",
+          "top_left",
+          "",
+          "",
+          "FLAG(persist)"
+        ]
+      ],
+      [
+        "multi_remove_portrait",
+        [
+          "Armory",
+          "Sigurd"
+        ]
+      ],
+      [
+        "change_background",
+        []
+      ]
+    ],
+    "only_once": true,
+    "priority": 20
+  }
+]

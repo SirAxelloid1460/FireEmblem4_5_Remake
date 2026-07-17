@@ -105,7 +105,11 @@ signal force_defeat()
 
 ## Carga los eventos de un capítulo.  events_data es la lista directa del
 ## directorio /events/ filtrada por level_nid del capítulo actual.
-func load_chapter_events(events_data: Array, level_nid: String) -> void:
+##   order_manifest (opcional): el "general" que ordena los triggers, de
+##   data/<juego>/events/manifest.json → { "<nivel>": { "<trigger>": [nombres] } }.
+##   Cada lista define la SECUENCIA de disparo. Sin manifest, se ordena por
+##   `priority` descendente (misma intención, fallback robusto).
+func load_chapter_events(events_data: Array, level_nid: String, order_manifest: Dictionary = {}) -> void:
 	events_by_trigger.clear()
 	events_by_name.clear()
 	fired_events.clear()
@@ -128,6 +132,40 @@ func load_chapter_events(events_data: Array, level_nid: String) -> void:
 		if not events_by_trigger.has(trigger):
 			events_by_trigger[trigger] = []
 		events_by_trigger[trigger].append(ev)
+	# Ordenar cada trigger según el manifest (o por priority desc si no hay).
+	for trigger in events_by_trigger.keys():
+		events_by_trigger[trigger] = _order_events(
+				events_by_trigger[trigger], level_nid, trigger, order_manifest)
+
+
+## Ordena la lista de eventos de un trigger según el manifest de orden.
+## Los nombres listados en manifest[level][trigger] (+ los de "global") marcan la
+## secuencia; los eventos no listados van al final por `priority` descendente.
+## Sin manifest, TODO cae al fallback priority-desc (arregla el orden igualmente).
+func _order_events(evs: Array, level_nid: String, trigger: String, order_manifest: Dictionary) -> Array:
+	var names: Array = []
+	if order_manifest.has(level_nid) and order_manifest[level_nid].has(trigger):
+		names.append_array(order_manifest[level_nid][trigger])
+	if order_manifest.has("global") and order_manifest["global"].has(trigger):
+		for n in order_manifest["global"][trigger]:
+			if n not in names:
+				names.append(n)
+	var rank: Dictionary = {}
+	for i in names.size():
+		rank[str(names[i])] = i
+	# Clave de orden: (rango del manifest, o bucket al final por -priority); índice
+	# original como desempate para que sea determinista/estable.
+	var indexed: Array = []
+	for i in evs.size():
+		var e = evs[i]
+		var nm := str(e.get("name", ""))
+		var r: int = int(rank.get(nm, 100000 - int(e.get("priority", 20))))
+		indexed.append([r, i, e])
+	indexed.sort_custom(func(a, b): return a[0] < b[0] if a[0] != b[0] else a[1] < b[1])
+	var out: Array = []
+	for t in indexed:
+		out.append(t[2])
+	return out
 
 
 ## Configura las dependencias del sistema (caller las inyecta tras crear).

@@ -1743,7 +1743,7 @@ func apply_torch_to(unit: Unit, bonus: int = 4, turns: int = 4) -> void:
 ## Llamar UNA VEZ tras cargar project_data y antes de start_player_turn.
 func load_chapter(chapter_path: String, tilemap_data: Dictionary,
 		events_data: Array = [], support_pairs: Array = [],
-		support_ranks: Array = []) -> void:
+		support_ranks: Array = [], event_order: Dictionary = {}) -> void:
 	# 1. Limpiar estado del capítulo anterior.
 	player_units.clear()
 	enemy_units.clear()
@@ -1797,7 +1797,7 @@ func load_chapter(chapter_path: String, tilemap_data: Dictionary,
 	# 6. Configurar Event system y cargar eventos del cap.
 	event_system = EventSystem.new()
 	add_child(event_system)
-	event_system.load_chapter_events(events_data, loaded.nid)
+	event_system.load_chapter_events(events_data, loaded.nid, event_order)
 	event_system.configure(self, null, _get_convoy())
 	event_system.force_victory.connect(_on_force_victory)
 	event_system.force_defeat.connect(_on_force_defeat)

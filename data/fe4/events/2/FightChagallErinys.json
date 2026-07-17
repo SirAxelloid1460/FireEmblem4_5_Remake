@@ -1,0 +1,48 @@
+[
+  {
+    "name": "FightChagallErinys",
+    "trigger": "combat_start",
+    "level_nid": "2",
+    "condition": "check_pair('Chagall','Erinys')",
+    "commands": [
+      [
+        "multi_add_portrait",
+        [
+          "Chagall",
+          "Right",
+          "Erinys",
+          "Left"
+        ]
+      ],
+      [
+        "speak",
+        [
+          "Chagall",
+          "Mwahaha, it’s you... Finally realized the truth, did you? You stupid woman.{w}",
+          "",
+          "",
+          "noir"
+        ]
+      ],
+      [
+        "speak",
+        [
+          "Erinys",
+          "Chagall! You lied to me… I cannot forgive you! Prepare yourself!{w}",
+          "",
+          "",
+          "noir"
+        ]
+      ],
+      [
+        "multi_remove_portrait",
+        [
+          "Erinys",
+          "Chagall"
+        ]
+      ]
+    ],
+    "only_once": true,
+    "priority": 20
+  }
+]
