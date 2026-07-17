@@ -97,14 +97,16 @@ func _ready() -> void:
 	var support_pairs: Array = _load_json_array(DATA_ROOT + "support_pairs.json")
 	var support_ranks: Array = _load_json_array(DATA_ROOT + "support_ranks.json")
 
-	# 4. Cargar todos los eventos del proyecto.
+	# 4. Cargar todos los eventos del proyecto (un archivo por evento, en
+	#    events/<nivel>/<Nombre>.json) + el manifest que define el orden por trigger.
 	var events_data: Array = _load_all_events(DATA_ROOT + "events/")
+	var event_order: Dictionary = _load_event_manifest(DATA_ROOT + "events/manifest.json")
 	if VERBOSE:
 		print("[PrologueTest] Eventos: %d" % events_data.size())
 
 	# 5. Cargar el capítulo.
 	game_manager.load_chapter(CHAPTER_PATH, tilemap_data, events_data,
-			support_pairs, support_ranks)
+			support_pairs, support_ranks, event_order)
 
 	if VERBOSE:
 		_dump_chapter_state()
@@ -202,24 +204,60 @@ func _load_json_array(path: String) -> Array:
 	return []
 
 
-## Carga todos los eventos de un directorio (un evento por archivo).
-##   Cada archivo es un Array[1] con un Dict.
+## Carga todos los eventos: un evento por archivo, en subcarpetas por nivel
+##   events/<nivel>/<Nombre>.json  (cada archivo es un Array[1] con un Dict).
+## Recorre las subcarpetas de nivel; el manifest.json del nivel raíz se ignora
+## (no es una carpeta), y se carga aparte con _load_event_manifest.
 func _load_all_events(events_dir: String) -> Array:
 	var out: Array = []
 	var d := DirAccess.open(events_dir)
 	if d == null:
 		return out
 	d.list_dir_begin()
+	var entry := d.get_next()
+	while entry != "":
+		if d.current_is_dir() and not entry.begins_with("."):
+			out.append_array(_load_events_in_dir(events_dir + entry + "/"))
+		elif entry.ends_with(".json") and entry != "manifest.json":
+			# Compat: eventos sueltos que aún estén en la raíz de events/.
+			for ev in _load_json_array(events_dir + entry):
+				if ev is Dictionary:
+					out.append(ev)
+		entry = d.get_next()
+	d.list_dir_end()
+	return out
+
+
+## Carga los .json (Array[1] con un Dict) de una carpeta de nivel.
+func _load_events_in_dir(dir_path: String) -> Array:
+	var out: Array = []
+	var d := DirAccess.open(dir_path)
+	if d == null:
+		return out
+	d.list_dir_begin()
 	var fname := d.get_next()
 	while fname != "":
 		if not d.current_is_dir() and fname.ends_with(".json"):
-			var arr := _load_json_array(events_dir + fname)
-			for ev in arr:
+			for ev in _load_json_array(dir_path + fname):
 				if ev is Dictionary:
 					out.append(ev)
 		fname = d.get_next()
 	d.list_dir_end()
 	return out
+
+
+## Carga el manifest de orden de eventos → { "<nivel>": { "<trigger>": [nombres] } }.
+func _load_event_manifest(path: String) -> Dictionary:
+	if not FileAccess.file_exists(path):
+		return {}
+	var f := FileAccess.open(path, FileAccess.READ)
+	if f == null:
+		return {}
+	var data = JSON.parse_string(f.get_as_text())
+	f.close()
+	if data is Dictionary and data.has("order") and data["order"] is Dictionary:
+		return data["order"]
+	return {}
 
 
 # ══════════════════════════════════════════════════════════════════════════════

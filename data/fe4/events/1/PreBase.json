@@ -1,0 +1,139 @@
+[
+  {
+    "name": "PreBase",
+    "trigger": "level_start",
+    "level_nid": "1",
+    "condition": "True",
+    "commands": [
+      [
+        "music",
+        [
+          "230 - Verdane Castle Town"
+        ]
+      ],
+      [
+        "change_background",
+        [
+          "BlackBackground"
+        ]
+      ],
+      [
+        "transition",
+        [
+          "close"
+        ]
+      ],
+      [
+        "game_var",
+        [
+          "_convoy",
+          "True"
+        ]
+      ],
+      [
+        "game_var",
+        [
+          "_base_market",
+          "True"
+        ]
+      ],
+      [
+        "add_market_item",
+        [
+          "Slim Sword",
+          "unique"
+        ]
+      ],
+      [
+        "add_market_item",
+        [
+          "Steel Axe",
+          "unique"
+        ]
+      ],
+      [
+        "add_market_item",
+        [
+          "Iron Lance",
+          "unique"
+        ]
+      ],
+      [
+        "add_market_item",
+        [
+          "Javelin",
+          "unique"
+        ]
+      ],
+      [
+        "add_market_item",
+        [
+          "Vulnerary"
+        ]
+      ],
+      [
+        "comment",
+        [
+          "#add_to_market;Vulnerary"
+        ]
+      ],
+      [
+        "trigger_script",
+        [
+          "BaseRepair"
+        ]
+      ],
+      [
+        "change_tilemap",
+        [
+          "Base"
+        ]
+      ],
+      [
+        "show_layer",
+        [
+          "Evans",
+          "immediate"
+        ]
+      ],
+      [
+        "trigger_script",
+        [
+          "BasePeople"
+        ]
+      ],
+      [
+        "change_background",
+        [
+          "BaseFloor2"
+        ]
+      ],
+      [
+        "transition",
+        [
+          "open"
+        ]
+      ],
+      [
+        "speak",
+        [
+          "Narrator",
+          "Oh!! and now you can get your items repaired the Blacksmith,{w} make sure to get in therebefore proceeding to the next chapter,{w} for there is no other way to repair them{w} and shops do not have that many existances...",
+          "",
+          "",
+          "hint"
+        ]
+      ],
+      [
+        "base",
+        [
+          "BaseFloor2",
+          "230 - Verdane Castle Town",
+          "show_map"
+        ]
+      ]
+    ],
+    "only_once": true,
+    "priority": 29
+  }
+]
