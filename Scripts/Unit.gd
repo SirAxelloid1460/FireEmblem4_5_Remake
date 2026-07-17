@@ -67,6 +67,14 @@ var _feet_y: float = 30.0
 var weapon:    Weapon = null
 var inventory: Array  = []      # Array de ItemData (max 5)
 
+# ── Estado de ARENA (Castillo Base, por-personaje) ────────────────────────────
+# Progreso híbrido: se enfrenta a los 7 rivales fijos del capítulo en orden
+# (arena_fixed_index 0..7); tras vencerlos pasa a genéricos.  Tope de 10 victorias
+# por capítulo (arena_wins 0..10).  NO se persiste al roster → se reinicia solo en
+# cada visita al castillo, que ocurre una vez por capítulo (= reset por capítulo).
+var arena_fixed_index: int = 0   # índice del próximo rival FIJO (>=7 → fase genérica)
+var arena_wins:        int = 0   # victorias acumuladas este capítulo (tope 10)
+
 # ── Skills ────────────────────────────────────────────────────────────────────
 
 # Skills permanentes (de clase, sangre sagrada, manuales)

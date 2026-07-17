@@ -27,7 +27,7 @@ var convoy_items: Array[Item] = []
 var current_chapter: int = 1
 
 # Configuración
-@export var next_battle_scene: String = "res://Scenes/battle.tscn"
+@export var next_battle_scene: String = "res://Scenes/main_game.tscn"
 @export var allow_saving: bool = true
 
 # Señales
