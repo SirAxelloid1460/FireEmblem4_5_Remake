@@ -26,7 +26,10 @@ extends Control
 const PANEL       := "res://assets/menus/menu_box_6x.png"
 const HAND        := "res://assets/menus/menu_hand.png"
 const SERIF_FONT  := "res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
-const THEME_MUSIC := "res://assets/music/102 - Fire Emblem Theme.ogg"
+# Sin música: estos menús de arranque son SILENCIOSOS a propósito. El tema
+# musical depende de la versión elegida (FE4 y FE5 tienen bandas sonoras
+# ligeramente distintas), así que la música empieza más adelante, ya con el
+# modo seleccionado. Aquí solo hay SFX de navegación.
 
 const COLOR_TEXT    := Color(0.82, 0.84, 0.82, 1.0)   # crema tenue (opción normal)
 const COLOR_GOLD    := Color(1.00, 0.90, 0.55, 1.0)   # dorado (opción enfocada)
@@ -47,7 +50,6 @@ var _cursor: TextureRect
 var _cursor_target: Button = null
 var _preview: TextureRect
 var _list: VBoxContainer
-var _music: AudioStreamPlayer
 var _sfx: AudioStreamPlayer
 var _bob_i: int = 0
 var _bob_accum: float = 0.0
@@ -76,7 +78,6 @@ func _on_cancel() -> void:
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_build_bg()
-	_build_music()
 	_build_preview_panel()
 	_build_list_panel()
 	_build_cursor()
@@ -94,20 +95,6 @@ func _build_bg() -> void:
 	add_child(bg)
 	# Gancho: cuando exista el fondo de runas de Jugdral, pintarlo aquí como
 	# TextureRect a pantalla completa (STRETCH_KEEP_ASPECT_COVERED, nearest).
-
-
-func _build_music() -> void:
-	if not ResourceLoader.exists(THEME_MUSIC):
-		return
-	_music = AudioStreamPlayer.new()
-	var stream = load(THEME_MUSIC)
-	if "loop" in stream:
-		stream.loop = true
-	_music.stream = stream
-	if AudioServer.get_bus_index("Music") >= 0:
-		_music.bus = "Music"
-	add_child(_music)
-	_music.play()
 
 
 ## NinePatchRect con el skin ornamentado, anclado por fracciones del viewport.
