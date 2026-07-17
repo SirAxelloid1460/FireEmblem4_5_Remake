@@ -302,6 +302,7 @@ static func calculate_hit(atk: Unit, def: Unit, _dist: int,
 	if _charisma_near(atk): hit += CHARISMA_BONUS
 	hit += _tri_hit(atk, def)
 	hit += _support_bonus(atk, "HIT")
+	if _has_skill(atk, "Luckily Light"): hit += 20   # Light Sword: +20 Hit pasivo
 	var def_as: int = calculate_attack_speed(def)
 	# Captura: SPD/2 del atacante reduce su AS (ya incluido via flag en _calc_dmg)
 	var avoid: int = (def_as * 2) + _stat(def, "LCK") + int(t_def.get("AVO", 0))
@@ -344,6 +345,7 @@ static func _calc_dmg(atk: Unit, def: Unit, is_crit: bool, is_eff: bool,
 	if flags.get("is_capture_attempt", false): stat_m = stat_m / 2
 	var wep_m: int = int(wpn.might) if wpn else 0
 	var mt_total: int = wep_m + stat_m
+	if _has_skill(atk, "Luckily Light"): mt_total += 2   # Light Sword: +2 Might pasivo
 	# Defensa mágica: en FE5 no existe RES → MAG hace de resistencia. En
 	# FE4/SAGA se usa RES normal.
 	var def_raw: int = _stat(def, _magic_def_stat()) if is_magic else _stat(def, "DEF")

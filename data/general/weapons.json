@@ -7719,7 +7719,7 @@
   "prf_tags": [],
   "prf_units": [],
   "status_on_equip": "",
-  "status_on_hit": "Stun",
+  "status_on_hit": "",
   "personal": false,
   "components": [
    [
@@ -7771,10 +7771,6 @@
    [
     "weight",
     30
-   ],
-   [
-    "status_on_hit",
-    "Stun"
    ],
    [
     "crit",

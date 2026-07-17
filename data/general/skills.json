@@ -1882,5 +1882,34 @@
     null
    ]
   ]
+ },
+ {
+  "nid": "Luckily Light",
+  "name": "Luckily Light",
+  "desc": "Espada de Luz: +10 Suerte, +20 Acierto, +2 Poder mientras se porta; a distancia lanza Lightning.",
+  "icon_nid": "Skills",
+  "components": [
+   [
+    "hidden",
+    null
+   ],
+   [
+    "stat_change",
+    [
+     [
+      "LCK",
+      10
+     ]
+    ]
+   ],
+   [
+    "hit",
+    20
+   ],
+   [
+    "damage",
+    2
+   ]
+  ]
  }
 ]
