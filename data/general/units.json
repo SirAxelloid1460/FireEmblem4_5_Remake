@@ -10078,7 +10078,7 @@
  },
  {
   "nid": "Gustaf",
-  "name": "Gustaf",
+  "name": "Gustav",
   "desc": "FE5 boss (18).",
   "klass": "Baron",
   "level": 17,
@@ -10355,7 +10355,7 @@
  },
  {
   "nid": "Cohen",
-  "name": "Cohen",
+  "name": "Cowen",
   "desc": "FE5 boss (22).",
   "klass": "Baron",
   "level": 20,
@@ -10465,7 +10465,7 @@
  },
  {
   "nid": "Ein",
-  "name": "Ein",
+  "name": "Eins",
   "desc": "FE5 boss (F).",
   "klass": "Baron",
   "level": 20,
@@ -10852,8 +10852,8 @@
  },
  {
   "nid": "Shupel",
-  "name": "Shupel",
-  "desc": "FE5 boss: Baron (Ch.13).",
+  "name": "Spörl",
+  "desc": "FE5 boss no usado/beta (Baron con Pavise; recolor de List/Wolf).",
   "klass": "Baron",
   "level": 1,
   "gender": "M",
