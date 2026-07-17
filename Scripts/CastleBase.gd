@@ -322,8 +322,9 @@ func _on_arena_button_pressed():
 	facility_opened.emit("Arena")
 	hide_all_facility_panels()
 	arena_panel.show()
+	if not arena_panel.arena_finished.is_connected(_on_arena_finished):
+		arena_panel.arena_finished.connect(_on_arena_finished)
 	arena_panel.start_arena(selected_unit, army_gold)
-	arena_panel.arena_finished.connect(_on_arena_finished)
 
 func _on_blacksmith_button_pressed():
 	"""Abre la herrería para reparar armas"""
@@ -446,11 +447,11 @@ func _on_convoy_item_transferred(from_convoy: bool, item: Item):
 func _on_arena_finished(victory: bool, gold_earned: int, exp_gained: int):
 	"""Cuando termina un combate de arena"""
 	if victory:
+		# El EXP ya lo otorgó ArenaSystem.apply_result (gain_exp); aquí solo el oro.
 		army_gold += gold_earned
-		selected_unit.gain_experience(exp_gained)
 		show_message("¡Victoria! Ganaste %d oro y %d EXP" % [gold_earned, exp_gained])
 	else:
-		show_message("Derrota en la arena...")
+		show_message("Derrota en la arena... (HP restaurado)")
 	
 	update_gold_display()
 	update_unit_details(selected_unit)
