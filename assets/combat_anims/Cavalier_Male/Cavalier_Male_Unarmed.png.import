@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt55bkyj7nfrf"
-path="res://.godot/imported/Cavalier_Generic_Unarmed.png-412ea392ef115c6621afe757d448f95b.ctex"
+path="res://.godot/imported/Cavalier_Male_Unarmed.png-7bd97c8bd3266a0af53c0181cd2be3ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Cavalier_Generic/Cavalier_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/Cavalier_Generic_Unarmed.png-412ea392ef115c6621afe757d448f95b.ctex"]
+source_file="res://assets/combat_anims/Cavalier_Male/Cavalier_Male_Unarmed.png"
+dest_files=["res://.godot/imported/Cavalier_Male_Unarmed.png-7bd97c8bd3266a0af53c0181cd2be3ec.ctex"]
 
 [params]
 

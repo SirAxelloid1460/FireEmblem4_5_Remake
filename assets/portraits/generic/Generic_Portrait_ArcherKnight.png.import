@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dokldqut4jt4u"
-path="res://.godot/imported/Generic_Portrait_CavalierB.png-dd9ad1c86d3e5a0df790b84ceb4a874e.ctex"
+path="res://.godot/imported/Generic_Portrait_ArcherKnight.png-9a4b57fa3ead7d6ae7058a1a76409085.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/portraits/generic/Generic_Portrait_ArcherKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_CavalierB.png-dd9ad1c86d3e5a0df790b84ceb4a874e.ctex"]
+dest_files=["res://.godot/imported/Generic_Portrait_ArcherKnight.png-9a4b57fa3ead7d6ae7058a1a76409085.ctex"]
 
 [params]
 

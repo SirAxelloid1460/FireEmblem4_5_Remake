@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvimob6i13mms"
-path="res://.godot/imported/Iuchar.png-f55e9aecb157ada9b7ddcd6077574e56.ctex"
+path="res://.godot/imported/Iuchar.png-db7f965d17df236fdb0bb507e930340b.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/portraits/characters/Iuchar.png"
-dest_files=["res://.godot/imported/Iuchar.png-f55e9aecb157ada9b7ddcd6077574e56.ctex"]
+dest_files=["res://.godot/imported/Iuchar.png-db7f965d17df236fdb0bb507e930340b.ctex"]
 
 [params]
 

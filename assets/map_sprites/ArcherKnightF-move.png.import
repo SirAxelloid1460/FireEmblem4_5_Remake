@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ymwwc5wdoh0"
-path="res://.godot/imported/CavalierBF-move.png-649499e2bebb853ce524d0f75b4b230e.ctex"
+path="res://.godot/imported/ArcherKnightF-move.png-9226499e693cab93f4b58f5cbc9894cf.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/map_sprites/ArcherKnightF-move.png"
-dest_files=["res://.godot/imported/CavalierBF-move.png-649499e2bebb853ce524d0f75b4b230e.ctex"]
+dest_files=["res://.godot/imported/ArcherKnightF-move.png-9226499e693cab93f4b58f5cbc9894cf.ctex"]
 
 [params]
 

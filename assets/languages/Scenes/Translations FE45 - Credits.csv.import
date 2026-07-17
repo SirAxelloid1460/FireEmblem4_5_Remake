@@ -6,10 +6,10 @@ uid="uid://dwjppfxua186n"
 
 [deps]
 
-files=["res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.es.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation"]
+files=["res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.es.translation"]
 
 source_file="res://assets/languages/Scenes/Translations FE45 - Credits.csv"
-dest_files=["res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.es.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.en.translation"]
+dest_files=["res://assets/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/languages/Scenes/Translations FE45 - Credits.es.translation"]
 
 [params]
 

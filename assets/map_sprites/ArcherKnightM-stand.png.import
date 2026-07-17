@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5wv8j1vcaso6"
-path="res://.godot/imported/CavalierBM-stand.png-140c8d0eae3053ee79e868a66e365349.ctex"
+path="res://.godot/imported/ArcherKnightM-stand.png-c482bdd62511880e9d5977612bff22ad.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/map_sprites/ArcherKnightM-stand.png"
-dest_files=["res://.godot/imported/CavalierBM-stand.png-140c8d0eae3053ee79e868a66e365349.ctex"]
+dest_files=["res://.godot/imported/ArcherKnightM-stand.png-c482bdd62511880e9d5977612bff22ad.ctex"]
 
 [params]
 

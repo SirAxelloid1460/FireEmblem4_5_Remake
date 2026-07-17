@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fc0tsqtlegkn"
-path="res://.godot/imported/Gomes.png-00ba6c02b1a52a97f669a506238c876b.ctex"
+path="res://.godot/imported/Gomez.png-338ad954859e82c55e733c7a3cb3653a.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/portraits/characters/Gomez.png"
-dest_files=["res://.godot/imported/Gomes.png-00ba6c02b1a52a97f669a506238c876b.ctex"]
+dest_files=["res://.godot/imported/Gomez.png-338ad954859e82c55e733c7a3cb3653a.ctex"]
 
 [params]
 

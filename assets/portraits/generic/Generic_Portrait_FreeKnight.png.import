@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfgcrusctcru0"
-path="res://.godot/imported/Generic_Portrait_CavalierS.png-06e50637fabafe15b339549bfff4957a.ctex"
+path="res://.godot/imported/Generic_Portrait_FreeKnight.png-486d25d008bbebe9e251490f3d918932.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/portraits/generic/Generic_Portrait_FreeKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_CavalierS.png-06e50637fabafe15b339549bfff4957a.ctex"]
+dest_files=["res://.godot/imported/Generic_Portrait_FreeKnight.png-486d25d008bbebe9e251490f3d918932.ctex"]
 
 [params]
 

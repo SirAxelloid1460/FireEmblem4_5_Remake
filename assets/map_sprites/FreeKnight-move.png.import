@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxngupj0m2m6j"
-path="res://.godot/imported/CavalierS-move.png-2e1c638a69719d72793fcf2ebb4e9581.ctex"
+path="res://.godot/imported/FreeKnight-move.png-f2ec47b457a627d9ba6406006da811cb.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/map_sprites/FreeKnight-move.png"
-dest_files=["res://.godot/imported/CavalierS-move.png-2e1c638a69719d72793fcf2ebb4e9581.ctex"]
+dest_files=["res://.godot/imported/FreeKnight-move.png-f2ec47b457a627d9ba6406006da811cb.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctlcgbaqe6ncu"
-path="res://.godot/imported/DarkMage-stand.png-965d95fbc78e983649d5d2b011688bb2.ctex"
+path="res://.godot/imported/DarkMage-stand.png-61274aedcfc2ea61193548847d5d755a.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/map_sprites/DarkMage-stand.png"
-dest_files=["res://.godot/imported/DarkMage-stand.png-965d95fbc78e983649d5d2b011688bb2.ctex"]
+dest_files=["res://.godot/imported/DarkMage-stand.png-61274aedcfc2ea61193548847d5d755a.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjblq1eew3h30"
-path="res://.godot/imported/CavalierA-move.png-2d50b1157e0e605dd4ea99eef7fe2cb0.ctex"
+path="res://.godot/imported/AxeKnight-move.png-0f826944640612b901591fa68b6d9e07.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/map_sprites/AxeKnight-move.png"
-dest_files=["res://.godot/imported/CavalierA-move.png-2d50b1157e0e605dd4ea99eef7fe2cb0.ctex"]
+dest_files=["res://.godot/imported/AxeKnight-move.png-0f826944640612b901591fa68b6d9e07.ctex"]
 
 [params]
 

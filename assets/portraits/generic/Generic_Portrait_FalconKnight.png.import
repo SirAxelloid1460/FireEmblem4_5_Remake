@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3n1n5o4mt0ss"
-path="res://.godot/imported/Generic_Portrait_Falconknight.png-536052ddab44773118572c128e573f49.ctex"
+path="res://.godot/imported/Generic_Portrait_FalconKnight.png-6da286dadfcb7c34a2741eb8bd525bfc.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/portraits/generic/Generic_Portrait_FalconKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Falconknight.png-536052ddab44773118572c128e573f49.ctex"]
+dest_files=["res://.godot/imported/Generic_Portrait_FalconKnight.png-6da286dadfcb7c34a2741eb8bd525bfc.ctex"]
 
 [params]
 
