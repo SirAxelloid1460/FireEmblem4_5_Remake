@@ -102,7 +102,7 @@ func _option_font_size() -> int:
 
 ## Geometría del panel-lista en fracciones del viewport [izq, arriba, der, abajo].
 func _list_panel_rect() -> Array:
-	return [0.55, 0.20, 0.93, 0.80]
+	return [0.55, 0.15, 0.93, 0.75]
 
 
 func _on_choose(_id: String) -> void:
@@ -177,7 +177,7 @@ func _nine_panel(al: float, at: float, ar: float, ab: float) -> NinePatchRect:
 
 
 func _build_preview_panel() -> void:
-	var panel := _nine_panel(0.07, 0.30, 0.38, 0.66)
+	var panel := _nine_panel(0.07, 0.25, 0.38, 0.61)
 	_preview = TextureRect.new()
 	# STRETCH_SCALE + más margen arriba/abajo: reduce SÓLO el alto de la bandera
 	# (el ancho sigue llenando el recuadro, como antes).
