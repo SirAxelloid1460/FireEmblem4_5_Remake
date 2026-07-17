@@ -44,6 +44,16 @@ func _has_preview_panel() -> bool:
 	return false
 
 
+# Recuadro centrado y ancho (sin panel-preview, sólo la lista).
+func _list_panel_rect() -> Array:
+	return [0.26, 0.22, 0.74, 0.80]
+
+
+# Fuente grande (3 opciones, cabe holgado en el recuadro centrado).
+func _option_font_size() -> int:
+	return 108
+
+
 func _bg_for_option(id: String) -> Texture2D:
 	var p := BG_SAGA
 	match id:

@@ -4,15 +4,17 @@ extends TextureRect
 # ============================================================
 # TitleOverlay — niebla/nubes animada decorativa (title_background).
 # ============================================================
-# Overlay TRANSPARENTE a pantalla completa que se reproduce ENCIMA del fondo de
-# los menús de arranque y del menú principal (mismo elemento en los tres, para
-# dar continuidad visual). No captura ratón.
+# Overlay a pantalla completa que se reproduce ENCIMA del fondo de los menús de
+# arranque y del menú principal (mismo elemento en los tres, para continuidad).
+# No captura ratón.
 #
 # title_background.png es una hoja 1440×960 = grid 6×6, 33 frames de 240×160,
-# reproducidos a 8 fps en bucle. Las zonas negras del PNG son transparentes.
+# a 16 fps en bucle.
 #
-# Uso: add_child(TitleOverlay.new()) justo DESPUÉS del fondo y ANTES de la UI,
-# para que la niebla flote sobre el fondo sin tapar botones/paneles.
+# TRANSPARENCIA: el PNG NO trae alpha útil (sus zonas oscuras son azul-gris
+# OPACO, no transparentes). Un shader deriva el alpha de la LUMINANCIA: lo
+# oscuro se vuelve transparente y sólo la niebla clara queda visible, con un
+# tope de opacidad para que el fondo/parallax se sigan viendo por debajo.
 # ============================================================
 
 const SHEET := "res://assets/panoramas/title_background.png"
@@ -20,7 +22,25 @@ const COLS := 6
 const FW := 240
 const FH := 160
 const FRAME_COUNT := 33
-const FPS := 8.0
+const FPS := 16.0
+
+# Umbrales del keying por luminancia (ajustables si hace falta).
+const DARK_CUT    := 0.10   # luminancia por debajo de esto → totalmente transparente
+const BRIGHT_FULL := 0.55   # luminancia por encima de esto → opacidad máxima
+const MAX_ALPHA   := 0.72   # tope de opacidad (deja ver el fondo por debajo)
+
+const SHADER_CODE := """
+shader_type canvas_item;
+uniform float dark_cut;
+uniform float bright_full;
+uniform float max_alpha;
+void fragment() {
+	vec4 c = texture(TEXTURE, UV);
+	float lum = max(c.r, max(c.g, c.b));
+	float a = smoothstep(dark_cut, bright_full, lum) * max_alpha * c.a;
+	COLOR = vec4(c.rgb, a);
+}
+"""
 
 var _frames: Array = []
 var _i: int = 0
@@ -32,6 +52,15 @@ func _ready() -> void:
 	stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	# Shader: alpha por luminancia (oscuro→transparente).
+	var sh := Shader.new()
+	sh.code = SHADER_CODE
+	var mat := ShaderMaterial.new()
+	mat.shader = sh
+	mat.set_shader_parameter("dark_cut", DARK_CUT)
+	mat.set_shader_parameter("bright_full", BRIGHT_FULL)
+	mat.set_shader_parameter("max_alpha", MAX_ALPHA)
+	material = mat
 	if not ResourceLoader.exists(SHEET):
 		return
 	var sheet: Texture2D = load(SHEET)
