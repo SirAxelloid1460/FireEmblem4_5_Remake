@@ -43,7 +43,7 @@
    "SPD": 1.2,
    "LCK": 1.5,
    "DEF": 1.0,
-   "RES": 1.5
+   "RES": null
   },
   "ratio_global": 2.034,
   "sum_fe4": 59,
@@ -683,7 +683,7 @@
    "SPD": 1.333,
    "LCK": null,
    "DEF": 1.4,
-   "RES": 0.5
+   "RES": null
   },
   "ratio_cap": {
    "HP": 1.0,
@@ -695,9 +695,9 @@
    "DEF": 1.1,
    "RES": null
   },
-  "ratio_global": 1.534,
+  "ratio_global": 1.712,
   "sum_fe4": 89,
-  "sum_fe5": 58
+  "sum_fe5": 52
  },
  "HighPriest": {
   "ratio_base": {
@@ -843,7 +843,7 @@
    "SPD": 1.0,
    "LCK": 1.5,
    "DEF": 1.0,
-   "RES": 0.75
+   "RES": null
   },
   "ratio_global": 1.724,
   "sum_fe4": 50,
@@ -983,7 +983,7 @@
    "SPD": 1.429,
    "LCK": null,
    "DEF": 2.5,
-   "RES": 0.0
+   "RES": null
   },
   "ratio_cap": {
    "HP": 1.0,
@@ -993,11 +993,11 @@
    "SPD": 1.25,
    "LCK": 1.0,
    "DEF": 1.0,
-   "RES": 2.5
+   "RES": null
   },
-  "ratio_global": 1.476,
+  "ratio_global": 1.722,
   "sum_fe4": 62,
-  "sum_fe5": 42
+  "sum_fe5": 36
  },
  "Priest": {
   "ratio_base": {
@@ -1108,7 +1108,7 @@
    "SPD": 1.5,
    "LCK": null,
    "DEF": 2.333,
-   "RES": 0.429
+   "RES": null
   },
   "ratio_cap": {
    "HP": 1.0,
@@ -1120,9 +1120,9 @@
    "DEF": 1.1,
    "RES": null
   },
-  "ratio_global": 1.654,
+  "ratio_global": 1.911,
   "sum_fe4": 86,
-  "sum_fe5": 52
+  "sum_fe5": 45
  },
  "Soldier": {
   "ratio_base": {
@@ -1143,7 +1143,7 @@
    "SPD": 1.0,
    "LCK": 1.0,
    "DEF": 1.0,
-   "RES": 1.0
+   "RES": null
   },
   "ratio_global": 2.208,
   "sum_fe4": 53,
@@ -1158,7 +1158,7 @@
    "SPD": 1.429,
    "LCK": null,
    "DEF": 2.5,
-   "RES": 0.0
+   "RES": null
   },
   "ratio_cap": {
    "HP": 1.0,
@@ -1168,11 +1168,11 @@
    "SPD": 1.25,
    "LCK": 1.0,
    "DEF": 1.0,
-   "RES": 2.5
+   "RES": null
   },
-  "ratio_global": 1.476,
+  "ratio_global": 1.722,
   "sum_fe4": 62,
-  "sum_fe5": 42
+  "sum_fe5": 36
  },
  "Swordmaster": {
   "ratio_base": {
@@ -1233,7 +1233,7 @@
    "SPD": 2.0,
    "LCK": null,
    "DEF": 1.667,
-   "RES": 0.5
+   "RES": null
   },
   "ratio_cap": {
    "HP": 1.0,
@@ -1245,9 +1245,9 @@
    "DEF": 1.25,
    "RES": null
   },
-  "ratio_global": 1.35,
+  "ratio_global": 1.5,
   "sum_fe4": 81,
-  "sum_fe5": 60
+  "sum_fe5": 54
  },
  "Thief": {
   "ratio_base": {

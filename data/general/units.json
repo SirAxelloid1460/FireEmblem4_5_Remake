@@ -2593,14 +2593,14 @@
   "level": 1,
   "gender": "M",
   "bases": {
-   "HP": 22,
-   "STR": 4,
-   "MAG": 0,
-   "SKL": 2,
-   "SPD": 5,
-   "LCK": 6,
-   "DEF": 3,
-   "RES": 5,
+   "HP": 32,
+   "STR": 12,
+   "MAG": 3,
+   "SKL": 10,
+   "SPD": 10,
+   "LCK": 8,
+   "DEF": 10,
+   "RES": 3,
    "CON": 7,
    "MOV": 6
   },
@@ -2640,16 +2640,16 @@
    "FE5"
   ],
   "versions": {
-   "FE4": {
+   "FE5": {
     "bases": {
-     "HP": 32,
-     "STR": 12,
-     "MAG": 3,
-     "SKL": 10,
-     "SPD": 10,
-     "LCK": 8,
-     "DEF": 10,
-     "RES": 3,
+     "HP": 22,
+     "STR": 4,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 5,
+     "LCK": 6,
+     "DEF": 3,
+     "RES": 5,
      "CON": 7,
      "MOV": 6
     }
