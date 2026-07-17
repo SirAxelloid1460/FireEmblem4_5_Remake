@@ -72,7 +72,7 @@ const COLOR_BTN := Color(0.95, 0.93, 0.85, 1.0)   # crema (texto de botón)
 # Bobeo del cursor estilo GBA: ESCALONADO (no fluido), pero con escalones más
 # pequeños (8px) para que sea un pelo más fluido. ±24 px de recorrido.
 const CURSOR_BOB_SEQ := [0, 8, 16, 24, 16, 8, 0, -8, -16, -24, -16, -8]
-const CURSOR_STEP_TIME := 0.078   # s por escalón (~10% más lento que 0.07)
+const CURSOR_STEP_TIME := 0.086   # s por escalón (bobeo ~10% más lento)
 
 const COL_WIDTH := 380.0
 const SLIDE_TIME := 0.28
@@ -121,12 +121,13 @@ var _skip_next_nav_sfx: bool = false       # evita el tick de navegación en el 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_build_bg()
-	# Niebla/nubes animada (misma que en los menús de arranque), encima del fondo
-	# y debajo del logo/botones.
-	add_child(TitleOverlay.new())
 	_build_music()
 	_build_title()
 	_build_press_start()
+	# Niebla/nubes animada (misma que en los menús de arranque): va ENCIMA del
+	# fondo Y del logo, pero debajo de los botones/cursor. Su transparencia por
+	# luminancia deja ver el logo y el fondo por debajo.
+	add_child(TitleOverlay.new())
 	_build_columns()
 	_build_cursor()
 	_build_desc()

@@ -32,6 +32,11 @@ func _menu_items() -> Array:
 	return LANGS
 
 
+# Fuente grande (tope que cabe con las 5 opciones en el recuadro fijo).
+func _option_font_size() -> int:
+	return 64
+
+
 func _preview_texture(id: String) -> Texture2D:
 	var p := FLAGS + id + ".png"
 	return load(p) if ResourceLoader.exists(p) else null

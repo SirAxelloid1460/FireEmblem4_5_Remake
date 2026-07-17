@@ -95,6 +95,16 @@ func _bg_for_option(_id: String) -> Texture2D:
 	return null
 
 
+## Tamaño de fuente de las opciones (px). Sobreescribir por menú.
+func _option_font_size() -> int:
+	return BTN_FONT
+
+
+## Geometría del panel-lista en fracciones del viewport [izq, arriba, der, abajo].
+func _list_panel_rect() -> Array:
+	return [0.55, 0.20, 0.93, 0.80]
+
+
 func _on_choose(_id: String) -> void:
 	pass
 
@@ -169,27 +179,31 @@ func _nine_panel(al: float, at: float, ar: float, ab: float) -> NinePatchRect:
 func _build_preview_panel() -> void:
 	var panel := _nine_panel(0.07, 0.30, 0.38, 0.66)
 	_preview = TextureRect.new()
-	_preview.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	# STRETCH_SCALE + más margen arriba/abajo: reduce SÓLO el alto de la bandera
+	# (el ancho sigue llenando el recuadro, como antes).
+	_preview.stretch_mode = TextureRect.STRETCH_SCALE
 	_preview.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	_preview.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_preview.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_preview.offset_left = 26
-	_preview.offset_top = 28
+	_preview.offset_top = 52
 	_preview.offset_right = -26
-	_preview.offset_bottom = -32
+	_preview.offset_bottom = -56
 	panel.add_child(_preview)
 
 
 func _build_list_panel() -> void:
-	var panel := _nine_panel(0.55, 0.20, 0.93, 0.80)
+	var r := _list_panel_rect()
+	var panel := _nine_panel(float(r[0]), float(r[1]), float(r[2]), float(r[3]))
 	_list = VBoxContainer.new()
 	_list.alignment = BoxContainer.ALIGNMENT_CENTER
-	_list.add_theme_constant_override("separation", 16)
+	# Separación proporcional a la fuente (fuentes grandes → menos hueco relativo).
+	_list.add_theme_constant_override("separation", maxi(6, int(_option_font_size() * 0.18)))
 	_list.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_list.offset_left = 62
-	_list.offset_top = 28
-	_list.offset_right = -30
-	_list.offset_bottom = -28
+	_list.offset_top = 24
+	_list.offset_right = -28
+	_list.offset_bottom = -24
 	panel.add_child(_list)
 	for it in _menu_items():
 		_list.add_child(_make_option(str(it.get("text", "")), str(it.get("id", ""))))
@@ -201,12 +215,13 @@ func _make_option(text: String, id: String) -> Button:
 	b.alignment = HORIZONTAL_ALIGNMENT_LEFT
 	b.focus_mode = Control.FOCUS_ALL
 	b.mouse_filter = Control.MOUSE_FILTER_STOP
-	b.custom_minimum_size = Vector2(0, 44)
+	var fs := _option_font_size()
+	b.custom_minimum_size = Vector2(0, fs + 12)
 	b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var f := load(SERIF_FONT)
 	if f != null:
 		b.add_theme_font_override("font", f)
-	b.add_theme_font_size_override("font_size", BTN_FONT)
+	b.add_theme_font_size_override("font_size", fs)
 	b.add_theme_color_override("font_color", COLOR_TEXT)
 	b.add_theme_color_override("font_focus_color", COLOR_GOLD)
 	b.add_theme_color_override("font_hover_color", COLOR_GOLD)
