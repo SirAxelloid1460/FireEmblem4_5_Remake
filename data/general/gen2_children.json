@@ -412,8 +412,8 @@
   },
   "personal_skills": [],
   "starting_items": [
-   "Live Staff",
-   "Warp Staff"
+   "Heal",
+   "Warp"
   ],
   "max_stats": {
    "HP": 80,
@@ -804,7 +804,7 @@
   ],
   "starting_items": [
    "Iron Blade",
-   "Hero Sword"
+   "Brave Sword"
   ],
   "max_stats": {
    "HP": 80,
@@ -1973,7 +1973,7 @@
   ],
   "starting_items": [
    "Iron Sword",
-   "Relive Staff",
+   "Mend",
    "Prayer Sword",
    "Thief Sword",
    "Knight Ring",
@@ -2367,7 +2367,7 @@
    "Prayer"
   ],
   "starting_items": [
-   "Reblow Staff"
+   "Reblow"
   ],
   "max_stats": {
    "HP": 80,
@@ -2758,7 +2758,7 @@
    "Dance"
   ],
   "starting_items": [
-   "Defense Sword"
+   "Defender Sword"
   ],
   "max_stats": {
    "HP": 80,
@@ -3926,7 +3926,7 @@
   "starting_items": [
    "Silver Bow",
    "Steel Bow",
-   "Ichival"
+   "Yewfelle"
   ],
   "max_stats": {
    "HP": 80,

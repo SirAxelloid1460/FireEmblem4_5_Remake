@@ -3486,8 +3486,8 @@
     "Canto_Plus"
    ]
   ],
-  "map_sprite_nid": "ForrestKnight",
-  "combat_anim_nid": "ForrestKnight",
+  "map_sprite_nid": "Ranger",
+  "combat_anim_nid": "Ranger",
   "versions": {
    "FE4": {
     "bases": {
