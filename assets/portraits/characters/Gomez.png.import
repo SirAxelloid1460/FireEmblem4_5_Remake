@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csr47v0yevjng"
-path="res://.godot/imported/Barat.png-c5aeaac191b3cecadf541fbd7d308cce.ctex"
+uid="uid://fc0tsqtlegkn"
+path="res://.godot/imported/Gomes.png-00ba6c02b1a52a97f669a506238c876b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Barat.png"
-dest_files=["res://.godot/imported/Barat.png-c5aeaac191b3cecadf541fbd7d308cce.ctex"]
+source_file="res://assets/portraits/characters/Gomez.png"
+dest_files=["res://.godot/imported/Gomes.png-00ba6c02b1a52a97f669a506238c876b.ctex"]
 
 [params]
 

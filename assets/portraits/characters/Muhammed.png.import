@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fc0tsqtlegkn"
-path="res://.godot/imported/Gomes.png-00ba6c02b1a52a97f669a506238c876b.ctex"
+uid="uid://m6l7kwld4hd7"
+path="res://.godot/imported/Muhamm.png-c1300b2fa51b3617203b87650d614c0b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Gomes.png"
-dest_files=["res://.godot/imported/Gomes.png-00ba6c02b1a52a97f669a506238c876b.ctex"]
+source_file="res://assets/portraits/characters/Muhammed.png"
+dest_files=["res://.godot/imported/Muhamm.png-c1300b2fa51b3617203b87650d614c0b.ctex"]
 
 [params]
 

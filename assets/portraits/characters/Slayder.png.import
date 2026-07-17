@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j8cqpvnq06c4"
-path="res://.godot/imported/Generic_Portrait_ForrestKnight.png-87e0fe9f9a23957992e3d049be2a1790.ctex"
+uid="uid://de8ktemxb46os"
+path="res://.godot/imported/Slyder.png-a00c0c13373d4a1cdfc71f3af19770fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_ForrestKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_ForrestKnight.png-87e0fe9f9a23957992e3d049be2a1790.ctex"]
+source_file="res://assets/portraits/characters/Slayder.png"
+dest_files=["res://.godot/imported/Slyder.png-a00c0c13373d4a1cdfc71f3af19770fb.ctex"]
 
 [params]
 

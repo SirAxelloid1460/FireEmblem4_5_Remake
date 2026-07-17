@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de8ktemxb46os"
-path="res://.godot/imported/Slyder.png-a00c0c13373d4a1cdfc71f3af19770fb.ctex"
+uid="uid://doxriig3wosla"
+path="res://.godot/imported/Zile.png-be1c9559e13005f669a177fb20cd5486.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Slyder.png"
-dest_files=["res://.godot/imported/Slyder.png-a00c0c13373d4a1cdfc71f3af19770fb.ctex"]
+source_file="res://assets/portraits/characters/Zyle.png"
+dest_files=["res://.godot/imported/Zile.png-be1c9559e13005f669a177fb20cd5486.ctex"]
 
 [params]
 

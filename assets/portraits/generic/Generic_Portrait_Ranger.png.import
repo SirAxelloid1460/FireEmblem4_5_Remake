@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3n1n5o4mt0ss"
-path="res://.godot/imported/Generic_Portrait_Falconknight.png-536052ddab44773118572c128e573f49.ctex"
+uid="uid://j8cqpvnq06c4"
+path="res://.godot/imported/Generic_Portrait_ForrestKnight.png-87e0fe9f9a23957992e3d049be2a1790.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Falconknight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Falconknight.png-536052ddab44773118572c128e573f49.ctex"]
+source_file="res://assets/portraits/generic/Generic_Portrait_Ranger.png"
+dest_files=["res://.godot/imported/Generic_Portrait_ForrestKnight.png-87e0fe9f9a23957992e3d049be2a1790.ctex"]
 
 [params]
 

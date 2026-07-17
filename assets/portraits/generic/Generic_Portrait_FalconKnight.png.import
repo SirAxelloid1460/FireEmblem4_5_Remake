@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doxriig3wosla"
-path="res://.godot/imported/Zile.png-be1c9559e13005f669a177fb20cd5486.ctex"
+uid="uid://3n1n5o4mt0ss"
+path="res://.godot/imported/Generic_Portrait_Falconknight.png-536052ddab44773118572c128e573f49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Zile.png"
-dest_files=["res://.godot/imported/Zile.png-be1c9559e13005f669a177fb20cd5486.ctex"]
+source_file="res://assets/portraits/generic/Generic_Portrait_FalconKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Falconknight.png-536052ddab44773118572c128e573f49.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvuttwoy13stu"
-path="res://.godot/imported/Wolff.png-3a14ff29c0bff9652b328e8475026610.ctex"
+uid="uid://c0xg4l35ykw5l"
+path="res://.godot/imported/Langbalt.png-4c571ef791236e009a7f19f2849af6db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Wolff.png"
-dest_files=["res://.godot/imported/Wolff.png-3a14ff29c0bff9652b328e8475026610.ctex"]
+source_file="res://assets/portraits/characters/Langobalt.png"
+dest_files=["res://.godot/imported/Langbalt.png-4c571ef791236e009a7f19f2849af6db.ctex"]
 
 [params]
 
