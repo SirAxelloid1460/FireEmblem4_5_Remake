@@ -312,7 +312,7 @@ static func _apply_generic(unit: Unit, udef: Dictionary, project_data: Dictionar
 	# Bases de la clase.
 	var classes: Dictionary = project_data.get("classes", {})
 	if classes.has(unit.unit_class):
-		_apply_class_data(unit, classes[unit.unit_class])
+		_apply_class_data(unit, _resolve_class_version(classes[unit.unit_class]))
 	# Skills iniciales — formato puede ser:
 	#   ["SkillName", ...]               (string suelto)
 	#   [[level, "SkillName"], ...]      (formato canónico LT)
@@ -347,13 +347,17 @@ static func _apply_generic(unit: Unit, udef: Dictionary, project_data: Dictionar
 ##   nivel de aparición — NO son deltas sobre la clase.  Por eso aquí
 ##   NO llamamos a _apply_class_data para los stats; solo heredamos los
 ##   tags de la clase (Mounted, Flying, etc.).
-##   El campo MOV viene escalado ×10 (90 = 9 tiles), lo dividimos.
+##   MOV se usa en su valor real (tiles), sin escalado.
 static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> void:
 	var units_db: Dictionary = project_data.get("units", {})
 	if not units_db.has(nid):
 		push_warning("LevelLoader: unidad named '%s' no encontrada en project_data" % nid)
 		return
 	var udata: Dictionary = units_db[nid]
+	# Personajes cross-game (aparecen en FE4 y FE5): resuelve el bloque de
+	# versión según el modo de juego (FE4_ONLY→FE4, FE5_ONLY→FE5, SAGA→la más
+	# débil, que luego escala a través de ambos juegos).
+	udata = _resolve_game_version(udata)
 	unit.unit_class = str(udata.get("klass", "Soldier"))
 	unit.level      = int(udata.get("level", 1))
 	# Stats absolutos del personaje al nivel de aparición.
@@ -362,7 +366,7 @@ static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> v
 	# Heredar tags de la clase (Mounted, Flying, etc.) sin sobrescribir stats.
 	var classes: Dictionary = project_data.get("classes", {})
 	if classes.has(unit.unit_class):
-		var cdata = classes[unit.unit_class]
+		var cdata = _resolve_class_version(classes[unit.unit_class])
 		var class_tags = cdata.get("tags", []) if cdata is Dictionary else cdata.tags
 		for tag in class_tags:
 			var s := str(tag)
@@ -417,6 +421,94 @@ static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> v
 				unit.weapon = item
 
 
+## ── Versiones por juego (personajes cross-game FE4/FE5) ──────────────────────
+## Una unidad con campo `versions` lleva bloques específicos por juego, p.ej.:
+##   "versions": {
+##     "FE4": { "klass": "FreeKnight", "level": 1, "bases": {...}, ... },
+##     "FE5": { "klass": "Ranger",    "level": 3, "bases": {...}, ... }
+##   }
+## El bloque elegido SOBREESCRIBE los campos que declara sobre la unidad base
+## (klass/level/bases/growths/learned_skills/starting_items/wexp_gain/holy_blood);
+## los campos ausentes se heredan del nivel superior (portrait, tags, etc.).
+##   FE4_ONLY → versions.FE4 · FE5_ONLY → versions.FE5 · SAGA → el NIVEL SUPERIOR
+##   (top-level), que ES el valor SAGA dictado por el usuario. Si un modo no tiene
+##   su bloque, cae también al nivel superior.
+static func _resolve_game_version(udata: Dictionary) -> Dictionary:
+	var versions = udata.get("versions", null)
+	if not (versions is Dictionary) or (versions as Dictionary).is_empty():
+		return udata
+	var mode := _current_game_mode()
+	var chosen: Dictionary = {}
+	if mode == "FE4" and versions.has("FE4"):
+		chosen = versions["FE4"]
+	elif mode == "FE5" and versions.has("FE5"):
+		chosen = versions["FE5"]
+	else:
+		# SAGA (o un modo sin bloque propio) → el NIVEL SUPERIOR es el valor SAGA.
+		# No se hace overlay de ninguna versión: el top-level ya contiene la base
+		# SAGA que dictó el usuario (p.ej. Leif arranca débil 22/4, Ced 54/…, y los
+		# cameos como Julius/Ishtar usan su forma FE4 fuerte).  Antes esto usaba
+		# _weaker_version, que sobreescribía el top-level con la versión de menor
+		# suma y rompía la intención (Leif SAGA salía como su forma FE4 fuerte).
+		var base_only := udata.duplicate(true)
+		base_only.erase("versions")
+		return base_only
+	if not (chosen is Dictionary) or chosen.is_empty():
+		return udata
+	var merged := udata.duplicate(true)
+	for k in chosen:
+		merged[k] = chosen[k]
+	merged.erase("versions")
+	return merged
+
+## Resuelve el bloque de stats de clase por modo. Una clase con campo
+## `versions` lleva sets por juego, p.ej.:
+##   "versions": { "FE4": {"bases":{...},"caps":{...},"promotion":{...}, ...},
+##                 "FE5": {...}, "SAGA": {...} }
+## El bloque del modo activo SOBREESCRIBE los campos que declara.  Los dicts
+## anidados (bases/caps/promotion/growths/wexp_gain) se mezclan POR-STAT, así que
+## un bloque que solo trae 8 stats conserva CON/MOV (y demás) del nivel superior.
+## Si el modo NO tiene bloque propio, se usa el nivel superior tal cual (es el
+## valor por defecto / SAGA).  Sólo actúa sobre cdata en forma de Dictionary.
+static func _resolve_class_version(cdata):
+	if not (cdata is Dictionary):
+		return cdata
+	var versions = (cdata as Dictionary).get("versions", null)
+	if not (versions is Dictionary) or (versions as Dictionary).is_empty():
+		return cdata
+	var block = versions.get(_current_game_mode(), null)
+	if not (block is Dictionary):
+		# Modo sin bloque propio → nivel superior (default/SAGA), sin `versions`.
+		var base_only: Dictionary = (cdata as Dictionary).duplicate(true)
+		base_only.erase("versions")
+		return base_only
+	var merged: Dictionary = (cdata as Dictionary).duplicate(true)
+	for k in block:
+		if k == "versions":
+			continue
+		if merged.has(k) and merged[k] is Dictionary and block[k] is Dictionary:
+			var sub: Dictionary = (merged[k] as Dictionary).duplicate(true)
+			for sk in block[k]:
+				sub[sk] = block[k][sk]
+			merged[k] = sub
+		else:
+			merged[k] = block[k]
+	merged.erase("versions")
+	return merged
+
+
+## "FE4" | "FE5" | "SAGA" a partir de GameMode.current_mode (autoload).
+static func _current_game_mode() -> String:
+	var loop := Engine.get_main_loop()
+	if loop is SceneTree and loop.root != null:
+		var gm = loop.root.get_node_or_null("GameMode")
+		if gm != null and "current_mode" in gm:
+			match int(gm.current_mode):
+				0: return "FE4"   # Mode.FE4_ONLY
+				1: return "FE5"   # Mode.FE5_ONLY
+				2: return "SAGA"  # Mode.SAGA_MODE
+	return "SAGA"
+
 ## Aplica los stats base de una clase a la unidad (bases + max_stats sirven
 ## como punto de partida si la unidad no tiene bases personales).
 static func _apply_class_data(unit: Unit, cdata) -> void:
@@ -451,14 +543,12 @@ static func _apply_class_data(unit: Unit, cdata) -> void:
 			unit.learn_skill(skill_nid)
 
 
-## Mapea un Dictionary de bases LT a las propiedades concretas de Unit.
+## Mapea un Dictionary de bases a las propiedades concretas de Unit.
 ##
-## NOTA — escalado de MOV en datos LT:
-##   Los proyectos LT-maker guardan MOV escalado ×10 (Sigurd MOV 90, Cavalier
-##   80) porque LT usa costes int y necesita simular costes decimales como
-##   road=0.7 multiplicando todo por 10.  Aquí dividimos para usar floats
-##   nativos: Sigurd → 9.0, Cavalier → 8.0, etc.  TerrainSystem usa los
-##   costes decimales reales (plain=1.0, road=0.7, forest=2.0).
+## NOTA — MOV:
+##   MOV se almacena en su valor real en tiles (Sigurd 9, Cavalier 8).  Ya NO
+##   hay escalado ×10.  TerrainSystem usa los costes decimales reales
+##   (plain=1.0, road=0.7, forest=2.0).
 static func _apply_bases_to_unit(unit: Unit, bases: Dictionary) -> void:
 	if bases.has("HP"):  unit.max_hp = int(bases["HP"]); unit.current_hp = unit.max_hp
 	if bases.has("STR"): unit.strength = int(bases["STR"])
@@ -470,10 +560,8 @@ static func _apply_bases_to_unit(unit: Unit, bases: Dictionary) -> void:
 	if bases.has("RES"): unit.resistance = int(bases["RES"])
 	if bases.has("CON"): unit.constitution = int(bases["CON"])
 	if bases.has("MOV"):
-		# Datos LT vienen ×10.  Si parece pequeño (≤30) ya está en formato
-		# real y lo usamos tal cual (compat con escenarios de test/legacy).
-		var mov_raw: int = int(bases["MOV"])
-		unit.movement = float(mov_raw) / 10.0 if mov_raw > 30 else float(mov_raw)
+		# MOV se guarda ya en su valor real (tiles). Sin escalado ×10.
+		unit.movement = float(bases["MOV"])
 
 
 ## Factory inyectable para items.  Por defecto se usa el ItemDatabase del

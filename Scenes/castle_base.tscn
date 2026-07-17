@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://castle_base_scene"]
+[gd_scene load_steps=10 format=3 uid="uid://castle_base_scene"]
 
 [ext_resource type="Script" path="res://Scripts/CastleBase.gd" id="1"]
 [ext_resource type="Script" path="res://Scripts/ShopPanel.gd" id="2"]
@@ -13,6 +13,11 @@ bg_color = Color(0.15, 0.12, 0.1, 0.95)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7, 0.6, 0.4, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bar"]
+bg_color = Color(0.1, 0.08, 0.06, 0.92)
 border_width_bottom = 2
 border_color = Color(0.7, 0.6, 0.4, 1)
 
@@ -35,181 +40,185 @@ grow_vertical = 2
 expand_mode = 1
 stretch_mode = 6
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="TopHUD" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 48.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bar")
+
+[node name="HBox" type="HBoxContainer" parent="TopHUD"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 16.0
+offset_right = -16.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
+theme_override_constants/separation = 28
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="GoldLabel" type="Label" parent="TopHUD/HBox"]
 layout_mode = 2
-theme_override_constants/separation = 20
+theme_override_colors/font_color = Color(1, 0.9, 0.5, 1)
+theme_override_font_sizes/font_size = 20
+text = "Oro: 5000"
 
-[node name="LeftPanel" type="Panel" parent="MarginContainer/HBoxContainer"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/LeftPanel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 10
-
-[node name="TitleLabel" type="Label" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 1)
-theme_override_font_sizes/font_size = 28
-text = "CASTILLO"
-horizontal_alignment = 1
-
-[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
-layout_mode = 2
-
-[node name="GoldLabel" type="Label" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
+[node name="MaterialsLabel" type="Label" parent="TopHUD/HBox"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
-text = "Oro: 5000 G"
-horizontal_alignment = 1
+text = "Materiales: 0"
 
-[node name="HSeparator2" type="HSeparator" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
-layout_mode = 2
-
-[node name="UnitsLabel" type="Label" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
+[node name="CapacityLabel" type="Label" parent="TopHUD/HBox"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
-text = "Unidades:"
+text = "Ejercito: 0/0"
 
-[node name="UnitList" type="ItemList" parent="MarginContainer/HBoxContainer/LeftPanel/VBoxContainer"]
-custom_minimum_size = Vector2(0, 400)
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="CenterPanel" type="Panel" parent="MarginContainer/HBoxContainer"]
-custom_minimum_size = Vector2(400, 0)
+[node name="Spacer" type="Control" parent="TopHUD/HBox"]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="DateLabel" type="Label" parent="TopHUD/HBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 1)
+theme_override_font_sizes/font_size = 20
+text = ""
+
+[node name="LeftMenu" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 64.0
+offset_right = 248.0
+offset_bottom = -120.0
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="MarchButton" type="Button" parent="LeftMenu"]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Avanzar"
+
+[node name="FormationButton" type="Button" parent="LeftMenu"]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Organizacion"
+
+[node name="PromoteButton" type="Button" parent="LeftMenu"]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Promocion"
+
+[node name="ShopButton" type="Button" parent="LeftMenu"]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mercado"
+
+[node name="InfoButton" type="Button" parent="LeftMenu"]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Informacion"
+
+[node name="SupportButton" type="Button" parent="LeftMenu"]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Soporte"
+
+[node name="ArenaButton" type="Button" parent="LeftMenu"]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Arena"
+
+[node name="SystemButton" type="Button" parent="LeftMenu"]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Sistema"
+
+[node name="RosterPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = 64.0
+offset_bottom = -120.0
+grow_horizontal = 0
+grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/CenterPanel"]
+[node name="VBox" type="VBoxContainer" parent="RosterPanel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 8
 
-[node name="DetailsLabel" type="Label" parent="MarginContainer/HBoxContainer/CenterPanel/VBoxContainer"]
+[node name="UnitsLabel" type="Label" parent="RosterPanel/VBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 1)
-theme_override_font_sizes/font_size = 24
-text = "Detalles de Unidad"
+theme_override_font_sizes/font_size = 20
+text = "Tropas"
 horizontal_alignment = 1
 
-[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/CenterPanel/VBoxContainer"]
-layout_mode = 2
-
-[node name="UnitDetailsPanel" type="Panel" parent="MarginContainer/HBoxContainer/CenterPanel/VBoxContainer"]
+[node name="UnitList" type="ItemList" parent="RosterPanel/VBox"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="RightPanel" type="Panel" parent="MarginContainer/HBoxContainer"]
-custom_minimum_size = Vector2(300, 0)
+[node name="UnitDetailsPanel" type="Panel" parent="RosterPanel/VBox"]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
+
+[node name="BottomBox" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -108.0
+grow_horizontal = 2
+grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/RightPanel"]
+[node name="VBox" type="VBoxContainer" parent="BottomBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 10
 
-[node name="FacilitiesLabel" type="Label" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 1)
-theme_override_font_sizes/font_size = 24
-text = "Facilidades"
-horizontal_alignment = 1
-
-[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer"]
-layout_mode = 2
-
-[node name="FacilityPanel" type="Panel" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="GridContainer" type="GridContainer" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/h_separation = 10
-theme_override_constants/v_separation = 10
-columns = 2
-
-[node name="ShopButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
-custom_minimum_size = Vector2(120, 50)
-layout_mode = 2
-text = "ðŸª Tienda"
-
-[node name="ConvoyButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
-custom_minimum_size = Vector2(120, 50)
-layout_mode = 2
-text = "ðŸ“¦ Convoy"
-
-[node name="ArenaButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
-custom_minimum_size = Vector2(120, 50)
-layout_mode = 2
-text = "âš”ï¸ Arena"
-
-[node name="BlacksmithButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
-custom_minimum_size = Vector2(120, 50)
-layout_mode = 2
-text = "ðŸ”¨ HerrerÃ­a"
-
-[node name="FortuneButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
-custom_minimum_size = Vector2(120, 50)
-layout_mode = 2
-text = "ðŸ”® Fortuna"
-
-[node name="PromoteButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
-custom_minimum_size = Vector2(120, 50)
-layout_mode = 2
-text = "â­ PromociÃ³n"
-
-[node name="ManageButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
-custom_minimum_size = Vector2(120, 50)
-layout_mode = 2
-text = "ðŸ‘¥ Gestionar"
-
-[node name="SaveButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer/FacilityPanel/GridContainer"]
-custom_minimum_size = Vector2(120, 50)
-layout_mode = 2
-text = "ðŸ’¾ Guardar"
-
-[node name="HSeparator3" type="HSeparator" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer"]
-layout_mode = 2
-
-[node name="StartBattleButton" type="Button" parent="MarginContainer/HBoxContainer/RightPanel/VBoxContainer"]
-custom_minimum_size = Vector2(0, 60)
+[node name="ChapterTitleLabel" type="Label" parent="BottomBox/VBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.9, 0.7, 1)
 theme_override_font_sizes/font_size = 24
-text = "âš”ï¸ INICIAR BATALLA"
+text = "Capitulo"
+
+[node name="NarrationLabel" type="RichTextLabel" parent="BottomBox/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = ""
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 

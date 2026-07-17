@@ -12054,26 +12054,6 @@
         "speak",
         [
           "Narrator",
-          "Welcome to your Preparation-Base Menu!!{w} Here you can manage your units equipment,{w} buy some new items and even fight in the arena{w} -which is not available right now-{w} to get some extra gold and experience.{w} But be carefull,{w} depending on the unit you select to fight in the arena,{w} an enemy of the same tier and level{w} will be selected to fight it.",
-          "",
-          "",
-          "hint"
-        ]
-      ],
-      [
-        "speak",
-        [
-          "Narrator",
-          "This arena does not work as the original FE4's,{w} just as the GBA ones.{w} Events related to winning in the arena{w} will be re-imagined and added,{w} most probably, in the battle map.{w}",
-          "",
-          "",
-          "hint"
-        ]
-      ],
-      [
-        "speak",
-        [
-          "Narrator",
           "Oh!! and now you can get your items repaired the Blacksmith,{w} make sure to get in therebefore proceeding to the next chapter,{w} for there is no other way to repair them{w} and shops do not have that many existances...",
           "",
           "",
@@ -12114,12 +12094,6 @@
         "transition",
         [
           "close"
-        ]
-      ],
-      [
-        "comment",
-        [
-          "#game_var;_base_arena;True"
         ]
       ],
       [

@@ -1,11 +1,19 @@
 extends Control
 class_name CastleBase
 
-# Referencias a nodos UI
-@onready var unit_list: ItemList = $MarginContainer/HBoxContainer/LeftPanel/UnitList
-@onready var unit_details_panel: Panel = $MarginContainer/HBoxContainer/CenterPanel/UnitDetailsPanel
-@onready var facility_panel: Panel = $MarginContainer/HBoxContainer/RightPanel/FacilityPanel
-@onready var gold_label: Label = $MarginContainer/HBoxContainer/LeftPanel/GoldLabel
+# Referencias a nodos UI — layout inter-capítulo estilo Vestaria (mapa de fondo +
+# menú izquierdo + HUD superior + narración inferior + panel de tropas a la derecha).
+@onready var unit_list: ItemList = $RosterPanel/VBox/UnitList
+@onready var unit_details_panel: Panel = $RosterPanel/VBox/UnitDetailsPanel
+@onready var left_menu: VBoxContainer = $LeftMenu
+@onready var gold_label: Label = $TopHUD/HBox/GoldLabel
+@onready var materials_label: Label = $TopHUD/HBox/MaterialsLabel
+@onready var capacity_label: Label = $TopHUD/HBox/CapacityLabel
+@onready var date_label: Label = $TopHUD/HBox/DateLabel
+@onready var map_bg: TextureRect = $Background
+@onready var chapter_title_label: Label = $BottomBox/VBox/ChapterTitleLabel
+@onready var narration_label: RichTextLabel = $BottomBox/VBox/NarrationLabel
+@onready var arena_button: Button = $LeftMenu/ArenaButton
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 # Paneles de facilidades — las clases *Panel ya existen como class_name (ConvoyPanel,
@@ -27,7 +35,7 @@ var convoy_items: Array[Item] = []
 var current_chapter: int = 1
 
 # Configuración
-@export var next_battle_scene: String = "res://Scenes/battle.tscn"
+@export var next_battle_scene: String = "res://Scenes/main_game.tscn"
 @export var allow_saving: bool = true
 
 # Señales
@@ -52,7 +60,8 @@ func _ready():
 	
 	update_unit_list()
 	update_gold_display()
-	
+	_populate_hud()
+
 	# Reproducir música de preparación
 	play_preparation_music()
 
@@ -95,25 +104,47 @@ func setup_ui():
 	setup_facility_buttons()
 
 func setup_facility_buttons():
-	"""Configura los botones de las facilidades del castillo"""
-	# Estos botones estarían en FacilityPanel
-	var facilities = {
-		"Shop": _on_shop_button_pressed,
-		"Convoy": _on_convoy_button_pressed,
-		"Arena": _on_arena_button_pressed,
-		"Blacksmith": _on_blacksmith_button_pressed,
-		"Fortune": _on_fortune_teller_button_pressed,
-		"Promote": _on_promotion_button_pressed,
-		"Manage": _on_manage_button_pressed,
-		"Save": _on_save_button_pressed,
-		"StartBattle": _on_start_battle_button_pressed
+	"""Conecta los 8 botones del menú izquierdo (estilo Vestaria) a sus handlers.
+	Mapeo: Avanzar→batalla, Organización→gestión de tropas, Promoción, Mercado,
+	Información, Soporte, Arena, Sistema."""
+	var menu := {
+		"MarchButton":     _on_start_battle_button_pressed,
+		"FormationButton": _on_manage_button_pressed,
+		"PromoteButton":   _on_promotion_button_pressed,
+		"ShopButton":      _on_shop_button_pressed,
+		"InfoButton":      _on_info_button_pressed,
+		"SupportButton":   _on_support_button_pressed,
+		"ArenaButton":     _on_arena_button_pressed,
+		"SystemButton":    _on_system_button_pressed,
 	}
-	
-	# Conectar botones (asume que existen en FacilityPanel)
-	for button_name in facilities.keys():
-		var button = facility_panel.get_node_or_null(button_name + "Button")
+	for button_name in menu.keys():
+		var button: Button = left_menu.get_node_or_null(button_name)
 		if button:
-			button.pressed.connect(facilities[button_name])
+			button.pressed.connect(menu[button_name])
+	# Convoy/Herrería/Fortuna siguen disponibles como paneles; se acceden desde
+	# Organización (o se re-exponen en el menú si se desea más adelante).
+
+## Rellena el HUD superior, el título/narración del capítulo y el mapa de fondo,
+## y desactiva la Arena en capítulos sin arena (Prólogo/Cap.6 en FE4).
+func _populate_hud() -> void:
+	update_gold_display()
+	var gm := _get_game_mode()
+	var entry: Dictionary = {}
+	if gm != null and gm.has_method("get_current_chapter_entry"):
+		entry = gm.get_current_chapter_entry()
+	chapter_title_label.text = str(entry.get("title", "Castillo Base"))
+	capacity_label.text = "Ejercito: %d" % player_units.size()
+	materials_label.text = ""
+	date_label.text = ""
+	# Fondo: imagen pre-renderizada del mapa del capítulo actual, si existe.
+	var al := get_tree().get_root().get_node_or_null("AssetLoader")
+	if al != null and al.has_method("get_tilemap_image") and entry.has("id"):
+		var tex = al.get_tilemap_image(str(entry.get("tilemap", entry.get("id", ""))))
+		if tex != null:
+			map_bg.texture = tex
+	# Arena grisada si el capítulo no la tiene.
+	var cap := ArenaSystem.current_chapter_label()
+	arena_button.disabled = not ArenaSystem.chapter_has_arena(cap)
 
 func load_player_army():
 	"""Carga el ejército del jugador desde el roster persistente (GameMode).
@@ -322,8 +353,9 @@ func _on_arena_button_pressed():
 	facility_opened.emit("Arena")
 	hide_all_facility_panels()
 	arena_panel.show()
+	if not arena_panel.arena_finished.is_connected(_on_arena_finished):
+		arena_panel.arena_finished.connect(_on_arena_finished)
 	arena_panel.start_arena(selected_unit, army_gold)
-	arena_panel.arena_finished.connect(_on_arena_finished)
 
 func _on_blacksmith_button_pressed():
 	"""Abre la herrería para reparar armas"""
@@ -368,10 +400,27 @@ func _on_promotion_button_pressed():
 	promotion_panel.promotion_completed.connect(_on_unit_promoted)
 
 func _on_manage_button_pressed():
-	"""Abre el panel de gestión de unidades"""
-	# Aquí podrías abrir un panel para reorganizar unidades, 
-	# intercambiar items, etc.
-	show_message("Gestión de unidades - Por implementar")
+	"""Organización de tropas — abre el convoy/gestión de inventario."""
+	facility_opened.emit("Convoy")
+	if convoy_panel != null:
+		hide_all_facility_panels()
+		convoy_panel.show()
+		if convoy_panel.has_method("open"):
+			convoy_panel.open(player_units, convoy_items)
+	else:
+		show_message("Organización de tropas - Por implementar")
+
+func _on_info_button_pressed():
+	"""Información / tutorial del castillo."""
+	show_message("Información y tutorial - Por implementar")
+
+func _on_support_button_pressed():
+	"""Conversaciones de apoyo disponibles este capítulo."""
+	show_message("Soporte / conversaciones - Por implementar")
+
+func _on_system_button_pressed():
+	"""Menú de sistema (guardar / opciones)."""
+	_on_save_button_pressed()
 
 func _on_save_button_pressed():
 	"""Guarda el progreso del juego"""
@@ -446,11 +495,11 @@ func _on_convoy_item_transferred(from_convoy: bool, item: Item):
 func _on_arena_finished(victory: bool, gold_earned: int, exp_gained: int):
 	"""Cuando termina un combate de arena"""
 	if victory:
+		# El EXP ya lo otorgó ArenaSystem.apply_result (gain_exp); aquí solo el oro.
 		army_gold += gold_earned
-		selected_unit.gain_experience(exp_gained)
 		show_message("¡Victoria! Ganaste %d oro y %d EXP" % [gold_earned, exp_gained])
 	else:
-		show_message("Derrota en la arena...")
+		show_message("Derrota en la arena... (HP restaurado)")
 	
 	update_gold_display()
 	update_unit_details(selected_unit)
@@ -538,17 +587,10 @@ func hide_all_facility_panels():
 	promotion_panel.hide()
 
 func can_promote(unit: Unit) -> bool:
-	"""Verifica si una unidad puede ser promocionada"""
-	# Requisitos de FE4: nivel 20+, clase base
-	if unit.level < 20:
-		return false
-	
-	# Verificar si ya está promocionado
-	var promoted_classes = ["Paladin", "Great Knight", "Swordmaster", "Hero"]
-	if unit.unit_class in promoted_classes:
-		return false
-	
-	return true
+	"""Verifica si una unidad puede ser promocionada — delega en PromotionSystem,
+	que resuelve las rutas (`turns_into`) por modo de juego.  Una clase ya
+	promocionada (sin `turns_into`) devuelve false automáticamente."""
+	return PromotionSystem.can_promote(unit)
 
 func is_army_ready() -> bool:
 	"""Verifica si el ejército está listo para la batalla"""

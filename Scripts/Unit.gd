@@ -12,6 +12,9 @@ class_name Unit
 @export var unit_class:    String = "Fighter"
 @export var class_tier:    int    = 1       # 0=trainee, 1=base, 2=promoted, 3=elite
 @export var level:         int    = 1
+## Experiencia acumulada hacia el próximo nivel (0-99). Al llegar a 100 sube de
+## nivel (ver gain_exp). Se nombra 'experience' para no colisionar con exp().
+@export var experience:    int    = 0
 @export var is_player_unit: bool  = true
 ## Equipo: "player" | "enemy" | "other" | "ally". Lo fija LevelLoader.build_unit.
 ## Determina la paleta del map sprite (ver team_palette_index).
@@ -64,6 +67,14 @@ var _feet_y: float = 30.0
 var weapon:    Weapon = null
 var inventory: Array  = []      # Array de ItemData (max 5)
 
+# ── Estado de ARENA (Castillo Base, por-personaje) ────────────────────────────
+# Progreso híbrido: se enfrenta a los 7 rivales fijos del capítulo en orden
+# (arena_fixed_index 0..7); tras vencerlos pasa a genéricos.  Tope de 10 victorias
+# por capítulo (arena_wins 0..10).  NO se persiste al roster → se reinicia solo en
+# cada visita al castillo, que ocurre una vez por capítulo (= reset por capítulo).
+var arena_fixed_index: int = 0   # índice del próximo rival FIJO (>=7 → fase genérica)
+var arena_wins:        int = 0   # victorias acumuladas este capítulo (tope 10)
+
 # ── Skills ────────────────────────────────────────────────────────────────────
 
 # Skills permanentes (de clase, sangre sagrada, manuales)
@@ -107,6 +118,88 @@ func get_class_tier() -> int:
 
 func has_tag(tag: String) -> bool:
 	return tag in tags
+
+# ══════════════════════════════════════════════════════════════════════════════
+# EXPERIENCIA Y NIVEL
+# ══════════════════════════════════════════════════════════════════════════════
+
+## Nivel máximo alcanzable escalando EXP (cubre FE4 hasta 30; en FE5 la
+## promoción reinicia el nivel antes de llegar aquí).
+const MAX_LEVEL := 30
+
+signal leveled_up(new_level: int, gains: Dictionary)
+
+## Tasas de crecimiento base (personales) de la unidad, en claves MINÚSCULAS
+## (hp/str/…), como espera LevelUpScreen.calculate_stat_gains. Se leen del
+## UnitDef de GameDB; si no está, se usan las de la clase; si tampoco, {}.
+func get_growth_rates() -> Dictionary:
+	var up := {}
+	var db = _gamedb()
+	if db != null:
+		var ud = db.get_unit(unit_name)
+		if ud != null and ud.growths is Dictionary and not ud.growths.is_empty():
+			up = ud.growths
+		else:
+			var cd = db.get_class_data(unit_class)
+			if cd != null and "growths" in cd and cd.growths is Dictionary:
+				up = cd.growths
+	var out := {}
+	for k in up:
+		out[str(k).to_lower()] = int(up[k])
+	return out
+
+## Otorga EXP y sube de nivel tantas veces como corresponda (100 EXP = 1 nivel).
+## Cada subida tira ganancias vía LevelUpScreen.calculate_stat_gains (que ya
+## suma los growth_change de skills/scrolls) y las aplica. Devuelve la lista de
+## diccionarios de ganancias, una por nivel subido (vacía si no subió). Al tope
+## de nivel la EXP se descarta.
+func gain_exp(amount: int) -> Array:
+	var results: Array = []
+	if amount <= 0:
+		return results
+	if level >= MAX_LEVEL:
+		experience = 0
+		return results
+	experience += amount
+	var rates := get_growth_rates()
+	while experience >= 100 and level < MAX_LEVEL:
+		experience -= 100
+		var gains: Dictionary = LevelUpScreen.calculate_stat_gains(self, rates)
+		LevelUpScreen.apply_stat_gains(self, gains)
+		clamp_to_caps()
+		level += 1
+		results.append(gains)
+		leveled_up.emit(level, gains)
+	if level >= MAX_LEVEL:
+		experience = 0
+	return results
+
+## Topes de stat de la clase actual, resueltos por modo de juego (FE4/FE5/SAGA).
+## {STAT(MAYÚS): int}, o {} si no hay GameDB / clase.
+func get_stat_caps() -> Dictionary:
+	var db = _gamedb()
+	if db == null or not db.has_method("class_caps"):
+		return {}
+	return db.class_caps(unit_class)
+
+## Recorta los stats de combate a los topes de la clase (por modo).  Se llama tras
+## cada subida de nivel y tras promocionar.  CON/MOV NO se recortan aquí (no son
+## stats de combate con crecimiento).  En FE5 RES existe como cap pero no se usa
+## defensivamente (MAG hace de defensa mágica); recortarlo es inocuo.
+func clamp_to_caps() -> void:
+	var caps := get_stat_caps()
+	if caps.is_empty():
+		return
+	if caps.has("HP"):
+		max_hp = min(max_hp, int(caps["HP"]))
+		current_hp = min(current_hp, max_hp)
+	if caps.has("STR"): strength   = min(strength,   int(caps["STR"]))
+	if caps.has("MAG"): magic      = min(magic,      int(caps["MAG"]))
+	if caps.has("SKL"): skill      = min(skill,      int(caps["SKL"]))
+	if caps.has("SPD"): speed      = min(speed,      int(caps["SPD"]))
+	if caps.has("LCK"): luck       = min(luck,       int(caps["LCK"]))
+	if caps.has("DEF"): defense    = min(defense,    int(caps["DEF"]))
+	if caps.has("RES"): resistance = min(resistance, int(caps["RES"]))
 
 # ══════════════════════════════════════════════════════════════════════════════
 # SKILLS
@@ -173,11 +266,15 @@ func refresh_item_effects() -> void:
 		var sid := _equipment_skill_field(it, "status_on_hold")
 		if sid != "":
 			_grant_equipment_skill(sid, "hold:" + sid)
-	# 3) status_on_equip del arma equipada.
+	# 3) status_on_equip del arma equipada (puede listar varias skills separadas
+	#    por coma, p.ej. Beo Sword = "Wrath,Vantage").
 	if weapon != null and weapon.has_method("get_component"):
 		var wsid = weapon.get_component("status_on_equip")
 		if wsid != null and str(wsid) != "":
-			_grant_equipment_skill(str(wsid), "equip:" + str(wsid))
+			for sk in str(wsid).split(","):
+				var s := sk.strip_edges()
+				if s != "":
+					_grant_equipment_skill(s, "equip:" + s)
 
 ## Lee un campo de skill (status_on_hold/status_on_equip) de un item, tolerando
 ## tanto ConsumableData/ItemData (propiedad tipada) como Dictionary.
@@ -214,12 +311,7 @@ func _skill_stat_change(skill_id: String) -> Dictionary:
 			if pair is Array and pair.size() >= 2:
 				var stat := str(pair[0])
 				var val := int(pair[1])
-				# Convención LT: el MOV se almacena ×10 (LT no aceptaba decimales),
-				# igual que las bases de clase — ver LevelLoader (mov_raw/10). Sólo
-				# se decodifican magnitudes ≥10 (los bonuses reales son 1-5 → 10-50);
-				# valores pequeños ya están en unidades reales.
-				if stat == "MOV" and abs(val) >= 10:
-					val = int(round(val / 10.0))
+				# MOV ya está en su valor real (sin escalado ×10).
 				out[stat] = val
 	return out
 
@@ -343,6 +435,11 @@ static func rank_requirement(rank: String) -> int:
 func can_equip(w: Weapon) -> bool:
 	if w == null:
 		return false
+	# Restricción prf: si el arma es personal (prf_tags/prf_unit), la unidad
+	# debe cumplirla — arches→clase Ballistae, Yewfelle→UlirHeir, armas
+	# sagradas→su heredero concreto.
+	if not _satisfies_prf(w):
+		return false
 	var required: String = str(w.weapon_rank)
 	# Armas Holy (S nato): sólo Major Blood, y las usan desde el inicio sin
 	# exigir wexp (el rango se concede por la sangre). En LT esto se refuerza
@@ -351,6 +448,35 @@ func can_equip(w: Weapon) -> bool:
 		return has_major_blood()
 	# Rango S y por debajo: cualquiera que tenga el wexp del tipo suficiente.
 	return int(wexp.get(str(w.weapon_type), 0)) >= rank_requirement(required)
+
+## ¿La unidad cumple la restricción personal del arma? true si el arma no es
+## prf, o si el nid de la unidad está en prf_unit, o si cumple algún prf_tag.
+## Los prf_tags "XxxHeir" (armas sagradas) NO son tags de clase: significan
+## "Major Blood del cruzado Xxx" (los datos no ponen un tag heredero en la
+## unidad, sino holy_blood). El resto de prf_tags sí son tags de clase (p.ej.
+## "Ballistae"). El prf_unit "0" es un placeholder de debug y se ignora.
+func _satisfies_prf(w) -> bool:
+	if w == null or not w.has_method("get_component"):
+		return true
+	var ptags: Array = w.get_component("prf_tags") if w.get_component("prf_tags") is Array else []
+	var raw_units = w.get_component("prf_unit")
+	var punits: Array = []
+	if raw_units is Array:
+		for u in raw_units:
+			if str(u) != "0":
+				punits.append(str(u))
+	if ptags.is_empty() and punits.is_empty():
+		return true
+	if unit_name in punits:
+		return true
+	for t in ptags:
+		var ts := str(t)
+		if ts.ends_with("Heir"):
+			if has_major_blood(ts.substr(0, ts.length() - 4)):
+				return true
+		elif ts in tags:
+			return true
+	return false
 
 # ── Holy Blood ──────────────────────────────────────────────────────────────
 
@@ -452,6 +578,48 @@ func tick_statuses() -> void:
 				to_remove.append(s["id"])
 	for sid in to_remove:
 		remove_status(sid)
+		remove_status_modifier(sid)   # limpia el bono/penalización asociado (MagicUp, Sleep…)
+
+## Aplica un status por su id + su componente stat_change como modificador (se
+## limpia al expirar, ver tick_statuses). `turns` = -1 dura hasta curarse. Lo
+## usan tanto los báculos como el status_on_hit de las armas.
+func apply_status_with_effects(status_id: String, turns: int = -1) -> void:
+	if status_id == "":
+		return
+	apply_status(status_id, {"duration": turns})
+	var db = _gamedb()
+	if db == null:
+		return
+	var sk = db.get_skill(status_id)
+	if sk == null:
+		return
+	var raw = sk.component_value("stat_change")
+	if raw is Array:
+		var deltas := {}
+		for pair in raw:
+			if pair is Array and pair.size() >= 2:
+				deltas[str(pair[0])] = int(pair[1])
+		if not deltas.is_empty():
+			add_status_modifier(status_id, deltas)
+
+## Quita todos los status negativos (componente "negative" en GameDB) y su
+## modificador. Con keep_petrify conserva Petrify (el báculo Rest no lo cura;
+## Kia sí). Sin GameDB, considera negativos todos los status activos.
+func clear_negative_statuses(keep_petrify: bool = true) -> void:
+	var db = _gamedb()
+	var ids: Array = []
+	for s in _statuses:
+		ids.append(str(s["id"]))
+	for sid in ids:
+		if keep_petrify and sid == "Petrify":
+			continue
+		var negative := true
+		if db != null:
+			var sk = db.get_skill(sid)
+			negative = sk != null and sk.has_component("negative")
+		if negative:
+			remove_status(sid)
+			remove_status_modifier(sid)
 
 func _apply_status_upkeep(status: Dictionary) -> void:
 	var sid: String = status["id"]
@@ -467,8 +635,8 @@ func _apply_status_upkeep(status: Dictionary) -> void:
 		"TorchVision":
 			# El radio de visión decrece 1 por turno (manejado por FogOfWarSystem)
 			pass
-		"Poison":
-			# Daño por turno
+		"Poisoned":
+			# Daño por turno (id unificado con la skill/arma "Poisoned").
 			take_damage(max(1, max_hp / 10))
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -677,11 +845,22 @@ func _resolve_map_sprite_nid() -> String:
 			ms = str(cd.map_sprite_nid)
 	if ms == "":
 		ms = unit_class   # fallback: el nid de clase suele coincidir (60/64)
+	# Variante por GÉNERO si existe el asset: p.ej. unidad F con clase "Mage" usa
+	# "MageFemale"/"MageF" si están; si no, cae al sprite base.  Convenciones de
+	# sufijo aceptadas (en orden de preferencia): Female/F para F, Male/M para M.
+	var suffixes: Array = []
+	if gender == "F":
+		suffixes = ["Female", "F"]
+	elif gender == "M":
+		suffixes = ["Male", "M"]
+	for suf in suffixes:
+		if ResourceLoader.exists("res://assets/map_sprites/%s%s-stand.png" % [ms, suf]):
+			return ms + suf
 	return ms
 
 ## nid base de la animación de combate de esta unidad.  El resolver construye
 ## los nombres como {combat_anim_nid}_{Variant}_{Weapon}, así que NO debe usar
-## el nid de clase crudo (unit_class): p.ej. clase "CavalierA" -> anim "AxeKnight".
+## el nid de clase crudo (unit_class): p.ej. clase "AxeKnight" -> anim "AxeKnight".
 ## Se lee de GameDB en cada llamada, de modo que una promoción (que cambia
 ## unit_class) actualiza la animación automáticamente.
 func resolve_combat_anim_nid() -> String:

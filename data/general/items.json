@@ -623,7 +623,7 @@
   "uses": -1,
   "heal": 0,
   "permanent_stat_change": {},
-  "status_on_hold": "Canto+",
+  "status_on_hold": "Canto_Plus",
   "status_on_hit": "",
   "promote": false,
   "restore": false,

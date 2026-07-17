@@ -31,6 +31,7 @@ const EFFECTIVE_BONUS    := 5
 const EFFECTIVE_DEF_DIV  := 2
 const EFFECTIVE_RES_DIV  := 3
 const ASTRA_HITS         := 5
+const STATUS_ON_HIT_TURNS := 5      # duración de un status infligido por arma
 
 class AttackResult:
 	var attacker_name: String
@@ -197,6 +198,25 @@ static func _do(atk: Unit, def: Unit, dist: int, result: CombatResult,
 			if is_atk_side: result.defender_died = true
 			else:           result.attacker_died = true
 		if ar.skill_proc == "Sol": atk.heal(ar.damage)
+		# Lifelink de arma (nosferatu/Resire): el atacante recupera una fracción
+		# del daño infligido, según el valor del componente lifelink del arma.
+		if ar.damage > 0 and atk.weapon != null and atk.weapon.has_method("get_component"):
+			var ll = atk.weapon.get_component("lifelink")
+			if ll != null:
+				atk.heal(int(ceil(ar.damage * float(ll))))
+		# status_on_hit del arma (Poison/Sleep/Berserk/Silence/Stun/Loptyr…):
+		# se aplica al defensor si sobrevive. "Devil" ya se gestiona aparte.
+		if def.current_hp > 0 and atk.weapon != null and "status_on_hit" in atk.weapon:
+			var soh := str(atk.weapon.status_on_hit)
+			# Blaggi (espada de Bragi) hace inmune a la maldición de la Loptyr
+			# Sword — anula su Loptyr_negative.
+			var blaggi_block := soh == "Loptyr_negative" and _has_skill(def, "Blaggi")
+			if soh != "" and soh != "Devil" and not blaggi_block:
+				def.apply_status_with_effects(soh, STATUS_ON_HIT_TURNS)
+		# Thief Sword (componente steal): roba un ítem si el defensor sobrevive.
+		if def.current_hp > 0 and atk.weapon != null and atk.weapon.has_method("has_component") \
+				and atk.weapon.has_component("steal"):
+			_steal_on_hit(atk, def)
 
 
 static func execute_attack(atk: Unit, def: Unit, dist: int,
@@ -207,7 +227,10 @@ static func execute_attack(atk: Unit, def: Unit, dist: int,
 	var wpn = atk.weapon
 	if not wpn:
 		return AttackResult.new(atk.unit_name, def.unit_name, 0, false, false)
-	var is_magic: bool = bool(wpn.is_magic) if "is_magic" in wpn else false
+	# La distancia se propaga a _calc_dmg para el daño mágico condicional
+	# (espadas con magic_at_range son mágicas sólo a rango >= 2).
+	combat_flags["dist"] = dist
+	var is_magic: bool = _is_magic_attack(wpn, dist)
 
 	var did_hit := sword_skill == "Sol" or \
 			_true_hit(calculate_hit(atk, def, dist, t_def))
@@ -233,7 +256,9 @@ static func execute_attack(atk: Unit, def: Unit, dist: int,
 	# Pavise (Great Shield): anula el daño con probabilidad = promedio de los
 	# niveles de defensor y atacante.  FE4/FE5 usan solo el nivel propio y FE8
 	# el del enemigo; como el port es a GBA tomamos la media de ambos.
-	if not nihil and not is_crit and _has_skill(def, "Pavise"):
+	# Resire (componente ignore_pavise) ANULA el Big Shield: no procea contra él.
+	if not nihil and not is_crit and _has_skill(def, "Pavise") \
+			and not _weapon_ignores_pavise(wpn):
 		var pavise_rate: int = (def.level + atk.level) / 2
 		if randi() % 100 < pavise_rate:
 			dmg = 0
@@ -277,6 +302,7 @@ static func calculate_hit(atk: Unit, def: Unit, _dist: int,
 	if _charisma_near(atk): hit += CHARISMA_BONUS
 	hit += _tri_hit(atk, def)
 	hit += _support_bonus(atk, "HIT")
+	if _has_skill(atk, "Luckily Light"): hit += 20   # Light Sword: +20 Hit pasivo
 	var def_as: int = calculate_attack_speed(def)
 	# Captura: SPD/2 del atacante reduce su AS (ya incluido via flag en _calc_dmg)
 	var avoid: int = (def_as * 2) + _stat(def, "LCK") + int(t_def.get("AVO", 0))
@@ -304,7 +330,9 @@ static func _calc_dmg(atk: Unit, def: Unit, is_crit: bool, is_eff: bool,
 		flags: Dictionary = {}) -> int:
 
 	var wpn = atk.weapon
-	var is_magic: bool = bool(wpn.is_magic) if wpn and "is_magic" in wpn else false
+	# Daño mágico si el arma es mágica, o si tiene magic_at_range y se ataca a
+	# distancia >= 2 (espadas mágicas Flame/Thunder/Wind/Earth/Light).
+	var is_magic: bool = _is_magic_attack(wpn, int(flags.get("dist", 1)))
 	# Hel (efecto del tomo homónimo): deja al objetivo a 1 HP; nunca mata.
 	#   HP objetivo != 1 → daño = HP_actual - 1;  si ya está a 1 → daño = 0.
 	if _has_skill(atk, "Hel"):
@@ -317,7 +345,10 @@ static func _calc_dmg(atk: Unit, def: Unit, is_crit: bool, is_eff: bool,
 	if flags.get("is_capture_attempt", false): stat_m = stat_m / 2
 	var wep_m: int = int(wpn.might) if wpn else 0
 	var mt_total: int = wep_m + stat_m
-	var def_raw: int = _stat(def, "RES") if is_magic else _stat(def, "DEF")
+	if _has_skill(atk, "Luckily Light"): mt_total += 2   # Light Sword: +2 Might pasivo
+	# Defensa mágica: en FE5 no existe RES → MAG hace de resistencia. En
+	# FE4/SAGA se usa RES normal.
+	var def_raw: int = _stat(def, _magic_def_stat()) if is_magic else _stat(def, "DEF")
 
 	var dmg_mult := 1.0; var def_mult := 1.0; var flat := 0
 	if   _has_skill(atk, "DarknessSword"): dmg_mult = 2.0; def_mult = 0.5
@@ -342,13 +373,63 @@ static func _is_effective(wpn, def: Unit) -> bool:
 		if t in def.tags: return true
 	return false
 
-static func _tri_hit(a: Unit, d: Unit) -> int:
+## Ventaja de triángulo de `a` frente a `d`, con Reaver aplicado: si sólo UNO
+## de los dos lleva un arma reaver (Master Axe, etc.), el triángulo se INVIERTE
+## y se DUPLICA (estilo GBA). Si ambos o ninguno la llevan, es normal.
+static func _tri_bonus(a: Unit, d: Unit) -> int:
 	if not a.weapon or not d.weapon: return 0
-	return a.weapon.get_weapon_triangle_bonus(d.weapon) * TRIANGLE_HIT
+	var bonus: int = a.weapon.get_weapon_triangle_bonus(d.weapon)
+	if _is_reaver(a.weapon) != _is_reaver(d.weapon):
+		bonus = -bonus * 2
+	return bonus
+
+static func _is_reaver(w) -> bool:
+	if w == null: return false
+	if "reaver" in w and bool(w.reaver): return true
+	return w.has_method("has_component") and w.has_component("reaver")
+
+## Stat que actúa como defensa mágica según el modo de juego.
+##   FE5 (Thracia): RES no existe → MAG hace de resistencia mágica.
+##   FE4 / SAGA:    RES normal (como el resto de la saga).
+static func _magic_def_stat() -> String:
+	var loop := Engine.get_main_loop()
+	if loop is SceneTree and loop.root != null:
+		var gm = loop.root.get_node_or_null("GameMode")
+		if gm != null and "current_mode" in gm and int(gm.current_mode) == 1:  # Mode.FE5_ONLY
+			return "MAG"
+	return "RES"
+
+
+## ¿El ataque hace daño mágico? Sí si el arma es mágica, o si tiene el
+## componente magic_at_range y se ataca a distancia >= 2 (espadas mágicas).
+static func _is_magic_attack(w, dist: int) -> bool:
+	if w == null:
+		return false
+	if "is_magic" in w and bool(w.is_magic):
+		return true
+	if w.has_method("has_component") and w.has_component("magic_at_range") and dist >= 2:
+		return true
+	return false
+
+## Thief Sword: roba un ítem del inventario del defensor (no equipado) si
+## sobrevive y el ladrón tiene hueco. Sin chequeo de SPD (el arma ya conecta).
+static func _steal_on_hit(thief: Unit, victim: Unit) -> void:
+	if not ("inventory" in thief) or thief.inventory.size() >= 5:
+		return
+	var items := MapActions.get_stealable_items(thief, victim, false)
+	if items.is_empty():
+		return
+	var item = items[0]
+	victim.inventory.erase(item)
+	thief.inventory.append(item)
+	if thief.has_method("refresh_item_effects"): thief.refresh_item_effects()
+	if victim.has_method("refresh_item_effects"): victim.refresh_item_effects()
+
+static func _tri_hit(a: Unit, d: Unit) -> int:
+	return _tri_bonus(a, d) * TRIANGLE_HIT
 
 static func _tri_dmg(a: Unit, d: Unit) -> int:
-	if not a.weapon or not d.weapon: return 0
-	return a.weapon.get_weapon_triangle_bonus(d.weapon) * TRIANGLE_DMG
+	return _tri_bonus(a, d) * TRIANGLE_DMG
 
 static func _true_hit(h: int) -> bool:
 	return ((randi() % 100) + (randi() % 100)) / 2 < h
@@ -408,6 +489,10 @@ static func _base_exp(atk: Unit, def: Unit) -> int:
 
 static func _has_skill(unit: Unit, id: String) -> bool:
 	return unit.has_method("has_skill") and unit.has_skill(id)
+
+## ¿El arma anula el Big Shield/Pavise del defensor? (Resire → ignore_pavise)
+static func _weapon_ignores_pavise(w) -> bool:
+	return w != null and w.has_method("get_component") and w.get_component("ignore_pavise") != null
 
 ## Lee un stat EFECTIVO (base + item bonuses + status modifiers): anillos
 ## on_hold (Power/Speed/… Ring), armas on_equip (Balmung SKL/SPD), Holy Water

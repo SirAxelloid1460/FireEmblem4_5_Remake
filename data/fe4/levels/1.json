@@ -864,7 +864,7 @@
     "nid": "Elliot_1",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -890,7 +890,7 @@
     "nid": "Elliot_2",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -916,7 +916,7 @@
     "nid": "Elliot_3",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -942,7 +942,7 @@
     "nid": "Elliot_4",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -968,7 +968,7 @@
     "nid": "Elliot_5",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -994,7 +994,7 @@
     "nid": "Elliot_6",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -1020,7 +1020,7 @@
     "nid": "Elliot_7",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -1046,7 +1046,7 @@
     "nid": "Elliot_8",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -1072,7 +1072,7 @@
     "nid": "Elliot_9",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -1098,7 +1098,7 @@
     "nid": "Elliot_10",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [
@@ -1124,7 +1124,7 @@
     "nid": "Elliot_11",
     "variant": null,
     "level": 1,
-    "klass": "CavalierL",
+    "klass": "LanceKnight",
     "faction": "Heirhein",
     "starting_items": [
      [

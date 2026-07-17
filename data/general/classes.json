@@ -12,16 +12,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 26,
-   "STR": 7,
-   "MAG": 4,
-   "SKL": 6,
-   "SPD": 8,
+   "HP": 40,
+   "STR": 9,
+   "MAG": 5,
+   "SKL": 9,
+   "SPD": 9,
    "LCK": 0,
-   "DEF": 7,
+   "DEF": 9,
    "RES": 5,
    "CON": 10,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 80,
@@ -49,15 +49,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 23,
+   "STR": 24,
    "MAG": 20,
-   "SKL": 25,
+   "SKL": 24,
    "SPD": 24,
-   "LCK": 28,
+   "LCK": 30,
    "DEF": 24,
-   "RES": 24,
+   "RES": 20,
    "CON": 10,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 126,
@@ -70,7 +70,139 @@
    ]
   ],
   "map_sprite_nid": "Paladin",
-  "combat_anim_nid": "Paladin"
+  "combat_anim_nid": "Paladin",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 9,
+     "MAG": 5,
+     "SKL": 9,
+     "SPD": 9,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 5
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 24,
+     "MAG": 20,
+     "SKL": 24,
+     "SPD": 24,
+     "LCK": 30,
+     "DEF": 24,
+     "RES": 20
+    },
+    "promotion_gains": {
+     "Cavalier": {
+      "STR": 2,
+      "MAG": 5,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 3,
+      "RES": 5,
+      "MOV": 1,
+      "LCK": 0
+     },
+     "Troubadour": {
+      "STR": 6,
+      "MAG": 2,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 6,
+      "RES": 2,
+      "MOV": 1,
+      "LCK": 0
+     },
+     "Troubadour@Nanna": {
+      "STR": 6,
+      "MAG": 2,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 6,
+      "RES": 2,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 5,
+     "MAG": 5,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Cavalier": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     },
+     "Troubadour@Nanna": {
+      "STR": 1,
+      "MAG": 3,
+      "SKL": 1,
+      "SPD": 3,
+      "DEF": 1,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Cavalier": {
+    "STR": 2,
+    "MAG": 5,
+    "SKL": 3,
+    "SPD": 3,
+    "DEF": 3,
+    "RES": 5,
+    "MOV": 1,
+    "LCK": 0
+   },
+   "Troubadour": {
+    "STR": 6,
+    "MAG": 2,
+    "SKL": 3,
+    "SPD": 3,
+    "DEF": 6,
+    "RES": 2,
+    "MOV": 1,
+    "LCK": 0
+   },
+   "Troubadour@Nanna": {
+    "STR": 6,
+    "MAG": 3,
+    "SKL": 3,
+    "SPD": 3,
+    "DEF": 6,
+    "RES": 2,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Archer",
@@ -85,21 +217,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 18,
-   "STR": 3,
+   "HP": 33,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 2,
-   "SPD": 3,
+   "SKL": 5,
+   "SPD": 9,
    "LCK": 0,
-   "DEF": 3,
+   "DEF": 5,
    "RES": 0,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 80,
-   "STR": 35,
-   "MAG": 5,
+   "STR": 45,
+   "MAG": 0,
    "SKL": 35,
    "SPD": 30,
    "LCK": 25,
@@ -121,23 +253,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 20,
-   "MAG": 0,
+   "HP": 80,
+   "STR": 21,
+   "MAG": 15,
    "SKL": 20,
-   "SPD": 20,
+   "SPD": 24,
    "LCK": 30,
    "DEF": 20,
-   "RES": 20,
+   "RES": 15,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Bow": 1
   },
   "learned_skills": [],
   "map_sprite_nid": "Archer",
-  "combat_anim_nid": "Archer"
+  "combat_anim_nid": "Archer",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 33,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 9,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 21,
+     "MAG": 15,
+     "SKL": 20,
+     "SPD": 24,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 19,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Armour",
@@ -154,16 +332,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 30,
-   "STR": 5,
+   "HP": 40,
+   "STR": 9,
    "MAG": 0,
-   "SKL": 3,
-   "SPD": 1,
+   "SKL": 5,
+   "SPD": 3,
    "LCK": 0,
-   "DEF": 9,
+   "DEF": 10,
    "RES": 0,
    "CON": 12,
-   "MOV": 40
+   "MOV": 4
   },
   "growths": {
    "HP": 85,
@@ -190,16 +368,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 18,
+   "HP": 80,
+   "STR": 24,
+   "MAG": 15,
    "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 19,
+   "SPD": 18,
+   "LCK": 30,
+   "DEF": 25,
+   "RES": 15,
    "CON": 12,
-   "MOV": 40
+   "MOV": 4
   },
   "wexp_gain": {
    "Sword": 126,
@@ -209,7 +387,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Armour",
-  "combat_anim_nid": "Armour"
+  "combat_anim_nid": "Armour",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 9,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 24,
+     "MAG": 15,
+     "SKL": 20,
+     "SPD": 18,
+     "LCK": 30,
+     "DEF": 25,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 4,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Ballistae",
@@ -277,7 +501,7 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Ballistician",
-  "combat_anim_nid": "Ballistae"
+  "combat_anim_nid": "Ballista"
  },
  {
   "id": "Bandit",
@@ -292,16 +516,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 24,
+   "HP": 35,
    "STR": 5,
    "MAG": 0,
-   "SKL": 1,
-   "SPD": 4,
+   "SKL": 0,
+   "SPD": 7,
    "LCK": 0,
-   "DEF": 3,
+   "DEF": 5,
    "RES": 0,
    "CON": 12,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 90,
@@ -328,23 +552,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
+   "HP": 80,
    "STR": 20,
-   "MAG": 0,
-   "SKL": 19,
-   "SPD": 20,
-   "LCK": 28,
+   "MAG": 15,
+   "SKL": 15,
+   "SPD": 22,
+   "LCK": 30,
    "DEF": 20,
-   "RES": 18,
+   "RES": 15,
    "CON": 12,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Axe": 51
   },
   "learned_skills": [],
   "map_sprite_nid": "Bandit",
-  "combat_anim_nid": "Bandit"
+  "combat_anim_nid": "Bandit",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 5,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 22,
+     "STR": 5,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Barbarian",
@@ -366,7 +636,7 @@
    "DEF": 5,
    "RES": 0,
    "CON": 12,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 95,
@@ -393,16 +663,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
+   "HP": 80,
    "STR": 20,
-   "MAG": 0,
+   "MAG": 15,
    "SKL": 15,
    "SPD": 22,
    "LCK": 30,
    "DEF": 20,
    "RES": 15,
    "CON": 12,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Axe": 126
@@ -424,21 +694,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 19,
+   "HP": 30,
    "STR": 0,
-   "MAG": 4,
-   "SKL": 3,
-   "SPD": 7,
+   "MAG": 7,
+   "SKL": 7,
+   "SPD": 10,
    "LCK": 0,
-   "DEF": 1,
-   "RES": 2,
+   "DEF": 3,
+   "RES": 7,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 70,
    "STR": 0,
-   "MAG": 35,
+   "MAG": 45,
    "SKL": 30,
    "SPD": 40,
    "LCK": 30,
@@ -460,16 +730,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
-   "MAG": 21,
-   "SKL": 18,
-   "SPD": 24,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 23,
+   "HP": 80,
+   "STR": 15,
+   "MAG": 22,
+   "SKL": 22,
+   "SPD": 25,
+   "LCK": 30,
+   "DEF": 18,
+   "RES": 22,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 51,
@@ -477,7 +747,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Bard",
-  "combat_anim_nid": "Bard"
+  "combat_anim_nid": "Bard",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 0,
+     "MAG": 7,
+     "SKL": 7,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 22,
+     "SKL": 22,
+     "SPD": 25,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 22
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 16,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Baron",
@@ -492,16 +808,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 36,
-   "STR": 11,
-   "MAG": 5,
+   "HP": 45,
+   "STR": 12,
+   "MAG": 7,
    "SKL": 7,
-   "SPD": 5,
+   "SPD": 7,
    "LCK": 0,
-   "DEF": 14,
+   "DEF": 12,
    "RES": 7,
    "CON": 13,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 85,
@@ -529,15 +845,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 24,
-   "MAG": 21,
-   "SKL": 21,
-   "SPD": 21,
-   "LCK": 25,
-   "DEF": 24,
+   "STR": 27,
+   "MAG": 22,
+   "SKL": 22,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 27,
    "RES": 22,
    "CON": 13,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 226,
@@ -554,7 +870,53 @@
    ]
   ],
   "map_sprite_nid": "Baron",
-  "combat_anim_nid": "Baron"
+  "combat_anim_nid": "Baron",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 45,
+     "STR": 12,
+     "MAG": 7,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 27,
+     "MAG": 22,
+     "SKL": 22,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 27,
+     "RES": 22
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 26,
+     "STR": 10,
+     "MAG": 3,
+     "SKL": 6,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 15,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Berserker",
@@ -567,21 +929,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 26,
-   "STR": 8,
+   "HP": 32,
+   "STR": 12,
    "MAG": 0,
-   "SKL": 8,
-   "SPD": 8,
+   "SKL": 12,
+   "SPD": 10,
    "LCK": 0,
-   "DEF": 7,
+   "DEF": 8,
    "RES": 0,
    "CON": 13,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 75,
-   "STR": 35,
-   "MAG": 5,
+   "STR": 45,
+   "MAG": 0,
    "SKL": 30,
    "SPD": 20,
    "LCK": 10,
@@ -604,15 +966,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 28,
-   "MAG": 0,
-   "SKL": 26,
-   "SPD": 26,
-   "LCK": 28,
-   "DEF": 22,
-   "RES": 22,
+   "STR": 20,
+   "MAG": 20,
+   "SKL": 20,
+   "SPD": 20,
+   "LCK": 20,
+   "DEF": 20,
+   "RES": 0,
    "CON": 13,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Axe": 126
@@ -632,21 +994,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 23,
+   "HP": 35,
    "STR": 0,
-   "MAG": 5,
-   "SKL": 5,
-   "SPD": 4,
+   "MAG": 10,
+   "SKL": 8,
+   "SPD": 5,
    "LCK": 0,
-   "DEF": 2,
-   "RES": 7,
+   "DEF": 3,
+   "RES": 8,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 65,
    "STR": 0,
-   "MAG": 30,
+   "MAG": 40,
    "SKL": 25,
    "SPD": 25,
    "LCK": 20,
@@ -668,16 +1030,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 90,
-   "STR": 0,
-   "MAG": 24,
-   "SKL": 24,
-   "SPD": 23,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 28,
+   "HP": 80,
+   "STR": 15,
+   "MAG": 25,
+   "SKL": 23,
+   "SPD": 20,
+   "LCK": 30,
+   "DEF": 18,
+   "RES": 23,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 126,
@@ -685,7 +1047,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Bishop",
-  "combat_anim_nid": "Bishop"
+  "combat_anim_nid": "Bishop",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 0,
+     "MAG": 10,
+     "SKL": 8,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 8
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 25,
+     "SKL": 23,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 23
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 5,
+     "SKL": 2,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "BowKnight",
@@ -693,28 +1101,28 @@
   "desc": "",
   "tier": 2,
   "movement_group": "Light Cav",
-  "promotes_from": "CavalierB",
+  "promotes_from": "ArcherKnight",
   "turns_into": [],
   "tags": [
    "Mounted"
   ],
   "max_level": 19,
   "bases": {
-   "HP": 31,
-   "STR": 7,
+   "HP": 40,
+   "STR": 10,
    "MAG": 0,
-   "SKL": 7,
-   "SPD": 7,
+   "SKL": 8,
+   "SPD": 8,
    "LCK": 0,
-   "DEF": 7,
+   "DEF": 8,
    "RES": 3,
    "CON": 8,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 85,
-   "STR": 30,
-   "MAG": 10,
+   "STR": 40,
+   "MAG": 0,
    "SKL": 30,
    "SPD": 25,
    "LCK": 10,
@@ -737,15 +1145,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 23,
-   "MAG": 0,
-   "SKL": 22,
-   "SPD": 22,
-   "LCK": 25,
-   "DEF": 22,
+   "STR": 25,
+   "MAG": 15,
+   "SKL": 23,
+   "SPD": 23,
+   "LCK": 30,
+   "DEF": 23,
    "RES": 18,
    "CON": 8,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Bow": 226
@@ -757,7 +1165,89 @@
    ]
   ],
   "map_sprite_nid": "BowKnight",
-  "combat_anim_nid": "BowKnight"
+  "combat_anim_nid": "BowKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 0,
+     "SKL": 8,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 25,
+     "MAG": 15,
+     "SKL": 23,
+     "SPD": 23,
+     "LCK": 30,
+     "DEF": 23,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "ArcherKnight": {
+      "STR": 3,
+      "MAG": 0,
+      "SKL": 2,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 6,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "ArcherKnight": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "ArcherKnight": {
+    "STR": 3,
+    "MAG": 1,
+    "SKL": 3,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Cavalier",
@@ -774,16 +1264,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 21,
-   "STR": 5,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 3,
-   "SPD": 4,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 5,
+   "DEF": 6,
    "RES": 0,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -810,16 +1300,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 20,
-   "MAG": 18,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 20,
-   "RES": 19,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 15,
+   "SKL": 21,
+   "SPD": 21,
+   "LCK": 30,
+   "DEF": 21,
+   "RES": 15,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 126,
@@ -832,10 +1322,56 @@
    ]
   ],
   "map_sprite_nid": "Cavalier",
-  "combat_anim_nid": "Cavalier"
+  "combat_anim_nid": "Cavalier",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
-  "id": "CavalierA",
+  "id": "AxeKnight",
   "name": "Axe Knight",
   "desc": "A mighty opponent who battles with an axe on horseback.",
   "tier": 1,
@@ -849,16 +1385,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 25,
-   "STR": 5,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 5,
-   "SPD": 5,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 5,
+   "DEF": 6,
    "RES": 0,
    "CON": 8,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 80,
@@ -885,16 +1421,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 0,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 15,
    "SKL": 21,
    "SPD": 21,
-   "LCK": 25,
+   "LCK": 30,
    "DEF": 21,
    "RES": 15,
    "CON": 8,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Axe": 126
@@ -905,11 +1441,57 @@
     "Canto"
    ]
   ],
-  "map_sprite_nid": "CavalierA",
-  "combat_anim_nid": "AxeKnight"
+  "map_sprite_nid": "AxeKnight",
+  "combat_anim_nid": "AxeKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
-  "id": "CavalierB",
+  "id": "ArcherKnight",
   "name": "Archer Knight",
   "desc": "A mighty opponent who battles with a bow on horseback.",
   "tier": 1,
@@ -923,16 +1505,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 5,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 5,
-   "SPD": 5,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 5,
+   "DEF": 6,
    "RES": 0,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -959,16 +1541,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 0,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 15,
    "SKL": 21,
    "SPD": 21,
-   "LCK": 25,
+   "LCK": 30,
    "DEF": 21,
    "RES": 15,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Bow": 1
@@ -979,11 +1561,57 @@
     "Canto"
    ]
   ],
-  "map_sprite_nid": "CavalierB",
-  "combat_anim_nid": "ArcherKnight"
+  "map_sprite_nid": "ArcherKnight",
+  "combat_anim_nid": "ArcherKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
-  "id": "CavalierL",
+  "id": "LanceKnight",
   "name": "Lance Knight",
   "desc": "A mighty opponent who battles with a lance on horseback.",
   "tier": 1,
@@ -997,16 +1625,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 25,
-   "STR": 5,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 5,
-   "SPD": 5,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 5,
+   "DEF": 6,
    "RES": 0,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -1033,16 +1661,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 0,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 15,
    "SKL": 21,
    "SPD": 21,
    "LCK": 30,
    "DEF": 21,
    "RES": 15,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Lance": 126
@@ -1053,34 +1681,80 @@
     "Canto"
    ]
   ],
-  "map_sprite_nid": "CavalierL",
-  "combat_anim_nid": "LanceKnight"
+  "map_sprite_nid": "LanceKnight",
+  "combat_anim_nid": "LanceKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
-  "id": "CavalierS",
+  "id": "FreeKnight",
   "name": "Free Knight",
   "desc": "A mighty opponent who battles with a sword on horseback.",
   "tier": 1,
   "movement_group": "Light Cav",
   "promotes_from": "",
   "turns_into": [
-   "ForrestKnight"
+   "Ranger"
   ],
   "tags": [
    "Mounted"
   ],
   "max_level": 19,
   "bases": {
-   "HP": 25,
-   "STR": 5,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 5,
-   "SPD": 5,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 4,
+   "DEF": 6,
    "RES": 0,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -1107,16 +1781,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 18,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 15,
    "SKL": 21,
    "SPD": 21,
-   "LCK": 25,
+   "LCK": 30,
    "DEF": 21,
    "RES": 15,
    "CON": 8,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 126
@@ -1127,8 +1801,54 @@
     "Canto"
    ]
   ],
-  "map_sprite_nid": "CavalierS",
-  "combat_anim_nid": "FreeKnight"
+  "map_sprite_nid": "FreeKnight",
+  "combat_anim_nid": "FreeKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Citizen",
@@ -1143,16 +1863,16 @@
   ],
   "max_level": 9,
   "bases": {
-   "HP": 12,
-   "STR": 1,
+   "HP": 20,
+   "STR": 0,
    "MAG": 0,
-   "SKL": 1,
-   "SPD": 1,
+   "SKL": 0,
+   "SPD": 10,
    "LCK": 0,
-   "DEF": 1,
-   "RES": 1,
+   "DEF": 2,
+   "RES": 0,
    "CON": 5,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 35,
@@ -1179,21 +1899,67 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 60,
-   "STR": 20,
-   "MAG": 5,
-   "SKL": 20,
-   "SPD": 20,
+   "HP": 80,
+   "STR": 15,
+   "MAG": 15,
+   "SKL": 15,
+   "SPD": 25,
    "LCK": 30,
-   "DEF": 20,
-   "RES": 10,
+   "DEF": 17,
+   "RES": 15,
    "CON": 5,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {},
   "learned_skills": [],
   "map_sprite_nid": "Citizen",
-  "combat_anim_nid": ""
+  "combat_anim_nid": "",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 25,
+     "LCK": 30,
+     "DEF": 17,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 10,
+     "STR": 0,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Dancer",
@@ -1206,16 +1972,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 16,
-   "STR": 1,
+   "HP": 26,
+   "STR": 3,
    "MAG": 0,
    "SKL": 1,
-   "SPD": 6,
+   "SPD": 7,
    "LCK": 0,
-   "DEF": 0,
-   "RES": 2,
+   "DEF": 1,
+   "RES": 3,
    "CON": 4,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 75,
@@ -1243,15 +2009,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 16,
-   "MAG": 18,
-   "SKL": 15,
+   "STR": 18,
+   "MAG": 15,
+   "SKL": 16,
    "SPD": 22,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 23,
+   "LCK": 30,
+   "DEF": 16,
+   "RES": 18,
    "CON": 4,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 51
@@ -1263,7 +2029,97 @@
    ]
   ],
   "map_sprite_nid": "Dancer",
-  "combat_anim_nid": "Dancer"
+  "combat_anim_nid": "Dancer",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 26,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 18,
+     "MAG": 15,
+     "SKL": 16,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 16,
+     "RES": 18
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 14,
+     "STR": 0,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Thief@Lara": {
+      "STR": 0,
+      "MAG": 0,
+      "SKL": -2,
+      "SPD": -5,
+      "DEF": 0,
+      "RES": 0,
+      "MOV": -1,
+      "LCK": 0
+     },
+     "Rogue@Lara": {
+      "STR": 0,
+      "MAG": 0,
+      "SKL": -2,
+      "SPD": -5,
+      "DEF": 0,
+      "RES": 0,
+      "MOV": -1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Thief@Lara": {
+    "STR": 0,
+    "MAG": 0,
+    "SKL": -2,
+    "SPD": -5,
+    "DEF": 0,
+    "RES": 0,
+    "MOV": -1,
+    "LCK": 0
+   },
+   "Rogue@Lara": {
+    "STR": 0,
+    "MAG": 0,
+    "SKL": -2,
+    "SPD": -5,
+    "DEF": 0,
+    "RES": 0,
+    "MOV": -1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "DarkBishop",
@@ -1276,21 +2132,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 35,
+   "HP": 40,
    "STR": 0,
-   "MAG": 12,
-   "SKL": 8,
-   "SPD": 8,
+   "MAG": 15,
+   "SKL": 10,
+   "SPD": 10,
    "LCK": 0,
-   "DEF": 8,
+   "DEF": 10,
    "RES": 12,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 85,
    "STR": 0,
-   "MAG": 30,
+   "MAG": 40,
    "SKL": 30,
    "SPD": 30,
    "LCK": 10,
@@ -1312,16 +2168,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 90,
-   "STR": 0,
-   "MAG": 25,
-   "SKL": 23,
-   "SPD": 23,
-   "LCK": 25,
-   "DEF": 23,
+   "HP": 80,
+   "STR": 15,
+   "MAG": 30,
+   "SKL": 25,
+   "SPD": 25,
+   "LCK": 30,
+   "DEF": 25,
    "RES": 27,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 226,
@@ -1330,7 +2186,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "DarkBishop",
-  "combat_anim_nid": "DarkBishop"
+  "combat_anim_nid": "DarkBishop",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 12
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 30,
+     "SKL": 25,
+     "SPD": 25,
+     "LCK": 30,
+     "DEF": 25,
+     "RES": 27
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 30,
+     "STR": 0,
+     "MAG": 9,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "DarkPrince",
@@ -1343,21 +2245,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 40,
+   "HP": 30,
    "STR": 0,
-   "MAG": 18,
-   "SKL": 16,
-   "SPD": 16,
+   "MAG": 15,
+   "SKL": 12,
+   "SPD": 12,
    "LCK": 0,
-   "DEF": 15,
+   "DEF": 10,
    "RES": 15,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 0,
    "STR": 0,
-   "MAG": 0,
+   "MAG": 10,
    "SKL": 0,
    "SPD": 0,
    "LCK": 0,
@@ -1379,16 +2281,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 90,
-   "STR": 18,
-   "MAG": 26,
-   "SKL": 24,
-   "SPD": 24,
-   "LCK": 25,
-   "DEF": 22,
+   "HP": 80,
+   "STR": 15,
+   "MAG": 30,
+   "SKL": 27,
+   "SPD": 27,
+   "LCK": 30,
+   "DEF": 25,
    "RES": 30,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 226,
@@ -1396,7 +2298,53 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "DarkPrince",
-  "combat_anim_nid": "DarkPrince"
+  "combat_anim_nid": "DarkPrince",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 12,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 15
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 30,
+     "SKL": 27,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 25,
+     "RES": 30
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 50,
+     "STR": 0,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "DarkMage",
@@ -1409,21 +2357,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 32,
+   "HP": 40,
    "STR": 0,
-   "MAG": 8,
-   "SKL": 6,
-   "SPD": 6,
+   "MAG": 10,
+   "SKL": 8,
+   "SPD": 8,
    "LCK": 0,
-   "DEF": 6,
+   "DEF": 7,
    "RES": 10,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 70,
    "STR": 0,
-   "MAG": 30,
+   "MAG": 40,
    "SKL": 25,
    "SPD": 25,
    "LCK": 10,
@@ -1446,15 +2394,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 0,
-   "MAG": 23,
-   "SKL": 22,
-   "SPD": 22,
-   "LCK": 25,
-   "DEF": 21,
+   "STR": 15,
+   "MAG": 25,
+   "SKL": 23,
+   "SPD": 23,
+   "LCK": 30,
+   "DEF": 22,
    "RES": 25,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 51,
@@ -1463,7 +2411,77 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "DarkMage",
-  "combat_anim_nid": "DarkMage"
+  "combat_anim_nid": "DarkMage",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 10,
+     "SKL": 8,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 7,
+     "RES": 10
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 25,
+     "SKL": 23,
+     "SPD": 23,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 25
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 0,
+     "MAG": 5,
+     "SKL": 4,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 4,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "LoptoMage": {
+      "STR": 0,
+      "MAG": 3,
+      "SKL": 2,
+      "SPD": 0,
+      "DEF": 4,
+      "RES": 1,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "LoptoMage": {
+    "STR": 0,
+    "MAG": 3,
+    "SKL": 2,
+    "SPD": 0,
+    "DEF": 4,
+    "RES": 1,
+    "MOV": 0,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "DragonKnight",
@@ -1480,16 +2498,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 7,
-   "MAG": 1,
-   "SKL": 5,
-   "SPD": 5,
+   "HP": 40,
+   "STR": 10,
+   "MAG": 0,
+   "SKL": 7,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 9,
+   "DEF": 11,
    "RES": 0,
    "CON": 10,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -1516,16 +2534,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 18,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 19,
+   "HP": 80,
+   "STR": 25,
+   "MAG": 15,
+   "SKL": 22,
+   "SPD": 21,
+   "LCK": 30,
+   "DEF": 26,
+   "RES": 15,
    "CON": 10,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 126,
@@ -1542,7 +2560,77 @@
    ]
   ],
   "map_sprite_nid": "DragonKnight",
-  "combat_anim_nid": "DragonKnight"
+  "combat_anim_nid": "DragonKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 0,
+     "SKL": 7,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 11,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 25,
+     "MAG": 15,
+     "SKL": 22,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 26,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 7,
+     "MAG": 1,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "DragonRider": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "DragonRider": {
+    "STR": 2,
+    "MAG": 1,
+    "SKL": 3,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 1,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "DragonMaster",
@@ -1557,16 +2645,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 28,
-   "STR": 9,
+   "HP": 40,
+   "STR": 12,
    "MAG": 0,
-   "SKL": 7,
+   "SKL": 9,
    "SPD": 7,
    "LCK": 0,
-   "DEF": 11,
-   "RES": 1,
+   "DEF": 14,
+   "RES": 0,
    "CON": 11,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 85,
@@ -1594,15 +2682,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 26,
+   "STR": 27,
    "MAG": 15,
-   "SKL": 25,
-   "SPD": 23,
+   "SKL": 24,
+   "SPD": 22,
    "LCK": 30,
-   "DEF": 28,
-   "RES": 21,
+   "DEF": 29,
+   "RES": 15,
    "CON": 11,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226,
@@ -1619,7 +2707,19 @@
    ]
   ],
   "map_sprite_nid": "DragonMaster",
-  "combat_anim_nid": "DragonMaster"
+  "combat_anim_nid": "DragonMaster",
+  "promotion_gains": {
+   "DragonKnight": {
+    "STR": 2,
+    "MAG": 0,
+    "SKL": 2,
+    "SPD": 1,
+    "DEF": 3,
+    "RES": 0,
+    "MOV": 0,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "DragonRider",
@@ -1636,16 +2736,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 25,
-   "STR": 7,
+   "HP": 35,
+   "STR": 9,
    "MAG": 0,
-   "SKL": 4,
+   "SKL": 5,
    "SPD": 5,
    "LCK": 0,
    "DEF": 8,
    "RES": 0,
    "CON": 10,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 95,
@@ -1672,16 +2772,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 60,
-   "STR": 23,
-   "MAG": 16,
-   "SKL": 21,
+   "HP": 80,
+   "STR": 25,
+   "MAG": 15,
+   "SKL": 22,
    "SPD": 21,
-   "LCK": 25,
-   "DEF": 23,
+   "LCK": 30,
+   "DEF": 26,
    "RES": 15,
    "CON": 10,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 51,
@@ -1698,7 +2798,53 @@
    ]
   ],
   "map_sprite_nid": "DragonRider",
-  "combat_anim_nid": "DragonRider"
+  "combat_anim_nid": "DragonRider",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 9,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 25,
+     "MAG": 15,
+     "SKL": 22,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 26,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 16,
+     "STR": 5,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 7,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "DukeKnight",
@@ -1706,28 +2852,28 @@
   "desc": "An honorific bestowed upon the best of Lance Knights.",
   "tier": 2,
   "movement_group": "Light Cav",
-  "promotes_from": "CavalierL",
+  "promotes_from": "LanceKnight",
   "turns_into": [],
   "tags": [
    "Mounted"
   ],
   "max_level": 19,
   "bases": {
-   "HP": 32,
-   "STR": 9,
+   "HP": 40,
+   "STR": 12,
    "MAG": 0,
    "SKL": 7,
    "SPD": 7,
    "LCK": 0,
-   "DEF": 7,
+   "DEF": 8,
    "RES": 3,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 85,
-   "STR": 30,
-   "MAG": 10,
+   "STR": 40,
+   "MAG": 0,
    "SKL": 30,
    "SPD": 25,
    "LCK": 10,
@@ -1750,15 +2896,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 24,
-   "MAG": 0,
-   "SKL": 21,
-   "SPD": 21,
-   "LCK": 25,
-   "DEF": 22,
+   "STR": 27,
+   "MAG": 15,
+   "SKL": 22,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 23,
    "RES": 18,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Lance": 226
@@ -1770,7 +2916,109 @@
    ]
   ],
   "map_sprite_nid": "DukeKnight",
-  "combat_anim_nid": "DukeKnight"
+  "combat_anim_nid": "DukeKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 12,
+     "MAG": 0,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 27,
+     "MAG": 15,
+     "SKL": 22,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 23,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "LanceKnight@Finn": {
+      "STR": 5,
+      "MAG": 0,
+      "SKL": 1,
+      "SPD": 1,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 5,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "LanceKnight": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     },
+     "LanceKnight@Finn": {
+      "STR": 1,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "LanceKnight": {
+    "STR": 2,
+    "MAG": 1,
+    "SKL": 3,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 1,
+    "MOV": 1,
+    "LCK": 0
+   },
+   "LanceKnight@Finn": {
+    "STR": 5,
+    "MAG": 1,
+    "SKL": 3,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Emperor",
@@ -1785,16 +3033,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 36,
-   "STR": 11,
-   "MAG": 8,
-   "SKL": 10,
-   "SPD": 9,
+   "HP": 45,
+   "STR": 15,
+   "MAG": 15,
+   "SKL": 15,
+   "SPD": 15,
    "LCK": 0,
-   "DEF": 14,
+   "DEF": 15,
    "RES": 15,
    "CON": 15,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 100,
@@ -1821,16 +3069,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 90,
-   "STR": 25,
-   "MAG": 25,
-   "SKL": 25,
-   "SPD": 25,
-   "LCK": 25,
-   "DEF": 25,
-   "RES": 25,
+   "HP": 80,
+   "STR": 30,
+   "MAG": 30,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 30,
+   "RES": 30,
    "CON": 15,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 226,
@@ -1847,7 +3095,53 @@
    ]
   ],
   "map_sprite_nid": "Emperor",
-  "combat_anim_nid": "Emperor"
+  "combat_anim_nid": "Emperor",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 45,
+     "STR": 15,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 15,
+     "RES": 15
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 30,
+     "MAG": 30,
+     "SKL": 30,
+     "SPD": 30,
+     "LCK": 30,
+     "DEF": 30,
+     "RES": 30
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 26,
+     "STR": 7,
+     "MAG": 1,
+     "SKL": 5,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "FalconKnight",
@@ -1862,16 +3156,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 6,
+   "HP": 40,
+   "STR": 7,
    "MAG": 7,
-   "SKL": 8,
-   "SPD": 9,
+   "SKL": 12,
+   "SPD": 15,
    "LCK": 0,
-   "DEF": 5,
-   "RES": 6,
+   "DEF": 6,
+   "RES": 12,
    "CON": 6,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 80,
@@ -1900,14 +3194,14 @@
   "caps": {
    "HP": 80,
    "STR": 22,
-   "MAG": 21,
-   "SKL": 24,
-   "SPD": 27,
-   "LCK": 28,
-   "DEF": 22,
+   "MAG": 22,
+   "SKL": 25,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 21,
    "RES": 27,
    "CON": 6,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226,
@@ -1925,7 +3219,89 @@
    ]
   ],
   "map_sprite_nid": "FalconKnight",
-  "combat_anim_nid": "FalconKnight"
+  "combat_anim_nid": "FalconKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 7,
+     "MAG": 7,
+     "SKL": 12,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 12
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 22,
+     "SKL": 25,
+     "SPD": 30,
+     "LCK": 30,
+     "DEF": 21,
+     "RES": 27
+    },
+    "promotion_gains": {
+     "PegasusKnight": {
+      "STR": 0,
+      "MAG": 7,
+      "SKL": 5,
+      "SPD": 3,
+      "DEF": 1,
+      "RES": 5,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 6,
+     "MAG": 7,
+     "SKL": 7,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "PegasusKnight": {
+      "STR": 0,
+      "MAG": 7,
+      "SKL": 5,
+      "SPD": 3,
+      "DEF": 1,
+      "RES": 5,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "PegasusKnight": {
+    "STR": 0,
+    "MAG": 7,
+    "SKL": 5,
+    "SPD": 3,
+    "DEF": 1,
+    "RES": 5,
+    "MOV": 0,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Fighter",
@@ -1941,16 +3317,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 23,
-   "STR": 5,
+   "HP": 35,
+   "STR": 8,
    "MAG": 0,
    "SKL": 3,
-   "SPD": 5,
+   "SPD": 10,
    "LCK": 0,
-   "DEF": 3,
+   "DEF": 8,
    "RES": 0,
    "CON": 11,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 90,
@@ -1977,47 +3353,93 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 21,
-   "MAG": 0,
-   "SKL": 20,
-   "SPD": 21,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 18,
+   "HP": 80,
+   "STR": 23,
+   "MAG": 15,
+   "SKL": 18,
+   "SPD": 25,
+   "LCK": 30,
+   "DEF": 23,
+   "RES": 15,
    "CON": 11,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Axe": 51
   },
   "learned_skills": [],
   "map_sprite_nid": "Fighter",
-  "combat_anim_nid": "Fighter"
+  "combat_anim_nid": "Fighter",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 8,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 23,
+     "MAG": 15,
+     "SKL": 18,
+     "SPD": 25,
+     "LCK": 30,
+     "DEF": 23,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 4,
+     "MAG": 0,
+     "SKL": 4,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
-  "id": "ForrestKnight",
-  "name": "Forrest Knigh",
+  "id": "Ranger",
+  "name": "Ranger",
   "desc": "Mounted Swordfighters with superior abilities",
   "tier": 2,
   "movement_group": "Light Cav",
-  "promotes_from": "CavalierS",
+  "promotes_from": "FreeKnight",
   "turns_into": [],
   "tags": [
    "Mounted"
   ],
   "max_level": 19,
   "bases": {
-   "HP": 28,
-   "STR": 7,
-   "MAG": 1,
-   "SKL": 9,
-   "SPD": 9,
+   "HP": 40,
+   "STR": 8,
+   "MAG": 0,
+   "SKL": 15,
+   "SPD": 12,
    "LCK": 0,
-   "DEF": 6,
-   "RES": 0,
+   "DEF": 8,
+   "RES": 3,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 80,
@@ -2045,15 +3467,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 22,
-   "MAG": 18,
-   "SKL": 26,
-   "SPD": 26,
-   "LCK": 27,
-   "DEF": 22,
-   "RES": 21,
+   "STR": 23,
+   "MAG": 15,
+   "SKL": 30,
+   "SPD": 27,
+   "LCK": 30,
+   "DEF": 23,
+   "RES": 18,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226
@@ -2064,8 +3486,90 @@
     "Canto_Plus"
    ]
   ],
-  "map_sprite_nid": "ForrestKnight",
-  "combat_anim_nid": "ForrestKnight"
+  "map_sprite_nid": "Ranger",
+  "combat_anim_nid": "Ranger",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 8,
+     "MAG": 0,
+     "SKL": 15,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 23,
+     "MAG": 15,
+     "SKL": 30,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 23,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "FreeKnight": {
+      "STR": 1,
+      "MAG": 0,
+      "SKL": 9,
+      "SPD": 6,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 6,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "FreeKnight": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "FreeKnight": {
+    "STR": 2,
+    "MAG": 1,
+    "SKL": 9,
+    "SPD": 6,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "General",
@@ -2080,16 +3584,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 26,
-   "STR": 8,
-   "MAG": 1,
-   "SKL": 5,
-   "SPD": 4,
+   "HP": 40,
+   "STR": 10,
+   "MAG": 0,
+   "SKL": 6,
+   "SPD": 5,
    "LCK": 0,
    "DEF": 12,
    "RES": 3,
    "CON": 13,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 80,
@@ -2118,14 +3622,14 @@
   "caps": {
    "HP": 80,
    "STR": 25,
-   "MAG": 18,
-   "SKL": 24,
-   "SPD": 22,
-   "LCK": 28,
+   "MAG": 15,
+   "SKL": 21,
+   "SPD": 20,
+   "LCK": 30,
    "DEF": 27,
-   "RES": 24,
+   "RES": 18,
    "CON": 13,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 226,
@@ -2140,7 +3644,89 @@
    ]
   ],
   "map_sprite_nid": "General",
-  "combat_anim_nid": "General"
+  "combat_anim_nid": "General",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 25,
+     "MAG": 15,
+     "SKL": 21,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 27,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "Armour": {
+      "STR": 1,
+      "MAG": 0,
+      "SKL": 1,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 26,
+     "STR": 7,
+     "MAG": 1,
+     "SKL": 5,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Armour": {
+      "STR": 3,
+      "MAG": 1,
+      "SKL": 5,
+      "SPD": 2,
+      "DEF": 4,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Armour": {
+    "STR": 3,
+    "MAG": 1,
+    "SKL": 5,
+    "SPD": 2,
+    "DEF": 4,
+    "RES": 3,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "GreatKnight",
@@ -2148,23 +3734,23 @@
   "desc": "Mounted heavy armored knights with superior abilities",
   "tier": 2,
   "movement_group": "Heavy Cav",
-  "promotes_from": "CavalierA",
+  "promotes_from": "AxeKnight",
   "turns_into": [],
   "tags": [
    "Mounted"
   ],
   "max_level": 19,
   "bases": {
-   "HP": 28,
-   "STR": 8,
-   "MAG": 1,
-   "SKL": 6,
-   "SPD": 6,
+   "HP": 40,
+   "STR": 12,
+   "MAG": 0,
+   "SKL": 7,
+   "SPD": 7,
    "LCK": 0,
-   "DEF": 8,
+   "DEF": 10,
    "RES": 3,
    "CON": 12,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 85,
@@ -2192,15 +3778,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 25,
-   "MAG": 18,
+   "STR": 27,
+   "MAG": 15,
    "SKL": 22,
    "SPD": 22,
-   "LCK": 27,
+   "LCK": 30,
    "DEF": 25,
-   "RES": 22,
+   "RES": 18,
    "CON": 12,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226,
@@ -2213,7 +3799,89 @@
    ]
   ],
   "map_sprite_nid": "GreatKnight",
-  "combat_anim_nid": "GreatKnight"
+  "combat_anim_nid": "GreatKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 12,
+     "MAG": 0,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 27,
+     "MAG": 15,
+     "SKL": 22,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 25,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "AxeKnight": {
+      "STR": 5,
+      "MAG": 0,
+      "SKL": 1,
+      "SPD": 1,
+      "DEF": 4,
+      "RES": 3,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "AxeKnight": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "AxeKnight": {
+    "STR": 5,
+    "MAG": 1,
+    "SKL": 3,
+    "SPD": 2,
+    "DEF": 4,
+    "RES": 3,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Hero",
@@ -2226,16 +3894,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 26,
-   "STR": 7,
-   "MAG": 2,
-   "SKL": 10,
-   "SPD": 10,
+   "HP": 40,
+   "STR": 12,
+   "MAG": 3,
+   "SKL": 12,
+   "SPD": 12,
    "LCK": 0,
    "DEF": 7,
    "RES": 3,
    "CON": 9,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 85,
@@ -2263,15 +3931,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 24,
-   "MAG": 19,
+   "STR": 27,
+   "MAG": 18,
    "SKL": 27,
-   "SPD": 25,
-   "LCK": 28,
-   "DEF": 23,
-   "RES": 22,
+   "SPD": 27,
+   "LCK": 30,
+   "DEF": 22,
+   "RES": 18,
    "CON": 9,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 226,
@@ -2279,7 +3947,119 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Hero",
-  "combat_anim_nid": "Hero"
+  "combat_anim_nid": "Hero",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 12,
+     "MAG": 3,
+     "SKL": 12,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 7,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 27,
+     "MAG": 18,
+     "SKL": 27,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "Mercenary": {
+      "STR": 5,
+      "MAG": 3,
+      "SKL": 2,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 0,
+      "LCK": 0
+     },
+     "Fighter": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 3,
+      "RES": 0,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 6,
+     "MAG": 1,
+     "SKL": 7,
+     "SPD": 9,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Mercenary": {
+      "STR": 3,
+      "MAG": 1,
+      "SKL": 2,
+      "SPD": 3,
+      "DEF": 3,
+      "RES": 2,
+      "MOV": 0,
+      "LCK": 0
+     },
+     "Fighter": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 3,
+      "RES": 0,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Mercenary": {
+    "STR": 5,
+    "MAG": 3,
+    "SKL": 2,
+    "SPD": 3,
+    "DEF": 3,
+    "RES": 3,
+    "MOV": 0,
+    "LCK": 0
+   },
+   "Fighter": {
+    "STR": 2,
+    "MAG": 1,
+    "SKL": 3,
+    "SPD": 3,
+    "DEF": 3,
+    "RES": 0,
+    "MOV": 0,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "HighPriest",
@@ -2292,21 +4072,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 26,
+   "HP": 35,
    "STR": 0,
-   "MAG": 9,
-   "SKL": 6,
-   "SPD": 5,
+   "MAG": 12,
+   "SKL": 9,
+   "SPD": 8,
    "LCK": 0,
-   "DEF": 2,
+   "DEF": 3,
    "RES": 8,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 70,
    "STR": 0,
-   "MAG": 30,
+   "MAG": 40,
    "SKL": 25,
    "SPD": 25,
    "LCK": 10,
@@ -2329,15 +4109,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 0,
-   "MAG": 24,
-   "SKL": 22,
-   "SPD": 22,
-   "LCK": 25,
-   "DEF": 19,
+   "STR": 15,
+   "MAG": 27,
+   "SKL": 24,
+   "SPD": 23,
+   "LCK": 30,
+   "DEF": 18,
    "RES": 23,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 51,
@@ -2346,7 +4126,119 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "HighPriest",
-  "combat_anim_nid": "HighPriest"
+  "combat_anim_nid": "HighPriest",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 0,
+     "MAG": 12,
+     "SKL": 9,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 8
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 27,
+     "SKL": 24,
+     "SPD": 23,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 23
+    },
+    "promotion_gains": {
+     "Priest": {
+      "STR": 0,
+      "MAG": 5,
+      "SKL": 3,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 0,
+      "LCK": 0
+     },
+     "Priestess": {
+      "STR": 0,
+      "MAG": 5,
+      "SKL": 3,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 18,
+     "STR": 0,
+     "MAG": 6,
+     "SKL": 3,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Priest": {
+      "STR": 0,
+      "MAG": 3,
+      "SKL": 1,
+      "SPD": 1,
+      "DEF": 1,
+      "RES": 0,
+      "MOV": 1,
+      "LCK": 0
+     },
+     "Priestess": {
+      "STR": 0,
+      "MAG": 3,
+      "SKL": 1,
+      "SPD": 1,
+      "DEF": 1,
+      "RES": 0,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Priest": {
+    "STR": 0,
+    "MAG": 5,
+    "SKL": 3,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 1,
+    "MOV": 1,
+    "LCK": 0
+   },
+   "Priestess": {
+    "STR": 0,
+    "MAG": 5,
+    "SKL": 3,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 1,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "HighPriestess",
@@ -2359,21 +4251,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 26,
+   "HP": 35,
    "STR": 0,
-   "MAG": 9,
-   "SKL": 6,
-   "SPD": 5,
+   "MAG": 12,
+   "SKL": 9,
+   "SPD": 8,
    "LCK": 0,
-   "DEF": 2,
+   "DEF": 3,
    "RES": 8,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 70,
    "STR": 0,
-   "MAG": 30,
+   "MAG": 40,
    "SKL": 25,
    "SPD": 25,
    "LCK": 10,
@@ -2396,15 +4288,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 0,
-   "MAG": 24,
-   "SKL": 22,
-   "SPD": 22,
-   "LCK": 25,
-   "DEF": 19,
+   "STR": 15,
+   "MAG": 27,
+   "SKL": 24,
+   "SPD": 23,
+   "LCK": 30,
+   "DEF": 18,
    "RES": 23,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 51,
@@ -2413,7 +4305,119 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "HighPriestFemale",
-  "combat_anim_nid": "HighPriestess"
+  "combat_anim_nid": "HighPriestess",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 0,
+     "MAG": 12,
+     "SKL": 9,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 8
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 27,
+     "SKL": 24,
+     "SPD": 23,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 23
+    },
+    "promotion_gains": {
+     "Priest": {
+      "STR": 0,
+      "MAG": 5,
+      "SKL": 3,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 0,
+      "LCK": 0
+     },
+     "Priestess": {
+      "STR": 0,
+      "MAG": 5,
+      "SKL": 3,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 18,
+     "STR": 0,
+     "MAG": 6,
+     "SKL": 3,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Priest": {
+      "STR": 0,
+      "MAG": 3,
+      "SKL": 1,
+      "SPD": 1,
+      "DEF": 1,
+      "RES": 0,
+      "MOV": 1,
+      "LCK": 0
+     },
+     "Priestess": {
+      "STR": 0,
+      "MAG": 3,
+      "SKL": 1,
+      "SPD": 1,
+      "DEF": 1,
+      "RES": 0,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Priest": {
+    "STR": 0,
+    "MAG": 5,
+    "SKL": 3,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 1,
+    "MOV": 1,
+    "LCK": 0
+   },
+   "Priestess": {
+    "STR": 0,
+    "MAG": 5,
+    "SKL": 3,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 1,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "LightPriestess",
@@ -2428,21 +4432,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 22,
+   "HP": 30,
    "STR": 0,
-   "MAG": 5,
-   "SKL": 5,
-   "SPD": 6,
+   "MAG": 8,
+   "SKL": 7,
+   "SPD": 7,
    "LCK": 0,
-   "DEF": 2,
+   "DEF": 3,
    "RES": 10,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 70,
    "STR": 0,
-   "MAG": 30,
+   "MAG": 40,
    "SKL": 25,
    "SPD": 15,
    "LCK": 15,
@@ -2464,16 +4468,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
-   "MAG": 22,
-   "SKL": 21,
-   "SPD": 21,
-   "LCK": 25,
-   "DEF": 19,
+   "HP": 80,
+   "STR": 15,
+   "MAG": 23,
+   "SKL": 22,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 18,
    "RES": 25,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Dark": 51,
@@ -2482,11 +4486,57 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "LightPriestFemale",
-  "combat_anim_nid": "LightPriestess"
+  "combat_anim_nid": "LightPriestess",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 0,
+     "MAG": 8,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 10
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 23,
+     "SKL": 22,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 25
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 14,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "LoptoMage",
-  "name": "Loptyr Mage",
+  "name": "Loptrian Mage",
   "desc": "Special people who can bend anima magic to their will.",
   "tier": 1,
   "movement_group": "Mages",
@@ -2497,21 +4547,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 16,
+   "HP": 18,
    "STR": 0,
    "MAG": 2,
-   "SKL": 1,
-   "SPD": 2,
+   "SKL": 2,
+   "SPD": 3,
    "LCK": 0,
-   "DEF": 1,
-   "RES": 5,
+   "DEF": 0,
+   "RES": 0,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 60,
    "STR": 0,
-   "MAG": 35,
+   "MAG": 45,
    "SKL": 25,
    "SPD": 25,
    "LCK": 15,
@@ -2533,16 +4583,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
+   "HP": 80,
+   "STR": 20,
    "MAG": 20,
    "SKL": 20,
    "SPD": 20,
-   "LCK": 28,
+   "LCK": 20,
    "DEF": 20,
    "RES": 20,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 1,
@@ -2567,16 +4617,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 25,
-   "STR": 6,
-   "MAG": 1,
-   "SKL": 4,
-   "SPD": 5,
+   "HP": 40,
+   "STR": 10,
+   "MAG": 0,
+   "SKL": 7,
+   "SPD": 7,
    "LCK": 0,
-   "DEF": 5,
-   "RES": 2,
+   "DEF": 7,
+   "RES": 3,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 90,
@@ -2604,15 +4654,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 24,
-   "MAG": 18,
-   "SKL": 23,
+   "STR": 25,
+   "MAG": 15,
+   "SKL": 22,
    "SPD": 22,
-   "LCK": 27,
+   "LCK": 30,
    "DEF": 22,
-   "RES": 22,
+   "RES": 18,
    "CON": 9,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226,
@@ -2625,7 +4675,77 @@
    ]
   ],
   "map_sprite_nid": "LordKnight",
-  "combat_anim_nid": "LordKnight"
+  "combat_anim_nid": "LordKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 0,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 7,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 25,
+     "MAG": 15,
+     "SKL": 22,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "LordSeliph": {
+      "STR": 5,
+      "MAG": 0,
+      "SKL": 2,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 3,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 18,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 4,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  },
+  "promotion_gains": {
+   "LordSeliph": {
+    "STR": 5,
+    "MAG": 0,
+    "SKL": 2,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 3,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "LordLeaf",
@@ -2642,16 +4762,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 7,
-   "MAG": 2,
-   "SKL": 5,
-   "SPD": 5,
-   "LCK": 0,
+   "HP": 30,
+   "STR": 8,
+   "MAG": 3,
+   "SKL": 7,
+   "SPD": 6,
+   "LCK": 7,
    "DEF": 3,
    "RES": 6,
    "CON": 7,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 85,
@@ -2678,23 +4798,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 22,
-   "MAG": 19,
-   "SKL": 21,
+   "HP": 80,
+   "STR": 23,
+   "MAG": 18,
+   "SKL": 22,
    "SPD": 21,
-   "LCK": 25,
-   "DEF": 21,
+   "LCK": 30,
+   "DEF": 22,
    "RES": 18,
    "CON": 7,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 126
   },
   "learned_skills": [],
   "map_sprite_nid": "LordLeaf",
-  "combat_anim_nid": "Prince"
+  "combat_anim_nid": "Prince",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 8,
+     "MAG": 3,
+     "SKL": 7,
+     "SPD": 6,
+     "LCK": 7,
+     "DEF": 3,
+     "RES": 6
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 23,
+     "MAG": 18,
+     "SKL": 22,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 18
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 18,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 3,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "LordSeliph",
@@ -2711,16 +4877,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 19,
+   "HP": 30,
    "STR": 5,
    "MAG": 0,
    "SKL": 5,
-   "SPD": 7,
+   "SPD": 5,
    "LCK": 0,
    "DEF": 5,
    "RES": 0,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 85,
@@ -2747,23 +4913,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
+   "HP": 80,
    "STR": 20,
-   "MAG": 18,
+   "MAG": 15,
    "SKL": 20,
    "SPD": 20,
-   "LCK": 29,
+   "LCK": 30,
    "DEF": 20,
-   "RES": 19,
+   "RES": 15,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 126
   },
   "learned_skills": [],
   "map_sprite_nid": "LordSeliph",
-  "combat_anim_nid": "LordSeliph"
+  "combat_anim_nid": "LordSeliph",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 5,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 15,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 18,
+     "STR": 4,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Mage",
@@ -2780,16 +4992,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 18,
+   "HP": 26,
    "STR": 0,
-   "MAG": 2,
-   "SKL": 3,
-   "SPD": 3,
+   "MAG": 8,
+   "SKL": 7,
+   "SPD": 7,
    "LCK": 0,
    "DEF": 3,
-   "RES": 3,
+   "RES": 4,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 65,
@@ -2816,23 +5028,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
-   "MAG": 20,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 19,
+   "HP": 80,
+   "STR": 15,
+   "MAG": 23,
+   "SKL": 22,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 16,
    "RES": 20,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Anima": 51
   },
   "learned_skills": [],
   "map_sprite_nid": "Mage",
-  "combat_anim_nid": "Mage"
+  "combat_anim_nid": "Mage",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 26,
+     "STR": 0,
+     "MAG": 8,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 4
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 23,
+     "SKL": 22,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 16,
+     "RES": 20
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 17,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 2,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "MageFighter",
@@ -2845,16 +5103,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 28,
-   "STR": 4,
+   "HP": 30,
+   "STR": 5,
    "MAG": 12,
    "SKL": 10,
-   "SPD": 11,
+   "SPD": 12,
    "LCK": 0,
-   "DEF": 6,
-   "RES": 9,
+   "DEF": 7,
+   "RES": 10,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 100,
@@ -2882,15 +5140,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 19,
+   "STR": 20,
    "MAG": 27,
    "SKL": 25,
-   "SPD": 26,
+   "SPD": 27,
    "LCK": 30,
-   "DEF": 21,
-   "RES": 24,
+   "DEF": 22,
+   "RES": 25,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Sword": 51,
@@ -2899,7 +5157,19 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "MageFighter",
-  "combat_anim_nid": "MageFighter"
+  "combat_anim_nid": "MageFighter",
+  "promotion_gains": {
+   "Mage": {
+    "STR": 5,
+    "MAG": 5,
+    "SKL": 4,
+    "SPD": 6,
+    "DEF": 6,
+    "RES": 6,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "MageKnight",
@@ -2914,16 +5184,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 23,
-   "STR": 3,
-   "MAG": 5,
-   "SKL": 5,
-   "SPD": 5,
+   "HP": 40,
+   "STR": 5,
+   "MAG": 10,
+   "SKL": 7,
+   "SPD": 7,
    "LCK": 0,
-   "DEF": 4,
-   "RES": 6,
+   "DEF": 5,
+   "RES": 7,
    "CON": 7,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 65,
@@ -2952,14 +5222,14 @@
   "caps": {
    "HP": 80,
    "STR": 20,
-   "MAG": 24,
-   "SKL": 23,
+   "MAG": 25,
+   "SKL": 22,
    "SPD": 22,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 24,
+   "LCK": 30,
+   "DEF": 20,
+   "RES": 22,
    "CON": 7,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 126,
@@ -2972,7 +5242,89 @@
    ]
   ],
   "map_sprite_nid": "MageKnight",
-  "combat_anim_nid": "MageKnight"
+  "combat_anim_nid": "MageKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 5,
+     "MAG": 10,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 25,
+     "SKL": 22,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 22
+    },
+    "promotion_gains": {
+     "Mage": {
+      "STR": 5,
+      "MAG": 3,
+      "SKL": 1,
+      "SPD": 1,
+      "DEF": 4,
+      "RES": 2,
+      "MOV": 4,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 4,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 4,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Mage": {
+      "STR": 3,
+      "MAG": 2,
+      "SKL": 3,
+      "SPD": 1,
+      "DEF": 3,
+      "RES": 1,
+      "MOV": 2,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Mage": {
+    "STR": 5,
+    "MAG": 3,
+    "SKL": 3,
+    "SPD": 1,
+    "DEF": 4,
+    "RES": 2,
+    "MOV": 4,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "MasterKnight",
@@ -2994,7 +5346,7 @@
    "DEF": 12,
    "RES": 7,
    "CON": 10,
-   "MOV": 80
+   "MOV": 8
   },
   "growths": {
    "HP": 80,
@@ -3030,7 +5382,7 @@
    "DEF": 27,
    "RES": 22,
    "CON": 10,
-   "MOV": 80
+   "MOV": 8
   },
   "wexp_gain": {
    "Sword": 226,
@@ -3048,7 +5400,29 @@
    ]
   ],
   "map_sprite_nid": "MasterKnight",
-  "combat_anim_nid": "MasterKnight"
+  "combat_anim_nid": "MasterKnight",
+  "promotion_gains": {
+   "LordLeaf": {
+    "STR": 4,
+    "MAG": 4,
+    "SKL": 5,
+    "SPD": 6,
+    "DEF": 5,
+    "RES": 4,
+    "MOV": 3,
+    "LCK": 0
+   },
+   "Princess": {
+    "STR": 7,
+    "MAG": 0,
+    "SKL": 7,
+    "SPD": 4,
+    "DEF": 7,
+    "RES": 0,
+    "MOV": 3,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "PegasusKnight",
@@ -3065,16 +5439,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 19,
-   "STR": 5,
-   "MAG": 3,
-   "SKL": 5,
-   "SPD": 7,
+   "HP": 35,
+   "STR": 7,
+   "MAG": 0,
+   "SKL": 7,
+   "SPD": 12,
    "LCK": 0,
-   "DEF": 3,
-   "RES": 3,
+   "DEF": 5,
+   "RES": 7,
    "CON": 5,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 75,
@@ -3101,16 +5475,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 20,
-   "MAG": 18,
-   "SKL": 20,
-   "SPD": 21,
-   "LCK": 28,
+   "HP": 80,
+   "STR": 22,
+   "MAG": 15,
+   "SKL": 22,
+   "SPD": 27,
+   "LCK": 30,
    "DEF": 20,
-   "RES": 21,
+   "RES": 22,
    "CON": 5,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 126,
@@ -3127,7 +5501,77 @@
    ]
   ],
   "map_sprite_nid": "PegasusKnight",
-  "combat_anim_nid": "PegasusKnight"
+  "combat_anim_nid": "PegasusKnight",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 7,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 22,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 22
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 17,
+     "STR": 4,
+     "MAG": 5,
+     "SKL": 5,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "PegasusRider": {
+      "STR": 2,
+      "MAG": 2,
+      "SKL": 2,
+      "SPD": 2,
+      "DEF": 1,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "PegasusRider": {
+    "STR": 2,
+    "MAG": 2,
+    "SKL": 2,
+    "SPD": 2,
+    "DEF": 1,
+    "RES": 1,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "PegasusRider",
@@ -3144,16 +5588,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 23,
-   "STR": 4,
-   "MAG": 3,
-   "SKL": 4,
-   "SPD": 8,
+   "HP": 30,
+   "STR": 6,
+   "MAG": 0,
+   "SKL": 5,
+   "SPD": 10,
    "LCK": 0,
    "DEF": 3,
    "RES": 5,
    "CON": 5,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 90,
@@ -3180,16 +5624,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 60,
-   "STR": 20,
-   "MAG": 17,
-   "SKL": 19,
-   "SPD": 21,
+   "HP": 80,
+   "STR": 15,
+   "MAG": 25,
+   "SKL": 21,
+   "SPD": 22,
    "LCK": 30,
-   "DEF": 18,
-   "RES": 20,
+   "DEF": 15,
+   "RES": 26,
    "CON": 5,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 51,
@@ -3206,7 +5650,53 @@
    ]
   ],
   "map_sprite_nid": "PegasusRider",
-  "combat_anim_nid": "PegasusRider"
+  "combat_anim_nid": "PegasusRider",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 6,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 5
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 25,
+     "SKL": 21,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 15,
+     "RES": 26
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 16,
+     "STR": 2,
+     "MAG": 3,
+     "SKL": 3,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Pirate",
@@ -3219,16 +5709,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 23,
-   "STR": 4,
+   "HP": 35,
+   "STR": 5,
    "MAG": 0,
-   "SKL": 1,
-   "SPD": 5,
+   "SKL": 0,
+   "SPD": 7,
    "LCK": 0,
-   "DEF": 3,
+   "DEF": 5,
    "RES": 0,
    "CON": 11,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 85,
@@ -3255,23 +5745,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
+   "HP": 80,
    "STR": 20,
-   "MAG": 0,
-   "SKL": 19,
+   "MAG": 20,
+   "SKL": 20,
    "SPD": 20,
-   "LCK": 28,
+   "LCK": 20,
    "DEF": 20,
-   "RES": 18,
+   "RES": 15,
    "CON": 11,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Axe": 51
   },
   "learned_skills": [],
   "map_sprite_nid": "Pirate",
-  "combat_anim_nid": "Pirate"
+  "combat_anim_nid": "Pirate",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 5,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 5,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Mercenary",
@@ -3286,16 +5822,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 18,
-   "STR": 4,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 8,
-   "SPD": 8,
+   "SKL": 10,
+   "SPD": 10,
    "LCK": 0,
-   "DEF": 3,
-   "RES": 1,
+   "DEF": 5,
+   "RES": 0,
    "CON": 8,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 75,
@@ -3322,23 +5858,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 20,
+   "HP": 80,
+   "STR": 22,
    "MAG": 15,
-   "SKL": 21,
-   "SPD": 21,
+   "SKL": 25,
+   "SPD": 25,
    "LCK": 30,
    "DEF": 20,
-   "RES": 20,
+   "RES": 15,
    "CON": 8,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 126
   },
   "learned_skills": [],
   "map_sprite_nid": "Mercenary",
-  "combat_anim_nid": "Hero"
+  "combat_anim_nid": "Hero",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 25,
+     "SPD": 25,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 19,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Priest",
@@ -3355,21 +5937,21 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 19,
+   "HP": 26,
    "STR": 0,
-   "MAG": 3,
-   "SKL": 3,
-   "SPD": 3,
+   "MAG": 7,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
    "DEF": 1,
-   "RES": 6,
+   "RES": 7,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 65,
    "STR": 0,
-   "MAG": 30,
+   "MAG": 40,
    "SKL": 25,
    "SPD": 25,
    "LCK": 20,
@@ -3391,23 +5973,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
-   "MAG": 20,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 20,
-   "RES": 21,
+   "HP": 80,
+   "STR": 15,
+   "MAG": 22,
+   "SKL": 21,
+   "SPD": 21,
+   "LCK": 30,
+   "DEF": 22,
+   "RES": 22,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Staff": 126
   },
   "learned_skills": [],
   "map_sprite_nid": "Priest",
-  "combat_anim_nid": "Priest"
+  "combat_anim_nid": "Priest",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 26,
+     "STR": 0,
+     "MAG": 7,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 22,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 22
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 16,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Priestess",
@@ -3424,21 +6052,21 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 19,
+   "HP": 26,
    "STR": 0,
-   "MAG": 3,
-   "SKL": 3,
-   "SPD": 3,
+   "MAG": 7,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
    "DEF": 1,
-   "RES": 6,
+   "RES": 7,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 65,
    "STR": 0,
-   "MAG": 30,
+   "MAG": 40,
    "SKL": 25,
    "SPD": 25,
    "LCK": 20,
@@ -3460,23 +6088,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 0,
-   "MAG": 20,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 20,
-   "RES": 21,
+   "HP": 80,
+   "STR": 15,
+   "MAG": 22,
+   "SKL": 21,
+   "SPD": 21,
+   "LCK": 30,
+   "DEF": 22,
+   "RES": 22,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Staff": 126
   },
   "learned_skills": [],
   "map_sprite_nid": "PriestFemale",
-  "combat_anim_nid": "Priestess"
+  "combat_anim_nid": "Priestess",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 26,
+     "STR": 0,
+     "MAG": 7,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 7
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 22,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 22
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 16,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Princess",
@@ -3500,7 +6174,7 @@
    "DEF": 5,
    "RES": 7,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 100,
@@ -3527,7 +6201,7 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
+   "HP": 80,
    "STR": 20,
    "MAG": 22,
    "SKL": 20,
@@ -3536,7 +6210,7 @@
    "DEF": 20,
    "RES": 22,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 126,
@@ -3566,12 +6240,12 @@
    "DEF": 10,
    "RES": 15,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 100,
-   "STR": 20,
-   "MAG": 20,
+   "STR": 0,
+   "MAG": 30,
    "SKL": 30,
    "SPD": 30,
    "LCK": 0,
@@ -3593,7 +6267,7 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 90,
+   "HP": 80,
    "STR": 20,
    "MAG": 30,
    "SKL": 25,
@@ -3602,7 +6276,7 @@
    "DEF": 25,
    "RES": 30,
    "CON": 5,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 226,
@@ -3623,16 +6297,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 21,
-   "STR": 5,
-   "MAG": 2,
-   "SKL": 4,
-   "SPD": 10,
+   "HP": 30,
+   "STR": 7,
+   "MAG": 3,
+   "SKL": 7,
+   "SPD": 12,
    "LCK": 0,
-   "DEF": 3,
-   "RES": 2,
+   "DEF": 5,
+   "RES": 3,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -3660,15 +6334,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 21,
-   "MAG": 19,
-   "SKL": 24,
-   "SPD": 26,
-   "LCK": 27,
+   "STR": 22,
+   "MAG": 18,
+   "SKL": 22,
+   "SPD": 27,
+   "LCK": 30,
    "DEF": 20,
-   "RES": 19,
+   "RES": 18,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 226
@@ -3680,7 +6354,109 @@
    ]
   ],
   "map_sprite_nid": "Rogue",
-  "combat_anim_nid": "Rogue"
+  "combat_anim_nid": "Rogue",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 3,
+     "SKL": 7,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 18,
+     "SKL": 22,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "Thief": {
+      "STR": 4,
+      "MAG": 3,
+      "SKL": 4,
+      "SPD": 5,
+      "DEF": 4,
+      "RES": 3,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 18,
+     "STR": 4,
+     "MAG": 1,
+     "SKL": 3,
+     "SPD": 9,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Thief": {
+      "STR": 3,
+      "MAG": 1,
+      "SKL": 2,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 0,
+      "LCK": 0
+     },
+     "Dancer@Lara": {
+      "STR": 3,
+      "MAG": 1,
+      "SKL": 2,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Thief": {
+    "STR": 4,
+    "MAG": 3,
+    "SKL": 4,
+    "SPD": 5,
+    "DEF": 4,
+    "RES": 3,
+    "MOV": 1,
+    "LCK": 0
+   },
+   "Dancer@Lara": {
+    "STR": 3,
+    "MAG": 1,
+    "SKL": 2,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 1,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Sage",
@@ -3693,21 +6469,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 22,
+   "HP": 35,
    "STR": 0,
-   "MAG": 7,
-   "SKL": 7,
-   "SPD": 8,
+   "MAG": 15,
+   "SKL": 12,
+   "SPD": 15,
    "LCK": 0,
-   "DEF": 4,
-   "RES": 7,
+   "DEF": 3,
+   "RES": 12,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 65,
    "STR": 0,
-   "MAG": 35,
+   "MAG": 45,
    "SKL": 30,
    "SPD": 25,
    "LCK": 10,
@@ -3730,15 +6506,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 0,
-   "MAG": 27,
+   "STR": 15,
+   "MAG": 30,
    "SKL": 27,
-   "SPD": 25,
+   "SPD": 30,
    "LCK": 30,
-   "DEF": 20,
-   "RES": 26,
+   "DEF": 18,
+   "RES": 27,
    "CON": 6,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Anima": 126,
@@ -3747,7 +6523,139 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Sage",
-  "combat_anim_nid": "Sage"
+  "combat_anim_nid": "Sage",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 35,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 12,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 12
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 15,
+     "MAG": 30,
+     "SKL": 27,
+     "SPD": 30,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 27
+    },
+    "promotion_gains": {
+     "Bard": {
+      "STR": 0,
+      "MAG": 8,
+      "SKL": 5,
+      "SPD": 5,
+      "DEF": 0,
+      "RES": 5,
+      "MOV": 0,
+      "LCK": 0
+     },
+     "LightPriestess": {
+      "STR": 0,
+      "MAG": 7,
+      "SKL": 5,
+      "SPD": 8,
+      "DEF": 0,
+      "RES": 2,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 7,
+     "SKL": 7,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 4,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Bard": {
+      "STR": 0,
+      "MAG": 6,
+      "SKL": 6,
+      "SPD": 4,
+      "DEF": 4,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     },
+     "Mage@Asbel": {
+      "STR": 0,
+      "MAG": 5,
+      "SKL": 5,
+      "SPD": 6,
+      "DEF": 4,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     },
+     "LightPriestess": {
+      "STR": 0,
+      "MAG": 6,
+      "SKL": 5,
+      "SPD": 5,
+      "DEF": 3,
+      "RES": 1,
+      "MOV": 2,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Bard": {
+    "STR": 0,
+    "MAG": 8,
+    "SKL": 6,
+    "SPD": 5,
+    "DEF": 4,
+    "RES": 5,
+    "MOV": 1,
+    "LCK": 0
+   },
+   "Mage@Asbel": {
+    "STR": 0,
+    "MAG": 5,
+    "SKL": 5,
+    "SPD": 6,
+    "DEF": 4,
+    "RES": 1,
+    "MOV": 1,
+    "LCK": 0
+   },
+   "LightPriestess": {
+    "STR": 0,
+    "MAG": 7,
+    "SKL": 5,
+    "SPD": 8,
+    "DEF": 3,
+    "RES": 2,
+    "MOV": 2,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Sniper",
@@ -3760,21 +6668,21 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 7,
+   "HP": 40,
+   "STR": 12,
    "MAG": 0,
-   "SKL": 7,
-   "SPD": 8,
+   "SKL": 12,
+   "SPD": 12,
    "LCK": 0,
-   "DEF": 5,
-   "RES": 4,
+   "DEF": 7,
+   "RES": 3,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 75,
-   "STR": 30,
-   "MAG": 10,
+   "STR": 40,
+   "MAG": 0,
    "SKL": 30,
    "SPD": 25,
    "LCK": 15,
@@ -3797,22 +6705,104 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 24,
-   "MAG": 0,
+   "STR": 27,
+   "MAG": 15,
    "SKL": 27,
    "SPD": 27,
-   "LCK": 28,
-   "DEF": 23,
-   "RES": 22,
+   "LCK": 30,
+   "DEF": 22,
+   "RES": 18,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Bow": 226
   },
   "learned_skills": [],
   "map_sprite_nid": "Sniper",
-  "combat_anim_nid": "Sniper"
+  "combat_anim_nid": "Sniper",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 12,
+     "MAG": 0,
+     "SKL": 12,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 7,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 27,
+     "MAG": 15,
+     "SKL": 27,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "Archer": {
+      "STR": 5,
+      "MAG": 0,
+      "SKL": 2,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 22,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 6,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Archer": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 2,
+      "RES": 1,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Archer": {
+    "STR": 5,
+    "MAG": 1,
+    "SKL": 3,
+    "SPD": 3,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Soldier",
@@ -3825,16 +6815,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 22,
-   "STR": 4,
+   "HP": 30,
+   "STR": 6,
    "MAG": 0,
-   "SKL": 1,
-   "SPD": 2,
+   "SKL": 5,
+   "SPD": 5,
    "LCK": 0,
-   "DEF": 2,
+   "DEF": 7,
    "RES": 0,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 60,
@@ -3861,23 +6851,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
+   "HP": 80,
    "STR": 20,
-   "MAG": 0,
+   "MAG": 20,
    "SKL": 20,
    "SPD": 20,
    "LCK": 20,
    "DEF": 20,
    "RES": 20,
    "CON": 6,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Lance": 51
   },
   "learned_skills": [],
   "map_sprite_nid": "Soldier",
-  "combat_anim_nid": "Soldier"
+  "combat_anim_nid": "Soldier",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 6,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 0,
+     "DEF": 7,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 20
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 20,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Swordfighter",
@@ -3892,16 +6928,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 18,
-   "STR": 4,
+   "HP": 30,
+   "STR": 7,
    "MAG": 0,
-   "SKL": 8,
-   "SPD": 8,
+   "SKL": 10,
+   "SPD": 10,
    "LCK": 0,
-   "DEF": 3,
-   "RES": 1,
+   "DEF": 5,
+   "RES": 0,
    "CON": 8,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 75,
@@ -3928,23 +6964,69 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 20,
+   "HP": 80,
+   "STR": 22,
    "MAG": 15,
-   "SKL": 21,
-   "SPD": 21,
+   "SKL": 25,
+   "SPD": 25,
    "LCK": 30,
    "DEF": 20,
-   "RES": 20,
+   "RES": 15,
    "CON": 8,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 126
   },
   "learned_skills": [],
   "map_sprite_nid": "Swordfighter",
-  "combat_anim_nid": "Swordmaster"
+  "combat_anim_nid": "Swordmaster",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 30,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 22,
+     "MAG": 15,
+     "SKL": 25,
+     "SPD": 25,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 19,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Swordmaster",
@@ -3957,16 +7039,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 24,
-   "STR": 7,
-   "MAG": 1,
-   "SKL": 11,
-   "SPD": 12,
+   "HP": 40,
+   "STR": 12,
+   "MAG": 0,
+   "SKL": 15,
+   "SPD": 15,
    "LCK": 0,
-   "DEF": 5,
+   "DEF": 7,
    "RES": 3,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 80,
@@ -3994,22 +7076,104 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 23,
-   "MAG": 18,
-   "SKL": 26,
-   "SPD": 26,
-   "LCK": 28,
+   "STR": 27,
+   "MAG": 15,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 30,
    "DEF": 22,
-   "RES": 23,
+   "RES": 18,
    "CON": 7,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 226
   },
   "learned_skills": [],
   "map_sprite_nid": "Swordmaster",
-  "combat_anim_nid": "Swordmaster"
+  "combat_anim_nid": "Swordmaster",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 12,
+     "MAG": 0,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 7,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 27,
+     "MAG": 15,
+     "SKL": 30,
+     "SPD": 30,
+     "LCK": 30,
+     "DEF": 22,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "Swordfighter": {
+      "STR": 5,
+      "MAG": 0,
+      "SKL": 5,
+      "SPD": 5,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 24,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 8,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 4,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Swordfighter": {
+      "STR": 2,
+      "MAG": 1,
+      "SKL": 3,
+      "SPD": 3,
+      "DEF": 2,
+      "RES": 0,
+      "MOV": 1,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Swordfighter": {
+    "STR": 5,
+    "MAG": 1,
+    "SKL": 5,
+    "SPD": 5,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 1,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Tester",
@@ -4051,7 +7215,7 @@
    "DEF": 53,
    "RES": 2,
    "CON": 13,
-   "MOV": 150
+   "MOV": 15
   },
   "growths": {
    "HP": 100,
@@ -4087,7 +7251,7 @@
    "DEF": 30,
    "RES": 30,
    "CON": 25,
-   "MOV": 150
+   "MOV": 15
   },
   "wexp_gain": {
    "Sword": 1023,
@@ -4118,16 +7282,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 17,
-   "STR": 2,
+   "HP": 26,
+   "STR": 3,
    "MAG": 3,
-   "SKL": 4,
-   "SPD": 4,
+   "SKL": 6,
+   "SPD": 6,
    "LCK": 0,
-   "DEF": 4,
-   "RES": 6,
+   "DEF": 3,
+   "RES": 3,
    "CON": 6,
-   "MOV": 70
+   "MOV": 7
   },
   "growths": {
    "HP": 60,
@@ -4154,16 +7318,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 20,
-   "MAG": 20,
-   "SKL": 20,
-   "SPD": 20,
-   "LCK": 28,
-   "DEF": 21,
-   "RES": 24,
+   "HP": 80,
+   "STR": 18,
+   "MAG": 18,
+   "SKL": 21,
+   "SPD": 21,
+   "LCK": 30,
+   "DEF": 18,
+   "RES": 18,
    "CON": 6,
-   "MOV": 70
+   "MOV": 7
   },
   "wexp_gain": {
    "Sword": 126,
@@ -4176,7 +7340,53 @@
    ]
   ],
   "map_sprite_nid": "Troubadour",
-  "combat_anim_nid": "Troubadour"
+  "combat_anim_nid": "Troubadour",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 26,
+     "STR": 3,
+     "MAG": 3,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 18,
+     "MAG": 18,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 30,
+     "DEF": 18,
+     "RES": 18
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 16,
+     "STR": 2,
+     "MAG": 2,
+     "SKL": 2,
+     "SPD": 3,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 30,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    }
+   }
+  }
  },
  {
   "id": "Warrior",
@@ -4189,16 +7399,16 @@
   "tags": [],
   "max_level": 19,
   "bases": {
-   "HP": 30,
-   "STR": 9,
+   "HP": 40,
+   "STR": 11,
    "MAG": 0,
    "SKL": 5,
-   "SPD": 7,
+   "SPD": 12,
    "LCK": 0,
-   "DEF": 6,
-   "RES": 2,
+   "DEF": 10,
+   "RES": 3,
    "CON": 13,
-   "MOV": 60
+   "MOV": 6
   },
   "growths": {
    "HP": 90,
@@ -4226,15 +7436,15 @@
   },
   "caps": {
    "HP": 80,
-   "STR": 27,
-   "MAG": 0,
-   "SKL": 24,
-   "SPD": 25,
-   "LCK": 28,
+   "STR": 26,
+   "MAG": 15,
+   "SKL": 20,
+   "SPD": 27,
+   "LCK": 30,
    "DEF": 25,
-   "RES": 20,
+   "RES": 18,
    "CON": 13,
-   "MOV": 60
+   "MOV": 6
   },
   "wexp_gain": {
    "Axe": 126,
@@ -4242,7 +7452,119 @@
   },
   "learned_skills": [],
   "map_sprite_nid": "Warrior",
-  "combat_anim_nid": "Warrior"
+  "combat_anim_nid": "Warrior",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 40,
+     "STR": 11,
+     "MAG": 0,
+     "SKL": 5,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 3
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 26,
+     "MAG": 15,
+     "SKL": 20,
+     "SPD": 27,
+     "LCK": 30,
+     "DEF": 25,
+     "RES": 18
+    },
+    "promotion_gains": {
+     "Fighter": {
+      "STR": 3,
+      "MAG": 0,
+      "SKL": 2,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 0,
+      "LCK": 0
+     },
+     "Bandit": {
+      "STR": 3,
+      "MAG": 1,
+      "SKL": 5,
+      "SPD": 6,
+      "DEF": 3,
+      "RES": 1,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 28,
+     "STR": 8,
+     "MAG": 1,
+     "SKL": 5,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 6,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 20,
+     "MAG": 20,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 20,
+     "DEF": 20,
+     "RES": 0
+    },
+    "promotion_gains": {
+     "Fighter": {
+      "STR": 3,
+      "MAG": 0,
+      "SKL": 2,
+      "SPD": 2,
+      "DEF": 2,
+      "RES": 3,
+      "MOV": 0,
+      "LCK": 0
+     },
+     "Bandit": {
+      "STR": 3,
+      "MAG": 1,
+      "SKL": 5,
+      "SPD": 6,
+      "DEF": 3,
+      "RES": 1,
+      "MOV": 0,
+      "LCK": 0
+     }
+    }
+   }
+  },
+  "promotion_gains": {
+   "Fighter": {
+    "STR": 3,
+    "MAG": 0,
+    "SKL": 2,
+    "SPD": 2,
+    "DEF": 2,
+    "RES": 3,
+    "MOV": 0,
+    "LCK": 0
+   },
+   "Bandit": {
+    "STR": 3,
+    "MAG": 1,
+    "SKL": 5,
+    "SPD": 6,
+    "DEF": 3,
+    "RES": 1,
+    "MOV": 0,
+    "LCK": 0
+   }
+  }
  },
  {
   "id": "Thief",
@@ -4259,16 +7581,16 @@
   ],
   "max_level": 19,
   "bases": {
-   "HP": 18,
+   "HP": 26,
    "STR": 3,
    "MAG": 0,
-   "SKL": 2,
-   "SPD": 6,
-   "LCK": 0,
+   "SKL": 3,
+   "SPD": 0,
+   "LCK": 7,
    "DEF": 1,
-   "RES": 1,
+   "RES": 0,
    "CON": 5,
-   "MOV": 50
+   "MOV": 5
   },
   "growths": {
    "HP": 75,
@@ -4295,16 +7617,16 @@
    "MOV": 0
   },
   "caps": {
-   "HP": 70,
-   "STR": 20,
+   "HP": 80,
+   "STR": 18,
    "MAG": 15,
-   "SKL": 20,
-   "SPD": 20,
+   "SKL": 18,
+   "SPD": 22,
    "LCK": 30,
-   "DEF": 19,
-   "RES": 19,
+   "DEF": 16,
+   "RES": 15,
    "CON": 5,
-   "MOV": 50
+   "MOV": 5
   },
   "wexp_gain": {
    "Sword": 51
@@ -4316,6 +7638,42 @@
    ]
   ],
   "map_sprite_nid": "Thief",
-  "combat_anim_nid": "Thief"
+  "combat_anim_nid": "Thief",
+  "versions": {
+   "FE4": {
+    "bases": {
+     "HP": 26,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 0,
+     "LCK": 7,
+     "DEF": 1,
+     "RES": 0
+    },
+    "caps": {
+     "HP": 80,
+     "STR": 18,
+     "MAG": 15,
+     "SKL": 18,
+     "SPD": 22,
+     "LCK": 30,
+     "DEF": 16,
+     "RES": 15
+    }
+   },
+   "FE5": {
+    "bases": {
+     "HP": 15,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    }
+   }
+  }
  }
 ]

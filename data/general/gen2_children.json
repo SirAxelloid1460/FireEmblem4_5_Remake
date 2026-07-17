@@ -1,0 +1,5476 @@
+{
+ "_meta": {
+  "generated_from": "gen2_inheritance_source.json (fireemblemwod)",
+  "model": "final = base +/- father_mods[father]; growth idem; base = min Nv.1 entre padres",
+  "class_map": {
+   "Arch Knight": "ArcherKnight",
+   "Sword Fighter": "Swordfighter",
+   "Free Knight": "FreeKnight",
+   "Bow Fighter": "Archer",
+   "Priest": "Priest",
+   "Troubadour": "Troubadour",
+   "Dancer": "Dancer",
+   "Sage": "Sage",
+   "Pegasus Knight": "PegasusKnight",
+   "Thief": "Thief",
+   "Mage": "Mage"
+  },
+  "note": "Ajusta libremente base_stats/base_growths/father_mods; skills en crudo (nombres de la fuente)."
+ },
+ "Lester": {
+  "klass": "ArcherKnight",
+  "klass_source": "Arch Knight",
+  "holy_blood": {
+   "Ulir": "Minor"
+  },
+  "personal_skills": [],
+  "starting_items": [
+   "Iron Bow"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 25,
+   "MAG": 15,
+   "SKL": 23,
+   "SPD": 23,
+   "LCK": 30,
+   "DEF": 23,
+   "RES": 18
+  },
+  "base_stats": {
+   "HP": 27,
+   "STR": 7,
+   "MAG": 1,
+   "SKL": 7,
+   "SPD": 8,
+   "LCK": 9,
+   "DEF": 7,
+   "RES": 0
+  },
+  "base_growths": {
+   "HP": 95,
+   "STR": 20,
+   "MAG": 15,
+   "SKL": 20,
+   "SPD": 35,
+   "LCK": 55,
+   "DEF": 30,
+   "RES": 7
+  },
+  "con": 8,
+  "mov": 7,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 3,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 20,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 5,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 3,
+     "SKL": 1,
+     "SPD": 2,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 30,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (poca)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 3,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (poca)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 4,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 2,
+     "LCK": 4,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 30,
+     "MAG": 10,
+     "SKL": 30,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 5
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 10,
+     "LCK": 30,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 60,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 70,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (poca)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 2,
+     "SKL": 2,
+     "SPD": 2,
+     "LCK": 2,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 30,
+     "SKL": 30,
+     "SPD": 70,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (mucha)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 3,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 0,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 0,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 0,
+     "RES": 3
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 0,
+     "RES": 45
+    },
+    "skills": [],
+    "blood": "Blaggi (mucha)"
+   }
+  }
+ },
+ "Lana": {
+  "klass": "Priest",
+  "klass_source": "Priest",
+  "holy_blood": {
+   "Ulir": "Minor"
+  },
+  "personal_skills": [],
+  "starting_items": [
+   "Heal",
+   "Warp"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 15,
+   "MAG": 27,
+   "SKL": 24,
+   "SPD": 23,
+   "LCK": 30,
+   "DEF": 18,
+   "RES": 23
+  },
+  "base_stats": {
+   "HP": 27,
+   "STR": 1,
+   "MAG": 9,
+   "SKL": 7,
+   "SPD": 8,
+   "LCK": 11,
+   "DEF": 2,
+   "RES": 7
+  },
+  "base_growths": {
+   "HP": 95,
+   "STR": 25,
+   "MAG": 30,
+   "SKL": 25,
+   "SPD": 40,
+   "LCK": 65,
+   "DEF": 30,
+   "RES": 7
+  },
+  "con": 6,
+  "mov": 6,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 10,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 2,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 35,
+     "SKL": 5,
+     "SPD": 15,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (pequeña)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 5,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (pequeña)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 5,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 1,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 15,
+     "MAG": 5,
+     "SKL": 15,
+     "SPD": 10,
+     "LCK": 15,
+     "DEF": 10,
+     "RES": 3
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 5,
+     "LCK": 15,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 50,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (pequeña)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 2,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 35,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (pequeña)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 0,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 1,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 2
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 0,
+     "MAG": 20,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 0,
+     "RES": 23
+    },
+    "skills": [],
+    "blood": "Blaggi (pequeña)"
+   }
+  }
+ },
+ "Larcei": {
+  "klass": "Swordfighter",
+  "klass_source": "Sword Fighter",
+  "holy_blood": {
+   "Od": "Minor"
+  },
+  "personal_skills": [
+   "Awareness",
+   "Shooting Star Sword"
+  ],
+  "starting_items": [
+   "Iron Blade",
+   "Brave Sword"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 27,
+   "MAG": 15,
+   "SKL": 30,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 22,
+   "RES": 18
+  },
+  "base_stats": {
+   "HP": 28,
+   "STR": 9,
+   "MAG": 0,
+   "SKL": 13,
+   "SPD": 13,
+   "LCK": 8,
+   "DEF": 6,
+   "RES": 0
+  },
+  "base_growths": {
+   "HP": 95,
+   "STR": 35,
+   "MAG": 5,
+   "SKL": 65,
+   "SPD": 40,
+   "LCK": 25,
+   "DEF": 30,
+   "RES": 7
+  },
+  "con": 8,
+  "mov": 5,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 10,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 2,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 35,
+     "SKL": 5,
+     "SPD": 15,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (poca)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 5,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (poca)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 5,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 15,
+     "MAG": 5,
+     "SKL": 15,
+     "SPD": 10,
+     "LCK": 15,
+     "DEF": 10,
+     "RES": 3
+    },
+    "skills": [
+     "Sun Sword",
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 5,
+     "LCK": 15,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 50,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Moonlight Sword"
+    ],
+    "blood": "Odo (mucha)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 2,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 35,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (poca)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 0,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 1,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 0,
+     "MAG": 20,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 0,
+     "RES": 23
+    },
+    "skills": [],
+    "blood": "Blaggi (poca)"
+   }
+  }
+ },
+ "Ulster": {
+  "klass": "Swordfighter",
+  "klass_source": "Sword Fighter",
+  "holy_blood": {
+   "Od": "Minor"
+  },
+  "personal_skills": [],
+  "starting_items": [],
+  "max_stats": {
+   "HP": 80,
+   "STR": 27,
+   "MAG": 18,
+   "SKL": 27,
+   "SPD": 27,
+   "LCK": 30,
+   "DEF": 22,
+   "RES": 18
+  },
+  "base_stats": {
+   "HP": 27,
+   "STR": 8,
+   "MAG": 0,
+   "SKL": 12,
+   "SPD": 12,
+   "LCK": 7,
+   "DEF": 6,
+   "RES": 0
+  },
+  "base_growths": {
+   "HP": 95,
+   "STR": 25,
+   "MAG": 2,
+   "SKL": 55,
+   "SPD": 35,
+   "LCK": 20,
+   "DEF": 30,
+   "RES": 7
+  },
+  "con": 8,
+  "mov": 5,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 3,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 20,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 5,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 5,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 3,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 0,
+     "SPD": 2,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 30,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (poca)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 4,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (poca)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 2,
+     "LCK": 4,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 2,
+     "LCK": 4,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 30,
+     "MAG": 10,
+     "SKL": 30,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 5
+    },
+    "skills": [
+     "Sun Sword",
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 10,
+     "LCK": 30,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 4,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 60,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 70,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Moonlight Sword"
+    ],
+    "blood": "Odo (mucha)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 4,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 2,
+     "SPD": 2,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 30,
+     "SKL": 30,
+     "SPD": 70,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (mucha)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 3,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 0,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 1,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 0,
+     "RES": 3
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 0,
+     "RES": 45
+    },
+    "skills": [],
+    "blood": "Blaggi (mucha)"
+   }
+  }
+ },
+ "Delmud": {
+  "klass": "FreeKnight",
+  "klass_source": "Free Knight",
+  "holy_blood": {
+   "Hezul": "Minor"
+  },
+  "personal_skills": [
+   "Charisma",
+   "Continue"
+  ],
+  "starting_items": [],
+  "max_stats": {
+   "HP": 80,
+   "STR": 23,
+   "MAG": 15,
+   "SKL": 30,
+   "SPD": 27,
+   "LCK": 30,
+   "DEF": 23,
+   "RES": 18
+  },
+  "base_stats": {
+   "HP": 28,
+   "STR": 9,
+   "MAG": 0,
+   "SKL": 7,
+   "SPD": 8,
+   "LCK": 8,
+   "DEF": 7,
+   "RES": 0
+  },
+  "base_growths": {
+   "HP": 90,
+   "STR": 50,
+   "MAG": 2,
+   "SKL": 15,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 30,
+   "RES": 10
+  },
+  "con": 8,
+  "mov": 7,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 3,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 20,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 5,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 5,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 3,
+     "SKL": 1,
+     "SPD": 3,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 30,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (poca)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 0,
+     "LCK": 2,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (poca)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 5,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 3,
+     "LCK": 5,
+     "DEF": 3,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 30,
+     "MAG": 10,
+     "SKL": 30,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 5
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 3,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 3,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 10,
+     "LCK": 30,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 6,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 60,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 70,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (poca)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 4,
+     "STR": 1,
+     "MAG": 2,
+     "SKL": 2,
+     "SPD": 4,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 30,
+     "SKL": 30,
+     "SPD": 70,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (Mucha)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 0,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 1,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 3,
+     "DEF": 0,
+     "RES": 4
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 0,
+     "RES": 45
+    },
+    "skills": [],
+    "blood": "Blaggi (mucha)"
+   }
+  }
+ },
+ "Nanna": {
+  "klass": "Troubadour",
+  "klass_source": "Troubadour",
+  "holy_blood": {
+   "Hezul": "Minor"
+  },
+  "personal_skills": [
+   "Charisma"
+  ],
+  "starting_items": [
+   "Iron Sword",
+   "Mend",
+   "Prayer Sword",
+   "Thief Sword",
+   "Knight Ring",
+   "Earth Sword"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 24,
+   "MAG": 20,
+   "SKL": 24,
+   "SPD": 24,
+   "LCK": 30,
+   "DEF": 24,
+   "RES": 20
+  },
+  "base_stats": {
+   "HP": 28,
+   "STR": 6,
+   "MAG": 3,
+   "SKL": 7,
+   "SPD": 8,
+   "LCK": 9,
+   "DEF": 4,
+   "RES": 4
+  },
+  "base_growths": {
+   "HP": 85,
+   "STR": 55,
+   "MAG": 5,
+   "SKL": 15,
+   "SPD": 30,
+   "LCK": 45,
+   "DEF": 30,
+   "RES": 12
+  },
+  "con": 6,
+  "mov": 7,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 10,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 35,
+     "SKL": 5,
+     "SPD": 15,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (poca)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 5,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (poca)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 3,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 5,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 3,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 15,
+     "MAG": 5,
+     "SKL": 15,
+     "SPD": 10,
+     "LCK": 15,
+     "DEF": 10,
+     "RES": 3
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 5,
+     "LCK": 15,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 50,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (poca)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 2,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 35,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (poca)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 0,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 0,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 0,
+     "MAG": 20,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 0,
+     "RES": 23
+    },
+    "skills": [],
+    "blood": "Blaggi (poca)"
+   }
+  }
+ },
+ "Coirpre": {
+  "klass": "Priest",
+  "klass_source": "Priest",
+  "holy_blood": {
+   "Bragi": "Minor"
+  },
+  "personal_skills": [
+   "Continue",
+   "Prayer"
+  ],
+  "starting_items": [
+   "Reblow"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 15,
+   "MAG": 27,
+   "SKL": 24,
+   "SPD": 23,
+   "LCK": 30,
+   "DEF": 18,
+   "RES": 23
+  },
+  "base_stats": {
+   "HP": 26,
+   "STR": 0,
+   "MAG": 7,
+   "SKL": 7,
+   "SPD": 8,
+   "LCK": 8,
+   "DEF": 2,
+   "RES": 8
+  },
+  "base_growths": {
+   "HP": 80,
+   "STR": 15,
+   "MAG": 20,
+   "SKL": 15,
+   "SPD": 25,
+   "LCK": 30,
+   "DEF": 25,
+   "RES": 35
+  },
+  "con": 6,
+  "mov": 6,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 20,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 5,
+     "STR": 3,
+     "MAG": 1,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 5,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 3,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 30,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (minor)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 4,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 2,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (minor)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 3,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 4,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 30,
+     "MAG": 10,
+     "SKL": 30,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 5
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 10,
+     "LCK": 30,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 5,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 60,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 70,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (minor)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 4,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 30,
+     "SKL": 30,
+     "SPD": 70,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (major)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 0,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 0,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 2,
+     "DEF": 0,
+     "RES": 3
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 0,
+     "MAG": 30,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 30,
+     "DEF": 0,
+     "RES": 25
+    },
+    "skills": [],
+    "blood": "Blaggi (major)"
+   }
+  }
+ },
+ "Lene": {
+  "klass": "Dancer",
+  "klass_source": "Dancer",
+  "holy_blood": {
+   "Bragi": "Minor"
+  },
+  "personal_skills": [
+   "Continue",
+   "Prayer",
+   "Dance"
+  ],
+  "starting_items": [
+   "Defender Sword"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 18,
+   "MAG": 15,
+   "SKL": 16,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 16,
+   "RES": 18
+  },
+  "base_stats": {
+   "HP": 28,
+   "STR": 3,
+   "MAG": 1,
+   "SKL": 2,
+   "SPD": 9,
+   "LCK": 9,
+   "DEF": 1,
+   "RES": 5
+  },
+  "base_growths": {
+   "HP": 75,
+   "STR": 15,
+   "MAG": 30,
+   "SKL": 15,
+   "SPD": 20,
+   "LCK": 35,
+   "DEF": 20,
+   "RES": 42
+  },
+  "con": 4,
+  "mov": 7,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 1,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 10,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 1,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 35,
+     "SKL": 5,
+     "SPD": 15,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (minor)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 5,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (minor)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 3,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 5,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 1,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 3,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 15,
+     "MAG": 5,
+     "SKL": 15,
+     "SPD": 10,
+     "LCK": 15,
+     "DEF": 10,
+     "RES": 3
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 5,
+     "LCK": 15,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 50,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (minor)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 2,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 1,
+     "SPD": 2,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 35,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (minor)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 1,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 0,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 0,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 2,
+     "DEF": 0,
+     "RES": 3
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 0,
+     "MAG": 20,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 0,
+     "RES": 23
+    },
+    "skills": [],
+    "blood": "Blaggi (major)"
+   }
+  }
+ },
+ "Ced": {
+  "klass": "Sage",
+  "klass_source": "Sage",
+  "holy_blood": {},
+  "personal_skills": [
+   "Pursuit",
+   "Continue"
+  ],
+  "starting_items": [
+   "Lightning"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 15,
+   "MAG": 30,
+   "SKL": 27,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 18,
+   "RES": 27
+  },
+  "base_stats": {
+   "HP": 36,
+   "STR": 3,
+   "MAG": 15,
+   "SKL": 15,
+   "SPD": 17,
+   "LCK": 10,
+   "DEF": 8,
+   "RES": 13
+  },
+  "base_growths": {
+   "HP": 75,
+   "STR": 20,
+   "MAG": 5,
+   "SKL": 20,
+   "SPD": 35,
+   "LCK": 20,
+   "DEF": 35,
+   "RES": 10
+  },
+  "con": 6,
+  "mov": 6,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 7,
+     "STR": 6,
+     "MAG": 1,
+     "SKL": 4,
+     "SPD": 4,
+     "LCK": 2,
+     "DEF": 5,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 5,
+     "STR": 4,
+     "MAG": 1,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 4,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 20,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 10,
+     "STR": 7,
+     "MAG": 1,
+     "SKL": 0,
+     "SPD": 4,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 5,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 5,
+     "STR": 0,
+     "MAG": 8,
+     "SKL": 2,
+     "SPD": 10,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 30,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (minor)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 9,
+     "STR": 6,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 5,
+     "LCK": 2,
+     "DEF": 7,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (minor)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 5,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 8,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 3,
+     "STR": 4,
+     "MAG": 1,
+     "SKL": 4,
+     "SPD": 9,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 6,
+     "MAG": 1,
+     "SKL": 6,
+     "SPD": 9,
+     "LCK": 7,
+     "DEF": 5,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 30,
+     "MAG": 10,
+     "SKL": 30,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 5
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 9,
+     "STR": 7,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 6,
+     "LCK": 5,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 10,
+     "LCK": 30,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 12,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 11,
+     "SPD": 6,
+     "LCK": 1,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 60,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 70,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (minor)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 9,
+     "STR": 0,
+     "MAG": 6,
+     "SKL": 6,
+     "SPD": 0,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 30,
+     "SKL": 30,
+     "SPD": 70,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (major)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 7,
+     "STR": 6,
+     "MAG": 0,
+     "SKL": 6,
+     "SPD": 6,
+     "LCK": 1,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 0,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 3,
+     "STR": 0,
+     "MAG": 7,
+     "SKL": 2,
+     "SPD": 6,
+     "LCK": 6,
+     "DEF": 0,
+     "RES": 9
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 0,
+     "RES": 45
+    },
+    "skills": [],
+    "blood": "Blaggi (major)"
+   }
+  }
+ },
+ "Fee": {
+  "klass": "PegasusKnight",
+  "klass_source": "Pegasus Knight",
+  "holy_blood": {},
+  "personal_skills": [
+   "Pursuit",
+   "Continue"
+  ],
+  "starting_items": [
+   "Slim Lance",
+   "Berserk Sword"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 22,
+   "MAG": 22,
+   "SKL": 25,
+   "SPD": 30,
+   "LCK": 30,
+   "DEF": 21,
+   "RES": 27
+  },
+  "base_stats": {
+   "HP": 27,
+   "STR": 8,
+   "MAG": 0,
+   "SKL": 9,
+   "SPD": 15,
+   "LCK": 8,
+   "DEF": 7,
+   "RES": 7
+  },
+  "base_growths": {
+   "HP": 75,
+   "STR": 25,
+   "MAG": 10,
+   "SKL": 25,
+   "SPD": 40,
+   "LCK": 25,
+   "DEF": 40,
+   "RES": 12
+  },
+  "con": 5,
+  "mov": 7,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 10,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 35,
+     "SKL": 5,
+     "SPD": 15,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (minor)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 5,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (minor)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 5,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 15,
+     "MAG": 5,
+     "SKL": 15,
+     "SPD": 10,
+     "LCK": 15,
+     "DEF": 10,
+     "RES": 3
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 5,
+     "LCK": 15,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 50,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (minor)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 35,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (minor)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 0,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 0,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 2
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 0,
+     "MAG": 20,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 0,
+     "RES": 23
+    },
+    "skills": [],
+    "blood": "Blaggi (minor)"
+   }
+  }
+ },
+ "Faval": {
+  "klass": "Archer",
+  "klass_source": "Bow Fighter",
+  "holy_blood": {
+   "Ulir": "Major"
+  },
+  "personal_skills": [
+   "Pursuit"
+  ],
+  "starting_items": [
+   "Silver Bow",
+   "Steel Bow",
+   "Yewfelle"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 27,
+   "MAG": 15,
+   "SKL": 27,
+   "SPD": 27,
+   "LCK": 30,
+   "DEF": 22,
+   "RES": 18
+  },
+  "base_stats": {
+   "HP": 38,
+   "STR": 10,
+   "MAG": 0,
+   "SKL": 14,
+   "SPD": 14,
+   "LCK": 14,
+   "DEF": 8,
+   "RES": 0
+  },
+  "base_growths": {
+   "HP": 115,
+   "STR": 25,
+   "MAG": 10,
+   "SKL": 25,
+   "SPD": 30,
+   "LCK": 75,
+   "DEF": 30,
+   "RES": 7
+  },
+  "con": 6,
+  "mov": 5,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 5,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 4,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 3,
+     "STR": 3,
+     "MAG": 1,
+     "SKL": 4,
+     "SPD": 2,
+     "LCK": 3,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 20,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 6,
+     "STR": 6,
+     "MAG": 1,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 4,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 5,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 3,
+     "STR": 0,
+     "MAG": 7,
+     "SKL": 0,
+     "SPD": 4,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 30,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (little)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 5,
+     "STR": 5,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 5,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (little)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 1,
+     "SKL": 4,
+     "SPD": 2,
+     "LCK": 7,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 2,
+     "STR": 3,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 4,
+     "LCK": 1,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 4,
+     "MAG": 1,
+     "SKL": 4,
+     "SPD": 4,
+     "LCK": 6,
+     "DEF": 4,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 30,
+     "MAG": 10,
+     "SKL": 30,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 5
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 6,
+     "STR": 6,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 2,
+     "LCK": 4,
+     "DEF": 3,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 10,
+     "LCK": 30,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 8,
+     "STR": 3,
+     "MAG": 1,
+     "SKL": 7,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 60,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 70,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (little)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 4,
+     "STR": 1,
+     "MAG": 5,
+     "SKL": 4,
+     "SPD": 5,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 30,
+     "SKL": 30,
+     "SPD": 40,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (little)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 5,
+     "STR": 5,
+     "MAG": 0,
+     "SKL": 4,
+     "SPD": 2,
+     "LCK": 1,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 0,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 0,
+     "STR": 0,
+     "MAG": 5,
+     "SKL": 0,
+     "SPD": 2,
+     "LCK": 4,
+     "DEF": 0,
+     "RES": 5
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 0,
+     "MAG": 30,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 30,
+     "DEF": 0,
+     "RES": 25
+    },
+    "skills": [],
+    "blood": "Blagi (little)"
+   }
+  }
+ },
+ "Patty": {
+  "klass": "Thief",
+  "klass_source": "Thief",
+  "holy_blood": {
+   "Ulir": "Minor"
+  },
+  "personal_skills": [],
+  "starting_items": [],
+  "max_stats": {
+   "HP": 80,
+   "STR": 22,
+   "MAG": 18,
+   "SKL": 22,
+   "SPD": 27,
+   "LCK": 30,
+   "DEF": 20,
+   "RES": 18
+  },
+  "base_stats": {
+   "HP": 29,
+   "STR": 5,
+   "MAG": 0,
+   "SKL": 6,
+   "SPD": 10,
+   "LCK": 10,
+   "DEF": 3,
+   "RES": 1
+  },
+  "base_growths": {
+   "HP": 95,
+   "STR": 35,
+   "MAG": 20,
+   "SKL": 35,
+   "SPD": 30,
+   "LCK": 45,
+   "DEF": 30,
+   "RES": 7
+  },
+  "con": 5,
+  "mov": 5,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 10,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 2,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 35,
+     "SKL": 5,
+     "SPD": 15,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (minor)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 5,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (minor)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 5,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 1,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 15,
+     "MAG": 5,
+     "SKL": 15,
+     "SPD": 10,
+     "LCK": 15,
+     "DEF": 10,
+     "RES": 3
+    },
+    "skills": [
+     "Sun Sword",
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 5,
+     "LCK": 15,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 50,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "MoonLight Sword"
+    ],
+    "blood": "Odo (minor)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 2,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 65,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (major)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 2,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 0,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 1,
+     "STR": 0,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 30,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 30,
+     "DEF": 0,
+     "RES": 43
+    },
+    "skills": [],
+    "blood": "Blaggi (major)"
+   }
+  }
+ },
+ "Arthur": {
+  "klass": "Mage",
+  "klass_source": "Mage",
+  "holy_blood": {
+   "Thrud": "Minor"
+  },
+  "personal_skills": [
+   "Wrath"
+  ],
+  "starting_items": [
+   "Wind"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 20,
+   "MAG": 25,
+   "SKL": 22,
+   "SPD": 22,
+   "LCK": 30,
+   "DEF": 20,
+   "RES": 22
+  },
+  "base_stats": {
+   "HP": 27,
+   "STR": 0,
+   "MAG": 7,
+   "SKL": 8,
+   "SPD": 8,
+   "LCK": 9,
+   "DEF": 2,
+   "RES": 5
+  },
+  "base_growths": {
+   "HP": 90,
+   "STR": 15,
+   "MAG": 10,
+   "SKL": 55,
+   "SPD": 40,
+   "LCK": 35,
+   "DEF": 25,
+   "RES": 10
+  },
+  "con": 6,
+  "mov": 5,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 20,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 5,
+     "STR": 3,
+     "MAG": 1,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 5,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 3,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 0,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 30,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (poca)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 4,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 2,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 30,
+     "MAG": 5,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 10,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (poca)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 2,
+     "LCK": 3,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 2,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 0,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 2,
+     "SPD": 2,
+     "LCK": 3,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 30,
+     "MAG": 10,
+     "SKL": 30,
+     "SPD": 20,
+     "LCK": 30,
+     "DEF": 20,
+     "RES": 5
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 40,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 10,
+     "LCK": 30,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 6,
+     "STR": 2,
+     "MAG": 1,
+     "SKL": 3,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 60,
+     "STR": 20,
+     "MAG": 5,
+     "SKL": 70,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (poca)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 4,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 2,
+     "SPD": 3,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 0,
+     "MAG": 30,
+     "SKL": 30,
+     "SPD": 70,
+     "LCK": 10,
+     "DEF": 0,
+     "RES": 5
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (mucha)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 4,
+     "STR": 3,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 30,
+     "MAG": 0,
+     "SKL": 30,
+     "SPD": 10,
+     "LCK": 10,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 1,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 0,
+     "RES": 3
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 40,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 40,
+     "DEF": 0,
+     "RES": 45
+    },
+    "skills": [],
+    "blood": "Blaggi (mucha)"
+   }
+  }
+ },
+ "Tine": {
+  "klass": "Mage",
+  "klass_source": "Mage",
+  "holy_blood": {
+   "Thrud": "Minor"
+  },
+  "personal_skills": [
+   "Wrath",
+   "Continue"
+  ],
+  "starting_items": [
+   "Elthunder",
+   "Thunder"
+  ],
+  "max_stats": {
+   "HP": 80,
+   "STR": 18,
+   "MAG": 27,
+   "SKL": 24,
+   "SPD": 27,
+   "LCK": 30,
+   "DEF": 20,
+   "RES": 25
+  },
+  "base_stats": {
+   "HP": 28,
+   "STR": 0,
+   "MAG": 8,
+   "SKL": 10,
+   "SPD": 10,
+   "LCK": 11,
+   "DEF": 2,
+   "RES": 6
+  },
+  "base_growths": {
+   "HP": 85,
+   "STR": 15,
+   "MAG": 20,
+   "SKL": 65,
+   "SPD": 50,
+   "LCK": 55,
+   "DEF": 20,
+   "RES": 12
+  },
+  "con": 6,
+  "mov": 5,
+  "father_mods": {
+   "Noish": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Critical",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Alec": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 10,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Awareness"
+    ],
+    "blood": ""
+   },
+   "Arden": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush"
+    ],
+    "blood": ""
+   },
+   "Azel": {
+    "base": {
+     "HP": 2,
+     "STR": 0,
+     "MAG": 3,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 35,
+     "SKL": 5,
+     "SPD": 15,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Pursuit"
+    ],
+    "blood": "Fala (minor)"
+   },
+   "Lex": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 1,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 30,
+     "STR": 15,
+     "MAG": 2,
+     "SKL": 5,
+     "SPD": 0,
+     "LCK": 5,
+     "DEF": 30,
+     "RES": 0
+    },
+    "skills": [
+     "Ambush",
+     "Elite"
+    ],
+    "blood": "Neir (minor)"
+   },
+   "Finn": {
+    "base": {
+     "HP": 2,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Prayer"
+    ],
+    "blood": ""
+   },
+   "Midir": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 5,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Dew": {
+    "base": {
+     "HP": 1,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 2,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 0,
+     "STR": 15,
+     "MAG": 5,
+     "SKL": 15,
+     "SPD": 10,
+     "LCK": 15,
+     "DEF": 10,
+     "RES": 3
+    },
+    "skills": [
+     "Bargain"
+    ],
+    "blood": ""
+   },
+   "Jamke": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 20,
+     "MAG": 0,
+     "SKL": 0,
+     "SPD": 5,
+     "LCK": 15,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Continue",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Holyn": {
+    "base": {
+     "HP": 3,
+     "STR": 1,
+     "MAG": 0,
+     "SKL": 2,
+     "SPD": 1,
+     "LCK": 0,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 2,
+     "SKL": 50,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [],
+    "blood": "Odo (minor)"
+   },
+   "Lewyn": {
+    "base": {
+     "HP": 3,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 20,
+     "STR": 0,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 35,
+     "LCK": 5,
+     "DEF": 0,
+     "RES": 3
+    },
+    "skills": [
+     "Continue",
+     "Critical"
+    ],
+    "blood": "Holsety (minor)"
+   },
+   "Beowulf": {
+    "base": {
+     "HP": 3,
+     "STR": 2,
+     "MAG": 0,
+     "SKL": 1,
+     "SPD": 1,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 0
+    },
+    "growth": {
+     "HP": 15,
+     "STR": 15,
+     "MAG": 0,
+     "SKL": 15,
+     "SPD": 5,
+     "LCK": 5,
+     "DEF": 5,
+     "RES": 0
+    },
+    "skills": [
+     "Pursuit",
+     "Charge"
+    ],
+    "blood": ""
+   },
+   "Claude": {
+    "base": {
+     "HP": 0,
+     "STR": 0,
+     "MAG": 1,
+     "SKL": 0,
+     "SPD": 0,
+     "LCK": 1,
+     "DEF": 0,
+     "RES": 1
+    },
+    "growth": {
+     "HP": 10,
+     "STR": 0,
+     "MAG": 20,
+     "SKL": 5,
+     "SPD": 5,
+     "LCK": 20,
+     "DEF": 0,
+     "RES": 23
+    },
+    "skills": [],
+    "blood": "Blaggi (minor)"
+   }
+  }
+ }
+}

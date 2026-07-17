@@ -516,8 +516,11 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
-  "status_on_equip": "Wrath",
+  "prf_units": [
+   "Delmud",
+   "Fergus"
+  ],
+  "status_on_equip": "Wrath,Vantage",
   "status_on_hit": "",
   "personal": false,
   "components": [
@@ -565,7 +568,7 @@
    ],
    [
     "status_on_equip",
-    "Wrath"
+    "Wrath,Vantage"
    ],
    [
     "crit",
@@ -578,6 +581,13 @@
    [
     "max_range",
     1
+   ],
+   [
+    "prf_unit",
+    [
+     "Delmud",
+     "Fergus"
+    ]
    ]
   ]
  },
@@ -797,8 +807,13 @@
   "effective_multiplier": 1,
   "effective_bonus": 5,
   "prf_tags": [],
-  "prf_units": [],
-  "status_on_equip": "Bragi Sword",
+  "prf_units": [
+   "Leif",
+   "Nanna",
+   "Fergus",
+   "Delmud"
+  ],
+  "status_on_equip": "Prayer,Blaggi",
   "status_on_hit": "",
   "personal": false,
   "components": [
@@ -850,7 +865,7 @@
    ],
    [
     "status_on_equip",
-    "Bragi Sword"
+    "Prayer,Blaggi"
    ],
    [
     "crit",
@@ -873,6 +888,15 @@
    [
     "effective_multiplier",
     1
+   ],
+   [
+    "prf_unit",
+    [
+     "Leif",
+     "Nanna",
+     "Fergus",
+     "Delmud"
+    ]
    ]
   ]
  },
@@ -1195,7 +1219,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -1264,7 +1290,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -1866,7 +1894,9 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Mareeta"
+  ],
   "status_on_equip": "DarknessSword",
   "status_on_hit": "",
   "personal": false,
@@ -1936,6 +1966,12 @@
    [
     "gba_steal",
     null
+   ],
+   [
+    "prf_unit",
+    [
+     "Mareeta"
+    ]
    ]
   ]
  },
@@ -2343,8 +2379,11 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
-  "status_on_equip": "No Big Shields",
+  "prf_units": [
+   "Lachesis",
+   "Nanna"
+  ],
+  "status_on_equip": "",
   "status_on_hit": "",
   "personal": false,
   "components": [
@@ -2391,10 +2430,6 @@
     5
    ],
    [
-    "status_on_equip",
-    "No Big Shields"
-   ],
-   [
     "crit",
     0
    ],
@@ -2412,7 +2447,7 @@
    ],
    [
     "lifelink",
-    1.0
+    0.5
    ],
    [
     "battle_cast_anim",
@@ -2421,6 +2456,17 @@
    [
     "magic_at_range",
     null
+   ],
+   [
+    "ignore_pavise",
+    true
+   ],
+   [
+    "prf_unit",
+    [
+     "Lachesis",
+     "Nanna"
+    ]
    ]
   ]
  },
@@ -3283,7 +3329,7 @@
   "nid": "Gae Bolg",
   "name": "Gae Bolg",
   "desc": "Sacred lance of the crusader Njörun.",
-  "weapon_type": "Sword",
+  "weapon_type": "Lance",
   "might": 25,
   "hit": 85,
   "weight": 8,
@@ -3332,7 +3378,7 @@
    ],
    [
     "weapon_type",
-    "Sword"
+    "Lance"
    ],
    [
     "uses",
@@ -3501,7 +3547,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -3566,7 +3614,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -4394,7 +4444,9 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Olwen"
+  ],
   "status_on_equip": "HolySword",
   "status_on_hit": "",
   "personal": false,
@@ -4464,6 +4516,12 @@
    [
     "max_range",
     1
+   ],
+   [
+    "prf_unit",
+    [
+     "Olwen"
+    ]
    ]
   ]
  },
@@ -4487,7 +4545,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
@@ -4560,6 +4620,12 @@
     "prf_tags",
     [
      "Ballistae"
+    ]
+   ],
+   [
+    "effective_tag",
+    [
+     "Flying"
     ]
    ]
   ]
@@ -4770,7 +4836,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -4831,7 +4899,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -5336,7 +5406,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
@@ -5409,6 +5481,12 @@
     "prf_tags",
     [
      "Ballistae"
+    ]
+   ],
+   [
+    "effective_tag",
+    [
+     "Flying"
     ]
    ]
   ]
@@ -5526,7 +5604,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -5591,7 +5671,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -6120,7 +6202,10 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Ethlyn",
+   "Leif"
+  ],
   "status_on_equip": "Luckily Light",
   "status_on_hit": "",
   "personal": false,
@@ -6194,6 +6279,13 @@
    [
     "magic_at_range",
     null
+   ],
+   [
+    "prf_unit",
+    [
+     "Ethlyn",
+     "Leif"
+    ]
    ]
   ]
  },
@@ -6314,7 +6406,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
@@ -6387,6 +6481,12 @@
     "prf_tags",
     [
      "Ballistae"
+    ]
+   ],
+   [
+    "effective_tag",
+    [
+     "Flying"
     ]
    ]
   ]
@@ -6498,7 +6598,7 @@
   "rng_equation": "",
   "rank": "D",
   "uses": 30,
-  "worth": 25200,
+  "worth": 2520,
   "magic": false,
   "brave": false,
   "reaver": false,
@@ -6565,7 +6665,7 @@
    ],
    [
     "value",
-    25200
+    2520
    ],
    [
     "min_range",
@@ -6597,7 +6697,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -6658,7 +6760,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -6811,7 +6915,10 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Raydrik",
+   "Eins"
+  ],
   "status_on_equip": "Loptyr Sword",
   "status_on_hit": "Loptyr_negative",
   "personal": false,
@@ -6877,6 +6984,13 @@
    [
     "max_range",
     1
+   ],
+   [
+    "prf_unit",
+    [
+     "Raydrik",
+     "Mus"
+    ]
    ]
   ]
  },
@@ -6993,7 +7107,9 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
-  "prf_units": [],
+  "prf_units": [
+   "Mareeta"
+  ],
   "status_on_equip": "Awareness",
   "status_on_hit": "",
   "personal": false,
@@ -7059,6 +7175,12 @@
    [
     "max_range",
     1
+   ],
+   [
+    "prf_unit",
+    [
+     "Mareeta"
+    ]
    ]
   ]
  },
@@ -7179,7 +7301,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -7248,7 +7372,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -7593,7 +7719,7 @@
   "prf_tags": [],
   "prf_units": [],
   "status_on_equip": "",
-  "status_on_hit": "Stun",
+  "status_on_hit": "",
   "personal": false,
   "components": [
    [
@@ -7645,10 +7771,6 @@
    [
     "weight",
     30
-   ],
-   [
-    "status_on_hit",
-    "Stun"
    ],
    [
     "crit",
@@ -7890,7 +8012,7 @@
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
-   "HeimHeir"
+   "NagaHeir"
   ],
   "prf_units": [],
   "status_on_equip": "Naga",
@@ -7962,7 +8084,7 @@
    [
     "prf_tags",
     [
-     "HeimHeir"
+     "NagaHeir"
     ]
    ]
   ]
@@ -7987,7 +8109,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
@@ -8064,6 +8188,12 @@
     "prf_tags",
     [
      "Ballistae"
+    ]
+   ],
+   [
+    "effective_tag",
+    [
+     "Flying"
     ]
    ]
   ]
@@ -8181,7 +8311,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -8246,7 +8378,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -8473,7 +8607,7 @@
   "is_staff": false,
   "heal": 0,
   "effective_tags": [
-   "Horse"
+   "Mounted"
   ],
   "effective_multiplier": 1,
   "effective_bonus": 10,
@@ -8552,7 +8686,7 @@
    [
     "effective_tag",
     [
-     "Horse"
+     "Mounted"
     ]
    ],
    [
@@ -8683,7 +8817,7 @@
   "effective_bonus": 0,
   "prf_tags": [],
   "prf_units": [
-   "0"
+   "Osian"
   ],
   "status_on_equip": "",
   "status_on_hit": "",
@@ -8746,7 +8880,7 @@
    [
     "prf_unit",
     [
-     "0"
+     "Osian"
     ]
    ]
   ]
@@ -8872,7 +9006,7 @@
   "weight": 7,
   "crit": 0,
   "rng_min": 1,
-  "rng_max": 1,
+  "rng_max": 99,
   "rng_equation": "",
   "rank": "B",
   "uses": 12,
@@ -8952,6 +9086,10 @@
    [
     "heal_exp",
     null
+   ],
+   [
+    "max_range",
+    99
    ]
   ]
  },
@@ -9239,7 +9377,7 @@
   "weight": 7,
   "crit": 0,
   "rng_min": 1,
-  "rng_max": 10,
+  "rng_max": 99,
   "rng_equation": "",
   "rank": "B",
   "uses": 12,
@@ -9248,7 +9386,7 @@
   "brave": false,
   "reaver": false,
   "is_staff": true,
-  "heal": 20,
+  "heal": 10,
   "effective_tags": [],
   "effective_multiplier": 1,
   "effective_bonus": 0,
@@ -9310,11 +9448,11 @@
    ],
    [
     "max_range",
-    10
+    99
    ],
    [
     "magic_heal",
-    20
+    10
    ],
    [
     "heal_exp",
@@ -9419,7 +9557,11 @@
    ],
    [
     "lifelink",
-    1.0
+    0.5
+   ],
+   [
+    "ignore_pavise",
+    true
    ]
   ]
  },
@@ -9721,7 +9863,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -9786,7 +9930,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -10388,7 +10534,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -10449,7 +10597,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -11241,7 +11391,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [],
@@ -11302,7 +11454,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -12883,7 +13037,9 @@
   "reaver": false,
   "is_staff": false,
   "heal": 0,
-  "effective_tags": [],
+  "effective_tags": [
+   "Flying"
+  ],
   "effective_multiplier": 1,
   "effective_bonus": 0,
   "prf_tags": [
@@ -12950,7 +13106,9 @@
    ],
    [
     "effective_tag",
-    []
+    [
+     "Flying"
+    ]
    ],
    [
     "effective_multiplier",
@@ -12969,6 +13127,103 @@
     [
      "UlirHeir"
     ]
+   ]
+  ]
+ },
+ {
+  "nid": "Stone",
+  "name": "Stone",
+  "desc": "Dark tome that turns a target to stone for the rest of the chapter. Becomes Fenrir when stolen.",
+  "weapon_type": "Dark",
+  "might": 1,
+  "hit": 100,
+  "weight": 20,
+  "crit": 0,
+  "rng_min": 3,
+  "rng_max": 10,
+  "rng_equation": "",
+  "rank": "A",
+  "uses": 5,
+  "worth": -1,
+  "magic": true,
+  "brave": false,
+  "reaver": false,
+  "is_staff": false,
+  "heal": 0,
+  "effective_tags": [],
+  "effective_multiplier": 1,
+  "effective_bonus": 0,
+  "prf_tags": [],
+  "prf_units": [],
+  "status_on_equip": "",
+  "status_on_hit": "Petrify",
+  "personal": false,
+  "components": [
+   [
+    "weapon",
+    null
+   ],
+   [
+    "target_enemy",
+    null
+   ],
+   [
+    "level_exp",
+    null
+   ],
+   [
+    "damage",
+    1
+   ],
+   [
+    "hit",
+    100
+   ],
+   [
+    "weapon_type",
+    "Dark"
+   ],
+   [
+    "weapon_rank",
+    "A"
+   ],
+   [
+    "magic",
+    null
+   ],
+   [
+    "uses",
+    5
+   ],
+   [
+    "uses_options",
+    [
+     [
+      "LoseUsesOnMiss (T/F)",
+      "F",
+      "Lose uses even on miss"
+     ]
+    ]
+   ],
+   [
+    "weight",
+    20
+   ],
+   [
+    "status_on_hit",
+    "Petrify"
+   ],
+   [
+    "crit",
+    0
+   ],
+   [
+    "min_range",
+    3
+   ],
+   [
+    "max_range",
+    10
    ]
   ]
  }

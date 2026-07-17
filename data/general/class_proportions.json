@@ -1,0 +1,1277 @@
+{
+ "Paladin": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 1.8,
+   "MAG": 1.0,
+   "SKL": 1.5,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 1.8,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.2,
+   "MAG": 1.0,
+   "SKL": 1.2,
+   "SPD": 1.2,
+   "LCK": 1.5,
+   "DEF": 1.2,
+   "RES": null
+  },
+  "ratio_global": 1.686,
+  "sum_fe4": 86,
+  "sum_fe5": 51
+ },
+ "Archer": {
+  "ratio_base": {
+   "HP": 1.737,
+   "STR": 2.333,
+   "MAG": null,
+   "SKL": 2.5,
+   "SPD": 3.0,
+   "LCK": null,
+   "DEF": 2.5,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.05,
+   "MAG": 0.75,
+   "SKL": 1.0,
+   "SPD": 1.2,
+   "LCK": 1.5,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_global": 2.034,
+  "sum_fe4": 59,
+  "sum_fe5": 29
+ },
+ "Armour": {
+  "ratio_base": {
+   "HP": 2.0,
+   "STR": 2.25,
+   "MAG": null,
+   "SKL": null,
+   "SPD": null,
+   "LCK": null,
+   "DEF": 1.25,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.2,
+   "MAG": 0.75,
+   "SKL": 1.0,
+   "SPD": 0.9,
+   "LCK": 1.5,
+   "DEF": 1.25,
+   "RES": null
+  },
+  "ratio_global": 2.094,
+  "sum_fe4": 67,
+  "sum_fe5": 32
+ },
+ "Bandit": {
+  "ratio_base": {
+   "HP": 1.591,
+   "STR": 1.0,
+   "MAG": null,
+   "SKL": null,
+   "SPD": null,
+   "LCK": null,
+   "DEF": 1.667,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.0,
+   "MAG": 0.75,
+   "SKL": 0.75,
+   "SPD": 1.1,
+   "LCK": 1.5,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_global": 1.733,
+  "sum_fe4": 52,
+  "sum_fe5": 30
+ },
+ "Bard": {
+  "ratio_base": {
+   "HP": 1.875,
+   "STR": null,
+   "MAG": 7.0,
+   "SKL": 7.0,
+   "SPD": 2.0,
+   "LCK": null,
+   "DEF": null,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.1,
+   "SKL": 1.1,
+   "SPD": 1.25,
+   "LCK": 1.5,
+   "DEF": 0.9,
+   "RES": null
+  },
+  "ratio_global": 2.783,
+  "sum_fe4": 64,
+  "sum_fe5": 23
+ },
+ "Baron": {
+  "ratio_base": {
+   "HP": 1.731,
+   "STR": 1.2,
+   "MAG": 2.333,
+   "SKL": 1.167,
+   "SPD": 2.333,
+   "LCK": null,
+   "DEF": 0.8,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.35,
+   "MAG": 1.1,
+   "SKL": 1.1,
+   "SPD": 1.1,
+   "LCK": 1.5,
+   "DEF": 1.35,
+   "RES": null
+  },
+  "ratio_global": 1.54,
+  "sum_fe4": 97,
+  "sum_fe5": 63
+ },
+ "Bishop": {
+  "ratio_base": {
+   "HP": 1.75,
+   "STR": null,
+   "MAG": 2.0,
+   "SKL": 4.0,
+   "SPD": 2.5,
+   "LCK": null,
+   "DEF": 3.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.25,
+   "SKL": 1.15,
+   "SPD": 1.0,
+   "LCK": 1.5,
+   "DEF": 0.9,
+   "RES": null
+  },
+  "ratio_global": 2.3,
+  "sum_fe4": 69,
+  "sum_fe5": 30
+ },
+ "BowKnight": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 2.0,
+   "MAG": 0.0,
+   "SKL": 1.333,
+   "SPD": 1.143,
+   "LCK": null,
+   "DEF": 1.6,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.25,
+   "MAG": 0.75,
+   "SKL": 1.15,
+   "SPD": 1.15,
+   "LCK": 1.5,
+   "DEF": 1.15,
+   "RES": null
+  },
+  "ratio_global": 1.604,
+  "sum_fe4": 77,
+  "sum_fe5": 48
+ },
+ "Cavalier": {
+  "ratio_base": {
+   "HP": 1.5,
+   "STR": 2.333,
+   "MAG": null,
+   "SKL": 2.0,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 2.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.1,
+   "MAG": 0.75,
+   "SKL": 1.05,
+   "SPD": 1.05,
+   "LCK": 1.5,
+   "DEF": 1.05,
+   "RES": null
+  },
+  "ratio_global": 1.667,
+  "sum_fe4": 55,
+  "sum_fe5": 33
+ },
+ "AxeKnight": {
+  "ratio_base": {
+   "HP": 1.5,
+   "STR": 2.333,
+   "MAG": null,
+   "SKL": 2.0,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 2.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.1,
+   "MAG": 0.75,
+   "SKL": 1.05,
+   "SPD": 1.05,
+   "LCK": 1.5,
+   "DEF": 1.05,
+   "RES": null
+  },
+  "ratio_global": 1.667,
+  "sum_fe4": 55,
+  "sum_fe5": 33
+ },
+ "ArcherKnight": {
+  "ratio_base": {
+   "HP": 1.5,
+   "STR": 2.333,
+   "MAG": null,
+   "SKL": 2.0,
+   "SPD": 1.2,
+   "LCK": null,
+   "DEF": 2.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.1,
+   "MAG": 0.75,
+   "SKL": 1.05,
+   "SPD": 1.05,
+   "LCK": 1.5,
+   "DEF": 1.05,
+   "RES": null
+  },
+  "ratio_global": 1.618,
+  "sum_fe4": 55,
+  "sum_fe5": 34
+ },
+ "LanceKnight": {
+  "ratio_base": {
+   "HP": 1.5,
+   "STR": 2.333,
+   "MAG": null,
+   "SKL": 2.0,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 2.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.1,
+   "MAG": 0.75,
+   "SKL": 1.05,
+   "SPD": 1.05,
+   "LCK": 1.0,
+   "DEF": 1.05,
+   "RES": null
+  },
+  "ratio_global": 1.667,
+  "sum_fe4": 55,
+  "sum_fe5": 33
+ },
+ "FreeKnight": {
+  "ratio_base": {
+   "HP": 1.5,
+   "STR": 2.333,
+   "MAG": null,
+   "SKL": 2.0,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 2.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.1,
+   "MAG": 0.75,
+   "SKL": 1.05,
+   "SPD": 1.05,
+   "LCK": 1.5,
+   "DEF": 1.05,
+   "RES": null
+  },
+  "ratio_global": 1.667,
+  "sum_fe4": 55,
+  "sum_fe5": 33
+ },
+ "Citizen": {
+  "ratio_base": {
+   "HP": 2.0,
+   "STR": null,
+   "MAG": null,
+   "SKL": null,
+   "SPD": null,
+   "LCK": null,
+   "DEF": null,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 0.75,
+   "SKL": 0.75,
+   "SPD": 1.25,
+   "LCK": 1.5,
+   "DEF": 0.85,
+   "RES": null
+  },
+  "ratio_global": 3.2,
+  "sum_fe4": 32,
+  "sum_fe5": 10
+ },
+ "Dancer": {
+  "ratio_base": {
+   "HP": 1.857,
+   "STR": null,
+   "MAG": null,
+   "SKL": null,
+   "SPD": 3.5,
+   "LCK": null,
+   "DEF": null,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.9,
+   "MAG": 0.75,
+   "SKL": 0.8,
+   "SPD": 1.1,
+   "LCK": 1.5,
+   "DEF": 0.8,
+   "RES": null
+  },
+  "ratio_global": 2.562,
+  "sum_fe4": 41,
+  "sum_fe5": 16
+ },
+ "DarkBishop": {
+  "ratio_base": {
+   "HP": 1.333,
+   "STR": null,
+   "MAG": 1.667,
+   "SKL": 1.667,
+   "SPD": 1.667,
+   "LCK": null,
+   "DEF": 1.667,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.5,
+   "SKL": 1.25,
+   "SPD": 1.25,
+   "LCK": 1.5,
+   "DEF": 1.25,
+   "RES": null
+  },
+  "ratio_global": 1.702,
+  "sum_fe4": 97,
+  "sum_fe5": 57
+ },
+ "DarkPrince": {
+  "ratio_base": {
+   "HP": 0.6,
+   "STR": null,
+   "MAG": 0.75,
+   "SKL": 0.6,
+   "SPD": 0.6,
+   "LCK": null,
+   "DEF": 0.5,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.5,
+   "SKL": 1.35,
+   "SPD": 1.35,
+   "LCK": 1.5,
+   "DEF": 1.25,
+   "RES": null
+  },
+  "ratio_global": 0.723,
+  "sum_fe4": 94,
+  "sum_fe5": 130
+ },
+ "DarkMage": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": null,
+   "MAG": 2.0,
+   "SKL": 2.0,
+   "SPD": 2.667,
+   "LCK": null,
+   "DEF": 1.75,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.25,
+   "SKL": 1.15,
+   "SPD": 1.15,
+   "LCK": 1.5,
+   "DEF": 1.1,
+   "RES": null
+  },
+  "ratio_global": 2.075,
+  "sum_fe4": 83,
+  "sum_fe5": 40
+ },
+ "DragonKnight": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 1.429,
+   "MAG": 0.0,
+   "SKL": 1.167,
+   "SPD": 1.0,
+   "LCK": null,
+   "DEF": 1.222,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.25,
+   "MAG": 0.75,
+   "SKL": 1.1,
+   "SPD": 1.05,
+   "LCK": 1.5,
+   "DEF": 1.3,
+   "RES": null
+  },
+  "ratio_global": 1.396,
+  "sum_fe4": 74,
+  "sum_fe5": 53
+ },
+ "DragonRider": {
+  "ratio_base": {
+   "HP": 2.188,
+   "STR": 1.8,
+   "MAG": null,
+   "SKL": 1.667,
+   "SPD": 1.25,
+   "LCK": null,
+   "DEF": 1.143,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.25,
+   "MAG": 0.75,
+   "SKL": 1.1,
+   "SPD": 1.05,
+   "LCK": 1.5,
+   "DEF": 1.3,
+   "RES": null
+  },
+  "ratio_global": 1.771,
+  "sum_fe4": 62,
+  "sum_fe5": 35
+ },
+ "DukeKnight": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 2.4,
+   "MAG": null,
+   "SKL": 1.167,
+   "SPD": 1.167,
+   "LCK": null,
+   "DEF": 1.6,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.35,
+   "MAG": 0.75,
+   "SKL": 1.1,
+   "SPD": 1.1,
+   "LCK": 1.5,
+   "DEF": 1.15,
+   "RES": null
+  },
+  "ratio_global": 1.674,
+  "sum_fe4": 77,
+  "sum_fe5": 46
+ },
+ "Emperor": {
+  "ratio_base": {
+   "HP": 1.731,
+   "STR": 2.143,
+   "MAG": 15.0,
+   "SKL": 3.0,
+   "SPD": 7.5,
+   "LCK": null,
+   "DEF": 1.25,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.5,
+   "MAG": 1.5,
+   "SKL": 1.5,
+   "SPD": 1.5,
+   "LCK": 1.5,
+   "DEF": 1.5,
+   "RES": null
+  },
+  "ratio_global": 2.547,
+  "sum_fe4": 135,
+  "sum_fe5": 53
+ },
+ "FalconKnight": {
+  "ratio_base": {
+   "HP": 2.0,
+   "STR": 1.167,
+   "MAG": 1.0,
+   "SKL": 1.714,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 1.2,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.1,
+   "MAG": 1.1,
+   "SKL": 1.25,
+   "SPD": 1.5,
+   "LCK": 1.5,
+   "DEF": 1.05,
+   "RES": null
+  },
+  "ratio_global": 1.8,
+  "sum_fe4": 99,
+  "sum_fe5": 55
+ },
+ "Fighter": {
+  "ratio_base": {
+   "HP": 1.75,
+   "STR": 2.0,
+   "MAG": null,
+   "SKL": 0.75,
+   "SPD": 2.0,
+   "LCK": null,
+   "DEF": 4.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.15,
+   "MAG": 0.75,
+   "SKL": 0.9,
+   "SPD": 1.25,
+   "LCK": 1.5,
+   "DEF": 1.15,
+   "RES": null
+  },
+  "ratio_global": 1.829,
+  "sum_fe4": 64,
+  "sum_fe5": 35
+ },
+ "Ranger": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 1.6,
+   "MAG": 0.0,
+   "SKL": 2.5,
+   "SPD": 1.714,
+   "LCK": null,
+   "DEF": 1.6,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.15,
+   "MAG": 0.75,
+   "SKL": 1.5,
+   "SPD": 1.35,
+   "LCK": 1.5,
+   "DEF": 1.15,
+   "RES": null
+  },
+  "ratio_global": 1.792,
+  "sum_fe4": 86,
+  "sum_fe5": 48
+ },
+ "General": {
+  "ratio_base": {
+   "HP": 1.538,
+   "STR": 1.429,
+   "MAG": 0.0,
+   "SKL": 1.2,
+   "SPD": 2.5,
+   "LCK": null,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.25,
+   "MAG": 0.75,
+   "SKL": 1.05,
+   "SPD": 1.0,
+   "LCK": 1.5,
+   "DEF": 1.35,
+   "RES": null
+  },
+  "ratio_global": 1.434,
+  "sum_fe4": 76,
+  "sum_fe5": 53
+ },
+ "GreatKnight": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 2.4,
+   "MAG": 0.0,
+   "SKL": 1.167,
+   "SPD": 1.167,
+   "LCK": null,
+   "DEF": 2.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.35,
+   "MAG": 0.75,
+   "SKL": 1.1,
+   "SPD": 1.1,
+   "LCK": 1.5,
+   "DEF": 1.25,
+   "RES": null
+  },
+  "ratio_global": 1.681,
+  "sum_fe4": 79,
+  "sum_fe5": 47
+ },
+ "Hero": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 2.0,
+   "MAG": 3.0,
+   "SKL": 1.714,
+   "SPD": 1.333,
+   "LCK": null,
+   "DEF": 1.4,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.35,
+   "MAG": 0.9,
+   "SKL": 1.35,
+   "SPD": 1.35,
+   "LCK": 1.5,
+   "DEF": 1.1,
+   "RES": null
+  },
+  "ratio_global": 1.712,
+  "sum_fe4": 89,
+  "sum_fe5": 52
+ },
+ "HighPriest": {
+  "ratio_base": {
+   "HP": 1.944,
+   "STR": null,
+   "MAG": 2.0,
+   "SKL": 3.0,
+   "SPD": 2.667,
+   "LCK": null,
+   "DEF": 3.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.35,
+   "SKL": 1.2,
+   "SPD": 1.15,
+   "LCK": 1.5,
+   "DEF": 0.9,
+   "RES": null
+  },
+  "ratio_global": 2.419,
+  "sum_fe4": 75,
+  "sum_fe5": 31
+ },
+ "HighPriestess": {
+  "ratio_base": {
+   "HP": 1.944,
+   "STR": null,
+   "MAG": 2.0,
+   "SKL": 3.0,
+   "SPD": 2.667,
+   "LCK": null,
+   "DEF": 3.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.35,
+   "SKL": 1.2,
+   "SPD": 1.15,
+   "LCK": 1.5,
+   "DEF": 0.9,
+   "RES": null
+  },
+  "ratio_global": 2.419,
+  "sum_fe4": 75,
+  "sum_fe5": 31
+ },
+ "LightPriestess": {
+  "ratio_base": {
+   "HP": 2.143,
+   "STR": null,
+   "MAG": 8.0,
+   "SKL": 3.5,
+   "SPD": 1.4,
+   "LCK": null,
+   "DEF": null,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.15,
+   "SKL": 1.1,
+   "SPD": 1.1,
+   "LCK": 1.5,
+   "DEF": 0.9,
+   "RES": null
+  },
+  "ratio_global": 2.955,
+  "sum_fe4": 65,
+  "sum_fe5": 22
+ },
+ "LordKnight": {
+  "ratio_base": {
+   "HP": 2.222,
+   "STR": 2.0,
+   "MAG": 0.0,
+   "SKL": 2.333,
+   "SPD": 1.75,
+   "LCK": null,
+   "DEF": 1.75,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.25,
+   "MAG": 0.75,
+   "SKL": 1.1,
+   "SPD": 1.1,
+   "LCK": 1.5,
+   "DEF": 1.1,
+   "RES": null
+  },
+  "ratio_global": 2.114,
+  "sum_fe4": 74,
+  "sum_fe5": 35
+ },
+ "LordLeaf": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 1.6,
+   "MAG": 3.0,
+   "SKL": 2.333,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.15,
+   "MAG": 0.9,
+   "SKL": 1.1,
+   "SPD": 1.05,
+   "LCK": 1.5,
+   "DEF": 1.1,
+   "RES": null
+  },
+  "ratio_global": 2.059,
+  "sum_fe4": 70,
+  "sum_fe5": 34
+ },
+ "LordSeliph": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 1.25,
+   "MAG": null,
+   "SKL": 2.5,
+   "SPD": 1.667,
+   "LCK": null,
+   "DEF": 2.5,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.0,
+   "MAG": 0.75,
+   "SKL": 1.0,
+   "SPD": 1.0,
+   "LCK": 1.5,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_global": 1.724,
+  "sum_fe4": 50,
+  "sum_fe5": 29
+ },
+ "Mage": {
+  "ratio_base": {
+   "HP": 1.529,
+   "STR": null,
+   "MAG": 4.0,
+   "SKL": 3.5,
+   "SPD": 1.75,
+   "LCK": null,
+   "DEF": null,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.15,
+   "SKL": 1.1,
+   "SPD": 1.1,
+   "LCK": 1.5,
+   "DEF": 0.8,
+   "RES": null
+  },
+  "ratio_global": 2.2,
+  "sum_fe4": 55,
+  "sum_fe5": 25
+ },
+ "MageKnight": {
+  "ratio_base": {
+   "HP": 2.0,
+   "STR": 1.667,
+   "MAG": 2.5,
+   "SKL": 1.4,
+   "SPD": 1.4,
+   "LCK": null,
+   "DEF": 1.25,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.0,
+   "MAG": 1.25,
+   "SKL": 1.1,
+   "SPD": 1.1,
+   "LCK": 1.5,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_global": 1.976,
+  "sum_fe4": 81,
+  "sum_fe5": 41
+ },
+ "PegasusKnight": {
+  "ratio_base": {
+   "HP": 2.059,
+   "STR": 1.75,
+   "MAG": 0.0,
+   "SKL": 1.4,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 1.667,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.1,
+   "MAG": 0.75,
+   "SKL": 1.1,
+   "SPD": 1.35,
+   "LCK": 1.5,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_global": 1.738,
+  "sum_fe4": 73,
+  "sum_fe5": 42
+ },
+ "PegasusRider": {
+  "ratio_base": {
+   "HP": 1.875,
+   "STR": 3.0,
+   "MAG": 0.0,
+   "SKL": 1.667,
+   "SPD": 1.667,
+   "LCK": null,
+   "DEF": 1.5,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.25,
+   "SKL": 1.05,
+   "SPD": 1.1,
+   "LCK": 1.5,
+   "DEF": 0.75,
+   "RES": null
+  },
+  "ratio_global": 1.844,
+  "sum_fe4": 59,
+  "sum_fe5": 32
+ },
+ "Pirate": {
+  "ratio_base": {
+   "HP": 1.458,
+   "STR": 1.0,
+   "MAG": null,
+   "SKL": null,
+   "SPD": null,
+   "LCK": null,
+   "DEF": 1.667,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.0,
+   "MAG": 1.0,
+   "SKL": 1.0,
+   "SPD": 1.0,
+   "LCK": 1.0,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_global": 1.625,
+  "sum_fe4": 52,
+  "sum_fe5": 32
+ },
+ "Mercenary": {
+  "ratio_base": {
+   "HP": 1.579,
+   "STR": 2.333,
+   "MAG": null,
+   "SKL": 2.0,
+   "SPD": 1.429,
+   "LCK": null,
+   "DEF": 2.5,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.1,
+   "MAG": 0.75,
+   "SKL": 1.25,
+   "SPD": 1.25,
+   "LCK": 1.0,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_global": 1.722,
+  "sum_fe4": 62,
+  "sum_fe5": 36
+ },
+ "Priest": {
+  "ratio_base": {
+   "HP": 1.625,
+   "STR": null,
+   "MAG": 2.333,
+   "SKL": 3.0,
+   "SPD": 6.0,
+   "LCK": null,
+   "DEF": null,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.1,
+   "SKL": 1.05,
+   "SPD": 1.05,
+   "LCK": 1.5,
+   "DEF": 1.1,
+   "RES": null
+  },
+  "ratio_global": 2.409,
+  "sum_fe4": 53,
+  "sum_fe5": 22
+ },
+ "Priestess": {
+  "ratio_base": {
+   "HP": 1.625,
+   "STR": null,
+   "MAG": 2.333,
+   "SKL": 3.0,
+   "SPD": 6.0,
+   "LCK": null,
+   "DEF": null,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.1,
+   "SKL": 1.05,
+   "SPD": 1.05,
+   "LCK": 1.5,
+   "DEF": 1.1,
+   "RES": null
+  },
+  "ratio_global": 2.409,
+  "sum_fe4": 53,
+  "sum_fe5": 22
+ },
+ "Rogue": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 1.75,
+   "MAG": 3.0,
+   "SKL": 2.333,
+   "SPD": 1.333,
+   "LCK": null,
+   "DEF": 2.5,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.1,
+   "MAG": 0.9,
+   "SKL": 1.1,
+   "SPD": 1.35,
+   "LCK": 1.5,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_global": 1.811,
+  "sum_fe4": 67,
+  "sum_fe5": 37
+ },
+ "Sage": {
+  "ratio_base": {
+   "HP": 1.75,
+   "STR": null,
+   "MAG": 2.143,
+   "SKL": 1.714,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 0.75,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.75,
+   "MAG": 1.5,
+   "SKL": 1.35,
+   "SPD": 1.5,
+   "LCK": 1.5,
+   "DEF": 0.9,
+   "RES": null
+  },
+  "ratio_global": 1.917,
+  "sum_fe4": 92,
+  "sum_fe5": 48
+ },
+ "Sniper": {
+  "ratio_base": {
+   "HP": 1.818,
+   "STR": 2.4,
+   "MAG": 0.0,
+   "SKL": 2.0,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 2.333,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.35,
+   "MAG": 0.75,
+   "SKL": 1.35,
+   "SPD": 1.35,
+   "LCK": 1.5,
+   "DEF": 1.1,
+   "RES": null
+  },
+  "ratio_global": 1.911,
+  "sum_fe4": 86,
+  "sum_fe5": 45
+ },
+ "Soldier": {
+  "ratio_base": {
+   "HP": 1.5,
+   "STR": 2.0,
+   "MAG": null,
+   "SKL": null,
+   "SPD": null,
+   "LCK": null,
+   "DEF": 7.0,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.0,
+   "MAG": 1.0,
+   "SKL": 1.0,
+   "SPD": 1.0,
+   "LCK": 1.0,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_global": 2.208,
+  "sum_fe4": 53,
+  "sum_fe5": 24
+ },
+ "Swordfighter": {
+  "ratio_base": {
+   "HP": 1.579,
+   "STR": 2.333,
+   "MAG": null,
+   "SKL": 2.0,
+   "SPD": 1.429,
+   "LCK": null,
+   "DEF": 2.5,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.1,
+   "MAG": 0.75,
+   "SKL": 1.25,
+   "SPD": 1.25,
+   "LCK": 1.0,
+   "DEF": 1.0,
+   "RES": null
+  },
+  "ratio_global": 1.722,
+  "sum_fe4": 62,
+  "sum_fe5": 36
+ },
+ "Swordmaster": {
+  "ratio_base": {
+   "HP": 1.667,
+   "STR": 2.4,
+   "MAG": 0.0,
+   "SKL": 1.875,
+   "SPD": 1.5,
+   "LCK": null,
+   "DEF": 1.75,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.35,
+   "MAG": 0.75,
+   "SKL": 1.5,
+   "SPD": 1.5,
+   "LCK": 1.5,
+   "DEF": 1.1,
+   "RES": null
+  },
+  "ratio_global": 1.769,
+  "sum_fe4": 92,
+  "sum_fe5": 52
+ },
+ "Troubadour": {
+  "ratio_base": {
+   "HP": 1.625,
+   "STR": 1.5,
+   "MAG": 1.5,
+   "SKL": 3.0,
+   "SPD": 2.0,
+   "LCK": null,
+   "DEF": 1.5,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 0.9,
+   "MAG": 0.9,
+   "SKL": 1.05,
+   "SPD": 0.7,
+   "LCK": 1.5,
+   "DEF": 0.9,
+   "RES": null
+  },
+  "ratio_global": 1.852,
+  "sum_fe4": 50,
+  "sum_fe5": 27
+ },
+ "Warrior": {
+  "ratio_base": {
+   "HP": 1.429,
+   "STR": 1.375,
+   "MAG": 0.0,
+   "SKL": 1.0,
+   "SPD": 2.0,
+   "LCK": null,
+   "DEF": 1.667,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": 1.0,
+   "STR": 1.3,
+   "MAG": 0.75,
+   "SKL": 1.0,
+   "SPD": 1.35,
+   "LCK": 1.5,
+   "DEF": 1.25,
+   "RES": null
+  },
+  "ratio_global": 1.5,
+  "sum_fe4": 81,
+  "sum_fe5": 54
+ },
+ "Thief": {
+  "ratio_base": {
+   "HP": 1.733,
+   "STR": 3.0,
+   "MAG": null,
+   "SKL": 3.0,
+   "SPD": 0.0,
+   "LCK": null,
+   "DEF": null,
+   "RES": null
+  },
+  "ratio_cap": {
+   "HP": null,
+   "STR": null,
+   "MAG": null,
+   "SKL": null,
+   "SPD": null,
+   "LCK": null,
+   "DEF": null,
+   "RES": null
+  },
+  "ratio_global": 1.667,
+  "sum_fe4": 40,
+  "sum_fe5": 24
+ }
+}

@@ -1,0 +1,1937 @@
+{
+ "source": "https://www.fireemblemwod.com/fe4/arena.htm",
+ "notes": "Sourced from fireemblemwod FE4 arena. Classes/weapons remapped to remake nids. Prologue and Ch.6 have no arena in FE4. Variant A=melee/default, B=ranged alt (used when the player attacks at range).",
+ "chapters": {
+  "1": [
+   {
+    "order": 1,
+    "variant": "A",
+    "name": "Gazack",
+    "klass": "Fighter",
+    "level": 1,
+    "bases": {
+     "HP": 36,
+     "STR": 8,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "weapon": "Iron Axe",
+    "weapon_ranged": "Hand Axe",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "A",
+    "name": "Crotor",
+    "klass": "Mage",
+    "level": 4,
+    "bases": {
+     "HP": 30,
+     "STR": 0,
+     "MAG": 8,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 6
+    },
+    "weapon": "Fire",
+    "weapon_ranged": "Fire",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "A",
+    "name": "Wiseman",
+    "klass": "LanceKnight",
+    "level": 7,
+    "bases": {
+     "HP": 37,
+     "STR": 9,
+     "MAG": 0,
+     "SKL": 8,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "weapon": "Iron Lance",
+    "weapon_ranged": "Javelin",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "A",
+    "name": "Shark",
+    "klass": "Swordfighter",
+    "level": 10,
+    "bases": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 1,
+     "SKL": 13,
+     "SPD": 13,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 1
+    },
+    "weapon": "Steel Sword",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "B",
+    "name": "Hood",
+    "klass": "Archer",
+    "level": 10,
+    "bases": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 0,
+     "SKL": 13,
+     "SPD": 13,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 1
+    },
+    "weapon": null,
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "A",
+    "name": "Bachus",
+    "klass": "Armour",
+    "level": 13,
+    "bases": {
+     "HP": 53,
+     "STR": 12,
+     "MAG": 1,
+     "SKL": 8,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 1
+    },
+    "weapon": "Steel Axe",
+    "weapon_ranged": "Hand Axe",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 6,
+    "variant": "A",
+    "name": "Emil",
+    "klass": "Mage",
+    "level": 16,
+    "bases": {
+     "HP": 42,
+     "STR": 1,
+     "MAG": 11,
+     "SKL": 10,
+     "SPD": 13,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 9
+    },
+    "weapon": "Elwind",
+    "weapon_ranged": "Elwind",
+    "ring": "Speed Ring",
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Dice",
+    "klass": "General",
+    "level": 19,
+    "bases": {
+     "HP": 59,
+     "STR": 15,
+     "MAG": 1,
+     "SKL": 11,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 17,
+     "RES": 4
+    },
+    "weapon": "Steel Blade",
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   }
+  ],
+  "2": [
+   {
+    "order": 1,
+    "variant": "A",
+    "name": "Zero",
+    "klass": "Fighter",
+    "level": 5,
+    "bases": {
+     "HP": 40,
+     "STR": 9,
+     "MAG": 0,
+     "SKL": 4,
+     "SPD": 11,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 0
+    },
+    "weapon": "Steel Axe",
+    "weapon_ranged": "Hand Axe",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "A",
+    "name": "Mahatma",
+    "klass": "Mage",
+    "level": 8,
+    "bases": {
+     "HP": 34,
+     "STR": 0,
+     "MAG": 12,
+     "SKL": 8,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 7
+    },
+    "weapon": "ElFire",
+    "weapon_ranged": "ElFire",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "A",
+    "name": "Rowin",
+    "klass": "LanceKnight",
+    "level": 11,
+    "bases": {
+     "HP": 41,
+     "STR": 10,
+     "MAG": 1,
+     "SKL": 9,
+     "SPD": 9,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 1
+    },
+    "weapon": "Steel Lance",
+    "weapon_ranged": "Javelin",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "A",
+    "name": "Barknin",
+    "klass": "Swordfighter",
+    "level": 14,
+    "bases": {
+     "HP": 44,
+     "STR": 11,
+     "MAG": 1,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 1
+    },
+    "weapon": "Steel Sword",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "B",
+    "name": "Millet",
+    "klass": "Archer",
+    "level": 14,
+    "bases": {
+     "HP": 44,
+     "STR": 11,
+     "MAG": 1,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 1
+    },
+    "weapon": null,
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "A",
+    "name": "Heltsok",
+    "klass": "Armour",
+    "level": 17,
+    "bases": {
+     "HP": 57,
+     "STR": 14,
+     "MAG": 1,
+     "SKL": 10,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 15,
+     "RES": 1
+    },
+    "weapon": "Steel Lance",
+    "weapon_ranged": "Javelin",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 6,
+    "variant": "A",
+    "name": "Chacof",
+    "klass": "Mage",
+    "level": 20,
+    "bases": {
+     "HP": 46,
+     "STR": 2,
+     "MAG": 13,
+     "SKL": 15,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 11
+    },
+    "weapon": "Elthunder",
+    "weapon_ranged": "Elthunder",
+    "ring": "Shield Ring",
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Chulainn",
+    "klass": "Swordfighter",
+    "level": 12,
+    "bases": {
+     "HP": 40,
+     "STR": 14,
+     "MAG": 0,
+     "SKL": 17,
+     "SPD": 17,
+     "LCK": 1,
+     "DEF": 11,
+     "RES": 1
+    },
+    "weapon": "Iron Blade",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": "Cap.2 arena position labelled '7A*': you fight Chulainn (if you don't use Bows); on defeating him you can recruit him, then Keimos takes his place in the arena. Chulainn is the only arena enemy with a special skill (Lunar Sword). Per source page note."
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Keimos",
+    "klass": "Hero",
+    "level": 23,
+    "bases": {
+     "HP": 63,
+     "STR": 18,
+     "MAG": 5,
+     "SKL": 18,
+     "SPD": 18,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 5
+    },
+    "weapon": "Steel Blade",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "B",
+    "name": "Marilyn",
+    "klass": "Sniper",
+    "level": 23,
+    "bases": {
+     "HP": 63,
+     "STR": 18,
+     "MAG": 2,
+     "SKL": 18,
+     "SPD": 18,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 5
+    },
+    "weapon": null,
+    "weapon_ranged": "Silver Bow",
+    "ring": null,
+    "note": null
+   }
+  ],
+  "3": [
+   {
+    "order": 1,
+    "variant": "A",
+    "name": "Tyler",
+    "klass": "Cavalier",
+    "level": 9,
+    "bases": {
+     "HP": 39,
+     "STR": 9,
+     "MAG": 0,
+     "SKL": 8,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "weapon": "Steel Sword",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 1,
+    "variant": "B",
+    "name": "Ripp",
+    "klass": "ArcherKnight",
+    "level": 9,
+    "bases": {
+     "HP": 39,
+     "STR": 9,
+     "MAG": 0,
+     "SKL": 8,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "weapon": null,
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "A",
+    "name": "Pelio",
+    "klass": "Fighter",
+    "level": 12,
+    "bases": {
+     "HP": 42,
+     "STR": 10,
+     "MAG": 1,
+     "SKL": 9,
+     "SPD": 9,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 1
+    },
+    "weapon": "Steel Axe",
+    "weapon_ranged": "Hand Axe",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "A",
+    "name": "Trevick",
+    "klass": "Swordfighter",
+    "level": 15,
+    "bases": {
+     "HP": 45,
+     "STR": 11,
+     "MAG": 1,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 1
+    },
+    "weapon": "Steel Blade",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "B",
+    "name": "Geller",
+    "klass": "Armour",
+    "level": 15,
+    "bases": {
+     "HP": 45,
+     "STR": 11,
+     "MAG": 1,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 1
+    },
+    "weapon": null,
+    "weapon_ranged": "Brave Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "A",
+    "name": "Bazan",
+    "klass": "Armour",
+    "level": 18,
+    "bases": {
+     "HP": 58,
+     "STR": 14,
+     "MAG": 1,
+     "SKL": 10,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 15,
+     "RES": 1
+    },
+    "weapon": "Steel Lance",
+    "weapon_ranged": "Javelin",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "A",
+    "name": "Duma",
+    "klass": "DarkMage",
+    "level": 21,
+    "bases": {
+     "HP": 61,
+     "STR": 2,
+     "MAG": 16,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 16
+    },
+    "weapon": "Jormungandr",
+    "weapon_ranged": "Jormungandr",
+    "ring": "Shield Ring",
+    "note": null
+   },
+   {
+    "order": 6,
+    "variant": "A",
+    "name": "Kehela",
+    "klass": "DukeKnight",
+    "level": 24,
+    "bases": {
+     "HP": 64,
+     "STR": 19,
+     "MAG": 2,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 15,
+     "RES": 5
+    },
+    "weapon": "Brave Lance",
+    "weapon_ranged": "Javelin",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Torton",
+    "klass": "GreatKnight",
+    "level": 27,
+    "bases": {
+     "HP": 67,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 18,
+     "RES": 5
+    },
+    "weapon": "Brave Axe",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "B",
+    "name": "Mario",
+    "klass": "BowKnight",
+    "level": 27,
+    "bases": {
+     "HP": 67,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 18,
+     "RES": 5
+    },
+    "weapon": null,
+    "weapon_ranged": "Brave Bow",
+    "ring": null,
+    "note": null
+   }
+  ],
+  "4": [
+   {
+    "order": 1,
+    "variant": "A",
+    "name": "Kemal",
+    "klass": "Mage",
+    "level": 13,
+    "bases": {
+     "HP": 39,
+     "STR": 1,
+     "MAG": 10,
+     "SKL": 9,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 8
+    },
+    "weapon": "Elwind",
+    "weapon_ranged": "Elwind",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "A",
+    "name": "Kaledin",
+    "klass": "Paladin",
+    "level": 16,
+    "bases": {
+     "HP": 56,
+     "STR": 13,
+     "MAG": 6,
+     "SKL": 13,
+     "SPD": 13,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 6
+    },
+    "weapon": "Steel Sword",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "B",
+    "name": "Keith",
+    "klass": "BowKnight",
+    "level": 16,
+    "bases": {
+     "HP": 56,
+     "STR": 14,
+     "MAG": 1,
+     "SKL": 12,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 4
+    },
+    "weapon": null,
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "A",
+    "name": "Senghor",
+    "klass": "Ranger",
+    "level": 19,
+    "bases": {
+     "HP": 59,
+     "STR": 13,
+     "MAG": 1,
+     "SKL": 20,
+     "SPD": 17,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 4
+    },
+    "weapon": "Steel Blade",
+    "weapon_ranged": "Flame Sword",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "A",
+    "name": "Nikita",
+    "klass": "PegasusKnight",
+    "level": 22,
+    "bases": {
+     "HP": 57,
+     "STR": 13,
+     "MAG": 2,
+     "SKL": 13,
+     "SPD": 18,
+     "LCK": 0,
+     "DEF": 11,
+     "RES": 9
+    },
+    "weapon": "Brave Lance",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "B",
+    "name": "Nene",
+    "klass": "Archer",
+    "level": 22,
+    "bases": {
+     "HP": 52,
+     "STR": 13,
+     "MAG": 2,
+     "SKL": 16,
+     "SPD": 16,
+     "LCK": 0,
+     "DEF": 11,
+     "RES": 2
+    },
+    "weapon": null,
+    "weapon_ranged": "Silver Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "A",
+    "name": "Kraf",
+    "klass": "MageKnight",
+    "level": 25,
+    "bases": {
+     "HP": 65,
+     "STR": 12,
+     "MAG": 15,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 12
+    },
+    "weapon": "Elthunder",
+    "weapon_ranged": "Elthunder",
+    "ring": "Shield Ring",
+    "note": null
+   },
+   {
+    "order": 6,
+    "variant": "A",
+    "name": "Nikias",
+    "klass": "Warrior",
+    "level": 28,
+    "bases": {
+     "HP": 68,
+     "STR": 19,
+     "MAG": 0,
+     "SKL": 13,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 18,
+     "RES": 5
+    },
+    "weapon": "Brave Axe",
+    "weapon_ranged": "Brave Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Atlas",
+    "klass": "Baron",
+    "level": 30,
+    "bases": {
+     "HP": 75,
+     "STR": 21,
+     "MAG": 10,
+     "SKL": 16,
+     "SPD": 16,
+     "LCK": 0,
+     "DEF": 21,
+     "RES": 10
+    },
+    "weapon": "Bolganone",
+    "weapon_ranged": "Bolganone",
+    "ring": "Skill Ring",
+    "note": null
+   }
+  ],
+  "5": [
+   {
+    "order": 1,
+    "variant": "A",
+    "name": "Shackal",
+    "klass": "Swordfighter",
+    "level": 17,
+    "bases": {
+     "HP": 47,
+     "STR": 12,
+     "MAG": 1,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 1
+    },
+    "weapon": "Steel Sword",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 1,
+    "variant": "B",
+    "name": "Ripp",
+    "klass": "Archer",
+    "level": 17,
+    "bases": {
+     "HP": 47,
+     "STR": 12,
+     "MAG": 1,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 1
+    },
+    "weapon": null,
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "A",
+    "name": "Greias",
+    "klass": "Warrior",
+    "level": 20,
+    "bases": {
+     "HP": 60,
+     "STR": 17,
+     "MAG": 0,
+     "SKL": 11,
+     "SPD": 18,
+     "LCK": 0,
+     "DEF": 16,
+     "RES": 5
+    },
+    "weapon": "Steel Axe",
+    "weapon_ranged": "Hand Axe",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "A",
+    "name": "Geese",
+    "klass": "General",
+    "level": 23,
+    "bases": {
+     "HP": 64,
+     "STR": 16,
+     "MAG": 2,
+     "SKL": 12,
+     "SPD": 11,
+     "LCK": 0,
+     "DEF": 18,
+     "RES": 5
+    },
+    "weapon": "Steel Blade",
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "A",
+    "name": "Lee",
+    "klass": "Hero",
+    "level": 26,
+    "bases": {
+     "HP": 66,
+     "STR": 19,
+     "MAG": 5,
+     "SKL": 19,
+     "SPD": 19,
+     "LCK": 0,
+     "DEF": 14,
+     "RES": 5
+    },
+    "weapon": "Thunder Sword",
+    "weapon_ranged": "Thunder Sword",
+    "ring": "Speed Ring",
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "A",
+    "name": "Shisiel",
+    "klass": "DragonKnight",
+    "level": 29,
+    "bases": {
+     "HP": 69,
+     "STR": 18,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 19,
+     "RES": 2
+    },
+    "weapon": "Knight Killer",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "B",
+    "name": "Hawks",
+    "klass": "Sniper",
+    "level": 29,
+    "bases": {
+     "HP": 69,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 20,
+     "SPD": 20,
+     "LCK": 0,
+     "DEF": 15,
+     "RES": 5
+    },
+    "weapon": null,
+    "weapon_ranged": "Killer Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 6,
+    "variant": "A",
+    "name": "Nazarl",
+    "klass": "Swordmaster",
+    "level": 30,
+    "bases": {
+     "HP": 70,
+     "STR": 21,
+     "MAG": 3,
+     "SKL": 24,
+     "SPD": 24,
+     "LCK": 0,
+     "DEF": 16,
+     "RES": 6
+    },
+    "weapon": "Wind Sword",
+    "weapon_ranged": "Wind Sword",
+    "ring": "Shield Ring",
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Thief",
+    "klass": "Rogue",
+    "level": 30,
+    "bases": {
+     "HP": 60,
+     "STR": 16,
+     "MAG": 6,
+     "SKL": 16,
+     "SPD": 21,
+     "LCK": 0,
+     "DEF": 14,
+     "RES": 6
+    },
+    "weapon": "Earth Sword",
+    "weapon_ranged": "Earth Sword",
+    "ring": "Speed Ring",
+    "note": null
+   }
+  ],
+  "7": [
+   {
+    "order": 1,
+    "variant": "A",
+    "name": "Tolstoy",
+    "klass": "Fighter",
+    "level": 1,
+    "bases": {
+     "HP": 36,
+     "STR": 8,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "weapon": "Iron Axe",
+    "weapon_ranged": "Hand Axe",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "A",
+    "name": "Boshimas",
+    "klass": "Mage",
+    "level": 4,
+    "bases": {
+     "HP": 30,
+     "STR": 0,
+     "MAG": 8,
+     "SKL": 7,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 6
+    },
+    "weapon": "Thunder",
+    "weapon_ranged": "Thunder",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "A",
+    "name": "Kruge",
+    "klass": "LanceKnight",
+    "level": 7,
+    "bases": {
+     "HP": 37,
+     "STR": 9,
+     "MAG": 0,
+     "SKL": 8,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "weapon": "Steel Lance",
+    "weapon_ranged": "Javelin",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "A",
+    "name": "Manstein",
+    "klass": "Swordfighter",
+    "level": 10,
+    "bases": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 1,
+     "SKL": 13,
+     "SPD": 13,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 1
+    },
+    "weapon": "Iron Blade",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "B",
+    "name": "Kashim",
+    "klass": "Archer",
+    "level": 10,
+    "bases": {
+     "HP": 40,
+     "STR": 10,
+     "MAG": 0,
+     "SKL": 3,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 1
+    },
+    "weapon": null,
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "A",
+    "name": "Heppner",
+    "klass": "Armour",
+    "level": 13,
+    "bases": {
+     "HP": 53,
+     "STR": 12,
+     "MAG": 1,
+     "SKL": 8,
+     "SPD": 6,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 1
+    },
+    "weapon": "Steel Lance",
+    "weapon_ranged": "Javelin",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 6,
+    "variant": "A",
+    "name": "Randock",
+    "klass": "Warrior",
+    "level": 16,
+    "bases": {
+     "HP": 56,
+     "STR": 15,
+     "MAG": 0,
+     "SKL": 9,
+     "SPD": 16,
+     "LCK": 0,
+     "DEF": 14,
+     "RES": 4
+    },
+    "weapon": "Silver Axe",
+    "weapon_ranged": "Hand Axe",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Wolf",
+    "klass": "General",
+    "level": 19,
+    "bases": {
+     "HP": 59,
+     "STR": 15,
+     "MAG": 1,
+     "SKL": 11,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 17,
+     "RES": 4
+    },
+    "weapon": "Silver Blade",
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   }
+  ],
+  "8": [
+   {
+    "order": 1,
+    "variant": "A",
+    "name": "Dewy",
+    "klass": "Fighter",
+    "level": 5,
+    "bases": {
+     "HP": 40,
+     "STR": 9,
+     "MAG": 0,
+     "SKL": 4,
+     "SPD": 11,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 0
+    },
+    "weapon": "Iron Axe",
+    "weapon_ranged": "Hand Axe",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "A",
+    "name": "Fate",
+    "klass": "Mage",
+    "level": 8,
+    "bases": {
+     "HP": 34,
+     "STR": 0,
+     "MAG": 9,
+     "SKL": 11,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 1,
+     "RES": 7
+    },
+    "weapon": "Elthunder",
+    "weapon_ranged": "Elthunder",
+    "ring": "Shield Ring",
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "A",
+    "name": "Malshark",
+    "klass": "Paladin",
+    "level": 11,
+    "bases": {
+     "HP": 51,
+     "STR": 12,
+     "MAG": 6,
+     "SKL": 12,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 6
+    },
+    "weapon": "Steel Lance",
+    "weapon_ranged": "Javelin",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "A",
+    "name": "Louis",
+    "klass": "Swordfighter",
+    "level": 14,
+    "bases": {
+     "HP": 44,
+     "STR": 11,
+     "MAG": 1,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 1
+    },
+    "weapon": "Steel Sword",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "B",
+    "name": "Heste",
+    "klass": "Archer",
+    "level": 14,
+    "bases": {
+     "HP": 44,
+     "STR": 11,
+     "MAG": 1,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 1
+    },
+    "weapon": null,
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "A",
+    "name": "Marda",
+    "klass": "MageFighter",
+    "level": 17,
+    "bases": {
+     "HP": 47,
+     "STR": 8,
+     "MAG": 15,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 10
+    },
+    "weapon": "ElFire",
+    "weapon_ranged": "ElFire",
+    "ring": "Shield Ring",
+    "note": null
+   },
+   {
+    "order": 6,
+    "variant": "A",
+    "name": "Jisment",
+    "klass": "General",
+    "level": 20,
+    "bases": {
+     "HP": 60,
+     "STR": 16,
+     "MAG": 2,
+     "SKL": 12,
+     "SPD": 11,
+     "LCK": 0,
+     "DEF": 18,
+     "RES": 5
+    },
+    "weapon": "Steel Axe",
+    "weapon_ranged": "Hand Axe",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Xenon",
+    "klass": "Swordmaster",
+    "level": 23,
+    "bases": {
+     "HP": 63,
+     "STR": 18,
+     "MAG": 2,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 5
+    },
+    "weapon": "Silver Blade",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "B",
+    "name": "Jackson",
+    "klass": "Sniper",
+    "level": 23,
+    "bases": {
+     "HP": 63,
+     "STR": 18,
+     "MAG": 2,
+     "SKL": 18,
+     "SPD": 18,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 5
+    },
+    "weapon": null,
+    "weapon_ranged": "Silver Bow",
+    "ring": null,
+    "note": null
+   }
+  ],
+  "9": [
+   {
+    "order": 1,
+    "variant": "A",
+    "name": "Indra",
+    "klass": "Cavalier",
+    "level": 9,
+    "bases": {
+     "HP": 39,
+     "STR": 9,
+     "MAG": 0,
+     "SKL": 8,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 8,
+     "RES": 0
+    },
+    "weapon": "Steel Sword",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 1,
+    "variant": "B",
+    "name": "Nietzche",
+    "klass": "BowKnight",
+    "level": 9,
+    "bases": {
+     "HP": 49,
+     "STR": 12,
+     "MAG": 0,
+     "SKL": 10,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 10,
+     "RES": 0
+    },
+    "weapon": "Silver Bow",
+    "weapon_ranged": "Silver Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "A",
+    "name": "Apostol",
+    "klass": "AxeKnight",
+    "level": 12,
+    "bases": {
+     "HP": 42,
+     "STR": 10,
+     "MAG": 1,
+     "SKL": 9,
+     "SPD": 9,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 1
+    },
+    "weapon": "Steel Axe",
+    "weapon_ranged": "Hand Axe",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "A",
+    "name": "Mirna",
+    "klass": "Swordfighter",
+    "level": 15,
+    "bases": {
+     "HP": 45,
+     "STR": 11,
+     "MAG": 1,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 1
+    },
+    "weapon": "Brave Sword",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "B",
+    "name": "Shiron",
+    "klass": "Armour",
+    "level": 15,
+    "bases": {
+     "HP": 55,
+     "STR": 13,
+     "MAG": 1,
+     "SKL": 9,
+     "SPD": 7,
+     "LCK": 0,
+     "DEF": 14,
+     "RES": 1
+    },
+    "weapon": null,
+    "weapon_ranged": "Brave Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "A",
+    "name": "Klein",
+    "klass": "Armour",
+    "level": 18,
+    "bases": {
+     "HP": 58,
+     "STR": 14,
+     "MAG": 1,
+     "SKL": 10,
+     "SPD": 8,
+     "LCK": 0,
+     "DEF": 15,
+     "RES": 1
+    },
+    "weapon": "Steel Lance",
+    "weapon_ranged": "Javelin",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "A",
+    "name": "Slayton",
+    "klass": "Mage",
+    "level": 21,
+    "bases": {
+     "HP": 47,
+     "STR": 2,
+     "MAG": 16,
+     "SKL": 12,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 3,
+     "RES": 11
+    },
+    "weapon": "ElFire",
+    "weapon_ranged": "ElFire",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 6,
+    "variant": "A",
+    "name": "Triesta",
+    "klass": "DragonKnight",
+    "level": 24,
+    "bases": {
+     "HP": 64,
+     "STR": 17,
+     "MAG": 2,
+     "SKL": 14,
+     "SPD": 13,
+     "LCK": 0,
+     "DEF": 18,
+     "RES": 2
+    },
+    "weapon": "Brave Lance",
+    "weapon_ranged": "Javelin",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Canaan",
+    "klass": "Baron",
+    "level": 27,
+    "bases": {
+     "HP": 72,
+     "STR": 20,
+     "MAG": 9,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 9
+    },
+    "weapon": "Tornado",
+    "weapon_ranged": "Tornado",
+    "ring": "Magic Ring",
+    "note": null
+   }
+  ],
+  "10": [
+   {
+    "order": 1,
+    "variant": "A",
+    "name": "Hasmarn",
+    "klass": "Mage",
+    "level": 13,
+    "bases": {
+     "HP": 39,
+     "STR": 1,
+     "MAG": 10,
+     "SKL": 9,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 2,
+     "RES": 8
+    },
+    "weapon": "Elwind",
+    "weapon_ranged": "Elwind",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "A",
+    "name": "Glanz",
+    "klass": "Paladin",
+    "level": 16,
+    "bases": {
+     "HP": 56,
+     "STR": 13,
+     "MAG": 6,
+     "SKL": 13,
+     "SPD": 13,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 6
+    },
+    "weapon": "Steel Sword",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "B",
+    "name": "Krosroy",
+    "klass": "BowKnight",
+    "level": 16,
+    "bases": {
+     "HP": 56,
+     "STR": 14,
+     "MAG": 1,
+     "SKL": 12,
+     "SPD": 12,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 4
+    },
+    "weapon": null,
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "A",
+    "name": "Roland",
+    "klass": "Hero",
+    "level": 19,
+    "bases": {
+     "HP": 59,
+     "STR": 17,
+     "MAG": 4,
+     "SKL": 17,
+     "SPD": 17,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 4
+    },
+    "weapon": "Silver Sword",
+    "weapon_ranged": "Wind Sword",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "A",
+    "name": "Massigli",
+    "klass": "DarkMage",
+    "level": 22,
+    "bases": {
+     "HP": 62,
+     "STR": 2,
+     "MAG": 16,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 9,
+     "RES": 16
+    },
+    "weapon": "Jormungandr",
+    "weapon_ranged": "Jormungandr",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "A",
+    "name": "Riva",
+    "klass": "GreatKnight",
+    "level": 25,
+    "bases": {
+     "HP": 65,
+     "STR": 19,
+     "MAG": 2,
+     "SKL": 14,
+     "SPD": 14,
+     "LCK": 0,
+     "DEF": 17,
+     "RES": 5
+    },
+    "weapon": "Silver Axe",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "B",
+    "name": "Gloria",
+    "klass": "Sniper",
+    "level": 25,
+    "bases": {
+     "HP": 65,
+     "STR": 19,
+     "MAG": 2,
+     "SKL": 19,
+     "SPD": 19,
+     "LCK": 0,
+     "DEF": 14,
+     "RES": 5
+    },
+    "weapon": null,
+    "weapon_ranged": "Silver Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 6,
+    "variant": "A",
+    "name": "Note",
+    "klass": "DarkBishop",
+    "level": 28,
+    "bases": {
+     "HP": 68,
+     "STR": 2,
+     "MAG": 23,
+     "SKL": 18,
+     "SPD": 18,
+     "LCK": 0,
+     "DEF": 12,
+     "RES": 20
+    },
+    "weapon": "Jormungandr",
+    "weapon_ranged": "Jormungandr",
+    "ring": "Shield Ring",
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Indra",
+    "klass": "Queen",
+    "level": 30,
+    "bases": {
+     "HP": 65,
+     "STR": 11,
+     "MAG": 21,
+     "SKL": 19,
+     "SPD": 21,
+     "LCK": 0,
+     "DEF": 19,
+     "RES": 21
+    },
+    "weapon": "Bolganone",
+    "weapon_ranged": "Bolganone",
+    "ring": "Speed Ring",
+    "note": null
+   }
+  ],
+  "endgame": [
+   {
+    "order": 1,
+    "variant": "A",
+    "name": "Dice",
+    "klass": "General",
+    "level": 19,
+    "bases": {
+     "HP": 59,
+     "STR": 15,
+     "MAG": 1,
+     "SKL": 11,
+     "SPD": 10,
+     "LCK": 0,
+     "DEF": 17,
+     "RES": 4
+    },
+    "weapon": "Steel Blade",
+    "weapon_ranged": "Steel Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "A",
+    "name": "Keimos",
+    "klass": "Hero",
+    "level": 23,
+    "bases": {
+     "HP": 63,
+     "STR": 18,
+     "MAG": 5,
+     "SKL": 18,
+     "SPD": 18,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 5
+    },
+    "weapon": "Steel Blade",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 2,
+    "variant": "B",
+    "name": "Marilyn",
+    "klass": "Sniper",
+    "level": 23,
+    "bases": {
+     "HP": 63,
+     "STR": 18,
+     "MAG": 2,
+     "SKL": 18,
+     "SPD": 18,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 5
+    },
+    "weapon": null,
+    "weapon_ranged": "Silver Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "A",
+    "name": "Xenon",
+    "klass": "Swordmaster",
+    "level": 23,
+    "bases": {
+     "HP": 63,
+     "STR": 18,
+     "MAG": 2,
+     "SKL": 21,
+     "SPD": 21,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 5
+    },
+    "weapon": "Silver Blade",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 3,
+    "variant": "B",
+    "name": "Jackson",
+    "klass": "Sniper",
+    "level": 23,
+    "bases": {
+     "HP": 63,
+     "STR": 18,
+     "MAG": 2,
+     "SKL": 18,
+     "SPD": 18,
+     "LCK": 0,
+     "DEF": 13,
+     "RES": 5
+    },
+    "weapon": null,
+    "weapon_ranged": "Killer Bow",
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "A",
+    "name": "Torton",
+    "klass": "GreatKnight",
+    "level": 27,
+    "bases": {
+     "HP": 67,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 18,
+     "RES": 5
+    },
+    "weapon": "Brave Axe",
+    "weapon_ranged": null,
+    "ring": null,
+    "note": null
+   },
+   {
+    "order": 4,
+    "variant": "B",
+    "name": "Mario",
+    "klass": "BowKnight",
+    "level": 27,
+    "bases": {
+     "HP": 67,
+     "STR": 20,
+     "MAG": 2,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 18,
+     "RES": 5
+    },
+    "weapon": null,
+    "weapon_ranged": "Brave Bow",
+    "ring": "Shield Ring",
+    "note": null
+   },
+   {
+    "order": 5,
+    "variant": "A",
+    "name": "Canaan",
+    "klass": "Baron",
+    "level": 27,
+    "bases": {
+     "HP": 72,
+     "STR": 20,
+     "MAG": 9,
+     "SKL": 15,
+     "SPD": 15,
+     "LCK": 0,
+     "DEF": 20,
+     "RES": 9
+    },
+    "weapon": "Tornado",
+    "weapon_ranged": "Tornado",
+    "ring": "Magic Ring",
+    "note": null
+   },
+   {
+    "order": 6,
+    "variant": "A",
+    "name": "Atlas",
+    "klass": "Baron",
+    "level": 30,
+    "bases": {
+     "HP": 75,
+     "STR": 21,
+     "MAG": 10,
+     "SKL": 16,
+     "SPD": 16,
+     "LCK": 0,
+     "DEF": 21,
+     "RES": 10
+    },
+    "weapon": "Bolganone",
+    "weapon_ranged": "Bolganone",
+    "ring": "Skill Ring",
+    "note": null
+   },
+   {
+    "order": 7,
+    "variant": "A",
+    "name": "Zeus",
+    "klass": "Emperor",
+    "level": 30,
+    "bases": {
+     "HP": 75,
+     "STR": 24,
+     "MAG": 18,
+     "SKL": 24,
+     "SPD": 24,
+     "LCK": 0,
+     "DEF": 24,
+     "RES": 18
+    },
+    "weapon": "Earth Sword",
+    "weapon_ranged": "Earth Sword",
+    "ring": "Pursuit Ring",
+    "note": null
+   }
+  ]
+ }
+}

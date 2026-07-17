@@ -49,7 +49,7 @@ func show_level_up(unit: Unit, gains: Dictionary):
 		"name": unit.unit_name,
 		"class": unit.unit_class,
 		"level": unit.level,
-		"portrait": unit.portrait_path if unit.has("portrait_path") else ""
+		"portrait": str(unit.portrait_path) if "portrait_path" in unit else ""
 	}
 	stat_gains = gains
 	
