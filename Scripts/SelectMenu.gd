@@ -113,9 +113,16 @@ func _option_align() -> int:
 	return HORIZONTAL_ALIGNMENT_LEFT
 
 
+## Píxeles que se SUBE el CONTENIDO (bandera / botones) dentro de su panel, sin
+## mover el panel. Sobreescribir por menú (0 = contenido centrado en el panel).
+func _content_lift() -> int:
+	return 0
+
+
 ## Geometría del panel-lista en fracciones del viewport [izq, arriba, der, abajo].
+## Centrado en pantalla por defecto.
 func _list_panel_rect() -> Array:
-	return [0.55, 0.10, 0.93, 0.70]
+	return [0.55, 0.18, 0.93, 0.82]
 
 
 func _on_choose(_id: String) -> void:
@@ -199,18 +206,21 @@ func _nine_panel(al: float, at: float, ar: float, ab: float) -> NinePatchRect:
 
 
 func _build_preview_panel() -> void:
-	var panel := _nine_panel(0.07, 0.20, 0.38, 0.56)
+	# Panel centrado en pantalla; la bandera se sube DENTRO con _content_lift.
+	var panel := _nine_panel(0.07, 0.31, 0.38, 0.67)
+	var lift := _content_lift()
 	_preview = TextureRect.new()
 	# STRETCH_SCALE + más margen arriba/abajo: reduce SÓLO el alto de la bandera
-	# (el ancho sigue llenando el recuadro, como antes).
+	# (el ancho sigue llenando el recuadro). Los offsets se desplazan por `lift`
+	# (misma altura, posición más arriba) sin mover el panel.
 	_preview.stretch_mode = TextureRect.STRETCH_SCALE
 	_preview.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	_preview.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_preview.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_preview.offset_left = 26
-	_preview.offset_top = 52
+	_preview.offset_top = 52 - lift
 	_preview.offset_right = -26
-	_preview.offset_bottom = -56
+	_preview.offset_bottom = -56 - lift
 	panel.add_child(_preview)
 
 
@@ -221,11 +231,14 @@ func _build_list_panel() -> void:
 	_list.alignment = BoxContainer.ALIGNMENT_CENTER
 	# Separación proporcional a la fuente (fuentes grandes → menos hueco relativo).
 	_list.add_theme_constant_override("separation", maxi(6, int(_option_font_size() * 0.18)))
+	# Contenido centrado en el panel y subido `lift` px (sin mover el panel):
+	# ambos offsets verticales se desplazan hacia arriba lo mismo.
+	var lift := _content_lift()
 	_list.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_list.offset_left = 62
-	_list.offset_top = 24
+	_list.offset_top = 18 - lift
 	_list.offset_right = -28
-	_list.offset_bottom = -24
+	_list.offset_bottom = -18 - lift
 	panel.add_child(_list)
 	for it in _menu_items():
 		_list.add_child(_make_option(str(it.get("text", "")), str(it.get("id", ""))))
