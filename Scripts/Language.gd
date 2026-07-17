@@ -36,6 +36,11 @@ func _option_font_size() -> int:
 	return 56
 
 
+# Sube la bandera y los botones dentro de sus paneles (los paneles siguen centrados).
+func _content_lift() -> int:
+	return 24
+
+
 func _preview_texture(id: String) -> Texture2D:
 	var p := FLAGS + id + ".png"
 	return load(p) if ResourceLoader.exists(p) else null

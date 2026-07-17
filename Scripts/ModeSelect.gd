@@ -44,10 +44,11 @@ func _has_preview_panel() -> bool:
 	return false
 
 
-# Recuadro centrado, ANCHO (la opción larga "Genealogy of the Holy War" no cabe
-# si no) y de poco alto (sólo 3 opciones), subido un poco para centrarse mejor.
+# Recuadro CENTRADO en pantalla, ancho suficiente para "Genealogy of the Holy
+# War" (ancho reducido ~10% respecto a la ronda anterior) y de poco alto (3
+# opciones). El panel queda centrado; los botones se suben con _content_lift.
 func _list_panel_rect() -> Array:
-	return [0.13, 0.27, 0.87, 0.63]
+	return [0.17, 0.335, 0.83, 0.665]
 
 
 func _option_font_size() -> int:
@@ -56,6 +57,11 @@ func _option_font_size() -> int:
 
 func _option_align() -> int:
 	return HORIZONTAL_ALIGNMENT_CENTER
+
+
+# Sube un pelo los botones dentro del panel (el panel sigue centrado).
+func _content_lift() -> int:
+	return 12
 
 
 func _bg_for_option(id: String) -> Texture2D:
