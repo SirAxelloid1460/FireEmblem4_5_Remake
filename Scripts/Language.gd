@@ -15,6 +15,10 @@ extends SelectMenu
 const FLAGS := "res://assets/languages/Flags/"
 const NEXT_SCENE := "res://Scenes/mode_select.tscn"   # Idioma → Modo → Intro → MainMenu
 
+# Fondo: base de runas de Jugdral (parallax). La niebla animada encima la pone
+# SelectMenu con TitleOverlay (común a todos los menús).
+const BG_BASE := "res://assets/panoramas/default_background.png"
+
 const LANGS := [
 	{ "id": "en", "text": "English" },
 	{ "id": "de", "text": "Deutsch" },
@@ -31,6 +35,14 @@ func _menu_items() -> Array:
 func _preview_texture(id: String) -> Texture2D:
 	var p := FLAGS + id + ".png"
 	return load(p) if ResourceLoader.exists(p) else null
+
+
+func _bg_base_texture() -> Texture2D:
+	return load(BG_BASE) if ResourceLoader.exists(BG_BASE) else null
+
+
+func _bg_parallax() -> bool:
+	return true
 
 
 func _on_choose(id: String) -> void:

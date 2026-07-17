@@ -4,12 +4,13 @@ extends SelectMenu
 # ============================================================
 # MODE — Menú 2 del arranque: selección de versión del remake.
 # ============================================================
-# Misma estructura que el menú de idioma, con 3 opciones que fijan el modo de
-# GameMode (autoload):
-#   Genealogy of the Holy War → FE4_ONLY
-#   Thracia 776               → FE5_ONLY
-#   Both Together             → SAGA_MODE
-# Preview = logo del juego (o escudo de Grandbell para la saga completa).
+# Misma estructura que el menú de idioma, pero SIN panel-preview: en su lugar el
+# FONDO cambia en vivo según la opción enfocada (fijo, sin parallax), usando
+# title_background_FE4/FE5/SAGA. La niebla animada (TitleOverlay) va encima igual.
+# Las 3 opciones fijan el modo de GameMode (autoload):
+#   Genealogy of the Holy War → FE4_ONLY   (title_background_FE4)
+#   Thracia 776               → FE5_ONLY   (title_background_FE5)
+#   Both Together             → SAGA_MODE  (title_background_SAGA)
 # Al elegir: guarda el modo y pasa a la intro (vídeos) → MainMenu.
 # Cancelar: vuelve al menú de idioma.
 #
@@ -20,9 +21,9 @@ extends SelectMenu
 const NEXT_SCENE := "res://Scenes/intro.tscn"       # Modo → Intro (vídeos) → MainMenu
 const PREV_SCENE := "res://Scenes/language.tscn"     # cancelar → volver a idioma
 
-const LOGO_FE4 := "res://assets/title/logo1.png"        # Genealogy of the Holy War
-const LOGO_FE5 := "res://assets/title/logo2.png"        # Thracia 776
-const CREST    := "res://assets/title/title2_background.png"  # escudo Grandbell (saga)
+const BG_FE4  := "res://assets/panoramas/title_background_FE4.png"   # ejército (FE4)
+const BG_FE5  := "res://assets/panoramas/title_background_FE5.png"   # escudo (FE5)
+const BG_SAGA := "res://assets/panoramas/title_background_SAGA.png"  # saga completa
 
 const MODE_FE4 := 0   # GameMode.Mode.FE4_ONLY
 const MODE_FE5 := 1   # GameMode.Mode.FE5_ONLY
@@ -39,12 +40,16 @@ func _menu_items() -> Array:
 	return MODES
 
 
-func _preview_texture(id: String) -> Texture2D:
-	var p := CREST
+func _has_preview_panel() -> bool:
+	return false
+
+
+func _bg_for_option(id: String) -> Texture2D:
+	var p := BG_SAGA
 	match id:
-		"fe4": p = LOGO_FE4
-		"fe5": p = LOGO_FE5
-		"saga": p = CREST
+		"fe4": p = BG_FE4
+		"fe5": p = BG_FE5
+		"saga": p = BG_SAGA
 	return load(p) if ResourceLoader.exists(p) else null
 
 
