@@ -430,8 +430,9 @@ static func _apply_named(unit: Unit, nid: String, project_data: Dictionary) -> v
 ## El bloque elegido SOBREESCRIBE los campos que declara sobre la unidad base
 ## (klass/level/bases/growths/learned_skills/starting_items/wexp_gain/holy_blood);
 ## los campos ausentes se heredan del nivel superior (portrait, tags, etc.).
-##   FE4_ONLY → FE4 · FE5_ONLY → FE5 · SAGA → la versión más débil (menor suma
-##   de bases; desempata por menor nivel), que luego escala a través de ambos.
+##   FE4_ONLY → versions.FE4 · FE5_ONLY → versions.FE5 · SAGA → el NIVEL SUPERIOR
+##   (top-level), que ES el valor SAGA dictado por el usuario. Si un modo no tiene
+##   su bloque, cae también al nivel superior.
 static func _resolve_game_version(udata: Dictionary) -> Dictionary:
 	var versions = udata.get("versions", null)
 	if not (versions is Dictionary) or (versions as Dictionary).is_empty():
@@ -443,7 +444,15 @@ static func _resolve_game_version(udata: Dictionary) -> Dictionary:
 	elif mode == "FE5" and versions.has("FE5"):
 		chosen = versions["FE5"]
 	else:
-		chosen = _weaker_version(versions)   # SAGA (o modo sin versión propia)
+		# SAGA (o un modo sin bloque propio) → el NIVEL SUPERIOR es el valor SAGA.
+		# No se hace overlay de ninguna versión: el top-level ya contiene la base
+		# SAGA que dictó el usuario (p.ej. Leif arranca débil 22/4, Ced 54/…, y los
+		# cameos como Julius/Ishtar usan su forma FE4 fuerte).  Antes esto usaba
+		# _weaker_version, que sobreescribía el top-level con la versión de menor
+		# suma y rompía la intención (Leif SAGA salía como su forma FE4 fuerte).
+		var base_only := udata.duplicate(true)
+		base_only.erase("versions")
+		return base_only
 	if not (chosen is Dictionary) or chosen.is_empty():
 		return udata
 	var merged := udata.duplicate(true)
@@ -499,27 +508,6 @@ static func _current_game_mode() -> String:
 				1: return "FE5"   # Mode.FE5_ONLY
 				2: return "SAGA"  # Mode.SAGA_MODE
 	return "SAGA"
-
-## Devuelve el bloque de versión con MENOR suma de bases (desempate: menor
-## nivel).  Es el arranque en SAGA: la versión más débil que luego escala.
-static func _weaker_version(versions: Dictionary) -> Dictionary:
-	var best: Dictionary = {}
-	var best_key := 1 << 30
-	for k in versions:
-		var v = versions[k]
-		if not (v is Dictionary):
-			continue
-		var b: Dictionary = v.get("bases", {})
-		var s := 0
-		for stat in ["HP", "STR", "MAG", "SKL", "SPD", "LCK", "DEF", "RES"]:
-			s += int(b.get(stat, 0))
-		# Empaqueta (suma_bases, nivel) para desempatar por nivel más bajo.
-		var score := s * 1000 + int(v.get("level", 1))
-		if score < best_key:
-			best_key = score
-			best = v
-	return best
-
 
 ## Aplica los stats base de una clase a la unidad (bases + max_stats sirven
 ## como punto de partida si la unidad no tiene bases personales).
