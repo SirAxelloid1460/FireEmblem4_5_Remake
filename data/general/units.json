@@ -10946,5 +10946,40 @@
   "games": [
    "FE4"
   ]
+ },
+ {
+  "nid": "Rleve",
+  "name": "Rinecock",
+  "desc": "FE5 boss (Cap.16B): obispo Loptyrio con bastón Berserk (fireemblemwod: Rinecock).",
+  "klass": "DarkBishop",
+  "level": 5,
+  "gender": "M",
+  "bases": {
+   "HP": 51,
+   "STR": 4,
+   "MAG": 12,
+   "SKL": 13,
+   "SPD": 10,
+   "LCK": 5,
+   "DEF": 10,
+   "RES": 0,
+   "CON": 8,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Berserk"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Rleve",
+  "games": [
+   "FE5"
+  ]
  }
 ]
