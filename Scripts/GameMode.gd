@@ -465,7 +465,7 @@ func _serialize_unit(u) -> Dictionary:
 			var entry := _serialize_item(it)
 			if entry.is_empty():
 				continue
-			if "weapon" in u and u.weapon == it:
+			if "weapon" in u and is_same(u.weapon, it):
 				snap["equipped"] = snap["inventory"].size()
 			snap["inventory"].append(entry)
 	return snap

@@ -142,7 +142,7 @@ static func get_stealable_items(thief: Unit, victim: Unit,
 		if it == null:
 			continue
 		# Item equipado nunca robable (en FE4/5 esto es dura regla).
-		if "weapon" in victim and victim.weapon == it:
+		if "weapon" in victim and is_same(victim.weapon, it):
 			continue
 		# BUILD check FE5 (opcional):
 		if use_build_check and "weight" in it:

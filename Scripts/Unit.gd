@@ -234,9 +234,13 @@ func remove_temporary_skills_by_source(source: String) -> void:
 ## está en el árbol (get_node) como si es un nodo suelto (roster reconstruido en
 ## el castillo) — en ese caso se accede vía el SceneTree raíz.
 func _gamedb():
-	var n := get_node_or_null("/root/GameDB")
-	if n != null:
-		return n
+	# Solo se puede usar una ruta ABSOLUTA con get_node si el nodo está en el
+	# árbol; una Unit suelta (recién construida en LevelLoader, aún sin add_child)
+	# no lo está → se accede vía el SceneTree raíz.
+	if is_inside_tree():
+		var n := get_node_or_null("/root/GameDB")
+		if n != null:
+			return n
 	var loop := Engine.get_main_loop()
 	if loop is SceneTree and loop.root != null:
 		return loop.root.get_node_or_null("GameDB")
