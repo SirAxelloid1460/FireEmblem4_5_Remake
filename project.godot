@@ -16,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="FE4 FE5 Remake"
 config/description="Remake fan híbrido de Fire Emblem 4 + 5 (port desde LT-maker)."
-run/main_scene="res://Scenes/intro.tscn"
+run/main_scene="res://Scenes/language.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
 [autoload]
