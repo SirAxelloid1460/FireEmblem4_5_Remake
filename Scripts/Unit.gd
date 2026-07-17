@@ -845,6 +845,17 @@ func _resolve_map_sprite_nid() -> String:
 			ms = str(cd.map_sprite_nid)
 	if ms == "":
 		ms = unit_class   # fallback: el nid de clase suele coincidir (60/64)
+	# Variante por GÉNERO si existe el asset: p.ej. unidad F con clase "Mage" usa
+	# "MageFemale"/"MageF" si están; si no, cae al sprite base.  Convenciones de
+	# sufijo aceptadas (en orden de preferencia): Female/F para F, Male/M para M.
+	var suffixes: Array = []
+	if gender == "F":
+		suffixes = ["Female", "F"]
+	elif gender == "M":
+		suffixes = ["Male", "M"]
+	for suf in suffixes:
+		if ResourceLoader.exists("res://assets/map_sprites/%s%s-stand.png" % [ms, suf]):
+			return ms + suf
 	return ms
 
 ## nid base de la animación de combate de esta unidad.  El resolver construye
