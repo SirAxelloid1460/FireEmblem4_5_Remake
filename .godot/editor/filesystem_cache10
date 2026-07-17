@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784330610
+::res://::1784332328
 README.md::TextFile::-1::1784324121::0::1::::<><><>0<>0<><>::
 ::res://assets/::1784324133
 ::res://assets/animations/::1784325647
@@ -2551,7 +2551,7 @@ Toorimichi.ogg::AudioStreamOggVorbis::3038324989144462406::1784324131::178432562
 Wild Arms Town.ogg::AudioStreamOggVorbis::7071668242237795463::1784324132::1784325628::1::::<><><>0<>0<>7f45b0eff485b40c1638a2552e58fdc1<>res://.godot/imported/Wild Arms Town.ogg-ce82546eea24303b2b2c0261637b7083.oggvorbisstr::
 Xing Symphony.ogg::AudioStreamOggVorbis::4396440692648843984::1784324132::1784325630::1::::<><><>0<>0<>3e5a110c5e0a70453af7e823702416de<>res://.godot/imported/Xing Symphony.ogg-1448c257c8189317441fe66f28f201c8.oggvorbisstr::
 Young Man from the East.ogg::AudioStreamOggVorbis::4454417988068036540::1784324132::1784325630::1::::<><><>0<>0<>136984e73b50b391a88fead991f83ab4<>res://.godot/imported/Young Man from the East.ogg-8825223554b0f65bc6a4d241e843cd2e.oggvorbisstr::
-::res://assets/panoramas/::1784328527
+::res://assets/panoramas/::1784332301
 AkileesCastle3.png::CompressedTexture2D::6263346789531375280::1784324132::1784325631::1::::<><><>0<>0<>d492cf4ae02f80fb593bbda01d1f6889<>res://.godot/imported/AkileesCastle3.png-bbd3ed1f385e30ffbf85e7c196287ae7.ctex::
 AkileesCastle.png::CompressedTexture2D::8842867520137011554::1784324132::1784325631::1::::<><><>0<>0<>22e92cf300f110217435fd251049e32e<>res://.godot/imported/AkileesCastle.png-5ddc639b1738f752f6891e67aa122d7b.ctex::
 Arena.png::CompressedTexture2D::6808582922191469598::1784324132::1784325631::1::::<><><>0<>0<>d3ae731f66705654edae5d4ed68cc00d<>res://.godot/imported/Arena.png-7a228b704f1365ec08a0e369413c5e70.ctex::
@@ -2639,8 +2639,8 @@ TacticsRoom.png::CompressedTexture2D::4793808300742449471::1784324132::178432563
 TacticsRoomDay.png::CompressedTexture2D::552345831793502426::1784324132::1784325631::1::::<><><>0<>0<>1e51247082b76504a00a6a7fd1453c74<>res://.godot/imported/TacticsRoomDay.png-529bcbebffa82e53d33521dd993eff2f.ctex::
 Temple.png::CompressedTexture2D::7458171742085285024::1784324132::1784325631::1::::<><><>0<>0<>a5fad0938e2613ea4b34caedea2a008c<>res://.godot/imported/Temple.png-deeca6a548641a7f82b374f4d03f2be7.ctex::
 title_background.json::JSON::-1::1784324132::0::1::::<><><>0<>0<><>::
-title_background.png::CompressedTexture2D::3721831185842230943::1784324132::1784325632::1::::<><><>0<>0<>b750b6d79be6dfa9d3a9bbb96721df5d<>res://.godot/imported/title_background.png-874923a92afdc2ab3784ca244c8b773f.ctex::
-title_background_FE4.png::CompressedTexture2D::512285914586220848::1784324132::1784325631::1::::<><><>0<>0<>11537470d53164e775c76bc6019b4831<>res://.godot/imported/title_background_FE4.png-92fa7efb27a35f12afc3a845d5125941.ctex::
+title_background.png::CompressedTexture2D::3721831185842230943::1784332103::1784332301::1::::<><><>0<>0<>b750b6d79be6dfa9d3a9bbb96721df5d<>res://.godot/imported/title_background.png-874923a92afdc2ab3784ca244c8b773f.ctex::
+title_background_FE4.png::CompressedTexture2D::512285914586220848::1784332288::1784332300::1::::<><><>0<>0<>11537470d53164e775c76bc6019b4831<>res://.godot/imported/title_background_FE4.png-92fa7efb27a35f12afc3a845d5125941.ctex::
 title_background_FE5.png::CompressedTexture2D::4927575330054292009::1784324132::1784325631::1::::<><><>0<>0<>eb036d001661c41639a093b037e75c50<>res://.godot/imported/title_background_FE5.png-12f313b9a2c461ceafe764c6a0d951a4.ctex::
 title_background_SAGA.png::CompressedTexture2D::3610125411933612007::1784327187::1784328527::1::::<><><>0<>0<>c5ccc040cfe51127f52ee56e0f21fe92<>res://.godot/imported/title_background_SAGA.png-659469e25467365feb6149373db74716.ctex::
 Town.png::CompressedTexture2D::3291488350265067455::1784324132::1784325631::1::::<><><>0<>0<>e126bcac6d09ebe6b980c10da129682f<>res://.godot/imported/Town.png-b0e317e54de906dccfe1fb7bfa2638bf.ctex::
@@ -3390,10 +3390,10 @@ T23.png::CompressedTexture2D::1652679539748856087::1784324133::1784325634::1::::
 T24.png::CompressedTexture2D::7233403013095080254::1784324133::1784325634::1::::<><><>0<>0<>7f934868027a7e2a318cdb96156ec8f8<>res://.godot/imported/T24.png-5c05c1806283ede84ff43a806281559e.ctex::
 T24x.png::CompressedTexture2D::7476527454124899514::1784324133::1784325634::1::::<><><>0<>0<>63c0c0a6b94a8d895eebf90bbb127250<>res://.godot/imported/T24x.png-843af496f4b6929eb18eb88b50347210.ctex::
 TF.png::CompressedTexture2D::4494509402616968250::1784324133::1784325634::1::::<><><>0<>0<>46a53ccbebb08eef48860bb35d5524cc<>res://.godot/imported/TF.png-612f25cea83bf3b361ed7ef7d0e94f14.ctex::
-::res://assets/title/::1784328527
+::res://assets/title/::1784332300
 logo1.png::CompressedTexture2D::8032125651993206790::1784327397::1784328527::1::::<><><>0<>0<>e05c91cc724d84c28f490babce01f668<>res://.godot/imported/logo1.png-3db211141f833e185996fa7b473d73b2.ctex::
 logo2.png::CompressedTexture2D::6066725996412016955::1784327418::1784328527::1::::<><><>0<>0<>3fd3399d73424124082f0f5158aad940<>res://.godot/imported/logo2.png-d3379da3c26b5d58296da14a2c9bb935.ctex::
-title1_background.png::CompressedTexture2D::5134709640215468372::1784324133::1784325634::1::::<><><>0<>0<>0823cf8e42a5f3371a09151542365959<>res://.godot/imported/title1_background.png-abac48b2f17d8ed9cb8a6b00237ea466.ctex::
+title1_background.png::CompressedTexture2D::5134709640215468372::1784332282::1784332300::1::::<><><>0<>0<>0823cf8e42a5f3371a09151542365959<>res://.godot/imported/title1_background.png-abac48b2f17d8ed9cb8a6b00237ea466.ctex::
 title2_background.png::CompressedTexture2D::5408798187678863261::1784324133::1784325634::1::::<><><>0<>0<>76519a2fdb586bf724949aee3884295b<>res://.godot/imported/title2_background.png-5ab095e74081df952cd72a5deabf8570.ctex::
 ::res://assets/videos/::1784324134
 eng.ogv::VideoStreamTheora::5406460509720270435::1784324134::0::1::::<><><>0<>0<><>::
@@ -3730,7 +3730,7 @@ mode_select.tscn::PackedScene::-1::1784325925::0::1::::<><><>0<>0<><>::res://Scr
 options_menu.tscn::PackedScene::-1::1784324121::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784324121::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784324121::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784330593
+::res://Scripts/::1784331417
 ActionMenu.gd::GDScript::6413271467111799318::1784324121::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784324121::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784324121::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
@@ -3793,7 +3793,7 @@ LocationMarker.gd::GDScript::1836486964086790272::1784324122::0::1::::LocationMa
 MainMenu.gd::GDScript::8175898352055706196::1784330593::0::1::::MainMenu<>Control<><>0<>0<><>::
 MapActions.gd::GDScript::3535448452538133979::1784324122::0::1::::MapActions<>RefCounted<><>0<>0<><>::
 MapBackground.gd::GDScript::3738451975226640230::1784324122::0::1::::MapBackground<>Node2D<><>0<>0<><>::
-ModeSelect.gd::GDScript::3174370287506302631::1784330593::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
+ModeSelect.gd::GDScript::3174370287506302631::1784331417::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
 OptionsMenu.gd::GDScript::5364573969176011556::1784324122::0::1::::OptionsMenu<>Control<><>0<>0<><>::
 Pathfinding.gd::GDScript::1848538420110686201::1784324122::0::1::::Pathfinding<>Node<><>0<>0<><>::
 PrologueCinematic.gd::GDScript::3981487757909408999::1784324122::0::1::::PrologueCinematic<>CinematicScene<><>0<>0<><>::
@@ -3802,7 +3802,7 @@ PromotionPanel.gd::GDScript::4153741883649203270::1784324122::0::1::::PromotionP
 PromotionScreen.gd::GDScript::4779123178995863736::1784324122::0::1::::PromotionScreen<>Control<><>0<>0<><>::
 PromotionSystem.gd::GDScript::8325188722818028479::1784324122::0::1::::PromotionSystem<>Node<><>0<>0<><>::
 SaveSystem.gd::GDScript::485315861979317151::1784324122::0::1::::SaveSystem<>Node<><>0<>0<><>::
-SelectMenu.gd::GDScript::439202066668374422::1784330593::0::1::::SelectMenu<>Control<><>0<>0<><>::
+SelectMenu.gd::GDScript::439202066668374422::1784331417::0::1::::SelectMenu<>Control<><>0<>0<><>::
 ShopPanel.gd::GDScript::473820464989183141::1784324122::0::1::::ShopPanel<>Panel<><>0<>0<><>::
 SkillData.gd::GDScript::7693736634377838352::1784324122::0::1::::SkillData<>Resource<><>0<>0<><>::
 SoundRoom.gd::GDScript::3311604537699361751::1784324122::0::1::::SoundRoom<>Control<><>0<>0<><>::
@@ -3810,7 +3810,7 @@ SubstituteSystem.gd::GDScript::119895372994411184::1784324122::0::1::::Substitut
 SupportSystem.gd::GDScript::2046322873708120284::1784324122::0::1::::SupportSystem<>Node<><>0<>0<><>::
 TerrainSystem.gd::GDScript::79259312568237195::1784324122::0::1::::TerrainSystem<>RefCounted<><>0<>0<><>::
 TilemapLoader.gd::GDScript::7967886734629350198::1784324122::0::1::::TilemapLoader<>RefCounted<><>0<>0<><>::
-TitleOverlay.gd::GDScript::7026251750168625133::1784330593::0::1::::TitleOverlay<>TextureRect<><>0<>0<><>::
+TitleOverlay.gd::GDScript::7026251750168625133::1784331417::0::1::::TitleOverlay<>TextureRect<><>0<>0<><>::
 Unit.gd::GDScript::5248928574066178943::1784324122::0::1::::Unit<>Node2D<><>0<>0<><>::
 UnitClassData.gd::GDScript::3967829341055950066::1784324122::0::1::::UnitClassData<>Resource<><>0<>0<><>::
 UnitDef.gd::GDScript::776610149566509209::1784324122::0::1::::UnitDef<>Resource<><>0<>0<><>::
