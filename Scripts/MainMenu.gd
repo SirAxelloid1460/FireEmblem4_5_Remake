@@ -55,8 +55,6 @@ const PRESS_SCALE    := 5
 const PLATE      := "res://assets/menus/title_menu_dark.png"           # placa normal
 const PLATE_HL   := "res://assets/menus/title_menu_dark_highlight.png" # placa enfocada
 const SWORD      := "res://assets/menus/cursor_dragon.png"             # cursor-espada
-const GEM        := "res://assets/menus/menu_gem_brown.png"            # gema de placa (14×12)
-const GEM_SCALE  := 3
 const SERIF_FONT := "res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
 
 # SFX del menú (ver assets/sfx/). Navegación al cambiar de foco, confirmación al
@@ -123,6 +121,9 @@ var _skip_next_nav_sfx: bool = false       # evita el tick de navegación en el 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_build_bg()
+	# Niebla/nubes animada (misma que en los menús de arranque), encima del fondo
+	# y debajo del logo/botones.
+	add_child(TitleOverlay.new())
 	_build_music()
 	_build_title()
 	_build_press_start()
@@ -289,20 +290,13 @@ func _build_columns() -> void:
 	])
 
 
-## Stylebox de placa FE (title_menu_dark, 136×24). Es un MARCO 9-patch con
-## volutas ornamentadas en las esquinas: hay que fijar los `texture_margin_*`
-## para que Godot mantenga las esquinas a tamaño nativo y solo estire el centro.
-## Sin ellos la textura entera se deforma y las volutas se embarran por todo el
-## botón (parecen "un fragmento de otra imagen").
+## Stylebox de placa FE (title_menu_dark, 136×24): se estira entera al tamaño del
+## botón (sin 9-patch), que es el look deseado. content_margin sitúa el texto.
 func _plate_sb(path: String) -> StyleBoxTexture:
 	var sb := StyleBoxTexture.new()
 	sb.texture = load(path)
-	# Márgenes 9-patch (fuente 136×24): esquinas ornamentadas fijas, centro estirable.
-	sb.texture_margin_left = 24
-	sb.texture_margin_right = 24
-	sb.texture_margin_top = 10
-	sb.texture_margin_bottom = 8
-	# Márgenes de contenido: dónde se asienta el texto dentro de la placa.
+	# La placa (title_menu_dark, 136×24) se estira entera al tamaño del botón:
+	# es el look que se quería (sin 9-patch). content_margin sitúa el texto.
 	sb.content_margin_left = 40
 	sb.content_margin_right = 40
 	sb.content_margin_top = 12
@@ -345,46 +339,10 @@ func _make_button(text: String, id: String) -> Button:
 	b.add_theme_stylebox_override("focus", _plate_sb(PLATE_HL))
 	b.add_theme_stylebox_override("pressed", _plate_sb(PLATE_HL))
 	b.set_meta("id", id)
-	# Gemas ornamentales que flanquean el texto; sólo visibles en la placa enfocada.
-	_add_gems(b)
 	b.pressed.connect(_on_button_pressed.bind(id))
 	b.focus_entered.connect(_on_button_focus.bind(b, id))
-	b.focus_exited.connect(_set_button_gems.bind(b, false))
 	b.mouse_entered.connect(b.grab_focus)
 	return b
-
-
-## Crea dos gemas (izq/der) sobre la placa, ocultas por defecto. Se encienden
-## en la placa con foco (look FE de "entrada seleccionada").
-func _add_gems(b: Button) -> void:
-	if not ResourceLoader.exists(GEM):
-		return
-	var tex := load(GEM)
-	var gw := 14 * GEM_SCALE
-	var gh := 12 * GEM_SCALE
-	var y := (BTN_H - gh) * 0.5
-	for side in ["GemL", "GemR"]:
-		var g := TextureRect.new()
-		g.name = side
-		g.texture = tex
-		g.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-		g.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		g.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		g.custom_minimum_size = Vector2(gw, gh)
-		g.size = Vector2(gw, gh)
-		g.position = Vector2(28 if side == "GemL" else BTN_W - 28 - gw, y)
-		g.visible = false
-		b.add_child(g)
-
-
-## Enciende/apaga las gemas de una placa.
-func _set_button_gems(b: Button, on: bool) -> void:
-	if b == null or not is_instance_valid(b):
-		return
-	for side in ["GemL", "GemR"]:
-		var g := b.get_node_or_null(side)
-		if g != null:
-			g.visible = on
 
 
 func _build_cursor() -> void:
@@ -497,7 +455,6 @@ func _on_button_pressed(id: String) -> void:
 
 func _on_button_focus(b: Button, id: String) -> void:
 	_move_cursor_to(b)
-	_set_button_gems(b, true)
 	# Tick de navegación, salvo el auto-foco al entrar a un panel (evita el doble
 	# sonido con el de confirmación que disparó la transición).
 	if _skip_next_nav_sfx:
