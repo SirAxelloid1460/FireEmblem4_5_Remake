@@ -27,7 +27,7 @@ const FPS := 24.0
 # Umbrales del keying por luminancia (ajustables si hace falta).
 const DARK_CUT    := 0.10   # luminancia por debajo de esto → totalmente transparente
 const BRIGHT_FULL := 0.55   # luminancia por encima de esto → opacidad máxima
-const MAX_ALPHA   := 0.32   # tope de opacidad: efecto SUTIL, no tapa el fondo/logo
+const MAX_ALPHA   := 0.10   # tope de opacidad: efecto MUY sutil
 
 const SHADER_CODE := """
 shader_type canvas_item;
@@ -44,7 +44,6 @@ void fragment() {
 
 var _frames: Array = []
 var _i: int = 0
-var _dir: int = 1
 var _accum: float = 0.0
 
 
@@ -79,15 +78,7 @@ func _process(delta: float) -> void:
 		return
 	_accum += delta
 	var frame_time := 1.0 / FPS
-	# Reproducción PING-PONG (0→N→0): evita el salto del corte de bucle, que se
-	# notaba como un "tirón/estático" al reiniciar.
 	while _accum >= frame_time:
 		_accum -= frame_time
-		_i += _dir
-		if _i >= _frames.size() - 1:
-			_i = _frames.size() - 1
-			_dir = -1
-		elif _i <= 0:
-			_i = 0
-			_dir = 1
+		_i = (_i + 1) % _frames.size()
 		texture = _frames[_i]

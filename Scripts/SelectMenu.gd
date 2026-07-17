@@ -46,9 +46,18 @@ const BTN_FONT   := 32
 const HAND_SCALE := 4
 const BOB_SEQ  := [0, 3, 6, 3]
 const BOB_TIME := 0.12
-# Parallax de la base: sobre-tamaño y amplitud de la deriva (px).
-const PARALLAX_MARGIN := 24.0
-const PARALLAX_AMP    := 12.0
+# Parallax de la base: scroll HORIZONTAL constante hacia la izquierda (fracción
+# de textura por segundo). Shader que desplaza la UV y hace wrap (tile).
+const PARALLAX_SPEED := 0.03
+const SCROLL_SHADER := """
+shader_type canvas_item;
+uniform float speed;
+void fragment() {
+	vec2 uv = UV;
+	uv.x += TIME * speed;
+	COLOR = texture(TEXTURE, fract(uv));
+}
+"""
 
 const SFX_NAV     := "Select 5"
 const SFX_CONFIRM := "Select 4"
@@ -67,7 +76,6 @@ var _skip_next_nav: bool = false
 # Fondo.
 var _bg_base: TextureRect       # capa base (default_background / bg por opción)
 var _parallax: bool = false
-var _bg_t: float = 0.0
 
 
 # ── Configuración (sobreescribir en subclases) ──────────────────────────────
@@ -100,9 +108,14 @@ func _option_font_size() -> int:
 	return BTN_FONT
 
 
+## Alineación horizontal del texto de las opciones. Sobreescribir por menú.
+func _option_align() -> int:
+	return HORIZONTAL_ALIGNMENT_LEFT
+
+
 ## Geometría del panel-lista en fracciones del viewport [izq, arriba, der, abajo].
 func _list_panel_rect() -> Array:
-	return [0.55, 0.15, 0.93, 0.75]
+	return [0.55, 0.10, 0.93, 0.70]
 
 
 func _on_choose(_id: String) -> void:
@@ -134,14 +147,23 @@ func _build_bg() -> void:
 	base.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	base.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(base)
-	# Capa base (imagen). Con parallax se posiciona a mano en _process (sobre-
-	# tamaño + deriva); sin parallax cubre el rect completo.
+	# Capa base (imagen), a pantalla completa. Con parallax: scroll horizontal
+	# constante hacia la izquierda vía shader (UV + wrap), textura en modo tile.
 	_bg_base = TextureRect.new()
-	_bg_base.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 	_bg_base.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	_bg_base.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	if not _parallax:
-		_bg_base.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_bg_base.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	if _parallax:
+		_bg_base.stretch_mode = TextureRect.STRETCH_SCALE
+		_bg_base.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
+		var sh := Shader.new()
+		sh.code = SCROLL_SHADER
+		var mat := ShaderMaterial.new()
+		mat.shader = sh
+		mat.set_shader_parameter("speed", PARALLAX_SPEED)
+		_bg_base.material = mat
+	else:
+		_bg_base.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 	add_child(_bg_base)
 	var base_tex := _bg_base_texture()
 	if base_tex == null:
@@ -177,7 +199,7 @@ func _nine_panel(al: float, at: float, ar: float, ab: float) -> NinePatchRect:
 
 
 func _build_preview_panel() -> void:
-	var panel := _nine_panel(0.07, 0.25, 0.38, 0.61)
+	var panel := _nine_panel(0.07, 0.20, 0.38, 0.56)
 	_preview = TextureRect.new()
 	# STRETCH_SCALE + más margen arriba/abajo: reduce SÓLO el alto de la bandera
 	# (el ancho sigue llenando el recuadro, como antes).
@@ -212,7 +234,7 @@ func _build_list_panel() -> void:
 func _make_option(text: String, id: String) -> Button:
 	var b := Button.new()
 	b.text = text
-	b.alignment = HORIZONTAL_ALIGNMENT_LEFT
+	b.alignment = _option_align()
 	b.focus_mode = Control.FOCUS_ALL
 	b.mouse_filter = Control.MOUSE_FILTER_STOP
 	var fs := _option_font_size()
@@ -296,20 +318,8 @@ func _move_cursor_to(b: Button) -> void:
 
 
 func _process(delta: float) -> void:
-	_animate_parallax(delta)
+	# El parallax lo anima el shader (TIME); aquí sólo el cursor.
 	_animate_cursor(delta)
-
-
-## Deriva parallax lenta de la base (sobre-tamaño para no descubrir bordes).
-func _animate_parallax(delta: float) -> void:
-	if not _parallax or _bg_base == null:
-		return
-	_bg_t += delta
-	var vp := get_viewport_rect().size
-	_bg_base.size = vp + Vector2(PARALLAX_MARGIN * 2.0, PARALLAX_MARGIN * 2.0)
-	_bg_base.position = Vector2(
-		-PARALLAX_MARGIN + sin(_bg_t * 0.35) * PARALLAX_AMP,
-		-PARALLAX_MARGIN + sin(_bg_t * 0.27) * PARALLAX_AMP)
 
 
 func _animate_cursor(delta: float) -> void:
@@ -323,8 +333,18 @@ func _animate_cursor(delta: float) -> void:
 		_bob_i = (_bob_i + 1) % BOB_SEQ.size()
 	var b := _cursor_target
 	var hw := 15 * HAND_SCALE
+	# Punto de referencia = inicio del texto. Con texto centrado, se calcula el
+	# comienzo del texto (centro del botón − mitad del ancho del texto) para que
+	# la mano quede pegada a la palabra, no al borde del panel.
+	var x_ref := b.global_position.x
+	if _option_align() == HORIZONTAL_ALIGNMENT_CENTER:
+		var font := b.get_theme_font("font")
+		var fs := b.get_theme_font_size("font_size")
+		if font != null:
+			var tw: float = font.get_string_size(b.text, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x
+			x_ref = b.global_position.x + (b.size.x - tw) * 0.5
 	_cursor.global_position = Vector2(
-		b.global_position.x - hw - 6 + BOB_SEQ[_bob_i],
+		x_ref - hw - 6 + BOB_SEQ[_bob_i],
 		b.global_position.y + (b.size.y - 12 * HAND_SCALE) * 0.5)
 
 
