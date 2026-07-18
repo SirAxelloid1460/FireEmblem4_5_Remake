@@ -37,10 +37,17 @@
 #   python tools/build_map_sprites.py --src-move in/Cavalier_move.png --inspect
 #
 # Si up/left salen intercambiados, cambia --walk-order (p.ej. down,left,up).
+#
+# Modo LOTE (una carpeta con pares '{X}-stand.png' + '{X}-walk.png'):
+#   python tools/build_map_sprites.py --batch tools/incoming/
+#   · Empareja por prefijo, deriva el nombre limpiándolo:
+#       'Bard (U) {Stephano, Zane}' → 'Bard'   (usa --raw-names para dejarlo tal cual)
+#   · Acepta el sufijo -walk.png o -move.png para el caminar.
 # =============================================================================
 
 import argparse
 import os
+import re
 import sys
 
 try:
@@ -252,14 +259,16 @@ def _inspect(path, frame_wh):
             print("   frame %2d: y=%d..%d (alto %d)" % (i, t, b, b - t))
 
 
-def convert(name, out_dir, args):
+def convert(name, out_dir, args, stand_path=None, move_path=None):
+    stand_path = stand_path if stand_path is not None else args.src_stand
+    move_path = move_path if move_path is not None else args.src_move
     made = []
     # STAND
-    if args.src_stand:
+    if stand_path:
         if args.inspect:
-            _inspect(args.src_stand, _frame_wh(args.stand_frame))
+            _inspect(stand_path, _frame_wh(args.stand_frame))
         else:
-            sframes = slice_frames(Image.open(args.src_stand), _frame_wh(args.stand_frame))
+            sframes = slice_frames(Image.open(stand_path), _frame_wh(args.stand_frame))
             idle = _pick(sframes, _parse_idx(args.idle), "idle")
             gray = _pick(sframes, _parse_idx(args.gray), "gray") if args.gray else None
             active = _pick(sframes, _parse_idx(args.active), "active") if args.active else None
@@ -270,11 +279,11 @@ def convert(name, out_dir, args):
             stand.save(p)
             made.append(p)
     # MOVE
-    if args.src_move:
+    if move_path:
         if args.inspect:
-            _inspect(args.src_move, _frame_wh(args.move_frame))
+            _inspect(move_path, _frame_wh(args.move_frame))
         else:
-            mframes = slice_frames(Image.open(args.src_move), _frame_wh(args.move_frame))
+            mframes = slice_frames(Image.open(move_path), _frame_wh(args.move_frame))
             wm = _walk_map(mframes, args)
             if any(wm.values()):
                 move = compose_move(wm, args.feet_y, mirror_right=not args.no_mirror_right)
@@ -288,11 +297,49 @@ def convert(name, out_dir, args):
             print("[%s] nada que escribir (¿faltó --src-stand/--src-move o --idle/--walk-*?)" % name)
 
 
+def _clean_name(prefix):
+    """Deriva un NID limpio del prefijo del archivo: quita grupos '(...)' y
+    '{...}' y colapsa espacios. Ej: 'Bard (U) {Stephano, Zane}' → 'Bard'."""
+    s = re.sub(r"\([^)]*\)", "", prefix)
+    s = re.sub(r"\{[^}]*\}", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s or prefix.strip()
+
+
+def run_batch(in_dir, out_dir, args):
+    """Empareja '{X}-stand.png' con '{X}-walk.png' (o '-move.png') en in_dir y
+    convierte cada par. El nombre de salida se limpia salvo --raw-names."""
+    files = os.listdir(in_dir)
+    stands = sorted(f for f in files if f.lower().endswith("-stand.png"))
+    if not stands:
+        sys.exit("No hay archivos '*-stand.png' en %s" % in_dir)
+    lower = {f.lower(): f for f in files}
+    n = 0
+    for sf in stands:
+        prefix = sf[:-len("-stand.png")]
+        move = None
+        for suf in ("-walk.png", "-move.png"):
+            cand = (prefix + suf).lower()
+            if cand in lower:
+                move = lower[cand]
+                break
+        name = prefix if args.raw_names else _clean_name(prefix)
+        if not args.inspect and prefix != name:
+            print("  %-40s → %s" % (prefix, name))
+        convert(name, out_dir, args,
+                stand_path=os.path.join(in_dir, sf),
+                move_path=os.path.join(in_dir, move) if move else None)
+        n += 1
+    print("Lote: %d clase(s) procesada(s)." % n)
+
+
 def main():
     ap = argparse.ArgumentParser(description="Convierte map sprites (fondo verde) al formato LT del proyecto.")
     ap.add_argument("--src-stand", help="PNG de origen del idle (formato GBAFE: columna 16×48).")
-    ap.add_argument("--src-move", help="PNG de origen del caminar (formato GBAFE: columna 32×480).")
-    ap.add_argument("--name", help="Nombre de clase de salida (obligatorio salvo --inspect).")
+    ap.add_argument("--src-move", help="PNG de origen del caminar/-walk (formato GBAFE: columna 32×480).")
+    ap.add_argument("--batch", help="Carpeta con pares '{X}-stand.png' + '{X}-walk.png' (o -move.png); convierte todos.")
+    ap.add_argument("--raw-names", action="store_true", help="En lote, no limpiar el nombre (deja 'Bard (U) {..}').")
+    ap.add_argument("--name", help="Nombre de clase de salida (obligatorio salvo --inspect / --batch).")
     ap.add_argument("--out", default=os.path.join(PROJECT_ROOT, "assets", "GBA", "map_sprites"),
                     help="Carpeta destino (default assets/GBA/map_sprites/).")
 
@@ -319,13 +366,15 @@ def main():
     ap.add_argument("--inspect", action="store_true", help="Sólo reporta frames detectados; no escribe.")
     args = ap.parse_args()
 
-    if not args.src_stand and not args.src_move:
-        ap.error("Indica --src-stand y/o --src-move.")
-    if not args.inspect and not args.name:
-        ap.error("--name es obligatorio (salvo --inspect).")
-    name = args.name or "sprite"
     os.makedirs(args.out, exist_ok=True)
-    convert(name, args.out, args)
+    if args.batch:
+        run_batch(args.batch, args.out, args)
+        return
+    if not args.src_stand and not args.src_move:
+        ap.error("Indica --batch, o --src-stand y/o --src-move.")
+    if not args.inspect and not args.name:
+        ap.error("--name es obligatorio (salvo --inspect / --batch).")
+    convert(args.name or "sprite", args.out, args)
 
 
 if __name__ == "__main__":
