@@ -139,19 +139,23 @@ var credits_data: Array = [
 	{ "type": "header", "text": "MAP SPRITES" },
 	{ "type": "subheader", "text": "& Custom Class Cards" },
 	{ "type": "spacer", "size": 16 },
-	{ "type": "grid", "columns": 4, "names": [
-		"Serenes Forest", "FEUniverse", "SirAxelloid1460", "Lexou",
-		"Jirbytaylor", "RobertFPY", "flasuban", "Tordo45",
-		"DerTheVaporeon", "Pikmin1211", "HyperGammaSpaces (HGS)", "L95",
-		"Someone Unknown", "FEGirls", "CamusZekeSirius", "Rexacuse",
-		"Peerless", "Alusq", "WarPath", "Yangfly Master",
-		"Cath", "Chad", "Rasdel", "Agro",
-		"Yggdra", "Aruka", "Kenpuhu", "Smug_mug",
-		"BatimaTheBat", "Jeorge_Reds", "Cipher", "Lee",
-		"Sephie", "Eldritch Abomination", "MeatofJustice", "Leif",
-		"Nuramon", "Its_Just_Jay", "SamirPlayz", "N426",
-		"Mikey_Seregon", "StreetHero", "Blood", "Huichelaar",
-		"Seal", "Mobile21", "Team SALVAGED", "Teraspark"
+	# --- Créditos comunitarios del grid original (comentados de momento) ---
+	# { "type": "grid", "columns": 4, "names": [
+	#	"Serenes Forest", "FEUniverse", "SirAxelloid1460", "Lexou",
+	#	"Jirbytaylor", "RobertFPY", "flasuban", "Tordo45",
+	#	"DerTheVaporeon", "Pikmin1211", "HyperGammaSpaces (HGS)", "L95",
+	#	"Someone Unknown", "FEGirls", "CamusZekeSirius", "Rexacuse",
+	#	"Peerless", "Alusq", "WarPath", "Yangfly Master",
+	#	"Cath", "Chad", "Rasdel", "Agro",
+	#	"Yggdra", "Aruka", "Kenpuhu", "Smug_mug",
+	#	"BatimaTheBat", "Jeorge_Reds", "Cipher", "Lee",
+	#	"Sephie", "Eldritch Abomination", "MeatofJustice", "Leif",
+	#	"Nuramon", "Its_Just_Jay", "SamirPlayz", "N426",
+	#	"Mikey_Seregon", "StreetHero", "Blood", "Huichelaar",
+	#	"Seal", "Mobile21", "Team SALVAGED", "Teraspark"
+	# ] },
+	{ "type": "table", "rows": [
+		["Original FE4 & FE5", "Ripping & Formatting", "Stephano, Zane"],
 	] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
@@ -162,8 +166,13 @@ var credits_data: Array = [
 
 	# ---------- CUSTOM ITEM SPRITES ----------
 	{ "type": "header", "text": "CUSTOM ITEM SPRITES" },
-	{ "type": "text", "text": "SirAxelloid1460" },
-	{ "type": "text", "text": "FEUniverse" },
+	# --- Créditos anteriores (comentados de momento) ---
+	# { "type": "text", "text": "SirAxelloid1460" },
+	# { "type": "text", "text": "FEUniverse" },
+	{ "type": "spacer", "size": 16 },
+	{ "type": "table", "rows": [
+		["HD", "Weapons", "Kazkirigiri"],
+	] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
 	{ "type": "divider" },
