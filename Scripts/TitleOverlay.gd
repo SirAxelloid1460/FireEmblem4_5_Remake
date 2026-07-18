@@ -19,10 +19,15 @@ extends TextureRect
 
 const SHEET := "res://assets/panoramas/title_background.png"
 const COLS := 6
-const FW := 240
-const FH := 160
 const FRAME_COUNT := 33
 const FPS := 24.0
+
+# Tamaño de frame de REFERENCIA (base GBA). El grid (COLS × filas) y FRAME_COUNT
+# son LÓGICOS: idénticos en Original/GBA/HD. El tamaño real en píxeles se deriva
+# de la textura cargada (ver _ready), así una hoja HD 2× (480×320 por frame)
+# se recorta correctamente sin tocar estas constantes.
+const FW_REF := 240
+const FH_REF := 160
 
 # Umbrales del keying por luminancia (ajustables si hace falta).
 const DARK_CUT    := 0.10   # luminancia por debajo de esto → totalmente transparente
@@ -65,10 +70,15 @@ func _ready() -> void:
 	if not ResourceLoader.exists(sheet_path):
 		return
 	var sheet: Texture2D = load(sheet_path)
+	# Deriva el tamaño de frame real de la hoja: filas = ceil(FRAME_COUNT/COLS).
+	# Así GBA (240×160) y una hipotética HD 2× (480×320) funcionan igual.
+	var rows: int = int(ceil(float(FRAME_COUNT) / float(COLS)))
+	var fw: int = int(sheet.get_width() / COLS) if sheet.get_width() > 0 else FW_REF
+	var fh: int = int(sheet.get_height() / rows) if sheet.get_height() > 0 else FH_REF
 	for n in FRAME_COUNT:
 		var at := AtlasTexture.new()
 		at.atlas = sheet
-		at.region = Rect2((n % COLS) * FW, (n / COLS) * FH, FW, FH)
+		at.region = Rect2((n % COLS) * fw, (n / COLS) * fh, fw, fh)
 		_frames.append(at)
 	if _frames.size() > 0:
 		texture = _frames[0]
