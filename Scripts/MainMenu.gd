@@ -341,6 +341,8 @@ func _stop_demo() -> void:
 	_demo_layer = null
 	_demo_vp = null
 	_idle_time = 0.0
+	# Tras la demo (termine o se corte), volver a la pantalla de PRESS START.
+	_goto(St.PRESS_START)
 
 
 ## Vídeo de demo por modo: FE4/SAGA usan fe4_demo (sin idioma); FE5 usa
