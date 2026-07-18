@@ -59,7 +59,6 @@ const PRESS_SCALE    := 5
 # Modo DEMO / attract: tras AFK_SECONDS sin input en el menú, reproduce el vídeo
 # de demo ENCIMA de todo (sin parar la música); cualquier input lo corta.
 const AFK_SECONDS := 15.0
-const DEMO_DIR    := "res://assets/videos/"
 
 # UI de botones estilo FE: placa ornamentada individual + cursor-espada.
 const PLATE      := "res://assets/menus/title_menu_dark.png"           # placa normal
@@ -379,21 +378,11 @@ func _stop_demo() -> void:
 	_goto(St.PRESS_START)
 
 
-## Vídeo de demo por modo: FE4/SAGA usan fe4_demo (sin idioma); FE5 usa
-## fe5_demo_{en,jp} (con idioma). Fallback a demo.ogv genérico.
+## Vídeo de demo por modo: fe4_demo (FE4/SAGA) o fe5_demo (FE5), con sufijo de
+## idioma y fallback a _en (ver VideoResolver).
 func _resolve_demo_video() -> String:
-	var candidates: Array = []
-	if _mode() == 1:
-		var lang := "jp" if TranslationServer.get_locale().begins_with("ja") else "en"
-		candidates.append(DEMO_DIR + "fe5_demo_%s.ogv" % lang)
-		candidates.append(DEMO_DIR + "fe5_demo_en.ogv")
-	else:
-		candidates.append(DEMO_DIR + "fe4_demo.ogv")
-	candidates.append(DEMO_DIR + "demo.ogv")
-	for p in candidates:
-		if ResourceLoader.exists(p):
-			return p
-	return ""
+	var base := "fe5_demo" if _mode() == 1 else "fe4_demo"
+	return VideoResolver.localized(base)
 
 
 ## Anima el shimmer del "Press Start" (sólo cuando está visible).
