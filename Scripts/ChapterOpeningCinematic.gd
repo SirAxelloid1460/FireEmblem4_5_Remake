@@ -84,12 +84,12 @@ func build_cinematic_sequence() -> Array[Dictionary]:
 			{
 				"character": "Eirika",
 				"text": "¡Adelante! ¡No permitiremos que mantengan esta posición!",
-				"portrait": "res://assets/portraits/eirika.png"
+				"portrait": "res://assets/GBA/portraits/eirika.png"
 			},
 			{
 				"character": "Seth",
 				"text": "Estaremos a su lado, mi señora. ¡A la batalla!",
-				"portrait": "res://assets/portraits/seth.png"
+				"portrait": "res://assets/GBA/portraits/seth.png"
 			}
 		]
 	})

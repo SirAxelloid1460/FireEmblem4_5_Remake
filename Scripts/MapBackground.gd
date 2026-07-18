@@ -7,7 +7,7 @@
 #   bg.cell_size = 32  # tamaño de cada celda en tu Grid
 #   add_child(bg)
 #
-# El PNG fuente está en res://assets/tilesets/FE4/{tilemap_nid}.png (o FE5/)
+# El PNG fuente está en res://assets/GBA/tilesets/FE4/{tilemap_nid}.png (o FE5/)
 # y tiene los tiles a 16px.  Se escala al cell_size del Grid (típicamente
 # 32 o 48 en Godot).
 
@@ -15,7 +15,7 @@ class_name MapBackground
 extends Node2D
 
 ## NID del tilemap a renderizar.  Debe coincidir con el nombre del archivo
-## en res://assets/tilesets/FE4/ o /FE5/ (ej. "Prologue" → "Prologue.png").
+## en res://assets/GBA/tilesets/FE4/ o /FE5/ (ej. "Prologue" → "Prologue.png").
 @export var tilemap_nid: String = ""
 
 ## Tamaño de cada celda de tu Grid en píxeles (típicamente 32, 48, 64).
@@ -53,9 +53,9 @@ func load_tilemap(nid: String) -> bool:
 		tex = loader.get_tilemap_image(nid)
 	else:
 		# Fallback: probar FE4, FE5 y raíz.
-		for base in ["res://assets/tilesets/FE4/",
-				"res://assets/tilesets/FE5/",
-				"res://assets/tilesets/"]:
+		for base in ["res://assets/GBA/tilesets/FE4/",
+				"res://assets/GBA/tilesets/FE5/",
+				"res://assets/GBA/tilesets/"]:
 			var path: String = "%s%s.png" % [base, nid]
 			if ResourceLoader.exists(path):
 				tex = load(path) as Texture2D

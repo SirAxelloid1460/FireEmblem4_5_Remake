@@ -19,12 +19,12 @@ static var dialogues = {
 		{
 			"character": "Eirika",
 			"text": "Esta fortaleza es nuestro único refugio. Debemos defenderla a toda costa.",
-			"portrait": "res://assets/portraits/eirika.png"
+			"portrait": "res://assets/GBA/portraits/eirika.png"
 		},
 		{
 			"character": "Seth",
 			"text": "Mis soldados están listos, mi señora. Daremos nuestra vida si es necesario.",
-			"portrait": "res://assets/portraits/seth.png"
+			"portrait": "res://assets/GBA/portraits/seth.png"
 		}
 	]
 }

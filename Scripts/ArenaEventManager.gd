@@ -60,22 +60,22 @@ func event_beowolf_recruitment():
 		{
 			"character": "Beowolf",
 			"text": "¡Impresionante! Hace mucho que no me derrotaban en la arena.",
-			"portrait": "res://assets/portraits/beowolf.png"
+			"portrait": "res://assets/GBA/portraits/beowolf.png"
 		},
 		{
 			"character": "Beowolf",
 			"text": "Veo potencial en ti. ¿Qué te parece si me uno a tu ejército?",
-			"portrait": "res://assets/portraits/beowolf.png"
+			"portrait": "res://assets/GBA/portraits/beowolf.png"
 		},
 		{
 			"character": "Sigurd",
 			"text": "Tu fuerza sería muy valiosa. ¡Bienvenido!",
-			"portrait": "res://assets/portraits/sigurd.png"
+			"portrait": "res://assets/GBA/portraits/sigurd.png"
 		},
 		{
 			"character": "Beowolf",
 			"text": "Pero... hay un pequeño detalle. Necesito 10,000 de oro como anticipo.",
-			"portrait": "res://assets/portraits/beowolf.png"
+			"portrait": "res://assets/GBA/portraits/beowolf.png"
 		}
 	]
 	
@@ -115,12 +115,12 @@ func event_holyn_recruitment():
 		{
 			"character": "Holyn",
 			"text": "¡Increíble! Tu técnica de espada es excepcional.",
-			"portrait": "res://assets/portraits/holyn.png"
+			"portrait": "res://assets/GBA/portraits/holyn.png"
 		},
 		{
 			"character": "Holyn",
 			"text": "He estado buscando un maestro digno. Permíteme servirte.",
-			"portrait": "res://assets/portraits/holyn.png"
+			"portrait": "res://assets/GBA/portraits/holyn.png"
 		}
 	]
 	
@@ -139,12 +139,12 @@ func event_lex_recruitment():
 		{
 			"character": "Lex",
 			"text": "¡Jajaja! ¡Qué pelea tan emocionante!",
-			"portrait": "res://assets/portraits/lex.png"
+			"portrait": "res://assets/GBA/portraits/lex.png"
 		},
 		{
 			"character": "Lex",
 			"text": "Me recuerdas a mi viejo amigo. ¿Qué dices? ¿Te vendría bien un guerrero como yo?",
-			"portrait": "res://assets/portraits/lex.png"
+			"portrait": "res://assets/GBA/portraits/lex.png"
 		}
 	]
 	
@@ -163,12 +163,12 @@ func event_ayra_recruitment():
 		{
 			"character": "Ayra",
 			"text": "Tu destreza con la espada es admirable.",
-			"portrait": "res://assets/portraits/ayra.png"
+			"portrait": "res://assets/GBA/portraits/ayra.png"
 		},
 		{
 			"character": "Ayra",
 			"text": "Toma esto. Es una espada que he usado durante años. Siento que tú sabrás usarla mejor.",
-			"portrait": "res://assets/portraits/ayra.png"
+			"portrait": "res://assets/GBA/portraits/ayra.png"
 		}
 	]
 	
@@ -242,7 +242,7 @@ func create_beowolf_unit() -> Dictionary:
 			"weight": 8
 		},
 		"skills": [],
-		"portrait": "res://assets/portraits/beowolf.png"
+		"portrait": "res://assets/GBA/portraits/beowolf.png"
 	}
 
 func create_holyn_unit() -> Dictionary:
@@ -268,7 +268,7 @@ func create_holyn_unit() -> Dictionary:
 			"critical": 30
 		},
 		"skills": ["Critical"],
-		"portrait": "res://assets/portraits/holyn.png"
+		"portrait": "res://assets/GBA/portraits/holyn.png"
 	}
 
 func create_lex_unit() -> Dictionary:
@@ -295,7 +295,7 @@ func create_lex_unit() -> Dictionary:
 			"brave": true
 		},
 		"skills": ["Elite_Skill"],  # Doble EXP
-		"portrait": "res://assets/portraits/lex.png"
+		"portrait": "res://assets/GBA/portraits/lex.png"
 	}
 
 # ============================================

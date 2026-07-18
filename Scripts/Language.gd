@@ -51,12 +51,13 @@ func _preview_hshift() -> int:
 
 
 func _preview_texture(id: String) -> Texture2D:
-	var p := FLAGS + id + ".png"
+	var p := AssetSet.p(FLAGS + id + ".png")
 	return load(p) if ResourceLoader.exists(p) else null
 
 
 func _bg_base_texture() -> Texture2D:
-	return load(BG_BASE) if ResourceLoader.exists(BG_BASE) else null
+	var p := AssetSet.p(BG_BASE)
+	return load(p) if ResourceLoader.exists(p) else null
 
 
 func _bg_parallax() -> bool:

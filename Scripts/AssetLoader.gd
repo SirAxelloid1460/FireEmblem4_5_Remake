@@ -122,7 +122,7 @@ func set_active_game(game: String) -> void:
 ##   filename: nombre del archivo con extensión (ej. "Prologue.png")
 func resolve_tileset_path(filename: String) -> String:
 	for base in _tileset_search_order:
-		var path: String = base + filename
+		var path: String = AssetSet.p(base + filename)
 		if ResourceLoader.exists(path):
 			return path
 	return ""
@@ -131,7 +131,7 @@ func resolve_tileset_path(filename: String) -> String:
 ## Idem para tilemap data JSONs.
 func resolve_tilemap_path(filename: String) -> String:
 	for base in _tilemap_search_order:
-		var path: String = base + filename
+		var path: String = AssetSet.p(base + filename)
 		if ResourceLoader.exists(path):
 			return path
 	return ""
@@ -188,8 +188,9 @@ func get_portrait(character_nid: String) -> Texture2D:
 		candidates.push_front(PATH_PORTRAITS_CHARS + PORTRAIT_ALIASES[character_nid] + ".png")
 	var tex: Texture2D = null
 	for path in candidates:
-		if ResourceLoader.exists(path):
-			tex = load(path) as Texture2D
+		var rp := AssetSet.p(path)   # re-enraíza al set gráfico activo (fallback GBA)
+		if ResourceLoader.exists(rp):
+			tex = load(rp) as Texture2D
 			break
 	_portrait_cache[character_nid] = tex
 	return tex
@@ -201,7 +202,7 @@ func get_generic_portrait(class_nid: String) -> Texture2D:
 	var key := "_generic:" + class_nid
 	if _portrait_cache.has(key):
 		return _portrait_cache[key]
-	var path := PATH_PORTRAITS_GENERIC + "Generic_Portrait_" + class_nid + ".png"
+	var path := AssetSet.p(PATH_PORTRAITS_GENERIC + "Generic_Portrait_" + class_nid + ".png")
 	var tex: Texture2D = null
 	if ResourceLoader.exists(path):
 		tex = load(path) as Texture2D
@@ -223,7 +224,7 @@ func get_map_sprite(map_sprite_nid: String, variant: String = "stand") -> Textur
 	var key := map_sprite_nid + ":" + variant
 	if _map_sprite_cache.has(key):
 		return _map_sprite_cache[key]
-	var path := PATH_MAP_SPRITES + map_sprite_nid + "-" + variant + ".png"
+	var path := AssetSet.p(PATH_MAP_SPRITES + map_sprite_nid + "-" + variant + ".png")
 	var tex: Texture2D = null
 	if ResourceLoader.exists(path):
 		tex = load(path) as Texture2D
@@ -282,7 +283,7 @@ func _get_icon_sheet(base_path: String, sheet_name: String, size: int) -> Textur
 	var key := "%d:%s" % [size, sheet_name]
 	if _icon_cache.has(key):
 		return _icon_cache[key]
-	var path := base_path + sheet_name + ".png"
+	var path := AssetSet.p(base_path + sheet_name + ".png")
 	var tex: Texture2D = null
 	if ResourceLoader.exists(path):
 		tex = load(path) as Texture2D
@@ -317,7 +318,7 @@ func get_icon_atlas(sheet_name: String, coord: Vector2i,
 ## Carga un panorama estático.  Para panoramas animados (multi-frame
 ## procesados en spritesheet), usa el nodo AnimatedTitleBackground.
 func get_panorama(panorama_nid: String) -> Texture2D:
-	var path := PATH_PANORAMAS + panorama_nid + ".png"
+	var path := AssetSet.p(PATH_PANORAMAS + panorama_nid + ".png")
 	if not ResourceLoader.exists(path):
 		return null
 	return load(path) as Texture2D
@@ -349,7 +350,7 @@ func get_ui_sprite(category: String, filename: String) -> Texture2D:
 		_:
 			push_warning("AssetLoader: categoría UI desconocida '%s'" % category)
 			return null
-	var path := base + filename
+	var path := AssetSet.p(base + filename)
 	if not ResourceLoader.exists(path):
 		return null
 	return load(path) as Texture2D
@@ -362,7 +363,7 @@ func get_ui_sprite(category: String, filename: String) -> Texture2D:
 ## Tile animado del fondo (agua, lava, etc.).
 ##   nid: "field_water1", "lava", "ship_water"...
 func get_autotile(nid: String) -> Texture2D:
-	var path := PATH_AUTOTILES + nid + ".png"
+	var path := AssetSet.p(PATH_AUTOTILES + nid + ".png")
 	if not ResourceLoader.exists(path):
 		return null
 	return load(path) as Texture2D
@@ -371,7 +372,7 @@ func get_autotile(nid: String) -> Texture2D:
 ## PNG de un sprite font del LT.
 ##   nid: "convo-black", "chapter-yellow", "class-purple"...
 func get_font_image(nid: String) -> Texture2D:
-	var path := PATH_FONTS + nid + ".png"
+	var path := AssetSet.p(PATH_FONTS + nid + ".png")
 	if not ResourceLoader.exists(path):
 		return null
 	return load(path) as Texture2D
@@ -379,7 +380,7 @@ func get_font_image(nid: String) -> Texture2D:
 
 ## .idx de un sprite font (anchos de carácter).
 func get_font_idx(nid: String) -> PackedByteArray:
-	var path := PATH_FONTS + nid + ".idx"
+	var path := AssetSet.p(PATH_FONTS + nid + ".idx")
 	if not FileAccess.file_exists(path):
 		return PackedByteArray()
 	var f := FileAccess.open(path, FileAccess.READ)
@@ -394,7 +395,7 @@ func get_font_idx(nid: String) -> PackedByteArray:
 ##   nid: "Arena", "Bridge", "Forest"...
 ##   variant: "Melee" o "Ranged".
 func get_combat_platform(nid: String, variant: String = "Melee") -> Texture2D:
-	var path := "%s%s-%s.png" % [PATH_PLATFORMS, nid, variant]
+	var path := AssetSet.p("%s%s-%s.png" % [PATH_PLATFORMS, nid, variant])
 	if not ResourceLoader.exists(path):
 		return null
 	return load(path) as Texture2D
@@ -407,7 +408,7 @@ func get_combat_platform(nid: String, variant: String = "Melee") -> Texture2D:
 ## Carga música.  Auto-detecta extensión: .ogg, .mp3, .wav.
 func get_music(nid: String) -> AudioStream:
 	for ext in [".ogg", ".mp3", ".wav"]:
-		var path: String = PATH_MUSIC + nid + ext
+		var path: String = AssetSet.p(PATH_MUSIC + nid + ext)
 		if ResourceLoader.exists(path):
 			return load(path) as AudioStream
 	return null
@@ -416,7 +417,7 @@ func get_music(nid: String) -> AudioStream:
 ## Carga SFX.
 func get_sfx(nid: String) -> AudioStream:
 	for ext in [".ogg", ".mp3", ".wav"]:
-		var path: String = PATH_SFX + nid + ext
+		var path: String = AssetSet.p(PATH_SFX + nid + ext)
 		if ResourceLoader.exists(path):
 			return load(path) as AudioStream
 	return null

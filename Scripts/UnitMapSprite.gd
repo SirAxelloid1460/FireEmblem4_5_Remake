@@ -168,7 +168,7 @@ func _load_variant(map_sprite_nid: String, variant: String) -> Texture2D:
 	# Vía autoload AssetLoader (con caché); fallback a carga directa.
 	if has_node("/root/AssetLoader"):
 		return get_node("/root/AssetLoader").get_map_sprite(map_sprite_nid, variant)
-	var path := "res://assets/map_sprites/" + map_sprite_nid + "-" + variant + ".png"
+	var path := "res://assets/GBA/map_sprites/" + map_sprite_nid + "-" + variant + ".png"
 	if ResourceLoader.exists(path):
 		return load(path) as Texture2D
 	return null

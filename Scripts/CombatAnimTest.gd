@@ -71,7 +71,7 @@ func _ready() -> void:
 	if not anim.get("ok", false):
 		var _folder := anim_name.substr(0, anim_name.rfind("_")) if anim_name.rfind("_") > 0 else anim_name
 		_info_label.text = "ERROR: anim '%s' no encontrada\n" % anim_name + \
-				"Esperaba res://assets/combat_anims/%s/%s.png + .json" % [_folder, anim_name]
+				"Esperaba res://assets/GBA/combat_anims/%s/%s.png + .json" % [_folder, anim_name]
 		_info_label.add_theme_color_override("font_color", Color.RED)
 		push_error("[CombatAnimTest] anim '%s' no encontrada" % anim_name)
 		return

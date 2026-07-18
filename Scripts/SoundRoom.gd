@@ -50,7 +50,7 @@ func _ready() -> void:
 # ── Datos ────────────────────────────────────────────────────────────────────
 ## Escanea la carpeta de música y recoge los .ogg (ordenados por nombre).
 func _scan_tracks() -> void:
-	var dir := DirAccess.open(MUSIC_DIR)
+	var dir := DirAccess.open(AssetSet.p(MUSIC_DIR))
 	if dir == null:
 		return
 	var names: Array[String] = []
@@ -95,7 +95,7 @@ func _build_ui() -> void:
 	vb.add_theme_constant_override("separation", 10)
 	panel.add_child(vb)
 
-	var font := load(SERIF_FONT)
+	var font := load(AssetSet.p(SERIF_FONT))
 
 	# Título.
 	var title := Label.new()
@@ -225,7 +225,7 @@ func _toggle_play() -> void:
 		_stop()
 		_refresh()
 		return
-	var path := MUSIC_DIR + _tracks[_cursor] + ".ogg"
+	var path := AssetSet.p(MUSIC_DIR + _tracks[_cursor] + ".ogg")
 	if not ResourceLoader.exists(path):
 		return
 	var stream = load(path)
@@ -244,7 +244,8 @@ func _stop() -> void:
 
 
 func _play_nav_sfx() -> void:
-	if _sfx == null or not ResourceLoader.exists(SFX_NAV):
+	var nav := AssetSet.p(SFX_NAV)
+	if _sfx == null or not ResourceLoader.exists(nav):
 		return
-	_sfx.stream = load(SFX_NAV)
+	_sfx.stream = load(nav)
 	_sfx.play()

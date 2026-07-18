@@ -92,8 +92,8 @@ func _process(delta: float) -> void:
 
 ## Carga la sheet y el JSON.  Devuelve true si todo OK.
 func _load_panorama() -> bool:
-	var sheet_path := "%s%s.png" % [panoramas_root, panorama_nid]
-	var json_path := "%s%s.json" % [panoramas_root, panorama_nid]
+	var sheet_path := AssetSet.p("%s%s.png" % [panoramas_root, panorama_nid])
+	var json_path := AssetSet.p("%s%s.json" % [panoramas_root, panorama_nid])
 
 	if not ResourceLoader.exists(sheet_path):
 		push_warning("Sheet no encontrada: %s" % sheet_path)

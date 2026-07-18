@@ -798,7 +798,7 @@ var _anim_defs_loaded: bool = false
 func _anim_def(nid: String):
 	if not _anim_defs_loaded:
 		_anim_defs_loaded = true
-		var path := "res://assets/animations/animations.json"
+		var path := "res://assets/GBA/animations/animations.json"
 		if FileAccess.file_exists(path):
 			var f := FileAccess.open(path, FileAccess.READ)
 			var arr = JSON.parse_string(f.get_as_text())
@@ -816,7 +816,7 @@ func _cmd_map_anim(args: Array) -> void:
 		return
 	var nid := str(args[0])
 	var d = _anim_def(nid)
-	var tex_path := "res://assets/animations/" + nid + ".png"
+	var tex_path := "res://assets/GBA/animations/" + nid + ".png"
 	if d == null or not ResourceLoader.exists(tex_path):
 		return
 	var tex: Texture2D = load(tex_path)
@@ -886,7 +886,7 @@ func _cmd_chapter_title() -> void:
 	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	label.modulate.a = 0.0
-	var f = load("res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf")
+	var f = load("res://assets/GBA/fonts/IMFellFrenchCanonSC-Regular.ttf")
 	if f != null:
 		label.add_theme_font_override("font", f)
 	label.add_theme_font_size_override("font_size", 64)

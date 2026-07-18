@@ -168,15 +168,16 @@ func _bg_path() -> String:
 	match _mode():
 		1: p = BG_FE5
 		2: p = BG_SAGA
+	p = AssetSet.p(p)   # re-enraíza al set gráfico activo (fallback GBA)
 	if not ResourceLoader.exists(p):
-		p = TITLE_BG
+		p = AssetSet.p(TITLE_BG)
 	return p
 
 
 ## Logo del menú según el modo (Thracia en FE5; Genealogy en FE4/SAGA).
 func _logo_path() -> String:
-	var p := LOGO_FE5 if _mode() == 1 else LOGO_FE4
-	return p if ResourceLoader.exists(p) else LOGO
+	var p := AssetSet.p(LOGO_FE5 if _mode() == 1 else LOGO_FE4)
+	return p if ResourceLoader.exists(p) else AssetSet.p(LOGO)
 
 
 func _build_bg() -> void:
@@ -218,10 +219,11 @@ func _build_bg() -> void:
 ## Música de fondo: el tema de Fire Emblem en bucle (en el bus "Music" si existe,
 ## para que el volumen de Options lo controle).
 func _build_music() -> void:
-	if not ResourceLoader.exists(THEME_MUSIC):
+	var music_path := AssetSet.p(THEME_MUSIC)
+	if not ResourceLoader.exists(music_path):
 		return
 	_music = AudioStreamPlayer.new()
-	var stream = load(THEME_MUSIC)
+	var stream = load(music_path)
 	if "loop" in stream:
 		stream.loop = true        # bucle sin cortes (Ogg Vorbis)
 	_music.stream = stream
@@ -255,9 +257,10 @@ func _build_press_start() -> void:
 	_press.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	_press.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_press.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	if ResourceLoader.exists(PRESS_START_IMG):
+	var press_path := AssetSet.p(PRESS_START_IMG)
+	if ResourceLoader.exists(press_path):
 		var at := AtlasTexture.new()
-		at.atlas = load(PRESS_START_IMG)
+		at.atlas = load(press_path)
 		at.region = Rect2(0, 0, 96, 16)
 		_press.texture = at
 	var w := 96 * PRESS_SCALE
@@ -448,7 +451,7 @@ func _build_columns() -> void:
 ## botón (sin 9-patch), que es el look deseado. content_margin sitúa el texto.
 func _plate_sb(path: String) -> StyleBoxTexture:
 	var sb := StyleBoxTexture.new()
-	sb.texture = load(path)
+	sb.texture = load(AssetSet.p(path))
 	# La placa (title_menu_dark, 136×24) se estira entera al tamaño del botón:
 	# es el look que se quería (sin 9-patch). content_margin sitúa el texto.
 	sb.content_margin_left = 40
@@ -477,7 +480,7 @@ func _make_button(text: String, id: String) -> Button:
 	b.mouse_filter = Control.MOUSE_FILTER_STOP
 	b.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	# Fuente serif estilo logo (small-caps).
-	var f := load(SERIF_FONT)
+	var f := load(AssetSet.p(SERIF_FONT))
 	if f != null:
 		b.add_theme_font_override("font", f)
 	b.add_theme_font_size_override("font_size", BTN_FONT)
@@ -504,8 +507,9 @@ func _build_cursor() -> void:
 	_cursor.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	_cursor.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	_cursor.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	if ResourceLoader.exists(SWORD):
-		_cursor.texture = load(SWORD)
+	var sword_path := AssetSet.p(SWORD)
+	if ResourceLoader.exists(sword_path):
+		_cursor.texture = load(sword_path)
 	_cursor.size = Vector2(32 * SWORD_SCALE, 28 * SWORD_SCALE)
 	_cursor.visible = false
 	add_child(_cursor)
@@ -626,7 +630,7 @@ func _play_sfx(sfx_name: String) -> void:
 		if AudioServer.get_bus_index("SFX") >= 0:
 			_sfx.bus = "SFX"
 		add_child(_sfx)
-	var path := "res://assets/sfx/%s.ogg" % sfx_name
+	var path := AssetSet.p("res://assets/sfx/%s.ogg" % sfx_name)
 	if not ResourceLoader.exists(path):
 		return
 	_sfx.stream = load(path)

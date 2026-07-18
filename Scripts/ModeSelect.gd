@@ -70,6 +70,7 @@ func _bg_for_option(id: String) -> Texture2D:
 		"fe4": p = BG_FE4
 		"fe5": p = BG_FE5
 		"saga": p = BG_SAGA
+	p = AssetSet.p(p)
 	return load(p) if ResourceLoader.exists(p) else null
 
 
