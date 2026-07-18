@@ -125,6 +125,12 @@ func _preview_lift() -> int:
 	return _content_lift()
 
 
+## Desplazamiento horizontal del panel-preview (bandera) dentro del panel, en px
+## hacia la IZQUIERDA (positivo = izquierda). Sobreescribir por menú.
+func _preview_hshift() -> int:
+	return 0
+
+
 ## Geometría del panel-lista en fracciones del viewport [izq, arriba, der, abajo].
 ## Centrado en pantalla por defecto.
 func _list_panel_rect() -> Array:
@@ -215,6 +221,7 @@ func _build_preview_panel() -> void:
 	# Panel centrado en pantalla; la bandera se sube DENTRO con _preview_lift.
 	var panel := _nine_panel(0.07, 0.31, 0.38, 0.67)
 	var lift := _preview_lift()
+	var hshift := _preview_hshift()
 	_preview = TextureRect.new()
 	# STRETCH_SCALE + más margen arriba/abajo: reduce SÓLO el alto de la bandera
 	# (el ancho sigue llenando el recuadro). Los offsets se desplazan por `lift`
@@ -224,9 +231,10 @@ func _build_preview_panel() -> void:
 	_preview.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_preview.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	# Márgenes con holgura para que la bandera NO toque el marco ornamentado.
-	_preview.offset_left = 30
+	# `hshift` desplaza la bandera a la izquierda (ambos offsets X por igual).
+	_preview.offset_left = 30 - hshift
 	_preview.offset_top = 58 - lift
-	_preview.offset_right = -30
+	_preview.offset_right = -30 - hshift
 	_preview.offset_bottom = -58 - lift
 	panel.add_child(_preview)
 

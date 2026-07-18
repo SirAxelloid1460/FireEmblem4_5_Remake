@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784337740
+::res://::1784374343
 README.md::TextFile::-1::1784324121::0::1::::<><><>0<>0<><>::
 ::res://assets/::1784324133
 ::res://assets/animations/::1784325647
@@ -3395,7 +3395,7 @@ logo1.png::CompressedTexture2D::8032125651993206790::1784327397::1784328527::1::
 logo2.png::CompressedTexture2D::6066725996412016955::1784327418::1784328527::1::::<><><>0<>0<>3fd3399d73424124082f0f5158aad940<>res://.godot/imported/logo2.png-d3379da3c26b5d58296da14a2c9bb935.ctex::
 title1_background.png::CompressedTexture2D::5134709640215468372::1784332282::1784332300::1::::<><><>0<>0<>0823cf8e42a5f3371a09151542365959<>res://.godot/imported/title1_background.png-abac48b2f17d8ed9cb8a6b00237ea466.ctex::
 title2_background.png::CompressedTexture2D::5408798187678863261::1784324133::1784325634::1::::<><><>0<>0<>76519a2fdb586bf724949aee3884295b<>res://.godot/imported/title2_background.png-5ab095e74081df952cd72a5deabf8570.ctex::
-::res://assets/videos/::1784337607
+::res://assets/videos/::1784337744
 fe4_demo.ogv::VideoStreamTheora::1969653763141617835::1784334742::0::1::::<><><>0<>0<><>::
 fe4_en.ogv::VideoStreamTheora::5406460509720270435::1784334342::0::1::::<><><>0<>0<><>::
 fe4_jp.ogv::VideoStreamTheora::5120658490631874005::1784335083::0::1::::<><><>0<>0<><>::
@@ -3735,7 +3735,7 @@ mode_select.tscn::PackedScene::-1::1784325925::0::1::::<><><>0<>0<><>::res://Scr
 options_menu.tscn::PackedScene::-1::1784324121::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784324121::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784324121::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784337626
+::res://Scripts/::1784374316
 ActionMenu.gd::GDScript::6413271467111799318::1784324121::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784324121::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784324121::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
@@ -3789,16 +3789,16 @@ Item.gd::GDScript::7925141334164720406::1784324122::0::1::::Item<>RefCounted<><>
 ItemDatabase.gd::GDScript::6527273458596669064::1784324122::0::1::::ItemDatabase<>RefCounted<><>0<>0<><>::
 Items.gd::GDScript::1388330204127410334::1784324122::0::1::::ItemCatalog<>RefCounted<><>0<>0<><>::
 LabelAnimText.gd::GDScript::2867877076981210681::1784324122::0::1::::LabelAnimText<>Control<><>0<>0<><>::
-Language.gd::GDScript::2907556366295349689::1784335037::0::1::::LanguageScreen<>SelectMenu<><>0<>0<><>::
+Language.gd::GDScript::2907556366295349689::1784374316::0::1::::LanguageScreen<>SelectMenu<><>0<>0<><>::
 LaraPromotion.gd::GDScript::4107297915193857152::1784324122::0::1::::LaraPromotion<>RefCounted<><>0<>0<><>::
 LevelData.gd::GDScript::802805939506090972::1784324122::0::1::::LevelData<>Resource<><>0<>0<><>::
 LevelLoader.gd::GDScript::2900491532752613919::1784324122::0::1::::LevelLoader<>RefCounted<><>0<>0<><>::
 LevelUpScreen.gd::GDScript::2074851621102138785::1784324122::0::1::::LevelUpScreen<>Control<><>0<>0<><>::
 LocationMarker.gd::GDScript::1836486964086790272::1784324122::0::1::::LocationMarker<>Node2D<><>0<>0<><>::
-MainMenu.gd::GDScript::8175898352055706196::1784337626::0::1::::MainMenu<>Control<><>0<>0<><>::
+MainMenu.gd::GDScript::8175898352055706196::1784337863::0::1::::MainMenu<>Control<><>0<>0<><>::
 MapActions.gd::GDScript::3535448452538133979::1784324122::0::1::::MapActions<>RefCounted<><>0<>0<><>::
 MapBackground.gd::GDScript::3738451975226640230::1784324122::0::1::::MapBackground<>Node2D<><>0<>0<><>::
-ModeSelect.gd::GDScript::3174370287506302631::1784335037::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
+ModeSelect.gd::GDScript::3174370287506302631::1784374316::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
 OptionsMenu.gd::GDScript::5364573969176011556::1784324122::0::1::::OptionsMenu<>Control<><>0<>0<><>::
 Pathfinding.gd::GDScript::1848538420110686201::1784324122::0::1::::Pathfinding<>Node<><>0<>0<><>::
 PrologueCinematic.gd::GDScript::3981487757909408999::1784324122::0::1::::PrologueCinematic<>CinematicScene<><>0<>0<><>::
@@ -3807,7 +3807,7 @@ PromotionPanel.gd::GDScript::4153741883649203270::1784324122::0::1::::PromotionP
 PromotionScreen.gd::GDScript::4779123178995863736::1784324122::0::1::::PromotionScreen<>Control<><>0<>0<><>::
 PromotionSystem.gd::GDScript::8325188722818028479::1784324122::0::1::::PromotionSystem<>Node<><>0<>0<><>::
 SaveSystem.gd::GDScript::485315861979317151::1784324122::0::1::::SaveSystem<>Node<><>0<>0<><>::
-SelectMenu.gd::GDScript::439202066668374422::1784335037::0::1::::SelectMenu<>Control<><>0<>0<><>::
+SelectMenu.gd::GDScript::439202066668374422::1784374316::0::1::::SelectMenu<>Control<><>0<>0<><>::
 ShopPanel.gd::GDScript::473820464989183141::1784324122::0::1::::ShopPanel<>Panel<><>0<>0<><>::
 SkillData.gd::GDScript::7693736634377838352::1784324122::0::1::::SkillData<>Resource<><>0<>0<><>::
 SoundRoom.gd::GDScript::3311604537699361751::1784324122::0::1::::SoundRoom<>Control<><>0<>0<><>::

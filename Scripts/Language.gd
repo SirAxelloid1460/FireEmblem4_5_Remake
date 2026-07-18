@@ -43,7 +43,11 @@ func _content_lift() -> int:
 
 # La bandera no se sube (a 1200x800 se salía un poco por arriba).
 func _preview_lift() -> int:
-	return 0
+	return 30
+
+
+func _preview_hshift() -> int:
+	return 8
 
 
 func _preview_texture(id: String) -> Texture2D:

@@ -292,7 +292,7 @@ var credits_data: Array = [
 		["",               "Julia, Deirdre",  "GabrielKnight, SirKnite31, Seal, Sacred War"],
 		["",               "Linoan, Sara",    "Mikey_Seregon, Aviv"],
 
-		["Loptrian Mage", "Rip", "(Unknown)", { "name": { "italic": true, "dim": true } }],
+		["Loptyr Mage", "Rip", "(Unknown)", { "name": { "italic": true, "dim": true } }],
 
 		["Lord", "Animation", "UltraFenix"],
 		["",     "Still",     "Jeorge_Reds"],
@@ -398,9 +398,16 @@ var credits_data: Array = [
 	{ "type": "spacer", "size": 40 },
 
 	# ---------- WRITING & TRANSLATIONS ----------
-	{ "type": "header", "text": "ENGLISH WRITING & TRANSLATIONS" },
-	{ "type": "text", "text": "Project Naga" },
-	{ "type": "text", "text": "SirAxelloid1460" },
+	{ "type": "header", "text": "WRITING & TRANSLATIONS" },
+	{ "type": "spacer", "size": 16 },
+	{ "type": "table", "columns": 2, "rows": [
+		["FE4 English",       "Project Naga"],
+		["FE4 Spanish",       "Everdrive"],
+		["FE5 English",       "Cirosan & Miacis"],
+		["FE5 Italian",       "EnDavio"],
+		["FE5 Spanish",       "Dark Advent Team (Xabier)"],
+		["Transcription",     "SirAxelloid1460"],
+	] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
 	# ---------- MUSIC ----------
@@ -709,28 +716,50 @@ func _make_grid(entry: Dictionary) -> Control:
 
 
 func _make_table(entry: Dictionary) -> Control:
-	# Tabla de 3 columnas (asset / work / name) con celdas vacías cuando
-	# el asset se omite (agrupación visual). Cuando una celda `name`
-	# contiene más de NAMES_PER_LINE autores (separados por comas),
-	# se reparten en múltiples sub-filas; asset y work solo aparecen
-	# en la primera sub-fila del bloque.
+	# Tabla de 2 o 3 columnas con celdas vacías cuando la primera columna
+	# se omite (agrupación visual). Cuando una celda de texto contiene más
+	# de NAMES_PER_LINE items (separados por comas), se reparten en múltiples
+	# sub-filas; la primera columna solo aparece en la primera sub-fila.
 	#
 	# entry = {
 	#   "type": "table",
-	#   "rows": [ [asset, work, name], ... ]   # asset puede ser "" para agrupar
+	#   "columns": 3,                          # 2 o 3 (default 3)
+	#   "rows": [ [c1, c2, c3?], ... ]         # c1 puede ser "" para agrupar
 	# }
+	#
+	# 3 columnas: asset / work / name (dorado / crema / blanco)
+	# 2 columnas: label / value          (dorado / blanco)
 	var rows_data: Array = entry.get("rows", [])
+	var columns_count: int = int(entry.get("columns", 3))
+	if columns_count < 2 or columns_count > 3:
+		columns_count = 3
 	var inner_w := _get_inner_width()
-
-	# Reparto de anchos: asset 38%, work 27%, name 35%
-	var col_w_asset := inner_w * 0.38
-	var col_w_work  := inner_w * 0.27
-	var col_w_name  := inner_w * 0.35
-	var col_x_asset := 0.0
-	var col_x_work  := col_w_asset
-	var col_x_name  := col_w_asset + col_w_work
 	var line_height := SIZE_TABLE + 10
 	var pad_left := 12.0
+
+	# Geometría según número de columnas
+	var col_w_asset: float
+	var col_w_work: float
+	var col_w_name: float
+	var col_x_asset: float
+	var col_x_work: float
+	var col_x_name: float
+
+	if columns_count == 3:
+		col_w_asset = inner_w * 0.38
+		col_w_work  = inner_w * 0.27
+		col_w_name  = inner_w * 0.35
+		col_x_asset = 0.0
+		col_x_work  = col_w_asset
+		col_x_name  = col_w_asset + col_w_work
+	else:
+		# 2 columnas: label / value
+		col_w_asset = inner_w * 0.40
+		col_w_work  = 0.0
+		col_w_name  = inner_w * 0.60
+		col_x_asset = 0.0
+		col_x_work  = 0.0
+		col_x_name  = col_w_asset
 
 	var wrapper := Control.new()
 	wrapper.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
@@ -739,26 +768,35 @@ func _make_table(entry: Dictionary) -> Control:
 	# Pre-calcular cuántas líneas usa cada fila (según el número de autores)
 	# para saber el alto total y poder posicionar correctamente.
 	#
-	# Formato de fila:
+	# Formato de fila (3 columnas):
 	#   [asset, work, name]                       — fila simple
 	#   [asset, work, name, styles_dict]          — fila con estilos por columna.
-	#                                                styles_dict = {
-	#                                                  "asset": {italic:bool, dim:bool},
-	#                                                  "work":  {...},
-	#                                                  "name":  {...}
-	#                                                }
+	#
+	# Formato de fila (2 columnas):
+	#   [label, value]
+	#   [label, value, styles_dict]               — styles_dict claves: "asset", "name"
 	var y := 0.0
 	for row in rows_data:
 		var asset_text: String = String(row[0]) if row.size() > 0 else ""
-		var work_text:  String = String(row[1]) if row.size() > 1 else ""
-		var name_text:  String = String(row[2]) if row.size() > 2 else ""
-		var styles: Dictionary = row[3] if row.size() > 3 and row[3] is Dictionary else {}
+		var work_text: String = ""
+		var name_text: String = ""
+		var styles: Dictionary = {}
+
+		if columns_count == 3:
+			work_text = String(row[1]) if row.size() > 1 else ""
+			name_text = String(row[2]) if row.size() > 2 else ""
+			styles = row[3] if row.size() > 3 and row[3] is Dictionary else {}
+		else:
+			# 2 columnas: c2 va directamente a la columna "name" (blanco)
+			name_text = String(row[1]) if row.size() > 1 else ""
+			styles = row[2] if row.size() > 2 and row[2] is Dictionary else {}
+
 		var st_asset: Dictionary = styles.get("asset", {})
 		var st_work:  Dictionary = styles.get("work",  {})
 		var st_name:  Dictionary = styles.get("name",  {})
 
-		# Trocear ambas columnas multi-valor en chunks de NAMES_PER_LINE
-		var work_lines: Array[String] = _wrap_csv(work_text, NAMES_PER_LINE)
+		# Trocear columnas multi-valor en chunks de NAMES_PER_LINE
+		var work_lines: Array[String] = _wrap_csv(work_text, NAMES_PER_LINE) if columns_count == 3 else ([""] as Array[String])
 		var name_lines: Array[String] = _wrap_csv(name_text, NAMES_PER_LINE)
 
 		# El bloque es tan alto como la columna más larga
@@ -767,20 +805,21 @@ func _make_table(entry: Dictionary) -> Control:
 			lines_count = 1
 		var block_height := lines_count * line_height
 
-		# ASSET solo en la primera línea del bloque
+		# Primera columna solo en la primera línea del bloque
 		_add_table_cell(wrapper, asset_text,
 			Vector2(col_x_asset + pad_left, y),
 			Vector2(col_w_asset - pad_left, line_height),
 			COLOR_HEADER, st_asset)
 
-		# WORK: una celda por sub-línea
-		for li in range(work_lines.size()):
-			_add_table_cell(wrapper, work_lines[li],
-				Vector2(col_x_work, y + li * line_height),
-				Vector2(col_w_work, line_height),
-				COLOR_SUBHEADER, st_work)
+		# WORK (solo si hay 3 columnas): una celda por sub-línea
+		if columns_count == 3:
+			for li in range(work_lines.size()):
+				_add_table_cell(wrapper, work_lines[li],
+					Vector2(col_x_work, y + li * line_height),
+					Vector2(col_w_work, line_height),
+					COLOR_SUBHEADER, st_work)
 
-		# NAME: una celda por sub-línea
+		# NAME (última columna): una celda por sub-línea
 		for li in range(name_lines.size()):
 			_add_table_cell(wrapper, name_lines[li],
 				Vector2(col_x_name, y + li * line_height),

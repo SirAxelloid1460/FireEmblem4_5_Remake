@@ -9,13 +9,13 @@ class_name IntroScreen
 # propio fondo y reproduce el tema de Fire Emblem como música.
 #
 # Vídeos por modo (GameMode: FE4_ONLY=0, FE5_ONLY=1, SAGA=2):
-#   FE4 / SAGA → assets/videos/fe4_{en,jp}.ogv   (SAGA arranca con FE4)
-#   FE5        → assets/videos/fe5_{en,jp}.ogv   (intro de Thracia 776)
-# Fallback a los nombres viejos (eng/jap.ogv) por si aún no se renombran, y si
-# no existe ningún vídeo del modo, se salta directo al menú (sin romper).
+#   FE4 / SAGA → assets/videos/fe4/intros/{idioma}.ogv   (SAGA arranca con FE4)
+#   FE5        → assets/videos/fe5/intros/{idioma}.ogv   (intro de Thracia 776)
+# El idioma sale del locale (ja → jp); si no existe el del idioma actual se cae a
+# en.ogv de la misma carpeta (ver VideoResolver). Si no hay ninguno, se salta
+# directo al menú (sin romper).
 # ============================================================
 
-const VIDEO_DIR := "res://assets/videos/"
 const NEXT_SCENE := "res://Scenes/main_menu.tscn"
 
 var _vp: VideoStreamPlayer
@@ -45,24 +45,13 @@ func _ready() -> void:
 		_go_next()
 
 
-## Resuelve el vídeo de intro por modo + idioma, con fallbacks; "" si no hay.
+## Resuelve el vídeo de intro por modo (fe4 para FE4/SAGA, fe5 para FE5), con
+## sufijo de idioma y fallback a _en (ver VideoResolver); "" si no hay.
 func _resolve_video() -> String:
 	var gm := get_node_or_null("/root/GameMode")
 	var mode := int(gm.current_mode) if gm != null and "current_mode" in gm else 0
-	var prefix := "fe5" if mode == 1 else "fe4"   # FE5_ONLY=1; FE4/SAGA arrancan con FE4
-	var lang := "jp" if TranslationServer.get_locale().begins_with("ja") else "en"
-	var candidates := [
-		VIDEO_DIR + "%s_%s.ogv" % [prefix, lang],
-		VIDEO_DIR + "%s_en.ogv" % prefix,             # inglés del mismo modo
-	]
-	if prefix == "fe4":
-		# Compat con los nombres antiguos de FE4 (aún sin renombrar).
-		candidates.append(VIDEO_DIR + ("jap.ogv" if lang == "jp" else "eng.ogv"))
-		candidates.append(VIDEO_DIR + "eng.ogv")
-	for p in candidates:
-		if ResourceLoader.exists(p):
-			return p
-	return ""
+	var m := "fe5" if mode == 1 else "fe4"   # FE5_ONLY=1; FE4/SAGA arrancan con FE4
+	return VideoResolver.localized(m, "intros")
 
 
 func _unhandled_input(event: InputEvent) -> void:
