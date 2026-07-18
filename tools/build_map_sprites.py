@@ -39,10 +39,15 @@
 # Si up/left salen intercambiados, cambia --walk-order (p.ej. down,left,up).
 #
 # Modo LOTE (una carpeta con pares '{X}-stand.png' + '{X}-walk.png'):
-#   python tools/build_map_sprites.py --batch tools/incoming/
+#   # parado en la carpeta de sprites (crea ./map_sprites y mete ahí la salida):
+#   cd "C:\...\FE4 Map Sprites"
+#   python C:\ruta\al\repo\tools\build_map_sprites.py --batch .
 #   · Empareja por prefijo, deriva el nombre limpiándolo:
 #       'Bard (U) {Stephano, Zane}' → 'Bard'   (usa --raw-names para dejarlo tal cual)
 #   · Acepta el sufijo -walk.png o -move.png para el caminar.
+#
+# SALIDA: por defecto una carpeta 'map_sprites' en el DIRECTORIO ACTUAL. Para
+# escribir directo al proyecto: --out <repo>/assets/GBA/map_sprites.
 # =============================================================================
 
 import argparse
@@ -292,7 +297,7 @@ def convert(name, out_dir, args, stand_path=None, move_path=None):
                 made.append(p)
     if not args.inspect:
         if made:
-            print("[%s] escrito: %s" % (name, ", ".join(os.path.relpath(m, PROJECT_ROOT) for m in made)))
+            print("[%s] escrito: %s" % (name, ", ".join(os.path.relpath(m) for m in made)))
         else:
             print("[%s] nada que escribir (¿faltó --src-stand/--src-move o --idle/--walk-*?)" % name)
 
@@ -340,8 +345,9 @@ def main():
     ap.add_argument("--batch", help="Carpeta con pares '{X}-stand.png' + '{X}-walk.png' (o -move.png); convierte todos.")
     ap.add_argument("--raw-names", action="store_true", help="En lote, no limpiar el nombre (deja 'Bard (U) {..}').")
     ap.add_argument("--name", help="Nombre de clase de salida (obligatorio salvo --inspect / --batch).")
-    ap.add_argument("--out", default=os.path.join(PROJECT_ROOT, "assets", "GBA", "map_sprites"),
-                    help="Carpeta destino (default assets/GBA/map_sprites/).")
+    ap.add_argument("--out", default="map_sprites",
+                    help="Carpeta destino (default: 'map_sprites' en el directorio actual). "
+                         "Para escribir directo al proyecto: --out ruta/al/repo/assets/GBA/map_sprites.")
 
     ap.add_argument("--stand-frame", default="16x16", help="Tamaño de frame del idle (default 16x16). Vacío = autodetecta.")
     ap.add_argument("--move-frame", default="32x32", help="Tamaño de frame del caminar (default 32x32). Vacío = autodetecta.")
