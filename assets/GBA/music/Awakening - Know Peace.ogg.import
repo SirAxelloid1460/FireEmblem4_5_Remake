@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://crramvky048ae"
-path="res://.godot/imported/Awakening - Know Peace.ogg-b26cdbccf85aa0da9085a58c7d0fedec.oggvorbisstr"
+path="res://.godot/imported/Awakening - Know Peace.ogg-b31714836937e3a74d362b76ab14209c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Awakening - Know Peace.ogg"
-dest_files=["res://.godot/imported/Awakening - Know Peace.ogg-b26cdbccf85aa0da9085a58c7d0fedec.oggvorbisstr"]
+source_file="res://assets/GBA/music/Awakening - Know Peace.ogg"
+dest_files=["res://.godot/imported/Awakening - Know Peace.ogg-b31714836937e3a74d362b76ab14209c.oggvorbisstr"]
 
 [params]
 

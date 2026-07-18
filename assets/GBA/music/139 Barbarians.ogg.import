@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dlfxd3tgl0a1g"
-path="res://.godot/imported/139 Barbarians.ogg-87acc4374f723223ffae682b93f9e14a.oggvorbisstr"
+path="res://.godot/imported/139 Barbarians.ogg-a5489d58d295da154d5f2b2c92e2b978.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/139 Barbarians.ogg"
-dest_files=["res://.godot/imported/139 Barbarians.ogg-87acc4374f723223ffae682b93f9e14a.oggvorbisstr"]
+source_file="res://assets/GBA/music/139 Barbarians.ogg"
+dest_files=["res://.godot/imported/139 Barbarians.ogg-a5489d58d295da154d5f2b2c92e2b978.oggvorbisstr"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://co0nclqp7q44b"
-path="res://.godot/imported/StoneHit.ogg-dc90083ad8172ca9a254340730fc7486.oggvorbisstr"
+path="res://.godot/imported/StoneHit.ogg-cd6380363bd2b38e69187aa2cf281c79.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/StoneHit.ogg"
-dest_files=["res://.godot/imported/StoneHit.ogg-dc90083ad8172ca9a254340730fc7486.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/StoneHit.ogg"
+dest_files=["res://.godot/imported/StoneHit.ogg-cd6380363bd2b38e69187aa2cf281c79.oggvorbisstr"]
 
 [params]
 

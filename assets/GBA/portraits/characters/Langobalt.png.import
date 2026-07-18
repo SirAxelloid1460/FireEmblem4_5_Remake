@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0xg4l35ykw5l"
-path="res://.godot/imported/Langobalt.png-1395acc225a94c675d9c6e096cbecb0e.ctex"
+path="res://.godot/imported/Langobalt.png-587e70c371859453ac79614c4bd8fe85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Langobalt.png"
-dest_files=["res://.godot/imported/Langobalt.png-1395acc225a94c675d9c6e096cbecb0e.ctex"]
+source_file="res://assets/GBA/portraits/characters/Langobalt.png"
+dest_files=["res://.godot/imported/Langobalt.png-587e70c371859453ac79614c4bd8fe85.ctex"]
 
 [params]
 

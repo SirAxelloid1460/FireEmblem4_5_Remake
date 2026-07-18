@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://w0nyidew0q1n"
-path="res://.godot/imported/Podoma.png-242c39f931cc3e451ace22fecb6da8b5.ctex"
+path="res://.godot/imported/Podoma.png-f737bcdae0fb0541b666b743663fdbf7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/Podoma.png"
-dest_files=["res://.godot/imported/Podoma.png-242c39f931cc3e451ace22fecb6da8b5.ctex"]
+source_file="res://assets/GBA/panoramas/Podoma.png"
+dest_files=["res://.godot/imported/Podoma.png-f737bcdae0fb0541b666b743663fdbf7.ctex"]
 
 [params]
 

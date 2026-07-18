@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdmapf1fbfgds"
-path="res://.godot/imported/MercenaryFemale-stand.png-e3cb00e51249a683f337aca3d6ebc3f6.ctex"
+path="res://.godot/imported/MercenaryFemale-stand.png-76e3600a8f2f0c4fbea44a573ca03fbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/MercenaryFemale-stand.png"
-dest_files=["res://.godot/imported/MercenaryFemale-stand.png-e3cb00e51249a683f337aca3d6ebc3f6.ctex"]
+source_file="res://assets/GBA/map_sprites/MercenaryFemale-stand.png"
+dest_files=["res://.godot/imported/MercenaryFemale-stand.png-76e3600a8f2f0c4fbea44a573ca03fbb.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ptojq3mpmq5l"
-path="res://.godot/imported/The Battle Must Be Won.ogg-531c87716fe5de343273e844af2fd745.oggvorbisstr"
+path="res://.godot/imported/The Battle Must Be Won.ogg-038024c65bec79b53bb9a6b194d5762c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/The Battle Must Be Won.ogg"
-dest_files=["res://.godot/imported/The Battle Must Be Won.ogg-531c87716fe5de343273e844af2fd745.oggvorbisstr"]
+source_file="res://assets/GBA/music/The Battle Must Be Won.ogg"
+dest_files=["res://.godot/imported/The Battle Must Be Won.ogg-038024c65bec79b53bb9a6b194d5762c.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ca3kemxwk1saj"
-path="res://.godot/imported/Ephraim_Lord-stand.png-4f23d8a66f61ee074487b05512a6fc6a.ctex"
+path="res://.godot/imported/Ephraim_Lord-stand.png-3a5782c56113d42aa27e37c254fc1324.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Ephraim_Lord-stand.png"
-dest_files=["res://.godot/imported/Ephraim_Lord-stand.png-4f23d8a66f61ee074487b05512a6fc6a.ctex"]
+source_file="res://assets/GBA/map_sprites/Ephraim_Lord-stand.png"
+dest_files=["res://.godot/imported/Ephraim_Lord-stand.png-3a5782c56113d42aa27e37c254fc1324.ctex"]
 
 [params]
 

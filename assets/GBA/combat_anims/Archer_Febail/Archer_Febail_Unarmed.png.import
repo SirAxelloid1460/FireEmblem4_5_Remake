@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3vvybpiasf33"
-path="res://.godot/imported/Archer_Febail_Unarmed.png-a817a5f4e8fd1ac3bf1a19e892bd03e1.ctex"
+path="res://.godot/imported/Archer_Febail_Unarmed.png-674d6b521792e8b8b972662c78e2df13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Archer_Febail/Archer_Febail_Unarmed.png"
-dest_files=["res://.godot/imported/Archer_Febail_Unarmed.png-a817a5f4e8fd1ac3bf1a19e892bd03e1.ctex"]
+source_file="res://assets/GBA/combat_anims/Archer_Febail/Archer_Febail_Unarmed.png"
+dest_files=["res://.godot/imported/Archer_Febail_Unarmed.png-674d6b521792e8b8b972662c78e2df13.ctex"]
 
 [params]
 

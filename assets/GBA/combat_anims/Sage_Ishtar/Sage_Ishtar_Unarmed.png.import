@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bp4l2ii0ymj0x"
-path="res://.godot/imported/Sage_Ishtar_Unarmed.png-d07226bd099c2ccdd011c1295962cd4d.ctex"
+path="res://.godot/imported/Sage_Ishtar_Unarmed.png-b0a6d17627121c4df4dd5be3b04018af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Ishtar/Sage_Ishtar_Unarmed.png"
-dest_files=["res://.godot/imported/Sage_Ishtar_Unarmed.png-d07226bd099c2ccdd011c1295962cd4d.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Ishtar/Sage_Ishtar_Unarmed.png"
+dest_files=["res://.godot/imported/Sage_Ishtar_Unarmed.png-b0a6d17627121c4df4dd5be3b04018af.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2731da3ego52"
-path="res://.godot/imported/PriestF-move.png-5975bbae39a164bdf522a7313dcd8fac.ctex"
+path="res://.godot/imported/PriestF-move.png-56b89208bf9d38bea2fa90a2528a28ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/PriestF-move.png"
-dest_files=["res://.godot/imported/PriestF-move.png-5975bbae39a164bdf522a7313dcd8fac.ctex"]
+source_file="res://assets/GBA/map_sprites/PriestF-move.png"
+dest_files=["res://.godot/imported/PriestF-move.png-56b89208bf9d38bea2fa90a2528a28ba.ctex"]
 
 [params]
 

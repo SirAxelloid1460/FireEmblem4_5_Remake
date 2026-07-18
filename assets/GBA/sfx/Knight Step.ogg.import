@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b7trjp2nygtvk"
-path="res://.godot/imported/Knight Step.ogg-d702e13d690cd95edf8eb43ae00dc1a1.oggvorbisstr"
+path="res://.godot/imported/Knight Step.ogg-f88d99f1aaaf557314c35084f81e481a.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Knight Step.ogg"
-dest_files=["res://.godot/imported/Knight Step.ogg-d702e13d690cd95edf8eb43ae00dc1a1.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Knight Step.ogg"
+dest_files=["res://.godot/imported/Knight Step.ogg-f88d99f1aaaf557314c35084f81e481a.oggvorbisstr"]
 
 [params]
 

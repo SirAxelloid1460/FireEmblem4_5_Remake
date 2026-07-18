@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5h7nqorg5f5v"
-path="res://.godot/imported/Mercenary_Dalvin_MagicSword.png-b5576676dd89c33742b7bce471e4b824.ctex"
+path="res://.godot/imported/Mercenary_Dalvin_MagicSword.png-b81fb5b3527c2c8560802038e59f4b54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Mercenary_Dalvin/Mercenary_Dalvin_MagicSword.png"
-dest_files=["res://.godot/imported/Mercenary_Dalvin_MagicSword.png-b5576676dd89c33742b7bce471e4b824.ctex"]
+source_file="res://assets/GBA/combat_anims/Mercenary_Dalvin/Mercenary_Dalvin_MagicSword.png"
+dest_files=["res://.godot/imported/Mercenary_Dalvin_MagicSword.png-b81fb5b3527c2c8560802038e59f4b54.ctex"]
 
 [params]
 

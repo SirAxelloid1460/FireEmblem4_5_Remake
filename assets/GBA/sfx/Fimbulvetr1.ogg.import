@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://g3a8ev4tns18"
-path="res://.godot/imported/Fimbulvetr1.ogg-70a2a998773d8b5c521d5a4f1bcaf6b9.oggvorbisstr"
+path="res://.godot/imported/Fimbulvetr1.ogg-9d5886fbe754d6614f53dadb8a1e938d.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Fimbulvetr1.ogg"
-dest_files=["res://.godot/imported/Fimbulvetr1.ogg-70a2a998773d8b5c521d5a4f1bcaf6b9.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Fimbulvetr1.ogg"
+dest_files=["res://.godot/imported/Fimbulvetr1.ogg-9d5886fbe754d6614f53dadb8a1e938d.oggvorbisstr"]
 
 [params]
 

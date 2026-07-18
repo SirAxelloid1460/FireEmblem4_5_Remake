@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://babc1qv4x7w1n"
-path="res://.godot/imported/331 - Verdane Palace.ogg-0871acae1b4c19600b2ad3b4112c3213.oggvorbisstr"
+path="res://.godot/imported/331 - Verdane Palace.ogg-437e953708ee158efec50caca4779671.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/331 - Verdane Palace.ogg"
-dest_files=["res://.godot/imported/331 - Verdane Palace.ogg-0871acae1b4c19600b2ad3b4112c3213.oggvorbisstr"]
+source_file="res://assets/GBA/music/331 - Verdane Palace.ogg"
+dest_files=["res://.godot/imported/331 - Verdane Palace.ogg-437e953708ee158efec50caca4779671.oggvorbisstr"]
 
 [params]
 

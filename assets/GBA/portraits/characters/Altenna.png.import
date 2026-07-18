@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://denfgj0ainx4u"
-path="res://.godot/imported/Altenna.png-7fc5ca58a3a58cf948c9c8a89d4480ba.ctex"
+path="res://.godot/imported/Altenna.png-6cd8a11323cbd996acd61f049f9640f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Altenna.png"
-dest_files=["res://.godot/imported/Altenna.png-7fc5ca58a3a58cf948c9c8a89d4480ba.ctex"]
+source_file="res://assets/GBA/portraits/characters/Altenna.png"
+dest_files=["res://.godot/imported/Altenna.png-6cd8a11323cbd996acd61f049f9640f2.ctex"]
 
 [params]
 

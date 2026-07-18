@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bepnggkd0lpww"
-path="res://.godot/imported/221 - Versus Yurius.ogg-b2a378c19820f099740afde7d2862ca5.oggvorbisstr"
+path="res://.godot/imported/221 - Versus Yurius.ogg-5700e33fed4ba84c373b77df539e0189.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/221 - Versus Yurius.ogg"
-dest_files=["res://.godot/imported/221 - Versus Yurius.ogg-b2a378c19820f099740afde7d2862ca5.oggvorbisstr"]
+source_file="res://assets/GBA/music/221 - Versus Yurius.ogg"
+dest_files=["res://.godot/imported/221 - Versus Yurius.ogg-5700e33fed4ba84c373b77df539e0189.oggvorbisstr"]
 
 [params]
 

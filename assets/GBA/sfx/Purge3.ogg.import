@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://breyksfhcasde"
-path="res://.godot/imported/Purge3.ogg-c1ae9f45256161db6dc1c35491c64282.oggvorbisstr"
+path="res://.godot/imported/Purge3.ogg-54421fb06afd3a21cc1175435c2f7ac1.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Purge3.ogg"
-dest_files=["res://.godot/imported/Purge3.ogg-c1ae9f45256161db6dc1c35491c64282.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Purge3.ogg"
+dest_files=["res://.godot/imported/Purge3.ogg-54421fb06afd3a21cc1175435c2f7ac1.oggvorbisstr"]
 
 [params]
 

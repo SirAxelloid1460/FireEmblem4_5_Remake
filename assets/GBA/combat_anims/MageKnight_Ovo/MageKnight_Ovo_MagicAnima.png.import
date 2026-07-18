@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://36554opy66cy"
-path="res://.godot/imported/MageKnight_Ovo_MagicAnima.png-8fef032083316ea4ebded4c7fd79b2d7.ctex"
+path="res://.godot/imported/MageKnight_Ovo_MagicAnima.png-4c26f120a4ea33539aa334736e0abfe1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Ovo/MageKnight_Ovo_MagicAnima.png"
-dest_files=["res://.godot/imported/MageKnight_Ovo_MagicAnima.png-8fef032083316ea4ebded4c7fd79b2d7.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Ovo/MageKnight_Ovo_MagicAnima.png"
+dest_files=["res://.godot/imported/MageKnight_Ovo_MagicAnima.png-4c26f120a4ea33539aa334736e0abfe1.ctex"]
 
 [params]
 

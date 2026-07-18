@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dms4ah5mv16ah"
-path="res://.godot/imported/coastal_castle2.png-3b99327325551f60ba322b0447f6a0e7.ctex"
+path="res://.godot/imported/coastal_castle2.png-e1e3a19b27aa564dca0b70d03cf986fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/autotiles/coastal_castle2.png"
-dest_files=["res://.godot/imported/coastal_castle2.png-3b99327325551f60ba322b0447f6a0e7.ctex"]
+source_file="res://assets/GBA/autotiles/coastal_castle2.png"
+dest_files=["res://.godot/imported/coastal_castle2.png-e1e3a19b27aa564dca0b70d03cf986fd.ctex"]
 
 [params]
 

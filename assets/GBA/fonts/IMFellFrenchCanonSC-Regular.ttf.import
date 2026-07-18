@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dk7lnxsrcerg"
-path="res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-a7104c92085f72b591dc7d9daec48c72.fontdata"
+path="res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-b748ea443e481577d738e40f821ef907.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
-dest_files=["res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-a7104c92085f72b591dc7d9daec48c72.fontdata"]
+source_file="res://assets/GBA/fonts/IMFellFrenchCanonSC-Regular.ttf"
+dest_files=["res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-b748ea443e481577d738e40f821ef907.fontdata"]
 
 [params]
 

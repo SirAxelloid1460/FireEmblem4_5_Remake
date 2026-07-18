@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwo53v4g2p11f"
-path="res://.godot/imported/Quan.png-27078329191b1d31ed3564bde4596eba.ctex"
+path="res://.godot/imported/Quan.png-c11d6d17bbe5d93487b418b9ae798968.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Quan.png"
-dest_files=["res://.godot/imported/Quan.png-27078329191b1d31ed3564bde4596eba.ctex"]
+source_file="res://assets/GBA/portraits/characters/Quan.png"
+dest_files=["res://.godot/imported/Quan.png-c11d6d17bbe5d93487b418b9ae798968.ctex"]
 
 [params]
 

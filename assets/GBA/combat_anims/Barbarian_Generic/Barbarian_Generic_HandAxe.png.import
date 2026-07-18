@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dy7axhd3qlm8p"
-path="res://.godot/imported/Barbarian_Generic_HandAxe.png-db1eaf2836eb49b1428dd741c98c23cf.ctex"
+path="res://.godot/imported/Barbarian_Generic_HandAxe.png-50c1b1310fa60b40cd2f381c8ebc3cf9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Barbarian_Generic/Barbarian_Generic_HandAxe.png"
-dest_files=["res://.godot/imported/Barbarian_Generic_HandAxe.png-db1eaf2836eb49b1428dd741c98c23cf.ctex"]
+source_file="res://assets/GBA/combat_anims/Barbarian_Generic/Barbarian_Generic_HandAxe.png"
+dest_files=["res://.godot/imported/Barbarian_Generic_HandAxe.png-50c1b1310fa60b40cd2f381c8ebc3cf9.ctex"]
 
 [params]
 

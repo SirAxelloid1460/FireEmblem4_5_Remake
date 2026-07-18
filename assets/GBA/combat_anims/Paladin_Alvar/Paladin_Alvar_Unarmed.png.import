@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b85vvetkxi5w"
-path="res://.godot/imported/Paladin_Alvar_Unarmed.png-b6dd4f977ed097175de8dcda58bb97d3.ctex"
+path="res://.godot/imported/Paladin_Alvar_Unarmed.png-72861a4ef5d3ae163dac864756639caf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Alvar/Paladin_Alvar_Unarmed.png"
-dest_files=["res://.godot/imported/Paladin_Alvar_Unarmed.png-b6dd4f977ed097175de8dcda58bb97d3.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Alvar/Paladin_Alvar_Unarmed.png"
+dest_files=["res://.godot/imported/Paladin_Alvar_Unarmed.png-72861a4ef5d3ae163dac864756639caf.ctex"]
 
 [params]
 

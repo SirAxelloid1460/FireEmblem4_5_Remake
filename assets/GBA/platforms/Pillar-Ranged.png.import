@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cc17gweebb5nx"
-path="res://.godot/imported/Pillar-Ranged.png-3bedfbc1cd8d0ef691fb6681b091ddce.ctex"
+path="res://.godot/imported/Pillar-Ranged.png-7cae7c4faa1510085cc3404910546fab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Pillar-Ranged.png"
-dest_files=["res://.godot/imported/Pillar-Ranged.png-3bedfbc1cd8d0ef691fb6681b091ddce.ctex"]
+source_file="res://assets/GBA/platforms/Pillar-Ranged.png"
+dest_files=["res://.godot/imported/Pillar-Ranged.png-7cae7c4faa1510085cc3404910546fab.ctex"]
 
 [params]
 

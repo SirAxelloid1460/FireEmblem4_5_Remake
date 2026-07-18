@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jmjh7kd7n5eo"
-path="res://.godot/imported/PriestFemale-stand.png-95230e932b7cbb4e17013fb4b9dd0091.ctex"
+path="res://.godot/imported/PriestFemale-stand.png-81f9fa08ef61fe23365a528f959a3512.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/PriestFemale-stand.png"
-dest_files=["res://.godot/imported/PriestFemale-stand.png-95230e932b7cbb4e17013fb4b9dd0091.ctex"]
+source_file="res://assets/GBA/map_sprites/PriestFemale-stand.png"
+dest_files=["res://.godot/imported/PriestFemale-stand.png-81f9fa08ef61fe23365a528f959a3512.ctex"]
 
 [params]
 

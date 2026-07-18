@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clwju33vvw35x"
-path="res://.godot/imported/Hero_Holyn_Axe.png-0def5d41958628b700dcfa49ed757989.ctex"
+path="res://.godot/imported/Hero_Holyn_Axe.png-4b9b2a5158a09542f298558ebcbb96a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Hero_Holyn/Hero_Holyn_Axe.png"
-dest_files=["res://.godot/imported/Hero_Holyn_Axe.png-0def5d41958628b700dcfa49ed757989.ctex"]
+source_file="res://assets/GBA/combat_anims/Hero_Holyn/Hero_Holyn_Axe.png"
+dest_files=["res://.godot/imported/Hero_Holyn_Axe.png-4b9b2a5158a09542f298558ebcbb96a9.ctex"]
 
 [params]
 

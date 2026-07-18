@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd4wn4grn43he"
-path="res://.godot/imported/MageKnight_Musar_MagicAnima.png-232785c3c0a75b33f8d68c6295d96410.ctex"
+path="res://.godot/imported/MageKnight_Musar_MagicAnima.png-6fffdf3701d9ab1aa4693e9d5ebbe601.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Musar/MageKnight_Musar_MagicAnima.png"
-dest_files=["res://.godot/imported/MageKnight_Musar_MagicAnima.png-232785c3c0a75b33f8d68c6295d96410.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Musar/MageKnight_Musar_MagicAnima.png"
+dest_files=["res://.godot/imported/MageKnight_Musar_MagicAnima.png-6fffdf3701d9ab1aa4693e9d5ebbe601.ctex"]
 
 [params]
 

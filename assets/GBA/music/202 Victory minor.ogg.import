@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b25h8c2mweylh"
-path="res://.godot/imported/202 Victory minor.ogg-d7c04afb27ac62a3c1f348eb65e801fe.oggvorbisstr"
+path="res://.godot/imported/202 Victory minor.ogg-5a2c3f221e4d91f8e71d053442368aca.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/202 Victory minor.ogg"
-dest_files=["res://.godot/imported/202 Victory minor.ogg-d7c04afb27ac62a3c1f348eb65e801fe.oggvorbisstr"]
+source_file="res://assets/GBA/music/202 Victory minor.ogg"
+dest_files=["res://.godot/imported/202 Victory minor.ogg-5a2c3f221e4d91f8e71d053442368aca.oggvorbisstr"]
 
 [params]
 

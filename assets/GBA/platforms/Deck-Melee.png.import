@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ndgsqum3qklo"
-path="res://.godot/imported/Deck-Melee.png-fb51ec48598396c3dbfe89b6ebaf084f.ctex"
+path="res://.godot/imported/Deck-Melee.png-47e08a62bb73859effb5be6af17cb827.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Deck-Melee.png"
-dest_files=["res://.godot/imported/Deck-Melee.png-fb51ec48598396c3dbfe89b6ebaf084f.ctex"]
+source_file="res://assets/GBA/platforms/Deck-Melee.png"
+dest_files=["res://.godot/imported/Deck-Melee.png-47e08a62bb73859effb5be6af17cb827.ctex"]
 
 [params]
 

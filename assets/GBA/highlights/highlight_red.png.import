@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtg8y15aas5sh"
-path="res://.godot/imported/highlight_red.png-8c260838f2e9283b5a4b814b9d1209bb.ctex"
+path="res://.godot/imported/highlight_red.png-80d42b0ac8bd203e95c145d5ce7f4503.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/highlights/highlight_red.png"
-dest_files=["res://.godot/imported/highlight_red.png-8c260838f2e9283b5a4b814b9d1209bb.ctex"]
+source_file="res://assets/GBA/highlights/highlight_red.png"
+dest_files=["res://.godot/imported/highlight_red.png-80d42b0ac8bd203e95c145d5ce7f4503.ctex"]
 
 [params]
 

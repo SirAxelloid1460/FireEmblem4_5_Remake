@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dgu0165cb5jpf"
-path="res://.godot/imported/CyclopsCrit.ogg-c21fdd0dce5f8b63dd100fc54b9a211f.oggvorbisstr"
+path="res://.godot/imported/CyclopsCrit.ogg-4c5f8ee3397c5246430559ad0e4d8051.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/CyclopsCrit.ogg"
-dest_files=["res://.godot/imported/CyclopsCrit.ogg-c21fdd0dce5f8b63dd100fc54b9a211f.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/CyclopsCrit.ogg"
+dest_files=["res://.godot/imported/CyclopsCrit.ogg-4c5f8ee3397c5246430559ad0e4d8051.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0ud4tdus80ps"
-path="res://.godot/imported/ChronologyBackground.png-a77b6e1e336b37c685fd82634fa49145.ctex"
+path="res://.godot/imported/ChronologyBackground.png-dcd80b33d74849a0135f1d0adfdc613d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/FE4/ChronologyBackground.png"
-dest_files=["res://.godot/imported/ChronologyBackground.png-a77b6e1e336b37c685fd82634fa49145.ctex"]
+source_file="res://assets/GBA/tilesets/FE4/ChronologyBackground.png"
+dest_files=["res://.godot/imported/ChronologyBackground.png-dcd80b33d74849a0135f1d0adfdc613d.ctex"]
 
 [params]
 

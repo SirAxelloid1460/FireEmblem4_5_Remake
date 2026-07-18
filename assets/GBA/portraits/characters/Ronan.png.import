@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgmjnr3nr57cq"
-path="res://.godot/imported/Ronan.png-1d38e3dfb1feba16bce576ac976532b3.ctex"
+path="res://.godot/imported/Ronan.png-c1608efe9dcd27b07fdd42648e24cec7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Ronan.png"
-dest_files=["res://.godot/imported/Ronan.png-1d38e3dfb1feba16bce576ac976532b3.ctex"]
+source_file="res://assets/GBA/portraits/characters/Ronan.png"
+dest_files=["res://.godot/imported/Ronan.png-c1608efe9dcd27b07fdd42648e24cec7.ctex"]
 
 [params]
 

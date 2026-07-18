@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bha4lqac1ohda"
-path="res://.godot/imported/Hill-Ranged.png-eb6be97bc9def910ac883519633c0252.ctex"
+path="res://.godot/imported/Hill-Ranged.png-fa7b738588ccd19ddfafda0129ccd873.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Hill-Ranged.png"
-dest_files=["res://.godot/imported/Hill-Ranged.png-eb6be97bc9def910ac883519633c0252.ctex"]
+source_file="res://assets/GBA/platforms/Hill-Ranged.png"
+dest_files=["res://.godot/imported/Hill-Ranged.png-fa7b738588ccd19ddfafda0129ccd873.ctex"]
 
 [params]
 

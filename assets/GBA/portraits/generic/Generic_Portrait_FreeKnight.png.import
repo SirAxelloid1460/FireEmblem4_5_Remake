@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfgcrusctcru0"
-path="res://.godot/imported/Generic_Portrait_FreeKnight.png-486d25d008bbebe9e251490f3d918932.ctex"
+path="res://.godot/imported/Generic_Portrait_FreeKnight.png-434f6a5382f7309952c28598e71c70a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_FreeKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_FreeKnight.png-486d25d008bbebe9e251490f3d918932.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_FreeKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_FreeKnight.png-434f6a5382f7309952c28598e71c70a4.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuopdm034egcx"
-path="res://.godot/imported/ArcthunderMagic.png-112cc0497c36f9fc96f31cea3441f0ba.ctex"
+path="res://.godot/imported/ArcthunderMagic.png-19986b03292910b36b3c01b9adc558d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ArcthunderMagic.png"
-dest_files=["res://.godot/imported/ArcthunderMagic.png-112cc0497c36f9fc96f31cea3441f0ba.ctex"]
+source_file="res://assets/GBA/combat_effects/ArcthunderMagic.png"
+dest_files=["res://.godot/imported/ArcthunderMagic.png-19986b03292910b36b3c01b9adc558d5.ctex"]
 
 [params]
 

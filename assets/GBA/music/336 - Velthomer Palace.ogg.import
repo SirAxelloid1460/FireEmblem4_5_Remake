@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dv1w8slt4jqnl"
-path="res://.godot/imported/336 - Velthomer Palace.ogg-6dc9a9f2635fdba0b29397c3e69250cf.oggvorbisstr"
+path="res://.godot/imported/336 - Velthomer Palace.ogg-159a8b7e6c5dbb77421903197871acf4.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/336 - Velthomer Palace.ogg"
-dest_files=["res://.godot/imported/336 - Velthomer Palace.ogg-6dc9a9f2635fdba0b29397c3e69250cf.oggvorbisstr"]
+source_file="res://assets/GBA/music/336 - Velthomer Palace.ogg"
+dest_files=["res://.godot/imported/336 - Velthomer Palace.ogg-159a8b7e6c5dbb77421903197871acf4.oggvorbisstr"]
 
 [params]
 

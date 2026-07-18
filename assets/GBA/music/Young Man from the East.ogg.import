@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b4p0u4fvgm1jc"
-path="res://.godot/imported/Young Man from the East.ogg-8825223554b0f65bc6a4d241e843cd2e.oggvorbisstr"
+path="res://.godot/imported/Young Man from the East.ogg-28a1c19cb9053882d0eb770f0b1b66ff.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Young Man from the East.ogg"
-dest_files=["res://.godot/imported/Young Man from the East.ogg-8825223554b0f65bc6a4d241e843cd2e.oggvorbisstr"]
+source_file="res://assets/GBA/music/Young Man from the East.ogg"
+dest_files=["res://.godot/imported/Young Man from the East.ogg-28a1c19cb9053882d0eb770f0b1b66ff.oggvorbisstr"]
 
 [params]
 

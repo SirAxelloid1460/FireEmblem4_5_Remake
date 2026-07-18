@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnv8xsb7nhmup"
-path="res://.godot/imported/stat_underline.png-529f2c98aff9d99368ee18a7d784e3ac.ctex"
+path="res://.godot/imported/stat_underline.png-0b4cf950575f631f31621137b70d01a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/exp_displays/stat_underline.png"
-dest_files=["res://.godot/imported/stat_underline.png-529f2c98aff9d99368ee18a7d784e3ac.ctex"]
+source_file="res://assets/GBA/exp_displays/stat_underline.png"
+dest_files=["res://.godot/imported/stat_underline.png-0b4cf950575f631f31621137b70d01a2.ctex"]
 
 [params]
 

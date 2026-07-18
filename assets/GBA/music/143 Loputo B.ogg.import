@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://btb7ojty51hgr"
-path="res://.godot/imported/143 Loputo B.ogg-b40e920a15638da1a144bb975fd7e9bf.oggvorbisstr"
+path="res://.godot/imported/143 Loputo B.ogg-848e8f3a6725f4c737c980034ce7b1d8.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/143 Loputo B.ogg"
-dest_files=["res://.godot/imported/143 Loputo B.ogg-b40e920a15638da1a144bb975fd7e9bf.oggvorbisstr"]
+source_file="res://assets/GBA/music/143 Loputo B.ogg"
+dest_files=["res://.godot/imported/143 Loputo B.ogg-848e8f3a6725f4c737c980034ce7b1d8.oggvorbisstr"]
 
 [params]
 

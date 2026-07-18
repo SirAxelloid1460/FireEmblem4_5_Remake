@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bemcbv6a63rqu"
-path="res://.godot/imported/wm_city_marker.png-ae3d34c33b69865fa72c9175422c901a.ctex"
+path="res://.godot/imported/wm_city_marker.png-1a0f5da2f9acb14712f83d63e28b2298.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_icons/wm_city_marker.png"
-dest_files=["res://.godot/imported/wm_city_marker.png-ae3d34c33b69865fa72c9175422c901a.ctex"]
+source_file="res://assets/GBA/map_icons/wm_city_marker.png"
+dest_files=["res://.godot/imported/wm_city_marker.png-1a0f5da2f9acb14712f83d63e28b2298.ctex"]
 
 [params]
 

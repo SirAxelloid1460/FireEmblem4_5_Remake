@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3ux1e4ngmkmw"
-path="res://.godot/imported/Arena-Ranged.png-33e5ccd1e02e6c1e36f00a2614842fe7.ctex"
+path="res://.godot/imported/Arena-Ranged.png-c3fbed4ab396b6a4eb4881f6b984c4ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Arena-Ranged.png"
-dest_files=["res://.godot/imported/Arena-Ranged.png-33e5ccd1e02e6c1e36f00a2614842fe7.ctex"]
+source_file="res://assets/GBA/platforms/Arena-Ranged.png"
+dest_files=["res://.godot/imported/Arena-Ranged.png-c3fbed4ab396b6a4eb4881f6b984c4ac.ctex"]
 
 [params]
 

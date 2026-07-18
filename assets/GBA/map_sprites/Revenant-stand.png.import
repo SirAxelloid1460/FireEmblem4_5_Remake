@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4xwr8hlovgtm"
-path="res://.godot/imported/Revenant-stand.png-31944a7ca93f5769486b5ba4d83552f0.ctex"
+path="res://.godot/imported/Revenant-stand.png-5276d8cd8da52dc57ea3a4949040b011.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Revenant-stand.png"
-dest_files=["res://.godot/imported/Revenant-stand.png-31944a7ca93f5769486b5ba4d83552f0.ctex"]
+source_file="res://assets/GBA/map_sprites/Revenant-stand.png"
+dest_files=["res://.godot/imported/Revenant-stand.png-5276d8cd8da52dc57ea3a4949040b011.ctex"]
 
 [params]
 

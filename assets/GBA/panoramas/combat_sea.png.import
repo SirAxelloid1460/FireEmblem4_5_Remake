@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfcab5ycsp3jg"
-path="res://.godot/imported/combat_sea.png-2cdd3d677b8a661b86c5ed5ab9840967.ctex"
+path="res://.godot/imported/combat_sea.png-1b07e998c988aaf3f10f328145eca774.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/combat_sea.png"
-dest_files=["res://.godot/imported/combat_sea.png-2cdd3d677b8a661b86c5ed5ab9840967.ctex"]
+source_file="res://assets/GBA/panoramas/combat_sea.png"
+dest_files=["res://.godot/imported/combat_sea.png-1b07e998c988aaf3f10f328145eca774.ctex"]
 
 [params]
 

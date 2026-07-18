@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxljdn4hafpq0"
-path="res://.godot/imported/Sage_Asbel_MagicStaff.png-166e80244f44406df41697b705a4d1b4.ctex"
+path="res://.godot/imported/Sage_Asbel_MagicStaff.png-dd9ce8911f7b948b4f30c494c310180e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Asbel/Sage_Asbel_MagicStaff.png"
-dest_files=["res://.godot/imported/Sage_Asbel_MagicStaff.png-166e80244f44406df41697b705a4d1b4.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Asbel/Sage_Asbel_MagicStaff.png"
+dest_files=["res://.godot/imported/Sage_Asbel_MagicStaff.png-dd9ce8911f7b948b4f30c494c310180e.ctex"]
 
 [params]
 

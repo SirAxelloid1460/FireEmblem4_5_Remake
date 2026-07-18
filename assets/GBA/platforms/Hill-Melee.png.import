@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bady1r71csr1g"
-path="res://.godot/imported/Hill-Melee.png-51a123b203d6a1b75bcc9cf1a69abfe8.ctex"
+path="res://.godot/imported/Hill-Melee.png-fec37da93847e2ddc4b832f5564c70ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Hill-Melee.png"
-dest_files=["res://.godot/imported/Hill-Melee.png-51a123b203d6a1b75bcc9cf1a69abfe8.ctex"]
+source_file="res://assets/GBA/platforms/Hill-Melee.png"
+dest_files=["res://.godot/imported/Hill-Melee.png-fec37da93847e2ddc4b832f5564c70ba.ctex"]
 
 [params]
 

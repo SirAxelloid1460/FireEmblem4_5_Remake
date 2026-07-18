@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be3ikbggmf5go"
-path="res://.godot/imported/Berserker_Generic_HandAxe.png-8b9f7fb916694b719a932ce37bcdc0cd.ctex"
+path="res://.godot/imported/Berserker_Generic_HandAxe.png-abc1735a321d4a3ec5165e54ec323866.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Berserker_Generic/Berserker_Generic_HandAxe.png"
-dest_files=["res://.godot/imported/Berserker_Generic_HandAxe.png-8b9f7fb916694b719a932ce37bcdc0cd.ctex"]
+source_file="res://assets/GBA/combat_anims/Berserker_Generic/Berserker_Generic_HandAxe.png"
+dest_files=["res://.godot/imported/Berserker_Generic_HandAxe.png-abc1735a321d4a3ec5165e54ec323866.ctex"]
 
 [params]
 

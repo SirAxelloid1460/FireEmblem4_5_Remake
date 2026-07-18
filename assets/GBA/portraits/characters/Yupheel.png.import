@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://comh05ternrda"
-path="res://.godot/imported/Yupheel.png-f15258f0875923039a9d0d05b42633e2.ctex"
+path="res://.godot/imported/Yupheel.png-a237575564b3767eba44479247124831.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Yupheel.png"
-dest_files=["res://.godot/imported/Yupheel.png-f15258f0875923039a9d0d05b42633e2.ctex"]
+source_file="res://assets/GBA/portraits/characters/Yupheel.png"
+dest_files=["res://.godot/imported/Yupheel.png-a237575564b3767eba44479247124831.ctex"]
 
 [params]
 

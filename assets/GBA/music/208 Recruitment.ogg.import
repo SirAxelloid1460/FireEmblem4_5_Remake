@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cwl6ldj1lvrod"
-path="res://.godot/imported/208 Recruitment.ogg-f70258b7b0acbe447fc6a42b1b586479.oggvorbisstr"
+path="res://.godot/imported/208 Recruitment.ogg-822cd127b12a6bf95c9b66631b6ea90f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/208 Recruitment.ogg"
-dest_files=["res://.godot/imported/208 Recruitment.ogg-f70258b7b0acbe447fc6a42b1b586479.oggvorbisstr"]
+source_file="res://assets/GBA/music/208 Recruitment.ogg"
+dest_files=["res://.godot/imported/208 Recruitment.ogg-822cd127b12a6bf95c9b66631b6ea90f.oggvorbisstr"]
 
 [params]
 

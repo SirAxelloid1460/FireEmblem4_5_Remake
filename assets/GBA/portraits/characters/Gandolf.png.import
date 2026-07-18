@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfrweouscsen0"
-path="res://.godot/imported/Gandolf.png-3fdb18c7a9575bbf0fe671f0256eb859.ctex"
+path="res://.godot/imported/Gandolf.png-83dae354f6421fcc9db8a1fe331def17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Gandolf.png"
-dest_files=["res://.godot/imported/Gandolf.png-3fdb18c7a9575bbf0fe671f0256eb859.ctex"]
+source_file="res://assets/GBA/portraits/characters/Gandolf.png"
+dest_files=["res://.godot/imported/Gandolf.png-83dae354f6421fcc9db8a1fe331def17.ctex"]
 
 [params]
 

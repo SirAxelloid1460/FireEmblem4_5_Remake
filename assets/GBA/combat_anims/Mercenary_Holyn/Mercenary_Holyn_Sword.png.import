@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg0l36isj6uwm"
-path="res://.godot/imported/Mercenary_Holyn_Sword.png-733fb918b84e8730671c75ee192fc211.ctex"
+path="res://.godot/imported/Mercenary_Holyn_Sword.png-5671173ceb4c124082b30c040c47f7ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Mercenary_Holyn/Mercenary_Holyn_Sword.png"
-dest_files=["res://.godot/imported/Mercenary_Holyn_Sword.png-733fb918b84e8730671c75ee192fc211.ctex"]
+source_file="res://assets/GBA/combat_anims/Mercenary_Holyn/Mercenary_Holyn_Sword.png"
+dest_files=["res://.godot/imported/Mercenary_Holyn_Sword.png-5671173ceb4c124082b30c040c47f7ab.ctex"]
 
 [params]
 

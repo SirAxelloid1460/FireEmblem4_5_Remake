@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7qo6b317susu"
-path="res://.godot/imported/AOE_Rally.png-cde938e2ba54a010912d3af22dcd487b.ctex"
+path="res://.godot/imported/AOE_Rally.png-605e46954e1fb21840e4007d6c35d8bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/AOE_Rally.png"
-dest_files=["res://.godot/imported/AOE_Rally.png-cde938e2ba54a010912d3af22dcd487b.ctex"]
+source_file="res://assets/GBA/animations/AOE_Rally.png"
+dest_files=["res://.godot/imported/AOE_Rally.png-605e46954e1fb21840e4007d6c35d8bf.ctex"]
 
 [params]
 

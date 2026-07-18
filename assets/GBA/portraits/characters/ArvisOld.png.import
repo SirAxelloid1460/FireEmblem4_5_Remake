@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd83k1ws727qf"
-path="res://.godot/imported/ArvisOld.png-144bb56dee20370e7e8c198515afa5f3.ctex"
+path="res://.godot/imported/ArvisOld.png-68ac12c7521a51c1e87d8c248216f738.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/ArvisOld.png"
-dest_files=["res://.godot/imported/ArvisOld.png-144bb56dee20370e7e8c198515afa5f3.ctex"]
+source_file="res://assets/GBA/portraits/characters/ArvisOld.png"
+dest_files=["res://.godot/imported/ArvisOld.png-68ac12c7521a51c1e87d8c248216f738.ctex"]
 
 [params]
 

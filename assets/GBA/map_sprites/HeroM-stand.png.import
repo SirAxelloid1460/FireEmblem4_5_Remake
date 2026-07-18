@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpwog15shkilm"
-path="res://.godot/imported/HeroM-stand.png-81c1cbf825457b35808ae7831e242858.ctex"
+path="res://.godot/imported/HeroM-stand.png-d98961e5903cad1873de3f3e5a763b4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/HeroM-stand.png"
-dest_files=["res://.godot/imported/HeroM-stand.png-81c1cbf825457b35808ae7831e242858.ctex"]
+source_file="res://assets/GBA/map_sprites/HeroM-stand.png"
+dest_files=["res://.godot/imported/HeroM-stand.png-d98961e5903cad1873de3f3e5a763b4c.ctex"]
 
 [params]
 

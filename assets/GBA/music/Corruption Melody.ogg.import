@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dax88drbboe3d"
-path="res://.godot/imported/Corruption Melody.ogg-8a0a24e2a9d7648f93a0bd8fd6d190f4.oggvorbisstr"
+path="res://.godot/imported/Corruption Melody.ogg-5275e7c8297143501f64761aaa559c31.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Corruption Melody.ogg"
-dest_files=["res://.godot/imported/Corruption Melody.ogg-8a0a24e2a9d7648f93a0bd8fd6d190f4.oggvorbisstr"]
+source_file="res://assets/GBA/music/Corruption Melody.ogg"
+dest_files=["res://.godot/imported/Corruption Melody.ogg-5275e7c8297143501f64761aaa559c31.oggvorbisstr"]
 
 [params]
 

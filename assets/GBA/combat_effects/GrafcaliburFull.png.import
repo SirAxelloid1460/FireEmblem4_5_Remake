@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0ygmhibh5bv"
-path="res://.godot/imported/GrafcaliburFull.png-68c605d2422b0c51eb85fc8a3e8f1908.ctex"
+path="res://.godot/imported/GrafcaliburFull.png-9efb6b2370738888f3a8c20e7456ba9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/GrafcaliburFull.png"
-dest_files=["res://.godot/imported/GrafcaliburFull.png-68c605d2422b0c51eb85fc8a3e8f1908.ctex"]
+source_file="res://assets/GBA/combat_effects/GrafcaliburFull.png"
+dest_files=["res://.godot/imported/GrafcaliburFull.png-9efb6b2370738888f3a8c20e7456ba9f.ctex"]
 
 [params]
 

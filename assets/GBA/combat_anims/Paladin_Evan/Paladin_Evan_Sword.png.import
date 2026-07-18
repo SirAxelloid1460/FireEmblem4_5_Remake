@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba4mi6dgqynsn"
-path="res://.godot/imported/Paladin_Evan_Sword.png-30cb14952e28c4e1c8d0e6977401a714.ctex"
+path="res://.godot/imported/Paladin_Evan_Sword.png-7da7e09b514addcb994aad90e306180e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Evan/Paladin_Evan_Sword.png"
-dest_files=["res://.godot/imported/Paladin_Evan_Sword.png-30cb14952e28c4e1c8d0e6977401a714.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Evan/Paladin_Evan_Sword.png"
+dest_files=["res://.godot/imported/Paladin_Evan_Sword.png-7da7e09b514addcb994aad90e306180e.ctex"]
 
 [params]
 

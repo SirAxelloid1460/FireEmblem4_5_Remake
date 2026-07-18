@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://derpg21mpail5"
-path="res://.godot/imported/111 - Chapter 5 (Doors of Destiny).ogg-4d5f59b0e12d83a59ed39f7f0276b5c0.oggvorbisstr"
+path="res://.godot/imported/111 - Chapter 5 (Doors of Destiny).ogg-388afb5f2ab756db4dc2c1ef650940e3.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/111 - Chapter 5 (Doors of Destiny).ogg"
-dest_files=["res://.godot/imported/111 - Chapter 5 (Doors of Destiny).ogg-4d5f59b0e12d83a59ed39f7f0276b5c0.oggvorbisstr"]
+source_file="res://assets/GBA/music/111 - Chapter 5 (Doors of Destiny).ogg"
+dest_files=["res://.godot/imported/111 - Chapter 5 (Doors of Destiny).ogg-388afb5f2ab756db4dc2c1ef650940e3.oggvorbisstr"]
 
 [params]
 

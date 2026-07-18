@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://k003snn222di"
-path="res://.godot/imported/Generic_Portrait_Paladin.png-9dc925f144cc4ca6bdb71a892ce70cdf.ctex"
+path="res://.godot/imported/Generic_Portrait_Paladin.png-b596af87c25764120f6d193430b51b34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Paladin.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Paladin.png-9dc925f144cc4ca6bdb71a892ce70cdf.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Paladin.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Paladin.png-b596af87c25764120f6d193430b51b34.ctex"]
 
 [params]
 

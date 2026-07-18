@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://u6tflyhdp1uu"
-path="res://.godot/imported/In Sorrows Shroud.ogg-5007a702282993f2fff556d623d356f1.oggvorbisstr"
+path="res://.godot/imported/In Sorrows Shroud.ogg-9bb06568d343262ce069b998a51d3937.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/In Sorrows Shroud.ogg"
-dest_files=["res://.godot/imported/In Sorrows Shroud.ogg-5007a702282993f2fff556d623d356f1.oggvorbisstr"]
+source_file="res://assets/GBA/music/In Sorrows Shroud.ogg"
+dest_files=["res://.godot/imported/In Sorrows Shroud.ogg-9bb06568d343262ce069b998a51d3937.oggvorbisstr"]
 
 [params]
 

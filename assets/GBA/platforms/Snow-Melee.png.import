@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6thw3lurfwi3"
-path="res://.godot/imported/Snow-Melee.png-5f34f62db0ba40d653ab0b4bff715816.ctex"
+path="res://.godot/imported/Snow-Melee.png-92052fac3665dbcbb2fa123364aed7f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Snow-Melee.png"
-dest_files=["res://.godot/imported/Snow-Melee.png-5f34f62db0ba40d653ab0b4bff715816.ctex"]
+source_file="res://assets/GBA/platforms/Snow-Melee.png"
+dest_files=["res://.godot/imported/Snow-Melee.png-92052fac3665dbcbb2fa123364aed7f2.ctex"]
 
 [params]
 

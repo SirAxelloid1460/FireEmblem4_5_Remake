@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cb7acmd5x7csw"
-path="res://.godot/imported/GoldExchange.ogg-1d17cc5af0d4577a96b6d006b640552d.oggvorbisstr"
+path="res://.godot/imported/GoldExchange.ogg-f5481ea915579da50b29c5024c0984be.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/GoldExchange.ogg"
-dest_files=["res://.godot/imported/GoldExchange.ogg-1d17cc5af0d4577a96b6d006b640552d.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/GoldExchange.ogg"
+dest_files=["res://.godot/imported/GoldExchange.ogg-f5481ea915579da50b29c5024c0984be.oggvorbisstr"]
 
 [params]
 

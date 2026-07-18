@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chswoa8trpop3"
-path="res://.godot/imported/ThrowingAxe.png-4c779ccd4e287bcb90985172cf3f2472.ctex"
+path="res://.godot/imported/ThrowingAxe.png-21304bdaaa980904498ca7a27d3d0740.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ThrowingAxe.png"
-dest_files=["res://.godot/imported/ThrowingAxe.png-4c779ccd4e287bcb90985172cf3f2472.ctex"]
+source_file="res://assets/GBA/combat_effects/ThrowingAxe.png"
+dest_files=["res://.godot/imported/ThrowingAxe.png-21304bdaaa980904498ca7a27d3d0740.ctex"]
 
 [params]
 

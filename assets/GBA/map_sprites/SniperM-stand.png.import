@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1yyae0qlxfwb"
-path="res://.godot/imported/SniperM-stand.png-3869cb242973a9ca2917e7c52e6c1af3.ctex"
+path="res://.godot/imported/SniperM-stand.png-9999a54d860e320811b233f7a668b074.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/SniperM-stand.png"
-dest_files=["res://.godot/imported/SniperM-stand.png-3869cb242973a9ca2917e7c52e6c1af3.ctex"]
+source_file="res://assets/GBA/map_sprites/SniperM-stand.png"
+dest_files=["res://.godot/imported/SniperM-stand.png-9999a54d860e320811b233f7a668b074.ctex"]
 
 [params]
 

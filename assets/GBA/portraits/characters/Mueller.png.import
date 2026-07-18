@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddvu342asrvig"
-path="res://.godot/imported/Mueller.png-085919748da19da6a5fa2a5aa0d7984c.ctex"
+path="res://.godot/imported/Mueller.png-51da84e4e44fc99bd59b56d30287bfeb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Mueller.png"
-dest_files=["res://.godot/imported/Mueller.png-085919748da19da6a5fa2a5aa0d7984c.ctex"]
+source_file="res://assets/GBA/portraits/characters/Mueller.png"
+dest_files=["res://.godot/imported/Mueller.png-51da84e4e44fc99bd59b56d30287bfeb.ctex"]
 
 [params]
 

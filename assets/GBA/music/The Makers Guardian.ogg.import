@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://scpx3slte8i7"
-path="res://.godot/imported/The Makers Guardian.ogg-91b5dc82ebde58b792d6804bb4b9ef1c.oggvorbisstr"
+path="res://.godot/imported/The Makers Guardian.ogg-85e7bfb5c011c911f759ab57d3fb5d0c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/The Makers Guardian.ogg"
-dest_files=["res://.godot/imported/The Makers Guardian.ogg-91b5dc82ebde58b792d6804bb4b9ef1c.oggvorbisstr"]
+source_file="res://assets/GBA/music/The Makers Guardian.ogg"
+dest_files=["res://.godot/imported/The Makers Guardian.ogg-85e7bfb5c011c911f759ab57d3fb5d0c.oggvorbisstr"]
 
 [params]
 

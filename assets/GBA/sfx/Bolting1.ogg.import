@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dmbyi68aj4bqf"
-path="res://.godot/imported/Bolting1.ogg-36a6496595ac0b2858912f1a902adb0e.oggvorbisstr"
+path="res://.godot/imported/Bolting1.ogg-ae86601ed7e00458a73bb2b36d599cbb.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Bolting1.ogg"
-dest_files=["res://.godot/imported/Bolting1.ogg-36a6496595ac0b2858912f1a902adb0e.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Bolting1.ogg"
+dest_files=["res://.godot/imported/Bolting1.ogg-ae86601ed7e00458a73bb2b36d599cbb.oggvorbisstr"]
 
 [params]
 

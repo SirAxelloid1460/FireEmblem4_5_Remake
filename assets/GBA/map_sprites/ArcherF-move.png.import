@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blawk6gnjmqdr"
-path="res://.godot/imported/ArcherF-move.png-70bf5918ccd5482b56e8c6e14b94ff71.ctex"
+path="res://.godot/imported/ArcherF-move.png-b5b69950704e9e9de4968d6c0e028000.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/ArcherF-move.png"
-dest_files=["res://.godot/imported/ArcherF-move.png-70bf5918ccd5482b56e8c6e14b94ff71.ctex"]
+source_file="res://assets/GBA/map_sprites/ArcherF-move.png"
+dest_files=["res://.godot/imported/ArcherF-move.png-b5b69950704e9e9de4968d6c0e028000.ctex"]
 
 [params]
 

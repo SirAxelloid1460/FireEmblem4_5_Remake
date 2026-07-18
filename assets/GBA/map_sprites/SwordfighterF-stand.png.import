@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://con36tgx28fn1"
-path="res://.godot/imported/SwordfighterF-stand.png-c4e099a2e28652c057e56e058c8db3ed.ctex"
+path="res://.godot/imported/SwordfighterF-stand.png-6445fbc193339afb7fabfd230aef07d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/SwordfighterF-stand.png"
-dest_files=["res://.godot/imported/SwordfighterF-stand.png-c4e099a2e28652c057e56e058c8db3ed.ctex"]
+source_file="res://assets/GBA/map_sprites/SwordfighterF-stand.png"
+dest_files=["res://.godot/imported/SwordfighterF-stand.png-6445fbc193339afb7fabfd230aef07d9.ctex"]
 
 [params]
 

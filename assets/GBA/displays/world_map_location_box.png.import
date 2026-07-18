@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkyg7hhvq1vx0"
-path="res://.godot/imported/world_map_location_box.png-daf1bdb791cb837f916cd4653fb1c44f.ctex"
+path="res://.godot/imported/world_map_location_box.png-bccc2700d99c89a10a9b565bef969705.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/displays/world_map_location_box.png"
-dest_files=["res://.godot/imported/world_map_location_box.png-daf1bdb791cb837f916cd4653fb1c44f.ctex"]
+source_file="res://assets/GBA/displays/world_map_location_box.png"
+dest_files=["res://.godot/imported/world_map_location_box.png-bccc2700d99c89a10a9b565bef969705.ctex"]
 
 [params]
 

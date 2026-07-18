@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbh7x8ak054ps"
-path="res://.godot/imported/AetherGust.png-51acf84f640de7446d14995e93fdc764.ctex"
+path="res://.godot/imported/AetherGust.png-72d0e676086893edfcf86727c84f3e84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/AetherGust.png"
-dest_files=["res://.godot/imported/AetherGust.png-51acf84f640de7446d14995e93fdc764.ctex"]
+source_file="res://assets/GBA/combat_effects/AetherGust.png"
+dest_files=["res://.godot/imported/AetherGust.png-72d0e676086893edfcf86727c84f3e84.ctex"]
 
 [params]
 

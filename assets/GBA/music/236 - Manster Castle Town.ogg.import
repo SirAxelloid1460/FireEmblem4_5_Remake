@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ctn8krji0x6n0"
-path="res://.godot/imported/236 - Manster Castle Town.ogg-65d5c3447473d3d9a7cfb40116f30c87.oggvorbisstr"
+path="res://.godot/imported/236 - Manster Castle Town.ogg-fa404398ea60105c7295b3e7ba637648.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/236 - Manster Castle Town.ogg"
-dest_files=["res://.godot/imported/236 - Manster Castle Town.ogg-65d5c3447473d3d9a7cfb40116f30c87.oggvorbisstr"]
+source_file="res://assets/GBA/music/236 - Manster Castle Town.ogg"
+dest_files=["res://.godot/imported/236 - Manster Castle Town.ogg-fa404398ea60105c7295b3e7ba637648.oggvorbisstr"]
 
 [params]
 

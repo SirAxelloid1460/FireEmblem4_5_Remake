@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lhc4pgechefn"
-path="res://.godot/imported/MapSmallHealTrans.png-171622e0eb09d7811e444a051d4f0f82.ctex"
+path="res://.godot/imported/MapSmallHealTrans.png-9606806531dbde8c85225ac485a5b903.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/MapSmallHealTrans.png"
-dest_files=["res://.godot/imported/MapSmallHealTrans.png-171622e0eb09d7811e444a051d4f0f82.ctex"]
+source_file="res://assets/GBA/animations/MapSmallHealTrans.png"
+dest_files=["res://.godot/imported/MapSmallHealTrans.png-9606806531dbde8c85225ac485a5b903.ctex"]
 
 [params]
 

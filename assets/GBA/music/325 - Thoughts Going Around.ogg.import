@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://h20w82552uwm"
-path="res://.godot/imported/325 - Thoughts Going Around.ogg-5374eabde58db486bf3a1aea21babc7c.oggvorbisstr"
+path="res://.godot/imported/325 - Thoughts Going Around.ogg-4c8a087668a56b239e6a28b4aa960651.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/325 - Thoughts Going Around.ogg"
-dest_files=["res://.godot/imported/325 - Thoughts Going Around.ogg-5374eabde58db486bf3a1aea21babc7c.oggvorbisstr"]
+source_file="res://assets/GBA/music/325 - Thoughts Going Around.ogg"
+dest_files=["res://.godot/imported/325 - Thoughts Going Around.ogg-4c8a087668a56b239e6a28b4aa960651.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bulrml7jfbe3g"
-path="res://.godot/imported/Myrmidon-move.png-faa2c6856b373a02c5e5b2e6e54abe78.ctex"
+path="res://.godot/imported/Myrmidon-move.png-6159c482f8abcfee9c9ae7d5e2759c56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Myrmidon-move.png"
-dest_files=["res://.godot/imported/Myrmidon-move.png-faa2c6856b373a02c5e5b2e6e54abe78.ctex"]
+source_file="res://assets/GBA/map_sprites/Myrmidon-move.png"
+dest_files=["res://.godot/imported/Myrmidon-move.png-6159c482f8abcfee9c9ae7d5e2759c56.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2in78moxebf6"
-path="res://.godot/imported/FalconKnight-stand.png-8318174edb584aad6c0cd5169ac385a6.ctex"
+path="res://.godot/imported/FalconKnight-stand.png-ad6c3ed953ec681965925c911900d03e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/FalconKnight-stand.png"
-dest_files=["res://.godot/imported/FalconKnight-stand.png-8318174edb584aad6c0cd5169ac385a6.ctex"]
+source_file="res://assets/GBA/map_sprites/FalconKnight-stand.png"
+dest_files=["res://.godot/imported/FalconKnight-stand.png-ad6c3ed953ec681965925c911900d03e.ctex"]
 
 [params]
 

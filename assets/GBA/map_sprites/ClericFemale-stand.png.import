@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bty8w3yij52og"
-path="res://.godot/imported/ClericFemale-stand.png-5b62491043d01df498b572c26c022329.ctex"
+path="res://.godot/imported/ClericFemale-stand.png-fab630e9cdb5ba08662a70a65b70b416.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/ClericFemale-stand.png"
-dest_files=["res://.godot/imported/ClericFemale-stand.png-5b62491043d01df498b572c26c022329.ctex"]
+source_file="res://assets/GBA/map_sprites/ClericFemale-stand.png"
+dest_files=["res://.godot/imported/ClericFemale-stand.png-fab630e9cdb5ba08662a70a65b70b416.ctex"]
 
 [params]
 

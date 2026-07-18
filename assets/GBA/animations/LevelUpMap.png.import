@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://p3i83ybs4ids"
-path="res://.godot/imported/LevelUpMap.png-3015a8745750617e629b6d263161a160.ctex"
+path="res://.godot/imported/LevelUpMap.png-6f3b394111a0bcdff776cadf15206392.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/LevelUpMap.png"
-dest_files=["res://.godot/imported/LevelUpMap.png-3015a8745750617e629b6d263161a160.ctex"]
+source_file="res://assets/GBA/animations/LevelUpMap.png"
+dest_files=["res://.godot/imported/LevelUpMap.png-6f3b394111a0bcdff776cadf15206392.ctex"]
 
 [params]
 

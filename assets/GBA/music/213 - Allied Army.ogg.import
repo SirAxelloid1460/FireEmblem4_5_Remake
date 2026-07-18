@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bf3s0k83e0clb"
-path="res://.godot/imported/213 - Allied Army.ogg-7a644e5c4a4fce958bb1c00dbab5f796.oggvorbisstr"
+path="res://.godot/imported/213 - Allied Army.ogg-fd43cf2a219d1e46f85b86e11faaadac.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/213 - Allied Army.ogg"
-dest_files=["res://.godot/imported/213 - Allied Army.ogg-7a644e5c4a4fce958bb1c00dbab5f796.oggvorbisstr"]
+source_file="res://assets/GBA/music/213 - Allied Army.ogg"
+dest_files=["res://.godot/imported/213 - Allied Army.ogg-fd43cf2a219d1e46f85b86e11faaadac.oggvorbisstr"]
 
 [params]
 

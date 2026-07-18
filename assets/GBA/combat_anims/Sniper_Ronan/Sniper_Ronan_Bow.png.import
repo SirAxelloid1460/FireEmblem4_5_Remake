@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3u8ms3lw6cqa"
-path="res://.godot/imported/Sniper_Ronan_Bow.png-42cc96e24cf189517177a670173239e1.ctex"
+path="res://.godot/imported/Sniper_Ronan_Bow.png-54c32c3cba3bd7f7d10ee356dc2c57ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sniper_Ronan/Sniper_Ronan_Bow.png"
-dest_files=["res://.godot/imported/Sniper_Ronan_Bow.png-42cc96e24cf189517177a670173239e1.ctex"]
+source_file="res://assets/GBA/combat_anims/Sniper_Ronan/Sniper_Ronan_Bow.png"
+dest_files=["res://.godot/imported/Sniper_Ronan_Bow.png-54c32c3cba3bd7f7d10ee356dc2c57ba.ctex"]
 
 [params]
 

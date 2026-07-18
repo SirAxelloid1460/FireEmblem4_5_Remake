@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b6lwjis4ba6u1"
-path="res://.godot/imported/ShamanRune.ogg-b548537f693d584d41c996ccb4a356ad.oggvorbisstr"
+path="res://.godot/imported/ShamanRune.ogg-83c9474558fbf9f1c4228a15bd0a0d7a.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/ShamanRune.ogg"
-dest_files=["res://.godot/imported/ShamanRune.ogg-b548537f693d584d41c996ccb4a356ad.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/ShamanRune.ogg"
+dest_files=["res://.godot/imported/ShamanRune.ogg-83c9474558fbf9f1c4228a15bd0a0d7a.oggvorbisstr"]
 
 [params]
 

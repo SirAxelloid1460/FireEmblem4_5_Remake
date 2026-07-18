@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccgg65p8a6jf6"
-path="res://.godot/imported/Swordmaster_Shannan_MagicSword.png-b0e9c301e8fc8f4b6ca4d0df6bc1a55b.ctex"
+path="res://.godot/imported/Swordmaster_Shannan_MagicSword.png-dcabd58ab821fada3c9294648c8975e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Shannan/Swordmaster_Shannan_MagicSword.png"
-dest_files=["res://.godot/imported/Swordmaster_Shannan_MagicSword.png-b0e9c301e8fc8f4b6ca4d0df6bc1a55b.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Shannan/Swordmaster_Shannan_MagicSword.png"
+dest_files=["res://.godot/imported/Swordmaster_Shannan_MagicSword.png-dcabd58ab821fada3c9294648c8975e5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0vtoailmjmjm"
-path="res://.godot/imported/Snow_Forest_Clearing.png-c8f5e23e09f343aa599335f870a16723.ctex"
+path="res://.godot/imported/Snow_Forest_Clearing.png-4210b20273f88360db88a22b6b52fca9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/Snow_Forest_Clearing.png"
-dest_files=["res://.godot/imported/Snow_Forest_Clearing.png-c8f5e23e09f343aa599335f870a16723.ctex"]
+source_file="res://assets/GBA/panoramas/Snow_Forest_Clearing.png"
+dest_files=["res://.godot/imported/Snow_Forest_Clearing.png-4210b20273f88360db88a22b6b52fca9.ctex"]
 
 [params]
 

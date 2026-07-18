@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfa5b778i8us1"
-path="res://.godot/imported/MageKnight_Male_MagicAnima.png-d4a5efa8d1afbd67b5d88cde57607528.ctex"
+path="res://.godot/imported/MageKnight_Male_MagicAnima.png-7717e00d3ecd93686adb18cff884ce71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Male/MageKnight_Male_MagicAnima.png"
-dest_files=["res://.godot/imported/MageKnight_Male_MagicAnima.png-d4a5efa8d1afbd67b5d88cde57607528.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Male/MageKnight_Male_MagicAnima.png"
+dest_files=["res://.godot/imported/MageKnight_Male_MagicAnima.png-7717e00d3ecd93686adb18cff884ce71.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7ptw804yu0it"
-path="res://.godot/imported/Swordmaster_Mareeta_MagicSword.png-1e13f17fe8a395bda541e4d79bd5df70.ctex"
+path="res://.godot/imported/Swordmaster_Mareeta_MagicSword.png-d5250413034ae1735b5dbf62f9ff334c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Mareeta/Swordmaster_Mareeta_MagicSword.png"
-dest_files=["res://.godot/imported/Swordmaster_Mareeta_MagicSword.png-1e13f17fe8a395bda541e4d79bd5df70.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Mareeta/Swordmaster_Mareeta_MagicSword.png"
+dest_files=["res://.godot/imported/Swordmaster_Mareeta_MagicSword.png-d5250413034ae1735b5dbf62f9ff334c.ctex"]
 
 [params]
 

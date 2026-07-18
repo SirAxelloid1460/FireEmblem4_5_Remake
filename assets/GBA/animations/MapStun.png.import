@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhufgue178geu"
-path="res://.godot/imported/MapStun.png-59e10aec2c1486053b4c8e043b7ff72e.ctex"
+path="res://.godot/imported/MapStun.png-403f0c079d6c59104e2d80aed65f268a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/MapStun.png"
-dest_files=["res://.godot/imported/MapStun.png-59e10aec2c1486053b4c8e043b7ff72e.ctex"]
+source_file="res://assets/GBA/animations/MapStun.png"
+dest_files=["res://.godot/imported/MapStun.png-403f0c079d6c59104e2d80aed65f268a.ctex"]
 
 [params]
 

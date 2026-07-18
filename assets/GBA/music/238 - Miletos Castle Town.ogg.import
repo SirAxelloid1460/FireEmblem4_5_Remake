@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://15ils1iewd8v"
-path="res://.godot/imported/238 - Miletos Castle Town.ogg-337704f30bd0658e6722b51d5ac19e4e.oggvorbisstr"
+path="res://.godot/imported/238 - Miletos Castle Town.ogg-ff2f7d59023fa203cf2abee3c4534a21.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/238 - Miletos Castle Town.ogg"
-dest_files=["res://.godot/imported/238 - Miletos Castle Town.ogg-337704f30bd0658e6722b51d5ac19e4e.oggvorbisstr"]
+source_file="res://assets/GBA/music/238 - Miletos Castle Town.ogg"
+dest_files=["res://.godot/imported/238 - Miletos Castle Town.ogg-ff2f7d59023fa203cf2abee3c4534a21.oggvorbisstr"]
 
 [params]
 

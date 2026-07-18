@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgx6rlu4mbv30"
-path="res://.godot/imported/Fighter_Female_Unarmed.png-f8baa6ac03b1b28ef36ed7b91b549c69.ctex"
+path="res://.godot/imported/Fighter_Female_Unarmed.png-977c114888102144d6370ca8a07d6b8e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Fighter_Female/Fighter_Female_Unarmed.png"
-dest_files=["res://.godot/imported/Fighter_Female_Unarmed.png-f8baa6ac03b1b28ef36ed7b91b549c69.ctex"]
+source_file="res://assets/GBA/combat_anims/Fighter_Female/Fighter_Female_Unarmed.png"
+dest_files=["res://.godot/imported/Fighter_Female_Unarmed.png-977c114888102144d6370ca8a07d6b8e.ctex"]
 
 [params]
 

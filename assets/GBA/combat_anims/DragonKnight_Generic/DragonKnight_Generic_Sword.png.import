@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4p8buebnsfrj"
-path="res://.godot/imported/DragonKnight_Generic_Sword.png-bbf7922c7a6f8b5aff6fffc6a01daae0.ctex"
+path="res://.godot/imported/DragonKnight_Generic_Sword.png-bbf6f15899e0270e884b71de4d5d59b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DragonKnight_Generic/DragonKnight_Generic_Sword.png"
-dest_files=["res://.godot/imported/DragonKnight_Generic_Sword.png-bbf7922c7a6f8b5aff6fffc6a01daae0.ctex"]
+source_file="res://assets/GBA/combat_anims/DragonKnight_Generic/DragonKnight_Generic_Sword.png"
+dest_files=["res://.godot/imported/DragonKnight_Generic_Sword.png-bbf6f15899e0270e884b71de4d5d59b8.ctex"]
 
 [params]
 

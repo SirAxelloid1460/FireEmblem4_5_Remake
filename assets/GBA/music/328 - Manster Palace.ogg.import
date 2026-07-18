@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://n0cabj0wd37v"
-path="res://.godot/imported/328 - Manster Palace.ogg-eb4b3ee10c923d4fa04fe276fa75153e.oggvorbisstr"
+path="res://.godot/imported/328 - Manster Palace.ogg-3ff17b6b6faaa06da7396f448faa52ca.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/328 - Manster Palace.ogg"
-dest_files=["res://.godot/imported/328 - Manster Palace.ogg-eb4b3ee10c923d4fa04fe276fa75153e.oggvorbisstr"]
+source_file="res://assets/GBA/music/328 - Manster Palace.ogg"
+dest_files=["res://.godot/imported/328 - Manster Palace.ogg-3ff17b6b6faaa06da7396f448faa52ca.oggvorbisstr"]
 
 [params]
 

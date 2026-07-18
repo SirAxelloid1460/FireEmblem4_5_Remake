@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dty7fv6qpftca"
-path="res://.godot/imported/Fire Breath.png-82e91344937eeadb9d4a3c469c7cef2b.ctex"
+path="res://.godot/imported/Fire Breath.png-d0e3f5e3b19b9f1a4b3812ac8e0ac33d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/Fire Breath.png"
-dest_files=["res://.godot/imported/Fire Breath.png-82e91344937eeadb9d4a3c469c7cef2b.ctex"]
+source_file="res://assets/GBA/combat_effects/Fire Breath.png"
+dest_files=["res://.godot/imported/Fire Breath.png-d0e3f5e3b19b9f1a4b3812ac8e0ac33d.ctex"]
 
 [params]
 

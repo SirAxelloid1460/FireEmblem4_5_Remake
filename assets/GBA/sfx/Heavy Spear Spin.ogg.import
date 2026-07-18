@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ct87375f1ehp6"
-path="res://.godot/imported/Heavy Spear Spin.ogg-01d263bb096c93023fe9609ed419dd1d.oggvorbisstr"
+path="res://.godot/imported/Heavy Spear Spin.ogg-e103c188bb40f65b43d3857f0f5ef786.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Heavy Spear Spin.ogg"
-dest_files=["res://.godot/imported/Heavy Spear Spin.ogg-01d263bb096c93023fe9609ed419dd1d.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Heavy Spear Spin.ogg"
+dest_files=["res://.godot/imported/Heavy Spear Spin.ogg-e103c188bb40f65b43d3857f0f5ef786.oggvorbisstr"]
 
 [params]
 

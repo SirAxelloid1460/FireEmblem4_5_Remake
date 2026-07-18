@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx8c5081hi47p"
-path="res://.godot/imported/Sage_Ced_MagicStaff.png-fac0190546905cc1467a9696f40167e1.ctex"
+path="res://.godot/imported/Sage_Ced_MagicStaff.png-cb409d091d9f04e023206f8f4a1b14e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Ced/Sage_Ced_MagicStaff.png"
-dest_files=["res://.godot/imported/Sage_Ced_MagicStaff.png-fac0190546905cc1467a9696f40167e1.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Ced/Sage_Ced_MagicStaff.png"
+dest_files=["res://.godot/imported/Sage_Ced_MagicStaff.png-cb409d091d9f04e023206f8f4a1b14e1.ctex"]
 
 [params]
 

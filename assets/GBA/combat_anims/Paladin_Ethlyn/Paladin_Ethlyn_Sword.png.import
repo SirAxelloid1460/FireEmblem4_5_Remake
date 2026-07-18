@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3beicfp5mgrt"
-path="res://.godot/imported/Paladin_Ethlyn_Sword.png-99e86497f3eb1021680d03864f3dba98.ctex"
+path="res://.godot/imported/Paladin_Ethlyn_Sword.png-65c385a7cd4c4d4c9894224ff179cf44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Ethlyn/Paladin_Ethlyn_Sword.png"
-dest_files=["res://.godot/imported/Paladin_Ethlyn_Sword.png-99e86497f3eb1021680d03864f3dba98.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Ethlyn/Paladin_Ethlyn_Sword.png"
+dest_files=["res://.godot/imported/Paladin_Ethlyn_Sword.png-65c385a7cd4c4d4c9894224ff179cf44.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl3vt0vihl6cj"
-path="res://.godot/imported/Hero_Skasaher_HandAxe.png-b05cf8a48b63aa9c3fdfb287f85e853e.ctex"
+path="res://.godot/imported/Hero_Skasaher_HandAxe.png-da2e17169ee6230f30f0f1b0de76e3a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Hero_Skasaher/Hero_Skasaher_HandAxe.png"
-dest_files=["res://.godot/imported/Hero_Skasaher_HandAxe.png-b05cf8a48b63aa9c3fdfb287f85e853e.ctex"]
+source_file="res://assets/GBA/combat_anims/Hero_Skasaher/Hero_Skasaher_HandAxe.png"
+dest_files=["res://.godot/imported/Hero_Skasaher_HandAxe.png-da2e17169ee6230f30f0f1b0de76e3a4.ctex"]
 
 [params]
 

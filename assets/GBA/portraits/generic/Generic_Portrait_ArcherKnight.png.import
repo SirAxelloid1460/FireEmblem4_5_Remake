@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dokldqut4jt4u"
-path="res://.godot/imported/Generic_Portrait_ArcherKnight.png-9a4b57fa3ead7d6ae7058a1a76409085.ctex"
+path="res://.godot/imported/Generic_Portrait_ArcherKnight.png-190281529d65290011da7a908e1ad3fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_ArcherKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_ArcherKnight.png-9a4b57fa3ead7d6ae7058a1a76409085.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_ArcherKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_ArcherKnight.png-190281529d65290011da7a908e1ad3fb.ctex"]
 
 [params]
 

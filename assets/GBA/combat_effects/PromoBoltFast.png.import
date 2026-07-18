@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjn7b5jpjk648"
-path="res://.godot/imported/PromoBoltFast.png-f8e2cf373d832ba00b6e2c91b06c0e55.ctex"
+path="res://.godot/imported/PromoBoltFast.png-abe40361618e3806f3342d92ae43d273.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/PromoBoltFast.png"
-dest_files=["res://.godot/imported/PromoBoltFast.png-f8e2cf373d832ba00b6e2c91b06c0e55.ctex"]
+source_file="res://assets/GBA/combat_effects/PromoBoltFast.png"
+dest_files=["res://.godot/imported/PromoBoltFast.png-abe40361618e3806f3342d92ae43d273.ctex"]
 
 [params]
 

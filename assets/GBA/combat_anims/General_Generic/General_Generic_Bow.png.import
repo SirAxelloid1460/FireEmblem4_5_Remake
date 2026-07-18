@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bofdh7njlpfu7"
-path="res://.godot/imported/General_Generic_Bow.png-270c6fea910025b1fa35d1ec0ef4c1fb.ctex"
+path="res://.godot/imported/General_Generic_Bow.png-16bd858dde3a5ec5fe38db36764a57af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/General_Generic/General_Generic_Bow.png"
-dest_files=["res://.godot/imported/General_Generic_Bow.png-270c6fea910025b1fa35d1ec0ef4c1fb.ctex"]
+source_file="res://assets/GBA/combat_anims/General_Generic/General_Generic_Bow.png"
+dest_files=["res://.godot/imported/General_Generic_Bow.png-16bd858dde3a5ec5fe38db36764a57af.ctex"]
 
 [params]
 

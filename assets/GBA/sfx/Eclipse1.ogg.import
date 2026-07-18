@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://crsup8akmql4i"
-path="res://.godot/imported/Eclipse1.ogg-e6b14e172e8d04b03416d32f1a95e0c6.oggvorbisstr"
+path="res://.godot/imported/Eclipse1.ogg-e6cf51090a8f590b07c4d579b57d60c4.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Eclipse1.ogg"
-dest_files=["res://.godot/imported/Eclipse1.ogg-e6b14e172e8d04b03416d32f1a95e0c6.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Eclipse1.ogg"
+dest_files=["res://.godot/imported/Eclipse1.ogg-e6cf51090a8f590b07c4d579b57d60c4.oggvorbisstr"]
 
 [params]
 

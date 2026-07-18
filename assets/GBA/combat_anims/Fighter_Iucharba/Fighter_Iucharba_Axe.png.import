@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fe78orsv5jr6"
-path="res://.godot/imported/Fighter_Iucharba_Axe.png-cecfbee35237fc9eb094dab3e5f9271a.ctex"
+path="res://.godot/imported/Fighter_Iucharba_Axe.png-cd1fca2ed67f5f93fcbd6a275b68c9e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Fighter_Iucharba/Fighter_Iucharba_Axe.png"
-dest_files=["res://.godot/imported/Fighter_Iucharba_Axe.png-cecfbee35237fc9eb094dab3e5f9271a.ctex"]
+source_file="res://assets/GBA/combat_anims/Fighter_Iucharba/Fighter_Iucharba_Axe.png"
+dest_files=["res://.godot/imported/Fighter_Iucharba_Axe.png-cd1fca2ed67f5f93fcbd6a275b68c9e4.ctex"]
 
 [params]
 

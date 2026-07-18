@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdicntiu4t0kl"
-path="res://.godot/imported/MapPoison.png-71d05f55b0e4e3512df029a2b95b4293.ctex"
+path="res://.godot/imported/MapPoison.png-cfb322755a13255ac2c0bb94adfc6f4e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/MapPoison.png"
-dest_files=["res://.godot/imported/MapPoison.png-71d05f55b0e4e3512df029a2b95b4293.ctex"]
+source_file="res://assets/GBA/animations/MapPoison.png"
+dest_files=["res://.godot/imported/MapPoison.png-cfb322755a13255ac2c0bb94adfc6f4e.ctex"]
 
 [params]
 

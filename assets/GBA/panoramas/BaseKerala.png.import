@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://w33tevrs0pcx"
-path="res://.godot/imported/BaseKerala.png-007913d969b693a661cfca2460287817.ctex"
+path="res://.godot/imported/BaseKerala.png-82eaca9778bf0c496bf5b15eb23c5d8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/BaseKerala.png"
-dest_files=["res://.godot/imported/BaseKerala.png-007913d969b693a661cfca2460287817.ctex"]
+source_file="res://assets/GBA/panoramas/BaseKerala.png"
+dest_files=["res://.godot/imported/BaseKerala.png-82eaca9778bf0c496bf5b15eb23c5d8b.ctex"]
 
 [params]
 

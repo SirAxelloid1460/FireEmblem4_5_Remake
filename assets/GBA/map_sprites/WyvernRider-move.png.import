@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvq4m0s34gmpj"
-path="res://.godot/imported/WyvernRider-move.png-9c3f2fe2479f796dbf7e911bc9e598bf.ctex"
+path="res://.godot/imported/WyvernRider-move.png-223c89af49383fd155078c72ac0d26b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/WyvernRider-move.png"
-dest_files=["res://.godot/imported/WyvernRider-move.png-9c3f2fe2479f796dbf7e911bc9e598bf.ctex"]
+source_file="res://assets/GBA/map_sprites/WyvernRider-move.png"
+dest_files=["res://.godot/imported/WyvernRider-move.png-223c89af49383fd155078c72ac0d26b5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://flnwk12ejw04"
-path="res://.godot/imported/LordKnight_Sigurd_Lance.png-f4dc17c981cb1e4242388f479f959514.ctex"
+path="res://.godot/imported/LordKnight_Sigurd_Lance.png-4a6fd0c899d298d6cda5dd046523184c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/LordKnight_Sigurd/LordKnight_Sigurd_Lance.png"
-dest_files=["res://.godot/imported/LordKnight_Sigurd_Lance.png-f4dc17c981cb1e4242388f479f959514.ctex"]
+source_file="res://assets/GBA/combat_anims/LordKnight_Sigurd/LordKnight_Sigurd_Lance.png"
+dest_files=["res://.godot/imported/LordKnight_Sigurd_Lance.png-4a6fd0c899d298d6cda5dd046523184c.ctex"]
 
 [params]
 

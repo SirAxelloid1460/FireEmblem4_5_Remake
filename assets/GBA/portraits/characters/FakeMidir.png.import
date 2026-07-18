@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b276mjpvgx5g1"
-path="res://.godot/imported/FakeMidir.png-e04a6b9f60a747361147540000b6ccba.ctex"
+path="res://.godot/imported/FakeMidir.png-94ec9379be52bc559727751cdcbf7f80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/FakeMidir.png"
-dest_files=["res://.godot/imported/FakeMidir.png-e04a6b9f60a747361147540000b6ccba.ctex"]
+source_file="res://assets/GBA/portraits/characters/FakeMidir.png"
+dest_files=["res://.godot/imported/FakeMidir.png-94ec9379be52bc559727751cdcbf7f80.ctex"]
 
 [params]
 

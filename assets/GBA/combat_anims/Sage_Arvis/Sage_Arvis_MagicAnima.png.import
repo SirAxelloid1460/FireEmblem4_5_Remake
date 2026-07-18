@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctcylv7nfgvu6"
-path="res://.godot/imported/Sage_Arvis_MagicAnima.png-c6d561036924f9bbbdaff8833e3795b0.ctex"
+path="res://.godot/imported/Sage_Arvis_MagicAnima.png-cc2bc73ff0fa87901c1f223512d3dae7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Arvis/Sage_Arvis_MagicAnima.png"
-dest_files=["res://.godot/imported/Sage_Arvis_MagicAnima.png-c6d561036924f9bbbdaff8833e3795b0.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Arvis/Sage_Arvis_MagicAnima.png"
+dest_files=["res://.godot/imported/Sage_Arvis_MagicAnima.png-cc2bc73ff0fa87901c1f223512d3dae7.ctex"]
 
 [params]
 

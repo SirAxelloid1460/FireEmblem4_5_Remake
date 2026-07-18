@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfqm7108odvln"
-path="res://.godot/imported/chapter_title_sigil_FE5.png-17ddc328a6f79e9415e8ecf9f358541b.ctex"
+path="res://.godot/imported/chapter_title_sigil_FE5.png-2381602e3a4e532c2f5113bdae23b8a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/chapter_title_sigil_FE5.png"
-dest_files=["res://.godot/imported/chapter_title_sigil_FE5.png-17ddc328a6f79e9415e8ecf9f358541b.ctex"]
+source_file="res://assets/GBA/sprites/chapter_title_sigil_FE5.png"
+dest_files=["res://.godot/imported/chapter_title_sigil_FE5.png-2381602e3a4e532c2f5113bdae23b8a2.ctex"]
 
 [params]
 

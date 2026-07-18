@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqylqtimwg0so"
-path="res://.godot/imported/AThief-stand.png-a2638581402427b411a635b99832ef7a.ctex"
+path="res://.godot/imported/AThief-stand.png-e951877e78bbc3a6f3842348c8506895.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/AThief-stand.png"
-dest_files=["res://.godot/imported/AThief-stand.png-a2638581402427b411a635b99832ef7a.ctex"]
+source_file="res://assets/GBA/map_sprites/AThief-stand.png"
+dest_files=["res://.godot/imported/AThief-stand.png-e951877e78bbc3a6f3842348c8506895.ctex"]
 
 [params]
 

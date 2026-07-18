@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bicb2ta5jomx3"
-path="res://.godot/imported/Cavalier_Female_Unarmed.png-47189392f7d2269e60a9eabd7dfb68a4.ctex"
+path="res://.godot/imported/Cavalier_Female_Unarmed.png-9f601ee4657d2de51beff3d2aa7f1a3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Cavalier_Female/Cavalier_Female_Unarmed.png"
-dest_files=["res://.godot/imported/Cavalier_Female_Unarmed.png-47189392f7d2269e60a9eabd7dfb68a4.ctex"]
+source_file="res://assets/GBA/combat_anims/Cavalier_Female/Cavalier_Female_Unarmed.png"
+dest_files=["res://.godot/imported/Cavalier_Female_Unarmed.png-9f601ee4657d2de51beff3d2aa7f1a3d.ctex"]
 
 [params]
 

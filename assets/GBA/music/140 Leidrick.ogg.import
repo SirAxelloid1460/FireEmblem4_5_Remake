@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cqrrgyfsk5i0f"
-path="res://.godot/imported/140 Leidrick.ogg-3e08177bb0090f5bed1c904d9a21d5c4.oggvorbisstr"
+path="res://.godot/imported/140 Leidrick.ogg-d56117c530420a01bcbc85b4098f7999.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/140 Leidrick.ogg"
-dest_files=["res://.godot/imported/140 Leidrick.ogg-3e08177bb0090f5bed1c904d9a21d5c4.oggvorbisstr"]
+source_file="res://assets/GBA/music/140 Leidrick.ogg"
+dest_files=["res://.godot/imported/140 Leidrick.ogg-d56117c530420a01bcbc85b4098f7999.oggvorbisstr"]
 
 [params]
 

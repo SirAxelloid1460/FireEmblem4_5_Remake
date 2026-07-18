@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://33i7pt4ioa3u"
-path="res://.godot/imported/highlight_lightpurple.png-46e3da5abbe009d9e8f9243fe19b7d93.ctex"
+path="res://.godot/imported/highlight_lightpurple.png-865ee78fd7790ddd79f5b3626b039449.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/highlights/highlight_lightpurple.png"
-dest_files=["res://.godot/imported/highlight_lightpurple.png-46e3da5abbe009d9e8f9243fe19b7d93.ctex"]
+source_file="res://assets/GBA/highlights/highlight_lightpurple.png"
+dest_files=["res://.godot/imported/highlight_lightpurple.png-865ee78fd7790ddd79f5b3626b039449.ctex"]
 
 [params]
 

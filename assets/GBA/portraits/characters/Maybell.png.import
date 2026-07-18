@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csd5suddxnq7u"
-path="res://.godot/imported/Maybell.png-034eb86371b1bc4cafa8ab308d59b581.ctex"
+path="res://.godot/imported/Maybell.png-4a4debe2aae80bb867af7c8b072f3a2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Maybell.png"
-dest_files=["res://.godot/imported/Maybell.png-034eb86371b1bc4cafa8ab308d59b581.ctex"]
+source_file="res://assets/GBA/portraits/characters/Maybell.png"
+dest_files=["res://.godot/imported/Maybell.png-4a4debe2aae80bb867af7c8b072f3a2a.ctex"]
 
 [params]
 

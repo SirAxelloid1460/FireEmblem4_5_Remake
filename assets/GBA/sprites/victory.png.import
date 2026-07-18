@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkomtfvuy25wt"
-path="res://.godot/imported/victory.png-9674489fc6fd5d0f538f4a0a1192bf14.ctex"
+path="res://.godot/imported/victory.png-f6a2b557b37f6e49826a11a0a901a932.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/victory.png"
-dest_files=["res://.godot/imported/victory.png-9674489fc6fd5d0f538f4a0a1192bf14.ctex"]
+source_file="res://assets/GBA/sprites/victory.png"
+dest_files=["res://.godot/imported/victory.png-f6a2b557b37f6e49826a11a0a901a932.ctex"]
 
 [params]
 

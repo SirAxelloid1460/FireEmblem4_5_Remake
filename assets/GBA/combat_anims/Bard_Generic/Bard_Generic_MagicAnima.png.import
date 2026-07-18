@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://copr434cb5ms6"
-path="res://.godot/imported/Bard_Generic_MagicAnima.png-a597802570eb7b2d6cf1832900c01cc6.ctex"
+path="res://.godot/imported/Bard_Generic_MagicAnima.png-a09148fcdbf55d97fce5c2e4c8ce3208.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Bard_Generic/Bard_Generic_MagicAnima.png"
-dest_files=["res://.godot/imported/Bard_Generic_MagicAnima.png-a597802570eb7b2d6cf1832900c01cc6.ctex"]
+source_file="res://assets/GBA/combat_anims/Bard_Generic/Bard_Generic_MagicAnima.png"
+dest_files=["res://.godot/imported/Bard_Generic_MagicAnima.png-a09148fcdbf55d97fce5c2e4c8ce3208.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpm2fiqnlapwi"
-path="res://.godot/imported/AxeKnight-stand.png-d14070cf8f1e523aacad833ebd10fe68.ctex"
+path="res://.godot/imported/AxeKnight-stand.png-e0204e35ef6b51de608259e2557d74ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/AxeKnight-stand.png"
-dest_files=["res://.godot/imported/AxeKnight-stand.png-d14070cf8f1e523aacad833ebd10fe68.ctex"]
+source_file="res://assets/GBA/map_sprites/AxeKnight-stand.png"
+dest_files=["res://.godot/imported/AxeKnight-stand.png-e0204e35ef6b51de608259e2557d74ea.ctex"]
 
 [params]
 

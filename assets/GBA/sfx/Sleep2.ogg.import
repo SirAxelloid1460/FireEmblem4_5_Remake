@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cjnlthya6xgti"
-path="res://.godot/imported/Sleep2.ogg-c4f6269b26a68e7d5253e0e1d3fc4f66.oggvorbisstr"
+path="res://.godot/imported/Sleep2.ogg-a8b58b7042d577c072f82684075a069a.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Sleep2.ogg"
-dest_files=["res://.godot/imported/Sleep2.ogg-c4f6269b26a68e7d5253e0e1d3fc4f66.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Sleep2.ogg"
+dest_files=["res://.godot/imported/Sleep2.ogg-a8b58b7042d577c072f82684075a069a.oggvorbisstr"]
 
 [params]
 

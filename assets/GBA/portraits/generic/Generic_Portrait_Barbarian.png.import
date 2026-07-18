@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df01oj1f8hhtn"
-path="res://.godot/imported/Generic_Portrait_Barbarian.png-6a4e3cab32ee24bc1e437ca1449fbdf9.ctex"
+path="res://.godot/imported/Generic_Portrait_Barbarian.png-0987d42d6837c4e487eac5cdab94036e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Barbarian.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Barbarian.png-6a4e3cab32ee24bc1e437ca1449fbdf9.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Barbarian.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Barbarian.png-0987d42d6837c4e487eac5cdab94036e.ctex"]
 
 [params]
 

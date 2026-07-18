@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://br7nhcqekhhlk"
-path="res://.godot/imported/To A Higher Place.ogg-4770f5bffd6ed40af8dd30ab70085a8b.oggvorbisstr"
+path="res://.godot/imported/To A Higher Place.ogg-afffaf714edc6dd3cb991677695bb8c4.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/To A Higher Place.ogg"
-dest_files=["res://.godot/imported/To A Higher Place.ogg-4770f5bffd6ed40af8dd30ab70085a8b.oggvorbisstr"]
+source_file="res://assets/GBA/music/To A Higher Place.ogg"
+dest_files=["res://.godot/imported/To A Higher Place.ogg-afffaf714edc6dd3cb991677695bb8c4.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dly4c2714ubck"
-path="res://.godot/imported/ArcherFemale-stand.png-cd6b312ec550fdfedb79d510e6a10bde.ctex"
+path="res://.godot/imported/ArcherFemale-stand.png-8e4439442558c8e8b4f33e2a6d3678cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/ArcherFemale-stand.png"
-dest_files=["res://.godot/imported/ArcherFemale-stand.png-cd6b312ec550fdfedb79d510e6a10bde.ctex"]
+source_file="res://assets/GBA/map_sprites/ArcherFemale-stand.png"
+dest_files=["res://.godot/imported/ArcherFemale-stand.png-8e4439442558c8e8b4f33e2a6d3678cd.ctex"]
 
 [params]
 

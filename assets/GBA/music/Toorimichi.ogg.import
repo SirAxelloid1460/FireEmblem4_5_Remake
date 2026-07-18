@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bjj11etwstkks"
-path="res://.godot/imported/Toorimichi.ogg-653b3fe8c47f0e400fef3c0c9b49a0c5.oggvorbisstr"
+path="res://.godot/imported/Toorimichi.ogg-ca01ef37ccee379bd0035ed78a45950b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Toorimichi.ogg"
-dest_files=["res://.godot/imported/Toorimichi.ogg-653b3fe8c47f0e400fef3c0c9b49a0c5.oggvorbisstr"]
+source_file="res://assets/GBA/music/Toorimichi.ogg"
+dest_files=["res://.godot/imported/Toorimichi.ogg-ca01ef37ccee379bd0035ed78a45950b.oggvorbisstr"]
 
 [params]
 

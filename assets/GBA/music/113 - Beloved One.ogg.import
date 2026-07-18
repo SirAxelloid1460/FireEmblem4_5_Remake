@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cys740q1y52ok"
-path="res://.godot/imported/113 - Beloved One.ogg-e936e35da3884f209c1ae1397f092548.oggvorbisstr"
+path="res://.godot/imported/113 - Beloved One.ogg-8adfd735655203e5f74ae616fc9e0dfa.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/113 - Beloved One.ogg"
-dest_files=["res://.godot/imported/113 - Beloved One.ogg-e936e35da3884f209c1ae1397f092548.oggvorbisstr"]
+source_file="res://assets/GBA/music/113 - Beloved One.ogg"
+dest_files=["res://.godot/imported/113 - Beloved One.ogg-8adfd735655203e5f74ae616fc9e0dfa.oggvorbisstr"]
 
 [params]
 

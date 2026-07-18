@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://30152ydwjgvh"
-path="res://.godot/imported/Arch_Mogall-stand.png-da6e948fef56303d63d2ff7182efae92.ctex"
+path="res://.godot/imported/Arch_Mogall-stand.png-038c1fe88f8e2550ece0a68d86796d45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Arch_Mogall-stand.png"
-dest_files=["res://.godot/imported/Arch_Mogall-stand.png-da6e948fef56303d63d2ff7182efae92.ctex"]
+source_file="res://assets/GBA/map_sprites/Arch_Mogall-stand.png"
+dest_files=["res://.godot/imported/Arch_Mogall-stand.png-038c1fe88f8e2550ece0a68d86796d45.ctex"]
 
 [params]
 

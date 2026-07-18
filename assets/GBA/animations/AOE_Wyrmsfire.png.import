@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cifcw1gxy1ch5"
-path="res://.godot/imported/AOE_Wyrmsfire.png-cff0b0cd2ff6614b522fd2b713b62c18.ctex"
+path="res://.godot/imported/AOE_Wyrmsfire.png-a0b89884c3d6d4f2ba116626f780330a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/AOE_Wyrmsfire.png"
-dest_files=["res://.godot/imported/AOE_Wyrmsfire.png-cff0b0cd2ff6614b522fd2b713b62c18.ctex"]
+source_file="res://assets/GBA/animations/AOE_Wyrmsfire.png"
+dest_files=["res://.godot/imported/AOE_Wyrmsfire.png-a0b89884c3d6d4f2ba116626f780330a.ctex"]
 
 [params]
 

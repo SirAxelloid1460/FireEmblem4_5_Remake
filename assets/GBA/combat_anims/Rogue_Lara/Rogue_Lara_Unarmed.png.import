@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsffcpg8k84kc"
-path="res://.godot/imported/Rogue_Lara_Unarmed.png-975ccf5219551765f05fca2a609b4726.ctex"
+path="res://.godot/imported/Rogue_Lara_Unarmed.png-9209ecb59e6c34dddcf7f38f435bc107.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Rogue_Lara/Rogue_Lara_Unarmed.png"
-dest_files=["res://.godot/imported/Rogue_Lara_Unarmed.png-975ccf5219551765f05fca2a609b4726.ctex"]
+source_file="res://assets/GBA/combat_anims/Rogue_Lara/Rogue_Lara_Unarmed.png"
+dest_files=["res://.godot/imported/Rogue_Lara_Unarmed.png-9209ecb59e6c34dddcf7f38f435bc107.ctex"]
 
 [params]
 

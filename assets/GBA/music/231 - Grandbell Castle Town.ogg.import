@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://itkrp4fjkn4s"
-path="res://.godot/imported/231 - Grandbell Castle Town.ogg-ca1fb2c5d20bbf2dc19d5584338f389b.oggvorbisstr"
+path="res://.godot/imported/231 - Grandbell Castle Town.ogg-34f8ec97c4d41da9c494980a80627761.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/231 - Grandbell Castle Town.ogg"
-dest_files=["res://.godot/imported/231 - Grandbell Castle Town.ogg-ca1fb2c5d20bbf2dc19d5584338f389b.oggvorbisstr"]
+source_file="res://assets/GBA/music/231 - Grandbell Castle Town.ogg"
+dest_files=["res://.godot/imported/231 - Grandbell Castle Town.ogg-34f8ec97c4d41da9c494980a80627761.oggvorbisstr"]
 
 [params]
 

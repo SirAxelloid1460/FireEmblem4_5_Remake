@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c321ohbnsgdf3"
-path="res://.godot/imported/ThunderDust.png-51f7a5c1bb002aef958aa2d0ba953952.ctex"
+path="res://.godot/imported/ThunderDust.png-2889543d269cc27bc55954d17ff68c42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ThunderDust.png"
-dest_files=["res://.godot/imported/ThunderDust.png-51f7a5c1bb002aef958aa2d0ba953952.ctex"]
+source_file="res://assets/GBA/combat_effects/ThunderDust.png"
+dest_files=["res://.godot/imported/ThunderDust.png-2889543d269cc27bc55954d17ff68c42.ctex"]
 
 [params]
 

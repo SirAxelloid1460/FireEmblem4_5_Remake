@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd52g4iiyl805"
-path="res://.godot/imported/Pirate_Generic_HandAxe.png-c47c7c3e655ccc045a80be6282180108.ctex"
+path="res://.godot/imported/Pirate_Generic_HandAxe.png-7b43d7fa9d512ad18f9e877e11348b02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Pirate_Generic/Pirate_Generic_HandAxe.png"
-dest_files=["res://.godot/imported/Pirate_Generic_HandAxe.png-c47c7c3e655ccc045a80be6282180108.ctex"]
+source_file="res://assets/GBA/combat_anims/Pirate_Generic/Pirate_Generic_HandAxe.png"
+dest_files=["res://.godot/imported/Pirate_Generic_HandAxe.png-7b43d7fa9d512ad18f9e877e11348b02.ctex"]
 
 [params]
 

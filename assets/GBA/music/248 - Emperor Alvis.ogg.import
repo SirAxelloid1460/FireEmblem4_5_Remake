@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://co7l5rckuuksq"
-path="res://.godot/imported/248 - Emperor Alvis.ogg-ed8fc5082bdd5fda1332869f5cd08650.oggvorbisstr"
+path="res://.godot/imported/248 - Emperor Alvis.ogg-40aad88053cba3b8f0110338c08251e3.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/248 - Emperor Alvis.ogg"
-dest_files=["res://.godot/imported/248 - Emperor Alvis.ogg-ed8fc5082bdd5fda1332869f5cd08650.oggvorbisstr"]
+source_file="res://assets/GBA/music/248 - Emperor Alvis.ogg"
+dest_files=["res://.godot/imported/248 - Emperor Alvis.ogg-40aad88053cba3b8f0110338c08251e3.oggvorbisstr"]
 
 [params]
 

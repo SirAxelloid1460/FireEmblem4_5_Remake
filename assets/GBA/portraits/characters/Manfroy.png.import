@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqtaslwa06504"
-path="res://.godot/imported/Manfroy.png-167d3e764de4d667b1bdcf9c438a95a6.ctex"
+path="res://.godot/imported/Manfroy.png-8956de3f27bdd49427147ff0cf56ba9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Manfroy.png"
-dest_files=["res://.godot/imported/Manfroy.png-167d3e764de4d667b1bdcf9c438a95a6.ctex"]
+source_file="res://assets/GBA/portraits/characters/Manfroy.png"
+dest_files=["res://.godot/imported/Manfroy.png-8956de3f27bdd49427147ff0cf56ba9e.ctex"]
 
 [params]
 

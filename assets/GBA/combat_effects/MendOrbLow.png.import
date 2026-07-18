@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dakxpw7tk68ei"
-path="res://.godot/imported/MendOrbLow.png-0c71abc0ecbe8cade0e46ce4e01a819b.ctex"
+path="res://.godot/imported/MendOrbLow.png-60a4cc8c70012e5a2cdb18b686652deb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/MendOrbLow.png"
-dest_files=["res://.godot/imported/MendOrbLow.png-0c71abc0ecbe8cade0e46ce4e01a819b.ctex"]
+source_file="res://assets/GBA/combat_effects/MendOrbLow.png"
+dest_files=["res://.godot/imported/MendOrbLow.png-60a4cc8c70012e5a2cdb18b686652deb.ctex"]
 
 [params]
 

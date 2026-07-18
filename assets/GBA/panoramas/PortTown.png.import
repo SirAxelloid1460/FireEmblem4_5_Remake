@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwi3nsrqih1k0"
-path="res://.godot/imported/PortTown.png-3e1eca9c01632b76716a5df278c617e1.ctex"
+path="res://.godot/imported/PortTown.png-efa3dac90a43fbc63ead832753ca53a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/PortTown.png"
-dest_files=["res://.godot/imported/PortTown.png-3e1eca9c01632b76716a5df278c617e1.ctex"]
+source_file="res://assets/GBA/panoramas/PortTown.png"
+dest_files=["res://.godot/imported/PortTown.png-efa3dac90a43fbc63ead832753ca53a1.ctex"]
 
 [params]
 

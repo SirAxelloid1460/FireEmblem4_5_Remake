@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk5u7ffnmrh8d"
-path="res://.godot/imported/Palmark.png-4581d0a8f9d298716fb2cfbac3b402f9.ctex"
+path="res://.godot/imported/Palmark.png-bcf9266848a158a5d015749ee9ebec5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Palmark.png"
-dest_files=["res://.godot/imported/Palmark.png-4581d0a8f9d298716fb2cfbac3b402f9.ctex"]
+source_file="res://assets/GBA/portraits/characters/Palmark.png"
+dest_files=["res://.godot/imported/Palmark.png-bcf9266848a158a5d015749ee9ebec5d.ctex"]
 
 [params]
 

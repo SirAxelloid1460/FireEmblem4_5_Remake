@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckhgo7bx0om8j"
-path="res://.godot/imported/ClearingSunrise.png-051e5240b9ec09eaad888f799c98f27f.ctex"
+path="res://.godot/imported/ClearingSunrise.png-913da36f25cd912d7ace66963ab06764.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/ClearingSunrise.png"
-dest_files=["res://.godot/imported/ClearingSunrise.png-051e5240b9ec09eaad888f799c98f27f.ctex"]
+source_file="res://assets/GBA/panoramas/ClearingSunrise.png"
+dest_files=["res://.godot/imported/ClearingSunrise.png-913da36f25cd912d7ace66963ab06764.ctex"]
 
 [params]
 

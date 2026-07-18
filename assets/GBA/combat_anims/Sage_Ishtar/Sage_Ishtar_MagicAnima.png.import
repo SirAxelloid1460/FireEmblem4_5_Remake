@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dendtswduoq0f"
-path="res://.godot/imported/Sage_Ishtar_MagicAnima.png-df8fe86900f07e6dac41576645483520.ctex"
+path="res://.godot/imported/Sage_Ishtar_MagicAnima.png-abda6dbeb6d12af8f75c3ba9b4967588.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Ishtar/Sage_Ishtar_MagicAnima.png"
-dest_files=["res://.godot/imported/Sage_Ishtar_MagicAnima.png-df8fe86900f07e6dac41576645483520.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Ishtar/Sage_Ishtar_MagicAnima.png"
+dest_files=["res://.godot/imported/Sage_Ishtar_MagicAnima.png-abda6dbeb6d12af8f75c3ba9b4967588.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://daaspp5x7wdp0"
-path="res://.godot/imported/OutsideTown.png-52ed49278416d148a7d426f9b0a7cb70.ctex"
+path="res://.godot/imported/OutsideTown.png-63b710ebace2024ac19786811bae3c11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/OutsideTown.png"
-dest_files=["res://.godot/imported/OutsideTown.png-52ed49278416d148a7d426f9b0a7cb70.ctex"]
+source_file="res://assets/GBA/panoramas/OutsideTown.png"
+dest_files=["res://.godot/imported/OutsideTown.png-63b710ebace2024ac19786811bae3c11.ctex"]
 
 [params]
 

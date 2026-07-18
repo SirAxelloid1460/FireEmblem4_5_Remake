@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmfb2n673t3vy"
-path="res://.godot/imported/DragonMaster-move.png-19377c705700b288f8ee22805c39310f.ctex"
+path="res://.godot/imported/DragonMaster-move.png-402beb2e38d23c43269a2448fa439dcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/DragonMaster-move.png"
-dest_files=["res://.godot/imported/DragonMaster-move.png-19377c705700b288f8ee22805c39310f.ctex"]
+source_file="res://assets/GBA/map_sprites/DragonMaster-move.png"
+dest_files=["res://.godot/imported/DragonMaster-move.png-402beb2e38d23c43269a2448fa439dcc.ctex"]
 
 [params]
 

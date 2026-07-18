@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2ed4nspmvjbf"
-path="res://.godot/imported/HighPriest_Generic_MagicAnima.png-4c25e56cc2223f2731d77a19fc6fc2c0.ctex"
+path="res://.godot/imported/HighPriest_Generic_MagicAnima.png-816b2c33f51def51ab7e3fbe47729f42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/HighPriest_Generic/HighPriest_Generic_MagicAnima.png"
-dest_files=["res://.godot/imported/HighPriest_Generic_MagicAnima.png-4c25e56cc2223f2731d77a19fc6fc2c0.ctex"]
+source_file="res://assets/GBA/combat_anims/HighPriest_Generic/HighPriest_Generic_MagicAnima.png"
+dest_files=["res://.godot/imported/HighPriest_Generic_MagicAnima.png-816b2c33f51def51ab7e3fbe47729f42.ctex"]
 
 [params]
 

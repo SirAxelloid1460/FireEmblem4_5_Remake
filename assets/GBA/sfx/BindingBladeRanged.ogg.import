@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cnuxlppq768"
-path="res://.godot/imported/BindingBladeRanged.ogg-cb1ffbe6eaf1b79f05b7c387c8be71e0.oggvorbisstr"
+path="res://.godot/imported/BindingBladeRanged.ogg-ed7a8967dbf5e33b8845d54a5ef6ec85.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/BindingBladeRanged.ogg"
-dest_files=["res://.godot/imported/BindingBladeRanged.ogg-cb1ffbe6eaf1b79f05b7c387c8be71e0.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/BindingBladeRanged.ogg"
+dest_files=["res://.godot/imported/BindingBladeRanged.ogg-ed7a8967dbf5e33b8845d54a5ef6ec85.oggvorbisstr"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bv7ccq5nyb6ht"
-path="res://.godot/imported/244 - Victory 2.ogg-00edd19c2cf0eaa548e9c2e1b1efd4b9.oggvorbisstr"
+path="res://.godot/imported/244 - Victory 2.ogg-824dd93d7a26b1b98b505973a33f878c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/244 - Victory 2.ogg"
-dest_files=["res://.godot/imported/244 - Victory 2.ogg-00edd19c2cf0eaa548e9c2e1b1efd4b9.oggvorbisstr"]
+source_file="res://assets/GBA/music/244 - Victory 2.ogg"
+dest_files=["res://.godot/imported/244 - Victory 2.ogg-824dd93d7a26b1b98b505973a33f878c.oggvorbisstr"]
 
 [params]
 

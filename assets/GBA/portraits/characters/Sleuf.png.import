@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7608frf0n21x"
-path="res://.godot/imported/Sleuf.png-622a910d46f7d65c72151938a4b183a8.ctex"
+path="res://.godot/imported/Sleuf.png-d17939e08b22c5d45c3bb6bfe52e55bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Sleuf.png"
-dest_files=["res://.godot/imported/Sleuf.png-622a910d46f7d65c72151938a4b183a8.ctex"]
+source_file="res://assets/GBA/portraits/characters/Sleuf.png"
+dest_files=["res://.godot/imported/Sleuf.png-d17939e08b22c5d45c3bb6bfe52e55bb.ctex"]
 
 [params]
 

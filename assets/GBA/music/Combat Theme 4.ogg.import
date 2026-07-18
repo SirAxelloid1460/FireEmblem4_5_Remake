@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://d4bnyhcotk7ws"
-path="res://.godot/imported/Combat Theme 4.ogg-d60b77add7562aa0b9ab21f6674227ec.oggvorbisstr"
+path="res://.godot/imported/Combat Theme 4.ogg-82741d32ffb021b429fad1014780ae1d.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Combat Theme 4.ogg"
-dest_files=["res://.godot/imported/Combat Theme 4.ogg-d60b77add7562aa0b9ab21f6674227ec.oggvorbisstr"]
+source_file="res://assets/GBA/music/Combat Theme 4.ogg"
+dest_files=["res://.godot/imported/Combat Theme 4.ogg-82741d32ffb021b429fad1014780ae1d.oggvorbisstr"]
 
 [params]
 

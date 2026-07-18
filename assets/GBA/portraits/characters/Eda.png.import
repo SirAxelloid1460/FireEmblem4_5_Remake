@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6t3dohr4xooa"
-path="res://.godot/imported/Eda.png-0101cd540a57ea8d697bb79e775ad149.ctex"
+path="res://.godot/imported/Eda.png-540ff83343d156e48dc431678eaefd1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Eda.png"
-dest_files=["res://.godot/imported/Eda.png-0101cd540a57ea8d697bb79e775ad149.ctex"]
+source_file="res://assets/GBA/portraits/characters/Eda.png"
+dest_files=["res://.godot/imported/Eda.png-540ff83343d156e48dc431678eaefd1c.ctex"]
 
 [params]
 

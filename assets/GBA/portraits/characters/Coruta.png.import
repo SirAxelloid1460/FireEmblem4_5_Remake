@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmqijju8v6y8l"
-path="res://.godot/imported/Coruta.png-cae61a734ae20db30fe38c133c798671.ctex"
+path="res://.godot/imported/Coruta.png-09b29b250f16f3631b155de051308129.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Coruta.png"
-dest_files=["res://.godot/imported/Coruta.png-cae61a734ae20db30fe38c133c798671.ctex"]
+source_file="res://assets/GBA/portraits/characters/Coruta.png"
+dest_files=["res://.godot/imported/Coruta.png-09b29b250f16f3631b155de051308129.ctex"]
 
 [params]
 

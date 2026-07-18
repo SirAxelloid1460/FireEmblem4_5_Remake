@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b25ypat0jope1"
-path="res://.godot/imported/weapon_shine.png-91806943dba13ec9ab77f58dcd7e0166.ctex"
+path="res://.godot/imported/weapon_shine.png-b29d7b197df18cfc72e385c5bcbcb6a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/weapon_shine.png"
-dest_files=["res://.godot/imported/weapon_shine.png-91806943dba13ec9ab77f58dcd7e0166.ctex"]
+source_file="res://assets/GBA/sprites/weapon_shine.png"
+dest_files=["res://.godot/imported/weapon_shine.png-b29d7b197df18cfc72e385c5bcbcb6a5.ctex"]
 
 [params]
 

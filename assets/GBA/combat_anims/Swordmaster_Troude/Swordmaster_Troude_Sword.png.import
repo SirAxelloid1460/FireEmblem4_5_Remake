@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5pqagnngs6ss"
-path="res://.godot/imported/Swordmaster_Troude_Sword.png-5445d1e8982c911502fce0822c361721.ctex"
+path="res://.godot/imported/Swordmaster_Troude_Sword.png-c9b55d4e2f36205cb7fc57900b4e6a07.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Troude/Swordmaster_Troude_Sword.png"
-dest_files=["res://.godot/imported/Swordmaster_Troude_Sword.png-5445d1e8982c911502fce0822c361721.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Troude/Swordmaster_Troude_Sword.png"
+dest_files=["res://.godot/imported/Swordmaster_Troude_Sword.png-c9b55d4e2f36205cb7fc57900b4e6a07.ctex"]
 
 [params]
 

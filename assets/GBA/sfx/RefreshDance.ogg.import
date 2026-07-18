@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dgyjdf6qes7nv"
-path="res://.godot/imported/RefreshDance.ogg-1d8457086cc9c98d55ce78aeaaed2037.oggvorbisstr"
+path="res://.godot/imported/RefreshDance.ogg-d85e9ec56acb72e5a6786a6d77dfd803.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/RefreshDance.ogg"
-dest_files=["res://.godot/imported/RefreshDance.ogg-1d8457086cc9c98d55ce78aeaaed2037.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/RefreshDance.ogg"
+dest_files=["res://.godot/imported/RefreshDance.ogg-d85e9ec56acb72e5a6786a6d77dfd803.oggvorbisstr"]
 
 [params]
 

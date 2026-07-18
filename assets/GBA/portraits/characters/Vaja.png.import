@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl77s7bglunlv"
-path="res://.godot/imported/Vaja.png-4164f819863d535edbc01727ec7674f6.ctex"
+path="res://.godot/imported/Vaja.png-d7d1d5e66c2fc7eace48a68e5df2c63e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Vaja.png"
-dest_files=["res://.godot/imported/Vaja.png-4164f819863d535edbc01727ec7674f6.ctex"]
+source_file="res://assets/GBA/portraits/characters/Vaja.png"
+dest_files=["res://.godot/imported/Vaja.png-d7d1d5e66c2fc7eace48a68e5df2c63e.ctex"]
 
 [params]
 

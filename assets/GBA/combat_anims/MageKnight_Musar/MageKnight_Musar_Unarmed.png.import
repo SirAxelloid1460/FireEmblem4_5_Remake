@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlo4dm56jowgw"
-path="res://.godot/imported/MageKnight_Musar_Unarmed.png-b31e2b0bdf70cbf5b17d73e8fa5ab0d1.ctex"
+path="res://.godot/imported/MageKnight_Musar_Unarmed.png-49bd06e4faa09fe70f2ac407a17699fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Musar/MageKnight_Musar_Unarmed.png"
-dest_files=["res://.godot/imported/MageKnight_Musar_Unarmed.png-b31e2b0bdf70cbf5b17d73e8fa5ab0d1.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Musar/MageKnight_Musar_Unarmed.png"
+dest_files=["res://.godot/imported/MageKnight_Musar_Unarmed.png-49bd06e4faa09fe70f2ac407a17699fe.ctex"]
 
 [params]
 

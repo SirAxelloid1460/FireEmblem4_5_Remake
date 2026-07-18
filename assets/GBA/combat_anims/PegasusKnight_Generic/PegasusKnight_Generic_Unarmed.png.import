@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7jtnsa7b62c7"
-path="res://.godot/imported/PegasusKnight_Generic_Unarmed.png-a972ea04c86d8bb9b96980c292972921.ctex"
+path="res://.godot/imported/PegasusKnight_Generic_Unarmed.png-555014df6d6feb98fc9f8dc7dedff061.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/PegasusKnight_Generic/PegasusKnight_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/PegasusKnight_Generic_Unarmed.png-a972ea04c86d8bb9b96980c292972921.ctex"]
+source_file="res://assets/GBA/combat_anims/PegasusKnight_Generic/PegasusKnight_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/PegasusKnight_Generic_Unarmed.png-555014df6d6feb98fc9f8dc7dedff061.ctex"]
 
 [params]
 

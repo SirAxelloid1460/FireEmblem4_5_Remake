@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bku7byqmiaawl"
-path="res://.godot/imported/Invisible-stand.png-8df54acd821ae6be1a5f87dbca717419.ctex"
+path="res://.godot/imported/Invisible-stand.png-96f8ed54af06ec9e73c68e932d5b7d96.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Invisible-stand.png"
-dest_files=["res://.godot/imported/Invisible-stand.png-8df54acd821ae6be1a5f87dbca717419.ctex"]
+source_file="res://assets/GBA/map_sprites/Invisible-stand.png"
+dest_files=["res://.godot/imported/Invisible-stand.png-96f8ed54af06ec9e73c68e932d5b7d96.ctex"]
 
 [params]
 

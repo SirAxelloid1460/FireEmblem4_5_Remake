@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://odxgdmui8dv6"
-path="res://.godot/imported/Dancer_Generic_Unarmed.png-3adeef9dca0b5a0046b2bc9c8f87d714.ctex"
+path="res://.godot/imported/Dancer_Generic_Unarmed.png-9d09f388b133f7ec58420236bcbc0971.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Dancer_Generic/Dancer_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/Dancer_Generic_Unarmed.png-3adeef9dca0b5a0046b2bc9c8f87d714.ctex"]
+source_file="res://assets/GBA/combat_anims/Dancer_Generic/Dancer_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/Dancer_Generic_Unarmed.png-9d09f388b133f7ec58420236bcbc0971.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpsu3xdbg8xi8"
-path="res://.godot/imported/Eyvel.png-c0cf59a4b44221aa060a46bb6d7cb62a.ctex"
+path="res://.godot/imported/Eyvel.png-c0fb8a67e21b17b4c828b8183d36426a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Eyvel.png"
-dest_files=["res://.godot/imported/Eyvel.png-c0cf59a4b44221aa060a46bb6d7cb62a.ctex"]
+source_file="res://assets/GBA/portraits/characters/Eyvel.png"
+dest_files=["res://.godot/imported/Eyvel.png-c0fb8a67e21b17b4c828b8183d36426a.ctex"]
 
 [params]
 

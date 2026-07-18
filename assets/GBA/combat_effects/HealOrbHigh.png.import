@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8nai7fo3mrod"
-path="res://.godot/imported/HealOrbHigh.png-6d6f1993d402cc3785003765b3c27325.ctex"
+path="res://.godot/imported/HealOrbHigh.png-9b2e26acbd455e1dc36edec1bc663fd0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/HealOrbHigh.png"
-dest_files=["res://.godot/imported/HealOrbHigh.png-6d6f1993d402cc3785003765b3c27325.ctex"]
+source_file="res://assets/GBA/combat_effects/HealOrbHigh.png"
+dest_files=["res://.godot/imported/HealOrbHigh.png-9b2e26acbd455e1dc36edec1bc663fd0.ctex"]
 
 [params]
 

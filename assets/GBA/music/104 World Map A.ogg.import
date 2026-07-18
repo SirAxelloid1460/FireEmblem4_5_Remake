@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cytr38ps1bpc1"
-path="res://.godot/imported/104 World Map A.ogg-2d3d0d161b3d19a5095a127cbf426bee.oggvorbisstr"
+path="res://.godot/imported/104 World Map A.ogg-472d80cf92b4c5411eaeec390bfe868d.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/104 World Map A.ogg"
-dest_files=["res://.godot/imported/104 World Map A.ogg-2d3d0d161b3d19a5095a127cbf426bee.oggvorbisstr"]
+source_file="res://assets/GBA/music/104 World Map A.ogg"
+dest_files=["res://.godot/imported/104 World Map A.ogg-472d80cf92b4c5411eaeec390bfe868d.oggvorbisstr"]
 
 [params]
 

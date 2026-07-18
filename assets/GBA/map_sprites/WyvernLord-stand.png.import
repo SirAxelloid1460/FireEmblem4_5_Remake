@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csoooxe86w1le"
-path="res://.godot/imported/WyvernLord-stand.png-f1f2b0977f7596e3b26774693655b47c.ctex"
+path="res://.godot/imported/WyvernLord-stand.png-f5fa36057d92ac6d1bb5acbb2292c5f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/WyvernLord-stand.png"
-dest_files=["res://.godot/imported/WyvernLord-stand.png-f1f2b0977f7596e3b26774693655b47c.ctex"]
+source_file="res://assets/GBA/map_sprites/WyvernLord-stand.png"
+dest_files=["res://.godot/imported/WyvernLord-stand.png-f5fa36057d92ac6d1bb5acbb2292c5f2.ctex"]
 
 [params]
 

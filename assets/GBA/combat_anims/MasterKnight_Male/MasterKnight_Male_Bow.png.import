@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckri72g0y0vnr"
-path="res://.godot/imported/MasterKnight_Male_Bow.png-294904bc90872801866b42d52ba16f6a.ctex"
+path="res://.godot/imported/MasterKnight_Male_Bow.png-fb5c370941f28183714e62c087b034d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MasterKnight_Male/MasterKnight_Male_Bow.png"
-dest_files=["res://.godot/imported/MasterKnight_Male_Bow.png-294904bc90872801866b42d52ba16f6a.ctex"]
+source_file="res://assets/GBA/combat_anims/MasterKnight_Male/MasterKnight_Male_Bow.png"
+dest_files=["res://.godot/imported/MasterKnight_Male_Bow.png-fb5c370941f28183714e62c087b034d4.ctex"]
 
 [params]
 

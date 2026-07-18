@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://g440eskduqt3"
-path="res://.godot/imported/233 - Silesia Castle Town.ogg-298002f66080b8eaf3bc628606aba017.oggvorbisstr"
+path="res://.godot/imported/233 - Silesia Castle Town.ogg-5051f87eb28389facc1a73dddc037758.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/233 - Silesia Castle Town.ogg"
-dest_files=["res://.godot/imported/233 - Silesia Castle Town.ogg-298002f66080b8eaf3bc628606aba017.oggvorbisstr"]
+source_file="res://assets/GBA/music/233 - Silesia Castle Town.ogg"
+dest_files=["res://.godot/imported/233 - Silesia Castle Town.ogg-5051f87eb28389facc1a73dddc037758.oggvorbisstr"]
 
 [params]
 

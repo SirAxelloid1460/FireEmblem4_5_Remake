@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://2pvw6cqfixfi"
-path="res://.godot/imported/Fire Treasure.ogg-16406c2c7a7bd02c26f00a3f087cfa36.oggvorbisstr"
+path="res://.godot/imported/Fire Treasure.ogg-04e9352a70c5f50a5f0b0e0a598713f5.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Fire Treasure.ogg"
-dest_files=["res://.godot/imported/Fire Treasure.ogg-16406c2c7a7bd02c26f00a3f087cfa36.oggvorbisstr"]
+source_file="res://assets/GBA/music/Fire Treasure.ogg"
+dest_files=["res://.godot/imported/Fire Treasure.ogg-04e9352a70c5f50a5f0b0e0a598713f5.oggvorbisstr"]
 
 [params]
 

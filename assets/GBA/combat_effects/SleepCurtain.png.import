@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl6ll5mkdb1og"
-path="res://.godot/imported/SleepCurtain.png-86284f22da2d663c1c02352b26d0d1fe.ctex"
+path="res://.godot/imported/SleepCurtain.png-631801b62e92624ec4954991badf8171.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/SleepCurtain.png"
-dest_files=["res://.godot/imported/SleepCurtain.png-86284f22da2d663c1c02352b26d0d1fe.ctex"]
+source_file="res://assets/GBA/combat_effects/SleepCurtain.png"
+dest_files=["res://.godot/imported/SleepCurtain.png-631801b62e92624ec4954991badf8171.ctex"]
 
 [params]
 

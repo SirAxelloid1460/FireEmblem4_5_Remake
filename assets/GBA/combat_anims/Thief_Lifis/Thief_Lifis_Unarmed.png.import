@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ih8xmfj2gve0"
-path="res://.godot/imported/Thief_Lifis_Unarmed.png-a6943c55f89b23d807d9cb14c85ebcae.ctex"
+path="res://.godot/imported/Thief_Lifis_Unarmed.png-cc86ad552e9d992cd04da07fe655fdca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Thief_Lifis/Thief_Lifis_Unarmed.png"
-dest_files=["res://.godot/imported/Thief_Lifis_Unarmed.png-a6943c55f89b23d807d9cb14c85ebcae.ctex"]
+source_file="res://assets/GBA/combat_anims/Thief_Lifis/Thief_Lifis_Unarmed.png"
+dest_files=["res://.godot/imported/Thief_Lifis_Unarmed.png-cc86ad552e9d992cd04da07fe655fdca.ctex"]
 
 [params]
 

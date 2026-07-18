@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dupgggfy2uubn"
-path="res://.godot/imported/Floor-Melee.png-62ecf2d35bd4e41cce2b37cc007ec772.ctex"
+path="res://.godot/imported/Floor-Melee.png-547a3c862cb004400afef02c4be7934f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Floor-Melee.png"
-dest_files=["res://.godot/imported/Floor-Melee.png-62ecf2d35bd4e41cce2b37cc007ec772.ctex"]
+source_file="res://assets/GBA/platforms/Floor-Melee.png"
+dest_files=["res://.godot/imported/Floor-Melee.png-547a3c862cb004400afef02c4be7934f.ctex"]
 
 [params]
 

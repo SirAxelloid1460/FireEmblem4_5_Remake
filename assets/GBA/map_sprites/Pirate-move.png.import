@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnp2dvtxseiye"
-path="res://.godot/imported/Pirate-move.png-a35396116d0ff9287f2b23185b286c32.ctex"
+path="res://.godot/imported/Pirate-move.png-ea4453b1b7eca5d73aad157093a01ed8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Pirate-move.png"
-dest_files=["res://.godot/imported/Pirate-move.png-a35396116d0ff9287f2b23185b286c32.ctex"]
+source_file="res://assets/GBA/map_sprites/Pirate-move.png"
+dest_files=["res://.godot/imported/Pirate-move.png-ea4453b1b7eca5d73aad157093a01ed8.ctex"]
 
 [params]
 

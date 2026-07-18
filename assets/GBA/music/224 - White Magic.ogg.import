@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://44m8icthkfrd"
-path="res://.godot/imported/224 - White Magic.ogg-f94d61ce63fae5e1a0eb6ce4f67ef450.oggvorbisstr"
+path="res://.godot/imported/224 - White Magic.ogg-e1b41cdb82eb04f34ad2dd497440f179.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/224 - White Magic.ogg"
-dest_files=["res://.godot/imported/224 - White Magic.ogg-f94d61ce63fae5e1a0eb6ce4f67ef450.oggvorbisstr"]
+source_file="res://assets/GBA/music/224 - White Magic.ogg"
+dest_files=["res://.godot/imported/224 - White Magic.ogg-e1b41cdb82eb04f34ad2dd497440f179.oggvorbisstr"]
 
 [params]
 

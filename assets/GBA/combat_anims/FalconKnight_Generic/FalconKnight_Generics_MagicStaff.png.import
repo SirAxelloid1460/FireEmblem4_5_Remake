@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bomsbm5y4q3f7"
-path="res://.godot/imported/FalconKnight_Generics_MagicStaff.png-7025641511be1c6262b91de57207b2a6.ctex"
+path="res://.godot/imported/FalconKnight_Generics_MagicStaff.png-3b053076e0a00bb04dc20899b756fa42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/FalconKnight_Generic/FalconKnight_Generics_MagicStaff.png"
-dest_files=["res://.godot/imported/FalconKnight_Generics_MagicStaff.png-7025641511be1c6262b91de57207b2a6.ctex"]
+source_file="res://assets/GBA/combat_anims/FalconKnight_Generic/FalconKnight_Generics_MagicStaff.png"
+dest_files=["res://.godot/imported/FalconKnight_Generics_MagicStaff.png-3b053076e0a00bb04dc20899b756fa42.ctex"]
 
 [params]
 

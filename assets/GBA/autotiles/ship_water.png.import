@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2202ki3egnd8"
-path="res://.godot/imported/ship_water.png-acdcde3dda1c4ec483765d341e629c53.ctex"
+path="res://.godot/imported/ship_water.png-df0dbe4b872ba7ec6010fafa3013b0bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/autotiles/ship_water.png"
-dest_files=["res://.godot/imported/ship_water.png-acdcde3dda1c4ec483765d341e629c53.ctex"]
+source_file="res://assets/GBA/autotiles/ship_water.png"
+dest_files=["res://.godot/imported/ship_water.png-df0dbe4b872ba7ec6010fafa3013b0bd.ctex"]
 
 [params]
 

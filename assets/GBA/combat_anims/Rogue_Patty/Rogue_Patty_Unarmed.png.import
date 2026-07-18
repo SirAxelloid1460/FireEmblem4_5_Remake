@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b04g7cnk23rgx"
-path="res://.godot/imported/Rogue_Patty_Unarmed.png-6ab1ee57f311cdb015c2b0dc5b76f511.ctex"
+path="res://.godot/imported/Rogue_Patty_Unarmed.png-9dd417ab347c0fe2c89befe074239917.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Rogue_Patty/Rogue_Patty_Unarmed.png"
-dest_files=["res://.godot/imported/Rogue_Patty_Unarmed.png-6ab1ee57f311cdb015c2b0dc5b76f511.ctex"]
+source_file="res://assets/GBA/combat_anims/Rogue_Patty/Rogue_Patty_Unarmed.png"
+dest_files=["res://.godot/imported/Rogue_Patty_Unarmed.png-9dd417ab347c0fe2c89befe074239917.ctex"]
 
 [params]
 

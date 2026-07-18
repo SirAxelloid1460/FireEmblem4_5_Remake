@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db27ndq0xq8uu"
-path="res://.godot/imported/PromoYellowReticule.png-7db1ce5cdff0f54ea638b4dadd6d7374.ctex"
+path="res://.godot/imported/PromoYellowReticule.png-22ad16cf72981a193af06f89a4554779.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/PromoYellowReticule.png"
-dest_files=["res://.godot/imported/PromoYellowReticule.png-7db1ce5cdff0f54ea638b4dadd6d7374.ctex"]
+source_file="res://assets/GBA/combat_effects/PromoYellowReticule.png"
+dest_files=["res://.godot/imported/PromoYellowReticule.png-22ad16cf72981a193af06f89a4554779.ctex"]
 
 [params]
 

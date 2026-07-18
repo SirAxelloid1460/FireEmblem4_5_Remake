@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0dhri8ol7r0"
-path="res://.godot/imported/Bramsel.png-e8ec04c60dfbf14adbd9cf95853e10d7.ctex"
+path="res://.godot/imported/Bramsel.png-76fb73916e4ede6fbdbd2a62203f55b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Bramsel.png"
-dest_files=["res://.godot/imported/Bramsel.png-e8ec04c60dfbf14adbd9cf95853e10d7.ctex"]
+source_file="res://assets/GBA/portraits/characters/Bramsel.png"
+dest_files=["res://.godot/imported/Bramsel.png-76fb73916e4ede6fbdbd2a62203f55b2.ctex"]
 
 [params]
 

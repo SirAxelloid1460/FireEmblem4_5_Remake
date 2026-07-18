@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6wvna7l7h8ga"
-path="res://.godot/imported/StoneHole.png-053b8ae54578c1501f94d8a65731d74d.ctex"
+path="res://.godot/imported/StoneHole.png-883dc63f16fc2116694a55d6a5db4b2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/StoneHole.png"
-dest_files=["res://.godot/imported/StoneHole.png-053b8ae54578c1501f94d8a65731d74d.ctex"]
+source_file="res://assets/GBA/combat_effects/StoneHole.png"
+dest_files=["res://.godot/imported/StoneHole.png-883dc63f16fc2116694a55d6a5db4b2f.ctex"]
 
 [params]
 

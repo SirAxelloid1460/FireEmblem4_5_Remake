@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dpqo2lrga03vf"
-path="res://.godot/imported/206 - Yied Army.ogg-57e6f42b15720096983a1051d0687800.oggvorbisstr"
+path="res://.godot/imported/206 - Yied Army.ogg-8c4115daa9e47cc75cec833358a3812f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/206 - Yied Army.ogg"
-dest_files=["res://.godot/imported/206 - Yied Army.ogg-57e6f42b15720096983a1051d0687800.oggvorbisstr"]
+source_file="res://assets/GBA/music/206 - Yied Army.ogg"
+dest_files=["res://.godot/imported/206 - Yied Army.ogg-8c4115daa9e47cc75cec833358a3812f.oggvorbisstr"]
 
 [params]
 

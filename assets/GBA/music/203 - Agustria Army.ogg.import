@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bogclfrd3eo7f"
-path="res://.godot/imported/203 - Agustria Army.ogg-6cc5b4626bb42322d6716347742b8f3f.oggvorbisstr"
+path="res://.godot/imported/203 - Agustria Army.ogg-6585823767bb582b91bb6cb743305dcb.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/203 - Agustria Army.ogg"
-dest_files=["res://.godot/imported/203 - Agustria Army.ogg-6cc5b4626bb42322d6716347742b8f3f.oggvorbisstr"]
+source_file="res://assets/GBA/music/203 - Agustria Army.ogg"
+dest_files=["res://.godot/imported/203 - Agustria Army.ogg-6585823767bb582b91bb6cb743305dcb.oggvorbisstr"]
 
 [params]
 

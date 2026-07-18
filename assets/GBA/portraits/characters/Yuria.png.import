@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbt5popo2iorj"
-path="res://.godot/imported/Yuria.png-abfcce8357f79ca2efc280800cd2a9b4.ctex"
+path="res://.godot/imported/Yuria.png-b6229e0735b2e4b6145fc5a5939de8cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Yuria.png"
-dest_files=["res://.godot/imported/Yuria.png-abfcce8357f79ca2efc280800cd2a9b4.ctex"]
+source_file="res://assets/GBA/portraits/characters/Yuria.png"
+dest_files=["res://.godot/imported/Yuria.png-b6229e0735b2e4b6145fc5a5939de8cc.ctex"]
 
 [params]
 

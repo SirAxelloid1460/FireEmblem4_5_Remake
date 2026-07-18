@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://rx65mpt8mt73"
-path="res://.godot/imported/121 Scout for enemies.ogg-71c20c36a8adb6dedb6630eca23c887d.oggvorbisstr"
+path="res://.godot/imported/121 Scout for enemies.ogg-abe2a26f5c26514792dd786f5876e38d.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/121 Scout for enemies.ogg"
-dest_files=["res://.godot/imported/121 Scout for enemies.ogg-71c20c36a8adb6dedb6630eca23c887d.oggvorbisstr"]
+source_file="res://assets/GBA/music/121 Scout for enemies.ogg"
+dest_files=["res://.godot/imported/121 Scout for enemies.ogg-abe2a26f5c26514792dd786f5876e38d.oggvorbisstr"]
 
 [params]
 

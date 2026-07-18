@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wq0psg46x0uj"
-path="res://.godot/imported/Mage_Tine_MagicAnima.png-7e99eb5a6b1b38556e7b762ca296ea87.ctex"
+path="res://.godot/imported/Mage_Tine_MagicAnima.png-2bacf92ccd895f923e9d620c90866a02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Mage_Tine/Mage_Tine_MagicAnima.png"
-dest_files=["res://.godot/imported/Mage_Tine_MagicAnima.png-7e99eb5a6b1b38556e7b762ca296ea87.ctex"]
+source_file="res://assets/GBA/combat_anims/Mage_Tine/Mage_Tine_MagicAnima.png"
+dest_files=["res://.godot/imported/Mage_Tine_MagicAnima.png-2bacf92ccd895f923e9d620c90866a02.ctex"]
 
 [params]
 

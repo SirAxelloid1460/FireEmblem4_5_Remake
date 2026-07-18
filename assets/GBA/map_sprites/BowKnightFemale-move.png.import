@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b328ma876mn5s"
-path="res://.godot/imported/BowKnightFemale-move.png-68c063dc9cf76aee3b932615aac15795.ctex"
+path="res://.godot/imported/BowKnightFemale-move.png-df8c39bbbeb9d4f0588a146095e673d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/BowKnightFemale-move.png"
-dest_files=["res://.godot/imported/BowKnightFemale-move.png-68c063dc9cf76aee3b932615aac15795.ctex"]
+source_file="res://assets/GBA/map_sprites/BowKnightFemale-move.png"
+dest_files=["res://.godot/imported/BowKnightFemale-move.png-df8c39bbbeb9d4f0588a146095e673d6.ctex"]
 
 [params]
 

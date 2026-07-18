@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7pj8im6cwgmb"
-path="res://.godot/imported/FirePillars.png-7bf7673f57f0a517f6a7c5e3446c520e.ctex"
+path="res://.godot/imported/FirePillars.png-271b31afd23ae549d13094c00bac47f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/FirePillars.png"
-dest_files=["res://.godot/imported/FirePillars.png-7bf7673f57f0a517f6a7c5e3446c520e.ctex"]
+source_file="res://assets/GBA/combat_effects/FirePillars.png"
+dest_files=["res://.godot/imported/FirePillars.png-271b31afd23ae549d13094c00bac47f6.ctex"]
 
 [params]
 

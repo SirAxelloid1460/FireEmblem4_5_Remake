@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cbreg4ewwkk54"
-path="res://.godot/imported/To A New Journey.ogg-f8485e2a6f1c9f227da7f7bb7e1f1b8c.oggvorbisstr"
+path="res://.godot/imported/To A New Journey.ogg-4afb4d3b10fa4cf60a3da38e15a925e7.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/To A New Journey.ogg"
-dest_files=["res://.godot/imported/To A New Journey.ogg-f8485e2a6f1c9f227da7f7bb7e1f1b8c.oggvorbisstr"]
+source_file="res://assets/GBA/music/To A New Journey.ogg"
+dest_files=["res://.godot/imported/To A New Journey.ogg-4afb4d3b10fa4cf60a3da38e15a925e7.oggvorbisstr"]
 
 [params]
 

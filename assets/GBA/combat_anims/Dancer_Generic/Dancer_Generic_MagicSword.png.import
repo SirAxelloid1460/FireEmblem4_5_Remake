@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jh7w5sn7ogqb"
-path="res://.godot/imported/Dancer_Generic_MagicSword.png-786e6f60b881f4db51bd22d0c0b03ccc.ctex"
+path="res://.godot/imported/Dancer_Generic_MagicSword.png-916b053c21e080a8434ac5ea4b778614.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Dancer_Generic/Dancer_Generic_MagicSword.png"
-dest_files=["res://.godot/imported/Dancer_Generic_MagicSword.png-786e6f60b881f4db51bd22d0c0b03ccc.ctex"]
+source_file="res://assets/GBA/combat_anims/Dancer_Generic/Dancer_Generic_MagicSword.png"
+dest_files=["res://.godot/imported/Dancer_Generic_MagicSword.png-916b053c21e080a8434ac5ea4b778614.ctex"]
 
 [params]
 

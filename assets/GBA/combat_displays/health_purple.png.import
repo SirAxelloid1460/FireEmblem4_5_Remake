@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://15klasb6sqce"
-path="res://.godot/imported/health_purple.png-2ead3d71d7bf3f221a00406538717249.ctex"
+path="res://.godot/imported/health_purple.png-87643bed4bdf9668152c6aa575cd5f1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_displays/health_purple.png"
-dest_files=["res://.godot/imported/health_purple.png-2ead3d71d7bf3f221a00406538717249.ctex"]
+source_file="res://assets/GBA/combat_displays/health_purple.png"
+dest_files=["res://.godot/imported/health_purple.png-87643bed4bdf9668152c6aa575cd5f1b.ctex"]
 
 [params]
 

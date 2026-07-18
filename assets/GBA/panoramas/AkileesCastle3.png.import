@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvian27sinoro"
-path="res://.godot/imported/AkileesCastle3.png-bbd3ed1f385e30ffbf85e7c196287ae7.ctex"
+path="res://.godot/imported/AkileesCastle3.png-8eaa0ec18c710fe94577d76e554ae1ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/AkileesCastle3.png"
-dest_files=["res://.godot/imported/AkileesCastle3.png-bbd3ed1f385e30ffbf85e7c196287ae7.ctex"]
+source_file="res://assets/GBA/panoramas/AkileesCastle3.png"
+dest_files=["res://.godot/imported/AkileesCastle3.png-8eaa0ec18c710fe94577d76e554ae1ac.ctex"]
 
 [params]
 

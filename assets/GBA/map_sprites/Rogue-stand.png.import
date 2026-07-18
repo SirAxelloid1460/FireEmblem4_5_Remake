@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3o51julku6co"
-path="res://.godot/imported/Rogue-stand.png-2da5b7162f2e2aa490664fca69bc16cf.ctex"
+path="res://.godot/imported/Rogue-stand.png-7daee5d6dbe777a7209313fa7e08fd74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Rogue-stand.png"
-dest_files=["res://.godot/imported/Rogue-stand.png-2da5b7162f2e2aa490664fca69bc16cf.ctex"]
+source_file="res://assets/GBA/map_sprites/Rogue-stand.png"
+dest_files=["res://.godot/imported/Rogue-stand.png-7daee5d6dbe777a7209313fa7e08fd74.ctex"]
 
 [params]
 

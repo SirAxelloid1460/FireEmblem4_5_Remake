@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://by30byq8jalwl"
-path="res://.godot/imported/MageFighter_Male_MagicAnima.png-c83a4acfec4984a33d834d039d8e1757.ctex"
+path="res://.godot/imported/MageFighter_Male_MagicAnima.png-c86b098c931389f20fe6df0489b52e97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageFighter_Male/MageFighter_Male_MagicAnima.png"
-dest_files=["res://.godot/imported/MageFighter_Male_MagicAnima.png-c83a4acfec4984a33d834d039d8e1757.ctex"]
+source_file="res://assets/GBA/combat_anims/MageFighter_Male/MageFighter_Male_MagicAnima.png"
+dest_files=["res://.godot/imported/MageFighter_Male_MagicAnima.png-c86b098c931389f20fe6df0489b52e97.ctex"]
 
 [params]
 

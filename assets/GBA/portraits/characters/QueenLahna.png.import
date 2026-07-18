@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://p5edag2jfkea"
-path="res://.godot/imported/QueenLahna.png-06c2be60bc3124234d7298401be0e317.ctex"
+path="res://.godot/imported/QueenLahna.png-6bdaddc2f910df1245e7b7a5ceb8b03c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/QueenLahna.png"
-dest_files=["res://.godot/imported/QueenLahna.png-06c2be60bc3124234d7298401be0e317.ctex"]
+source_file="res://assets/GBA/portraits/characters/QueenLahna.png"
+dest_files=["res://.godot/imported/QueenLahna.png-6bdaddc2f910df1245e7b7a5ceb8b03c.ctex"]
 
 [params]
 

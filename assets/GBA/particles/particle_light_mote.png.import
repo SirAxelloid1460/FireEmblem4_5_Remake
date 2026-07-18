@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqg0k26xu1f6c"
-path="res://.godot/imported/particle_light_mote.png-48f2770c035c15a18be82e53786e005b.ctex"
+path="res://.godot/imported/particle_light_mote.png-53e82321c8c34700ea9c87f5d25438d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/particles/particle_light_mote.png"
-dest_files=["res://.godot/imported/particle_light_mote.png-48f2770c035c15a18be82e53786e005b.ctex"]
+source_file="res://assets/GBA/particles/particle_light_mote.png"
+dest_files=["res://.godot/imported/particle_light_mote.png-53e82321c8c34700ea9c87f5d25438d6.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnl44qxc4t5by"
-path="res://.godot/imported/Ballistician-stand.png-8ad0c1098ab20d3cf1add9ba45e22cff.ctex"
+path="res://.godot/imported/Ballistician-stand.png-5fc9dd8307af7decf51d2da7cb10f019.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Ballistician-stand.png"
-dest_files=["res://.godot/imported/Ballistician-stand.png-8ad0c1098ab20d3cf1add9ba45e22cff.ctex"]
+source_file="res://assets/GBA/map_sprites/Ballistician-stand.png"
+dest_files=["res://.godot/imported/Ballistician-stand.png-5fc9dd8307af7decf51d2da7cb10f019.ctex"]
 
 [params]
 

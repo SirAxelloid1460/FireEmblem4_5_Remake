@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjbp8ey4kje3h"
-path="res://.godot/imported/SilenceStar.png-688cfd648d1bfc640cb79f6a8f3653c6.ctex"
+path="res://.godot/imported/SilenceStar.png-814bbf5bb8ee1a785a9cea5caedf3c87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/SilenceStar.png"
-dest_files=["res://.godot/imported/SilenceStar.png-688cfd648d1bfc640cb79f6a8f3653c6.ctex"]
+source_file="res://assets/GBA/combat_effects/SilenceStar.png"
+dest_files=["res://.godot/imported/SilenceStar.png-814bbf5bb8ee1a785a9cea5caedf3c87.ctex"]
 
 [params]
 

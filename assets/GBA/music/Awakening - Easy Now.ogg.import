@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bjkr3xuvmi11k"
-path="res://.godot/imported/Awakening - Easy Now.ogg-613a0e84edcc833ab73a9e9d1493abf0.oggvorbisstr"
+path="res://.godot/imported/Awakening - Easy Now.ogg-e56fb0a22e73988441861760880c44cd.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Awakening - Easy Now.ogg"
-dest_files=["res://.godot/imported/Awakening - Easy Now.ogg-613a0e84edcc833ab73a9e9d1493abf0.oggvorbisstr"]
+source_file="res://assets/GBA/music/Awakening - Easy Now.ogg"
+dest_files=["res://.godot/imported/Awakening - Easy Now.ogg-e56fb0a22e73988441861760880c44cd.oggvorbisstr"]
 
 [params]
 

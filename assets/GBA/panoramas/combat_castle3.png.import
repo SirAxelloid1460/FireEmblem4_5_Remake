@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chefr2wqw4vch"
-path="res://.godot/imported/combat_castle3.png-97a5575174a7dc4a1b3fbb4a915e61a0.ctex"
+path="res://.godot/imported/combat_castle3.png-c6aa372c8514f158ff87205279d47b7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/combat_castle3.png"
-dest_files=["res://.godot/imported/combat_castle3.png-97a5575174a7dc4a1b3fbb4a915e61a0.ctex"]
+source_file="res://assets/GBA/panoramas/combat_castle3.png"
+dest_files=["res://.godot/imported/combat_castle3.png-c6aa372c8514f158ff87205279d47b7b.ctex"]
 
 [params]
 

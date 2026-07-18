@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blwiqq3hcdpsm"
-path="res://.godot/imported/Cavalier_Female_Sword.png-e880b19a792354c48374854bb00ba80c.ctex"
+path="res://.godot/imported/Cavalier_Female_Sword.png-0e2b3792cd29421efa2c4295a49de2ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Cavalier_Female/Cavalier_Female_Sword.png"
-dest_files=["res://.godot/imported/Cavalier_Female_Sword.png-e880b19a792354c48374854bb00ba80c.ctex"]
+source_file="res://assets/GBA/combat_anims/Cavalier_Female/Cavalier_Female_Sword.png"
+dest_files=["res://.godot/imported/Cavalier_Female_Sword.png-0e2b3792cd29421efa2c4295a49de2ad.ctex"]
 
 [params]
 

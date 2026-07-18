@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cwn1j6f8wm4bj"
-path="res://.godot/imported/All Aboard to Rogueport.ogg-f418bf068bfcd0fc1d0b1a36dfdc2a08.oggvorbisstr"
+path="res://.godot/imported/All Aboard to Rogueport.ogg-05153d71bb66d5a0f89a80d87b1443cc.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/All Aboard to Rogueport.ogg"
-dest_files=["res://.godot/imported/All Aboard to Rogueport.ogg-f418bf068bfcd0fc1d0b1a36dfdc2a08.oggvorbisstr"]
+source_file="res://assets/GBA/music/All Aboard to Rogueport.ogg"
+dest_files=["res://.godot/imported/All Aboard to Rogueport.ogg-05153d71bb66d5a0f89a80d87b1443cc.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbqkpfdg5u72a"
-path="res://.godot/imported/Misha.png-f6c132bddcabd4d0c6180b3e5121dd8d.ctex"
+path="res://.godot/imported/Misha.png-042b515758346e557491fe1e905d39f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Misha.png"
-dest_files=["res://.godot/imported/Misha.png-f6c132bddcabd4d0c6180b3e5121dd8d.ctex"]
+source_file="res://assets/GBA/portraits/characters/Misha.png"
+dest_files=["res://.godot/imported/Misha.png-042b515758346e557491fe1e905d39f1.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bjvr7f3fn4ucf"
-path="res://.godot/imported/207 Arena entrance.ogg-544cdd6ffc31acb95fd37737b8fbd16e.oggvorbisstr"
+path="res://.godot/imported/207 Arena entrance.ogg-88ac5b6fa1de49e95d5aebbc072e8d2f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/207 Arena entrance.ogg"
-dest_files=["res://.godot/imported/207 Arena entrance.ogg-544cdd6ffc31acb95fd37737b8fbd16e.oggvorbisstr"]
+source_file="res://assets/GBA/music/207 Arena entrance.ogg"
+dest_files=["res://.godot/imported/207 Arena entrance.ogg-88ac5b6fa1de49e95d5aebbc072e8d2f.oggvorbisstr"]
 
 [params]
 

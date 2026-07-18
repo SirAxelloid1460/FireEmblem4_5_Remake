@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhns68ngrnvjw"
-path="res://.godot/imported/Brook.png-e6cacdc14c7494b195040cae2e05d201.ctex"
+path="res://.godot/imported/Brook.png-fd8fdf90661f668159a3cd435d26cbc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Brook.png"
-dest_files=["res://.godot/imported/Brook.png-e6cacdc14c7494b195040cae2e05d201.ctex"]
+source_file="res://assets/GBA/portraits/characters/Brook.png"
+dest_files=["res://.godot/imported/Brook.png-fd8fdf90661f668159a3cd435d26cbc3.ctex"]
 
 [params]
 

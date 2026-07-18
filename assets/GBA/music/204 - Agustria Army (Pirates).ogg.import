@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cthasl05phbta"
-path="res://.godot/imported/204 - Agustria Army (Pirates).ogg-1c5c07f55c0196379470b7a948e35412.oggvorbisstr"
+path="res://.godot/imported/204 - Agustria Army (Pirates).ogg-72bcae33c5ae81e240671a88c8dc41d9.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/204 - Agustria Army (Pirates).ogg"
-dest_files=["res://.godot/imported/204 - Agustria Army (Pirates).ogg-1c5c07f55c0196379470b7a948e35412.oggvorbisstr"]
+source_file="res://assets/GBA/music/204 - Agustria Army (Pirates).ogg"
+dest_files=["res://.godot/imported/204 - Agustria Army (Pirates).ogg-72bcae33c5ae81e240671a88c8dc41d9.oggvorbisstr"]
 
 [params]
 

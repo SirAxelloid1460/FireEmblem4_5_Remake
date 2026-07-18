@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnllg6yb6cdw3"
-path="res://.godot/imported/Pirate_Generic_MagicStaff.png-f48a483680263599dd1253698faadbf3.ctex"
+path="res://.godot/imported/Pirate_Generic_MagicStaff.png-e04f5c30d3f868d9f7127901ab3bad20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Pirate_Generic/Pirate_Generic_MagicStaff.png"
-dest_files=["res://.godot/imported/Pirate_Generic_MagicStaff.png-f48a483680263599dd1253698faadbf3.ctex"]
+source_file="res://assets/GBA/combat_anims/Pirate_Generic/Pirate_Generic_MagicStaff.png"
+dest_files=["res://.godot/imported/Pirate_Generic_MagicStaff.png-e04f5c30d3f868d9f7127901ab3bad20.ctex"]
 
 [params]
 

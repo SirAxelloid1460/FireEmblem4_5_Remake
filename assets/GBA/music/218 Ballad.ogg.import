@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bieo1jlej0p82"
-path="res://.godot/imported/218 Ballad.ogg-6f0639e2f4816a268bda2f3ceb630421.oggvorbisstr"
+path="res://.godot/imported/218 Ballad.ogg-3664207e73e6be21992597d9251b66cc.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/218 Ballad.ogg"
-dest_files=["res://.godot/imported/218 Ballad.ogg-6f0639e2f4816a268bda2f3ceb630421.oggvorbisstr"]
+source_file="res://assets/GBA/music/218 Ballad.ogg"
+dest_files=["res://.godot/imported/218 Ballad.ogg-3664207e73e6be21992597d9251b66cc.oggvorbisstr"]
 
 [params]
 

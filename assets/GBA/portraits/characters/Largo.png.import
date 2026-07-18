@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cu54ie76g4b3v"
-path="res://.godot/imported/Largo.png-22325869373425cb20914a353010ed1b.ctex"
+path="res://.godot/imported/Largo.png-dd33a35e327cbfe3ea657932b29d627a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Largo.png"
-dest_files=["res://.godot/imported/Largo.png-22325869373425cb20914a353010ed1b.ctex"]
+source_file="res://assets/GBA/portraits/characters/Largo.png"
+dest_files=["res://.godot/imported/Largo.png-dd33a35e327cbfe3ea657932b29d627a.ctex"]
 
 [params]
 

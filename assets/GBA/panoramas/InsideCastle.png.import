@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdy0nrex8xwip"
-path="res://.godot/imported/InsideCastle.png-62df92b262eddaaf32add954ac6c4813.ctex"
+path="res://.godot/imported/InsideCastle.png-c5debe3e1ba0a9a1888c88066764a588.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/InsideCastle.png"
-dest_files=["res://.godot/imported/InsideCastle.png-62df92b262eddaaf32add954ac6c4813.ctex"]
+source_file="res://assets/GBA/panoramas/InsideCastle.png"
+dest_files=["res://.godot/imported/InsideCastle.png-c5debe3e1ba0a9a1888c88066764a588.ctex"]
 
 [params]
 

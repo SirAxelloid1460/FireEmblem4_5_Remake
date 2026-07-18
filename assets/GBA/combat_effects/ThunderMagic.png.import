@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp7onuo4rvoap"
-path="res://.godot/imported/ThunderMagic.png-73db5187d8968b0feb6765eae7bd8ff6.ctex"
+path="res://.godot/imported/ThunderMagic.png-56c0a0c8fcdcdbdc74e0800b74da8562.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ThunderMagic.png"
-dest_files=["res://.godot/imported/ThunderMagic.png-73db5187d8968b0feb6765eae7bd8ff6.ctex"]
+source_file="res://assets/GBA/combat_effects/ThunderMagic.png"
+dest_files=["res://.godot/imported/ThunderMagic.png-56c0a0c8fcdcdbdc74e0800b74da8562.ctex"]
 
 [params]
 

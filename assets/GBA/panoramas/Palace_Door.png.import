@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2co3ro3qwt8t"
-path="res://.godot/imported/Palace_Door.png-2ba9faadfd0d2a39087d586527067575.ctex"
+path="res://.godot/imported/Palace_Door.png-555b91e97df5f4a67988ce202a0ac6fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/Palace_Door.png"
-dest_files=["res://.godot/imported/Palace_Door.png-2ba9faadfd0d2a39087d586527067575.ctex"]
+source_file="res://assets/GBA/panoramas/Palace_Door.png"
+dest_files=["res://.godot/imported/Palace_Door.png-555b91e97df5f4a67988ce202a0ac6fb.ctex"]
 
 [params]
 

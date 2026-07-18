@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bq0y5v4drctaj"
-path="res://.godot/imported/Aideen.png-5b43a4373c470f9d5355a415f80775ab.ctex"
+path="res://.godot/imported/Aideen.png-8433c61a866e5eb6640824bab7ddd76c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Aideen.png"
-dest_files=["res://.godot/imported/Aideen.png-5b43a4373c470f9d5355a415f80775ab.ctex"]
+source_file="res://assets/GBA/portraits/characters/Aideen.png"
+dest_files=["res://.godot/imported/Aideen.png-8433c61a866e5eb6640824bab7ddd76c.ctex"]
 
 [params]
 

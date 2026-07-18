@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brkt7q6e6x7s"
-path="res://.godot/imported/Baran.png-e17d5c123e0624c608a46c52ab5bf6d8.ctex"
+path="res://.godot/imported/Baran.png-874d9a7f7fffabd278f0e365a75dc34d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Baran.png"
-dest_files=["res://.godot/imported/Baran.png-e17d5c123e0624c608a46c52ab5bf6d8.ctex"]
+source_file="res://assets/GBA/portraits/characters/Baran.png"
+dest_files=["res://.godot/imported/Baran.png-874d9a7f7fffabd278f0e365a75dc34d.ctex"]
 
 [params]
 

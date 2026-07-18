@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://s0bifwa35ok2"
-path="res://.godot/imported/Combat Preparation.ogg-6de765ac6345790a84625d38a771ef85.oggvorbisstr"
+path="res://.godot/imported/Combat Preparation.ogg-a2a9e966cebe52d85cf931c2d3d91f8b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Combat Preparation.ogg"
-dest_files=["res://.godot/imported/Combat Preparation.ogg-6de765ac6345790a84625d38a771ef85.oggvorbisstr"]
+source_file="res://assets/GBA/music/Combat Preparation.ogg"
+dest_files=["res://.godot/imported/Combat Preparation.ogg-a2a9e966cebe52d85cf931c2d3d91f8b.oggvorbisstr"]
 
 [params]
 

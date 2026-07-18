@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8mvj5brw4r1f"
-path="res://.godot/imported/AOE_Blizzard.png-a42b72a15ce80c1016b2ef093085a438.ctex"
+path="res://.godot/imported/AOE_Blizzard.png-9a1df882c6c4216cb317342ad2e78d31.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/AOE_Blizzard.png"
-dest_files=["res://.godot/imported/AOE_Blizzard.png-a42b72a15ce80c1016b2ef093085a438.ctex"]
+source_file="res://assets/GBA/animations/AOE_Blizzard.png"
+dest_files=["res://.godot/imported/AOE_Blizzard.png-9a1df882c6c4216cb317342ad2e78d31.ctex"]
 
 [params]
 

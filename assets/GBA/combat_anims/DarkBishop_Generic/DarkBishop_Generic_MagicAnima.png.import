@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dd5w5fp4c15v1"
-path="res://.godot/imported/DarkBishop_Generic_MagicAnima.png-82c974aae56564f0f9b24554aad274d5.ctex"
+path="res://.godot/imported/DarkBishop_Generic_MagicAnima.png-8efbe37bc0d664dc0a0e4a9e22924daa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DarkBishop_Generic/DarkBishop_Generic_MagicAnima.png"
-dest_files=["res://.godot/imported/DarkBishop_Generic_MagicAnima.png-82c974aae56564f0f9b24554aad274d5.ctex"]
+source_file="res://assets/GBA/combat_anims/DarkBishop_Generic/DarkBishop_Generic_MagicAnima.png"
+dest_files=["res://.godot/imported/DarkBishop_Generic_MagicAnima.png-8efbe37bc0d664dc0a0e4a9e22924daa.ctex"]
 
 [params]
 

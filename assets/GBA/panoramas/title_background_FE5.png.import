@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccg7pfkc1d7yb"
-path="res://.godot/imported/title_background_FE5.png-12f313b9a2c461ceafe764c6a0d951a4.ctex"
+path="res://.godot/imported/title_background_FE5.png-9c877ef6ef05a7054193d87c1bf2c989.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/title_background_FE5.png"
-dest_files=["res://.godot/imported/title_background_FE5.png-12f313b9a2c461ceafe764c6a0d951a4.ctex"]
+source_file="res://assets/GBA/panoramas/title_background_FE5.png"
+dest_files=["res://.godot/imported/title_background_FE5.png-9c877ef6ef05a7054193d87c1bf2c989.ctex"]
 
 [params]
 

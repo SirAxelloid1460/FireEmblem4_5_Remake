@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch5yvgnttll5c"
-path="res://.godot/imported/Cuvuli.png-2f5af94a850b537cc953b1ffae420710.ctex"
+path="res://.godot/imported/Cuvuli.png-94b0eee42c72be2181dedfa382cf919f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Cuvuli.png"
-dest_files=["res://.godot/imported/Cuvuli.png-2f5af94a850b537cc953b1ffae420710.ctex"]
+source_file="res://assets/GBA/portraits/characters/Cuvuli.png"
+dest_files=["res://.godot/imported/Cuvuli.png-94b0eee42c72be2181dedfa382cf919f.ctex"]
 
 [params]
 

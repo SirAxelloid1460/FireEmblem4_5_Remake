@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ckua3d12s7bnb"
-path="res://.godot/imported/Brave Story 33.ogg-00eea04e9f8bac49fd463a6f54361b28.oggvorbisstr"
+path="res://.godot/imported/Brave Story 33.ogg-8676d09b50851e8a8c5487648281c835.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Brave Story 33.ogg"
-dest_files=["res://.godot/imported/Brave Story 33.ogg-00eea04e9f8bac49fd463a6f54361b28.oggvorbisstr"]
+source_file="res://assets/GBA/music/Brave Story 33.ogg"
+dest_files=["res://.godot/imported/Brave Story 33.ogg-8676d09b50851e8a8c5487648281c835.oggvorbisstr"]
 
 [params]
 

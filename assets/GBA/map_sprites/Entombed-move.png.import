@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dv2dmdy8dp72l"
-path="res://.godot/imported/Entombed-move.png-d7c455e675d39c92bf150fafc1f0382f.ctex"
+path="res://.godot/imported/Entombed-move.png-da5f5c3f5d9a6c55ddaf7a2cbfb36ca0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Entombed-move.png"
-dest_files=["res://.godot/imported/Entombed-move.png-d7c455e675d39c92bf150fafc1f0382f.ctex"]
+source_file="res://assets/GBA/map_sprites/Entombed-move.png"
+dest_files=["res://.godot/imported/Entombed-move.png-da5f5c3f5d9a6c55ddaf7a2cbfb36ca0.ctex"]
 
 [params]
 

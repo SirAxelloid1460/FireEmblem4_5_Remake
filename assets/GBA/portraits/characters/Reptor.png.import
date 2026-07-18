@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2mopiwc3cv75"
-path="res://.godot/imported/Reptor.png-91fa27faefe82497e27f1d87e116f6a2.ctex"
+path="res://.godot/imported/Reptor.png-f7425e5df46251a82acd55685d4e7142.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Reptor.png"
-dest_files=["res://.godot/imported/Reptor.png-91fa27faefe82497e27f1d87e116f6a2.ctex"]
+source_file="res://assets/GBA/portraits/characters/Reptor.png"
+dest_files=["res://.godot/imported/Reptor.png-f7425e5df46251a82acd55685d4e7142.ctex"]
 
 [params]
 

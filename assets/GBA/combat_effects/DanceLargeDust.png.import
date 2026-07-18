@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl013ewqnlrq3"
-path="res://.godot/imported/DanceLargeDust.png-583e597617c22501832c2b86935e87c5.ctex"
+path="res://.godot/imported/DanceLargeDust.png-fe482d9d71f109f9961ae5943ed40ea1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/DanceLargeDust.png"
-dest_files=["res://.godot/imported/DanceLargeDust.png-583e597617c22501832c2b86935e87c5.ctex"]
+source_file="res://assets/GBA/combat_effects/DanceLargeDust.png"
+dest_files=["res://.godot/imported/DanceLargeDust.png-fe482d9d71f109f9961ae5943ed40ea1.ctex"]
 
 [params]
 

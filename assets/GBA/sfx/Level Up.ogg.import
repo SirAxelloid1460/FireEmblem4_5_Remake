@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bh54alhp76l6n"
-path="res://.godot/imported/Level Up.ogg-cf563258e3d8ff8158707d179739ff98.oggvorbisstr"
+path="res://.godot/imported/Level Up.ogg-94cd2b46614fff841aa585f11a230959.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Level Up.ogg"
-dest_files=["res://.godot/imported/Level Up.ogg-cf563258e3d8ff8158707d179739ff98.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Level Up.ogg"
+dest_files=["res://.godot/imported/Level Up.ogg-94cd2b46614fff841aa585f11a230959.oggvorbisstr"]
 
 [params]
 

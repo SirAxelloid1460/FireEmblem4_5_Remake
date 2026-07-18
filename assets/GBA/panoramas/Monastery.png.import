@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0mqegpva68x0"
-path="res://.godot/imported/Monastery.png-2ea48ff1fbce0490e0000a415b584093.ctex"
+path="res://.godot/imported/Monastery.png-c1dcbc190a75b2e8b686bd171ed2c4ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/Monastery.png"
-dest_files=["res://.godot/imported/Monastery.png-2ea48ff1fbce0490e0000a415b584093.ctex"]
+source_file="res://assets/GBA/panoramas/Monastery.png"
+dest_files=["res://.godot/imported/Monastery.png-c1dcbc190a75b2e8b686bd171ed2c4ba.ctex"]
 
 [params]
 

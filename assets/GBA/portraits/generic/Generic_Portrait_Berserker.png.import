@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8p4ll3n3kgev"
-path="res://.godot/imported/Generic_Portrait_Berserker.png-520ca863f62909ec113a480465691658.ctex"
+path="res://.godot/imported/Generic_Portrait_Berserker.png-dedeafc123945c4153ece42b6b42e789.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Berserker.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Berserker.png-520ca863f62909ec113a480465691658.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Berserker.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Berserker.png-dedeafc123945c4153ece42b6b42e789.ctex"]
 
 [params]
 

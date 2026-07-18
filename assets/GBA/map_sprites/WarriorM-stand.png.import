@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be2b7b6nrhbjg"
-path="res://.godot/imported/WarriorM-stand.png-143cba93cfde64e2805931ff8e887c3e.ctex"
+path="res://.godot/imported/WarriorM-stand.png-6a85fdf74211af7a8f0262cbe7f17ca2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/WarriorM-stand.png"
-dest_files=["res://.godot/imported/WarriorM-stand.png-143cba93cfde64e2805931ff8e887c3e.ctex"]
+source_file="res://assets/GBA/map_sprites/WarriorM-stand.png"
+dest_files=["res://.godot/imported/WarriorM-stand.png-6a85fdf74211af7a8f0262cbe7f17ca2.ctex"]
 
 [params]
 

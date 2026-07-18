@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvxpyqrr1nod2"
-path="res://.godot/imported/Sage_Sara_MagicAnima.png-ad5755ab9c0e475f22ed29049695a804.ctex"
+path="res://.godot/imported/Sage_Sara_MagicAnima.png-9ab10b8f2c18a4d481db4de3ce74de55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Sara/Sage_Sara_MagicAnima.png"
-dest_files=["res://.godot/imported/Sage_Sara_MagicAnima.png-ad5755ab9c0e475f22ed29049695a804.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Sara/Sage_Sara_MagicAnima.png"
+dest_files=["res://.godot/imported/Sage_Sara_MagicAnima.png-9ab10b8f2c18a4d481db4de3ce74de55.ctex"]
 
 [params]
 

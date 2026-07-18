@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb7w68vg8s0ge"
-path="res://.godot/imported/Generic_Portrait_BowKnight.png-4c91e91bc6f149b07e4b7e68466cb74f.ctex"
+path="res://.godot/imported/Generic_Portrait_BowKnight.png-72d9a568e7cb248843bfa769ff4cae86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_BowKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_BowKnight.png-4c91e91bc6f149b07e4b7e68466cb74f.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_BowKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_BowKnight.png-72d9a568e7cb248843bfa769ff4cae86.ctex"]
 
 [params]
 

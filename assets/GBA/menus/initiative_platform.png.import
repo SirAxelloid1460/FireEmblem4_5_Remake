@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nj258snjsnel"
-path="res://.godot/imported/initiative_platform.png-5e77632152ef99e0889be480eda1b28f.ctex"
+path="res://.godot/imported/initiative_platform.png-01ca00e01ca544c89239d70c0e717191.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/menus/initiative_platform.png"
-dest_files=["res://.godot/imported/initiative_platform.png-5e77632152ef99e0889be480eda1b28f.ctex"]
+source_file="res://assets/GBA/menus/initiative_platform.png"
+dest_files=["res://.godot/imported/initiative_platform.png-01ca00e01ca544c89239d70c0e717191.ctex"]
 
 [params]
 

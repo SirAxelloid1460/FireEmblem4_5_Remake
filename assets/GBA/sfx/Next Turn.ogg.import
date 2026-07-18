@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://denen86blryil"
-path="res://.godot/imported/Next Turn.ogg-b82021832a927b98109dc9d6def1ce15.oggvorbisstr"
+path="res://.godot/imported/Next Turn.ogg-d63b17820cd1de42960de23ff78c7ee1.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Next Turn.ogg"
-dest_files=["res://.godot/imported/Next Turn.ogg-b82021832a927b98109dc9d6def1ce15.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Next Turn.ogg"
+dest_files=["res://.godot/imported/Next Turn.ogg-d63b17820cd1de42960de23ff78c7ee1.oggvorbisstr"]
 
 [params]
 

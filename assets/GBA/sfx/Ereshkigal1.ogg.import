@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dylkjhsxnmioh"
-path="res://.godot/imported/Ereshkigal1.ogg-a91511a09779f1dda1148947182f34fb.oggvorbisstr"
+path="res://.godot/imported/Ereshkigal1.ogg-edc268a90157ad068a6443486b355983.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Ereshkigal1.ogg"
-dest_files=["res://.godot/imported/Ereshkigal1.ogg-a91511a09779f1dda1148947182f34fb.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Ereshkigal1.ogg"
+dest_files=["res://.godot/imported/Ereshkigal1.ogg-edc268a90157ad068a6443486b355983.oggvorbisstr"]
 
 [params]
 

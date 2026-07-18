@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ck148wwmvtpk3"
-path="res://.godot/imported/Rumei.png-bd71e273101ace0971706a9686d90b4f.ctex"
+path="res://.godot/imported/Rumei.png-07e1cf790910aa43c41b96aa71dbb9fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Rumei.png"
-dest_files=["res://.godot/imported/Rumei.png-bd71e273101ace0971706a9686d90b4f.ctex"]
+source_file="res://assets/GBA/portraits/characters/Rumei.png"
+dest_files=["res://.godot/imported/Rumei.png-07e1cf790910aa43c41b96aa71dbb9fb.ctex"]
 
 [params]
 

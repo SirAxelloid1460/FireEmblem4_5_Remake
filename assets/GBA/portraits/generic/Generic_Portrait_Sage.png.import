@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpa52dnjtmwmh"
-path="res://.godot/imported/Generic_Portrait_Sage.png-285a1d16865670d189a02084f341ac66.ctex"
+path="res://.godot/imported/Generic_Portrait_Sage.png-cdb158f2fb46a32faff981aec94cfc9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Sage.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Sage.png-285a1d16865670d189a02084f341ac66.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Sage.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Sage.png-cdb158f2fb46a32faff981aec94cfc9c.ctex"]
 
 [params]
 

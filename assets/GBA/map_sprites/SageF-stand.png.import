@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://noo4ukxjhslb"
-path="res://.godot/imported/SageF-stand.png-8aae1c4afecae25db743e7ae0f4302a2.ctex"
+path="res://.godot/imported/SageF-stand.png-0e1c6d64be119f9e4fd9ed4631207543.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/SageF-stand.png"
-dest_files=["res://.godot/imported/SageF-stand.png-8aae1c4afecae25db743e7ae0f4302a2.ctex"]
+source_file="res://assets/GBA/map_sprites/SageF-stand.png"
+dest_files=["res://.godot/imported/SageF-stand.png-0e1c6d64be119f9e4fd9ed4631207543.ctex"]
 
 [params]
 

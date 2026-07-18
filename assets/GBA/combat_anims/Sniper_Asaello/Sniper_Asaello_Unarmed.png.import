@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cogv3skmd6xch"
-path="res://.godot/imported/Sniper_Asaello_Unarmed.png-352e17026f38455b6471d680845d7045.ctex"
+path="res://.godot/imported/Sniper_Asaello_Unarmed.png-16f9718ebc8c673997fec9e45749c116.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sniper_Asaello/Sniper_Asaello_Unarmed.png"
-dest_files=["res://.godot/imported/Sniper_Asaello_Unarmed.png-352e17026f38455b6471d680845d7045.ctex"]
+source_file="res://assets/GBA/combat_anims/Sniper_Asaello/Sniper_Asaello_Unarmed.png"
+dest_files=["res://.godot/imported/Sniper_Asaello_Unarmed.png-16f9718ebc8c673997fec9e45749c116.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cv0jt4w00h3kc"
-path="res://.godot/imported/Chagall.png-4bdb4fd6cafa75686836b7a39cd0bf97.ctex"
+path="res://.godot/imported/Chagall.png-f22692e68a57297e01a369c7893b08db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Chagall.png"
-dest_files=["res://.godot/imported/Chagall.png-4bdb4fd6cafa75686836b7a39cd0bf97.ctex"]
+source_file="res://assets/GBA/portraits/characters/Chagall.png"
+dest_files=["res://.godot/imported/Chagall.png-f22692e68a57297e01a369c7893b08db.ctex"]
 
 [params]
 

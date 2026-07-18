@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csdb2ljdp6j8c"
-path="res://.godot/imported/BishopFemale-stand.png-ad436a8460c5f721b5e908a694c9e4b8.ctex"
+path="res://.godot/imported/BishopFemale-stand.png-3942636a182e80e39ab232e9f84a0f22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/BishopFemale-stand.png"
-dest_files=["res://.godot/imported/BishopFemale-stand.png-ad436a8460c5f721b5e908a694c9e4b8.ctex"]
+source_file="res://assets/GBA/map_sprites/BishopFemale-stand.png"
+dest_files=["res://.godot/imported/BishopFemale-stand.png-3942636a182e80e39ab232e9f84a0f22.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bhmxkqoevu2w3"
-path="res://.godot/imported/Warp.ogg-b0f689198fba6201a13c96890fe3cfa0.oggvorbisstr"
+path="res://.godot/imported/Warp.ogg-ae47e801fb9a9c9171967acea706346c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Warp.ogg"
-dest_files=["res://.godot/imported/Warp.ogg-b0f689198fba6201a13c96890fe3cfa0.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Warp.ogg"
+dest_files=["res://.godot/imported/Warp.ogg-ae47e801fb9a9c9171967acea706346c.oggvorbisstr"]
 
 [params]
 

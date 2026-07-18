@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmyxlkpwy554h"
-path="res://.godot/imported/Hero_Skasaher_Sword.png-973025a49de286e6c1017b3694212d6d.ctex"
+path="res://.godot/imported/Hero_Skasaher_Sword.png-1bd5a5cad580666f29ccf821a66ce25e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Hero_Skasaher/Hero_Skasaher_Sword.png"
-dest_files=["res://.godot/imported/Hero_Skasaher_Sword.png-973025a49de286e6c1017b3694212d6d.ctex"]
+source_file="res://assets/GBA/combat_anims/Hero_Skasaher/Hero_Skasaher_Sword.png"
+dest_files=["res://.godot/imported/Hero_Skasaher_Sword.png-1bd5a5cad580666f29ccf821a66ce25e.ctex"]
 
 [params]
 

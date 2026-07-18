@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://634b0jgr8nbl"
-path="res://.godot/imported/Pirate-stand.png-c8a9feb68c89a134c2ed0f12fda71e9b.ctex"
+path="res://.godot/imported/Pirate-stand.png-ac3ec09ccdfe078806668bf2d586c456.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Pirate-stand.png"
-dest_files=["res://.godot/imported/Pirate-stand.png-c8a9feb68c89a134c2ed0f12fda71e9b.ctex"]
+source_file="res://assets/GBA/map_sprites/Pirate-stand.png"
+dest_files=["res://.godot/imported/Pirate-stand.png-ac3ec09ccdfe078806668bf2d586c456.ctex"]
 
 [params]
 

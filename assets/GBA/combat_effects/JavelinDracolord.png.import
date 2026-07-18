@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vjw0qdx71r5j"
-path="res://.godot/imported/JavelinDracolord.png-afa5feee518e608fa686e5ebb62605f3.ctex"
+path="res://.godot/imported/JavelinDracolord.png-c33c1d629fa70f00726266408135ef91.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/JavelinDracolord.png"
-dest_files=["res://.godot/imported/JavelinDracolord.png-afa5feee518e608fa686e5ebb62605f3.ctex"]
+source_file="res://assets/GBA/combat_effects/JavelinDracolord.png"
+dest_files=["res://.godot/imported/JavelinDracolord.png-c33c1d629fa70f00726266408135ef91.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c40uucsmqs7kf"
-path="res://.godot/imported/combat_swamp.png-5cec4a4490f2c4eab7c1a351ecb49896.ctex"
+path="res://.godot/imported/combat_swamp.png-9d9242cba7a9241b86fbea7e32c34cee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/combat_swamp.png"
-dest_files=["res://.godot/imported/combat_swamp.png-5cec4a4490f2c4eab7c1a351ecb49896.ctex"]
+source_file="res://assets/GBA/panoramas/combat_swamp.png"
+dest_files=["res://.godot/imported/combat_swamp.png-9d9242cba7a9241b86fbea7e32c34cee.ctex"]
 
 [params]
 

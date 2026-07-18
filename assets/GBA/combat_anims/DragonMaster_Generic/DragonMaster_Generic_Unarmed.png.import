@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bllrhsjrnltqe"
-path="res://.godot/imported/DragonMaster_Generic_Unarmed.png-3efc9773c4a4090e973e61aaceba7b79.ctex"
+path="res://.godot/imported/DragonMaster_Generic_Unarmed.png-2eef4877009dceab5fe7d66fa914de73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DragonMaster_Generic/DragonMaster_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/DragonMaster_Generic_Unarmed.png-3efc9773c4a4090e973e61aaceba7b79.ctex"]
+source_file="res://assets/GBA/combat_anims/DragonMaster_Generic/DragonMaster_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/DragonMaster_Generic_Unarmed.png-2eef4877009dceab5fe7d66fa914de73.ctex"]
 
 [params]
 

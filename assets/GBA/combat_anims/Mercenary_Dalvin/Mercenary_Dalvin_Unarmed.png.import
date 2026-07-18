@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ukmm8phcntyh"
-path="res://.godot/imported/Mercenary_Dalvin_Unarmed.png-d97543310b9f97072ddabd0457ad7c4b.ctex"
+path="res://.godot/imported/Mercenary_Dalvin_Unarmed.png-d91d734707fa64c6004ddf3d84fc8657.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Mercenary_Dalvin/Mercenary_Dalvin_Unarmed.png"
-dest_files=["res://.godot/imported/Mercenary_Dalvin_Unarmed.png-d97543310b9f97072ddabd0457ad7c4b.ctex"]
+source_file="res://assets/GBA/combat_anims/Mercenary_Dalvin/Mercenary_Dalvin_Unarmed.png"
+dest_files=["res://.godot/imported/Mercenary_Dalvin_Unarmed.png-d91d734707fa64c6004ddf3d84fc8657.ctex"]
 
 [params]
 

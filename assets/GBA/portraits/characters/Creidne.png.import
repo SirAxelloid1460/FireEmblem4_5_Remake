@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx1cuxq601hko"
-path="res://.godot/imported/Creidne.png-e3c5b26069523c0f504e5bb2d1b4008d.ctex"
+path="res://.godot/imported/Creidne.png-f2a36ca943a398a0ee79ffcd3385ddab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Creidne.png"
-dest_files=["res://.godot/imported/Creidne.png-e3c5b26069523c0f504e5bb2d1b4008d.ctex"]
+source_file="res://assets/GBA/portraits/characters/Creidne.png"
+dest_files=["res://.godot/imported/Creidne.png-f2a36ca943a398a0ee79ffcd3385ddab.ctex"]
 
 [params]
 

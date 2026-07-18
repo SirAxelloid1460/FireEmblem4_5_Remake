@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v4cglm0g8ldg"
-path="res://.godot/imported/ShieldAscend.png-464f52dabb52f99dbfd2555e25b40496.ctex"
+path="res://.godot/imported/ShieldAscend.png-69716d566f3f251c5edbd99a39577135.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ShieldAscend.png"
-dest_files=["res://.godot/imported/ShieldAscend.png-464f52dabb52f99dbfd2555e25b40496.ctex"]
+source_file="res://assets/GBA/combat_effects/ShieldAscend.png"
+dest_files=["res://.godot/imported/ShieldAscend.png-69716d566f3f251c5edbd99a39577135.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://defp08kp8a1iy"
-path="res://.godot/imported/Lobos.png-dc3db3ce604ae55eec1a22b433b0b715.ctex"
+path="res://.godot/imported/Lobos.png-646b3951f4606ce640ad27593583a5d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Lobos.png"
-dest_files=["res://.godot/imported/Lobos.png-dc3db3ce604ae55eec1a22b433b0b715.ctex"]
+source_file="res://assets/GBA/portraits/characters/Lobos.png"
+dest_files=["res://.godot/imported/Lobos.png-646b3951f4606ce640ad27593583a5d7.ctex"]
 
 [params]
 

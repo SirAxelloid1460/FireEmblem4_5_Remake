@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwlaju5024dlx"
-path="res://.godot/imported/Paladin_Female_MagicSword.png-d739dfb5db90a1e4a38b3a36b95f48fd.ctex"
+path="res://.godot/imported/Paladin_Female_MagicSword.png-f524f7f0e010c40be6a7f7e0cfe58622.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Female/Paladin_Female_MagicSword.png"
-dest_files=["res://.godot/imported/Paladin_Female_MagicSword.png-d739dfb5db90a1e4a38b3a36b95f48fd.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Female/Paladin_Female_MagicSword.png"
+dest_files=["res://.godot/imported/Paladin_Female_MagicSword.png-f524f7f0e010c40be6a7f7e0cfe58622.ctex"]
 
 [params]
 

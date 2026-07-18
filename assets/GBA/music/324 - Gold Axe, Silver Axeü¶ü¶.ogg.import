@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://0kupodb63d3p"
-path="res://.godot/imported/324 - Gold Axe, Silver Axeü¶ü¶.ogg-78525b061e8905a2c40bb80fd236d21b.oggvorbisstr"
+path="res://.godot/imported/324 - Gold Axe, Silver Axeü¶ü¶.ogg-0b54dc7adcc261219bb8d8de9abf6086.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/324 - Gold Axe, Silver Axeü¶ü¶.ogg"
-dest_files=["res://.godot/imported/324 - Gold Axe, Silver Axeü¶ü¶.ogg-78525b061e8905a2c40bb80fd236d21b.oggvorbisstr"]
+source_file="res://assets/GBA/music/324 - Gold Axe, Silver Axeü¶ü¶.ogg"
+dest_files=["res://.godot/imported/324 - Gold Axe, Silver Axeü¶ü¶.ogg-0b54dc7adcc261219bb8d8de9abf6086.oggvorbisstr"]
 
 [params]
 

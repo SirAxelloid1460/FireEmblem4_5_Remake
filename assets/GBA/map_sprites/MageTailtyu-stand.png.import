@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b16wc4s5re4di"
-path="res://.godot/imported/MageTailtyu-stand.png-a3719d19bcd01a4f6572276c1937325b.ctex"
+path="res://.godot/imported/MageTailtyu-stand.png-680d77913c902188971351a5d6c0ca0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/MageTailtyu-stand.png"
-dest_files=["res://.godot/imported/MageTailtyu-stand.png-a3719d19bcd01a4f6572276c1937325b.ctex"]
+source_file="res://assets/GBA/map_sprites/MageTailtyu-stand.png"
+dest_files=["res://.godot/imported/MageTailtyu-stand.png-680d77913c902188971351a5d6c0ca0d.ctex"]
 
 [params]
 

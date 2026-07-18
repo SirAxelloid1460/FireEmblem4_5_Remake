@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://baf8irwn0hlhl"
-path="res://.godot/imported/StrategistRune.ogg-96187055a705864defb6d899940776bc.oggvorbisstr"
+path="res://.godot/imported/StrategistRune.ogg-b3f872b310c33069ea76957103d29095.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/StrategistRune.ogg"
-dest_files=["res://.godot/imported/StrategistRune.ogg-96187055a705864defb6d899940776bc.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/StrategistRune.ogg"
+dest_files=["res://.godot/imported/StrategistRune.ogg-b3f872b310c33069ea76957103d29095.oggvorbisstr"]
 
 [params]
 

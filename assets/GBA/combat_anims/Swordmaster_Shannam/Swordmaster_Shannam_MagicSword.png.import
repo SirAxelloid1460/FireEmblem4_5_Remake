@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pof7qjg01rs"
-path="res://.godot/imported/Swordmaster_Shannam_MagicSword.png-a28abd9738feca2f8603c05f4a463590.ctex"
+path="res://.godot/imported/Swordmaster_Shannam_MagicSword.png-3fe550e5aab7ca9edb8498988e1235aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Shannam/Swordmaster_Shannam_MagicSword.png"
-dest_files=["res://.godot/imported/Swordmaster_Shannam_MagicSword.png-a28abd9738feca2f8603c05f4a463590.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Shannam/Swordmaster_Shannam_MagicSword.png"
+dest_files=["res://.godot/imported/Swordmaster_Shannam_MagicSword.png-3fe550e5aab7ca9edb8498988e1235aa.ctex"]
 
 [params]
 

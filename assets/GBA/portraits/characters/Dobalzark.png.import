@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ca7px72op02mg"
-path="res://.godot/imported/Dobalzark.png-dd3de0f78d14a4d853a92206c7f2dc10.ctex"
+path="res://.godot/imported/Dobalzark.png-48e1293cdd4238ad99c60e8a25def4a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Dobalzark.png"
-dest_files=["res://.godot/imported/Dobalzark.png-dd3de0f78d14a4d853a92206c7f2dc10.ctex"]
+source_file="res://assets/GBA/portraits/characters/Dobalzark.png"
+dest_files=["res://.godot/imported/Dobalzark.png-48e1293cdd4238ad99c60e8a25def4a8.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfav3wha381b0"
-path="res://.godot/imported/Queen_Generic_MagicStaff.png-fefed812deb48e5af126614134ddff63.ctex"
+path="res://.godot/imported/Queen_Generic_MagicStaff.png-4c0a8f5dd94a1c0753c7cb3221a61f72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Queen_Generic/Queen_Generic_MagicStaff.png"
-dest_files=["res://.godot/imported/Queen_Generic_MagicStaff.png-fefed812deb48e5af126614134ddff63.ctex"]
+source_file="res://assets/GBA/combat_anims/Queen_Generic/Queen_Generic_MagicStaff.png"
+dest_files=["res://.godot/imported/Queen_Generic_MagicStaff.png-4c0a8f5dd94a1c0753c7cb3221a61f72.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://lc8uh0c1e0fr"
-path="res://.godot/imported/131 Veld battle.ogg-a4aefb574a0c19f2617a7f798c0c40b4.oggvorbisstr"
+path="res://.godot/imported/131 Veld battle.ogg-b6d9a749470635d309240401ec856bd6.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/131 Veld battle.ogg"
-dest_files=["res://.godot/imported/131 Veld battle.ogg-a4aefb574a0c19f2617a7f798c0c40b4.oggvorbisstr"]
+source_file="res://assets/GBA/music/131 Veld battle.ogg"
+dest_files=["res://.godot/imported/131 Veld battle.ogg-b6d9a749470635d309240401ec856bd6.oggvorbisstr"]
 
 [params]
 

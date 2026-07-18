@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bs8uht18238xr"
-path="res://.godot/imported/In the Midst.ogg-c7e7a991f1a04ff4783895a18c094b01.oggvorbisstr"
+path="res://.godot/imported/In the Midst.ogg-519b7b7f95b2996e1e2c2824008d6d54.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/In the Midst.ogg"
-dest_files=["res://.godot/imported/In the Midst.ogg-c7e7a991f1a04ff4783895a18c094b01.oggvorbisstr"]
+source_file="res://assets/GBA/music/In the Midst.ogg"
+dest_files=["res://.godot/imported/In the Midst.ogg-519b7b7f95b2996e1e2c2824008d6d54.oggvorbisstr"]
 
 [params]
 

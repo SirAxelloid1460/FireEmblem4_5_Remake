@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyhym3rm0l2hx"
-path="res://.godot/imported/AetherFlash1.png-ac073abcc6ea1a093bded2a2946f2681.ctex"
+path="res://.godot/imported/AetherFlash1.png-1a30f2208d1be1689343883679635ce6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/AetherFlash1.png"
-dest_files=["res://.godot/imported/AetherFlash1.png-ac073abcc6ea1a093bded2a2946f2681.ctex"]
+source_file="res://assets/GBA/combat_effects/AetherFlash1.png"
+dest_files=["res://.godot/imported/AetherFlash1.png-1a30f2208d1be1689343883679635ce6.ctex"]
 
 [params]
 

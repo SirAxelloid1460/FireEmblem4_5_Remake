@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dec14gjiaeqly"
-path="res://.godot/imported/Fetra.png-33ff0bad7b6f02d481834d34d56671bb.ctex"
+path="res://.godot/imported/Fetra.png-4b894e78e684a6f33e208359629adc91.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Fetra.png"
-dest_files=["res://.godot/imported/Fetra.png-33ff0bad7b6f02d481834d34d56671bb.ctex"]
+source_file="res://assets/GBA/portraits/characters/Fetra.png"
+dest_files=["res://.godot/imported/Fetra.png-4b894e78e684a6f33e208359629adc91.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bc00dqyxqx1g5"
-path="res://.godot/imported/Hero_Male_Sword.png-3d7f7f60cd72784b4197089c5bb24148.ctex"
+path="res://.godot/imported/Hero_Male_Sword.png-4dad394dfe8d96b89c4eba39fba4c631.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Hero_Male/Hero_Male_Sword.png"
-dest_files=["res://.godot/imported/Hero_Male_Sword.png-3d7f7f60cd72784b4197089c5bb24148.ctex"]
+source_file="res://assets/GBA/combat_anims/Hero_Male/Hero_Male_Sword.png"
+dest_files=["res://.godot/imported/Hero_Male_Sword.png-4dad394dfe8d96b89c4eba39fba4c631.ctex"]
 
 [params]
 

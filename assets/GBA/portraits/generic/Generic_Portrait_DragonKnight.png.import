@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cybca0cudn11f"
-path="res://.godot/imported/Generic_Portrait_DragonKnight.png-782e71b18f86587e571f675de5a7bb52.ctex"
+path="res://.godot/imported/Generic_Portrait_DragonKnight.png-53a3904409e3b52f4d54d8eede4aab7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_DragonKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_DragonKnight.png-782e71b18f86587e571f675de5a7bb52.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_DragonKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_DragonKnight.png-53a3904409e3b52f4d54d8eede4aab7b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqvcgije7135l"
-path="res://.godot/imported/DarkPrince-move.png-33724c45a1cc9fa26a4fe15706300c2d.ctex"
+path="res://.godot/imported/DarkPrince-move.png-4719881eb1dc205302b2a30100209835.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/DarkPrince-move.png"
-dest_files=["res://.godot/imported/DarkPrince-move.png-33724c45a1cc9fa26a4fe15706300c2d.ctex"]
+source_file="res://assets/GBA/map_sprites/DarkPrince-move.png"
+dest_files=["res://.godot/imported/DarkPrince-move.png-4719881eb1dc205302b2a30100209835.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3jk73sayr7sf"
-path="res://.godot/imported/BowKnightF-stand.png-6d3a7da9e1d02858c2942eaeeeecd981.ctex"
+path="res://.godot/imported/BowKnightF-stand.png-a9c2ba05120c2d2f2089bac85585afb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/BowKnightF-stand.png"
-dest_files=["res://.godot/imported/BowKnightF-stand.png-6d3a7da9e1d02858c2942eaeeeecd981.ctex"]
+source_file="res://assets/GBA/map_sprites/BowKnightF-stand.png"
+dest_files=["res://.godot/imported/BowKnightF-stand.png-a9c2ba05120c2d2f2089bac85585afb8.ctex"]
 
 [params]
 

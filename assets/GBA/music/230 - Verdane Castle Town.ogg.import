@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dg30gf304x68r"
-path="res://.godot/imported/230 - Verdane Castle Town.ogg-735190689fac5ecbba2fe51ff5f4afd1.oggvorbisstr"
+path="res://.godot/imported/230 - Verdane Castle Town.ogg-3672fac45d694d25607c06e5d00a79d9.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/230 - Verdane Castle Town.ogg"
-dest_files=["res://.godot/imported/230 - Verdane Castle Town.ogg-735190689fac5ecbba2fe51ff5f4afd1.oggvorbisstr"]
+source_file="res://assets/GBA/music/230 - Verdane Castle Town.ogg"
+dest_files=["res://.godot/imported/230 - Verdane Castle Town.ogg-3672fac45d694d25607c06e5d00a79d9.oggvorbisstr"]
 
 [params]
 

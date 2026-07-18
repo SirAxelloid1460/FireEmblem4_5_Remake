@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pi66q28tjmkf"
-path="res://.godot/imported/lowlight.png-8b479160399dec8931bdec3dbce51348.ctex"
+path="res://.godot/imported/lowlight.png-56e33928fc789915acd48ca1ed395f90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/menus/lowlight.png"
-dest_files=["res://.godot/imported/lowlight.png-8b479160399dec8931bdec3dbce51348.ctex"]
+source_file="res://assets/GBA/menus/lowlight.png"
+dest_files=["res://.godot/imported/lowlight.png-56e33928fc789915acd48ca1ed395f90.ctex"]
 
 [params]
 

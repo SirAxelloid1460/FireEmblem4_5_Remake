@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wpqp4dd8wg0j"
-path="res://.godot/imported/JavelinGeneral.png-a2c3952ca41eebbedac64d22e7bf781f.ctex"
+path="res://.godot/imported/JavelinGeneral.png-61dd35f481f3a7c422ab221a9be8742b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/JavelinGeneral.png"
-dest_files=["res://.godot/imported/JavelinGeneral.png-a2c3952ca41eebbedac64d22e7bf781f.ctex"]
+source_file="res://assets/GBA/combat_effects/JavelinGeneral.png"
+dest_files=["res://.godot/imported/JavelinGeneral.png-61dd35f481f3a7c422ab221a9be8742b.ctex"]
 
 [params]
 

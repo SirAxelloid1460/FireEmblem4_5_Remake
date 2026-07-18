@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2cwrxorvbnf8"
-path="res://.godot/imported/Floor-Ranged.png-1b3e0219ad2e65209fbae7db80959d8d.ctex"
+path="res://.godot/imported/Floor-Ranged.png-f03e50af5c70bbb7b63f93c5b5e2bea1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Floor-Ranged.png"
-dest_files=["res://.godot/imported/Floor-Ranged.png-1b3e0219ad2e65209fbae7db80959d8d.ctex"]
+source_file="res://assets/GBA/platforms/Floor-Ranged.png"
+dest_files=["res://.godot/imported/Floor-Ranged.png-f03e50af5c70bbb7b63f93c5b5e2bea1.ctex"]
 
 [params]
 

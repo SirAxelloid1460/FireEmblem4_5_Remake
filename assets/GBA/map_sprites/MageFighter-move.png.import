@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnomi3vq5tw2f"
-path="res://.godot/imported/MageFighter-move.png-73d4615e248f7ed69351e23378a37956.ctex"
+path="res://.godot/imported/MageFighter-move.png-4bf8c0cd4911e18127523e6cc33dfd9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/MageFighter-move.png"
-dest_files=["res://.godot/imported/MageFighter-move.png-73d4615e248f7ed69351e23378a37956.ctex"]
+source_file="res://assets/GBA/map_sprites/MageFighter-move.png"
+dest_files=["res://.godot/imported/MageFighter-move.png-4bf8c0cd4911e18127523e6cc33dfd9b.ctex"]
 
 [params]
 

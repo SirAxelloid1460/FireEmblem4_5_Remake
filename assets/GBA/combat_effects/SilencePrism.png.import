@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5tlgaveimcmb"
-path="res://.godot/imported/SilencePrism.png-f9240bd58b6e121d4c948b2d6caf785c.ctex"
+path="res://.godot/imported/SilencePrism.png-f2c3c601d32c4a179c0e579d2d8f4d86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/SilencePrism.png"
-dest_files=["res://.godot/imported/SilencePrism.png-f9240bd58b6e121d4c948b2d6caf785c.ctex"]
+source_file="res://assets/GBA/combat_effects/SilencePrism.png"
+dest_files=["res://.godot/imported/SilencePrism.png-f2c3c601d32c4a179c0e579d2d8f4d86.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dohwi8pd7sdcq"
-path="res://.godot/imported/The Crowfather.ogg-c022f3acc280c93ab212980b7b6aa20d.oggvorbisstr"
+path="res://.godot/imported/The Crowfather.ogg-c93af2a9a71fce7e068641371979ffb4.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/The Crowfather.ogg"
-dest_files=["res://.godot/imported/The Crowfather.ogg-c022f3acc280c93ab212980b7b6aa20d.oggvorbisstr"]
+source_file="res://assets/GBA/music/The Crowfather.ogg"
+dest_files=["res://.godot/imported/The Crowfather.ogg-c93af2a9a71fce7e068641371979ffb4.oggvorbisstr"]
 
 [params]
 

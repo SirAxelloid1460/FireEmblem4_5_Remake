@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfxjtypq5301y"
-path="res://.godot/imported/menu_hand_rotated.png-86ca1f1ddf46f69b3ff430969d7a40fd.ctex"
+path="res://.godot/imported/menu_hand_rotated.png-75430b185b27f11b3e281f58ade8b0ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/menus/menu_hand_rotated.png"
-dest_files=["res://.godot/imported/menu_hand_rotated.png-86ca1f1ddf46f69b3ff430969d7a40fd.ctex"]
+source_file="res://assets/GBA/menus/menu_hand_rotated.png"
+dest_files=["res://.godot/imported/menu_hand_rotated.png-75430b185b27f11b3e281f58ade8b0ea.ctex"]
 
 [params]
 

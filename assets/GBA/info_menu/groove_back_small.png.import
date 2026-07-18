@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpfuu2rgoajhx"
-path="res://.godot/imported/groove_back_small.png-b813230eecb56e260352afa485f62f1f.ctex"
+path="res://.godot/imported/groove_back_small.png-be114c65fcb2f9ce129af194c81e9ae9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/info_menu/groove_back_small.png"
-dest_files=["res://.godot/imported/groove_back_small.png-b813230eecb56e260352afa485f62f1f.ctex"]
+source_file="res://assets/GBA/info_menu/groove_back_small.png"
+dest_files=["res://.godot/imported/groove_back_small.png-be114c65fcb2f9ce129af194c81e9ae9.ctex"]
 
 [params]
 

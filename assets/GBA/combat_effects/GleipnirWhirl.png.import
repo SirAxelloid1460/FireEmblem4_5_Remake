@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ldos8eum6ny"
-path="res://.godot/imported/GleipnirWhirl.png-5c32eb4fe2266413598ed5ed411bd6c3.ctex"
+path="res://.godot/imported/GleipnirWhirl.png-69c5a3b09c793fdda7f1d2bd0dd51612.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/GleipnirWhirl.png"
-dest_files=["res://.godot/imported/GleipnirWhirl.png-5c32eb4fe2266413598ed5ed411bd6c3.ctex"]
+source_file="res://assets/GBA/combat_effects/GleipnirWhirl.png"
+dest_files=["res://.godot/imported/GleipnirWhirl.png-69c5a3b09c793fdda7f1d2bd0dd51612.ctex"]
 
 [params]
 

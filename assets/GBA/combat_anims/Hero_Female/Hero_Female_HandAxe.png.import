@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhi3sdbqppgci"
-path="res://.godot/imported/Hero_Female_HandAxe.png-02913127a961031a73e495e0b29024e2.ctex"
+path="res://.godot/imported/Hero_Female_HandAxe.png-cd99efa55e5b067753fb1dda7a0a300f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Hero_Female/Hero_Female_HandAxe.png"
-dest_files=["res://.godot/imported/Hero_Female_HandAxe.png-02913127a961031a73e495e0b29024e2.ctex"]
+source_file="res://assets/GBA/combat_anims/Hero_Female/Hero_Female_HandAxe.png"
+dest_files=["res://.godot/imported/Hero_Female_HandAxe.png-cd99efa55e5b067753fb1dda7a0a300f.ctex"]
 
 [params]
 

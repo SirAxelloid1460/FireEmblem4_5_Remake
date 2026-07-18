@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsy4hs0bcrur6"
-path="res://.godot/imported/wm_purple_marker.png-c815868258a0820e4eaf44b35b0b8fea.ctex"
+path="res://.godot/imported/wm_purple_marker.png-53487f7e9dddf67cbb10ec6c401da680.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_icons/wm_purple_marker.png"
-dest_files=["res://.godot/imported/wm_purple_marker.png-c815868258a0820e4eaf44b35b0b8fea.ctex"]
+source_file="res://assets/GBA/map_icons/wm_purple_marker.png"
+dest_files=["res://.godot/imported/wm_purple_marker.png-53487f7e9dddf67cbb10ec6c401da680.ctex"]
 
 [params]
 

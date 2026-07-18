@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3bwmjyf1uiki"
-path="res://.godot/imported/Tristan.png-f7cd532af134970d8d7510bf8e13d668.ctex"
+path="res://.godot/imported/Tristan.png-3bbcb0d029f959c361448e7fce0739e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Tristan.png"
-dest_files=["res://.godot/imported/Tristan.png-f7cd532af134970d8d7510bf8e13d668.ctex"]
+source_file="res://assets/GBA/portraits/characters/Tristan.png"
+dest_files=["res://.godot/imported/Tristan.png-3bbcb0d029f959c361448e7fce0739e2.ctex"]
 
 [params]
 

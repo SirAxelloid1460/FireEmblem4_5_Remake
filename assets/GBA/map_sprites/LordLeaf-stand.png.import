@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qxeweswga2u3"
-path="res://.godot/imported/LordLeaf-stand.png-0c1aaf40692a9283e979bab1081d84cc.ctex"
+path="res://.godot/imported/LordLeaf-stand.png-cd0ddb031eeecbe4c5ed49f49bcdc4c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/LordLeaf-stand.png"
-dest_files=["res://.godot/imported/LordLeaf-stand.png-0c1aaf40692a9283e979bab1081d84cc.ctex"]
+source_file="res://assets/GBA/map_sprites/LordLeaf-stand.png"
+dest_files=["res://.godot/imported/LordLeaf-stand.png-cd0ddb031eeecbe4c5ed49f49bcdc4c9.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf4qsv5t7jvo1"
-path="res://.godot/imported/PaladinFemale-stand.png-78c88995469617eff98594eaee64e999.ctex"
+path="res://.godot/imported/PaladinFemale-stand.png-b2dd2bd623cb0cd90f85cd63dc2f3e04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/PaladinFemale-stand.png"
-dest_files=["res://.godot/imported/PaladinFemale-stand.png-78c88995469617eff98594eaee64e999.ctex"]
+source_file="res://assets/GBA/map_sprites/PaladinFemale-stand.png"
+dest_files=["res://.godot/imported/PaladinFemale-stand.png-b2dd2bd623cb0cd90f85cd63dc2f3e04.ctex"]
 
 [params]
 

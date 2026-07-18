@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://y3eyj4c1nptf"
-path="res://.godot/imported/Map_Step_Armor2.ogg-e89844cab596746c92ea2db71ad89e07.oggvorbisstr"
+path="res://.godot/imported/Map_Step_Armor2.ogg-8b0ac5352f59a2c10344ddd99ea2111d.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Map_Step_Armor2.ogg"
-dest_files=["res://.godot/imported/Map_Step_Armor2.ogg-e89844cab596746c92ea2db71ad89e07.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Map_Step_Armor2.ogg"
+dest_files=["res://.godot/imported/Map_Step_Armor2.ogg-8b0ac5352f59a2c10344ddd99ea2111d.oggvorbisstr"]
 
 [params]
 

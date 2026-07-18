@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqx34e0tobbom"
-path="res://.godot/imported/RotPunkt.png-71ef4f141c241c0fee479e8141da88a8.ctex"
+path="res://.godot/imported/RotPunkt.png-ca9b54ac4136dadd71528c5462304f36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons6/RotPunkt.png"
-dest_files=["res://.godot/imported/RotPunkt.png-71ef4f141c241c0fee479e8141da88a8.ctex"]
+source_file="res://assets/GBA/icons6/RotPunkt.png"
+dest_files=["res://.godot/imported/RotPunkt.png-ca9b54ac4136dadd71528c5462304f36.ctex"]
 
 [params]
 

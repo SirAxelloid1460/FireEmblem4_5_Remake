@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c66vh15tx1ro8"
-path="res://.godot/imported/Paladin_Male_Unarmed.png-65cefc359dcafd66e0f110f2dff5da2a.ctex"
+path="res://.godot/imported/Paladin_Male_Unarmed.png-da9dc94789ac5aed8a54fb0f22c495c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Male/Paladin_Male_Unarmed.png"
-dest_files=["res://.godot/imported/Paladin_Male_Unarmed.png-65cefc359dcafd66e0f110f2dff5da2a.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Male/Paladin_Male_Unarmed.png"
+dest_files=["res://.godot/imported/Paladin_Male_Unarmed.png-da9dc94789ac5aed8a54fb0f22c495c1.ctex"]
 
 [params]
 

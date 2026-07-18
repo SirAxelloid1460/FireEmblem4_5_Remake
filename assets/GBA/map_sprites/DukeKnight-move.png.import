@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi68utk14e3yq"
-path="res://.godot/imported/DukeKnight-move.png-0f532561e96392aca74b316eb677fa06.ctex"
+path="res://.godot/imported/DukeKnight-move.png-fe2eefea3eb7fb7c7020724649a3f244.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/DukeKnight-move.png"
-dest_files=["res://.godot/imported/DukeKnight-move.png-0f532561e96392aca74b316eb677fa06.ctex"]
+source_file="res://assets/GBA/map_sprites/DukeKnight-move.png"
+dest_files=["res://.godot/imported/DukeKnight-move.png-fe2eefea3eb7fb7c7020724649a3f244.ctex"]
 
 [params]
 

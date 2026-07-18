@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://jslc5sn31js1"
-path="res://.godot/imported/Attack Miss 3.ogg-b42ca9b6775d2b4a704d9f4498217f96.oggvorbisstr"
+path="res://.godot/imported/Attack Miss 3.ogg-d6390726ccbde424c874a1f81cfdc162.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Attack Miss 3.ogg"
-dest_files=["res://.godot/imported/Attack Miss 3.ogg-b42ca9b6775d2b4a704d9f4498217f96.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Attack Miss 3.ogg"
+dest_files=["res://.godot/imported/Attack Miss 3.ogg-d6390726ccbde424c874a1f81cfdc162.oggvorbisstr"]
 
 [params]
 

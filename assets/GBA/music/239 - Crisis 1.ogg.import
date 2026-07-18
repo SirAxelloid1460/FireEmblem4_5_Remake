@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c6h4ohgwajmu5"
-path="res://.godot/imported/239 - Crisis 1.ogg-ce70e441431816b896b8d2d7ad447bbe.oggvorbisstr"
+path="res://.godot/imported/239 - Crisis 1.ogg-5fbe35a499bc8567d929f5a14df3c011.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/239 - Crisis 1.ogg"
-dest_files=["res://.godot/imported/239 - Crisis 1.ogg-ce70e441431816b896b8d2d7ad447bbe.oggvorbisstr"]
+source_file="res://assets/GBA/music/239 - Crisis 1.ogg"
+dest_files=["res://.godot/imported/239 - Crisis 1.ogg-5fbe35a499bc8567d929f5a14df3c011.oggvorbisstr"]
 
 [params]
 

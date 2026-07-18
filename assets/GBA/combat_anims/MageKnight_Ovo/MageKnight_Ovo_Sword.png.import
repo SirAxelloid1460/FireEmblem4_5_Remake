@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2g6w2p2cjgqi"
-path="res://.godot/imported/MageKnight_Ovo_Sword.png-a81e62ff58951c6f873ae66c2c331fc6.ctex"
+path="res://.godot/imported/MageKnight_Ovo_Sword.png-f84b5889e4d956f9f42e4802b0a27a55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Ovo/MageKnight_Ovo_Sword.png"
-dest_files=["res://.godot/imported/MageKnight_Ovo_Sword.png-a81e62ff58951c6f873ae66c2c331fc6.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Ovo/MageKnight_Ovo_Sword.png"
+dest_files=["res://.godot/imported/MageKnight_Ovo_Sword.png-f84b5889e4d956f9f42e4802b0a27a55.ctex"]
 
 [params]
 

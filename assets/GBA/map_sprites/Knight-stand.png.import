@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvyse348rd52x"
-path="res://.godot/imported/Knight-stand.png-f2d9eff331c54b57db68235e6b385fb5.ctex"
+path="res://.godot/imported/Knight-stand.png-dd5ce8cda60e109fad047a00cec331a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Knight-stand.png"
-dest_files=["res://.godot/imported/Knight-stand.png-f2d9eff331c54b57db68235e6b385fb5.ctex"]
+source_file="res://assets/GBA/map_sprites/Knight-stand.png"
+dest_files=["res://.godot/imported/Knight-stand.png-dd5ce8cda60e109fad047a00cec331a7.ctex"]
 
 [params]
 

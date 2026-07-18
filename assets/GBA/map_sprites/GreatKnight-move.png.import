@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcfsg4rkfl3v6"
-path="res://.godot/imported/GreatKnight-move.png-8ec26758ddf8e3ac21ca7bc166643017.ctex"
+path="res://.godot/imported/GreatKnight-move.png-66af5196c01a0696ec2578a8efc7229d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/GreatKnight-move.png"
-dest_files=["res://.godot/imported/GreatKnight-move.png-8ec26758ddf8e3ac21ca7bc166643017.ctex"]
+source_file="res://assets/GBA/map_sprites/GreatKnight-move.png"
+dest_files=["res://.godot/imported/GreatKnight-move.png-66af5196c01a0696ec2578a8efc7229d.ctex"]
 
 [params]
 

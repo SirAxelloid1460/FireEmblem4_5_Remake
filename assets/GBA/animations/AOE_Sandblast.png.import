@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwlflahpi344t"
-path="res://.godot/imported/AOE_Sandblast.png-bc1b4b443a2677dbbf7498b0fbc17099.ctex"
+path="res://.godot/imported/AOE_Sandblast.png-df503acd904122a69e25adac9af2ec8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/AOE_Sandblast.png"
-dest_files=["res://.godot/imported/AOE_Sandblast.png-bc1b4b443a2677dbbf7498b0fbc17099.ctex"]
+source_file="res://assets/GBA/animations/AOE_Sandblast.png"
+dest_files=["res://.godot/imported/AOE_Sandblast.png-df503acd904122a69e25adac9af2ec8b.ctex"]
 
 [params]
 

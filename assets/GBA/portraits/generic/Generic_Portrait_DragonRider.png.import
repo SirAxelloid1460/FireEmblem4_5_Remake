@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c03f71w41iklu"
-path="res://.godot/imported/Generic_Portrait_DragonRider.png-369d09790e7a5d73a4c73a475fcfe545.ctex"
+path="res://.godot/imported/Generic_Portrait_DragonRider.png-b6cf005d43725905e10ca8574aae8baf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_DragonRider.png"
-dest_files=["res://.godot/imported/Generic_Portrait_DragonRider.png-369d09790e7a5d73a4c73a475fcfe545.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_DragonRider.png"
+dest_files=["res://.godot/imported/Generic_Portrait_DragonRider.png-b6cf005d43725905e10ca8574aae8baf.ctex"]
 
 [params]
 

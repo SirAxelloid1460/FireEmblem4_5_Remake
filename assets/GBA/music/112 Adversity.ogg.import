@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b3mv3isejihw"
-path="res://.godot/imported/112 Adversity.ogg-81df8eae215a5ea008cadc925be9961f.oggvorbisstr"
+path="res://.godot/imported/112 Adversity.ogg-d8b7e7b02bee6be3a896e0435e6b484f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/112 Adversity.ogg"
-dest_files=["res://.godot/imported/112 Adversity.ogg-81df8eae215a5ea008cadc925be9961f.oggvorbisstr"]
+source_file="res://assets/GBA/music/112 Adversity.ogg"
+dest_files=["res://.godot/imported/112 Adversity.ogg-d8b7e7b02bee6be3a896e0435e6b484f.oggvorbisstr"]
 
 [params]
 

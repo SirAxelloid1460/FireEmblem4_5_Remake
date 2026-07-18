@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c3qlm7lho6qog"
-path="res://.godot/imported/Sword Whoosh.ogg-e8f74909ba8a51b6f86b435d930c6c87.oggvorbisstr"
+path="res://.godot/imported/Sword Whoosh.ogg-81c8a2b82bd981dc41dea92d6bf44745.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Sword Whoosh.ogg"
-dest_files=["res://.godot/imported/Sword Whoosh.ogg-e8f74909ba8a51b6f86b435d930c6c87.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Sword Whoosh.ogg"
+dest_files=["res://.godot/imported/Sword Whoosh.ogg-81c8a2b82bd981dc41dea92d6bf44745.oggvorbisstr"]
 
 [params]
 

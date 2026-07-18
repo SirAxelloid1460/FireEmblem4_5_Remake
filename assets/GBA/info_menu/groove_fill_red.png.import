@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://f63ywbqt6vle"
-path="res://.godot/imported/groove_fill_red.png-cef55c58e46bd2ae2ac2d9650ca5de9c.ctex"
+path="res://.godot/imported/groove_fill_red.png-9b90d6c73f894383e4194e948fc95bbc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/info_menu/groove_fill_red.png"
-dest_files=["res://.godot/imported/groove_fill_red.png-cef55c58e46bd2ae2ac2d9650ca5de9c.ctex"]
+source_file="res://assets/GBA/info_menu/groove_fill_red.png"
+dest_files=["res://.godot/imported/groove_fill_red.png-9b90d6c73f894383e4194e948fc95bbc.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dii5ulp4w80kw"
-path="res://.godot/imported/MasterKnight_Male_HandAxe.png-84939051a41da4d323d21a7a3f928434.ctex"
+path="res://.godot/imported/MasterKnight_Male_HandAxe.png-70884524be1c67f4a37aee23a7f80baf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MasterKnight_Male/MasterKnight_Male_HandAxe.png"
-dest_files=["res://.godot/imported/MasterKnight_Male_HandAxe.png-84939051a41da4d323d21a7a3f928434.ctex"]
+source_file="res://assets/GBA/combat_anims/MasterKnight_Male/MasterKnight_Male_HandAxe.png"
+dest_files=["res://.godot/imported/MasterKnight_Male_HandAxe.png-70884524be1c67f4a37aee23a7f80baf.ctex"]
 
 [params]
 

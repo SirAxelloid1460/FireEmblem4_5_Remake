@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c587fkvr7kvj4"
-path="res://.godot/imported/Seliph.png-b53a331818efd6d20fb1cd44c494d853.ctex"
+path="res://.godot/imported/Seliph.png-73712084ee88e81a3f91047225809abd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Seliph.png"
-dest_files=["res://.godot/imported/Seliph.png-b53a331818efd6d20fb1cd44c494d853.ctex"]
+source_file="res://assets/GBA/portraits/characters/Seliph.png"
+dest_files=["res://.godot/imported/Seliph.png-73712084ee88e81a3f91047225809abd.ctex"]
 
 [params]
 

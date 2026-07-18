@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbl3d46wc0ncc"
-path="res://.godot/imported/Warrior_Generic_Axe.png-de76f58f58f55b2e64b1129df3628d91.ctex"
+path="res://.godot/imported/Warrior_Generic_Axe.png-6f637969afdb9ecefdbdedd58e724637.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Warrior_Generic/Warrior_Generic_Axe.png"
-dest_files=["res://.godot/imported/Warrior_Generic_Axe.png-de76f58f58f55b2e64b1129df3628d91.ctex"]
+source_file="res://assets/GBA/combat_anims/Warrior_Generic/Warrior_Generic_Axe.png"
+dest_files=["res://.godot/imported/Warrior_Generic_Axe.png-6f637969afdb9ecefdbdedd58e724637.ctex"]
 
 [params]
 

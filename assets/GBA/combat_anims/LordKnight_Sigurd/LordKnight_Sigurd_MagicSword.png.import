@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckukb6huxwvpe"
-path="res://.godot/imported/LordKnight_Sigurd_MagicSword.png-cd8c09ea88d067c362a9ad982be2d1a7.ctex"
+path="res://.godot/imported/LordKnight_Sigurd_MagicSword.png-cc1bd78cb0ab468b8c7f142cb8abed7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/LordKnight_Sigurd/LordKnight_Sigurd_MagicSword.png"
-dest_files=["res://.godot/imported/LordKnight_Sigurd_MagicSword.png-cd8c09ea88d067c362a9ad982be2d1a7.ctex"]
+source_file="res://assets/GBA/combat_anims/LordKnight_Sigurd/LordKnight_Sigurd_MagicSword.png"
+dest_files=["res://.godot/imported/LordKnight_Sigurd_MagicSword.png-cc1bd78cb0ab468b8c7f142cb8abed7a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://km2f7n4lo6bm"
-path="res://.godot/imported/Swordmaster_Lamia_Sword.png-cb5dc6d46c33c7e87edbb159b12f1545.ctex"
+path="res://.godot/imported/Swordmaster_Lamia_Sword.png-82bc1f50eaf3d1af8dd532225cec09e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Lamia/Swordmaster_Lamia_Sword.png"
-dest_files=["res://.godot/imported/Swordmaster_Lamia_Sword.png-cb5dc6d46c33c7e87edbb159b12f1545.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Lamia/Swordmaster_Lamia_Sword.png"
+dest_files=["res://.godot/imported/Swordmaster_Lamia_Sword.png-82bc1f50eaf3d1af8dd532225cec09e9.ctex"]
 
 [params]
 

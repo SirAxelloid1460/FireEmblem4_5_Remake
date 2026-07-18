@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djbkfsplhp84n"
-path="res://.godot/imported/overflowpurple_hp_blip.png-954e5791de6bca88c6d533ac24e30413.ctex"
+path="res://.godot/imported/overflowpurple_hp_blip.png-69e1dbd8549f32ec628ee4a5e1436282.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_displays/overflowpurple_hp_blip.png"
-dest_files=["res://.godot/imported/overflowpurple_hp_blip.png-954e5791de6bca88c6d533ac24e30413.ctex"]
+source_file="res://assets/GBA/combat_displays/overflowpurple_hp_blip.png"
+dest_files=["res://.godot/imported/overflowpurple_hp_blip.png-69e1dbd8549f32ec628ee4a5e1436282.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b2gemyyebqkcp"
-path="res://.godot/imported/205 - Silesia Army.ogg-8b681d282c5f5bd17996859e248af0dd.oggvorbisstr"
+path="res://.godot/imported/205 - Silesia Army.ogg-d7c2d70141fc265e3e27a8e1f51f506f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/205 - Silesia Army.ogg"
-dest_files=["res://.godot/imported/205 - Silesia Army.ogg-8b681d282c5f5bd17996859e248af0dd.oggvorbisstr"]
+source_file="res://assets/GBA/music/205 - Silesia Army.ogg"
+dest_files=["res://.godot/imported/205 - Silesia Army.ogg-d7c2d70141fc265e3e27a8e1f51f506f.oggvorbisstr"]
 
 [params]
 

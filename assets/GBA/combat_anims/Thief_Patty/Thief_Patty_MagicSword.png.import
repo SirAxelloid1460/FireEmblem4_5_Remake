@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1vmfa265yf0p"
-path="res://.godot/imported/Thief_Patty_MagicSword.png-c3d8975c4e3208ac2a4463fa70c09dba.ctex"
+path="res://.godot/imported/Thief_Patty_MagicSword.png-864340f02916082f1c24eb9b367569fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Thief_Patty/Thief_Patty_MagicSword.png"
-dest_files=["res://.godot/imported/Thief_Patty_MagicSword.png-c3d8975c4e3208ac2a4463fa70c09dba.ctex"]
+source_file="res://assets/GBA/combat_anims/Thief_Patty/Thief_Patty_MagicSword.png"
+dest_files=["res://.godot/imported/Thief_Patty_MagicSword.png-864340f02916082f1c24eb9b367569fe.ctex"]
 
 [params]
 

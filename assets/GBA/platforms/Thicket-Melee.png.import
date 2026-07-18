@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cer0gsyheoseb"
-path="res://.godot/imported/Thicket-Melee.png-f2a0e09c03e2ceec470e2421b11dae99.ctex"
+path="res://.godot/imported/Thicket-Melee.png-f1f776ee8fb73740cba886e8d16b90d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Thicket-Melee.png"
-dest_files=["res://.godot/imported/Thicket-Melee.png-f2a0e09c03e2ceec470e2421b11dae99.ctex"]
+source_file="res://assets/GBA/platforms/Thicket-Melee.png"
+dest_files=["res://.godot/imported/Thicket-Melee.png-f1f776ee8fb73740cba886e8d16b90d0.ctex"]
 
 [params]
 

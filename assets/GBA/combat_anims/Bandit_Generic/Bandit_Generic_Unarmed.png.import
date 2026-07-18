@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce7yf8c7kxpvt"
-path="res://.godot/imported/Bandit_Generic_Unarmed.png-29bb232852157c08417c1ca1dfd0fdaa.ctex"
+path="res://.godot/imported/Bandit_Generic_Unarmed.png-94b9ac1b6b27aa5e4e1102be89410e28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Bandit_Generic/Bandit_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/Bandit_Generic_Unarmed.png-29bb232852157c08417c1ca1dfd0fdaa.ctex"]
+source_file="res://assets/GBA/combat_anims/Bandit_Generic/Bandit_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/Bandit_Generic_Unarmed.png-94b9ac1b6b27aa5e4e1102be89410e28.ctex"]
 
 [params]
 

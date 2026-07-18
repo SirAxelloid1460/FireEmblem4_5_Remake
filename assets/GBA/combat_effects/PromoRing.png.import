@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwf1t4svlrw7x"
-path="res://.godot/imported/PromoRing.png-5208a37b154cd49531459a4ac59cec8d.ctex"
+path="res://.godot/imported/PromoRing.png-eaf07b55244129d4d2c374ee2b3bb169.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/PromoRing.png"
-dest_files=["res://.godot/imported/PromoRing.png-5208a37b154cd49531459a4ac59cec8d.ctex"]
+source_file="res://assets/GBA/combat_effects/PromoRing.png"
+dest_files=["res://.godot/imported/PromoRing.png-eaf07b55244129d4d2c374ee2b3bb169.ctex"]
 
 [params]
 

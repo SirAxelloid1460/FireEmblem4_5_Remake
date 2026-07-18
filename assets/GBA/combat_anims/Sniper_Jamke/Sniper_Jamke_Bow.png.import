@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1ackhi5fmcff"
-path="res://.godot/imported/Sniper_Jamke_Bow.png-198c7d0764d924e4e7696c80bfd4f7a3.ctex"
+path="res://.godot/imported/Sniper_Jamke_Bow.png-35b15c04bdd20c3e402c3a4d9b62a82d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sniper_Jamke/Sniper_Jamke_Bow.png"
-dest_files=["res://.godot/imported/Sniper_Jamke_Bow.png-198c7d0764d924e4e7696c80bfd4f7a3.ctex"]
+source_file="res://assets/GBA/combat_anims/Sniper_Jamke/Sniper_Jamke_Bow.png"
+dest_files=["res://.godot/imported/Sniper_Jamke_Bow.png-35b15c04bdd20c3e402c3a4d9b62a82d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp88yi1xndx4g"
-path="res://.godot/imported/Emperor_Generic_Axe.png-968ac76112c0512ef03b5e610024285a.ctex"
+path="res://.godot/imported/Emperor_Generic_Axe.png-1770ad917e647bba7e93f4f60af68e83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Emperor_Generic/Emperor_Generic_Axe.png"
-dest_files=["res://.godot/imported/Emperor_Generic_Axe.png-968ac76112c0512ef03b5e610024285a.ctex"]
+source_file="res://assets/GBA/combat_anims/Emperor_Generic/Emperor_Generic_Axe.png"
+dest_files=["res://.godot/imported/Emperor_Generic_Axe.png-1770ad917e647bba7e93f4f60af68e83.ctex"]
 
 [params]
 

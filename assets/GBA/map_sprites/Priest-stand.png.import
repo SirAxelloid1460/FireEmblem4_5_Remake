@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccd0c7urmqubm"
-path="res://.godot/imported/Priest-stand.png-b9619b14298ff523703b088e582bf5a7.ctex"
+path="res://.godot/imported/Priest-stand.png-59e55fae9ffb090215a780c4a1812154.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Priest-stand.png"
-dest_files=["res://.godot/imported/Priest-stand.png-b9619b14298ff523703b088e582bf5a7.ctex"]
+source_file="res://assets/GBA/map_sprites/Priest-stand.png"
+dest_files=["res://.godot/imported/Priest-stand.png-59e55fae9ffb090215a780c4a1812154.ctex"]
 
 [params]
 

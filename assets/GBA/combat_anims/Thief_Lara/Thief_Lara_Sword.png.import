@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhmsfvj7pg2eg"
-path="res://.godot/imported/Thief_Lara_Sword.png-86983c31705b9c035af643886d6974c0.ctex"
+path="res://.godot/imported/Thief_Lara_Sword.png-971b1bf0e549669b6d2bd1dce20bc2f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Thief_Lara/Thief_Lara_Sword.png"
-dest_files=["res://.godot/imported/Thief_Lara_Sword.png-86983c31705b9c035af643886d6974c0.ctex"]
+source_file="res://assets/GBA/combat_anims/Thief_Lara/Thief_Lara_Sword.png"
+dest_files=["res://.godot/imported/Thief_Lara_Sword.png-971b1bf0e549669b6d2bd1dce20bc2f8.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjwx7pkp2wxj0"
-path="res://.godot/imported/Generic_Portrait_Ballistae.png-6bb7fe7d5490cf3593b25249d979d766.ctex"
+path="res://.godot/imported/Generic_Portrait_Ballistae.png-54db8938838118d643b593f625ccf6e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Ballistae.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Ballistae.png-6bb7fe7d5490cf3593b25249d979d766.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Ballistae.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Ballistae.png-54db8938838118d643b593f625ccf6e7.ctex"]
 
 [params]
 

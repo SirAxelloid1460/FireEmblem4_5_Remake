@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://h4tb40wewr2q"
-path="res://.godot/imported/TacticsRoomDay.png-529bcbebffa82e53d33521dd993eff2f.ctex"
+path="res://.godot/imported/TacticsRoomDay.png-352ea6a931d48d8c10ada4519ad673cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/TacticsRoomDay.png"
-dest_files=["res://.godot/imported/TacticsRoomDay.png-529bcbebffa82e53d33521dd993eff2f.ctex"]
+source_file="res://assets/GBA/panoramas/TacticsRoomDay.png"
+dest_files=["res://.godot/imported/TacticsRoomDay.png-352ea6a931d48d8c10ada4519ad673cd.ctex"]
 
 [params]
 

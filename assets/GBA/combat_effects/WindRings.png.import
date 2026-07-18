@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwjvs2fp6ptrw"
-path="res://.godot/imported/WindRings.png-da068070b854c3ef0cf955cb8a997196.ctex"
+path="res://.godot/imported/WindRings.png-2ee56874ba5d5c76244ef3faf8243b8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/WindRings.png"
-dest_files=["res://.godot/imported/WindRings.png-da068070b854c3ef0cf955cb8a997196.ctex"]
+source_file="res://assets/GBA/combat_effects/WindRings.png"
+dest_files=["res://.godot/imported/WindRings.png-2ee56874ba5d5c76244ef3faf8243b8c.ctex"]
 
 [params]
 

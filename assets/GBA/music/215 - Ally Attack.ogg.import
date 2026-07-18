@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dw2vc6i001r4h"
-path="res://.godot/imported/215 - Ally Attack.ogg-89fca14e389c304a77f670deca8775e5.oggvorbisstr"
+path="res://.godot/imported/215 - Ally Attack.ogg-b6f683be253060a31e80266c59f75da6.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/215 - Ally Attack.ogg"
-dest_files=["res://.godot/imported/215 - Ally Attack.ogg-89fca14e389c304a77f670deca8775e5.oggvorbisstr"]
+source_file="res://assets/GBA/music/215 - Ally Attack.ogg"
+dest_files=["res://.godot/imported/215 - Ally Attack.ogg-b6f683be253060a31e80266c59f75da6.oggvorbisstr"]
 
 [params]
 

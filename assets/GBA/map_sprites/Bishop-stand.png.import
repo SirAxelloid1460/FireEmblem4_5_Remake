@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c73b3toqxrib0"
-path="res://.godot/imported/Bishop-stand.png-7aedb59add0a1423fc2e620cdef21699.ctex"
+path="res://.godot/imported/Bishop-stand.png-54074f6c27e3694a0f9942fca86111ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Bishop-stand.png"
-dest_files=["res://.godot/imported/Bishop-stand.png-7aedb59add0a1423fc2e620cdef21699.ctex"]
+source_file="res://assets/GBA/map_sprites/Bishop-stand.png"
+dest_files=["res://.godot/imported/Bishop-stand.png-54074f6c27e3694a0f9942fca86111ff.ctex"]
 
 [params]
 

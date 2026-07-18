@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dj2qkcitt2y8o"
-path="res://.godot/imported/Daccar.png-43567f27ac3bda250aa6679d17c98423.ctex"
+path="res://.godot/imported/Daccar.png-69aee8954126572249a3968198e7252d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Daccar.png"
-dest_files=["res://.godot/imported/Daccar.png-43567f27ac3bda250aa6679d17c98423.ctex"]
+source_file="res://assets/GBA/portraits/characters/Daccar.png"
+dest_files=["res://.godot/imported/Daccar.png-69aee8954126572249a3968198e7252d.ctex"]
 
 [params]
 

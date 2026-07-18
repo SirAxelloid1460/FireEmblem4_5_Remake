@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5ehx86id2s0o"
-path="res://.godot/imported/FreeKnight_Generic_Sword.png-d9e3194d6fb529cf4009807330d31fe1.ctex"
+path="res://.godot/imported/FreeKnight_Generic_Sword.png-9199e5f4a08253af8a6ea1e643689980.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/FreeKnight_Generic/FreeKnight_Generic_Sword.png"
-dest_files=["res://.godot/imported/FreeKnight_Generic_Sword.png-d9e3194d6fb529cf4009807330d31fe1.ctex"]
+source_file="res://assets/GBA/combat_anims/FreeKnight_Generic/FreeKnight_Generic_Sword.png"
+dest_files=["res://.godot/imported/FreeKnight_Generic_Sword.png-9199e5f4a08253af8a6ea1e643689980.ctex"]
 
 [params]
 

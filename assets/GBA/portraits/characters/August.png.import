@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vxpxmbkaj1ns"
-path="res://.godot/imported/August.png-d95e63a067971f947e1626bd8891d4fc.ctex"
+path="res://.godot/imported/August.png-3efad1b45248c2332a2d9bcede1ba5c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/August.png"
-dest_files=["res://.godot/imported/August.png-d95e63a067971f947e1626bd8891d4fc.ctex"]
+source_file="res://assets/GBA/portraits/characters/August.png"
+dest_files=["res://.godot/imported/August.png-3efad1b45248c2332a2d9bcede1ba5c5.ctex"]
 
 [params]
 

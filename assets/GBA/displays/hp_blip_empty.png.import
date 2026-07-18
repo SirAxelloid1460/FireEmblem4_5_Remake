@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duyiskin3j5xk"
-path="res://.godot/imported/hp_blip_empty.png-712c8907ba0b296a9695b7d676bec738.ctex"
+path="res://.godot/imported/hp_blip_empty.png-39e1e79c6490034737b619e3f1ae51ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/displays/hp_blip_empty.png"
-dest_files=["res://.godot/imported/hp_blip_empty.png-712c8907ba0b296a9695b7d676bec738.ctex"]
+source_file="res://assets/GBA/displays/hp_blip_empty.png"
+dest_files=["res://.godot/imported/hp_blip_empty.png-39e1e79c6490034737b619e3f1ae51ac.ctex"]
 
 [params]
 

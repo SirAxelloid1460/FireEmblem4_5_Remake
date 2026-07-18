@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0h8nv4wwbp1e"
-path="res://.godot/imported/DragonRider_Generic_Lance.png-1e3b4b861bde7fed6b75e3130d6963a8.ctex"
+path="res://.godot/imported/DragonRider_Generic_Lance.png-0824d35c04475dedda3bab53e6fe9162.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DragonRider_Generic/DragonRider_Generic_Lance.png"
-dest_files=["res://.godot/imported/DragonRider_Generic_Lance.png-1e3b4b861bde7fed6b75e3130d6963a8.ctex"]
+source_file="res://assets/GBA/combat_anims/DragonRider_Generic/DragonRider_Generic_Lance.png"
+dest_files=["res://.godot/imported/DragonRider_Generic_Lance.png-0824d35c04475dedda3bab53e6fe9162.ctex"]
 
 [params]
 

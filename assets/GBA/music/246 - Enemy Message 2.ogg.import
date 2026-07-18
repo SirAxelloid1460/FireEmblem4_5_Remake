@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://utsdpo344skx"
-path="res://.godot/imported/246 - Enemy Message 2.ogg-4b34f29a32eb34fef53d31737e72c182.oggvorbisstr"
+path="res://.godot/imported/246 - Enemy Message 2.ogg-4f69e32f119a275e76ab042a9c675f4b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/246 - Enemy Message 2.ogg"
-dest_files=["res://.godot/imported/246 - Enemy Message 2.ogg-4b34f29a32eb34fef53d31737e72c182.oggvorbisstr"]
+source_file="res://assets/GBA/music/246 - Enemy Message 2.ogg"
+dest_files=["res://.godot/imported/246 - Enemy Message 2.ogg-4f69e32f119a275e76ab042a9c675f4b.oggvorbisstr"]
 
 [params]
 

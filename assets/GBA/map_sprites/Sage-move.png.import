@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1mm4r7m2ei7t"
-path="res://.godot/imported/Sage-move.png-78fe2fc3877139622b86fea5e807512b.ctex"
+path="res://.godot/imported/Sage-move.png-498e4eaa764c54e75f06b043e9547bf0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Sage-move.png"
-dest_files=["res://.godot/imported/Sage-move.png-78fe2fc3877139622b86fea5e807512b.ctex"]
+source_file="res://assets/GBA/map_sprites/Sage-move.png"
+dest_files=["res://.godot/imported/Sage-move.png-498e4eaa764c54e75f06b043e9547bf0.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://tiwecsyjw0lv"
-path="res://.godot/imported/338 - Wind Warrior Holsety.ogg-d15ead0d53928db4ccc0fb8fef96658d.oggvorbisstr"
+path="res://.godot/imported/338 - Wind Warrior Holsety.ogg-31f9bd98d91015ebb090cfd437f19277.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/338 - Wind Warrior Holsety.ogg"
-dest_files=["res://.godot/imported/338 - Wind Warrior Holsety.ogg-d15ead0d53928db4ccc0fb8fef96658d.oggvorbisstr"]
+source_file="res://assets/GBA/music/338 - Wind Warrior Holsety.ogg"
+dest_files=["res://.godot/imported/338 - Wind Warrior Holsety.ogg-31f9bd98d91015ebb090cfd437f19277.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckjivtwt6wcvn"
-path="res://.godot/imported/DarkForest.png-fd7a810981c34d742402183b4817d74e.ctex"
+path="res://.godot/imported/DarkForest.png-368e4b513893cc9dcd59e6602feb2e0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/DarkForest.png"
-dest_files=["res://.godot/imported/DarkForest.png-fd7a810981c34d742402183b4817d74e.ctex"]
+source_file="res://assets/GBA/panoramas/DarkForest.png"
+dest_files=["res://.godot/imported/DarkForest.png-368e4b513893cc9dcd59e6602feb2e0d.ctex"]
 
 [params]
 

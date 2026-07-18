@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqpds15yvcyqm"
-path="res://.godot/imported/Priest_Sleuf_MagicStaff.png-433127eb148670524c4ef47188f8c619.ctex"
+path="res://.godot/imported/Priest_Sleuf_MagicStaff.png-8b4ced0b8f643f741ed5687f61685b4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Priest_Sleuf/Priest_Sleuf_MagicStaff.png"
-dest_files=["res://.godot/imported/Priest_Sleuf_MagicStaff.png-433127eb148670524c4ef47188f8c619.ctex"]
+source_file="res://assets/GBA/combat_anims/Priest_Sleuf/Priest_Sleuf_MagicStaff.png"
+dest_files=["res://.godot/imported/Priest_Sleuf_MagicStaff.png-8b4ced0b8f643f741ed5687f61685b4b.ctex"]
 
 [params]
 

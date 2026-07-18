@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dl3sno54xetqn"
-path="res://.godot/imported/Poison.ogg-b205ba99bc94ac3757a67a2dc9d3cb19.oggvorbisstr"
+path="res://.godot/imported/Poison.ogg-7be6e65348356aae988a58590866d48f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Poison.ogg"
-dest_files=["res://.godot/imported/Poison.ogg-b205ba99bc94ac3757a67a2dc9d3cb19.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Poison.ogg"
+dest_files=["res://.godot/imported/Poison.ogg-7be6e65348356aae988a58590866d48f.oggvorbisstr"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://pg480bi40nwa"
-path="res://.godot/imported/MonkRune.ogg-54a2d64dc653c20c6f07a9a77cbd7476.oggvorbisstr"
+path="res://.godot/imported/MonkRune.ogg-f032d4b1952217c7b0dbc3db22501c29.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/MonkRune.ogg"
-dest_files=["res://.godot/imported/MonkRune.ogg-54a2d64dc653c20c6f07a9a77cbd7476.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/MonkRune.ogg"
+dest_files=["res://.godot/imported/MonkRune.ogg-f032d4b1952217c7b0dbc3db22501c29.oggvorbisstr"]
 
 [params]
 

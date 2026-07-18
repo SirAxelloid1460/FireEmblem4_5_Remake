@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxgqdrvuxqndg"
-path="res://.godot/imported/Mercenary_Machyua_MagicSword.png-620c3911a776c3eea871b6a6cfbcf082.ctex"
+path="res://.godot/imported/Mercenary_Machyua_MagicSword.png-190abd757d2c8c13e21cf6ac02803a4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Mercenary_Machyua/Mercenary_Machyua_MagicSword.png"
-dest_files=["res://.godot/imported/Mercenary_Machyua_MagicSword.png-620c3911a776c3eea871b6a6cfbcf082.ctex"]
+source_file="res://assets/GBA/combat_anims/Mercenary_Machyua/Mercenary_Machyua_MagicSword.png"
+dest_files=["res://.godot/imported/Mercenary_Machyua_MagicSword.png-190abd757d2c8c13e21cf6ac02803a4f.ctex"]
 
 [params]
 

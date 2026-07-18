@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cabqds6lrut8v"
-path="res://.godot/imported/MapSilence.png-bfbf08b71d45ae186ede3def04beb47f.ctex"
+path="res://.godot/imported/MapSilence.png-3d7ea90e59bbd52171738be491a83b4d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/MapSilence.png"
-dest_files=["res://.godot/imported/MapSilence.png-bfbf08b71d45ae186ede3def04beb47f.ctex"]
+source_file="res://assets/GBA/animations/MapSilence.png"
+dest_files=["res://.godot/imported/MapSilence.png-3d7ea90e59bbd52171738be491a83b4d.ctex"]
 
 [params]
 

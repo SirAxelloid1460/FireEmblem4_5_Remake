@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjo8shuhca44q"
-path="res://.godot/imported/LordKnight_Seliph_Unarmed.png-b879c32aa8f7356f197a7fb2467f9792.ctex"
+path="res://.godot/imported/LordKnight_Seliph_Unarmed.png-39c562b6a8f81f679a04f0f048c65c76.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/LordKnight_Seliph/LordKnight_Seliph_Unarmed.png"
-dest_files=["res://.godot/imported/LordKnight_Seliph_Unarmed.png-b879c32aa8f7356f197a7fb2467f9792.ctex"]
+source_file="res://assets/GBA/combat_anims/LordKnight_Seliph/LordKnight_Seliph_Unarmed.png"
+dest_files=["res://.godot/imported/LordKnight_Seliph_Unarmed.png-39c562b6a8f81f679a04f0f048c65c76.ctex"]
 
 [params]
 

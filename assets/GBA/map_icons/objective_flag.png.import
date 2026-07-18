@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blrikjl0i5u2l"
-path="res://.godot/imported/objective_flag.png-1931705ce16599afa2832cd6f1ea41ad.ctex"
+path="res://.godot/imported/objective_flag.png-d323033c800c7ca5b4f69fc70e92c64b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_icons/objective_flag.png"
-dest_files=["res://.godot/imported/objective_flag.png-1931705ce16599afa2832cd6f1ea41ad.ctex"]
+source_file="res://assets/GBA/map_icons/objective_flag.png"
+dest_files=["res://.godot/imported/objective_flag.png-d323033c800c7ca5b4f69fc70e92c64b.ctex"]
 
 [params]
 

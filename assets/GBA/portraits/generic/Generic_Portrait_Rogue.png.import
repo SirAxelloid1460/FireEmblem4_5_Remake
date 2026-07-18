@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://to7kjk8yngh8"
-path="res://.godot/imported/Generic_Portrait_Rogue.png-c7082c3606a561fbda4358d2a9532878.ctex"
+path="res://.godot/imported/Generic_Portrait_Rogue.png-a974dae7b5f3f961967ebf75d390d75a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Rogue.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Rogue.png-c7082c3606a561fbda4358d2a9532878.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Rogue.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Rogue.png-a974dae7b5f3f961967ebf75d390d75a.ctex"]
 
 [params]
 

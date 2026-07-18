@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://k8eecki4umcx"
-path="res://.godot/imported/GleipnirBigRay.png-a04a3eaf2601fdb5b52a38fab8fb0f7f.ctex"
+path="res://.godot/imported/GleipnirBigRay.png-f7db9601c149406444aac61dec797c51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/GleipnirBigRay.png"
-dest_files=["res://.godot/imported/GleipnirBigRay.png-a04a3eaf2601fdb5b52a38fab8fb0f7f.ctex"]
+source_file="res://assets/GBA/combat_effects/GleipnirBigRay.png"
+dest_files=["res://.godot/imported/GleipnirBigRay.png-f7db9601c149406444aac61dec797c51.ctex"]
 
 [params]
 

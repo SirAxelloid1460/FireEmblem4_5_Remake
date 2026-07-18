@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8c4pyci4l2st"
-path="res://.godot/imported/Ephraim_Great_Lord-move.png-c87477e75a1c2d125f39d0f1d9d46ca7.ctex"
+path="res://.godot/imported/Ephraim_Great_Lord-move.png-d586f02566e228416aa575cb8f0d124e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Ephraim_Great_Lord-move.png"
-dest_files=["res://.godot/imported/Ephraim_Great_Lord-move.png-c87477e75a1c2d125f39d0f1d9d46ca7.ctex"]
+source_file="res://assets/GBA/map_sprites/Ephraim_Great_Lord-move.png"
+dest_files=["res://.godot/imported/Ephraim_Great_Lord-move.png-d586f02566e228416aa575cb8f0d124e.ctex"]
 
 [params]
 

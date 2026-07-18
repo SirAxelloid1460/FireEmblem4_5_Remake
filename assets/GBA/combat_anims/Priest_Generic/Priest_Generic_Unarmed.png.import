@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkg4kqd8x18on"
-path="res://.godot/imported/Priest_Generic_Unarmed.png-b667a5a3cf629617b88cbf54c382c6aa.ctex"
+path="res://.godot/imported/Priest_Generic_Unarmed.png-86f557df493ee2656f587a46aad5f2b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Priest_Generic/Priest_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/Priest_Generic_Unarmed.png-b667a5a3cf629617b88cbf54c382c6aa.ctex"]
+source_file="res://assets/GBA/combat_anims/Priest_Generic/Priest_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/Priest_Generic_Unarmed.png-86f557df493ee2656f587a46aad5f2b6.ctex"]
 
 [params]
 

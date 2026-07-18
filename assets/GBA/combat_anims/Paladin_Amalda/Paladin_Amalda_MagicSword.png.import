@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2nwppakw5ec0"
-path="res://.godot/imported/Paladin_Amalda_MagicSword.png-cd10e4c43224573a40509fa6e7a222f2.ctex"
+path="res://.godot/imported/Paladin_Amalda_MagicSword.png-ab8d0d69ade9bf6278dccdff09f709be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Amalda/Paladin_Amalda_MagicSword.png"
-dest_files=["res://.godot/imported/Paladin_Amalda_MagicSword.png-cd10e4c43224573a40509fa6e7a222f2.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Amalda/Paladin_Amalda_MagicSword.png"
+dest_files=["res://.godot/imported/Paladin_Amalda_MagicSword.png-ab8d0d69ade9bf6278dccdff09f709be.ctex"]
 
 [params]
 

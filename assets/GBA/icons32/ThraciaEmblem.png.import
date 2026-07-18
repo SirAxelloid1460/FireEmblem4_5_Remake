@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp6rga0vmwyl"
-path="res://.godot/imported/ThraciaEmblem.png-611020434ed15e4d4027c942e8da416c.ctex"
+path="res://.godot/imported/ThraciaEmblem.png-628b3013ecac8ec82c632a8f9b4f3078.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons32/ThraciaEmblem.png"
-dest_files=["res://.godot/imported/ThraciaEmblem.png-611020434ed15e4d4027c942e8da416c.ctex"]
+source_file="res://assets/GBA/icons32/ThraciaEmblem.png"
+dest_files=["res://.godot/imported/ThraciaEmblem.png-628b3013ecac8ec82c632a8f9b4f3078.ctex"]
 
 [params]
 

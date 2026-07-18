@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctgu3xyhebe1o"
-path="res://.godot/imported/Ishtore.png-e9446656eafc9fbe49223d49838f3cc1.ctex"
+path="res://.godot/imported/Ishtore.png-72c0bed04ee0881f6894e5314dff1d38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Ishtore.png"
-dest_files=["res://.godot/imported/Ishtore.png-e9446656eafc9fbe49223d49838f3cc1.ctex"]
+source_file="res://assets/GBA/portraits/characters/Ishtore.png"
+dest_files=["res://.godot/imported/Ishtore.png-72c0bed04ee0881f6894e5314dff1d38.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpvku7kdw60g7"
-path="res://.godot/imported/DragonKnight-stand.png-6d023b50004e5bc81101270f880175bc.ctex"
+path="res://.godot/imported/DragonKnight-stand.png-72195e3e81392ec6a8dba1bfc8f6253e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/DragonKnight-stand.png"
-dest_files=["res://.godot/imported/DragonKnight-stand.png-6d023b50004e5bc81101270f880175bc.ctex"]
+source_file="res://assets/GBA/map_sprites/DragonKnight-stand.png"
+dest_files=["res://.godot/imported/DragonKnight-stand.png-72195e3e81392ec6a8dba1bfc8f6253e.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dwb4lpjxliew6"
-path="res://.godot/imported/EckesachsRanged.ogg-3af0197350f3afe5c538d297a86f3add.oggvorbisstr"
+path="res://.godot/imported/EckesachsRanged.ogg-6e8620839b2ea900e1b38a3df5a93239.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/EckesachsRanged.ogg"
-dest_files=["res://.godot/imported/EckesachsRanged.ogg-3af0197350f3afe5c538d297a86f3add.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/EckesachsRanged.ogg"
+dest_files=["res://.godot/imported/EckesachsRanged.ogg-6e8620839b2ea900e1b38a3df5a93239.oggvorbisstr"]
 
 [params]
 

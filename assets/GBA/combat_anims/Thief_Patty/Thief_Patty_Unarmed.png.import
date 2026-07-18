@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cegrkwgfppxc1"
-path="res://.godot/imported/Thief_Patty_Unarmed.png-a8db5edc98a49f55bcbb046a0bd62e59.ctex"
+path="res://.godot/imported/Thief_Patty_Unarmed.png-7d6db2e336a0640fd364786cea3ddf79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Thief_Patty/Thief_Patty_Unarmed.png"
-dest_files=["res://.godot/imported/Thief_Patty_Unarmed.png-a8db5edc98a49f55bcbb046a0bd62e59.ctex"]
+source_file="res://assets/GBA/combat_anims/Thief_Patty/Thief_Patty_Unarmed.png"
+dest_files=["res://.godot/imported/Thief_Patty_Unarmed.png-7d6db2e336a0640fd364786cea3ddf79.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lug31dk0lu1k"
-path="res://.godot/imported/Palace.png-eafd3eb707dfce0921396b8be052d699.ctex"
+path="res://.godot/imported/Palace.png-fa795fb6ae663582a1d513519dc3640a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/Palace.png"
-dest_files=["res://.godot/imported/Palace.png-eafd3eb707dfce0921396b8be052d699.ctex"]
+source_file="res://assets/GBA/panoramas/Palace.png"
+dest_files=["res://.godot/imported/Palace.png-fa795fb6ae663582a1d513519dc3640a.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://d2wvc88aro56j"
-path="res://.godot/imported/105 - Prologue (Birth of the Holy Knight).ogg-a81c43282594d6a765d6012d0ae11b3c.oggvorbisstr"
+path="res://.godot/imported/105 - Prologue (Birth of the Holy Knight).ogg-4a2d47ea00da7b0f1f645de4c4c6ce68.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/105 - Prologue (Birth of the Holy Knight).ogg"
-dest_files=["res://.godot/imported/105 - Prologue (Birth of the Holy Knight).ogg-a81c43282594d6a765d6012d0ae11b3c.oggvorbisstr"]
+source_file="res://assets/GBA/music/105 - Prologue (Birth of the Holy Knight).ogg"
+dest_files=["res://.godot/imported/105 - Prologue (Birth of the Holy Knight).ogg-4a2d47ea00da7b0f1f645de4c4c6ce68.oggvorbisstr"]
 
 [params]
 

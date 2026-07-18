@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cehp7o336qk15"
-path="res://.godot/imported/FluxSlime.png-d7a6c0e0e58cc91b9e6dce4d61861d37.ctex"
+path="res://.godot/imported/FluxSlime.png-f22578db0effa6e573b6768b867ac011.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/FluxSlime.png"
-dest_files=["res://.godot/imported/FluxSlime.png-d7a6c0e0e58cc91b9e6dce4d61861d37.ctex"]
+source_file="res://assets/GBA/combat_effects/FluxSlime.png"
+dest_files=["res://.godot/imported/FluxSlime.png-f22578db0effa6e573b6768b867ac011.ctex"]
 
 [params]
 

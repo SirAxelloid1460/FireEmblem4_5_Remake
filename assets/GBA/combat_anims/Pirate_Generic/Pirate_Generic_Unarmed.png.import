@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxc6t4wd00vga"
-path="res://.godot/imported/Pirate_Generic_Unarmed.png-0c346078999c5b4552746b2c50c2d04b.ctex"
+path="res://.godot/imported/Pirate_Generic_Unarmed.png-4fcf1c36e117fceb23424fa8e3d22a96.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Pirate_Generic/Pirate_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/Pirate_Generic_Unarmed.png-0c346078999c5b4552746b2c50c2d04b.ctex"]
+source_file="res://assets/GBA/combat_anims/Pirate_Generic/Pirate_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/Pirate_Generic_Unarmed.png-4fcf1c36e117fceb23424fa8e3d22a96.ctex"]
 
 [params]
 

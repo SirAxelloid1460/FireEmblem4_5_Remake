@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qrbjdkuntecn"
-path="res://.godot/imported/ShadowshotBlast.png-20f92afdb7ef308f373e519e92e80dd5.ctex"
+path="res://.godot/imported/ShadowshotBlast.png-2cee26f6b2e70f4d9232bd0c658af8e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ShadowshotBlast.png"
-dest_files=["res://.godot/imported/ShadowshotBlast.png-20f92afdb7ef308f373e519e92e80dd5.ctex"]
+source_file="res://assets/GBA/combat_effects/ShadowshotBlast.png"
+dest_files=["res://.godot/imported/ShadowshotBlast.png-2cee26f6b2e70f4d9232bd0c658af8e0.ctex"]
 
 [params]
 

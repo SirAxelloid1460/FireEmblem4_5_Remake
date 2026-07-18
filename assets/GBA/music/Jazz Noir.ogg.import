@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dmarxvnb2dgt0"
-path="res://.godot/imported/Jazz Noir.ogg-1d31350323febf086a983df50c29735a.oggvorbisstr"
+path="res://.godot/imported/Jazz Noir.ogg-e7bc921abdbf109fc99e331e5b45a108.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Jazz Noir.ogg"
-dest_files=["res://.godot/imported/Jazz Noir.ogg-1d31350323febf086a983df50c29735a.oggvorbisstr"]
+source_file="res://assets/GBA/music/Jazz Noir.ogg"
+dest_files=["res://.godot/imported/Jazz Noir.ogg-e7bc921abdbf109fc99e331e5b45a108.oggvorbisstr"]
 
 [params]
 

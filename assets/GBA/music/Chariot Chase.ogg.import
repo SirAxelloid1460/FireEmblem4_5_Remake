@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://7yyfox7hp2yo"
-path="res://.godot/imported/Chariot Chase.ogg-d0bbb44dc2fce82a091f4e90e557f682.oggvorbisstr"
+path="res://.godot/imported/Chariot Chase.ogg-b8f201058cd6d3fcfc4800469fcc5606.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Chariot Chase.ogg"
-dest_files=["res://.godot/imported/Chariot Chase.ogg-d0bbb44dc2fce82a091f4e90e557f682.oggvorbisstr"]
+source_file="res://assets/GBA/music/Chariot Chase.ogg"
+dest_files=["res://.godot/imported/Chariot Chase.ogg-b8f201058cd6d3fcfc4800469fcc5606.oggvorbisstr"]
 
 [params]
 

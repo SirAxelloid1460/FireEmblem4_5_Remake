@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7rm10q222ap6"
-path="res://.godot/imported/SwordmasterFemale-stand.png-639c8fe9c440b442351098b260616da0.ctex"
+path="res://.godot/imported/SwordmasterFemale-stand.png-e3918eef284b68b8adcc0cb79062fe9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/SwordmasterFemale-stand.png"
-dest_files=["res://.godot/imported/SwordmasterFemale-stand.png-639c8fe9c440b442351098b260616da0.ctex"]
+source_file="res://assets/GBA/map_sprites/SwordmasterFemale-stand.png"
+dest_files=["res://.godot/imported/SwordmasterFemale-stand.png-e3918eef284b68b8adcc0cb79062fe9d.ctex"]
 
 [params]
 

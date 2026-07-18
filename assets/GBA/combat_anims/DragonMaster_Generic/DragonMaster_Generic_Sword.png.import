@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b11maudr2erm6"
-path="res://.godot/imported/DragonMaster_Generic_Sword.png-d97eaa8859ade2c681af2e9701a9df4a.ctex"
+path="res://.godot/imported/DragonMaster_Generic_Sword.png-bbca6e4cbfc0f678e79f4ba8ccc9f00b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DragonMaster_Generic/DragonMaster_Generic_Sword.png"
-dest_files=["res://.godot/imported/DragonMaster_Generic_Sword.png-d97eaa8859ade2c681af2e9701a9df4a.ctex"]
+source_file="res://assets/GBA/combat_anims/DragonMaster_Generic/DragonMaster_Generic_Sword.png"
+dest_files=["res://.godot/imported/DragonMaster_Generic_Sword.png-bbca6e4cbfc0f678e79f4ba8ccc9f00b.ctex"]
 
 [params]
 

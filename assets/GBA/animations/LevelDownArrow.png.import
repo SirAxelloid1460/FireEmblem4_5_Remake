@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2wce57gdwayw"
-path="res://.godot/imported/LevelDownArrow.png-652fb0bbc48cc93964d1843e8cbd2b57.ctex"
+path="res://.godot/imported/LevelDownArrow.png-764b42fb4fcb899a2638f70c68fc4e13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/LevelDownArrow.png"
-dest_files=["res://.godot/imported/LevelDownArrow.png-652fb0bbc48cc93964d1843e8cbd2b57.ctex"]
+source_file="res://assets/GBA/animations/LevelDownArrow.png"
+dest_files=["res://.godot/imported/LevelDownArrow.png-764b42fb4fcb899a2638f70c68fc4e13.ctex"]
 
 [params]
 

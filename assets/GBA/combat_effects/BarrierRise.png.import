@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp3cf4lja5giy"
-path="res://.godot/imported/BarrierRise.png-c282e700efbbf1efb8004dd70f233ed3.ctex"
+path="res://.godot/imported/BarrierRise.png-271d5fdc0b044d43be2631469c1fdeee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/BarrierRise.png"
-dest_files=["res://.godot/imported/BarrierRise.png-c282e700efbbf1efb8004dd70f233ed3.ctex"]
+source_file="res://assets/GBA/combat_effects/BarrierRise.png"
+dest_files=["res://.godot/imported/BarrierRise.png-271d5fdc0b044d43be2631469c1fdeee.ctex"]
 
 [params]
 

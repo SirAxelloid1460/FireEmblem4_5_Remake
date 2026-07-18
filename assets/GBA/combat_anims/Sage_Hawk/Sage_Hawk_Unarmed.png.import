@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bopg4y00iihlg"
-path="res://.godot/imported/Sage_Hawk_Unarmed.png-18f86b5138acc8c837f6b5bda9fcb9a4.ctex"
+path="res://.godot/imported/Sage_Hawk_Unarmed.png-c06cf97531b78c562215a6fffc13fef1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Hawk/Sage_Hawk_Unarmed.png"
-dest_files=["res://.godot/imported/Sage_Hawk_Unarmed.png-18f86b5138acc8c837f6b5bda9fcb9a4.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Hawk/Sage_Hawk_Unarmed.png"
+dest_files=["res://.godot/imported/Sage_Hawk_Unarmed.png-c06cf97531b78c562215a6fffc13fef1.ctex"]
 
 [params]
 

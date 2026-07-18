@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://du844a7h5j7jw"
-path="res://.godot/imported/Azel.png-3a73a8c77ec8fdd2147f41cc7ad70d4b.ctex"
+path="res://.godot/imported/Azel.png-84437c55e7d24d6c76b24dd14a86f467.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Azel.png"
-dest_files=["res://.godot/imported/Azel.png-3a73a8c77ec8fdd2147f41cc7ad70d4b.ctex"]
+source_file="res://assets/GBA/portraits/characters/Azel.png"
+dest_files=["res://.godot/imported/Azel.png-84437c55e7d24d6c76b24dd14a86f467.ctex"]
 
 [params]
 

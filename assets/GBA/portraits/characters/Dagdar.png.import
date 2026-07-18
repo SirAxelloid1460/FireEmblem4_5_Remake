@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx6cueufohoin"
-path="res://.godot/imported/Dagdar.png-06df3c3472e71b9c3a8657dcc8baf734.ctex"
+path="res://.godot/imported/Dagdar.png-ae810d6d944af70b615ec6348a9c6c89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Dagdar.png"
-dest_files=["res://.godot/imported/Dagdar.png-06df3c3472e71b9c3a8657dcc8baf734.ctex"]
+source_file="res://assets/GBA/portraits/characters/Dagdar.png"
+dest_files=["res://.godot/imported/Dagdar.png-ae810d6d944af70b615ec6348a9c6c89.ctex"]
 
 [params]
 

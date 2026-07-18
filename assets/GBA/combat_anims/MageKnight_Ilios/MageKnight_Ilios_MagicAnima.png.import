@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tyjla36tkbn5"
-path="res://.godot/imported/MageKnight_Ilios_MagicAnima.png-c7f5116d4d6443667287719e1540a897.ctex"
+path="res://.godot/imported/MageKnight_Ilios_MagicAnima.png-f032afa5a29d8e2de9078eca8aed4f45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Ilios/MageKnight_Ilios_MagicAnima.png"
-dest_files=["res://.godot/imported/MageKnight_Ilios_MagicAnima.png-c7f5116d4d6443667287719e1540a897.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Ilios/MageKnight_Ilios_MagicAnima.png"
+dest_files=["res://.godot/imported/MageKnight_Ilios_MagicAnima.png-f032afa5a29d8e2de9078eca8aed4f45.ctex"]
 
 [params]
 

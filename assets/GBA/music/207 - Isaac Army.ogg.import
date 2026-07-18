@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cwmxe7twbmpem"
-path="res://.godot/imported/207 - Isaac Army.ogg-5c782e29d9481196f51c57ab6ee64558.oggvorbisstr"
+path="res://.godot/imported/207 - Isaac Army.ogg-c5aa7cf99ee706bed08f890e36f9cd66.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/207 - Isaac Army.ogg"
-dest_files=["res://.godot/imported/207 - Isaac Army.ogg-5c782e29d9481196f51c57ab6ee64558.oggvorbisstr"]
+source_file="res://assets/GBA/music/207 - Isaac Army.ogg"
+dest_files=["res://.godot/imported/207 - Isaac Army.ogg-c5aa7cf99ee706bed08f890e36f9cd66.oggvorbisstr"]
 
 [params]
 

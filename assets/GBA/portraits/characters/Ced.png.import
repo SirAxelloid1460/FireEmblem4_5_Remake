@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dre11gelnibrp"
-path="res://.godot/imported/Ced.png-55d3e067f860809aa60cd4500acf31d9.ctex"
+path="res://.godot/imported/Ced.png-df9115dc8a69efc9a992e5e76c9fde18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Ced.png"
-dest_files=["res://.godot/imported/Ced.png-55d3e067f860809aa60cd4500acf31d9.ctex"]
+source_file="res://assets/GBA/portraits/characters/Ced.png"
+dest_files=["res://.godot/imported/Ced.png-df9115dc8a69efc9a992e5e76c9fde18.ctex"]
 
 [params]
 

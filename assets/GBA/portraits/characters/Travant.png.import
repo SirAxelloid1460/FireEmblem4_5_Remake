@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl6fi33vqkbi4"
-path="res://.godot/imported/Travant.png-aede1ff6f41903802a254458c58a3352.ctex"
+path="res://.godot/imported/Travant.png-c40cb5cfb325fb4470c9d66b55a2914c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Travant.png"
-dest_files=["res://.godot/imported/Travant.png-aede1ff6f41903802a254458c58a3352.ctex"]
+source_file="res://assets/GBA/portraits/characters/Travant.png"
+dest_files=["res://.godot/imported/Travant.png-c40cb5cfb325fb4470c9d66b55a2914c.ctex"]
 
 [params]
 

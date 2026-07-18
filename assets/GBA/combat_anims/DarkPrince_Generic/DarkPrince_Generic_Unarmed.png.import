@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8sp8avt3c4kx"
-path="res://.godot/imported/DarkPrince_Generic_Unarmed.png-4eb21f3f0a0242b1836166851e47bd27.ctex"
+path="res://.godot/imported/DarkPrince_Generic_Unarmed.png-af0c94a5cd6d2eb6b78458ae1bfdff10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DarkPrince_Generic/DarkPrince_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/DarkPrince_Generic_Unarmed.png-4eb21f3f0a0242b1836166851e47bd27.ctex"]
+source_file="res://assets/GBA/combat_anims/DarkPrince_Generic/DarkPrince_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/DarkPrince_Generic_Unarmed.png-af0c94a5cd6d2eb6b78458ae1bfdff10.ctex"]
 
 [params]
 

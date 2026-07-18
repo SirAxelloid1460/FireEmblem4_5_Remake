@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dj8xhrw2s8wax"
-path="res://.godot/imported/Lord_Seliph_MagicAnima.png-0c9535390bf45bbb672b52ab5c971f1e.ctex"
+path="res://.godot/imported/Lord_Seliph_MagicAnima.png-398bb290e47720296d9c0836033dc312.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Lord_Seliph/Lord_Seliph_MagicAnima.png"
-dest_files=["res://.godot/imported/Lord_Seliph_MagicAnima.png-0c9535390bf45bbb672b52ab5c971f1e.ctex"]
+source_file="res://assets/GBA/combat_anims/Lord_Seliph/Lord_Seliph_MagicAnima.png"
+dest_files=["res://.godot/imported/Lord_Seliph_MagicAnima.png-398bb290e47720296d9c0836033dc312.ctex"]
 
 [params]
 

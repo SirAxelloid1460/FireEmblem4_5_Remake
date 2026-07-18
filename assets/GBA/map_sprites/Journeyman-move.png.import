@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5gu26fn8j1k8"
-path="res://.godot/imported/Journeyman-move.png-e02056f4c7b00c5d326416eb62bb7cf9.ctex"
+path="res://.godot/imported/Journeyman-move.png-558a73780665524c7db6a8934e12968c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Journeyman-move.png"
-dest_files=["res://.godot/imported/Journeyman-move.png-e02056f4c7b00c5d326416eb62bb7cf9.ctex"]
+source_file="res://assets/GBA/map_sprites/Journeyman-move.png"
+dest_files=["res://.godot/imported/Journeyman-move.png-558a73780665524c7db6a8934e12968c.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3a0dnbs7n0xk"
-path="res://.godot/imported/Thicket-Ranged.png-e4b258c7907158f6132e37a808d843d6.ctex"
+path="res://.godot/imported/Thicket-Ranged.png-a1ba71c106b57a3a58d5216ad616e212.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Thicket-Ranged.png"
-dest_files=["res://.godot/imported/Thicket-Ranged.png-e4b258c7907158f6132e37a808d843d6.ctex"]
+source_file="res://assets/GBA/platforms/Thicket-Ranged.png"
+dest_files=["res://.godot/imported/Thicket-Ranged.png-a1ba71c106b57a3a58d5216ad616e212.ctex"]
 
 [params]
 

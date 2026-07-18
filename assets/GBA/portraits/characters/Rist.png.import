@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://camxq80nh05ti"
-path="res://.godot/imported/Rist.png-152380936800fe1506157c0d67c5d640.ctex"
+path="res://.godot/imported/Rist.png-1c30369836d37865d859fc09c519dee2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Rist.png"
-dest_files=["res://.godot/imported/Rist.png-152380936800fe1506157c0d67c5d640.ctex"]
+source_file="res://assets/GBA/portraits/characters/Rist.png"
+dest_files=["res://.godot/imported/Rist.png-1c30369836d37865d859fc09c519dee2.ctex"]
 
 [params]
 

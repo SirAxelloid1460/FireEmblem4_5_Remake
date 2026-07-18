@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t6mei8w2nyv4"
-path="res://.godot/imported/FenrirExplosion.png-f17d3628a943048161a123c55b49ce3f.ctex"
+path="res://.godot/imported/FenrirExplosion.png-2196aad89fee359c3c96afc82e32cdfc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/FenrirExplosion.png"
-dest_files=["res://.godot/imported/FenrirExplosion.png-f17d3628a943048161a123c55b49ce3f.ctex"]
+source_file="res://assets/GBA/combat_effects/FenrirExplosion.png"
+dest_files=["res://.godot/imported/FenrirExplosion.png-2196aad89fee359c3c96afc82e32cdfc.ctex"]
 
 [params]
 

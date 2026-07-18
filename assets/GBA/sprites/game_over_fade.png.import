@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm8ukngpwccqx"
-path="res://.godot/imported/game_over_fade.png-0623f6797eedcd8629c378f0708d2f4b.ctex"
+path="res://.godot/imported/game_over_fade.png-cfbc8780e5a51f1ed2df3a7a39092c29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/game_over_fade.png"
-dest_files=["res://.godot/imported/game_over_fade.png-0623f6797eedcd8629c378f0708d2f4b.ctex"]
+source_file="res://assets/GBA/sprites/game_over_fade.png"
+dest_files=["res://.godot/imported/game_over_fade.png-cfbc8780e5a51f1ed2df3a7a39092c29.ctex"]
 
 [params]
 

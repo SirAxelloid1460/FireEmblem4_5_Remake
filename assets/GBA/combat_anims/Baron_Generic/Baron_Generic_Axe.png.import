@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx3lsci181yok"
-path="res://.godot/imported/Baron_Generic_Axe.png-ed559d585e9d126fc739e952c5cc4d9a.ctex"
+path="res://.godot/imported/Baron_Generic_Axe.png-8a75d656441ae84574f7b0946a621c00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Baron_Generic/Baron_Generic_Axe.png"
-dest_files=["res://.godot/imported/Baron_Generic_Axe.png-ed559d585e9d126fc739e952c5cc4d9a.ctex"]
+source_file="res://assets/GBA/combat_anims/Baron_Generic/Baron_Generic_Axe.png"
+dest_files=["res://.godot/imported/Baron_Generic_Axe.png-8a75d656441ae84574f7b0946a621c00.ctex"]
 
 [params]
 

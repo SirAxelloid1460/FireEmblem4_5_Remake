@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqofh0l0i45nc"
-path="res://.godot/imported/DragonRider_Generic_MagicSword.png-50fd72bce3d233d5c80cd45df8d8994d.ctex"
+path="res://.godot/imported/DragonRider_Generic_MagicSword.png-173d3ce9ab0902e65f84ba1e556894fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DragonRider_Generic/DragonRider_Generic_MagicSword.png"
-dest_files=["res://.godot/imported/DragonRider_Generic_MagicSword.png-50fd72bce3d233d5c80cd45df8d8994d.ctex"]
+source_file="res://assets/GBA/combat_anims/DragonRider_Generic/DragonRider_Generic_MagicSword.png"
+dest_files=["res://.godot/imported/DragonRider_Generic_MagicSword.png-173d3ce9ab0902e65f84ba1e556894fd.ctex"]
 
 [params]
 

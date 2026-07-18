@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://deiyiadeuw0ct"
-path="res://.godot/imported/Map In.ogg-90903b05cc49dd95c587360e10178e72.oggvorbisstr"
+path="res://.godot/imported/Map In.ogg-bc88f2fef08b07b7e3cbcdddfffc5215.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Map In.ogg"
-dest_files=["res://.godot/imported/Map In.ogg-90903b05cc49dd95c587360e10178e72.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Map In.ogg"
+dest_files=["res://.godot/imported/Map In.ogg-bc88f2fef08b07b7e3cbcdddfffc5215.oggvorbisstr"]
 
 [params]
 

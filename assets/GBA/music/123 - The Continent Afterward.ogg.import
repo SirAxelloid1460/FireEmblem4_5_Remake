@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cjf10g4qwsvqq"
-path="res://.godot/imported/123 - The Continent Afterward.ogg-58cf3cf2d6e980f29adef7529ddeb94b.oggvorbisstr"
+path="res://.godot/imported/123 - The Continent Afterward.ogg-a9a134f990defb9d503e02ec7fe55670.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/123 - The Continent Afterward.ogg"
-dest_files=["res://.godot/imported/123 - The Continent Afterward.ogg-58cf3cf2d6e980f29adef7529ddeb94b.oggvorbisstr"]
+source_file="res://assets/GBA/music/123 - The Continent Afterward.ogg"
+dest_files=["res://.godot/imported/123 - The Continent Afterward.ogg-a9a134f990defb9d503e02ec7fe55670.oggvorbisstr"]
 
 [params]
 

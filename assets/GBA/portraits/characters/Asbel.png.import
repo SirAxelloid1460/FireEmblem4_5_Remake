@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx41xm4vvip0l"
-path="res://.godot/imported/Asbel.png-3b86f802c54641ef301cf99bd735ff5a.ctex"
+path="res://.godot/imported/Asbel.png-3b08327c2897834f2add4811fb8bc0e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Asbel.png"
-dest_files=["res://.godot/imported/Asbel.png-3b86f802c54641ef301cf99bd735ff5a.ctex"]
+source_file="res://assets/GBA/portraits/characters/Asbel.png"
+dest_files=["res://.godot/imported/Asbel.png-3b08327c2897834f2add4811fb8bc0e8.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://btxggijye5iia"
-path="res://.godot/imported/Airship Thunderchild.ogg-b835b89ef9b7e0cb1b757c34326c95ca.oggvorbisstr"
+path="res://.godot/imported/Airship Thunderchild.ogg-f529387aa4a4663c3e90303e48368bb3.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Airship Thunderchild.ogg"
-dest_files=["res://.godot/imported/Airship Thunderchild.ogg-b835b89ef9b7e0cb1b757c34326c95ca.oggvorbisstr"]
+source_file="res://assets/GBA/music/Airship Thunderchild.ogg"
+dest_files=["res://.godot/imported/Airship Thunderchild.ogg-f529387aa4a4663c3e90303e48368bb3.oggvorbisstr"]
 
 [params]
 

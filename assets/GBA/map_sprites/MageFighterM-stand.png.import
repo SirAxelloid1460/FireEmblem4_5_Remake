@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fl1gdv37cwsb"
-path="res://.godot/imported/MageFighterM-stand.png-65f1d8cef6c87d439d31ad8ad47b2e74.ctex"
+path="res://.godot/imported/MageFighterM-stand.png-f32d697a53221340c4391514b41034cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/MageFighterM-stand.png"
-dest_files=["res://.godot/imported/MageFighterM-stand.png-65f1d8cef6c87d439d31ad8ad47b2e74.ctex"]
+source_file="res://assets/GBA/map_sprites/MageFighterM-stand.png"
+dest_files=["res://.godot/imported/MageFighterM-stand.png-f32d697a53221340c4391514b41034cd.ctex"]
 
 [params]
 

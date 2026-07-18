@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://wldp41b3604v"
-path="res://.godot/imported/Ambient Forest.ogg-bc1170e1eaeb3a38cd284292dfae6aac.oggvorbisstr"
+path="res://.godot/imported/Ambient Forest.ogg-9466419660f68f53222575adcdfcfaaa.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Ambient Forest.ogg"
-dest_files=["res://.godot/imported/Ambient Forest.ogg-bc1170e1eaeb3a38cd284292dfae6aac.oggvorbisstr"]
+source_file="res://assets/GBA/music/Ambient Forest.ogg"
+dest_files=["res://.godot/imported/Ambient Forest.ogg-9466419660f68f53222575adcdfcfaaa.oggvorbisstr"]
 
 [params]
 

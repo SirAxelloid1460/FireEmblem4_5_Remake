@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://560ppmgl3vah"
-path="res://.godot/imported/Erinys.png-4729034ff199540732ed27142c45ad55.ctex"
+path="res://.godot/imported/Erinys.png-de1242efca537219484941922be4358c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Erinys.png"
-dest_files=["res://.godot/imported/Erinys.png-4729034ff199540732ed27142c45ad55.ctex"]
+source_file="res://assets/GBA/portraits/characters/Erinys.png"
+dest_files=["res://.godot/imported/Erinys.png-de1242efca537219484941922be4358c.ctex"]
 
 [params]
 

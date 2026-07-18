@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwa8rjpsc4wgm"
-path="res://.godot/imported/Sage_Arvis_MagicStaff.png-5984252648a4348b1d9a513530dce49c.ctex"
+path="res://.godot/imported/Sage_Arvis_MagicStaff.png-183aa4ff4e29d439584ed1cc44646f1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Arvis/Sage_Arvis_MagicStaff.png"
-dest_files=["res://.godot/imported/Sage_Arvis_MagicStaff.png-5984252648a4348b1d9a513530dce49c.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Arvis/Sage_Arvis_MagicStaff.png"
+dest_files=["res://.godot/imported/Sage_Arvis_MagicStaff.png-183aa4ff4e29d439584ed1cc44646f1f.ctex"]
 
 [params]
 

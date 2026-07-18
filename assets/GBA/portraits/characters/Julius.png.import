@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6ipbkeiq3n7i"
-path="res://.godot/imported/Julius.png-6ebcde03186bc248399f8b56950385d2.ctex"
+path="res://.godot/imported/Julius.png-9889ed177df0eca2a1ac62efb95965e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Julius.png"
-dest_files=["res://.godot/imported/Julius.png-6ebcde03186bc248399f8b56950385d2.ctex"]
+source_file="res://assets/GBA/portraits/characters/Julius.png"
+dest_files=["res://.godot/imported/Julius.png-9889ed177df0eca2a1ac62efb95965e6.ctex"]
 
 [params]
 

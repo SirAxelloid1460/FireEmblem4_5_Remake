@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtiiw3socgkdu"
-path="res://.godot/imported/attack_info_grandmaster_purple.png-76bac3c6376cf82757cf518ab2744f32.ctex"
+path="res://.godot/imported/attack_info_grandmaster_purple.png-713e381db89d3c9552f8739716532fda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/displays/attack_info_grandmaster_purple.png"
-dest_files=["res://.godot/imported/attack_info_grandmaster_purple.png-76bac3c6376cf82757cf518ab2744f32.ctex"]
+source_file="res://assets/GBA/displays/attack_info_grandmaster_purple.png"
+dest_files=["res://.godot/imported/attack_info_grandmaster_purple.png-713e381db89d3c9552f8739716532fda.ctex"]
 
 [params]
 

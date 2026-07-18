@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cx1u0tarr1c7h"
-path="res://.godot/imported/109 - Chapter 4 (Dance in the Skies).ogg-df4a1dcb87242266105c3863da7c92a2.oggvorbisstr"
+path="res://.godot/imported/109 - Chapter 4 (Dance in the Skies).ogg-118805ce092b3bb4a844e893baa3689c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/109 - Chapter 4 (Dance in the Skies).ogg"
-dest_files=["res://.godot/imported/109 - Chapter 4 (Dance in the Skies).ogg-df4a1dcb87242266105c3863da7c92a2.oggvorbisstr"]
+source_file="res://assets/GBA/music/109 - Chapter 4 (Dance in the Skies).ogg"
+dest_files=["res://.godot/imported/109 - Chapter 4 (Dance in the Skies).ogg-118805ce092b3bb4a844e893baa3689c.oggvorbisstr"]
 
 [params]
 

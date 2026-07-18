@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2ofmh2rxsora"
-path="res://.godot/imported/Berserker-move.png-d1e0eaf233d7cbade9d1fd8d53cd057f.ctex"
+path="res://.godot/imported/Berserker-move.png-ac29b3858910ae5e09eb522b17809d80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Berserker-move.png"
-dest_files=["res://.godot/imported/Berserker-move.png-d1e0eaf233d7cbade9d1fd8d53cd057f.ctex"]
+source_file="res://assets/GBA/map_sprites/Berserker-move.png"
+dest_files=["res://.godot/imported/Berserker-move.png-ac29b3858910ae5e09eb522b17809d80.ctex"]
 
 [params]
 

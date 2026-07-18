@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://biw1y84v60as"
-path="res://.godot/imported/334 - Dozel Palace.ogg-33cb7e6b627f558a18aebc0d489dae89.oggvorbisstr"
+path="res://.godot/imported/334 - Dozel Palace.ogg-96592401d6fd11013973089577aeaf2c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/334 - Dozel Palace.ogg"
-dest_files=["res://.godot/imported/334 - Dozel Palace.ogg-33cb7e6b627f558a18aebc0d489dae89.oggvorbisstr"]
+source_file="res://assets/GBA/music/334 - Dozel Palace.ogg"
+dest_files=["res://.godot/imported/334 - Dozel Palace.ogg-96592401d6fd11013973089577aeaf2c.oggvorbisstr"]
 
 [params]
 

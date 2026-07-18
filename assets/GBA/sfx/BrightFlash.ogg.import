@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://321eqfajv45e"
-path="res://.godot/imported/BrightFlash.ogg-3d6eeaebd5abd48e6826c49e99b3b34b.oggvorbisstr"
+path="res://.godot/imported/BrightFlash.ogg-a840a759393417da70fa2b4c22c3e1df.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/BrightFlash.ogg"
-dest_files=["res://.godot/imported/BrightFlash.ogg-3d6eeaebd5abd48e6826c49e99b3b34b.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/BrightFlash.ogg"
+dest_files=["res://.godot/imported/BrightFlash.ogg-a840a759393417da70fa2b4c22c3e1df.oggvorbisstr"]
 
 [params]
 

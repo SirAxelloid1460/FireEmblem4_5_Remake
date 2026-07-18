@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://riwn2r31w3bb"
-path="res://.godot/imported/Hero_Male_Axe.png-b8552e611b5d8f6f7da31cd55ea0ea02.ctex"
+path="res://.godot/imported/Hero_Male_Axe.png-ec54bf9a203921eb2bc96c7d09a25034.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Hero_Male/Hero_Male_Axe.png"
-dest_files=["res://.godot/imported/Hero_Male_Axe.png-b8552e611b5d8f6f7da31cd55ea0ea02.ctex"]
+source_file="res://assets/GBA/combat_anims/Hero_Male/Hero_Male_Axe.png"
+dest_files=["res://.godot/imported/Hero_Male_Axe.png-ec54bf9a203921eb2bc96c7d09a25034.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7b64i255ce58"
-path="res://.godot/imported/PegasusKnight-move.png-c1bf00afc6c6ff475b88348ed97a56c0.ctex"
+path="res://.godot/imported/PegasusKnight-move.png-9d455b990561c20f608df3706967246f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/PegasusKnight-move.png"
-dest_files=["res://.godot/imported/PegasusKnight-move.png-c1bf00afc6c6ff475b88348ed97a56c0.ctex"]
+source_file="res://assets/GBA/map_sprites/PegasusKnight-move.png"
+dest_files=["res://.godot/imported/PegasusKnight-move.png-9d455b990561c20f608df3706967246f.ctex"]
 
 [params]
 

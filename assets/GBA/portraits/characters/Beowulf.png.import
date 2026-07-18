@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2iek6a0t3gjt"
-path="res://.godot/imported/Beowulf.png-824df0d8dab286afd3c4344501e9ddab.ctex"
+path="res://.godot/imported/Beowulf.png-30c7c1f3480cde227396e2ed27d7ed28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Beowulf.png"
-dest_files=["res://.godot/imported/Beowulf.png-824df0d8dab286afd3c4344501e9ddab.ctex"]
+source_file="res://assets/GBA/portraits/characters/Beowulf.png"
+dest_files=["res://.godot/imported/Beowulf.png-30c7c1f3480cde227396e2ed27d7ed28.ctex"]
 
 [params]
 

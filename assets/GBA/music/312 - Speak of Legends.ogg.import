@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://d0ijej1vexlj7"
-path="res://.godot/imported/312 - Speak of Legends.ogg-a4ae57b470ac54d46d861f635c439bbf.oggvorbisstr"
+path="res://.godot/imported/312 - Speak of Legends.ogg-bf922d12256927dc8b21dce48920c2b5.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/312 - Speak of Legends.ogg"
-dest_files=["res://.godot/imported/312 - Speak of Legends.ogg-a4ae57b470ac54d46d861f635c439bbf.oggvorbisstr"]
+source_file="res://assets/GBA/music/312 - Speak of Legends.ogg"
+dest_files=["res://.godot/imported/312 - Speak of Legends.ogg-bf922d12256927dc8b21dce48920c2b5.oggvorbisstr"]
 
 [params]
 

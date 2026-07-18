@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1o0ld6xdbw3d"
-path="res://.godot/imported/Troubadour_Generic_MagicSword.png-ec4a142d627246bf1a842afe64b2aa4a.ctex"
+path="res://.godot/imported/Troubadour_Generic_MagicSword.png-b9b73f947e981db24f65174649ded90c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Troubadour_Generic/Troubadour_Generic_MagicSword.png"
-dest_files=["res://.godot/imported/Troubadour_Generic_MagicSword.png-ec4a142d627246bf1a842afe64b2aa4a.ctex"]
+source_file="res://assets/GBA/combat_anims/Troubadour_Generic/Troubadour_Generic_MagicSword.png"
+dest_files=["res://.godot/imported/Troubadour_Generic_MagicSword.png-b9b73f947e981db24f65174649ded90c.ctex"]
 
 [params]
 

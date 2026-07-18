@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bugb4cktlhaht"
-path="res://.godot/imported/Minimap_Cursor.png-4ba5457fa0489ee7ec49f981f2ac23ba.ctex"
+path="res://.godot/imported/Minimap_Cursor.png-43523dbce07bbde5a71798fd4345ef69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/minimap/Minimap_Cursor.png"
-dest_files=["res://.godot/imported/Minimap_Cursor.png-4ba5457fa0489ee7ec49f981f2ac23ba.ctex"]
+source_file="res://assets/GBA/minimap/Minimap_Cursor.png"
+dest_files=["res://.godot/imported/Minimap_Cursor.png-43523dbce07bbde5a71798fd4345ef69.ctex"]
 
 [params]
 

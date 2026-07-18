@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhr8wp5ehigrf"
-path="res://.godot/imported/Sage_Hawk_MagicStaff.png-596eb8d5efb0599e9eb4feaaacecdb79.ctex"
+path="res://.godot/imported/Sage_Hawk_MagicStaff.png-a42a4528bbb86d3ec13c87f2a17f7321.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Hawk/Sage_Hawk_MagicStaff.png"
-dest_files=["res://.godot/imported/Sage_Hawk_MagicStaff.png-596eb8d5efb0599e9eb4feaaacecdb79.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Hawk/Sage_Hawk_MagicStaff.png"
+dest_files=["res://.godot/imported/Sage_Hawk_MagicStaff.png-a42a4528bbb86d3ec13c87f2a17f7321.ctex"]
 
 [params]
 

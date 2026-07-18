@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drpknm0eb8lyr"
-path="res://.godot/imported/PegasusKnight_Generic_MagicSword.png-9a0d75fd4c6c5eb198a9388c8a927974.ctex"
+path="res://.godot/imported/PegasusKnight_Generic_MagicSword.png-9cf8d13f9aa3daac1cd521f6d2b1de80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/PegasusKnight_Generic/PegasusKnight_Generic_MagicSword.png"
-dest_files=["res://.godot/imported/PegasusKnight_Generic_MagicSword.png-9a0d75fd4c6c5eb198a9388c8a927974.ctex"]
+source_file="res://assets/GBA/combat_anims/PegasusKnight_Generic/PegasusKnight_Generic_MagicSword.png"
+dest_files=["res://.godot/imported/PegasusKnight_Generic_MagicSword.png-9cf8d13f9aa3daac1cd521f6d2b1de80.ctex"]
 
 [params]
 

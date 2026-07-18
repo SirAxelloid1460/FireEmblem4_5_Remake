@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmuklti7oyxn0"
-path="res://.godot/imported/ClassContainers.png-ada6fb49f2ff413f5b1cf4bee3dfa455.ctex"
+path="res://.godot/imported/ClassContainers.png-0a5b30b75e35ca73174c862cf662e082.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/ClassContainers.png"
-dest_files=["res://.godot/imported/ClassContainers.png-ada6fb49f2ff413f5b1cf4bee3dfa455.ctex"]
+source_file="res://assets/GBA/portraits/generic/ClassContainers.png"
+dest_files=["res://.godot/imported/ClassContainers.png-0a5b30b75e35ca73174c862cf662e082.ctex"]
 
 [params]
 

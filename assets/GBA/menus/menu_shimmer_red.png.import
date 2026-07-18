@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpdveg5imbjk4"
-path="res://.godot/imported/menu_shimmer_red.png-18f25dd19ef077b8844d6dbb4917858c.ctex"
+path="res://.godot/imported/menu_shimmer_red.png-75c7fbd51a8197eb35cd62bedf1d7b97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/menus/menu_shimmer_red.png"
-dest_files=["res://.godot/imported/menu_shimmer_red.png-18f25dd19ef077b8844d6dbb4917858c.ctex"]
+source_file="res://assets/GBA/menus/menu_shimmer_red.png"
+dest_files=["res://.godot/imported/menu_shimmer_red.png-75c7fbd51a8197eb35cd62bedf1d7b97.ctex"]
 
 [params]
 

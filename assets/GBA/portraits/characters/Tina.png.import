@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wsux7oiwbi3g"
-path="res://.godot/imported/Tina.png-82f11e88c9d6dd087f65f1e2b84df376.ctex"
+path="res://.godot/imported/Tina.png-37005046bc619b477e8ec3992a6bf410.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Tina.png"
-dest_files=["res://.godot/imported/Tina.png-82f11e88c9d6dd087f65f1e2b84df376.ctex"]
+source_file="res://assets/GBA/portraits/characters/Tina.png"
+dest_files=["res://.godot/imported/Tina.png-37005046bc619b477e8ec3992a6bf410.ctex"]
 
 [params]
 

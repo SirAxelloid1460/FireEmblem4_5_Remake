@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3qchkmb3mmu1"
-path="res://.godot/imported/HeroM-move.png-097f41858868a883c1cc35290a972e14.ctex"
+path="res://.godot/imported/HeroM-move.png-a439fd5c2a263ac4a4205f284070fc92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/HeroM-move.png"
-dest_files=["res://.godot/imported/HeroM-move.png-097f41858868a883c1cc35290a972e14.ctex"]
+source_file="res://assets/GBA/map_sprites/HeroM-move.png"
+dest_files=["res://.godot/imported/HeroM-move.png-a439fd5c2a263ac4a4205f284070fc92.ctex"]
 
 [params]
 

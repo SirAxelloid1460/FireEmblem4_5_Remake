@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b5ggafbq5bdwn"
-path="res://.godot/imported/102 - Fire Emblem Theme.ogg-a2be3556a30bb3621f92aa978d145410.oggvorbisstr"
+path="res://.godot/imported/102 - Fire Emblem Theme.ogg-0d8b69e5ee51c1139ef35e46ece0b223.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/102 - Fire Emblem Theme.ogg"
-dest_files=["res://.godot/imported/102 - Fire Emblem Theme.ogg-a2be3556a30bb3621f92aa978d145410.oggvorbisstr"]
+source_file="res://assets/GBA/music/102 - Fire Emblem Theme.ogg"
+dest_files=["res://.godot/imported/102 - Fire Emblem Theme.ogg-0d8b69e5ee51c1139ef35e46ece0b223.oggvorbisstr"]
 
 [params]
 

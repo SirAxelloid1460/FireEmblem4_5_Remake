@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yel753yc3l0x"
-path="res://.godot/imported/combat_main_left_blue.png-da9b9b85d8d9d9f22899b79d6df96e11.ctex"
+path="res://.godot/imported/combat_main_left_blue.png-4729e7aca404d3ea0631a1ff5f39607d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_displays/combat_main_left_blue.png"
-dest_files=["res://.godot/imported/combat_main_left_blue.png-da9b9b85d8d9d9f22899b79d6df96e11.ctex"]
+source_file="res://assets/GBA/combat_displays/combat_main_left_blue.png"
+dest_files=["res://.godot/imported/combat_main_left_blue.png-4729e7aca404d3ea0631a1ff5f39607d.ctex"]
 
 [params]
 

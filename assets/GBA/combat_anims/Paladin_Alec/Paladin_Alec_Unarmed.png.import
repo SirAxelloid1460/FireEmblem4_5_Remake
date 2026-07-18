@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://diokc26dltdnu"
-path="res://.godot/imported/Paladin_Alec_Unarmed.png-8569c41d61e2aeaa139b30c6dca19e1a.ctex"
+path="res://.godot/imported/Paladin_Alec_Unarmed.png-e306ba1731969eeb0de880f2e5c82aba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Alec/Paladin_Alec_Unarmed.png"
-dest_files=["res://.godot/imported/Paladin_Alec_Unarmed.png-8569c41d61e2aeaa139b30c6dca19e1a.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Alec/Paladin_Alec_Unarmed.png"
+dest_files=["res://.godot/imported/Paladin_Alec_Unarmed.png-e306ba1731969eeb0de880f2e5c82aba.ctex"]
 
 [params]
 

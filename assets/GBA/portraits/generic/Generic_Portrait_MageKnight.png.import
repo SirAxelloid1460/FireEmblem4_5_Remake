@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://di5udgf1blnvy"
-path="res://.godot/imported/Generic_Portrait_MageKnight.png-c917d68cb25b317afc694177f8577ef6.ctex"
+path="res://.godot/imported/Generic_Portrait_MageKnight.png-2c1f731c52b456f36bc3ce0621568f56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_MageKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_MageKnight.png-c917d68cb25b317afc694177f8577ef6.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_MageKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_MageKnight.png-2c1f731c52b456f36bc3ce0621568f56.ctex"]
 
 [params]
 

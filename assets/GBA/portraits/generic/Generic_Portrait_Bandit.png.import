@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4q6clo0vqjk2"
-path="res://.godot/imported/Generic_Portrait_Bandit.png-f59d8dce896fd02c3e7593ec0f8a24e7.ctex"
+path="res://.godot/imported/Generic_Portrait_Bandit.png-6ba73fb6377634e8967355f0f39ce4f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Bandit.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Bandit.png-f59d8dce896fd02c3e7593ec0f8a24e7.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Bandit.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Bandit.png-6ba73fb6377634e8967355f0f39ce4f2.ctex"]
 
 [params]
 

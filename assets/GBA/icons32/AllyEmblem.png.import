@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2g1e15p1sail"
-path="res://.godot/imported/AllyEmblem.png-008f009f7875abd042fab945687dff81.ctex"
+path="res://.godot/imported/AllyEmblem.png-e15a02c430265a1472ac3ddde86b5db6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons32/AllyEmblem.png"
-dest_files=["res://.godot/imported/AllyEmblem.png-008f009f7875abd042fab945687dff81.ctex"]
+source_file="res://assets/GBA/icons32/AllyEmblem.png"
+dest_files=["res://.godot/imported/AllyEmblem.png-e15a02c430265a1472ac3ddde86b5db6.ctex"]
 
 [params]
 

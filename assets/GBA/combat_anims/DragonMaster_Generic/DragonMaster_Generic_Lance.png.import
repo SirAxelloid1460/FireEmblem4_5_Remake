@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd4hgodyrepoi"
-path="res://.godot/imported/DragonMaster_Generic_Lance.png-4001eec215a2c52adc2d3e14a5b48f96.ctex"
+path="res://.godot/imported/DragonMaster_Generic_Lance.png-70eb72d7f0b7bf748d62572ec0ad1d00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DragonMaster_Generic/DragonMaster_Generic_Lance.png"
-dest_files=["res://.godot/imported/DragonMaster_Generic_Lance.png-4001eec215a2c52adc2d3e14a5b48f96.ctex"]
+source_file="res://assets/GBA/combat_anims/DragonMaster_Generic/DragonMaster_Generic_Lance.png"
+dest_files=["res://.godot/imported/DragonMaster_Generic_Lance.png-70eb72d7f0b7bf748d62572ec0ad1d00.ctex"]
 
 [params]
 

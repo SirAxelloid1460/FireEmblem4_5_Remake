@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lvyqqq0g2rm2"
-path="res://.godot/imported/Vendor-Melee.png-115ccc307b8dfda86d72e78df50a0442.ctex"
+path="res://.godot/imported/Vendor-Melee.png-7da2d13db25aa9dc14bdf5918a5e0752.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Vendor-Melee.png"
-dest_files=["res://.godot/imported/Vendor-Melee.png-115ccc307b8dfda86d72e78df50a0442.ctex"]
+source_file="res://assets/GBA/platforms/Vendor-Melee.png"
+dest_files=["res://.godot/imported/Vendor-Melee.png-7da2d13db25aa9dc14bdf5918a5e0752.ctex"]
 
 [params]
 

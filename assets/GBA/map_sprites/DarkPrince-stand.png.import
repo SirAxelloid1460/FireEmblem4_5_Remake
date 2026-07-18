@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://twskwlxj68qs"
-path="res://.godot/imported/DarkPrince-stand.png-634ec3f848ec3c77733487f9c19bee81.ctex"
+path="res://.godot/imported/DarkPrince-stand.png-7919d628ebd480f6d2ea655346726752.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/DarkPrince-stand.png"
-dest_files=["res://.godot/imported/DarkPrince-stand.png-634ec3f848ec3c77733487f9c19bee81.ctex"]
+source_file="res://assets/GBA/map_sprites/DarkPrince-stand.png"
+dest_files=["res://.godot/imported/DarkPrince-stand.png-7919d628ebd480f6d2ea655346726752.ctex"]
 
 [params]
 

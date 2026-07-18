@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpj8es4ay3f5y"
-path="res://.godot/imported/Warp.png-cabcc285121eb8355c7a38fd3730ba15.ctex"
+path="res://.godot/imported/Warp.png-aaebe1fa453f7122b27a00f294736077.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/Warp.png"
-dest_files=["res://.godot/imported/Warp.png-cabcc285121eb8355c7a38fd3730ba15.ctex"]
+source_file="res://assets/GBA/animations/Warp.png"
+dest_files=["res://.godot/imported/Warp.png-aaebe1fa453f7122b27a00f294736077.ctex"]
 
 [params]
 

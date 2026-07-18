@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kvwneubmblvm"
-path="res://.godot/imported/LakeLady.png-282f2f1cd884b41a1e92a5e151012438.ctex"
+path="res://.godot/imported/LakeLady.png-8e38690fb6f3d7b28f733f3d8c563ccb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/extra/LakeLady.png"
-dest_files=["res://.godot/imported/LakeLady.png-282f2f1cd884b41a1e92a5e151012438.ctex"]
+source_file="res://assets/GBA/portraits/extra/LakeLady.png"
+dest_files=["res://.godot/imported/LakeLady.png-8e38690fb6f3d7b28f733f3d8c563ccb.ctex"]
 
 [params]
 

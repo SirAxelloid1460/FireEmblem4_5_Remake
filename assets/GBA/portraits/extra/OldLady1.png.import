@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3bhswdhvk2r0"
-path="res://.godot/imported/OldLady1.png-1a83d79cc62f60d2f3753815c69f3e4c.ctex"
+path="res://.godot/imported/OldLady1.png-6c81e85cda8a6347164d2a177505f4fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/extra/OldLady1.png"
-dest_files=["res://.godot/imported/OldLady1.png-1a83d79cc62f60d2f3753815c69f3e4c.ctex"]
+source_file="res://assets/GBA/portraits/extra/OldLady1.png"
+dest_files=["res://.godot/imported/OldLady1.png-6c81e85cda8a6347164d2a177505f4fe.ctex"]
 
 [params]
 

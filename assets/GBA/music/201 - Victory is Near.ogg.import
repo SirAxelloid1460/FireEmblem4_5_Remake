@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://kia80c68koc3"
-path="res://.godot/imported/201 - Victory is Near.ogg-18d1fd78a209925b5ae4aa29bb67ac60.oggvorbisstr"
+path="res://.godot/imported/201 - Victory is Near.ogg-c8345f5460660df55b738198f100539c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/201 - Victory is Near.ogg"
-dest_files=["res://.godot/imported/201 - Victory is Near.ogg-18d1fd78a209925b5ae4aa29bb67ac60.oggvorbisstr"]
+source_file="res://assets/GBA/music/201 - Victory is Near.ogg"
+dest_files=["res://.godot/imported/201 - Victory is Near.ogg-c8345f5460660df55b738198f100539c.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyfbykstlxqvn"
-path="res://.godot/imported/Swordmaster_Male_Unarmed.png-72c0f54b7bcb373b1a14e29211db5efc.ctex"
+path="res://.godot/imported/Swordmaster_Male_Unarmed.png-b2da00b23c2dcc3cb491a6a52f09e9cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Male/Swordmaster_Male_Unarmed.png"
-dest_files=["res://.godot/imported/Swordmaster_Male_Unarmed.png-72c0f54b7bcb373b1a14e29211db5efc.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Male/Swordmaster_Male_Unarmed.png"
+dest_files=["res://.godot/imported/Swordmaster_Male_Unarmed.png-b2da00b23c2dcc3cb491a6a52f09e9cd.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://2rtu8nfxu70"
-path="res://.godot/imported/gba-fe-dialogue.ttf-b2935090cae8aef693994683b0488584.fontdata"
+path="res://.godot/imported/gba-fe-dialogue.ttf-c82f55aa2ec9d5e0fdc4d7f850b7ba34.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/gba-fe-dialogue.ttf"
-dest_files=["res://.godot/imported/gba-fe-dialogue.ttf-b2935090cae8aef693994683b0488584.fontdata"]
+source_file="res://assets/GBA/fonts/gba-fe-dialogue.ttf"
+dest_files=["res://.godot/imported/gba-fe-dialogue.ttf-c82f55aa2ec9d5e0fdc4d7f850b7ba34.fontdata"]
 
 [params]
 

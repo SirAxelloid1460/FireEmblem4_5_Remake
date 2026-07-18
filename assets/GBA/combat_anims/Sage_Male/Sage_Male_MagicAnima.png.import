@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doi7cgsuugv3p"
-path="res://.godot/imported/Sage_Male_MagicAnima.png-ef26a3cebcca42e64bb66716703b959b.ctex"
+path="res://.godot/imported/Sage_Male_MagicAnima.png-36f3428adc704ce59d2a3d38623a6608.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Male/Sage_Male_MagicAnima.png"
-dest_files=["res://.godot/imported/Sage_Male_MagicAnima.png-ef26a3cebcca42e64bb66716703b959b.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Male/Sage_Male_MagicAnima.png"
+dest_files=["res://.godot/imported/Sage_Male_MagicAnima.png-36f3428adc704ce59d2a3d38623a6608.ctex"]
 
 [params]
 

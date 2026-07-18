@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2nprs5sj8vsd"
-path="res://.godot/imported/Colho.png-44447447436ae1c55c1220a6235f7786.ctex"
+path="res://.godot/imported/Colho.png-78e214b738dc8fe404ebe9746f091a4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Colho.png"
-dest_files=["res://.godot/imported/Colho.png-44447447436ae1c55c1220a6235f7786.ctex"]
+source_file="res://assets/GBA/portraits/characters/Colho.png"
+dest_files=["res://.godot/imported/Colho.png-78e214b738dc8fe404ebe9746f091a4f.ctex"]
 
 [params]
 

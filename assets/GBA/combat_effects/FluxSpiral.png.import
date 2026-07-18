@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bidntf47kkn8j"
-path="res://.godot/imported/FluxSpiral.png-525f3c965f4e74d5d81d9163fc772f4e.ctex"
+path="res://.godot/imported/FluxSpiral.png-99a2d69e6c02763403861e97bfe61a20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/FluxSpiral.png"
-dest_files=["res://.godot/imported/FluxSpiral.png-525f3c965f4e74d5d81d9163fc772f4e.ctex"]
+source_file="res://assets/GBA/combat_effects/FluxSpiral.png"
+dest_files=["res://.godot/imported/FluxSpiral.png-99a2d69e6c02763403861e97bfe61a20.ctex"]
 
 [params]
 

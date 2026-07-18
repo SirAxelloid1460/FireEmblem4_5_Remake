@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dshplshc58kig"
-path="res://.godot/imported/Generic_Portrait_LanceKnight.png-bdc3a375920c61ac67322dd73b537213.ctex"
+path="res://.godot/imported/Generic_Portrait_LanceKnight.png-328b6eb5104e98a4bae4d3e64fa83cbc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_LanceKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_LanceKnight.png-bdc3a375920c61ac67322dd73b537213.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_LanceKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_LanceKnight.png-328b6eb5104e98a4bae4d3e64fa83cbc.ctex"]
 
 [params]
 

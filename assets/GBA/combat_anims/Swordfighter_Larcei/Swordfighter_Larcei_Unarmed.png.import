@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b285i5lko116n"
-path="res://.godot/imported/Swordfighter_Larcei_Unarmed.png-1a0955ffe90c57050ad5caf4e3b14602.ctex"
+path="res://.godot/imported/Swordfighter_Larcei_Unarmed.png-27709438e152e922e71094b2ee2dd242.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordfighter_Larcei/Swordfighter_Larcei_Unarmed.png"
-dest_files=["res://.godot/imported/Swordfighter_Larcei_Unarmed.png-1a0955ffe90c57050ad5caf4e3b14602.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordfighter_Larcei/Swordfighter_Larcei_Unarmed.png"
+dest_files=["res://.godot/imported/Swordfighter_Larcei_Unarmed.png-27709438e152e922e71094b2ee2dd242.ctex"]
 
 [params]
 

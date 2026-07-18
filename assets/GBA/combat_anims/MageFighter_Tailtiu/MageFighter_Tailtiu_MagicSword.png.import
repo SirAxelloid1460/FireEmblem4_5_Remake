@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt4klllqcdly0"
-path="res://.godot/imported/MageFighter_Tailtiu_MagicSword.png-8b3b77688906c64763e144113a73f423.ctex"
+path="res://.godot/imported/MageFighter_Tailtiu_MagicSword.png-297913b255c00a171e420bcf17d33261.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageFighter_Tailtiu/MageFighter_Tailtiu_MagicSword.png"
-dest_files=["res://.godot/imported/MageFighter_Tailtiu_MagicSword.png-8b3b77688906c64763e144113a73f423.ctex"]
+source_file="res://assets/GBA/combat_anims/MageFighter_Tailtiu/MageFighter_Tailtiu_MagicSword.png"
+dest_files=["res://.godot/imported/MageFighter_Tailtiu_MagicSword.png-297913b255c00a171e420bcf17d33261.ctex"]
 
 [params]
 

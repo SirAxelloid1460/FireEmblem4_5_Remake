@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvwbc341wmani"
-path="res://.godot/imported/Musar.png-199f5bbd76daf090b56bdd9574d80998.ctex"
+path="res://.godot/imported/Musar.png-940ff4a12af9a33775ae7caf6d55b1ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Musar.png"
-dest_files=["res://.godot/imported/Musar.png-199f5bbd76daf090b56bdd9574d80998.ctex"]
+source_file="res://assets/GBA/portraits/characters/Musar.png"
+dest_files=["res://.godot/imported/Musar.png-940ff4a12af9a33775ae7caf6d55b1ff.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hetxp77txvw7"
-path="res://.godot/imported/Bard_Homer_Unarmed.png-63433a6c8df903f5b6ae3225503a94b6.ctex"
+path="res://.godot/imported/Bard_Homer_Unarmed.png-a3d45cd0c1ea1a0c1049ac37d741eb1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Bard_Homer/Bard_Homer_Unarmed.png"
-dest_files=["res://.godot/imported/Bard_Homer_Unarmed.png-63433a6c8df903f5b6ae3225503a94b6.ctex"]
+source_file="res://assets/GBA/combat_anims/Bard_Homer/Bard_Homer_Unarmed.png"
+dest_files=["res://.godot/imported/Bard_Homer_Unarmed.png-a3d45cd0c1ea1a0c1049ac37d741eb1b.ctex"]
 
 [params]
 

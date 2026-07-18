@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dte4g0irguv7a"
-path="res://.godot/imported/AOE_Mend.png-905e16884bdfabdf24c487720cdc76a4.ctex"
+path="res://.godot/imported/AOE_Mend.png-75e5bb19591c39f3afc1d79782ed65a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/AOE_Mend.png"
-dest_files=["res://.godot/imported/AOE_Mend.png-905e16884bdfabdf24c487720cdc76a4.ctex"]
+source_file="res://assets/GBA/animations/AOE_Mend.png"
+dest_files=["res://.godot/imported/AOE_Mend.png-75e5bb19591c39f3afc1d79782ed65a6.ctex"]
 
 [params]
 

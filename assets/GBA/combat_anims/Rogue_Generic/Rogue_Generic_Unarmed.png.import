@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0s2kymtpf7uv"
-path="res://.godot/imported/Rogue_Generic_Unarmed.png-b5221160717920696474985b3fa84bd2.ctex"
+path="res://.godot/imported/Rogue_Generic_Unarmed.png-857608bfb3cfd0a8e5cba9d66763c05e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Rogue_Generic/Rogue_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/Rogue_Generic_Unarmed.png-b5221160717920696474985b3fa84bd2.ctex"]
+source_file="res://assets/GBA/combat_anims/Rogue_Generic/Rogue_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/Rogue_Generic_Unarmed.png-857608bfb3cfd0a8e5cba9d66763c05e.ctex"]
 
 [params]
 

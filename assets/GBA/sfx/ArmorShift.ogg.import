@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dit3t7rwvscl1"
-path="res://.godot/imported/ArmorShift.ogg-54cf3b9a1f50ec7c5726554da397adcf.oggvorbisstr"
+path="res://.godot/imported/ArmorShift.ogg-495ffd726f3512579c46259beaa05012.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/ArmorShift.ogg"
-dest_files=["res://.godot/imported/ArmorShift.ogg-54cf3b9a1f50ec7c5726554da397adcf.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/ArmorShift.ogg"
+dest_files=["res://.godot/imported/ArmorShift.ogg-495ffd726f3512579c46259beaa05012.oggvorbisstr"]
 
 [params]
 

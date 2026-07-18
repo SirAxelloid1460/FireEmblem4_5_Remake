@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx2gkaflv8ypl"
-path="res://.godot/imported/Paladin_Nanna_MagicStaff.png-d1a81c71167bc8a37393960967673a1d.ctex"
+path="res://.godot/imported/Paladin_Nanna_MagicStaff.png-934afba1fa0471a26edcae29f38e2cee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Nanna/Paladin_Nanna_MagicStaff.png"
-dest_files=["res://.godot/imported/Paladin_Nanna_MagicStaff.png-d1a81c71167bc8a37393960967673a1d.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Nanna/Paladin_Nanna_MagicStaff.png"
+dest_files=["res://.godot/imported/Paladin_Nanna_MagicStaff.png-934afba1fa0471a26edcae29f38e2cee.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dql2i1lhvueeg"
-path="res://.godot/imported/Sniper_Ronan_Unarmed.png-8f4857ed94d763f9c377dd35f397c036.ctex"
+path="res://.godot/imported/Sniper_Ronan_Unarmed.png-00c5d39986b17200cd8a3170ff0cbbcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sniper_Ronan/Sniper_Ronan_Unarmed.png"
-dest_files=["res://.godot/imported/Sniper_Ronan_Unarmed.png-8f4857ed94d763f9c377dd35f397c036.ctex"]
+source_file="res://assets/GBA/combat_anims/Sniper_Ronan/Sniper_Ronan_Unarmed.png"
+dest_files=["res://.godot/imported/Sniper_Ronan_Unarmed.png-00c5d39986b17200cd8a3170ff0cbbcb.ctex"]
 
 [params]
 

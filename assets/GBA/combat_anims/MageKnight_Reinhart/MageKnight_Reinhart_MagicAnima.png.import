@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfntlawjcf1ky"
-path="res://.godot/imported/MageKnight_Reinhart_MagicAnima.png-6bedae5b4633c495ab10c78b1926221c.ctex"
+path="res://.godot/imported/MageKnight_Reinhart_MagicAnima.png-3fe50f4de3cee563a2e0c1e5294d4999.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Reinhart/MageKnight_Reinhart_MagicAnima.png"
-dest_files=["res://.godot/imported/MageKnight_Reinhart_MagicAnima.png-6bedae5b4633c495ab10c78b1926221c.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Reinhart/MageKnight_Reinhart_MagicAnima.png"
+dest_files=["res://.godot/imported/MageKnight_Reinhart_MagicAnima.png-3fe50f4de3cee563a2e0c1e5294d4999.ctex"]
 
 [params]
 

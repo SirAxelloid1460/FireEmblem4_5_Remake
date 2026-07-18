@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djb3ipuaf0hyi"
-path="res://.godot/imported/Brian.png-142a885dccb8fb372652dadd872f6b94.ctex"
+path="res://.godot/imported/Brian.png-bc8269f4ce5758608c0a9c5bf77d340d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Brian.png"
-dest_files=["res://.godot/imported/Brian.png-142a885dccb8fb372652dadd872f6b94.ctex"]
+source_file="res://assets/GBA/portraits/characters/Brian.png"
+dest_files=["res://.godot/imported/Brian.png-bc8269f4ce5758608c0a9c5bf77d340d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp3x7cnrd5f2g"
-path="res://.godot/imported/Ovo.png-5a5e46477d108dabe737d9461fe3b254.ctex"
+path="res://.godot/imported/Ovo.png-d4c9ed190b45fc77246a5262cbb9e9f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Ovo.png"
-dest_files=["res://.godot/imported/Ovo.png-5a5e46477d108dabe737d9461fe3b254.ctex"]
+source_file="res://assets/GBA/portraits/characters/Ovo.png"
+dest_files=["res://.godot/imported/Ovo.png-d4c9ed190b45fc77246a5262cbb9e9f9.ctex"]
 
 [params]
 

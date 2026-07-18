@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7unwb04kw6me"
-path="res://.godot/imported/Thief_Daisy_MagicSword.png-1cd6db82bee4a469a9367688e97b1ffb.ctex"
+path="res://.godot/imported/Thief_Daisy_MagicSword.png-8eb69a0a11d5fe9b36bdc7fe2d5f4960.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Thief_Daisy/Thief_Daisy_MagicSword.png"
-dest_files=["res://.godot/imported/Thief_Daisy_MagicSword.png-1cd6db82bee4a469a9367688e97b1ffb.ctex"]
+source_file="res://assets/GBA/combat_anims/Thief_Daisy/Thief_Daisy_MagicSword.png"
+dest_files=["res://.godot/imported/Thief_Daisy_MagicSword.png-8eb69a0a11d5fe9b36bdc7fe2d5f4960.ctex"]
 
 [params]
 

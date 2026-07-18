@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dr2b7dt7fvbkm"
-path="res://.godot/imported/GleipnirGust.png-3a524f1a4ae9df6fc7c1a07e42d1d018.ctex"
+path="res://.godot/imported/GleipnirGust.png-b8a72ec0f075fc1a8dd1d8a5b2ca9bdd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/GleipnirGust.png"
-dest_files=["res://.godot/imported/GleipnirGust.png-3a524f1a4ae9df6fc7c1a07e42d1d018.ctex"]
+source_file="res://assets/GBA/combat_effects/GleipnirGust.png"
+dest_files=["res://.godot/imported/GleipnirGust.png-b8a72ec0f075fc1a8dd1d8a5b2ca9bdd.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ck03flmva5ncq"
-path="res://.godot/imported/particle_purple_mote.png-4754567e22242cfe696d7c3d84e43b21.ctex"
+path="res://.godot/imported/particle_purple_mote.png-2a2692de12cabd67952ee7dfdeeff567.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/particles/particle_purple_mote.png"
-dest_files=["res://.godot/imported/particle_purple_mote.png-4754567e22242cfe696d7c3d84e43b21.ctex"]
+source_file="res://assets/GBA/particles/particle_purple_mote.png"
+dest_files=["res://.godot/imported/particle_purple_mote.png-2a2692de12cabd67952ee7dfdeeff567.ctex"]
 
 [params]
 

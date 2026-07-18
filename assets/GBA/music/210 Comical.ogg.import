@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ckkemjxudr2ma"
-path="res://.godot/imported/210 Comical.ogg-8405be426a50685ed6e40e02e5302d80.oggvorbisstr"
+path="res://.godot/imported/210 Comical.ogg-846bee062855a89acf3a7f8d4328eda4.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/210 Comical.ogg"
-dest_files=["res://.godot/imported/210 Comical.ogg-8405be426a50685ed6e40e02e5302d80.oggvorbisstr"]
+source_file="res://assets/GBA/music/210 Comical.ogg"
+dest_files=["res://.godot/imported/210 Comical.ogg-846bee062855a89acf3a7f8d4328eda4.oggvorbisstr"]
 
 [params]
 

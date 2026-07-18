@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccruf2k707jrn"
-path="res://.godot/imported/Sniper_Brigit_Unarmed.png-dffdcc2e7c12cd34f48b15f2c7257700.ctex"
+path="res://.godot/imported/Sniper_Brigit_Unarmed.png-c1f7ee36391a809f5560fb46bd6100ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sniper_Brigit/Sniper_Brigit_Unarmed.png"
-dest_files=["res://.godot/imported/Sniper_Brigit_Unarmed.png-dffdcc2e7c12cd34f48b15f2c7257700.ctex"]
+source_file="res://assets/GBA/combat_anims/Sniper_Brigit/Sniper_Brigit_Unarmed.png"
+dest_files=["res://.godot/imported/Sniper_Brigit_Unarmed.png-c1f7ee36391a809f5560fb46bd6100ae.ctex"]
 
 [params]
 

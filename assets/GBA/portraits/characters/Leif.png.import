@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpxncrj8kwoss"
-path="res://.godot/imported/Leif.png-a66db2fe3ec36286b3624472f8e960b6.ctex"
+path="res://.godot/imported/Leif.png-9bd696bd58e1a484973477afa99000ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Leif.png"
-dest_files=["res://.godot/imported/Leif.png-a66db2fe3ec36286b3624472f8e960b6.ctex"]
+source_file="res://assets/GBA/portraits/characters/Leif.png"
+dest_files=["res://.godot/imported/Leif.png-9bd696bd58e1a484973477afa99000ac.ctex"]
 
 [params]
 

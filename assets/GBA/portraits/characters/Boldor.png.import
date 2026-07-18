@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpp3ti5g1rbdw"
-path="res://.godot/imported/Boldor.png-5b97514922701a068cf400939f4ed5c1.ctex"
+path="res://.godot/imported/Boldor.png-10f1fddbb43b8a20e7349a7b52b694aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Boldor.png"
-dest_files=["res://.godot/imported/Boldor.png-5b97514922701a068cf400939f4ed5c1.ctex"]
+source_file="res://assets/GBA/portraits/characters/Boldor.png"
+dest_files=["res://.godot/imported/Boldor.png-10f1fddbb43b8a20e7349a7b52b694aa.ctex"]
 
 [params]
 

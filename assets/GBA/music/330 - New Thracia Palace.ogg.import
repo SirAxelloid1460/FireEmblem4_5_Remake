@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cuv5bbb3otxo7"
-path="res://.godot/imported/330 - New Thracia Palace.ogg-55f7d09fa5a560651eb978a0c94c9210.oggvorbisstr"
+path="res://.godot/imported/330 - New Thracia Palace.ogg-95182fc47e602268cd260d11e5ea8fec.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/330 - New Thracia Palace.ogg"
-dest_files=["res://.godot/imported/330 - New Thracia Palace.ogg-55f7d09fa5a560651eb978a0c94c9210.oggvorbisstr"]
+source_file="res://assets/GBA/music/330 - New Thracia Palace.ogg"
+dest_files=["res://.godot/imported/330 - New Thracia Palace.ogg-95182fc47e602268cd260d11e5ea8fec.oggvorbisstr"]
 
 [params]
 

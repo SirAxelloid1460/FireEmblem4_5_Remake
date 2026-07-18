@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bl3gjh8w57g3p"
-path="res://.godot/imported/The Abyssal Plains.ogg-8e903ca5eabb65fa98775a98476dbb4f.oggvorbisstr"
+path="res://.godot/imported/The Abyssal Plains.ogg-cb1d9eb692ff7523c5e73620e43329af.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/The Abyssal Plains.ogg"
-dest_files=["res://.godot/imported/The Abyssal Plains.ogg-8e903ca5eabb65fa98775a98476dbb4f.oggvorbisstr"]
+source_file="res://assets/GBA/music/The Abyssal Plains.ogg"
+dest_files=["res://.godot/imported/The Abyssal Plains.ogg-cb1d9eb692ff7523c5e73620e43329af.oggvorbisstr"]
 
 [params]
 

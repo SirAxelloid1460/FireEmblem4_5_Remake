@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnxbjhojr3efj"
-path="res://.godot/imported/LanceKnight_Generic_Javelin.png-e0ac097ed7b207b2eff39ead6864544b.ctex"
+path="res://.godot/imported/LanceKnight_Generic_Javelin.png-060591c8bb275c7421d7da210ea90a6a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/LanceKnight_Generic/LanceKnight_Generic_Javelin.png"
-dest_files=["res://.godot/imported/LanceKnight_Generic_Javelin.png-e0ac097ed7b207b2eff39ead6864544b.ctex"]
+source_file="res://assets/GBA/combat_anims/LanceKnight_Generic/LanceKnight_Generic_Javelin.png"
+dest_files=["res://.godot/imported/LanceKnight_Generic_Javelin.png-060591c8bb275c7421d7da210ea90a6a.ctex"]
 
 [params]
 

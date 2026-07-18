@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0le6yyf73a1u"
-path="res://.godot/imported/MageF-move.png-d9d95437fda3661bdc2804ee67fb28be.ctex"
+path="res://.godot/imported/MageF-move.png-188075e01b41f3acd70f66e5681040aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/MageF-move.png"
-dest_files=["res://.godot/imported/MageF-move.png-d9d95437fda3661bdc2804ee67fb28be.ctex"]
+source_file="res://assets/GBA/map_sprites/MageF-move.png"
+dest_files=["res://.godot/imported/MageF-move.png-188075e01b41f3acd70f66e5681040aa.ctex"]
 
 [params]
 

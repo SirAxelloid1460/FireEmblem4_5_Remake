@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnide52rqlcl3"
-path="res://.godot/imported/DragonMaster_Generic_Javelin.png-2343514bacf1f7f5fbb5f749179c79a6.ctex"
+path="res://.godot/imported/DragonMaster_Generic_Javelin.png-9a904e5a15c70f9713bd8a9633907a2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DragonMaster_Generic/DragonMaster_Generic_Javelin.png"
-dest_files=["res://.godot/imported/DragonMaster_Generic_Javelin.png-2343514bacf1f7f5fbb5f749179c79a6.ctex"]
+source_file="res://assets/GBA/combat_anims/DragonMaster_Generic/DragonMaster_Generic_Javelin.png"
+dest_files=["res://.godot/imported/DragonMaster_Generic_Javelin.png-9a904e5a15c70f9713bd8a9633907a2f.ctex"]
 
 [params]
 

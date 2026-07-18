@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwly5s2bxwk0s"
-path="res://.godot/imported/MapProvoke.png-df2e8eda2fa832b669513e19be6b839d.ctex"
+path="res://.godot/imported/MapProvoke.png-828ac983f12a8ff446b295eed66d5545.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/MapProvoke.png"
-dest_files=["res://.godot/imported/MapProvoke.png-df2e8eda2fa832b669513e19be6b839d.ctex"]
+source_file="res://assets/GBA/animations/MapProvoke.png"
+dest_files=["res://.godot/imported/MapProvoke.png-828ac983f12a8ff446b295eed66d5545.ctex"]
 
 [params]
 

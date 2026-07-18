@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://du4dk0yqvscym"
-path="res://.godot/imported/Andrey.png-ad4cdf23f93ab766a491287b3b2771cb.ctex"
+path="res://.godot/imported/Andrey.png-79104fc814a1edfc83eb0fe33882f8c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Andrey.png"
-dest_files=["res://.godot/imported/Andrey.png-ad4cdf23f93ab766a491287b3b2771cb.ctex"]
+source_file="res://assets/GBA/portraits/characters/Andrey.png"
+dest_files=["res://.godot/imported/Andrey.png-79104fc814a1edfc83eb0fe33882f8c3.ctex"]
 
 [params]
 

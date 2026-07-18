@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://de8ktemxb46os"
-path="res://.godot/imported/Slayder.png-ad762959c9447024f99e2962b3d77659.ctex"
+path="res://.godot/imported/Slayder.png-519532c3961f0063810a0e44ce55cdfc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Slayder.png"
-dest_files=["res://.godot/imported/Slayder.png-ad762959c9447024f99e2962b3d77659.ctex"]
+source_file="res://assets/GBA/portraits/characters/Slayder.png"
+dest_files=["res://.godot/imported/Slayder.png-519532c3961f0063810a0e44ce55cdfc.ctex"]
 
 [params]
 

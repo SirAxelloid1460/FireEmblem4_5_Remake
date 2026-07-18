@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6347xj02cg35"
-path="res://.godot/imported/Aida.png-d44254e2b19075f2ccbe3f25dcbf56f6.ctex"
+path="res://.godot/imported/Aida.png-9165d1e7e2a72dbccfe67f4cf604ad56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Aida.png"
-dest_files=["res://.godot/imported/Aida.png-d44254e2b19075f2ccbe3f25dcbf56f6.ctex"]
+source_file="res://assets/GBA/portraits/characters/Aida.png"
+dest_files=["res://.godot/imported/Aida.png-9165d1e7e2a72dbccfe67f4cf604ad56.ctex"]
 
 [params]
 

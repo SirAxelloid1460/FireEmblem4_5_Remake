@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b72ogcw2bw0gp"
-path="res://.godot/imported/combat_stats_purple_guard.png-e608f9685ca942d1af5b744d06e6fd0d.ctex"
+path="res://.godot/imported/combat_stats_purple_guard.png-4ec7c552b81f1eb1d8f6f79ac6566713.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_displays/combat_stats_purple_guard.png"
-dest_files=["res://.godot/imported/combat_stats_purple_guard.png-e608f9685ca942d1af5b744d06e6fd0d.ctex"]
+source_file="res://assets/GBA/combat_displays/combat_stats_purple_guard.png"
+dest_files=["res://.godot/imported/combat_stats_purple_guard.png-4ec7c552b81f1eb1d8f6f79ac6566713.ctex"]
 
 [params]
 

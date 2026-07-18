@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpwaubc82arnb"
-path="res://.godot/imported/Elfire.png-6acce78fc1f015bf9c06c19c3b0a0e72.ctex"
+path="res://.godot/imported/Elfire.png-87d2ffcda896a87cf094c469c14042c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/Elfire.png"
-dest_files=["res://.godot/imported/Elfire.png-6acce78fc1f015bf9c06c19c3b0a0e72.ctex"]
+source_file="res://assets/GBA/combat_effects/Elfire.png"
+dest_files=["res://.godot/imported/Elfire.png-87d2ffcda896a87cf094c469c14042c5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buprcqphnsney"
-path="res://.godot/imported/Prince_Leif_Sword.png-ef0e348cf22b28e006fcbbb6cd92a418.ctex"
+path="res://.godot/imported/Prince_Leif_Sword.png-1b977bdf6ff18843d03a08d95311e4aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Prince_Leif/Prince_Leif_Sword.png"
-dest_files=["res://.godot/imported/Prince_Leif_Sword.png-ef0e348cf22b28e006fcbbb6cd92a418.ctex"]
+source_file="res://assets/GBA/combat_anims/Prince_Leif/Prince_Leif_Sword.png"
+dest_files=["res://.godot/imported/Prince_Leif_Sword.png-1b977bdf6ff18843d03a08d95311e4aa.ctex"]
 
 [params]
 

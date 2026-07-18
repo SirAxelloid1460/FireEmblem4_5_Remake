@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bye7t8mtiqpc8"
-path="res://.godot/imported/Sea-Melee.png-96b654f1c0cb41408a3dd97cce54cc43.ctex"
+path="res://.godot/imported/Sea-Melee.png-c301ff5fc715882e48a513f032793f6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Sea-Melee.png"
-dest_files=["res://.godot/imported/Sea-Melee.png-96b654f1c0cb41408a3dd97cce54cc43.ctex"]
+source_file="res://assets/GBA/platforms/Sea-Melee.png"
+dest_files=["res://.godot/imported/Sea-Melee.png-c301ff5fc715882e48a513f032793f6e.ctex"]
 
 [params]
 

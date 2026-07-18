@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doxyjolpavaxy"
-path="res://.godot/imported/MasterKnight_Male_Sword.png-5209dd3637b3d118ea5c5336ba1bd68f.ctex"
+path="res://.godot/imported/MasterKnight_Male_Sword.png-e61a20b4f841dee7769d9f17bad112f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MasterKnight_Male/MasterKnight_Male_Sword.png"
-dest_files=["res://.godot/imported/MasterKnight_Male_Sword.png-5209dd3637b3d118ea5c5336ba1bd68f.ctex"]
+source_file="res://assets/GBA/combat_anims/MasterKnight_Male/MasterKnight_Male_Sword.png"
+dest_files=["res://.godot/imported/MasterKnight_Male_Sword.png-e61a20b4f841dee7769d9f17bad112f6.ctex"]
 
 [params]
 

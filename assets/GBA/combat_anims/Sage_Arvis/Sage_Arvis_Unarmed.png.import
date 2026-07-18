@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d124kokj4mva1"
-path="res://.godot/imported/Sage_Arvis_Unarmed.png-9cb84193d274ffb5d91d985bb47cf87c.ctex"
+path="res://.godot/imported/Sage_Arvis_Unarmed.png-01a04c3f499093c10ef72227603f489a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Arvis/Sage_Arvis_Unarmed.png"
-dest_files=["res://.godot/imported/Sage_Arvis_Unarmed.png-9cb84193d274ffb5d91d985bb47cf87c.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Arvis/Sage_Arvis_Unarmed.png"
+dest_files=["res://.godot/imported/Sage_Arvis_Unarmed.png-01a04c3f499093c10ef72227603f489a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgl7hajjq6fgx"
-path="res://.godot/imported/DarkMage-move.png-b1a737b574f08afabbfed27c5a21bda5.ctex"
+path="res://.godot/imported/DarkMage-move.png-1ff2fa897138414aa09bb4d620e634c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/DarkMage-move.png"
-dest_files=["res://.godot/imported/DarkMage-move.png-b1a737b574f08afabbfed27c5a21bda5.ctex"]
+source_file="res://assets/GBA/map_sprites/DarkMage-move.png"
+dest_files=["res://.godot/imported/DarkMage-move.png-1ff2fa897138414aa09bb4d620e634c8.ctex"]
 
 [params]
 

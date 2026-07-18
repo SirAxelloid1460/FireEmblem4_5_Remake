@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg0adod7wh2ea"
-path="res://.godot/imported/Lightpriestess_Sara_MagicStaff.png-6cf5bf611cafeb383ad7b4f4c408788e.ctex"
+path="res://.godot/imported/Lightpriestess_Sara_MagicStaff.png-4a893359c8037b18ba1e195f9effc786.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Lightpriestess_Sara/Lightpriestess_Sara_MagicStaff.png"
-dest_files=["res://.godot/imported/Lightpriestess_Sara_MagicStaff.png-6cf5bf611cafeb383ad7b4f4c408788e.ctex"]
+source_file="res://assets/GBA/combat_anims/Lightpriestess_Sara/Lightpriestess_Sara_MagicStaff.png"
+dest_files=["res://.godot/imported/Lightpriestess_Sara_MagicStaff.png-4a893359c8037b18ba1e195f9effc786.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtqa7yrkoauw1"
-path="res://.godot/imported/Mua.png-4e5ff34d6cdbed50e3929e6b125eaee3.ctex"
+path="res://.godot/imported/Mua.png-db6dacddd376e3e4592bd734f7e29070.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Mua.png"
-dest_files=["res://.godot/imported/Mua.png-4e5ff34d6cdbed50e3929e6b125eaee3.ctex"]
+source_file="res://assets/GBA/portraits/characters/Mua.png"
+dest_files=["res://.godot/imported/Mua.png-db6dacddd376e3e4592bd734f7e29070.ctex"]
 
 [params]
 

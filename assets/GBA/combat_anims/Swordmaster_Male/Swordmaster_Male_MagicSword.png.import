@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ego20o57b58n"
-path="res://.godot/imported/Swordmaster_Male_MagicSword.png-216b2ad957adc1f80ae635761ab506e5.ctex"
+path="res://.godot/imported/Swordmaster_Male_MagicSword.png-4064392f59c350492520f4e74d1dc353.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Male/Swordmaster_Male_MagicSword.png"
-dest_files=["res://.godot/imported/Swordmaster_Male_MagicSword.png-216b2ad957adc1f80ae635761ab506e5.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Male/Swordmaster_Male_MagicSword.png"
+dest_files=["res://.godot/imported/Swordmaster_Male_MagicSword.png-4064392f59c350492520f4e74d1dc353.ctex"]
 
 [params]
 

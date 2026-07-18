@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbcal0cgv864n"
-path="res://.godot/imported/DukeKnight_Generic_Unarmed.png-ba8e340463cb3e7b2534063a7784bd47.ctex"
+path="res://.godot/imported/DukeKnight_Generic_Unarmed.png-5f77147f28eed95dbe1e204934316b22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DukeKnight_Generic/DukeKnight_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/DukeKnight_Generic_Unarmed.png-ba8e340463cb3e7b2534063a7784bd47.ctex"]
+source_file="res://assets/GBA/combat_anims/DukeKnight_Generic/DukeKnight_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/DukeKnight_Generic_Unarmed.png-5f77147f28eed95dbe1e204934316b22.ctex"]
 
 [params]
 

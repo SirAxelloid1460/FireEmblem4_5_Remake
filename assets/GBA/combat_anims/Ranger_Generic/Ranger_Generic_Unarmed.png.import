@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://g3848668o3bv"
-path="res://.godot/imported/Ranger_Generic_Unarmed.png-a7b520616005016aba2aca413818774c.ctex"
+path="res://.godot/imported/Ranger_Generic_Unarmed.png-f7d9c3ed8b28b558b45fe6acf9f9d3dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Ranger_Generic/Ranger_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/Ranger_Generic_Unarmed.png-a7b520616005016aba2aca413818774c.ctex"]
+source_file="res://assets/GBA/combat_anims/Ranger_Generic/Ranger_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/Ranger_Generic_Unarmed.png-f7d9c3ed8b28b558b45fe6acf9f9d3dd.ctex"]
 
 [params]
 

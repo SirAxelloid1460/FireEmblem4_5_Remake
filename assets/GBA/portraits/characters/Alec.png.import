@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqids7l7id2gu"
-path="res://.godot/imported/Alec.png-cc1358535e45ee9348914c83a7b8dd99.ctex"
+path="res://.godot/imported/Alec.png-8dfaba352e79c54d54c3121d7acd914c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Alec.png"
-dest_files=["res://.godot/imported/Alec.png-cc1358535e45ee9348914c83a7b8dd99.ctex"]
+source_file="res://assets/GBA/portraits/characters/Alec.png"
+dest_files=["res://.godot/imported/Alec.png-8dfaba352e79c54d54c3121d7acd914c.ctex"]
 
 [params]
 

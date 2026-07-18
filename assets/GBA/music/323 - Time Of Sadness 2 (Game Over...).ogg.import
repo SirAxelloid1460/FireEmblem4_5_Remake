@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://vdrkst0703py"
-path="res://.godot/imported/323 - Time Of Sadness 2 (Game Over...).ogg-272ac307068035b85145730f42c1863a.oggvorbisstr"
+path="res://.godot/imported/323 - Time Of Sadness 2 (Game Over...).ogg-9c1334b577008bebdd09ad0be03a978c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/323 - Time Of Sadness 2 (Game Over...).ogg"
-dest_files=["res://.godot/imported/323 - Time Of Sadness 2 (Game Over...).ogg-272ac307068035b85145730f42c1863a.oggvorbisstr"]
+source_file="res://assets/GBA/music/323 - Time Of Sadness 2 (Game Over...).ogg"
+dest_files=["res://.godot/imported/323 - Time Of Sadness 2 (Game Over...).ogg-9c1334b577008bebdd09ad0be03a978c.oggvorbisstr"]
 
 [params]
 

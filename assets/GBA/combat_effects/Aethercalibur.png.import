@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqluidxwscrsq"
-path="res://.godot/imported/Aethercalibur.png-05f11f4c59f3f1ae8f63218aab6def86.ctex"
+path="res://.godot/imported/Aethercalibur.png-5d8b4ee561c7de9d89c9c655974319b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/Aethercalibur.png"
-dest_files=["res://.godot/imported/Aethercalibur.png-05f11f4c59f3f1ae8f63218aab6def86.ctex"]
+source_file="res://assets/GBA/combat_effects/Aethercalibur.png"
+dest_files=["res://.godot/imported/Aethercalibur.png-5d8b4ee561c7de9d89c9c655974319b4.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3lh8os2g8oul"
-path="res://.godot/imported/AThief-move.png-57b89a4d588ae6949967e4268105c8e8.ctex"
+path="res://.godot/imported/AThief-move.png-6ebe598b20d9e56e89a5bcfefb0da903.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/AThief-move.png"
-dest_files=["res://.godot/imported/AThief-move.png-57b89a4d588ae6949967e4268105c8e8.ctex"]
+source_file="res://assets/GBA/map_sprites/AThief-move.png"
+dest_files=["res://.godot/imported/AThief-move.png-6ebe598b20d9e56e89a5bcfefb0da903.ctex"]
 
 [params]
 

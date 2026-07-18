@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://en4ip60kp4d3"
-path="res://.godot/imported/PureWater.ogg-bf3158e700cb360cbd1636e129dbd4ea.oggvorbisstr"
+path="res://.godot/imported/PureWater.ogg-ff5d4d9bbd82cca2a5304f96424c4408.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/PureWater.ogg"
-dest_files=["res://.godot/imported/PureWater.ogg-bf3158e700cb360cbd1636e129dbd4ea.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/PureWater.ogg"
+dest_files=["res://.godot/imported/PureWater.ogg-ff5d4d9bbd82cca2a5304f96424c4408.oggvorbisstr"]
 
 [params]
 

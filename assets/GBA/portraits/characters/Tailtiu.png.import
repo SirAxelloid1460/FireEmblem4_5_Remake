@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dauc0yityw31t"
-path="res://.godot/imported/Tailtiu.png-7073932494529cc21758f66088b41688.ctex"
+path="res://.godot/imported/Tailtiu.png-1431a4176f9bf390ab68cfa8289882f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Tailtiu.png"
-dest_files=["res://.godot/imported/Tailtiu.png-7073932494529cc21758f66088b41688.ctex"]
+source_file="res://assets/GBA/portraits/characters/Tailtiu.png"
+dest_files=["res://.godot/imported/Tailtiu.png-1431a4176f9bf390ab68cfa8289882f8.ctex"]
 
 [params]
 

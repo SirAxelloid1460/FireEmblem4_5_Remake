@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xqse4ibf0k0l"
-path="res://.godot/imported/MasterKnight_Male_Lance.png-14c7b3cf6523feb25bb79056c66e5398.ctex"
+path="res://.godot/imported/MasterKnight_Male_Lance.png-259c5b22d274e1c7a4eb1aebf0da0c18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MasterKnight_Male/MasterKnight_Male_Lance.png"
-dest_files=["res://.godot/imported/MasterKnight_Male_Lance.png-14c7b3cf6523feb25bb79056c66e5398.ctex"]
+source_file="res://assets/GBA/combat_anims/MasterKnight_Male/MasterKnight_Male_Lance.png"
+dest_files=["res://.godot/imported/MasterKnight_Male_Lance.png-259c5b22d274e1c7a4eb1aebf0da0c18.ctex"]
 
 [params]
 

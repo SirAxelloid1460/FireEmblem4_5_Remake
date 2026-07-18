@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u0arctfwfh7u"
-path="res://.godot/imported/AuraFire.png-9dde23bbb63495bf1927e1ce07059913.ctex"
+path="res://.godot/imported/AuraFire.png-60902d97f13cc2c8d061f2cdca927b6f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/AuraFire.png"
-dest_files=["res://.godot/imported/AuraFire.png-9dde23bbb63495bf1927e1ce07059913.ctex"]
+source_file="res://assets/GBA/combat_effects/AuraFire.png"
+dest_files=["res://.godot/imported/AuraFire.png-60902d97f13cc2c8d061f2cdca927b6f.ctex"]
 
 [params]
 

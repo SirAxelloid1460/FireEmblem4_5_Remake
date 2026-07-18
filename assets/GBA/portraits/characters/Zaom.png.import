@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4kxa2pk5fimo"
-path="res://.godot/imported/Zaom.png-66a88ef3c515b30f96c98b3c5f4167c9.ctex"
+path="res://.godot/imported/Zaom.png-7d5cdf4bfdeb78296d29fd1e8f0e9b83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Zaom.png"
-dest_files=["res://.godot/imported/Zaom.png-66a88ef3c515b30f96c98b3c5f4167c9.ctex"]
+source_file="res://assets/GBA/portraits/characters/Zaom.png"
+dest_files=["res://.godot/imported/Zaom.png-7d5cdf4bfdeb78296d29fd1e8f0e9b83.ctex"]
 
 [params]
 

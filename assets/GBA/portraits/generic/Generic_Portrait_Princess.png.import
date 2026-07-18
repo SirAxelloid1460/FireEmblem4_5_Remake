@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b51tn3erhj6nk"
-path="res://.godot/imported/Generic_Portrait_Princess.png-567a4fb744e0ec7f127418925a70e751.ctex"
+path="res://.godot/imported/Generic_Portrait_Princess.png-ba3005d875cb796c2f3c5b16ef70d7d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Princess.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Princess.png-567a4fb744e0ec7f127418925a70e751.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Princess.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Princess.png-ba3005d875cb796c2f3c5b16ef70d7d3.ctex"]
 
 [params]
 

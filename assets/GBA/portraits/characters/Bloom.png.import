@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp4hhx6annch0"
-path="res://.godot/imported/Bloom.png-8175a2fd3670d1fd52f1d18828a7d908.ctex"
+path="res://.godot/imported/Bloom.png-72692339d02bea84a027958c9e0c4db4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Bloom.png"
-dest_files=["res://.godot/imported/Bloom.png-8175a2fd3670d1fd52f1d18828a7d908.ctex"]
+source_file="res://assets/GBA/portraits/characters/Bloom.png"
+dest_files=["res://.godot/imported/Bloom.png-72692339d02bea84a027958c9e0c4db4.ctex"]
 
 [params]
 

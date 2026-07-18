@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b80kkd34jr3pn"
-path="res://.godot/imported/combat_main_crit_left_green.png-e8e9a8dfe0a81f6ea1431069a7a251d0.ctex"
+path="res://.godot/imported/combat_main_crit_left_green.png-8e209d3104f94bad4215263e122c7aed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_displays/combat_main_crit_left_green.png"
-dest_files=["res://.godot/imported/combat_main_crit_left_green.png-e8e9a8dfe0a81f6ea1431069a7a251d0.ctex"]
+source_file="res://assets/GBA/combat_displays/combat_main_crit_left_green.png"
+dest_files=["res://.godot/imported/combat_main_crit_left_green.png-8e209d3104f94bad4215263e122c7aed.ctex"]
 
 [params]
 

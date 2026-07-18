@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nq8yyuksvoha"
-path="res://.godot/imported/River-Ranged.png-d84925e56bda771a8d61b31474a36067.ctex"
+path="res://.godot/imported/River-Ranged.png-526525cda91d6f754db0733c36f10d7d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/River-Ranged.png"
-dest_files=["res://.godot/imported/River-Ranged.png-d84925e56bda771a8d61b31474a36067.ctex"]
+source_file="res://assets/GBA/platforms/River-Ranged.png"
+dest_files=["res://.godot/imported/River-Ranged.png-526525cda91d6f754db0733c36f10d7d.ctex"]
 
 [params]
 

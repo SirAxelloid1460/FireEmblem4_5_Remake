@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csx5j3ll7smvt"
-path="res://.godot/imported/VillageGate.png-68de71965e453f36ecfa8c2e88131242.ctex"
+path="res://.godot/imported/VillageGate.png-a10a97624f2861caa1250b935252bff3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/VillageGate.png"
-dest_files=["res://.godot/imported/VillageGate.png-68de71965e453f36ecfa8c2e88131242.ctex"]
+source_file="res://assets/GBA/panoramas/VillageGate.png"
+dest_files=["res://.godot/imported/VillageGate.png-a10a97624f2861caa1250b935252bff3.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dfkm7by6c6lvq"
-path="res://.godot/imported/Aureola3.ogg-2aef45c5c70892ff36e144abcd204169.oggvorbisstr"
+path="res://.godot/imported/Aureola3.ogg-f2ed6f03ba9bd8a84a74a79871419bd1.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Aureola3.ogg"
-dest_files=["res://.godot/imported/Aureola3.ogg-2aef45c5c70892ff36e144abcd204169.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Aureola3.ogg"
+dest_files=["res://.godot/imported/Aureola3.ogg-f2ed6f03ba9bd8a84a74a79871419bd1.oggvorbisstr"]
 
 [params]
 

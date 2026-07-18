@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cq2n3ejyu7vpv"
-path="res://.godot/imported/icon_attackable_terrain.png-24275887dc3a16e72a075e91ce355ee3.ctex"
+path="res://.godot/imported/icon_attackable_terrain.png-12e18132185f79d112553236e6588ea6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/menus/icon_attackable_terrain.png"
-dest_files=["res://.godot/imported/icon_attackable_terrain.png-24275887dc3a16e72a075e91ce355ee3.ctex"]
+source_file="res://assets/GBA/menus/icon_attackable_terrain.png"
+dest_files=["res://.godot/imported/icon_attackable_terrain.png-12e18132185f79d112553236e6588ea6.ctex"]
 
 [params]
 

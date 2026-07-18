@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw2cqgcc2um60"
-path="res://.godot/imported/assist_info_grandmaster_blue.png-65d8c12c319a6406ae89917b9d5cce4c.ctex"
+path="res://.godot/imported/assist_info_grandmaster_blue.png-b75ff5f87654670aae4780fca4790a71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/displays/assist_info_grandmaster_blue.png"
-dest_files=["res://.godot/imported/assist_info_grandmaster_blue.png-65d8c12c319a6406ae89917b9d5cce4c.ctex"]
+source_file="res://assets/GBA/displays/assist_info_grandmaster_blue.png"
+dest_files=["res://.godot/imported/assist_info_grandmaster_blue.png-b75ff5f87654670aae4780fca4790a71.ctex"]
 
 [params]
 

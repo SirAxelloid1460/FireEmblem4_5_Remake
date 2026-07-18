@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3ci5sn0equve"
-path="res://.godot/imported/combat_marsh.png-8dc28351eee430394898de36461b3756.ctex"
+path="res://.godot/imported/combat_marsh.png-2ceb6c10e9b2f59d9f2853e29bc5512e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/combat_marsh.png"
-dest_files=["res://.godot/imported/combat_marsh.png-8dc28351eee430394898de36461b3756.ctex"]
+source_file="res://assets/GBA/panoramas/combat_marsh.png"
+dest_files=["res://.godot/imported/combat_marsh.png-2ceb6c10e9b2f59d9f2853e29bc5512e.ctex"]
 
 [params]
 

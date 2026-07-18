@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tx6w7rord0jg"
-path="res://.godot/imported/Sage_Female_Unarmed.png-95d10e11a5208fe7dfa8fe6feb4227a1.ctex"
+path="res://.godot/imported/Sage_Female_Unarmed.png-e374503fa6803bf905c73b9716350dd8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Female/Sage_Female_Unarmed.png"
-dest_files=["res://.godot/imported/Sage_Female_Unarmed.png-95d10e11a5208fe7dfa8fe6feb4227a1.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Female/Sage_Female_Unarmed.png"
+dest_files=["res://.godot/imported/Sage_Female_Unarmed.png-e374503fa6803bf905c73b9716350dd8.ctex"]
 
 [params]
 

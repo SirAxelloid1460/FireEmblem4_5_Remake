@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fcinnvu0h2ao"
-path="res://.godot/imported/Princess-stand.png-3ac714a929954036b8b17c6ab797a6cd.ctex"
+path="res://.godot/imported/Princess-stand.png-00400720af53b8b1e5dbcb620d320cbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Princess-stand.png"
-dest_files=["res://.godot/imported/Princess-stand.png-3ac714a929954036b8b17c6ab797a6cd.ctex"]
+source_file="res://assets/GBA/map_sprites/Princess-stand.png"
+dest_files=["res://.godot/imported/Princess-stand.png-00400720af53b8b1e5dbcb620d320cbb.ctex"]
 
 [params]
 

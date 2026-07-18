@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://32dlnp762d38"
-path="res://.godot/imported/Dancer-stand.png-e808ad32ec6e777e5d48d77631f7ef0c.ctex"
+path="res://.godot/imported/Dancer-stand.png-536549e1522adc6260218f78a1a148a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Dancer-stand.png"
-dest_files=["res://.godot/imported/Dancer-stand.png-e808ad32ec6e777e5d48d77631f7ef0c.ctex"]
+source_file="res://assets/GBA/map_sprites/Dancer-stand.png"
+dest_files=["res://.godot/imported/Dancer-stand.png-536549e1522adc6260218f78a1a148a5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch1ron86gaovn"
-path="res://.godot/imported/Rogue_Lara_Sword.png-409ad389f414fc3b96aef01fc2b0b52b.ctex"
+path="res://.godot/imported/Rogue_Lara_Sword.png-ba0d16764e201227bda34ff58c3ef8f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Rogue_Lara/Rogue_Lara_Sword.png"
-dest_files=["res://.godot/imported/Rogue_Lara_Sword.png-409ad389f414fc3b96aef01fc2b0b52b.ctex"]
+source_file="res://assets/GBA/combat_anims/Rogue_Lara/Rogue_Lara_Sword.png"
+dest_files=["res://.godot/imported/Rogue_Lara_Sword.png-ba0d16764e201227bda34ff58c3ef8f3.ctex"]
 
 [params]
 

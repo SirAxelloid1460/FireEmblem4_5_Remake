@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjvffhyt6u7gk"
-path="res://.godot/imported/Reinhardt.png-e468584d4c6596c8bd7869f1fba1484a.ctex"
+path="res://.godot/imported/Reinhardt.png-c40243b0d3224f74b60a827a06fa3967.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Reinhardt.png"
-dest_files=["res://.godot/imported/Reinhardt.png-e468584d4c6596c8bd7869f1fba1484a.ctex"]
+source_file="res://assets/GBA/portraits/characters/Reinhardt.png"
+dest_files=["res://.godot/imported/Reinhardt.png-c40243b0d3224f74b60a827a06fa3967.ctex"]
 
 [params]
 

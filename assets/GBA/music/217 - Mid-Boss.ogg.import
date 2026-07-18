@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://d2e6l3ddmhba3"
-path="res://.godot/imported/217 - Mid-Boss.ogg-be004fb23709eadf5412c9d8082eeeea.oggvorbisstr"
+path="res://.godot/imported/217 - Mid-Boss.ogg-41d3729cda4b1d2a1a1a07a3589792cc.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/217 - Mid-Boss.ogg"
-dest_files=["res://.godot/imported/217 - Mid-Boss.ogg-be004fb23709eadf5412c9d8082eeeea.oggvorbisstr"]
+source_file="res://assets/GBA/music/217 - Mid-Boss.ogg"
+dest_files=["res://.godot/imported/217 - Mid-Boss.ogg-41d3729cda4b1d2a1a1a07a3589792cc.oggvorbisstr"]
 
 [params]
 

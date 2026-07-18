@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3bel1vwtseca"
-path="res://.godot/imported/Hero_Creidne_Axe.png-c20c23ce9f54e5e90f8513da12dbe488.ctex"
+path="res://.godot/imported/Hero_Creidne_Axe.png-6466608c75f17d48d14b8a2e6c7fe444.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Hero_Creidne/Hero_Creidne_Axe.png"
-dest_files=["res://.godot/imported/Hero_Creidne_Axe.png-c20c23ce9f54e5e90f8513da12dbe488.ctex"]
+source_file="res://assets/GBA/combat_anims/Hero_Creidne/Hero_Creidne_Axe.png"
+dest_files=["res://.godot/imported/Hero_Creidne_Axe.png-6466608c75f17d48d14b8a2e6c7fe444.ctex"]
 
 [params]
 

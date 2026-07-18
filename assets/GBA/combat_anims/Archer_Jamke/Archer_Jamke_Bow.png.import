@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0hrerw30ooyp"
-path="res://.godot/imported/Archer_Jamke_Bow.png-58b4158e1acedaea935b5e986fb05778.ctex"
+path="res://.godot/imported/Archer_Jamke_Bow.png-720f26fbe9f8f8bd02088b71e0654887.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Archer_Jamke/Archer_Jamke_Bow.png"
-dest_files=["res://.godot/imported/Archer_Jamke_Bow.png-58b4158e1acedaea935b5e986fb05778.ctex"]
+source_file="res://assets/GBA/combat_anims/Archer_Jamke/Archer_Jamke_Bow.png"
+dest_files=["res://.godot/imported/Archer_Jamke_Bow.png-720f26fbe9f8f8bd02088b71e0654887.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8b6b8rc41rie"
-path="res://.godot/imported/MageKnight_Olwen_Sword.png-36ccf49b2f3e2950cf05574a58fc34e3.ctex"
+path="res://.godot/imported/MageKnight_Olwen_Sword.png-90809a1ffe5b293a1293c4598b31b9d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Olwen/MageKnight_Olwen_Sword.png"
-dest_files=["res://.godot/imported/MageKnight_Olwen_Sword.png-36ccf49b2f3e2950cf05574a58fc34e3.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Olwen/MageKnight_Olwen_Sword.png"
+dest_files=["res://.godot/imported/MageKnight_Olwen_Sword.png-90809a1ffe5b293a1293c4598b31b9d5.ctex"]
 
 [params]
 

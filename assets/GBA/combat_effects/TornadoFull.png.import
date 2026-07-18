@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3nmsqges2i5v"
-path="res://.godot/imported/TornadoFull.png-2319f736779fe8c7a3b3fb58dd2cd58a.ctex"
+path="res://.godot/imported/TornadoFull.png-c4d911dd0ecfc628db7c88a88c215c67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/TornadoFull.png"
-dest_files=["res://.godot/imported/TornadoFull.png-2319f736779fe8c7a3b3fb58dd2cd58a.ctex"]
+source_file="res://assets/GBA/combat_effects/TornadoFull.png"
+dest_files=["res://.godot/imported/TornadoFull.png-c4d911dd0ecfc628db7c88a88c215c67.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfv3s7e3te8tg"
-path="res://.godot/imported/bern2.png-810329c48d76d7efa008938c4cb966bf.ctex"
+path="res://.godot/imported/bern2.png-284fdfce5b70c147a628ac8669722acc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/autotiles/bern2.png"
-dest_files=["res://.godot/imported/bern2.png-810329c48d76d7efa008938c4cb966bf.ctex"]
+source_file="res://assets/GBA/autotiles/bern2.png"
+dest_files=["res://.godot/imported/bern2.png-284fdfce5b70c147a628ac8669722acc.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdo833ij68ob7"
-path="res://.godot/imported/Village-Melee.png-a8b85193ff43ab29641d5df2204fd98a.ctex"
+path="res://.godot/imported/Village-Melee.png-b11fb38345e322e180d0a9aa95b6aed1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Village-Melee.png"
-dest_files=["res://.godot/imported/Village-Melee.png-a8b85193ff43ab29641d5df2204fd98a.ctex"]
+source_file="res://assets/GBA/platforms/Village-Melee.png"
+dest_files=["res://.godot/imported/Village-Melee.png-b11fb38345e322e180d0a9aa95b6aed1.ctex"]
 
 [params]
 

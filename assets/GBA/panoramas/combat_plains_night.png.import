@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsivexsk7mpqf"
-path="res://.godot/imported/combat_plains_night.png-5c0907eb6e706bf018a8ee397bacec28.ctex"
+path="res://.godot/imported/combat_plains_night.png-88278576a99caf07a8692df03b7c6bcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/combat_plains_night.png"
-dest_files=["res://.godot/imported/combat_plains_night.png-5c0907eb6e706bf018a8ee397bacec28.ctex"]
+source_file="res://assets/GBA/panoramas/combat_plains_night.png"
+dest_files=["res://.godot/imported/combat_plains_night.png-88278576a99caf07a8692df03b7c6bcc.ctex"]
 
 [params]
 

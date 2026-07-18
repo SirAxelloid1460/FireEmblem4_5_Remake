@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cei8wvqga1q4p"
-path="res://.godot/imported/MageFemaleTailtyu-move.png-014a4c8d09964f0b8837861a8100ba7e.ctex"
+path="res://.godot/imported/MageFemaleTailtyu-move.png-7211de56c1b46197f6959be550919ca6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/MageFemaleTailtyu-move.png"
-dest_files=["res://.godot/imported/MageFemaleTailtyu-move.png-014a4c8d09964f0b8837861a8100ba7e.ctex"]
+source_file="res://assets/GBA/map_sprites/MageFemaleTailtyu-move.png"
+dest_files=["res://.godot/imported/MageFemaleTailtyu-move.png-7211de56c1b46197f6959be550919ca6.ctex"]
 
 [params]
 

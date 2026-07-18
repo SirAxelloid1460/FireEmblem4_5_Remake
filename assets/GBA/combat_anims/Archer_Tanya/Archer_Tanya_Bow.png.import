@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpiu78am2np0i"
-path="res://.godot/imported/Archer_Tanya_Bow.png-553ce36b735cbbc158a9da34dd8c2397.ctex"
+path="res://.godot/imported/Archer_Tanya_Bow.png-9d7f59a0ce9cd175954be22ab0b6ec06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Archer_Tanya/Archer_Tanya_Bow.png"
-dest_files=["res://.godot/imported/Archer_Tanya_Bow.png-553ce36b735cbbc158a9da34dd8c2397.ctex"]
+source_file="res://assets/GBA/combat_anims/Archer_Tanya/Archer_Tanya_Bow.png"
+dest_files=["res://.godot/imported/Archer_Tanya_Bow.png-9d7f59a0ce9cd175954be22ab0b6ec06.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3l5mdrwl1hql"
-path="res://.godot/imported/Fighter_Osian_HandAxe.png-7dcb8d7e52aafef51a27652f63d5c10d.ctex"
+path="res://.godot/imported/Fighter_Osian_HandAxe.png-8770399cb7ad0b84364250f6aaa98472.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Fighter_Osian/Fighter_Osian_HandAxe.png"
-dest_files=["res://.godot/imported/Fighter_Osian_HandAxe.png-7dcb8d7e52aafef51a27652f63d5c10d.ctex"]
+source_file="res://assets/GBA/combat_anims/Fighter_Osian/Fighter_Osian_HandAxe.png"
+dest_files=["res://.godot/imported/Fighter_Osian_HandAxe.png-8770399cb7ad0b84364250f6aaa98472.ctex"]
 
 [params]
 

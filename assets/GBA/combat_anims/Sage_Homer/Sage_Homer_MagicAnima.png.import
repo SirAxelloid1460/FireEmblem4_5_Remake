@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6f2p27nvdh53"
-path="res://.godot/imported/Sage_Homer_MagicAnima.png-c1124abe777df6bf5227e86759353ccc.ctex"
+path="res://.godot/imported/Sage_Homer_MagicAnima.png-c735f21ca5d4a2c67203796df287a715.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Homer/Sage_Homer_MagicAnima.png"
-dest_files=["res://.godot/imported/Sage_Homer_MagicAnima.png-c1124abe777df6bf5227e86759353ccc.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Homer/Sage_Homer_MagicAnima.png"
+dest_files=["res://.godot/imported/Sage_Homer_MagicAnima.png-c735f21ca5d4a2c67203796df287a715.ctex"]
 
 [params]
 

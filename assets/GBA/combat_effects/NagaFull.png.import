@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8rxsnmbmje80"
-path="res://.godot/imported/NagaFull.png-3075fff062206eeffbe848ceb2c6051d.ctex"
+path="res://.godot/imported/NagaFull.png-5b4409343dffeef682ea9fe726d694d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/NagaFull.png"
-dest_files=["res://.godot/imported/NagaFull.png-3075fff062206eeffbe848ceb2c6051d.ctex"]
+source_file="res://assets/GBA/combat_effects/NagaFull.png"
+dest_files=["res://.godot/imported/NagaFull.png-5b4409343dffeef682ea9fe726d694d9.ctex"]
 
 [params]
 

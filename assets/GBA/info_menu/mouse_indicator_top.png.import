@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be7od5sn7f4w5"
-path="res://.godot/imported/mouse_indicator_top.png-dce4b2820b299ec24bffc98b6832ddc0.ctex"
+path="res://.godot/imported/mouse_indicator_top.png-7297d896fa667c4b162d34314daa41d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/info_menu/mouse_indicator_top.png"
-dest_files=["res://.godot/imported/mouse_indicator_top.png-dce4b2820b299ec24bffc98b6832ddc0.ctex"]
+source_file="res://assets/GBA/info_menu/mouse_indicator_top.png"
+dest_files=["res://.godot/imported/mouse_indicator_top.png-7297d896fa667c4b162d34314daa41d1.ctex"]
 
 [params]
 

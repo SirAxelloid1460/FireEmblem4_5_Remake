@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://obs8p636oc1b"
-path="res://.godot/imported/136 Advance.ogg-35bf3e6c66143aa7d9b6dd67205137af.oggvorbisstr"
+path="res://.godot/imported/136 Advance.ogg-fddaf15d7beccf241ac237458051911c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/136 Advance.ogg"
-dest_files=["res://.godot/imported/136 Advance.ogg-35bf3e6c66143aa7d9b6dd67205137af.oggvorbisstr"]
+source_file="res://assets/GBA/music/136 Advance.ogg"
+dest_files=["res://.godot/imported/136 Advance.ogg-fddaf15d7beccf241ac237458051911c.oggvorbisstr"]
 
 [params]
 

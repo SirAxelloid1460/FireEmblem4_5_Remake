@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8av8tjw7ro5k"
-path="res://.godot/imported/AOE_Reinforce.png-c9b5b3e01aa89075e8c4279b44d37e76.ctex"
+path="res://.godot/imported/AOE_Reinforce.png-a88a818a9ec100834ed8a1ea9de89d43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/AOE_Reinforce.png"
-dest_files=["res://.godot/imported/AOE_Reinforce.png-c9b5b3e01aa89075e8c4279b44d37e76.ctex"]
+source_file="res://assets/GBA/animations/AOE_Reinforce.png"
+dest_files=["res://.godot/imported/AOE_Reinforce.png-a88a818a9ec100834ed8a1ea9de89d43.ctex"]
 
 [params]
 

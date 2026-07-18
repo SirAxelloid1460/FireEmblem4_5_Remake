@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csjlj05auevem"
-path="res://.godot/imported/HighPriestess_Generic_MagicStaff.png-163e8788a19b4cd8869f6981fa7d864e.ctex"
+path="res://.godot/imported/HighPriestess_Generic_MagicStaff.png-6edea2f58cbbc015d11d0084f25b4379.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/HighPriestess_Generic/HighPriestess_Generic_MagicStaff.png"
-dest_files=["res://.godot/imported/HighPriestess_Generic_MagicStaff.png-163e8788a19b4cd8869f6981fa7d864e.ctex"]
+source_file="res://assets/GBA/combat_anims/HighPriestess_Generic/HighPriestess_Generic_MagicStaff.png"
+dest_files=["res://.godot/imported/HighPriestess_Generic_MagicStaff.png-6edea2f58cbbc015d11d0084f25b4379.ctex"]
 
 [params]
 

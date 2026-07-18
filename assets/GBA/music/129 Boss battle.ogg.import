@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://by387ow88b8a8"
-path="res://.godot/imported/129 Boss battle.ogg-54107912400b29849b439a9cd1bcddbb.oggvorbisstr"
+path="res://.godot/imported/129 Boss battle.ogg-0dce353ff28994bffaf25d5f8901faff.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/129 Boss battle.ogg"
-dest_files=["res://.godot/imported/129 Boss battle.ogg-54107912400b29849b439a9cd1bcddbb.oggvorbisstr"]
+source_file="res://assets/GBA/music/129 Boss battle.ogg"
+dest_files=["res://.godot/imported/129 Boss battle.ogg-0dce353ff28994bffaf25d5f8901faff.oggvorbisstr"]
 
 [params]
 

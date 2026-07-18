@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhomo3xrd7pgm"
-path="res://.godot/imported/Kanatz.png-29612bc2a6e0ffbedad38543e11d8c28.ctex"
+path="res://.godot/imported/Kanatz.png-fe0cbc2d43c9e08c722d3a5f3a67f786.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Kanatz.png"
-dest_files=["res://.godot/imported/Kanatz.png-29612bc2a6e0ffbedad38543e11d8c28.ctex"]
+source_file="res://assets/GBA/portraits/characters/Kanatz.png"
+dest_files=["res://.godot/imported/Kanatz.png-fe0cbc2d43c9e08c722d3a5f3a67f786.ctex"]
 
 [params]
 

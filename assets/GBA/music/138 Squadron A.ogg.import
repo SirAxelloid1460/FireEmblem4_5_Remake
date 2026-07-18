@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bp84nmqxilgoo"
-path="res://.godot/imported/138 Squadron A.ogg-c68d45337e5120c059da0971dd184047.oggvorbisstr"
+path="res://.godot/imported/138 Squadron A.ogg-dde6f76d6a20f34ffdf1e572d154989a.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/138 Squadron A.ogg"
-dest_files=["res://.godot/imported/138 Squadron A.ogg-c68d45337e5120c059da0971dd184047.oggvorbisstr"]
+source_file="res://assets/GBA/music/138 Squadron A.ogg"
+dest_files=["res://.godot/imported/138 Squadron A.ogg-dde6f76d6a20f34ffdf1e572d154989a.oggvorbisstr"]
 
 [params]
 

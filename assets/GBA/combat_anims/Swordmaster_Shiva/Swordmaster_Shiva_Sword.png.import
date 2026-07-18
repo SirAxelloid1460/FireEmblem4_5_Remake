@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brlpxgejqgqun"
-path="res://.godot/imported/Swordmaster_Shiva_Sword.png-78e517d8f037d295f2418db6cc07a6d7.ctex"
+path="res://.godot/imported/Swordmaster_Shiva_Sword.png-0804611a504571dd544008b15b2e1009.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Shiva/Swordmaster_Shiva_Sword.png"
-dest_files=["res://.godot/imported/Swordmaster_Shiva_Sword.png-78e517d8f037d295f2418db6cc07a6d7.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Shiva/Swordmaster_Shiva_Sword.png"
+dest_files=["res://.godot/imported/Swordmaster_Shiva_Sword.png-0804611a504571dd544008b15b2e1009.ctex"]
 
 [params]
 

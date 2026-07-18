@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dckp55e5wsqlb"
-path="res://.godot/imported/Carrion.png-be6a7d0d77e6f2f6bfebea9335eddb83.ctex"
+path="res://.godot/imported/Carrion.png-13af8e040fe4c443c8e1abdab946373b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Carrion.png"
-dest_files=["res://.godot/imported/Carrion.png-be6a7d0d77e6f2f6bfebea9335eddb83.ctex"]
+source_file="res://assets/GBA/portraits/characters/Carrion.png"
+dest_files=["res://.godot/imported/Carrion.png-13af8e040fe4c443c8e1abdab946373b.ctex"]
 
 [params]
 

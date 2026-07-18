@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tebtvohk6nyc"
-path="res://.godot/imported/Asaello.png-5e5a07cbec40ace4e79a46d1d2c9c778.ctex"
+path="res://.godot/imported/Asaello.png-b9253fdd05991a884e1120af6e9c5212.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Asaello.png"
-dest_files=["res://.godot/imported/Asaello.png-5e5a07cbec40ace4e79a46d1d2c9c778.ctex"]
+source_file="res://assets/GBA/portraits/characters/Asaello.png"
+dest_files=["res://.godot/imported/Asaello.png-b9253fdd05991a884e1120af6e9c5212.ctex"]
 
 [params]
 

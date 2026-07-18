@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn2vsp31j21mx"
-path="res://.godot/imported/MageKnight_Female_Unarmed.png-4e3522e2dbaa7a1405ea0578953b95f5.ctex"
+path="res://.godot/imported/MageKnight_Female_Unarmed.png-f69e76e12cfbe9ab8ca7b43f7ac85a88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Female/MageKnight_Female_Unarmed.png"
-dest_files=["res://.godot/imported/MageKnight_Female_Unarmed.png-4e3522e2dbaa7a1405ea0578953b95f5.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Female/MageKnight_Female_Unarmed.png"
+dest_files=["res://.godot/imported/MageKnight_Female_Unarmed.png-f69e76e12cfbe9ab8ca7b43f7ac85a88.ctex"]
 
 [params]
 

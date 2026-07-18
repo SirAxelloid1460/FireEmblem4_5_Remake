@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp1ror2i6cqw6"
-path="res://.godot/imported/Swordfighter_Mareeta_Unarmed.png-870d90b5cbedf771d6b6bb5690fcd2ba.ctex"
+path="res://.godot/imported/Swordfighter_Mareeta_Unarmed.png-b52e25861aa019faf1bc057f8221d48d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordfighter_Mareeta/Swordfighter_Mareeta_Unarmed.png"
-dest_files=["res://.godot/imported/Swordfighter_Mareeta_Unarmed.png-870d90b5cbedf771d6b6bb5690fcd2ba.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordfighter_Mareeta/Swordfighter_Mareeta_Unarmed.png"
+dest_files=["res://.godot/imported/Swordfighter_Mareeta_Unarmed.png-b52e25861aa019faf1bc057f8221d48d.ctex"]
 
 [params]
 

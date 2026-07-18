@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqmkwxr5phb55"
-path="res://.godot/imported/Paladin_Evar_MagicSword.png-938bbda5c3ceb892a22e1f85a85964e9.ctex"
+path="res://.godot/imported/Paladin_Evar_MagicSword.png-c7513ac717136d8c0f5fce325edcfe11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Evar/Paladin_Evar_MagicSword.png"
-dest_files=["res://.godot/imported/Paladin_Evar_MagicSword.png-938bbda5c3ceb892a22e1f85a85964e9.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Evar/Paladin_Evar_MagicSword.png"
+dest_files=["res://.godot/imported/Paladin_Evar_MagicSword.png-c7513ac717136d8c0f5fce325edcfe11.ctex"]
 
 [params]
 

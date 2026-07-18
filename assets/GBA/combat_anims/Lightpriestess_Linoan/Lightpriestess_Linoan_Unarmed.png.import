@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uu7nigw88l7"
-path="res://.godot/imported/Lightpriestess_Linoan_Unarmed.png-51467d78b5695eaf084e9acc6020c823.ctex"
+path="res://.godot/imported/Lightpriestess_Linoan_Unarmed.png-72b97b32a5aab079987b49febd01a4a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Lightpriestess_Linoan/Lightpriestess_Linoan_Unarmed.png"
-dest_files=["res://.godot/imported/Lightpriestess_Linoan_Unarmed.png-51467d78b5695eaf084e9acc6020c823.ctex"]
+source_file="res://assets/GBA/combat_anims/Lightpriestess_Linoan/Lightpriestess_Linoan_Unarmed.png"
+dest_files=["res://.godot/imported/Lightpriestess_Linoan_Unarmed.png-72b97b32a5aab079987b49febd01a4a7.ctex"]
 
 [params]
 

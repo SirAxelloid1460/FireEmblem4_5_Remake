@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjblq1eew3h30"
-path="res://.godot/imported/AxeKnight-move.png-0f826944640612b901591fa68b6d9e07.ctex"
+path="res://.godot/imported/AxeKnight-move.png-5d5928aac31276da73bddd788a4c12fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/AxeKnight-move.png"
-dest_files=["res://.godot/imported/AxeKnight-move.png-0f826944640612b901591fa68b6d9e07.ctex"]
+source_file="res://assets/GBA/map_sprites/AxeKnight-move.png"
+dest_files=["res://.godot/imported/AxeKnight-move.png-5d5928aac31276da73bddd788a4c12fe.ctex"]
 
 [params]
 

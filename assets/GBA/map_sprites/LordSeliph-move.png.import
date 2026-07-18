@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4osvh2hs0pjw"
-path="res://.godot/imported/LordSeliph-move.png-0dd8812342f1dabdf549b680d80d4ff4.ctex"
+path="res://.godot/imported/LordSeliph-move.png-87133a37aad5ed8f8f0e4e95f3dc065a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/LordSeliph-move.png"
-dest_files=["res://.godot/imported/LordSeliph-move.png-0dd8812342f1dabdf549b680d80d4ff4.ctex"]
+source_file="res://assets/GBA/map_sprites/LordSeliph-move.png"
+dest_files=["res://.godot/imported/LordSeliph-move.png-87133a37aad5ed8f8f0e4e95f3dc065a.ctex"]
 
 [params]
 

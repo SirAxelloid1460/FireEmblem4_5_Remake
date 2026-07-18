@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://drbepkk5hky83"
-path="res://.godot/imported/Gleipnir.ogg-bf9aef21b353e1c6ce40415b4443c244.oggvorbisstr"
+path="res://.godot/imported/Gleipnir.ogg-74cff8821d963279942d54ff1c9ffe46.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Gleipnir.ogg"
-dest_files=["res://.godot/imported/Gleipnir.ogg-bf9aef21b353e1c6ce40415b4443c244.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Gleipnir.ogg"
+dest_files=["res://.godot/imported/Gleipnir.ogg-74cff8821d963279942d54ff1c9ffe46.oggvorbisstr"]
 
 [params]
 

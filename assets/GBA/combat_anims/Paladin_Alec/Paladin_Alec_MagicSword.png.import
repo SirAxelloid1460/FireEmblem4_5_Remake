@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj1bumwk7wh4n"
-path="res://.godot/imported/Paladin_Alec_MagicSword.png-a914c6720c36575ec89fb73ebff0a756.ctex"
+path="res://.godot/imported/Paladin_Alec_MagicSword.png-09324906285e21d27495cd1e4814154c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Alec/Paladin_Alec_MagicSword.png"
-dest_files=["res://.godot/imported/Paladin_Alec_MagicSword.png-a914c6720c36575ec89fb73ebff0a756.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Alec/Paladin_Alec_MagicSword.png"
+dest_files=["res://.godot/imported/Paladin_Alec_MagicSword.png-09324906285e21d27495cd1e4814154c.ctex"]
 
 [params]
 

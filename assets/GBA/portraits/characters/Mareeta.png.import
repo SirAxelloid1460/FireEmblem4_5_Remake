@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://g4lgj6u68esw"
-path="res://.godot/imported/Mareeta.png-74350c4c3d5ed2b403495ded92084522.ctex"
+path="res://.godot/imported/Mareeta.png-0f328350cea34743bbb76c7042c239b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Mareeta.png"
-dest_files=["res://.godot/imported/Mareeta.png-74350c4c3d5ed2b403495ded92084522.ctex"]
+source_file="res://assets/GBA/portraits/characters/Mareeta.png"
+dest_files=["res://.godot/imported/Mareeta.png-0f328350cea34743bbb76c7042c239b4.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw8h6a2goc7ul"
-path="res://.godot/imported/Assassin-move.png-d92737951c60b1173e2a3d93e526ab11.ctex"
+path="res://.godot/imported/Assassin-move.png-091af87c693ab5855e137ee1b256a2ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Assassin-move.png"
-dest_files=["res://.godot/imported/Assassin-move.png-d92737951c60b1173e2a3d93e526ab11.ctex"]
+source_file="res://assets/GBA/map_sprites/Assassin-move.png"
+dest_files=["res://.godot/imported/Assassin-move.png-091af87c693ab5855e137ee1b256a2ab.ctex"]
 
 [params]
 

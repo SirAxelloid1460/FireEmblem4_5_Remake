@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ctypglpep6t3f"
-path="res://.godot/imported/Whistle.ogg-2a93700d5797550304634d2da14aa53d.oggvorbisstr"
+path="res://.godot/imported/Whistle.ogg-d0634462fe1b3caacb9f781814d17e51.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Whistle.ogg"
-dest_files=["res://.godot/imported/Whistle.ogg-2a93700d5797550304634d2da14aa53d.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Whistle.ogg"
+dest_files=["res://.godot/imported/Whistle.ogg-d0634462fe1b3caacb9f781814d17e51.oggvorbisstr"]
 
 [params]
 

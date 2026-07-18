@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dwfsr2kofx1r7"
-path="res://.godot/imported/Healing.ogg-33bc81049805a298b841cf9bfa68437e.oggvorbisstr"
+path="res://.godot/imported/Healing.ogg-777a924bf62598a627e3a91c85168234.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Healing.ogg"
-dest_files=["res://.godot/imported/Healing.ogg-33bc81049805a298b841cf9bfa68437e.oggvorbisstr"]
+source_file="res://assets/GBA/music/Healing.ogg"
+dest_files=["res://.godot/imported/Healing.ogg-777a924bf62598a627e3a91c85168234.oggvorbisstr"]
 
 [params]
 

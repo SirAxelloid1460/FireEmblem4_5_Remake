@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdg8gcsukwpvr"
-path="res://.godot/imported/field_water1.png-0a5e7d160b02a78ebc8652b1efec951e.ctex"
+path="res://.godot/imported/field_water1.png-19e0e464a83ae291e527ad0c4bb36cb4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/autotiles/field_water1.png"
-dest_files=["res://.godot/imported/field_water1.png-0a5e7d160b02a78ebc8652b1efec951e.ctex"]
+source_file="res://assets/GBA/autotiles/field_water1.png"
+dest_files=["res://.godot/imported/field_water1.png-19e0e464a83ae291e527ad0c4bb36cb4.ctex"]
 
 [params]
 

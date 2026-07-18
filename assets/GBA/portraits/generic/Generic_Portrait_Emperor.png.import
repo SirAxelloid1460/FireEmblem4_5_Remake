@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://e1h5gg3rsseu"
-path="res://.godot/imported/Generic_Portrait_Emperor.png-6e9fab6ef44932129d20b4d2ed7fd042.ctex"
+path="res://.godot/imported/Generic_Portrait_Emperor.png-76510abc8c7b2fff3e0e00b42851b793.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Emperor.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Emperor.png-6e9fab6ef44932129d20b4d2ed7fd042.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Emperor.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Emperor.png-76510abc8c7b2fff3e0e00b42851b793.ctex"]
 
 [params]
 

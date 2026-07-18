@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xhbuwcukrnhi"
-path="res://.godot/imported/Sniper_Febail_Bow.png-e8005a4422c782e148dbe7161140f0cc.ctex"
+path="res://.godot/imported/Sniper_Febail_Bow.png-5fcff167d2d8652296b112a58fa27344.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sniper_Febail/Sniper_Febail_Bow.png"
-dest_files=["res://.godot/imported/Sniper_Febail_Bow.png-e8005a4422c782e148dbe7161140f0cc.ctex"]
+source_file="res://assets/GBA/combat_anims/Sniper_Febail/Sniper_Febail_Bow.png"
+dest_files=["res://.godot/imported/Sniper_Febail_Bow.png-5fcff167d2d8652296b112a58fa27344.ctex"]
 
 [params]
 

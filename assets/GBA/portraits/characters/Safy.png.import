@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuy5q15gpr1gk"
-path="res://.godot/imported/Safy.png-563524d5e677398f85fba7ed3a2e2330.ctex"
+path="res://.godot/imported/Safy.png-36d8131c02f0e6b8b93726ea7cbf91e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Safy.png"
-dest_files=["res://.godot/imported/Safy.png-563524d5e677398f85fba7ed3a2e2330.ctex"]
+source_file="res://assets/GBA/portraits/characters/Safy.png"
+dest_files=["res://.godot/imported/Safy.png-36d8131c02f0e6b8b93726ea7cbf91e0.ctex"]
 
 [params]
 

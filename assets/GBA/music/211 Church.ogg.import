@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bwr712v52s3ng"
-path="res://.godot/imported/211 Church.ogg-c19f242bcce7e1775ac4b1f3cceb8a75.oggvorbisstr"
+path="res://.godot/imported/211 Church.ogg-3b80cd3db8d1701d1ca687617718a823.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/211 Church.ogg"
-dest_files=["res://.godot/imported/211 Church.ogg-c19f242bcce7e1775ac4b1f3cceb8a75.oggvorbisstr"]
+source_file="res://assets/GBA/music/211 Church.ogg"
+dest_files=["res://.godot/imported/211 Church.ogg-3b80cd3db8d1701d1ca687617718a823.oggvorbisstr"]
 
 [params]
 

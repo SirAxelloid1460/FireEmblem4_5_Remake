@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lswrhk18iydq"
-path="res://.godot/imported/Fighter_Male_HandAxe.png-4bfd7bdf60c24b3aa9b732502541e158.ctex"
+path="res://.godot/imported/Fighter_Male_HandAxe.png-3a549f85117b7351d003e5b519c3de42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Fighter_Male/Fighter_Male_HandAxe.png"
-dest_files=["res://.godot/imported/Fighter_Male_HandAxe.png-4bfd7bdf60c24b3aa9b732502541e158.ctex"]
+source_file="res://assets/GBA/combat_anims/Fighter_Male/Fighter_Male_HandAxe.png"
+dest_files=["res://.godot/imported/Fighter_Male_HandAxe.png-3a549f85117b7351d003e5b519c3de42.ctex"]
 
 [params]
 

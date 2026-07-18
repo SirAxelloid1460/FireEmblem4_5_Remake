@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqm36gx61jwhh"
-path="res://.godot/imported/Monk-move.png-0a6171de996492b90a794df139a013ef.ctex"
+path="res://.godot/imported/Monk-move.png-950b469c072ad8b6845e2e14de7b3257.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Monk-move.png"
-dest_files=["res://.godot/imported/Monk-move.png-0a6171de996492b90a794df139a013ef.ctex"]
+source_file="res://assets/GBA/map_sprites/Monk-move.png"
+dest_files=["res://.godot/imported/Monk-move.png-950b469c072ad8b6845e2e14de7b3257.ctex"]
 
 [params]
 

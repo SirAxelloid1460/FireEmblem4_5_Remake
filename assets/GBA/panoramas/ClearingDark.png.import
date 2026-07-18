@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://71wq2vredv60"
-path="res://.godot/imported/ClearingDark.png-275e1359ecebc196a12c7d57af9693a3.ctex"
+path="res://.godot/imported/ClearingDark.png-f37369cbfd1a5ac6766c429361d5f523.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/ClearingDark.png"
-dest_files=["res://.godot/imported/ClearingDark.png-275e1359ecebc196a12c7d57af9693a3.ctex"]
+source_file="res://assets/GBA/panoramas/ClearingDark.png"
+dest_files=["res://.godot/imported/ClearingDark.png-f37369cbfd1a5ac6766c429361d5f523.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjilx77o1fb5u"
-path="res://.godot/imported/Supply_Fort.png-b8f57788c7ab1b4a484baacb9d377f02.ctex"
+path="res://.godot/imported/Supply_Fort.png-0411093a8cba4803a4a3f3a436e3d6f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/Supply_Fort.png"
-dest_files=["res://.godot/imported/Supply_Fort.png-b8f57788c7ab1b4a484baacb9d377f02.ctex"]
+source_file="res://assets/GBA/panoramas/Supply_Fort.png"
+dest_files=["res://.godot/imported/Supply_Fort.png-0411093a8cba4803a4a3f3a436e3d6f5.ctex"]
 
 [params]
 

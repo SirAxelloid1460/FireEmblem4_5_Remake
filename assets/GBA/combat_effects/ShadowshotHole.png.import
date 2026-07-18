@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2h2157npc4gc"
-path="res://.godot/imported/ShadowshotHole.png-fab6c82684b5e15a4e350810c140d04d.ctex"
+path="res://.godot/imported/ShadowshotHole.png-f5b8e6c2456194a2923dbe4601610bb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ShadowshotHole.png"
-dest_files=["res://.godot/imported/ShadowshotHole.png-fab6c82684b5e15a4e350810c140d04d.ctex"]
+source_file="res://assets/GBA/combat_effects/ShadowshotHole.png"
+dest_files=["res://.godot/imported/ShadowshotHole.png-f5b8e6c2456194a2923dbe4601610bb2.ctex"]
 
 [params]
 

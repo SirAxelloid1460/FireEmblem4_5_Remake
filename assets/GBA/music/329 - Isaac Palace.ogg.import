@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cybjuqhr6xvku"
-path="res://.godot/imported/329 - Isaac Palace.ogg-a3ab9a4d0c818aba6ad654386072c460.oggvorbisstr"
+path="res://.godot/imported/329 - Isaac Palace.ogg-a424ae202c08bd7d08ebe7c297ebccfa.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/329 - Isaac Palace.ogg"
-dest_files=["res://.godot/imported/329 - Isaac Palace.ogg-a3ab9a4d0c818aba6ad654386072c460.oggvorbisstr"]
+source_file="res://assets/GBA/music/329 - Isaac Palace.ogg"
+dest_files=["res://.godot/imported/329 - Isaac Palace.ogg-a424ae202c08bd7d08ebe7c297ebccfa.oggvorbisstr"]
 
 [params]
 

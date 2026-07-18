@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hkfjk64wykea"
-path="res://.godot/imported/title_background_FE4.png-92fa7efb27a35f12afc3a845d5125941.ctex"
+path="res://.godot/imported/title_background_FE4.png-e285d5fc3b1fd25cc60bf7562eaac3ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/title_background_FE4.png"
-dest_files=["res://.godot/imported/title_background_FE4.png-92fa7efb27a35f12afc3a845d5125941.ctex"]
+source_file="res://assets/GBA/panoramas/title_background_FE4.png"
+dest_files=["res://.godot/imported/title_background_FE4.png-e285d5fc3b1fd25cc60bf7562eaac3ba.ctex"]
 
 [params]
 

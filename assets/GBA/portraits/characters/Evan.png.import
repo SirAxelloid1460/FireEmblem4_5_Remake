@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://iqf13euokk8l"
-path="res://.godot/imported/Evan.png-cf5c455c55caef141fb7ff450a4640d6.ctex"
+path="res://.godot/imported/Evan.png-bb52a053ecfe0363b53379c252ee8505.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Evan.png"
-dest_files=["res://.godot/imported/Evan.png-cf5c455c55caef141fb7ff450a4640d6.ctex"]
+source_file="res://assets/GBA/portraits/characters/Evan.png"
+dest_files=["res://.godot/imported/Evan.png-bb52a053ecfe0363b53379c252ee8505.ctex"]
 
 [params]
 

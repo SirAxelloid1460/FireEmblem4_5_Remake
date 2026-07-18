@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cphse7i4bflmx"
-path="res://.godot/imported/DarkPrince_Generic_MagicStaff.png-a9086ef7128f08c7abdc94bd8c135aac.ctex"
+path="res://.godot/imported/DarkPrince_Generic_MagicStaff.png-8e67626d9e4e76acc19e19c997fbcbba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DarkPrince_Generic/DarkPrince_Generic_MagicStaff.png"
-dest_files=["res://.godot/imported/DarkPrince_Generic_MagicStaff.png-a9086ef7128f08c7abdc94bd8c135aac.ctex"]
+source_file="res://assets/GBA/combat_anims/DarkPrince_Generic/DarkPrince_Generic_MagicStaff.png"
+dest_files=["res://.godot/imported/DarkPrince_Generic_MagicStaff.png-8e67626d9e4e76acc19e19c997fbcbba.ctex"]
 
 [params]
 

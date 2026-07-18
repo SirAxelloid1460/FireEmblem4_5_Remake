@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c75d804fq01qj"
-path="res://.godot/imported/Distant Roads.ogg-d268d9abf68072625e96aa95ce042b91.oggvorbisstr"
+path="res://.godot/imported/Distant Roads.ogg-2361dd1b83a439eba699330a9e71c732.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Distant Roads.ogg"
-dest_files=["res://.godot/imported/Distant Roads.ogg-d268d9abf68072625e96aa95ce042b91.oggvorbisstr"]
+source_file="res://assets/GBA/music/Distant Roads.ogg"
+dest_files=["res://.godot/imported/Distant Roads.ogg-2361dd1b83a439eba699330a9e71c732.oggvorbisstr"]
 
 [params]
 

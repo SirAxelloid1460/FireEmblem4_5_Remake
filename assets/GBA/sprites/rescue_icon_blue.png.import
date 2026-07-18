@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drpop85opwcsw"
-path="res://.godot/imported/rescue_icon_blue.png-a0f34118b9e1efc7dfefb619fffce525.ctex"
+path="res://.godot/imported/rescue_icon_blue.png-1b936c520058e41948a2ad8c0f55f85f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/rescue_icon_blue.png"
-dest_files=["res://.godot/imported/rescue_icon_blue.png-a0f34118b9e1efc7dfefb619fffce525.ctex"]
+source_file="res://assets/GBA/sprites/rescue_icon_blue.png"
+dest_files=["res://.godot/imported/rescue_icon_blue.png-1b936c520058e41948a2ad8c0f55f85f.ctex"]
 
 [params]
 

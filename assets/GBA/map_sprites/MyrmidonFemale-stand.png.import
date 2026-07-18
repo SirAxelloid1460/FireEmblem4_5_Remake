@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://horu5oquesdf"
-path="res://.godot/imported/MyrmidonFemale-stand.png-3965d535f4c1a8f3ff42170cf6d5206a.ctex"
+path="res://.godot/imported/MyrmidonFemale-stand.png-6c2cbc83d2f3f02c90dbaf4f3d0fe242.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/MyrmidonFemale-stand.png"
-dest_files=["res://.godot/imported/MyrmidonFemale-stand.png-3965d535f4c1a8f3ff42170cf6d5206a.ctex"]
+source_file="res://assets/GBA/map_sprites/MyrmidonFemale-stand.png"
+dest_files=["res://.godot/imported/MyrmidonFemale-stand.png-6c2cbc83d2f3f02c90dbaf4f3d0fe242.ctex"]
 
 [params]
 

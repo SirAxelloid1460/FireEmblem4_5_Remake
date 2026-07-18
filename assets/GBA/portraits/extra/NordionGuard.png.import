@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5b7otvaa8e8u"
-path="res://.godot/imported/NordionGuard.png-202302b5f063ca4750a665b0fc1ae642.ctex"
+path="res://.godot/imported/NordionGuard.png-1e1c3083fc85e4c599a84fb18270b880.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/extra/NordionGuard.png"
-dest_files=["res://.godot/imported/NordionGuard.png-202302b5f063ca4750a665b0fc1ae642.ctex"]
+source_file="res://assets/GBA/portraits/extra/NordionGuard.png"
+dest_files=["res://.godot/imported/NordionGuard.png-1e1c3083fc85e4c599a84fb18270b880.ctex"]
 
 [params]
 

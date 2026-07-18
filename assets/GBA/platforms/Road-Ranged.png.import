@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8v8eaxx2sv2c"
-path="res://.godot/imported/Road-Ranged.png-28284a40f821138d70213b3a7ebe1cf9.ctex"
+path="res://.godot/imported/Road-Ranged.png-112d6131c4950cc210adbd720fcf2ac3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Road-Ranged.png"
-dest_files=["res://.godot/imported/Road-Ranged.png-28284a40f821138d70213b3a7ebe1cf9.ctex"]
+source_file="res://assets/GBA/platforms/Road-Ranged.png"
+dest_files=["res://.godot/imported/Road-Ranged.png-112d6131c4950cc210adbd720fcf2ac3.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cufnwnpuitih1"
-path="res://.godot/imported/RefreshFlute.ogg-03660ea4ab2fff64a686ec4a22993bf8.oggvorbisstr"
+path="res://.godot/imported/RefreshFlute.ogg-62fd4f4a69958ed1828c652331cee412.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/RefreshFlute.ogg"
-dest_files=["res://.godot/imported/RefreshFlute.ogg-03660ea4ab2fff64a686ec4a22993bf8.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/RefreshFlute.ogg"
+dest_files=["res://.godot/imported/RefreshFlute.ogg-62fd4f4a69958ed1828c652331cee412.oggvorbisstr"]
 
 [params]
 

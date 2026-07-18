@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://desdcpf473u60"
-path="res://.godot/imported/tile_info_destructible_opaque.png-8246a0b224df7f58b0079e3d997d7e00.ctex"
+path="res://.godot/imported/tile_info_destructible_opaque.png-463685cd1f89dfc3b267fb57698c8603.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/menus/tile_info_destructible_opaque.png"
-dest_files=["res://.godot/imported/tile_info_destructible_opaque.png-8246a0b224df7f58b0079e3d997d7e00.ctex"]
+source_file="res://assets/GBA/menus/tile_info_destructible_opaque.png"
+dest_files=["res://.godot/imported/tile_info_destructible_opaque.png-463685cd1f89dfc3b267fb57698c8603.ctex"]
 
 [params]
 

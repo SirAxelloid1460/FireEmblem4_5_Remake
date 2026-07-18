@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://jimoo3p2mdxh"
-path="res://.godot/imported/220 - Versus Alvis.ogg-811035672dff6d13deaabaab8a780973.oggvorbisstr"
+path="res://.godot/imported/220 - Versus Alvis.ogg-81113ab1917370f46a66695432812fd5.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/220 - Versus Alvis.ogg"
-dest_files=["res://.godot/imported/220 - Versus Alvis.ogg-811035672dff6d13deaabaab8a780973.oggvorbisstr"]
+source_file="res://assets/GBA/music/220 - Versus Alvis.ogg"
+dest_files=["res://.godot/imported/220 - Versus Alvis.ogg-81113ab1917370f46a66695432812fd5.oggvorbisstr"]
 
 [params]
 

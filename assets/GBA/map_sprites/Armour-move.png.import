@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cllubp8mcrknm"
-path="res://.godot/imported/Armour-move.png-c00ad543aef31759287588a2eaae2fc8.ctex"
+path="res://.godot/imported/Armour-move.png-a97cfff1a2bf98a4a15d874e5f3a792e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Armour-move.png"
-dest_files=["res://.godot/imported/Armour-move.png-c00ad543aef31759287588a2eaae2fc8.ctex"]
+source_file="res://assets/GBA/map_sprites/Armour-move.png"
+dest_files=["res://.godot/imported/Armour-move.png-a97cfff1a2bf98a4a15d874e5f3a792e.ctex"]
 
 [params]
 

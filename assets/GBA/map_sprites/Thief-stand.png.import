@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ck67bxomwapwf"
-path="res://.godot/imported/Thief-stand.png-0f49da0b0291ab5450a56c90049f5552.ctex"
+path="res://.godot/imported/Thief-stand.png-b53c1552e73b876d9208ee93b7f8d2df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Thief-stand.png"
-dest_files=["res://.godot/imported/Thief-stand.png-0f49da0b0291ab5450a56c90049f5552.ctex"]
+source_file="res://assets/GBA/map_sprites/Thief-stand.png"
+dest_files=["res://.godot/imported/Thief-stand.png-b53c1552e73b876d9208ee93b7f8d2df.ctex"]
 
 [params]
 

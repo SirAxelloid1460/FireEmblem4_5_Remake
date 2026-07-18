@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fj44ae1p3k0f"
-path="res://.godot/imported/FimbulvetrIce.png-1be97556c535a613eb4de2a186d50cce.ctex"
+path="res://.godot/imported/FimbulvetrIce.png-d434fa49cd3b629e4338c73e2a862b68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/FimbulvetrIce.png"
-dest_files=["res://.godot/imported/FimbulvetrIce.png-1be97556c535a613eb4de2a186d50cce.ctex"]
+source_file="res://assets/GBA/combat_effects/FimbulvetrIce.png"
+dest_files=["res://.godot/imported/FimbulvetrIce.png-d434fa49cd3b629e4338c73e2a862b68.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2n47ectf6k6g"
-path="res://.godot/imported/Oltoph.png-f9c80c99dc1212d16a41654342e078c5.ctex"
+path="res://.godot/imported/Oltoph.png-28a794bd5abcf6d5797f6a08d077512e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Oltoph.png"
-dest_files=["res://.godot/imported/Oltoph.png-f9c80c99dc1212d16a41654342e078c5.ctex"]
+source_file="res://assets/GBA/portraits/characters/Oltoph.png"
+dest_files=["res://.godot/imported/Oltoph.png-28a794bd5abcf6d5797f6a08d077512e.ctex"]
 
 [params]
 

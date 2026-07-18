@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://18iyn8x6bqyj"
-path="res://.godot/imported/Conomor.png-d0f851e37fc4cf5962042e3fc1110052.ctex"
+path="res://.godot/imported/Conomor.png-230dfde4364fe859f285e29a6825ccb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Conomor.png"
-dest_files=["res://.godot/imported/Conomor.png-d0f851e37fc4cf5962042e3fc1110052.ctex"]
+source_file="res://assets/GBA/portraits/characters/Conomor.png"
+dest_files=["res://.godot/imported/Conomor.png-230dfde4364fe859f285e29a6825ccb1.ctex"]
 
 [params]
 

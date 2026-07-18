@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dv24apcy0psdc"
-path="res://.godot/imported/Berserk.ogg-bc1c1df9e0742c34102c986db245adcf.oggvorbisstr"
+path="res://.godot/imported/Berserk.ogg-c5e185bfbdbe49a8b5ce3939e65b6377.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Berserk.ogg"
-dest_files=["res://.godot/imported/Berserk.ogg-bc1c1df9e0742c34102c986db245adcf.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Berserk.ogg"
+dest_files=["res://.godot/imported/Berserk.ogg-c5e185bfbdbe49a8b5ce3939e65b6377.oggvorbisstr"]
 
 [params]
 

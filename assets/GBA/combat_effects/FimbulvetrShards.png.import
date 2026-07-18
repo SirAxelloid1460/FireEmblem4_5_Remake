@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl6wpf1c3ky17"
-path="res://.godot/imported/FimbulvetrShards.png-30dfe2d5ead4c2f183291e887ef62ccf.ctex"
+path="res://.godot/imported/FimbulvetrShards.png-50dd821c6eec95eeeb56b881a20dbadf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/FimbulvetrShards.png"
-dest_files=["res://.godot/imported/FimbulvetrShards.png-30dfe2d5ead4c2f183291e887ef62ccf.ctex"]
+source_file="res://assets/GBA/combat_effects/FimbulvetrShards.png"
+dest_files=["res://.godot/imported/FimbulvetrShards.png-50dd821c6eec95eeeb56b881a20dbadf.ctex"]
 
 [params]
 

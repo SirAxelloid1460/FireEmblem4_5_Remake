@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx4amrx73gfm6"
-path="res://.godot/imported/Sword_Bonewalker-stand.png-cd7c17ace808292111c6e69872e009ba.ctex"
+path="res://.godot/imported/Sword_Bonewalker-stand.png-bbab172393e29fff3b3fda9eb21f17ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Sword_Bonewalker-stand.png"
-dest_files=["res://.godot/imported/Sword_Bonewalker-stand.png-cd7c17ace808292111c6e69872e009ba.ctex"]
+source_file="res://assets/GBA/map_sprites/Sword_Bonewalker-stand.png"
+dest_files=["res://.godot/imported/Sword_Bonewalker-stand.png-bbab172393e29fff3b3fda9eb21f17ad.ctex"]
 
 [params]
 

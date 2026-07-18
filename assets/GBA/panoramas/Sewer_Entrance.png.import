@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgjbj3gta4ayv"
-path="res://.godot/imported/Sewer_Entrance.png-d3c54a94bd8b18cb72f7435fc9434f29.ctex"
+path="res://.godot/imported/Sewer_Entrance.png-ca6312a0e3e0edf4fb0006c0947ffd77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/Sewer_Entrance.png"
-dest_files=["res://.godot/imported/Sewer_Entrance.png-d3c54a94bd8b18cb72f7435fc9434f29.ctex"]
+source_file="res://assets/GBA/panoramas/Sewer_Entrance.png"
+dest_files=["res://.godot/imported/Sewer_Entrance.png-ca6312a0e3e0edf4fb0006c0947ffd77.ctex"]
 
 [params]
 

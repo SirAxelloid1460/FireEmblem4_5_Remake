@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4ntqaww5y6vv"
-path="res://.godot/imported/LevelUpBattle.png-d052c6a55f943e7a0318e32833846e6a.ctex"
+path="res://.godot/imported/LevelUpBattle.png-a8e99a823ad38757039a0a48785376eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/LevelUpBattle.png"
-dest_files=["res://.godot/imported/LevelUpBattle.png-d052c6a55f943e7a0318e32833846e6a.ctex"]
+source_file="res://assets/GBA/animations/LevelUpBattle.png"
+dest_files=["res://.godot/imported/LevelUpBattle.png-a8e99a823ad38757039a0a48785376eb.ctex"]
 
 [params]
 

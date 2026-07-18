@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctuf7xhgv7g5s"
-path="res://.godot/imported/GradoCastle.png-bfe30deee829b891c5fb556cd696dffd.ctex"
+path="res://.godot/imported/GradoCastle.png-5109bc0f9ad8511d413d9ddae6f4ea46.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/GradoCastle.png"
-dest_files=["res://.godot/imported/GradoCastle.png-bfe30deee829b891c5fb556cd696dffd.ctex"]
+source_file="res://assets/GBA/panoramas/GradoCastle.png"
+dest_files=["res://.godot/imported/GradoCastle.png-5109bc0f9ad8511d413d9ddae6f4ea46.ctex"]
 
 [params]
 

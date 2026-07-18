@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0f4jvpnpefpt"
-path="res://.godot/imported/boundary_purple.png-f3be470fa11f8df52db253e845f0774b.ctex"
+path="res://.godot/imported/boundary_purple.png-f3313999f49e56319901483c1e94e6c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/highlights/boundary_purple.png"
-dest_files=["res://.godot/imported/boundary_purple.png-f3be470fa11f8df52db253e845f0774b.ctex"]
+source_file="res://assets/GBA/highlights/boundary_purple.png"
+dest_files=["res://.godot/imported/boundary_purple.png-f3313999f49e56319901483c1e94e6c4.ctex"]
 
 [params]
 

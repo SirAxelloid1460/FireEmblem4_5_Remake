@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2upbqv72rnyf"
-path="res://.godot/imported/Marty.png-accdfa6506ad32b534bfa9ed01864730.ctex"
+path="res://.godot/imported/Marty.png-ba95f8ccd17e09d42568d520387e8920.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Marty.png"
-dest_files=["res://.godot/imported/Marty.png-accdfa6506ad32b534bfa9ed01864730.ctex"]
+source_file="res://assets/GBA/portraits/characters/Marty.png"
+dest_files=["res://.godot/imported/Marty.png-ba95f8ccd17e09d42568d520387e8920.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnt6kat8aueem"
-path="res://.godot/imported/Swordmaster_Shannam_Unarmed.png-7d320997dfe0d5bd42b4d55a3e957d40.ctex"
+path="res://.godot/imported/Swordmaster_Shannam_Unarmed.png-b7435595e4569e0409193e1495f2d899.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Shannam/Swordmaster_Shannam_Unarmed.png"
-dest_files=["res://.godot/imported/Swordmaster_Shannam_Unarmed.png-7d320997dfe0d5bd42b4d55a3e957d40.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Shannam/Swordmaster_Shannam_Unarmed.png"
+dest_files=["res://.godot/imported/Swordmaster_Shannam_Unarmed.png-b7435595e4569e0409193e1495f2d899.ctex"]
 
 [params]
 

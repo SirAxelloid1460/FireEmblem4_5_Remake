@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blqlaprqvasok"
-path="res://.godot/imported/Swordmaster_Female_Unarmed.png-00d6c8af01b4cc6883e91ef679a13186.ctex"
+path="res://.godot/imported/Swordmaster_Female_Unarmed.png-a43a225d3474b34c01c92e124bec9c13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Female/Swordmaster_Female_Unarmed.png"
-dest_files=["res://.godot/imported/Swordmaster_Female_Unarmed.png-00d6c8af01b4cc6883e91ef679a13186.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Female/Swordmaster_Female_Unarmed.png"
+dest_files=["res://.godot/imported/Swordmaster_Female_Unarmed.png-a43a225d3474b34c01c92e124bec9c13.ctex"]
 
 [params]
 

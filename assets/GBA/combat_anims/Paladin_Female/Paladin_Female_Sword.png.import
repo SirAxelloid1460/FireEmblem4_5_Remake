@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bprhlbaoo2d78"
-path="res://.godot/imported/Paladin_Female_Sword.png-4540d61c3502ee4627393efc5494b894.ctex"
+path="res://.godot/imported/Paladin_Female_Sword.png-75a4b00c7449907eb6010b3d1f6e4ff8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Female/Paladin_Female_Sword.png"
-dest_files=["res://.godot/imported/Paladin_Female_Sword.png-4540d61c3502ee4627393efc5494b894.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Female/Paladin_Female_Sword.png"
+dest_files=["res://.godot/imported/Paladin_Female_Sword.png-75a4b00c7449907eb6010b3d1f6e4ff8.ctex"]
 
 [params]
 

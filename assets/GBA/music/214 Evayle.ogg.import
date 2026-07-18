@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cc03mtr3xogae"
-path="res://.godot/imported/214 Evayle.ogg-6233964ed04ce169e0a279647fe0bcbb.oggvorbisstr"
+path="res://.godot/imported/214 Evayle.ogg-cdb940cd308863279d2534e1a4aa7bd5.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/214 Evayle.ogg"
-dest_files=["res://.godot/imported/214 Evayle.ogg-6233964ed04ce169e0a279647fe0bcbb.oggvorbisstr"]
+source_file="res://assets/GBA/music/214 Evayle.ogg"
+dest_files=["res://.godot/imported/214 Evayle.ogg-cdb940cd308863279d2534e1a4aa7bd5.oggvorbisstr"]
 
 [params]
 

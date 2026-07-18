@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cv5m4t2qts3g6"
-path="res://.godot/imported/Emperor-move.png-c8fcc3976c2a0455fc6b957c717b9c66.ctex"
+path="res://.godot/imported/Emperor-move.png-5b4d342beed896dc1e14774517e5e2f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Emperor-move.png"
-dest_files=["res://.godot/imported/Emperor-move.png-c8fcc3976c2a0455fc6b957c717b9c66.ctex"]
+source_file="res://assets/GBA/map_sprites/Emperor-move.png"
+dest_files=["res://.godot/imported/Emperor-move.png-5b4d342beed896dc1e14774517e5e2f1.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b18a41lo7k8f2"
-path="res://.godot/imported/NobleMan.png-768915c187551fbd9e356c70afd0c9ea.ctex"
+path="res://.godot/imported/NobleMan.png-dd7576766f5fa8d6bbd64bb404f0f5e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/extra/NobleMan.png"
-dest_files=["res://.godot/imported/NobleMan.png-768915c187551fbd9e356c70afd0c9ea.ctex"]
+source_file="res://assets/GBA/portraits/extra/NobleMan.png"
+dest_files=["res://.godot/imported/NobleMan.png-dd7576766f5fa8d6bbd64bb404f0f5e4.ctex"]
 
 [params]
 

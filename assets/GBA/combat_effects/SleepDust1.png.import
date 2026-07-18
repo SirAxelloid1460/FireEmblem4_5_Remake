@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4l1aoej0vk4o"
-path="res://.godot/imported/SleepDust1.png-99220d3488f29e1e4386d678cc776023.ctex"
+path="res://.godot/imported/SleepDust1.png-e2e32d3f86ee0e1aa65c53c9d82e773b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/SleepDust1.png"
-dest_files=["res://.godot/imported/SleepDust1.png-99220d3488f29e1e4386d678cc776023.ctex"]
+source_file="res://assets/GBA/combat_effects/SleepDust1.png"
+dest_files=["res://.godot/imported/SleepDust1.png-e2e32d3f86ee0e1aa65c53c9d82e773b.ctex"]
 
 [params]
 

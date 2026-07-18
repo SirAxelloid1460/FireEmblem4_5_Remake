@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bxt6swppc40jd"
-path="res://.godot/imported/fire-emblem-8-text.ttf-7f7f0a4d2f1573135d31ff3006db6194.fontdata"
+path="res://.godot/imported/fire-emblem-8-text.ttf-08c07d6c201fae0f6a007b55a90df9c4.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/fire-emblem-8-text.ttf"
-dest_files=["res://.godot/imported/fire-emblem-8-text.ttf-7f7f0a4d2f1573135d31ff3006db6194.fontdata"]
+source_file="res://assets/GBA/fonts/fire-emblem-8-text.ttf"
+dest_files=["res://.godot/imported/fire-emblem-8-text.ttf-08c07d6c201fae0f6a007b55a90df9c4.fontdata"]
 
 [params]
 

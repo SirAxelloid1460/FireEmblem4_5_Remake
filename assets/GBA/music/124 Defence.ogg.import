@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://csfwqxys80hyh"
-path="res://.godot/imported/124 Defence.ogg-f7bfd63057c58fb6f315d0f798949393.oggvorbisstr"
+path="res://.godot/imported/124 Defence.ogg-2edf156124427d783c5bbe688a7e75f9.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/124 Defence.ogg"
-dest_files=["res://.godot/imported/124 Defence.ogg-f7bfd63057c58fb6f315d0f798949393.oggvorbisstr"]
+source_file="res://assets/GBA/music/124 Defence.ogg"
+dest_files=["res://.godot/imported/124 Defence.ogg-2edf156124427d783c5bbe688a7e75f9.oggvorbisstr"]
 
 [params]
 

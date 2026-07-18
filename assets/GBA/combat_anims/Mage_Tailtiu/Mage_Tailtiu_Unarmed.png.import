@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ximrnxnne27d"
-path="res://.godot/imported/Mage_Tailtiu_Unarmed.png-c05fe4a94c6a25565c1772a4a6f0b7c8.ctex"
+path="res://.godot/imported/Mage_Tailtiu_Unarmed.png-ab5ef795c6149adce4401fa7f6a84565.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Mage_Tailtiu/Mage_Tailtiu_Unarmed.png"
-dest_files=["res://.godot/imported/Mage_Tailtiu_Unarmed.png-c05fe4a94c6a25565c1772a4a6f0b7c8.ctex"]
+source_file="res://assets/GBA/combat_anims/Mage_Tailtiu/Mage_Tailtiu_Unarmed.png"
+dest_files=["res://.godot/imported/Mage_Tailtiu_Unarmed.png-ab5ef795c6149adce4401fa7f6a84565.ctex"]
 
 [params]
 

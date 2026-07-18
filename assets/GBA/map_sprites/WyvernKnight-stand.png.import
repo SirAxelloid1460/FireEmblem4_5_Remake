@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://htpqdp5235mc"
-path="res://.godot/imported/WyvernKnight-stand.png-ed0b75553eeb4237bab20ee61b4e0300.ctex"
+path="res://.godot/imported/WyvernKnight-stand.png-f14c78cfd888d1a65581c08bc73a0789.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/WyvernKnight-stand.png"
-dest_files=["res://.godot/imported/WyvernKnight-stand.png-ed0b75553eeb4237bab20ee61b4e0300.ctex"]
+source_file="res://assets/GBA/map_sprites/WyvernKnight-stand.png"
+dest_files=["res://.godot/imported/WyvernKnight-stand.png-f14c78cfd888d1a65581c08bc73a0789.ctex"]
 
 [params]
 

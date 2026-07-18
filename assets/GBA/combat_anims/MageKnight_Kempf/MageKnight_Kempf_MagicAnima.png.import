@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kwmwb0fj6jx3"
-path="res://.godot/imported/MageKnight_Kempf_MagicAnima.png-605391d701b055ebc9b43fa113549f0c.ctex"
+path="res://.godot/imported/MageKnight_Kempf_MagicAnima.png-77b44e3cca639319563b0388a9005f5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Kempf/MageKnight_Kempf_MagicAnima.png"
-dest_files=["res://.godot/imported/MageKnight_Kempf_MagicAnima.png-605391d701b055ebc9b43fa113549f0c.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Kempf/MageKnight_Kempf_MagicAnima.png"
+dest_files=["res://.godot/imported/MageKnight_Kempf_MagicAnima.png-77b44e3cca639319563b0388a9005f5e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmbn6xilj3ac5"
-path="res://.godot/imported/Warrior_Generic_Unarmed.png-b550f2e86d9561fb32c8898cae6e5260.ctex"
+path="res://.godot/imported/Warrior_Generic_Unarmed.png-135a40e526dedecfaf40ef491bd8f332.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Warrior_Generic/Warrior_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/Warrior_Generic_Unarmed.png-b550f2e86d9561fb32c8898cae6e5260.ctex"]
+source_file="res://assets/GBA/combat_anims/Warrior_Generic/Warrior_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/Warrior_Generic_Unarmed.png-135a40e526dedecfaf40ef491bd8f332.ctex"]
 
 [params]
 

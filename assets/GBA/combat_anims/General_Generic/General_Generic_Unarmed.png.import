@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnfpwtvsl50o6"
-path="res://.godot/imported/General_Generic_Unarmed.png-2fb4e9fbdf70cdbbac6d8aa095a05d2c.ctex"
+path="res://.godot/imported/General_Generic_Unarmed.png-406093a82409614c94b10b6864dc87ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/General_Generic/General_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/General_Generic_Unarmed.png-2fb4e9fbdf70cdbbac6d8aa095a05d2c.ctex"]
+source_file="res://assets/GBA/combat_anims/General_Generic/General_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/General_Generic_Unarmed.png-406093a82409614c94b10b6864dc87ba.ctex"]
 
 [params]
 

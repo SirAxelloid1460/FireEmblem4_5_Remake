@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be08lvi26wheq"
-path="res://.godot/imported/Generic_Portrait_LoptoMage.png-0adc7112fbe0fa20a6cb99cbc39802b0.ctex"
+path="res://.godot/imported/Generic_Portrait_LoptoMage.png-9d17091be992bba0702874008ab71054.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_LoptoMage.png"
-dest_files=["res://.godot/imported/Generic_Portrait_LoptoMage.png-0adc7112fbe0fa20a6cb99cbc39802b0.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_LoptoMage.png"
+dest_files=["res://.godot/imported/Generic_Portrait_LoptoMage.png-9d17091be992bba0702874008ab71054.ctex"]
 
 [params]
 

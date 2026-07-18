@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b43gddvqq4dwi"
-path="res://.godot/imported/EirikaLord-stand.png-17611aa4318d8a6fec3c79ffd7b4a386.ctex"
+path="res://.godot/imported/EirikaLord-stand.png-368fb8a0212776f8a03171707abbc7e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/EirikaLord-stand.png"
-dest_files=["res://.godot/imported/EirikaLord-stand.png-17611aa4318d8a6fec3c79ffd7b4a386.ctex"]
+source_file="res://assets/GBA/map_sprites/EirikaLord-stand.png"
+dest_files=["res://.godot/imported/EirikaLord-stand.png-368fb8a0212776f8a03171707abbc7e0.ctex"]
 
 [params]
 

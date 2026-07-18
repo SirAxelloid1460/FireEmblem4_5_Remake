@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcbo40vbiwxfo"
-path="res://.godot/imported/FinnYoung.png-a4fd31b7bfc37fdf961e3a04b62e684f.ctex"
+path="res://.godot/imported/FinnYoung.png-bfc5ab3f698bd78b69a26d80ee829c2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/FinnYoung.png"
-dest_files=["res://.godot/imported/FinnYoung.png-a4fd31b7bfc37fdf961e3a04b62e684f.ctex"]
+source_file="res://assets/GBA/portraits/characters/FinnYoung.png"
+dest_files=["res://.godot/imported/FinnYoung.png-bfc5ab3f698bd78b69a26d80ee829c2f.ctex"]
 
 [params]
 

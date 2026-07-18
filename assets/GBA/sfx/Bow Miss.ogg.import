@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://qkvdwqj12345"
-path="res://.godot/imported/Bow Miss.ogg-897d76485be8e177ab9fc3f5d753a67f.oggvorbisstr"
+path="res://.godot/imported/Bow Miss.ogg-4fa6540198af816c13f60c852aec876b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Bow Miss.ogg"
-dest_files=["res://.godot/imported/Bow Miss.ogg-897d76485be8e177ab9fc3f5d753a67f.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Bow Miss.ogg"
+dest_files=["res://.godot/imported/Bow Miss.ogg-4fa6540198af816c13f60c852aec876b.oggvorbisstr"]
 
 [params]
 

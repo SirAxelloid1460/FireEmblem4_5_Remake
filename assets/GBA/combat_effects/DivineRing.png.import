@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blqm7vbta6cu4"
-path="res://.godot/imported/DivineRing.png-e8387e1fb6901afb89f0beec8bc02d0e.ctex"
+path="res://.godot/imported/DivineRing.png-2eaeb5330347e99c5876b95ff8887349.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/DivineRing.png"
-dest_files=["res://.godot/imported/DivineRing.png-e8387e1fb6901afb89f0beec8bc02d0e.ctex"]
+source_file="res://assets/GBA/combat_effects/DivineRing.png"
+dest_files=["res://.godot/imported/DivineRing.png-2eaeb5330347e99c5876b95ff8887349.ctex"]
 
 [params]
 

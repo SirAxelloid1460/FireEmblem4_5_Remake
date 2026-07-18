@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c86prhk4peky1"
-path="res://.godot/imported/339 - Part 1 Map Melody.ogg-eec220d9db11460e71cb474366619cbd.oggvorbisstr"
+path="res://.godot/imported/339 - Part 1 Map Melody.ogg-b83c8a30169607644cb6835d76ed699b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/339 - Part 1 Map Melody.ogg"
-dest_files=["res://.godot/imported/339 - Part 1 Map Melody.ogg-eec220d9db11460e71cb474366619cbd.oggvorbisstr"]
+source_file="res://assets/GBA/music/339 - Part 1 Map Melody.ogg"
+dest_files=["res://.godot/imported/339 - Part 1 Map Melody.ogg-b83c8a30169607644cb6835d76ed699b.oggvorbisstr"]
 
 [params]
 

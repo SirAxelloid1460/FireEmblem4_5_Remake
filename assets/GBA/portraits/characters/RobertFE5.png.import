@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4lukle6dhfpo"
-path="res://.godot/imported/RobertFE5.png-87bd2e5ea1d85ac8088c142969147435.ctex"
+path="res://.godot/imported/RobertFE5.png-a977189937bc09aab0181f384475f355.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/RobertFE5.png"
-dest_files=["res://.godot/imported/RobertFE5.png-87bd2e5ea1d85ac8088c142969147435.ctex"]
+source_file="res://assets/GBA/portraits/characters/RobertFE5.png"
+dest_files=["res://.godot/imported/RobertFE5.png-a977189937bc09aab0181f384475f355.ctex"]
 
 [params]
 

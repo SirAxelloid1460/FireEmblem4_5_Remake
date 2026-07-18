@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://hs6vplqh44jq"
-path="res://.godot/imported/The Journey to the West.ogg-f1d35b4b70ad0a0ad67bc927df9f1d9e.oggvorbisstr"
+path="res://.godot/imported/The Journey to the West.ogg-4da41a88aaef9304d14bbe1c452c11dd.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/The Journey to the West.ogg"
-dest_files=["res://.godot/imported/The Journey to the West.ogg-f1d35b4b70ad0a0ad67bc927df9f1d9e.oggvorbisstr"]
+source_file="res://assets/GBA/music/The Journey to the West.ogg"
+dest_files=["res://.godot/imported/The Journey to the West.ogg-4da41a88aaef9304d14bbe1c452c11dd.oggvorbisstr"]
 
 [params]
 

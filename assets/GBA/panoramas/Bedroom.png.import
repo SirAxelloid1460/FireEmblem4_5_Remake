@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dr2mbudhcqtpp"
-path="res://.godot/imported/Bedroom.png-9f6493565cb677ba93df92614d682959.ctex"
+path="res://.godot/imported/Bedroom.png-6528ddc0e5be148d2dfa9b80fdffef30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/Bedroom.png"
-dest_files=["res://.godot/imported/Bedroom.png-9f6493565cb677ba93df92614d682959.ctex"]
+source_file="res://assets/GBA/panoramas/Bedroom.png"
+dest_files=["res://.godot/imported/Bedroom.png-6528ddc0e5be148d2dfa9b80fdffef30.ctex"]
 
 [params]
 

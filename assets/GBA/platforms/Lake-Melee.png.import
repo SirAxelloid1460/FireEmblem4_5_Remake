@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ve3jlr7u4ija"
-path="res://.godot/imported/Lake-Melee.png-00f165f607a631cdbc6670b17333a365.ctex"
+path="res://.godot/imported/Lake-Melee.png-81ab8d3cd7788b2dd99e2cdf3246727c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Lake-Melee.png"
-dest_files=["res://.godot/imported/Lake-Melee.png-00f165f607a631cdbc6670b17333a365.ctex"]
+source_file="res://assets/GBA/platforms/Lake-Melee.png"
+dest_files=["res://.godot/imported/Lake-Melee.png-81ab8d3cd7788b2dd99e2cdf3246727c.ctex"]
 
 [params]
 

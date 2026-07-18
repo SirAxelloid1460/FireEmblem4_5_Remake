@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dn2e74tg0ekb5"
-path="res://.godot/imported/FalconKnight_Generic_Javelin.png-72aba2eede05b091b67c5d381dcee5ff.ctex"
+path="res://.godot/imported/FalconKnight_Generic_Javelin.png-07f01785ea9945a5e4cbb387faa5246a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/FalconKnight_Generic/FalconKnight_Generic_Javelin.png"
-dest_files=["res://.godot/imported/FalconKnight_Generic_Javelin.png-72aba2eede05b091b67c5d381dcee5ff.ctex"]
+source_file="res://assets/GBA/combat_anims/FalconKnight_Generic/FalconKnight_Generic_Javelin.png"
+dest_files=["res://.godot/imported/FalconKnight_Generic_Javelin.png-07f01785ea9945a5e4cbb387faa5246a.ctex"]
 
 [params]
 

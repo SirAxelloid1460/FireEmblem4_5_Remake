@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2uowv0wn6uhk"
-path="res://.godot/imported/Rogue_Lifis_Unarmed.png-abb5bbb8d2da7b079ce31babfdb3b419.ctex"
+path="res://.godot/imported/Rogue_Lifis_Unarmed.png-2842424b977d2654a5908d44a9d9ce94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Rogue_Lifis/Rogue_Lifis_Unarmed.png"
-dest_files=["res://.godot/imported/Rogue_Lifis_Unarmed.png-abb5bbb8d2da7b079ce31babfdb3b419.ctex"]
+source_file="res://assets/GBA/combat_anims/Rogue_Lifis/Rogue_Lifis_Unarmed.png"
+dest_files=["res://.godot/imported/Rogue_Lifis_Unarmed.png-2842424b977d2654a5908d44a9d9ce94.ctex"]
 
 [params]
 

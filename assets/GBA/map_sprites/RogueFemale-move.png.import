@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5lq8v24w8iva"
-path="res://.godot/imported/RogueFemale-move.png-d7efa4623b1c6e3383e81ac09179690a.ctex"
+path="res://.godot/imported/RogueFemale-move.png-c7f66050d3270cc295555100f5e68c86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/RogueFemale-move.png"
-dest_files=["res://.godot/imported/RogueFemale-move.png-d7efa4623b1c6e3383e81ac09179690a.ctex"]
+source_file="res://assets/GBA/map_sprites/RogueFemale-move.png"
+dest_files=["res://.godot/imported/RogueFemale-move.png-c7f66050d3270cc295555100f5e68c86.ctex"]
 
 [params]
 

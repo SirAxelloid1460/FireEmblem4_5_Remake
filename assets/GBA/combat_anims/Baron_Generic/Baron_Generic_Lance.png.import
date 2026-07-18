@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfkklshh8l1px"
-path="res://.godot/imported/Baron_Generic_Lance.png-3f8bac20b4f222aecbdb0bc0eeef1744.ctex"
+path="res://.godot/imported/Baron_Generic_Lance.png-229dfacdb8019cc127e6d7241367c878.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Baron_Generic/Baron_Generic_Lance.png"
-dest_files=["res://.godot/imported/Baron_Generic_Lance.png-3f8bac20b4f222aecbdb0bc0eeef1744.ctex"]
+source_file="res://assets/GBA/combat_anims/Baron_Generic/Baron_Generic_Lance.png"
+dest_files=["res://.godot/imported/Baron_Generic_Lance.png-229dfacdb8019cc127e6d7241367c878.ctex"]
 
 [params]
 

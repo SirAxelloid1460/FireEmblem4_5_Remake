@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tsy4wao8n5p1"
-path="res://.godot/imported/LanceKnight-move.png-ecdf555732abc5a353e786b570410892.ctex"
+path="res://.godot/imported/LanceKnight-move.png-46c689fafc96abf7f8b5ef3c11b861f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/LanceKnight-move.png"
-dest_files=["res://.godot/imported/LanceKnight-move.png-ecdf555732abc5a353e786b570410892.ctex"]
+source_file="res://assets/GBA/map_sprites/LanceKnight-move.png"
+dest_files=["res://.godot/imported/LanceKnight-move.png-46c689fafc96abf7f8b5ef3c11b861f8.ctex"]
 
 [params]
 

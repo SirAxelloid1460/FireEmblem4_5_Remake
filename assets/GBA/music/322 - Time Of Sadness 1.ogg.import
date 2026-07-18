@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cjmxu6g5ifbe4"
-path="res://.godot/imported/322 - Time Of Sadness 1.ogg-f608dcbf5c6174a02fc5d0724653c85b.oggvorbisstr"
+path="res://.godot/imported/322 - Time Of Sadness 1.ogg-0869fbcf5a3075b9512e3c6b82a8f33c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/322 - Time Of Sadness 1.ogg"
-dest_files=["res://.godot/imported/322 - Time Of Sadness 1.ogg-f608dcbf5c6174a02fc5d0724653c85b.oggvorbisstr"]
+source_file="res://assets/GBA/music/322 - Time Of Sadness 1.ogg"
+dest_files=["res://.godot/imported/322 - Time Of Sadness 1.ogg-0869fbcf5a3075b9512e3c6b82a8f33c.oggvorbisstr"]
 
 [params]
 

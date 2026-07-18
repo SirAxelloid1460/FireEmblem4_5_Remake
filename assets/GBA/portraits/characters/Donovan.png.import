@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0n1r8aryeopn"
-path="res://.godot/imported/Donovan.png-037816b37dc6b8676df063f8c53a9f8d.ctex"
+path="res://.godot/imported/Donovan.png-daa95416eddc0f6119ae13567fd0f3e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Donovan.png"
-dest_files=["res://.godot/imported/Donovan.png-037816b37dc6b8676df063f8c53a9f8d.ctex"]
+source_file="res://assets/GBA/portraits/characters/Donovan.png"
+dest_files=["res://.godot/imported/Donovan.png-daa95416eddc0f6119ae13567fd0f3e5.ctex"]
 
 [params]
 

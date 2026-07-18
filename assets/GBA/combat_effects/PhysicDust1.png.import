@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ultanxp46laj"
-path="res://.godot/imported/PhysicDust1.png-e3a276943cf147ea1542b0f8f136fe6b.ctex"
+path="res://.godot/imported/PhysicDust1.png-655e89e45f5ceb9c3c53abbbfef2fc5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/PhysicDust1.png"
-dest_files=["res://.godot/imported/PhysicDust1.png-e3a276943cf147ea1542b0f8f136fe6b.ctex"]
+source_file="res://assets/GBA/combat_effects/PhysicDust1.png"
+dest_files=["res://.godot/imported/PhysicDust1.png-655e89e45f5ceb9c3c53abbbfef2fc5a.ctex"]
 
 [params]
 

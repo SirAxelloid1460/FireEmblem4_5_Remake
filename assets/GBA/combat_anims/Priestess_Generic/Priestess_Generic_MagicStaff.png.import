@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ig2skv0y2ip8"
-path="res://.godot/imported/Priestess_Generic_MagicStaff.png-32f83ddd09c2f8ff06ef2d13c3a0539a.ctex"
+path="res://.godot/imported/Priestess_Generic_MagicStaff.png-1280332314d7648eec76f1ab3e147b0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Priestess_Generic/Priestess_Generic_MagicStaff.png"
-dest_files=["res://.godot/imported/Priestess_Generic_MagicStaff.png-32f83ddd09c2f8ff06ef2d13c3a0539a.ctex"]
+source_file="res://assets/GBA/combat_anims/Priestess_Generic/Priestess_Generic_MagicStaff.png"
+dest_files=["res://.godot/imported/Priestess_Generic_MagicStaff.png-1280332314d7648eec76f1ab3e147b0d.ctex"]
 
 [params]
 

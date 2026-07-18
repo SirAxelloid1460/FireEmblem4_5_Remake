@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ivtv155sy0b"
-path="res://.godot/imported/204 August talks B.ogg-1a641a64d6d470d969ad883d2f3412d7.oggvorbisstr"
+path="res://.godot/imported/204 August talks B.ogg-de1c74adb340a1de2f30a6c319cb9a37.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/204 August talks B.ogg"
-dest_files=["res://.godot/imported/204 August talks B.ogg-1a641a64d6d470d969ad883d2f3412d7.oggvorbisstr"]
+source_file="res://assets/GBA/music/204 August talks B.ogg"
+dest_files=["res://.godot/imported/204 August talks B.ogg-de1c74adb340a1de2f30a6c319cb9a37.oggvorbisstr"]
 
 [params]
 

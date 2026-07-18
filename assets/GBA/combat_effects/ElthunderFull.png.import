@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2wi0jsyr70w3"
-path="res://.godot/imported/ElthunderFull.png-008ed45e5f8a69b747980a5c068d79c8.ctex"
+path="res://.godot/imported/ElthunderFull.png-8177c1913b0d55023961f1c88e8a8926.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ElthunderFull.png"
-dest_files=["res://.godot/imported/ElthunderFull.png-008ed45e5f8a69b747980a5c068d79c8.ctex"]
+source_file="res://assets/GBA/combat_effects/ElthunderFull.png"
+dest_files=["res://.godot/imported/ElthunderFull.png-8177c1913b0d55023961f1c88e8a8926.ctex"]
 
 [params]
 

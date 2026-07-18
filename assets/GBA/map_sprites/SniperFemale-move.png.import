@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6a4hqa65oaap"
-path="res://.godot/imported/SniperFemale-move.png-8f8d8335149c50bdb45fa65bf39c829a.ctex"
+path="res://.godot/imported/SniperFemale-move.png-4a64bedbf16ddd9786277339c2924f70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/SniperFemale-move.png"
-dest_files=["res://.godot/imported/SniperFemale-move.png-8f8d8335149c50bdb45fa65bf39c829a.ctex"]
+source_file="res://assets/GBA/map_sprites/SniperFemale-move.png"
+dest_files=["res://.godot/imported/SniperFemale-move.png-4a64bedbf16ddd9786277339c2924f70.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djoijll7nmlyu"
-path="res://.godot/imported/Olwen.png-9b5a618c8c3e8d6fbdae5be8cd52e7c6.ctex"
+path="res://.godot/imported/Olwen.png-ea177b8224d69b545ccea0b28f2201e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Olwen.png"
-dest_files=["res://.godot/imported/Olwen.png-9b5a618c8c3e8d6fbdae5be8cd52e7c6.ctex"]
+source_file="res://assets/GBA/portraits/characters/Olwen.png"
+dest_files=["res://.godot/imported/Olwen.png-ea177b8224d69b545ccea0b28f2201e7.ctex"]
 
 [params]
 

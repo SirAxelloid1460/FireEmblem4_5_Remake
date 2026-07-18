@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddddgu35u33um"
-path="res://.godot/imported/Swordmaster_Eyvel_Unarmed.png-a0bc18e5e66f4d6432fe28cc95f17d9e.ctex"
+path="res://.godot/imported/Swordmaster_Eyvel_Unarmed.png-640206d68a18138d515c847b82bf5fb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Eyvel/Swordmaster_Eyvel_Unarmed.png"
-dest_files=["res://.godot/imported/Swordmaster_Eyvel_Unarmed.png-a0bc18e5e66f4d6432fe28cc95f17d9e.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Eyvel/Swordmaster_Eyvel_Unarmed.png"
+dest_files=["res://.godot/imported/Swordmaster_Eyvel_Unarmed.png-640206d68a18138d515c847b82bf5fb1.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://co05pp5dba78n"
-path="res://.godot/imported/Hero_Machyua_Sword.png-988261de2ef6589413812befc2485945.ctex"
+path="res://.godot/imported/Hero_Machyua_Sword.png-15b4204c0162def7b7c8a0df21d617e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Hero_Machyua/Hero_Machyua_Sword.png"
-dest_files=["res://.godot/imported/Hero_Machyua_Sword.png-988261de2ef6589413812befc2485945.ctex"]
+source_file="res://assets/GBA/combat_anims/Hero_Machyua/Hero_Machyua_Sword.png"
+dest_files=["res://.godot/imported/Hero_Machyua_Sword.png-15b4204c0162def7b7c8a0df21d617e9.ctex"]
 
 [params]
 

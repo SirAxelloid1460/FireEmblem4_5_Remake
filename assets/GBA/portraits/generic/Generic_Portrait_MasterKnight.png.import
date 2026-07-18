@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct5h0pefvxx1r"
-path="res://.godot/imported/Generic_Portrait_MasterKnight.png-2da773297ea11bad042bbf5cc07a6737.ctex"
+path="res://.godot/imported/Generic_Portrait_MasterKnight.png-3c61506efc6afb6ea2bf0bf77f6be714.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_MasterKnight.png"
-dest_files=["res://.godot/imported/Generic_Portrait_MasterKnight.png-2da773297ea11bad042bbf5cc07a6737.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_MasterKnight.png"
+dest_files=["res://.godot/imported/Generic_Portrait_MasterKnight.png-3c61506efc6afb6ea2bf0bf77f6be714.ctex"]
 
 [params]
 

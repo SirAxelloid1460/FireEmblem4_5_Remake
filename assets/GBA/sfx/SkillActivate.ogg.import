@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://7fiwhfq8l8b3"
-path="res://.godot/imported/SkillActivate.ogg-f1b2ae1e1e5bad876d4a769a66d21a1c.oggvorbisstr"
+path="res://.godot/imported/SkillActivate.ogg-9f742103d169486bd5169a57a287dba8.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/SkillActivate.ogg"
-dest_files=["res://.godot/imported/SkillActivate.ogg-f1b2ae1e1e5bad876d4a769a66d21a1c.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/SkillActivate.ogg"
+dest_files=["res://.godot/imported/SkillActivate.ogg-9f742103d169486bd5169a57a287dba8.oggvorbisstr"]
 
 [params]
 

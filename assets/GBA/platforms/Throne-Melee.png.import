@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm46gtnj66vet"
-path="res://.godot/imported/Throne-Melee.png-d72496d4a31f1b0f7e221147f2749580.ctex"
+path="res://.godot/imported/Throne-Melee.png-697b3834b5ae7568fefeaeba619d21ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Throne-Melee.png"
-dest_files=["res://.godot/imported/Throne-Melee.png-d72496d4a31f1b0f7e221147f2749580.ctex"]
+source_file="res://assets/GBA/platforms/Throne-Melee.png"
+dest_files=["res://.godot/imported/Throne-Melee.png-697b3834b5ae7568fefeaeba619d21ca.ctex"]
 
 [params]
 

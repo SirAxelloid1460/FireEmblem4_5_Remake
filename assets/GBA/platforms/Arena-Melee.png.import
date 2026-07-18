@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tl64365kau16"
-path="res://.godot/imported/Arena-Melee.png-cb850a916ac0d28bfc99654a9c26684c.ctex"
+path="res://.godot/imported/Arena-Melee.png-c2777a8cd72fd0c2fcf657a8ec4357fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Arena-Melee.png"
-dest_files=["res://.godot/imported/Arena-Melee.png-cb850a916ac0d28bfc99654a9c26684c.ctex"]
+source_file="res://assets/GBA/platforms/Arena-Melee.png"
+dest_files=["res://.godot/imported/Arena-Melee.png-c2777a8cd72fd0c2fcf657a8ec4357fc.ctex"]
 
 [params]
 

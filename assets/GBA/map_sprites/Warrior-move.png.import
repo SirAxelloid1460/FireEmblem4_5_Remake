@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o6cpod57lbum"
-path="res://.godot/imported/Warrior-move.png-019092d03a62ba1108b5c25c329a8878.ctex"
+path="res://.godot/imported/Warrior-move.png-38ad3524f1cb27c5539deb1e387c558b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Warrior-move.png"
-dest_files=["res://.godot/imported/Warrior-move.png-019092d03a62ba1108b5c25c329a8878.ctex"]
+source_file="res://assets/GBA/map_sprites/Warrior-move.png"
+dest_files=["res://.godot/imported/Warrior-move.png-38ad3524f1cb27c5539deb1e387c558b.ctex"]
 
 [params]
 

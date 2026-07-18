@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://baln5ntmruwk8"
-path="res://.godot/imported/MageKnightM-stand.png-a42f171d2e7eec8626755eebf549c637.ctex"
+path="res://.godot/imported/MageKnightM-stand.png-7b8be14144b439129c6718f512b92b17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/MageKnightM-stand.png"
-dest_files=["res://.godot/imported/MageKnightM-stand.png-a42f171d2e7eec8626755eebf549c637.ctex"]
+source_file="res://assets/GBA/map_sprites/MageKnightM-stand.png"
+dest_files=["res://.godot/imported/MageKnightM-stand.png-7b8be14144b439129c6718f512b92b17.ctex"]
 
 [params]
 

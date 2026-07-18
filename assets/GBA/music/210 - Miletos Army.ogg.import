@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bkgjn3b37lbky"
-path="res://.godot/imported/210 - Miletos Army.ogg-16894b6c878a0f5a59b3541263f92fdc.oggvorbisstr"
+path="res://.godot/imported/210 - Miletos Army.ogg-c965c3f8e45201694b0b54935a9b665f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/210 - Miletos Army.ogg"
-dest_files=["res://.godot/imported/210 - Miletos Army.ogg-16894b6c878a0f5a59b3541263f92fdc.oggvorbisstr"]
+source_file="res://assets/GBA/music/210 - Miletos Army.ogg"
+dest_files=["res://.godot/imported/210 - Miletos Army.ogg-c965c3f8e45201694b0b54935a9b665f.oggvorbisstr"]
 
 [params]
 

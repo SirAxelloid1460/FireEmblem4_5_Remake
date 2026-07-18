@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn0kxjuyqro1n"
-path="res://.godot/imported/Faval.png-061858153c7fc0043ac296775371d315.ctex"
+path="res://.godot/imported/Faval.png-6a5d01a79012262f7ad14a4bdd994efb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Faval.png"
-dest_files=["res://.godot/imported/Faval.png-061858153c7fc0043ac296775371d315.ctex"]
+source_file="res://assets/GBA/portraits/characters/Faval.png"
+dest_files=["res://.godot/imported/Faval.png-6a5d01a79012262f7ad14a4bdd994efb.ctex"]
 
 [params]
 

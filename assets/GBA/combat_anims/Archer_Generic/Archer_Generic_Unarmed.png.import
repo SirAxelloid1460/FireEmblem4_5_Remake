@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cq74vw4vq7j32"
-path="res://.godot/imported/Archer_Generic_Unarmed.png-9c8daedcd5916deb53bf3a337d2e250c.ctex"
+path="res://.godot/imported/Archer_Generic_Unarmed.png-d5baba70775d44968f91fead4ecf134b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Archer_Generic/Archer_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/Archer_Generic_Unarmed.png-9c8daedcd5916deb53bf3a337d2e250c.ctex"]
+source_file="res://assets/GBA/combat_anims/Archer_Generic/Archer_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/Archer_Generic_Unarmed.png-d5baba70775d44968f91fead4ecf134b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://scbgqpue7kxj"
-path="res://.godot/imported/Elliot.png-bfec02a0134b174efb2bab4762635066.ctex"
+path="res://.godot/imported/Elliot.png-11f572cced2049b20f1ad4624fdfa817.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Elliot.png"
-dest_files=["res://.godot/imported/Elliot.png-bfec02a0134b174efb2bab4762635066.ctex"]
+source_file="res://assets/GBA/portraits/characters/Elliot.png"
+dest_files=["res://.godot/imported/Elliot.png-11f572cced2049b20f1ad4624fdfa817.ctex"]
 
 [params]
 

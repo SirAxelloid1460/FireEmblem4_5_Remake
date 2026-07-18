@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b21kjq1vb1e6o"
-path="res://.godot/imported/Helms Deep.ogg-99142f46bbbc6b42cb340f9807f04f9c.oggvorbisstr"
+path="res://.godot/imported/Helms Deep.ogg-71c0307e045cc923ffa4895a52c6c211.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Helms Deep.ogg"
-dest_files=["res://.godot/imported/Helms Deep.ogg-99142f46bbbc6b42cb340f9807f04f9c.oggvorbisstr"]
+source_file="res://assets/GBA/music/Helms Deep.ogg"
+dest_files=["res://.godot/imported/Helms Deep.ogg-71c0307e045cc923ffa4895a52c6c211.oggvorbisstr"]
 
 [params]
 

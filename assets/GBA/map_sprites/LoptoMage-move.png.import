@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0d4bd8i8vsia"
-path="res://.godot/imported/LoptoMage-move.png-03eed6b366d425c77bf5eab7d45db921.ctex"
+path="res://.godot/imported/LoptoMage-move.png-58a602c9577a108d6956da1f33381946.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/LoptoMage-move.png"
-dest_files=["res://.godot/imported/LoptoMage-move.png-03eed6b366d425c77bf5eab7d45db921.ctex"]
+source_file="res://assets/GBA/map_sprites/LoptoMage-move.png"
+dest_files=["res://.godot/imported/LoptoMage-move.png-58a602c9577a108d6956da1f33381946.ctex"]
 
 [params]
 

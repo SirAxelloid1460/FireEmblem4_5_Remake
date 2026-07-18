@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://f6ga0ekoghh4"
-path="res://.godot/imported/MageKnight_Female_MagicAnima.png-31d93ed4353402316997c0c76ac6ba54.ctex"
+path="res://.godot/imported/MageKnight_Female_MagicAnima.png-eb2687740bfd9b1340b273d9755c036c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Female/MageKnight_Female_MagicAnima.png"
-dest_files=["res://.godot/imported/MageKnight_Female_MagicAnima.png-31d93ed4353402316997c0c76ac6ba54.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Female/MageKnight_Female_MagicAnima.png"
+dest_files=["res://.godot/imported/MageKnight_Female_MagicAnima.png-eb2687740bfd9b1340b273d9755c036c.ctex"]
 
 [params]
 

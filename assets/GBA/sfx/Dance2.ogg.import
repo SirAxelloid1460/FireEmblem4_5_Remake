@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cgnkid7rmg3p1"
-path="res://.godot/imported/Dance2.ogg-b2f090a2ba867f51314340a63d476a7b.oggvorbisstr"
+path="res://.godot/imported/Dance2.ogg-eb52ef09a686736c14692b2c04bc9f5f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Dance2.ogg"
-dest_files=["res://.godot/imported/Dance2.ogg-b2f090a2ba867f51314340a63d476a7b.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Dance2.ogg"
+dest_files=["res://.godot/imported/Dance2.ogg-eb52ef09a686736c14692b2c04bc9f5f.oggvorbisstr"]
 
 [params]
 

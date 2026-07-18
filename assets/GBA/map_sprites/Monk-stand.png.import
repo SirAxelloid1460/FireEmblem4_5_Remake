@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bit4mkncddtyo"
-path="res://.godot/imported/Monk-stand.png-bba2d46cc632ac84ac1a7477ddc4d891.ctex"
+path="res://.godot/imported/Monk-stand.png-23b72b6fc3708ff2c890f8fba6f5314e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Monk-stand.png"
-dest_files=["res://.godot/imported/Monk-stand.png-bba2d46cc632ac84ac1a7477ddc4d891.ctex"]
+source_file="res://assets/GBA/map_sprites/Monk-stand.png"
+dest_files=["res://.godot/imported/Monk-stand.png-23b72b6fc3708ff2c890f8fba6f5314e.ctex"]
 
 [params]
 

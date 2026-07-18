@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjor3pd0jx3wv"
-path="res://.godot/imported/EclipseSpiral.png-1433f7b86ff1b3c787b8a02430a38d89.ctex"
+path="res://.godot/imported/EclipseSpiral.png-8a69fa38ea181c4e235405c0ae3dbf7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/EclipseSpiral.png"
-dest_files=["res://.godot/imported/EclipseSpiral.png-1433f7b86ff1b3c787b8a02430a38d89.ctex"]
+source_file="res://assets/GBA/combat_effects/EclipseSpiral.png"
+dest_files=["res://.godot/imported/EclipseSpiral.png-8a69fa38ea181c4e235405c0ae3dbf7e.ctex"]
 
 [params]
 

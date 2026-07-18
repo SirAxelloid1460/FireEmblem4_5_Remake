@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c410wcham87r2"
-path="res://.godot/imported/ElwindFull.png-84579583f4c3786ac102c99df8021465.ctex"
+path="res://.godot/imported/ElwindFull.png-64a17d0649a5d52c653d083f5e0e1f02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ElwindFull.png"
-dest_files=["res://.godot/imported/ElwindFull.png-84579583f4c3786ac102c99df8021465.ctex"]
+source_file="res://assets/GBA/combat_effects/ElwindFull.png"
+dest_files=["res://.godot/imported/ElwindFull.png-64a17d0649a5d52c653d083f5e0e1f02.ctex"]
 
 [params]
 

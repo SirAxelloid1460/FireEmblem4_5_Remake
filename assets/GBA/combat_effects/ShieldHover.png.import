@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ci406ekytksjk"
-path="res://.godot/imported/ShieldHover.png-8e4d71a946feeac91600ff346da760f6.ctex"
+path="res://.godot/imported/ShieldHover.png-d71c56da9f7fd553eb41f57009c8e1fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ShieldHover.png"
-dest_files=["res://.godot/imported/ShieldHover.png-8e4d71a946feeac91600ff346da760f6.ctex"]
+source_file="res://assets/GBA/combat_effects/ShieldHover.png"
+dest_files=["res://.godot/imported/ShieldHover.png-d71c56da9f7fd553eb41f57009c8e1fe.ctex"]
 
 [params]
 

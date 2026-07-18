@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dj08bygk8t0v4"
-path="res://.godot/imported/Chapter Sound.ogg-28528f75c03ad2377b85bef035f8aaae.oggvorbisstr"
+path="res://.godot/imported/Chapter Sound.ogg-4fe4c16fdac5f4d80de0a7bb9ab162f6.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Chapter Sound.ogg"
-dest_files=["res://.godot/imported/Chapter Sound.ogg-28528f75c03ad2377b85bef035f8aaae.oggvorbisstr"]
+source_file="res://assets/GBA/music/Chapter Sound.ogg"
+dest_files=["res://.godot/imported/Chapter Sound.ogg-4fe4c16fdac5f4d80de0a7bb9ab162f6.oggvorbisstr"]
 
 [params]
 

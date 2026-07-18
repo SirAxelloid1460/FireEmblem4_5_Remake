@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvs0unhuu0ob2"
-path="res://.godot/imported/Larcei.png-fe4617ae074a0ec1cfc47d6986d66034.ctex"
+path="res://.godot/imported/Larcei.png-89946d2cce434e13f3bf585fb1f8d26f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Larcei.png"
-dest_files=["res://.godot/imported/Larcei.png-fe4617ae074a0ec1cfc47d6986d66034.ctex"]
+source_file="res://assets/GBA/portraits/characters/Larcei.png"
+dest_files=["res://.godot/imported/Larcei.png-89946d2cce434e13f3bf585fb1f8d26f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://p1u33qpk6lil"
-path="res://.godot/imported/Aizenau.png-3cb822318ab3453b774ba6db2e272131.ctex"
+path="res://.godot/imported/Aizenau.png-e60c78e7ace09873f7056bc7e10bafd6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Aizenau.png"
-dest_files=["res://.godot/imported/Aizenau.png-3cb822318ab3453b774ba6db2e272131.ctex"]
+source_file="res://assets/GBA/portraits/characters/Aizenau.png"
+dest_files=["res://.godot/imported/Aizenau.png-e60c78e7ace09873f7056bc7e10bafd6.ctex"]
 
 [params]
 

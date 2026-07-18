@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lk4pwwgqnaux"
-path="res://.godot/imported/combat_gem_purple.png-1b9dc2849a79020d8da2b062b8f4a4ea.ctex"
+path="res://.godot/imported/combat_gem_purple.png-602175ae26d0539b10457a6015387868.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_displays/combat_gem_purple.png"
-dest_files=["res://.godot/imported/combat_gem_purple.png-1b9dc2849a79020d8da2b062b8f4a4ea.ctex"]
+source_file="res://assets/GBA/combat_displays/combat_gem_purple.png"
+dest_files=["res://.godot/imported/combat_gem_purple.png-602175ae26d0539b10457a6015387868.ctex"]
 
 [params]
 

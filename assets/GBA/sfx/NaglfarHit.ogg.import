@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://twsvwfl87u7f"
-path="res://.godot/imported/NaglfarHit.ogg-0e97e0e081c55f3c40b7e13b61a5be16.oggvorbisstr"
+path="res://.godot/imported/NaglfarHit.ogg-b3424069ca987ec334cb87f036b60125.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/NaglfarHit.ogg"
-dest_files=["res://.godot/imported/NaglfarHit.ogg-0e97e0e081c55f3c40b7e13b61a5be16.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/NaglfarHit.ogg"
+dest_files=["res://.godot/imported/NaglfarHit.ogg-b3424069ca987ec334cb87f036b60125.oggvorbisstr"]
 
 [params]
 

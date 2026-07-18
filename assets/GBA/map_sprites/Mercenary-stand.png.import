@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx06g76k21lba"
-path="res://.godot/imported/Mercenary-stand.png-1d98e764fd10f237754e6fa2e8eaf7fd.ctex"
+path="res://.godot/imported/Mercenary-stand.png-2263ed1e09b79f7b340cfe9b87870fe2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Mercenary-stand.png"
-dest_files=["res://.godot/imported/Mercenary-stand.png-1d98e764fd10f237754e6fa2e8eaf7fd.ctex"]
+source_file="res://assets/GBA/map_sprites/Mercenary-stand.png"
+dest_files=["res://.godot/imported/Mercenary-stand.png-2263ed1e09b79f7b340cfe9b87870fe2.ctex"]
 
 [params]
 

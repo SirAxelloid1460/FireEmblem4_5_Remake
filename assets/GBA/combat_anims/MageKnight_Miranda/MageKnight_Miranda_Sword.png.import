@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db1ptvqwpu8x7"
-path="res://.godot/imported/MageKnight_Miranda_Sword.png-1e12f23868b337c7bdf9865a357020d2.ctex"
+path="res://.godot/imported/MageKnight_Miranda_Sword.png-712f32695b7d90710dd5c237990b464e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Miranda/MageKnight_Miranda_Sword.png"
-dest_files=["res://.godot/imported/MageKnight_Miranda_Sword.png-1e12f23868b337c7bdf9865a357020d2.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Miranda/MageKnight_Miranda_Sword.png"
+dest_files=["res://.godot/imported/MageKnight_Miranda_Sword.png-712f32695b7d90710dd5c237990b464e.ctex"]
 
 [params]
 

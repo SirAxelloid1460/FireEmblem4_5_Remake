@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3d75b0ydiul6"
-path="res://.godot/imported/Wall-Melee.png-2881d9ec39956d99f64ba4e3b376f7e4.ctex"
+path="res://.godot/imported/Wall-Melee.png-b340bf5de6554e9518dca5a1062f79ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Wall-Melee.png"
-dest_files=["res://.godot/imported/Wall-Melee.png-2881d9ec39956d99f64ba4e3b376f7e4.ctex"]
+source_file="res://assets/GBA/platforms/Wall-Melee.png"
+dest_files=["res://.godot/imported/Wall-Melee.png-b340bf5de6554e9518dca5a1062f79ff.ctex"]
 
 [params]
 

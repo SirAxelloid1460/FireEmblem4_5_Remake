@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qnsftuum7cjb"
-path="res://.godot/imported/Prince_Leif_Unarmed.png-15a5c74ae36fc53fa1200bf4ef31a951.ctex"
+path="res://.godot/imported/Prince_Leif_Unarmed.png-b60829b7cd039b554118d2929e3dbeab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Prince_Leif/Prince_Leif_Unarmed.png"
-dest_files=["res://.godot/imported/Prince_Leif_Unarmed.png-15a5c74ae36fc53fa1200bf4ef31a951.ctex"]
+source_file="res://assets/GBA/combat_anims/Prince_Leif/Prince_Leif_Unarmed.png"
+dest_files=["res://.godot/imported/Prince_Leif_Unarmed.png-b60829b7cd039b554118d2929e3dbeab.ctex"]
 
 [params]
 

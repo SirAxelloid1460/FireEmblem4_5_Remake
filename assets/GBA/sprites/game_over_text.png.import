@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c21wf25ohnc8t"
-path="res://.godot/imported/game_over_text.png-ed0851b4550bd99f578a3948e039ec93.ctex"
+path="res://.godot/imported/game_over_text.png-b6335ce0b1b73778bfe1ade4fc6e9d92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/game_over_text.png"
-dest_files=["res://.godot/imported/game_over_text.png-ed0851b4550bd99f578a3948e039ec93.ctex"]
+source_file="res://assets/GBA/sprites/game_over_text.png"
+dest_files=["res://.godot/imported/game_over_text.png-b6335ce0b1b73778bfe1ade4fc6e9d92.ctex"]
 
 [params]
 

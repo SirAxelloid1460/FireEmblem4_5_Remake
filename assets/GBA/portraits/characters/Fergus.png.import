@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvg3bnrdlnndo"
-path="res://.godot/imported/Fergus.png-d374dbe7d96cd59a899f1dfd7d6d9589.ctex"
+path="res://.godot/imported/Fergus.png-b363e991887220e11370831053211710.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Fergus.png"
-dest_files=["res://.godot/imported/Fergus.png-d374dbe7d96cd59a899f1dfd7d6d9589.ctex"]
+source_file="res://assets/GBA/portraits/characters/Fergus.png"
+dest_files=["res://.godot/imported/Fergus.png-b363e991887220e11370831053211710.ctex"]
 
 [params]
 

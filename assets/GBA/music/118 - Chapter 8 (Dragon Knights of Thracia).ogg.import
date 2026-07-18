@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://canidpri16g41"
-path="res://.godot/imported/118 - Chapter 8 (Dragon Knights of Thracia).ogg-3571662dd4f443c1dccb8164bb471059.oggvorbisstr"
+path="res://.godot/imported/118 - Chapter 8 (Dragon Knights of Thracia).ogg-a2e60b55423fd19e3f0c25235791d2e3.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/118 - Chapter 8 (Dragon Knights of Thracia).ogg"
-dest_files=["res://.godot/imported/118 - Chapter 8 (Dragon Knights of Thracia).ogg-3571662dd4f443c1dccb8164bb471059.oggvorbisstr"]
+source_file="res://assets/GBA/music/118 - Chapter 8 (Dragon Knights of Thracia).ogg"
+dest_files=["res://.godot/imported/118 - Chapter 8 (Dragon Knights of Thracia).ogg-a2e60b55423fd19e3f0c25235791d2e3.oggvorbisstr"]
 
 [params]
 

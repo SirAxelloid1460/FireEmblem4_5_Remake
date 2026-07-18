@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccbtnghqcab0b"
-path="res://.godot/imported/logo_FE4.png-5e83b89b1641b7e2b0d79b5a6d3111ca.ctex"
+path="res://.godot/imported/logo_FE4.png-6144c7ab7d47823e391ad12e42e41733.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/logo_FE4.png"
-dest_files=["res://.godot/imported/logo_FE4.png-5e83b89b1641b7e2b0d79b5a6d3111ca.ctex"]
+source_file="res://assets/GBA/sprites/logo_FE4.png"
+dest_files=["res://.godot/imported/logo_FE4.png-6144c7ab7d47823e391ad12e42e41733.ctex"]
 
 [params]
 

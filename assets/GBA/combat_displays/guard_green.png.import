@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jy0yi25rikqk"
-path="res://.godot/imported/guard_green.png-9a8292d14e7544be8e4e7e6e4c76bd88.ctex"
+path="res://.godot/imported/guard_green.png-cc49807501e482c277b423692c06dbc2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_displays/guard_green.png"
-dest_files=["res://.godot/imported/guard_green.png-9a8292d14e7544be8e4e7e6e4c76bd88.ctex"]
+source_file="res://assets/GBA/combat_displays/guard_green.png"
+dest_files=["res://.godot/imported/guard_green.png-cc49807501e482c277b423692c06dbc2.ctex"]
 
 [params]
 

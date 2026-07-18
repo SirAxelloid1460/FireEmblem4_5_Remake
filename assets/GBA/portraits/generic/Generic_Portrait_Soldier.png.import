@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cawkps37cxri2"
-path="res://.godot/imported/Generic_Portrait_Soldier.png-70d4f420a313f42c1bd03cfbc393b8a6.ctex"
+path="res://.godot/imported/Generic_Portrait_Soldier.png-ad5c5bdef54ab15102ae6a1b744d6545.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Soldier.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Soldier.png-70d4f420a313f42c1bd03cfbc393b8a6.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Soldier.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Soldier.png-ad5c5bdef54ab15102ae6a1b744d6545.ctex"]
 
 [params]
 

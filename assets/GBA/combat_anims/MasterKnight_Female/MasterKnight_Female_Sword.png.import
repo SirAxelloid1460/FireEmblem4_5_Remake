@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxt0u34eedr1u"
-path="res://.godot/imported/MasterKnight_Female_Sword.png-be8c36d32b2e1936017ffc3150783e29.ctex"
+path="res://.godot/imported/MasterKnight_Female_Sword.png-cdb9fda267ef6006126b54c5292af6ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MasterKnight_Female/MasterKnight_Female_Sword.png"
-dest_files=["res://.godot/imported/MasterKnight_Female_Sword.png-be8c36d32b2e1936017ffc3150783e29.ctex"]
+source_file="res://assets/GBA/combat_anims/MasterKnight_Female/MasterKnight_Female_Sword.png"
+dest_files=["res://.godot/imported/MasterKnight_Female_Sword.png-cdb9fda267ef6006126b54c5292af6ff.ctex"]
 
 [params]
 

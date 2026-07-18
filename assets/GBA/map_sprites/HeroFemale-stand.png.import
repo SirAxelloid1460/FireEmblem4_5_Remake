@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fipp146en6tv"
-path="res://.godot/imported/HeroFemale-stand.png-1b6e428391582842ee2f7981429ecdaf.ctex"
+path="res://.godot/imported/HeroFemale-stand.png-6a27b512dbc64d9d82875602d375aa56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/HeroFemale-stand.png"
-dest_files=["res://.godot/imported/HeroFemale-stand.png-1b6e428391582842ee2f7981429ecdaf.ctex"]
+source_file="res://assets/GBA/map_sprites/HeroFemale-stand.png"
+dest_files=["res://.godot/imported/HeroFemale-stand.png-6a27b512dbc64d9d82875602d375aa56.ctex"]
 
 [params]
 

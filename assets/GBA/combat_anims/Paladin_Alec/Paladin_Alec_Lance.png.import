@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bymex5784x02o"
-path="res://.godot/imported/Paladin_Alec_Lance.png-ec5639e37344cdbb22896541982a5daf.ctex"
+path="res://.godot/imported/Paladin_Alec_Lance.png-35ac0934f7b5a41cc1c07a9446c6207f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Alec/Paladin_Alec_Lance.png"
-dest_files=["res://.godot/imported/Paladin_Alec_Lance.png-ec5639e37344cdbb22896541982a5daf.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Alec/Paladin_Alec_Lance.png"
+dest_files=["res://.godot/imported/Paladin_Alec_Lance.png-35ac0934f7b5a41cc1c07a9446c6207f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxfbtxndor00o"
-path="res://.godot/imported/KingAzmur.png-3aab606b938f04627c30a741c81e8926.ctex"
+path="res://.godot/imported/KingAzmur.png-d38bce04703d73b49355f871f92478d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/KingAzmur.png"
-dest_files=["res://.godot/imported/KingAzmur.png-3aab606b938f04627c30a741c81e8926.ctex"]
+source_file="res://assets/GBA/portraits/characters/KingAzmur.png"
+dest_files=["res://.godot/imported/KingAzmur.png-d38bce04703d73b49355f871f92478d2.ctex"]
 
 [params]
 

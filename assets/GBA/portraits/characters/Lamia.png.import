@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v6cvoaplkwbr"
-path="res://.godot/imported/Lamia.png-3910ff6cee8013042d3243e4d5536e01.ctex"
+path="res://.godot/imported/Lamia.png-5ce66107824d187ca41212ca2fbf9aa7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Lamia.png"
-dest_files=["res://.godot/imported/Lamia.png-3910ff6cee8013042d3243e4d5536e01.ctex"]
+source_file="res://assets/GBA/portraits/characters/Lamia.png"
+dest_files=["res://.godot/imported/Lamia.png-5ce66107824d187ca41212ca2fbf9aa7.ctex"]
 
 [params]
 

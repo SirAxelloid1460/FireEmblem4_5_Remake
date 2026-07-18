@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbmx8jw3tdr1f"
-path="res://.godot/imported/Swordmaster_Eyvel_MagicSword.png-d7194c92b0f9a94f5c246e69291bc628.ctex"
+path="res://.godot/imported/Swordmaster_Eyvel_MagicSword.png-eed0c506f91d5a48adea6a00d6d18337.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Eyvel/Swordmaster_Eyvel_MagicSword.png"
-dest_files=["res://.godot/imported/Swordmaster_Eyvel_MagicSword.png-d7194c92b0f9a94f5c246e69291bc628.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Eyvel/Swordmaster_Eyvel_MagicSword.png"
+dest_files=["res://.godot/imported/Swordmaster_Eyvel_MagicSword.png-eed0c506f91d5a48adea6a00d6d18337.ctex"]
 
 [params]
 

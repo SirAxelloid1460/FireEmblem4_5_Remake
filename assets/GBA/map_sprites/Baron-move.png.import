@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp4kn3jqc2wgj"
-path="res://.godot/imported/Baron-move.png-14a045f98b9bcb283671beb0d0735357.ctex"
+path="res://.godot/imported/Baron-move.png-b34cc44d4e8f18ec0ad67ae6befec7eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Baron-move.png"
-dest_files=["res://.godot/imported/Baron-move.png-14a045f98b9bcb283671beb0d0735357.ctex"]
+source_file="res://assets/GBA/map_sprites/Baron-move.png"
+dest_files=["res://.godot/imported/Baron-move.png-b34cc44d4e8f18ec0ad67ae6befec7eb.ctex"]
 
 [params]
 

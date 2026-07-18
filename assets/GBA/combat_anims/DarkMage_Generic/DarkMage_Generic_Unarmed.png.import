@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj4l6v0j2ifse"
-path="res://.godot/imported/DarkMage_Generic_Unarmed.png-2c19bf893615a2a77329416a8b8aaf2d.ctex"
+path="res://.godot/imported/DarkMage_Generic_Unarmed.png-6410e86bf2df3b1e2ffe57b558094b5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DarkMage_Generic/DarkMage_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/DarkMage_Generic_Unarmed.png-2c19bf893615a2a77329416a8b8aaf2d.ctex"]
+source_file="res://assets/GBA/combat_anims/DarkMage_Generic/DarkMage_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/DarkMage_Generic_Unarmed.png-6410e86bf2df3b1e2ffe57b558094b5c.ctex"]
 
 [params]
 

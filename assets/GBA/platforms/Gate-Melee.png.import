@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxvmccx1vbv3"
-path="res://.godot/imported/Gate-Melee.png-3ce632a179aadab3fb9b2c7c759e3f95.ctex"
+path="res://.godot/imported/Gate-Melee.png-a7962d33637f548e36d63b2630928d51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Gate-Melee.png"
-dest_files=["res://.godot/imported/Gate-Melee.png-3ce632a179aadab3fb9b2c7c759e3f95.ctex"]
+source_file="res://assets/GBA/platforms/Gate-Melee.png"
+dest_files=["res://.godot/imported/Gate-Melee.png-a7962d33637f548e36d63b2630928d51.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://beypdums7go1r"
-path="res://.godot/imported/Paladin_Ethlyn_MagicSword.png-71e6c9b375bfab10d93b828ae91a92f4.ctex"
+path="res://.godot/imported/Paladin_Ethlyn_MagicSword.png-ce1a03d4fa00dcde6a6482683267c73b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Ethlyn/Paladin_Ethlyn_MagicSword.png"
-dest_files=["res://.godot/imported/Paladin_Ethlyn_MagicSword.png-71e6c9b375bfab10d93b828ae91a92f4.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Ethlyn/Paladin_Ethlyn_MagicSword.png"
+dest_files=["res://.godot/imported/Paladin_Ethlyn_MagicSword.png-ce1a03d4fa00dcde6a6482683267c73b.ctex"]
 
 [params]
 

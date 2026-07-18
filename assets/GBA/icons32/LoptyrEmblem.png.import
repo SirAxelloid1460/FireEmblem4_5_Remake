@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cva755o0vk5ie"
-path="res://.godot/imported/LoptyrEmblem.png-785683ba16733bad89c2ce84edc1905d.ctex"
+path="res://.godot/imported/LoptyrEmblem.png-a361a1ed64f0380ee79a7a3f56bbb2aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons32/LoptyrEmblem.png"
-dest_files=["res://.godot/imported/LoptyrEmblem.png-785683ba16733bad89c2ce84edc1905d.ctex"]
+source_file="res://assets/GBA/icons32/LoptyrEmblem.png"
+dest_files=["res://.godot/imported/LoptyrEmblem.png-a361a1ed64f0380ee79a7a3f56bbb2aa.ctex"]
 
 [params]
 

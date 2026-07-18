@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c0cw6qr5hcq7p"
-path="res://.godot/imported/121 - Towards the Light.ogg-bb6c0949aa466c8c980a96dc7a2d8f17.oggvorbisstr"
+path="res://.godot/imported/121 - Towards the Light.ogg-8f11f6e90f9c9e38c973ab9b3e748044.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/121 - Towards the Light.ogg"
-dest_files=["res://.godot/imported/121 - Towards the Light.ogg-bb6c0949aa466c8c980a96dc7a2d8f17.oggvorbisstr"]
+source_file="res://assets/GBA/music/121 - Towards the Light.ogg"
+dest_files=["res://.godot/imported/121 - Towards the Light.ogg-8f11f6e90f9c9e38c973ab9b3e748044.oggvorbisstr"]
 
 [params]
 

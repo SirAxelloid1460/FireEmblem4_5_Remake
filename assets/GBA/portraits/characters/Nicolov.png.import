@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br447rhm4i026"
-path="res://.godot/imported/Nicolov.png-64180d53c1f841fe0941382145f43a22.ctex"
+path="res://.godot/imported/Nicolov.png-289fab2a511a759732a5ca10192dd769.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Nicolov.png"
-dest_files=["res://.godot/imported/Nicolov.png-64180d53c1f841fe0941382145f43a22.ctex"]
+source_file="res://assets/GBA/portraits/characters/Nicolov.png"
+dest_files=["res://.godot/imported/Nicolov.png-289fab2a511a759732a5ca10192dd769.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2t46xnngdkvl"
-path="res://.godot/imported/Sage_Female_MagicStaff.png-f45a315ecf86334b7e1fe576b1eefaf2.ctex"
+path="res://.godot/imported/Sage_Female_MagicStaff.png-22931c04b6a64d99ed7e8a405c9af21f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Female/Sage_Female_MagicStaff.png"
-dest_files=["res://.godot/imported/Sage_Female_MagicStaff.png-f45a315ecf86334b7e1fe576b1eefaf2.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Female/Sage_Female_MagicStaff.png"
+dest_files=["res://.godot/imported/Sage_Female_MagicStaff.png-22931c04b6a64d99ed7e8a405c9af21f.ctex"]
 
 [params]
 

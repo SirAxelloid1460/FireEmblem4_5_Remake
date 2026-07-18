@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dblx20veja13w"
-path="res://.godot/imported/Queen_Generic_Unarmed.png-ed453fca44c429b8a7aaa2493d151dd7.ctex"
+path="res://.godot/imported/Queen_Generic_Unarmed.png-a674b92fc97f6c231cac23afc7f559e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Queen_Generic/Queen_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/Queen_Generic_Unarmed.png-ed453fca44c429b8a7aaa2493d151dd7.ctex"]
+source_file="res://assets/GBA/combat_anims/Queen_Generic/Queen_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/Queen_Generic_Unarmed.png-a674b92fc97f6c231cac23afc7f559e5.ctex"]
 
 [params]
 

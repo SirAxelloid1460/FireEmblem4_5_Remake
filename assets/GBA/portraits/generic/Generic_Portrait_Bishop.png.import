@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://52dc3ld6ib6s"
-path="res://.godot/imported/Generic_Portrait_Bishop.png-c39deaac2ee37998e36133ac7842b29f.ctex"
+path="res://.godot/imported/Generic_Portrait_Bishop.png-c1c3bcc6030aa8e6327a39266abc7bee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_Bishop.png"
-dest_files=["res://.godot/imported/Generic_Portrait_Bishop.png-c39deaac2ee37998e36133ac7842b29f.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_Bishop.png"
+dest_files=["res://.godot/imported/Generic_Portrait_Bishop.png-c1c3bcc6030aa8e6327a39266abc7bee.ctex"]
 
 [params]
 

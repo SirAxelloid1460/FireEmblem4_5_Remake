@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqmghpfe3urtw"
-path="res://.godot/imported/Forest-Melee.png-df5613e20093602ce8e20b39d5e3c0b4.ctex"
+path="res://.godot/imported/Forest-Melee.png-84c51537eacc0008a524abf1f820f4f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Forest-Melee.png"
-dest_files=["res://.godot/imported/Forest-Melee.png-df5613e20093602ce8e20b39d5e3c0b4.ctex"]
+source_file="res://assets/GBA/platforms/Forest-Melee.png"
+dest_files=["res://.godot/imported/Forest-Melee.png-84c51537eacc0008a524abf1f820f4f4.ctex"]
 
 [params]
 

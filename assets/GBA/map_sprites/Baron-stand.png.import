@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccn100r4oo8ao"
-path="res://.godot/imported/Baron-stand.png-12827a2b779129f78288acf7b9145313.ctex"
+path="res://.godot/imported/Baron-stand.png-9cacb6a0a1a1507fb9db19d0404af047.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Baron-stand.png"
-dest_files=["res://.godot/imported/Baron-stand.png-12827a2b779129f78288acf7b9145313.ctex"]
+source_file="res://assets/GBA/map_sprites/Baron-stand.png"
+dest_files=["res://.godot/imported/Baron-stand.png-9cacb6a0a1a1507fb9db19d0404af047.ctex"]
 
 [params]
 

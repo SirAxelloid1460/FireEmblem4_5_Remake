@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://drqbjd6ybe4db"
-path="res://.godot/imported/318 - Adean's Theme.ogg-8240d06fcccc0b5421747385d9d96286.oggvorbisstr"
+path="res://.godot/imported/318 - Adean's Theme.ogg-58b913a810d42b63c3ab9af6822bc468.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/318 - Adean's Theme.ogg"
-dest_files=["res://.godot/imported/318 - Adean's Theme.ogg-8240d06fcccc0b5421747385d9d96286.oggvorbisstr"]
+source_file="res://assets/GBA/music/318 - Adean's Theme.ogg"
+dest_files=["res://.godot/imported/318 - Adean's Theme.ogg-58b913a810d42b63c3ab9af6822bc468.oggvorbisstr"]
 
 [params]
 

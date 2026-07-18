@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://boyerlt3jj0ud"
-path="res://.godot/imported/Best Detectives.ogg-c31e813d0a3fa9c513f7f2616e060b8a.oggvorbisstr"
+path="res://.godot/imported/Best Detectives.ogg-c8b264ffeafa4dfaefca636b4bafa38b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Best Detectives.ogg"
-dest_files=["res://.godot/imported/Best Detectives.ogg-c31e813d0a3fa9c513f7f2616e060b8a.oggvorbisstr"]
+source_file="res://assets/GBA/music/Best Detectives.ogg"
+dest_files=["res://.godot/imported/Best Detectives.ogg-c8b264ffeafa4dfaefca636b4bafa38b.oggvorbisstr"]
 
 [params]
 

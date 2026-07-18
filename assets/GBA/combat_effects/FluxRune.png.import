@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dijv2xv22g5w4"
-path="res://.godot/imported/FluxRune.png-57887ea90ea314a7a79c8e647c70f0b2.ctex"
+path="res://.godot/imported/FluxRune.png-db4beaf8c1344452e1ed2812024e6426.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/FluxRune.png"
-dest_files=["res://.godot/imported/FluxRune.png-57887ea90ea314a7a79c8e647c70f0b2.ctex"]
+source_file="res://assets/GBA/combat_effects/FluxRune.png"
+dest_files=["res://.godot/imported/FluxRune.png-db4beaf8c1344452e1ed2812024e6426.ctex"]
 
 [params]
 

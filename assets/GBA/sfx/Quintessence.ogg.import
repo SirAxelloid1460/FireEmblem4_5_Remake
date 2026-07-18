@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dxqhf0jvw7v4y"
-path="res://.godot/imported/Quintessence.ogg-cb597f700c63ef5af3e16d80159d1a78.oggvorbisstr"
+path="res://.godot/imported/Quintessence.ogg-cb80777de6c736c490ac4c697913b2cb.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Quintessence.ogg"
-dest_files=["res://.godot/imported/Quintessence.ogg-cb597f700c63ef5af3e16d80159d1a78.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Quintessence.ogg"
+dest_files=["res://.godot/imported/Quintessence.ogg-cb80777de6c736c490ac4c697913b2cb.oggvorbisstr"]
 
 [params]
 

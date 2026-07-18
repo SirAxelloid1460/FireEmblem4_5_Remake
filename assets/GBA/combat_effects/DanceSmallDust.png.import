@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct4y47xhbelrf"
-path="res://.godot/imported/DanceSmallDust.png-3122359994fc7d9ad7026ae235462626.ctex"
+path="res://.godot/imported/DanceSmallDust.png-3b7ef307f87dd5941e0d920ef9bb685f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/DanceSmallDust.png"
-dest_files=["res://.godot/imported/DanceSmallDust.png-3122359994fc7d9ad7026ae235462626.ctex"]
+source_file="res://assets/GBA/combat_effects/DanceSmallDust.png"
+dest_files=["res://.godot/imported/DanceSmallDust.png-3b7ef307f87dd5941e0d920ef9bb685f.ctex"]
 
 [params]
 

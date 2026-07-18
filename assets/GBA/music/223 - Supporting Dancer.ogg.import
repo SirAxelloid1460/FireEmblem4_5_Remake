@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://grn5q646h7u5"
-path="res://.godot/imported/223 - Supporting Dancer.ogg-3822445680db934e1b62af090ff26f0d.oggvorbisstr"
+path="res://.godot/imported/223 - Supporting Dancer.ogg-0b7afb95e0993d6cb86f9a4dd994f80b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/223 - Supporting Dancer.ogg"
-dest_files=["res://.godot/imported/223 - Supporting Dancer.ogg-3822445680db934e1b62af090ff26f0d.oggvorbisstr"]
+source_file="res://assets/GBA/music/223 - Supporting Dancer.ogg"
+dest_files=["res://.godot/imported/223 - Supporting Dancer.ogg-0b7afb95e0993d6cb86f9a4dd994f80b.oggvorbisstr"]
 
 [params]
 

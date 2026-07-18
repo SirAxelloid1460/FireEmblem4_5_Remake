@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddcuxy1g2saf3"
-path="res://.godot/imported/Cowen.png-feb82dbfd3d36468ea5be90fef5c93d6.ctex"
+path="res://.godot/imported/Cowen.png-aa7297f9c31fc3acab2498dff1b59626.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Cowen.png"
-dest_files=["res://.godot/imported/Cowen.png-feb82dbfd3d36468ea5be90fef5c93d6.ctex"]
+source_file="res://assets/GBA/portraits/characters/Cowen.png"
+dest_files=["res://.godot/imported/Cowen.png-aa7297f9c31fc3acab2498dff1b59626.ctex"]
 
 [params]
 

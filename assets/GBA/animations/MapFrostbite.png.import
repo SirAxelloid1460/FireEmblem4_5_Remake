@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8lfqbt2iovk"
-path="res://.godot/imported/MapFrostbite.png-3d015c360b70b95c60445ab3eed660a6.ctex"
+path="res://.godot/imported/MapFrostbite.png-5d9c9123eb3669ea00827f30a3fef1ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/MapFrostbite.png"
-dest_files=["res://.godot/imported/MapFrostbite.png-3d015c360b70b95c60445ab3eed660a6.ctex"]
+source_file="res://assets/GBA/animations/MapFrostbite.png"
+dest_files=["res://.godot/imported/MapFrostbite.png-5d9c9123eb3669ea00827f30a3fef1ff.ctex"]
 
 [params]
 

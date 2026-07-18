@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://h4v8ne6j42pu"
-path="res://.godot/imported/Emperor-stand.png-e27564104d140f18487fb10f331b9588.ctex"
+path="res://.godot/imported/Emperor-stand.png-cf9a5d00c4435d8293a3602b05158d56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Emperor-stand.png"
-dest_files=["res://.godot/imported/Emperor-stand.png-e27564104d140f18487fb10f331b9588.ctex"]
+source_file="res://assets/GBA/map_sprites/Emperor-stand.png"
+dest_files=["res://.godot/imported/Emperor-stand.png-cf9a5d00c4435d8293a3602b05158d56.ctex"]
 
 [params]
 

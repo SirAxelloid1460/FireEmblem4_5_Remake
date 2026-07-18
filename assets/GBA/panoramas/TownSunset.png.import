@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coaknp5lnghg"
-path="res://.godot/imported/TownSunset.png-1b5f007675e7ef648701e8278ed169c2.ctex"
+path="res://.godot/imported/TownSunset.png-062255f82b3739b9cbc6ba5eec135528.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/TownSunset.png"
-dest_files=["res://.godot/imported/TownSunset.png-1b5f007675e7ef648701e8278ed169c2.ctex"]
+source_file="res://assets/GBA/panoramas/TownSunset.png"
+dest_files=["res://.godot/imported/TownSunset.png-062255f82b3739b9cbc6ba5eec135528.ctex"]
 
 [params]
 

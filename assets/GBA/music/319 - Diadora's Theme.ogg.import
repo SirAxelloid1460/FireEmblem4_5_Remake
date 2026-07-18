@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c6xcq717ml2rd"
-path="res://.godot/imported/319 - Diadora's Theme.ogg-92423e02c2454d71918d7beebc34d7ac.oggvorbisstr"
+path="res://.godot/imported/319 - Diadora's Theme.ogg-4e42f0f6f59b8a3c3ff1ad35225e5e9d.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/319 - Diadora's Theme.ogg"
-dest_files=["res://.godot/imported/319 - Diadora's Theme.ogg-92423e02c2454d71918d7beebc34d7ac.oggvorbisstr"]
+source_file="res://assets/GBA/music/319 - Diadora's Theme.ogg"
+dest_files=["res://.godot/imported/319 - Diadora's Theme.ogg-4e42f0f6f59b8a3c3ff1ad35225e5e9d.oggvorbisstr"]
 
 [params]
 

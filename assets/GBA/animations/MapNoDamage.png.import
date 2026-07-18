@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfnig18t4t5tx"
-path="res://.godot/imported/MapNoDamage.png-72d46af03dc832aa20266d7a705fdb0e.ctex"
+path="res://.godot/imported/MapNoDamage.png-aead9dab5c08789e829ae27a72c658b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/MapNoDamage.png"
-dest_files=["res://.godot/imported/MapNoDamage.png-72d46af03dc832aa20266d7a705fdb0e.ctex"]
+source_file="res://assets/GBA/animations/MapNoDamage.png"
+dest_files=["res://.godot/imported/MapNoDamage.png-aead9dab5c08789e829ae27a72c658b6.ctex"]
 
 [params]
 

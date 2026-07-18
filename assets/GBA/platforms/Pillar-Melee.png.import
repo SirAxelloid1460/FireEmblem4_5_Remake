@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6mm7s6ovy4ov"
-path="res://.godot/imported/Pillar-Melee.png-e727e3dfaf001808e44805c613d4dc24.ctex"
+path="res://.godot/imported/Pillar-Melee.png-3264e9fe153c0eba57d892d1462583c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Pillar-Melee.png"
-dest_files=["res://.godot/imported/Pillar-Melee.png-e727e3dfaf001808e44805c613d4dc24.ctex"]
+source_file="res://assets/GBA/platforms/Pillar-Melee.png"
+dest_files=["res://.godot/imported/Pillar-Melee.png-3264e9fe153c0eba57d892d1462583c7.ctex"]
 
 [params]
 

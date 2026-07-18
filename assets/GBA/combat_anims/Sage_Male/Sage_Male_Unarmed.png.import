@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6oexc1k5n3oc"
-path="res://.godot/imported/Sage_Male_Unarmed.png-81189f3ddb8a7c5a410ccab55fc3c6db.ctex"
+path="res://.godot/imported/Sage_Male_Unarmed.png-7c86a5cc0b2243c7f66546414ea1606a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Male/Sage_Male_Unarmed.png"
-dest_files=["res://.godot/imported/Sage_Male_Unarmed.png-81189f3ddb8a7c5a410ccab55fc3c6db.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Male/Sage_Male_Unarmed.png"
+dest_files=["res://.godot/imported/Sage_Male_Unarmed.png-7c86a5cc0b2243c7f66546414ea1606a.ctex"]
 
 [params]
 

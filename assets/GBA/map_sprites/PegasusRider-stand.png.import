@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpljjbexmnd20"
-path="res://.godot/imported/PegasusRider-stand.png-325b4cf53e58d4b0a0f4c8ac990c207a.ctex"
+path="res://.godot/imported/PegasusRider-stand.png-e9901f90169ee16d5a27f5f735cf88c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/PegasusRider-stand.png"
-dest_files=["res://.godot/imported/PegasusRider-stand.png-325b4cf53e58d4b0a0f4c8ac990c207a.ctex"]
+source_file="res://assets/GBA/map_sprites/PegasusRider-stand.png"
+dest_files=["res://.godot/imported/PegasusRider-stand.png-e9901f90169ee16d5a27f5f735cf88c3.ctex"]
 
 [params]
 

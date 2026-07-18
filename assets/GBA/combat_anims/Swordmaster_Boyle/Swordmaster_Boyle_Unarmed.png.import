@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q0ja5sduwhun"
-path="res://.godot/imported/Swordmaster_Boyle_Unarmed.png-38f3cae138f105b7a6e3a7e7800f6b15.ctex"
+path="res://.godot/imported/Swordmaster_Boyle_Unarmed.png-76c0c89e15cda39f96ffad63ddf1b76d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordmaster_Boyle/Swordmaster_Boyle_Unarmed.png"
-dest_files=["res://.godot/imported/Swordmaster_Boyle_Unarmed.png-38f3cae138f105b7a6e3a7e7800f6b15.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordmaster_Boyle/Swordmaster_Boyle_Unarmed.png"
+dest_files=["res://.godot/imported/Swordmaster_Boyle_Unarmed.png-76c0c89e15cda39f96ffad63ddf1b76d.ctex"]
 
 [params]
 

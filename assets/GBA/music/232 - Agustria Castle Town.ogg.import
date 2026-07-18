@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://oi1ho3ymi3w6"
-path="res://.godot/imported/232 - Agustria Castle Town.ogg-4a14e53c24d11695a9ea08687cd58811.oggvorbisstr"
+path="res://.godot/imported/232 - Agustria Castle Town.ogg-4340ee6d562c82db9583f4900cac132e.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/232 - Agustria Castle Town.ogg"
-dest_files=["res://.godot/imported/232 - Agustria Castle Town.ogg-4a14e53c24d11695a9ea08687cd58811.oggvorbisstr"]
+source_file="res://assets/GBA/music/232 - Agustria Castle Town.ogg"
+dest_files=["res://.godot/imported/232 - Agustria Castle Town.ogg-4340ee6d562c82db9583f4900cac132e.oggvorbisstr"]
 
 [params]
 

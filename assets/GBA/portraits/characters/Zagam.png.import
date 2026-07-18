@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c50tuf3rji1y"
-path="res://.godot/imported/Zagam.png-54d9aed0fea57191fe4cfb9a0360ad48.ctex"
+path="res://.godot/imported/Zagam.png-6499053e7add43fb412b867e78decb6f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Zagam.png"
-dest_files=["res://.godot/imported/Zagam.png-54d9aed0fea57191fe4cfb9a0360ad48.ctex"]
+source_file="res://assets/GBA/portraits/characters/Zagam.png"
+dest_files=["res://.godot/imported/Zagam.png-6499053e7add43fb412b867e78decb6f.ctex"]
 
 [params]
 

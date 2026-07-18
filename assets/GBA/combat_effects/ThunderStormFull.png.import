@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyakb2rlpm5k8"
-path="res://.godot/imported/ThunderStormFull.png-20c1782b5c2d430ae947e15d1c4715ff.ctex"
+path="res://.godot/imported/ThunderStormFull.png-5d6fb316e48ca1fb0385483f15be68ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/ThunderStormFull.png"
-dest_files=["res://.godot/imported/ThunderStormFull.png-20c1782b5c2d430ae947e15d1c4715ff.ctex"]
+source_file="res://assets/GBA/combat_effects/ThunderStormFull.png"
+dest_files=["res://.godot/imported/ThunderStormFull.png-5d6fb316e48ca1fb0385483f15be68ff.ctex"]
 
 [params]
 

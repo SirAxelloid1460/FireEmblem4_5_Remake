@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj3rbhmc01s0k"
-path="res://.godot/imported/Armory-Melee.png-c42128ab298837b02c48cc22ac2768eb.ctex"
+path="res://.godot/imported/Armory-Melee.png-0dc58c40aa184fe3f21c443ca5122bc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Armory-Melee.png"
-dest_files=["res://.godot/imported/Armory-Melee.png-c42128ab298837b02c48cc22ac2768eb.ctex"]
+source_file="res://assets/GBA/platforms/Armory-Melee.png"
+dest_files=["res://.godot/imported/Armory-Melee.png-0dc58c40aa184fe3f21c443ca5122bc3.ctex"]
 
 [params]
 

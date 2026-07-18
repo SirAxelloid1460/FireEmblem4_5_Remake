@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cm2f87yhojwmq"
-path="res://.godot/imported/Hermina.png-ae5028d84574abf483efc8f1d426273e.ctex"
+path="res://.godot/imported/Hermina.png-0575e20ceffc148b169df2ea2edd9349.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Hermina.png"
-dest_files=["res://.godot/imported/Hermina.png-ae5028d84574abf483efc8f1d426273e.ctex"]
+source_file="res://assets/GBA/portraits/characters/Hermina.png"
+dest_files=["res://.godot/imported/Hermina.png-0575e20ceffc148b169df2ea2edd9349.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6yjv7am1r0sc"
-path="res://.godot/imported/HelFull.png-fb8c1db5bd6efa81f249ae7cfde14ad9.ctex"
+path="res://.godot/imported/HelFull.png-e50d9e92d0a3784c0c3143b2468f08df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/HelFull.png"
-dest_files=["res://.godot/imported/HelFull.png-fb8c1db5bd6efa81f249ae7cfde14ad9.ctex"]
+source_file="res://assets/GBA/combat_effects/HelFull.png"
+dest_files=["res://.godot/imported/HelFull.png-e50d9e92d0a3784c0c3143b2468f08df.ctex"]
 
 [params]
 

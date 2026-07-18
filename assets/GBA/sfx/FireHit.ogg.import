@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://crkt3boyx600f"
-path="res://.godot/imported/FireHit.ogg-e1babf4f4dd74b91bc12a23ac7a31f8a.oggvorbisstr"
+path="res://.godot/imported/FireHit.ogg-60eba3f03941e4e3420e2c71ea5c6bee.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/FireHit.ogg"
-dest_files=["res://.godot/imported/FireHit.ogg-e1babf4f4dd74b91bc12a23ac7a31f8a.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/FireHit.ogg"
+dest_files=["res://.godot/imported/FireHit.ogg-60eba3f03941e4e3420e2c71ea5c6bee.oggvorbisstr"]
 
 [params]
 

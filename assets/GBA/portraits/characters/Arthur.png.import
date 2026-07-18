@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cudmnywnp5rp4"
-path="res://.godot/imported/Arthur.png-25d46fa2f2aec17051b76de06a04d274.ctex"
+path="res://.godot/imported/Arthur.png-74a6b2d0b3228cdbec912320216ce2d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Arthur.png"
-dest_files=["res://.godot/imported/Arthur.png-25d46fa2f2aec17051b76de06a04d274.ctex"]
+source_file="res://assets/GBA/portraits/characters/Arthur.png"
+dest_files=["res://.godot/imported/Arthur.png-74a6b2d0b3228cdbec912320216ce2d5.ctex"]
 
 [params]
 

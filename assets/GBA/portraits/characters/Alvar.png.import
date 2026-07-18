@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://oee4pu4vlnw"
-path="res://.godot/imported/Alvar.png-161a4b438796d53b7d4fd11dc8008ddb.ctex"
+path="res://.godot/imported/Alvar.png-70e8bc67ef82b2c2cf45aaeefff555b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Alvar.png"
-dest_files=["res://.godot/imported/Alvar.png-161a4b438796d53b7d4fd11dc8008ddb.ctex"]
+source_file="res://assets/GBA/portraits/characters/Alvar.png"
+dest_files=["res://.godot/imported/Alvar.png-70e8bc67ef82b2c2cf45aaeefff555b0.ctex"]
 
 [params]
 

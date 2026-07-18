@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmed2fwctlxpo"
-path="res://.godot/imported/Swordfighter_Male_Unarmed.png-63afb6ed89f316466d0f15d21207138b.ctex"
+path="res://.godot/imported/Swordfighter_Male_Unarmed.png-935593cfe633a388b0ef9678a278468b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordfighter_Male/Swordfighter_Male_Unarmed.png"
-dest_files=["res://.godot/imported/Swordfighter_Male_Unarmed.png-63afb6ed89f316466d0f15d21207138b.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordfighter_Male/Swordfighter_Male_Unarmed.png"
+dest_files=["res://.godot/imported/Swordfighter_Male_Unarmed.png-935593cfe633a388b0ef9678a278468b.ctex"]
 
 [params]
 

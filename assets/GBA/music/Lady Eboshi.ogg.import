@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dspsa42hcbu6g"
-path="res://.godot/imported/Lady Eboshi.ogg-81eb047661aeebf2f6a05a17f9d048e3.oggvorbisstr"
+path="res://.godot/imported/Lady Eboshi.ogg-7e95104a5e4ba8c9be4a029679bba47c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Lady Eboshi.ogg"
-dest_files=["res://.godot/imported/Lady Eboshi.ogg-81eb047661aeebf2f6a05a17f9d048e3.oggvorbisstr"]
+source_file="res://assets/GBA/music/Lady Eboshi.ogg"
+dest_files=["res://.godot/imported/Lady Eboshi.ogg-7e95104a5e4ba8c9be4a029679bba47c.oggvorbisstr"]
 
 [params]
 

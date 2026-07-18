@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yeq0c6orkiab"
-path="res://.godot/imported/Mage_Tailtiu_MagicAnima.png-235393f92faed499f9183dd841f557a5.ctex"
+path="res://.godot/imported/Mage_Tailtiu_MagicAnima.png-def34cb7056f790cdcd0608fd619491b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Mage_Tailtiu/Mage_Tailtiu_MagicAnima.png"
-dest_files=["res://.godot/imported/Mage_Tailtiu_MagicAnima.png-235393f92faed499f9183dd841f557a5.ctex"]
+source_file="res://assets/GBA/combat_anims/Mage_Tailtiu/Mage_Tailtiu_MagicAnima.png"
+dest_files=["res://.godot/imported/Mage_Tailtiu_MagicAnima.png-def34cb7056f790cdcd0608fd619491b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1xosh2dqg37y"
-path="res://.godot/imported/Priestess_Safy_Unarmed.png-130fc1c0460825c6823bda710c4eab1d.ctex"
+path="res://.godot/imported/Priestess_Safy_Unarmed.png-ac12fe91767597cbb697fe41f889a885.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Priestess_Safy/Priestess_Safy_Unarmed.png"
-dest_files=["res://.godot/imported/Priestess_Safy_Unarmed.png-130fc1c0460825c6823bda710c4eab1d.ctex"]
+source_file="res://assets/GBA/combat_anims/Priestess_Safy/Priestess_Safy_Unarmed.png"
+dest_files=["res://.godot/imported/Priestess_Safy_Unarmed.png-ac12fe91767597cbb697fe41f889a885.ctex"]
 
 [params]
 

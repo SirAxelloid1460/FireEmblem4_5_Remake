@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b2fn4ulhjyon3"
-path="res://.godot/imported/327 - Silesia Palace.ogg-61525befb1b384bbe0a48a7c64c7a8a9.oggvorbisstr"
+path="res://.godot/imported/327 - Silesia Palace.ogg-5dbcc4b72492efc5fbf44af6f8c4f643.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/327 - Silesia Palace.ogg"
-dest_files=["res://.godot/imported/327 - Silesia Palace.ogg-61525befb1b384bbe0a48a7c64c7a8a9.oggvorbisstr"]
+source_file="res://assets/GBA/music/327 - Silesia Palace.ogg"
+dest_files=["res://.godot/imported/327 - Silesia Palace.ogg-5dbcc4b72492efc5fbf44af6f8c4f643.oggvorbisstr"]
 
 [params]
 

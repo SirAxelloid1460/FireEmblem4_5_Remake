@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://utlabgihnd8m"
-path="res://.godot/imported/Hicks.png-3f37f36aa82bfcaf5df735d8f10d8449.ctex"
+path="res://.godot/imported/Hicks.png-6f3445bf9a678c754b2dbaefea2d045c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Hicks.png"
-dest_files=["res://.godot/imported/Hicks.png-3f37f36aa82bfcaf5df735d8f10d8449.ctex"]
+source_file="res://assets/GBA/portraits/characters/Hicks.png"
+dest_files=["res://.godot/imported/Hicks.png-6f3445bf9a678c754b2dbaefea2d045c.ctex"]
 
 [params]
 

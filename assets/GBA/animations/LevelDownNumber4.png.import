@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chol8bc33jupx"
-path="res://.godot/imported/LevelDownNumber4.png-9e5f9c3f3fdc90806f790371af333940.ctex"
+path="res://.godot/imported/LevelDownNumber4.png-68bb8bf38f6540309fcdbb6700edd5cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/LevelDownNumber4.png"
-dest_files=["res://.godot/imported/LevelDownNumber4.png-9e5f9c3f3fdc90806f790371af333940.ctex"]
+source_file="res://assets/GBA/animations/LevelDownNumber4.png"
+dest_files=["res://.godot/imported/LevelDownNumber4.png-68bb8bf38f6540309fcdbb6700edd5cc.ctex"]
 
 [params]
 

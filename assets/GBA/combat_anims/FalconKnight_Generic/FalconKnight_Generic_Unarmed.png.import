@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brsvrqhgti01s"
-path="res://.godot/imported/FalconKnight_Generic_Unarmed.png-395d5532cc668775003269e5280c623b.ctex"
+path="res://.godot/imported/FalconKnight_Generic_Unarmed.png-f6896014c995e0f10f9721a21ccde589.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/FalconKnight_Generic/FalconKnight_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/FalconKnight_Generic_Unarmed.png-395d5532cc668775003269e5280c623b.ctex"]
+source_file="res://assets/GBA/combat_anims/FalconKnight_Generic/FalconKnight_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/FalconKnight_Generic_Unarmed.png-f6896014c995e0f10f9721a21ccde589.ctex"]
 
 [params]
 

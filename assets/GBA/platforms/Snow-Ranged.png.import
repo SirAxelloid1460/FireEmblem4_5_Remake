@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r6i58wlmvfoi"
-path="res://.godot/imported/Snow-Ranged.png-59fab3738643e074b41ffa3a0c7c963e.ctex"
+path="res://.godot/imported/Snow-Ranged.png-e137732d24ba6dd96b58e0559275a856.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Snow-Ranged.png"
-dest_files=["res://.godot/imported/Snow-Ranged.png-59fab3738643e074b41ffa3a0c7c963e.ctex"]
+source_file="res://assets/GBA/platforms/Snow-Ranged.png"
+dest_files=["res://.godot/imported/Snow-Ranged.png-e137732d24ba6dd96b58e0559275a856.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://x8i7bsurxc0t"
-path="res://.godot/imported/Paladin_Jeanne_MagicStaff.png-5f89ea398bca87574ebee465e8ad4574.ctex"
+path="res://.godot/imported/Paladin_Jeanne_MagicStaff.png-65cfdb0b433261ecf79b66228affbcbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Jeanne/Paladin_Jeanne_MagicStaff.png"
-dest_files=["res://.godot/imported/Paladin_Jeanne_MagicStaff.png-5f89ea398bca87574ebee465e8ad4574.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Jeanne/Paladin_Jeanne_MagicStaff.png"
+dest_files=["res://.godot/imported/Paladin_Jeanne_MagicStaff.png-65cfdb0b433261ecf79b66228affbcbb.ctex"]
 
 [params]
 

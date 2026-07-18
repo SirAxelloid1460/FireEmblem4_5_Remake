@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d080gforpt2qi"
-path="res://.godot/imported/Plains.png-5beb12352d2ad5a814b8655279706484.ctex"
+path="res://.godot/imported/Plains.png-6206dda9a95eec863835c2b3cb5e2067.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/Plains.png"
-dest_files=["res://.godot/imported/Plains.png-5beb12352d2ad5a814b8655279706484.ctex"]
+source_file="res://assets/GBA/panoramas/Plains.png"
+dest_files=["res://.godot/imported/Plains.png-6206dda9a95eec863835c2b3cb5e2067.ctex"]
 
 [params]
 

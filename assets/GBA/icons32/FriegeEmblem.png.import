@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ob4a0hu6fuk6"
-path="res://.godot/imported/FriegeEmblem.png-eb84c09b0d70295e643fe4cca9dff47b.ctex"
+path="res://.godot/imported/FriegeEmblem.png-ea81b7aa6447a41f87d27d69d982a0b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons32/FriegeEmblem.png"
-dest_files=["res://.godot/imported/FriegeEmblem.png-eb84c09b0d70295e643fe4cca9dff47b.ctex"]
+source_file="res://assets/GBA/icons32/FriegeEmblem.png"
+dest_files=["res://.godot/imported/FriegeEmblem.png-ea81b7aa6447a41f87d27d69d982a0b3.ctex"]
 
 [params]
 

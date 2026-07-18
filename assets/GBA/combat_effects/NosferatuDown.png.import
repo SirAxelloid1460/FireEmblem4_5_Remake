@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bejwmxgqutw7p"
-path="res://.godot/imported/NosferatuDown.png-7933b704a899a23395031ae8bc61ea4e.ctex"
+path="res://.godot/imported/NosferatuDown.png-3152a4e9f71b703c1b979d31e67edabb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/NosferatuDown.png"
-dest_files=["res://.godot/imported/NosferatuDown.png-7933b704a899a23395031ae8bc61ea4e.ctex"]
+source_file="res://assets/GBA/combat_effects/NosferatuDown.png"
+dest_files=["res://.godot/imported/NosferatuDown.png-3152a4e9f71b703c1b979d31e67edabb.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cymbgx71w0xx2"
-path="res://.godot/imported/Bandit-move.png-e04cc0e868676c4841380a259faa418b.ctex"
+path="res://.godot/imported/Bandit-move.png-318b684dbd0fd6464d0d32bb9f21442b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Bandit-move.png"
-dest_files=["res://.godot/imported/Bandit-move.png-e04cc0e868676c4841380a259faa418b.ctex"]
+source_file="res://assets/GBA/map_sprites/Bandit-move.png"
+dest_files=["res://.godot/imported/Bandit-move.png-318b684dbd0fd6464d0d32bb9f21442b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwqy0jroqsjwm"
-path="res://.godot/imported/Swordfighter_Troude_MagicSword.png-0b629057f7ded8629aae06e85912ff61.ctex"
+path="res://.godot/imported/Swordfighter_Troude_MagicSword.png-1ab09a95039e87587d975a26ec40d328.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordfighter_Troude/Swordfighter_Troude_MagicSword.png"
-dest_files=["res://.godot/imported/Swordfighter_Troude_MagicSword.png-0b629057f7ded8629aae06e85912ff61.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordfighter_Troude/Swordfighter_Troude_MagicSword.png"
+dest_files=["res://.godot/imported/Swordfighter_Troude_MagicSword.png-1ab09a95039e87587d975a26ec40d328.ctex"]
 
 [params]
 

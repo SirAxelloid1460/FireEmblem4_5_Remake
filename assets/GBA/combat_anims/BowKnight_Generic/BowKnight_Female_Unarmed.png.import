@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmx7vbxcicbxo"
-path="res://.godot/imported/BowKnight_Female_Unarmed.png-d2252652d1f03e8e451bd57f0c859a99.ctex"
+path="res://.godot/imported/BowKnight_Female_Unarmed.png-5c4644edb2348513e77d58380df6d31c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/BowKnight_Generic/BowKnight_Female_Unarmed.png"
-dest_files=["res://.godot/imported/BowKnight_Female_Unarmed.png-d2252652d1f03e8e451bd57f0c859a99.ctex"]
+source_file="res://assets/GBA/combat_anims/BowKnight_Generic/BowKnight_Female_Unarmed.png"
+dest_files=["res://.godot/imported/BowKnight_Female_Unarmed.png-5c4644edb2348513e77d58380df6d31c.ctex"]
 
 [params]
 

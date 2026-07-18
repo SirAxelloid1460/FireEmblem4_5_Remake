@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bdvdq21jus0lj"
-path="res://.godot/imported/302 - Yurius.ogg-0511511d6ff0db8880edb21fbf851b77.oggvorbisstr"
+path="res://.godot/imported/302 - Yurius.ogg-5ea1fc27ba7cf3a7b08dba6a9345ad5c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/302 - Yurius.ogg"
-dest_files=["res://.godot/imported/302 - Yurius.ogg-0511511d6ff0db8880edb21fbf851b77.oggvorbisstr"]
+source_file="res://assets/GBA/music/302 - Yurius.ogg"
+dest_files=["res://.godot/imported/302 - Yurius.ogg-5ea1fc27ba7cf3a7b08dba6a9345ad5c.oggvorbisstr"]
 
 [params]
 

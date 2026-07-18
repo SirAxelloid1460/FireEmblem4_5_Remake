@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyiscud54sejw"
-path="res://.godot/imported/Child-move.png-9e8f202fb6b66bde5af2779360b261a9.ctex"
+path="res://.godot/imported/Child-move.png-f5d86671718081d732881d7ad32ad087.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Child-move.png"
-dest_files=["res://.godot/imported/Child-move.png-9e8f202fb6b66bde5af2779360b261a9.ctex"]
+source_file="res://assets/GBA/map_sprites/Child-move.png"
+dest_files=["res://.godot/imported/Child-move.png-f5d86671718081d732881d7ad32ad087.ctex"]
 
 [params]
 

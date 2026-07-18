@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cx6s7p583l5kj"
-path="res://.godot/imported/The Task at Hand.ogg-8d90cac3c231cca11b4d7578bb89fa42.oggvorbisstr"
+path="res://.godot/imported/The Task at Hand.ogg-09c9e6bc2f363381b999e1c3fa5e1e6b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/The Task at Hand.ogg"
-dest_files=["res://.godot/imported/The Task at Hand.ogg-8d90cac3c231cca11b4d7578bb89fa42.oggvorbisstr"]
+source_file="res://assets/GBA/music/The Task at Hand.ogg"
+dest_files=["res://.godot/imported/The Task at Hand.ogg-09c9e6bc2f363381b999e1c3fa5e1e6b.oggvorbisstr"]
 
 [params]
 

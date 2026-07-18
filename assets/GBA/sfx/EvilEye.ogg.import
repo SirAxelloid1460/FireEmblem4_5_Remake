@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b7h7bfvrgu53e"
-path="res://.godot/imported/EvilEye.ogg-3ac7a2c1ff0ff2a991fd857510596379.oggvorbisstr"
+path="res://.godot/imported/EvilEye.ogg-80a715cda67cdbac00fefa11304e3119.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/EvilEye.ogg"
-dest_files=["res://.godot/imported/EvilEye.ogg-3ac7a2c1ff0ff2a991fd857510596379.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/EvilEye.ogg"
+dest_files=["res://.godot/imported/EvilEye.ogg-80a715cda67cdbac00fefa11304e3119.oggvorbisstr"]
 
 [params]
 

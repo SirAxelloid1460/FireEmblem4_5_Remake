@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyde8qwyhgqk2"
-path="res://.godot/imported/Shannan.png-4ac9de09b51433131201719c327c1726.ctex"
+path="res://.godot/imported/Shannan.png-6cc7bd6be416d0cd88309fd21ca2bf3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Shannan.png"
-dest_files=["res://.godot/imported/Shannan.png-4ac9de09b51433131201719c327c1726.ctex"]
+source_file="res://assets/GBA/portraits/characters/Shannan.png"
+dest_files=["res://.godot/imported/Shannan.png-6cc7bd6be416d0cd88309fd21ca2bf3f.ctex"]
 
 [params]
 

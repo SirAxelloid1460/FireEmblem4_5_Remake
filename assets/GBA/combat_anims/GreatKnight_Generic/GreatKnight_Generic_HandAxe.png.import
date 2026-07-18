@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d137lrhpjm83e"
-path="res://.godot/imported/GreatKnight_Generic_HandAxe.png-92f7f810ba1ae6c9676bfa574b65e225.ctex"
+path="res://.godot/imported/GreatKnight_Generic_HandAxe.png-69b9ff3a6133503e5e1a886406e180fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/GreatKnight_Generic/GreatKnight_Generic_HandAxe.png"
-dest_files=["res://.godot/imported/GreatKnight_Generic_HandAxe.png-92f7f810ba1ae6c9676bfa574b65e225.ctex"]
+source_file="res://assets/GBA/combat_anims/GreatKnight_Generic/GreatKnight_Generic_HandAxe.png"
+dest_files=["res://.godot/imported/GreatKnight_Generic_HandAxe.png-69b9ff3a6133503e5e1a886406e180fe.ctex"]
 
 [params]
 

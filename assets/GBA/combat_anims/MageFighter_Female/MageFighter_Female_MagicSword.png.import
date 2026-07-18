@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byy4npodmb2wf"
-path="res://.godot/imported/MageFighter_Female_MagicSword.png-ca33697dedc25a624f098d3c7ec3e750.ctex"
+path="res://.godot/imported/MageFighter_Female_MagicSword.png-29a9e79f8c66a12682ae9ddb0300b8c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageFighter_Female/MageFighter_Female_MagicSword.png"
-dest_files=["res://.godot/imported/MageFighter_Female_MagicSword.png-ca33697dedc25a624f098d3c7ec3e750.ctex"]
+source_file="res://assets/GBA/combat_anims/MageFighter_Female/MageFighter_Female_MagicSword.png"
+dest_files=["res://.godot/imported/MageFighter_Female_MagicSword.png-29a9e79f8c66a12682ae9ddb0300b8c4.ctex"]
 
 [params]
 

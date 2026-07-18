@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b8m7s1h3gj1j2"
-path="res://.godot/imported/211 - Grandbell Army 1.ogg-2fcf23430591252e9c0251076659f1a3.oggvorbisstr"
+path="res://.godot/imported/211 - Grandbell Army 1.ogg-e960801d28f005ddc16b4f92983824c6.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/211 - Grandbell Army 1.ogg"
-dest_files=["res://.godot/imported/211 - Grandbell Army 1.ogg-2fcf23430591252e9c0251076659f1a3.oggvorbisstr"]
+source_file="res://assets/GBA/music/211 - Grandbell Army 1.ogg"
+dest_files=["res://.godot/imported/211 - Grandbell Army 1.ogg-e960801d28f005ddc16b4f92983824c6.oggvorbisstr"]
 
 [params]
 

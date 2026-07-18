@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dje35wkeceuk"
-path="res://.godot/imported/FakeHolyn.png-db405927a3f3d695753f2268f6947b22.ctex"
+path="res://.godot/imported/FakeHolyn.png-ff268096a1cbb7f0750996a835f781f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/FakeHolyn.png"
-dest_files=["res://.godot/imported/FakeHolyn.png-db405927a3f3d695753f2268f6947b22.ctex"]
+source_file="res://assets/GBA/portraits/characters/FakeHolyn.png"
+dest_files=["res://.godot/imported/FakeHolyn.png-ff268096a1cbb7f0750996a835f781f7.ctex"]
 
 [params]
 

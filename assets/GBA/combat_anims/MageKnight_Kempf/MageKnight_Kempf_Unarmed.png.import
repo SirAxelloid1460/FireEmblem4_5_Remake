@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gaih3kiodg8w"
-path="res://.godot/imported/MageKnight_Kempf_Unarmed.png-c2a37f46cb7ae12451a537ced1216dd4.ctex"
+path="res://.godot/imported/MageKnight_Kempf_Unarmed.png-22fdb6cf7565d5ef9152fe38ba9230ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Kempf/MageKnight_Kempf_Unarmed.png"
-dest_files=["res://.godot/imported/MageKnight_Kempf_Unarmed.png-c2a37f46cb7ae12451a537ced1216dd4.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Kempf/MageKnight_Kempf_Unarmed.png"
+dest_files=["res://.godot/imported/MageKnight_Kempf_Unarmed.png-22fdb6cf7565d5ef9152fe38ba9230ff.ctex"]
 
 [params]
 

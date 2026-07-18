@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ceurj3dypfips"
-path="res://.godot/imported/Boyce.png-aec363d88053bbb7f63868a463e57108.ctex"
+path="res://.godot/imported/Boyce.png-49dabd71e74668d63146e0ec3c50d3dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Boyce.png"
-dest_files=["res://.godot/imported/Boyce.png-aec363d88053bbb7f63868a463e57108.ctex"]
+source_file="res://assets/GBA/portraits/characters/Boyce.png"
+dest_files=["res://.godot/imported/Boyce.png-49dabd71e74668d63146e0ec3c50d3dc.ctex"]
 
 [params]
 

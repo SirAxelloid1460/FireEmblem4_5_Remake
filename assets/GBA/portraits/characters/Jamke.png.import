@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cffu4kr86tj1q"
-path="res://.godot/imported/Jamke.png-91e313c682283c58512fc611e7ec6f9e.ctex"
+path="res://.godot/imported/Jamke.png-97b5a3050caa3350af47018e446e752e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Jamke.png"
-dest_files=["res://.godot/imported/Jamke.png-91e313c682283c58512fc611e7ec6f9e.ctex"]
+source_file="res://assets/GBA/portraits/characters/Jamke.png"
+dest_files=["res://.godot/imported/Jamke.png-97b5a3050caa3350af47018e446e752e.ctex"]
 
 [params]
 

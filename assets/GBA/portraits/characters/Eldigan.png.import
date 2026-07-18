@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2ba8eb1cjcd8"
-path="res://.godot/imported/Eldigan.png-1407f1b0441f94b64b792e9c2a9286c6.ctex"
+path="res://.godot/imported/Eldigan.png-e2876d1b53b85febaf501effd9b1d163.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Eldigan.png"
-dest_files=["res://.godot/imported/Eldigan.png-1407f1b0441f94b64b792e9c2a9286c6.ctex"]
+source_file="res://assets/GBA/portraits/characters/Eldigan.png"
+dest_files=["res://.godot/imported/Eldigan.png-e2876d1b53b85febaf501effd9b1d163.ctex"]
 
 [params]
 

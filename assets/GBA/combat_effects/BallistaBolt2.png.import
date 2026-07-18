@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bun5qckpakqbj"
-path="res://.godot/imported/BallistaBolt2.png-40613973222b400bc44ece522a3cf528.ctex"
+path="res://.godot/imported/BallistaBolt2.png-95b68635a849916c13e66f4dc810fce3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/BallistaBolt2.png"
-dest_files=["res://.godot/imported/BallistaBolt2.png-40613973222b400bc44ece522a3cf528.ctex"]
+source_file="res://assets/GBA/combat_effects/BallistaBolt2.png"
+dest_files=["res://.godot/imported/BallistaBolt2.png-95b68635a849916c13e66f4dc810fce3.ctex"]
 
 [params]
 

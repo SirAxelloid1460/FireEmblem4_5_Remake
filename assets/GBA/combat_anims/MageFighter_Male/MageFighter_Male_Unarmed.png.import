@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhvxrdpdkgfvt"
-path="res://.godot/imported/MageFighter_Male_Unarmed.png-7ac28a719a1134b4016cfd1605113c8f.ctex"
+path="res://.godot/imported/MageFighter_Male_Unarmed.png-1bb9e720e7cd45257f6bcc33f96ac7d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageFighter_Male/MageFighter_Male_Unarmed.png"
-dest_files=["res://.godot/imported/MageFighter_Male_Unarmed.png-7ac28a719a1134b4016cfd1605113c8f.ctex"]
+source_file="res://assets/GBA/combat_anims/MageFighter_Male/MageFighter_Male_Unarmed.png"
+dest_files=["res://.godot/imported/MageFighter_Male_Unarmed.png-1bb9e720e7cd45257f6bcc33f96ac7d6.ctex"]
 
 [params]
 

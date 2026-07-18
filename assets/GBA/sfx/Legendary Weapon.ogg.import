@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://d0h040egxjl7"
-path="res://.godot/imported/Legendary Weapon.ogg-4ad6b50d7b967b2d410823c49d947768.oggvorbisstr"
+path="res://.godot/imported/Legendary Weapon.ogg-8a526f7fb94a2463645d7f419f3ecd68.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Legendary Weapon.ogg"
-dest_files=["res://.godot/imported/Legendary Weapon.ogg-4ad6b50d7b967b2d410823c49d947768.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Legendary Weapon.ogg"
+dest_files=["res://.godot/imported/Legendary Weapon.ogg-8a526f7fb94a2463645d7f419f3ecd68.oggvorbisstr"]
 
 [params]
 

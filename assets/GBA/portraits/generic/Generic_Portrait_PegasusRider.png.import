@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl5xwf8c6sdvv"
-path="res://.godot/imported/Generic_Portrait_PegasusRider.png-5a05d17c48a05551d5b0d91a1bd16bd9.ctex"
+path="res://.godot/imported/Generic_Portrait_PegasusRider.png-681940adbe704df42a3582cc795f56ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/generic/Generic_Portrait_PegasusRider.png"
-dest_files=["res://.godot/imported/Generic_Portrait_PegasusRider.png-5a05d17c48a05551d5b0d91a1bd16bd9.ctex"]
+source_file="res://assets/GBA/portraits/generic/Generic_Portrait_PegasusRider.png"
+dest_files=["res://.godot/imported/Generic_Portrait_PegasusRider.png-681940adbe704df42a3582cc795f56ae.ctex"]
 
 [params]
 

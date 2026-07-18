@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccslc5esykd5q"
-path="res://.godot/imported/Citizen_Female_Unarmed.png-b6a70d3dc3b6f7eb58d5bea3cfc11699.ctex"
+path="res://.godot/imported/Citizen_Female_Unarmed.png-1c730215eda7f631bc0ff478ba832ce0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Citizen_Female/Citizen_Female_Unarmed.png"
-dest_files=["res://.godot/imported/Citizen_Female_Unarmed.png-b6a70d3dc3b6f7eb58d5bea3cfc11699.ctex"]
+source_file="res://assets/GBA/combat_anims/Citizen_Female/Citizen_Female_Unarmed.png"
+dest_files=["res://.godot/imported/Citizen_Female_Unarmed.png-1c730215eda7f631bc0ff478ba832ce0.ctex"]
 
 [params]
 

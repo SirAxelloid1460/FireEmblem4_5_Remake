@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4j700ftn4f34"
-path="res://.godot/imported/turnbanner_ally.png-1c44f231ec451806751c3460252a3da9.ctex"
+path="res://.godot/imported/turnbanner_ally.png-3e97e92a45b301c07fc8a11b5e25eb49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/turnbanner_ally.png"
-dest_files=["res://.godot/imported/turnbanner_ally.png-1c44f231ec451806751c3460252a3da9.ctex"]
+source_file="res://assets/GBA/sprites/turnbanner_ally.png"
+dest_files=["res://.godot/imported/turnbanner_ally.png-3e97e92a45b301c07fc8a11b5e25eb49.ctex"]
 
 [params]
 

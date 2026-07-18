@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c56duo8slx0mf"
-path="res://.godot/imported/Cavalier_Male_Lance.png-0cc311cb30b33838664dc5d621adb532.ctex"
+path="res://.godot/imported/Cavalier_Male_Lance.png-c4bcfc2dcecf452ed935107e492568c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Cavalier_Male/Cavalier_Male_Lance.png"
-dest_files=["res://.godot/imported/Cavalier_Male_Lance.png-0cc311cb30b33838664dc5d621adb532.ctex"]
+source_file="res://assets/GBA/combat_anims/Cavalier_Male/Cavalier_Male_Lance.png"
+dest_files=["res://.godot/imported/Cavalier_Male_Lance.png-c4bcfc2dcecf452ed935107e492568c7.ctex"]
 
 [params]
 

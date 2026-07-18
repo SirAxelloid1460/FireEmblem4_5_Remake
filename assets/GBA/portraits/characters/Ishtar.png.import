@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u07lhpdop3r2"
-path="res://.godot/imported/Ishtar.png-4df14682edd9989d0bd508ec61be6afb.ctex"
+path="res://.godot/imported/Ishtar.png-e9e7659cdba82cc610833fa1275f166d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Ishtar.png"
-dest_files=["res://.godot/imported/Ishtar.png-4df14682edd9989d0bd508ec61be6afb.ctex"]
+source_file="res://assets/GBA/portraits/characters/Ishtar.png"
+dest_files=["res://.godot/imported/Ishtar.png-e9e7659cdba82cc610833fa1275f166d.ctex"]
 
 [params]
 

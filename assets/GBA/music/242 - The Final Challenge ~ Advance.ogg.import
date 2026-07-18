@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bntpo3io0xx7f"
-path="res://.godot/imported/242 - The Final Challenge ~ Advance.ogg-876fe96df340a48e7fcd25563c85139b.oggvorbisstr"
+path="res://.godot/imported/242 - The Final Challenge ~ Advance.ogg-171efa746518974f75b7a84c672b7de3.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/242 - The Final Challenge ~ Advance.ogg"
-dest_files=["res://.godot/imported/242 - The Final Challenge ~ Advance.ogg-876fe96df340a48e7fcd25563c85139b.oggvorbisstr"]
+source_file="res://assets/GBA/music/242 - The Final Challenge ~ Advance.ogg"
+dest_files=["res://.godot/imported/242 - The Final Challenge ~ Advance.ogg-171efa746518974f75b7a84c672b7de3.oggvorbisstr"]
 
 [params]
 

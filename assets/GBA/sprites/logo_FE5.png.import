@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1wn55atxevui"
-path="res://.godot/imported/logo_FE5.png-17761f2573795eeaaf1e26d5c9fc2b4e.ctex"
+path="res://.godot/imported/logo_FE5.png-34b9cc05f020cd26d97b990877763106.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/logo_FE5.png"
-dest_files=["res://.godot/imported/logo_FE5.png-17761f2573795eeaaf1e26d5c9fc2b4e.ctex"]
+source_file="res://assets/GBA/sprites/logo_FE5.png"
+dest_files=["res://.godot/imported/logo_FE5.png-34b9cc05f020cd26d97b990877763106.ctex"]
 
 [params]
 

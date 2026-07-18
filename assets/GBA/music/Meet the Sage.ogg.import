@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bfc6vul1i4cf2"
-path="res://.godot/imported/Meet the Sage.ogg-675b960c9c5250c51ea12a12ae41596f.oggvorbisstr"
+path="res://.godot/imported/Meet the Sage.ogg-3d496454b880769cbb5ee2549ab52397.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Meet the Sage.ogg"
-dest_files=["res://.godot/imported/Meet the Sage.ogg-675b960c9c5250c51ea12a12ae41596f.oggvorbisstr"]
+source_file="res://assets/GBA/music/Meet the Sage.ogg"
+dest_files=["res://.godot/imported/Meet the Sage.ogg-3d496454b880769cbb5ee2549ab52397.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cel1qkaht15wg"
-path="res://.godot/imported/Archer_Generic_Bow.png-750c9421908833dd3f301c08d478306c.ctex"
+path="res://.godot/imported/Archer_Generic_Bow.png-8840c7e1312d31743f9b2ee053427163.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Archer_Generic/Archer_Generic_Bow.png"
-dest_files=["res://.godot/imported/Archer_Generic_Bow.png-750c9421908833dd3f301c08d478306c.ctex"]
+source_file="res://assets/GBA/combat_anims/Archer_Generic/Archer_Generic_Bow.png"
+dest_files=["res://.godot/imported/Archer_Generic_Bow.png-8840c7e1312d31743f9b2ee053427163.ctex"]
 
 [params]
 

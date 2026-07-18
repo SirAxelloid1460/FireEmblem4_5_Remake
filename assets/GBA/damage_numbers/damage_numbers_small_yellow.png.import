@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdj0dpv7hi57h"
-path="res://.godot/imported/damage_numbers_small_yellow.png-5ec7585def8e85b1c61da2890d5210da.ctex"
+path="res://.godot/imported/damage_numbers_small_yellow.png-f4228df7d375fd1069b02f0f659d491f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/damage_numbers/damage_numbers_small_yellow.png"
-dest_files=["res://.godot/imported/damage_numbers_small_yellow.png-5ec7585def8e85b1c61da2890d5210da.ctex"]
+source_file="res://assets/GBA/damage_numbers/damage_numbers_small_yellow.png"
+dest_files=["res://.godot/imported/damage_numbers_small_yellow.png-f4228df7d375fd1069b02f0f659d491f.ctex"]
 
 [params]
 

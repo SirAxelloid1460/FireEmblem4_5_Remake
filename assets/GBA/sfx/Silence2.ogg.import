@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://iveemvgneryp"
-path="res://.godot/imported/Silence2.ogg-8319ec32364b45ab6bd7176eea251996.oggvorbisstr"
+path="res://.godot/imported/Silence2.ogg-1f7ba79ffa39861013be72d2bec87b06.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Silence2.ogg"
-dest_files=["res://.godot/imported/Silence2.ogg-8319ec32364b45ab6bd7176eea251996.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Silence2.ogg"
+dest_files=["res://.godot/imported/Silence2.ogg-1f7ba79ffa39861013be72d2bec87b06.oggvorbisstr"]
 
 [params]
 

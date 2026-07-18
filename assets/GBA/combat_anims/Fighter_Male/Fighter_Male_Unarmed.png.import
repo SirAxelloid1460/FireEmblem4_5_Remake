@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhyhd6ftn8csy"
-path="res://.godot/imported/Fighter_Male_Unarmed.png-045ef04e69ffa188ed9c29f7061ebebc.ctex"
+path="res://.godot/imported/Fighter_Male_Unarmed.png-5c0496bddbcd76daf78a95b11ff71728.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Fighter_Male/Fighter_Male_Unarmed.png"
-dest_files=["res://.godot/imported/Fighter_Male_Unarmed.png-045ef04e69ffa188ed9c29f7061ebebc.ctex"]
+source_file="res://assets/GBA/combat_anims/Fighter_Male/Fighter_Male_Unarmed.png"
+dest_files=["res://.godot/imported/Fighter_Male_Unarmed.png-5c0496bddbcd76daf78a95b11ff71728.ctex"]
 
 [params]
 

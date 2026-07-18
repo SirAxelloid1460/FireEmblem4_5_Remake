@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bolxy5dukgguw"
-path="res://.godot/imported/Armour_Generic_Javelin.png-a2842905b7379dde54f8b8107e62296c.ctex"
+path="res://.godot/imported/Armour_Generic_Javelin.png-0dd63ba0108bf1708ec28e9cc3ea4573.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Armour_Generic/Armour_Generic_Javelin.png"
-dest_files=["res://.godot/imported/Armour_Generic_Javelin.png-a2842905b7379dde54f8b8107e62296c.ctex"]
+source_file="res://assets/GBA/combat_anims/Armour_Generic/Armour_Generic_Javelin.png"
+dest_files=["res://.godot/imported/Armour_Generic_Javelin.png-0dd63ba0108bf1708ec28e9cc3ea4573.ctex"]
 
 [params]
 

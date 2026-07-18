@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwiaciwgfposm"
-path="res://.godot/imported/DarkMageM-stand.png-a9e07e2ed2742ee28960f1284b218980.ctex"
+path="res://.godot/imported/DarkMageM-stand.png-057e14a9567702234578660d16bd2bb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/DarkMageM-stand.png"
-dest_files=["res://.godot/imported/DarkMageM-stand.png-a9e07e2ed2742ee28960f1284b218980.ctex"]
+source_file="res://assets/GBA/map_sprites/DarkMageM-stand.png"
+dest_files=["res://.godot/imported/DarkMageM-stand.png-057e14a9567702234578660d16bd2bb9.ctex"]
 
 [params]
 

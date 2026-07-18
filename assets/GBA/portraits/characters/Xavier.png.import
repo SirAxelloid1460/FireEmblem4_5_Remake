@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq5wvg340x7j"
-path="res://.godot/imported/Xavier.png-b569ac368879410e4365f272d87799ff.ctex"
+path="res://.godot/imported/Xavier.png-e217073dae4d556ec2c7aa8aa557cb80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Xavier.png"
-dest_files=["res://.godot/imported/Xavier.png-b569ac368879410e4365f272d87799ff.ctex"]
+source_file="res://assets/GBA/portraits/characters/Xavier.png"
+dest_files=["res://.godot/imported/Xavier.png-e217073dae4d556ec2c7aa8aa557cb80.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dhxmgpya024x0"
-path="res://.godot/imported/234 - Isaac Castle Town.ogg-1efb4c25d77469b2cdeb591c563278db.oggvorbisstr"
+path="res://.godot/imported/234 - Isaac Castle Town.ogg-ab240f824ec05f0900fe2cb5097fa835.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/234 - Isaac Castle Town.ogg"
-dest_files=["res://.godot/imported/234 - Isaac Castle Town.ogg-1efb4c25d77469b2cdeb591c563278db.oggvorbisstr"]
+source_file="res://assets/GBA/music/234 - Isaac Castle Town.ogg"
+dest_files=["res://.godot/imported/234 - Isaac Castle Town.ogg-ab240f824ec05f0900fe2cb5097fa835.oggvorbisstr"]
 
 [params]
 

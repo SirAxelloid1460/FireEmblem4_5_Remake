@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://g2mhe11u7vck"
-path="res://.godot/imported/Road-Melee.png-83f49d41fe9891844bede6c18bce9df9.ctex"
+path="res://.godot/imported/Road-Melee.png-7b132344a37a0bce58c00d59b2414c05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Road-Melee.png"
-dest_files=["res://.godot/imported/Road-Melee.png-83f49d41fe9891844bede6c18bce9df9.ctex"]
+source_file="res://assets/GBA/platforms/Road-Melee.png"
+dest_files=["res://.godot/imported/Road-Melee.png-7b132344a37a0bce58c00d59b2414c05.ctex"]
 
 [params]
 

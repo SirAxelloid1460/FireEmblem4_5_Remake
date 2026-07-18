@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0nshcyo4scl5"
-path="res://.godot/imported/LevelUpNumber2.png-56890c0010dbd8e31a200136b0cbc50e.ctex"
+path="res://.godot/imported/LevelUpNumber2.png-7641a04c7be1ffc6a435e7446d575e68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/LevelUpNumber2.png"
-dest_files=["res://.godot/imported/LevelUpNumber2.png-56890c0010dbd8e31a200136b0cbc50e.ctex"]
+source_file="res://assets/GBA/animations/LevelUpNumber2.png"
+dest_files=["res://.godot/imported/LevelUpNumber2.png-7641a04c7be1ffc6a435e7446d575e68.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcbjl7k2h8ucd"
-path="res://.godot/imported/OutsideFort.png-6da63ba5f8d9bbf2420d6d06e0d5930d.ctex"
+path="res://.godot/imported/OutsideFort.png-496d605feb5d77ebd0f3aee4faf0f737.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/OutsideFort.png"
-dest_files=["res://.godot/imported/OutsideFort.png-6da63ba5f8d9bbf2420d6d06e0d5930d.ctex"]
+source_file="res://assets/GBA/panoramas/OutsideFort.png"
+dest_files=["res://.godot/imported/OutsideFort.png-496d605feb5d77ebd0f3aee4faf0f737.ctex"]
 
 [params]
 

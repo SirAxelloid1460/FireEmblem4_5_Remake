@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m6l7kwld4hd7"
-path="res://.godot/imported/Muhammed.png-de5a7b434a48b88c98de4960baca4cc6.ctex"
+path="res://.godot/imported/Muhammed.png-d5d32fccaa2d0443106f21a6109cffa8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Muhammed.png"
-dest_files=["res://.godot/imported/Muhammed.png-de5a7b434a48b88c98de4960baca4cc6.ctex"]
+source_file="res://assets/GBA/portraits/characters/Muhammed.png"
+dest_files=["res://.godot/imported/Muhammed.png-d5d32fccaa2d0443106f21a6109cffa8.ctex"]
 
 [params]
 

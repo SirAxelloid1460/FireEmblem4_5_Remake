@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c63igh67jisj4"
-path="res://.godot/imported/VelthomerEmblem.png-a7ed907560028d062fce9bea0b979dbe.ctex"
+path="res://.godot/imported/VelthomerEmblem.png-bd60968c20e1752f8a088c35ae5e8c98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons32/VelthomerEmblem.png"
-dest_files=["res://.godot/imported/VelthomerEmblem.png-a7ed907560028d062fce9bea0b979dbe.ctex"]
+source_file="res://assets/GBA/icons32/VelthomerEmblem.png"
+dest_files=["res://.godot/imported/VelthomerEmblem.png-bd60968c20e1752f8a088c35ae5e8c98.ctex"]
 
 [params]
 

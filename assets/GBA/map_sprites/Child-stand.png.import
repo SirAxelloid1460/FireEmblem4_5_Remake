@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx02mjhonuicb"
-path="res://.godot/imported/Child-stand.png-94f9d0c8aaa4d07246928894b11473be.ctex"
+path="res://.godot/imported/Child-stand.png-4c4dbea6b7518afa4725f02270f18d16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Child-stand.png"
-dest_files=["res://.godot/imported/Child-stand.png-94f9d0c8aaa4d07246928894b11473be.ctex"]
+source_file="res://assets/GBA/map_sprites/Child-stand.png"
+dest_files=["res://.godot/imported/Child-stand.png-4c4dbea6b7518afa4725f02270f18d16.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://il687mlapp1u"
-path="res://.godot/imported/LightClover.png-36922779150eece3b162d8ba12f6da6e.ctex"
+path="res://.godot/imported/LightClover.png-715faa79e08f5c01b26cd1b177f2dad8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/LightClover.png"
-dest_files=["res://.godot/imported/LightClover.png-36922779150eece3b162d8ba12f6da6e.ctex"]
+source_file="res://assets/GBA/combat_effects/LightClover.png"
+dest_files=["res://.godot/imported/LightClover.png-715faa79e08f5c01b26cd1b177f2dad8.ctex"]
 
 [params]
 

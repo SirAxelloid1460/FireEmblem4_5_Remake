@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://w8xop4wkbdkn"
-path="res://.godot/imported/PromotionCrackle.ogg-59a6a5ff20d413f8235d51f738324ba7.oggvorbisstr"
+path="res://.godot/imported/PromotionCrackle.ogg-c03680d9b18623f10574b03d4f2a9d02.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/PromotionCrackle.ogg"
-dest_files=["res://.godot/imported/PromotionCrackle.ogg-59a6a5ff20d413f8235d51f738324ba7.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/PromotionCrackle.ogg"
+dest_files=["res://.godot/imported/PromotionCrackle.ogg-c03680d9b18623f10574b03d4f2a9d02.oggvorbisstr"]
 
 [params]
 

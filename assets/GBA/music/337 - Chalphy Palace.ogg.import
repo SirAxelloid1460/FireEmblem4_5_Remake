@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c5fe5iraa30p1"
-path="res://.godot/imported/337 - Chalphy Palace.ogg-6fcf87c0aac7411164c758b422d4d182.oggvorbisstr"
+path="res://.godot/imported/337 - Chalphy Palace.ogg-dd4f2e15fe5f3fb4c8bb37a9a121a157.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/337 - Chalphy Palace.ogg"
-dest_files=["res://.godot/imported/337 - Chalphy Palace.ogg-6fcf87c0aac7411164c758b422d4d182.oggvorbisstr"]
+source_file="res://assets/GBA/music/337 - Chalphy Palace.ogg"
+dest_files=["res://.godot/imported/337 - Chalphy Palace.ogg-dd4f2e15fe5f3fb4c8bb37a9a121a157.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tp4adtit25v4"
-path="res://.godot/imported/Hero_Female_Sword.png-cacb0ebd5c9e9dba104bc5daa763eb9f.ctex"
+path="res://.godot/imported/Hero_Female_Sword.png-6b084002da35e23086d024b0b12f2577.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Hero_Female/Hero_Female_Sword.png"
-dest_files=["res://.godot/imported/Hero_Female_Sword.png-cacb0ebd5c9e9dba104bc5daa763eb9f.ctex"]
+source_file="res://assets/GBA/combat_anims/Hero_Female/Hero_Female_Sword.png"
+dest_files=["res://.godot/imported/Hero_Female_Sword.png-6b084002da35e23086d024b0b12f2577.ctex"]
 
 [params]
 

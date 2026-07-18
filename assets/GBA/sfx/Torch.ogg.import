@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b7a1ko2n2iwnj"
-path="res://.godot/imported/Torch.ogg-f34c9b2aaf78615ae62cff40df377446.oggvorbisstr"
+path="res://.godot/imported/Torch.ogg-221c6b13538b195fc8bbee0538159d1a.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Torch.ogg"
-dest_files=["res://.godot/imported/Torch.ogg-f34c9b2aaf78615ae62cff40df377446.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Torch.ogg"
+dest_files=["res://.godot/imported/Torch.ogg-221c6b13538b195fc8bbee0538159d1a.oggvorbisstr"]
 
 [params]
 

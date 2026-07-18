@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cv0iqg50t3521"
-path="res://.godot/imported/Mage_Amid_Unarmed.png-6470b71081debf756057dfacd0d4a62f.ctex"
+path="res://.godot/imported/Mage_Amid_Unarmed.png-05a24d6c55dd0d17942e7cb970df5e6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Mage_Amid/Mage_Amid_Unarmed.png"
-dest_files=["res://.godot/imported/Mage_Amid_Unarmed.png-6470b71081debf756057dfacd0d4a62f.ctex"]
+source_file="res://assets/GBA/combat_anims/Mage_Amid/Mage_Amid_Unarmed.png"
+dest_files=["res://.godot/imported/Mage_Amid_Unarmed.png-05a24d6c55dd0d17942e7cb970df5e6c.ctex"]
 
 [params]
 

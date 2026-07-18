@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce72mrjjl7wg4"
-path="res://.godot/imported/Archer_Ronan_Bow.png-962112b0a6ccae7d53737370e8744f1d.ctex"
+path="res://.godot/imported/Archer_Ronan_Bow.png-ca9ad99c2a404dc309f4f8802e2af8c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Archer_Ronan/Archer_Ronan_Bow.png"
-dest_files=["res://.godot/imported/Archer_Ronan_Bow.png-962112b0a6ccae7d53737370e8744f1d.ctex"]
+source_file="res://assets/GBA/combat_anims/Archer_Ronan/Archer_Ronan_Bow.png"
+dest_files=["res://.godot/imported/Archer_Ronan_Bow.png-ca9ad99c2a404dc309f4f8802e2af8c8.ctex"]
 
 [params]
 

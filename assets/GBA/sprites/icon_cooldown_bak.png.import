@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5xyk8hnlwbsy"
-path="res://.godot/imported/icon_cooldown_bak.png-76caeed9907dfd91b9cf4b4b3103d331.ctex"
+path="res://.godot/imported/icon_cooldown_bak.png-2140a68c8c98c1ab0ff3f0f20763b654.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/icon_cooldown_bak.png"
-dest_files=["res://.godot/imported/icon_cooldown_bak.png-76caeed9907dfd91b9cf4b4b3103d331.ctex"]
+source_file="res://assets/GBA/sprites/icon_cooldown_bak.png"
+dest_files=["res://.godot/imported/icon_cooldown_bak.png-2140a68c8c98c1ab0ff3f0f20763b654.ctex"]
 
 [params]
 

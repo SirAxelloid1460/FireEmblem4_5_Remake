@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clq6w4xmoi53t"
-path="res://.godot/imported/Amalda.png-e6a4153762516eccdb09b51f153e0f92.ctex"
+path="res://.godot/imported/Amalda.png-352b01f8aa2436403bda3000cc810a24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Amalda.png"
-dest_files=["res://.godot/imported/Amalda.png-e6a4153762516eccdb09b51f153e0f92.ctex"]
+source_file="res://assets/GBA/portraits/characters/Amalda.png"
+dest_files=["res://.godot/imported/Amalda.png-352b01f8aa2436403bda3000cc810a24.ctex"]
 
 [params]
 

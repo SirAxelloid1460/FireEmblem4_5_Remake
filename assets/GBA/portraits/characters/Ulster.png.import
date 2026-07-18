@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fslylteqi7tq"
-path="res://.godot/imported/Ulster.png-5713511014dd94525b4b722a617d80dd.ctex"
+path="res://.godot/imported/Ulster.png-06ff9ef1fa34fce073ebb829b5629189.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Ulster.png"
-dest_files=["res://.godot/imported/Ulster.png-5713511014dd94525b4b722a617d80dd.ctex"]
+source_file="res://assets/GBA/portraits/characters/Ulster.png"
+dest_files=["res://.godot/imported/Ulster.png-06ff9ef1fa34fce073ebb829b5629189.ctex"]
 
 [params]
 

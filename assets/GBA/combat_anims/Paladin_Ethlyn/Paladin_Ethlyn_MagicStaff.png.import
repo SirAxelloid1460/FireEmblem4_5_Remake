@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qt2kr0skvqt2"
-path="res://.godot/imported/Paladin_Ethlyn_MagicStaff.png-769a88a7040871d940b467bf62f75638.ctex"
+path="res://.godot/imported/Paladin_Ethlyn_MagicStaff.png-609f518cbb05840163a75ab8c53bd5be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Ethlyn/Paladin_Ethlyn_MagicStaff.png"
-dest_files=["res://.godot/imported/Paladin_Ethlyn_MagicStaff.png-769a88a7040871d940b467bf62f75638.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Ethlyn/Paladin_Ethlyn_MagicStaff.png"
+dest_files=["res://.godot/imported/Paladin_Ethlyn_MagicStaff.png-609f518cbb05840163a75ab8c53bd5be.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://nk7d6d1t45c3"
-path="res://.godot/imported/Quiet Burn.ogg-0a8bf63d08417d0189b5134a76b5f510.oggvorbisstr"
+path="res://.godot/imported/Quiet Burn.ogg-e867e49e69af7c171ecd365d03f9927a.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Quiet Burn.ogg"
-dest_files=["res://.godot/imported/Quiet Burn.ogg-0a8bf63d08417d0189b5134a76b5f510.oggvorbisstr"]
+source_file="res://assets/GBA/music/Quiet Burn.ogg"
+dest_files=["res://.godot/imported/Quiet Burn.ogg-e867e49e69af7c171ecd365d03f9927a.oggvorbisstr"]
 
 [params]
 

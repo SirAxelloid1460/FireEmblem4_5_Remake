@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8o6oxv4hm7o3"
-path="res://.godot/imported/Rogue-move.png-6f07d4e4e23910d8ddd54c552c1020a5.ctex"
+path="res://.godot/imported/Rogue-move.png-f46109e8b3757d7b1887aba1a380d98e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Rogue-move.png"
-dest_files=["res://.godot/imported/Rogue-move.png-6f07d4e4e23910d8ddd54c552c1020a5.ctex"]
+source_file="res://assets/GBA/map_sprites/Rogue-move.png"
+dest_files=["res://.godot/imported/Rogue-move.png-f46109e8b3757d7b1887aba1a380d98e.ctex"]
 
 [params]
 

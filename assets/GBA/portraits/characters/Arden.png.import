@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c48h8kebv838a"
-path="res://.godot/imported/Arden.png-1d028f10727a95fbcdc0f84df745a43b.ctex"
+path="res://.godot/imported/Arden.png-b3f19dc4a2e3404be58c8b71312382a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Arden.png"
-dest_files=["res://.godot/imported/Arden.png-1d028f10727a95fbcdc0f84df745a43b.ctex"]
+source_file="res://assets/GBA/portraits/characters/Arden.png"
+dest_files=["res://.godot/imported/Arden.png-b3f19dc4a2e3404be58c8b71312382a0.ctex"]
 
 [params]
 

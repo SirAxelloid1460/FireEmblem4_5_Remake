@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://numn2ksuqeon"
-path="res://.godot/imported/135 Danger.ogg-5f049ca7cb36fb19137892a99171d484.oggvorbisstr"
+path="res://.godot/imported/135 Danger.ogg-fbabf0a26606332b749939bb0e04c976.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/135 Danger.ogg"
-dest_files=["res://.godot/imported/135 Danger.ogg-5f049ca7cb36fb19137892a99171d484.oggvorbisstr"]
+source_file="res://assets/GBA/music/135 Danger.ogg"
+dest_files=["res://.godot/imported/135 Danger.ogg-fbabf0a26606332b749939bb0e04c976.oggvorbisstr"]
 
 [params]
 

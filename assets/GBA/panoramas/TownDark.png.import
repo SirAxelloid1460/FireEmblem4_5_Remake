@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blxx8owse8xnf"
-path="res://.godot/imported/TownDark.png-125720b001b8e3da87bc3adad7592641.ctex"
+path="res://.godot/imported/TownDark.png-05e2b41d8374d4b9ca0eb0732bc4b395.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/TownDark.png"
-dest_files=["res://.godot/imported/TownDark.png-125720b001b8e3da87bc3adad7592641.ctex"]
+source_file="res://assets/GBA/panoramas/TownDark.png"
+dest_files=["res://.godot/imported/TownDark.png-05e2b41d8374d4b9ca0eb0732bc4b395.ctex"]
 
 [params]
 

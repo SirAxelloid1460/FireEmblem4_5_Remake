@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtfu0ytvhy2pg"
-path="res://.godot/imported/Paladin_Alvar_Javelin.png-52cd8c19abb82a179c0de92c78b94b8f.ctex"
+path="res://.godot/imported/Paladin_Alvar_Javelin.png-91ee59ae50d6acfa0f35a70dfdef56cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Alvar/Paladin_Alvar_Javelin.png"
-dest_files=["res://.godot/imported/Paladin_Alvar_Javelin.png-52cd8c19abb82a179c0de92c78b94b8f.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Alvar/Paladin_Alvar_Javelin.png"
+dest_files=["res://.godot/imported/Paladin_Alvar_Javelin.png-91ee59ae50d6acfa0f35a70dfdef56cb.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhy55cv6opd04"
-path="res://.godot/imported/Prologue_autotiles.png-62f268e4ee73230f239b5b3b8190a8d2.ctex"
+path="res://.godot/imported/Prologue_autotiles.png-bef0490437c15137eda4e271e1f674a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/FE4/Prologue_autotiles.png"
-dest_files=["res://.godot/imported/Prologue_autotiles.png-62f268e4ee73230f239b5b3b8190a8d2.ctex"]
+source_file="res://assets/GBA/tilesets/FE4/Prologue_autotiles.png"
+dest_files=["res://.godot/imported/Prologue_autotiles.png-bef0490437c15137eda4e271e1f674a2.ctex"]
 
 [params]
 

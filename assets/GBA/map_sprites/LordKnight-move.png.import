@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2ebnbmsndtwm"
-path="res://.godot/imported/LordKnight-move.png-2b18c0ae33db2d5447650b24c9cfdca9.ctex"
+path="res://.godot/imported/LordKnight-move.png-4b89cb02251db2d98af7a9bebe7f3143.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/LordKnight-move.png"
-dest_files=["res://.godot/imported/LordKnight-move.png-2b18c0ae33db2d5447650b24c9cfdca9.ctex"]
+source_file="res://assets/GBA/map_sprites/LordKnight-move.png"
+dest_files=["res://.godot/imported/LordKnight-move.png-4b89cb02251db2d98af7a9bebe7f3143.ctex"]
 
 [params]
 

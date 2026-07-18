@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b85hdqk57x00a"
-path="res://.godot/imported/Deimne.png-6dd8775bafdc49d4695d93f8f4279f34.ctex"
+path="res://.godot/imported/Deimne.png-80849904e814088698685bceffc33e1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Deimne.png"
-dest_files=["res://.godot/imported/Deimne.png-6dd8775bafdc49d4695d93f8f4279f34.ctex"]
+source_file="res://assets/GBA/portraits/characters/Deimne.png"
+dest_files=["res://.godot/imported/Deimne.png-80849904e814088698685bceffc33e1a.ctex"]
 
 [params]
 

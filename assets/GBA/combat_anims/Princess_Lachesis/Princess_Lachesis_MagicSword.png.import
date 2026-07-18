@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bq1wwo8e6uwy3"
-path="res://.godot/imported/Princess_Lachesis_MagicSword.png-72592f4c9a38e9449bf1983726d3f71a.ctex"
+path="res://.godot/imported/Princess_Lachesis_MagicSword.png-b13cbba7f4f161b51cdcafea34d515ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Princess_Lachesis/Princess_Lachesis_MagicSword.png"
-dest_files=["res://.godot/imported/Princess_Lachesis_MagicSword.png-72592f4c9a38e9449bf1983726d3f71a.ctex"]
+source_file="res://assets/GBA/combat_anims/Princess_Lachesis/Princess_Lachesis_MagicSword.png"
+dest_files=["res://.godot/imported/Princess_Lachesis_MagicSword.png-b13cbba7f4f161b51cdcafea34d515ba.ctex"]
 
 [params]
 

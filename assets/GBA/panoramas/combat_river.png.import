@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkndeg7lhkvxx"
-path="res://.godot/imported/combat_river.png-8aa3bd915c6d317e47dd6c8218478556.ctex"
+path="res://.godot/imported/combat_river.png-4e2eedf96959ade81e88e47f4c5641c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/combat_river.png"
-dest_files=["res://.godot/imported/combat_river.png-8aa3bd915c6d317e47dd6c8218478556.ctex"]
+source_file="res://assets/GBA/panoramas/combat_river.png"
+dest_files=["res://.godot/imported/combat_river.png-4e2eedf96959ade81e88e47f4c5641c6.ctex"]
 
 [params]
 

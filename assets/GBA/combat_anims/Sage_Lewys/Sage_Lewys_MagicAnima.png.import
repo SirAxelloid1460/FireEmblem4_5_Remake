@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c323hqn1tm2vj"
-path="res://.godot/imported/Sage_Lewys_MagicAnima.png-193dad6fc03a1507dd60c1ed98a7e5d6.ctex"
+path="res://.godot/imported/Sage_Lewys_MagicAnima.png-2e1fc1fc74c2cbc8c36db97639cccaf4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Sage_Lewys/Sage_Lewys_MagicAnima.png"
-dest_files=["res://.godot/imported/Sage_Lewys_MagicAnima.png-193dad6fc03a1507dd60c1ed98a7e5d6.ctex"]
+source_file="res://assets/GBA/combat_anims/Sage_Lewys/Sage_Lewys_MagicAnima.png"
+dest_files=["res://.godot/imported/Sage_Lewys_MagicAnima.png-2e1fc1fc74c2cbc8c36db97639cccaf4.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8v48ylg4tbib"
-path="res://.godot/imported/Sword_Wight-stand.png-aebd37d2732065086b8afa3c90a7aa25.ctex"
+path="res://.godot/imported/Sword_Wight-stand.png-fba551bc2211ddc6fa75b57fb00333cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Sword_Wight-stand.png"
-dest_files=["res://.godot/imported/Sword_Wight-stand.png-aebd37d2732065086b8afa3c90a7aa25.ctex"]
+source_file="res://assets/GBA/map_sprites/Sword_Wight-stand.png"
+dest_files=["res://.godot/imported/Sword_Wight-stand.png-fba551bc2211ddc6fa75b57fb00333cb.ctex"]
 
 [params]
 

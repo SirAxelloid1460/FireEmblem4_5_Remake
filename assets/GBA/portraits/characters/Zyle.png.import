@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doxriig3wosla"
-path="res://.godot/imported/Zyle.png-330b2bc82fbe37ed6a8609906c63db73.ctex"
+path="res://.godot/imported/Zyle.png-42190a8bc00df4b174e800295c7798ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Zyle.png"
-dest_files=["res://.godot/imported/Zyle.png-330b2bc82fbe37ed6a8609906c63db73.ctex"]
+source_file="res://assets/GBA/portraits/characters/Zyle.png"
+dest_files=["res://.godot/imported/Zyle.png-42190a8bc00df4b174e800295c7798ef.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://biexrdk2djmwx"
-path="res://.godot/imported/FalconKnight_Generic_MagicSword.png-3429a903bf555a28e0ced6a48fb3d4d5.ctex"
+path="res://.godot/imported/FalconKnight_Generic_MagicSword.png-1c6c255d14ebb78bac9a6d5ac3019b5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/FalconKnight_Generic/FalconKnight_Generic_MagicSword.png"
-dest_files=["res://.godot/imported/FalconKnight_Generic_MagicSword.png-3429a903bf555a28e0ced6a48fb3d4d5.ctex"]
+source_file="res://assets/GBA/combat_anims/FalconKnight_Generic/FalconKnight_Generic_MagicSword.png"
+dest_files=["res://.godot/imported/FalconKnight_Generic_MagicSword.png-1c6c255d14ebb78bac9a6d5ac3019b5f.ctex"]
 
 [params]
 

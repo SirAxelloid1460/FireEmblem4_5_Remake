@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doyifdnyoq863"
-path="res://.godot/imported/MasterKnight_Female_Javelin.png-8070af35f5a79b2b9176099c486af8e0.ctex"
+path="res://.godot/imported/MasterKnight_Female_Javelin.png-15a028d85f1b19e78c76d7d98d224600.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MasterKnight_Female/MasterKnight_Female_Javelin.png"
-dest_files=["res://.godot/imported/MasterKnight_Female_Javelin.png-8070af35f5a79b2b9176099c486af8e0.ctex"]
+source_file="res://assets/GBA/combat_anims/MasterKnight_Female/MasterKnight_Female_Javelin.png"
+dest_files=["res://.godot/imported/MasterKnight_Female_Javelin.png-15a028d85f1b19e78c76d7d98d224600.ctex"]
 
 [params]
 

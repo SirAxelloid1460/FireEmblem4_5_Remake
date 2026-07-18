@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c370ya72o1682"
-path="res://.godot/imported/Rune.png-2ff689ab027ccfc50f8e48eb3f592438.ctex"
+path="res://.godot/imported/Rune.png-6b1ddaf79d54506a60e9262d1a9f4d14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/Rune.png"
-dest_files=["res://.godot/imported/Rune.png-2ff689ab027ccfc50f8e48eb3f592438.ctex"]
+source_file="res://assets/GBA/combat_effects/Rune.png"
+dest_files=["res://.godot/imported/Rune.png-6b1ddaf79d54506a60e9262d1a9f4d14.ctex"]
 
 [params]
 

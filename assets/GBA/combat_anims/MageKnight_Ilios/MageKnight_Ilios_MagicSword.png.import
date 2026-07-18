@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6j467r7l2xyq"
-path="res://.godot/imported/MageKnight_Ilios_MagicSword.png-b56e04038e2c4014056a27fe87e5b9f1.ctex"
+path="res://.godot/imported/MageKnight_Ilios_MagicSword.png-89cc0cb2ecb00e7fbd877cbd788d6bdf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Ilios/MageKnight_Ilios_MagicSword.png"
-dest_files=["res://.godot/imported/MageKnight_Ilios_MagicSword.png-b56e04038e2c4014056a27fe87e5b9f1.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Ilios/MageKnight_Ilios_MagicSword.png"
+dest_files=["res://.godot/imported/MageKnight_Ilios_MagicSword.png-89cc0cb2ecb00e7fbd877cbd788d6bdf.ctex"]
 
 [params]
 

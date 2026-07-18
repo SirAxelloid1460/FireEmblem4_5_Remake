@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyt1x6kufyodv"
-path="res://.godot/imported/SniperF-move.png-a09ca35efb340a33dc65bde48863059d.ctex"
+path="res://.godot/imported/SniperF-move.png-387230dbdff13495334c3a73d315cab0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/SniperF-move.png"
-dest_files=["res://.godot/imported/SniperF-move.png-a09ca35efb340a33dc65bde48863059d.ctex"]
+source_file="res://assets/GBA/map_sprites/SniperF-move.png"
+dest_files=["res://.godot/imported/SniperF-move.png-387230dbdff13495334c3a73d315cab0.ctex"]
 
 [params]
 

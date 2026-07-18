@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://di60r6iyye46"
-path="res://.godot/imported/219 Organ.ogg-f61115fcf05b9d26f3877489634e7750.oggvorbisstr"
+path="res://.godot/imported/219 Organ.ogg-aa6b9684a73701be59b839d1d33f716f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/219 Organ.ogg"
-dest_files=["res://.godot/imported/219 Organ.ogg-f61115fcf05b9d26f3877489634e7750.oggvorbisstr"]
+source_file="res://assets/GBA/music/219 Organ.ogg"
+dest_files=["res://.godot/imported/219 Organ.ogg-aa6b9684a73701be59b839d1d33f716f.oggvorbisstr"]
 
 [params]
 

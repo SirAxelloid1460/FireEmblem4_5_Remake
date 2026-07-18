@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://baqimiumalp55"
-path="res://.godot/imported/Soldier_Generic_Javelin.png-7601802ea942050d968c39479892f02a.ctex"
+path="res://.godot/imported/Soldier_Generic_Javelin.png-28a11026ad96f8bab33bf9c245b4a5bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Soldier_Generic/Soldier_Generic_Javelin.png"
-dest_files=["res://.godot/imported/Soldier_Generic_Javelin.png-7601802ea942050d968c39479892f02a.ctex"]
+source_file="res://assets/GBA/combat_anims/Soldier_Generic/Soldier_Generic_Javelin.png"
+dest_files=["res://.godot/imported/Soldier_Generic_Javelin.png-28a11026ad96f8bab33bf9c245b4a5bc.ctex"]
 
 [params]
 

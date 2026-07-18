@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bgeomqqv34tym"
-path="res://.godot/imported/117 - Chapter 7 (Crossing the Desert).ogg-7347c46cacc780ce28e20580301f2b0e.oggvorbisstr"
+path="res://.godot/imported/117 - Chapter 7 (Crossing the Desert).ogg-2d9f646a09293829642b6b1107235594.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/117 - Chapter 7 (Crossing the Desert).ogg"
-dest_files=["res://.godot/imported/117 - Chapter 7 (Crossing the Desert).ogg-7347c46cacc780ce28e20580301f2b0e.oggvorbisstr"]
+source_file="res://assets/GBA/music/117 - Chapter 7 (Crossing the Desert).ogg"
+dest_files=["res://.godot/imported/117 - Chapter 7 (Crossing the Desert).ogg-2d9f646a09293829642b6b1107235594.oggvorbisstr"]
 
 [params]
 

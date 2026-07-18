@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://6jqcnpyolgav"
-path="res://.godot/imported/Game Over.ogg-9ad618e6fe0bf7d0ef3a56ddd5d68734.oggvorbisstr"
+path="res://.godot/imported/Game Over.ogg-77f1f44d58950e52b0dd7906cf27d463.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Game Over.ogg"
-dest_files=["res://.godot/imported/Game Over.ogg-9ad618e6fe0bf7d0ef3a56ddd5d68734.oggvorbisstr"]
+source_file="res://assets/GBA/music/Game Over.ogg"
+dest_files=["res://.godot/imported/Game Over.ogg-77f1f44d58950e52b0dd7906cf27d463.oggvorbisstr"]
 
 [params]
 

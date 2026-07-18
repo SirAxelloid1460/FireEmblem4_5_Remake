@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c68rut30hgbfa"
-path="res://.godot/imported/Swordfighter_Larcei_MagicSword.png-b61c568736efe648209db2b3796f1f6a.ctex"
+path="res://.godot/imported/Swordfighter_Larcei_MagicSword.png-228d02b04579467cad32c23d6fe0ac0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordfighter_Larcei/Swordfighter_Larcei_MagicSword.png"
-dest_files=["res://.godot/imported/Swordfighter_Larcei_MagicSword.png-b61c568736efe648209db2b3796f1f6a.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordfighter_Larcei/Swordfighter_Larcei_MagicSword.png"
+dest_files=["res://.godot/imported/Swordfighter_Larcei_MagicSword.png-228d02b04579467cad32c23d6fe0ac0a.ctex"]
 
 [params]
 

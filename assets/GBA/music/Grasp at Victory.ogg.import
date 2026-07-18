@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://tkfnhabib6yk"
-path="res://.godot/imported/Grasp at Victory.ogg-483e0c9569478c7dbaf2f91640435bcb.oggvorbisstr"
+path="res://.godot/imported/Grasp at Victory.ogg-f29e137a49acd070226f98c94d579b6f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Grasp at Victory.ogg"
-dest_files=["res://.godot/imported/Grasp at Victory.ogg-483e0c9569478c7dbaf2f91640435bcb.oggvorbisstr"]
+source_file="res://assets/GBA/music/Grasp at Victory.ogg"
+dest_files=["res://.godot/imported/Grasp at Victory.ogg-f29e137a49acd070226f98c94d579b6f.oggvorbisstr"]
 
 [params]
 

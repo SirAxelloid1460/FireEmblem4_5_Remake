@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://7eu4g1e6rltg"
-path="res://.godot/imported/Apocalypse2.ogg-ccad5b38a319e5f22f684072c368c281.oggvorbisstr"
+path="res://.godot/imported/Apocalypse2.ogg-5b9b2d410daee3d5d7df07fb3249a249.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/sfx/Apocalypse2.ogg"
-dest_files=["res://.godot/imported/Apocalypse2.ogg-ccad5b38a319e5f22f684072c368c281.oggvorbisstr"]
+source_file="res://assets/GBA/sfx/Apocalypse2.ogg"
+dest_files=["res://.godot/imported/Apocalypse2.ogg-5b9b2d410daee3d5d7df07fb3249a249.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctea1bdvgfq7t"
-path="res://.godot/imported/Myos.png-9bea4deb0f8e10354ec13f942f7e60d8.ctex"
+path="res://.godot/imported/Myos.png-db7b766f42f861ba1ccd29476c813aea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Myos.png"
-dest_files=["res://.godot/imported/Myos.png-9bea4deb0f8e10354ec13f942f7e60d8.ctex"]
+source_file="res://assets/GBA/portraits/characters/Myos.png"
+dest_files=["res://.godot/imported/Myos.png-db7b766f42f861ba1ccd29476c813aea.ctex"]
 
 [params]
 

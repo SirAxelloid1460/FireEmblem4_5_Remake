@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://teyu2xbsrmvu"
-path="res://.godot/imported/MageKnight_Miranda_MagicAnima.png-cb062374828bea56bc99e74de09a4df8.ctex"
+path="res://.godot/imported/MageKnight_Miranda_MagicAnima.png-241042dffd05c16e1a02c0322be023ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Miranda/MageKnight_Miranda_MagicAnima.png"
-dest_files=["res://.godot/imported/MageKnight_Miranda_MagicAnima.png-cb062374828bea56bc99e74de09a4df8.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Miranda/MageKnight_Miranda_MagicAnima.png"
+dest_files=["res://.godot/imported/MageKnight_Miranda_MagicAnima.png-241042dffd05c16e1a02c0322be023ac.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b15mmcko74jle"
-path="res://.godot/imported/114 Defeat is near.ogg-8a42c0e1bec48203ec57ce9693de2360.oggvorbisstr"
+path="res://.godot/imported/114 Defeat is near.ogg-6a9ebb617a0bf594d9efc0bd02cf4d79.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/114 Defeat is near.ogg"
-dest_files=["res://.godot/imported/114 Defeat is near.ogg-8a42c0e1bec48203ec57ce9693de2360.oggvorbisstr"]
+source_file="res://assets/GBA/music/114 Defeat is near.ogg"
+dest_files=["res://.godot/imported/114 Defeat is near.ogg-6a9ebb617a0bf594d9efc0bd02cf4d79.oggvorbisstr"]
 
 [params]
 

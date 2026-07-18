@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cakfk7u2675dr"
-path="res://.godot/imported/TacticsRoom.png-d66e9d5f38fbf32170f38af583403e58.ctex"
+path="res://.godot/imported/TacticsRoom.png-350f059a3fca5d8f2916154940afacbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/TacticsRoom.png"
-dest_files=["res://.godot/imported/TacticsRoom.png-d66e9d5f38fbf32170f38af583403e58.ctex"]
+source_file="res://assets/GBA/panoramas/TacticsRoom.png"
+dest_files=["res://.godot/imported/TacticsRoom.png-350f059a3fca5d8f2916154940afacbb.ctex"]
 
 [params]
 

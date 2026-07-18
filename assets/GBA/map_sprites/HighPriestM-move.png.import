@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckplvvdd3hhap"
-path="res://.godot/imported/HighPriestM-move.png-07f258284bbaa8fb2c656f4be435ccbe.ctex"
+path="res://.godot/imported/HighPriestM-move.png-ea664f9e3951f67b658dc544fc96b2ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/HighPriestM-move.png"
-dest_files=["res://.godot/imported/HighPriestM-move.png-07f258284bbaa8fb2c656f4be435ccbe.ctex"]
+source_file="res://assets/GBA/map_sprites/HighPriestM-move.png"
+dest_files=["res://.godot/imported/HighPriestM-move.png-ea664f9e3951f67b658dc544fc96b2ae.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bc4e7lfknu6x2"
-path="res://.godot/imported/Lester.png-bd77a5241923e0ca4576b288fa71d7db.ctex"
+path="res://.godot/imported/Lester.png-0ff4790a20031e1ef9913c084f76782f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Lester.png"
-dest_files=["res://.godot/imported/Lester.png-bd77a5241923e0ca4576b288fa71d7db.ctex"]
+source_file="res://assets/GBA/portraits/characters/Lester.png"
+dest_files=["res://.godot/imported/Lester.png-0ff4790a20031e1ef9913c084f76782f.ctex"]
 
 [params]
 

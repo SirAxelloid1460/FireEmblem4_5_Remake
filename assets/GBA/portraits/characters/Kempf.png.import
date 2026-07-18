@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5l23cxx23s8s"
-path="res://.godot/imported/Kempf.png-ef05606c92ec8b1154ae4e4260c26d6b.ctex"
+path="res://.godot/imported/Kempf.png-b27c9731ab9edcf55ea3380642510fcf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Kempf.png"
-dest_files=["res://.godot/imported/Kempf.png-ef05606c92ec8b1154ae4e4260c26d6b.ctex"]
+source_file="res://assets/GBA/portraits/characters/Kempf.png"
+dest_files=["res://.godot/imported/Kempf.png-b27c9731ab9edcf55ea3380642510fcf.ctex"]
 
 [params]
 

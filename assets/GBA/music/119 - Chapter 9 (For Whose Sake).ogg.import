@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://l65od2yng7mw"
-path="res://.godot/imported/119 - Chapter 9 (For Whose Sake).ogg-d190029b0aeabc762f86995c217fc8e2.oggvorbisstr"
+path="res://.godot/imported/119 - Chapter 9 (For Whose Sake).ogg-876108313403f7348bf4dcc5eff204b8.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/119 - Chapter 9 (For Whose Sake).ogg"
-dest_files=["res://.godot/imported/119 - Chapter 9 (For Whose Sake).ogg-d190029b0aeabc762f86995c217fc8e2.oggvorbisstr"]
+source_file="res://assets/GBA/music/119 - Chapter 9 (For Whose Sake).ogg"
+dest_files=["res://.godot/imported/119 - Chapter 9 (For Whose Sake).ogg-876108313403f7348bf4dcc5eff204b8.oggvorbisstr"]
 
 [params]
 

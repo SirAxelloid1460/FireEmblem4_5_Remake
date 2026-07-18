@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwpy8h833sjli"
-path="res://.godot/imported/Kinbois.png-792828d377034c60f02bcc58cbbe00b1.ctex"
+path="res://.godot/imported/Kinbois.png-412bf5fbd04d4deb161b035592778610.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Kinbois.png"
-dest_files=["res://.godot/imported/Kinbois.png-792828d377034c60f02bcc58cbbe00b1.ctex"]
+source_file="res://assets/GBA/portraits/characters/Kinbois.png"
+dest_files=["res://.godot/imported/Kinbois.png-412bf5fbd04d4deb161b035592778610.ctex"]
 
 [params]
 

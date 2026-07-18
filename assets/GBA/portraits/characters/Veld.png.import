@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp2u44lgn02wf"
-path="res://.godot/imported/Veld.png-ecb06ce66d21d6aca267c5ae5851a840.ctex"
+path="res://.godot/imported/Veld.png-0d4b27bffb90a6863186193cfa3c9ba6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Veld.png"
-dest_files=["res://.godot/imported/Veld.png-ecb06ce66d21d6aca267c5ae5851a840.ctex"]
+source_file="res://assets/GBA/portraits/characters/Veld.png"
+dest_files=["res://.godot/imported/Veld.png-0d4b27bffb90a6863186193cfa3c9ba6.ctex"]
 
 [params]
 

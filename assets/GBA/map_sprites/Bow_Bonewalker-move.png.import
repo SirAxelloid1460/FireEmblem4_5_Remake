@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5e1ja47y4c0p"
-path="res://.godot/imported/Bow_Bonewalker-move.png-67a0b915279659e708db345944a2dded.ctex"
+path="res://.godot/imported/Bow_Bonewalker-move.png-5e0e87cf7a197d9b2094e36cfc0e5783.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Bow_Bonewalker-move.png"
-dest_files=["res://.godot/imported/Bow_Bonewalker-move.png-67a0b915279659e708db345944a2dded.ctex"]
+source_file="res://assets/GBA/map_sprites/Bow_Bonewalker-move.png"
+dest_files=["res://.godot/imported/Bow_Bonewalker-move.png-5e0e87cf7a197d9b2094e36cfc0e5783.ctex"]
 
 [params]
 

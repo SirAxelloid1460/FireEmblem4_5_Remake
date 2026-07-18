@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6y10xusus2ld"
-path="res://.godot/imported/focus_fade_green.png-ac7303540098f7831b4f55188ec11c58.ctex"
+path="res://.godot/imported/focus_fade_green.png-ae1fb3adda4fad41f96654f335fa6f5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/focus_fade_green.png"
-dest_files=["res://.godot/imported/focus_fade_green.png-ac7303540098f7831b4f55188ec11c58.ctex"]
+source_file="res://assets/GBA/sprites/focus_fade_green.png"
+dest_files=["res://.godot/imported/focus_fade_green.png-ae1fb3adda4fad41f96654f335fa6f5f.ctex"]
 
 [params]
 

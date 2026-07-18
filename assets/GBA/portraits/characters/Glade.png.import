@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnxfx5vmkcm56"
-path="res://.godot/imported/Glade.png-ea2730352adb17da2ebbdb48f96004f3.ctex"
+path="res://.godot/imported/Glade.png-50d6c3cfcef167ed32e1171c40213cb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Glade.png"
-dest_files=["res://.godot/imported/Glade.png-ea2730352adb17da2ebbdb48f96004f3.ctex"]
+source_file="res://assets/GBA/portraits/characters/Glade.png"
+dest_files=["res://.godot/imported/Glade.png-50d6c3cfcef167ed32e1171c40213cb9.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://davj5ranyap0x"
-path="res://.godot/imported/Mercenary_Skasaher_MagicSword.png-7294ec95bba283ed23f7587de5413eab.ctex"
+path="res://.godot/imported/Mercenary_Skasaher_MagicSword.png-51acc9bfc6dcbaa146f9160adcd45119.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Mercenary_Skasaher/Mercenary_Skasaher_MagicSword.png"
-dest_files=["res://.godot/imported/Mercenary_Skasaher_MagicSword.png-7294ec95bba283ed23f7587de5413eab.ctex"]
+source_file="res://assets/GBA/combat_anims/Mercenary_Skasaher/Mercenary_Skasaher_MagicSword.png"
+dest_files=["res://.godot/imported/Mercenary_Skasaher_MagicSword.png-51acc9bfc6dcbaa146f9160adcd45119.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bycv5ln06nf5x"
-path="res://.godot/imported/Awakening - SSupport.ogg-b67952e1827ff1519ef813d15f084aea.oggvorbisstr"
+path="res://.godot/imported/Awakening - SSupport.ogg-248343665c5cfc832ffc46c3600eb806.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Awakening - SSupport.ogg"
-dest_files=["res://.godot/imported/Awakening - SSupport.ogg-b67952e1827ff1519ef813d15f084aea.oggvorbisstr"]
+source_file="res://assets/GBA/music/Awakening - SSupport.ogg"
+dest_files=["res://.godot/imported/Awakening - SSupport.ogg-248343665c5cfc832ffc46c3600eb806.oggvorbisstr"]
 
 [params]
 

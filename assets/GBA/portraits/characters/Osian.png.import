@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw170rr4fr8im"
-path="res://.godot/imported/Osian.png-2109490c90fb64e4a7a24b278d86526b.ctex"
+path="res://.godot/imported/Osian.png-f53264971532b1df036fae095ca3d5de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Osian.png"
-dest_files=["res://.godot/imported/Osian.png-2109490c90fb64e4a7a24b278d86526b.ctex"]
+source_file="res://assets/GBA/portraits/characters/Osian.png"
+dest_files=["res://.godot/imported/Osian.png-f53264971532b1df036fae095ca3d5de.ctex"]
 
 [params]
 

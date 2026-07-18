@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duxn80btp5sho"
-path="res://.godot/imported/Mage_Azelle_MagicAnima.png-b8ca041a8dbdd745fbe79b9cc4a80cf7.ctex"
+path="res://.godot/imported/Mage_Azelle_MagicAnima.png-44877c37fdc2510276037f15d04dd211.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Mage_Azelle/Mage_Azelle_MagicAnima.png"
-dest_files=["res://.godot/imported/Mage_Azelle_MagicAnima.png-b8ca041a8dbdd745fbe79b9cc4a80cf7.ctex"]
+source_file="res://assets/GBA/combat_anims/Mage_Azelle/Mage_Azelle_MagicAnima.png"
+dest_files=["res://.godot/imported/Mage_Azelle_MagicAnima.png-44877c37fdc2510276037f15d04dd211.ctex"]
 
 [params]
 

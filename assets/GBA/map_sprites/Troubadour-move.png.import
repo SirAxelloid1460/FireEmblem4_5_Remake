@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctxpy8dps6a85"
-path="res://.godot/imported/Troubadour-move.png-148881d2bc43cacce8c63049c0a2f6fe.ctex"
+path="res://.godot/imported/Troubadour-move.png-1bcfbb78c85e9b5963dceadba090f3c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Troubadour-move.png"
-dest_files=["res://.godot/imported/Troubadour-move.png-148881d2bc43cacce8c63049c0a2f6fe.ctex"]
+source_file="res://assets/GBA/map_sprites/Troubadour-move.png"
+dest_files=["res://.godot/imported/Troubadour-move.png-1bcfbb78c85e9b5963dceadba090f3c3.ctex"]
 
 [params]
 

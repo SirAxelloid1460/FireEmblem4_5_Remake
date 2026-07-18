@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4thpoirhero0"
-path="res://.godot/imported/combat_lava.png-bf20ebd09793f6698a62fdd2743bad0f.ctex"
+path="res://.godot/imported/combat_lava.png-f86eb7127a644bb7f09a7339fb7ba0b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/combat_lava.png"
-dest_files=["res://.godot/imported/combat_lava.png-bf20ebd09793f6698a62fdd2743bad0f.ctex"]
+source_file="res://assets/GBA/panoramas/combat_lava.png"
+dest_files=["res://.godot/imported/combat_lava.png-f86eb7127a644bb7f09a7339fb7ba0b0.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qqafoqf7lrf"
-path="res://.godot/imported/Muirne.png-5ced009b701ced40cc792840a610b3c5.ctex"
+path="res://.godot/imported/Muirne.png-b6e99c2656661ebe23085125b1663367.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Muirne.png"
-dest_files=["res://.godot/imported/Muirne.png-5ced009b701ced40cc792840a610b3c5.ctex"]
+source_file="res://assets/GBA/portraits/characters/Muirne.png"
+dest_files=["res://.godot/imported/Muirne.png-b6e99c2656661ebe23085125b1663367.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdu4ltlhidhq0"
-path="res://.godot/imported/AxeKnight_Generic_HandAxe.png-3a3f6e1987b74c87447f98d07a44ceaf.ctex"
+path="res://.godot/imported/AxeKnight_Generic_HandAxe.png-b2ff05e560300625fc0d9e78b1889ed2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/AxeKnight_Generic/AxeKnight_Generic_HandAxe.png"
-dest_files=["res://.godot/imported/AxeKnight_Generic_HandAxe.png-3a3f6e1987b74c87447f98d07a44ceaf.ctex"]
+source_file="res://assets/GBA/combat_anims/AxeKnight_Generic/AxeKnight_Generic_HandAxe.png"
+dest_files=["res://.godot/imported/AxeKnight_Generic_HandAxe.png-b2ff05e560300625fc0d9e78b1889ed2.ctex"]
 
 [params]
 

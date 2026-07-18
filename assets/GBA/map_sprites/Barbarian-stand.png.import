@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://styil3vpxdpj"
-path="res://.godot/imported/Barbarian-stand.png-52f7f7bdac19f952d81c2a57ffd2f4aa.ctex"
+path="res://.godot/imported/Barbarian-stand.png-76e224da37acc4ddbf14ce0058c66fe7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Barbarian-stand.png"
-dest_files=["res://.godot/imported/Barbarian-stand.png-52f7f7bdac19f952d81c2a57ffd2f4aa.ctex"]
+source_file="res://assets/GBA/map_sprites/Barbarian-stand.png"
+dest_files=["res://.godot/imported/Barbarian-stand.png-76e224da37acc4ddbf14ce0058c66fe7.ctex"]
 
 [params]
 

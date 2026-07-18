@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6ybllwsatahi"
-path="res://.godot/imported/Cain.png-e3852c916788c8599721c5bdc6df7ae5.ctex"
+path="res://.godot/imported/Cain.png-62218e6722219b76974966b33388b1db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Cain.png"
-dest_files=["res://.godot/imported/Cain.png-e3852c916788c8599721c5bdc6df7ae5.ctex"]
+source_file="res://assets/GBA/portraits/characters/Cain.png"
+dest_files=["res://.godot/imported/Cain.png-62218e6722219b76974966b33388b1db.ctex"]
 
 [params]
 

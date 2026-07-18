@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjw1hu6wxdcrd"
-path="res://.godot/imported/Cliff-Ranged.png-6994c0697f746a642b19cb3c94ef51bd.ctex"
+path="res://.godot/imported/Cliff-Ranged.png-f2827c1ea2b47c37804e0e5c49aa24c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Cliff-Ranged.png"
-dest_files=["res://.godot/imported/Cliff-Ranged.png-6994c0697f746a642b19cb3c94ef51bd.ctex"]
+source_file="res://assets/GBA/platforms/Cliff-Ranged.png"
+dest_files=["res://.godot/imported/Cliff-Ranged.png-f2827c1ea2b47c37804e0e5c49aa24c6.ctex"]
 
 [params]
 

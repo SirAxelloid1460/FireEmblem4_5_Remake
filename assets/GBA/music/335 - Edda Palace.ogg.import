@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dbpx20awmubcy"
-path="res://.godot/imported/335 - Edda Palace.ogg-f6dda89a614324bd69135fdc18e4895e.oggvorbisstr"
+path="res://.godot/imported/335 - Edda Palace.ogg-22e512494ce9f19b2f9256b5bd6b19e3.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/335 - Edda Palace.ogg"
-dest_files=["res://.godot/imported/335 - Edda Palace.ogg-f6dda89a614324bd69135fdc18e4895e.oggvorbisstr"]
+source_file="res://assets/GBA/music/335 - Edda Palace.ogg"
+dest_files=["res://.godot/imported/335 - Edda Palace.ogg-22e512494ce9f19b2f9256b5bd6b19e3.oggvorbisstr"]
 
 [params]
 

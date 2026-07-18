@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b30bdmkxr5ds"
-path="res://.godot/imported/Plains-Ranged.png-12929516708c8f7dd16f25b9d0b54604.ctex"
+path="res://.godot/imported/Plains-Ranged.png-6715de1c16be32ba693f3b32c236361e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/Plains-Ranged.png"
-dest_files=["res://.godot/imported/Plains-Ranged.png-12929516708c8f7dd16f25b9d0b54604.ctex"]
+source_file="res://assets/GBA/platforms/Plains-Ranged.png"
+dest_files=["res://.godot/imported/Plains-Ranged.png-6715de1c16be32ba693f3b32c236361e.ctex"]
 
 [params]
 

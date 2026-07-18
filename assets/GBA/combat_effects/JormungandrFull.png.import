@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cttxnyh7h8dr6"
-path="res://.godot/imported/JormungandrFull.png-f060c939f325b39479c1fb17a37cc1ba.ctex"
+path="res://.godot/imported/JormungandrFull.png-da3ca3ac102711a889484a88e7129e6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/JormungandrFull.png"
-dest_files=["res://.godot/imported/JormungandrFull.png-f060c939f325b39479c1fb17a37cc1ba.ctex"]
+source_file="res://assets/GBA/combat_effects/JormungandrFull.png"
+dest_files=["res://.godot/imported/JormungandrFull.png-da3ca3ac102711a889484a88e7129e6c.ctex"]
 
 [params]
 

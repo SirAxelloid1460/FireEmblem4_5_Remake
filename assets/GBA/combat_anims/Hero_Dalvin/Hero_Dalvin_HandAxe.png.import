@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8okwafokkd7r"
-path="res://.godot/imported/Hero_Dalvin_HandAxe.png-6ca5911587c26a8aa71efab4f9ea8608.ctex"
+path="res://.godot/imported/Hero_Dalvin_HandAxe.png-f4b3adf4b2cd4ca98b9b642207f3211a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Hero_Dalvin/Hero_Dalvin_HandAxe.png"
-dest_files=["res://.godot/imported/Hero_Dalvin_HandAxe.png-6ca5911587c26a8aa71efab4f9ea8608.ctex"]
+source_file="res://assets/GBA/combat_anims/Hero_Dalvin/Hero_Dalvin_HandAxe.png"
+dest_files=["res://.godot/imported/Hero_Dalvin_HandAxe.png-f4b3adf4b2cd4ca98b9b642207f3211a.ctex"]
 
 [params]
 

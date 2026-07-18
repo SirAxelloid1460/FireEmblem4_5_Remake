@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw3p7c60pdkru"
-path="res://.godot/imported/combat_hill.png-dad47d2ad53e40caf2da7a836ad60ad6.ctex"
+path="res://.godot/imported/combat_hill.png-50a1ea11bcc3381b15c49b87e441b497.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/combat_hill.png"
-dest_files=["res://.godot/imported/combat_hill.png-dad47d2ad53e40caf2da7a836ad60ad6.ctex"]
+source_file="res://assets/GBA/panoramas/combat_hill.png"
+dest_files=["res://.godot/imported/combat_hill.png-50a1ea11bcc3381b15c49b87e441b497.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmiq4q1ko3hep"
-path="res://.godot/imported/Lightpriestess_Linoan_MagicStaff.png-bcf16ee4dd78d4701c166f9c6c5dfa64.ctex"
+path="res://.godot/imported/Lightpriestess_Linoan_MagicStaff.png-943046ba29078b9b8b01c4d5475ff96b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Lightpriestess_Linoan/Lightpriestess_Linoan_MagicStaff.png"
-dest_files=["res://.godot/imported/Lightpriestess_Linoan_MagicStaff.png-bcf16ee4dd78d4701c166f9c6c5dfa64.ctex"]
+source_file="res://assets/GBA/combat_anims/Lightpriestess_Linoan/Lightpriestess_Linoan_MagicStaff.png"
+dest_files=["res://.godot/imported/Lightpriestess_Linoan_MagicStaff.png-943046ba29078b9b8b01c4d5475ff96b.ctex"]
 
 [params]
 

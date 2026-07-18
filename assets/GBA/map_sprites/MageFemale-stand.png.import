@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7rktjhbbqik"
-path="res://.godot/imported/MageFemale-stand.png-0a2c0f2086999bb376954976ac01d2a3.ctex"
+path="res://.godot/imported/MageFemale-stand.png-816679fbb4d25554f41c661d69750238.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/MageFemale-stand.png"
-dest_files=["res://.godot/imported/MageFemale-stand.png-0a2c0f2086999bb376954976ac01d2a3.ctex"]
+source_file="res://assets/GBA/map_sprites/MageFemale-stand.png"
+dest_files=["res://.godot/imported/MageFemale-stand.png-816679fbb4d25554f41c661d69750238.ctex"]
 
 [params]
 

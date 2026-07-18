@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://covngaie8n730"
-path="res://.godot/imported/Swordfighter_Ayra_Sword.png-5d2d8ad7ca36f95a36b5cc6109c3e324.ctex"
+path="res://.godot/imported/Swordfighter_Ayra_Sword.png-c4ed2852cd1470b0383a43c4bb8f6a23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Swordfighter_Ayra/Swordfighter_Ayra_Sword.png"
-dest_files=["res://.godot/imported/Swordfighter_Ayra_Sword.png-5d2d8ad7ca36f95a36b5cc6109c3e324.ctex"]
+source_file="res://assets/GBA/combat_anims/Swordfighter_Ayra/Swordfighter_Ayra_Sword.png"
+dest_files=["res://.godot/imported/Swordfighter_Ayra_Sword.png-c4ed2852cd1470b0383a43c4bb8f6a23.ctex"]
 
 [params]
 

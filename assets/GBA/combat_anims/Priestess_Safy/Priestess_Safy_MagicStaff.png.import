@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbl8gcrwqicn0"
-path="res://.godot/imported/Priestess_Safy_MagicStaff.png-4e27dd88e6e02b6913e13909e55952da.ctex"
+path="res://.godot/imported/Priestess_Safy_MagicStaff.png-de21ab3359942da99ac823d0d0227cd8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Priestess_Safy/Priestess_Safy_MagicStaff.png"
-dest_files=["res://.godot/imported/Priestess_Safy_MagicStaff.png-4e27dd88e6e02b6913e13909e55952da.ctex"]
+source_file="res://assets/GBA/combat_anims/Priestess_Safy/Priestess_Safy_MagicStaff.png"
+dest_files=["res://.godot/imported/Priestess_Safy_MagicStaff.png-de21ab3359942da99ac823d0d0227cd8.ctex"]
 
 [params]
 

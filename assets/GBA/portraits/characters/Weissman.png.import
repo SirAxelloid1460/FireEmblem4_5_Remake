@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cukto2ly7arcf"
-path="res://.godot/imported/Weissman.png-67c90deb3f69dbbf7fa4246d42da10b1.ctex"
+path="res://.godot/imported/Weissman.png-306ed2d41d677aa6f71bbc0e6cbc8542.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Weissman.png"
-dest_files=["res://.godot/imported/Weissman.png-67c90deb3f69dbbf7fa4246d42da10b1.ctex"]
+source_file="res://assets/GBA/portraits/characters/Weissman.png"
+dest_files=["res://.godot/imported/Weissman.png-306ed2d41d677aa6f71bbc0e6cbc8542.ctex"]
 
 [params]
 

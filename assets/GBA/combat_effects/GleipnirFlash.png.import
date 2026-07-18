@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blmp2hfeibreo"
-path="res://.godot/imported/GleipnirFlash.png-464172e058f2490270f66856045e157c.ctex"
+path="res://.godot/imported/GleipnirFlash.png-e539271f58b1170c673a31a02344c2ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/GleipnirFlash.png"
-dest_files=["res://.godot/imported/GleipnirFlash.png-464172e058f2490270f66856045e157c.ctex"]
+source_file="res://assets/GBA/combat_effects/GleipnirFlash.png"
+dest_files=["res://.godot/imported/GleipnirFlash.png-e539271f58b1170c673a31a02344c2ac.ctex"]
 
 [params]
 

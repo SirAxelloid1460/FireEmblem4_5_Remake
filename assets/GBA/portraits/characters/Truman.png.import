@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blvdjq2j4fg4b"
-path="res://.godot/imported/Truman.png-d657b0dc17c8a80503964af6724dbfa2.ctex"
+path="res://.godot/imported/Truman.png-962462dab283c656788cf451ecd1054c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Truman.png"
-dest_files=["res://.godot/imported/Truman.png-d657b0dc17c8a80503964af6724dbfa2.ctex"]
+source_file="res://assets/GBA/portraits/characters/Truman.png"
+dest_files=["res://.godot/imported/Truman.png-962462dab283c656788cf451ecd1054c.ctex"]
 
 [params]
 

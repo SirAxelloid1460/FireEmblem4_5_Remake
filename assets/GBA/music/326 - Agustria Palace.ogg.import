@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ew5v5pn2vbay"
-path="res://.godot/imported/326 - Agustria Palace.ogg-91cebaf85ace085daf8f88720f233e8d.oggvorbisstr"
+path="res://.godot/imported/326 - Agustria Palace.ogg-b22729cb830b81cc8e9d9fabfa3dc877.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/326 - Agustria Palace.ogg"
-dest_files=["res://.godot/imported/326 - Agustria Palace.ogg-91cebaf85ace085daf8f88720f233e8d.oggvorbisstr"]
+source_file="res://assets/GBA/music/326 - Agustria Palace.ogg"
+dest_files=["res://.godot/imported/326 - Agustria Palace.ogg-b22729cb830b81cc8e9d9fabfa3dc877.oggvorbisstr"]
 
 [params]
 

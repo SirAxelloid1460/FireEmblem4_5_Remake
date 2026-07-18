@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcikxm7vg08bo"
-path="res://.godot/imported/Fighter_Gerrard_Axe.png-4bf8e06a9f137696c2930954c897a9fb.ctex"
+path="res://.godot/imported/Fighter_Gerrard_Axe.png-82dafc56e89d1e4360908a8443794db2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Fighter_Gerrard/Fighter_Gerrard_Axe.png"
-dest_files=["res://.godot/imported/Fighter_Gerrard_Axe.png-4bf8e06a9f137696c2930954c897a9fb.ctex"]
+source_file="res://assets/GBA/combat_anims/Fighter_Gerrard/Fighter_Gerrard_Axe.png"
+dest_files=["res://.godot/imported/Fighter_Gerrard_Axe.png-82dafc56e89d1e4360908a8443794db2.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg2b22dfnvybh"
-path="res://.godot/imported/pennant_bg.png-f3163b0d6e1bdd2ee9bd152370a8ea9c.ctex"
+path="res://.godot/imported/pennant_bg.png-b0da0e78e0eeb8f64594c7613112473f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/pennant_bg.png"
-dest_files=["res://.godot/imported/pennant_bg.png-f3163b0d6e1bdd2ee9bd152370a8ea9c.ctex"]
+source_file="res://assets/GBA/sprites/pennant_bg.png"
+dest_files=["res://.godot/imported/pennant_bg.png-b0da0e78e0eeb8f64594c7613112473f.ctex"]
 
 [params]
 

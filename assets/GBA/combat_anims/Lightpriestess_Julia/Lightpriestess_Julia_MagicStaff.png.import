@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bte8dam5kfmme"
-path="res://.godot/imported/Lightpriestess_Julia_MagicStaff.png-4c3233fe578ebb4dad1063e8cdc46c7b.ctex"
+path="res://.godot/imported/Lightpriestess_Julia_MagicStaff.png-d53e1468877ee2b1cb343741a39feb3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Lightpriestess_Julia/Lightpriestess_Julia_MagicStaff.png"
-dest_files=["res://.godot/imported/Lightpriestess_Julia_MagicStaff.png-4c3233fe578ebb4dad1063e8cdc46c7b.ctex"]
+source_file="res://assets/GBA/combat_anims/Lightpriestess_Julia/Lightpriestess_Julia_MagicStaff.png"
+dest_files=["res://.godot/imported/Lightpriestess_Julia_MagicStaff.png-d53e1468877ee2b1cb343741a39feb3d.ctex"]
 
 [params]
 

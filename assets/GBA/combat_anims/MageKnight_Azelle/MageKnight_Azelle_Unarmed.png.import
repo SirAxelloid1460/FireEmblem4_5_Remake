@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbp8tclkshidi"
-path="res://.godot/imported/MageKnight_Azelle_Unarmed.png-c5c4f545c8d96da87b42a3da5ab34262.ctex"
+path="res://.godot/imported/MageKnight_Azelle_Unarmed.png-4faae8ad7a2ec0e63ac5cab4b7bd75f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Azelle/MageKnight_Azelle_Unarmed.png"
-dest_files=["res://.godot/imported/MageKnight_Azelle_Unarmed.png-c5c4f545c8d96da87b42a3da5ab34262.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Azelle/MageKnight_Azelle_Unarmed.png"
+dest_files=["res://.godot/imported/MageKnight_Azelle_Unarmed.png-4faae8ad7a2ec0e63ac5cab4b7bd75f4.ctex"]
 
 [params]
 

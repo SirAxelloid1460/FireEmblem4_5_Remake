@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ctmd5lds2cgj6"
-path="res://.godot/imported/Stalwarts Unite.ogg-801f4001d2d6c132f307ea82863dfa2e.oggvorbisstr"
+path="res://.godot/imported/Stalwarts Unite.ogg-a6ec173d0f10babdcc1943b7ba4400f2.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Stalwarts Unite.ogg"
-dest_files=["res://.godot/imported/Stalwarts Unite.ogg-801f4001d2d6c132f307ea82863dfa2e.oggvorbisstr"]
+source_file="res://assets/GBA/music/Stalwarts Unite.ogg"
+dest_files=["res://.godot/imported/Stalwarts Unite.ogg-a6ec173d0f10babdcc1943b7ba4400f2.oggvorbisstr"]
 
 [params]
 

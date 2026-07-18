@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://jh6rdc0yoyy4"
-path="res://.godot/imported/202 - Verdane Army.ogg-6d9348d5f981b7cabd29d50e99e948d3.oggvorbisstr"
+path="res://.godot/imported/202 - Verdane Army.ogg-aac07b2360b8f05f3fceedd49abcf8b7.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/202 - Verdane Army.ogg"
-dest_files=["res://.godot/imported/202 - Verdane Army.ogg-6d9348d5f981b7cabd29d50e99e948d3.oggvorbisstr"]
+source_file="res://assets/GBA/music/202 - Verdane Army.ogg"
+dest_files=["res://.godot/imported/202 - Verdane Army.ogg-aac07b2360b8f05f3fceedd49abcf8b7.oggvorbisstr"]
 
 [params]
 

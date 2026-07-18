@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://d0ihrodu3bb0q"
-path="res://.godot/imported/144 Squadron B.ogg-15554f9d8aacfaee55be7dbb4cdd7392.oggvorbisstr"
+path="res://.godot/imported/144 Squadron B.ogg-6c4ae21ca3ee8b90c747f65a3b6d8041.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/144 Squadron B.ogg"
-dest_files=["res://.godot/imported/144 Squadron B.ogg-15554f9d8aacfaee55be7dbb4cdd7392.oggvorbisstr"]
+source_file="res://assets/GBA/music/144 Squadron B.ogg"
+dest_files=["res://.godot/imported/144 Squadron B.ogg-6c4ae21ca3ee8b90c747f65a3b6d8041.oggvorbisstr"]
 
 [params]
 

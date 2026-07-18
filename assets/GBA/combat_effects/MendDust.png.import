@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1wlh7stu0hho"
-path="res://.godot/imported/MendDust.png-3ab3200a2f6a97ee16103ce75533f18a.ctex"
+path="res://.godot/imported/MendDust.png-fa778035fa39b523eed9edb1deae24c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_effects/MendDust.png"
-dest_files=["res://.godot/imported/MendDust.png-3ab3200a2f6a97ee16103ce75533f18a.ctex"]
+source_file="res://assets/GBA/combat_effects/MendDust.png"
+dest_files=["res://.godot/imported/MendDust.png-fa778035fa39b523eed9edb1deae24c1.ctex"]
 
 [params]
 

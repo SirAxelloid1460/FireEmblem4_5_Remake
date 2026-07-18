@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://8bugcmusx3o6"
-path="res://.godot/imported/Dragon Boy.ogg-3c1054df87eb60c5132a56709d5fe0f9.oggvorbisstr"
+path="res://.godot/imported/Dragon Boy.ogg-97d68d33fc5c7bb8de83f93a438ec2e5.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/Dragon Boy.ogg"
-dest_files=["res://.godot/imported/Dragon Boy.ogg-3c1054df87eb60c5132a56709d5fe0f9.oggvorbisstr"]
+source_file="res://assets/GBA/music/Dragon Boy.ogg"
+dest_files=["res://.godot/imported/Dragon Boy.ogg-97d68d33fc5c7bb8de83f93a438ec2e5.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg23j3r5lne6x"
-path="res://.godot/imported/Cavalier-move.png-e4f91f3592b6e950247d5044f6c9cbb2.ctex"
+path="res://.godot/imported/Cavalier-move.png-d77dbc1f811465378055c8de824430b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Cavalier-move.png"
-dest_files=["res://.godot/imported/Cavalier-move.png-e4f91f3592b6e950247d5044f6c9cbb2.ctex"]
+source_file="res://assets/GBA/map_sprites/Cavalier-move.png"
+dest_files=["res://.godot/imported/Cavalier-move.png-d77dbc1f811465378055c8de824430b2.ctex"]
 
 [params]
 

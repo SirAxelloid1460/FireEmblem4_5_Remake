@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bq8213n13tuf0"
-path="res://.godot/imported/Armour_Generic_HandAxe.png-10c0619e5d3386860efddf1ed36714b4.ctex"
+path="res://.godot/imported/Armour_Generic_HandAxe.png-aa76104b86608839f4291f3fa15aa22a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Armour_Generic/Armour_Generic_HandAxe.png"
-dest_files=["res://.godot/imported/Armour_Generic_HandAxe.png-10c0619e5d3386860efddf1ed36714b4.ctex"]
+source_file="res://assets/GBA/combat_anims/Armour_Generic/Armour_Generic_HandAxe.png"
+dest_files=["res://.godot/imported/Armour_Generic_HandAxe.png-aa76104b86608839f4291f3fa15aa22a.ctex"]
 
 [params]
 

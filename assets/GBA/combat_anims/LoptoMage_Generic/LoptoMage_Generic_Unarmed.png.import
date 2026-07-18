@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0h7vxnsy6ri2"
-path="res://.godot/imported/LoptoMage_Generic_Unarmed.png-ea0bcf9775356a607d076aeb218ee235.ctex"
+path="res://.godot/imported/LoptoMage_Generic_Unarmed.png-911717b79e6f7b21b7968cd6c2803909.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/LoptoMage_Generic/LoptoMage_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/LoptoMage_Generic_Unarmed.png-ea0bcf9775356a607d076aeb218ee235.ctex"]
+source_file="res://assets/GBA/combat_anims/LoptoMage_Generic/LoptoMage_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/LoptoMage_Generic_Unarmed.png-911717b79e6f7b21b7968cd6c2803909.ctex"]
 
 [params]
 

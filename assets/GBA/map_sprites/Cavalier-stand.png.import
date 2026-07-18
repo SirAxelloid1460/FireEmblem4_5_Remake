@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mys07fwe180y"
-path="res://.godot/imported/Cavalier-stand.png-145636de19eab573512466e33a000ebb.ctex"
+path="res://.godot/imported/Cavalier-stand.png-43e0bd989d76f5d1b91665e6f4b07a06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map_sprites/Cavalier-stand.png"
-dest_files=["res://.godot/imported/Cavalier-stand.png-145636de19eab573512466e33a000ebb.ctex"]
+source_file="res://assets/GBA/map_sprites/Cavalier-stand.png"
+dest_files=["res://.godot/imported/Cavalier-stand.png-43e0bd989d76f5d1b91665e6f4b07a06.ctex"]
 
 [params]
 

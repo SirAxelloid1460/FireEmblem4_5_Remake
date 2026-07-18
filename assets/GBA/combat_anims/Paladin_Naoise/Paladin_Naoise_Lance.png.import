@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://sh87wthp718k"
-path="res://.godot/imported/Paladin_Naoise_Lance.png-0daad9695e3bfabc038d7b675f4b4757.ctex"
+path="res://.godot/imported/Paladin_Naoise_Lance.png-aa2884f7b3d6492fe449e0c414ad3900.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/Paladin_Naoise/Paladin_Naoise_Lance.png"
-dest_files=["res://.godot/imported/Paladin_Naoise_Lance.png-0daad9695e3bfabc038d7b675f4b4757.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Naoise/Paladin_Naoise_Lance.png"
+dest_files=["res://.godot/imported/Paladin_Naoise_Lance.png-aa2884f7b3d6492fe449e0c414ad3900.ctex"]
 
 [params]
 

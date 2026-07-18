@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddolvl3t2bs35"
-path="res://.godot/imported/ClearingSunset.png-fc8af675ecd828d62f07137694fd2f34.ctex"
+path="res://.godot/imported/ClearingSunset.png-34060d7ce23af9c489f5534ea2f976d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panoramas/ClearingSunset.png"
-dest_files=["res://.godot/imported/ClearingSunset.png-fc8af675ecd828d62f07137694fd2f34.ctex"]
+source_file="res://assets/GBA/panoramas/ClearingSunset.png"
+dest_files=["res://.godot/imported/ClearingSunset.png-34060d7ce23af9c489f5534ea2f976d7.ctex"]
 
 [params]
 

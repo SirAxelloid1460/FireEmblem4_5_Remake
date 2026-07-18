@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpccn20r20nbg"
-path="res://.godot/imported/FreeKnight_Generic_Unarmed.png-7ed56420d64d9e1431ce786ca30a3d72.ctex"
+path="res://.godot/imported/FreeKnight_Generic_Unarmed.png-754d181e6b14424325c9d66173121a09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/FreeKnight_Generic/FreeKnight_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/FreeKnight_Generic_Unarmed.png-7ed56420d64d9e1431ce786ca30a3d72.ctex"]
+source_file="res://assets/GBA/combat_anims/FreeKnight_Generic/FreeKnight_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/FreeKnight_Generic_Unarmed.png-754d181e6b14424325c9d66173121a09.ctex"]
 
 [params]
 

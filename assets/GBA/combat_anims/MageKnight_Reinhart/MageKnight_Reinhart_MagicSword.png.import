@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsmeho2lgmdf4"
-path="res://.godot/imported/MageKnight_Reinhart_MagicSword.png-d874a850633818ce88523aa6f8ba12ae.ctex"
+path="res://.godot/imported/MageKnight_Reinhart_MagicSword.png-19800f49f497b154e3f83c41aef43242.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageKnight_Reinhart/MageKnight_Reinhart_MagicSword.png"
-dest_files=["res://.godot/imported/MageKnight_Reinhart_MagicSword.png-d874a850633818ce88523aa6f8ba12ae.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Reinhart/MageKnight_Reinhart_MagicSword.png"
+dest_files=["res://.godot/imported/MageKnight_Reinhart_MagicSword.png-19800f49f497b154e3f83c41aef43242.ctex"]
 
 [params]
 

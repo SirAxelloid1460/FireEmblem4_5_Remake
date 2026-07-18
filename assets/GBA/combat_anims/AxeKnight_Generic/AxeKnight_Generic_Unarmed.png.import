@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4jir3nic2ght"
-path="res://.godot/imported/AxeKnight_Generic_Unarmed.png-8c60b2bb45d42ddf0a3c1281dd2e9eaa.ctex"
+path="res://.godot/imported/AxeKnight_Generic_Unarmed.png-af3f072a7d54aa0be9eb1d4d74b5948a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/AxeKnight_Generic/AxeKnight_Generic_Unarmed.png"
-dest_files=["res://.godot/imported/AxeKnight_Generic_Unarmed.png-8c60b2bb45d42ddf0a3c1281dd2e9eaa.ctex"]
+source_file="res://assets/GBA/combat_anims/AxeKnight_Generic/AxeKnight_Generic_Unarmed.png"
+dest_files=["res://.godot/imported/AxeKnight_Generic_Unarmed.png-af3f072a7d54aa0be9eb1d4d74b5948a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bp3x23tjiygg0"
-path="res://.godot/imported/DarkMage_Generic_MagicAnima.png-23f6851cf2f92ea1249b887e89a4bdce.ctex"
+path="res://.godot/imported/DarkMage_Generic_MagicAnima.png-197219621e7d5d154db9b76167162c78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/DarkMage_Generic/DarkMage_Generic_MagicAnima.png"
-dest_files=["res://.godot/imported/DarkMage_Generic_MagicAnima.png-23f6851cf2f92ea1249b887e89a4bdce.ctex"]
+source_file="res://assets/GBA/combat_anims/DarkMage_Generic/DarkMage_Generic_MagicAnima.png"
+dest_files=["res://.godot/imported/DarkMage_Generic_MagicAnima.png-197219621e7d5d154db9b76167162c78.ctex"]
 
 [params]
 

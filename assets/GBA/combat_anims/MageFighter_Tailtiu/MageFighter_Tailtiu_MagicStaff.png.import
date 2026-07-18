@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://h3i7jg57ot4i"
-path="res://.godot/imported/MageFighter_Tailtiu_MagicStaff.png-8ea1053afe9b6306ca94ea5b3e47b915.ctex"
+path="res://.godot/imported/MageFighter_Tailtiu_MagicStaff.png-3d638a41500744ab2535d3b0e419cc99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/combat_anims/MageFighter_Tailtiu/MageFighter_Tailtiu_MagicStaff.png"
-dest_files=["res://.godot/imported/MageFighter_Tailtiu_MagicStaff.png-8ea1053afe9b6306ca94ea5b3e47b915.ctex"]
+source_file="res://assets/GBA/combat_anims/MageFighter_Tailtiu/MageFighter_Tailtiu_MagicStaff.png"
+dest_files=["res://.godot/imported/MageFighter_Tailtiu_MagicStaff.png-3d638a41500744ab2535d3b0e419cc99.ctex"]
 
 [params]
 

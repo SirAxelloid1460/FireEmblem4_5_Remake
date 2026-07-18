@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vl2pht5mdtt"
-path="res://.godot/imported/Sylvia.png-957ba324b0d3a362528c82dee79d23de.ctex"
+path="res://.godot/imported/Sylvia.png-4baed3d0b1a84ed73ef4bb409d3a2a2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/Sylvia.png"
-dest_files=["res://.godot/imported/Sylvia.png-957ba324b0d3a362528c82dee79d23de.ctex"]
+source_file="res://assets/GBA/portraits/characters/Sylvia.png"
+dest_files=["res://.godot/imported/Sylvia.png-4baed3d0b1a84ed73ef4bb409d3a2a2c.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dstmccjsr1i6e"
-path="res://.godot/imported/103 - Jugdral Chronology.ogg-5afc634300e23d74972024b332915c80.oggvorbisstr"
+path="res://.godot/imported/103 - Jugdral Chronology.ogg-64b6fe0d45a7a306c129509c2df19ac7.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/music/103 - Jugdral Chronology.ogg"
-dest_files=["res://.godot/imported/103 - Jugdral Chronology.ogg-5afc634300e23d74972024b332915c80.oggvorbisstr"]
+source_file="res://assets/GBA/music/103 - Jugdral Chronology.ogg"
+dest_files=["res://.godot/imported/103 - Jugdral Chronology.ogg-64b6fe0d45a7a306c129509c2df19ac7.oggvorbisstr"]
 
 [params]
 

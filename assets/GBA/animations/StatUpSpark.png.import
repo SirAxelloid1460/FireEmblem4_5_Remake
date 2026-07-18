@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjvowhq1dywl1"
-path="res://.godot/imported/StatUpSpark.png-5fee359b213d14ca2afc5ca3bad8dc5d.ctex"
+path="res://.godot/imported/StatUpSpark.png-8b3e927ae542b54b0e13597d94028b24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/StatUpSpark.png"
-dest_files=["res://.godot/imported/StatUpSpark.png-5fee359b213d14ca2afc5ca3bad8dc5d.ctex"]
+source_file="res://assets/GBA/animations/StatUpSpark.png"
+dest_files=["res://.godot/imported/StatUpSpark.png-8b3e927ae542b54b0e13597d94028b24.ctex"]
 
 [params]
 

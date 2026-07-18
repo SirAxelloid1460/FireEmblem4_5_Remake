@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6d64dow7h2po"
-path="res://.godot/imported/PrinceKurth.png-00d89e6f4db34d06be847b00342f098e.ctex"
+path="res://.godot/imported/PrinceKurth.png-2745c459bd89985da0522a1ff652fee7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/characters/PrinceKurth.png"
-dest_files=["res://.godot/imported/PrinceKurth.png-00d89e6f4db34d06be847b00342f098e.ctex"]
+source_file="res://assets/GBA/portraits/characters/PrinceKurth.png"
+dest_files=["res://.godot/imported/PrinceKurth.png-2745c459bd89985da0522a1ff652fee7.ctex"]
 
 [params]
 
