@@ -59,7 +59,6 @@ const PRESS_SCALE    := 5
 # Modo DEMO / attract: tras AFK_SECONDS sin input en el menú, reproduce el vídeo
 # de demo ENCIMA de todo (sin parar la música); cualquier input lo corta.
 const AFK_SECONDS := 15.0
-const DEMO_DIR    := "res://assets/videos/"
 
 # UI de botones estilo FE: placa ornamentada individual + cursor-espada.
 const PLATE      := "res://assets/menus/title_menu_dark.png"           # placa normal
@@ -281,34 +280,38 @@ func _process(delta: float) -> void:
 ## Cuenta la inactividad y lanza la demo tras AFK_SECONDS (salvo en submenús o
 ## si la demo ya está en marcha).
 func _update_idle(delta: float) -> void:
-	if _busy or _is_demo_playing():
+	if _busy or _is_demo_active():
 		return
 	_idle_time += delta
 	if _idle_time >= AFK_SECONDS:
 		_start_demo()
 
 
-## Cualquier actividad reinicia el contador; si la demo está sonando, la corta
-## (consumiendo el input para que no active además un botón del menú).
+## Cualquier actividad reinicia el contador; si la demo está activa (transición
+## o reproducción), la corta (consumiendo el input para que no active un botón).
 func _input(event: InputEvent) -> void:
-	var active: bool = event is InputEventMouseMotion \
-		or (event is InputEventKey and event.pressed and not event.echo) \
+	# Sólo cuenta como actividad una PULSACIÓN discreta (tecla, click o botón de
+	# mando) con el juego en primer plano. El MOVIMIENTO del ratón (o del stick)
+	# NO cuenta: no reinicia la inactividad ni corta la demo.
+	var active: bool = (event is InputEventKey and event.pressed and not event.echo) \
 		or (event is InputEventMouseButton and event.pressed) \
-		or (event is InputEventJoypadButton and event.pressed) \
-		or (event is InputEventJoypadMotion and absf(event.axis_value) > 0.5)
+		or (event is InputEventJoypadButton and event.pressed)
 	if not active:
 		return
 	_idle_time = 0.0
-	if _is_demo_playing():
+	if _is_demo_active():
 		_stop_demo()
 		get_viewport().set_input_as_handled()
 
 
-func _is_demo_playing() -> bool:
-	return _demo_vp != null and is_instance_valid(_demo_vp)
+func _is_demo_active() -> bool:
+	return _demo_layer != null and is_instance_valid(_demo_layer)
 
 
-## Reproduce el vídeo de demo por ENCIMA de todo, SIN tocar la música del menú.
+## Entra a la demo con FUNDIDO, en este orden exacto:
+##   Menú → fade-out (todo negro) → aparece el vídeo PAUSADO (1er frame) →
+##   fade-in (se ve todo otra vez) → al COMPLETARSE el fade-in, arranca el vídeo.
+## Va por encima de todo y no toca la música del menú.
 func _start_demo() -> void:
 	var path := _resolve_demo_video()
 	if path == "":
@@ -317,11 +320,7 @@ func _start_demo() -> void:
 	_demo_layer = CanvasLayer.new()
 	_demo_layer.layer = 128            # por encima de toda la UI del menú
 	add_child(_demo_layer)
-	var black := ColorRect.new()
-	black.color = Color.BLACK
-	black.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	black.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	_demo_layer.add_child(black)
+	# Vídeo (oculto hasta el fade-in).
 	_demo_vp = VideoStreamPlayer.new()
 	_demo_vp.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_demo_vp.expand = true
@@ -329,9 +328,43 @@ func _start_demo() -> void:
 	# Muteado: la música del menú (que NO se detiene) sigue siendo el audio.
 	_demo_vp.volume_db = -80.0
 	_demo_vp.stream = load(path)
+	_demo_vp.visible = false
 	_demo_vp.finished.connect(_stop_demo)
 	_demo_layer.add_child(_demo_vp)
+	# Cubierta negra para el fundido (empieza transparente, ENCIMA del vídeo).
+	var cover := ColorRect.new()
+	cover.color = Color(0, 0, 0, 0)
+	cover.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	cover.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_demo_layer.add_child(cover)
+	# 1) Fade-out del menú: la cubierta se vuelve opaca.
+	var t := create_tween()
+	t.tween_property(cover, "color:a", 1.0, FADE_TIME)
+	await t.finished
+	if not _is_demo_active():
+		return   # cortada por input durante el fundido
+	# Pantalla en negro: fondo negro permanente DETRÁS del vídeo.
+	var black := ColorRect.new()
+	black.color = Color.BLACK
+	black.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	black.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_demo_layer.add_child(black)
+	_demo_layer.move_child(black, 0)   # detrás del vídeo y de la cubierta
+	# 2) El vídeo APARECE pero PAUSADO (congelado en el 1er frame), aún en negro.
+	_demo_vp.visible = true
 	_demo_vp.play()
+	_demo_vp.paused = true
+	# 3) Fade-in: se vuelve a ver todo (con el vídeo quieto en el 1er frame).
+	var t2 := create_tween()
+	t2.tween_property(cover, "color:a", 0.0, FADE_TIME)
+	await t2.finished
+	if not _is_demo_active():
+		return   # cortada por input durante el fade-in
+	if is_instance_valid(cover):
+		cover.queue_free()
+	# 4) Fade-in COMPLETADO: ahora sí arranca el vídeo.
+	if _demo_vp != null and is_instance_valid(_demo_vp):
+		_demo_vp.paused = false
 
 
 ## Corta la demo y vuelve al menú; reinicia la cuenta de inactividad.
@@ -345,21 +378,11 @@ func _stop_demo() -> void:
 	_goto(St.PRESS_START)
 
 
-## Vídeo de demo por modo: FE4/SAGA usan fe4_demo (sin idioma); FE5 usa
-## fe5_demo_{en,jp} (con idioma). Fallback a demo.ogv genérico.
+## Vídeo de demo en {mode}/demos/{idioma}.ogv (fe4 para FE4/SAGA, fe5 para FE5),
+## con fallback a en.ogv (ver VideoResolver).
 func _resolve_demo_video() -> String:
-	var candidates: Array = []
-	if _mode() == 1:
-		var lang := "jp" if TranslationServer.get_locale().begins_with("ja") else "en"
-		candidates.append(DEMO_DIR + "fe5_demo_%s.ogv" % lang)
-		candidates.append(DEMO_DIR + "fe5_demo_en.ogv")
-	else:
-		candidates.append(DEMO_DIR + "fe4_demo.ogv")
-	candidates.append(DEMO_DIR + "demo.ogv")
-	for p in candidates:
-		if ResourceLoader.exists(p):
-			return p
-	return ""
+	var m := "fe5" if _mode() == 1 else "fe4"
+	return VideoResolver.localized(m, "demos")
 
 
 ## Anima el shimmer del "Press Start" (sólo cuando está visible).
