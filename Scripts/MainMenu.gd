@@ -343,10 +343,10 @@ func _stop_demo() -> void:
 	_idle_time = 0.0
 
 
-## Vídeo de demo: mode-specific opcional (demo_fe4/demo_fe5) + genérico demo.ogv.
+## Vídeo de demo por modo (fe4_demo/fe5_demo, independiente del idioma) + genérico.
 func _resolve_demo_video() -> String:
 	var candidates: Array = []
-	candidates.append(DEMO_DIR + ("demo_fe5.ogv" if _mode() == 1 else "demo_fe4.ogv"))
+	candidates.append(DEMO_DIR + ("fe5_demo.ogv" if _mode() == 1 else "fe4_demo.ogv"))
 	candidates.append(DEMO_DIR + "demo.ogv")
 	for p in candidates:
 		if ResourceLoader.exists(p):
