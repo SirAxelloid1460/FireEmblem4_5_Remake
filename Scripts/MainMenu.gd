@@ -281,15 +281,15 @@ func _process(delta: float) -> void:
 ## Cuenta la inactividad y lanza la demo tras AFK_SECONDS (salvo en submenús o
 ## si la demo ya está en marcha).
 func _update_idle(delta: float) -> void:
-	if _busy or _is_demo_playing():
+	if _busy or _is_demo_active():
 		return
 	_idle_time += delta
 	if _idle_time >= AFK_SECONDS:
 		_start_demo()
 
 
-## Cualquier actividad reinicia el contador; si la demo está sonando, la corta
-## (consumiendo el input para que no active además un botón del menú).
+## Cualquier actividad reinicia el contador; si la demo está activa (transición
+## o reproducción), la corta (consumiendo el input para que no active un botón).
 func _input(event: InputEvent) -> void:
 	var active: bool = event is InputEventMouseMotion \
 		or (event is InputEventKey and event.pressed and not event.echo) \
@@ -299,16 +299,18 @@ func _input(event: InputEvent) -> void:
 	if not active:
 		return
 	_idle_time = 0.0
-	if _is_demo_playing():
+	if _is_demo_active():
 		_stop_demo()
 		get_viewport().set_input_as_handled()
 
 
-func _is_demo_playing() -> bool:
-	return _demo_vp != null and is_instance_valid(_demo_vp)
+func _is_demo_active() -> bool:
+	return _demo_layer != null and is_instance_valid(_demo_layer)
 
 
-## Reproduce el vídeo de demo por ENCIMA de todo, SIN tocar la música del menú.
+## Entra a la demo con FUNDIDO: fade-out a negro del menú y, cuando la pantalla
+## se vuelve a ver (fade-in), la demo ARRANCA. Va por encima de todo y no toca la
+## música del menú.
 func _start_demo() -> void:
 	var path := _resolve_demo_video()
 	if path == "":
@@ -317,11 +319,7 @@ func _start_demo() -> void:
 	_demo_layer = CanvasLayer.new()
 	_demo_layer.layer = 128            # por encima de toda la UI del menú
 	add_child(_demo_layer)
-	var black := ColorRect.new()
-	black.color = Color.BLACK
-	black.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	black.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	_demo_layer.add_child(black)
+	# Vídeo (oculto hasta el fade-in).
 	_demo_vp = VideoStreamPlayer.new()
 	_demo_vp.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_demo_vp.expand = true
@@ -329,9 +327,36 @@ func _start_demo() -> void:
 	# Muteado: la música del menú (que NO se detiene) sigue siendo el audio.
 	_demo_vp.volume_db = -80.0
 	_demo_vp.stream = load(path)
+	_demo_vp.visible = false
 	_demo_vp.finished.connect(_stop_demo)
 	_demo_layer.add_child(_demo_vp)
+	# Cubierta negra para el fundido (empieza transparente, ENCIMA del vídeo).
+	var cover := ColorRect.new()
+	cover.color = Color(0, 0, 0, 0)
+	cover.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	cover.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_demo_layer.add_child(cover)
+	# 1) Fade-out del menú: la cubierta se vuelve opaca.
+	var t := create_tween()
+	t.tween_property(cover, "color:a", 1.0, FADE_TIME)
+	await t.finished
+	if not _is_demo_active():
+		return   # cortada por input durante el fundido
+	# Pantalla en negro: fondo negro permanente DETRÁS del vídeo.
+	var black := ColorRect.new()
+	black.color = Color.BLACK
+	black.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	black.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_demo_layer.add_child(black)
+	_demo_layer.move_child(black, 0)   # detrás del vídeo y de la cubierta
+	# 2) La demo ARRANCA cuando la pantalla se vuelve a ver: play + fade-in.
+	_demo_vp.visible = true
 	_demo_vp.play()
+	var t2 := create_tween()
+	t2.tween_property(cover, "color:a", 0.0, FADE_TIME)
+	await t2.finished
+	if _is_demo_active() and is_instance_valid(cover):
+		cover.queue_free()
 
 
 ## Corta la demo y vuelve al menú; reinicia la cuenta de inactividad.
