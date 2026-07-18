@@ -5,7 +5,10 @@ extends RefCounted
 # AssetSet — set gráfico activo (Original / GBA / HD).
 # ============================================================
 # Los assets viven en subcarpetas por set:
-#   res://assets/{Original,GBA,HD}/<misma estructura de siempre>
+#   res://assets/{GBA,HD}/<misma estructura de siempre>       (unificados)
+#   res://assets/Original/{fe4,fe5}/<misma estructura>        (separados por juego)
+# El set Original usa arte de los juegos ORIGINALES, que colisiona entre FE4 y
+# FE5, así que va separado por juego; el juego activo se intercala en vivo.
 # El código sigue usando rutas LÓGICAS "res://assets/X"; AssetSet.p() las
 # re-enraíza al set activo, con FALLBACK a GBA si el asset no existe en el set
 # elegido. Así, Original/HD pueden estar incompletos y todo sigue funcionando.
@@ -21,6 +24,12 @@ const SETS := ["Original", "GBA", "HD"]
 const DEFAULT := "GBA"
 const FALLBACK := "GBA"
 const CFG := "user://settings.cfg"
+
+# Sets cuyos recursos van SEPARADOS por juego (subcarpeta fe4/fe5). El set
+# "Original" usa el arte de los juegos originales, que colisionaría entre FE4 y
+# FE5 (mismos nombres, arte distinto), así que vive en Original/{fe4,fe5}/…. GBA
+# y HD son unificados (un solo estilo para ambos juegos) y NO se separan.
+const GAME_SPLIT_SETS := ["Original"]
 
 static var _set_cached := ""
 
@@ -49,11 +58,36 @@ static func p(path: String) -> String:
 		if rel.begins_with(known + "/"):
 			rel = rel.substr(known.length() + 1)
 			break
+	# Y si tras ello queda un prefijo de juego (fe4/ o fe5/), quitarlo también,
+	# para volver a intercalar el juego activo sin duplicar (p. ej. si llega ya
+	# como "Original/fe4/menus/x.png").
+	for g in ["fe4/", "fe5/"]:
+		if rel.begins_with(g):
+			rel = rel.substr(g.length())
+			break
 	var s := current()
-	var candidate := ROOT + s + "/" + rel
+	# El set "Original" intercala el juego activo (fe4/fe5) para no pisar arte
+	# entre juegos. El juego se consulta EN VIVO (no se cachea) porque en SAGA
+	# cambia por capítulo. GBA/HD son unificados: sin subcarpeta de juego.
+	var sub := ""
+	if s in GAME_SPLIT_SETS:
+		sub = _current_game() + "/"
+	var candidate := ROOT + s + "/" + sub + rel
 	if s != FALLBACK and not _exists(candidate):
-		return ROOT + FALLBACK + "/" + rel
+		return ROOT + FALLBACK + "/" + rel   # fallback unificado a GBA
 	return candidate
+
+
+## Juego activo ("fe4"/"fe5") para el set Original, leído EN VIVO de GameMode
+## (autoload). En SAGA cambia por capítulo. Fuera del árbol de escena (tests,
+## herramientas) o sin GameMode, default "fe4".
+static func _current_game() -> String:
+	var loop := Engine.get_main_loop()
+	if loop is SceneTree:
+		var gm = (loop as SceneTree).root.get_node_or_null("/root/GameMode")
+		if gm != null and gm.has_method("get_current_game"):
+			return str(gm.get_current_game())
+	return "fe4"
 
 
 ## Existe el recurso (imported), el archivo crudo (.idx/.json) o el directorio
