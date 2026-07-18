@@ -291,7 +291,7 @@ func _update_idle(delta: float) -> void:
 ## Cualquier actividad reinicia el contador; si la demo está sonando, la corta
 ## (consumiendo el input para que no active además un botón del menú).
 func _input(event: InputEvent) -> void:
-	var active := event is InputEventMouseMotion \
+	var active: bool = event is InputEventMouseMotion \
 		or (event is InputEventKey and event.pressed and not event.echo) \
 		or (event is InputEventMouseButton and event.pressed) \
 		or (event is InputEventJoypadButton and event.pressed) \
