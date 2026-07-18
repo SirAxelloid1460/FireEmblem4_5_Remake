@@ -265,9 +265,17 @@ func is_final_chapter() -> bool:
 
 
 func get_data_root() -> String:
+	return "res://data/%s/" % get_current_game()
+
+
+## Juego del capítulo ACTUAL ("fe4" / "fe5"). Válido para los 3 modos: en
+## SAGA_MODE la cronología entrelaza capítulos y cada entrada lleva su propio
+## "game", así que esto sigue al capítulo en curso. Default "fe4" (contexto de
+## menú, antes de start_game). Lo usa AssetSet para el set gráfico "Original",
+## cuyos recursos van separados por juego (assets/Original/{fe4,fe5}/…).
+func get_current_game() -> String:
 	var entry := get_current_chapter_entry()
-	var game = entry.get("game", "fe4")
-	return "res://data/%s/" % game
+	return str(entry.get("game", "fe4"))
 
 
 func get_chapter_json_path() -> String:
