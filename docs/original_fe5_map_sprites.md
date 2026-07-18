@@ -5,25 +5,26 @@ Ripeo de map sprites originales (SNES, Thracia 776) para el set **Original**, en
 (`Unit._resolve_map_sprite_nid`): `{Clase}_{Personaje}` → `{Clase}{Género}` →
 `{Clase}`. Cada entrada necesita **`-stand.png` + `-move.png`**.
 
-## ✅ Clases completas (37 / 60)
+## ✅ Clases completas (39 / 60)
 
 Archer · ArcherKnight · Armour · AxeKnight · Bandit · Baron · BowKnight · Cavalier ·
 DarkBishop · DarkMage · DragonKnight · DragonMaster · DukeKnight · FalconKnight ·
 Fighter · FreeKnight · General · GreatKnight · Hero · HighPriest · HighPriestFemale ·
-LanceKnight · LightPriestFemale · Mage · MageKnight · Paladin · Priest · PriestFemale ·
-Ranger · Rogue · Sage · Sniper · Swordfighter · Swordmaster · Thief · Troubadour · Warrior
+LanceKnight · LightPriestFemale · LoptoMage · LordLeaf · Mage · MageKnight · Paladin ·
+Priest · PriestFemale · Ranger · Rogue · Sage · Sniper · Swordfighter · Swordmaster ·
+Thief · Troubadour · Warrior
+
+Nota: `LordLeaf` = clase de **Leif** (nid `LordLeaf` → MasterKnight; en este remake
+Leif es "Prince"/lord de partida que promociona a MasterKnight como en FE4).
 
 ## ✅ Personaje-específicos
 
 - `Mage_Homer`
 
-## ❓ A confirmar (subidos, sin NID de clase que case)
+## ❓ A confirmar
 
-En FE5 el protagonista es **Leif**, así que el mapeo NO es necesariamente el de FE4.
-Confirmar a qué clase van y renombro:
-- `Lord` → ¿`LordLeaf` (Leif) o `LordSeliph`?
-- `Prince` → ¿`LordLeaf` / otro?
-- `LoptrianMage` → ¿`LoptoMage`? (parece el mismo, "Loptrian" = de Loptous)
+- `Prince` (subido) — **no es una clase** en los datos, y Leif ya queda cubierto por
+  `LordLeaf`. ¿A quién es este sprite (¿Seliph en el endgame de FE5?) o se descarta?
 
 ## ⚠️ A corregir
 
@@ -50,7 +51,6 @@ Confirmar a qué clase van y renombro:
 - [ ] Princess
 - [ ] Queen
 - [ ] Soldier
-- [ ] (LoptoMage / LordSeliph / LordLeaf → resueltos si se confirma «A confirmar» arriba)
 
 ## Notas
 
