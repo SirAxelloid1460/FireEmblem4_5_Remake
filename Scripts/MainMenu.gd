@@ -43,10 +43,15 @@ const CREDITS_SCRIPT := "res://Scripts/CreditsScreen.gd"
 # Música de fondo del menú: el tema principal de Fire Emblem, en bucle.
 const THEME_MUSIC := "res://assets/music/102 - Fire Emblem Theme.ogg"
 
-# Arte del título (FE4): fondo = ilustración del ejército; logo = "FIRE EMBLEM /
-# Genealogy" (41% transparente, deja ver el fondo); press_start = 8 frames 96×16.
-const TITLE_BG       := "res://assets/title/title1_background.png"
-const LOGO           := "res://assets/title/logo1.png"
+# Arte del título por MODO (GameMode autoload: FE4_ONLY=0, FE5_ONLY=1, SAGA=2).
+# El fondo y el logo cambian según la versión elegida en el menú de modo.
+const TITLE_BG       := "res://assets/title/title1_background.png"   # fallback FE4
+const LOGO           := "res://assets/title/logo1.png"               # fallback FE4
+const BG_FE4  := "res://assets/panoramas/title_background_FE4.png"
+const BG_FE5  := "res://assets/panoramas/title_background_FE5.png"
+const BG_SAGA := "res://assets/panoramas/title_background_SAGA.png"
+const LOGO_FE4 := "res://assets/title/logo1.png"    # Genealogy of the Holy War
+const LOGO_FE5 := "res://assets/title/logo2.png"    # Thracia 776
 const PRESS_START_IMG := "res://assets/sprites/press_start.png"
 const PRESS_FRAMES   := 8
 const PRESS_SCALE    := 5
@@ -142,15 +147,39 @@ func _ready() -> void:
 	_fade.modulate.a = 0.0
 
 
+## Modo actual (GameMode autoload): FE4_ONLY=0, FE5_ONLY=1, SAGA_MODE=2.
+func _mode() -> int:
+	var gm := get_node_or_null("/root/GameMode")
+	return int(gm.current_mode) if gm != null and "current_mode" in gm else 0
+
+
+## Fondo del menú según el modo (con fallback a la ilustración FE4).
+func _bg_path() -> String:
+	var p := BG_FE4
+	match _mode():
+		1: p = BG_FE5
+		2: p = BG_SAGA
+	if not ResourceLoader.exists(p):
+		p = TITLE_BG
+	return p
+
+
+## Logo del menú según el modo (Thracia en FE5; Genealogy en FE4/SAGA).
+func _logo_path() -> String:
+	var p := LOGO_FE5 if _mode() == 1 else LOGO_FE4
+	return p if ResourceLoader.exists(p) else LOGO
+
+
 func _build_bg() -> void:
-	# Fondo del título: ilustración del ejército (escalada a pantalla, nearest).
-	if ResourceLoader.exists(TITLE_BG):
+	# Fondo del título por modo (ilustración escalada a pantalla, nearest).
+	var bg_path := _bg_path()
+	if ResourceLoader.exists(bg_path):
 		_bg_img = TextureRect.new()
 		_bg_img.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 		_bg_img.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 		_bg_img.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 		_bg_img.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		_bg_img.texture = load(TITLE_BG)
+		_bg_img.texture = load(bg_path)
 		add_child(_bg_img)
 		return
 	# Fallback: gradiente procedural (si falta la imagen).
@@ -200,8 +229,9 @@ func _build_title() -> void:
 	_title.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	_title.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	_title.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	if ResourceLoader.exists(LOGO):
-		_title.texture = load(LOGO)
+	var logo_path := _logo_path()
+	if ResourceLoader.exists(logo_path):
+		_title.texture = load(logo_path)
 	add_child(_title)
 	# _subtitle ya no se usa (el logo incluye el subtítulo); label inerte oculto.
 	_subtitle = Label.new()
