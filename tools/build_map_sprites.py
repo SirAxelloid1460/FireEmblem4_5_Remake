@@ -38,11 +38,19 @@
 #
 # Si up/left salen intercambiados, cambia --walk-order (p.ej. down,left,up).
 #
-# Modo LOTE (una carpeta con pares '{X}-stand.png' + '{X}-walk.png'):
-#   python tools/build_map_sprites.py --batch tools/incoming/
-#   · Empareja por prefijo, deriva el nombre limpiándolo:
+# Modo LOTE (por defecto): recorre el DIRECTORIO ACTUAL y TODAS sus subcarpetas,
+# empareja cada '{X}-stand.png' con su '{X}-walk.png' (o -move.png) hermano y los
+# convierte. Sin argumentos:
+#   cd "C:\...\FE4 Map Sprites"
+#   python C:\ruta\al\repo\tools\build_map_sprites.py
+#   · Empareja por prefijo y deriva el nombre limpiándolo:
 #       'Bard (U) {Stephano, Zane}' → 'Bard'   (usa --raw-names para dejarlo tal cual)
 #   · Acepta el sufijo -walk.png o -move.png para el caminar.
+#   · Para recorrer otra carpeta: --batch "C:\ruta".
+#
+# SALIDA: por defecto una carpeta 'map_sprites' en el DIRECTORIO ACTUAL (plana;
+# no se recorre a sí misma). Para escribir directo al proyecto:
+#   --out <repo>/assets/GBA/map_sprites.
 # =============================================================================
 
 import argparse
@@ -292,7 +300,7 @@ def convert(name, out_dir, args, stand_path=None, move_path=None):
                 made.append(p)
     if not args.inspect:
         if made:
-            print("[%s] escrito: %s" % (name, ", ".join(os.path.relpath(m, PROJECT_ROOT) for m in made)))
+            print("[%s] escrito: %s" % (name, ", ".join(os.path.relpath(m) for m in made)))
         else:
             print("[%s] nada que escribir (¿faltó --src-stand/--src-move o --idle/--walk-*?)" % name)
 
@@ -307,41 +315,53 @@ def _clean_name(prefix):
 
 
 def run_batch(in_dir, out_dir, args):
-    """Empareja '{X}-stand.png' con '{X}-walk.png' (o '-move.png') en in_dir y
-    convierte cada par. El nombre de salida se limpia salvo --raw-names."""
-    files = os.listdir(in_dir)
-    stands = sorted(f for f in files if f.lower().endswith("-stand.png"))
-    if not stands:
-        sys.exit("No hay archivos '*-stand.png' en %s" % in_dir)
-    lower = {f.lower(): f for f in files}
-    n = 0
-    for sf in stands:
-        prefix = sf[:-len("-stand.png")]
-        move = None
-        for suf in ("-walk.png", "-move.png"):
-            cand = (prefix + suf).lower()
-            if cand in lower:
-                move = lower[cand]
-                break
+    """Recorre in_dir y TODAS sus subcarpetas, empareja '{X}-stand.png' con su
+    '{X}-walk.png' (o '-move.png') hermano y convierte cada par. La salida es
+    plana en out_dir. El nombre se limpia salvo --raw-names."""
+    out_abs = os.path.abspath(out_dir)
+    pairs = []                       # (stand_path, move_path|None, prefix)
+    for root, dirs, files in os.walk(in_dir):
+        # No descender en la carpeta de salida (evita reprocesar lo ya generado).
+        dirs[:] = [d for d in dirs if os.path.abspath(os.path.join(root, d)) != out_abs]
+        lower = {f.lower(): f for f in files}
+        for f in sorted(files):
+            if not f.lower().endswith("-stand.png"):
+                continue
+            prefix = f[:-len("-stand.png")]
+            move = None
+            for suf in ("-walk.png", "-move.png"):
+                cand = (prefix + suf).lower()
+                if cand in lower:
+                    move = os.path.join(root, lower[cand])
+                    break
+            pairs.append((os.path.join(root, f), move, prefix))
+    if not pairs:
+        sys.exit("No hay archivos '*-stand.png' en %s (ni en sus subcarpetas)." % os.path.abspath(in_dir))
+    seen = {}
+    for stand_path, move_path, prefix in pairs:
         name = prefix if args.raw_names else _clean_name(prefix)
-        if not args.inspect and prefix != name:
-            print("  %-40s → %s" % (prefix, name))
-        convert(name, out_dir, args,
-                stand_path=os.path.join(in_dir, sf),
-                move_path=os.path.join(in_dir, move) if move else None)
-        n += 1
-    print("Lote: %d clase(s) procesada(s)." % n)
+        if not args.inspect:
+            if prefix != name:
+                print("  %-42s → %s" % (prefix, name))
+            if name in seen:
+                print("  ! '%s' repetido (sobrescribe %s) — usa --raw-names o renombra." % (name, seen[name]))
+            seen[name] = os.path.relpath(stand_path)
+        convert(name, out_dir, args, stand_path=stand_path, move_path=move_path)
+    print("Lote: %d clase(s) procesada(s)." % len(pairs))
 
 
 def main():
     ap = argparse.ArgumentParser(description="Convierte map sprites (fondo verde) al formato LT del proyecto.")
     ap.add_argument("--src-stand", help="PNG de origen del idle (formato GBAFE: columna 16×48).")
     ap.add_argument("--src-move", help="PNG de origen del caminar/-walk (formato GBAFE: columna 32×480).")
-    ap.add_argument("--batch", help="Carpeta con pares '{X}-stand.png' + '{X}-walk.png' (o -move.png); convierte todos.")
+    ap.add_argument("--batch", nargs="?", const=".", default=None,
+                    help="Carpeta a recorrer RECURSIVAMENTE emparejando '{X}-stand.png' + '{X}-walk.png' "
+                         "(o -move.png). Sin valor, o si no das --src-*, usa el directorio ACTUAL.")
     ap.add_argument("--raw-names", action="store_true", help="En lote, no limpiar el nombre (deja 'Bard (U) {..}').")
     ap.add_argument("--name", help="Nombre de clase de salida (obligatorio salvo --inspect / --batch).")
-    ap.add_argument("--out", default=os.path.join(PROJECT_ROOT, "assets", "GBA", "map_sprites"),
-                    help="Carpeta destino (default assets/GBA/map_sprites/).")
+    ap.add_argument("--out", default="map_sprites",
+                    help="Carpeta destino (default: 'map_sprites' en el directorio actual). "
+                         "Para escribir directo al proyecto: --out ruta/al/repo/assets/GBA/map_sprites.")
 
     ap.add_argument("--stand-frame", default="16x16", help="Tamaño de frame del idle (default 16x16). Vacío = autodetecta.")
     ap.add_argument("--move-frame", default="32x32", help="Tamaño de frame del caminar (default 32x32). Vacío = autodetecta.")
@@ -366,12 +386,13 @@ def main():
     ap.add_argument("--inspect", action="store_true", help="Sólo reporta frames detectados; no escribe.")
     args = ap.parse_args()
 
+    # Por defecto (sin --batch ni --src-*): lote recursivo del directorio actual.
+    if args.batch is None and not args.src_stand and not args.src_move:
+        args.batch = "."
     os.makedirs(args.out, exist_ok=True)
-    if args.batch:
+    if args.batch is not None:
         run_batch(args.batch, args.out, args)
         return
-    if not args.src_stand and not args.src_move:
-        ap.error("Indica --batch, o --src-stand y/o --src-move.")
     if not args.inspect and not args.name:
         ap.error("--name es obligatorio (salvo --inspect / --batch).")
     convert(args.name or "sprite", args.out, args)
