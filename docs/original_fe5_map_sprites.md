@@ -26,6 +26,9 @@ MasterKnight, como en FE4).
 ## ⚠️ A corregir
 
 - **Dancer** — solo `-stand`, falta **`Dancer-move.png`**.
+- **Duplicados (mismo sprite byte a byte)** — placeholders a reemplazar con arte
+  distinto: `Priest`=`PriestFemale`, `HighPriest`=`HighPriestFemale`,
+  `LordSeliph`=`LordLeaf` (Seliph y Leif comparten sprite).
 
 ## ⏳ Pendientes (confirmadas faltantes)
 
