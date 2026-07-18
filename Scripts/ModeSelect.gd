@@ -48,7 +48,7 @@ func _has_preview_panel() -> bool:
 # War" (ancho reducido ~10% respecto a la ronda anterior) y de poco alto (3
 # opciones). El panel queda centrado; los botones se suben con _content_lift.
 func _list_panel_rect() -> Array:
-	return [0.17, 0.335, 0.83, 0.665]
+	return [0.19, 0.335, 0.81, 0.665]
 
 
 func _option_font_size() -> int:
@@ -59,9 +59,9 @@ func _option_align() -> int:
 	return HORIZONTAL_ALIGNMENT_CENTER
 
 
-# Sube un pelo los botones dentro del panel (el panel sigue centrado).
+# Sube un pelín los botones dentro del panel (el panel sigue centrado).
 func _content_lift() -> int:
-	return 12
+	return 5
 
 
 func _bg_for_option(id: String) -> Texture2D:

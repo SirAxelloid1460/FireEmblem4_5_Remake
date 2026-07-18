@@ -113,10 +113,16 @@ func _option_align() -> int:
 	return HORIZONTAL_ALIGNMENT_LEFT
 
 
-## Píxeles que se SUBE el CONTENIDO (bandera / botones) dentro de su panel, sin
-## mover el panel. Sobreescribir por menú (0 = contenido centrado en el panel).
+## Píxeles que se SUBE el CONTENIDO (botones) dentro de su panel, sin mover el
+## panel. Sobreescribir por menú (0 = contenido centrado en el panel).
 func _content_lift() -> int:
 	return 0
+
+
+## Lift del panel-preview (bandera), independiente del de los botones. Por
+## defecto usa el mismo; sobreescribir para subir la imagen menos/más.
+func _preview_lift() -> int:
+	return _content_lift()
 
 
 ## Geometría del panel-lista en fracciones del viewport [izq, arriba, der, abajo].
@@ -206,9 +212,9 @@ func _nine_panel(al: float, at: float, ar: float, ab: float) -> NinePatchRect:
 
 
 func _build_preview_panel() -> void:
-	# Panel centrado en pantalla; la bandera se sube DENTRO con _content_lift.
+	# Panel centrado en pantalla; la bandera se sube DENTRO con _preview_lift.
 	var panel := _nine_panel(0.07, 0.31, 0.38, 0.67)
-	var lift := _content_lift()
+	var lift := _preview_lift()
 	_preview = TextureRect.new()
 	# STRETCH_SCALE + más margen arriba/abajo: reduce SÓLO el alto de la bandera
 	# (el ancho sigue llenando el recuadro). Los offsets se desplazan por `lift`
