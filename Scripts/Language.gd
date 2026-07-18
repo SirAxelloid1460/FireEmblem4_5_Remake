@@ -41,7 +41,7 @@ func _content_lift() -> int:
 	return 16
 
 
-# La bandera no se sube (a 1200x800 se salía un poco por arriba).
+# La bandera sube 30px dentro del panel y se desplaza 8px a la izquierda.
 func _preview_lift() -> int:
 	return 30
 
