@@ -343,10 +343,16 @@ func _stop_demo() -> void:
 	_idle_time = 0.0
 
 
-## Vídeo de demo por modo (fe4_demo/fe5_demo, independiente del idioma) + genérico.
+## Vídeo de demo por modo: FE4/SAGA usan fe4_demo (sin idioma); FE5 usa
+## fe5_demo_{en,jp} (con idioma). Fallback a demo.ogv genérico.
 func _resolve_demo_video() -> String:
 	var candidates: Array = []
-	candidates.append(DEMO_DIR + ("fe5_demo.ogv" if _mode() == 1 else "fe4_demo.ogv"))
+	if _mode() == 1:
+		var lang := "jp" if TranslationServer.get_locale().begins_with("ja") else "en"
+		candidates.append(DEMO_DIR + "fe5_demo_%s.ogv" % lang)
+		candidates.append(DEMO_DIR + "fe5_demo_en.ogv")
+	else:
+		candidates.append(DEMO_DIR + "fe4_demo.ogv")
 	candidates.append(DEMO_DIR + "demo.ogv")
 	for p in candidates:
 		if ResourceLoader.exists(p):
