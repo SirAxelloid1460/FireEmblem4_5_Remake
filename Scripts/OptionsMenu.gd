@@ -22,6 +22,10 @@ const COLOR_OUTLINE := Color(0.0, 0.0, 0.0, 1.0)
 
 var _cfg := ConfigFile.new()
 
+# Carrusel de set gráfico: índice mostrado y label para redibujar.
+var _set_idx: int = 0
+var _set_value_label: Label = null
+
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -69,6 +73,10 @@ func _build() -> void:
 	_slider(vb, "audio", "music_volume", "Music Volume", 70, func(v): _apply_bus("Music", v))
 	_slider(vb, "audio", "sfx_volume", "SFX Volume", 80, func(v): _apply_bus("SFX", v))
 	_toggle(vb, "audio", "talk_sound", "Talk Sound", true)
+
+	# --- GRAPHICS ---
+	_section(vb, "GRAPHICS")
+	_set_carousel(vb, "Graphics Set")
 
 	# --- GAMEPLAY ---
 	_section(vb, "GAMEPLAY")
@@ -158,6 +166,115 @@ func _option(vb: VBoxContainer, section: String, key: String, label_text: String
 	o.selected = int(_cfg_get(section, key, default))
 	o.item_selected.connect(func(idx): _store(section, key, idx))
 	hb.add_child(o)
+
+
+# --- Carrusel de set gráfico (◄ Nombre ►) ------------------------------------
+# A diferencia de _option (dropdown), el usuario pidió un carrusel: dos flechas
+# que ciclan por AssetSet.SETS. Al cambiar, se PERSISTE con AssetSet.save() pero
+# NO se aplica en caliente (los recursos ya están cargados); mostramos un panel
+# avisando de que hay que reiniciar. La selección arranca en el set activo real.
+func _set_carousel(vb: VBoxContainer, label_text: String) -> void:
+	var hb := _row(vb, label_text)
+	# Índice inicial = set activo de esta sesión (cacheado desde settings.cfg).
+	_set_idx = AssetSet.SETS.find(AssetSet.current())
+	if _set_idx < 0:
+		_set_idx = AssetSet.SETS.find(AssetSet.DEFAULT)
+
+	var left := Button.new()
+	left.text = "◄"
+	left.add_theme_font_size_override("font_size", 22)
+	left.add_theme_color_override("font_color", COLOR_TEXT)
+	left.add_theme_color_override("font_focus_color", COLOR_GOLD)
+	left.add_theme_color_override("font_hover_color", COLOR_GOLD)
+	left.pressed.connect(func(): _cycle_set(-1))
+	hb.add_child(left)
+
+	_set_value_label = Label.new()
+	_set_value_label.custom_minimum_size = Vector2(160, 0)
+	_set_value_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_set_value_label.add_theme_font_size_override("font_size", 20)
+	_set_value_label.add_theme_color_override("font_color", COLOR_GOLD)
+	_set_value_label.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
+	_set_value_label.add_theme_constant_override("outline_size", 3)
+	hb.add_child(_set_value_label)
+
+	var right := Button.new()
+	right.text = "►"
+	right.add_theme_font_size_override("font_size", 22)
+	right.add_theme_color_override("font_color", COLOR_TEXT)
+	right.add_theme_color_override("font_focus_color", COLOR_GOLD)
+	right.add_theme_color_override("font_hover_color", COLOR_GOLD)
+	right.pressed.connect(func(): _cycle_set(1))
+	hb.add_child(right)
+
+	_refresh_set_label()
+
+
+## Cicla el set gráfico, lo guarda y avisa si difiere del set activo real.
+func _cycle_set(step: int) -> void:
+	_set_idx = wrapi(_set_idx + step, 0, AssetSet.SETS.size())
+	var chosen: String = AssetSet.SETS[_set_idx]
+	AssetSet.save(chosen)
+	_refresh_set_label()
+	# Solo avisa si el elegido no coincide con el set cargado en esta sesión.
+	if chosen != AssetSet.current():
+		_show_restart_notice(chosen)
+
+
+func _refresh_set_label() -> void:
+	if _set_value_label != null:
+		_set_value_label.text = AssetSet.SETS[_set_idx]
+
+
+## Panel modal: el nuevo set se aplicará al reiniciar el juego.
+func _show_restart_notice(set_name: String) -> void:
+	var layer := CanvasLayer.new()
+	layer.layer = 50
+	add_child(layer)
+
+	var dim := ColorRect.new()
+	dim.color = Color(0, 0, 0, 0.6)
+	dim.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	layer.add_child(dim)
+
+	var panel := PanelContainer.new()
+	var sb := StyleBoxFlat.new()
+	sb.bg_color = Color(0.06, 0.07, 0.13, 0.98)
+	sb.set_border_width_all(3)
+	sb.border_color = COLOR_GOLD
+	sb.set_corner_radius_all(8)
+	sb.content_margin_left = 34
+	sb.content_margin_right = 34
+	sb.content_margin_top = 26
+	sb.content_margin_bottom = 22
+	panel.add_theme_stylebox_override("panel", sb)
+	panel.custom_minimum_size = Vector2(560, 0)
+	panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
+	layer.add_child(panel)
+
+	var col := VBoxContainer.new()
+	col.add_theme_constant_override("separation", 16)
+	panel.add_child(col)
+
+	var msg := Label.new()
+	msg.text = "El set gráfico «%s» se aplicará\nal reiniciar el juego." % set_name
+	msg.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	msg.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	msg.add_theme_font_size_override("font_size", 22)
+	msg.add_theme_color_override("font_color", COLOR_TEXT)
+	msg.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
+	msg.add_theme_constant_override("outline_size", 3)
+	col.add_child(msg)
+
+	var ok := Button.new()
+	ok.text = "OK"
+	ok.add_theme_font_size_override("font_size", 22)
+	ok.add_theme_color_override("font_color", COLOR_TEXT)
+	ok.add_theme_color_override("font_focus_color", COLOR_GOLD)
+	ok.add_theme_color_override("font_hover_color", COLOR_GOLD)
+	ok.pressed.connect(layer.queue_free)
+	col.add_child(ok)
+	ok.grab_focus()
 
 
 # --- Config ---
