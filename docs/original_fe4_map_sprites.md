@@ -1,36 +1,31 @@
 # Map sprites — set Original, FE4 (estado)
 
-Estado del ripeo de map sprites originales (SNES) para el set gráfico **Original**,
-en `assets/Original/fe4/map_sprites/`. El juego busca por `map_sprite_nid` (ver
-`data/general/classes.json`), con orden de resolución en `Unit._resolve_map_sprite_nid`:
-`{Clase}_{Personaje}` → `{Clase}{Género}` (`Female`/`Male`) → `{Clase}` (universal).
-
+Ripeo de map sprites originales (SNES) para el set **Original**, en
+`assets/Original/fe4/map_sprites/`. El juego busca por `map_sprite_nid`
+(`data/general/classes.json`), orden en `Unit._resolve_map_sprite_nid`:
+`{Clase}_{Personaje}` → `{Clase}{Género}` (`Female`/`Male`) → `{Clase}`.
 Cada entrada necesita **`-stand.png` + `-move.png`**.
 
-## ✅ Clases completas (45 / 60)
+## ✅ Clases completas (47 / 60)
 
 Archer · ArcherKnight · Armour · AxeKnight · Bard · Baron · BowKnight · Cavalier ·
 Citizen · DarkBishop · DarkPrince · DragonKnight · DragonMaster · DukeKnight ·
 Emperor · FalconKnight · Fighter · FreeKnight · General · GreatKnight · Hero ·
-HighPriest · **HighPriestFemale** · LanceKnight · **LightPriestFemale** · LordKnight ·
-Mage · MageFighter · MageKnight · MasterKnight · Paladin (F+M) · PegasusKnight ·
-Priest · **PriestFemale** · Princess · Queen · Ranger · Rogue · Sage · Sniper ·
-Swordfighter · Swordmaster · Thief · Troubadour · Warrior
+HighPriest · HighPriestFemale · LanceKnight · LightPriestFemale · LordKnight ·
+LordLeaf · LordSeliph · Mage · MageFighter · MageKnight · MasterKnight · Paladin (F+M) ·
+PegasusKnight · Priest · PriestFemale · Princess · Queen · Ranger · Rogue · Sage ·
+Sniper · Swordfighter · Swordmaster · Thief · Troubadour · Warrior
 
-## ✅ Personaje-específicos presentes
+## ✅ Personaje-específicos
 
-- `LordKnight_Seliph`
-- `Mage_Amid`
-- `Mage_Tailtiu`
+- `LordKnight_Seliph` · `Mage_Amid` · `Mage_Tailtiu`
 
 ## ⚠️ A corregir
 
-- **Dancer** — solo tiene `-stand.png`, **falta `Dancer-move.png`** (re-ripear el walk).
-- **`Lord` y `Prince`** — subidos pero **no casan con ningún `map_sprite_nid`** de clase.
-  Probablemente son para `LordSeliph` / `LordLeaf` (ambos pendientes). Confirmar a qué
-  clase van y renombrar al NID correcto.
+- **Dancer** — solo `-stand`, falta **`Dancer-move.png`** (re-ripear el walk; el
+  origen estaba roto).
 
-## ⏳ Pendientes (14 clases)
+## ⏳ Pendientes (12 clases)
 
 - [ ] Ballistician  *(clase Ballistae)*
 - [ ] Bandit
@@ -40,8 +35,6 @@ Swordfighter · Swordmaster · Thief · Troubadour · Warrior
 - [ ] DarkMage
 - [ ] DragonRider
 - [ ] LoptoMage
-- [ ] LordLeaf
-- [ ] LordSeliph
 - [ ] Mercenary
 - [ ] PegasusRider
 - [ ] Pirate
@@ -49,8 +42,9 @@ Swordfighter · Swordmaster · Thief · Troubadour · Warrior
 
 ## Notas
 
-- NIDs que **no** coinciden con el nombre de clase (usar el NID en el archivo):
-  Priestess→`PriestFemale`, HighPriestess→`HighPriestFemale`,
-  LightPriestess→`LightPriestFemale`, Ballistae→`Ballistician`, Tester→`Citizen`.
-- Tras añadir/renombrar PNGs hay que **abrir el proyecto en Godot** una vez para
-  reimportarlos.
+- Renombrados aplicados: Priestess→`PriestFemale`, HighPriestess→`HighPriestFemale`,
+  LightPriestess→`LightPriestFemale`, Lord→`LordSeliph`, Prince→`LordLeaf`, y se
+  quitó un espacio de `LordKnight_ Seliph-move`.
+- NIDs que no coinciden con el nombre de clase: Ballistae→`Ballistician`,
+  Tester→`Citizen`.
+- Tras añadir/renombrar PNGs, abrir el proyecto en Godot para reimportar.
