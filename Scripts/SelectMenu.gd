@@ -223,10 +223,11 @@ func _build_preview_panel() -> void:
 	_preview.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	_preview.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_preview.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	_preview.offset_left = 26
-	_preview.offset_top = 52 - lift
-	_preview.offset_right = -26
-	_preview.offset_bottom = -56 - lift
+	# Márgenes con holgura para que la bandera NO toque el marco ornamentado.
+	_preview.offset_left = 30
+	_preview.offset_top = 58 - lift
+	_preview.offset_right = -30
+	_preview.offset_bottom = -58 - lift
 	panel.add_child(_preview)
 
 

@@ -52,7 +52,7 @@ func _list_panel_rect() -> Array:
 
 
 func _option_font_size() -> int:
-	return 56
+	return 48
 
 
 func _option_align() -> int:
