@@ -41,9 +41,13 @@ func _content_lift() -> int:
 	return 16
 
 
-# La bandera sube 24px dentro del panel (hay holgura tras el inset del marco).
+# La bandera sube 30px dentro del panel y se desplaza 8px a la izquierda.
 func _preview_lift() -> int:
-	return 24
+	return 30
+
+
+func _preview_hshift() -> int:
+	return 8
 
 
 func _preview_texture(id: String) -> Texture2D:
