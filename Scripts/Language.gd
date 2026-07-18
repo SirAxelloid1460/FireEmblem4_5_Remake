@@ -41,9 +41,9 @@ func _content_lift() -> int:
 	return 16
 
 
-# La bandera no se sube (a 1200x800 se salía un poco por arriba).
+# La bandera sube 24px dentro del panel (hay holgura tras el inset del marco).
 func _preview_lift() -> int:
-	return 0
+	return 24
 
 
 func _preview_texture(id: String) -> Texture2D:
