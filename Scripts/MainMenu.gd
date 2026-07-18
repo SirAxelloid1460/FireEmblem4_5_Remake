@@ -43,13 +43,23 @@ const CREDITS_SCRIPT := "res://Scripts/CreditsScreen.gd"
 # Música de fondo del menú: el tema principal de Fire Emblem, en bucle.
 const THEME_MUSIC := "res://assets/music/102 - Fire Emblem Theme.ogg"
 
-# Arte del título (FE4): fondo = ilustración del ejército; logo = "FIRE EMBLEM /
-# Genealogy" (41% transparente, deja ver el fondo); press_start = 8 frames 96×16.
-const TITLE_BG       := "res://assets/title/title1_background.png"
-const LOGO           := "res://assets/title/logo1.png"
+# Arte del título por MODO (GameMode autoload: FE4_ONLY=0, FE5_ONLY=1, SAGA=2).
+# El fondo y el logo cambian según la versión elegida en el menú de modo.
+const TITLE_BG       := "res://assets/title/title1_background.png"   # fallback FE4
+const LOGO           := "res://assets/title/logo1.png"               # fallback FE4
+const BG_FE4  := "res://assets/panoramas/title_background_FE4.png"
+const BG_FE5  := "res://assets/panoramas/title_background_FE5.png"
+const BG_SAGA := "res://assets/panoramas/title_background_SAGA.png"
+const LOGO_FE4 := "res://assets/title/logo1.png"    # Genealogy of the Holy War
+const LOGO_FE5 := "res://assets/title/logo2.png"    # Thracia 776
 const PRESS_START_IMG := "res://assets/sprites/press_start.png"
 const PRESS_FRAMES   := 8
 const PRESS_SCALE    := 5
+
+# Modo DEMO / attract: tras AFK_SECONDS sin input en el menú, reproduce el vídeo
+# de demo ENCIMA de todo (sin parar la música); cualquier input lo corta.
+const AFK_SECONDS := 15.0
+const DEMO_DIR    := "res://assets/videos/"
 
 # UI de botones estilo FE: placa ornamentada individual + cursor-espada.
 const PLATE      := "res://assets/menus/title_menu_dark.png"           # placa normal
@@ -114,6 +124,11 @@ var _difficulty: String = "Normal"
 var _sfx: AudioStreamPlayer                # reproductor de SFX del menú
 var _skip_next_nav_sfx: bool = false       # evita el tick de navegación en el auto-foco al entrar a un panel
 
+# Modo DEMO / attract.
+var _idle_time: float = 0.0
+var _demo_layer: CanvasLayer = null
+var _demo_vp: VideoStreamPlayer = null
+
 
 # ============================================================
 # CONSTRUCCIÓN
@@ -142,15 +157,39 @@ func _ready() -> void:
 	_fade.modulate.a = 0.0
 
 
+## Modo actual (GameMode autoload): FE4_ONLY=0, FE5_ONLY=1, SAGA_MODE=2.
+func _mode() -> int:
+	var gm := get_node_or_null("/root/GameMode")
+	return int(gm.current_mode) if gm != null and "current_mode" in gm else 0
+
+
+## Fondo del menú según el modo (con fallback a la ilustración FE4).
+func _bg_path() -> String:
+	var p := BG_FE4
+	match _mode():
+		1: p = BG_FE5
+		2: p = BG_SAGA
+	if not ResourceLoader.exists(p):
+		p = TITLE_BG
+	return p
+
+
+## Logo del menú según el modo (Thracia en FE5; Genealogy en FE4/SAGA).
+func _logo_path() -> String:
+	var p := LOGO_FE5 if _mode() == 1 else LOGO_FE4
+	return p if ResourceLoader.exists(p) else LOGO
+
+
 func _build_bg() -> void:
-	# Fondo del título: ilustración del ejército (escalada a pantalla, nearest).
-	if ResourceLoader.exists(TITLE_BG):
+	# Fondo del título por modo (ilustración escalada a pantalla, nearest).
+	var bg_path := _bg_path()
+	if ResourceLoader.exists(bg_path):
 		_bg_img = TextureRect.new()
 		_bg_img.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 		_bg_img.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 		_bg_img.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 		_bg_img.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		_bg_img.texture = load(TITLE_BG)
+		_bg_img.texture = load(bg_path)
 		add_child(_bg_img)
 		return
 	# Fallback: gradiente procedural (si falta la imagen).
@@ -200,8 +239,9 @@ func _build_title() -> void:
 	_title.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	_title.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	_title.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	if ResourceLoader.exists(LOGO):
-		_title.texture = load(LOGO)
+	var logo_path := _logo_path()
+	if ResourceLoader.exists(logo_path):
+		_title.texture = load(logo_path)
 	add_child(_title)
 	# _subtitle ya no se usa (el logo incluye el subtítulo); label inerte oculto.
 	_subtitle = Label.new()
@@ -235,6 +275,83 @@ func _build_press_start() -> void:
 func _process(delta: float) -> void:
 	_animate_press(delta)
 	_animate_cursor(delta)
+	_update_idle(delta)
+
+
+## Cuenta la inactividad y lanza la demo tras AFK_SECONDS (salvo en submenús o
+## si la demo ya está en marcha).
+func _update_idle(delta: float) -> void:
+	if _busy or _is_demo_playing():
+		return
+	_idle_time += delta
+	if _idle_time >= AFK_SECONDS:
+		_start_demo()
+
+
+## Cualquier actividad reinicia el contador; si la demo está sonando, la corta
+## (consumiendo el input para que no active además un botón del menú).
+func _input(event: InputEvent) -> void:
+	var active := event is InputEventMouseMotion \
+		or (event is InputEventKey and event.pressed and not event.echo) \
+		or (event is InputEventMouseButton and event.pressed) \
+		or (event is InputEventJoypadButton and event.pressed) \
+		or (event is InputEventJoypadMotion and absf(event.axis_value) > 0.5)
+	if not active:
+		return
+	_idle_time = 0.0
+	if _is_demo_playing():
+		_stop_demo()
+		get_viewport().set_input_as_handled()
+
+
+func _is_demo_playing() -> bool:
+	return _demo_vp != null and is_instance_valid(_demo_vp)
+
+
+## Reproduce el vídeo de demo por ENCIMA de todo, SIN tocar la música del menú.
+func _start_demo() -> void:
+	var path := _resolve_demo_video()
+	if path == "":
+		_idle_time = 0.0   # sin vídeo de demo: no reintentar en bucle cerrado
+		return
+	_demo_layer = CanvasLayer.new()
+	_demo_layer.layer = 128            # por encima de toda la UI del menú
+	add_child(_demo_layer)
+	var black := ColorRect.new()
+	black.color = Color.BLACK
+	black.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	black.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_demo_layer.add_child(black)
+	_demo_vp = VideoStreamPlayer.new()
+	_demo_vp.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_demo_vp.expand = true
+	_demo_vp.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	# Muteado: la música del menú (que NO se detiene) sigue siendo el audio.
+	_demo_vp.volume_db = -80.0
+	_demo_vp.stream = load(path)
+	_demo_vp.finished.connect(_stop_demo)
+	_demo_layer.add_child(_demo_vp)
+	_demo_vp.play()
+
+
+## Corta la demo y vuelve al menú; reinicia la cuenta de inactividad.
+func _stop_demo() -> void:
+	if _demo_layer != null and is_instance_valid(_demo_layer):
+		_demo_layer.queue_free()
+	_demo_layer = null
+	_demo_vp = null
+	_idle_time = 0.0
+
+
+## Vídeo de demo por modo (fe4_demo/fe5_demo, independiente del idioma) + genérico.
+func _resolve_demo_video() -> String:
+	var candidates: Array = []
+	candidates.append(DEMO_DIR + ("fe5_demo.ogv" if _mode() == 1 else "fe4_demo.ogv"))
+	candidates.append(DEMO_DIR + "demo.ogv")
+	for p in candidates:
+		if ResourceLoader.exists(p):
+			return p
+	return ""
 
 
 ## Anima el shimmer del "Press Start" (sólo cuando está visible).
