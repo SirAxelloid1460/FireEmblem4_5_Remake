@@ -394,13 +394,8 @@ func _stop_demo() -> void:
 	_goto(St.PRESS_START)
 
 
-<<<<<<< HEAD
-## Vídeo de demo por modo: fe4_demo (FE4/SAGA) o fe5_demo (FE5), con sufijo de
-## idioma y fallback a _en (ver VideoResolver).
-=======
 ## Vídeo de demo en {mode}/demos/{idioma}.ogv (fe4 para FE4/SAGA, fe5 para FE5),
 ## con fallback a en.ogv (ver VideoResolver).
->>>>>>> 5472f5d8683687ea87ab9f694148e388161c518e
 func _resolve_demo_video() -> String:
 	var m := "fe5" if _mode() == 1 else "fe4"
 	return VideoResolver.localized(m, "demos")
