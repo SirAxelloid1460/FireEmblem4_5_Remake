@@ -18,10 +18,13 @@
 #
 # COLOR KEY: el verde LT (129,160,128) se vuelve transparente (con tolerancia).
 #
-# FORMATO GBAFE (el habitual): idle y walk vienen en DOS archivos con tamaños de
-# frame distintos, así que se pasan por separado:
-#   --src-stand  columna 16×48  → 3 frames de 16×16   (idle)
-#   --src-move   columna 32×480 → 12 frames de 32×32  (3 dir × 4, right = mirror)
+# FORMATO GBAFE (el habitual): idle y walk vienen en DOS archivos, cada uno una
+# COLUMNA vertical. No se asume tamaño de frame fijo: se divide la columna en N
+# frames iguales (alto/N, ancho completo):
+#   --src-stand  columna → dividida en --stand-count (3) frames    (idle)
+#   --src-move   columna → dividida en --walk-count (15) frames:
+#        0-3  sidewalk (=left; right se espeja)   4-7  down   8-11 up
+#        12-14 idle repetido → SE DESCARTAN (el mapeo de caminar usa 0-11)
 #
 # La herramienta NO adivina qué frame es cada cosa: idle por --idle; caminar por
 # --walk-<dir> explícitos o por bloques regulares (--walk-order/--walk-len/
@@ -29,14 +32,15 @@
 #
 # Uso (una clase, formato GBAFE con defaults):
 #   python tools/build_map_sprites.py --name Cavalier \
-#       --src-stand in/Cavalier_stand.png --src-move in/Cavalier_move.png
-#   # equivale a: --stand-frame 16x16 --idle 0,1,2 --move-frame 32x32 \
-#   #             --walk-order down,up,left --walk-len 4 --walk-start 0 --mirror-right
+#       --src-stand in/Cavalier-stand.png --src-move in/Cavalier-walk.png
+#   # equivale a: --stand-count 3 --idle 0,1,2 --walk-count 15 \
+#   #             --walk-order left,down,up --walk-len 4 --walk-start 0 --mirror-right
 #
-# Inspeccionar un origen (nº de frames, alto detectado):
-#   python tools/build_map_sprites.py --src-move in/Cavalier_move.png --inspect
+# Inspeccionar un origen (nº de frames por división de columna):
+#   python tools/build_map_sprites.py --src-move in/Cavalier-walk.png --inspect
 #
-# Si up/left salen intercambiados, cambia --walk-order (p.ej. down,left,up).
+# Si las direcciones salen mal, ajusta --walk-order (p.ej. down,left,up). Para
+# forzar tamaño de frame fijo en vez de dividir: --stand-frame WxH / --move-frame WxH.
 #
 # Modo LOTE (por defecto): recorre el DIRECTORIO ACTUAL y TODAS sus subcarpetas,
 # empareja cada '{X}-stand.png' con su '{X}-walk.png' (o -move.png) hermano y los
@@ -119,17 +123,22 @@ def detect_frames_vertical(img, key=KEY_RGB, tol=8):
     return bands
 
 
-def slice_frames(img, frame_wh=None, count=None):
+def slice_frames(img, frame_wh=None, divide=None, count=None):
     """Recorta el origen en frames RGBA limpios de color key.
-    frame_wh=(fw,fh) → rejilla regular; si no → autodetección por bandas."""
+    Prioridad: frame_wh=(fw,fh) → rejilla regular; divide=N → parte la COLUMNA en
+    N frames iguales (alto/N, ancho completo); si no → autodetección por bandas."""
     clean = clean_key(img)
+    w, h = img.size
     frames = []
     if frame_wh:
         fw, fh = frame_wh
-        w, h = img.size
         for ry in range(max(1, h // fh)):
             for cx in range(max(1, w // fw)):
                 frames.append(clean.crop((cx * fw, ry * fh, cx * fw + fw, ry * fh + fh)))
+    elif divide:
+        fh = h // divide
+        for i in range(divide):
+            frames.append(clean.crop((0, i * fh, w, i * fh + fh)))
     else:
         for (top, bot) in detect_frames_vertical(img):
             frames.append(clean.crop((0, top, img.size[0], bot)))
@@ -258,25 +267,25 @@ def _walk_map(frames, args):
     return result
 
 
-def _inspect(path, frame_wh):
+def _inspect(path, frame_wh, divide=None):
     img = Image.open(path)
-    frames = slice_frames(img, frame_wh=frame_wh)
-    print("%s  %s  →  %d frames" % (os.path.basename(path), img.size, len(frames)))
-    if not frame_wh:
-        for i, (t, b) in enumerate(detect_frames_vertical(img)):
-            print("   frame %2d: y=%d..%d (alto %d)" % (i, t, b, b - t))
+    frames = slice_frames(img, frame_wh=frame_wh, divide=divide)
+    how = "rejilla %dx%d" % frame_wh if frame_wh else ("columna/%d" % divide if divide else "autodetección")
+    print("%s  %s  →  %d frames (%s)" % (os.path.basename(path), img.size, len(frames), how))
 
 
 def convert(name, out_dir, args, stand_path=None, move_path=None):
     stand_path = stand_path if stand_path is not None else args.src_stand
     move_path = move_path if move_path is not None else args.src_move
     made = []
-    # STAND
+    # STAND: por defecto divide la columna en --stand-count frames iguales.
+    sf_wh = _frame_wh(args.stand_frame)
+    sf_div = None if sf_wh else args.stand_count
     if stand_path:
         if args.inspect:
-            _inspect(stand_path, _frame_wh(args.stand_frame))
+            _inspect(stand_path, sf_wh, sf_div)
         else:
-            sframes = slice_frames(Image.open(stand_path), _frame_wh(args.stand_frame))
+            sframes = slice_frames(Image.open(stand_path), frame_wh=sf_wh, divide=sf_div)
             idle = _pick(sframes, _parse_idx(args.idle), "idle")
             gray = _pick(sframes, _parse_idx(args.gray), "gray") if args.gray else None
             active = _pick(sframes, _parse_idx(args.active), "active") if args.active else None
@@ -286,12 +295,15 @@ def convert(name, out_dir, args, stand_path=None, move_path=None):
             p = os.path.join(out_dir, "%s-stand.png" % name)
             stand.save(p)
             made.append(p)
-    # MOVE
+    # MOVE: por defecto divide la columna en --walk-count frames iguales (las 3
+    # últimas, que son idle repetido, se descartan por el mapeo de caminar).
+    mf_wh = _frame_wh(args.move_frame)
+    mf_div = None if mf_wh else args.walk_count
     if move_path:
         if args.inspect:
-            _inspect(move_path, _frame_wh(args.move_frame))
+            _inspect(move_path, mf_wh, mf_div)
         else:
-            mframes = slice_frames(Image.open(move_path), _frame_wh(args.move_frame))
+            mframes = slice_frames(Image.open(move_path), frame_wh=mf_wh, divide=mf_div)
             wm = _walk_map(mframes, args)
             if any(wm.values()):
                 move = compose_move(wm, args.feet_y, mirror_right=not args.no_mirror_right)
@@ -363,8 +375,10 @@ def main():
                     help="Carpeta destino (default: 'map_sprites' en el directorio actual). "
                          "Para escribir directo al proyecto: --out ruta/al/repo/assets/GBA/map_sprites.")
 
-    ap.add_argument("--stand-frame", default="16x16", help="Tamaño de frame del idle (default 16x16). Vacío = autodetecta.")
-    ap.add_argument("--move-frame", default="32x32", help="Tamaño de frame del caminar (default 32x32). Vacío = autodetecta.")
+    ap.add_argument("--stand-frame", default="", help="Tamaño de frame fijo 'WxH' del idle. Por defecto NO se usa: se divide la columna en --stand-count.")
+    ap.add_argument("--move-frame", default="", help="Tamaño de frame fijo 'WxH' del caminar. Por defecto NO se usa: se divide la columna en --walk-count.")
+    ap.add_argument("--stand-count", type=int, default=3, help="Nº de frames en que dividir la columna -stand (default 3).")
+    ap.add_argument("--walk-count", type=int, default=15, help="Nº de frames en que dividir la columna -walk (default 15; se usan las 12 primeras).")
     ap.add_argument("--feet-y", type=int, default=FEET_Y, help="Línea de pies en la celda (default %d)." % FEET_Y)
 
     ap.add_argument("--idle", default="0,1,2", help="Índices de frame idle (default 0,1,2).")
@@ -377,8 +391,9 @@ def main():
     ap.add_argument("--walk-left", default="", help="Índices de caminar IZQUIERDA.")
     ap.add_argument("--walk-right", default="", help="Índices de caminar DERECHA.")
     ap.add_argument("--walk-up", default="", help="Índices de caminar ARRIBA.")
-    ap.add_argument("--walk-order", default="down,up,left",
-                    help="Orden de bloques regulares (default GBAFE: down,up,left; right se espeja).")
+    ap.add_argument("--walk-order", default="left,down,up",
+                    help="Orden de bloques del -walk (default GBAFE real: left(sidewalk),down,up; "
+                         "las 3 últimas del origen son idle y se descartan; right se espeja de left).")
     ap.add_argument("--walk-len", type=int, default=4, help="Frames por dirección (default 4).")
     ap.add_argument("--walk-start", type=int, default=0, help="Índice del 1er frame de caminar (default 0).")
     ap.add_argument("--no-mirror-right", action="store_true", help="No generar la derecha espejando la izquierda.")
