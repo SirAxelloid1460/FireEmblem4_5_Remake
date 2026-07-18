@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://diuf21b8ytsxa"
-path="res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-a083211e228375ff4f496a249830b3b3.fontdata"
+uid="uid://djnt3p0dysobe"
+path="res://.godot/imported/NotoKufiArabic-VariableFont_wght.ttf-f5e6e468f659d51f4b3dfba0d9dccc5c.fontdata"
 
 [deps]
 
-source_file="res://Resources/Fonts/IMFellFrenchCanonSC-Regular.ttf"
-dest_files=["res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-a083211e228375ff4f496a249830b3b3.fontdata"]
+source_file="res://Resources/Fonts/NotoKufiArabic-VariableFont_wght.ttf"
+dest_files=["res://.godot/imported/NotoKufiArabic-VariableFont_wght.ttf-f5e6e468f659d51f4b3dfba0d9dccc5c.fontdata"]
 
 [params]
 

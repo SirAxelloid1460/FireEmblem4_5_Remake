@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://diuf21b8ytsxa"
-path="res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-a083211e228375ff4f496a249830b3b3.fontdata"
+uid="uid://dw8qhqkoamclc"
+path="res://.godot/imported/NotoSansTC-VariableFont_wght.ttf-a65ab3385295e8d02ace49466526449c.fontdata"
 
 [deps]
 
-source_file="res://Resources/Fonts/IMFellFrenchCanonSC-Regular.ttf"
-dest_files=["res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-a083211e228375ff4f496a249830b3b3.fontdata"]
+source_file="res://Resources/Fonts/NotoSansTC-VariableFont_wght.ttf"
+dest_files=["res://.godot/imported/NotoSansTC-VariableFont_wght.ttf-a65ab3385295e8d02ace49466526449c.fontdata"]
 
 [params]
 
