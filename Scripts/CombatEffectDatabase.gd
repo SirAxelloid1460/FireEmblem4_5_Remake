@@ -24,8 +24,8 @@ class_name CombatEffectDatabase
 extends RefCounted
 
 
-const EFFECTS_JSON_PATH := "res://assets/combat_effects/combat_effects.json"
-const EFFECTS_IMAGES_PATH := "res://assets/combat_effects/"
+const EFFECTS_JSON_PATH := "res://assets/GBA/combat_effects/combat_effects.json"
+const EFFECTS_IMAGES_PATH := "res://assets/GBA/combat_effects/"
 
 
 static var _effects_cache: Dictionary = {}

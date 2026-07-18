@@ -61,9 +61,10 @@ func _ready() -> void:
 	mat.set_shader_parameter("bright_full", BRIGHT_FULL)
 	mat.set_shader_parameter("max_alpha", MAX_ALPHA)
 	material = mat
-	if not ResourceLoader.exists(SHEET):
+	var sheet_path := AssetSet.p(SHEET)
+	if not ResourceLoader.exists(sheet_path):
 		return
-	var sheet: Texture2D = load(SHEET)
+	var sheet: Texture2D = load(sheet_path)
 	for n in FRAME_COUNT:
 		var at := AtlasTexture.new()
 		at.atlas = sheet

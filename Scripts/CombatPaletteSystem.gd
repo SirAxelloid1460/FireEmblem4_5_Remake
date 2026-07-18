@@ -59,13 +59,13 @@ const PALETTE_H := 2
 ## carpeta combat_palettes) como las de efectos (almacenadas junto al
 ## PNG en combat_effects) funcionen sin configuración adicional.
 const PALETTE_SEARCH_PATHS: Array = [
-	"res://assets/combat_palettes/palette_data/",
-	"res://assets/combat_effects/",
-	"res://assets/combat_anims/",
+	"res://assets/GBA/combat_palettes/palette_data/",
+	"res://assets/GBA/combat_effects/",
+	"res://assets/GBA/combat_anims/",
 ]
 
 ## Path por defecto (legacy, mantenido por compatibilidad).
-const PALETTE_DATA_PATH := "res://assets/combat_palettes/palette_data/"
+const PALETTE_DATA_PATH := "res://assets/GBA/combat_palettes/palette_data/"
 
 
 # Cache de paletas (nid → Array de 16 Color).
@@ -146,7 +146,7 @@ static func load_palette(palette_nid: String) -> Array:
 ## Carga una imagen "indexada en RGB" (formato LT) y le aplica una paleta.
 ## Devuelve un Texture2D con los colores reales y transparencia.
 ##
-##   image_path:  ej. "res://assets/combat_anims/Cavalier-Lance.png"
+##   image_path:  ej. "res://assets/GBA/combat_anims/Cavalier-Lance.png"
 ##   palette_nid: ej. "Cavalier0_GenericBlue"
 ##
 ## Devuelve null si alguno de los dos no existe.

@@ -199,7 +199,7 @@ func _build_bg() -> void:
 ## NinePatchRect con el skin ornamentado, anclado por fracciones del viewport.
 func _nine_panel(al: float, at: float, ar: float, ab: float) -> NinePatchRect:
 	var n := NinePatchRect.new()
-	n.texture = load(PANEL)
+	n.texture = load(AssetSet.p(PANEL))
 	n.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	n.patch_margin_left = 14
 	n.patch_margin_right = 14
@@ -268,7 +268,7 @@ func _make_option(text: String, id: String) -> Button:
 	var fs := _option_font_size()
 	b.custom_minimum_size = Vector2(0, fs + 12)
 	b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	var f := load(SERIF_FONT)
+	var f := load(AssetSet.p(SERIF_FONT))
 	if f != null:
 		b.add_theme_font_override("font", f)
 	b.add_theme_font_size_override("font_size", fs)
@@ -293,8 +293,9 @@ func _build_cursor() -> void:
 	_cursor.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	_cursor.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	_cursor.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	if ResourceLoader.exists(HAND):
-		_cursor.texture = load(HAND)
+	var hand_path := AssetSet.p(HAND)
+	if ResourceLoader.exists(hand_path):
+		_cursor.texture = load(hand_path)
 	_cursor.size = Vector2(15 * HAND_SCALE, 12 * HAND_SCALE)
 	_cursor.visible = false
 	add_child(_cursor)
@@ -383,7 +384,7 @@ func _play_sfx(sfx_name: String) -> void:
 		if AudioServer.get_bus_index("SFX") >= 0:
 			_sfx.bus = "SFX"
 		add_child(_sfx)
-	var path := "res://assets/sfx/%s.ogg" % sfx_name
+	var path := AssetSet.p("res://assets/sfx/%s.ogg" % sfx_name)
 	if not ResourceLoader.exists(path):
 		return
 	_sfx.stream = load(path)

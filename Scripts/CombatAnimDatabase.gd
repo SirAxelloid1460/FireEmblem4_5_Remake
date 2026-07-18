@@ -41,7 +41,7 @@ extends RefCounted
 
 
 ## Carpeta donde viven los sheets generados por build_combat_sheet.py.
-const ANIMS_ROOT: String = "res://assets/combat_anims/"
+const ANIMS_ROOT: String = "res://assets/GBA/combat_anims/"
 
 ## Cache de animaciones cargadas.  Clave: "{NID}_{Variant}_{Weapon}".
 ## Valor: { "sheet": Texture2D, "data": Dictionary, "ok": bool, "name": String }.

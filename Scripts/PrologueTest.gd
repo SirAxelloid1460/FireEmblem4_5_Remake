@@ -41,7 +41,7 @@ extends Node2D
 # ── Configuración ────────────────────────────────────────────────────────────
 
 const DATA_ROOT     := "res://data/fe4/"
-const TILEMAP_ROOT  := "res://assets/tilemaps/FE4/"
+const TILEMAP_ROOT  := "res://assets/GBA/tilemaps/FE4/"
 const CHAPTER_PATH  := "res://data/fe4/levels/0.json"
 
 # Si está activo, hace prints muy verbosos del estado tras cargar.
@@ -112,7 +112,7 @@ func _ready() -> void:
 		_dump_chapter_state()
 
 	# 5.5. Pintar el mapa pre-renderizado como fondo.  El PNG está en
-	#      res://assets/tilesets/FE4/Prologue.png y mide 1024×512 (64×32 tiles
+	#      res://assets/GBA/tilesets/FE4/Prologue.png y mide 1024×512 (64×32 tiles
 	#      a 16px nativo).  MapBackground lo escala al cell_size del Grid.
 	_setup_map_background()
 
@@ -131,9 +131,9 @@ func _ready() -> void:
 func _setup_map_background() -> void:
 	# Buscar el Prologue.png en la nueva estructura tilesets/{FE4,FE5,raíz}.
 	var bg_path := ""
-	for base in ["res://assets/tilesets/FE4/",
-			"res://assets/tilesets/FE5/",
-			"res://assets/tilesets/"]:
+	for base in ["res://assets/GBA/tilesets/FE4/",
+			"res://assets/GBA/tilesets/FE5/",
+			"res://assets/GBA/tilesets/"]:
 		var candidate: String = base + "Prologue.png"
 		if ResourceLoader.exists(candidate):
 			bg_path = candidate

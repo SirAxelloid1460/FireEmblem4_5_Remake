@@ -322,7 +322,7 @@ func play_promotion_sound():
 	"""Reproduce el sonido de promoción"""
 	# TODO: Cargar y reproducir sonido
 	# var sfx = AudioStreamPlayer.new()
-	# sfx.stream = preload("res://assets/audio/sfx/promotion.wav")
+	# sfx.stream = preload("res://assets/GBA/audio/sfx/promotion.wav")
 	# add_child(sfx)
 	# sfx.play()
 	pass

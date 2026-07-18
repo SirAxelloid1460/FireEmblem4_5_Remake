@@ -32,6 +32,7 @@ static func localized(mode: String, kind: String) -> String:
 	if lang != "en":
 		candidates.append(dir + "en.ogv")
 	for p in candidates:
-		if ResourceLoader.exists(p):
-			return p
+		var rp := AssetSet.p(p)   # re-enraíza al set gráfico activo (fallback GBA)
+		if ResourceLoader.exists(rp):
+			return rp
 	return ""

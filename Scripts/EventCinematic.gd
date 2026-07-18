@@ -48,12 +48,12 @@ func build_cinematic_sequence() -> Array[Dictionary]:
 			{
 				"character": "Eirika",
 				"text": "¿Quién eres tú?",
-				"portrait": "res://assets/portraits/eirika.png"
+				"portrait": "res://assets/GBA/portraits/eirika.png"
 			},
 			{
 				"character": "Misterioso Caballero",
 				"text": "Mi nombre no importa. He venido a advertirte...",
-				"portrait": "res://assets/portraits/mysterious.png"
+				"portrait": "res://assets/GBA/portraits/mysterious.png"
 			}
 		]
 	})

@@ -858,7 +858,7 @@ func _resolve_map_sprite_nid() -> String:
 	elif gender == "M":
 		suffixes = ["Male", "M"]
 	for suf in suffixes:
-		if ResourceLoader.exists("res://assets/map_sprites/%s%s-stand.png" % [ms, suf]):
+		if ResourceLoader.exists("res://assets/GBA/map_sprites/%s%s-stand.png" % [ms, suf]):
 			return ms + suf
 	return ms
 

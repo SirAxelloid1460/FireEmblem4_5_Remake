@@ -78,7 +78,7 @@ func _ready() -> void:
 ## Si los archivos no existen, queda sin sprite (puedes detectar con
 ## has_sprite()).
 func load_class(class_nid: String, team: String = "player",
-		asset_root: String = "res://assets/map_sprites/") -> bool:
+		asset_root: String = "res://assets/GBA/map_sprites/") -> bool:
 	var cache_key := "%s:%s" % [class_nid, team]
 	var frames: SpriteFrames
 	if _frames_cache.has(cache_key):

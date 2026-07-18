@@ -225,14 +225,14 @@ func create_stat_line(stat_name: String, gain: int) -> HBoxContainer:
 func play_level_up_sound():
 	"""Reproduce el sonido de level up"""
 	# TODO: Cargar y reproducir tu sonido de level up
-	# sfx_player.stream = preload("res://assets/audio/sfx/level_up.wav")
+	# sfx_player.stream = preload("res://assets/GBA/audio/sfx/level_up.wav")
 	# sfx_player.play()
 	pass
 
 func play_stat_gain_sound():
 	"""Reproduce el sonido de ganancia de stat"""
 	# TODO: Cargar y reproducir tu sonido de stat gain
-	# sfx_player.stream = preload("res://assets/audio/sfx/stat_gain.wav")
+	# sfx_player.stream = preload("res://assets/GBA/audio/sfx/stat_gain.wav")
 	# sfx_player.play()
 	pass
 

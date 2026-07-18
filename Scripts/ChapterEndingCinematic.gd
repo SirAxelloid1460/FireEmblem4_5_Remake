@@ -33,17 +33,17 @@ func build_cinematic_sequence() -> Array[Dictionary]:
 				{
 					"character": "Eirika",
 					"text": "Lo hemos logrado. La fortaleza es nuestra.",
-					"portrait": "res://assets/portraits/eirika.png"
+					"portrait": "res://assets/GBA/portraits/eirika.png"
 				},
 				{
 					"character": "Seth",
 					"text": "Una gran victoria, mi señora. Pero el camino aún es largo.",
-					"portrait": "res://assets/portraits/seth.png"
+					"portrait": "res://assets/GBA/portraits/seth.png"
 				},
 				{
 					"character": "Eirika",
 					"text": "Lo sé. Debemos continuar hacia el norte.",
-					"portrait": "res://assets/portraits/eirika.png"
+					"portrait": "res://assets/GBA/portraits/eirika.png"
 				}
 			]
 		})
