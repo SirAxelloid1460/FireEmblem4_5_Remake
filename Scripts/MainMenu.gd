@@ -58,7 +58,7 @@ const PRESS_SCALE    := 5
 
 # Modo DEMO / attract: tras AFK_SECONDS sin input en el menú, reproduce el vídeo
 # de demo ENCIMA de todo (sin parar la música); cualquier input lo corta.
-const AFK_SECONDS := 30.0
+const AFK_SECONDS := 15.0
 const DEMO_DIR    := "res://assets/videos/"
 
 # UI de botones estilo FE: placa ornamentada individual + cursor-espada.
