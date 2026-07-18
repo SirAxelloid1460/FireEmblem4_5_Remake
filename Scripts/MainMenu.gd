@@ -56,6 +56,11 @@ const PRESS_START_IMG := "res://assets/sprites/press_start.png"
 const PRESS_FRAMES   := 8
 const PRESS_SCALE    := 5
 
+# Modo DEMO / attract: tras AFK_SECONDS sin input en el menú, reproduce el vídeo
+# de demo ENCIMA de todo (sin parar la música); cualquier input lo corta.
+const AFK_SECONDS := 30.0
+const DEMO_DIR    := "res://assets/videos/"
+
 # UI de botones estilo FE: placa ornamentada individual + cursor-espada.
 const PLATE      := "res://assets/menus/title_menu_dark.png"           # placa normal
 const PLATE_HL   := "res://assets/menus/title_menu_dark_highlight.png" # placa enfocada
@@ -118,6 +123,11 @@ var _difficulty: String = "Normal"
 
 var _sfx: AudioStreamPlayer                # reproductor de SFX del menú
 var _skip_next_nav_sfx: bool = false       # evita el tick de navegación en el auto-foco al entrar a un panel
+
+# Modo DEMO / attract.
+var _idle_time: float = 0.0
+var _demo_layer: CanvasLayer = null
+var _demo_vp: VideoStreamPlayer = null
 
 
 # ============================================================
@@ -265,6 +275,83 @@ func _build_press_start() -> void:
 func _process(delta: float) -> void:
 	_animate_press(delta)
 	_animate_cursor(delta)
+	_update_idle(delta)
+
+
+## Cuenta la inactividad y lanza la demo tras AFK_SECONDS (salvo en submenús o
+## si la demo ya está en marcha).
+func _update_idle(delta: float) -> void:
+	if _busy or _is_demo_playing():
+		return
+	_idle_time += delta
+	if _idle_time >= AFK_SECONDS:
+		_start_demo()
+
+
+## Cualquier actividad reinicia el contador; si la demo está sonando, la corta
+## (consumiendo el input para que no active además un botón del menú).
+func _input(event: InputEvent) -> void:
+	var active := event is InputEventMouseMotion \
+		or (event is InputEventKey and event.pressed and not event.echo) \
+		or (event is InputEventMouseButton and event.pressed) \
+		or (event is InputEventJoypadButton and event.pressed) \
+		or (event is InputEventJoypadMotion and absf(event.axis_value) > 0.5)
+	if not active:
+		return
+	_idle_time = 0.0
+	if _is_demo_playing():
+		_stop_demo()
+		get_viewport().set_input_as_handled()
+
+
+func _is_demo_playing() -> bool:
+	return _demo_vp != null and is_instance_valid(_demo_vp)
+
+
+## Reproduce el vídeo de demo por ENCIMA de todo, SIN tocar la música del menú.
+func _start_demo() -> void:
+	var path := _resolve_demo_video()
+	if path == "":
+		_idle_time = 0.0   # sin vídeo de demo: no reintentar en bucle cerrado
+		return
+	_demo_layer = CanvasLayer.new()
+	_demo_layer.layer = 128            # por encima de toda la UI del menú
+	add_child(_demo_layer)
+	var black := ColorRect.new()
+	black.color = Color.BLACK
+	black.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	black.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_demo_layer.add_child(black)
+	_demo_vp = VideoStreamPlayer.new()
+	_demo_vp.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_demo_vp.expand = true
+	_demo_vp.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	# Muteado: la música del menú (que NO se detiene) sigue siendo el audio.
+	_demo_vp.volume_db = -80.0
+	_demo_vp.stream = load(path)
+	_demo_vp.finished.connect(_stop_demo)
+	_demo_layer.add_child(_demo_vp)
+	_demo_vp.play()
+
+
+## Corta la demo y vuelve al menú; reinicia la cuenta de inactividad.
+func _stop_demo() -> void:
+	if _demo_layer != null and is_instance_valid(_demo_layer):
+		_demo_layer.queue_free()
+	_demo_layer = null
+	_demo_vp = null
+	_idle_time = 0.0
+
+
+## Vídeo de demo: mode-specific opcional (demo_fe4/demo_fe5) + genérico demo.ogv.
+func _resolve_demo_video() -> String:
+	var candidates: Array = []
+	candidates.append(DEMO_DIR + ("demo_fe5.ogv" if _mode() == 1 else "demo_fe4.ogv"))
+	candidates.append(DEMO_DIR + "demo.ogv")
+	for p in candidates:
+		if ResourceLoader.exists(p):
+			return p
+	return ""
 
 
 ## Anima el shimmer del "Press Start" (sólo cuando está visible).
