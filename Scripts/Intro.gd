@@ -9,11 +9,11 @@ class_name IntroScreen
 # propio fondo y reproduce el tema de Fire Emblem como música.
 #
 # Vídeos por modo (GameMode: FE4_ONLY=0, FE5_ONLY=1, SAGA=2):
-#   FE4 / SAGA → assets/videos/fe4_{idioma}.ogv   (SAGA arranca con FE4)
-#   FE5        → assets/videos/fe5_{idioma}.ogv   (intro de Thracia 776)
-# El sufijo de idioma sale del locale (ja → jp); si no existe el del idioma
-# actual se cae a _en (ver VideoResolver). Si no hay ninguno, se salta directo
-# al menú (sin romper).
+#   FE4 / SAGA → assets/videos/fe4/intros/{idioma}.ogv   (SAGA arranca con FE4)
+#   FE5        → assets/videos/fe5/intros/{idioma}.ogv   (intro de Thracia 776)
+# El idioma sale del locale (ja → jp); si no existe el del idioma actual se cae a
+# en.ogv de la misma carpeta (ver VideoResolver). Si no hay ninguno, se salta
+# directo al menú (sin romper).
 # ============================================================
 
 const NEXT_SCENE := "res://Scenes/main_menu.tscn"
@@ -50,8 +50,8 @@ func _ready() -> void:
 func _resolve_video() -> String:
 	var gm := get_node_or_null("/root/GameMode")
 	var mode := int(gm.current_mode) if gm != null and "current_mode" in gm else 0
-	var base := "fe5" if mode == 1 else "fe4"   # FE5_ONLY=1; FE4/SAGA arrancan con FE4
-	return VideoResolver.localized(base)
+	var m := "fe5" if mode == 1 else "fe4"   # FE5_ONLY=1; FE4/SAGA arrancan con FE4
+	return VideoResolver.localized(m, "intros")
 
 
 func _unhandled_input(event: InputEvent) -> void:
