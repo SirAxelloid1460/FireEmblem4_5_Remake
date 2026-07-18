@@ -291,11 +291,12 @@ func _update_idle(delta: float) -> void:
 ## Cualquier actividad reinicia el contador; si la demo está activa (transición
 ## o reproducción), la corta (consumiendo el input para que no active un botón).
 func _input(event: InputEvent) -> void:
-	var active: bool = event is InputEventMouseMotion \
-		or (event is InputEventKey and event.pressed and not event.echo) \
+	# Sólo cuenta como actividad una PULSACIÓN discreta (tecla, click o botón de
+	# mando) con el juego en primer plano. El MOVIMIENTO del ratón (o del stick)
+	# NO cuenta: no reinicia la inactividad ni corta la demo.
+	var active: bool = (event is InputEventKey and event.pressed and not event.echo) \
 		or (event is InputEventMouseButton and event.pressed) \
-		or (event is InputEventJoypadButton and event.pressed) \
-		or (event is InputEventJoypadMotion and absf(event.axis_value) > 0.5)
+		or (event is InputEventJoypadButton and event.pressed)
 	if not active:
 		return
 	_idle_time = 0.0
