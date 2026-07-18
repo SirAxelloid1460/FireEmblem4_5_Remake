@@ -309,9 +309,10 @@ func _is_demo_active() -> bool:
 	return _demo_layer != null and is_instance_valid(_demo_layer)
 
 
-## Entra a la demo con FUNDIDO: fade-out a negro del menú y, cuando la pantalla
-## se vuelve a ver (fade-in), la demo ARRANCA. Va por encima de todo y no toca la
-## música del menú.
+## Entra a la demo con FUNDIDO, en este orden exacto:
+##   Menú → fade-out (todo negro) → aparece el vídeo PAUSADO (1er frame) →
+##   fade-in (se ve todo otra vez) → al COMPLETARSE el fade-in, arranca el vídeo.
+## Va por encima de todo y no toca la música del menú.
 func _start_demo() -> void:
 	var path := _resolve_demo_video()
 	if path == "":
@@ -350,14 +351,21 @@ func _start_demo() -> void:
 	black.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_demo_layer.add_child(black)
 	_demo_layer.move_child(black, 0)   # detrás del vídeo y de la cubierta
-	# 2) La demo ARRANCA cuando la pantalla se vuelve a ver: play + fade-in.
+	# 2) El vídeo APARECE pero PAUSADO (congelado en el 1er frame), aún en negro.
 	_demo_vp.visible = true
 	_demo_vp.play()
+	_demo_vp.paused = true
+	# 3) Fade-in: se vuelve a ver todo (con el vídeo quieto en el 1er frame).
 	var t2 := create_tween()
 	t2.tween_property(cover, "color:a", 0.0, FADE_TIME)
 	await t2.finished
-	if _is_demo_active() and is_instance_valid(cover):
+	if not _is_demo_active():
+		return   # cortada por input durante el fade-in
+	if is_instance_valid(cover):
 		cover.queue_free()
+	# 4) Fade-in COMPLETADO: ahora sí arranca el vídeo.
+	if _demo_vp != null and is_instance_valid(_demo_vp):
+		_demo_vp.paused = false
 
 
 ## Corta la demo y vuelve al menú; reinicia la cuenta de inactividad.
