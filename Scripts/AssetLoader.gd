@@ -295,6 +295,11 @@ func _get_icon_sheet(base_path: String, sheet_name: String, size: int) -> Textur
 ##   sheet_name: nombre del archivo (sin ext).
 ##   coord:      coordenada del icono dentro de la sheet (en celdas).
 ##   size:       tamaño del icono (16, 32, 6).
+## NOTA (autoescalado pendiente): `size` es la celda GBA. Una hoja de iconos HD 2×
+## (celda 32) se recortaría mal aquí, porque no conocemos nº de columnas ni el
+## ancho GBA base desde una sola hoja para derivar la celda real. Queda como
+## follow-up (requiere que el sistema de iconos conozca su rejilla o comparar con
+## la hoja GBA). Con set GBA/fallback funciona correctamente.
 func get_icon_atlas(sheet_name: String, coord: Vector2i,
 		size: int = 16) -> AtlasTexture:
 	var sheet: Texture2D

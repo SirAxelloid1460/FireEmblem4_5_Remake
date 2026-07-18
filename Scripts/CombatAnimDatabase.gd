@@ -41,7 +41,7 @@ extends RefCounted
 
 
 ## Carpeta donde viven los sheets generados por build_combat_sheet.py.
-const ANIMS_ROOT: String = "res://assets/GBA/combat_anims/"
+const ANIMS_ROOT: String = "res://assets/combat_anims/"
 
 ## Cache de animaciones cargadas.  Clave: "{NID}_{Variant}_{Weapon}".
 ## Valor: { "sheet": Texture2D, "data": Dictionary, "ok": bool, "name": String }.
@@ -66,10 +66,11 @@ static func _resolve_paths(anim_name: String) -> Dictionary:
 	var us := anim_name.rfind("_")
 	if us > 0:
 		folder = anim_name.substr(0, us)
-	var sub_png := ANIMS_ROOT + folder + "/" + anim_name + ".png"
+	# Rutas LÓGICAS re-enraizadas al set gráfico activo (fallback a GBA).
+	var sub_png := AssetSet.p(ANIMS_ROOT + folder + "/" + anim_name + ".png")
 	if ResourceLoader.exists(sub_png):
-		return { "png": sub_png, "json": ANIMS_ROOT + folder + "/" + anim_name + ".json" }
-	return { "png": ANIMS_ROOT + anim_name + ".png", "json": ANIMS_ROOT + anim_name + ".json" }
+		return { "png": sub_png, "json": AssetSet.p(ANIMS_ROOT + folder + "/" + anim_name + ".json") }
+	return { "png": AssetSet.p(ANIMS_ROOT + anim_name + ".png"), "json": AssetSet.p(ANIMS_ROOT + anim_name + ".json") }
 
 
 static func load_anim(anim_name: String) -> Dictionary:
