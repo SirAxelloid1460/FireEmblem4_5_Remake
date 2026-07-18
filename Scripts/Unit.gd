@@ -849,18 +849,28 @@ func _resolve_map_sprite_nid() -> String:
 			ms = str(cd.map_sprite_nid)
 	if ms == "":
 		ms = unit_class   # fallback: el nid de clase suele coincidir (60/64)
-	# Variante por GÉNERO si existe el asset: p.ej. unidad F con clase "Mage" usa
-	# "MageFemale"/"MageF" si están; si no, cae al sprite base.  Convenciones de
-	# sufijo aceptadas (en orden de preferencia): Female/F para F, Male/M para M.
+	# Orden de preferencia (la EXISTENCIA se comprueba en el set gráfico ACTIVO vía
+	# AssetSet.p, no fija a GBA — así el Original/HD también resuelven variantes):
+	#   1) {Clase}_{Personaje}  sprite propio del personaje (unit_name)
+	#   2) {Clase}{Género}      Female/Male (F/M como alias antiguo aceptado)
+	#   3) {Clase}              universal (fallback)
+	if unit_name != "" and _map_sprite_variant_exists(ms + "_" + unit_name):
+		return ms + "_" + unit_name
 	var suffixes: Array = []
 	if gender == "F":
 		suffixes = ["Female", "F"]
 	elif gender == "M":
 		suffixes = ["Male", "M"]
 	for suf in suffixes:
-		if ResourceLoader.exists("res://assets/GBA/map_sprites/%s%s-stand.png" % [ms, suf]):
+		if _map_sprite_variant_exists(ms + suf):
 			return ms + suf
 	return ms
+
+
+## ¿Existe el -stand.png de esta variante de map sprite en el set gráfico activo?
+## (Re-enraíza la ruta lógica al set/juego actual con fallback a GBA.)
+func _map_sprite_variant_exists(nid: String) -> bool:
+	return ResourceLoader.exists(AssetSet.p("res://assets/map_sprites/%s-stand.png" % nid))
 
 ## nid base de la animación de combate de esta unidad.  El resolver construye
 ## los nombres como {combat_anim_nid}_{Variant}_{Weapon}, así que NO debe usar
