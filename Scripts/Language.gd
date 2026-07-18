@@ -38,12 +38,12 @@ func _option_font_size() -> int:
 
 # Sube los botones dentro del panel (el panel sigue centrado).
 func _content_lift() -> int:
-	return 24
+	return 16
 
 
-# La bandera sube mucho menos que los botones (24 la subía demasiado).
+# La bandera no se sube (a 1200x800 se salía un poco por arriba).
 func _preview_lift() -> int:
-	return 6
+	return 0
 
 
 func _preview_texture(id: String) -> Texture2D:
