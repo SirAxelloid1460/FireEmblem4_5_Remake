@@ -120,12 +120,19 @@ func _load_panorama() -> bool:
 		}
 
 	_frame_count = int(_sheet_data.get("frame_count", 1))
-	var fsize: Array = _sheet_data.get("frame_size", [sheet.get_width(), sheet.get_height()])
-	_frame_w = int(fsize[0])
-	_frame_h = int(fsize[1])
 	var grid: Array = _sheet_data.get("grid", [_frame_count, 1])
 	_grid_cols = int(grid[0])
 	_grid_rows = int(grid[1])
+	# El tamaño de frame se DERIVA de la hoja real y del grid (lógico), no del
+	# frame_size del JSON: así una hoja de otro set (p. ej. HD 2×) que comparta el
+	# mismo JSON se recorta bien. Solo si el grid es inválido se cae al JSON/hoja.
+	if _grid_cols > 0 and _grid_rows > 0:
+		_frame_w = int(sheet.get_width() / _grid_cols)
+		_frame_h = int(sheet.get_height() / _grid_rows)
+	else:
+		var fsize: Array = _sheet_data.get("frame_size", [sheet.get_width(), sheet.get_height()])
+		_frame_w = int(fsize[0])
+		_frame_h = int(fsize[1])
 	_fps = fps_override if fps_override > 0 else int(_sheet_data.get("fps", 8))
 	# Loop según preferencia exportada.
 	match loop_mode:

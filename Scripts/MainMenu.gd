@@ -105,6 +105,11 @@ var _press: TextureRect       # "Press Start" animado
 var _press_frame: int = 0
 var _press_dir: int = 1
 var _press_accum: float = 0.0
+# Tamaño de frame REAL de la tira press_start, derivado de la textura (rejilla
+# lógica: 1 col × PRESS_FRAMES filas). En GBA da 96×16; una tira HD 2× (192×32)
+# se recorta bien sin tocar constantes.
+var _press_fw: int = 96
+var _press_fh: int = 16
 var _fade: ColorRect
 var _cursor: TextureRect          # cursor-espada FE (cursor_dragon)
 var _cursor_target: Control = null         # botón enfocado al que sigue el cursor
@@ -259,12 +264,20 @@ func _build_press_start() -> void:
 	_press.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	var press_path := AssetSet.p(PRESS_START_IMG)
 	if ResourceLoader.exists(press_path):
+		var sheet: Texture2D = load(press_path)
+		# Frame = ancho completo × (alto / PRESS_FRAMES). GBA: 96×16.
+		if sheet.get_width() > 0:
+			_press_fw = sheet.get_width()
+			_press_fh = int(sheet.get_height() / float(PRESS_FRAMES))
 		var at := AtlasTexture.new()
-		at.atlas = load(press_path)
-		at.region = Rect2(0, 0, 96, 16)
+		at.atlas = sheet
+		at.region = Rect2(0, 0, _press_fw, _press_fh)
 		_press.texture = at
-	var w := 96 * PRESS_SCALE
-	var h := 16 * PRESS_SCALE
+	# Tamaño en pantalla derivado del frame nativo GBA de referencia (96×16),
+	# no del real: así una tira HD 2× se ve al MISMO tamaño (más nítida, no mayor).
+	var k := float(_press_fw) / 96.0
+	var w: float = (_press_fw / k) * PRESS_SCALE
+	var h: float = (_press_fh / k) * PRESS_SCALE
 	_press.custom_minimum_size = Vector2(w, h)
 	_press.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
 	_press.offset_left = -w / 2.0
@@ -411,7 +424,7 @@ func _animate_press(delta: float) -> void:
 	elif _press_frame <= 0:
 		_press_frame = 0
 		_press_dir = 1
-	at.region = Rect2(0, _press_frame * 16, 96, 16)
+	at.region = Rect2(0, _press_frame * _press_fh, _press_fw, _press_fh)
 
 
 ## Bobeo vertical ESCALONADO (look GBA) + seguimiento del botón enfocado (para que

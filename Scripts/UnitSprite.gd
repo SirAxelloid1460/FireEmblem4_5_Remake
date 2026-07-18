@@ -78,7 +78,7 @@ func _ready() -> void:
 ## Si los archivos no existen, queda sin sprite (puedes detectar con
 ## has_sprite()).
 func load_class(class_nid: String, team: String = "player",
-		asset_root: String = "res://assets/GBA/map_sprites/") -> bool:
+		asset_root: String = "res://assets/map_sprites/") -> bool:
 	var cache_key := "%s:%s" % [class_nid, team]
 	var frames: SpriteFrames
 	if _frames_cache.has(cache_key):
@@ -107,26 +107,37 @@ func load_class(class_nid: String, team: String = "player",
 ##
 ## Se aplica color key transparente al PNG bruto antes de generar atlases.
 static func _build_sprite_frames(class_nid: String, asset_root: String) -> SpriteFrames:
-	var stand_path := "%s%s-stand.png" % [asset_root, class_nid]
-	var move_path  := "%s%s-move.png"  % [asset_root, class_nid]
+	# Rutas LÓGICAS re-enraizadas al set gráfico activo (fallback a GBA).
+	var stand_path := AssetSet.p("%s%s-stand.png" % [asset_root, class_nid])
+	var move_path  := AssetSet.p("%s%s-move.png"  % [asset_root, class_nid])
 	var stand_tex := _load_with_colorkey(stand_path)
 	var move_tex  := _load_with_colorkey(move_path)
 	if stand_tex == null and move_tex == null:
 		return null
 
+	# Tamaño de celda DERIVADO de la hoja real (rejilla lógica 3×3 / 4×4). En GBA
+	# da 64×48 y 48×40 (idéntico a STAND/MOVE_FRAME_SIZE); una hoja HD 2× se
+	# recorta correctamente sin tocar constantes.
+	var stand_fs := STAND_FRAME_SIZE
+	if stand_tex != null and stand_tex.get_width() > 0:
+		stand_fs = Vector2i(stand_tex.get_width() / 3, stand_tex.get_height() / 3)
+	var move_fs := MOVE_FRAME_SIZE
+	if move_tex != null and move_tex.get_width() > 0:
+		move_fs = Vector2i(move_tex.get_width() / 4, move_tex.get_height() / 4)
+
 	var sf := SpriteFrames.new()
 
-	# Stand: 3 filas × 3 cols, celdas 64×48.
+	# Stand: 3 filas × 3 cols.
 	if stand_tex != null:
-		_add_strip(sf, "passive", stand_tex, 0, 3, STAND_FRAME_SIZE, STAND_FPS, true)
-		_add_strip(sf, "gray",    stand_tex, 1, 3, STAND_FRAME_SIZE, STAND_FPS, true)
-		_add_strip(sf, "active",  stand_tex, 2, 3, STAND_FRAME_SIZE, ACTIVE_FPS, true)
-	# Move: 4 filas × 4 cols, celdas 48×40.
+		_add_strip(sf, "passive", stand_tex, 0, 3, stand_fs, STAND_FPS, true)
+		_add_strip(sf, "gray",    stand_tex, 1, 3, stand_fs, STAND_FPS, true)
+		_add_strip(sf, "active",  stand_tex, 2, 3, stand_fs, ACTIVE_FPS, true)
+	# Move: 4 filas × 4 cols.
 	if move_tex != null:
-		_add_strip(sf, "down",  move_tex, 0, 4, MOVE_FRAME_SIZE, MOVE_FPS, true)
-		_add_strip(sf, "left",  move_tex, 1, 4, MOVE_FRAME_SIZE, MOVE_FPS, true)
-		_add_strip(sf, "right", move_tex, 2, 4, MOVE_FRAME_SIZE, MOVE_FPS, true)
-		_add_strip(sf, "up",    move_tex, 3, 4, MOVE_FRAME_SIZE, MOVE_FPS, true)
+		_add_strip(sf, "down",  move_tex, 0, 4, move_fs, MOVE_FPS, true)
+		_add_strip(sf, "left",  move_tex, 1, 4, move_fs, MOVE_FPS, true)
+		_add_strip(sf, "right", move_tex, 2, 4, move_fs, MOVE_FPS, true)
+		_add_strip(sf, "up",    move_tex, 3, 4, move_fs, MOVE_FPS, true)
 	return sf
 
 
