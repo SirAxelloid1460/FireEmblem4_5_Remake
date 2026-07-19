@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://djnt3p0dysobe"
-path="res://.godot/imported/NotoKufiArabic-VariableFont_wght.ttf-f5e6e468f659d51f4b3dfba0d9dccc5c.fontdata"
+path="res://.godot/imported/NotoKufiArabic-VariableFont_wght.ttf-856729b68b62188ad934695926af973d.fontdata"
 
 [deps]
 
-source_file="res://Resources/Fonts/NotoKufiArabic-VariableFont_wght.ttf"
-dest_files=["res://.godot/imported/NotoKufiArabic-VariableFont_wght.ttf-f5e6e468f659d51f4b3dfba0d9dccc5c.fontdata"]
+source_file="res://assets/GBA/fonts/NotoKufiArabic-VariableFont_wght.ttf"
+dest_files=["res://.godot/imported/NotoKufiArabic-VariableFont_wght.ttf-856729b68b62188ad934695926af973d.fontdata"]
 
 [params]
 
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=1
 keep_rounding_remainders=true

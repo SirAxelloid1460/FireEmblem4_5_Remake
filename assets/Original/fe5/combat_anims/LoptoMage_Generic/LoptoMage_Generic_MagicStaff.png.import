@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6mm0dl45qxjj"
-path="res://.godot/imported/LoptoMage_Generic_MagicStaff.png-1f6853ac9672e7ba3b806acc85bf1eaa.ctex"
+path="res://.godot/imported/LoptoMage_Generic_MagicStaff.png-83a83b7dee8ba27cb8b5eb0e64631050.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GBA/combat_anims/LoptoMage_Generic/LoptoMage_Generic_MagicStaff.png"
-dest_files=["res://.godot/imported/LoptoMage_Generic_MagicStaff.png-1f6853ac9672e7ba3b806acc85bf1eaa.ctex"]
+source_file="res://assets/Original/fe5/combat_anims/LoptoMage_Generic/LoptoMage_Generic_MagicStaff.png"
+dest_files=["res://.godot/imported/LoptoMage_Generic_MagicStaff.png-83a83b7dee8ba27cb8b5eb0e64631050.ctex"]
 
 [params]
 

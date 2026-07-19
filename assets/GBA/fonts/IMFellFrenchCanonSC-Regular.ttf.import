@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://diuf21b8ytsxa"
-path="res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-a083211e228375ff4f496a249830b3b3.fontdata"
+path="res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-b748ea443e481577d738e40f821ef907.fontdata"
 
 [deps]
 
-source_file="res://Resources/Fonts/IMFellFrenchCanonSC-Regular.ttf"
-dest_files=["res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-a083211e228375ff4f496a249830b3b3.fontdata"]
+source_file="res://assets/GBA/fonts/IMFellFrenchCanonSC-Regular.ttf"
+dest_files=["res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-b748ea443e481577d738e40f821ef907.fontdata"]
 
 [params]
 
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=1
 keep_rounding_remainders=true

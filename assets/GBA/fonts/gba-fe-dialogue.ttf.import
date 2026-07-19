@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b5t0rw8jc14x7"
-path="res://.godot/imported/gba-fe-dialogue.ttf-0ebd250d64429feb332b8e39ec8bca36.fontdata"
+path="res://.godot/imported/gba-fe-dialogue.ttf-c82f55aa2ec9d5e0fdc4d7f850b7ba34.fontdata"
 
 [deps]
 
-source_file="res://Resources/Fonts/gba-fe-dialogue.ttf"
-dest_files=["res://.godot/imported/gba-fe-dialogue.ttf-0ebd250d64429feb332b8e39ec8bca36.fontdata"]
+source_file="res://assets/GBA/fonts/gba-fe-dialogue.ttf"
+dest_files=["res://.godot/imported/gba-fe-dialogue.ttf-c82f55aa2ec9d5e0fdc4d7f850b7ba34.fontdata"]
 
 [params]
 
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=1
 keep_rounding_remainders=true

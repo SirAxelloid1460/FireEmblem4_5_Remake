@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dn0v0h7e1sle8"
-path="res://.godot/imported/NotoSansKR-VariableFont_wght.ttf-f0811ce464bcc84660cdd4e38f080ed0.fontdata"
+path="res://.godot/imported/NotoSansKR-VariableFont_wght.ttf-4c4b993ee1589e7d389ba5f13f1c6136.fontdata"
 
 [deps]
 
-source_file="res://Resources/Fonts/NotoSansKR-VariableFont_wght.ttf"
-dest_files=["res://.godot/imported/NotoSansKR-VariableFont_wght.ttf-f0811ce464bcc84660cdd4e38f080ed0.fontdata"]
+source_file="res://assets/GBA/fonts/NotoSansKR-VariableFont_wght.ttf"
+dest_files=["res://.godot/imported/NotoSansKR-VariableFont_wght.ttf-4c4b993ee1589e7d389ba5f13f1c6136.fontdata"]
 
 [params]
 
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=1
 keep_rounding_remainders=true
