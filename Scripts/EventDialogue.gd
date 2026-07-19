@@ -14,7 +14,7 @@
 extends Control
 class_name EventDialogue
 
-const SERIF_FONT := "res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
+const DIALOG_FONT := "res://assets/fonts/bmp/convo.fnt"   # sprite-font LT (conversación)
 const COLOR_GOLD_DIM := Color(0.70, 0.60, 0.30, 1.0)
 const COLOR_TEXT     := Color(0.96, 0.95, 0.90, 1.0)
 const COLOR_OUTLINE  := Color(0.0, 0.0, 0.0, 1.0)
@@ -48,7 +48,7 @@ func _ready() -> void:
 
 
 func _build() -> void:
-	var font = load(AssetSet.p(SERIF_FONT))
+	var font = load(AssetSet.p(DIALOG_FONT))
 
 	# Escenario de retratos (debajo de la caja).
 	_stage = Control.new()

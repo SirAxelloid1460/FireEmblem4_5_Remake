@@ -33,7 +33,7 @@ func _menu_items() -> Array:
 
 
 func _option_font_size() -> int:
-	return 56
+	return 48   # múltiplo de 16 (3×) para escalado nítido de la sprite-font
 
 
 # Sube los botones dentro del panel (el panel sigue centrado).

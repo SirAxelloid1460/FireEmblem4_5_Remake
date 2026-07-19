@@ -19,7 +19,7 @@ class_name SoundRoom
 signal closed
 
 const MUSIC_DIR  := "res://assets/music/"
-const SERIF_FONT := "res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
+const UI_FONT := "res://assets/fonts/bmp/text.fnt"   # sprite-font LT
 const SFX_NAV    := "res://assets/sfx/Select 5.ogg"
 const WINDOW     := 12          # filas visibles a la vez
 
@@ -95,7 +95,7 @@ func _build_ui() -> void:
 	vb.add_theme_constant_override("separation", 10)
 	panel.add_child(vb)
 
-	var font := load(AssetSet.p(SERIF_FONT))
+	var font := load(AssetSet.p(UI_FONT))
 
 	# Título.
 	var title := Label.new()

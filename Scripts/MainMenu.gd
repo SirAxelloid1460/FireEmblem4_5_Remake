@@ -64,7 +64,7 @@ const AFK_SECONDS := 15.0
 const PLATE      := "res://assets/menus/title_menu_dark.png"           # placa normal
 const PLATE_HL   := "res://assets/menus/title_menu_dark_highlight.png" # placa enfocada
 const SWORD      := "res://assets/menus/cursor_dragon.png"             # cursor-espada
-const SERIF_FONT := "res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
+const UI_FONT := "res://assets/fonts/bmp/text.fnt"   # sprite-font LT
 
 # SFX del menú (ver assets/sfx/). Navegación al cambiar de foco, confirmación al
 # avanzar, cancelación al retroceder, error en acciones no disponibles.
@@ -75,7 +75,7 @@ const SFX_ERROR   := "Error"
 const SOUNDROOM_SCRIPT := "res://Scripts/SoundRoom.gd"
 const BTN_W := 620
 const BTN_H := 110
-const BTN_FONT := 54
+const BTN_FONT := 48   # múltiplo de 16 (3×) para escalado nítido de la sprite-font
 const SWORD_SCALE := 4
 const COLOR_BTN := Color(0.95, 0.93, 0.85, 1.0)   # crema (texto de botón)
 # Bobeo del cursor estilo GBA: ESCALONADO (no fluido), pero con escalones más
@@ -488,7 +488,7 @@ func _make_button(text: String, id: String) -> Button:
 	b.mouse_filter = Control.MOUSE_FILTER_STOP
 	b.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	# Fuente serif estilo logo (small-caps).
-	var f := load(AssetSet.p(SERIF_FONT))
+	var f := load(AssetSet.p(UI_FONT))
 	if f != null:
 		b.add_theme_font_override("font", f)
 	b.add_theme_font_size_override("font_size", BTN_FONT)

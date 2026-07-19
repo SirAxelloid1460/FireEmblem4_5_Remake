@@ -886,7 +886,7 @@ func _cmd_chapter_title() -> void:
 	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	label.modulate.a = 0.0
-	var f = load("res://assets/GBA/fonts/IMFellFrenchCanonSC-Regular.ttf")
+	var f = load(AssetSet.p("res://assets/fonts/bmp/chapter.fnt"))   # sprite-font LT (títulos de capítulo)
 	if f != null:
 		label.add_theme_font_override("font", f)
 	label.add_theme_font_size_override("font_size", 64)

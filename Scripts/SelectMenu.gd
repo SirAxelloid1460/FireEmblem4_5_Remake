@@ -35,7 +35,7 @@ extends Control
 
 const PANEL      := "res://assets/menus/menu_box_6x.png"
 const HAND       := "res://assets/menus/menu_hand.png"
-const SERIF_FONT := "res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
+const UI_FONT := "res://assets/fonts/bmp/text.fnt"   # sprite-font LT
 
 const COLOR_TEXT    := Color(0.82, 0.84, 0.82, 1.0)   # crema tenue (opción normal)
 const COLOR_GOLD    := Color(1.00, 0.90, 0.55, 1.0)   # dorado (opción enfocada)
@@ -268,7 +268,7 @@ func _make_option(text: String, id: String) -> Button:
 	var fs := _option_font_size()
 	b.custom_minimum_size = Vector2(0, fs + 12)
 	b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	var f := load(AssetSet.p(SERIF_FONT))
+	var f := load(AssetSet.p(UI_FONT))
 	if f != null:
 		b.add_theme_font_override("font", f)
 	b.add_theme_font_size_override("font_size", fs)
