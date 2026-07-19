@@ -40,7 +40,7 @@ window/stretch/mode="canvas_items"
 
 [gui]
 
-theme/custom_font="res://assets/fonts/fire-emblem-8-text.ttf"
+theme/custom_font="res://assets/GBA/fonts/fire-emblem-8-text.ttf"
 
 [internationalization]
 

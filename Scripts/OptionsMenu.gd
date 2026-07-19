@@ -272,7 +272,9 @@ func _refresh() -> void:
 		if row == null:
 			continue
 		var focused: bool = (i == _sel)
-		row["marker"].visible = focused
+		# Ocultar por alpha (no por `visible`): así el marcador conserva su hueco
+		# en el HBox y las columnas NO se desplazan al mover el cursor.
+		row["marker"].modulate.a = 1.0 if focused else 0.0
 		row["label"].add_theme_color_override("font_color", COLOR_GOLD if focused else COLOR_TEXT)
 		var spec: Dictionary = row["spec"]
 		if spec["kind"] == "range":
