@@ -87,6 +87,9 @@ func _build_specs() -> void:
 	_row_section("GRAPHICS")
 	_row_set("Graphics Set", "Conjunto de gráficos: Original / GBA / HD. Se aplica al reiniciar el juego.")
 
+	_row_section("CONTROLS")
+	_row_action("Button Mapping", "Reasignar las teclas de cada botón (estilo Game Boy Advance).")
+
 	_row_section("GAMEPLAY")
 	_row_enum("gameplay", "animations", "Battle Animations", ["On", "Map Only", "Off"], 0,
 			"Animaciones de combate: completas, solo en el mapa, o desactivadas.")
@@ -118,6 +121,12 @@ func _row_toggle(section: String, key: String, label: String, default: bool, des
 	var on: bool = bool(_cfg_get(section, key, default))
 	_specs.append({ "kind": "toggle", "section": section, "key": key, "label": label,
 			"choices": ["On", "Off"], "idx": (0 if on else 1), "desc": desc, "icon": "" })
+
+## Fila que ABRE un submenú al pulsar A (accept). La columna de valor muestra
+## un rótulo estático ("Open"); ←→ no hace nada.
+func _row_action(label: String, desc: String) -> void:
+	_specs.append({ "kind": "action", "label": label, "choices": ["Open"], "idx": 0,
+			"desc": desc, "icon": "" })
 
 func _row_set(label: String, desc: String) -> void:
 	var cur: String = AssetSet.current()
@@ -413,6 +422,9 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("ui_right"):
 		_change(1)
 		_handled()
+	elif event.is_action_pressed("ui_accept"):
+		_activate()
+		_handled()
 
 
 func _handled() -> void:
@@ -433,6 +445,24 @@ func _first_selectable() -> int:
 		if _ui[i] != null:
 			return i
 	return 0
+
+
+## Activa la fila enfocada con A. Solo las filas "action" hacen algo (abrir un
+## submenú como el de controles).
+func _activate() -> void:
+	if _sel < 0 or _sel >= _specs.size() or _ui[_sel] == null:
+		return
+	if str(_specs[_sel]["kind"]) == "action":
+		_open_controls()
+
+
+## Abre el submenú de remapeo de controles como overlay hijo. Mientras está
+## abierto, este menú ignora la entrada (la maneja el submenú).
+func _open_controls() -> void:
+	var cm := ControlsMenu.new()
+	add_child(cm)
+	set_process_input(false)
+	cm.controls_closed.connect(func(): set_process_input(true))
 
 
 func _change(delta: int) -> void:

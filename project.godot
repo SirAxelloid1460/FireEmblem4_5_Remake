@@ -27,6 +27,7 @@ Convoy="*res://Scripts/ConvoySystem.gd"
 GameDB="*res://Scripts/GameDatabase.gd"
 GameManager="*res://Scripts/GameManager.gd"
 FadeCanvas="*res://Scripts/FadeCanvas.gd"
+InputConfig="*res://Scripts/InputConfig.gd"
 
 [debug]
 
