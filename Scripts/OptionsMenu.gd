@@ -8,7 +8,7 @@ class_name OptionsMenu
 # propio OPACO que cubre el menú de debajo.
 #
 # Estructura (dos paneles):
-#   · Panel de TÍTULO (menu_bg_white, fuente fe8, TODO a opacidad 0.8).
+#   · Panel de TÍTULO (menu_bg_white, sprite-font LT, TODO a opacidad 0.8).
 #   · Panel de OPCIONES (menu_bg_base; SOLO el fondo a 0.7, el contenido a 1.0).
 #     Cada fila tiene 3 columnas: [icono] [texto] [opciones]. El cursor es una
 #     mano (menu_hand) que apunta a la fila enfocada con un leve bob lateral.
@@ -23,7 +23,7 @@ class_name OptionsMenu
 signal options_closed
 
 const CFG := "user://settings.cfg"
-const FE8_FONT := "res://assets/fonts/fire-emblem-8-text.ttf"
+const TEXT_FONT := "res://assets/fonts/bmp/text.fnt"   # sprite-font LT (BMFont)
 const BG_IMAGE := "res://assets/panoramas/default_background.png"
 const TITLE_BG := "res://assets/menus/menu_bg_white.png"
 const PANEL_BG := "res://assets/menus/menu_bg_base.png"
@@ -65,8 +65,11 @@ var _icon_i: int = 0                     # índice de icono para la siguiente fi
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	# Filtro NEAREST heredado por los hijos → la sprite-font se ve nítida (sin
+	# suavizado) al escalarse.
+	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	_cfg.load(CFG)
-	_font = load(AssetSet.p(FE8_FONT))
+	_font = load(AssetSet.p(TEXT_FONT))
 	_build_specs()
 	_build_ui()
 	_apply_bus("Music", int(_cfg_get("audio", "music_volume", 70)))
