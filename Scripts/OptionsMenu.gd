@@ -129,6 +129,14 @@ func _build_ui() -> void:
 	tint.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(tint)
 
+	# CenterContainer a pantalla completa → centra el panel sea cual sea su tamaño
+	# (PRESET_CENTER sobre el PanelContainer fallaba: calculaba el offset con
+	# tamaño 0 aún sin dimensionar y lo mandaba abajo-derecha).
+	var center := CenterContainer.new()
+	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	center.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(center)
+
 	var panel := PanelContainer.new()
 	var sb := StyleBoxFlat.new()
 	sb.bg_color = Color(0.06, 0.07, 0.13, 0.94)
@@ -141,8 +149,7 @@ func _build_ui() -> void:
 	sb.content_margin_bottom = 20
 	panel.add_theme_stylebox_override("panel", sb)
 	panel.custom_minimum_size = Vector2(860, 660)
-	panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
-	add_child(panel)
+	center.add_child(panel)
 
 	var col := VBoxContainer.new()
 	col.add_theme_constant_override("separation", 10)
@@ -265,7 +272,9 @@ func _refresh() -> void:
 		if row == null:
 			continue
 		var focused: bool = (i == _sel)
-		row["marker"].visible = focused
+		# Ocultar por alpha (no por `visible`): así el marcador conserva su hueco
+		# en el HBox y las columnas NO se desplazan al mover el cursor.
+		row["marker"].modulate.a = 1.0 if focused else 0.0
 		row["label"].add_theme_color_override("font_color", COLOR_GOLD if focused else COLOR_TEXT)
 		var spec: Dictionary = row["spec"]
 		if spec["kind"] == "range":
@@ -378,6 +387,9 @@ func _show_restart_notice(set_name: String) -> void:
 	dim.color = Color(0, 0, 0, 0.6)
 	dim.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	layer.add_child(dim)
+	var center := CenterContainer.new()
+	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	layer.add_child(center)
 	var panel := PanelContainer.new()
 	var sb := StyleBoxFlat.new()
 	sb.bg_color = Color(0.06, 0.07, 0.13, 0.98)
@@ -390,8 +402,7 @@ func _show_restart_notice(set_name: String) -> void:
 	sb.content_margin_bottom = 22
 	panel.add_theme_stylebox_override("panel", sb)
 	panel.custom_minimum_size = Vector2(560, 0)
-	panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
-	layer.add_child(panel)
+	center.add_child(panel)
 	var box := VBoxContainer.new()
 	box.add_theme_constant_override("separation", 16)
 	panel.add_child(box)
