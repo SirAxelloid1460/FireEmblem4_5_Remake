@@ -1811,7 +1811,7 @@ stat_up_spark.png::CompressedTexture2D::7881751540601602514::1784389913::1784390
 fire-emblem-8-text.ttf::FontFile::788137647594045894::1680891702::1784419738::1::::<><><>0<>0<>abf14c2db50f359465687541908da73e<>res://.godot/imported/fire-emblem-8-text.ttf-08c07d6c201fae0f6a007b55a90df9c4.fontdata::
 gba-fe-dialogue.ttf::FontFile::4532858660381649778::1680869772::1784419738::1::::<><><>0<>0<>9c501cd7aae2cd41b66eaee8d809c1f4<>res://.godot/imported/gba-fe-dialogue.ttf-c82f55aa2ec9d5e0fdc4d7f850b7ba34.fontdata::
 IMFellFrenchCanonSC-Regular.ttf::FontFile::7762413525348139854::1663820830::1784419738::1::::<><><>0<>0<>768220ed70415f1b86b9fde9d1470871<>res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-b748ea443e481577d738e40f821ef907.fontdata::
-::res://assets/GBA/fonts/bmp/::1784448721
+::res://assets/GBA/fonts/bmp/::1784464819
 chapter-yellow.png::CompressedTexture2D::7667694330716814111::1784448721::1784464819::1::::<><><>0<>0<>e99ba540e1e7c825f3e520d34f5b55a7<>res://.godot/imported/chapter-yellow.png-e917be8fd1b5124dbd79cecddad079e3.ctex::
 chapter.fnt::FontFile::8476143355435191830::1784448721::1784464819::1::::<><><>0<>0<>3ce9ed93497ecd2676e6ce2a67ea09da<>res://.godot/imported/chapter.fnt-cc4f52cf251b05040c4181b62c1203d7.fontdata::
 class-purple.png::CompressedTexture2D::8579094779501185560::1784448721::1784464819::1::::<><><>0<>0<>2ad8d913a43fedc68ba64d9d99bf9b90<>res://.godot/imported/class-purple.png-f7bfa681d419a8f12e0e9bffec2ccef2.ctex::
@@ -2256,7 +2256,7 @@ marker_interact.png::CompressedTexture2D::7029020101436880997::1784389914::17843
 marker_steal.png::CompressedTexture2D::3435762072264309862::1784389914::1784390475::1::::<><><>0<>0<>57ccbd5ef6447a3a6d9c95810c157ca0<>res://.godot/imported/marker_steal.png-2164c3acf4a936653c4867e6383685e1.ctex::
 marker_talk.png::CompressedTexture2D::2263735099670079106::1784389914::1784390475::1::::<><><>0<>0<>5af334cbd173c2b5836baf727bf50b25<>res://.godot/imported/marker_talk.png-a931a84143e7e33bfcdab9dc1513159b.ctex::
 marker_warning.png::CompressedTexture2D::8335221100271413922::1784389914::1784390475::1::::<><><>0<>0<>fa66cb9078089dc3208222ad4e6ccb68<>res://.godot/imported/marker_warning.png-abfb168f8ab781cc1d2e2100ae279dce.ctex::
-::res://assets/GBA/menus/::1784390476
+::res://assets/GBA/menus/::1784469149
 chapter_select_blue.png::CompressedTexture2D::3799479140596005484::1784389914::1784390475::1::::<><><>0<>0<>83eba1b4235f08a00d0aab359c4b935e<>res://.godot/imported/chapter_select_blue.png-42c00d245a73839b5b8440624876d65e.ctex::
 chapter_select_blue_flicker.png::CompressedTexture2D::8707443795568880730::1784389914::1784390475::1::::<><><>0<>0<>5c3566f2a080a29fbcdacc94ca015063<>res://.godot/imported/chapter_select_blue_flicker.png-4936b7e78a049f6cb5131ebf35083b99.ctex::
 chapter_select_blue_highlight.png::CompressedTexture2D::3506856499879247458::1784389914::1784390475::1::::<><><>0<>0<>ed7c613d5769fee70997f47c148b529b<>res://.godot/imported/chapter_select_blue_highlight.png-04365af66e11760edd5ef99dbbf5083f.ctex::
@@ -2269,6 +2269,7 @@ chapter_select_red_highlight.png::CompressedTexture2D::1133387421465482075::1784
 cursor_dragon.png::CompressedTexture2D::6688731684664710681::1784389914::1784390476::1::::<><><>0<>0<>b1312166bd086461eb74ed3bee7cfe93<>res://.godot/imported/cursor_dragon.png-9550f2407aa310e6adfc6fd098c6e614.ctex::
 endings_display.png::CompressedTexture2D::4245711819928851799::1784389914::1784390476::1::::<><><>0<>0<>84bc4003ab7ce13271ba2f07a253ae52<>res://.godot/imported/endings_display.png-d4449888e188ffc2021dcf9222fda38e.ctex::
 funds_display.png::CompressedTexture2D::4957269334913284741::1784389914::1784390476::1::::<><><>0<>0<>8a02644a70e759177a5355c31825afc6<>res://.godot/imported/funds_display.png-02d255e839f05cc36cfe6595d030c975.ctex::
+GBA_Controls.png::CompressedTexture2D::1511315418656288852::1784469149::1784469161::1::::<><><>0<>0<>19a6d08fa86fcad71c21151fbed140b7<>res://.godot/imported/GBA_Controls.png-a249d1dc609c6b510d7091257bb1c271.ctex::
 give_window.png::CompressedTexture2D::7337624898969061996::1784389914::1784390476::1::::<><><>0<>0<>a7247a166cbccb58eb3a6cf8b051cabb<>res://.godot/imported/give_window.png-6fb8c1cf908219a3a4ce8cb02ea6c670.ctex::
 golden_words.png::CompressedTexture2D::3518507803700092318::1784389914::1784390476::1::::<><><>0<>0<>64f3cf458057e4bd2f609624d5a607f5<>res://.godot/imported/golden_words.png-9828bd70d955965f946b2516ff0d7642.ctex::
 header_shadow.png::CompressedTexture2D::3292263203076292420::1784389914::1784390476::1::::<><><>0<>0<>dd6f64875c7d331dd1f7683ba6f97158<>res://.godot/imported/header_shadow.png-b20a0b831c46c13a0f88a63c7e824916.ctex::
@@ -4052,7 +4053,7 @@ fe4_mapsprites_b.png::CompressedTexture2D::7681648688096247389::1784389924::1784
 gba_team_palettes.png::CompressedTexture2D::1651436571860718018::1784389924::1784390477::1::::<><><>0<>0<>78a37056c26b5d3d51d94f615b623115<>res://.godot/imported/gba_team_palettes.png-15b28f01228d9213420dffebdf36a900.ctex::
 palette_mockup.png::CompressedTexture2D::7769023670081242294::1784389924::1784390477::1::::<><><>0<>0<>b3c75f33356c11338657769108a2366c<>res://.godot/imported/palette_mockup.png-1632ca8838d3a800474a8e713405fc9b.ctex::
 team_palettes.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1784447150
+::res://Scenes/::1784468276
 battle_hp_bar.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/BattleHPBar.gd
 castle_base.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/CastleBase.gd<>res://Scripts/ShopPanel.gd<>res://Scripts/ConvoyPanel.gd<>res://Scripts/ArenaPanel_FE4.gd<>res://Scripts/BlacksmithPanel.gd<>res://Scripts/FortuneTellerPanel.gd<>res://Scripts/PromotionPanel.gd
 cinematic_scene.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/CinematicScene.gd<>res://Scripts/DialogueBox.gd
@@ -4062,12 +4063,12 @@ label_anim_text.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res:/
 language.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/Language.gd
 level_up_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/LevelUpScreen.gd
 main_game.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PrologueTest.gd<>res://Scripts/GameManager.gd
-main_menu.tscn::PackedScene::7603370222921413084::1784447150::0::1::::<><><>0<>0<><>::uid://doqp37firsuxw::::res://Scripts/MainMenu.gd
+main_menu.tscn::PackedScene::7603370222921413084::1784468276::0::1::::<><><>0<>0<><>::uid://doqp37firsuxw::::res://Scripts/MainMenu.gd
 mode_select.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/ModeSelect.gd
 options_menu.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784461624
+::res://Scripts/::1784468276
 ActionMenu.gd::GDScript::6413271467111799318::1784389909::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784389909::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784389909::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
@@ -4132,7 +4133,7 @@ MainMenu.gd::GDScript::8175898352055706196::1784402133::0::1::::MainMenu<>Contro
 MapActions.gd::GDScript::3535448452538133979::1784389909::0::1::::MapActions<>RefCounted<><>0<>0<><>::
 MapBackground.gd::GDScript::3738451975226640230::1784389909::0::1::::MapBackground<>Node2D<><>0<>0<><>::
 ModeSelect.gd::GDScript::3174370287506302631::1784389909::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
-OptionsMenu.gd::GDScript::5364573969176011556::1784461624::0::1::::OptionsMenu<>Control<><>0<>0<><>::
+OptionsMenu.gd::GDScript::5364573969176011556::1784468276::0::1::::OptionsMenu<>Control<><>0<>0<><>::
 Pathfinding.gd::GDScript::1848538420110686201::1784389909::0::1::::Pathfinding<>Node<><>0<>0<><>::
 PrologueCinematic.gd::GDScript::3981487757909408999::1784389909::0::1::::PrologueCinematic<>CinematicScene<><>0<>0<><>::
 PrologueTest.gd::GDScript::5063533363305664355::1784389909::0::1::::<>Node2D<><>0<>0<><>::
