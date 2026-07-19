@@ -303,7 +303,9 @@ func _build_row(spec: Dictionary) -> Variant:
 
 	# Columna 3 (opciones).
 	var value_box := HBoxContainer.new()
-	value_box.add_theme_constant_override("separation", 6)
+	# Barras de volumen (range): segmentos juntos (6). Palabras de opción
+	# (enum/toggle/set): más separación para que no se peguen entre sí (24).
+	value_box.add_theme_constant_override("separation", 6 if spec["kind"] == "range" else 24)
 	value_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	value_box.alignment = BoxContainer.ALIGNMENT_BEGIN
 	hb.add_child(value_box)
