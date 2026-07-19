@@ -27,6 +27,19 @@ const IMG       := "res://assets/menus/GBA_Controls.png"
 const PATCH := 8
 const TITLE_ALPHA := 0.8
 
+# Fondo idéntico al menú de idioma (SelectMenu): base de runas con parallax
+# horizontal (shader UV + wrap) y niebla animada (TitleOverlay) por encima.
+const PARALLAX_SPEED := 0.03
+const SCROLL_SHADER := """
+shader_type canvas_item;
+uniform float speed;
+void fragment() {
+	vec2 uv = UV;
+	uv.x += TIME * speed;
+	COLOR = texture(TEXTURE, fract(uv));
+}
+"""
+
 const COLOR_GOLD     := Color(1.00, 0.84, 0.36, 1.0)
 const COLOR_TEXT     := Color(0.92, 0.93, 0.88, 1.0)
 const COLOR_DIM      := Color(0.62, 0.64, 0.70, 1.0)
@@ -155,22 +168,34 @@ func _build_ui() -> void:
 
 
 func _build_background() -> void:
+	# Mismo fondo que el menú de idioma: runas de Jugdral con parallax + niebla
+	# animada (TitleOverlay) por encima. Sin tinte oscuro (los paneles y los
+	# recuadros ya tienen su propio fondo para el contraste).
 	var base := ColorRect.new()
-	base.color = Color(0.03, 0.04, 0.09, 1.0)
+	base.color = Color(0.04, 0.04, 0.07, 1.0)
 	base.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	base.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(base)
+
+	var bg := TextureRect.new()
+	bg.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	bg.stretch_mode = TextureRect.STRETCH_SCALE
+	bg.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
 	var bg_path := AssetSet.p(BG_IMAGE)
 	if ResourceLoader.exists(bg_path):
-		var tex := TextureRect.new()
-		tex.texture = load(bg_path)
-		tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		tex.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
-		tex.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-		add_child(tex)
-	var tint := ColorRect.new()
-	tint.color = Color(0.03, 0.04, 0.09, 0.82)
-	tint.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	add_child(tint)
+		bg.texture = load(bg_path)
+	var sh := Shader.new()
+	sh.code = SCROLL_SHADER
+	var mat := ShaderMaterial.new()
+	mat.shader = sh
+	mat.set_shader_parameter("speed", PARALLAX_SPEED)
+	bg.material = mat
+	add_child(bg)
+
+	# Niebla/nubes animada (común a todos los menús), encima de la base.
+	add_child(TitleOverlay.new())
 
 
 func _build_title_panel() -> Control:
