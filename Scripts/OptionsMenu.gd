@@ -154,8 +154,8 @@ func _build_ui() -> void:
 	var left_x: float = (vp.x - panel_w) / 2.0
 	var title_h: float = 74.0
 	var title_y: float = 26.0
-	var gap: float = 48.0                       # separación título ↔ opciones
-	var desc_h: float = 48.0
+	var gap: float = 26.0                       # separación título ↔ opciones (panel un poco más arriba)
+	var desc_h: float = 66.0                    # barra de descripción un poco más alta
 	var opts_y: float = title_y + title_h + gap
 	var opts_h: float = vp.y - opts_y - desc_h - 18.0
 
