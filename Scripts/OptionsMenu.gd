@@ -34,11 +34,11 @@ const ICON_SRC := 16
 const PATCH := 8              # margen 9-slice de las texturas de panel (24×24)
 const HAND_W := 15
 const HAND_H := 12
-const HAND_SCALE := 3
-const ROW_H := 38
-const ICON_W := 34
-const HAND_SLOT_W := 40
-const TEXT_W := 250
+const HAND_SCALE := 4
+const ROW_H := 90
+const ICON_W := 76
+const HAND_SLOT_W := 64
+const TEXT_W := 470
 const TITLE_ALPHA := 0.8
 const PANEL_ALPHA := 0.7
 
@@ -155,7 +155,7 @@ func _build_ui() -> void:
 	var vp: Vector2 = get_viewport_rect().size
 	var panel_w: float = vp.x * 0.9
 	var left_x: float = (vp.x - panel_w) / 2.0
-	var title_h: float = 74.0
+	var title_h: float = 150.0
 	var title_y: float = 26.0
 	var gap: float = 26.0                       # separación título ↔ opciones (panel un poco más arriba)
 	var desc_h: float = 66.0                    # barra de descripción un poco más alta
@@ -178,7 +178,7 @@ func _build_ui() -> void:
 ## Panel de título separado (menu_bg_white). TODO el panel (fondo + texto) a 0.8.
 func _build_title_panel() -> Control:
 	var root := Control.new()
-	root.size = Vector2(420, 74)
+	root.size = Vector2(780, 150)
 	root.modulate.a = TITLE_ALPHA
 
 	var np := _nine_patch(TITLE_BG)
@@ -190,7 +190,7 @@ func _build_title_panel() -> Control:
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	_font_it(lbl, 34, COLOR_GOLD, 4)
+	_font_it(lbl, 96, COLOR_GOLD, 4)
 	root.add_child(lbl)
 	return root
 
@@ -244,7 +244,7 @@ func _build_desc_bar(full_w: float, h: float) -> Control:
 	_desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_desc.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_font_it(_desc, 20, COLOR_GOLD, 3)
+	_font_it(_desc, 32, COLOR_GOLD, 3)
 	bar.add_child(_desc)
 	return bar
 
@@ -254,7 +254,7 @@ func _build_row(spec: Dictionary) -> Variant:
 	if spec["kind"] == "section":
 		var sec := Label.new()
 		sec.text = str(spec["label"])
-		_font_it(sec, 24, COLOR_GOLD_DIM, 3)
+		_font_it(sec, 64, COLOR_GOLD_DIM, 3)
 		var m := MarginContainer.new()
 		m.add_theme_constant_override("margin_top", 6)
 		m.add_child(sec)
@@ -262,7 +262,7 @@ func _build_row(spec: Dictionary) -> Variant:
 		return null
 
 	var hb := HBoxContainer.new()
-	hb.add_theme_constant_override("separation", 8)
+	hb.add_theme_constant_override("separation", 4)
 	hb.custom_minimum_size = Vector2(0, ROW_H)
 
 	# Columna 0 (cursor): slot fijo con la mano, posicionada libremente (bob).
@@ -298,12 +298,12 @@ func _build_row(spec: Dictionary) -> Variant:
 	lbl.text = str(spec["label"])
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.custom_minimum_size = Vector2(TEXT_W, ROW_H)
-	_font_it(lbl, 22, COLOR_TEXT, 3)
+	_font_it(lbl, 64, COLOR_TEXT, 3)
 	hb.add_child(lbl)
 
 	# Columna 3 (opciones).
 	var value_box := HBoxContainer.new()
-	value_box.add_theme_constant_override("separation", 12)
+	value_box.add_theme_constant_override("separation", 6)
 	value_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	value_box.alignment = BoxContainer.ALIGNMENT_BEGIN
 	hb.add_child(value_box)
@@ -314,9 +314,9 @@ func _build_row(spec: Dictionary) -> Variant:
 	if spec["kind"] == "range":
 		for i in range(10):
 			var seg := ColorRect.new()
-			seg.custom_minimum_size = Vector2(22, 16)
+			seg.custom_minimum_size = Vector2(30, 22)
 			var wrap := CenterContainer.new()
-			wrap.custom_minimum_size = Vector2(22, ROW_H)
+			wrap.custom_minimum_size = Vector2(30, ROW_H)
 			wrap.add_child(seg)
 			value_box.add_child(wrap)
 			row["segments"].append(seg)
@@ -326,7 +326,7 @@ func _build_row(spec: Dictionary) -> Variant:
 			c.text = str(choice)
 			c.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 			c.custom_minimum_size = Vector2(0, ROW_H)
-			_font_it(c, 22, COLOR_DIM, 3)
+			_font_it(c, 64, COLOR_DIM, 3)
 			value_box.add_child(c)
 			row["choices"].append(c)
 
