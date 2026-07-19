@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://bb2q4unjjikv"
+path="res://.godot/imported/reel.fnt-760146613cb125afaee04bb31ed76ad6.fontdata"
+
+[deps]
+
+source_file="res://assets/GBA/fonts/bmp/reel.fnt"
+dest_files=["res://.godot/imported/reel.fnt-760146613cb125afaee04bb31ed76ad6.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

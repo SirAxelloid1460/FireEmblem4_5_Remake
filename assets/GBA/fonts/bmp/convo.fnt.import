@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://b27xpan4l412t"
+path="res://.godot/imported/convo.fnt-effe467d13a295784a7f3b78263fca34.fontdata"
+
+[deps]
+
+source_file="res://assets/GBA/fonts/bmp/convo.fnt"
+dest_files=["res://.godot/imported/convo.fnt-effe467d13a295784a7f3b78263fca34.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

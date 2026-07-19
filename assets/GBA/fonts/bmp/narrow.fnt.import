@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://d1eegf6ruogt8"
+path="res://.godot/imported/narrow.fnt-882407882ddeb7495c5f45598b8e5630.fontdata"
+
+[deps]
+
+source_file="res://assets/GBA/fonts/bmp/narrow.fnt"
+dest_files=["res://.godot/imported/narrow.fnt-882407882ddeb7495c5f45598b8e5630.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

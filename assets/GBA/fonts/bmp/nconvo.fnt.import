@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://d0hilu10gkjp4"
+path="res://.godot/imported/nconvo.fnt-d17710781354bf86a40ec1b8c07ec8ae.fontdata"
+
+[deps]
+
+source_file="res://assets/GBA/fonts/bmp/nconvo.fnt"
+dest_files=["res://.godot/imported/nconvo.fnt-d17710781354bf86a40ec1b8c07ec8ae.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://v824ei5vce85"
+path="res://.godot/imported/credit.fnt-77f7a1acf457f8f6ef103c87d90b5672.fontdata"
+
+[deps]
+
+source_file="res://assets/GBA/fonts/bmp/credit.fnt"
+dest_files=["res://.godot/imported/credit.fnt-77f7a1acf457f8f6ef103c87d90b5672.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2
