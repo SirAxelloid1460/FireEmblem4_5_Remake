@@ -145,18 +145,29 @@ func _build_ui() -> void:
 	tint.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(tint)
 
-	# Pila centrada: título + panel de opciones + descripción.
-	var center := CenterContainer.new()
-	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	center.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	add_child(center)
-	var stack := VBoxContainer.new()
-	stack.add_theme_constant_override("separation", 8)
-	center.add_child(stack)
+	# Layout con posiciones explícitas:
+	#   · Título a la IZQUIERDA, encima del panel (bien separado).
+	#   · Panel de opciones al 90% del ancho, centrado horizontal.
+	#   · Descripción = barra negra a pantalla completa, pegada al fondo.
+	var vp: Vector2 = get_viewport_rect().size
+	var panel_w: float = vp.x * 0.9
+	var left_x: float = (vp.x - panel_w) / 2.0
+	var title_h: float = 74.0
+	var title_y: float = 26.0
+	var gap: float = 48.0                       # separación título ↔ opciones
+	var desc_h: float = 48.0
+	var opts_y: float = title_y + title_h + gap
+	var opts_h: float = vp.y - opts_y - desc_h - 18.0
 
-	stack.add_child(_build_title_panel())
-	stack.add_child(_build_options_panel())
-	stack.add_child(_build_desc_bar())
+	var title := _build_title_panel()
+	title.position = Vector2(left_x, title_y)
+	add_child(title)
+
+	var opts := _build_options_panel(Vector2(panel_w, opts_h))
+	opts.position = Vector2(left_x, opts_y)
+	add_child(opts)
+
+	add_child(_build_desc_bar(vp.x, desc_h))
 
 	_sel = _first_selectable()
 
@@ -164,8 +175,7 @@ func _build_ui() -> void:
 ## Panel de título separado (menu_bg_white). TODO el panel (fondo + texto) a 0.8.
 func _build_title_panel() -> Control:
 	var root := Control.new()
-	root.custom_minimum_size = Vector2(420, 74)
-	root.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	root.size = Vector2(420, 74)
 	root.modulate.a = TITLE_ALPHA
 
 	var np := _nine_patch(TITLE_BG)
@@ -183,10 +193,9 @@ func _build_title_panel() -> Control:
 
 
 ## Panel de opciones (menu_bg_base). SOLO el fondo a 0.7; el contenido a 1.0.
-func _build_options_panel() -> Control:
+func _build_options_panel(panel_size: Vector2) -> Control:
 	var root := Control.new()
-	root.custom_minimum_size = Vector2(880, 560)
-	root.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	root.size = panel_size
 
 	var np := _nine_patch(PANEL_BG)
 	np.self_modulate.a = PANEL_ALPHA           # transparencia SOLO del fondo
@@ -217,14 +226,24 @@ func _build_options_panel() -> Control:
 	return root
 
 
-func _build_desc_bar() -> Control:
+## Barra de descripción: panel negro (0.5) a pantalla completa, pegado al fondo.
+func _build_desc_bar(full_w: float, h: float) -> Control:
+	var bar := Control.new()
+	bar.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
+	bar.offset_top = -h
+	bar.offset_bottom = 0
+	var bg := ColorRect.new()
+	bg.color = Color(0.0, 0.0, 0.0, 0.5)
+	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	bar.add_child(bg)
 	_desc = Label.new()
+	_desc.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_desc.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_desc.custom_minimum_size = Vector2(880, 40)
-	_desc.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	_font_it(_desc, 20, COLOR_GOLD, 3)
-	return _desc
+	bar.add_child(_desc)
+	return bar
 
 
 ## Fila 3-columnas: [mano+icono] [texto] [opciones]. null si es sección.
