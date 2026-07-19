@@ -27,6 +27,19 @@ const IMG       := "res://assets/menus/GBA_Controls.png"
 const PATCH := 8
 const TITLE_ALPHA := 0.8
 
+# Fondo idéntico al menú de idioma (SelectMenu): base de runas con parallax
+# horizontal (shader UV + wrap) y niebla animada (TitleOverlay) por encima.
+const PARALLAX_SPEED := 0.03
+const SCROLL_SHADER := """
+shader_type canvas_item;
+uniform float speed;
+void fragment() {
+	vec2 uv = UV;
+	uv.x += TIME * speed;
+	COLOR = texture(TEXTURE, fract(uv));
+}
+"""
+
 const COLOR_GOLD     := Color(1.00, 0.84, 0.36, 1.0)
 const COLOR_TEXT     := Color(0.92, 0.93, 0.88, 1.0)
 const COLOR_DIM      := Color(0.62, 0.64, 0.70, 1.0)
@@ -50,6 +63,11 @@ const BOXES := [
 
 # Zona de pantalla de la GBA (px imagen) donde se muestra el nombre de la acción.
 const SCREEN := Rect2(279, 285, 163, 125)
+
+# Recuadro de contenido real de la imagen 720×480 (el resto es transparente):
+# el contenido va de y=118 a y=458 → 340 px de alto. Se usa para escalar/centrar.
+const CONTENT_TOP := 118.0
+const CONTENT_H := 340.0
 
 # Tamaño de cada recuadro en px de imagen (se escala con la imagen).
 const BOX_W := 70.0
@@ -77,24 +95,29 @@ func _build_ui() -> void:
 	_build_background()
 
 	var vp: Vector2 = get_viewport_rect().size
-	var title_y: float = 24.0
-	var title_h: float = 150.0
-	var gap: float = 18.0
-	var hint_h: float = 54.0
-	var img_y: float = title_y + title_h + gap
-	var avail_h: float = vp.y - img_y - hint_h - 12.0
-	_scale = minf((vp.x * 0.9) / 720.0, avail_h / 480.0)
+	var title_y: float = 18.0
+	var title_h: float = 75.0             # panel de título a la mitad (antes 150)
+	var gap: float = 14.0
+	var hint_h: float = 46.0
 
-	var panel_w: float = vp.x * 0.9
-	var left_x: float = (vp.x - panel_w) / 2.0
+	# La imagen (720×480) tiene su contenido real en y=118..458 (340 px); el
+	# resto es transparente. Escalamos por el CONTENIDO para llenar el ancho al
+	# 90% (≈×1.5) sin recortar la consola, y centramos ese contenido en el hueco.
+	var top_zone: float = title_y + title_h + gap
+	var bot_zone: float = vp.y - hint_h - 8.0
+	var avail: float = bot_zone - top_zone
+	_scale = minf((vp.x * 0.9) / 720.0, avail / CONTENT_H)
+
+	var left_x: float = (vp.x - vp.x * 0.9) / 2.0
 	var title := _build_title_panel()
 	title.position = Vector2(left_x, title_y)
 	add_child(title)
 
 	var img_w: float = 720.0 * _scale
 	var img_h: float = 480.0 * _scale
+	var content_top: float = top_zone + (avail - CONTENT_H * _scale) / 2.0
 	var holder := Control.new()
-	holder.position = Vector2((vp.x - img_w) / 2.0, img_y)
+	holder.position = Vector2((vp.x - img_w) / 2.0, content_top - CONTENT_TOP * _scale)
 	holder.custom_minimum_size = Vector2(img_w, img_h)
 	holder.size = Vector2(img_w, img_h)
 	add_child(holder)
@@ -145,27 +168,39 @@ func _build_ui() -> void:
 
 
 func _build_background() -> void:
+	# Mismo fondo que el menú de idioma: runas de Jugdral con parallax + niebla
+	# animada (TitleOverlay) por encima. Sin tinte oscuro (los paneles y los
+	# recuadros ya tienen su propio fondo para el contraste).
 	var base := ColorRect.new()
-	base.color = Color(0.03, 0.04, 0.09, 1.0)
+	base.color = Color(0.04, 0.04, 0.07, 1.0)
 	base.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	base.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(base)
+
+	var bg := TextureRect.new()
+	bg.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	bg.stretch_mode = TextureRect.STRETCH_SCALE
+	bg.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
 	var bg_path := AssetSet.p(BG_IMAGE)
 	if ResourceLoader.exists(bg_path):
-		var tex := TextureRect.new()
-		tex.texture = load(bg_path)
-		tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		tex.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
-		tex.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-		add_child(tex)
-	var tint := ColorRect.new()
-	tint.color = Color(0.03, 0.04, 0.09, 0.82)
-	tint.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	add_child(tint)
+		bg.texture = load(bg_path)
+	var sh := Shader.new()
+	sh.code = SCROLL_SHADER
+	var mat := ShaderMaterial.new()
+	mat.shader = sh
+	mat.set_shader_parameter("speed", PARALLAX_SPEED)
+	bg.material = mat
+	add_child(bg)
+
+	# Niebla/nubes animada (común a todos los menús), encima de la base.
+	add_child(TitleOverlay.new())
 
 
 func _build_title_panel() -> Control:
 	var root := Control.new()
-	root.size = Vector2(780, 150)
+	root.size = Vector2(390, 75)          # a la mitad (antes 780×150)
 	root.modulate.a = TITLE_ALPHA
 	var np := NinePatchRect.new()
 	np.texture = load(AssetSet.p(TITLE_BG))
@@ -181,7 +216,7 @@ func _build_title_panel() -> Control:
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	_font_it(lbl, 96, COLOR_GOLD, 4)
+	_font_it(lbl, 48, COLOR_GOLD, 3)      # fuente del título a la mitad (antes 96)
 	root.add_child(lbl)
 	return root
 

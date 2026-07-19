@@ -61,6 +61,12 @@ var _font = null
 var _bob_t: float = 0.0
 var _icon_sheet: Texture2D = null       # tira de iconos de settings (16×16 cada uno)
 var _icon_i: int = 0                     # índice de icono para la siguiente fila
+# Botón "Controls" (abre el submenú de remapeo). Vive arriba, a la altura del
+# panel de título; se enfoca con _sel == CTRL_SEL (arriba de la primera fila).
+const CTRL_SEL := -1
+var _ctrl_root: Control = null
+var _ctrl_hand: TextureRect = null
+var _ctrl_lbl: Label = null
 
 
 func _ready() -> void:
@@ -86,9 +92,6 @@ func _build_specs() -> void:
 
 	_row_section("GRAPHICS")
 	_row_set("Graphics Set", "Conjunto de gráficos: Original / GBA / HD. Se aplica al reiniciar el juego.")
-
-	_row_section("CONTROLS")
-	_row_action("Button Mapping", "Reasignar las teclas de cada botón (estilo Game Boy Advance).")
 
 	_row_section("GAMEPLAY")
 	_row_enum("gameplay", "animations", "Battle Animations", ["On", "Map Only", "Off"], 0,
@@ -121,12 +124,6 @@ func _row_toggle(section: String, key: String, label: String, default: bool, des
 	var on: bool = bool(_cfg_get(section, key, default))
 	_specs.append({ "kind": "toggle", "section": section, "key": key, "label": label,
 			"choices": ["On", "Off"], "idx": (0 if on else 1), "desc": desc, "icon": "" })
-
-## Fila que ABRE un submenú al pulsar A (accept). La columna de valor muestra
-## un rótulo estático ("Open"); ←→ no hace nada.
-func _row_action(label: String, desc: String) -> void:
-	_specs.append({ "kind": "action", "label": label, "choices": ["Open"], "idx": 0,
-			"desc": desc, "icon": "" })
 
 func _row_set(label: String, desc: String) -> void:
 	var cur: String = AssetSet.current()
@@ -175,6 +172,9 @@ func _build_ui() -> void:
 	title.position = Vector2(left_x, title_y)
 	add_child(title)
 
+	# Botón "Controls" a la DERECHA del título, a su misma altura.
+	add_child(_build_ctrl_button(left_x, title_y, title_h, panel_w))
+
 	var opts := _build_options_panel(Vector2(panel_w, opts_h))
 	opts.position = Vector2(left_x, opts_y)
 	add_child(opts)
@@ -201,6 +201,47 @@ func _build_title_panel() -> Control:
 	lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_font_it(lbl, 96, COLOR_GOLD, 4)
 	root.add_child(lbl)
+	return root
+
+
+## Botón "Controls" a la derecha del título (misma altura). Abre ControlsMenu al
+## pulsar A cuando está enfocado (_sel == CTRL_SEL). Fondo menu_bg_base como el
+## panel de opciones; mano + rótulo dorado al enfocarse.
+func _build_ctrl_button(left_x: float, title_y: float, title_h: float, panel_w: float) -> Control:
+	const TITLE_W := 780.0
+	const GAPX := 24.0
+	var x: float = left_x + TITLE_W + GAPX
+	var w: float = panel_w - TITLE_W - GAPX
+	var root := Control.new()
+	root.position = Vector2(x, title_y)
+	root.size = Vector2(w, title_h)
+
+	var np := _nine_patch(PANEL_BG)
+	np.self_modulate.a = PANEL_ALPHA
+	np.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	root.add_child(np)
+
+	var hand := TextureRect.new()
+	hand.texture = load(AssetSet.p(HAND))
+	hand.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	hand.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	hand.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	hand.size = Vector2(HAND_W * HAND_SCALE, HAND_H * HAND_SCALE)
+	hand.position = Vector2(14, (title_h - HAND_H * HAND_SCALE) / 2.0)
+	hand.visible = false
+	root.add_child(hand)
+
+	var lbl := Label.new()
+	lbl.text = "Controls"
+	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_font_it(lbl, 56, COLOR_TEXT, 3)
+	root.add_child(lbl)
+
+	_ctrl_root = root
+	_ctrl_hand = hand
+	_ctrl_lbl = lbl
 	return root
 
 
@@ -369,13 +410,26 @@ func _font_it(lbl: Label, size: int, color: Color, outline: int) -> void:
 # ── Bob lateral del cursor ────────────────────────────────────────────────────
 func _process(delta: float) -> void:
 	_bob_t += delta
-	if _sel >= 0 and _sel < _ui.size() and _ui[_sel] != null:
+	if _sel == CTRL_SEL:
+		if _ctrl_hand != null:
+			_ctrl_hand.position.x = 14.0 + sin(_bob_t * 7.0) * 4.0
+	elif _sel >= 0 and _sel < _ui.size() and _ui[_sel] != null:
 		var hand = _ui[_sel]["hand"]
 		hand.position.x = 4.0 + sin(_bob_t * 7.0) * 4.0
 
 
 # ── Refresco visual ───────────────────────────────────────────────────────────
 func _refresh() -> void:
+	# Botón "Controls" (arriba): enfocado con _sel == CTRL_SEL.
+	var ctrl_focused: bool = (_sel == CTRL_SEL)
+	if _ctrl_hand != null:
+		_ctrl_hand.visible = ctrl_focused
+	if _ctrl_lbl != null:
+		_ctrl_lbl.add_theme_color_override("font_color", COLOR_GOLD if ctrl_focused else COLOR_TEXT)
+	if ctrl_focused:
+		_desc.text = "Abrir el menú de remapeo de controles (estilo Game Boy Advance)."
+		if _scroll != null:
+			_scroll.scroll_vertical = 0
 	for i in range(_specs.size()):
 		var row = _ui[i]
 		if row == null:
@@ -409,21 +463,31 @@ func _input(event: InputEvent) -> void:
 		_close()
 		_handled()
 	elif event.is_action_pressed("ui_up"):
-		_sel = _step_selectable(_sel, -1)
+		# Desde la primera fila, ↑ sube al botón "Controls" (arriba del todo).
+		if _sel != CTRL_SEL and _sel == _first_selectable():
+			_sel = CTRL_SEL
+		elif _sel != CTRL_SEL:
+			_sel = _step_selectable(_sel, -1)
 		_refresh()
 		_handled()
 	elif event.is_action_pressed("ui_down"):
-		_sel = _step_selectable(_sel, 1)
+		if _sel == CTRL_SEL:
+			_sel = _first_selectable()
+		else:
+			_sel = _step_selectable(_sel, 1)
 		_refresh()
 		_handled()
 	elif event.is_action_pressed("ui_left"):
-		_change(-1)
+		if _sel != CTRL_SEL:
+			_change(-1)
 		_handled()
 	elif event.is_action_pressed("ui_right"):
-		_change(1)
+		if _sel != CTRL_SEL:
+			_change(1)
 		_handled()
 	elif event.is_action_pressed("ui_accept"):
-		_activate()
+		if _sel == CTRL_SEL:
+			_open_controls()
 		_handled()
 
 
@@ -445,15 +509,6 @@ func _first_selectable() -> int:
 		if _ui[i] != null:
 			return i
 	return 0
-
-
-## Activa la fila enfocada con A. Solo las filas "action" hacen algo (abrir un
-## submenú como el de controles).
-func _activate() -> void:
-	if _sel < 0 or _sel >= _specs.size() or _ui[_sel] == null:
-		return
-	if str(_specs[_sel]["kind"]) == "action":
-		_open_controls()
 
 
 ## Abre el submenú de remapeo de controles como overlay hijo. Mientras está

@@ -46,12 +46,11 @@ func _ready() -> void:
 		var action: StringName = StringName(spec["action"])
 		if not InputMap.has_action(action):
 			InputMap.add_action(action)
+		# Sin remapeo guardado → se impone SIEMPRE la tecla por defecto de este
+		# esquema (aunque el motor ya asignara otra, p. ej. ui_select trae Space
+		# de fábrica). Así el mapa es determinista y sin teclas duplicadas.
 		var saved: int = int(cfg.get_value(SECTION, str(spec["action"]), 0))
-		if saved != 0:
-			_set_key(action, saved)
-		elif _first_key(action) == 0:
-			# Acción sin tecla (p. ej. las nuevas ui_page_*/ui_start): default.
-			_set_key(action, int(spec["def"]))
+		_set_key(action, saved if saved != 0 else int(spec["def"]))
 
 
 # ── API pública ───────────────────────────────────────────────────────────────
