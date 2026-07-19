@@ -81,6 +81,19 @@ python tools/build_data_from_spreadsheet.py "<ruta al .xlsx>" [outdir]
 python tools/sync_classes_from_xlsx.py            # dry-run (solo muestra cambios)
 python tools/sync_classes_from_xlsx.py --write    # aplica los cambios
 
+# Setea el modelo BASE + versions{FE4,FE5} en classes.json (nivel superior =
+# SAGA; versions.FE4/FE5 sobreescriben por-stat los 8 stats de combate).
+# Idempotente. Sin argumentos (rutas fijas).
+python tools/set_class_versions.py
+
+# Proporcionalidad FE4<->FE5 por clase desde los bloques versions de
+# classes.json. Salida: data/general/class_proportions.json + docs/*.xlsx
+python tools/build_class_proportions.py
+
+# Excel de referencia de clases (FE4/FE5) desde game_classes_wod_source.json.
+# Salida: docs/FE4_FE5_Classes_Real.xlsx
+python tools/build_game_classes_xlsx.py
+
 
 ================================================================================
  4) ASSETS
@@ -91,3 +104,21 @@ python tools/build_unarmed.py <carpeta_de_una_anim>          # una anim
 python tools/build_unarmed.py <raíz_de_anims> --recursive    # todas (recursivo)
 python tools/build_unarmed.py <carpeta> --force              # regenera aunque exista
 python tools/build_unarmed.py <carpeta> --dry-run            # no escribe; solo lista
+
+# MAP SPRITES: convierte sprites de origen (fondo verde LT 129,160,128) al
+# formato del proyecto: {clase}-stand.png (192×144) + {clase}-move.png (192×160).
+# Formato GBAFE: idle y walk en columnas separadas; divide por nº de frames
+# (stand=3, walk=15 → usa 12); right = espejo de left; ancla por pies (y=40).
+# Salida por defecto: ./map_sprites en el DIRECTORIO ACTUAL.
+python tools/build_map_sprites.py                      # LOTE recursivo del dir actual
+python tools/build_map_sprites.py --batch <carpeta>    # lote de otra carpeta
+python tools/build_map_sprites.py --name Cavalier \
+    --src-stand ruta/Cavalier-stand.png --src-move ruta/Cavalier-walk.png   # una clase
+python tools/build_map_sprites.py --src-move ruta/X-walk.png --inspect       # inspeccionar
+#   Ajustes útiles: --walk-order (def left,down,up) · --out <dir> · --raw-names
+
+# BITMAP FONTS: convierte sprite-fonts LT (.idx + .png) a BMFont .fnt, que Godot
+# importa como FontFile. Salida por defecto: assets/GBA/fonts/bmp/
+python tools/build_bitmap_font.py --src <carpeta_ltfonts>            # lote (color white)
+python tools/build_bitmap_font.py --src <carpeta> --name text        # una fuente
+python tools/build_bitmap_font.py --src <carpeta> --color black --name reel  # otro color
