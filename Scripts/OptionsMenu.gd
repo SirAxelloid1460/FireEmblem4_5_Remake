@@ -5,49 +5,68 @@ class_name OptionsMenu
 # OptionsMenu — panel de configuración estilo Fire Emblem (FE4 "Configuration")
 # ============================================================
 # Autocontenido (construido por código). Overlay a PANTALLA COMPLETA con fondo
-# propio OPACO, así cubre por completo el menú de debajo (antes el fondo era 72%
-# translúcido y se transparentaban las placas/cursor → aspecto amontonado).
+# propio OPACO que cubre el menú de debajo.
 #
-# Estilo FE: cada fila es [etiqueta] + [opciones en fila / barra], con la opción
-# activa resaltada en dorado, y una BARRA DE DESCRIPCIÓN abajo que explica la
-# fila enfocada. Navegación con mando/teclado:
-#   ↑ / ↓   cambiar de fila
-#   ← / →   cambiar el valor de la fila
-#   Cancel  volver (emite options_closed; o cambia de escena si es standalone)
+# Estructura (dos paneles):
+#   · Panel de TÍTULO (menu_bg_white, fuente fe8, TODO a opacidad 0.8).
+#   · Panel de OPCIONES (menu_bg_base; SOLO el fondo a 0.7, el contenido a 1.0).
+#     Cada fila tiene 3 columnas: [icono] [texto] [opciones]. El cursor es una
+#     mano (menu_hand) que apunta a la fila enfocada con un leve bob lateral.
 #
-# Persiste en user://settings.cfg conservando las MISMAS claves/semántica de
-# antes (para no romper a quien las lea). Aplica audio a los buses Music/SFX.
-# El "Graphics Set" se guarda con AssetSet.save (aplica al REINICIAR).
+# Navegación: ↑↓ fila · ←→ valor · Cancel vuelve. Barra de descripción abajo.
+# Persiste en user://settings.cfg (mismas claves de antes). Audio a buses
+# Music/SFX. "Graphics Set" se guarda con AssetSet.save (aplica al reiniciar).
 #
-# NOTA GDScript: los Dictionary se acceden por corchetes (spec["value"]), NO por
-# punto (Godot 4 no soporta dot-access en Dictionary).
+# NOTA GDScript: Dictionary por corchetes (spec["k"]), Godot 4 no tiene dot-access.
 # ============================================================
 
 signal options_closed
 
 const CFG := "user://settings.cfg"
-const SERIF_FONT := "res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
+const FE8_FONT := "res://assets/fonts/fire-emblem-8-text.ttf"
 const BG_IMAGE := "res://assets/panoramas/default_background.png"
+const TITLE_BG := "res://assets/menus/menu_bg_white.png"
+const PANEL_BG := "res://assets/menus/menu_bg_base.png"
+const HAND     := "res://assets/menus/menu_hand.png"
+const SETTINGS_ICONS := "res://assets/sprites/settings_icons.png"   # tira vertical 16×16
+const ICON_SRC := 16
+
+const PATCH := 8              # margen 9-slice de las texturas de panel (24×24)
+const HAND_W := 15
+const HAND_H := 12
+const HAND_SCALE := 3
+const ROW_H := 38
+const ICON_W := 34
+const HAND_SLOT_W := 40
+const TEXT_W := 250
+const TITLE_ALPHA := 0.8
+const PANEL_ALPHA := 0.7
 
 const COLOR_GOLD     := Color(1.00, 0.84, 0.36, 1.0)
-const COLOR_GOLD_DIM := Color(0.66, 0.56, 0.28, 1.0)
-const COLOR_TEXT     := Color(0.90, 0.91, 0.86, 1.0)
+const COLOR_GOLD_DIM := Color(0.72, 0.62, 0.32, 1.0)
+const COLOR_TEXT     := Color(0.92, 0.93, 0.88, 1.0)
 const COLOR_DIM      := Color(0.55, 0.57, 0.62, 1.0)
 const COLOR_OUTLINE  := Color(0.0, 0.0, 0.0, 1.0)
-const SEG_EMPTY      := Color(0.22, 0.24, 0.30, 1.0)
+const SEG_ON         := Color(1.00, 0.84, 0.36, 1.0)
+const SEG_OFF        := Color(0.22, 0.24, 0.30, 1.0)
 
-var _specs: Array = []          # specs de fila (dicts)
-var _ui: Array = []             # nodos visuales por fila (paralelo a _specs; null = sección)
-var _sel: int = 0               # índice de fila enfocada
+var _specs: Array = []
+var _ui: Array = []
+var _sel: int = 0
 var _cfg := ConfigFile.new()
 var _desc: Label = null
 var _rows_box: VBoxContainer = null
 var _scroll: ScrollContainer = null
+var _font = null
+var _bob_t: float = 0.0
+var _icon_sheet: Texture2D = null       # tira de iconos de settings (16×16 cada uno)
+var _icon_i: int = 0                     # índice de icono para la siguiente fila
 
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_cfg.load(CFG)
+	_font = load(AssetSet.p(FE8_FONT))
 	_build_specs()
 	_build_ui()
 	_apply_bus("Music", int(_cfg_get("audio", "music_volume", 70)))
@@ -85,17 +104,17 @@ func _row_section(title_text: String) -> void:
 func _row_range(section: String, key: String, label: String, default: int, desc: String) -> void:
 	var val: int = int(_cfg_get(section, key, default))
 	_specs.append({ "kind": "range", "section": section, "key": key, "label": label,
-			"value": clampi(int(round(val / 10.0)) * 10, 0, 100), "desc": desc })
+			"value": clampi(int(round(val / 10.0)) * 10, 0, 100), "desc": desc, "icon": "" })
 
 func _row_enum(section: String, key: String, label: String, choices: Array, default: int, desc: String) -> void:
 	var idx: int = clampi(int(_cfg_get(section, key, default)), 0, choices.size() - 1)
 	_specs.append({ "kind": "enum", "section": section, "key": key, "label": label,
-			"choices": choices, "idx": idx, "desc": desc })
+			"choices": choices, "idx": idx, "desc": desc, "icon": "" })
 
 func _row_toggle(section: String, key: String, label: String, default: bool, desc: String) -> void:
 	var on: bool = bool(_cfg_get(section, key, default))
 	_specs.append({ "kind": "toggle", "section": section, "key": key, "label": label,
-			"choices": ["On", "Off"], "idx": (0 if on else 1), "desc": desc })
+			"choices": ["On", "Off"], "idx": (0 if on else 1), "desc": desc, "icon": "" })
 
 func _row_set(label: String, desc: String) -> void:
 	var cur: String = AssetSet.current()
@@ -103,15 +122,12 @@ func _row_set(label: String, desc: String) -> void:
 	if idx < 0:
 		idx = AssetSet.SETS.find(AssetSet.DEFAULT)
 	_specs.append({ "kind": "set", "label": label, "choices": AssetSet.SETS, "idx": idx,
-			"applied": cur, "desc": desc })
+			"applied": cur, "desc": desc, "icon": "" })
 
 
 # ── Construcción de la UI ─────────────────────────────────────────────────────
 func _build_ui() -> void:
-	var font := load(AssetSet.p(SERIF_FONT))
-
-	# Fondo OPACO a pantalla completa (cubre el menú de debajo). Base opaca de
-	# seguridad + ilustración + tinte oscuro para legibilidad.
+	# Fondo OPACO a pantalla completa (cubre el menú de debajo).
 	var base := ColorRect.new()
 	base.color = Color(0.03, 0.04, 0.09, 1.0)
 	base.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -125,144 +141,204 @@ func _build_ui() -> void:
 		tex.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 		add_child(tex)
 	var tint := ColorRect.new()
-	tint.color = Color(0.03, 0.04, 0.09, 0.86)
+	tint.color = Color(0.03, 0.04, 0.09, 0.82)
 	tint.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(tint)
 
-	# CenterContainer a pantalla completa → centra el panel sea cual sea su tamaño
-	# (PRESET_CENTER sobre el PanelContainer fallaba: calculaba el offset con
-	# tamaño 0 aún sin dimensionar y lo mandaba abajo-derecha).
+	# Pila centrada: título + panel de opciones + descripción.
 	var center := CenterContainer.new()
 	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	center.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(center)
+	var stack := VBoxContainer.new()
+	stack.add_theme_constant_override("separation", 8)
+	center.add_child(stack)
 
-	var panel := PanelContainer.new()
-	var sb := StyleBoxFlat.new()
-	sb.bg_color = Color(0.06, 0.07, 0.13, 0.94)
-	sb.set_border_width_all(3)
-	sb.border_color = COLOR_GOLD_DIM
-	sb.set_corner_radius_all(8)
-	sb.content_margin_left = 40
-	sb.content_margin_right = 40
-	sb.content_margin_top = 24
-	sb.content_margin_bottom = 20
-	panel.add_theme_stylebox_override("panel", sb)
-	panel.custom_minimum_size = Vector2(860, 660)
-	center.add_child(panel)
-
-	var col := VBoxContainer.new()
-	col.add_theme_constant_override("separation", 10)
-	panel.add_child(col)
-
-	var title := Label.new()
-	title.text = "Configuration"
-	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	if font != null:
-		title.add_theme_font_override("font", font)
-	title.add_theme_font_size_override("font_size", 40)
-	title.add_theme_color_override("font_color", COLOR_GOLD)
-	title.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
-	title.add_theme_constant_override("outline_size", 5)
-	col.add_child(title)
-	col.add_child(HSeparator.new())
-
-	_scroll = ScrollContainer.new()
-	_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	col.add_child(_scroll)
-	_rows_box = VBoxContainer.new()
-	_rows_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	_rows_box.add_theme_constant_override("separation", 6)
-	_scroll.add_child(_rows_box)
-
-	for spec in _specs:
-		_ui.append(_build_row(spec, font))
-
-	col.add_child(HSeparator.new())
-	_desc = Label.new()
-	_desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_desc.custom_minimum_size = Vector2(0, 44)
-	if font != null:
-		_desc.add_theme_font_override("font", font)
-	_desc.add_theme_font_size_override("font_size", 20)
-	_desc.add_theme_color_override("font_color", COLOR_GOLD)
-	_desc.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
-	_desc.add_theme_constant_override("outline_size", 3)
-	col.add_child(_desc)
+	stack.add_child(_build_title_panel())
+	stack.add_child(_build_options_panel())
+	stack.add_child(_build_desc_bar())
 
 	_sel = _first_selectable()
 
 
-## Fila visual de un spec. Devuelve un dict con referencias, o null si es sección.
-func _build_row(spec: Dictionary, font) -> Variant:
+## Panel de título separado (menu_bg_white). TODO el panel (fondo + texto) a 0.8.
+func _build_title_panel() -> Control:
+	var root := Control.new()
+	root.custom_minimum_size = Vector2(420, 74)
+	root.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	root.modulate.a = TITLE_ALPHA
+
+	var np := _nine_patch(TITLE_BG)
+	np.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	root.add_child(np)
+
+	var lbl := Label.new()
+	lbl.text = "Configuration"
+	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_font_it(lbl, 34, COLOR_GOLD, 4)
+	root.add_child(lbl)
+	return root
+
+
+## Panel de opciones (menu_bg_base). SOLO el fondo a 0.7; el contenido a 1.0.
+func _build_options_panel() -> Control:
+	var root := Control.new()
+	root.custom_minimum_size = Vector2(880, 560)
+	root.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+
+	var np := _nine_patch(PANEL_BG)
+	np.self_modulate.a = PANEL_ALPHA           # transparencia SOLO del fondo
+	np.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	root.add_child(np)
+
+	var margin := MarginContainer.new()
+	margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	for m in ["margin_left", "margin_right", "margin_top", "margin_bottom"]:
+		margin.add_theme_constant_override(m, 28)
+	root.add_child(margin)
+
+	_scroll = ScrollContainer.new()
+	_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	margin.add_child(_scroll)
+	_rows_box = VBoxContainer.new()
+	_rows_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_rows_box.add_theme_constant_override("separation", 5)
+	_scroll.add_child(_rows_box)
+
+	# Tira de iconos de settings (se asigna uno por opción, en orden).
+	var isheet := AssetSet.p(SETTINGS_ICONS)
+	if ResourceLoader.exists(isheet):
+		_icon_sheet = load(isheet)
+	_icon_i = 0
+	for spec in _specs:
+		_ui.append(_build_row(spec))
+	return root
+
+
+func _build_desc_bar() -> Control:
+	_desc = Label.new()
+	_desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_desc.custom_minimum_size = Vector2(880, 40)
+	_desc.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	_font_it(_desc, 20, COLOR_GOLD, 3)
+	return _desc
+
+
+## Fila 3-columnas: [mano+icono] [texto] [opciones]. null si es sección.
+func _build_row(spec: Dictionary) -> Variant:
 	if spec["kind"] == "section":
 		var sec := Label.new()
 		sec.text = str(spec["label"])
-		if font != null:
-			sec.add_theme_font_override("font", font)
-		sec.add_theme_font_size_override("font_size", 24)
-		sec.add_theme_color_override("font_color", COLOR_GOLD_DIM)
-		sec.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
-		sec.add_theme_constant_override("outline_size", 3)
+		_font_it(sec, 24, COLOR_GOLD_DIM, 3)
 		var m := MarginContainer.new()
-		m.add_theme_constant_override("margin_top", 8)
+		m.add_theme_constant_override("margin_top", 6)
 		m.add_child(sec)
 		_rows_box.add_child(m)
 		return null
 
 	var hb := HBoxContainer.new()
-	hb.add_theme_constant_override("separation", 12)
+	hb.add_theme_constant_override("separation", 8)
+	hb.custom_minimum_size = Vector2(0, ROW_H)
 
-	var marker := Label.new()
-	marker.text = "▶"
-	marker.custom_minimum_size = Vector2(26, 0)
-	if font != null:
-		marker.add_theme_font_override("font", font)
-	marker.add_theme_font_size_override("font_size", 22)
-	marker.add_theme_color_override("font_color", COLOR_GOLD)
-	hb.add_child(marker)
+	# Columna 0 (cursor): slot fijo con la mano, posicionada libremente (bob).
+	var hand_slot := Control.new()
+	hand_slot.custom_minimum_size = Vector2(HAND_SLOT_W, ROW_H)
+	var hand := TextureRect.new()
+	hand.texture = load(AssetSet.p(HAND))
+	hand.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	hand.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	hand.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	hand.size = Vector2(HAND_W * HAND_SCALE, HAND_H * HAND_SCALE)
+	hand.position = Vector2(0, (ROW_H - HAND_H * HAND_SCALE) / 2.0)
+	hand.visible = false
+	hand_slot.add_child(hand)
+	hb.add_child(hand_slot)
 
+	# Columna 1 (icono): recorte 16×16 de la tira settings_icons, en orden.
+	var icon := TextureRect.new()
+	icon.custom_minimum_size = Vector2(ICON_W, ROW_H)
+	icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	if _icon_sheet != null:
+		var at := AtlasTexture.new()
+		at.atlas = _icon_sheet
+		at.region = Rect2(0, _icon_i * ICON_SRC, ICON_SRC, ICON_SRC)
+		icon.texture = at
+	_icon_i += 1
+	hb.add_child(icon)
+
+	# Columna 2 (texto).
 	var lbl := Label.new()
 	lbl.text = str(spec["label"])
-	lbl.custom_minimum_size = Vector2(300, 0)
-	if font != null:
-		lbl.add_theme_font_override("font", font)
-	lbl.add_theme_font_size_override("font_size", 22)
-	lbl.add_theme_color_override("font_color", COLOR_TEXT)
-	lbl.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
-	lbl.add_theme_constant_override("outline_size", 3)
+	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	lbl.custom_minimum_size = Vector2(TEXT_W, ROW_H)
+	_font_it(lbl, 22, COLOR_TEXT, 3)
 	hb.add_child(lbl)
 
+	# Columna 3 (opciones).
 	var value_box := HBoxContainer.new()
-	value_box.add_theme_constant_override("separation", 14)
+	value_box.add_theme_constant_override("separation", 12)
 	value_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	value_box.alignment = BoxContainer.ALIGNMENT_BEGIN
 	hb.add_child(value_box)
 
-	var row: Dictionary = { "spec": spec, "node": hb, "marker": marker, "label": lbl,
+	var row: Dictionary = { "spec": spec, "node": hb, "hand": hand, "label": lbl,
 			"choices": [], "segments": [] }
 
 	if spec["kind"] == "range":
 		for i in range(10):
 			var seg := ColorRect.new()
 			seg.custom_minimum_size = Vector2(22, 16)
-			value_box.add_child(seg)
+			var wrap := CenterContainer.new()
+			wrap.custom_minimum_size = Vector2(22, ROW_H)
+			wrap.add_child(seg)
+			value_box.add_child(wrap)
 			row["segments"].append(seg)
 	else:
 		for choice in spec["choices"]:
 			var c := Label.new()
 			c.text = str(choice)
-			if font != null:
-				c.add_theme_font_override("font", font)
-			c.add_theme_font_size_override("font_size", 22)
-			c.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
-			c.add_theme_constant_override("outline_size", 3)
+			c.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+			c.custom_minimum_size = Vector2(0, ROW_H)
+			_font_it(c, 22, COLOR_DIM, 3)
 			value_box.add_child(c)
 			row["choices"].append(c)
 
 	_rows_box.add_child(hb)
 	return row
+
+
+# ── Helpers de estilo ─────────────────────────────────────────────────────────
+func _nine_patch(path: String) -> NinePatchRect:
+	var np := NinePatchRect.new()
+	np.texture = load(AssetSet.p(path))
+	np.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	np.patch_margin_left = PATCH
+	np.patch_margin_right = PATCH
+	np.patch_margin_top = PATCH
+	np.patch_margin_bottom = PATCH
+	return np
+
+
+func _font_it(lbl: Label, size: int, color: Color, outline: int) -> void:
+	if _font != null:
+		lbl.add_theme_font_override("font", _font)
+	lbl.add_theme_font_size_override("font_size", size)
+	lbl.add_theme_color_override("font_color", color)
+	lbl.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
+	lbl.add_theme_constant_override("outline_size", outline)
+
+
+# ── Bob lateral del cursor ────────────────────────────────────────────────────
+func _process(delta: float) -> void:
+	_bob_t += delta
+	if _sel >= 0 and _sel < _ui.size() and _ui[_sel] != null:
+		var hand = _ui[_sel]["hand"]
+		hand.position.x = 4.0 + sin(_bob_t * 7.0) * 4.0
 
 
 # ── Refresco visual ───────────────────────────────────────────────────────────
@@ -272,23 +348,25 @@ func _refresh() -> void:
 		if row == null:
 			continue
 		var focused: bool = (i == _sel)
-		# Ocultar por alpha (no por `visible`): así el marcador conserva su hueco
-		# en el HBox y las columnas NO se desplazan al mover el cursor.
-		row["marker"].modulate.a = 1.0 if focused else 0.0
+		row["hand"].visible = focused
 		row["label"].add_theme_color_override("font_color", COLOR_GOLD if focused else COLOR_TEXT)
 		var spec: Dictionary = row["spec"]
 		if spec["kind"] == "range":
 			var filled: int = int(spec["value"]) / 10
 			var segs: Array = row["segments"]
 			for s in range(segs.size()):
-				segs[s].color = COLOR_GOLD if s < filled else SEG_EMPTY
+				segs[s].color = SEG_ON if s < filled else SEG_OFF
 		else:
 			var chs: Array = row["choices"]
 			for c in range(chs.size()):
 				chs[c].add_theme_color_override("font_color", COLOR_GOLD if c == int(spec["idx"]) else COLOR_DIM)
 	if _sel >= 0 and _sel < _specs.size():
 		_desc.text = str(_specs[_sel].get("desc", ""))
-		if _ui[_sel] != null and _scroll != null:
+		# En la fila más alta, resetear el scroll al tope para que se vea el
+		# título de la sección (si no, quedaría irremediablemente oculto).
+		if _sel == _first_selectable():
+			_scroll.scroll_vertical = 0
+		elif _ui[_sel] != null and _scroll != null:
 			_scroll.ensure_control_visible(_ui[_sel]["node"])
 
 
@@ -317,7 +395,6 @@ func _handled() -> void:
 	get_viewport().set_input_as_handled()
 
 
-## Siguiente fila seleccionable desde `from` en dirección `step` (con clamp).
 func _step_selectable(from: int, step: int) -> int:
 	var i: int = from + step
 	while i >= 0 and i < _specs.size():
@@ -334,7 +411,6 @@ func _first_selectable() -> int:
 	return 0
 
 
-## Cambia el valor de la fila enfocada (delta = -1 / +1).
 func _change(delta: int) -> void:
 	if _sel < 0 or _sel >= _specs.size() or _ui[_sel] == null:
 		return
@@ -409,10 +485,7 @@ func _show_restart_notice(set_name: String) -> void:
 	var msg := Label.new()
 	msg.text = "El set gráfico «%s» se aplicará\nal reiniciar el juego." % set_name
 	msg.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	msg.add_theme_font_size_override("font_size", 22)
-	msg.add_theme_color_override("font_color", COLOR_TEXT)
-	msg.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
-	msg.add_theme_constant_override("outline_size", 3)
+	_font_it(msg, 22, COLOR_TEXT, 3)
 	box.add_child(msg)
 	var ok := Button.new()
 	ok.text = "OK"
