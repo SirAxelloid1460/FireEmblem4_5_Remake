@@ -1,25 +1,46 @@
-# Ejemplo del formato de localización de diálogos
+# Formato de localización de diálogos (según tu idea)
 
-Muestra generada desde **FE5, capítulo 1** (`level_nid = "1"`) para revisar el
-formato propuesto en `docs/dialogue_localization_design.md`. **No es el sistema
-real todavía** — solo archivos de ejemplo.
+`prologue_fe5.en.json` = **Prólogo entero de FE5** (escenas Intro + Narration +
+DagdarSpawn, 54 líneas) extraído de `events.json`, para que lo revises/corrijas.
 
-## Archivos
+## Estructura
 
-- **`dialogue.en.json`** — índice base (referencia): `hash → texto inglés`.
-  El hash = SHA1 del texto inglés exacto (con tokens `{w}`/`{br}`), 12 hex.
-- **`dialogue.es.json`** — mapa de traducción de un idioma: `hash → texto`.
-  Solo trae las líneas ya traducidas (2 de demo); las que falten caen a inglés
-  en runtime.
-- **`dialogue_1.xlsx`** — hoja del capítulo para traductores: columnas
-  `id · speaker · en · es · de · fr · ja`. El `speaker` es solo contexto (no se
-  guarda en el JSON). La tool haría el round-trip xlsx ⇄ json.
+```json
+{
+  "INTRO": [
+    { "RAYDRIK": "Have you found the prince?{w}" },
+    { "WEISSMAN": "No, my lord.{w}{br}..." },
+    { "RAYDRIK": "..." }
+  ],
+  "NARRATION": [ ... ],
+  "DAGDARSPAWN": [ ... ]
+}
+```
 
-## Notas
+- **Escena** (`INTRO`, `NARRATION`, `DAGDARSPAWN`) = un evento del capítulo.
+- Cada escena es una **lista ORDENADA**; cada elemento es `{ "HABLANTE": "línea" }`.
+- Los tokens de control (`{w}` espera, `{br}` salto) se conservan tal cual.
 
-- La ruta real sería `data/fe5/events/lang/1/dialogue.es.json` (por capítulo,
-  carpetas fe4/fe5 separadas).
-- Editar el inglés en `events.json` cambia el hash → esa línea vuelve a inglés y
-  la tool la marca como pendiente (huérfana la vieja, faltante la nueva).
-- El runtime solo necesita `hash → texto`; el `en.json` y el `speaker` del xlsx
-  son ayudas para traducir.
+## Por qué lista (y no `HABLANTE: línea` suelto)
+
+Tu borrador tenía `HABLANTE: "..."` directo dentro de la escena, pero en JSON un
+objeto **no admite claves repetidas** y un mismo personaje habla varias veces
+(RAYDRIK aparece 5+ veces). La **lista de objetos de una sola clave** conserva tu
+estética (hablante: línea) y además: mantiene el ORDEN y permite REPETIR
+hablante. (También corrige: faltaba el `:` tras la escena y las comillas del
+hablante.)
+
+## Cómo mapearía en runtime
+
+El sistema reproduce el evento `INTRO`, línea N → busca
+`dialogue.<locale>.json["INTRO"][N]` → usa esa línea traducida; si falta, cae al
+inglés inline de `events.json`. El **hablante** es para el traductor (legibilidad
+y para poder avisar si no cuadra con el evento); el emparejamiento real es por
+**escena + índice**.
+
+## App de traductores (pendiente)
+
+En vez de xlsx: una web que importe este `_en.json`, muestre cada línea (escena ·
+hablante · inglés) con su traducción editable al lado, y exporte
+`dialogue.<locale>.json` con la MISMA estructura. Se hará cuando cierres el
+formato.
