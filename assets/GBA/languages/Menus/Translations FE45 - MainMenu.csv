@@ -8,12 +8,17 @@ FRENCH,Français,,,,
 NEWGAME,New Game,Nueva Partida,Neues Spiel,新しいゲーム,Nouveau jeu
 CONTINUE,Continue,Continuar,Fortsetzen,続く,Continuer
 LOAD,Load Game,Cargar Partida,Spiel Laden,ゲームをロードする,Charger jeu
-RESTART,Restart Level,Reiniciar Nivel,Level Neustarten,"リスタートレベル",Niveau de redémarrage
-EXTRAS,Extras,Extras,Extras,"エクストラ",Extras
+RESTART,Restart Level,Reiniciar Nivel,Level Neustarten,"リスタートレベル
+",Niveau de redémarrage
+EXTRAS,Extras,Extras,Extras,"エクストラ
+",Extras
 ,,,,,
-OPTIONS,Options,Opciones,Optionen,"オプション",Options
-CREDITS,Credits,Creditos,Credits,"クレジット",Credits
-SOUNDROOM,Sound Room,Sala de Sonido,Sound Room,"サウンドルーム",Salle de son
+OPTIONS,Options,Opciones,Optionen,"オプション
+",Options
+CREDITS,Credits,Creditos,Credits,"クレジット
+",Credits
+SOUNDROOM,Sound Room,Sala de Sonido,Sound Room,"サウンドルーム
+",Salle de son
 ,,,,,
 NORMAL,Normal,Normal,Normal,ノーマル,Normal
 ELITE,Elite,Elite,Profi,エリート,Elite
@@ -27,15 +32,8 @@ SCREENSIZE,Resolution,Resolución,Auflösung,,
 SCREENSIZEDESC,Change Game Resolution,Cambiar Resolucion del Juego,Spielauflösung ändern,,
 QSET,Graphic Quality Set,Set de Calidad Gráfica,Grafisches Qualitätsset,,
 QSETDESC,Change Graphic Quality Set,Cambiar Set de Calidad Gráfica,Grafisches Qualitätsset ändern,,
-QSETOPTION1,GBA,GBA,GBA,,GBA
-QSETOPTION2,Artwork Based,Basada en Arte,Kunstwerk basiert,,Basé sur d'art
-QSETOPTION3,HD,HD,HD,,HD
 ANIMATION,Animations,Animaciones,Animationen,,
 ANIMATIONDESC,Show combat animations,Mostras animaciones de batalla,Kampfanimationen anzeigen,,
-ANIMATIONOPTION1,Always,Siempre,Immer,,
-ANIMATIONOPTION2,Your Turn,Tu Turno,Dein Zug,,
-ANIMATIONOPTION3,Combat Only,Solo en Combate,Nur im Kampf,,
-ANIMATIONOPTION4,Never,Nunca,Nie,,
 BATTLEBG,Battle Background,Fondo de Batalla,Kampfhintergrund,,
 BATTLEBGDESC,Battle Background On/Off,On/Off Fondo de Batalla,Kampfhintergrund Ein/Aus,,
 UNITSPEED,Unit Speed,Velocidad Unidad,Entitätsgeschwindigkeit,,

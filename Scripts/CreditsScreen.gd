@@ -148,7 +148,7 @@ var credits_data: Array = [
 
 	# ---------- MAP SPRITES & CUSTOM CLASS CARDS (52 contributors) ----------
 	{ "type": "header", "text": "MAP SPRITES" },
-	{ "type": "subheader", "text": "& Custom Class Cards" },
+	{ "type": "subheader", "text": "& Custom Class Cards", "key": "CRSUBCLASSCARDS" },
 	{ "type": "spacer", "size": 16 },
 	# --- Créditos comunitarios del grid original (comentados de momento) ---
 	# { "type": "grid", "columns": 4, "names": [
@@ -457,8 +457,8 @@ var credits_data: Array = [
 	# ---------- DISCLAIMER ----------
 	{ "type": "header", "text": "DISCLAIMER" },
 	{ "type": "spacer", "size": 16 },
-	{ "type": "subheader", "text": "Many assets are copyrighted or trademarked" },
-	{ "type": "subheader", "text": "by Nintendo and their respective owners." },
+	{ "type": "subheader", "text": "Many assets are copyrighted or trademarked", "key": "CRDISCLAIMER1" },
+	{ "type": "subheader", "text": "by Nintendo and their respective owners.", "key": "CRDISCLAIMER2" },
 	{ "type": "spacer", "size": 18 },
 	{ "type": "text", "text": "This Fire Emblem 4 / FE5 remake" },
 	{ "type": "text", "text": "is a non-profit fangame, released for free," },
@@ -671,9 +671,30 @@ func _build_scroll_content() -> void:
 	_scroll_node.resized.connect(_on_scroll_resized)
 
 
+## Texto localizado de una entrada: si trae "key" usa esa clave; si es un
+## "header" (título de sección) deriva la clave del propio texto; el resto
+## (nombres propios, herramientas) se deja literal.
+func _credit_text(entry: Dictionary) -> String:
+	if entry.has("key"):
+		return tr(str(entry["key"]))
+	var raw: String = str(entry.get("text", ""))
+	if str(entry.get("type", "text")) == "header":
+		return tr(_credit_key(raw))
+	return raw
+
+
+## Clave de traducción derivada de un título: "MAP DESIGN" → "CRMAPDESIGN".
+func _credit_key(t: String) -> String:
+	var s := ""
+	for c in t.to_upper():
+		if (c >= "A" and c <= "Z") or (c >= "0" and c <= "9"):
+			s += c
+	return "CR" + s
+
+
 func _make_label(entry: Dictionary) -> Label:
 	var lbl := Label.new()
-	lbl.text = entry.get("text", "")
+	lbl.text = _credit_text(entry)
 	var _cf = _credit_font()
 	if _cf:
 		lbl.add_theme_font_override("font", _cf)

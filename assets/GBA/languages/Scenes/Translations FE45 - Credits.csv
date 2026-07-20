@@ -1,19 +1,25 @@
 ,en,es,de,ja,fr
 ,,,,,
-MOREYETTOCOME,MORE YET TO COME,MAS AUN POR VENIR,,,
-AUTHOR,A Remake by:,Un Remake de:,,,
-WITHCOMMUNITY,with huge help of the FE Community,con gran ayuda de la Comunidad de FE,,,
-PROGRAMMING,Programming,Programadores,,,
-TESTING,Testing,Testeo,,,
-MAPDESIGN,Map Design,Diseño del Mapa,,,
-INFORMATION,Information Resources,Recursos de Informacion,,,
-MAPSPRITES,Map Sprites and Custom Class Cards,Sprites de Mapa e Iconos Personalizados de Clase,,,
-ADDITIONAL,Additional Spriting Resources,Recursos Adicionales de Spriting,,,
-PORTRAITS,Portrait Design,Diseño de Retratos,,,
-COMBATANIM,Custom Combat Animations,Animaciones Personalizadas de Combate,,,
-TRANSLATION,Writing and Translations,Escritura y Traducciones,,,
-MUSIC,Music,Musica,,,
-TOOLS,Additional Tools,Herramientas Adicionales,,,
-DISCLAIMER,Disclaimer,Descargo de Responsabilidad,,,
-DISCLAIMERTEXT,"Many assets are copyrighted or trademarked by Nintendo and their respective owners. This Fire Emblem 4 and Fire Emblem 5 remake is a non-profit fangame, released for free, and developed using Godot 4.","Muchos recursos están protegidos por derechos de autor o marcas registradas de Nintendo y sus respectivos propietarios. Este remake de Fire Emblem 4 y Fire Emblem 5 es un fangame sin ánimo de lucro, publicado gratuitamente y desarrollado con Godot 4.",,,
-THANKS,THANKS FOR HAVING PLAYED,GRACIAS POR HABER JUGADO,,,
+CRMOREYETTOCOME,MORE YET TO COME,MÁS AÚN POR VENIR,MEHR IST IN ARBEIT,,ENCORE PLUS À VENIR
+CRAREMAKEBY,A REMAKE BY,UN REMAKE DE,EIN REMAKE VON,,UN REMAKE DE
+CRLEXTALIONISENGINEBY,LEX TALIONIS ENGINE BY,MOTOR LEX TALIONIS DE,LEX-TALIONIS-ENGINE VON,,MOTEUR LEX TALIONIS PAR
+CRPROGRAMMING,PROGRAMMING,PROGRAMACIÓN,PROGRAMMIERUNG,,PROGRAMMATION
+CRTESTING,TESTING,PRUEBAS,TESTS,,TESTS
+CRMAPDESIGN,MAP DESIGN,DISEÑO DE MAPAS,KARTENDESIGN,,CONCEPTION DES CARTES
+CRINFORMATIONRESOURCES,INFORMATION RESOURCES,FUENTES DE INFORMACIÓN,INFORMATIONSQUELLEN,,SOURCES D'INFORMATION
+CRMAPSPRITES,MAP SPRITES,SPRITES DE MAPA,KARTEN-SPRITES,,SPRITES DE CARTE
+CRADDITIONALSPRITINGRESOURCES,ADDITIONAL SPRITING RESOURCES,RECURSOS DE SPRITES ADICIONALES,WEITERE SPRITE-RESSOURCEN,,RESSOURCES DE SPRITES SUPPL.
+CRCUSTOMITEMSPRITES,CUSTOM ITEM SPRITES,SPRITES DE OBJETOS PERSONALIZADOS,EIGENE GEGENSTANDS-SPRITES,,SPRITES D'OBJETS PERSONNALISÉS
+CRPORTRAITDESIGN,PORTRAIT DESIGN,DISEÑO DE RETRATOS,PORTRÄTDESIGN,,CONCEPTION DES PORTRAITS
+CRCUSTOMCOMBATANIMATIONS,CUSTOM COMBAT ANIMATIONS,ANIMACIONES DE COMBATE PERSONALIZADAS,EIGENE KAMPFANIMATIONEN,,ANIMATIONS DE COMBAT PERSONNALISÉES
+CRWRITINGTRANSLATIONS,WRITING & TRANSLATIONS,GUION Y TRADUCCIONES,TEXT & ÜBERSETZUNGEN,,TEXTES & TRADUCTIONS
+CRMUSIC,MUSIC,MÚSICA,MUSIK,,MUSIQUE
+CRBUILTWITH,BUILT WITH,CREADO CON,ERSTELLT MIT,,CRÉÉ AVEC
+CRORIGINALLTTOOLING,ORIGINAL LT TOOLING,HERRAMIENTAS LT ORIGINALES,URSPRÜNGLICHE LT-TOOLS,,OUTILLAGE LT D'ORIGINE
+CRDISCLAIMER,DISCLAIMER,AVISO LEGAL,HAFTUNGSAUSSCHLUSS,,AVERTISSEMENT
+CRSPECIALTHANKSTO,SPECIAL THANKS TO,AGRADECIMIENTOS ESPECIALES A,BESONDERER DANK AN,,REMERCIEMENTS SPÉCIAUX À
+CRTHANKSFORHAVINGPLAYED,THANKS FOR HAVING PLAYED,GRACIAS POR JUGAR,DANKE FÜRS SPIELEN,,MERCI D'AVOIR JOUÉ
+,,,,,
+CRSUBCLASSCARDS,& Custom Class Cards,y tarjetas de clase personalizadas,& eigene Klassenkarten,,et cartes de classe personnalisées
+CRDISCLAIMER1,Many assets are copyrighted or trademarked,Muchos recursos tienen copyright o marca registrada,Viele Inhalte sind urheber- oder markenrechtlich geschützt,,De nombreux éléments sont sous copyright ou marque déposée
+CRDISCLAIMER2,by Nintendo and their respective owners.,por Nintendo y sus respectivos propietarios.,von Nintendo und den jeweiligen Eigentümern.,,par Nintendo et leurs propriétaires respectifs.
