@@ -64,7 +64,7 @@ const AFK_SECONDS := 15.0
 const PLATE      := "res://assets/menus/title_menu_dark.png"           # placa normal
 const PLATE_HL   := "res://assets/menus/title_menu_dark_highlight.png" # placa enfocada
 const SWORD      := "res://assets/menus/cursor_dragon.png"             # cursor-espada
-const SERIF_FONT := "res://assets/fonts/IMFellFrenchCanonSC-Regular.ttf"
+const UI_FONT := "res://assets/fonts/bmp/text.fnt"   # sprite-font LT
 
 # SFX del menú (ver assets/sfx/). Navegación al cambiar de foco, confirmación al
 # avanzar, cancelación al retroceder, error en acciones no disponibles.
@@ -75,7 +75,7 @@ const SFX_ERROR   := "Error"
 const SOUNDROOM_SCRIPT := "res://Scripts/SoundRoom.gd"
 const BTN_W := 620
 const BTN_H := 110
-const BTN_FONT := 54
+const BTN_FONT := 48   # múltiplo de 16 (3×) para escalado nítido de la sprite-font
 const SWORD_SCALE := 4
 const COLOR_BTN := Color(0.95, 0.93, 0.85, 1.0)   # crema (texto de botón)
 # Bobeo del cursor estilo GBA: ESCALONADO (no fluido), pero con escalones más
@@ -88,8 +88,6 @@ const SLIDE_TIME := 0.28
 const FADE_TIME  := 0.30
 
 # Descripciones de dificultad (de translations.json de los .ltproj)
-const DESC_NORMAL := "Base SNES difficulty + balance fixes due to GBA mechanics."
-const DESC_ELITE  := "Base SNES difficulty without balance fixes. For veterans."
 
 # ----------------------- ESTADO -----------------------------
 enum St { PRESS_START, MAIN, NEWGAME, EXTRAS }
@@ -439,19 +437,22 @@ func _animate_cursor(delta: float) -> void:
 # --- Columnas de botones ---
 func _build_columns() -> void:
 	# "Continue" solo aparece si hay partida guardada (sin saves es ilógico).
-	var main_items: Array = [{ "id": "newgame", "text": "New Game" }]
+	# El texto es la CLAVE de traducción (los Button se auto-traducen con el
+	# locale activo). Las claves NEWGAME/…/SOUNDROOM están en la tabla de
+	# MainMenu para los 5 idiomas.
+	var main_items: Array = [{ "id": "newgame", "text": "NEWGAME" }]
 	if SaveSystem.has_save_file():
-		main_items.append({ "id": "continue", "text": "Continue" })
-	main_items.append({ "id": "extras", "text": "Extras" })
+		main_items.append({ "id": "continue", "text": "CONTINUE" })
+	main_items.append({ "id": "extras", "text": "EXTRAS" })
 	_main_col = _make_column(main_items)
 	_newgame_col = _make_column([
-		{ "id": "normal", "text": "Normal" },
-		{ "id": "elite",  "text": "Elite" },
+		{ "id": "normal", "text": "NORMAL" },
+		{ "id": "elite",  "text": "ELITE" },
 	])
 	_extras_col = _make_column([
-		{ "id": "options",   "text": "Options" },
-		{ "id": "credits",   "text": "Credits" },
-		{ "id": "soundroom", "text": "Sound Room" },
+		{ "id": "options",   "text": "OPTIONS" },
+		{ "id": "credits",   "text": "CREDITS" },
+		{ "id": "soundroom", "text": "SOUNDROOM" },
 	])
 
 
@@ -488,7 +489,7 @@ func _make_button(text: String, id: String) -> Button:
 	b.mouse_filter = Control.MOUSE_FILTER_STOP
 	b.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	# Fuente serif estilo logo (small-caps).
-	var f := load(AssetSet.p(SERIF_FONT))
+	var f := load(AssetSet.p(UI_FONT))
 	if f != null:
 		b.add_theme_font_override("font", f)
 	b.add_theme_font_size_override("font_size", BTN_FONT)
@@ -611,7 +612,7 @@ func _on_button_pressed(id: String) -> void:
 	match id:
 		"newgame":   _play_sfx(SFX_CONFIRM); _goto(St.NEWGAME)
 		"extras":    _play_sfx(SFX_CONFIRM); _goto(St.EXTRAS)
-		"continue":  _play_sfx(SFX_ERROR);   _toast("Continue — coming soon")
+		"continue":  _play_sfx(SFX_ERROR);   _toast(tr("CONTINUESOON"))
 		"options":   _play_sfx(SFX_CONFIRM); _open_options()
 		"soundroom": _play_sfx(SFX_CONFIRM); _open_soundroom()
 		"credits":   _play_sfx(SFX_CONFIRM); _open_credits()
@@ -628,7 +629,8 @@ func _on_button_focus(b: Button, id: String) -> void:
 	else:
 		_play_sfx(SFX_NAV)
 	if _state == St.NEWGAME:
-		_desc.text = DESC_NORMAL if id == "normal" else DESC_ELITE
+		# Claves de la tabla de traducción (localizadas en los 5 idiomas).
+		_desc.text = tr("NORMALDESC") if id == "normal" else tr("ELITEDESC")
 
 
 ## Reproduce un SFX del menú (en el bus "SFX" si existe). name = nombre sin ext.
@@ -765,7 +767,7 @@ func _start_game(difficulty: String) -> void:
 		_busy = false
 		var t2 := create_tween()
 		t2.tween_property(_fade, "modulate:a", 0.0, FADE_TIME)
-		_toast("No se encontró %s" % GAME_SCENE)
+		_toast(tr("SCENEMISSING") % GAME_SCENE)
 
 
 func _open_options() -> void:
@@ -778,7 +780,7 @@ func _open_options() -> void:
 func _open_credits() -> void:
 	var scr := load(CREDITS_SCRIPT)
 	if scr == null:
-		_toast("Credits no disponible")
+		_toast(tr("CREDITSNA"))
 		return
 	_busy = true
 	await _fade_to(1.0)                       # fade a negro (transición a créditos)
@@ -797,7 +799,7 @@ func _open_credits() -> void:
 func _open_soundroom() -> void:
 	var scr := load(SOUNDROOM_SCRIPT)
 	if scr == null:
-		_toast("Sound Room no disponible")
+		_toast(tr("SOUNDROOMNA"))
 		return
 	_busy = true
 	await _fade_to(1.0)                       # fade a negro

@@ -30,6 +30,23 @@ const PANEL_BG := "res://assets/menus/menu_bg_base.png"
 const HAND     := "res://assets/menus/menu_hand.png"
 const SETTINGS_ICONS := "res://assets/sprites/settings_icons.png"   # tira vertical 16×16
 const ICON_SRC := 16
+const FLAGS := "res://assets/languages/Flags/"
+
+# Idiomas del carrusel (los que tienen columna en la tabla de traducción). El
+# nombre de ja se muestra en latín porque la sprite-font no trae kana.
+const LANGS := [
+	{ "id": "en", "name": "English" },
+	{ "id": "es", "name": "Español" },
+	{ "id": "de", "name": "Deutsch" },
+	{ "id": "fr", "name": "Français" },
+	{ "id": "ja", "name": "Japanese" },
+]
+# Resoluciones (aspecto 3:2, nativo del juego). Se aplican al reiniciar.
+const RESOLUTIONS := ["720x480", "960x640", "1200x800", "1440x960", "1920x1280"]
+# Modos de ventana (claves de traducción). Se aplican en vivo.
+const WINDOW_MODES := ["WMWINDOW", "WMBORDER", "WMFULL"]
+const FLAG_W := 66
+const FLAG_H := 44
 
 const PATCH := 8              # margen 9-slice de las texturas de panel (24×24)
 const HAND_W := 15
@@ -67,6 +84,8 @@ const CTRL_SEL := -1
 var _ctrl_root: Control = null
 var _ctrl_hand: TextureRect = null
 var _ctrl_lbl: Label = null
+var _title_lbl: Label = null            # rótulo "Configuration" (para re-traducir)
+var _sections: Array = []               # [{spec, lbl}] de las secciones (re-traducir)
 
 
 func _ready() -> void:
@@ -84,54 +103,89 @@ func _ready() -> void:
 
 
 # ── Definición de opciones ────────────────────────────────────────────────────
+# Los rótulos y descripciones se pasan como CLAVES de la tabla de traducción
+# (MainMenu.csv); _row_* las resuelve con tr() al construir, según el idioma
+# activo. Las secciones (AUDIO/GRAPHICS/GAMEPLAY) se dejan literales.
 func _build_specs() -> void:
-	_row_section("AUDIO")
-	_row_range("audio", "music_volume", "Music Volume", 70, "Volumen de la música del juego.")
-	_row_range("audio", "sfx_volume", "SFX Volume", 80, "Volumen de los efectos de sonido.")
-	_row_toggle("audio", "talk_sound", "Talk Sound", true, "Sonido de voz al avanzar los diálogos.")
+	_row_section("SECLANGUAGE")
+	_row_language()
 
-	_row_section("GRAPHICS")
-	_row_set("Graphics Set", "Conjunto de gráficos: Original / GBA / HD. Se aplica al reiniciar el juego.")
+	_row_section("SECAUDIO")
+	_row_range("audio", "music_volume", "MUSICLEVEL", 70, "MUSICLEVELDESC")
+	_row_range("audio", "sfx_volume", "SOUNDLEVEL", 80, "SOUNDLEVELDESC")
+	_row_toggle("audio", "talk_sound", "TALKSOUND", true, "TALKSOUNDDESC")
 
-	_row_section("GAMEPLAY")
-	_row_enum("gameplay", "animations", "Battle Animations", ["On", "Map Only", "Off"], 0,
-			"Animaciones de combate: completas, solo en el mapa, o desactivadas.")
-	_row_range("gameplay", "unit_speed", "Unit Speed", 50, "Velocidad de movimiento de las unidades en el mapa.")
-	_row_range("gameplay", "text_speed", "Text Speed", 50, "Velocidad con la que aparece el texto de los diálogos.")
-	_row_range("gameplay", "grid_opacity", "Grid Opacity", 50, "Opacidad de la rejilla del mapa táctico.")
-	_row_toggle("gameplay", "terrain_info", "Show Terrain Info", true, "Mostrar el panel de información del terreno.")
-	_row_toggle("gameplay", "goal_info", "Show Goal Info", true, "Mostrar el objetivo del capítulo.")
-	_row_toggle("gameplay", "autocursor", "Auto Cursor", false, "Situar el cursor sobre la siguiente unidad automáticamente.")
-	_row_toggle("gameplay", "auto_end", "Auto End Turn", false, "Terminar el turno automáticamente al mover todas las unidades.")
-	_row_toggle("gameplay", "confirm_end", "Confirm End Turn", true, "Pedir confirmación antes de terminar el turno.")
-	_row_toggle("gameplay", "tutorials", "Tutorials", true, "Mostrar los mensajes de tutorial.")
+	_row_section("SECGRAPHICS")
+	_row_set("QSET", "QSETDESC")
+
+	_row_section("SECDISPLAY")
+	_row_enum("display", "window_mode", "WINDOWMODE", WINDOW_MODES, 0, "WINDOWMODEDESC")
+	_row_enum("display", "resolution", "RESOLUTION", RESOLUTIONS, 2, "RESOLUTIONDESC")
+
+	_row_section("SECGAMEPLAY")
+	_row_enum("gameplay", "animations", "ANIMATION", ["OPTON", "ANIMMAP", "OPTOFF"], 0, "ANIMATIONDESC")
+	_row_range("gameplay", "unit_speed", "UNITSPEED", 50, "UNITSPEEDDESC")
+	_row_range("gameplay", "text_speed", "TEXTSPEED", 50, "TEXTSPEEDDESC")
+	_row_range("gameplay", "grid_opacity", "GRIDOPAC", 50, "GRIDOPACDESC")
+	_row_toggle("gameplay", "battle_bg", "BATTLEBG", true, "BATTLEBGDESC")
+	_row_enum("gameplay", "hpbar_team", "HPBARTEAM",
+			["HPBARTEAMOPTION0", "HPBARTEAMOPTION1", "HPBARTEAMOPTION2", "HPBARTEAMOPTION3", "HPBARTEAMOPTION4"], 1, "HPBARTEAMDESC")
+	_row_enum("gameplay", "hpbar_kind", "HPBARKIND", ["HPBARKINDOPTION1", "HPBARKINDOPTION2"], 0, "HPBARKINDDESC")
+	_row_toggle("gameplay", "terrain_info", "TERRAININFO", true, "TERRAININFODESC")
+	_row_toggle("gameplay", "goal_info", "GOALINFO", true, "GOALINFODESC")
+	_row_toggle("gameplay", "autocursor", "AUTOCURSOR", false, "AUTOCURSORDESC")
+	_row_toggle("gameplay", "auto_end", "AUTOEND", false, "AUTOENDDESC")
+	_row_toggle("gameplay", "confirm_end", "CONFIRMEND", true, "CONFIRMENDDESC")
+	_row_toggle("gameplay", "tutorials", "HINTS", true, "HINTSDESC")
+	_row_toggle("input", "mouse", "MOUSE", false, "MOUSEDESC")
 
 
-func _row_section(title_text: String) -> void:
-	_specs.append({ "kind": "section", "label": title_text })
+# Cada fila guarda sus CLAVES (lkey/dkey/ckeys) además del texto ya traducido,
+# para poder re-traducir en vivo al cambiar de idioma (_relocalize).
+func _row_section(title_key: String) -> void:
+	_specs.append({ "kind": "section", "label": tr(title_key), "skey": title_key })
 
 func _row_range(section: String, key: String, label: String, default: int, desc: String) -> void:
 	var val: int = int(_cfg_get(section, key, default))
-	_specs.append({ "kind": "range", "section": section, "key": key, "label": label,
-			"value": clampi(int(round(val / 10.0)) * 10, 0, 100), "desc": desc, "icon": "" })
+	_specs.append({ "kind": "range", "section": section, "key": key, "label": tr(label), "lkey": label,
+			"value": clampi(int(round(val / 10.0)) * 10, 0, 100), "desc": tr(desc), "dkey": desc, "icon": "" })
 
-func _row_enum(section: String, key: String, label: String, choices: Array, default: int, desc: String) -> void:
-	var idx: int = clampi(int(_cfg_get(section, key, default)), 0, choices.size() - 1)
-	_specs.append({ "kind": "enum", "section": section, "key": key, "label": label,
-			"choices": choices, "idx": idx, "desc": desc, "icon": "" })
+func _row_enum(section: String, key: String, label: String, choice_keys: Array, default: int, desc: String) -> void:
+	var idx: int = clampi(int(_cfg_get(section, key, default)), 0, choice_keys.size() - 1)
+	_specs.append({ "kind": "enum", "section": section, "key": key, "label": tr(label), "lkey": label,
+			"choices": _tr_all(choice_keys), "ckeys": choice_keys, "idx": idx, "desc": tr(desc), "dkey": desc, "icon": "" })
 
 func _row_toggle(section: String, key: String, label: String, default: bool, desc: String) -> void:
 	var on: bool = bool(_cfg_get(section, key, default))
-	_specs.append({ "kind": "toggle", "section": section, "key": key, "label": label,
-			"choices": ["On", "Off"], "idx": (0 if on else 1), "desc": desc, "icon": "" })
+	_specs.append({ "kind": "toggle", "section": section, "key": key, "label": tr(label), "lkey": label,
+			"choices": [tr("OPTON"), tr("OPTOFF")], "ckeys": ["OPTON", "OPTOFF"], "idx": (0 if on else 1),
+			"desc": tr(desc), "dkey": desc, "icon": "" })
+
+## Traduce cada clave de una lista de opciones (mantiene el orden/índice).
+func _tr_all(keys: Array) -> Array:
+	var out: Array = []
+	for k in keys:
+		out.append(tr(str(k)))
+	return out
 
 func _row_set(label: String, desc: String) -> void:
 	var cur: String = AssetSet.current()
 	var idx: int = AssetSet.SETS.find(cur)
 	if idx < 0:
 		idx = AssetSet.SETS.find(AssetSet.DEFAULT)
-	_specs.append({ "kind": "set", "label": label, "choices": AssetSet.SETS, "idx": idx,
-			"applied": cur, "desc": desc, "icon": "" })
+	_specs.append({ "kind": "set", "label": tr(label), "lkey": label, "choices": AssetSet.SETS, "idx": idx,
+			"applied": cur, "desc": tr(desc), "dkey": desc, "icon": "" })
+
+## Fila de idioma: carrusel con bandera + nombre; ←→ cambia el idioma EN VIVO.
+func _row_language() -> void:
+	var cur: String = TranslationServer.get_locale().substr(0, 2)
+	var idx: int = 0
+	for i in range(LANGS.size()):
+		if str(LANGS[i]["id"]) == cur:
+			idx = i
+			break
+	_specs.append({ "kind": "language", "label": tr("LANGUAGE"), "lkey": "LANGUAGE",
+			"idx": idx, "desc": tr("LANGUAGEDESC"), "dkey": "LANGUAGEDESC", "icon": "" })
 
 
 # ── Construcción de la UI ─────────────────────────────────────────────────────
@@ -195,12 +249,13 @@ func _build_title_panel() -> Control:
 	root.add_child(np)
 
 	var lbl := Label.new()
-	lbl.text = "Configuration"
+	lbl.text = tr("CONFIG")
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_font_it(lbl, 96, COLOR_GOLD, 4)
 	root.add_child(lbl)
+	_title_lbl = lbl
 	return root
 
 
@@ -232,7 +287,7 @@ func _build_ctrl_button(left_x: float, title_y: float, title_h: float, panel_w: 
 	root.add_child(hand)
 
 	var lbl := Label.new()
-	lbl.text = "Controls"
+	lbl.text = tr("CTRLBTN")
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -309,6 +364,7 @@ func _build_row(spec: Dictionary) -> Variant:
 		m.add_theme_constant_override("margin_top", 6)
 		m.add_child(sec)
 		_rows_box.add_child(m)
+		_sections.append({ "spec": spec, "lbl": sec })
 		return null
 
 	var hb := HBoxContainer.new()
@@ -372,6 +428,33 @@ func _build_row(spec: Dictionary) -> Variant:
 			wrap.add_child(seg)
 			value_box.add_child(wrap)
 			row["segments"].append(seg)
+	elif spec["kind"] == "language":
+		# Carrusel de idioma: [◄] bandera nombre [►] (las flechas son rótulos).
+		var la := Label.new()
+		la.text = "<"
+		la.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		la.custom_minimum_size = Vector2(0, ROW_H)
+		_font_it(la, 64, COLOR_GOLD, 3)
+		value_box.add_child(la)
+		var flag := TextureRect.new()
+		flag.custom_minimum_size = Vector2(FLAG_W, ROW_H)
+		flag.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		flag.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		flag.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		value_box.add_child(flag)
+		var nm := Label.new()
+		nm.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		nm.custom_minimum_size = Vector2(0, ROW_H)
+		_font_it(nm, 64, COLOR_TEXT, 3)
+		value_box.add_child(nm)
+		var ra := Label.new()
+		ra.text = ">"
+		ra.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		ra.custom_minimum_size = Vector2(0, ROW_H)
+		_font_it(ra, 64, COLOR_GOLD, 3)
+		value_box.add_child(ra)
+		row["flag"] = flag
+		row["lang_lbl"] = nm
 	else:
 		for choice in spec["choices"]:
 			var c := Label.new()
@@ -427,7 +510,7 @@ func _refresh() -> void:
 	if _ctrl_lbl != null:
 		_ctrl_lbl.add_theme_color_override("font_color", COLOR_GOLD if ctrl_focused else COLOR_TEXT)
 	if ctrl_focused:
-		_desc.text = "Abrir el menú de remapeo de controles (estilo Game Boy Advance)."
+		_desc.text = tr("CTRLBTNDESC")
 		if _scroll != null:
 			_scroll.scroll_vertical = 0
 	for i in range(_specs.size()):
@@ -443,6 +526,13 @@ func _refresh() -> void:
 			var segs: Array = row["segments"]
 			for s in range(segs.size()):
 				segs[s].color = SEG_ON if s < filled else SEG_OFF
+		elif spec["kind"] == "language":
+			var lang: Dictionary = LANGS[int(spec["idx"])]
+			row["lang_lbl"].text = str(lang["name"])
+			row["lang_lbl"].add_theme_color_override("font_color", COLOR_GOLD if focused else COLOR_TEXT)
+			var fp := AssetSet.p(FLAGS + str(lang["id"]) + ".png")
+			if ResourceLoader.exists(fp):
+				row["flag"].texture = load(fp)
 		else:
 			var chs: Array = row["choices"]
 			for c in range(chs.size()):
@@ -533,11 +623,25 @@ func _change(delta: int) -> void:
 			elif spec["key"] == "sfx_volume":
 				_apply_bus("SFX", int(spec["value"]))
 		"enum":
+			var prev: int = int(spec["idx"])
 			spec["idx"] = clampi(int(spec["idx"]) + delta, 0, spec["choices"].size() - 1)
 			_store(spec["section"], spec["key"], int(spec["idx"]))
+			if spec["key"] == "window_mode":
+				_apply_window_mode(int(spec["idx"]))
+			elif spec["key"] == "resolution" and int(spec["idx"]) != prev:
+				# La resolución se aplica al reiniciar (avisa).
+				_show_restart_notice(tr("RESOLUTIONDESC"))
 		"toggle":
 			spec["idx"] = clampi(int(spec["idx"]) + delta, 0, spec["choices"].size() - 1)
 			_store(spec["section"], spec["key"], int(spec["idx"]) == 0)
+			if spec["key"] == "mouse":
+				InputConfig.set_mouse_enabled(int(spec["idx"]) == 0)
+		"language":
+			# Carrusel circular; aplica y persiste el idioma EN VIVO.
+			var n: int = LANGS.size()
+			spec["idx"] = (int(spec["idx"]) + delta + n) % n
+			FadeCanvas.save_locale(str(LANGS[int(spec["idx"])]["id"]))
+			_relocalize()
 		"set":
 			var new_idx: int = clampi(int(spec["idx"]) + delta, 0, spec["choices"].size() - 1)
 			if new_idx != int(spec["idx"]):
@@ -545,7 +649,7 @@ func _change(delta: int) -> void:
 				var chosen: String = str(spec["choices"][new_idx])
 				AssetSet.save(chosen)
 				if chosen != str(spec["applied"]):
-					_show_restart_notice(chosen)
+					_show_restart_notice(tr("QSETNOTICE") % chosen)
 	_refresh()
 
 
@@ -563,8 +667,47 @@ func _apply_bus(bus_name: String, value_0_100: int) -> void:
 		AudioServer.set_bus_volume_db(idx, linear_to_db(clampf(value_0_100 / 100.0, 0.0001, 1.0)))
 
 
-## Panel modal: el nuevo set gráfico se aplicará al reiniciar el juego.
-func _show_restart_notice(set_name: String) -> void:
+## Modo de ventana EN VIVO: 0 Windowed · 1 Borderless · 2 Fullscreen.
+func _apply_window_mode(idx: int) -> void:
+	match idx:
+		1:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+			DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS, true)
+		2:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+		_:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+			DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS, false)
+
+
+## Re-traduce en vivo todos los textos ya construidos (al cambiar de idioma).
+func _relocalize() -> void:
+	if _title_lbl != null:
+		_title_lbl.text = tr("CONFIG")
+	if _ctrl_lbl != null:
+		_ctrl_lbl.text = tr("CTRLBTN")
+	for s in _sections:
+		s["lbl"].text = tr(str(s["spec"]["skey"]))
+	for i in range(_specs.size()):
+		var spec: Dictionary = _specs[i]
+		var row = _ui[i]
+		if row == null:
+			continue
+		if spec.has("lkey"):
+			spec["label"] = tr(str(spec["lkey"]))
+			row["label"].text = str(spec["label"])
+		if spec.has("dkey"):
+			spec["desc"] = tr(str(spec["dkey"]))
+		if spec.has("ckeys"):
+			spec["choices"] = _tr_all(spec["ckeys"])
+			var chs: Array = row["choices"]
+			for c in range(min(chs.size(), spec["choices"].size())):
+				chs[c].text = str(spec["choices"][c])
+	_refresh()
+
+
+## Panel modal genérico de "se aplicará al reiniciar" con el mensaje dado.
+func _show_restart_notice(msg_text: String) -> void:
 	var layer := CanvasLayer.new()
 	layer.layer = 50
 	add_child(layer)
@@ -592,7 +735,7 @@ func _show_restart_notice(set_name: String) -> void:
 	box.add_theme_constant_override("separation", 16)
 	panel.add_child(box)
 	var msg := Label.new()
-	msg.text = "El set gráfico «%s» se aplicará\nal reiniciar el juego." % set_name
+	msg.text = msg_text
 	msg.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_font_it(msg, 22, COLOR_TEXT, 3)
 	box.add_child(msg)

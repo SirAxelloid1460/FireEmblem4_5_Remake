@@ -51,6 +51,7 @@ const SIZE_TABLE      := 16    # Tabla 3 columnas (asset/work/name)
 const NAMES_PER_LINE  := 2     # Máximo de autores por línea en columna name de tabla
 const SIZE_END        := 56
 const OUTLINE_PX      := 4
+const CREDIT_FONT     := "res://assets/fonts/bmp/credit.fnt"   # sprite-font LT (créditos)
 
 # Layout
 const PILLAR_WIDTH    := 28
@@ -69,6 +70,16 @@ var _ending: bool = false
 var _fade_rect: ColorRect
 var _bg_gradient: ColorRect
 var _header_panel: Panel
+var _credit_font_res = null            # sprite-font LT de créditos (cacheada)
+
+
+## Fuente de créditos (credit.fnt), cargada una vez. null si no existe.
+func _credit_font():
+	if _credit_font_res == null:
+		var p := AssetSet.p(CREDIT_FONT)
+		if ResourceLoader.exists(p):
+			_credit_font_res = load(p)
+	return _credit_font_res
 var _end_label: Label = null
 
 # Credits content. Edit freely — `type` controls the style.
@@ -137,7 +148,7 @@ var credits_data: Array = [
 
 	# ---------- MAP SPRITES & CUSTOM CLASS CARDS (52 contributors) ----------
 	{ "type": "header", "text": "MAP SPRITES" },
-	{ "type": "subheader", "text": "& Custom Class Cards" },
+	{ "type": "subheader", "text": "& Custom Class Cards", "key": "CRSUBCLASSCARDS" },
 	{ "type": "spacer", "size": 16 },
 	# --- Créditos comunitarios del grid original (comentados de momento) ---
 	# { "type": "grid", "columns": 4, "names": [
@@ -446,8 +457,8 @@ var credits_data: Array = [
 	# ---------- DISCLAIMER ----------
 	{ "type": "header", "text": "DISCLAIMER" },
 	{ "type": "spacer", "size": 16 },
-	{ "type": "subheader", "text": "Many assets are copyrighted or trademarked" },
-	{ "type": "subheader", "text": "by Nintendo and their respective owners." },
+	{ "type": "subheader", "text": "Many assets are copyrighted or trademarked", "key": "CRDISCLAIMER1" },
+	{ "type": "subheader", "text": "by Nintendo and their respective owners.", "key": "CRDISCLAIMER2" },
 	{ "type": "spacer", "size": 18 },
 	{ "type": "text", "text": "This Fire Emblem 4 / FE5 remake" },
 	{ "type": "text", "text": "is a non-profit fangame, released for free," },
@@ -593,6 +604,9 @@ func _build_header() -> void:
 	title.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	title.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	var _tf = _credit_font()
+	if _tf:
+		title.add_theme_font_override("font", _tf)
 	title.add_theme_font_size_override("font_size", SIZE_TITLE)
 	title.add_theme_color_override("font_color", COLOR_TITLE)
 	title.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
@@ -657,9 +671,33 @@ func _build_scroll_content() -> void:
 	_scroll_node.resized.connect(_on_scroll_resized)
 
 
+## Texto localizado de una entrada: si trae "key" usa esa clave; si es un
+## "header" (título de sección) deriva la clave del propio texto; el resto
+## (nombres propios, herramientas) se deja literal.
+func _credit_text(entry: Dictionary) -> String:
+	if entry.has("key"):
+		return tr(str(entry["key"]))
+	var raw: String = str(entry.get("text", ""))
+	if str(entry.get("type", "text")) == "header":
+		return tr(_credit_key(raw))
+	return raw
+
+
+## Clave de traducción derivada de un título: "MAP DESIGN" → "CRMAPDESIGN".
+func _credit_key(t: String) -> String:
+	var s := ""
+	for c in t.to_upper():
+		if (c >= "A" and c <= "Z") or (c >= "0" and c <= "9"):
+			s += c
+	return "CR" + s
+
+
 func _make_label(entry: Dictionary) -> Label:
 	var lbl := Label.new()
-	lbl.text = entry.get("text", "")
+	lbl.text = _credit_text(entry)
+	var _cf = _credit_font()
+	if _cf:
+		lbl.add_theme_font_override("font", _cf)
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	lbl.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
@@ -710,6 +748,9 @@ func _make_grid(entry: Dictionary) -> Control:
 		var row: int = i / columns
 		var lbl := Label.new()
 		lbl.text = String(names[i]).strip_edges()
+		var _cf = _credit_font()
+		if _cf:
+			lbl.add_theme_font_override("font", _cf)
 		lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 		lbl.clip_text = true
@@ -874,6 +915,9 @@ func _add_table_cell(parent: Control, text: String, pos: Vector2, sz: Vector2, c
 
 	var lbl := Label.new()
 	lbl.text = final_text
+	var _cf = _credit_font()
+	if _cf:
+		lbl.add_theme_font_override("font", _cf)
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.clip_text = true

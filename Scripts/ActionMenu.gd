@@ -15,7 +15,7 @@ class_name ActionMenu
 
 signal action_selected(id: String)
 
-const SERIF_FONT := "res://assets/GBA/fonts/IMFellFrenchCanonSC-Regular.ttf"
+const UI_FONT := "res://assets/fonts/bmp/text.fnt"   # sprite-font LT
 const COLOR_GOLD_DIM := Color(0.70, 0.60, 0.30, 1.0)
 const COLOR_TEXT     := Color(0.95, 0.93, 0.85, 1.0)
 const COLOR_OUTLINE  := Color(0.0, 0.0, 0.0, 1.0)
@@ -79,7 +79,7 @@ func _make_button(text: String, id: String) -> Button:
 	b.custom_minimum_size = Vector2(200, 48)
 	b.focus_mode = Control.FOCUS_ALL
 	b.mouse_filter = Control.MOUSE_FILTER_STOP
-	var f = load(SERIF_FONT)
+	var f = load(AssetSet.p(UI_FONT))
 	if f != null:
 		b.add_theme_font_override("font", f)
 	b.add_theme_font_size_override("font_size", 26)

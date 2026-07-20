@@ -8,12 +8,17 @@ FRENCH,Français,,,,
 NEWGAME,New Game,Nueva Partida,Neues Spiel,新しいゲーム,Nouveau jeu
 CONTINUE,Continue,Continuar,Fortsetzen,続く,Continuer
 LOAD,Load Game,Cargar Partida,Spiel Laden,ゲームをロードする,Charger jeu
-RESTART,Restart Level,Reiniciar Nivel,Level Neustarten,"リスタートレベル",Niveau de redémarrage
-EXTRAS,Extras,Extras,Extras,"エクストラ",Extras
+RESTART,Restart Level,Reiniciar Nivel,Level Neustarten,"リスタートレベル
+",Niveau de redémarrage
+EXTRAS,Extras,Extras,Extras,"エクストラ
+",Extras
 ,,,,,
-OPTIONS,Options,Opciones,Optionen,"オプション",Options
-CREDITS,Credits,Creditos,Credits,"クレジット",Credits
-SOUNDROOM,Sound Room,Sala de Sonido,Sound Room,"サウンドルーム",Salle de son
+OPTIONS,Options,Opciones,Optionen,"オプション
+",Options
+CREDITS,Credits,Creditos,Credits,"クレジット
+",Credits
+SOUNDROOM,Sound Room,Sala de Sonido,Sound Room,"サウンドルーム
+",Salle de son
 ,,,,,
 NORMAL,Normal,Normal,Normal,ノーマル,Normal
 ELITE,Elite,Elite,Profi,エリート,Elite
@@ -27,15 +32,8 @@ SCREENSIZE,Resolution,Resolución,Auflösung,,
 SCREENSIZEDESC,Change Game Resolution,Cambiar Resolucion del Juego,Spielauflösung ändern,,
 QSET,Graphic Quality Set,Set de Calidad Gráfica,Grafisches Qualitätsset,,
 QSETDESC,Change Graphic Quality Set,Cambiar Set de Calidad Gráfica,Grafisches Qualitätsset ändern,,
-QSETOPTION1,GBA,GBA,GBA,,GBA
-QSETOPTION2,Artwork Based,Basada en Arte,Kunstwerk basiert,,Basé sur d'art
-QSETOPTION3,HD,HD,HD,,HD
 ANIMATION,Animations,Animaciones,Animationen,,
 ANIMATIONDESC,Show combat animations,Mostras animaciones de batalla,Kampfanimationen anzeigen,,
-ANIMATIONOPTION1,Always,Siempre,Immer,,
-ANIMATIONOPTION2,Your Turn,Tu Turno,Dein Zug,,
-ANIMATIONOPTION3,Combat Only,Solo en Combate,Nur im Kampf,,
-ANIMATIONOPTION4,Never,Nunca,Nie,,
 BATTLEBG,Battle Background,Fondo de Batalla,Kampfhintergrund,,
 BATTLEBGDESC,Battle Background On/Off,On/Off Fondo de Batalla,Kampfhintergrund Ein/Aus,,
 UNITSPEED,Unit Speed,Velocidad Unidad,Entitätsgeschwindigkeit,,
@@ -74,3 +72,38 @@ CONFIRMENDDESC,Ask again before manually ending turn,Confirmar al acabar el turn
 HINTS,Tutorials,Tutoriales,Tutorials,,
 HINTSDESC,Show tutorials,Mostrar tutoriales,Tutorials anzeigen,,
 PLSRESET,"PLEASE, RESTART THE GAME TO APPLY THE RESOLUTION CHANGES PROPERLY","POR FAVOR, REINICIA EL JUEGO PARA APLICAR CORRECTAMENTE LOS CAMBIOS DE RESOLUCIÓN","BITTE STARTEN SIE DAS SPIEL NEU, DAMIT DIE AUFLÖSUNGSÄNDERUNGEN KORREKT ÜBERNOMMEN WERDEN.",解像度の変更を正しく適用するには、ゲームを再起動してください。,VEUILLEZ REDÉMARRER LE JEU POUR QUE LES CHANGEMENTS DE RÉSOLUTION SOIENT APPLIQUÉS CORRECTEMENT
+,,,,,
+MODEFE4,Genealogy of the Holy War,Genealogía de la Guerra Santa,Genealogy of the Holy War,,Genealogy of the Holy War
+MODEFE5,Thracia 776,Thracia 776,Thracia 776,,Thracia 776
+MODESAGA,Both Together,Ambos Juntos,Beide zusammen,,Les deux ensemble
+,,,,,
+SCENEMISSING,%s not found,No se encontró %s,%s nicht gefunden,,%s introuvable
+CONTINUESOON,Continue — coming soon,Continuar — próximamente,Fortsetzen — bald verfügbar,,Continuer — bientôt disponible
+CREDITSNA,Credits unavailable,Créditos no disponible,Credits nicht verfügbar,,Crédits indisponibles
+SOUNDROOMNA,Sound Room unavailable,Sala de Sonido no disponible,Sound Room nicht verfügbar,,Salle de son indisponible
+,,,,,
+CONFIG,Configuration,Configuración,Konfiguration,,Configuration
+SECAUDIO,AUDIO,AUDIO,AUDIO,,AUDIO
+SECGRAPHICS,GRAPHICS,GRÁFICOS,GRAFIK,,GRAPHISMES
+SECGAMEPLAY,GAMEPLAY,JUGABILIDAD,GAMEPLAY,,JOUABILITÉ
+CTRLBTN,Controls,Controles,Steuerung,,Contrôles
+CTRLBTNDESC,Remap the controls (Game Boy Advance style).,Reasigna los controles (estilo Game Boy Advance).,Steuerung neu belegen (Game-Boy-Advance-Stil).,,Reconfigurer les commandes (style Game Boy Advance).
+OPTON,On,Sí,Ein,,Oui
+OPTOFF,Off,No,Aus,,Non
+ANIMMAP,Map Only,Solo Mapa,Nur Karte,,Carte seule
+QSETNOTICE,The graphics set «%s» will be\napplied when you restart the game.,El set gráfico «%s» se aplicará\nal reiniciar el juego.,Das Grafikset «%s» wird beim\nNeustart des Spiels übernommen.,,Le set graphique «%s» sera appliqué\nau redémarrage du jeu.
+,,,,,
+SECLANGUAGE,LANGUAGE,IDIOMA,SPRACHE,,LANGUE
+LANGUAGE,Language,Idioma,Sprache,,Langue
+LANGUAGEDESC,Change the game language,Cambiar el idioma del juego,Spielsprache ändern,,Changer la langue du jeu
+,,,,,
+SECDISPLAY,DISPLAY,PANTALLA,ANZEIGE,,AFFICHAGE
+WINDOWMODE,Window Mode,Modo de Ventana,Fenstermodus,,Mode Fenêtre
+WINDOWMODEDESC,"Fullscreen, borderless or windowed","Pantalla completa, sin bordes o en ventana","Vollbild, randlos oder Fenster",,"Plein écran, sans bordure ou fenêtré"
+WMWINDOW,Windowed,Ventana,Fenster,,Fenêtré
+WMBORDER,Borderless,Sin Bordes,Randlos,,Sans bordure
+WMFULL,Fullscreen,Pantalla Completa,Vollbild,,Plein écran
+RESOLUTION,Resolution,Resolución,Auflösung,,Résolution
+RESOLUTIONDESC,Change game resolution (applied on restart),Cambiar la resolución (se aplica al reiniciar),Auflösung ändern (beim Neustart übernommen),,Changer la résolution (appliquée au redémarrage)
+MOUSE,Mouse,Ratón,Maus,,Souris
+MOUSEDESC,"Enable mouse; left click = A, right click = B","Activar ratón; clic izquierdo = A, derecho = B","Maus aktivieren; Linksklick = A, Rechtsklick = B",,"Activer la souris ; clic gauche = A, droit = B"

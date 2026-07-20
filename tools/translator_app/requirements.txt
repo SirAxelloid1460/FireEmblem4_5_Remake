@@ -1,0 +1,3 @@
+# App de escritorio del traductor de diálogos.
+pywebview>=5.0
+pyinstaller>=6.0

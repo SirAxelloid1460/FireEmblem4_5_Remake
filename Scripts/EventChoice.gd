@@ -12,7 +12,7 @@ class_name EventChoice
 
 signal chosen(text: String)
 
-const SERIF_FONT := "res://assets/GBA/fonts/IMFellFrenchCanonSC-Regular.ttf"
+const DIALOG_FONT := "res://assets/fonts/bmp/convo.fnt"   # sprite-font LT (conversación)
 const COLOR_GOLD_DIM := Color(0.70, 0.60, 0.30, 1.0)
 const COLOR_TEXT     := Color(0.96, 0.95, 0.90, 1.0)
 
@@ -35,7 +35,7 @@ func ask(prompt: String, options: Array) -> String:
 
 
 func _build(prompt: String, options: Array) -> void:
-	var font = load(SERIF_FONT)
+	var font = load(AssetSet.p(DIALOG_FONT))
 	var panel := PanelContainer.new()
 	var sb := StyleBoxFlat.new()
 	sb.bg_color = Color(0.06, 0.07, 0.13, 0.97)
