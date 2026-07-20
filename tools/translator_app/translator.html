@@ -240,12 +240,21 @@ function wrapLines(text){
 }
 function roundRect(ctx,x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y);
   ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+/* Líneas del MENSAJE actual (línea de personaje completa): cada {br} = salto de
+   línea intencional; dentro de cada tramo, word-wrap del juego a 212px. Los {w}
+   no fuerzan salto (el juego los recalcula en el borde de cada pantalla). */
+function msgLines(){
+  const st=stepsOf(SOURCE[CURPARA.sk])[CURPARA.step], spk=spokenKey(st);
+  const forced=parse(st[spk]).paras.map(pa=>
+    pa.map(s=>((TR[K(CURPARA.sk,CURPARA.step,s.g)]||"").trim()||s.text)).join(" ").replace(/\s+/g," ").trim());
+  const all=[]; forced.forEach(fl=>wrapLines(fl).forEach(l=>all.push(l)));
+  return all.length?all:[""];
+}
 function drawPreview(){
   const cv=$("#pv"), idle=$("#pvIdle"), pager=$("#pvPager");
   if(!ATLAS||!CURPARA){ cv.style.display="none"; idle.style.display=""; pager.style.display="none"; $("#pvWho").textContent=""; return; }
   idle.style.display="none"; cv.style.display="block"; $("#pvWho").textContent=CURPARA.who;
-  const text=CURPARA.segs.map(s=>((TR[s.key]||"").trim()||s.src)).join(" ").replace(/\s+/g," ").trim();
-  const allLines=wrapLines(text);
+  const allLines=msgLines();
   const screens=[]; for(let i=0;i<allLines.length;i+=2) screens.push(allLines.slice(i,i+2));
   CURSCREEN=Math.max(0,Math.min(CURSCREEN,screens.length-1));
   const scr=screens[CURSCREEN]||[""];
@@ -300,11 +309,11 @@ function render(){
           pl.appendChild(el("div","src",s.text));
           const inp=document.createElement("input"); inp.type="text"; inp.className="tin";
           inp.value=TR[K(sk,i,s.g)]||""; inp.placeholder="Traducción…";
-          const focus=()=>{ CURPARA={who:spk, segs:segRefs}; CURSCREEN=0; drawPreview(); };
+          const focus=()=>{ CURPARA={who:spk, sk:sk, step:i}; CURSCREEN=0; drawPreview(); };
           inp.addEventListener("focus",focus);
           inp.addEventListener("input",()=>{ TR[K(sk,i,s.g)]=inp.value;
             line.classList.toggle("done",stepDone(sk,i)); save(); refreshProgress();
-            if(CURPARA&&CURPARA.segs===segRefs) drawPreview(); });
+            if(CURPARA&&CURPARA.sk===sk&&CURPARA.step===i) drawPreview(); });
           pl.appendChild(inp); paraEl.appendChild(pl);
         });
         b.appendChild(paraEl);
