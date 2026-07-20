@@ -73,12 +73,12 @@ main{flex:1;min-width:0;overflow:auto;scroll-behavior:smooth;display:flex;flex-d
 .pvlabel{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 6px 7px;
   display:flex;justify-content:space-between}
 .pvlabel .who{color:var(--accent);font-weight:600;letter-spacing:0;text-transform:none;font-size:13px}
-.bubble{position:relative;background:#dcdcd0;border:2px solid #8f7a3a;border-radius:11px;padding:14px 16px;
-  min-height:74px;box-shadow:0 3px 10px rgba(0,0,0,.28), inset 0 0 0 1px #f2f0e4}
-.bubble::after{content:"";position:absolute;bottom:-10px;left:44px;width:17px;height:17px;background:#dcdcd0;
-  border-right:2px solid #8f7a3a;border-bottom:2px solid #8f7a3a;transform:rotate(45deg);box-shadow:2px 2px 3px rgba(0,0,0,.12)}
-#pv{display:block;image-rendering:pixelated;image-rendering:crisp-edges;width:100%}
-.bubble .idle{color:#6a6858;font-family:var(--sans);font-size:13px;font-style:italic}
+.bubble{position:relative;display:flex;align-items:flex-start;gap:12px;min-height:80px}
+#pv{display:block;image-rendering:pixelated;image-rendering:crisp-edges;filter:drop-shadow(0 3px 8px rgba(0,0,0,.3))}
+.bubble .idle{color:var(--muted);font-family:var(--sans);font-size:13px;font-style:italic;padding:24px 4px}
+.pvpager{align-items:center;gap:8px;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;margin-top:6px}
+.pgbtn{width:26px;height:26px;border-radius:7px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-size:15px;line-height:1;display:flex;align-items:center;justify-content:center}
+.pgbtn:hover{border-color:var(--accent-dim)}
 
 .line{display:grid;grid-template-columns:14px 1fr;gap:12px;background:var(--surface);border:1px solid var(--border);
   border-radius:11px;padding:13px 15px;margin:9px 0;box-shadow:0 1px 2px var(--shadow)}
@@ -132,13 +132,20 @@ input.tin:focus{border-color:var(--accent);outline:none}
   <aside class="side" id="side">
     <h3>Escenas</h3><div id="snav"></div>
     <label class="opt"><input type="checkbox" id="onlyTodo"> Solo pendientes</label>
-    <div class="opt" style="border-top:0;padding-top:2px">Máx. <b style="color:var(--text)">64</b> caracteres por párrafo (suma de líneas).</div>
+    <div class="opt" style="border-top:0;padding-top:2px">La caja del juego ajusta 2 líneas de 212px; usa la vista previa como guía.</div>
   </aside>
   <main id="main">
     <div class="preview hidden" id="preview"><div class="pvwrap">
-      <div class="pvlabel"><span>Vista previa · fuente del juego</span><span class="who" id="pvWho"></span></div>
-      <div class="bubble"><canvas id="pv" width="520" height="74"></canvas>
-        <div class="idle" id="pvIdle">Selecciona una línea para previsualizar la traducción aquí.</div></div>
+      <div class="pvlabel"><span>Vista previa · caja del juego (224×55)</span><span class="who" id="pvWho"></span></div>
+      <div class="bubble">
+        <canvas id="pv" width="100" height="100"></canvas>
+        <div class="idle" id="pvIdle">Selecciona una línea para previsualizar la traducción aquí.</div>
+        <div class="pvpager" id="pvPager" style="display:none">
+          <button class="pgbtn" onclick="pageScreen(-1)" aria-label="Pantalla anterior">‹</button>
+          <span id="pvNum">1 / 1</span>
+          <button class="pgbtn" onclick="pageScreen(1)" aria-label="Pantalla siguiente">›</button>
+        </div>
+      </div>
     </div></div>
     <div class="mscroll" id="mscroll">
       <div class="empty" id="empty">
@@ -149,8 +156,8 @@ input.tin:focus{border-color:var(--accent);outline:none}
            Tu progreso se guarda en este equipo.</p>
         <div class="drop" id="drop"><b>Arrastra el JSON aquí</b> o
           <button class="btn" id="btnImport2" style="margin-left:4px">selecciona un archivo</button>
-          <p style="margin:.8em 0 0;font-size:13px">Se salta de línea solo en <code>{br}</code>; los
-             <code>{w}</code> (pausas) quedan dentro del párrafo. Máx. <b>64</b> caracteres por párrafo.</p></div>
+          <p style="margin:.8em 0 0;font-size:13px">El juego ajusta el texto en 2 líneas de 212px sin partir
+             palabras. La <b>vista previa</b> te muestra cómo queda en la caja de diálogo del juego.</p></div>
       </div>
     </div>
   </main>
@@ -161,7 +168,6 @@ input.tin:focus{border-color:var(--accent);outline:none}
 const $=s=>document.querySelector(s);
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e;};
 const META=["name","trigger","level_nid","condition","only_once","priority"];
-const MAX=64;
 let SOURCE=null, BASENAME="dialogue", ITEMS=[], TR={}, STOREKEY="";
 const isTok=p=>/^\{[^}]*\}$/.test(p);
 const spokenKey=step=>Object.keys(step).find(k=>!k.startsWith("@"));
@@ -209,39 +215,64 @@ function refreshProgress(){ const c=counts(null); $("#pDone").textContent=c.d; $
 function stepDone(sk,i){ const st=stepsOf(SOURCE[sk])[i], spk=spokenKey(st);
   return parse(st[spk]).paras.every(pa=>pa.every(s=>(TR[K(sk,i,s.g)]||"").trim())); }
 
-/* ---- Vista previa con la fuente bitmap del juego (convo) ---- */
-const F=window.CONVO_FONT; let ATLAS=null;
+/* ---- Vista previa: bocadillo del juego (224×55) con la fuente convo ----
+   Texto = 2 líneas de ≤212px×18px. Word-wrap del juego (no parte palabras).
+   Si hay >2 líneas, se pagina de 2 en 2. El bocadillo se adapta al ancho de la
+   línea más larga visible. Se ignoran {w}/{br} aquí (el motor recalcula el
+   salto de línea); en la fuente los {br} se gestionan aparte. */
+const F=window.CONVO_FONT, S=3, BW=224, BH=55, TW=212, TH=18, PADX=6, PADY=10, TAIL=9;
+let ATLAS=null, CURPARA=null, CURSCREEN=0;
 (function(){ const im=new Image(); im.onload=()=>{ ATLAS=im; drawPreview(); }; im.src=window.CONVO_PNG; })();
-let CURPARA=null;   // {who, segs:[{g,src}], keys, sk, step}
-const gl=cp=>F.ch[cp]||null;
-const wordW=(w,sc)=>{ let x=0; for(const c of w){ const g=gl(c.codePointAt(0)); x+=(g?g[6]:F.ch[32][6])*sc; } return x; };
-function layout(text,x0,maxW,sc,draw,ctx){
-  const lh=F.lh*sc; let x=x0,y=0,maxY=lh;
-  const toks=text.split(/(\s+)/);
-  for(const t of toks){ if(t==="")continue;
-    if(/\s/.test(t)){ x+=wordW(t,sc); continue; }
-    if(x+wordW(t,sc)>x0+maxW && x>x0){ x=x0; y+=lh; }
-    for(const ch of t){ const cp=ch.codePointAt(0), g=gl(cp);
-      if(!g){ x+=F.ch[32][6]*sc; continue; }
-      if(draw && g[2]>0 && g[3]>0) ctx.drawImage(ATLAS,g[0],g[1],g[2],g[3],Math.round(x+g[4]*sc),Math.round(y+g[5]*sc),g[2]*sc,g[3]*sc);
-      x+=g[6]*sc; }
-    maxY=Math.max(maxY,y+lh);
+const adv=cp=>{ const g=F.ch[cp]; return g?g[6]:F.ch[32][6]; };
+const wordPx=w=>{ let x=0; for(const c of w) x+=adv(c.codePointAt(0)); return x; };
+/* Ajuste de línea por palabras (sin partir), ancho máx TW px. */
+function wrapLines(text){
+  const lines=[]; let line="", w=0;
+  for(const tok of text.split(/(\s+)/)){
+    if(tok==="") continue;
+    const tw=wordPx(tok);
+    if(/^\s+$/.test(tok)){ if(line!==""){ line+=tok; w+=tw; } continue; }
+    if(w+tw>TW && line.trim()!==""){ lines.push(line.trimEnd()); line=""; w=0; }
+    line+=tok; w+=tw;
   }
-  return maxY;
+  if(line.trim()!=="") lines.push(line.trimEnd());
+  return lines.length?lines:[""];
 }
+function roundRect(ctx,x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y);
+  ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
 function drawPreview(){
-  const cv=$("#pv"), idle=$("#pvIdle");
-  if(!ATLAS||!CURPARA){ cv.style.display="none"; idle.style.display=""; $("#pvWho").textContent=""; return; }
+  const cv=$("#pv"), idle=$("#pvIdle"), pager=$("#pvPager");
+  if(!ATLAS||!CURPARA){ cv.style.display="none"; idle.style.display=""; pager.style.display="none"; $("#pvWho").textContent=""; return; }
   idle.style.display="none"; cv.style.display="block"; $("#pvWho").textContent=CURPARA.who;
-  const text=CURPARA.segs.map(s=>s.lead+((TR[s.key]||"").trim()||s.src)+s.trail).join("");
-  const sc=2, pad=6, cssW=cv.clientWidth||520, maxW=cssW-pad*2;
-  const ctx=cv.getContext("2d");
-  const h=Math.max(F.lh*sc, layout(text,pad,maxW,sc,false,ctx))+pad*2;
-  cv.width=cssW; cv.height=Math.ceil(h);
-  ctx.imageSmoothingEnabled=false; ctx.clearRect(0,0,cv.width,cv.height);
-  ctx.save(); ctx.translate(0,pad); layout(text,pad,maxW,sc,true,ctx); ctx.restore();
+  const text=CURPARA.segs.map(s=>((TR[s.key]||"").trim()||s.src)).join(" ").replace(/\s+/g," ").trim();
+  const allLines=wrapLines(text);
+  const screens=[]; for(let i=0;i<allLines.length;i+=2) screens.push(allLines.slice(i,i+2));
+  CURSCREEN=Math.max(0,Math.min(CURSCREEN,screens.length-1));
+  const scr=screens[CURSCREEN]||[""];
+  if(screens.length>1){ pager.style.display="flex"; $("#pvNum").textContent=(CURSCREEN+1)+" / "+screens.length; }
+  else pager.style.display="none";
+  // ancho del bocadillo = línea más larga visible (px), acotado a TW
+  let longest=0; scr.forEach(l=>longest=Math.max(longest,wordPx(l)));
+  const textW=Math.max(40,Math.min(TW,longest));
+  const boxW=textW+PADX*2, boxH=BH;
+  cv.width=boxW*S; cv.height=(boxH+TAIL)*S; cv.style.width=boxW*2+"px";
+  const ctx=cv.getContext("2d"); ctx.imageSmoothingEnabled=false; ctx.clearRect(0,0,cv.width,cv.height);
+  // bocadillo (crema + borde oro + colita)
+  ctx.fillStyle="#dcdcd0"; ctx.strokeStyle="#8f7a3a"; ctx.lineWidth=2*S;
+  roundRect(ctx,S,S,boxW*S-2*S,boxH*S-2*S,7*S); ctx.fill(); ctx.stroke();
+  const tx=Math.min(boxW*S-24*S, 30*S);
+  ctx.beginPath(); ctx.moveTo(tx,boxH*S-2); ctx.lineTo(tx+16*S,boxH*S-2); ctx.lineTo(tx+6*S,(boxH+TAIL)*S-2); ctx.closePath();
+  ctx.fillStyle="#dcdcd0"; ctx.fill(); ctx.strokeStyle="#8f7a3a"; ctx.stroke();
+  // texto (hasta 2 líneas)
+  for(let li=0; li<Math.min(2,scr.length); li++){
+    let x=PADX*S; const y=(PADY+li*TH)*S;
+    for(const c of scr[li]){ const cp=c.codePointAt(0), g=F.ch[cp];
+      if(!g){ x+=F.ch[32][6]*S; continue; }
+      if(g[2]>0&&g[3]>0) ctx.drawImage(ATLAS,g[0],g[1],g[2],g[3],Math.round(x+g[4]*S),Math.round(y+g[5]*S),g[2]*S,g[3]*S);
+      x+=g[6]*S; }
+  }
 }
-addEventListener("resize",()=>{ if(CURPARA) drawPreview(); });
+function pageScreen(d){ CURSCREEN+=d; drawPreview(); }
 
 /* ---- Render ---- */
 function render(){
@@ -261,7 +292,7 @@ function render(){
       const who=el("div","who"); who.appendChild(el("span","dot")); who.appendChild(document.createTextNode(spk));
       b.appendChild(who);
       paras.forEach(pa=>{
-        const paraEl=el("div","para"); const inputs=[]; const cnt=el("span","cnt");
+        const paraEl=el("div","para");
         const segRefs=pa.map(s=>({g:s.g, src:s.text, lead:s.lead, trail:s.trail, key:K(sk,i,s.g)}));
         pa.forEach((s,li)=>{
           if(li>0){ const ws=el("div","wsep"); ws.innerHTML='<code>{w}</code> pausa'; paraEl.appendChild(ws); }
@@ -269,17 +300,13 @@ function render(){
           pl.appendChild(el("div","src",s.text));
           const inp=document.createElement("input"); inp.type="text"; inp.className="tin";
           inp.value=TR[K(sk,i,s.g)]||""; inp.placeholder="Traducción…";
-          inp.addEventListener("focus",()=>{ CURPARA={who:spk, segs:segRefs}; drawPreview(); });
-          inp.addEventListener("input",()=>{ TR[K(sk,i,s.g)]=inp.value; recompute();
+          const focus=()=>{ CURPARA={who:spk, segs:segRefs}; CURSCREEN=0; drawPreview(); };
+          inp.addEventListener("focus",focus);
+          inp.addEventListener("input",()=>{ TR[K(sk,i,s.g)]=inp.value;
             line.classList.toggle("done",stepDone(sk,i)); save(); refreshProgress();
             if(CURPARA&&CURPARA.segs===segRefs) drawPreview(); });
-          inputs.push(inp); pl.appendChild(inp); paraEl.appendChild(pl);
+          pl.appendChild(inp); paraEl.appendChild(pl);
         });
-        function recompute(){ let sum=0; inputs.forEach(x=>sum+=x.value.length);
-          inputs.forEach(x=>x.maxLength=x.value.length+Math.max(0,MAX-sum));
-          cnt.textContent=sum+"/"+MAX; cnt.classList.toggle("full",sum>=MAX); }
-        recompute();
-        const ft=el("div","paraft"); ft.appendChild(cnt); paraEl.appendChild(ft);
         b.appendChild(paraEl);
       });
       line.appendChild(b); sec.appendChild(line);
