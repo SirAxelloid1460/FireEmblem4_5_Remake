@@ -122,3 +122,17 @@ python tools/build_map_sprites.py --src-move ruta/X-walk.png --inspect       # i
 python tools/build_bitmap_font.py --src <carpeta_ltfonts>            # lote (color white)
 python tools/build_bitmap_font.py --src <carpeta> --name text        # una fuente
 python tools/build_bitmap_font.py --src <carpeta> --color black --name reel  # otro color
+
+
+================================================================================
+ 5) LOCALIZACIÓN / DIÁLOGOS
+================================================================================
+
+# ESCENAS: convierte los eventos LT (data/<game>/events/events.json) a un formato
+# de ESCENA legible y LOSSLESS (fuente de verdad) y viceversa. Alcance completo
+# (todos los comandos). Ver docs/dialogue_localization_design.md y
+# docs/examples/dialogue_format/.
+python tools/build_dialogue_scenes.py --game fe5 --verify         # round-trip lossless
+python tools/build_dialogue_scenes.py --game fe5 [--level 1]      # eventos -> escenas
+python tools/build_dialogue_scenes.py --game fe5 --out <dir>      # carpeta destino
+python tools/build_dialogue_scenes.py --from-scenes <scenes.json> # escenas -> comandos (stdout)
