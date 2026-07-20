@@ -86,9 +86,55 @@ data/fe5/events/lang/<chapter>/dialogue.<locale>.json
 - Mantener `tools/COMMANDS.txt` actualizado al implementar la tool.
 - No usa el TranslationServer de Godot → no hay reimport de CSV ni claves.
 
+## App de traductores (HECHA) — `tools/translator_app/`
+
+Herramienta web + escritorio para traducir con **previsualización en vivo** (lo
+que faltaba en LT: se traduce y se ve al instante en la caja del juego, sin el
+ciclo escribir→correr→corregir).
+
+- `translator.html` — misma fuente para web (Artifact) y escritorio.
+- `app.py` (pywebview) + `build.py` (PyInstaller) → binario offline.
+- Importa un scene `_en.json` → traduce **solo las líneas habladas** (las
+  acotaciones `@…` no se muestran) → exporta `nombre.<locale>.json`.
+- **Preview** = renderiza el mensaje con la **fuente bitmap real** (`convo.fnt` +
+  atlas embebidos, renderer BMFont en canvas), en la caja del juego.
+
+## Modelo de renderizado de la caja de diálogo (GUARDAR — para el runtime B)
+
+Reglas del bocadillo del juego (implementadas en la preview de la app; se
+reutilizan al añadir diálogos en los niveles):
+
+- **Caja**: máx **224×55 px**; se adapta al ancho de la línea más larga.
+- **Texto**: **2 líneas** por pantalla, cada una de **≤212 px de ancho × 18 px**.
+- **Auto-ajuste**: el juego calcula el salto de línea a 212px **sin partir
+  palabras** (word-wrap por palabras).
+- **`{br}`** = salto de línea **intencional** DENTRO de la misma caja (p. ej.
+  `No, my lord.{br}We've searched…` → línea 1 "No, my lord.", línea 2+ el resto
+  ajustado).
+- **Pantallas**: si el mensaje ocupa **>2 líneas**, la 3ª va a la **siguiente
+  pantalla**; en ese borde el **juego inserta un `{w}`** (espera al jugador).
+- **Mensaje** = una línea de personaje (`speak`) completa.
+
+## Limpieza de `{w}`/`{br}` en los datos (TOOL PENDIENTE — al meter diálogos)
+
+Cuando se empiecen a añadir diálogos en los niveles, hace falta un
+`tools/` que normalice los guiones para este modelo (decisión del usuario: **(A)
+quitar los `{br}`** de ajuste, pero **el ejemplo conserva** los `{br}`
+intencionados → hay que fijar la regla exacta antes de correrlo):
+
+- **`{w}` manuales**: quitarlos y dejar que el motor los inserte en el borde de
+  cada pantalla (2 líneas). *(A confirmar.)*
+- **`{br}`**: quitar los de "ajuste manual" y **conservar los intencionados**.
+  No hay regla automática fiable (marcar a mano, o heurística "quita el `{br}`
+  si el tramo previo no llenaba 212px"). *(A decidir al implementar.)*
+- Debe ser **reversible/seguro** (dry-run + reporte), sobre los scene files.
+
 ## Pendiente (cuando se implemente)
 
-1. `tools/build_dialogue_lang.py` (extractor + xlsx + import + reportes).
+1. `tools/build_dialogue_lang.py` (extractor + reportes) — o reusar el formato de
+   escena de `build_dialogue_scenes.py` como fuente.
 2. Autoload `DialogueL10n` + registro en `project.godot`.
-3. Hook en `EventSystem` (speak + choice + narrador/título).
-4. Prueba con **FE5 Cap. 1** (el que ya tiene texto) generando `es`.
+3. Hook en `EventSystem` (speak + choice + narrador/título) con el **auto-wrap
+   212px + auto-`{w}` por pantalla** de arriba.
+4. Tool de limpieza `{w}`/`{br}` (sección anterior) con la regla acordada.
+5. Prueba con **FE5 Cap. 1** (el que ya tiene texto) generando `es`.
