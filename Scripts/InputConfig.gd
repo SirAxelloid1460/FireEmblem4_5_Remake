@@ -51,6 +51,42 @@ func _ready() -> void:
 		# de fábrica). Así el mapa es determinista y sin teclas duplicadas.
 		var saved: int = int(cfg.get_value(SECTION, str(spec["action"]), 0))
 		_set_key(action, saved if saved != 0 else int(spec["def"]))
+	# Ratón: aplica el ajuste guardado (por defecto desactivado).
+	set_mouse_enabled(bool(cfg.get_value("input", "mouse", false)))
+
+
+# ── Ratón ─────────────────────────────────────────────────────────────────────
+# Activado: clic izq = A (ui_accept), der = B (ui_cancel), y el juego reconoce
+# hover/click/scroll. Desactivado: se consume TODO evento de ratón (nada del
+# juego reacciona). Botones extra no se mapean solos (el jugador los remapea).
+var mouse_enabled: bool = false
+
+## Activa/desactiva el ratón (mapea o desmapea izq/der) y lo persiste.
+func set_mouse_enabled(on: bool) -> void:
+	mouse_enabled = on
+	_set_mouse_button(&"ui_accept", MOUSE_BUTTON_LEFT, on)
+	_set_mouse_button(&"ui_cancel", MOUSE_BUTTON_RIGHT, on)
+	var cfg := ConfigFile.new()
+	cfg.load(CFG)
+	cfg.set_value("input", "mouse", on)
+	cfg.save(CFG)
+
+## Con el ratón desactivado, consume los eventos de ratón antes de que lleguen a
+## la GUI (bloquea click/scroll/hover). Con él activado, no interfiere.
+func _input(event: InputEvent) -> void:
+	if not mouse_enabled and event is InputEventMouse:
+		get_viewport().set_input_as_handled()
+
+func _set_mouse_button(action: StringName, btn: int, add: bool) -> void:
+	if not InputMap.has_action(action):
+		return
+	for ev in InputMap.action_get_events(action):
+		if ev is InputEventMouseButton and (ev as InputEventMouseButton).button_index == btn:
+			InputMap.action_erase_event(action, ev)
+	if add:
+		var m := InputEventMouseButton.new()
+		m.button_index = btn
+		InputMap.action_add_event(action, m)
 
 
 # ── API pública ───────────────────────────────────────────────────────────────

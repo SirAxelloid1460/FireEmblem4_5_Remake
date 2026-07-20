@@ -33,6 +33,7 @@ func _ready() -> void:
 	_rect.visible = false
 	add_child(_rect)
 	_load_saved_locale()
+	_apply_display()
 
 
 func _load_saved_locale() -> void:
@@ -41,6 +42,31 @@ func _load_saved_locale() -> void:
 		var loc := str(cfg.get_value("general", "language", ""))
 		if loc != "":
 			TranslationServer.set_locale(loc)
+
+
+## Aplica al arrancar el modo de ventana y la resolución guardados (Opciones).
+func _apply_display() -> void:
+	var cfg := ConfigFile.new()
+	if cfg.load(CFG_PATH) != OK:
+		return
+	match int(cfg.get_value("display", "window_mode", 0)):
+		1:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+			DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS, true)
+		2:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+		_:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+			DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS, false)
+	var ridx := int(cfg.get_value("display", "resolution", 2))
+	var reslist: Array = OptionsMenu.RESOLUTIONS
+	if ridx >= 0 and ridx < reslist.size():
+		var parts := str(reslist[ridx]).split("x")
+		if parts.size() == 2:
+			var w := int(parts[0])
+			var h := int(parts[1])
+			if w > 0 and h > 0:
+				DisplayServer.window_set_size(Vector2i(w, h))
 
 
 ## Fija el idioma y lo persiste (reemplaza a ConfigHandler.save_language).

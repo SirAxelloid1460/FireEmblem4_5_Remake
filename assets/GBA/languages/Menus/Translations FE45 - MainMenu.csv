@@ -92,3 +92,18 @@ OPTON,On,Sí,Ein,,Oui
 OPTOFF,Off,No,Aus,,Non
 ANIMMAP,Map Only,Solo Mapa,Nur Karte,,Carte seule
 QSETNOTICE,The graphics set «%s» will be\napplied when you restart the game.,El set gráfico «%s» se aplicará\nal reiniciar el juego.,Das Grafikset «%s» wird beim\nNeustart des Spiels übernommen.,,Le set graphique «%s» sera appliqué\nau redémarrage du jeu.
+,,,,,
+SECLANGUAGE,LANGUAGE,IDIOMA,SPRACHE,,LANGUE
+LANGUAGE,Language,Idioma,Sprache,,Langue
+LANGUAGEDESC,Change the game language,Cambiar el idioma del juego,Spielsprache ändern,,Changer la langue du jeu
+,,,,,
+SECDISPLAY,DISPLAY,PANTALLA,ANZEIGE,,AFFICHAGE
+WINDOWMODE,Window Mode,Modo de Ventana,Fenstermodus,,Mode Fenêtre
+WINDOWMODEDESC,"Fullscreen, borderless or windowed","Pantalla completa, sin bordes o en ventana","Vollbild, randlos oder Fenster",,"Plein écran, sans bordure ou fenêtré"
+WMWINDOW,Windowed,Ventana,Fenster,,Fenêtré
+WMBORDER,Borderless,Sin Bordes,Randlos,,Sans bordure
+WMFULL,Fullscreen,Pantalla Completa,Vollbild,,Plein écran
+RESOLUTION,Resolution,Resolución,Auflösung,,Résolution
+RESOLUTIONDESC,Change game resolution (applied on restart),Cambiar la resolución (se aplica al reiniciar),Auflösung ändern (beim Neustart übernommen),,Changer la résolution (appliquée au redémarrage)
+MOUSE,Mouse,Ratón,Maus,,Souris
+MOUSEDESC,"Enable mouse; left click = A, right click = B","Activar ratón; clic izquierdo = A, derecho = B","Maus aktivieren; Linksklick = A, Rechtsklick = B",,"Activer la souris ; clic gauche = A, droit = B"
