@@ -88,8 +88,6 @@ const SLIDE_TIME := 0.28
 const FADE_TIME  := 0.30
 
 # Descripciones de dificultad (de translations.json de los .ltproj)
-const DESC_NORMAL := "Base SNES difficulty + balance fixes due to GBA mechanics."
-const DESC_ELITE  := "Base SNES difficulty without balance fixes. For veterans."
 
 # ----------------------- ESTADO -----------------------------
 enum St { PRESS_START, MAIN, NEWGAME, EXTRAS }
@@ -439,19 +437,22 @@ func _animate_cursor(delta: float) -> void:
 # --- Columnas de botones ---
 func _build_columns() -> void:
 	# "Continue" solo aparece si hay partida guardada (sin saves es ilógico).
-	var main_items: Array = [{ "id": "newgame", "text": "New Game" }]
+	# El texto es la CLAVE de traducción (los Button se auto-traducen con el
+	# locale activo). Las claves NEWGAME/…/SOUNDROOM están en la tabla de
+	# MainMenu para los 5 idiomas.
+	var main_items: Array = [{ "id": "newgame", "text": "NEWGAME" }]
 	if SaveSystem.has_save_file():
-		main_items.append({ "id": "continue", "text": "Continue" })
-	main_items.append({ "id": "extras", "text": "Extras" })
+		main_items.append({ "id": "continue", "text": "CONTINUE" })
+	main_items.append({ "id": "extras", "text": "EXTRAS" })
 	_main_col = _make_column(main_items)
 	_newgame_col = _make_column([
-		{ "id": "normal", "text": "Normal" },
-		{ "id": "elite",  "text": "Elite" },
+		{ "id": "normal", "text": "NORMAL" },
+		{ "id": "elite",  "text": "ELITE" },
 	])
 	_extras_col = _make_column([
-		{ "id": "options",   "text": "Options" },
-		{ "id": "credits",   "text": "Credits" },
-		{ "id": "soundroom", "text": "Sound Room" },
+		{ "id": "options",   "text": "OPTIONS" },
+		{ "id": "credits",   "text": "CREDITS" },
+		{ "id": "soundroom", "text": "SOUNDROOM" },
 	])
 
 
@@ -628,7 +629,8 @@ func _on_button_focus(b: Button, id: String) -> void:
 	else:
 		_play_sfx(SFX_NAV)
 	if _state == St.NEWGAME:
-		_desc.text = DESC_NORMAL if id == "normal" else DESC_ELITE
+		# Claves de la tabla de traducción (localizadas en los 5 idiomas).
+		_desc.text = tr("NORMALDESC") if id == "normal" else tr("ELITEDESC")
 
 
 ## Reproduce un SFX del menú (en el bus "SFX" si existe). name = nombre sin ext.

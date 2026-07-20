@@ -84,27 +84,29 @@ func _ready() -> void:
 
 
 # ── Definición de opciones ────────────────────────────────────────────────────
+# Los rótulos y descripciones se pasan como CLAVES de la tabla de traducción
+# (MainMenu.csv); _row_* las resuelve con tr() al construir, según el idioma
+# activo. Las secciones (AUDIO/GRAPHICS/GAMEPLAY) se dejan literales.
 func _build_specs() -> void:
 	_row_section("AUDIO")
-	_row_range("audio", "music_volume", "Music Volume", 70, "Volumen de la música del juego.")
-	_row_range("audio", "sfx_volume", "SFX Volume", 80, "Volumen de los efectos de sonido.")
-	_row_toggle("audio", "talk_sound", "Talk Sound", true, "Sonido de voz al avanzar los diálogos.")
+	_row_range("audio", "music_volume", "MUSICLEVEL", 70, "MUSICLEVELDESC")
+	_row_range("audio", "sfx_volume", "SOUNDLEVEL", 80, "SOUNDLEVELDESC")
+	_row_toggle("audio", "talk_sound", "TALKSOUND", true, "TALKSOUNDDESC")
 
 	_row_section("GRAPHICS")
-	_row_set("Graphics Set", "Conjunto de gráficos: Original / GBA / HD. Se aplica al reiniciar el juego.")
+	_row_set("QSET", "QSETDESC")
 
 	_row_section("GAMEPLAY")
-	_row_enum("gameplay", "animations", "Battle Animations", ["On", "Map Only", "Off"], 0,
-			"Animaciones de combate: completas, solo en el mapa, o desactivadas.")
-	_row_range("gameplay", "unit_speed", "Unit Speed", 50, "Velocidad de movimiento de las unidades en el mapa.")
-	_row_range("gameplay", "text_speed", "Text Speed", 50, "Velocidad con la que aparece el texto de los diálogos.")
-	_row_range("gameplay", "grid_opacity", "Grid Opacity", 50, "Opacidad de la rejilla del mapa táctico.")
-	_row_toggle("gameplay", "terrain_info", "Show Terrain Info", true, "Mostrar el panel de información del terreno.")
-	_row_toggle("gameplay", "goal_info", "Show Goal Info", true, "Mostrar el objetivo del capítulo.")
-	_row_toggle("gameplay", "autocursor", "Auto Cursor", false, "Situar el cursor sobre la siguiente unidad automáticamente.")
-	_row_toggle("gameplay", "auto_end", "Auto End Turn", false, "Terminar el turno automáticamente al mover todas las unidades.")
-	_row_toggle("gameplay", "confirm_end", "Confirm End Turn", true, "Pedir confirmación antes de terminar el turno.")
-	_row_toggle("gameplay", "tutorials", "Tutorials", true, "Mostrar los mensajes de tutorial.")
+	_row_enum("gameplay", "animations", "ANIMATION", ["On", "Map Only", "Off"], 0, "ANIMATIONDESC")
+	_row_range("gameplay", "unit_speed", "UNITSPEED", 50, "UNITSPEEDDESC")
+	_row_range("gameplay", "text_speed", "TEXTSPEED", 50, "TEXTSPEEDDESC")
+	_row_range("gameplay", "grid_opacity", "GRIDOPAC", 50, "GRIDOPACDESC")
+	_row_toggle("gameplay", "terrain_info", "TERRAININFO", true, "TERRAININFODESC")
+	_row_toggle("gameplay", "goal_info", "GOALINFO", true, "GOALINFODESC")
+	_row_toggle("gameplay", "autocursor", "AUTOCURSOR", false, "AUTOCURSORDESC")
+	_row_toggle("gameplay", "auto_end", "AUTOEND", false, "AUTOENDDESC")
+	_row_toggle("gameplay", "confirm_end", "CONFIRMEND", true, "CONFIRMENDDESC")
+	_row_toggle("gameplay", "tutorials", "HINTS", true, "HINTSDESC")
 
 
 func _row_section(title_text: String) -> void:
@@ -112,26 +114,26 @@ func _row_section(title_text: String) -> void:
 
 func _row_range(section: String, key: String, label: String, default: int, desc: String) -> void:
 	var val: int = int(_cfg_get(section, key, default))
-	_specs.append({ "kind": "range", "section": section, "key": key, "label": label,
-			"value": clampi(int(round(val / 10.0)) * 10, 0, 100), "desc": desc, "icon": "" })
+	_specs.append({ "kind": "range", "section": section, "key": key, "label": tr(label),
+			"value": clampi(int(round(val / 10.0)) * 10, 0, 100), "desc": tr(desc), "icon": "" })
 
 func _row_enum(section: String, key: String, label: String, choices: Array, default: int, desc: String) -> void:
 	var idx: int = clampi(int(_cfg_get(section, key, default)), 0, choices.size() - 1)
-	_specs.append({ "kind": "enum", "section": section, "key": key, "label": label,
-			"choices": choices, "idx": idx, "desc": desc, "icon": "" })
+	_specs.append({ "kind": "enum", "section": section, "key": key, "label": tr(label),
+			"choices": choices, "idx": idx, "desc": tr(desc), "icon": "" })
 
 func _row_toggle(section: String, key: String, label: String, default: bool, desc: String) -> void:
 	var on: bool = bool(_cfg_get(section, key, default))
-	_specs.append({ "kind": "toggle", "section": section, "key": key, "label": label,
-			"choices": ["On", "Off"], "idx": (0 if on else 1), "desc": desc, "icon": "" })
+	_specs.append({ "kind": "toggle", "section": section, "key": key, "label": tr(label),
+			"choices": ["On", "Off"], "idx": (0 if on else 1), "desc": tr(desc), "icon": "" })
 
 func _row_set(label: String, desc: String) -> void:
 	var cur: String = AssetSet.current()
 	var idx: int = AssetSet.SETS.find(cur)
 	if idx < 0:
 		idx = AssetSet.SETS.find(AssetSet.DEFAULT)
-	_specs.append({ "kind": "set", "label": label, "choices": AssetSet.SETS, "idx": idx,
-			"applied": cur, "desc": desc, "icon": "" })
+	_specs.append({ "kind": "set", "label": tr(label), "choices": AssetSet.SETS, "idx": idx,
+			"applied": cur, "desc": tr(desc), "icon": "" })
 
 
 # ── Construcción de la UI ─────────────────────────────────────────────────────
@@ -427,7 +429,7 @@ func _refresh() -> void:
 	if _ctrl_lbl != null:
 		_ctrl_lbl.add_theme_color_override("font_color", COLOR_GOLD if ctrl_focused else COLOR_TEXT)
 	if ctrl_focused:
-		_desc.text = "Abrir el menú de remapeo de controles (estilo Game Boy Advance)."
+		_desc.text = "Remap the controls (Game Boy Advance style)."
 		if _scroll != null:
 			_scroll.scroll_vertical = 0
 	for i in range(_specs.size()):
