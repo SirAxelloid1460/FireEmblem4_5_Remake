@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784559643
+::res://::1784583446
 icon.png::CompressedTexture2D::5796228232867755098::1714553776::1784419739::1::::<><><>0<>0<>85d8504b263b0bda2244463b196f6b35<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1784389909::0::1::::<><><>0<>0<><>::
 ::res://assets/::1784393727
@@ -1915,19 +1915,19 @@ es.png::CompressedTexture2D::3622426124080247967::1784389913::1784390500::1::::<
 fr.png::CompressedTexture2D::7195595710634261420::1784389913::1784390500::1::::<><><>0<>0<>2a6ba1e8bd5e5a234578e4f26b13030b<>res://.godot/imported/fr.png-f48fb6c6872bfe9110857a3b4cfaac58.ctex::
 it.png::CompressedTexture2D::4110678305777171762::1784389913::1784390500::1::::<><><>0<>0<>0720a4e2dc09d691fd06545ebb1ab346<>res://.godot/imported/it.png-336188fca9c2916f7162fa57b67db91d.ctex::
 ja.png::CompressedTexture2D::93899182682407450::1784389913::1784390500::1::::<><><>0<>0<>1311f78545316f8b4e869c8d79693658<>res://.godot/imported/ja.png-3966ec14814b7fd2dd166a65d0d5b354.ctex::
-::res://assets/GBA/languages/Menus/::1784390466
-Translations FE45 - MainMenu.csv::Translation::5127242888532208358::1784389913::1784390466::1::::<><><>0<>0<>3e214dbbb2272bed8adba129c7e537ff<>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.en.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.es.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.de.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.ja.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.fr.translation::
-Translations FE45 - MainMenu.de.translation::OptimizedTranslation::8936700650430381375::1784390466::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.en.translation::OptimizedTranslation::8817530577582386794::1784390465::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.es.translation::OptimizedTranslation::847647670746001290::1784390465::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.fr.translation::OptimizedTranslation::3048930378286196056::1784390466::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.ja.translation::OptimizedTranslation::5118320353881303997::1784390466::0::1::::<><><>0<>0<><>::
-::res://assets/GBA/languages/Scenes/::1784390466
-Translations FE45 - Credits.csv::Translation::8722933851759645887::1784389913::1784390466::1::::<><><>0<>0<>685475d39aca7a9f7295e318abefc673<>res://assets/GBA/languages/Scenes/Translations FE45 - Credits.en.translation<*>res://assets/GBA/languages/Scenes/Translations FE45 - Credits.es.translation::
-Translations FE45 - Credits.de.translation::OptimizedTranslation::2821423505291399863::1784389913::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.en.translation::OptimizedTranslation::5412188258512102619::1784390465::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.es.translation::OptimizedTranslation::9179755138946583816::1784390465::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.fr.translation::OptimizedTranslation::4155141866644078568::1784389913::0::1::::<><><>0<>0<><>::
+::res://assets/GBA/languages/Menus/::1784583376
+Translations FE45 - MainMenu.csv::Translation::5127242888532208358::1784583376::1784583451::1::::<><><>0<>0<>3e214dbbb2272bed8adba129c7e537ff<>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.en.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.es.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.de.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.ja.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.fr.translation::
+Translations FE45 - MainMenu.de.translation::OptimizedTranslation::8936700650430381375::1784583451::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.en.translation::OptimizedTranslation::8817530577582386794::1784583451::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.es.translation::OptimizedTranslation::847647670746001290::1784583451::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.fr.translation::OptimizedTranslation::3048930378286196056::1784583451::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.ja.translation::OptimizedTranslation::5118320353881303997::1784583451::0::1::::<><><>0<>0<><>::
+::res://assets/GBA/languages/Scenes/::1784583376
+Translations FE45 - Credits.csv::Translation::8722933851759645887::1784583376::1784583451::1::::<><><>0<>0<>df9b98b0167f99f3f56783a791c9e947<>res://assets/GBA/languages/Scenes/Translations FE45 - Credits.en.translation<*>res://assets/GBA/languages/Scenes/Translations FE45 - Credits.es.translation<*>res://assets/GBA/languages/Scenes/Translations FE45 - Credits.de.translation<*>res://assets/GBA/languages/Scenes/Translations FE45 - Credits.fr.translation::
+Translations FE45 - Credits.de.translation::OptimizedTranslation::2821423505291399863::1784583451::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.en.translation::OptimizedTranslation::5412188258512102619::1784583451::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.es.translation::OptimizedTranslation::9179755138946583816::1784583451::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.fr.translation::OptimizedTranslation::4155141866644078568::1784583451::0::1::::<><><>0<>0<><>::
 Translations FE45 - Credits.ja.translation::OptimizedTranslation::66948769071755839::1784389913::0::1::::<><><>0<>0<><>::
 ::res://assets/GBA/languages/Scenes/FE5/::1784390466
 Translations FE45 - FE5CHAP1.csv::Translation::3225907030478842641::1784389913::1784390466::1::::<><><>0<>0<>4559945ac97b1f18666f74b641f78b61<>res://assets/GBA/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation::
@@ -4006,7 +4006,7 @@ portrait_offsets.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 skills.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 units.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 weapons.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-::res://docs/::1784418094
+::res://docs/::1784583376
 ARENA_FE4_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 ASSET_COVERAGE.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 AUTO_CINEMATICS_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -4014,6 +4014,7 @@ BaseCastle_InterChapter_Design.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<
 CASTLE_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 CINEMATICS_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 CLAUDE_CODE_BRIEF.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
+dialogue_localization_design.md::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::
 FE_Mechanics_Comparison.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 FE_Mechanics_Uncovered.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 Format_Differences.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -4045,6 +4046,10 @@ README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 ShopMenu.gd.txt::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 UnitListPanel.gd.txt::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 UnitManagerMenu.gd.txt::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
+::res://docs/examples/::1784583376
+::res://docs/examples/dialogue_format/::1784583376
+prologue_fe5.scene.json::JSON::-1::1784583376::0::1::::<><><>0<>0<><>::
+README.md::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::
 ::res://docs/palettes/::1784390477
 DROP_IMAGES_HERE.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 fe4_mapsprites_a.png::CompressedTexture2D::7917233036582995449::1784389924::1784390477::1::::<><><>0<>0<>687ff7458bc803f5c874bf0befaadf1a<>res://.godot/imported/fe4_mapsprites_a.png-7efcd8f05a847171e103651901e71c2f.ctex::
@@ -4067,8 +4072,8 @@ mode_select.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scr
 options_menu.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784486740
-ActionMenu.gd::GDScript::6413271467111799318::1784389909::0::1::::ActionMenu<>Control<><>0<>0<><>::
+::res://Scripts/::1784583376
+ActionMenu.gd::GDScript::6413271467111799318::1784583376::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784389909::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784389909::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
 ArenaEventManager.gd::GDScript::2130860807340854611::1784389909::0::1::::ArenaEventManager<>Node<><>0<>0<><>::
@@ -4098,18 +4103,18 @@ CombatEffectDatabase.gd::GDScript::8068641853132583565::1784389909::0::1::::Comb
 CombatPaletteSystem.gd::GDScript::5692955103788158920::1784389909::0::1::::CombatPaletteSystem<>RefCounted<><>0<>0<><>::
 CombatSystem.gd::GDScript::8713859728367825415::1784389909::0::1::::CombatSystem<>Node<><>0<>0<><>::
 ConsumableData.gd::GDScript::7398558622788852579::1784389909::0::1::::ConsumableData<>Resource<><>0<>0<><>::
-ControlsMenu.gd::GDScript::8511848274970140504::1784486740::0::1::::ControlsMenu<>Control<><>0<>0<><>::
+ControlsMenu.gd::GDScript::8511848274970140504::1784583376::0::1::::ControlsMenu<>Control<><>0<>0<><>::
 ConvoyPanel.gd::GDScript::3179861064650906737::1784389909::0::1::::ConvoyPanel<>Panel<><>0<>0<><>::
 ConvoySystem.gd::GDScript::297960422385837843::1784389909::0::1::::ConvoySystem<>Node<><>0<>0<><>::
-CreditsScreen.gd::GDScript::1294854678071032857::1784418470::0::1::::CreditsScreen<>Control<><>0<>0<><>::
+CreditsScreen.gd::GDScript::1294854678071032857::1784583376::0::1::::CreditsScreen<>Control<><>0<>0<><>::
 DevilWeaponSystem.gd::GDScript::5835400362288249445::1784389909::0::1::::DevilWeaponSystem<>RefCounted<><>0<>0<><>::
 DialogueAnimations.gd::GDScript::1096554163329153284::1784389909::0::1::::DialogueAnimations<>Node<><>0<>0<><>::
 DialogueBox.gd::GDScript::145382810046375353::1784389909::0::1::::DialogueBox<>Control<><>0<>0<><>::
-EventChoice.gd::GDScript::1071833902445511345::1784389909::0::1::::EventChoice<>Control<><>0<>0<><>::
+EventChoice.gd::GDScript::1071833902445511345::1784583376::0::1::::EventChoice<>Control<><>0<>0<><>::
 EventCinematic.gd::GDScript::6926696982042024199::1784389909::0::1::::EventCinematic<>CinematicScene<><>0<>0<><>::
-EventDialogue.gd::GDScript::7605775379593140747::1784389909::0::1::::EventDialogue<>Control<><>0<>0<><>::
-EventSystem.gd::GDScript::1134202434114915320::1784389909::0::1::::EventSystem<>Node<><>0<>0<><>::
-FadeCanvas.gd::GDScript::4271595688716524119::1784389909::0::1::::<>CanvasLayer<><>0<>0<><>::
+EventDialogue.gd::GDScript::7605775379593140747::1784583376::0::1::::EventDialogue<>Control<><>0<>0<><>::
+EventSystem.gd::GDScript::1134202434114915320::1784583376::0::1::::EventSystem<>Node<><>0<>0<><>::
+FadeCanvas.gd::GDScript::4271595688716524119::1784583376::0::1::::<>CanvasLayer<><>0<>0<><>::
 FEButton.gd::GDScript::7564859357985828465::1784389909::0::1::::FEButton<>Button<><>0<>0<><>::
 FogOfWarSystem.gd::GDScript::4555120182116966668::1784389909::0::1::::FogOfWarSystem<>RefCounted<><>0<>0<><>::
 FortuneTellerPanel.gd::GDScript::5387718253165695332::1784389909::0::1::::FortuneTellerPanel<>Panel<><>0<>0<><>::
@@ -4118,23 +4123,23 @@ GameManager.gd::GDScript::5000348222022627157::1784389909::0::1::::<>Node<><>0<>
 GameMode.gd::GDScript::3263032706539801598::1784393727::0::1::::<>Node<><>0<>0<><>::
 GameSettings.gd::GDScript::680640419883924562::1784389909::0::1::::GameSettings<>Node<><>0<>0<><>::
 Grid.gd::GDScript::572029206902054273::1784389909::0::1::::Grid<>Node2D<><>0<>0<><>::
-InputConfig.gd::GDScript::1371783293280119940::1784486740::0::1::::<>Node<><>0<>0<><>::
+InputConfig.gd::GDScript::1371783293280119940::1784583376::0::1::::<>Node<><>0<>0<><>::
 Intro.gd::GDScript::3251222899461467647::1784402133::0::1::::IntroScreen<>Control<><>0<>0<><>::
 Item.gd::GDScript::7925141334164720406::1784389909::0::1::::Item<>RefCounted<><>0<>0<><>::
 ItemDatabase.gd::GDScript::6527273458596669064::1784389909::0::1::::ItemDatabase<>RefCounted<><>0<>0<><>::
 Items.gd::GDScript::1388330204127410334::1784389909::0::1::::ItemCatalog<>RefCounted<><>0<>0<><>::
 LabelAnimText.gd::GDScript::2867877076981210681::1784389909::0::1::::LabelAnimText<>Control<><>0<>0<><>::
-Language.gd::GDScript::2907556366295349689::1784389909::0::1::::LanguageScreen<>SelectMenu<><>0<>0<><>::
+Language.gd::GDScript::2907556366295349689::1784583376::0::1::::LanguageScreen<>SelectMenu<><>0<>0<><>::
 LaraPromotion.gd::GDScript::4107297915193857152::1784389909::0::1::::LaraPromotion<>RefCounted<><>0<>0<><>::
 LevelData.gd::GDScript::802805939506090972::1784389909::0::1::::LevelData<>Resource<><>0<>0<><>::
 LevelLoader.gd::GDScript::2900491532752613919::1784389909::0::1::::LevelLoader<>RefCounted<><>0<>0<><>::
 LevelUpScreen.gd::GDScript::2074851621102138785::1784389909::0::1::::LevelUpScreen<>Control<><>0<>0<><>::
 LocationMarker.gd::GDScript::1836486964086790272::1784389909::0::1::::LocationMarker<>Node2D<><>0<>0<><>::
-MainMenu.gd::GDScript::8175898352055706196::1784402133::0::1::::MainMenu<>Control<><>0<>0<><>::
+MainMenu.gd::GDScript::8175898352055706196::1784583376::0::1::::MainMenu<>Control<><>0<>0<><>::
 MapActions.gd::GDScript::3535448452538133979::1784389909::0::1::::MapActions<>RefCounted<><>0<>0<><>::
 MapBackground.gd::GDScript::3738451975226640230::1784389909::0::1::::MapBackground<>Node2D<><>0<>0<><>::
-ModeSelect.gd::GDScript::3174370287506302631::1784389909::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
-OptionsMenu.gd::GDScript::5364573969176011556::1784486740::0::1::::OptionsMenu<>Control<><>0<>0<><>::
+ModeSelect.gd::GDScript::3174370287506302631::1784583376::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
+OptionsMenu.gd::GDScript::5364573969176011556::1784583376::0::1::::OptionsMenu<>Control<><>0<>0<><>::
 Pathfinding.gd::GDScript::1848538420110686201::1784389909::0::1::::Pathfinding<>Node<><>0<>0<><>::
 PrologueCinematic.gd::GDScript::3981487757909408999::1784389909::0::1::::PrologueCinematic<>CinematicScene<><>0<>0<><>::
 PrologueTest.gd::GDScript::5063533363305664355::1784389909::0::1::::<>Node2D<><>0<>0<><>::
@@ -4142,10 +4147,10 @@ PromotionPanel.gd::GDScript::4153741883649203270::1784389909::0::1::::PromotionP
 PromotionScreen.gd::GDScript::4779123178995863736::1784389909::0::1::::PromotionScreen<>Control<><>0<>0<><>::
 PromotionSystem.gd::GDScript::8325188722818028479::1784389909::0::1::::PromotionSystem<>Node<><>0<>0<><>::
 SaveSystem.gd::GDScript::485315861979317151::1784389909::0::1::::SaveSystem<>Node<><>0<>0<><>::
-SelectMenu.gd::GDScript::439202066668374422::1784389909::0::1::::SelectMenu<>Control<><>0<>0<><>::
+SelectMenu.gd::GDScript::439202066668374422::1784583376::0::1::::SelectMenu<>Control<><>0<>0<><>::
 ShopPanel.gd::GDScript::473820464989183141::1784389909::0::1::::ShopPanel<>Panel<><>0<>0<><>::
 SkillData.gd::GDScript::7693736634377838352::1784389909::0::1::::SkillData<>Resource<><>0<>0<><>::
-SoundRoom.gd::GDScript::3311604537699361751::1784389909::0::1::::SoundRoom<>Control<><>0<>0<><>::
+SoundRoom.gd::GDScript::3311604537699361751::1784583376::0::1::::SoundRoom<>Control<><>0<>0<><>::
 SubstituteSystem.gd::GDScript::119895372994411184::1784389909::0::1::::SubstituteSystem<>RefCounted<><>0<>0<><>::
 SupportSystem.gd::GDScript::2046322873708120284::1784389909::0::1::::SupportSystem<>Node<><>0<>0<><>::
 TerrainSystem.gd::GDScript::79259312568237195::1784389909::0::1::::TerrainSystem<>RefCounted<><>0<>0<><>::
@@ -4162,5 +4167,8 @@ WeaponData.gd::GDScript::346496852826946000::1784389909::0::1::::WeaponData<>Res
 WorldMap.gd::GDScript::1055851736146678649::1784389909::0::1::::WorldMap<>Node2D<><>0<>0<><>::
 ::res://Shaders/::1784389909
 team_palette_swap.gdshader::Shader::8113519118552212158::1784389909::0::1::::<><><>0<>0<><>::
-::res://tools/::1784461624
-COMMANDS.txt::TextFile::-1::1784461624::0::1::::<><><>0<>0<><>::
+::res://tools/::1784583376
+COMMANDS.txt::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::
+::res://tools/translator_app/::1784583376
+README.md::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::
+requirements.txt::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::
