@@ -62,7 +62,7 @@ const BOXES := [
 ]
 
 # Zona de pantalla de la GBA (px imagen) donde se muestra el nombre de la acción.
-const SCREEN := Rect2(279, 285, 163, 125)
+const SCREEN := Rect2(279, 278, 164, 110)   # pantalla real (blanca) y=278..388
 
 # Recuadro de contenido real de la imagen 720×480 (el resto es transparente):
 # el contenido va de y=118 a y=458 → 340 px de alto. Se usa para escalar/centrar.
@@ -138,7 +138,7 @@ func _build_ui() -> void:
 	_screen_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_screen_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	_screen_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_font_it(_screen_lbl, 30, COLOR_GOLD, 3)
+	_font_it(_screen_lbl, 45, COLOR_GOLD, 3)   # info de la pantalla ×1.5 (30→45)
 	holder.add_child(_screen_lbl)
 
 	# Recuadros de remapeo sobre las líneas horizontales.
@@ -159,7 +159,7 @@ func _build_ui() -> void:
 		kl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 		kl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		kl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-		_font_it(kl, 20, COLOR_TEXT, 2)
+		_font_it(kl, 30, COLOR_TEXT, 2)   # fuente de los recuadros bastante más grande (20→30)
 		panel.add_child(kl)
 		_boxes_ui.append({ "panel": panel, "style": st, "label": kl })
 
