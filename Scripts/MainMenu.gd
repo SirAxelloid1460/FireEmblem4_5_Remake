@@ -612,7 +612,7 @@ func _on_button_pressed(id: String) -> void:
 	match id:
 		"newgame":   _play_sfx(SFX_CONFIRM); _goto(St.NEWGAME)
 		"extras":    _play_sfx(SFX_CONFIRM); _goto(St.EXTRAS)
-		"continue":  _play_sfx(SFX_ERROR);   _toast("Continue — coming soon")
+		"continue":  _play_sfx(SFX_ERROR);   _toast(tr("CONTINUESOON"))
 		"options":   _play_sfx(SFX_CONFIRM); _open_options()
 		"soundroom": _play_sfx(SFX_CONFIRM); _open_soundroom()
 		"credits":   _play_sfx(SFX_CONFIRM); _open_credits()
@@ -767,7 +767,7 @@ func _start_game(difficulty: String) -> void:
 		_busy = false
 		var t2 := create_tween()
 		t2.tween_property(_fade, "modulate:a", 0.0, FADE_TIME)
-		_toast("No se encontró %s" % GAME_SCENE)
+		_toast(tr("SCENEMISSING") % GAME_SCENE)
 
 
 func _open_options() -> void:
@@ -780,7 +780,7 @@ func _open_options() -> void:
 func _open_credits() -> void:
 	var scr := load(CREDITS_SCRIPT)
 	if scr == null:
-		_toast("Credits no disponible")
+		_toast(tr("CREDITSNA"))
 		return
 	_busy = true
 	await _fade_to(1.0)                       # fade a negro (transición a créditos)
@@ -799,7 +799,7 @@ func _open_credits() -> void:
 func _open_soundroom() -> void:
 	var scr := load(SOUNDROOM_SCRIPT)
 	if scr == null:
-		_toast("Sound Room no disponible")
+		_toast(tr("SOUNDROOMNA"))
 		return
 	_busy = true
 	await _fade_to(1.0)                       # fade a negro

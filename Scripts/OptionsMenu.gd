@@ -88,16 +88,16 @@ func _ready() -> void:
 # (MainMenu.csv); _row_* las resuelve con tr() al construir, según el idioma
 # activo. Las secciones (AUDIO/GRAPHICS/GAMEPLAY) se dejan literales.
 func _build_specs() -> void:
-	_row_section("AUDIO")
+	_row_section("SECAUDIO")
 	_row_range("audio", "music_volume", "MUSICLEVEL", 70, "MUSICLEVELDESC")
 	_row_range("audio", "sfx_volume", "SOUNDLEVEL", 80, "SOUNDLEVELDESC")
 	_row_toggle("audio", "talk_sound", "TALKSOUND", true, "TALKSOUNDDESC")
 
-	_row_section("GRAPHICS")
+	_row_section("SECGRAPHICS")
 	_row_set("QSET", "QSETDESC")
 
-	_row_section("GAMEPLAY")
-	_row_enum("gameplay", "animations", "ANIMATION", ["On", "Map Only", "Off"], 0, "ANIMATIONDESC")
+	_row_section("SECGAMEPLAY")
+	_row_enum("gameplay", "animations", "ANIMATION", ["OPTON", "ANIMMAP", "OPTOFF"], 0, "ANIMATIONDESC")
 	_row_range("gameplay", "unit_speed", "UNITSPEED", 50, "UNITSPEEDDESC")
 	_row_range("gameplay", "text_speed", "TEXTSPEED", 50, "TEXTSPEEDDESC")
 	_row_range("gameplay", "grid_opacity", "GRIDOPAC", 50, "GRIDOPACDESC")
@@ -109,23 +109,30 @@ func _build_specs() -> void:
 	_row_toggle("gameplay", "tutorials", "HINTS", true, "HINTSDESC")
 
 
-func _row_section(title_text: String) -> void:
-	_specs.append({ "kind": "section", "label": title_text })
+func _row_section(title_key: String) -> void:
+	_specs.append({ "kind": "section", "label": tr(title_key) })
 
 func _row_range(section: String, key: String, label: String, default: int, desc: String) -> void:
 	var val: int = int(_cfg_get(section, key, default))
 	_specs.append({ "kind": "range", "section": section, "key": key, "label": tr(label),
 			"value": clampi(int(round(val / 10.0)) * 10, 0, 100), "desc": tr(desc), "icon": "" })
 
-func _row_enum(section: String, key: String, label: String, choices: Array, default: int, desc: String) -> void:
-	var idx: int = clampi(int(_cfg_get(section, key, default)), 0, choices.size() - 1)
+func _row_enum(section: String, key: String, label: String, choice_keys: Array, default: int, desc: String) -> void:
+	var idx: int = clampi(int(_cfg_get(section, key, default)), 0, choice_keys.size() - 1)
 	_specs.append({ "kind": "enum", "section": section, "key": key, "label": tr(label),
-			"choices": choices, "idx": idx, "desc": tr(desc), "icon": "" })
+			"choices": _tr_all(choice_keys), "idx": idx, "desc": tr(desc), "icon": "" })
 
 func _row_toggle(section: String, key: String, label: String, default: bool, desc: String) -> void:
 	var on: bool = bool(_cfg_get(section, key, default))
 	_specs.append({ "kind": "toggle", "section": section, "key": key, "label": tr(label),
-			"choices": ["On", "Off"], "idx": (0 if on else 1), "desc": tr(desc), "icon": "" })
+			"choices": [tr("OPTON"), tr("OPTOFF")], "idx": (0 if on else 1), "desc": tr(desc), "icon": "" })
+
+## Traduce cada clave de una lista de opciones (mantiene el orden/índice).
+func _tr_all(keys: Array) -> Array:
+	var out: Array = []
+	for k in keys:
+		out.append(tr(str(k)))
+	return out
 
 func _row_set(label: String, desc: String) -> void:
 	var cur: String = AssetSet.current()
@@ -197,7 +204,7 @@ func _build_title_panel() -> Control:
 	root.add_child(np)
 
 	var lbl := Label.new()
-	lbl.text = "Configuration"
+	lbl.text = tr("CONFIG")
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -234,7 +241,7 @@ func _build_ctrl_button(left_x: float, title_y: float, title_h: float, panel_w: 
 	root.add_child(hand)
 
 	var lbl := Label.new()
-	lbl.text = "Controls"
+	lbl.text = tr("CTRLBTN")
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -429,7 +436,7 @@ func _refresh() -> void:
 	if _ctrl_lbl != null:
 		_ctrl_lbl.add_theme_color_override("font_color", COLOR_GOLD if ctrl_focused else COLOR_TEXT)
 	if ctrl_focused:
-		_desc.text = "Remap the controls (Game Boy Advance style)."
+		_desc.text = tr("CTRLBTNDESC")
 		if _scroll != null:
 			_scroll.scroll_vertical = 0
 	for i in range(_specs.size()):
@@ -594,7 +601,7 @@ func _show_restart_notice(set_name: String) -> void:
 	box.add_theme_constant_override("separation", 16)
 	panel.add_child(box)
 	var msg := Label.new()
-	msg.text = "El set gráfico «%s» se aplicará\nal reiniciar el juego." % set_name
+	msg.text = tr("QSETNOTICE") % set_name
 	msg.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_font_it(msg, 22, COLOR_TEXT, 3)
 	box.add_child(msg)

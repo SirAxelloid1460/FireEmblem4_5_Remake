@@ -74,3 +74,23 @@ CONFIRMENDDESC,Ask again before manually ending turn,Confirmar al acabar el turn
 HINTS,Tutorials,Tutoriales,Tutorials,,
 HINTSDESC,Show tutorials,Mostrar tutoriales,Tutorials anzeigen,,
 PLSRESET,"PLEASE, RESTART THE GAME TO APPLY THE RESOLUTION CHANGES PROPERLY","POR FAVOR, REINICIA EL JUEGO PARA APLICAR CORRECTAMENTE LOS CAMBIOS DE RESOLUCIÓN","BITTE STARTEN SIE DAS SPIEL NEU, DAMIT DIE AUFLÖSUNGSÄNDERUNGEN KORREKT ÜBERNOMMEN WERDEN.",解像度の変更を正しく適用するには、ゲームを再起動してください。,VEUILLEZ REDÉMARRER LE JEU POUR QUE LES CHANGEMENTS DE RÉSOLUTION SOIENT APPLIQUÉS CORRECTEMENT
+,,,,,
+MODEFE4,Genealogy of the Holy War,Genealogía de la Guerra Santa,Genealogy of the Holy War,,Genealogy of the Holy War
+MODEFE5,Thracia 776,Thracia 776,Thracia 776,,Thracia 776
+MODESAGA,Both Together,Ambos Juntos,Beide zusammen,,Les deux ensemble
+,,,,,
+SCENEMISSING,%s not found,No se encontró %s,%s nicht gefunden,,%s introuvable
+CONTINUESOON,Continue — coming soon,Continuar — próximamente,Fortsetzen — bald verfügbar,,Continuer — bientôt disponible
+CREDITSNA,Credits unavailable,Créditos no disponible,Credits nicht verfügbar,,Crédits indisponibles
+SOUNDROOMNA,Sound Room unavailable,Sala de Sonido no disponible,Sound Room nicht verfügbar,,Salle de son indisponible
+,,,,,
+CONFIG,Configuration,Configuración,Konfiguration,,Configuration
+SECAUDIO,AUDIO,AUDIO,AUDIO,,AUDIO
+SECGRAPHICS,GRAPHICS,GRÁFICOS,GRAFIK,,GRAPHISMES
+SECGAMEPLAY,GAMEPLAY,JUGABILIDAD,GAMEPLAY,,JOUABILITÉ
+CTRLBTN,Controls,Controles,Steuerung,,Contrôles
+CTRLBTNDESC,Remap the controls (Game Boy Advance style).,Reasigna los controles (estilo Game Boy Advance).,Steuerung neu belegen (Game-Boy-Advance-Stil).,,Reconfigurer les commandes (style Game Boy Advance).
+OPTON,On,Sí,Ein,,Oui
+OPTOFF,Off,No,Aus,,Non
+ANIMMAP,Map Only,Solo Mapa,Nur Karte,,Carte seule
+QSETNOTICE,The graphics set «%s» will be\napplied when you restart the game.,El set gráfico «%s» se aplicará\nal reiniciar el juego.,Das Grafikset «%s» wird beim\nNeustart des Spiels übernommen.,,Le set graphique «%s» sera appliqué\nau redémarrage du jeu.

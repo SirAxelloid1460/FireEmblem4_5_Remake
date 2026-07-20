@@ -29,10 +29,11 @@ const MODE_FE4 := 0   # GameMode.Mode.FE4_ONLY
 const MODE_FE5 := 1   # GameMode.Mode.FE5_ONLY
 const MODE_SAGA := 2  # GameMode.Mode.SAGA_MODE
 
+# El "text" es la CLAVE de traducción (el Button la auto-traduce con el locale).
 const MODES := [
-	{ "id": "fe4",  "text": "Genealogy of the Holy War" },
-	{ "id": "fe5",  "text": "Thracia 776" },
-	{ "id": "saga", "text": "Both Together" },
+	{ "id": "fe4",  "text": "MODEFE4" },
+	{ "id": "fe5",  "text": "MODEFE5" },
+	{ "id": "saga", "text": "MODESAGA" },
 ]
 
 
