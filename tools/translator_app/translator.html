@@ -1,0 +1,377 @@
+<title>Dialogue Translator — FE4/FE5 Remake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --bg:#0e1017; --surface:#171a24; --surface-2:#1f2330; --border:#2c3242;
+  --text:#e8e9ee; --muted:#98a0b3; --accent:#e6b84e; --accent-dim:#b9902f;
+  --good:#5fbf6f; --good-bg:#16241a; --warn:#d0a24a; --shadow:rgba(0,0,0,.4);
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#f3f0e8; --surface:#fffdf8; --surface-2:#efeadd; --border:#ddd5c4;
+    --text:#23262e; --muted:#6b7180; --accent:#a9781f; --accent-dim:#7d5912;
+    --good:#2f8f45; --good-bg:#e7f2e8; --warn:#a86a1c; --shadow:rgba(60,50,30,.12);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1017; --surface:#171a24; --surface-2:#1f2330; --border:#2c3242;
+  --text:#e8e9ee; --muted:#98a0b3; --accent:#e6b84e; --accent-dim:#b9902f;
+  --good:#5fbf6f; --good-bg:#16241a; --warn:#d0a24a; --shadow:rgba(0,0,0,.4);
+}
+:root[data-theme="light"]{
+  --bg:#f3f0e8; --surface:#fffdf8; --surface-2:#efeadd; --border:#ddd5c4;
+  --text:#23262e; --muted:#6b7180; --accent:#a9781f; --accent-dim:#7d5912;
+  --good:#2f8f45; --good-bg:#e7f2e8; --warn:#a86a1c; --shadow:rgba(60,50,30,.12);
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.5;
+  font-size:15px;display:flex;flex-direction:column;height:100vh;overflow:hidden}
+button{font-family:inherit;font-size:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* Toolbar */
+.bar{display:flex;align-items:center;gap:14px;padding:10px 18px;background:var(--surface);
+  border-bottom:1px solid var(--border);flex-wrap:wrap;box-shadow:0 1px 0 var(--shadow)}
+.brand{display:flex;flex-direction:column;margin-right:auto;min-width:0}
+.brand b{font-size:16px;letter-spacing:.2px}
+.brand small{color:var(--muted);font-size:12px}
+.brand b .g{color:var(--accent)}
+.btn{background:var(--surface-2);color:var(--text);border:1px solid var(--border);
+  border-radius:8px;padding:7px 13px;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.btn:hover{border-color:var(--accent-dim)}
+.btn.primary{background:var(--accent);color:#1a1405;border-color:var(--accent);font-weight:600}
+.btn.primary:hover{filter:brightness(1.06)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+select.btn{padding-right:8px}
+.prog{display:flex;align-items:center;gap:9px;font-variant-numeric:tabular-nums;font-size:13px;color:var(--muted)}
+.prog .track{width:120px;height:7px;border-radius:99px;background:var(--surface-2);overflow:hidden;border:1px solid var(--border)}
+.prog .fill{height:100%;background:var(--good);width:0%;transition:width .25s}
+.prog b{color:var(--text)}
+
+/* Body layout */
+.wrap{display:flex;flex:1;min-height:0}
+.side{width:250px;flex:none;border-right:1px solid var(--border);background:var(--surface);
+  overflow:auto;padding:12px}
+.side h3{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:6px 8px 10px}
+.snav{display:block;width:100%;text-align:left;background:none;border:0;border-radius:8px;padding:9px 10px;color:var(--text);margin-bottom:2px}
+.snav:hover{background:var(--surface-2)}
+.snav.active{background:var(--surface-2);box-shadow:inset 3px 0 0 var(--accent)}
+.snav .row1{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.snav .nm{font-weight:600;font-size:14px}
+.snav .ct{font-variant-numeric:tabular-nums;font-size:12px;color:var(--muted)}
+.snav .track{height:4px;border-radius:99px;background:var(--surface);overflow:hidden;margin-top:6px;border:1px solid var(--border)}
+.snav .fill{height:100%;background:var(--good);width:0%}
+.side .opt{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);padding:8px 10px;margin-top:6px;border-top:1px solid var(--border)}
+
+main{flex:1;min-width:0;overflow:auto;padding:22px 26px 120px;scroll-behavior:smooth}
+.scene{max-width:860px;margin:0 auto 34px}
+.scene-h{position:sticky;top:0;background:linear-gradient(var(--bg) 72%,transparent);
+  padding:6px 2px 12px;z-index:2;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.scene-h h2{margin:0;font-size:20px;letter-spacing:.3px}
+.scene-h .tag{font-family:var(--mono);font-size:11px;color:var(--muted);background:var(--surface-2);
+  border:1px solid var(--border);padding:2px 7px;border-radius:6px}
+
+.dir{font-family:var(--mono);font-size:12px;color:var(--muted);opacity:.7;padding:3px 10px;margin:2px 0}
+.dir .k{color:var(--accent-dim)}
+
+.line{display:grid;grid-template-columns:14px 1fr;gap:12px;background:var(--surface);border:1px solid var(--border);
+  border-radius:11px;padding:13px 15px;margin:9px 0;box-shadow:0 1px 2px var(--shadow)}
+.line .stripe{border-radius:99px;background:var(--warn)}
+.line.done .stripe{background:var(--good)}
+.line .body{min-width:0}
+.line .who{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;margin-bottom:6px}
+.line .who .dot{width:7px;height:7px;border-radius:99px;background:var(--accent)}
+.line.done .who .dot{background:var(--good)}
+.src{font-size:14.5px;color:var(--text);white-space:pre-wrap;word-break:break-word;
+  padding:8px 11px;background:var(--surface-2);border-radius:8px;border:1px solid var(--border)}
+.tok{font-family:var(--mono);font-size:.82em;color:var(--accent);background:color-mix(in srgb,var(--accent) 14%,transparent);
+  border-radius:4px;padding:0 3px;margin:0 1px}
+textarea{width:100%;margin-top:8px;background:var(--bg);color:var(--text);border:1px solid var(--border);
+  border-radius:8px;padding:9px 11px;font-family:var(--sans);font-size:14.5px;line-height:1.5;resize:vertical;min-height:44px}
+textarea:focus{border-color:var(--accent);outline:none}
+.mini{display:flex;gap:6px;margin-top:6px;align-items:center;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:11px;background:var(--surface-2);border:1px solid var(--border);
+  color:var(--muted);border-radius:6px;padding:2px 7px}
+.chip.act{cursor:pointer}.chip.act:hover{border-color:var(--accent-dim);color:var(--text)}
+.chip.warn{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 45%,var(--border))}
+
+/* Empty state */
+.empty{margin:auto;max-width:520px;text-align:center;padding:40px 24px;color:var(--muted)}
+.empty .disc{font-size:44px;margin-bottom:10px}
+.empty h1{color:var(--text);font-size:24px;margin:.2em 0}
+.empty p{margin:.5em 0}
+.drop{margin-top:22px;border:1.5px dashed var(--border);border-radius:14px;padding:30px;background:var(--surface)}
+.drop.hot{border-color:var(--accent);background:var(--surface-2)}
+kbd{font-family:var(--mono);font-size:.85em;background:var(--surface-2);border:1px solid var(--border);
+  border-bottom-width:2px;border-radius:5px;padding:1px 5px}
+.hidden{display:none!important}
+@media (max-width:720px){ .side{display:none} main{padding:16px 14px 120px} }
+</style>
+
+<div class="bar">
+  <div class="brand">
+    <b>Dialogue <span class="g">Translator</span></b>
+    <small id="fileName">FE4 / FE5 Remake · importa un scene <code>_en.json</code></small>
+  </div>
+  <button class="btn" id="btnImport">📂 Importar fuente</button>
+  <button class="btn" id="btnResume" disabled>↺ Retomar</button>
+  <label class="btn" style="gap:6px">Idioma
+    <select class="btn" id="locale" style="border:0;padding:0 2px;background:none">
+      <option value="es">Español (es)</option>
+      <option value="de">Deutsch (de)</option>
+      <option value="fr">Français (fr)</option>
+      <option value="ja">日本語 (ja)</option>
+      <option value="it">Italiano (it)</option>
+    </select>
+  </label>
+  <div class="prog" title="Líneas traducidas">
+    <div class="track"><div class="fill" id="pFill"></div></div>
+    <span><b id="pDone">0</b>/<span id="pTotal">0</span></span>
+  </div>
+  <button class="btn primary" id="btnExport" disabled>⬇ Exportar</button>
+  <input type="file" id="file" accept=".json,application/json" class="hidden">
+  <input type="file" id="fileResume" accept=".json,application/json" class="hidden">
+</div>
+
+<div class="wrap">
+  <aside class="side" id="side">
+    <h3>Escenas</h3>
+    <div id="snav"></div>
+    <label class="opt"><input type="checkbox" id="showDir" checked> Mostrar acotaciones</label>
+    <label class="opt"><input type="checkbox" id="onlyTodo"> Solo pendientes</label>
+  </aside>
+  <main id="main">
+    <div class="empty" id="empty">
+      <div class="disc">🗣️</div>
+      <h1>Traductor de diálogos</h1>
+      <p>Importa un archivo de escena en inglés (<code>*.scene.json</code> / <code>_en.json</code>).
+         Traduces cada línea hablada; las acotaciones (<code>@add_portrait</code>…) se muestran como
+         contexto y no se tocan.</p>
+      <p>Al terminar, <b>Exportar</b> genera el mismo archivo con el texto traducido
+         (<code>nombre.&lt;idioma&gt;.json</code>). Tu progreso se guarda solo en este navegador.</p>
+      <div class="drop" id="drop">
+        <b>Arrastra el JSON aquí</b> o <button class="btn" id="btnImport2" style="margin-left:4px">selecciona un archivo</button>
+        <p style="margin:.8em 0 0;font-size:13px">Los tokens <span class="tok">{w}</span> (espera) y
+           <span class="tok">{br}</span> (salto) se conservan — cópialos en tu traducción.</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+"use strict";
+const $=s=>document.querySelector(s);
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e;};
+const META=["name","trigger","level_nid","condition","only_once","priority"];
+let SOURCE=null, BASENAME="dialogue", ITEMS=[], TR={}, STOREKEY="";
+let lastFocused=null;
+
+const spokenKey=step=>Object.keys(step).find(k=>!k.startsWith("@"));
+const stepsOf=v=>Array.isArray(v)?v:((v&&v.steps)||[]);
+const K=(s,i)=>s+""+i;
+const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const hi=s=>esc(String(s)).replace(/\{[^}]*\}/g,m=>'<span class="tok">'+m+'</span>');
+
+function flatten(){
+  ITEMS=[];
+  for(const [sk,sv] of Object.entries(SOURCE)){
+    stepsOf(sv).forEach((step,i)=>{
+      const spk=spokenKey(step);
+      if(spk!==undefined) ITEMS.push({scene:sk,index:i,speaker:spk,source:String(step[spk])});
+    });
+  }
+}
+function hashSource(){
+  // clave de almacenamiento estable por contenido (escenas + nº de líneas + primeros textos)
+  let h=0, str=Object.keys(SOURCE).join("|")+"#"+ITEMS.length+"#"+ITEMS.slice(0,4).map(i=>i.source).join("~");
+  for(let i=0;i<str.length;i++){h=(h*31+str.charCodeAt(i))>>>0;}
+  return "fe_tr_"+h.toString(36);
+}
+function save(){ try{ localStorage.setItem(STOREKEY, JSON.stringify({locale:$("#locale").value,tr:TR})); }catch(e){} }
+function load(){
+  try{ const d=JSON.parse(localStorage.getItem(STOREKEY)||"null");
+    if(d){ TR=d.tr||{}; if(d.locale)$("#locale").value=d.locale; } }catch(e){}
+}
+
+function counts(sceneKey){
+  let t=0,d=0;
+  for(const it of ITEMS){ if(sceneKey&&it.scene!==sceneKey)continue; t++; if((TR[K(it.scene,it.index)]||"").trim())d++; }
+  return {t,d};
+}
+function refreshProgress(){
+  const {t,d}=counts(null);
+  $("#pDone").textContent=d; $("#pTotal").textContent=t;
+  $("#pFill").style.width=(t?Math.round(d/t*100):0)+"%";
+  document.querySelectorAll(".snav").forEach(n=>{
+    const {t,d}=counts(n.dataset.scene);
+    n.querySelector(".ct").textContent=d+"/"+t;
+    n.querySelector(".fill").style.width=(t?Math.round(d/t*100):0)+"%";
+  });
+}
+
+function render(){
+  $("#empty").classList.add("hidden");
+  const main=$("#main"); main.innerHTML="";
+  const showDir=$("#showDir").checked, onlyTodo=$("#onlyTodo").checked;
+  for(const [sk,sv] of Object.entries(SOURCE)){
+    const sec=el("section","scene"); sec.id="sc-"+CSS.escape(sk); sec.dataset.scene=sk;
+    const h=el("div","scene-h"); h.appendChild(el("h2",null,sk));
+    const meta=Array.isArray(sv)?{}:sv;
+    if(meta.trigger) h.appendChild(el("span","tag","trigger: "+meta.trigger));
+    if(meta.level_nid!=null) h.appendChild(el("span","tag","level "+meta.level_nid));
+    sec.appendChild(h);
+    stepsOf(sv).forEach((step,i)=>{
+      const spk=spokenKey(step);
+      if(spk===undefined){
+        if(showDir){
+          const cmd=Object.keys(step).find(k=>k.startsWith("@")&&k!=="@rest")||"";
+          const d=el("div","dir");
+          d.innerHTML='<span class="k">'+esc(cmd)+'</span> '+esc(JSON.stringify(step[cmd]));
+          sec.appendChild(d);
+        }
+        return;
+      }
+      const kk=K(sk,i), tval=TR[kk]||"", done=!!tval.trim();
+      if(onlyTodo && done) return;
+      const line=el("div","line"+(done?" done":"")); line.dataset.k=kk;
+      line.appendChild(el("div","stripe"));
+      const b=el("div","body");
+      const who=el("div","who"); who.appendChild(el("span","dot")); who.appendChild(document.createTextNode(spk));
+      b.appendChild(who);
+      const src=el("div","src"); src.innerHTML=hi(step[spk]); b.appendChild(src);
+      const ta=el("textarea"); ta.value=tval; ta.placeholder="Traducción…"; ta.rows=1;
+      ta.dataset.k=kk;
+      const grow=()=>{ta.style.height="auto";ta.style.height=ta.scrollHeight+2+"px";};
+      ta.addEventListener("focus",()=>lastFocused=ta);
+      ta.addEventListener("input",()=>{ TR[kk]=ta.value; grow();
+        const now=!!ta.value.trim();
+        if(now!==line.classList.contains("done")){ line.classList.toggle("done",now); }
+        save(); refreshProgress(); });
+      b.appendChild(ta);
+      const mini=el("div","mini");
+      const toks=(String(step[spk]).match(/\{[^}]*\}/g)||[]);
+      const uniq=[...new Set(toks)];
+      if(uniq.length){ const lab=el("span","chip","tokens:"); mini.appendChild(lab);
+        uniq.forEach(t=>{ const c=el("span","chip act",t); c.title="Insertar "+t;
+          c.onclick=()=>insert(ta,t); mini.appendChild(c); }); }
+      // aviso si faltan tokens en la traducción
+      const warn=el("span","chip warn"); warn.style.display="none"; mini.appendChild(warn);
+      const checkTok=()=>{ const missing=uniq.filter(t=>(ta.value.match(new RegExp(t.replace(/[{}]/g,"\\$&"),"g"))||[]).length < (toks.filter(x=>x===t).length));
+        if(ta.value.trim()&&missing.length){ warn.style.display=""; warn.textContent="faltan "+missing.join(" "); }
+        else warn.style.display="none"; };
+      ta.addEventListener("input",checkTok);
+      b.appendChild(mini);
+      line.appendChild(b); sec.appendChild(line);
+      requestAnimationFrame(grow); requestAnimationFrame(checkTok);
+    });
+    main.appendChild(sec);
+  }
+  buildNav();
+  refreshProgress();
+}
+function insert(ta,t){
+  const s=ta.selectionStart||0,e=ta.selectionEnd||0;
+  ta.value=ta.value.slice(0,s)+t+ta.value.slice(e);
+  ta.selectionStart=ta.selectionEnd=s+t.length; ta.focus();
+  ta.dispatchEvent(new Event("input"));
+}
+function buildNav(){
+  const nav=$("#snav"); nav.innerHTML="";
+  for(const sk of Object.keys(SOURCE)){
+    if(!counts(sk).t) continue;
+    const b=el("button","snav"); b.dataset.scene=sk;
+    b.innerHTML='<div class="row1"><span class="nm">'+esc(sk)+'</span><span class="ct"></span></div>'
+      +'<div class="track"><div class="fill"></div></div>';
+    b.onclick=()=>{ const t=document.getElementById("sc-"+CSS.escape(sk)); if(t)t.scrollIntoView({block:"start"});
+      document.querySelectorAll(".snav").forEach(n=>n.classList.toggle("active",n===b)); };
+    nav.appendChild(b);
+  }
+}
+
+/* Export — copia de la escena con el texto traducido (fallback: inglés) */
+function fmt(obj){
+  const lines=["{"]; const keys=Object.keys(obj);
+  keys.forEach((k,ki)=>{ const v=obj[k], comma=ki<keys.length-1?",":"";
+    if(Array.isArray(v)){ lines.push("  "+JSON.stringify(k)+": [");
+      lines.push(v.map(s=>"    "+JSON.stringify(s)).join(",\n")); lines.push("  ]"+comma);
+    } else { lines.push("  "+JSON.stringify(k)+": {");
+      META.filter(m=>m in v).forEach(m=>lines.push("    "+JSON.stringify(m)+": "+JSON.stringify(v[m])+","));
+      lines.push('    "steps": [');
+      lines.push((v.steps||[]).map(s=>"      "+JSON.stringify(s)).join(",\n"));
+      lines.push("    ]"); lines.push("  }"+comma); }
+  });
+  lines.push("}"); return lines.join("\n")+"\n";
+}
+function buildExport(){
+  const clone=JSON.parse(JSON.stringify(SOURCE));
+  for(const [sk,sv] of Object.entries(clone)){
+    stepsOf(sv).forEach((step,i)=>{ const spk=spokenKey(step);
+      if(spk!==undefined){ const t=(TR[K(sk,i)]||"").trim(); if(t) step[spk]=TR[K(sk,i)]; } });
+  }
+  return clone;
+}
+/* E/S: nativa (pywebview, escritorio) o del navegador (web). Mismo HTML. */
+const inWV=()=>!!(window.pywebview&&window.pywebview.api);
+function pickOpen(cb){
+  if(inWV()){ window.pywebview.api.open_file().then(r=>{ if(r&&r.content!=null) cb(r.content, r.name||"dialogue.json"); }); return; }
+  const inp=$("#file"); inp.onchange=e=>{ const f=e.target.files[0]; if(!f)return;
+    const rd=new FileReader(); rd.onload=()=>cb(rd.result,f.name); rd.readAsText(f); inp.value=""; }; inp.click();
+}
+function saveFile(name,content){
+  if(inWV()){ window.pywebview.api.save_file(name,content).then(ok=>{ if(ok)toast("Exportado: "+ok); }); return; }
+  const blob=new Blob([content],{type:"application/json"}); const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob); a.download=name; a.click(); URL.revokeObjectURL(a.href);
+}
+function toast(msg){ let t=$("#toast"); if(!t){ t=el("div"); t.id="toast";
+  t.style.cssText="position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--surface);color:var(--text);border:1px solid var(--accent);border-radius:9px;padding:9px 15px;box-shadow:0 4px 16px var(--shadow);z-index:9;font-size:13px";
+  document.body.appendChild(t); } t.textContent=msg; t.style.opacity="1";
+  clearTimeout(toast._t); toast._t=setTimeout(()=>t.style.opacity="0",2200); }
+function doExport(){
+  const name=BASENAME.replace(/\.(scene|_?en)$/i,"")+"."+$("#locale").value+".json";
+  saveFile(name, fmt(buildExport()));
+}
+
+function loadSource(text,name){
+  let data; try{ data=JSON.parse(text); }catch(e){ alert("No es un JSON válido:\n"+e.message); return; }
+  if(!data||typeof data!=="object"||Array.isArray(data)){ alert("El archivo debe ser un objeto de escenas { \"ESCENA\": … }."); return; }
+  SOURCE=data; BASENAME=(name||"dialogue").replace(/\.json$/i,"");
+  $("#fileName").textContent=name+" · "+Object.keys(SOURCE).length+" escenas";
+  flatten();
+  if(!ITEMS.length){ alert("No encontré líneas habladas (pasos { \"Personaje\": \"texto\" })."); }
+  STOREKEY=hashSource(); TR={}; load();
+  $("#btnExport").disabled=false; $("#btnResume").disabled=false;
+  render();
+}
+function resumeFrom(text){
+  let data; try{ data=JSON.parse(text); }catch(e){ alert("JSON inválido: "+e.message); return; }
+  let n=0;
+  for(const [sk,sv] of Object.entries(data)){
+    stepsOf(sv).forEach((step,i)=>{ const spk=spokenKey(step);
+      if(spk!==undefined){ const cur=SOURCE&&stepsOf(SOURCE[sk])[i]; const csp=cur&&spokenKey(cur);
+        // solo si difiere del inglés fuente (si es igual, no cuenta como traducción)
+        if(!cur||String(step[spk])!==String(cur[csp])){ TR[K(sk,i)]=String(step[spk]); n++; } } });
+  }
+  save(); render(); alert("Retomadas "+n+" líneas traducidas.");
+}
+
+/* Wiring */
+$("#btnImport").onclick=()=>pickOpen(loadSource);
+$("#btnImport2").onclick=()=>pickOpen(loadSource);
+$("#btnResume").onclick=()=>pickOpen(t=>resumeFrom(t));
+$("#btnExport").onclick=doExport;
+$("#locale").onchange=save;
+$("#showDir").onchange=()=>SOURCE&&render();
+$("#onlyTodo").onchange=()=>SOURCE&&render();
+
+const drop=$("#drop");
+["dragenter","dragover"].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add("hot");}));
+["dragleave","drop"].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove("hot");}));
+drop.addEventListener("drop",e=>{ const f=e.dataTransfer.files[0]; if(!f)return;
+  const r=new FileReader(); r.onload=()=>loadSource(r.result,f.name); r.readAsText(f); });
+
+// Ctrl/Cmd+S exporta
+addEventListener("keydown",e=>{ if((e.ctrlKey||e.metaKey)&&e.key==="s"){ e.preventDefault(); if(!$("#btnExport").disabled)doExport(); }});
+</script>

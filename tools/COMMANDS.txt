@@ -136,3 +136,9 @@ python tools/build_dialogue_scenes.py --game fe5 --verify         # round-trip l
 python tools/build_dialogue_scenes.py --game fe5 [--level 1]      # eventos -> escenas
 python tools/build_dialogue_scenes.py --game fe5 --out <dir>      # carpeta destino
 python tools/build_dialogue_scenes.py --from-scenes <scenes.json> # escenas -> comandos (stdout)
+
+# APP DE TRADUCTORES (tools/translator_app/): importa un scene _en.json, traduce
+# línea a línea y exporta nombre.<idioma>.json. Web (Artifact) y escritorio.
+python tools/translator_app/app.py            # abrir la app de escritorio (pip install pywebview)
+python tools/translator_app/build.py          # empaquetar .exe/binario (pip install pyinstaller)
+#   Web: el mismo translator.html abre en cualquier navegador.
