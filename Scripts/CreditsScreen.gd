@@ -51,6 +51,7 @@ const SIZE_TABLE      := 16    # Tabla 3 columnas (asset/work/name)
 const NAMES_PER_LINE  := 2     # Máximo de autores por línea en columna name de tabla
 const SIZE_END        := 56
 const OUTLINE_PX      := 4
+const CREDIT_FONT     := "res://assets/fonts/bmp/credit.fnt"   # sprite-font LT (créditos)
 
 # Layout
 const PILLAR_WIDTH    := 28
@@ -69,6 +70,16 @@ var _ending: bool = false
 var _fade_rect: ColorRect
 var _bg_gradient: ColorRect
 var _header_panel: Panel
+var _credit_font_res = null            # sprite-font LT de créditos (cacheada)
+
+
+## Fuente de créditos (credit.fnt), cargada una vez. null si no existe.
+func _credit_font():
+	if _credit_font_res == null:
+		var p := AssetSet.p(CREDIT_FONT)
+		if ResourceLoader.exists(p):
+			_credit_font_res = load(p)
+	return _credit_font_res
 var _end_label: Label = null
 
 # Credits content. Edit freely — `type` controls the style.
@@ -593,6 +604,9 @@ func _build_header() -> void:
 	title.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	title.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	var _tf = _credit_font()
+	if _tf:
+		title.add_theme_font_override("font", _tf)
 	title.add_theme_font_size_override("font_size", SIZE_TITLE)
 	title.add_theme_color_override("font_color", COLOR_TITLE)
 	title.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
@@ -660,6 +674,9 @@ func _build_scroll_content() -> void:
 func _make_label(entry: Dictionary) -> Label:
 	var lbl := Label.new()
 	lbl.text = entry.get("text", "")
+	var _cf = _credit_font()
+	if _cf:
+		lbl.add_theme_font_override("font", _cf)
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	lbl.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
@@ -710,6 +727,9 @@ func _make_grid(entry: Dictionary) -> Control:
 		var row: int = i / columns
 		var lbl := Label.new()
 		lbl.text = String(names[i]).strip_edges()
+		var _cf = _credit_font()
+		if _cf:
+			lbl.add_theme_font_override("font", _cf)
 		lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 		lbl.clip_text = true
@@ -874,6 +894,9 @@ func _add_table_cell(parent: Control, text: String, pos: Vector2, sz: Vector2, c
 
 	var lbl := Label.new()
 	lbl.text = final_text
+	var _cf = _credit_font()
+	if _cf:
+		lbl.add_theme_font_override("font", _cf)
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.clip_text = true
