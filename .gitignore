@@ -19,3 +19,7 @@ desktop.ini
 # la importación de traducciones en este proyecto es frágil (los
 # `.translation` son productos de los `.csv` y no siempre regeneran).
 # Ver docs/HANDOFF.md §3. No añadir `*.import` ni `*.translation` aquí.
+
+# Python bytecode cache (tools)
+__pycache__/
+*.pyc
