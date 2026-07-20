@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784464816
+::res://::1784559643
 icon.png::CompressedTexture2D::5796228232867755098::1714553776::1784419739::1::::<><><>0<>0<>85d8504b263b0bda2244463b196f6b35<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1784389909::0::1::::<><><>0<>0<><>::
 ::res://assets/::1784393727
@@ -1807,8 +1807,7 @@ level_up_numbers.png::CompressedTexture2D::2544063799544568231::1784389913::1784
 manabar.png::CompressedTexture2D::8078333859760691916::1784389913::1784390505::1::::<><><>0<>0<>28bb1179c5ca4517f5981f37657edc65<>res://.godot/imported/manabar.png-c91a463a4992b53daaeefd12614b6c7d.ctex::
 stat_underline.png::CompressedTexture2D::3344273266280585903::1784389913::1784390505::1::::<><><>0<>0<>993b1c338cdca329c66c81c17da7da2b<>res://.godot/imported/stat_underline.png-0b4cf950575f631f31621137b70d01a2.ctex::
 stat_up_spark.png::CompressedTexture2D::7881751540601602514::1784389913::1784390505::1::::<><><>0<>0<>16d9742a4276fdd2d16e65f8e8323b61<>res://.godot/imported/stat_up_spark.png-4b435f466ca32ed01ff189ceed114bdf.ctex::
-::res://assets/GBA/fonts/::1784448721
-fire-emblem-8-text.ttf::FontFile::788137647594045894::1680891702::1784419738::1::::<><><>0<>0<>abf14c2db50f359465687541908da73e<>res://.godot/imported/fire-emblem-8-text.ttf-08c07d6c201fae0f6a007b55a90df9c4.fontdata::
+::res://assets/GBA/fonts/::1784471079
 gba-fe-dialogue.ttf::FontFile::4532858660381649778::1680869772::1784419738::1::::<><><>0<>0<>9c501cd7aae2cd41b66eaee8d809c1f4<>res://.godot/imported/gba-fe-dialogue.ttf-c82f55aa2ec9d5e0fdc4d7f850b7ba34.fontdata::
 IMFellFrenchCanonSC-Regular.ttf::FontFile::7762413525348139854::1663820830::1784419738::1::::<><><>0<>0<>768220ed70415f1b86b9fde9d1470871<>res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-b748ea443e481577d738e40f821ef907.fontdata::
 ::res://assets/GBA/fonts/bmp/::1784464819
@@ -2256,7 +2255,7 @@ marker_interact.png::CompressedTexture2D::7029020101436880997::1784389914::17843
 marker_steal.png::CompressedTexture2D::3435762072264309862::1784389914::1784390475::1::::<><><>0<>0<>57ccbd5ef6447a3a6d9c95810c157ca0<>res://.godot/imported/marker_steal.png-2164c3acf4a936653c4867e6383685e1.ctex::
 marker_talk.png::CompressedTexture2D::2263735099670079106::1784389914::1784390475::1::::<><><>0<>0<>5af334cbd173c2b5836baf727bf50b25<>res://.godot/imported/marker_talk.png-a931a84143e7e33bfcdab9dc1513159b.ctex::
 marker_warning.png::CompressedTexture2D::8335221100271413922::1784389914::1784390475::1::::<><><>0<>0<>fa66cb9078089dc3208222ad4e6ccb68<>res://.godot/imported/marker_warning.png-abfb168f8ab781cc1d2e2100ae279dce.ctex::
-::res://assets/GBA/menus/::1784469149
+::res://assets/GBA/menus/::1784469161
 chapter_select_blue.png::CompressedTexture2D::3799479140596005484::1784389914::1784390475::1::::<><><>0<>0<>83eba1b4235f08a00d0aab359c4b935e<>res://.godot/imported/chapter_select_blue.png-42c00d245a73839b5b8440624876d65e.ctex::
 chapter_select_blue_flicker.png::CompressedTexture2D::8707443795568880730::1784389914::1784390475::1::::<><><>0<>0<>5c3566f2a080a29fbcdacc94ca015063<>res://.godot/imported/chapter_select_blue_flicker.png-4936b7e78a049f6cb5131ebf35083b99.ctex::
 chapter_select_blue_highlight.png::CompressedTexture2D::3506856499879247458::1784389914::1784390475::1::::<><><>0<>0<>ed7c613d5769fee70997f47c148b529b<>res://.godot/imported/chapter_select_blue_highlight.png-04365af66e11760edd5ef99dbbf5083f.ctex::
@@ -4053,7 +4052,7 @@ fe4_mapsprites_b.png::CompressedTexture2D::7681648688096247389::1784389924::1784
 gba_team_palettes.png::CompressedTexture2D::1651436571860718018::1784389924::1784390477::1::::<><><>0<>0<>78a37056c26b5d3d51d94f615b623115<>res://.godot/imported/gba_team_palettes.png-15b28f01228d9213420dffebdf36a900.ctex::
 palette_mockup.png::CompressedTexture2D::7769023670081242294::1784389924::1784390477::1::::<><><>0<>0<>b3c75f33356c11338657769108a2366c<>res://.godot/imported/palette_mockup.png-1632ca8838d3a800474a8e713405fc9b.ctex::
 team_palettes.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1784468276
+::res://Scenes/::1784481572
 battle_hp_bar.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/BattleHPBar.gd
 castle_base.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/CastleBase.gd<>res://Scripts/ShopPanel.gd<>res://Scripts/ConvoyPanel.gd<>res://Scripts/ArenaPanel_FE4.gd<>res://Scripts/BlacksmithPanel.gd<>res://Scripts/FortuneTellerPanel.gd<>res://Scripts/PromotionPanel.gd
 cinematic_scene.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/CinematicScene.gd<>res://Scripts/DialogueBox.gd
@@ -4063,12 +4062,12 @@ label_anim_text.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res:/
 language.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/Language.gd
 level_up_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/LevelUpScreen.gd
 main_game.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PrologueTest.gd<>res://Scripts/GameManager.gd
-main_menu.tscn::PackedScene::7603370222921413084::1784468276::0::1::::<><><>0<>0<><>::uid://doqp37firsuxw::::res://Scripts/MainMenu.gd
+main_menu.tscn::PackedScene::7603370222921413084::1784481572::0::1::::<><><>0<>0<><>::uid://doqp37firsuxw::::res://Scripts/MainMenu.gd
 mode_select.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/ModeSelect.gd
 options_menu.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784468276
+::res://Scripts/::1784486740
 ActionMenu.gd::GDScript::6413271467111799318::1784389909::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784389909::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784389909::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
@@ -4099,6 +4098,7 @@ CombatEffectDatabase.gd::GDScript::8068641853132583565::1784389909::0::1::::Comb
 CombatPaletteSystem.gd::GDScript::5692955103788158920::1784389909::0::1::::CombatPaletteSystem<>RefCounted<><>0<>0<><>::
 CombatSystem.gd::GDScript::8713859728367825415::1784389909::0::1::::CombatSystem<>Node<><>0<>0<><>::
 ConsumableData.gd::GDScript::7398558622788852579::1784389909::0::1::::ConsumableData<>Resource<><>0<>0<><>::
+ControlsMenu.gd::GDScript::8511848274970140504::1784486740::0::1::::ControlsMenu<>Control<><>0<>0<><>::
 ConvoyPanel.gd::GDScript::3179861064650906737::1784389909::0::1::::ConvoyPanel<>Panel<><>0<>0<><>::
 ConvoySystem.gd::GDScript::297960422385837843::1784389909::0::1::::ConvoySystem<>Node<><>0<>0<><>::
 CreditsScreen.gd::GDScript::1294854678071032857::1784418470::0::1::::CreditsScreen<>Control<><>0<>0<><>::
@@ -4118,6 +4118,7 @@ GameManager.gd::GDScript::5000348222022627157::1784389909::0::1::::<>Node<><>0<>
 GameMode.gd::GDScript::3263032706539801598::1784393727::0::1::::<>Node<><>0<>0<><>::
 GameSettings.gd::GDScript::680640419883924562::1784389909::0::1::::GameSettings<>Node<><>0<>0<><>::
 Grid.gd::GDScript::572029206902054273::1784389909::0::1::::Grid<>Node2D<><>0<>0<><>::
+InputConfig.gd::GDScript::1371783293280119940::1784486740::0::1::::<>Node<><>0<>0<><>::
 Intro.gd::GDScript::3251222899461467647::1784402133::0::1::::IntroScreen<>Control<><>0<>0<><>::
 Item.gd::GDScript::7925141334164720406::1784389909::0::1::::Item<>RefCounted<><>0<>0<><>::
 ItemDatabase.gd::GDScript::6527273458596669064::1784389909::0::1::::ItemDatabase<>RefCounted<><>0<>0<><>::
@@ -4133,7 +4134,7 @@ MainMenu.gd::GDScript::8175898352055706196::1784402133::0::1::::MainMenu<>Contro
 MapActions.gd::GDScript::3535448452538133979::1784389909::0::1::::MapActions<>RefCounted<><>0<>0<><>::
 MapBackground.gd::GDScript::3738451975226640230::1784389909::0::1::::MapBackground<>Node2D<><>0<>0<><>::
 ModeSelect.gd::GDScript::3174370287506302631::1784389909::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
-OptionsMenu.gd::GDScript::5364573969176011556::1784468276::0::1::::OptionsMenu<>Control<><>0<>0<><>::
+OptionsMenu.gd::GDScript::5364573969176011556::1784486740::0::1::::OptionsMenu<>Control<><>0<>0<><>::
 Pathfinding.gd::GDScript::1848538420110686201::1784389909::0::1::::Pathfinding<>Node<><>0<>0<><>::
 PrologueCinematic.gd::GDScript::3981487757909408999::1784389909::0::1::::PrologueCinematic<>CinematicScene<><>0<>0<><>::
 PrologueTest.gd::GDScript::5063533363305664355::1784389909::0::1::::<>Node2D<><>0<>0<><>::
