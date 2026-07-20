@@ -122,17 +122,25 @@ func _build_ui() -> void:
 	holder.size = Vector2(img_w, img_h)
 	add_child(holder)
 
+	# La GBA (imagen + su pantalla) baja MEDIO recuadro de remapeo; los propios
+	# recuadros NO se mueven (quedan donde están, un poco más separados de los
+	# botones). img_drop = mitad del alto de un recuadro, en px de pantalla.
+	var img_drop: float = BOX_H * _scale * 0.5
+
 	var pic := TextureRect.new()
 	pic.texture = load(AssetSet.p(IMG))
 	pic.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	pic.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	pic.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	pic.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	pic.offset_top += img_drop
+	pic.offset_bottom += img_drop
 	holder.add_child(pic)
 
-	# Nombre de la acción enfocada, dentro de la pantalla de la GBA.
+	# Nombre de la acción enfocada, dentro de la pantalla de la GBA (baja con la
+	# imagen para seguir cayendo dentro de la pantalla).
 	_screen_lbl = Label.new()
-	_screen_lbl.position = Vector2(SCREEN.position.x * _scale, SCREEN.position.y * _scale)
+	_screen_lbl.position = Vector2(SCREEN.position.x * _scale, SCREEN.position.y * _scale + img_drop)
 	_screen_lbl.custom_minimum_size = Vector2(SCREEN.size.x * _scale, SCREEN.size.y * _scale)
 	_screen_lbl.size = _screen_lbl.custom_minimum_size
 	_screen_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

@@ -8,8 +8,11 @@ extends SelectMenu
 # en el panel derecho, bandera del idioma enfocado en el panel-preview izquierdo.
 # Al elegir: guarda el locale (FadeCanvas.save_locale) y pasa al Menú 2 (modo).
 #
-# Idiomas y orden = la referencia. El locale "it" (Italiano) queda seleccionable;
-# sus traducciones aún no existen (recae en el idioma por defecto hasta añadirlas).
+# Idiomas y orden = los que TIENEN traducción real en la tabla (en, es, de, fr,
+# ja). El nombre de "ja" se muestra en latín ("Japanese") porque la sprite-font
+# LT no trae kana/kanji. No se lista "it" (Italiano) porque no hay columna de
+# traducción para él: se añadirá cuando existan sus textos (regla de oro: no
+# inventar datos).
 # ============================================================
 
 const FLAGS := "res://assets/languages/Flags/"
@@ -21,10 +24,10 @@ const BG_BASE := "res://assets/panoramas/default_background.png"
 
 const LANGS := [
 	{ "id": "en", "text": "English" },
+	{ "id": "es", "text": "Español" },
 	{ "id": "de", "text": "Deutsch" },
 	{ "id": "fr", "text": "Français" },
-	{ "id": "es", "text": "Español" },
-	{ "id": "it", "text": "Italiano" },
+	{ "id": "ja", "text": "Japanese" },
 ]
 
 
@@ -33,7 +36,7 @@ func _menu_items() -> Array:
 
 
 func _option_font_size() -> int:
-	return 48   # múltiplo de 16 (3×) para escalado nítido de la sprite-font
+	return 64   # múltiplo de 16 (4×) para escalado nítido de la sprite-font
 
 
 # Sube los botones dentro del panel (el panel sigue centrado).

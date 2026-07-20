@@ -370,7 +370,10 @@ func _animate_cursor(delta: float) -> void:
 		var font := b.get_theme_font("font")
 		var fs := b.get_theme_font_size("font_size")
 		if font != null:
-			var tw: float = font.get_string_size(b.text, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x
+			# Medir el texto YA TRADUCIDO (b.text guarda la CLAVE, no lo que se ve;
+			# medir la clave subestima el ancho y mete la mano dentro de la palabra).
+			var shown: String = tr(b.text)
+			var tw: float = font.get_string_size(shown, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x
 			x_ref = b.global_position.x + (b.size.x - tw) * 0.5
 	_cursor.global_position = Vector2(
 		x_ref - hw - 6 + BOB_SEQ[_bob_i],
