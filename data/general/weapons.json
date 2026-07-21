@@ -3327,7 +3327,7 @@
  },
  {
   "nid": "Gae Bolg",
-  "name": "Gae Bolg",
+  "name": "Gáe Bolg",
   "desc": "Sacred lance of the crusader Njörun.",
   "weapon_type": "Lance",
   "might": 25,
@@ -7792,7 +7792,7 @@
  },
  {
   "nid": "Mjolnir",
-  "name": "Mjolnir",
+  "name": "Mjölnir",
   "desc": "Holy thunder of the crusader Thrud.",
   "weapon_type": "Anima",
   "might": 25,
