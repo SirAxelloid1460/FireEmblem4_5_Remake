@@ -129,16 +129,25 @@ def build(args):
                 len(missing), " ".join("U+%04X" % c for c in missing[:8])))
         return 1
 
-    cell_w = max_adv
-    cols = args.cols
-    rows = (len(glyphs) + cols - 1) // cols
-    atlas = Image.new("RGBA", (cols * cell_w, rows * cell_h), (0, 0, 0, 0))
+    # Empaquetado de ANCHO VARIABLE: cada glifo ocupa su propio avance (no una
+    # celda uniforme), así un glifo ancho suelto no infla todo el atlas. Se envuelve
+    # en filas con un presupuesto de ancho de cols×size.
+    row_w = max(args.cols * args.size, max_adv)
+    placements = []          # (cp, fi, adv, x, y)
+    x = y = 0
+    atlas_w = 0
+    for cp, fi, adv in glyphs:
+        if x > 0 and x + adv > row_w:
+            x = 0
+            y += cell_h
+        placements.append((cp, fi, adv, x, y))
+        x += adv
+        atlas_w = max(atlas_w, x)
+    atlas = Image.new("RGBA", (atlas_w, y + cell_h), (0, 0, 0, 0))
 
     char_lines = []
-    for idx, (cp, fi, adv) in enumerate(glyphs):
-        col, row = idx % cols, idx // cols
-        cx, cy = col * cell_w, row * cell_h
-        cell = Image.new("RGBA", (cell_w, cell_h), (0, 0, 0, 0))
+    for cp, fi, adv, gx, gy in placements:
+        cell = Image.new("RGBA", (adv, cell_h), (0, 0, 0, 0))
         d = ImageDraw.Draw(cell)
         # Alinea las líneas base de todas las fuentes en max_asc.
         y_top = max_asc - metrics[fi][0]
@@ -146,13 +155,13 @@ def build(args):
         # Umbraliza el alfa → 1 bit (nítido, sin AA), como las sprite-fonts LT.
         px = cell.load()
         for yy in range(cell_h):
-            for xx in range(cell_w):
+            for xx in range(adv):
                 a = px[xx, yy][3]
                 px[xx, yy] = (255, 255, 255, 255) if a >= 128 else (0, 0, 0, 0)
-        atlas.alpha_composite(cell, (cx, cy))
+        atlas.alpha_composite(cell, (gx, gy))
         char_lines.append("char id=%d x=%d y=%d width=%d height=%d xoffset=0 "
                           "yoffset=0 xadvance=%d page=0 chnl=15"
-                          % (cp, cx, cy, cell_w, cell_h, adv))
+                          % (cp, gx, gy, adv, cell_h, adv))
 
     os.makedirs(args.out, exist_ok=True)
     png_name = "%s-white.png" % args.name
@@ -172,9 +181,9 @@ def build(args):
         f.write("\n".join(head + char_lines) + "\n")
     _write_import(fnt_path, args.name)
 
-    print("[%s] %s + %s  (%d glifos, celda %dx%d, atlas %dx%d)"
+    print("[%s] %s + %s  (%d glifos, alto %d px, atlas %dx%d)"
           % (args.name, os.path.relpath(fnt_path, ROOT), png_name,
-             len(glyphs), cell_w, cell_h, atlas.width, atlas.height))
+             len(glyphs), cell_h, atlas.width, atlas.height))
     if missing:
         print("  [aviso] %d code points del objetivo NO están en ninguna fuente "
               "(se omiten; añade otra fuente pixel-art al final de --fonts para "
