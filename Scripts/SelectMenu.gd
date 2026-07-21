@@ -72,6 +72,7 @@ var _bob_i: int = 0
 var _bob_accum: float = 0.0
 var _busy: bool = false
 var _skip_next_nav: bool = false
+var _fit_fs: int = 0            # tamaño de fuente auto-ajustado (0 = aún sin calcular)
 
 # Fondo.
 var _bg_base: TextureRect       # capa base (default_background / bg por opción)
@@ -103,9 +104,50 @@ func _bg_for_option(_id: String) -> Texture2D:
 	return null
 
 
-## Tamaño de fuente de las opciones (px). Sobreescribir por menú.
+## Tamaño de fuente de las opciones (px). Es el TOPE MÁXIMO: el tamaño real se
+## auto-ajusta hacia abajo (_fit_option_font_size) para que el idioma con textos
+## más largos / más opciones quepa en el panel. Sobreescribir por menú.
 func _option_font_size() -> int:
 	return BTN_FONT
+
+
+## Tamaño mínimo al que puede encoger la auto-adaptación. Sobreescribir por menú.
+func _min_option_font_size() -> int:
+	return 24
+
+
+## Elige el mayor tamaño (≤ _option_font_size, ≥ _min_option_font_size) al que TODAS
+## las opciones caben en el panel: por ANCHO (el texto traducido más largo) y por
+## ALTO (todas las filas + separaciones). Así el tamaño es proporcional a la
+## longitud de la traducción y, por ende, al idioma activo.
+func _fit_option_font_size(items: Array) -> int:
+	var maxfs: int = _option_font_size()
+	var minfs: int = _min_option_font_size()
+	if items.is_empty():
+		return maxfs
+	var vp: Vector2 = get_viewport_rect().size
+	var r := _list_panel_rect()
+	var panel_w: float = (float(r[2]) - float(r[0])) * vp.x
+	var panel_h: float = (float(r[3]) - float(r[1])) * vp.y
+	# Márgenes internos del VBox de opciones (ver _build_list_panel): 62+28 en X,
+	# 18+18 en Y (el lift solo desplaza, no reduce el alto disponible).
+	var avail_w: float = panel_w - 90.0
+	var avail_h: float = panel_h - 36.0
+	var f := load(AssetSet.p(UI_FONT))
+	var n: int = items.size()
+	var fs: int = maxfs
+	while fs > minfs:
+		var sep: int = maxi(6, int(fs * 0.18))
+		var total_h: float = n * (fs + 12) + (n - 1) * sep
+		var widest: float = 0.0
+		if f != null:
+			for it in items:
+				var shown: String = tr(str(it.get("text", "")))
+				widest = maxf(widest, f.get_string_size(shown, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x)
+		if total_h <= avail_h and widest <= avail_w:
+			return fs
+		fs -= 2
+	return minfs
 
 
 ## Alineación horizontal del texto de las opciones. Sobreescribir por menú.
@@ -242,10 +284,13 @@ func _build_preview_panel() -> void:
 func _build_list_panel() -> void:
 	var r := _list_panel_rect()
 	var panel := _nine_panel(float(r[0]), float(r[1]), float(r[2]), float(r[3]))
+	# Tamaño de fuente auto-ajustado al idioma/traducción activos (una vez, para
+	# todas las opciones → tamaño uniforme y consistente por menú).
+	_fit_fs = _fit_option_font_size(_menu_items())
 	_list = VBoxContainer.new()
 	_list.alignment = BoxContainer.ALIGNMENT_CENTER
 	# Separación proporcional a la fuente (fuentes grandes → menos hueco relativo).
-	_list.add_theme_constant_override("separation", maxi(6, int(_option_font_size() * 0.18)))
+	_list.add_theme_constant_override("separation", maxi(6, int(_fit_fs * 0.18)))
 	# Contenido centrado en el panel y subido `lift` px (sin mover el panel):
 	# ambos offsets verticales se desplazan hacia arriba lo mismo.
 	var lift := _content_lift()
@@ -265,7 +310,7 @@ func _make_option(text: String, id: String) -> Button:
 	b.alignment = _option_align()
 	b.focus_mode = Control.FOCUS_ALL
 	b.mouse_filter = Control.MOUSE_FILTER_STOP
-	var fs := _option_font_size()
+	var fs := _fit_fs if _fit_fs > 0 else _option_font_size()
 	b.custom_minimum_size = Vector2(0, fs + 12)
 	b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var f := load(AssetSet.p(UI_FONT))

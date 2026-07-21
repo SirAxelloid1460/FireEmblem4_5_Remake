@@ -38,9 +38,9 @@ func _menu_items() -> Array:
 
 
 func _option_font_size() -> int:
-	# Agrandada respecto a la ronda anterior (48). No sube a 64 porque con 6
-	# idiomas (al reintegrar Italiano) la lista desbordaría el panel a lo alto.
-	return 56
+	# TOPE máximo; SelectMenu auto-ajusta hacia abajo según el idioma para que las
+	# 6 opciones quepan en el panel (p. ej. baja solo lo justo si a 64 desborda).
+	return 64
 
 
 # Sube los botones dentro del panel (el panel sigue centrado).
