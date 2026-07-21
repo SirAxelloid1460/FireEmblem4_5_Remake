@@ -87,11 +87,26 @@ const COL_WIDTH := 380.0
 const SLIDE_TIME := 0.28
 const FADE_TIME  := 0.30
 
-# Descripciones de dificultad (de translations.json de los .ltproj)
+# ── Dificultad (NEWGAME) ──────────────────────────────────────────────────────
+# Placa tintada por dificultad + panel de descripción a la derecha (estilo imagen
+# de referencia). Normal = tono calmado, Elite = tono duro.
+const DIFF_BTN_W := 470
+const DIFF_TINT := { "normal": Color(0.52, 0.86, 0.58), "elite": Color(0.92, 0.50, 0.52) }
+const BOX_ORNATE := "res://assets/menus/menu_box_6x.png"   # panel ornamentado (desc / slots)
+const TITLE_BG   := "res://assets/menus/menu_bg_white.png"  # panel de título del submenú
+
+# ── Submenú de guardado (Continue / Load → "Resume Chapter") ──────────────────
+const SAVE_SLOTS := 3
+const SLOT_W := 740
+const SLOT_H := 92
+const SLOT_TINT_EMPTY := Color(0.48, 0.82, 0.56)   # verde: ranura vacía (-- NO DATA --)
+const SLOT_TINT_DATA  := Color(0.90, 0.48, 0.54)   # rojo: ranura con partida
 
 # ----------------------- ESTADO -----------------------------
-enum St { PRESS_START, MAIN, NEWGAME, EXTRAS }
+enum St { PRESS_START, MAIN, NEWGAME, EXTRAS, SAVES }
 var _state: int = St.PRESS_START
+# Modo del submenú de guardado: "load" (con copiar/borrar) o "continue" (sin).
+var _saves_mode: String = "load"
 var _busy: bool = false                       # bloquea input durante transiciones
 
 var _music: AudioStreamPlayer
@@ -120,6 +135,12 @@ var _toast_lbl: Label
 var _main_col: VBoxContainer      # columna de placas (botones individuales)
 var _newgame_col: VBoxContainer
 var _extras_col: VBoxContainer
+var _desc_panel: Control          # panel de descripción (derecha) en NEWGAME
+# Submenú de guardado ("Resume Chapter").
+var _saves_root: Control          # raíz que se desliza (título + ranuras + chrome)
+var _saves_col: VBoxContainer     # columna de ranuras de guardado
+var _icon_copy: Control           # icono placeholder "copiar" (solo modo "load")
+var _icon_erase: Control          # icono placeholder "borrar" (solo modo "load")
 
 var _difficulty: String = "Normal"
 
@@ -436,29 +457,158 @@ func _animate_cursor(delta: float) -> void:
 
 # --- Columnas de botones ---
 func _build_columns() -> void:
-	# "Continue" solo aparece si hay partida guardada (sin saves es ilógico).
-	# El texto es la CLAVE de traducción (los Button se auto-traducen con el
-	# locale activo). Las claves NEWGAME/…/SOUNDROOM están en la tabla de
-	# MainMenu para los 5 idiomas.
-	var main_items: Array = [{ "id": "newgame", "text": "NEWGAME" }]
-	if SaveSystem.has_save_file():
-		main_items.append({ "id": "continue", "text": "CONTINUE" })
-	main_items.append({ "id": "extras", "text": "EXTRAS" })
-	_main_col = _make_column(main_items)
-	_newgame_col = _make_column([
-		{ "id": "normal", "text": "NORMAL" },
-		{ "id": "elite",  "text": "ELITE" },
+	# Menú principal: New Game · Continue · Load · Restart · Extras. El texto es la
+	# CLAVE de traducción (los Button se auto-traducen con el locale activo).
+	# NOTA: el sistema de guardado real aún NO existe; Continue/Load/Restart son de
+	# momento solo la UI (deslizan al submenú o muestran aviso).
+	_main_col = _make_column([
+		{ "id": "newgame",  "text": "NEWGAME" },
+		{ "id": "continue", "text": "CONTINUE" },
+		{ "id": "load",     "text": "LOAD" },
+		{ "id": "restart",  "text": "RESTART" },
+		{ "id": "extras",   "text": "EXTRAS" },
 	])
+	# Dificultad: placas TINTADAS por dificultad y más estrechas (columna izquierda);
+	# la descripción va en un panel a la derecha (_build_desc). Ver imagen de ref.
+	_newgame_col = VBoxContainer.new()
+	_newgame_col.add_theme_constant_override("separation", 16)
+	_newgame_col.visible = false
+	add_child(_newgame_col)
+	_newgame_col.add_child(_make_button("NORMAL", "normal", DIFF_BTN_W, DIFF_TINT["normal"]))
+	_newgame_col.add_child(_make_button("ELITE",  "elite",  DIFF_BTN_W, DIFF_TINT["elite"]))
 	_extras_col = _make_column([
 		{ "id": "options",   "text": "OPTIONS" },
 		{ "id": "credits",   "text": "CREDITS" },
 		{ "id": "soundroom", "text": "SOUNDROOM" },
 	])
+	_build_saves()
+
+
+## Texto traducido con fallback legible: si la clave aún no está en el CSV
+## (tr devuelve la propia clave), usa `fallback`. Para el submenú de guardado,
+## cuyas claves las añadirá la sesión de traducción (ver docs/handoff/).
+func _trd(key: String, fallback: String) -> String:
+	var t: String = tr(key)
+	return fallback if t == key else t
+
+
+## Submenú "Resume Chapter" (Continue/Load). Se desliza como el resto del menú.
+## Modo "load" muestra iconos de copiar/borrar; "continue" no. Sin sistema real
+## de guardado todavía: las ranuras salen "-- NO DATA --".
+func _build_saves() -> void:
+	var vp: Vector2 = get_viewport_rect().size
+	_saves_root = Control.new()
+	# Tamaño = viewport, anclado arriba-izquierda: así se puede DESLIZAR en x
+	# (los hijos van posicionados a mano dentro de esta raíz).
+	_saves_root.size = vp
+	_saves_root.visible = false
+	add_child(_saves_root)
+
+	# Título "Resume Chapter" (panel blanco, arriba centrado).
+	_saves_root.add_child(_titled_panel(_trd("RESUMECHAPTER", "Resume Chapter"),
+			Vector2((vp.x - 520) / 2.0, 30), Vector2(520, 76), 40, COLOR_GOLD))
+	# "R Info" arriba a la derecha (texto suelto).
+	var rinfo := _panel_label("R  " + _trd("INFO", "Info"), 26, COLOR_TEXT)
+	rinfo.position = Vector2(vp.x - 230, 48)
+	rinfo.size = Vector2(190, 40)
+	rinfo.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	_saves_root.add_child(rinfo)
+
+	# Columna de ranuras (placas verdes "-- NO DATA --").
+	_saves_col = VBoxContainer.new()
+	_saves_col.add_theme_constant_override("separation", 14)
+	_saves_col.position = Vector2((vp.x - SLOT_W) / 2.0, 150)
+	_saves_root.add_child(_saves_col)
+	for i in range(SAVE_SLOTS):
+		_saves_col.add_child(_make_button(_trd("NODATA", "-- NO DATA --"),
+				"slot%d" % i, SLOT_W, SLOT_TINT_EMPTY))
+
+	# Panel PLAY TIME abajo-derecha.
+	_saves_root.add_child(_titled_panel(_trd("PLAYTIME", "PLAY TIME") + "   0:00.00",
+			Vector2(vp.x - 300 - 40, vp.y - 66 - 40), Vector2(300, 66), 24, COLOR_GOLD))
+
+	# Iconos de acción (copiar/borrar) — placeholders; se colocan en la ranura
+	# enfocada solo en modo "load". Arte real pendiente (ver docs/handoff/).
+	_icon_copy = _placeholder_icon("C")
+	_icon_erase = _placeholder_icon("D")
+	_icon_copy.visible = false
+	_icon_erase.visible = false
+	_saves_root.add_child(_icon_copy)
+	_saves_root.add_child(_icon_erase)
+
+
+## Panel ornamentado con un rótulo centrado (título/playtime del submenú).
+func _titled_panel(text: String, pos: Vector2, sz: Vector2, fsize: int, color: Color) -> Control:
+	var root := Control.new()
+	root.position = pos
+	root.size = sz
+	var np := NinePatchRect.new()
+	np.texture = load(AssetSet.p(TITLE_BG))
+	np.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	for m in ["patch_margin_left", "patch_margin_right", "patch_margin_top", "patch_margin_bottom"]:
+		np.set(m, 8)
+	np.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	root.add_child(np)
+	var lbl := _panel_label(text, fsize, color)
+	lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	root.add_child(lbl)
+	return root
+
+
+## Rótulo con la sprite-font del menú (sin fondo). No intercepta el ratón.
+func _panel_label(text: String, fsize: int, color: Color) -> Label:
+	var l := Label.new()
+	l.text = text
+	l.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	l.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	l.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	l.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	var f := load(AssetSet.p(UI_FONT))
+	if f != null:
+		l.add_theme_font_override("font", f)
+	l.add_theme_font_size_override("font_size", fsize)
+	l.add_theme_color_override("font_color", color)
+	l.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
+	l.add_theme_constant_override("outline_size", OUTLINE_PX - 1)
+	return l
+
+
+## Icono placeholder 44×44 (recuadro + letra) hasta tener arte de copiar/borrar.
+func _placeholder_icon(letter: String) -> Control:
+	var c := Control.new()
+	c.size = Vector2(44, 44)
+	c.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var bg := NinePatchRect.new()
+	bg.texture = load(AssetSet.p("res://assets/menus/menu_bg_base.png"))
+	bg.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	for m in ["patch_margin_left", "patch_margin_right", "patch_margin_top", "patch_margin_bottom"]:
+		bg.set(m, 8)
+	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	c.add_child(bg)
+	var l := _panel_label(letter, 26, COLOR_GOLD)
+	l.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	c.add_child(l)
+	return c
+
+
+## Coloca los iconos copiar/borrar flanqueando la ranura enfocada (solo "load").
+func _position_slot_icons(slot: Control) -> void:
+	if _icon_copy == null or _saves_root == null:
+		return
+	var show: bool = (_state == St.SAVES and _saves_mode == "load")
+	_icon_copy.visible = show
+	_icon_erase.visible = show
+	if not show:
+		return
+	var base: Vector2 = slot.global_position - _saves_root.global_position
+	var cy: float = (slot.size.y - 44) / 2.0
+	_icon_copy.position = base + Vector2(-56, cy)                 # copiar a la izquierda
+	_icon_erase.position = base + Vector2(slot.size.x + 12, cy)   # borrar a la derecha
 
 
 ## Stylebox de placa FE (title_menu_dark, 136×24): se estira entera al tamaño del
 ## botón (sin 9-patch), que es el look deseado. content_margin sitúa el texto.
-func _plate_sb(path: String) -> StyleBoxTexture:
+func _plate_sb(path: String, tint: Color = Color.WHITE) -> StyleBoxTexture:
 	var sb := StyleBoxTexture.new()
 	sb.texture = load(AssetSet.p(path))
 	# La placa (title_menu_dark, 136×24) se estira entera al tamaño del botón:
@@ -467,6 +617,8 @@ func _plate_sb(path: String) -> StyleBoxTexture:
 	sb.content_margin_right = 40
 	sb.content_margin_top = 12
 	sb.content_margin_bottom = 16
+	# Tinte de color de la placa (por dificultad / por ranura). Blanco = sin tinte.
+	sb.modulate_color = tint
 	return sb
 
 
@@ -480,10 +632,11 @@ func _make_column(items: Array) -> VBoxContainer:
 	return col
 
 
-func _make_button(text: String, id: String) -> Button:
+func _make_button(text: String, id: String, width: float = BTN_W,
+		tint: Color = Color.WHITE) -> Button:
 	var b := Button.new()
 	b.text = text
-	b.custom_minimum_size = Vector2(BTN_W, BTN_H)
+	b.custom_minimum_size = Vector2(width, BTN_H)
 	b.alignment = HORIZONTAL_ALIGNMENT_CENTER
 	b.focus_mode = Control.FOCUS_ALL
 	b.mouse_filter = Control.MOUSE_FILTER_STOP
@@ -499,11 +652,11 @@ func _make_button(text: String, id: String) -> Button:
 	b.add_theme_color_override("font_pressed_color", Color.WHITE)
 	b.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
 	b.add_theme_constant_override("outline_size", OUTLINE_PX + 1)
-	# Fondo = placa ornamentada; enfocada/hover => versión highlight.
-	b.add_theme_stylebox_override("normal", _plate_sb(PLATE))
-	b.add_theme_stylebox_override("hover", _plate_sb(PLATE_HL))
-	b.add_theme_stylebox_override("focus", _plate_sb(PLATE_HL))
-	b.add_theme_stylebox_override("pressed", _plate_sb(PLATE_HL))
+	# Fondo = placa ornamentada (tintada si `tint` != blanco); foco/hover => highlight.
+	b.add_theme_stylebox_override("normal", _plate_sb(PLATE, tint))
+	b.add_theme_stylebox_override("hover", _plate_sb(PLATE_HL, tint))
+	b.add_theme_stylebox_override("focus", _plate_sb(PLATE_HL, tint))
+	b.add_theme_stylebox_override("pressed", _plate_sb(PLATE_HL, tint))
 	b.set_meta("id", id)
 	b.pressed.connect(_on_button_pressed.bind(id))
 	b.focus_entered.connect(_on_button_focus.bind(b, id))
@@ -525,33 +678,42 @@ func _build_cursor() -> void:
 
 
 func _build_desc() -> void:
-	# Descripción de dificultad (solo en NEWGAME), en un recuadro FE para legibilidad.
+	# Descripción de dificultad (solo en NEWGAME), en un panel ORNAMENTADO a la
+	# DERECHA (la columna de dificultad va a la izquierda). Estilo imagen de ref.
+	var vp: Vector2 = get_viewport_rect().size
+	var pw: float = 540.0
+	var ph: float = 330.0
+	_desc_panel = Control.new()
+	_desc_panel.size = Vector2(pw, ph)
+	_desc_panel.position = Vector2(vp.x - pw - 80.0, (vp.y - ph) / 2.0)
+	_desc_panel.visible = false
+	add_child(_desc_panel)
+	var np := NinePatchRect.new()
+	np.texture = load(AssetSet.p(BOX_ORNATE))
+	np.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	np.patch_margin_left = 14
+	np.patch_margin_right = 14
+	np.patch_margin_top = 22
+	np.patch_margin_bottom = 22
+	np.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_desc_panel.add_child(np)
 	_desc = Label.new()
 	_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	_desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_desc.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-	_desc.add_theme_font_size_override("font_size", 24)
+	var f := load(AssetSet.p(UI_FONT))
+	if f != null:
+		_desc.add_theme_font_override("font", f)
+	_desc.add_theme_font_size_override("font_size", 32)
 	_desc.add_theme_color_override("font_color", COLOR_TEXT)
 	_desc.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
 	_desc.add_theme_constant_override("outline_size", OUTLINE_PX - 1)
-	# Recuadro de fondo: panel oscuro semitransparente con borde dorado tenue.
-	var sb := StyleBoxFlat.new()
-	sb.bg_color = Color(0.05, 0.06, 0.11, 0.85)
-	sb.set_border_width_all(2)
-	sb.border_color = COLOR_GOLD_DIM
-	sb.set_corner_radius_all(6)
-	sb.content_margin_left = 24
-	sb.content_margin_right = 24
-	sb.content_margin_top = 12
-	sb.content_margin_bottom = 12
-	_desc.add_theme_stylebox_override("normal", sb)
-	_desc.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
-	_desc.offset_left = 180
-	_desc.offset_right = -180
-	_desc.offset_top = -132
-	_desc.offset_bottom = -48
-	_desc.visible = false
-	add_child(_desc)
+	_desc.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_desc.offset_left = 40
+	_desc.offset_right = -40
+	_desc.offset_top = 36
+	_desc.offset_bottom = -36
+	_desc_panel.add_child(_desc)
 
 
 func _build_toast() -> void:
@@ -601,7 +763,7 @@ func _on_cancel() -> void:
 		St.MAIN:
 			_play_sfx(SFX_CANCEL)
 			_goto(St.PRESS_START)
-		St.NEWGAME, St.EXTRAS:
+		St.NEWGAME, St.EXTRAS, St.SAVES:
 			_play_sfx(SFX_CANCEL)
 			_goto(St.MAIN)
 
@@ -609,15 +771,30 @@ func _on_cancel() -> void:
 func _on_button_pressed(id: String) -> void:
 	if _busy:
 		return
+	# Ranuras del submenú de guardado (aún sin sistema real → aviso).
+	if id.begins_with("slot"):
+		_play_sfx(SFX_ERROR)
+		_toast(_trd("NODATA", "-- NO DATA --"))
+		return
 	match id:
 		"newgame":   _play_sfx(SFX_CONFIRM); _goto(St.NEWGAME)
 		"extras":    _play_sfx(SFX_CONFIRM); _goto(St.EXTRAS)
-		"continue":  _play_sfx(SFX_ERROR);   _toast(tr("CONTINUESOON"))
+		# Continue / Load abren el MISMO submenú; Load con copiar/borrar, Continue sin.
+		"continue":  _play_sfx(SFX_CONFIRM); _open_saves("continue")
+		"load":      _play_sfx(SFX_CONFIRM); _open_saves("load")
+		# Restart (reiniciar capítulo): sin partida en curso desde el título → aviso.
+		"restart":   _play_sfx(SFX_ERROR);   _toast(_trd("RESTARTNOGAME", "No chapter in progress"))
 		"options":   _play_sfx(SFX_CONFIRM); _open_options()
 		"soundroom": _play_sfx(SFX_CONFIRM); _open_soundroom()
 		"credits":   _play_sfx(SFX_CONFIRM); _open_credits()
 		"normal":    _play_sfx(SFX_CONFIRM); _start_game("Normal")
 		"elite":     _play_sfx(SFX_CONFIRM); _start_game("Elite")
+
+
+## Abre el submenú de guardado en el modo dado ("load" con copiar/borrar; "continue" sin).
+func _open_saves(mode: String) -> void:
+	_saves_mode = mode
+	_goto(St.SAVES)
 
 
 func _on_button_focus(b: Button, id: String) -> void:
@@ -631,6 +808,9 @@ func _on_button_focus(b: Button, id: String) -> void:
 	if _state == St.NEWGAME:
 		# Claves de la tabla de traducción (localizadas en los 5 idiomas).
 		_desc.text = tr("NORMALDESC") if id == "normal" else tr("ELITEDESC")
+	elif _state == St.SAVES:
+		# Iconos copiar/borrar flanqueando la ranura enfocada (solo modo "load").
+		_position_slot_icons(b)
 
 
 ## Reproduce un SFX del menú (en el bus "SFX" si existe). name = nombre sin ext.
@@ -688,6 +868,7 @@ func _fade_to(a: float) -> void:
 
 func _apply_state() -> void:
 	var vw := get_viewport_rect().size.x
+	var vh := get_viewport_rect().size.y
 	var center_x := (vw - BTN_W) * 0.5
 	match _state:
 		St.PRESS_START:
@@ -699,26 +880,40 @@ func _apply_state() -> void:
 			_press.visible = false
 			_title.visible = false       # tras Start el logo desaparece (sólo fondo)
 			_show_only(_main_col)
-			_slide_in(_main_col, -BTN_W - 240, center_x, 240)
+			# 5 botones (New Game·Continue·Load·Restart·Extras): centrar en vertical.
+			var main_h: float = 5 * BTN_H + 4 * 16
+			_slide_in(_main_col, -BTN_W - 240, center_x, maxf(20.0, (vh - main_h) * 0.5))
 			_focus_first(_main_col)
 		St.NEWGAME:
+			# Dificultad: columna a la IZQUIERDA (entra desde la izquierda) +
+			# panel de descripción a la DERECHA.
 			_show_only(_newgame_col)
-			_desc.visible = true
-			_slide_in(_newgame_col, vw + 80, center_x, 280)
+			_desc_panel.visible = true
+			_slide_in(_newgame_col, -DIFF_BTN_W - 120, 90, (vh - 236) * 0.5)
 			_focus_first(_newgame_col)
 		St.EXTRAS:
 			_show_only(_extras_col)
 			_slide_in(_extras_col, vw + 80, center_x, 240)
 			_focus_first(_extras_col)
+		St.SAVES:
+			# Submenú de guardado: la raíz entera se desliza desde la derecha.
+			_show_only(_saves_root)
+			_slide_in(_saves_root, vw + 80, 0, 0)
+			_focus_first(_saves_col)
 
 
 func _show_only(keep: Control) -> void:
-	for c in [_main_col, _newgame_col, _extras_col]:
+	for c in [_main_col, _newgame_col, _extras_col, _saves_root]:
 		if c != null:
 			c.visible = (c == keep)
+	if _desc_panel != null:
+		_desc_panel.visible = false
+	if _icon_copy != null:
+		_icon_copy.visible = false
+	if _icon_erase != null:
+		_icon_erase.visible = false
 	if keep == null:
 		_cursor.visible = false
-		_desc.visible = false
 
 
 ## Devuelve el primer botón de una columna (VBoxContainer > [Button...]).
