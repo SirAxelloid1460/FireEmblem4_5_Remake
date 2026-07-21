@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://b7b3571e78363"
+path="res://.godot/imported/hiragana.fnt-7b3571e7836374a853fad26971060b13.fontdata"
+
+[deps]
+
+source_file="res://assets/GBA/fonts/bmp/hiragana.fnt"
+dest_files=["res://.godot/imported/hiragana.fnt-7b3571e7836374a853fad26971060b13.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

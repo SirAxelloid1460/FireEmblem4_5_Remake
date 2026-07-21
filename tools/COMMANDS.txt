@@ -123,6 +123,15 @@ python tools/build_bitmap_font.py --src <carpeta_ltfonts>            # lote (col
 python tools/build_bitmap_font.py --src <carpeta> --name text        # una fuente
 python tools/build_bitmap_font.py --src <carpeta> --color black --name reel  # otro color
 
+# FUENTE JAPONESA (BMFont desde TTF pixel-art): genera hiragana/katakana/kanji
+# como sprite-fonts nítidas (se enganchan como fallback en AssetLoader). Admite
+# VARIAS fuentes en orden: rellena los glifos que falten con las siguientes
+# (Mona10x12 trae kana pero NO kanji → añade una fuente pixel de kanji al final).
+python tools/build_jp_bitmap_font.py --name hiragana --block hiragana --fonts assets/GBA/fonts/Mona10x12.ttf
+python tools/build_jp_bitmap_font.py --name katakana --block katakana --fonts assets/GBA/fonts/Mona10x12.ttf
+python tools/build_jp_bitmap_font.py --name kanji --block kanji --fonts <fuente_kanji.ttf> [otra.ttf ...]
+#   Alternativas al bloque: --ranges "4E00-4E10,738B"  ·  --from-text <archivos jp.json>
+
 
 ================================================================================
  5) LOCALIZACIÓN / DIÁLOGOS

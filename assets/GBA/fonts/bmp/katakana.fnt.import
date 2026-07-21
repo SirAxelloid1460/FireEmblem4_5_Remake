@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://b8ad021c0a56a"
+path="res://.godot/imported/katakana.fnt-8ad021c0a56a379c87bdecba27960972.fontdata"
+
+[deps]
+
+source_file="res://assets/GBA/fonts/bmp/katakana.fnt"
+dest_files=["res://.godot/imported/katakana.fnt-8ad021c0a56a379c87bdecba27960972.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2
