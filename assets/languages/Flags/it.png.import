@@ -10,7 +10,7 @@ metadata={
 
 [deps]
 
-source_file="res://assets/GBA/languages/Flags/it.png"
+source_file="res://assets/languages/Flags/it.png"
 dest_files=["res://.godot/imported/it.png-336188fca9c2916f7162fa57b67db91d.ctex"]
 
 [params]

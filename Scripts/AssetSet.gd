@@ -25,6 +25,11 @@ const DEFAULT := "GBA"
 const FALLBACK := "GBA"
 const CFG := "user://settings.cfg"
 
+# Carpetas GENERALES del proyecto: NO dependen del set gráfico, así que viven en
+# res://assets/<dir>/ (no en assets/{GBA,HD,Original}/). p() las devuelve tal cual.
+# Las traducciones y banderas de idioma son del proyecto, no de la calidad gráfica.
+const SHARED := ["languages"]
+
 # Sets cuyos recursos van SEPARADOS por juego (subcarpeta fe4/fe5). El set
 # "Original" usa el arte de los juegos originales, que colisionaría entre FE4 y
 # FE5 (mismos nombres, arte distinto), así que vive en Original/{fe4,fe5}/…. GBA
@@ -53,6 +58,10 @@ static func p(path: String) -> String:
 	if not path.begins_with(ROOT):
 		return path
 	var rel := path.substr(ROOT.length())          # "menus/foo.png" o "GBA/menus/foo.png"
+	# Carpetas generales (languages/…): son del proyecto, no del set → sin re-enraizar.
+	for shared in SHARED:
+		if rel == shared or rel.begins_with(shared + "/"):
+			return path
 	# Si la ruta ya viene enraizada en un set, quitar ese prefijo para re-enraizar.
 	for known in SETS:
 		if rel.begins_with(known + "/"):
