@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c099d16a4b99a"
-path="res://.godot/imported/hiragana-white.png-099d16a4b99ac9687094ed6a7b93f120.ctex"
+uid="uid://c8c19ba69fbbf"
+path="res://.godot/imported/kanji-white.png-8c19ba69fbbfb285f2302dca0c2ad7eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GBA/fonts/bmp/hiragana-white.png"
-dest_files=["res://.godot/imported/hiragana-white.png-099d16a4b99ac9687094ed6a7b93f120.ctex"]
+source_file="res://assets/GBA/fonts/bmp/kanji-white.png"
+dest_files=["res://.godot/imported/kanji-white.png-8c19ba69fbbfb285f2302dca0c2ad7eb.ctex"]
 
 [params]
 

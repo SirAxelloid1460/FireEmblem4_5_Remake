@@ -107,15 +107,17 @@ var _tilemap_search_order: Array = [PATH_TILEMAPS_FE4, PATH_TILEMAPS_FE5]
 # latinos, así que el japonés salía como cuadros (tofu). Se enganchan como
 # FALLBACK, EN ORDEN, sobre esas bitmap-fonts (Godot toma cada glifo del primer
 # fallback que lo tenga):
-#   1) hiragana.fnt y 2) katakana.fnt — sprite-fonts PIXEL generadas de Mona10x12
-#      (tools/build_jp_bitmap_font.py); nítidas, al estilo del resto de la UI.
-#   3) Fire Emblem Heroes (TTF vectorial, ~35k glifos) — cubre los KANJI (que
-#      Mona no trae) hasta que exista una fuente pixel de kanji; añádela como
-#      nuevo fallback pixel y quedará por delante del TTF.
-# Las kana viven en el set GBA (AssetSet.p); el TTF de FEH es universal (HD).
-const JP_KANA_FONTS := [
+#   1) hiragana.fnt · 2) katakana.fnt · 3) kanji.fnt — sprite-fonts PIXEL nítidas
+#      generadas de Mona12TextJP (tools/build_jp_bitmap_font.py); kanji.fnt cubre
+#      el set estándar JIS X 0208 (6356).
+#   4) Fire Emblem Heroes (TTF vectorial, ~35k glifos) — red de seguridad para
+#      kanji raros fuera del JIS (se ven suaves, no pixel; añade otra fuente pixel
+#      al build de kanji para cubrirlos con estilo si hiciera falta).
+# Las pixel viven en el set GBA (AssetSet.p); el TTF de FEH es universal (HD).
+const JP_PIXEL_FONTS := [
 	"res://assets/fonts/bmp/hiragana.fnt",
 	"res://assets/fonts/bmp/katakana.fnt",
+	"res://assets/fonts/bmp/kanji.fnt",
 ]
 const JP_KANJI_FALLBACK := "res://assets/HD/fonts/Fire_Emblem_Heroes_Font.ttf"
 # Bitmap-fonts que renderizan palabras (no solo dígitos) y por tanto pueden
@@ -145,8 +147,8 @@ func _ready() -> void:
 ## reciben la MISMA instancia ya con los fallbacks. Idempotente.
 func _attach_jp_fallback() -> void:
 	var chain: Array = []
-	for kana in JP_KANA_FONTS:
-		var kp: String = AssetSet.p(kana)
+	for pixel in JP_PIXEL_FONTS:
+		var kp: String = AssetSet.p(pixel)
 		if ResourceLoader.exists(kp):
 			var kf = load(kp)
 			if kf is Font:

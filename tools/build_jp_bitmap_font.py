@@ -157,6 +157,7 @@ def build(args):
     os.makedirs(args.out, exist_ok=True)
     png_name = "%s-white.png" % args.name
     atlas.save(os.path.join(args.out, png_name))
+    _write_png_import(os.path.join(args.out, png_name), png_name)
 
     head = [
         'info face="%s" size=%d bold=0 italic=0 charset="" unicode=1 stretchH=100 '
@@ -204,6 +205,37 @@ def _write_import(fnt_path, name):
         "scaling_mode=2\n" % (uid, dest, rel, dest)
     )
     with open(fnt_path + ".import", "w", encoding="utf-8") as f:
+        f.write(text)
+
+
+def _write_png_import(png_path, png_name):
+    """Crea el .import del atlas (Texture2D lossless), como los otros -white.png."""
+    h = hashlib.md5(png_name.encode("utf-8")).hexdigest()
+    rel = os.path.relpath(png_path, ROOT).replace(os.sep, "/")
+    dest = "res://.godot/imported/%s-%s.ctex" % (png_name, h)
+    text = (
+        "[remap]\n\n"
+        'importer="texture"\n'
+        'type="CompressedTexture2D"\n'
+        'uid="uid://c%s"\n'
+        'path="%s"\n'
+        "metadata={\n\"vram_texture\": false\n}\n\n"
+        "[deps]\n\n"
+        'source_file="res://%s"\n'
+        'dest_files=["%s"]\n\n'
+        "[params]\n\n"
+        "compress/mode=0\ncompress/high_quality=false\ncompress/lossy_quality=0.7\n"
+        "compress/uastc_level=0\ncompress/rdo_quality_loss=0.0\ncompress/hdr_compression=1\n"
+        "compress/normal_map=0\ncompress/channel_pack=0\nmipmaps/generate=false\n"
+        "mipmaps/limit=-1\nroughness/mode=0\nroughness/src_normal=\"\"\n"
+        "process/channel_remap/red=0\nprocess/channel_remap/green=1\n"
+        "process/channel_remap/blue=2\nprocess/channel_remap/alpha=3\n"
+        "process/fix_alpha_border=true\nprocess/premult_alpha=false\n"
+        "process/normal_map_invert_y=false\nprocess/hdr_as_srgb=false\n"
+        "process/hdr_clamp_exposure=false\nprocess/size_limit=0\ndetect_3d/compress_to=1\n"
+        % (h[:12], dest, rel, dest)
+    )
+    with open(png_path + ".import", "w", encoding="utf-8") as f:
         f.write(text)
 
 
