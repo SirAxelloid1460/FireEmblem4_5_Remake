@@ -33,8 +33,22 @@ const LANGS := [
 ]
 
 
+## Idiomas con traducción lista para jugar. El resto (de, fr, it, ja) se muestran
+## deshabilitados (gris + botón inaccesible) con el sufijo " (W.I.P)" hasta que
+## sus traducciones estén completas.
+const READY_LANGS := ["en", "es"]
+
+
 func _menu_items() -> Array:
 	return LANGS
+
+
+func _option_enabled(id: String) -> bool:
+	return id in READY_LANGS
+
+
+func _option_label_suffix(id: String) -> String:
+	return "" if id in READY_LANGS else " (W.I.P)"
 
 
 func _option_font_size() -> int:

@@ -39,6 +39,7 @@ const UI_FONT := "res://assets/fonts/bmp/text.fnt"   # sprite-font LT
 
 const COLOR_TEXT    := Color(0.82, 0.84, 0.82, 1.0)   # crema tenue (opción normal)
 const COLOR_GOLD    := Color(1.00, 0.90, 0.55, 1.0)   # dorado (opción enfocada)
+const COLOR_DISABLED := Color(0.45, 0.46, 0.48, 1.0)  # gris (opción deshabilitada / W.I.P)
 const COLOR_OUTLINE := Color(0.05, 0.05, 0.10, 1.0)
 const COLOR_BG      := Color(0.04, 0.04, 0.07, 1.0)
 
@@ -146,12 +147,30 @@ func _fit_option_font_size(items: Array) -> int:
 		var widest: float = 0.0
 		if f != null:
 			for it in items:
-				var shown: String = tr(str(it.get("text", "")))
+				var shown: String = _option_display_text(it)
 				widest = maxf(widest, f.get_string_size(shown, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x)
 		if total_h <= avail_h and widest <= avail_w:
 			return fs
 		fs -= 2
 	return minfs
+
+
+## ¿Es seleccionable esta opción? Las deshabilitadas se ven en gris, con el botón
+## inaccesible (el cursor las salta). Sobreescribir por menú.
+func _option_enabled(_id: String) -> bool:
+	return true
+
+
+## Sufijo añadido al rótulo de la opción (p. ej. " (W.I.P)"). Sobreescribir.
+func _option_label_suffix(_id: String) -> String:
+	return ""
+
+
+## Texto FINAL mostrado de una opción: base traducida + sufijo. Los nombres de
+## idioma son literales (tr los devuelve tal cual); las claves de otros menús se
+## traducen. Se usa tanto al construir como al medir el auto-ajuste de fuente.
+func _option_display_text(it: Dictionary) -> String:
+	return tr(str(it.get("text", ""))) + _option_label_suffix(str(it.get("id", "")))
 
 
 ## Alineación horizontal del texto de las opciones. Sobreescribir por menú.
@@ -199,10 +218,15 @@ func _ready() -> void:
 		_build_preview_panel()
 	_build_list_panel()
 	_build_cursor()
-	# Enfocar la primera opción (sin sonar como navegación manual).
-	if _list != null and _list.get_child_count() > 0:
-		_skip_next_nav = true
-		(_list.get_child(0) as Button).call_deferred("grab_focus")
+	# Enfocar la primera opción HABILITADA (salta las W.I.P), sin sonar como
+	# navegación manual.
+	if _list != null:
+		for child in _list.get_children():
+			var b := child as Button
+			if b != null and not b.disabled:
+				_skip_next_nav = true
+				b.call_deferred("grab_focus")
+				break
 
 
 func _build_bg() -> void:
@@ -305,15 +329,19 @@ func _build_list_panel() -> void:
 	_list.offset_bottom = -18 - lift
 	panel.add_child(_list)
 	for it in _menu_items():
-		_list.add_child(_make_option(str(it.get("text", "")), str(it.get("id", ""))))
+		_list.add_child(_make_option(it))
 
 
-func _make_option(text: String, id: String) -> Button:
+func _make_option(it: Dictionary) -> Button:
+	var id := str(it.get("id", ""))
+	var enabled := _option_enabled(id)
 	var b := Button.new()
-	b.text = text
+	b.text = str(it.get("text", "")) + _option_label_suffix(id)
 	b.alignment = _option_align()
-	b.focus_mode = Control.FOCUS_ALL
-	b.mouse_filter = Control.MOUSE_FILTER_STOP
+	# Deshabilitada (W.I.P): botón inaccesible (el cursor la salta) y texto gris.
+	b.focus_mode = Control.FOCUS_ALL if enabled else Control.FOCUS_NONE
+	b.mouse_filter = Control.MOUSE_FILTER_STOP if enabled else Control.MOUSE_FILTER_IGNORE
+	b.disabled = not enabled
 	var fs := _fit_fs if _fit_fs > 0 else _option_font_size()
 	b.custom_minimum_size = Vector2(0, fs + 12)
 	b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -321,19 +349,23 @@ func _make_option(text: String, id: String) -> Button:
 	if f != null:
 		b.add_theme_font_override("font", f)
 	b.add_theme_font_size_override("font_size", fs)
-	b.add_theme_color_override("font_color", COLOR_TEXT)
-	b.add_theme_color_override("font_focus_color", COLOR_GOLD)
-	b.add_theme_color_override("font_hover_color", COLOR_GOLD)
-	b.add_theme_color_override("font_pressed_color", COLOR_GOLD)
+	var base_col := COLOR_TEXT if enabled else COLOR_DISABLED
+	b.add_theme_color_override("font_color", base_col)
+	b.add_theme_color_override("font_focus_color", COLOR_GOLD if enabled else COLOR_DISABLED)
+	b.add_theme_color_override("font_hover_color", COLOR_GOLD if enabled else COLOR_DISABLED)
+	b.add_theme_color_override("font_pressed_color", COLOR_GOLD if enabled else COLOR_DISABLED)
+	b.add_theme_color_override("font_disabled_color", COLOR_DISABLED)
 	b.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
 	b.add_theme_constant_override("outline_size", 5)
 	var empty := StyleBoxEmpty.new()
 	for s in ["normal", "hover", "pressed", "focus", "disabled"]:
 		b.add_theme_stylebox_override(s, empty)
 	b.set_meta("id", id)
-	b.focus_entered.connect(_on_option_focus.bind(b, id))
-	b.mouse_entered.connect(b.grab_focus)
-	b.pressed.connect(_on_option_pressed.bind(id))
+	# Solo las opciones habilitadas reaccionan al foco / ratón / confirmación.
+	if enabled:
+		b.focus_entered.connect(_on_option_focus.bind(b, id))
+		b.mouse_entered.connect(b.grab_focus)
+		b.pressed.connect(_on_option_pressed.bind(id))
 	return b
 
 

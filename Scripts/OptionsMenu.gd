@@ -42,6 +42,9 @@ const LANGS := [
 	{ "id": "it", "name": "Italiano" },
 	{ "id": "ja", "name": "Japanese" },
 ]
+# Idiomas con traducción lista. El resto se muestra en gris con " (W.I.P)" y el
+# carrusel NO se detiene en ellos (no se pueden aplicar hasta completarlos).
+const READY_LANGS := ["en", "es"]
 # Resoluciones (aspecto 3:2, nativo del juego). Se aplican al reiniciar.
 const RESOLUTIONS := ["720x480", "960x640", "1200x800", "1440x960", "1920x1280"]
 # Modos de ventana (claves de traducción). Se aplican en vivo.
@@ -547,9 +550,15 @@ func _refresh() -> void:
 				segs[s].color = SEG_ON if s < filled else SEG_OFF
 		elif spec["kind"] == "language":
 			var lang: Dictionary = LANGS[int(spec["idx"])]
-			row["lang_lbl"].text = str(lang["name"])
-			row["lang_lbl"].add_theme_color_override("font_color", COLOR_GOLD if focused else COLOR_TEXT)
-			var fp := AssetSet.p(FLAGS + str(lang["id"]) + ".png")
+			var lid: String = str(lang["id"])
+			var ready: bool = lid in READY_LANGS
+			# Los idiomas W.I.P se muestran en gris y con el sufijo; el carrusel no
+			# se detiene en ellos (ver _change), así que solo aparecen si el locale
+			# actual ya era uno de ellos.
+			row["lang_lbl"].text = str(lang["name"]) + ("" if ready else " (W.I.P)")
+			var lang_col: Color = (COLOR_GOLD if focused else COLOR_TEXT) if ready else COLOR_DIM
+			row["lang_lbl"].add_theme_color_override("font_color", lang_col)
+			var fp := AssetSet.p(FLAGS + lid + ".png")
 			if ResourceLoader.exists(fp):
 				row["flag"].texture = load(fp)
 		else:
@@ -671,10 +680,16 @@ func _change(delta: int) -> void:
 			if spec["key"] == "mouse":
 				InputConfig.set_mouse_enabled(int(spec["idx"]) == 0)
 		"language":
-			# Carrusel circular; aplica y persiste el idioma EN VIVO.
+			# Carrusel circular que SALTA los idiomas W.I.P (no se pueden aplicar).
+			# Aplica y persiste el idioma EN VIVO al caer en uno listo.
 			var n: int = LANGS.size()
-			spec["idx"] = (int(spec["idx"]) + delta + n) % n
-			FadeCanvas.save_locale(str(LANGS[int(spec["idx"])]["id"]))
+			var lidx: int = int(spec["idx"])
+			for _i in range(n):
+				lidx = (lidx + delta + n) % n
+				if str(LANGS[lidx]["id"]) in READY_LANGS:
+					break
+			spec["idx"] = lidx
+			FadeCanvas.save_locale(str(LANGS[lidx]["id"]))
 			_relocalize()
 		"set":
 			# Carrusel circular; el set gráfico se aplica al reiniciar (avisa).
