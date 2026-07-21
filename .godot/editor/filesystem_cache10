@@ -1,9 +1,9 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784583446
+::res://::1784648081
 icon.png::CompressedTexture2D::5796228232867755098::1714553776::1784419739::1::::<><><>0<>0<>85d8504b263b0bda2244463b196f6b35<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1784389909::0::1::::<><><>0<>0<><>::
-::res://assets/::1784393727
-::res://assets/GBA/::1784442294
+::res://assets/::1784644658
+::res://assets/GBA/::1784644658
 ::res://assets/GBA/animations/::1784390490
 animations.json::JSON::-1::1784389909::0::1::::<><><>0<>0<><>::
 AOE_Blizzard.png::CompressedTexture2D::2342297080145296485::1784389909::1784390489::1::::<><><>0<>0<>a1771a303a8752f87680bac7b59e1adf<>res://.godot/imported/AOE_Blizzard.png-9a1df882c6c4216cb317342ad2e78d31.ctex::
@@ -1807,10 +1807,12 @@ level_up_numbers.png::CompressedTexture2D::2544063799544568231::1784389913::1784
 manabar.png::CompressedTexture2D::8078333859760691916::1784389913::1784390505::1::::<><><>0<>0<>28bb1179c5ca4517f5981f37657edc65<>res://.godot/imported/manabar.png-c91a463a4992b53daaeefd12614b6c7d.ctex::
 stat_underline.png::CompressedTexture2D::3344273266280585903::1784389913::1784390505::1::::<><><>0<>0<>993b1c338cdca329c66c81c17da7da2b<>res://.godot/imported/stat_underline.png-0b4cf950575f631f31621137b70d01a2.ctex::
 stat_up_spark.png::CompressedTexture2D::7881751540601602514::1784389913::1784390505::1::::<><><>0<>0<>16d9742a4276fdd2d16e65f8e8323b61<>res://.godot/imported/stat_up_spark.png-4b435f466ca32ed01ff189ceed114bdf.ctex::
-::res://assets/GBA/fonts/::1784471079
+::res://assets/GBA/fonts/::1784641641
 gba-fe-dialogue.ttf::FontFile::4532858660381649778::1680869772::1784419738::1::::<><><>0<>0<>9c501cd7aae2cd41b66eaee8d809c1f4<>res://.godot/imported/gba-fe-dialogue.ttf-c82f55aa2ec9d5e0fdc4d7f850b7ba34.fontdata::
 IMFellFrenchCanonSC-Regular.ttf::FontFile::7762413525348139854::1663820830::1784419738::1::::<><><>0<>0<>768220ed70415f1b86b9fde9d1470871<>res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-b748ea443e481577d738e40f821ef907.fontdata::
-::res://assets/GBA/fonts/bmp/::1784464819
+Mona10x12.ttf::FontFile::5089057930565369319::1784638372::1784648087::1::::<><><>0<>0<>5d8ca3da8513675d78d1ca585293dadd<>res://.godot/imported/Mona10x12.ttf-c625266f0f71c2ce86e672173834846d.fontdata::
+Mona12TextJP.ttf::FontFile::241805257965245026::1784641641::1784648087::1::::<><><>0<>0<>f34e7a212e630493548d04befbfee927<>res://.godot/imported/Mona12TextJP.ttf-a88a79bc71d057b3ac7605205014ec89.fontdata::
+::res://assets/GBA/fonts/bmp/::1784641641
 chapter-yellow.png::CompressedTexture2D::7667694330716814111::1784448721::1784464819::1::::<><><>0<>0<>e99ba540e1e7c825f3e520d34f5b55a7<>res://.godot/imported/chapter-yellow.png-e917be8fd1b5124dbd79cecddad079e3.ctex::
 chapter.fnt::FontFile::8476143355435191830::1784448721::1784464819::1::::<><><>0<>0<>3ce9ed93497ecd2676e6ce2a67ea09da<>res://.godot/imported/chapter.fnt-cc4f52cf251b05040c4181b62c1203d7.fontdata::
 class-purple.png::CompressedTexture2D::8579094779501185560::1784448721::1784464819::1::::<><><>0<>0<>2ad8d913a43fedc68ba64d9d99bf9b90<>res://.godot/imported/class-purple.png-f7bfa681d419a8f12e0e9bffec2ccef2.ctex::
@@ -1821,8 +1823,14 @@ credit-white.png::CompressedTexture2D::2602210422788119621::1784448721::17844648
 credit.fnt::FontFile::1543781552953635248::1784448721::1784464819::1::::<><><>0<>0<>23ae2e12fec5c9b47c08dd64d22cc698<>res://.godot/imported/credit.fnt-77f7a1acf457f8f6ef103c87d90b5672.fontdata::
 credit_title-white.png::CompressedTexture2D::3456243723162201609::1784448721::1784464819::1::::<><><>0<>0<>96f6e7b70a9f9293f58a43a345b758be<>res://.godot/imported/credit_title-white.png-72d29302a1014778141ec9cb7f318f73.ctex::
 credit_title.fnt::FontFile::8146862061928424195::1784448721::1784464819::1::::<><><>0<>0<>add3c66d8c251006c3ecaf316e05f059<>res://.godot/imported/credit_title.fnt-c5652e4da459818da853ff0da40a332d.fontdata::
+hiragana-white.png::::6599822450645692708::1784641641::1784648086::0::::<><><>0<>0<>7fc67c60ea90ba3c6a7d24bc0f5b5823<>::
+hiragana.fnt::FontFile::4636283428616759346::1784641641::1784648086::1::::<><><>0<>0<>2f0436dc23366b0cb19b9145405de6d4<>res://.godot/imported/hiragana.fnt-548a1c0cd82a8d2b1312183609a94c3c.fontdata::
 info-black.png::CompressedTexture2D::8145776002414661687::1784448721::1784464819::1::::<><><>0<>0<>2b6b3fd2a03c029fc8c860936b494633<>res://.godot/imported/info-black.png-edb81a74c9bafce42be7ccde51f3b8ef.ctex::
 info.fnt::FontFile::4075815578813408359::1784448721::1784464819::1::::<><><>0<>0<>02571fafd8d9cb498662d42db31070b2<>res://.godot/imported/info.fnt-953ebc8508bdef12e8dc2e0bbeb14355.fontdata::
+kanji-white.png::::7094841375731566291::1784641641::1784648086::0::::<><><>0<>0<>7fc67c60ea90ba3c6a7d24bc0f5b5823<>::
+kanji.fnt::FontFile::4634283501186475623::1784641641::1784648087::1::::<><><>0<>0<>e8b6e8f4d6127401ba835998d9a94c77<>res://.godot/imported/kanji.fnt-4c9b03a0d0ec32b54f164633f2fd887a.fontdata::
+katakana-white.png::::7006321201548693935::1784641641::1784648086::0::::<><><>0<>0<>7fc67c60ea90ba3c6a7d24bc0f5b5823<>::
+katakana.fnt::FontFile::4702880777993775206::1784641641::1784648086::1::::<><><>0<>0<>9768a79b5b9eeb1a5cb4aff8cf83e77e<>res://.godot/imported/katakana.fnt-e6a287c61e0e93a5e6e2271b957cfaa7.fontdata::
 label-white.png::CompressedTexture2D::2698896190249202758::1784448721::1784464819::1::::<><><>0<>0<>6a65d4a5980e31fb15f596fe4460b6d6<>res://.godot/imported/label-white.png-9fe18fca57169e16c4ad9f0201922271.ctex::
 label.fnt::FontFile::1845847073346381269::1784448721::1784464819::1::::<><><>0<>0<>ef05c5c9e161dccbd8e6b708640ec305<>res://.godot/imported/label.fnt-862878817d8dc3953354077d8da000b9.fontdata::
 narrow-white.png::CompressedTexture2D::2473680515619877083::1784448721::1784464819::1::::<><><>0<>0<>51ed82f3ea34426b3b3dae075e53a801<>res://.godot/imported/narrow-white.png-ef0acfb6be4b34d57dcbfaba2f37784c.ctex::
@@ -1907,35 +1915,6 @@ mouse_indicator_right.png::CompressedTexture2D::8972294340878046122::1784389913:
 mouse_indicator_top.png::CompressedTexture2D::2734093145796226502::1784389913::1784390500::1::::<><><>0<>0<>cf6c4635343da0a44d8359433988cc6f<>res://.godot/imported/mouse_indicator_top.png-7297d896fa667c4b162d34314daa41d1.ctex::
 status_logo.png::CompressedTexture2D::218269577205963990::1784389913::1784390500::1::::<><><>0<>0<>fe2c6aa624c2a21877566496fb84e3bc<>res://.godot/imported/status_logo.png-47c5926715fad9bedc835ad96d3e472b.ctex::
 status_platform.png::CompressedTexture2D::4221574342729455670::1784389913::1784390500::1::::<><><>0<>0<>e6e3706e53c678f930dfc5d36ed1e681<>res://.godot/imported/status_platform.png-6137384d2070438c795611bbee8ea097.ctex::
-::res://assets/GBA/languages/::1784389913
-::res://assets/GBA/languages/Flags/::1784390500
-de.png::CompressedTexture2D::6616309817090447157::1784389913::1784390500::1::::<><><>0<>0<>79f98eab5e715ad809e0f99b11e4d8a6<>res://.godot/imported/de.png-a380c7b0619522c2f5b30b2f145cb455.ctex::
-en.png::CompressedTexture2D::1830620738966779921::1784389913::1784390500::1::::<><><>0<>0<>6ab8d67b05eac4ec015e892d21bff42a<>res://.godot/imported/en.png-82a9875f005d7147d65327225f1108e5.ctex::
-es.png::CompressedTexture2D::3622426124080247967::1784389913::1784390500::1::::<><><>0<>0<>90d883bb093d506d3c1cfd5d001edace<>res://.godot/imported/es.png-4b8e58129cf33e32c3818ef77f7fb602.ctex::
-fr.png::CompressedTexture2D::7195595710634261420::1784389913::1784390500::1::::<><><>0<>0<>2a6ba1e8bd5e5a234578e4f26b13030b<>res://.godot/imported/fr.png-f48fb6c6872bfe9110857a3b4cfaac58.ctex::
-it.png::CompressedTexture2D::4110678305777171762::1784389913::1784390500::1::::<><><>0<>0<>0720a4e2dc09d691fd06545ebb1ab346<>res://.godot/imported/it.png-336188fca9c2916f7162fa57b67db91d.ctex::
-ja.png::CompressedTexture2D::93899182682407450::1784389913::1784390500::1::::<><><>0<>0<>1311f78545316f8b4e869c8d79693658<>res://.godot/imported/ja.png-3966ec14814b7fd2dd166a65d0d5b354.ctex::
-::res://assets/GBA/languages/Menus/::1784583376
-Translations FE45 - MainMenu.csv::Translation::5127242888532208358::1784583376::1784583451::1::::<><><>0<>0<>3e214dbbb2272bed8adba129c7e537ff<>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.en.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.es.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.de.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.ja.translation<*>res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.fr.translation::
-Translations FE45 - MainMenu.de.translation::OptimizedTranslation::8936700650430381375::1784583451::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.en.translation::OptimizedTranslation::8817530577582386794::1784583451::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.es.translation::OptimizedTranslation::847647670746001290::1784583451::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.fr.translation::OptimizedTranslation::3048930378286196056::1784583451::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.ja.translation::OptimizedTranslation::5118320353881303997::1784583451::0::1::::<><><>0<>0<><>::
-::res://assets/GBA/languages/Scenes/::1784583376
-Translations FE45 - Credits.csv::Translation::8722933851759645887::1784583376::1784583451::1::::<><><>0<>0<>df9b98b0167f99f3f56783a791c9e947<>res://assets/GBA/languages/Scenes/Translations FE45 - Credits.en.translation<*>res://assets/GBA/languages/Scenes/Translations FE45 - Credits.es.translation<*>res://assets/GBA/languages/Scenes/Translations FE45 - Credits.de.translation<*>res://assets/GBA/languages/Scenes/Translations FE45 - Credits.fr.translation::
-Translations FE45 - Credits.de.translation::OptimizedTranslation::2821423505291399863::1784583451::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.en.translation::OptimizedTranslation::5412188258512102619::1784583451::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.es.translation::OptimizedTranslation::9179755138946583816::1784583451::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.fr.translation::OptimizedTranslation::4155141866644078568::1784583451::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.ja.translation::OptimizedTranslation::66948769071755839::1784389913::0::1::::<><><>0<>0<><>::
-::res://assets/GBA/languages/Scenes/FE5/::1784390466
-Translations FE45 - FE5CHAP1.csv::Translation::3225907030478842641::1784389913::1784390466::1::::<><><>0<>0<>4559945ac97b1f18666f74b641f78b61<>res://assets/GBA/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation::
-Translations FE45 - FE5CHAP1.de.translation::OptimizedTranslation::2885176193741406857::1784389913::0::1::::<><><>0<>0<><>::
-Translations FE45 - FE5CHAP1.en.translation::OptimizedTranslation::6268921531056584035::1784390465::0::1::::<><><>0<>0<><>::
-Translations FE45 - FE5CHAP1.es.translation::OptimizedTranslation::1984109186085072664::1784389913::0::1::::<><><>0<>0<><>::
-Translations FE45 - FE5CHAP1.fr.translation::OptimizedTranslation::3857403708506720552::1784389913::0::1::::<><><>0<>0<><>::
-Translations FE45 - FE5CHAP1.ja.translation::OptimizedTranslation::1396422818418963801::1784389913::0::1::::<><><>0<>0<><>::
 ::res://assets/GBA/map_icons/::1784390500
 map_node.png::CompressedTexture2D::1605367217660348675::1784389913::1784390500::1::::<><><>0<>0<>16bbf86d60f799457240c93030b44607<>res://.godot/imported/map_node.png-5deb503e234d10938c1cb0ffef4a0a35.ctex::
 objective_flag.png::CompressedTexture2D::3194096470262433473::1784389913::1784390500::1::::<><><>0<>0<>e465529888b5e9aea5297bcbf60290a2<>res://.godot/imported/objective_flag.png-d323033c800c7ca5b4f69fc70e92c64b.ctex::
@@ -3426,7 +3405,7 @@ logo1.png::CompressedTexture2D::8032125651993206790::1784389921::1784390477::1::
 logo2.png::CompressedTexture2D::6066725996412016955::1784389921::1784390477::1::::<><><>0<>0<>e98d5d80d37edc1e854638de138a127e<>res://.godot/imported/logo2.png-09c4369452ceb3522c7058f4320aa6d3.ctex::
 title1_background.png::CompressedTexture2D::5134709640215468372::1784389921::1784390477::1::::<><><>0<>0<>af9826883bc2750da0867897f289c3bd<>res://.godot/imported/title1_background.png-3b7a6b3d581ba953b021406a18676a92.ctex::
 title2_background.png::CompressedTexture2D::5408798187678863261::1784389921::1784390477::1::::<><><>0<>0<>e89f191a5ef6bf133116739eaf17fea7<>res://.godot/imported/title2_background.png-44a49e1f94e553a36ef62d53b119fe94.ctex::
-::res://assets/HD/::1784389922
+::res://assets/HD/::1784644664
 ::res://assets/HD/animations/::1784389922
 ::res://assets/HD/autotiles/::1784389922
 ::res://assets/HD/combat_anims/::1784389922
@@ -3442,7 +3421,6 @@ Fire_Emblem_Heroes_Font.ttf::FontFile::4468105078313121114::1504032078::17844197
 ::res://assets/HD/icons16/::1784389922
 ::res://assets/HD/icons32/::1784389922
 ::res://assets/HD/info_menu/::1784389922
-::res://assets/HD/languages/::1784389922
 ::res://assets/HD/map_icons/::1784389922
 ::res://assets/HD/map_sprites/::1784389922
 ::res://assets/HD/markers/::1784389922
@@ -3459,8 +3437,37 @@ Fire_Emblem_Heroes_Font.ttf::FontFile::4468105078313121114::1504032078::17844197
 ::res://assets/HD/tilesets/::1784389922
 ::res://assets/HD/title/::1784389922
 ::res://assets/HD/videos/::1784389922
+::res://assets/languages/::1784389913
+::res://assets/languages/Flags/::1784645970
+de.png::CompressedTexture2D::6616309817090447157::1784389913::1784645970::1::::<><><>0<>0<>6cf966ff6b8c7d6cd6207fad84276283<>res://.godot/imported/de.png-a380c7b0619522c2f5b30b2f145cb455.ctex::
+en.png::CompressedTexture2D::1830620738966779921::1784389913::1784645970::1::::<><><>0<>0<>7a91a4e6fa67b4f2d5682b567961d95b<>res://.godot/imported/en.png-82a9875f005d7147d65327225f1108e5.ctex::
+es.png::CompressedTexture2D::3622426124080247967::1784389913::1784645970::1::::<><><>0<>0<>6d7290567d113e9ab1a5b171aa822591<>res://.godot/imported/es.png-4b8e58129cf33e32c3818ef77f7fb602.ctex::
+fr.png::CompressedTexture2D::7195595710634261420::1784389913::1784645970::1::::<><><>0<>0<>6c9240d28b2f9418de68a8f8edfdd713<>res://.godot/imported/fr.png-f48fb6c6872bfe9110857a3b4cfaac58.ctex::
+it.png::CompressedTexture2D::4110678305777171762::1784389913::1784648087::1::::<><><>0<>0<>331ec6a0c3d293ad3e917a466d3876ac<>res://.godot/imported/it.png-75893210c59a6f5e0911590344bbbac6.ctex::
+ja.png::CompressedTexture2D::93899182682407450::1784389913::1784645970::1::::<><><>0<>0<>26fb4d11170d70ecc03c3197f90c9b3e<>res://.godot/imported/ja.png-3966ec14814b7fd2dd166a65d0d5b354.ctex::
+::res://assets/languages/Menus/::1784645970
+Translations FE45 - MainMenu.csv::Translation::5127242888532208358::1784642538::1784648086::1::::<><><>0<>0<>398d77893f43531a54c886d40b7e79fc<>res://assets/languages/Menus/Translations FE45 - MainMenu.en.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.es.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.de.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.ja.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.fr.translation::
+Translations FE45 - MainMenu.de.translation::OptimizedTranslation::8936700650430381375::1784648086::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.en.translation::OptimizedTranslation::8817530577582386794::1784648086::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.es.translation::OptimizedTranslation::847647670746001290::1784648086::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.fr.translation::OptimizedTranslation::3048930378286196056::1784648086::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.ja.translation::OptimizedTranslation::5118320353881303997::1784648086::0::1::::<><><>0<>0<><>::
+::res://assets/languages/Scenes/::1784646291
+Translations FE45 - Credits.csv::Translation::8722933851759645887::1784646291::1784648086::1::::<><><>0<>0<>d6bd0a0425e5d18f59fb638ecb93ac43<>res://assets/languages/Scenes/Translations FE45 - Credits.en.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.es.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.de.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.fr.translation::
+Translations FE45 - Credits.de.translation::OptimizedTranslation::2821423505291399863::1784648086::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.en.translation::OptimizedTranslation::5412188258512102619::1784648086::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.es.translation::OptimizedTranslation::9179755138946583816::1784648086::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.fr.translation::OptimizedTranslation::4155141866644078568::1784648086::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.ja.translation::OptimizedTranslation::66948769071755839::1784389913::0::1::::<><><>0<>0<><>::
+::res://assets/languages/Scenes/FE5/::1784645970
+Translations FE45 - FE5CHAP1.csv::Translation::3225907030478842641::1784642538::1784648086::1::::<><><>0<>0<>ee271ac88179d2eeea7a30b9a5622861<>res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation::
+Translations FE45 - FE5CHAP1.de.translation::OptimizedTranslation::2885176193741406857::1784389913::0::1::::<><><>0<>0<><>::
+Translations FE45 - FE5CHAP1.en.translation::OptimizedTranslation::6268921531056584035::1784648086::0::1::::<><><>0<>0<><>::
+Translations FE45 - FE5CHAP1.es.translation::OptimizedTranslation::1984109186085072664::1784389913::0::1::::<><><>0<>0<><>::
+Translations FE45 - FE5CHAP1.fr.translation::OptimizedTranslation::3857403708506720552::1784389913::0::1::::<><><>0<>0<><>::
+Translations FE45 - FE5CHAP1.ja.translation::OptimizedTranslation::1396422818418963801::1784389913::0::1::::<><><>0<>0<><>::
 ::res://assets/Original/::1784393727
-::res://assets/Original/fe4/::1784393727
+::res://assets/Original/fe4/::1784644672
 ::res://assets/Original/fe4/animations/::1784393727
 ::res://assets/Original/fe4/autotiles/::1784393727
 ::res://assets/Original/fe4/combat_anims/::1784393727
@@ -3475,7 +3482,6 @@ Fire_Emblem_Heroes_Font.ttf::FontFile::4468105078313121114::1504032078::17844197
 ::res://assets/Original/fe4/icons16/::1784393727
 ::res://assets/Original/fe4/icons32/::1784393727
 ::res://assets/Original/fe4/info_menu/::1784393727
-::res://assets/Original/fe4/languages/::1784393727
 ::res://assets/Original/fe4/map_icons/::1784393727
 ::res://assets/Original/fe4/map_sprites/::1784419739
 Archer-move.png::CompressedTexture2D::981176329600293949::1784411460::1784419739::1::::<><><>0<>0<>808b86e109698db8161bd01418b953e7<>res://.godot/imported/Archer-move.png-d6954438dedee2c26c97017402567378.ctex::
@@ -3595,7 +3601,7 @@ Warrior-stand.png::CompressedTexture2D::5476550701589760054::1784411459::1784419
 ::res://assets/Original/fe4/tilesets/::1784393727
 ::res://assets/Original/fe4/title/::1784393727
 ::res://assets/Original/fe4/videos/::1784393727
-::res://assets/Original/fe5/::1784393727
+::res://assets/Original/fe5/::1784644676
 ::res://assets/Original/fe5/animations/::1784393727
 ::res://assets/Original/fe5/autotiles/::1784393727
 ::res://assets/Original/fe5/combat_anims/::1784393983
@@ -3617,7 +3623,6 @@ LoptoMage_Generic_Unarmed.png::CompressedTexture2D::8667552547409806046::1784389
 ::res://assets/Original/fe5/icons16/::1784393727
 ::res://assets/Original/fe5/icons32/::1784393727
 ::res://assets/Original/fe5/info_menu/::1784393727
-::res://assets/Original/fe5/languages/::1784393727
 ::res://assets/Original/fe5/map_icons/::1784393727
 ::res://assets/Original/fe5/map_sprites/::1784419739
 Archer-move.png::CompressedTexture2D::5758289541517975665::1784413851::1784419739::1::::<><><>0<>0<>0d36f86f15a59fde70617d153c095b60<>res://.godot/imported/Archer-move.png-3d95592780415230a4caaff6c473f336.ctex::
@@ -4006,7 +4011,7 @@ portrait_offsets.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 skills.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 units.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 weapons.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-::res://docs/::1784583376
+::res://docs/::1784641641
 ARENA_FE4_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 ASSET_COVERAGE.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 AUTO_CINEMATICS_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -4015,6 +4020,7 @@ CASTLE_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 CINEMATICS_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 CLAUDE_CODE_BRIEF.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 dialogue_localization_design.md::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::
+dialogue_localization_handoff.md::TextFile::-1::1784641641::0::1::::<><><>0<>0<><>::
 FE_Mechanics_Comparison.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 FE_Mechanics_Uncovered.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 Format_Differences.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -4047,7 +4053,11 @@ ShopMenu.gd.txt::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 UnitListPanel.gd.txt::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 UnitManagerMenu.gd.txt::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 ::res://docs/examples/::1784583376
-::res://docs/examples/dialogue_format/::1784583376
+::res://docs/examples/dialogue_format/::1784641641
+Chapter01.en.json::JSON::-1::1784641641::0::1::::<><><>0<>0<><>::
+Chapter01.es.json::JSON::-1::1784641641::0::1::::<><><>0<>0<><>::
+Chapter01.it.json::JSON::-1::1784641641::0::1::::<><><>0<>0<><>::
+Chapter01.jp.json::JSON::-1::1784641641::0::1::::<><><>0<>0<><>::
 prologue_fe5.scene.json::JSON::-1::1784583376::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::
 ::res://docs/palettes/::1784390477
@@ -4072,15 +4082,15 @@ mode_select.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scr
 options_menu.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784583376
+::res://Scripts/::1784645970
 ActionMenu.gd::GDScript::6413271467111799318::1784583376::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784389909::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784389909::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
 ArenaEventManager.gd::GDScript::2130860807340854611::1784389909::0::1::::ArenaEventManager<>Node<><>0<>0<><>::
 ArenaPanel_FE4.gd::GDScript::376662411965315699::1784389909::0::1::::ArenaPanel<>Panel<><>0<>0<><>::
 ArenaSystem.gd::GDScript::4598148027185509797::1784389909::0::1::::ArenaSystem<>RefCounted<><>0<>0<><>::
-AssetLoader.gd::GDScript::3103337767144174398::1784389909::0::1::::<>Node<><>0<>0<><>::
-AssetSet.gd::GDScript::7706424457455429881::1784393727::0::1::::AssetSet<>RefCounted<><>0<>0<><>::
+AssetLoader.gd::GDScript::3103337767144174398::1784641641::0::1::::<>Node<><>0<>0<><>::
+AssetSet.gd::GDScript::7706424457455429881::1784645970::0::1::::AssetSet<>RefCounted<><>0<>0<><>::
 BallistaSystem.gd::GDScript::8051390221279812733::1784389909::0::1::::BallistaSystem<>RefCounted<><>0<>0<><>::
 BattleHPBar.gd::GDScript::7696065279968817209::1784389909::0::1::::BattleHPBar<>Control<><>0<>0<><>::
 BlacksmithPanel.gd::GDScript::5806891430391874837::1784389909::0::1::::BlacksmithPanel<>Panel<><>0<>0<><>::
@@ -4103,17 +4113,18 @@ CombatEffectDatabase.gd::GDScript::8068641853132583565::1784389909::0::1::::Comb
 CombatPaletteSystem.gd::GDScript::5692955103788158920::1784389909::0::1::::CombatPaletteSystem<>RefCounted<><>0<>0<><>::
 CombatSystem.gd::GDScript::8713859728367825415::1784389909::0::1::::CombatSystem<>Node<><>0<>0<><>::
 ConsumableData.gd::GDScript::7398558622788852579::1784389909::0::1::::ConsumableData<>Resource<><>0<>0<><>::
-ControlsMenu.gd::GDScript::8511848274970140504::1784583376::0::1::::ControlsMenu<>Control<><>0<>0<><>::
+ControlsMenu.gd::GDScript::8511848274970140504::1784641641::0::1::::ControlsMenu<>Control<><>0<>0<><>::
 ConvoyPanel.gd::GDScript::3179861064650906737::1784389909::0::1::::ConvoyPanel<>Panel<><>0<>0<><>::
 ConvoySystem.gd::GDScript::297960422385837843::1784389909::0::1::::ConvoySystem<>Node<><>0<>0<><>::
-CreditsScreen.gd::GDScript::1294854678071032857::1784583376::0::1::::CreditsScreen<>Control<><>0<>0<><>::
+CreditsScreen.gd::GDScript::1294854678071032857::1784645970::0::1::::CreditsScreen<>Control<><>0<>0<><>::
 DevilWeaponSystem.gd::GDScript::5835400362288249445::1784389909::0::1::::DevilWeaponSystem<>RefCounted<><>0<>0<><>::
 DialogueAnimations.gd::GDScript::1096554163329153284::1784389909::0::1::::DialogueAnimations<>Node<><>0<>0<><>::
 DialogueBox.gd::GDScript::145382810046375353::1784389909::0::1::::DialogueBox<>Control<><>0<>0<><>::
+DialogueL10n.gd::GDScript::8614686108664480::1784641641::0::1::::<>Node<><>0<>0<><>::
 EventChoice.gd::GDScript::1071833902445511345::1784583376::0::1::::EventChoice<>Control<><>0<>0<><>::
 EventCinematic.gd::GDScript::6926696982042024199::1784389909::0::1::::EventCinematic<>CinematicScene<><>0<>0<><>::
 EventDialogue.gd::GDScript::7605775379593140747::1784583376::0::1::::EventDialogue<>Control<><>0<>0<><>::
-EventSystem.gd::GDScript::1134202434114915320::1784583376::0::1::::EventSystem<>Node<><>0<>0<><>::
+EventSystem.gd::GDScript::1134202434114915320::1784641641::0::1::::EventSystem<>Node<><>0<>0<><>::
 FadeCanvas.gd::GDScript::4271595688716524119::1784583376::0::1::::<>CanvasLayer<><>0<>0<><>::
 FEButton.gd::GDScript::7564859357985828465::1784389909::0::1::::FEButton<>Button<><>0<>0<><>::
 FogOfWarSystem.gd::GDScript::4555120182116966668::1784389909::0::1::::FogOfWarSystem<>RefCounted<><>0<>0<><>::
@@ -4129,17 +4140,17 @@ Item.gd::GDScript::7925141334164720406::1784389909::0::1::::Item<>RefCounted<><>
 ItemDatabase.gd::GDScript::6527273458596669064::1784389909::0::1::::ItemDatabase<>RefCounted<><>0<>0<><>::
 Items.gd::GDScript::1388330204127410334::1784389909::0::1::::ItemCatalog<>RefCounted<><>0<>0<><>::
 LabelAnimText.gd::GDScript::2867877076981210681::1784389909::0::1::::LabelAnimText<>Control<><>0<>0<><>::
-Language.gd::GDScript::2907556366295349689::1784583376::0::1::::LanguageScreen<>SelectMenu<><>0<>0<><>::
+Language.gd::GDScript::2907556366295349689::1784641641::0::1::::LanguageScreen<>SelectMenu<><>0<>0<><>::
 LaraPromotion.gd::GDScript::4107297915193857152::1784389909::0::1::::LaraPromotion<>RefCounted<><>0<>0<><>::
 LevelData.gd::GDScript::802805939506090972::1784389909::0::1::::LevelData<>Resource<><>0<>0<><>::
 LevelLoader.gd::GDScript::2900491532752613919::1784389909::0::1::::LevelLoader<>RefCounted<><>0<>0<><>::
 LevelUpScreen.gd::GDScript::2074851621102138785::1784389909::0::1::::LevelUpScreen<>Control<><>0<>0<><>::
 LocationMarker.gd::GDScript::1836486964086790272::1784389909::0::1::::LocationMarker<>Node2D<><>0<>0<><>::
-MainMenu.gd::GDScript::8175898352055706196::1784583376::0::1::::MainMenu<>Control<><>0<>0<><>::
+MainMenu.gd::GDScript::8175898352055706196::1784641641::0::1::::MainMenu<>Control<><>0<>0<><>::
 MapActions.gd::GDScript::3535448452538133979::1784389909::0::1::::MapActions<>RefCounted<><>0<>0<><>::
 MapBackground.gd::GDScript::3738451975226640230::1784389909::0::1::::MapBackground<>Node2D<><>0<>0<><>::
-ModeSelect.gd::GDScript::3174370287506302631::1784583376::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
-OptionsMenu.gd::GDScript::5364573969176011556::1784583376::0::1::::OptionsMenu<>Control<><>0<>0<><>::
+ModeSelect.gd::GDScript::3174370287506302631::1784641641::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
+OptionsMenu.gd::GDScript::5364573969176011556::1784641641::0::1::::OptionsMenu<>Control<><>0<>0<><>::
 Pathfinding.gd::GDScript::1848538420110686201::1784389909::0::1::::Pathfinding<>Node<><>0<>0<><>::
 PrologueCinematic.gd::GDScript::3981487757909408999::1784389909::0::1::::PrologueCinematic<>CinematicScene<><>0<>0<><>::
 PrologueTest.gd::GDScript::5063533363305664355::1784389909::0::1::::<>Node2D<><>0<>0<><>::
@@ -4147,7 +4158,7 @@ PromotionPanel.gd::GDScript::4153741883649203270::1784389909::0::1::::PromotionP
 PromotionScreen.gd::GDScript::4779123178995863736::1784389909::0::1::::PromotionScreen<>Control<><>0<>0<><>::
 PromotionSystem.gd::GDScript::8325188722818028479::1784389909::0::1::::PromotionSystem<>Node<><>0<>0<><>::
 SaveSystem.gd::GDScript::485315861979317151::1784389909::0::1::::SaveSystem<>Node<><>0<>0<><>::
-SelectMenu.gd::GDScript::439202066668374422::1784583376::0::1::::SelectMenu<>Control<><>0<>0<><>::
+SelectMenu.gd::GDScript::439202066668374422::1784641641::0::1::::SelectMenu<>Control<><>0<>0<><>::
 ShopPanel.gd::GDScript::473820464989183141::1784389909::0::1::::ShopPanel<>Panel<><>0<>0<><>::
 SkillData.gd::GDScript::7693736634377838352::1784389909::0::1::::SkillData<>Resource<><>0<>0<><>::
 SoundRoom.gd::GDScript::3311604537699361751::1784583376::0::1::::SoundRoom<>Control<><>0<>0<><>::
@@ -4167,8 +4178,10 @@ WeaponData.gd::GDScript::346496852826946000::1784389909::0::1::::WeaponData<>Res
 WorldMap.gd::GDScript::1055851736146678649::1784389909::0::1::::WorldMap<>Node2D<><>0<>0<><>::
 ::res://Shaders/::1784389909
 team_palette_swap.gdshader::Shader::8113519118552212158::1784389909::0::1::::<><><>0<>0<><>::
-::res://tools/::1784583376
-COMMANDS.txt::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::
+::res://tools/::1784641641
+COMMANDS.txt::TextFile::-1::1784641641::0::1::::<><><>0<>0<><>::
+::res://tools/data/::1784641641
+jis_x0208_kanji.txt::TextFile::-1::1784641641::0::1::::<><><>0<>0<><>::
 ::res://tools/translator_app/::1784583376
 README.md::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::
 requirements.txt::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::

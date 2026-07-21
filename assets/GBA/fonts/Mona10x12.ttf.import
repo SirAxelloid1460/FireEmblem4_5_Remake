@@ -2,18 +2,18 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dpeq53yp5edm"
-path="res://.godot/imported/Mona12TextJP.ttf-a88a79bc71d057b3ac7605205014ec89.fontdata"
+uid="uid://cergbm6ts11dj"
+path="res://.godot/imported/Mona10x12.ttf-c625266f0f71c2ce86e672173834846d.fontdata"
 
 [deps]
 
-source_file="res://assets/GBA/fonts/Mona12TextJP.ttf"
-dest_files=["res://.godot/imported/Mona12TextJP.ttf-a88a79bc71d057b3ac7605205014ec89.fontdata"]
+source_file="res://assets/GBA/fonts/Mona10x12.ttf"
+dest_files=["res://.godot/imported/Mona10x12.ttf-c625266f0f71c2ce86e672173834846d.fontdata"]
 
 [params]
 
 Rendering=null
-antialiasing=0
+antialiasing=1
 generate_mipmaps=false
 disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
@@ -22,8 +22,8 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
-hinting=0
-subpixel_positioning=0
+hinting=3
+subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null

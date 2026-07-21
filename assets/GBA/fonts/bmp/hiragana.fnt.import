@@ -3,12 +3,12 @@
 importer="font_data_bmfont"
 type="FontFile"
 uid="uid://b7b3571e78363"
-path="res://.godot/imported/hiragana.fnt-7b3571e7836374a853fad26971060b13.fontdata"
+path="res://.godot/imported/hiragana.fnt-548a1c0cd82a8d2b1312183609a94c3c.fontdata"
 
 [deps]
 
 source_file="res://assets/GBA/fonts/bmp/hiragana.fnt"
-dest_files=["res://.godot/imported/hiragana.fnt-7b3571e7836374a853fad26971060b13.fontdata"]
+dest_files=["res://.godot/imported/hiragana.fnt-548a1c0cd82a8d2b1312183609a94c3c.fontdata"]
 
 [params]
 
