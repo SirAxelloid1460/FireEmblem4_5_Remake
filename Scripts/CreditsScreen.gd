@@ -654,11 +654,8 @@ func _build_scroll_content() -> void:
 				y += tbl.get_minimum_size().y + LINE_GAP
 			_:
 				var lbl := _make_label(entry)
+				lbl.position = Vector2(0, y)
 				container.add_child(lbl)
-				# Vertical por offsets (el horizontal ya lo fija _make_label con
-				# anclas 0.5; usar position lo sobreescribiría y descentraría).
-				lbl.offset_top = y
-				lbl.offset_bottom = y
 				y += lbl.get_minimum_size().y + LINE_GAP
 
 	_content_height = y
@@ -715,24 +712,12 @@ func _make_label(entry: Dictionary) -> Label:
 			lbl.add_theme_font_size_override("font_size", SIZE_TEXT)
 			lbl.add_theme_color_override("font_color", COLOR_TEXT)
 
-	# El label ocupa EXACTAMENTE el ancho del bloque de créditos (no toda la pista)
-	# y se CENTRA por anclas (0.5), así su ancho es fijo (= wrap_w) sea cual sea el
-	# ancho del contenedor o el momento del layout. A ese ancho, el auto-ajuste
-	# (AUTOWRAP_WORD_SMART) decide dónde saltar de línea SIN partir palabras, y la
-	# altura reservada abajo (get_minimum_size().y, calculada con custom_minimum_size.x
-	# = wrap_w) coincide con lo que se dibuja de verdad — sin huecos ni solapes.
-	# Aplica a las líneas largas del DISCLAIMER y el SPECIAL THANKS.
-	var wrap_w: float = min(float(CONTENT_MAX_W), _get_inner_width())
-	lbl.custom_minimum_size = Vector2(wrap_w, 0)
-	lbl.anchor_left = 0.5
-	lbl.anchor_right = 0.5
-	lbl.anchor_top = 0.0
-	lbl.anchor_bottom = 0.0
-	lbl.offset_left = -wrap_w / 2.0
-	lbl.offset_right = wrap_w / 2.0
-	# Fija el ancho ya (get_size().x = wrap_w) para que el cálculo de auto-ajuste y
-	# de altura mínima use ese ancho aunque el layout del contenedor aún no corriera.
-	lbl.size = Vector2(wrap_w, 0)
+	# Centramos el label respecto a un ancho máximo
+	lbl.custom_minimum_size = Vector2(min(CONTENT_MAX_W, _get_inner_width()), 0)
+	# Lo desplazamos horizontalmente al centro tras conocer su tamaño
+	lbl.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
+	lbl.offset_left = 0
+	lbl.offset_right = 0
 	return lbl
 
 

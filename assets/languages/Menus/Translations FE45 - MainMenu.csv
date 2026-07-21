@@ -107,3 +107,9 @@ RESOLUTION,Resolution,Resolución,Auflösung,,Résolution,
 RESOLUTIONDESC,Change game resolution (applied on restart),Cambiar la resolución (se aplica al reiniciar),Auflösung ändern (beim Neustart übernommen),,Changer la résolution (appliquée au redémarrage),
 MOUSE,Mouse,Ratón,Maus,,Souris,
 MOUSEDESC,"Enable mouse; left click = A, right click = B","Activar ratón; clic izquierdo = A, derecho = B","Maus aktivieren; Linksklick = A, Rechtsklick = B",,"Activer la souris ; clic gauche = A, droit = B",
+,,,,,,
+RESUMECHAPTER,Resume Chapter,Continuar Capítulo,Kapitel fortsetzen,チャプター再開,Reprendre le chapitre,Riprendi capitolo
+NODATA,-- NO DATA --,-- SIN DATOS --,-- KEINE DATEN --,-- データなし --,-- AUCUNE DONNÉE --,-- NESSUN DATO --
+PLAYTIME,PLAY TIME,TIEMPO DE JUEGO,SPIELZEIT,プレイ時間,TEMPS DE JEU,TEMPO DI GIOCO
+INFO,Info,Info,Info,情報,Infos,Info
+RESTARTNOGAME,No chapter in progress,No hay capítulo en curso,Kein laufendes Kapitel,進行中のチャプターがありません,Aucun chapitre en cours,Nessun capitolo in corso
