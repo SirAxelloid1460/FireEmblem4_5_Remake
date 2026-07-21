@@ -117,9 +117,13 @@ func _min_option_font_size() -> int:
 
 
 ## Elige el mayor tamaño (≤ _option_font_size, ≥ _min_option_font_size) al que TODAS
-## las opciones caben en el panel: por ANCHO (el texto traducido más largo) y por
-## ALTO (todas las filas + separaciones). Así el tamaño es proporcional a la
-## longitud de la traducción y, por ende, al idioma activo.
+## las opciones caben en el panel: por ANCHO y por ALTO (todas las filas +
+## separaciones). Así el tamaño es proporcional a la longitud de la traducción y,
+## por ende, al idioma activo.
+## IMPORTANTE: el ancho se mide en PÍXELES con Font.get_string_size (suma el
+## avance real de cada glifo: una "i" ocupa menos que una "W"), NO por nº de
+## caracteres; y se toma el máximo sobre todas las opciones (el más ANCHO, no el
+## de más letras).
 func _fit_option_font_size(items: Array) -> int:
 	var maxfs: int = _option_font_size()
 	var minfs: int = _min_option_font_size()
