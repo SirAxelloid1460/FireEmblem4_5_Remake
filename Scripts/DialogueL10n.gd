@@ -38,17 +38,27 @@ var _cache: Dictionary = {}
 ## Línea localizada de un `speak`. `fallback_line` = el texto inline del evento
 ## (inglés). Devuelve la traducción del locale activo, o del inglés, o el inline.
 func line(game: String, chapter: String, scene_key: String, index: int, fallback_line: String) -> String:
-	if chapter == "" or scene_key == "":
+	if scene_key == "":
 		return fallback_line
 	var loc := _short_locale(TranslationServer.get_locale())
-	var got = _lookup(game, chapter, loc, scene_key, index)
-	if got != null:
-		return str(got)
-	if loc != FALLBACK_LOCALE:
-		got = _lookup(game, chapter, FALLBACK_LOCALE, scene_key, index)
+	# Prueba el capítulo actual y, si es un evento GLOBAL (muertes, base…), el
+	# documento "global"; en cada uno, idioma activo y luego inglés.
+	for ch in _chapters(chapter):
+		var got = _lookup(game, ch, loc, scene_key, index)
 		if got != null:
 			return str(got)
+		if loc != FALLBACK_LOCALE:
+			got = _lookup(game, ch, FALLBACK_LOCALE, scene_key, index)
+			if got != null:
+				return str(got)
 	return fallback_line
+
+
+## Capítulos a consultar en orden: el actual y, si no lo es, "global".
+func _chapters(chapter: String) -> Array:
+	if chapter == "" or chapter == "global":
+		return ["global"]
+	return [chapter, "global"]
 
 
 ## Vacía la caché (al cambiar de idioma o de capítulo, si se quiere forzar).

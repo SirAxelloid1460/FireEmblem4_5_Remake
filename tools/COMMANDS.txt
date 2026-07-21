@@ -148,3 +148,12 @@ python tools/translator_app/build.py          # empaquetar .exe/binario (pip ins
 # y docs/examples/dialogue_format/Chapter01.{en,es,it,jp}.json.
 python tools/dialogue_l10n.py check docs/examples/dialogue_format/Chapter01   # reporte de alineación
 python tools/dialogue_l10n.py normalize <cap>.jp.json -o <cap>.jp.norm.json   # jp -> claves ⟦...⟧
+
+# EXTRACTOR: separa un events.json de LT en (a) documento por idioma base inglés
+# (data/<game>/events/lang/<chapter>/dialogue.en.json — el formato que lee
+# DialogueL10n y que traducen los idiomas) y (b) documento general independiente
+# de la localización (events.general.json, con los `speak` sustituidos por claves
+# @dlg:<EVENTO>#<idx>). Lossless (--verify comprueba el round-trip).
+python tools/build_dialogue_l10n.py --game fe5 --verify     # solo round-trip lossless
+python tools/build_dialogue_l10n.py --game fe5              # escribe lang/ + events.general.json
+python tools/build_dialogue_l10n.py --input <events.json> --out <dir>   # entrada/salida a mano

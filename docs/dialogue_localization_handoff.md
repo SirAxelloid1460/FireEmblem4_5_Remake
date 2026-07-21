@@ -146,11 +146,30 @@ inglés en las fusiones/rangos aún sin desglosar.
 > evento** (la etiqueta de hablante del documento es solo metadato). Esto tolera
 > los desajustes de hablante que trae la extracción (p. ej. `es` OPENING2).
 
-## Pendiente de implementar (proyecto)
+## Extractor implementado — `tools/build_dialogue_l10n.py`
 
-- `tools/` de extracción LT → (dialogue por idioma) + (general con claves), sobre
-  `build_dialogue_scenes.py` como base lossless (Reajuste 3, parte de datos). Al
-  reconstruir los eventos, nombrar las escenas (`name`) como las claves de los
-  documentos y colocar los `dialogue.<locale>.json` en la ruta de arriba.
+Separa un `events.json` de LT (mismo formato que `data/<game>/events/events.json`)
+en los dos documentos del Reajuste 3, de forma **lossless** (`--verify`):
+
+- **Por idioma (base inglesa)**: `data/<game>/events/lang/<chapter>/dialogue.en.json`
+  con `{ "<EVENTO>": [ {"SPEAKER": "línea"}, ... ] }` — solo los `speak`, en orden,
+  por evento. Es EXACTAMENTE el formato que traducen los idiomas y que lee
+  `DialogueL10n`. `<chapter>` = `level_nid` (los globales → `"global"`).
+- **General (sin localización)**: `data/<game>/events/events.general.json` = los
+  eventos con el texto de cada `speak` sustituido por la clave `@dlg:<EVENTO>#<idx>`;
+  todo lo demás (spawns, movimientos, retratos, música…) intacto.
+
+Probado con los `events.json` reales de ambos juegos: FE4 (167 eventos → 143
+escenas / 695 líneas) y FE5, round-trip lossless en los dos.
+
+> `DialogueL10n` consulta el capítulo actual y, además, el documento `"global"`,
+> para que los eventos globales (muertes, base) resuelvan su diálogo aunque se
+> disparen dentro de un nivel concreto.
+
+## Pendiente
+
 - Desglosar fusiones/rangos japoneses (`OPENING1 · OPENING3`, `WORLDMAP1-6`) a
   escenas concretas (fase de casado; `dialogue_l10n.py check` los lista).
+- (Opcional) migrar el runtime a cargar `events.general.json` + `dialogue.en.json`
+  en vez del `events.json` con inglés inline (hoy el inline sigue siendo el
+  fallback final, así que ambos conviven sin romper nada).
