@@ -93,7 +93,7 @@ const FADE_TIME  := 0.30
 const DIFF_BTN_W := 470
 const DIFF_TINT := { "normal": Color(0.52, 0.86, 0.58), "elite": Color(0.92, 0.50, 0.52) }
 const BOX_ORNATE := "res://assets/menus/menu_box_6x.png"   # panel ornamentado (desc / slots)
-const TITLE_BG   := "res://assets/menus/menu_bg_white.png"  # panel de título del submenú
+const SAVE_PANEL_BG := "res://assets/menus/menu_bg_white.png"  # panel de título/playtime del submenú
 
 # ── Submenú de guardado (Continue / Load → "Resume Chapter") ──────────────────
 const SAVE_SLOTS := 3
@@ -543,7 +543,7 @@ func _titled_panel(text: String, pos: Vector2, sz: Vector2, fsize: int, color: C
 	root.position = pos
 	root.size = sz
 	var np := NinePatchRect.new()
-	np.texture = load(AssetSet.p(TITLE_BG))
+	np.texture = load(AssetSet.p(SAVE_PANEL_BG))
 	np.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	for m in ["patch_margin_left", "patch_margin_right", "patch_margin_top", "patch_margin_bottom"]:
 		np.set(m, 8)
