@@ -102,6 +102,59 @@ var _tileset_search_order: Array = [PATH_TILESETS_FE4, PATH_TILESETS_FE5,
 var _tilemap_search_order: Array = [PATH_TILEMAPS_FE4, PATH_TILEMAPS_FE5]
 
 
+# ── Fuente de respaldo japonesa (kana/kanji) ─────────────────────────────────
+# Las sprite-fonts bitmap del LT (text.fnt, convo.fnt, …) solo traen glifos
+# latinos, así que el japonés salía como cuadros (tofu). El font vectorial de
+# Fire Emblem Heroes (ya presente en el repo, ~35k glifos con kana/kanji) se
+# engancha como FALLBACK de esas bitmap-fonts: Godot dibuja de él cualquier
+# glifo que la bitmap no tenga, escalado al tamaño pedido. Es un asset universal
+# (no depende del set gráfico), por eso se referencia por ruta directa.
+const JP_FALLBACK_FONT := "res://assets/HD/fonts/Fire_Emblem_Heroes_Font.ttf"
+# Bitmap-fonts que renderizan palabras (no solo dígitos) y por tanto pueden
+# necesitar el respaldo japonés. Rutas LÓGICAS (se re-enraízan al set activo).
+const _JP_TARGET_FONTS := [
+	"res://assets/fonts/bmp/text.fnt",
+	"res://assets/fonts/bmp/label.fnt",
+	"res://assets/fonts/bmp/info.fnt",
+	"res://assets/fonts/bmp/narrow.fnt",
+	"res://assets/fonts/bmp/small.fnt",
+	"res://assets/fonts/bmp/class.fnt",
+	"res://assets/fonts/bmp/chapter.fnt",
+	"res://assets/fonts/bmp/convo.fnt",
+	"res://assets/fonts/bmp/nconvo.fnt",
+	"res://assets/fonts/bmp/credit.fnt",
+	"res://assets/fonts/bmp/credit_title.fnt",
+]
+
+
+func _ready() -> void:
+	_attach_jp_fallback()
+
+
+## Engancha (una vez) el font japonés como fallback de las bitmap-fonts de UI.
+## Se corre al arrancar (primer autoload): carga cada bitmap-font por su ruta
+## cacheada, así todas las escenas que luego hagan load() reciben la MISMA
+## instancia ya con el fallback. Idempotente (no duplica el fallback).
+func _attach_jp_fallback() -> void:
+	if not ResourceLoader.exists(JP_FALLBACK_FONT):
+		return
+	var jp := load(JP_FALLBACK_FONT)
+	if jp == null:
+		return
+	for logical in _JP_TARGET_FONTS:
+		var p: String = AssetSet.p(logical)
+		if not ResourceLoader.exists(p):
+			continue
+		var f = load(p)
+		if not (f is Font):
+			continue
+		var fbs: Array = f.fallbacks
+		if jp in fbs:
+			continue
+		fbs.append(jp)
+		f.fallbacks = fbs
+
+
 ## Cambia el orden de búsqueda según el juego activo.
 ##   game: "fe4" o "fe5"
 func set_active_game(game: String) -> void:

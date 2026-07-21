@@ -39,6 +39,7 @@ const LANGS := [
 	{ "id": "es", "name": "Español" },
 	{ "id": "de", "name": "Deutsch" },
 	{ "id": "fr", "name": "Français" },
+	{ "id": "it", "name": "Italiano" },
 	{ "id": "ja", "name": "Japanese" },
 ]
 # Resoluciones (aspecto 3:2, nativo del juego). Se aplican al reiniciar.
