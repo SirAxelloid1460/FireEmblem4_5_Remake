@@ -101,7 +101,7 @@
  {
   "nid": "Alvar",
   "name": "Alvar",
-  "desc": "Elite knight of Nordion and younger triplet brother of Eve and Eva.",
+  "desc": "Elite knight of Nordion and the younger triplet brother of Eve and Evar.",
   "klass": "Paladin",
   "level": 8,
   "gender": "M",
@@ -999,7 +999,7 @@
  {
   "nid": "Eve",
   "name": "Eve",
-  "desc": "Elite knight of Nordion and the middle triplet brother of Eve and Alva.",
+  "desc": "Elite knight of Nordion and the middle triplet brother of Evar and Alvar.",
   "klass": "Paladin",
   "level": 8,
   "gender": "M",
@@ -1047,7 +1047,7 @@
  {
   "nid": "Evar",
   "name": "Evar",
-  "desc": "Elite knight of Nordion and the older triplet brother of Eva and Alva.",
+  "desc": "Elite knight of Nordion and the older triplet brother of Eve and Alvar.",
   "klass": "Paladin",
   "level": 8,
   "gender": "M",
