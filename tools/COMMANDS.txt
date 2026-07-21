@@ -142,3 +142,9 @@ python tools/build_dialogue_scenes.py --from-scenes <scenes.json> # escenas -> c
 python tools/translator_app/app.py            # abrir la app de escritorio (pip install pywebview)
 python tools/translator_app/build.py          # empaquetar .exe/binario (pip install pyinstaller)
 #   Web: el mismo translator.html abre en cualquier navegador.
+
+# L10N DE DIÁLOGOS: normaliza claves japonesas (comentario latino ⟦...⟧) y reporta
+# la alineación en/es/it/jp de un capítulo. Ver docs/dialogue_localization_handoff.md
+# y docs/examples/dialogue_format/Chapter01.{en,es,it,jp}.json.
+python tools/dialogue_l10n.py check docs/examples/dialogue_format/Chapter01   # reporte de alineación
+python tools/dialogue_l10n.py normalize <cap>.jp.json -o <cap>.jp.norm.json   # jp -> claves ⟦...⟧
