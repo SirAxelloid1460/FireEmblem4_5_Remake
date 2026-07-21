@@ -2349,7 +2349,7 @@
  {
   "id": "DarkMage",
   "name": "Dark Mage",
-  "desc": "A seasoned follower of the dark god Loptyr with great magical powers.",
+  "desc": "A seasoned follower of the dark god Loptous with great magical powers.",
   "tier": 2,
   "movement_group": "Mages",
   "promotes_from": "LoptoMage",
