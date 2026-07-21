@@ -119,10 +119,38 @@ para que el traductor solo vea lo traducible.
 
 ---
 
+## Runtime implementado — `DialogueL10n` (autoload) + hook en `EventSystem`
+
+Ya está en el proyecto (autoload registrado en `project.godot`):
+
+- **Documentos por idioma en runtime**:
+  `res://data/<game>/events/lang/<chapter>/dialogue.<locale>.json`
+  con el formato `{ "<SCENE_KEY>": [ {"SPEAKER":"línea"}, ... ] }`.
+  - `<chapter>` = el `level_nid` del capítulo (el mismo que carga `EventSystem`).
+  - `<locale>` = `en`/`es`/`de`/`fr`/`it`/`ja`. El japonés se acepta como
+    `dialogue.ja.json` **o** `dialogue.jp.json` (alias), y sus claves se
+    normalizan por `⟦...⟧` (Reajuste 2, `_latin_key`).
+- **Casado línea a línea**: la **escena** = el `name` del evento; el **índice** =
+  la posición del `speak` dentro de ese evento (contando solo los `speak` que se
+  ejecutan). `EventSystem._cmd_speak` pide
+  `DialogueL10n.line(game, chapter, scene, index, inline_en)`.
+- **Cadena de fallback**: idioma activo → inglés → texto inline del evento. Así,
+  mientras no existan los documentos (o no casen las claves), el juego sigue
+  mostrando el inglés inline actual, sin romperse.
+
+Verificado con los ejemplos: `es`/`it` resuelven por (escena, índice); el japonés
+resuelve las escenas cuya `⟦clave⟧` es única (p. ej. `OSIANHOUSEOSIAN`) y cae a
+inglés en las fusiones/rangos aún sin desglosar.
+
+> El texto viene del documento; **quién habla y el retrato los sigue poniendo el
+> evento** (la etiqueta de hablante del documento es solo metadato). Esto tolera
+> los desajustes de hablante que trae la extracción (p. ej. `es` OPENING2).
+
 ## Pendiente de implementar (proyecto)
 
 - `tools/` de extracción LT → (dialogue por idioma) + (general con claves), sobre
-  `build_dialogue_scenes.py` como base lossless.
-- Autoload `DialogueL10n` + hook en `EventSystem` (resuelve escena por clave y
-  locale, fallback a en) — ver el bloque "Runtime" del design doc.
-- Aplicar `latin_key()` al cargar documentos japoneses (Reajuste 2).
+  `build_dialogue_scenes.py` como base lossless (Reajuste 3, parte de datos). Al
+  reconstruir los eventos, nombrar las escenas (`name`) como las claves de los
+  documentos y colocar los `dialogue.<locale>.json` en la ruta de arriba.
+- Desglosar fusiones/rangos japoneses (`OPENING1 · OPENING3`, `WORLDMAP1-6`) a
+  escenas concretas (fase de casado; `dialogue_l10n.py check` los lista).

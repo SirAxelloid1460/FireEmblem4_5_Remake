@@ -85,6 +85,13 @@ var _music_player: AudioStreamPlayer = null
 # input de gameplay para no mover unidades durante una cinemática/diálogo).
 var _busy_depth: int = 0
 
+# Contexto de localización de diálogos (DialogueL10n): capítulo actual, escena en
+# curso (= `name` del evento) e índice del `speak` dentro de la escena. Con esto
+# se resuelve la línea traducida del idioma activo (fallback al texto inline).
+var _l10n_chapter: String = ""
+var _l10n_scene: String = ""
+var _l10n_speak_i: int = 0
+
 
 ## True mientras se ejecuta algún evento (lo consulta GameManager._input).
 func is_busy() -> bool:
@@ -110,6 +117,7 @@ signal force_defeat()
 ##   Cada lista define la SECUENCIA de disparo. Sin manifest, se ordena por
 ##   `priority` descendente (misma intención, fallback robusto).
 func load_chapter_events(events_data: Array, level_nid: String, order_manifest: Dictionary = {}) -> void:
+	_l10n_chapter = level_nid                    # capítulo para DialogueL10n
 	events_by_trigger.clear()
 	events_by_name.clear()
 	fired_events.clear()
@@ -197,7 +205,10 @@ func trigger_event(trigger_name: String, context: Dictionary = {}) -> Array:
 		# Python completas; verificamos cosas básicas).
 		if not _evaluate_condition(str(ev.get("condition", "True")), context):
 			continue
-		# Ejecutar.
+		# Ejecutar. Reinicia el contexto de localización: escena = nombre del
+		# evento, índice de `speak` a 0 (las líneas se numeran dentro de la escena).
+		_l10n_scene = ev_name
+		_l10n_speak_i = 0
 		event_started.emit(ev_name)
 		await _execute_commands(ev.get("commands", []), context)
 		fired_events.append(ev_name)
@@ -596,9 +607,24 @@ func _cmd_speak(args: Array, context: Dictionary) -> void:
 		return
 	var nid := _portrait_nid(str(args[0]), context)
 	var line := str(args[1]) if args.size() >= 2 else ""
+	# Localización: sustituye la línea inline (inglés) por la del idioma activo
+	# según (escena, índice). Si no hay documento/traducción, se queda el inline.
+	# El índice avanza SIEMPRE (aunque no haya traducción) para no desalinear.
+	var l10n := get_node_or_null("/root/DialogueL10n")
+	if l10n != null:
+		line = str(l10n.line(_l10n_game(), _l10n_chapter, _l10n_scene, _l10n_speak_i, line))
+	_l10n_speak_i += 1
 	# Retrato de respaldo por si el hablante no estaba en escena (sin add_portrait).
 	var fallback := _portrait_tex(nid)
 	await _ensure_dialogue().play_line(nid, nid, line, fallback)
+
+
+## Juego activo ("fe4"/"fe5") para DialogueL10n, leído de GameMode (autoload).
+func _l10n_game() -> String:
+	var gm := get_node_or_null("/root/GameMode")
+	if gm != null and gm.has_method("get_current_game"):
+		return str(gm.get_current_game())
+	return "fe4"
 
 
 ## nid de retrato: resuelve tokens {unit}/{unit2} al nombre de la unidad.
