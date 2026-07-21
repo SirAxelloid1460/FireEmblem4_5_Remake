@@ -608,7 +608,7 @@
       [
         "add_unit",
         [
-          "Evan",
+          "Eve",
           "24,53",
           "",
           "stack"
@@ -617,7 +617,7 @@
       [
         "remove_skill",
         [
-          "Evan",
+          "Eve",
           "Canto_Plus",
           "no_banner"
         ]

@@ -159,7 +159,7 @@
 | Amalda | Paladin | F | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
 | Conomor | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Eldigan | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
-| Evan | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Eve | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Evar | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Fred | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Oifey | Paladin | M | ⬜ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |

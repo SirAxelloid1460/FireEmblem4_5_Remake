@@ -997,8 +997,8 @@
   ]
  },
  {
-  "nid": "Evan",
-  "name": "Evan",
+  "nid": "Eve",
+  "name": "Eve",
   "desc": "Elite knight of Nordion and the middle triplet brother of Eve and Alva.",
   "klass": "Paladin",
   "level": 8,
@@ -1039,7 +1039,7 @@
   "holy_blood": {},
   "tags": [],
   "affinity": "Fire",
-  "portrait_nid": "Evan",
+  "portrait_nid": "Eve",
   "games": [
    "FE4"
   ]
@@ -6481,7 +6481,7 @@
   ]
  },
  {
-  "nid": "Ulster",
+  "nid": "Skasaher",
   "name": "Scáthach",
   "desc": "Ayra's son; a swordsman.",
   "klass": "Swordfighter",
@@ -6519,7 +6519,7 @@
   },
   "tags": [],
   "affinity": "",
-  "portrait_nid": "Ulster",
+  "portrait_nid": "Skasaher",
   "games": [
    "FE4"
   ]

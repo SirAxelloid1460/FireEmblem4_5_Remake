@@ -17,7 +17,7 @@
 #   Madre        Hijo canon (M)   Hija canon (F)   Sub. (M)     Sub. (F)
 #   ─────────────────────────────────────────────────────────────────────
 #   Aideen       Lester (Bow)     Lana (Staff)     Dimna        Muirne
-#   Ayra         Ulster (Sword)   Larcei (Sword)   Roddlevan    Radney
+#   Ayra         Skasaher (Sword) Larcei (Sword)   Roddlevan    Radney
 #   Lachesis     Diarmuid (Sword) Nanna (Staff)    Tristan      Jeanne
 #   Sylvia       Coirpre (Staff)  Lene (Refresh)   Charlot      Laylea
 #   Erinys       Ced (Wind)       Fee (Lance/Fly)  Hawk         Femina
@@ -77,7 +77,7 @@ const SUBSTITUTE_DEFS: Dictionary = {
 	},
 	# === Ayra ===
 	"Roddlevan": {
-		"replaces": "Ulster", "mother_id": "Ayra", "gender": "M",
+		"replaces": "Skasaher", "mother_id": "Ayra", "gender": "M",
 		"klass": "SwordFighter", "tier": 1, "level": 5,
 		"desc": "Quiet swordman from Isaach who lost his parents in the early war.",
 		"bases":   { "HP":26,"STR":8,"MAG":0,"SKL":10,"SPD":11,"LCK":3,"DEF":6,"RES":0,"CON":9 },
@@ -316,7 +316,7 @@ static func _build_substitute_def(sub_id: String, father: Dictionary,
 # ── Tabla madre → hijos CANÓNICOS por género ─────────────────────────────────
 const MOTHER_TO_CHILDREN: Dictionary = {
 	"Aideen":   { "M": "Lester",  "F": "Lana" },
-	"Ayra":     { "M": "Ulster",  "F": "Larcei" },
+	"Ayra":     { "M": "Skasaher",  "F": "Larcei" },
 	"Lachesis": { "M": "Delmud",  "F": "Nanna" },
 	"Sylvia":   { "M": "Coirpre", "F": "Lene" },
 	"Erinys":   { "M": "Ced",     "F": "Fee" },

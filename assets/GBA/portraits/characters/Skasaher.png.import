@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ba4mi6dgqynsn"
-path="res://.godot/imported/Paladin_Evan_Sword.png-7da7e09b514addcb994aad90e306180e.ctex"
+uid="uid://fslylteqi7tq"
+path="res://.godot/imported/Skasaher.png-06ff9ef1fa34fce073ebb829b5629189.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GBA/combat_anims/Paladin_Evan/Paladin_Evan_Sword.png"
-dest_files=["res://.godot/imported/Paladin_Evan_Sword.png-7da7e09b514addcb994aad90e306180e.ctex"]
+source_file="res://assets/GBA/portraits/characters/Skasaher.png"
+dest_files=["res://.godot/imported/Skasaher.png-06ff9ef1fa34fce073ebb829b5629189.ctex"]
 
 [params]
 

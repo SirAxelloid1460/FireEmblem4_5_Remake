@@ -189,7 +189,7 @@
     "generic": false
    },
    {
-    "nid": "Evan",
+    "nid": "Eve",
     "team": "ally",
     "ai": "None",
     "ai_group": null,
@@ -3548,7 +3548,7 @@
     "nid": "AEE",
     "units": [
      "Alvar",
-     "Evan",
+     "Eve",
      "Evar"
     ],
     "positions": {}

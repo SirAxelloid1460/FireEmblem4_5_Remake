@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1lv7ojq2al8x"
-path="res://.godot/imported/Paladin_Evan_MagicSword.png-0f170a9298e698f56a3e8b0350e4b3cb.ctex"
+uid="uid://iqf13euokk8l"
+path="res://.godot/imported/Eve.png-bb52a053ecfe0363b53379c252ee8505.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GBA/combat_anims/Paladin_Evan/Paladin_Evan_MagicSword.png"
-dest_files=["res://.godot/imported/Paladin_Evan_MagicSword.png-0f170a9298e698f56a3e8b0350e4b3cb.ctex"]
+source_file="res://assets/GBA/portraits/characters/Eve.png"
+dest_files=["res://.godot/imported/Eve.png-bb52a053ecfe0363b53379c252ee8505.ctex"]
 
 [params]
 

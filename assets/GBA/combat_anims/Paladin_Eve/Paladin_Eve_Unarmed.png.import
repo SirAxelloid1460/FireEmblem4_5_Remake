@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://iqf13euokk8l"
-path="res://.godot/imported/Evan.png-bb52a053ecfe0363b53379c252ee8505.ctex"
+uid="uid://de6l46ipxeaue"
+path="res://.godot/imported/Paladin_Eve_Unarmed.png-eded1fda3276c2cf99474b69460b318a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GBA/portraits/characters/Evan.png"
-dest_files=["res://.godot/imported/Evan.png-bb52a053ecfe0363b53379c252ee8505.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Eve/Paladin_Eve_Unarmed.png"
+dest_files=["res://.godot/imported/Paladin_Eve_Unarmed.png-eded1fda3276c2cf99474b69460b318a.ctex"]
 
 [params]
 

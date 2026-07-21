@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fslylteqi7tq"
-path="res://.godot/imported/Ulster.png-06ff9ef1fa34fce073ebb829b5629189.ctex"
+uid="uid://ba4mi6dgqynsn"
+path="res://.godot/imported/Paladin_Eve_Sword.png-7da7e09b514addcb994aad90e306180e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GBA/portraits/characters/Ulster.png"
-dest_files=["res://.godot/imported/Ulster.png-06ff9ef1fa34fce073ebb829b5629189.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Eve/Paladin_Eve_Sword.png"
+dest_files=["res://.godot/imported/Paladin_Eve_Sword.png-7da7e09b514addcb994aad90e306180e.ctex"]
 
 [params]
 
