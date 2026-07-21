@@ -355,7 +355,7 @@
  {
   "nid": "Beowulf",
   "name": "Beowulf",
-  "desc": "A mercenary from Conote alongside Voltz, his friend, and partner.",
+  "desc": "A mercenary from Conote alongside Waltz, his friend, and partner.",
   "klass": "FreeKnight",
   "level": 1,
   "gender": "M",
@@ -457,7 +457,7 @@
  {
   "nid": "Brigid",
   "name": "Brigid",
-  "desc": "Elder daughter of Duke Ring of Yngvi, twin sister of Edain, and half-sister of Andrei.",
+  "desc": "Elder daughter of Duke Ring of Yngvi, twin sister of Edain, and half-sister of Andrey.",
   "klass": "Sniper",
   "level": 1,
   "gender": "F",
@@ -711,7 +711,7 @@
  {
   "nid": "Dew",
   "name": "Dew",
-  "desc": "A little boy assigned to guard Aideen when they were realesed from Marpha.",
+  "desc": "A little boy assigned to guard Aideen when they were released from Marpha.",
   "klass": "Thief",
   "level": 1,
   "gender": "M",
@@ -758,7 +758,7 @@
  {
   "nid": "DiMaggio",
   "name": "DiMaggio",
-  "desc": "Bandit Cheif under Gandolf orders.",
+  "desc": "Bandit Chief under Gandolf's orders.",
   "klass": "Fighter",
   "level": 10,
   "gender": "M",
@@ -1319,7 +1319,7 @@
  {
   "nid": "Gerrard",
   "name": "Gerrard",
-  "desc": "Bandit Cheif under Gandolf orders.",
+  "desc": "Bandit Chief under Gandolf's orders.",
   "klass": "Fighter",
   "level": 20,
   "gender": "M",
@@ -1730,7 +1730,7 @@
  {
   "nid": "Midir",
   "name": "Midir",
-  "desc": "Knight in the service of Grannvale's House Jungby, used to with bow fighting.",
+  "desc": "Knight in the service of Grannvale's House Jungby, used to bow fighting.",
   "klass": "ArcherKnight",
   "level": 1,
   "gender": "M",
@@ -1935,7 +1935,7 @@
  {
   "nid": "Quan",
   "name": "Quan",
-  "desc": "Lenster's Prince and Gáe Bolg's inheritor. Husband of Ethlyn and old friend Sigurd.",
+  "desc": "Lenster's Prince and Gáe Bolg's inheritor. Husband of Ethlyn and old friend of Sigurd.",
   "klass": "DukeKnight",
   "level": 1,
   "gender": "M",
@@ -2707,7 +2707,7 @@
  {
   "nid": "Mareeta",
   "name": "Mareeta",
-  "desc": "Adoptive daughter of Eyvel and a naturally gifted swordfigther of the Fiana Freeblades.",
+  "desc": "Adoptive daughter of Eyvel and a naturally gifted swordfighter of the Fiana Freeblades.",
   "klass": "Swordfighter",
   "level": 2,
   "gender": "F",
@@ -2760,7 +2760,7 @@
  {
   "nid": "Marty",
   "name": "Marty",
-  "desc": "Member of the Mount Violdrake Bandits and ally of the Fiana Freeblades. ",
+  "desc": "Member of the Mount Violdrake Bandits and ally of the Fiana Freeblades.",
   "klass": "Bandit",
   "level": 1,
   "gender": "M",
@@ -2807,7 +2807,7 @@
  {
   "nid": "Nanna",
   "name": "Nanna",
-  "desc": "Daugther of Lachesis of Nordion and Finn, and younger sister of Darmuid.",
+  "desc": "Daughter of Lachesis of Nordion and Finn, and younger sister of Diarmuid.",
   "klass": "Troubadour",
   "level": 1,
   "gender": "F",
@@ -5937,7 +5937,7 @@
  {
   "nid": "Travant",
   "name": "Travant",
-  "desc": "King of Thracia and wielder of Daínn's blood; Altena and Areone's adoptive father.",
+  "desc": "King of Thracia and wielder of Dainn's blood; Altena and Areone's adoptive father.",
   "klass": "DragonMaster",
   "level": 30,
   "gender": "M",
