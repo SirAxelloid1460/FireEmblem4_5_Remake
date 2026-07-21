@@ -39,8 +39,12 @@ const LANGS := [
 	{ "id": "es", "name": "Español" },
 	{ "id": "de", "name": "Deutsch" },
 	{ "id": "fr", "name": "Français" },
+	{ "id": "it", "name": "Italiano" },
 	{ "id": "ja", "name": "Japanese" },
 ]
+# Idiomas con traducción lista. El resto se muestra en gris con " (W.I.P)" y el
+# carrusel NO se detiene en ellos (no se pueden aplicar hasta completarlos).
+const READY_LANGS := ["en", "es"]
 # Resoluciones (aspecto 3:2, nativo del juego). Se aplican al reiniciar.
 const RESOLUTIONS := ["720x480", "960x640", "1200x800", "1440x960", "1920x1280"]
 # Modos de ventana (claves de traducción). Se aplican en vivo.
@@ -67,6 +71,10 @@ const COLOR_OUTLINE  := Color(0.0, 0.0, 0.0, 1.0)
 const SEG_ON         := Color(1.00, 0.84, 0.36, 1.0)
 const SEG_OFF        := Color(0.22, 0.24, 0.30, 1.0)
 
+# SFX de navegación (mismos assets que el menú principal).
+const SFX_NAV    := "Select 5"
+const SFX_CHANGE := "Select 4"
+
 var _specs: Array = []
 var _ui: Array = []
 var _sel: int = 0
@@ -86,6 +94,7 @@ var _ctrl_hand: TextureRect = null
 var _ctrl_lbl: Label = null
 var _title_lbl: Label = null            # rótulo "Configuration" (para re-traducir)
 var _sections: Array = []               # [{spec, lbl}] de las secciones (re-traducir)
+var _sfx: AudioStreamPlayer = null      # reproductor de SFX de navegación
 
 
 func _ready() -> void:
@@ -456,14 +465,27 @@ func _build_row(spec: Dictionary) -> Variant:
 		row["flag"] = flag
 		row["lang_lbl"] = nm
 	else:
-		for choice in spec["choices"]:
-			var c := Label.new()
-			c.text = str(choice)
-			c.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-			c.custom_minimum_size = Vector2(0, ROW_H)
-			_font_it(c, 64, COLOR_DIM, 3)
-			value_box.add_child(c)
-			row["choices"].append(c)
+		# Carrusel genérico (enum/toggle/set): [◄] valor [►]. Solo se muestra UNA
+		# opción a la vez → nunca desborda aunque haya muchas o muy largas.
+		var la := Label.new()
+		la.text = "<"
+		la.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		la.custom_minimum_size = Vector2(0, ROW_H)
+		_font_it(la, 64, COLOR_GOLD, 3)
+		value_box.add_child(la)
+		var vl := Label.new()
+		vl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		vl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		vl.custom_minimum_size = Vector2(300, ROW_H)
+		_font_it(vl, 64, COLOR_DIM, 3)
+		value_box.add_child(vl)
+		var ra := Label.new()
+		ra.text = ">"
+		ra.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		ra.custom_minimum_size = Vector2(0, ROW_H)
+		_font_it(ra, 64, COLOR_GOLD, 3)
+		value_box.add_child(ra)
+		row["value_lbl"] = vl
 
 	_rows_box.add_child(hb)
 	return row
@@ -528,15 +550,25 @@ func _refresh() -> void:
 				segs[s].color = SEG_ON if s < filled else SEG_OFF
 		elif spec["kind"] == "language":
 			var lang: Dictionary = LANGS[int(spec["idx"])]
-			row["lang_lbl"].text = str(lang["name"])
-			row["lang_lbl"].add_theme_color_override("font_color", COLOR_GOLD if focused else COLOR_TEXT)
-			var fp := AssetSet.p(FLAGS + str(lang["id"]) + ".png")
+			var lid: String = str(lang["id"])
+			var ready: bool = lid in READY_LANGS
+			# Los idiomas W.I.P se muestran en gris y con el sufijo; el carrusel no
+			# se detiene en ellos (ver _change), así que solo aparecen si el locale
+			# actual ya era uno de ellos.
+			row["lang_lbl"].text = str(lang["name"]) + ("" if ready else " (W.I.P)")
+			var lang_col: Color = (COLOR_GOLD if focused else COLOR_TEXT) if ready else COLOR_DIM
+			row["lang_lbl"].add_theme_color_override("font_color", lang_col)
+			var fp := AssetSet.p(FLAGS + lid + ".png")
 			if ResourceLoader.exists(fp):
 				row["flag"].texture = load(fp)
 		else:
-			var chs: Array = row["choices"]
-			for c in range(chs.size()):
-				chs[c].add_theme_color_override("font_color", COLOR_GOLD if c == int(spec["idx"]) else COLOR_DIM)
+			# Carrusel: solo el valor activo, resaltado si la fila está enfocada.
+			var vl = row.get("value_lbl", null)
+			if vl != null:
+				var chs: Array = spec["choices"]
+				var ci: int = clampi(int(spec["idx"]), 0, chs.size() - 1)
+				vl.text = str(chs[ci])
+				vl.add_theme_color_override("font_color", COLOR_GOLD if focused else COLOR_TEXT)
 	if _sel >= 0 and _sel < _specs.size():
 		_desc.text = str(_specs[_sel].get("desc", ""))
 		# En la fila más alta, resetear el scroll al tope para que se vea el
@@ -554,25 +586,33 @@ func _input(event: InputEvent) -> void:
 		_handled()
 	elif event.is_action_pressed("ui_up"):
 		# Desde la primera fila, ↑ sube al botón "Controls" (arriba del todo).
+		var prev_up: int = _sel
 		if _sel != CTRL_SEL and _sel == _first_selectable():
 			_sel = CTRL_SEL
 		elif _sel != CTRL_SEL:
 			_sel = _step_selectable(_sel, -1)
+		if _sel != prev_up:
+			_play_sfx(SFX_NAV)
 		_refresh()
 		_handled()
 	elif event.is_action_pressed("ui_down"):
+		var prev_dn: int = _sel
 		if _sel == CTRL_SEL:
 			_sel = _first_selectable()
 		else:
 			_sel = _step_selectable(_sel, 1)
+		if _sel != prev_dn:
+			_play_sfx(SFX_NAV)
 		_refresh()
 		_handled()
 	elif event.is_action_pressed("ui_left"):
 		if _sel != CTRL_SEL:
+			_play_sfx(SFX_CHANGE)
 			_change(-1)
 		_handled()
 	elif event.is_action_pressed("ui_right"):
 		if _sel != CTRL_SEL:
+			_play_sfx(SFX_CHANGE)
 			_change(1)
 		_handled()
 	elif event.is_action_pressed("ui_accept"):
@@ -623,27 +663,38 @@ func _change(delta: int) -> void:
 			elif spec["key"] == "sfx_volume":
 				_apply_bus("SFX", int(spec["value"]))
 		"enum":
-			var prev: int = int(spec["idx"])
-			spec["idx"] = clampi(int(spec["idx"]) + delta, 0, spec["choices"].size() - 1)
+			# Carrusel circular.
+			var n_enum: int = spec["choices"].size()
+			spec["idx"] = (int(spec["idx"]) + delta + n_enum) % n_enum
 			_store(spec["section"], spec["key"], int(spec["idx"]))
+			# Pantalla EN VIVO: modo de ventana y resolución se aplican al instante.
 			if spec["key"] == "window_mode":
 				_apply_window_mode(int(spec["idx"]))
-			elif spec["key"] == "resolution" and int(spec["idx"]) != prev:
-				# La resolución se aplica al reiniciar (avisa).
-				_show_restart_notice(tr("RESOLUTIONDESC"))
+			elif spec["key"] == "resolution":
+				_apply_resolution(int(spec["idx"]))
 		"toggle":
-			spec["idx"] = clampi(int(spec["idx"]) + delta, 0, spec["choices"].size() - 1)
+			# Carrusel circular (On/Off).
+			var n_tog: int = spec["choices"].size()
+			spec["idx"] = (int(spec["idx"]) + delta + n_tog) % n_tog
 			_store(spec["section"], spec["key"], int(spec["idx"]) == 0)
 			if spec["key"] == "mouse":
 				InputConfig.set_mouse_enabled(int(spec["idx"]) == 0)
 		"language":
-			# Carrusel circular; aplica y persiste el idioma EN VIVO.
+			# Carrusel circular que SALTA los idiomas W.I.P (no se pueden aplicar).
+			# Aplica y persiste el idioma EN VIVO al caer en uno listo.
 			var n: int = LANGS.size()
-			spec["idx"] = (int(spec["idx"]) + delta + n) % n
-			FadeCanvas.save_locale(str(LANGS[int(spec["idx"])]["id"]))
+			var lidx: int = int(spec["idx"])
+			for _i in range(n):
+				lidx = (lidx + delta + n) % n
+				if str(LANGS[lidx]["id"]) in READY_LANGS:
+					break
+			spec["idx"] = lidx
+			FadeCanvas.save_locale(str(LANGS[lidx]["id"]))
 			_relocalize()
 		"set":
-			var new_idx: int = clampi(int(spec["idx"]) + delta, 0, spec["choices"].size() - 1)
+			# Carrusel circular; el set gráfico se aplica al reiniciar (avisa).
+			var n_set: int = spec["choices"].size()
+			var new_idx: int = (int(spec["idx"]) + delta + n_set) % n_set
 			if new_idx != int(spec["idx"]):
 				spec["idx"] = new_idx
 				var chosen: String = str(spec["choices"][new_idx])
@@ -667,17 +718,64 @@ func _apply_bus(bus_name: String, value_0_100: int) -> void:
 		AudioServer.set_bus_volume_db(idx, linear_to_db(clampf(value_0_100 / 100.0, 0.0001, 1.0)))
 
 
-## Modo de ventana EN VIVO: 0 Windowed · 1 Borderless · 2 Fullscreen.
+## Reproduce un SFX (bus "SFX" si existe). name = nombre sin extensión.
+func _play_sfx(sfx_name: String) -> void:
+	if _sfx == null:
+		_sfx = AudioStreamPlayer.new()
+		if AudioServer.get_bus_index("SFX") >= 0:
+			_sfx.bus = "SFX"
+		add_child(_sfx)
+	var path := AssetSet.p("res://assets/sfx/%s.ogg" % sfx_name)
+	if not ResourceLoader.exists(path):
+		return
+	_sfx.stream = load(path)
+	_sfx.play()
+
+
+## Índice de resolución activo (para reaplicar el tamaño al cambiar de modo).
+func _res_idx() -> int:
+	for s in _specs:
+		if str(s.get("key", "")) == "resolution":
+			return int(s["idx"])
+	return 2
+
+
+## Modo de ventana EN VIVO: 0 Windowed · 1 Borderless · 2 Fullscreen. Al volver a
+## modo ventana se reaplica el tamaño de la resolución activa (para no quedar con
+## el tamaño de pantalla completa).
 func _apply_window_mode(idx: int) -> void:
 	match idx:
 		1:
 			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 			DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS, true)
+			_apply_resolution(_res_idx())
 		2:
 			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 		_:
 			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 			DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS, false)
+			_apply_resolution(_res_idx())
+
+
+## Resolución EN VIVO: redimensiona y recentra la ventana. En pantalla completa
+## no tiene efecto visible (se guarda igual y se aplicará al salir de fullscreen).
+func _apply_resolution(idx: int) -> void:
+	if idx < 0 or idx >= RESOLUTIONS.size():
+		return
+	var parts := str(RESOLUTIONS[idx]).split("x")
+	if parts.size() != 2:
+		return
+	var w := int(parts[0])
+	var h := int(parts[1])
+	if w <= 0 or h <= 0:
+		return
+	if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN:
+		return
+	DisplayServer.window_set_size(Vector2i(w, h))
+	var scr := DisplayServer.window_get_current_screen()
+	var scr_pos := DisplayServer.screen_get_position(scr)
+	var scr_size := DisplayServer.screen_get_size(scr)
+	DisplayServer.window_set_position(scr_pos + (scr_size - Vector2i(w, h)) / 2)
 
 
 ## Re-traduce en vivo todos los textos ya construidos (al cambiar de idioma).
@@ -699,15 +797,16 @@ func _relocalize() -> void:
 		if spec.has("dkey"):
 			spec["desc"] = tr(str(spec["dkey"]))
 		if spec.has("ckeys"):
+			# Solo re-traduce el modelo; el carrusel repinta su valor en _refresh.
 			spec["choices"] = _tr_all(spec["ckeys"])
-			var chs: Array = row["choices"]
-			for c in range(min(chs.size(), spec["choices"].size())):
-				chs[c].text = str(spec["choices"][c])
 	_refresh()
 
 
 ## Panel modal genérico de "se aplicará al reiniciar" con el mensaje dado.
+## Mientras está abierto, este menú DEJA de procesar input (si no, _input
+## consumiría todo y el botón OK nunca recibiría el foco/confirmación).
 func _show_restart_notice(msg_text: String) -> void:
+	set_process_input(false)
 	var layer := CanvasLayer.new()
 	layer.layer = 50
 	add_child(layer)
@@ -744,9 +843,13 @@ func _show_restart_notice(msg_text: String) -> void:
 	ok.add_theme_font_size_override("font_size", 22)
 	ok.add_theme_color_override("font_color", COLOR_TEXT)
 	ok.add_theme_color_override("font_focus_color", COLOR_GOLD)
-	ok.pressed.connect(layer.queue_free)
+	# Al cerrar: libera el modal y DEVUELVE el input a este menú.
+	ok.pressed.connect(func() -> void:
+		layer.queue_free()
+		set_process_input(true))
 	box.add_child(ok)
-	ok.grab_focus()
+	# grab_focus diferido: el botón debe estar ya en el árbol para recibir foco.
+	ok.grab_focus.call_deferred()
 
 
 func _close() -> void:

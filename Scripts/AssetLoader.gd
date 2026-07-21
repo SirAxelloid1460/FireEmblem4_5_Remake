@@ -102,6 +102,88 @@ var _tileset_search_order: Array = [PATH_TILESETS_FE4, PATH_TILESETS_FE5,
 var _tilemap_search_order: Array = [PATH_TILEMAPS_FE4, PATH_TILEMAPS_FE5]
 
 
+# ── Fuentes de respaldo japonesas (kana/kanji) ───────────────────────────────
+# Las sprite-fonts bitmap del LT (text.fnt, convo.fnt, …) solo traen glifos
+# latinos, así que el japonés salía como cuadros (tofu). Se enganchan como
+# FALLBACK, EN ORDEN, sobre esas bitmap-fonts (Godot toma cada glifo del primer
+# fallback que lo tenga):
+#   1) hiragana.fnt · 2) katakana.fnt · 3) kanji.fnt — sprite-fonts PIXEL nítidas
+#      generadas de Mona12TextJP (tools/build_jp_bitmap_font.py); kanji.fnt cubre
+#      el set estándar JIS X 0208 (6356) + la puntuación japonesa (、。「」…).
+#   4) Mona12TextJP.ttf — la MISMA fuente (12 px, sin AA) como red de seguridad
+#      del japonés: cubre los kanji raros fuera del JIS con EL MISMO diseño y
+#      tamaño que los bitmaps (no hay salto de tamaño; solo, a lo sumo, algo menos
+#      nítido al escalar). Así el japonés NUNCA llega al TTF de FEH.
+#   5) Fire Emblem Heroes (TTF, ~35k glifos) — último recurso SOLO para huecos no
+#      japoneses (p. ej. algún signo latino raro); su tamaño HD no se mezcla ya
+#      con el japonés porque Mona lo intercepta antes.
+# Las pixel y Mona viven en el set GBA (AssetSet.p); el TTF de FEH es HD (directo).
+const JP_PIXEL_FONTS := [
+	"res://assets/fonts/bmp/hiragana.fnt",
+	"res://assets/fonts/bmp/katakana.fnt",
+	"res://assets/fonts/bmp/kanji.fnt",
+]
+const JP_TTF_FALLBACKS := [
+	"res://assets/fonts/Mona12TextJP.ttf",                # japonés completo, mismo diseño
+	"res://assets/HD/fonts/Fire_Emblem_Heroes_Font.ttf",  # último recurso, no-japonés
+]
+# Bitmap-fonts que renderizan palabras (no solo dígitos) y por tanto pueden
+# necesitar el respaldo japonés. Rutas LÓGICAS (se re-enraízan al set activo).
+const _JP_TARGET_FONTS := [
+	"res://assets/fonts/bmp/text.fnt",
+	"res://assets/fonts/bmp/label.fnt",
+	"res://assets/fonts/bmp/info.fnt",
+	"res://assets/fonts/bmp/narrow.fnt",
+	"res://assets/fonts/bmp/small.fnt",
+	"res://assets/fonts/bmp/class.fnt",
+	"res://assets/fonts/bmp/chapter.fnt",
+	"res://assets/fonts/bmp/convo.fnt",
+	"res://assets/fonts/bmp/nconvo.fnt",
+	"res://assets/fonts/bmp/credit.fnt",
+	"res://assets/fonts/bmp/credit_title.fnt",
+]
+
+
+func _ready() -> void:
+	_attach_jp_fallback()
+
+
+## Engancha (una vez) la cadena de fallback japonesa (kana pixel + kanji TTF) a
+## las bitmap-fonts de UI. Se corre al arrancar (primer autoload): carga cada
+## bitmap-font por su ruta cacheada, así todas las escenas que luego hagan load()
+## reciben la MISMA instancia ya con los fallbacks. Idempotente.
+func _attach_jp_fallback() -> void:
+	var chain: Array = []
+	for pixel in JP_PIXEL_FONTS:
+		var kp: String = AssetSet.p(pixel)
+		if ResourceLoader.exists(kp):
+			var kf = load(kp)
+			if kf is Font:
+				chain.append(kf)
+	for ttf in JP_TTF_FALLBACKS:
+		if ResourceLoader.exists(ttf):
+			var tf = load(ttf)
+			if tf is Font:
+				chain.append(tf)
+	if chain.is_empty():
+		return
+	for logical in _JP_TARGET_FONTS:
+		var p: String = AssetSet.p(logical)
+		if not ResourceLoader.exists(p):
+			continue
+		var f = load(p)
+		if not (f is Font):
+			continue
+		var fbs: Array = f.fallbacks
+		var changed := false
+		for fb in chain:
+			if not (fb in fbs):
+				fbs.append(fb)
+				changed = true
+		if changed:
+			f.fallbacks = fbs
+
+
 ## Cambia el orden de búsqueda según el juego activo.
 ##   game: "fe4" o "fe5"
 func set_active_game(game: String) -> void:

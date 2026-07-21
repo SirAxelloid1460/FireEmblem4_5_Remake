@@ -39,6 +39,7 @@ const UI_FONT := "res://assets/fonts/bmp/text.fnt"   # sprite-font LT
 
 const COLOR_TEXT    := Color(0.82, 0.84, 0.82, 1.0)   # crema tenue (opción normal)
 const COLOR_GOLD    := Color(1.00, 0.90, 0.55, 1.0)   # dorado (opción enfocada)
+const COLOR_DISABLED := Color(0.45, 0.46, 0.48, 1.0)  # gris (opción deshabilitada / W.I.P)
 const COLOR_OUTLINE := Color(0.05, 0.05, 0.10, 1.0)
 const COLOR_BG      := Color(0.04, 0.04, 0.07, 1.0)
 
@@ -72,6 +73,7 @@ var _bob_i: int = 0
 var _bob_accum: float = 0.0
 var _busy: bool = false
 var _skip_next_nav: bool = false
+var _fit_fs: int = 0            # tamaño de fuente auto-ajustado (0 = aún sin calcular)
 
 # Fondo.
 var _bg_base: TextureRect       # capa base (default_background / bg por opción)
@@ -103,9 +105,72 @@ func _bg_for_option(_id: String) -> Texture2D:
 	return null
 
 
-## Tamaño de fuente de las opciones (px). Sobreescribir por menú.
+## Tamaño de fuente de las opciones (px). Es el TOPE MÁXIMO: el tamaño real se
+## auto-ajusta hacia abajo (_fit_option_font_size) para que el idioma con textos
+## más largos / más opciones quepa en el panel. Sobreescribir por menú.
 func _option_font_size() -> int:
 	return BTN_FONT
+
+
+## Tamaño mínimo al que puede encoger la auto-adaptación. Sobreescribir por menú.
+func _min_option_font_size() -> int:
+	return 24
+
+
+## Elige el mayor tamaño (≤ _option_font_size, ≥ _min_option_font_size) al que TODAS
+## las opciones caben en el panel: por ANCHO y por ALTO (todas las filas +
+## separaciones). Así el tamaño es proporcional a la longitud de la traducción y,
+## por ende, al idioma activo.
+## IMPORTANTE: el ancho se mide en PÍXELES con Font.get_string_size (suma el
+## avance real de cada glifo: una "i" ocupa menos que una "W"), NO por nº de
+## caracteres; y se toma el máximo sobre todas las opciones (el más ANCHO, no el
+## de más letras).
+func _fit_option_font_size(items: Array) -> int:
+	var maxfs: int = _option_font_size()
+	var minfs: int = _min_option_font_size()
+	if items.is_empty():
+		return maxfs
+	var vp: Vector2 = get_viewport_rect().size
+	var r := _list_panel_rect()
+	var panel_w: float = (float(r[2]) - float(r[0])) * vp.x
+	var panel_h: float = (float(r[3]) - float(r[1])) * vp.y
+	# Márgenes internos del VBox de opciones (ver _build_list_panel): 62+28 en X,
+	# 18+18 en Y (el lift solo desplaza, no reduce el alto disponible).
+	var avail_w: float = panel_w - 90.0
+	var avail_h: float = panel_h - 36.0
+	var f := load(AssetSet.p(UI_FONT))
+	var n: int = items.size()
+	var fs: int = maxfs
+	while fs > minfs:
+		var sep: int = maxi(6, int(fs * 0.18))
+		var total_h: float = n * (fs + 12) + (n - 1) * sep
+		var widest: float = 0.0
+		if f != null:
+			for it in items:
+				var shown: String = _option_display_text(it)
+				widest = maxf(widest, f.get_string_size(shown, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x)
+		if total_h <= avail_h and widest <= avail_w:
+			return fs
+		fs -= 2
+	return minfs
+
+
+## ¿Es seleccionable esta opción? Las deshabilitadas se ven en gris, con el botón
+## inaccesible (el cursor las salta). Sobreescribir por menú.
+func _option_enabled(_id: String) -> bool:
+	return true
+
+
+## Sufijo añadido al rótulo de la opción (p. ej. " (W.I.P)"). Sobreescribir.
+func _option_label_suffix(_id: String) -> String:
+	return ""
+
+
+## Texto FINAL mostrado de una opción: base traducida + sufijo. Los nombres de
+## idioma son literales (tr los devuelve tal cual); las claves de otros menús se
+## traducen. Se usa tanto al construir como al medir el auto-ajuste de fuente.
+func _option_display_text(it: Dictionary) -> String:
+	return tr(str(it.get("text", ""))) + _option_label_suffix(str(it.get("id", "")))
 
 
 ## Alineación horizontal del texto de las opciones. Sobreescribir por menú.
@@ -153,10 +218,15 @@ func _ready() -> void:
 		_build_preview_panel()
 	_build_list_panel()
 	_build_cursor()
-	# Enfocar la primera opción (sin sonar como navegación manual).
-	if _list != null and _list.get_child_count() > 0:
-		_skip_next_nav = true
-		(_list.get_child(0) as Button).call_deferred("grab_focus")
+	# Enfocar la primera opción HABILITADA (salta las W.I.P), sin sonar como
+	# navegación manual.
+	if _list != null:
+		for child in _list.get_children():
+			var b := child as Button
+			if b != null and not b.disabled:
+				_skip_next_nav = true
+				b.call_deferred("grab_focus")
+				break
 
 
 func _build_bg() -> void:
@@ -242,10 +312,13 @@ func _build_preview_panel() -> void:
 func _build_list_panel() -> void:
 	var r := _list_panel_rect()
 	var panel := _nine_panel(float(r[0]), float(r[1]), float(r[2]), float(r[3]))
+	# Tamaño de fuente auto-ajustado al idioma/traducción activos (una vez, para
+	# todas las opciones → tamaño uniforme y consistente por menú).
+	_fit_fs = _fit_option_font_size(_menu_items())
 	_list = VBoxContainer.new()
 	_list.alignment = BoxContainer.ALIGNMENT_CENTER
 	# Separación proporcional a la fuente (fuentes grandes → menos hueco relativo).
-	_list.add_theme_constant_override("separation", maxi(6, int(_option_font_size() * 0.18)))
+	_list.add_theme_constant_override("separation", maxi(6, int(_fit_fs * 0.18)))
 	# Contenido centrado en el panel y subido `lift` px (sin mover el panel):
 	# ambos offsets verticales se desplazan hacia arriba lo mismo.
 	var lift := _content_lift()
@@ -256,35 +329,43 @@ func _build_list_panel() -> void:
 	_list.offset_bottom = -18 - lift
 	panel.add_child(_list)
 	for it in _menu_items():
-		_list.add_child(_make_option(str(it.get("text", "")), str(it.get("id", ""))))
+		_list.add_child(_make_option(it))
 
 
-func _make_option(text: String, id: String) -> Button:
+func _make_option(it: Dictionary) -> Button:
+	var id := str(it.get("id", ""))
+	var enabled := _option_enabled(id)
 	var b := Button.new()
-	b.text = text
+	b.text = str(it.get("text", "")) + _option_label_suffix(id)
 	b.alignment = _option_align()
-	b.focus_mode = Control.FOCUS_ALL
-	b.mouse_filter = Control.MOUSE_FILTER_STOP
-	var fs := _option_font_size()
+	# Deshabilitada (W.I.P): botón inaccesible (el cursor la salta) y texto gris.
+	b.focus_mode = Control.FOCUS_ALL if enabled else Control.FOCUS_NONE
+	b.mouse_filter = Control.MOUSE_FILTER_STOP if enabled else Control.MOUSE_FILTER_IGNORE
+	b.disabled = not enabled
+	var fs := _fit_fs if _fit_fs > 0 else _option_font_size()
 	b.custom_minimum_size = Vector2(0, fs + 12)
 	b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var f := load(AssetSet.p(UI_FONT))
 	if f != null:
 		b.add_theme_font_override("font", f)
 	b.add_theme_font_size_override("font_size", fs)
-	b.add_theme_color_override("font_color", COLOR_TEXT)
-	b.add_theme_color_override("font_focus_color", COLOR_GOLD)
-	b.add_theme_color_override("font_hover_color", COLOR_GOLD)
-	b.add_theme_color_override("font_pressed_color", COLOR_GOLD)
+	var base_col := COLOR_TEXT if enabled else COLOR_DISABLED
+	b.add_theme_color_override("font_color", base_col)
+	b.add_theme_color_override("font_focus_color", COLOR_GOLD if enabled else COLOR_DISABLED)
+	b.add_theme_color_override("font_hover_color", COLOR_GOLD if enabled else COLOR_DISABLED)
+	b.add_theme_color_override("font_pressed_color", COLOR_GOLD if enabled else COLOR_DISABLED)
+	b.add_theme_color_override("font_disabled_color", COLOR_DISABLED)
 	b.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
 	b.add_theme_constant_override("outline_size", 5)
 	var empty := StyleBoxEmpty.new()
 	for s in ["normal", "hover", "pressed", "focus", "disabled"]:
 		b.add_theme_stylebox_override(s, empty)
 	b.set_meta("id", id)
-	b.focus_entered.connect(_on_option_focus.bind(b, id))
-	b.mouse_entered.connect(b.grab_focus)
-	b.pressed.connect(_on_option_pressed.bind(id))
+	# Solo las opciones habilitadas reaccionan al foco / ratón / confirmación.
+	if enabled:
+		b.focus_entered.connect(_on_option_focus.bind(b, id))
+		b.mouse_entered.connect(b.grab_focus)
+		b.pressed.connect(_on_option_pressed.bind(id))
 	return b
 
 
@@ -370,7 +451,10 @@ func _animate_cursor(delta: float) -> void:
 		var font := b.get_theme_font("font")
 		var fs := b.get_theme_font_size("font_size")
 		if font != null:
-			var tw: float = font.get_string_size(b.text, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x
+			# Medir el texto YA TRADUCIDO (b.text guarda la CLAVE, no lo que se ve;
+			# medir la clave subestima el ancho y mete la mano dentro de la palabra).
+			var shown: String = tr(b.text)
+			var tw: float = font.get_string_size(shown, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x
 			x_ref = b.global_position.x + (b.size.x - tw) * 0.5
 	_cursor.global_position = Vector2(
 		x_ref - hw - 6 + BOB_SEQ[_bob_i],

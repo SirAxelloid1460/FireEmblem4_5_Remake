@@ -8,8 +8,12 @@ extends SelectMenu
 # en el panel derecho, bandera del idioma enfocado en el panel-preview izquierdo.
 # Al elegir: guarda el locale (FadeCanvas.save_locale) y pasa al Menú 2 (modo).
 #
-# Idiomas y orden = la referencia. El locale "it" (Italiano) queda seleccionable;
-# sus traducciones aún no existen (recae en el idioma por defecto hasta añadirlas).
+# Idiomas seleccionables: en, es, de, fr, it, ja. Los que aún no tienen (o tienen
+# incompletas) sus traducciones caen automáticamente a inglés (locale/fallback
+# = "en"; las celdas vacías del CSV se omiten al importar). Las traducciones de
+# "it" se están completando en otra sesión. El nombre de "ja" se muestra en
+# latín ("Japanese") porque la sprite-font LT no trae kana/kanji (fuente JP
+# pendiente).
 # ============================================================
 
 const FLAGS := "res://assets/languages/Flags/"
@@ -21,19 +25,36 @@ const BG_BASE := "res://assets/panoramas/default_background.png"
 
 const LANGS := [
 	{ "id": "en", "text": "English" },
+	{ "id": "es", "text": "Español" },
 	{ "id": "de", "text": "Deutsch" },
 	{ "id": "fr", "text": "Français" },
-	{ "id": "es", "text": "Español" },
 	{ "id": "it", "text": "Italiano" },
+	{ "id": "ja", "text": "Japanese" },
 ]
+
+
+## Idiomas con traducción lista para jugar. El resto (de, fr, it, ja) se muestran
+## deshabilitados (gris + botón inaccesible) con el sufijo " (W.I.P)" hasta que
+## sus traducciones estén completas.
+const READY_LANGS := ["en", "es"]
 
 
 func _menu_items() -> Array:
 	return LANGS
 
 
+func _option_enabled(id: String) -> bool:
+	return id in READY_LANGS
+
+
+func _option_label_suffix(id: String) -> String:
+	return "" if id in READY_LANGS else " (W.I.P)"
+
+
 func _option_font_size() -> int:
-	return 48   # múltiplo de 16 (3×) para escalado nítido de la sprite-font
+	# TOPE máximo; SelectMenu auto-ajusta hacia abajo según el idioma para que las
+	# 6 opciones quepan en el panel (p. ej. baja solo lo justo si a 64 desborda).
+	return 64
 
 
 # Sube los botones dentro del panel (el panel sigue centrado).

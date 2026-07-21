@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://b7a48b3323b0b"
+path="res://.godot/imported/kanji.fnt-7a48b3323b0b04bd61a7c10fdcb10120.fontdata"
+
+[deps]
+
+source_file="res://assets/GBA/fonts/bmp/kanji.fnt"
+dest_files=["res://.godot/imported/kanji.fnt-7a48b3323b0b04bd61a7c10fdcb10120.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

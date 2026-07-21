@@ -45,11 +45,11 @@ func _has_preview_panel() -> bool:
 	return false
 
 
-# Recuadro CENTRADO en pantalla, ancho suficiente para "Genealogy of the Holy
-# War" (ancho reducido ~10% respecto a la ronda anterior) y de poco alto (3
-# opciones). El panel queda centrado; los botones se suben con _content_lift.
+# Recuadro CENTRADO en pantalla, estrechado respecto a la ronda anterior (aún
+# cabe "Genealogy of the Holy War") y de poco alto (3 opciones). El panel queda
+# centrado; los botones se suben con _content_lift.
 func _list_panel_rect() -> Array:
-	return [0.19, 0.335, 0.81, 0.665]
+	return [0.24, 0.335, 0.76, 0.665]
 
 
 func _option_font_size() -> int:

@@ -123,6 +123,19 @@ python tools/build_bitmap_font.py --src <carpeta_ltfonts>            # lote (col
 python tools/build_bitmap_font.py --src <carpeta> --name text        # una fuente
 python tools/build_bitmap_font.py --src <carpeta> --color black --name reel  # otro color
 
+# FUENTE JAPONESA (BMFont desde TTF pixel-art): genera hiragana/katakana/kanji
+# como sprite-fonts nítidas (se enganchan como fallback en AssetLoader). Fuente:
+# Mona12TextJP.ttf (kana + 18.972 kanji, forma japonesa). El kanji se limita al
+# set estándar JIS X 0208 (6356) vía tools/data/jis_x0208_kanji.txt.
+# Admite VARIAS fuentes en orden: rellena los glifos que falten con las siguientes.
+python tools/build_jp_bitmap_font.py --name hiragana --block hiragana --fonts assets/GBA/fonts/Mona12TextJP.ttf
+python tools/build_jp_bitmap_font.py --name katakana --block katakana --fonts assets/GBA/fonts/Mona12TextJP.ttf
+python tools/build_jp_bitmap_font.py --name kanji --from-text tools/data/jis_x0208_kanji.txt \
+       --fonts assets/GBA/fonts/Mona12TextJP.ttf --cols 100
+#   Otras formas de fijar los glifos: --block kanji (TODOS los del font) · --ranges "4E00-4E10,738B"
+#   · --from-text <archivos jp.json> (solo los kanji usados). Para tapar huecos: añade
+#   otra fuente pixel al final de --fonts.
+
 
 ================================================================================
  5) LOCALIZACIÓN / DIÁLOGOS
@@ -142,3 +155,18 @@ python tools/build_dialogue_scenes.py --from-scenes <scenes.json> # escenas -> c
 python tools/translator_app/app.py            # abrir la app de escritorio (pip install pywebview)
 python tools/translator_app/build.py          # empaquetar .exe/binario (pip install pyinstaller)
 #   Web: el mismo translator.html abre en cualquier navegador.
+
+# L10N DE DIÁLOGOS: normaliza claves japonesas (comentario latino ⟦...⟧) y reporta
+# la alineación en/es/it/jp de un capítulo. Ver docs/dialogue_localization_handoff.md
+# y docs/examples/dialogue_format/Chapter01.{en,es,it,jp}.json.
+python tools/dialogue_l10n.py check docs/examples/dialogue_format/Chapter01   # reporte de alineación
+python tools/dialogue_l10n.py normalize <cap>.jp.json -o <cap>.jp.norm.json   # jp -> claves ⟦...⟧
+
+# EXTRACTOR: separa un events.json de LT en (a) documento por idioma base inglés
+# (data/<game>/events/lang/<chapter>/dialogue.en.json — el formato que lee
+# DialogueL10n y que traducen los idiomas) y (b) documento general independiente
+# de la localización (events.general.json, con los `speak` sustituidos por claves
+# @dlg:<EVENTO>#<idx>). Lossless (--verify comprueba el round-trip).
+python tools/build_dialogue_l10n.py --game fe5 --verify     # solo round-trip lossless
+python tools/build_dialogue_l10n.py --game fe5              # escribe lang/ + events.general.json
+python tools/build_dialogue_l10n.py --input <events.json> --out <dir>   # entrada/salida a mano

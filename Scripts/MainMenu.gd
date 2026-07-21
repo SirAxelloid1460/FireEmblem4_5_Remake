@@ -75,7 +75,7 @@ const SFX_ERROR   := "Error"
 const SOUNDROOM_SCRIPT := "res://Scripts/SoundRoom.gd"
 const BTN_W := 620
 const BTN_H := 110
-const BTN_FONT := 48   # múltiplo de 16 (3×) para escalado nítido de la sprite-font
+const BTN_FONT := 56   # sprite-font LT un poco más grande (cabe de sobra en BTN_W)
 const SWORD_SCALE := 4
 const COLOR_BTN := Color(0.95, 0.93, 0.85, 1.0)   # crema (texto de botón)
 # Bobeo del cursor estilo GBA: ESCALONADO (no fluido), pero con escalones más

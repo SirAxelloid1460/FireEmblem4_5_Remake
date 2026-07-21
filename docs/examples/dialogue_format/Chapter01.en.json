@@ -1,0 +1,306 @@
+{
+  "OPENING1": [
+    {
+      "RAYDRIK": "Have you found that whelp of a prince yet?{w}"
+    },
+    {
+      "WEISSMAN": "Regretfully not, milord. The men searched the{br}village top to bottom, but came up with nothing.{w}"
+    },
+    {
+      "RAYDRIK": "Why is such a simple task taking you so long?{br}There's little doubt that the heir{br}to House Leonster is hiding here.{w}{w}You've been too gentle with these villagers—{br}give them ample motivation to talk.{w}"
+    },
+    {
+      "WEISSMAN": "We are of the same mind, milord—{br}I've already ordered the men to do as much.{br}Yet the townsfolk claim the prince isn't here.{w}{w}According to them, he left with the Freeblades{br}to fend off a pirate raid on a nearby village.{w}"
+    },
+    {
+      "RAYDRIK": "Freeblades? What nonsense is that?{w}"
+    },
+    {
+      "WEISSMAN": "They're the local militia, sire. As I understand it,{br}this village was once home to a group{br}of brigands—rather savage ones, at that.{w}{br}About a decade ago, they were routed by Eyvel,{br}a wandering sellsword.{w}{w}She claimed the village as her own and founded{br}the Freeblades to protect the region{br}from future attacks.{w}{w}She's supposedly quite a wonder with a sword...{w}"
+    },
+    {
+      "RAYDRIK": "Hmm... She may be a problem.{w}"
+    },
+    {
+      "WEISSMAN": "You have nothing to fear, milord:{br}we've taken Eyvel's daughter captive.{w}{w}What's more, we also captured{br}the daughter of Finn, the very knight{br}guarding the prince's life.{w}{w}With the leverage we have over them,{br}they'll have no choice but to surrender.{w}"
+    },
+    {
+      "RAYDRIK": "Hmph. I admit, you have your uses, Weismann.{w}{w}The women will accompany me back to Munster.{br}You'll remain here and prepare for when{br}these upstart rebels return.{w}{w}See that the young Leonster pup is put in chains{br}befitting a stray mutt.{w}"
+    },
+    {
+      "WEISSMAN": "Your trust in me is well placed, sire."
+    },
+    {
+      "WEISSMAN": "Men, bring the girls here!{w}{w}"
+    }
+  ],
+  "OPENING2": [
+    {
+      "RAYDRIK": "What's your name, lass?{w}"
+    },
+    {
+      "MAREETA": "Hmph...{w}"
+    },
+    {
+      "RAYDRIK": "Hah! A fighting spirit to match a pretty face."
+    },
+    {
+      "RAYDRIK": "Now, let's have a look at the other one...{w}"
+    },
+    {
+      "RAYDRIK": "Ah, you must be Finn's young ward.{br}I hear your mother was royalty{br}of House Nordion, is that right?{w}{w}You certainly don't lack for grace, despite living{br}in this backwater hovel—holy blood doesn't run{br}thin even in squalor, I see.{w}"
+    },
+    {
+      "NANNA": "......{w}{w}"
+    },
+    {
+      "RAYDRIK": "What a pleasant surprise the two of you{br}make for.{w}"
+    },
+    {
+      "RAYDRIK": "Weismann, I'll be departing for Munster now.{br}Don't disappoint me.{w}"
+    },
+    {
+      "WEISSMAN": "All shall be as you wish it, milord.{w}{w}"
+    }
+  ],
+  "OPENING3": [
+    {
+      "EYVEL": "What's that commotion in the village?{br}Something's rotten here...{w}I'll scout ahead, Commander.{br}Hold here a moment.{w}{w}"
+    }
+  ],
+  "OPENING4": [
+    {
+      "HALVAN": "Commander, Fiana is packed to the brim{br}with Imperial troops!{br}They...must have struck while we were away.{w}{w}"
+    },
+    {
+      "OSIAN": "What? No way is the Empire gonna make a mess{br}of our home!"
+    },
+    {
+      "OSIAN": "Commander, let's move in!{w}{w}"
+    },
+    {
+      "HALVAN": "Calm down, Osian. We'll get slaughtered{br}if we just charge in blindly.{w}"
+    },
+    {
+      "OSIAN": "Yeah, Halvan, I'm sure the village will appreciate{br}your patient attitude while everyone's being{br}rounded up and jailed!{w}{w}"
+    },
+    {
+      "HALVAN": "Peace, Osian. Halvan is right.{br}Seems we've finally been noticed{br}by the Empire.{w}"
+    },
+    {
+      "EYVEL": "Looks like this is goodbye, Little Leif. I'm sorry.{w}"
+    },
+    {
+      "EYVEL": "Finn, take him as far away from here{br}{w}"
+    },
+    {
+      "LEIF": "No, Commander!{br}Nanna is still in the village!{br}I won't leave without her!{w}"
+    },
+    {
+      "EYVEL": "I'll get her back. Don't worry.{w}"
+    },
+    {
+      "LEIF": "It's more than that, Commander...{br}I won't run anymore.{br}That's my decision to make.{w}"
+    },
+    {
+      "EYVEL": "...Finn, you wanna weigh in here?"
+    },
+    {
+      "EYVEL": "You going to let the Little Lord throw himself{br}into harm's way like this?{w}"
+    },
+    {
+      "FINN": "Lord Leif has seen the passing of 15 summers,{br}by now. He's old enough to choose for himself—{br}and as my liege, I will abide by his judgment.{w}"
+    },
+    {
+      "EYVEL": "Has it been that long already?{br}Hmph, I suppose I let Little Leif come with us{br}to fight off those pirates, myself...{w}{w}Guess I made up my own mind when I did that.{br}If Finn's all right with it, so am I.{w}{w}"
+    },
+    {
+      "FINN": "Then what's the hold-up? If we're done arguing,{br}there's an invasion happening over that ridge!{w}{w}"
+    },
+    {
+      "EYVEL": "All right, get ready to move in. But stay sharp:{br}most foot-soldiers are just regular folk,{br}forced into the Imperial Army against their will.{w}{w}If they surrender, just take their weapons{br}and let them go. Are we clear?{w}"
+    },
+    {
+      "OSIAN": "But we can still bloody them until they surrender,{br}right? I mean, if we can't put up a good fight{br}ourselves, we'll be the ones surrendering.{w}{w}"
+    },
+    {
+      "EYVEL": "Knock 'em around if you have to, sure,{br}but don't overdo it.{w}"
+    },
+    {
+      "EYVEL": "That means you, Osian.{w}"
+    },
+    {
+      "OSIAN": "Hey, c'mon, gimme some credit, Commander!{w}{w}"
+    },
+    {
+      "EYVEL": "OK, enough chatter! Let's give the Empire{br}a battle worthy of our names as Freeblades!{w}{w}"
+    }
+  ],
+  "DAGDARARRIVE": [
+    {
+      "TANYA": "Papa, the fighting's started already!{w}"
+    },
+    {
+      "DAGDAR": "Ain't no good way to go about{br}this damned battle...{w}{w}Don't matter how good Eyvel is, there's only{br}one of her an' over a dozen of them.{br}We need to hurry.{w}{w}"
+    }
+  ],
+  "MARTYARRIVE": [
+    {
+      "MARTY": "Oh, fer cryin' out loud!{br}Not again...{w}{w}"
+    }
+  ],
+  "OSIANHOUSEOSIAN": [
+    {
+      "OLDMAN": "You pullin' your weight in the Freeblades, boy?{br}Last thing Commander Eyvel needs{br}is to babysit you.{w}"
+    },
+    {
+      "OSIAN": "We're risking life and limb to protect the{br}village, and you're giving me a lecture? You've{br}got a strange sense of gratitude, old man.{w}"
+    },
+    {
+      "OLDMAN": "Not even the Empire knockin' down our front{br}door can stop that fool mouth of yours, I see.{w}{w}Well, no point in draggin' this out.{br}Here. This is what you came for, right?{w}"
+    },
+    {
+      "OSIAN": "For once, you read my mind.{br}When a fight breaks out, I just feel off{br}without this axe at my side.{w}"
+    },
+    {
+      "OLDMAN": "Which don't explain why you forget it at home{br}half the damn time!{w}"
+    },
+    {
+      "OSIAN": "Hey, I came here for the axe,{br}not to get chewed out!{w}"
+    },
+    {
+      "OLDMAN": "If that's all you wanted, then get going!{br}Go on, now!{br}Don't keep the Commander waitin' on you!{w}"
+    },
+    {
+      "OSIAN": "You don't need to tell me twice!{w}{w}"
+    }
+  ],
+  "OSIANHOUSEOTHER": [
+    {
+      "OLDMAN": "Where has that fool boy of mine gone off to{br}in this fracas? I swear, my Osian's gonna get{br}himself killed one of these days...{w}{w}"
+    }
+  ],
+  "LIFERINGHOUSE": [
+    {
+      "OLDLADY": "Those Imperial dogs took Dame Mareeta{br}and Lady Nanna—just snatched 'em right up{br}like they was cattle!{w}{w}You're not gonna let 'em get away with that,{br}are you?{w}{w}If you're fixin' to fight the Empire,{br}take this with you. This here ring's enchanted{br}with some spell or another.{w}{w}But don't just wear it on your finger like some{br}common bauble! You gotta actually [Use] it{br}for it to do any good!{w}{w}"
+    }
+  ],
+  "VULNERARYHOUSE": [
+    {
+      "OLDLADY3": "Y'all made it back! What a relief...{w}{w}But look, there's no Fiana Freeblades without{br}Fiana, right? So don't just stop with them{br}pirates—drive the Empire from our village, too!{w}{w}...Not to imply that I ain't grateful, a' course.{br}Take this with you. Use it if you get scraped up.{w}{w}We don't have much in the way of medicine,{br}but it's the least we can do after everythin'{br}the Commander's done fer us.{w}{w}"
+    }
+  ],
+  "IRONSWORDHOUSE": [
+    {
+      "MOUSTACHE": "Weapons can be mighty expensive, can't they?{br}Most folk here gotta make do by nicking{br}supplies from Imperial troops.{w}{w}It's awful risky, but if you can capture an enemy{br}alive, you get to help yourself to their stuff.{w}{w}Matter of fact, I got the drop on an Imperial{br}soldier myself. Heard 'im snoring from three{br}houses away, so I took me a souvenir!{w}{w}...Not that it'll do me much good, though.{br}Probably better off in your hands, I reckon.{w}{w}And hey, if you don't need it,{br}you can just hawk it for somethin' you do need.{w}{w}"
+    }
+  ],
+  "HALVANHOUSEHALVAN": [
+    {
+      "YOUNGLADY": "Big brother!{br}I've got something real special for you!{br}You can use this to keep yourself safe, right?{w}"
+    },
+    {
+      "HALVAN": "An...axe? Where in the world did you get{br}such a fine weapon?{w}"
+    },
+    {
+      "YOUNGLADY": "Darnedest thing... I was walkin' past the lake{br}up on the mountain, when this strange ol' crone{br}just floated outta the water!{w}{w}She gave it to me, then vanished, quick{br}as you can blink! I been keepin' it for you,{br}and takin' real good care of it.{w}{w}Now go put it to use, an' make me proud!{w}{w}"
+    }
+  ],
+  "HALVANHOUSEOTHER": [
+    {
+      "YOUNGLADY": "Hey, hey, have you seen my big brother,{br}Halvan? He's got me awful scared...{br}I hope he's all right...{w}{w}"
+    }
+  ],
+  "ENDING": [
+    {
+      "LEIF": "Nanna! Mareeta! Where are you?!{br}Please, answer me!{w}Little Nan, Mareeta...{br}Raydrik must've taken 'em.{w}{w}What?! That means...they were taken{br}to Munster, right?{w}"
+    },
+    {
+      "EYVEL": "Yeah—as bargaining chips, in case Weismann{br}couldn't finish the job. It's the sort of thing{br}Raydrik would pull, all right.{w}"
+    },
+    {
+      "LEIF": "Gods' breath...{br}Commander, we have to give chase!{br}The two of them are counting on us!{w}"
+    },
+    {
+      "LEIF": "Commander, you yourself said{br}I'm not a child anymore.{w}{w}Nanna and Mareeta were taken captive{br}because of me—and I refuse to let anyone{br}suffer in my place.{w}{w}I will never again let someone sacrifice{br}their life in exchange for mine.{w}"
+    },
+    {
+      "EYVEL": "...I understand. We leave at dawn, then.{br}I won't lie, Little Lord: this is gonna get rough.{br}Get some rest while you can.{w}{w}"
+    }
+  ],
+  "ENDINGNOEYVEL": [
+    {
+      "LEIF": "Nanna! Mareeta! Where are you?!{br}Please, answer me!{w}L-Lord Leif!{br}Gods' breath, are you a sight fer sore eyes!{br}I...wish I had better news fer you.{w}{w}They came fer Lady Nanna, they did,{br}and we couldn't do nuthin' to stop 'em!{w}{w}Nanna? What happened to Nanna?{w}"
+    },
+    {
+      "YOUNGMAN": "The Empire took 'er, sure as you're standin'{br}here. Mareeta tried to break her loose,{br}but only got captured 'erself.{w}{w}They both wore chains, last I saw.{w}"
+    },
+    {
+      "LEIF": "Where were they taken?{w}"
+    },
+    {
+      "YOUNGMAN": "Don't rightfully know, Lord Leif. One of them{br}soldiers said somethin' about headin' back{br}to Munster, but nuthin' more specific'n that.{w}"
+    },
+    {
+      "LEIF": "Munster... Then that's where I'm headed, too.{br}I'll bring everyone home: Nanna, Mareeta,{br}and the Commander!{w}{w}"
+    }
+  ],
+  "WORLDMAP1": [
+    {
+      "NARRATOR": "Barely escaping the burning of Castle Leonster{br}with his life,{w}the young Prince Leif was looked{br}after by Finn, his knight and retainer.{w}{w}{w}"
+    }
+  ],
+  "WORLDMAP2": [
+    {
+      "NARRATOR": "Together with Nanna,{w}a young noblewoman{br}under Finn's care, the trio fled pursuers{w}{br}sent by the conquerors of North Thracia:{br}the Grannvale Empire, which lay to the west.{w}{w}{w}Yet Finn proved stronger than those who hunted{br}them, and the three made their way to the cities{w}{w}{w}"
+    }
+  ],
+  "WORLDMAP3": [
+    {
+      "NARRATOR": "of Ulster{w}{w}{w}"
+    }
+  ],
+  "WORLDMAP4": [
+    {
+      "NARRATOR": "and Tahra, posing as common vagrants.{w}{w}{w}"
+    }
+  ],
+  "WORLDMAP5": [
+    {
+      "NARRATOR": "Eventually, they drifted into Fiana,{br}a small village on Thracia's eastern coast.{w}{w}Fiana was an independent community{br}with its own militia,{w}the Fiana Freeblades,{br}led by the swordswoman Eyvel.{w}{w}Eyvel welcomed Leif's group{br}as if they were her own kin.{w}{w}Under her watchful eye, the deposed prince{br}spent his childhood in Fiana,{w}growing into{br}maturity alongside youths of common birth.{w}{w}{w}{w}"
+    }
+  ],
+  "WORLDMAP6": [
+    {
+      "NARRATOR": "Now, in year 776 of the Grannvale calendar...{w}{w}"
+    }
+  ],
+  "EYVELDAGDARTALK": [
+    {
+      "EYVEL": "Dagdar?! You...came down to fight with us?{w}"
+    },
+    {
+      "DAGDAR": "Eyvel! Does me heart good to see you{br}in one piece!{w}{w}Listen, ya have any idea why the Empire{br}would come all the way out here?{w}{w}It have anything to do with...the boy?{w}"
+    },
+    {
+      "EYVEL": "Yeah. The Little Lord, Leif, he's...{br}He's not just some nobleman.{br}He's the heir to House Leonster.{w}{w}I've been helping him hide from the Empire.{br}I'm sorry... I shouldn't have kept it from you.{w}"
+    },
+    {
+      "DAGDAR": "Mm, I figured as much. Well, no use worryin'{br}about it now. Long as I get to cut down some of{br}those Imperial dastards meself, we're even.{w}{w}"
+    }
+  ],
+  "OSIANTANYATALK": [
+    {
+      "OSIAN": "Tanya? What do you think you're doing here?{w}"
+    },
+    {
+      "TANYA": "What does it look like, Osian?{br}I'm here to help you guys, any way I can!{w}"
+    },
+    {
+      "OSIAN": "“Help any way you can,” huh?{br}In that case, turn tail and march back home.{w}{w}That's the only way a kid like you could help—{br}you'd just get in the way.{w}"
+    },
+    {
+      "TANYA": "You've got some nerve, Osian!{br}You're just a kid yourself, you know!{w}{w}You want me gone, I'm gone—not all of us are{br}as eager to throw ourselves into danger as you!{w}{w}"
+    }
+  ]
+}

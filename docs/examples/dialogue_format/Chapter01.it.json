@@ -1,0 +1,300 @@
+{
+  "OPENING1": [
+    {
+      "RAYDRIK": "Allora, hai trovato il principino?{w}"
+    },
+    {
+      "WEISSMAN": "Purtroppo no, mio signore. I miei uomini hanno{br}setacciato tutto il villaggio, ma non sono riusciti{br}a trovarlo.{w}"
+    },
+    {
+      "RAYDRIK": "Perché impieghi così tanto tempo in una cosa{br}così semplice? Non c'è dubbio, l'erede di{br}Leonster si nasconde qui.{w}{w}Sei stato troppo molle con questi contadini;{br}dà loro una buona motivazione per parlare.{w}"
+    },
+    {
+      "WEISSMAN": "Mi trova pienamente d'accordo, mio signore.{br}Ho ordinato ai miei uomini di occuparsene. Ma{br}i cittadini affermano che il principe non è qui.{w}{w}Secondo quello che dicono, ha lasciato il{br}villaggio con le Libere Lame di Fiana per{br}fermare una razzia dei pirati in questa zona.{w}"
+    },
+    {
+      "RAYDRIK": "Le Libere Lame di Fiana? Che sarebbero?{w}"
+    },
+    {
+      "WEISSMAN": "I miliziani locali, mio signore. Da quel che ho{br}capito, questo villaggio un tempo era una tana{br}di briganti. Selvaggi, oserei dire.{w}{w}Circa un decennio fa, furono scacciati da{br}Eyvel, una mercenaria errante.{w}{w}Lei dichiarò il villaggio suo e fondò le Libere{br}Lame per proteggere la regione da futuri{br}attacchi.{w}{w}Si dice che sia una meraviglia con la spada.{w}"
+    },
+    {
+      "RAYDRIK": "Mh. Potrebbe essere un problema.{w}"
+    },
+    {
+      "WEISSMAN": "Nulla da temere, mio signore: abbiamo{br}catturato sua figlia. Inoltre, abbiamo preso{br}anche la figlia di Finn, il cavaliere del principe.{w}{w}Le Libere Lame di Fiana non potranno far altro{br}che arrendersi.{w}"
+    },
+    {
+      "RAYDRIK": "Bah. Ammetto che tu non sia del tutto inutile,{br}Weismann.{w}{w}Le ragazze verranno con me a Munster.{br}Tu resterai qui e ti preparerai per il ritorno di{br}questi penosi ribelli.{w}{w}Fà sì che il principino venga messo in catene{br}come un bastardo rognoso!{w}"
+    },
+    {
+      "WEISSMAN": "Me ne occuperò io, signore."
+    },
+    {
+      "RAYDRIK": ";9"
+    },
+    {
+      "WEISSMAN": "Uomini, portate qui le ragazze!{w}"
+    }
+  ],
+  "OPENING2": [
+    {
+      "RAYDRIK": "Qual è il tuo nome, fanciulla?{w}"
+    },
+    {
+      "MAREETA": "Hmph...{w}"
+    },
+    {
+      "RAYDRIK": "Ah! Un fuoco che accompagna un bel faccino."
+    },
+    {
+      "MAREETA": ";"
+    },
+    {
+      "RAYDRIK": "Diamo uno sguardo all'altra...{w}"
+    },
+    {
+      "RAYDRIK": "Ah, e tu invece devi essere la figlia di Finn.{br}Ho saputo che tua madre era la principessa{br}della Casata di Nordion, giusto?{w}{w}Non manchi di grazia, di sicuro, anche se hai{br}vissuto in questo buco... Il sangue sacro non si{br}annacqua neppure nel letame, vedo.{w}"
+    },
+    {
+      "NANNA": "......{w}{w}"
+    },
+    {
+      "RAYDRIK": "Che splendida sorpresa mi fate.{w}"
+    },
+    {
+      "RAYDRIK": "Weismann, ora mi preparerò per tornare a{br}Munster. Non deludermi.{w}"
+    },
+    {
+      "WEISSMAN": "Come desidera, mio signore.{w}"
+    }
+  ],
+  "OPENING3": [
+    {
+      "EYVEL": "Cos'è questo chiasso nel villaggio?{br}Qualcosa mi preoccupa...{w}"
+    },
+    {
+      "HALVAN": "Andrò in ricognizione, comandante Eyvel.{br}Aspettatemi un momento.{w}"
+    }
+  ],
+  "OPENING4": [
+    {
+      "HALVAN": "Comandante, Fiana è strapiena di truppe{br}imperiali! Loro... devono averci invasi mentre{br}eravamo via.{w}{w}"
+    },
+    {
+      "OSIAN": "Che cosa? Non lascerò che l'Impero venga{br}a incasinare casa nostra!{br}"
+    },
+    {
+      "OSIAN": "Comandante, attacchiamo!{w}{w}"
+    },
+    {
+      "HALVAN": "Calmati, Osian. Verremo massacrati se{br}carichiamo alla cieca.{w}"
+    },
+    {
+      "OSIAN": "Certo, Halvan, sono sicuro che il villaggio{br}apprezzerà la tua pazienza mentre vengono{br}tutti incatenati e sbattuti in prigione!{w}{w}"
+    },
+    {
+      "HALVAN": ":"
+    }
+  ],
+  "DAGDARARRIVE": [
+    {
+      "TANYA": "Pa', hanno già iniziato a combattere!{w}"
+    },
+    {
+      "DAGDAR": "Nun c'è verso de fa 'sta maledetta battaglia...{w}{w}Nun importa quant'è forte Eyvel, ce n'è una{br}sola de lei, e dozzine dei loro. Sbrigamose!{w}"
+    }
+  ],
+  "MARTYARRIVE": [
+    {
+      "MARTY": "Oh, ma che cavolo...{br}Ancora!{w}"
+    }
+  ],
+  "OSIANHOUSEOSIAN": [
+    {
+      "OLDMAN": "Ti stai dando da fare con le Libere Lame di{br}Fiana, ragazzo? L'ultima cosa di cui la{br}comandante ha bisogno è stare dietro a te.{w}"
+    },
+    {
+      "OSIAN": "Noi stiamo a rischiare la vita per proteggere il{br}villaggio e tu mi ringrazi così? Hai uno strano{br}modo di essere grato, pa'.{w}"
+    },
+    {
+      "OLDMAN": "Nemmeno l'impero che ci butta giù la porta ti{br}ferma la lingua, vedo. Beh, è inutile dilungarci.{w}{w}Ecco. Sei venuto per questa, vero?{w}"
+    },
+    {
+      "OSIAN": "Per una volta, mi hai letto nel pensiero. Quando{br}c'è da menare, mi sento strano senza{br}quest'ascia alla cintura.{w}"
+    },
+    {
+      "OLDMAN": "E non si spiega come fai a scordartela a casa{br}metà delle volte!{w}"
+    },
+    {
+      "OSIAN": "Ehi, sono venuto per l'ascia, non per una{br}sgridata!{w}"
+    },
+    {
+      "OLDMAN": "Se è tutto, allora vai!{br}Avanti, sbrigati!{br}Non far aspettare la comandante!{w}"
+    },
+    {
+      "OSIAN": "Non devi chiedermelo due volte!{w}"
+    }
+  ],
+  "OSIANHOUSEOTHER": [
+    {
+      "OLDMAN": "Dov'è quello scemo di mio figlio, con questo{br}casino qua fuori? Giuro che Osian si farà{br}ammazzare un giorno o l'altro...{w}"
+    }
+  ],
+  "LIFERINGHOUSE": [
+    {
+      "OLDLADY": "Quei cani imperiali hanno catturato Mareeta e{br}lady Nanna! Non potete permettere che se le{br}portino via così!{w}{w}Se avete intenzione di combattere contro{br}l'impero, prendete questo. Questo anello è{br}incantato con qualche magia o roba del genere.{w}{w}Ma non portatevelo dietro come se fosse un{br}ninnolo qualsiasi! Dovete usarlo perché abbia{br}effetto!{w}"
+    }
+  ],
+  "VULNERARYHOUSE": [
+    {
+      "OLDLADY3": "Siete tornati! Grazie agli dèi...{w}{w}Però le Libere Lame di Fiana non esistono{br}senza Fiana, vero? Allora non fermatevi ai{br}pirati! Cacciate via pure l'impero!{w}{w}... Non per sembrare ingrata, certo.{br}Tenete. Usatelo se restate feriti.{w}{w}Non abbiamo chissà che, ma è il minimo che{br}possiamo fare dopo tutto l'aiuto che ci ha dato{br}la comandante Eyvel.{w}"
+    }
+  ],
+  "IRONSWORDHOUSE": [
+    {
+      "MOUSTACHE": "Le armi possono essere parecchio costose, eh?{br}Qui alcuni di noi fanno soldi vendendo merci{br}prese dalle truppe imperiali.{w}{w}Sarà rischioso, ma se catturate un nemico vivo{br}potete prendervi le sue armi e tutto il resto.{w}{w}Infatti, ho avuto la fortuna di cogliere di{br}sorpresa uno di loro. Si sentiva russare fin da{br}casa di Osian, così mi sono preso un souvenir!{w}{w}... Non so che farmene, però. Forse è meglio{br}che l'abbiate voi. Oh, ma se non vi serve, potete{br}sempre venderla per qualcos'altro.{w}"
+    }
+  ],
+  "HALVANHOUSEHALVAN": [
+    {
+      "YOUNGLADY": "Fratellone! Ho una cosa veramente speciale{br}per te! Puoi usarla per stare al sicuro quando{br}combatti, giusto?{w}"
+    },
+    {
+      "HALVAN": "... Un'ascia? Dove hai trovato un'arma bella{br}come questa?{w}"
+    },
+    {
+      "YOUNGLADY": "successa una cosa così strana... stavo{br}passeggiando al lago in montagna, quando una{br}strana vecchia è uscita fuori dall'acqua!{w}{w}Mi ha dato l'ascia, e poi è sparita in un attimo!{br}Te l'ho conservata per bene. Ora vai e usala,{br}rendimi fiera di te!{w}"
+    }
+  ],
+  "HALVANHOUSEOTHER": [
+    {
+      "YOUNGLADY": "Oh, avete visto mio fratello, Halvan? Mi sta{br}facendo preoccupare... spero che stia bene...{w}"
+    }
+  ],
+  "ENDING": [
+    {
+      "EYVEL": "......{w}"
+    },
+    {
+      "LEIF": "Eyvel!{br}Forza, Eyvel!{w}"
+    },
+    {
+      "EYVEL": "......{w}"
+    },
+    {
+      "LEIF": "Eyvel!{br}Sono io, Leif!{br}Riesci a sentirmi?!{w}"
+    },
+    {
+      "EYVEL": "Leif...{br}L-Lord...Leif...{w}{w}Ah! Lord Leif!{br}Che cosa ci fai qui?!{br}Devi fuggire dal castello, subito!{w}"
+    },
+    {
+      "LEIF": "Eyvel... Le cose sono molto diverse rispetto a{br}quello che ricordi...{w}"
+    },
+    {
+      "EYVEL": "Diverse? Che cosa stai dicendo?{br}Siamo sempre nella stessa arena...{w}{w}Eh?{br}Un attimo, che cos'è questo posto...?{w}"
+    },
+    {
+      "LEIF": "Eyvel... Grazie al cielo, sei tornata come eri un{br}tempo...{w}"
+    },
+    {
+      "EYVEL": "Lord Leif...{br}Che cosa mi è successo?{w}"
+    },
+    {
+      "LEIF": "Mi dispiace, ma non c'è tempo per spiegarti{br}tutto...{w}{w}Tutto ciò che devi sapere è che ora stiamo{br}combattendo per liberare Munster... no,{br}l'intera Thracia, dall'Impero!{w}{w}Ci serve la tua forza, ora più che mai, Eyvel!{w}"
+    },
+    {
+      "EYVEL": "... Va bene. Sai che non mi rifiuterei mai di{br}aiutarti. Ma mi racconterai tutto dopo questa{br}battaglia, intesi?{w}"
+    },
+    {
+      "LEIF": "Certo!{br}Ho talmente tante cose da dirti, Eyvel...{w}"
+    }
+  ],
+  "ENDINGNOEYVEL": [
+    {
+      "AUGUSTUS": "Lord Leif, presumo?{w}"
+    },
+    {
+      "LEIF": "E voi sareste?{w}"
+    },
+    {
+      "AUGUSTUS": "August, al vostro servizio.{br}Sono un sacerdote di Bragi in pellegrinaggio.{w}"
+    },
+    {
+      "LEIF": "Serve qualcosa? Con tutto il rispetto, non ho{br}tempo per parlare.{w}"
+    },
+    {
+      "AUGUSTUS": "Nemmeno io.{br}Presumo siate diretti alle isole Corsare per{br}stroncare la minaccia dei pirati alla radice?{w}"
+    },
+    {
+      "LEIF": "Certamente. Se li lasciamo stare, sarà solo una{br}questione di tempo prima che attacchino di{br}nuovo.{w}{w}Inoltre, ho sentito dire che tengono prigioniera{br}una sacerdotessa.{w}"
+    },
+    {
+      "AUGUSTUS": "Capisco. In questo caso, permettetemi di farvi{br}da navigatore. Posso guidarvi alle isole.{w}"
+    },
+    {
+      "LEIF": "Cosa?{br}Perché mai un sacerdote dovrebbe conoscere{br}la strada per le isole Corsare?{w}"
+    },
+    {
+      "AUGUSTUS": "Questo sacerdote non è privo di sorprese, ve{br}lo posso garantire.{br}Comunque, sarete voi a decidere.{w}"
+    }
+  ],
+  "WORLDMAP1": [
+    {
+      "NARRATOR": "Mentre il castello di Leonster bruciava,{br}il giovane principe Leif0{w} venne portato in salvo{w}{br}per un soffio da Finn,0{br} il suo cavaliere e tutore.{w}{w}"
+    }
+  ],
+  "WORLDMAP2": [
+    {
+      "NARRATOR": "Essi fuggirono da innumerevoli inseguitori{br}assieme a Nanna,0{br} una fanciulla cresciuta come{w}{br}figlia di Finn.{w}{w}I loro nemici erano i conquistatori della Thracia{br}del Nord: l'Impero di Grannvale, che sorgeva{w}{br}a ovest.{w}/z{w}/z{w}/z{br}"
+    }
+  ],
+  "WORLDMAP3": [
+    {
+      "NARRATOR": "Si rifugiarono nelle città libere di Ulster, Hrest"
+    }
+  ],
+  "WORLDMAP4": [
+    {
+      "NARRATOR": "e Tarrah, fingendosi dei semplici viaggiatori.{w}{w}"
+    }
+  ],
+  "WORLDMAP5": [
+    {
+      "NARRATOR": "E infine giunsero a Fiana, un piccolo villaggio{br}sulla costa est di Thracia.{w}{w}Fiana era indipendente e aveva una propria{br}milizia, le Libere Lame di Fiana, guidate dalla{w}{br}spadaccina Eyvel.0"
+    }
+  ],
+  "WORLDMAP6": [
+    {
+      "NARRATOR": "Ella accolse Leif e i suoi compagni come se{br}0{w}fossero la sua stessa famiglia.{w}{w}Sotto il suo cauto sguardo, il principe deposto{br}passò la sua infanzia a Fiana.{w}{br}assieme a giovani di nascita comune.{w}/z{w}/z{w}"
+    }
+  ],
+  "EYVELDAGDARTALK": [
+    {
+      "TANYA": "Pa', hanno già iniziato a combattere!Z"
+    },
+    {
+      "DAGDAR": "Nun c'è verso de fa 'sta maledetta battaglia...Z{w}Nun importa quant'è forte Eyvel, ce n'è una{br}sola de lei, e dozzine dei loro. Sbrigamose!Z{w};9"
+    },
+    {
+      "TANYA": ";9<"
+    },
+    {
+      "MARTY": "Oh, ma che cavolo...{br}Ancora!Z"
+    }
+  ],
+  "OSIANTANYATALK": [
+    {
+      "OSIAN": "Tanya? Che credi di fare qui?{w}"
+    },
+    {
+      "TANYA": "Che cosa pensi, Osian?{br}Sono qui per aiutarvi come posso!{w}"
+    },
+    {
+      "OSIAN": "Come puoi, uh? Beh, allora tornatene a casa!{br}Quella è l'unica cosa che una ragazzina come{br}te può fare davvero...{w}{w}Staresti solo in mezzo.{w}"
+    },
+    {
+      "TANYA": "Ma senti questo! Pure te sei solo un ragazzino,{br}lo sai o no?! Se non mi vuoi qui, basta dirlo!{br}Non siamo venuti qui per divertirci, cretino!{w}"
+    }
+  ]
+}

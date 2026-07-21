@@ -28,6 +28,7 @@ GameDB="*res://Scripts/GameDatabase.gd"
 GameManager="*res://Scripts/GameManager.gd"
 FadeCanvas="*res://Scripts/FadeCanvas.gd"
 InputConfig="*res://Scripts/InputConfig.gd"
+DialogueL10n="*res://Scripts/DialogueL10n.gd"
 
 [debug]
 
@@ -45,4 +46,7 @@ theme/custom_font="uid://cdcb6bwsvcsa1"
 
 [internationalization]
 
+# Cualquier clave sin traducir en el locale activo (celda vacía en el CSV →
+# omitida al importar) cae automáticamente a inglés.
+locale/fallback="en"
 locale/translations=PackedStringArray("res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.en.translation", "res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.es.translation", "res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.fr.translation", "res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.de.translation", "res://assets/GBA/languages/Menus/Translations FE45 - MainMenu.ja.translation", "res://assets/GBA/languages/Scenes/Translations FE45 - Credits.en.translation", "res://assets/GBA/languages/Scenes/Translations FE45 - Credits.es.translation", "res://assets/GBA/languages/Scenes/Translations FE45 - Credits.fr.translation", "res://assets/GBA/languages/Scenes/Translations FE45 - Credits.de.translation", "res://assets/GBA/languages/Scenes/Translations FE45 - Credits.ja.translation", "res://assets/GBA/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation", "res://assets/GBA/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.es.translation", "res://assets/GBA/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.fr.translation", "res://assets/GBA/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.de.translation", "res://assets/GBA/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.ja.translation")
