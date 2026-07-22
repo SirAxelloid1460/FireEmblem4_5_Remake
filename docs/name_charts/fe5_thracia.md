@@ -80,4 +80,4 @@ verificados por el autor del proyecto desde fuentes propias. Se irán ampliando.
 | Japonés | Romaji | Localizado | Notas |
 |---|---|---|---|
 | リスト | Risuto | List | Jefe cap. 13 (General lv12). |
-| ミュラー | Myura / Mueller | Merlot | Jefe cap. 17A (MageKnight). Alemán *Müller*; fireemblemwod: Myuler. |
+| ミュラー | Myura / Mueller | Mueller | Jefe cap. 17A (MageKnight). Alemán *Müller*; nid `Myuler`; fireemblemwod: Myuler. |

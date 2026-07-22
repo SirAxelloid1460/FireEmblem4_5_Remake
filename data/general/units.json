@@ -9892,8 +9892,8 @@
   ]
  },
  {
-  "nid": "Merlot",
-  "name": "Merlot",
+  "nid": "Myuler",
+  "name": "Mueller",
   "desc": "FE5 boss (17A).",
   "klass": "MageKnight",
   "level": 14,
@@ -9923,7 +9923,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Merlot",
+  "portrait_nid": "Mueller",
   "games": [
    "FE5"
   ]
