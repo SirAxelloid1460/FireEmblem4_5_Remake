@@ -7877,8 +7877,8 @@
   ]
  },
  {
-  "nid": "Distler",
-  "name": "Distler",
+  "nid": "Disler",
+  "name": "Disler",
   "desc": "FE4 boss (9).",
   "klass": "General",
   "level": 22,
@@ -7908,7 +7908,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Distler",
+  "portrait_nid": "Disler",
   "games": [
    "FE4"
   ]
