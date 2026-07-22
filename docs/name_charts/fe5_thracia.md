@@ -71,3 +71,12 @@ El "Localizado" es el que usa el proyecto (`data/general/units.json` → `name`)
 | ラインハルト | Rainharuto | Reinhardt | Reinhardt |  | Reinhardt |
 | レイドリック | Reidorikku | Leidrik | Leidrick |  | Raydrik |
 | ベルド | Berudo | Veld | Veld |  | Veld |
+
+## Jefes menores — confirmados por el autor
+
+Nombres NO presentes en la Name Chart original de la wiki; aportados y
+verificados por el autor del proyecto desde fuentes propias. Se irán ampliando.
+
+| Japonés | Romaji | Localizado | Notas |
+|---|---|---|---|
+| リスト | Risuto | List | Jefe cap. 13 (General lv12). |
