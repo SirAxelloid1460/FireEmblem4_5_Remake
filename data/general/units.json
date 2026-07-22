@@ -10002,8 +10002,8 @@
   ]
  },
  {
-  "nid": "Wolf",
-  "name": "Wolf",
+  "nid": "Wolff",
+  "name": "Wolff",
   "desc": "FE5 boss (19).",
   "klass": "Baron",
   "level": 15,
@@ -10033,7 +10033,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Wolf",
+  "portrait_nid": "Wolff",
   "games": [
    "FE5"
   ]
