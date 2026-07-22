@@ -8411,7 +8411,7 @@
   ]
  },
  {
-  "nid": "Daggon",
+  "nid": "Dagon",
   "name": "Dagon",
   "desc": "FE4 boss (F).",
   "klass": "DarkBishop",
@@ -8440,7 +8440,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Daggon",
+  "portrait_nid": "Dagon",
   "games": [
    "FE4"
   ]
