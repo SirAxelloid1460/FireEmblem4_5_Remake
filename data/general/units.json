@@ -9929,8 +9929,8 @@
   ]
  },
  {
-  "nid": "Pernell",
-  "name": "Pernell",
+  "nid": "Palman",
+  "name": "Palman",
   "desc": "FE5 boss (17B).",
   "klass": "General",
   "level": 14,
@@ -9959,13 +9959,13 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Pernell",
+  "portrait_nid": "Palman",
   "games": [
    "FE5"
   ]
  },
  {
-  "nid": "Gustaf",
+  "nid": "Gustav",
   "name": "Gustav",
   "desc": "FE5 boss (18).",
   "klass": "Baron",

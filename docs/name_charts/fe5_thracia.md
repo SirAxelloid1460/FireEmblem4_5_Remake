@@ -81,3 +81,4 @@ verificados por el autor del proyecto desde fuentes propias. Se irán ampliando.
 |---|---|---|---|
 | リスト | Risuto | List | Jefe cap. 13 (General lv12). |
 | ミュラー | Myura / Mueller | Mueller | Jefe cap. 17A (MageKnight). Alemán *Müller*; nid `Myuler`; fireemblemwod: Myuler. |
+| パルマン | Paruman | Palman | Jefe cap. 17B (General). Antes localizado "Pernell". |
