@@ -18,7 +18,7 @@ sesión de traducción.
 | Baron | バロン | Baron | Barón | Baron | Barone |
 | Berserker | バーサーカー | Berserker | Bárbaro | Berserker | Berserker |
 | Bishop | ビショップ | Evêque | Obispo | Bischof | Vescovo |
-| Bow Fighter | ボウファイター | — | — | — | — |
+| Bow Fighter | アーチャー | Archer | Arquero | Schütze | Arciere |
 | Bow Knight | アーチナイト | — | — | — | — |
 | Citizen | シビリアン | Villageois | Aldeano | Dörfler | Cittadino |
 | Dancer | ダンサー | Danseuse | Bailarina | Tänzerin | Danzatrice |
