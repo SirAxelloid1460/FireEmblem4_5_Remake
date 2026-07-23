@@ -21,18 +21,18 @@ class_name CreditsScreen
 # ----------------------- CONFIG -----------------------------
 
 # Paleta GBA Fire Emblem (FE7/FE8 inspired)
-const COLOR_BG_TOP        := Color(0.04, 0.05, 0.12, 1.0)   # Azul muy oscuro
-const COLOR_BG_BOTTOM     := Color(0.10, 0.08, 0.20, 1.0)   # Púrpura oscuro
+const COLOR_BG_TOP        := Color(0.0, 0.0, 0.0, 1.0)      # Negro
+const COLOR_BG_BOTTOM     := Color(0.0, 0.0, 0.0, 1.0)      # Negro
 const COLOR_VIGNETTE      := Color(0.0, 0.0, 0.0, 0.55)
-const COLOR_TITLE         := Color(1.00, 0.86, 0.40, 1.0)   # Dorado FE
-const COLOR_HEADER        := Color(1.00, 0.78, 0.20, 1.0)   # Dorado más saturado
-const COLOR_SUBHEADER     := Color(0.98, 0.95, 0.70, 1.0)   # Crema
-const COLOR_TEXT          := Color(0.96, 0.96, 0.92, 1.0)   # Blanco perla
-const COLOR_DIM           := Color(0.70, 0.70, 0.78, 1.0)
+const COLOR_TITLE         := Color(1.0, 1.0, 1.0, 1.0)      # Blanco
+const COLOR_HEADER        := Color(1.0, 1.0, 1.0, 1.0)      # Blanco
+const COLOR_SUBHEADER     := Color(1.0, 1.0, 1.0, 1.0)      # Blanco
+const COLOR_TEXT          := Color(1.0, 1.0, 1.0, 1.0)      # Blanco
+const COLOR_DIM           := Color(0.70, 0.70, 0.70, 1.0)   # Gris (atenuado, p. ej. "(Unknown)")
 const COLOR_OUTLINE       := Color(0.0, 0.0, 0.0, 1.0)
-const COLOR_PILLAR        := Color(0.78, 0.62, 0.22, 1.0)   # Bronce/oro oscuro
-const COLOR_PILLAR_LIGHT  := Color(1.00, 0.86, 0.40, 1.0)
-const COLOR_DIVIDER       := Color(1.00, 0.86, 0.40, 0.55)
+const COLOR_PILLAR        := Color(0.0, 0.0, 0.0, 1.0)      # Negro
+const COLOR_PILLAR_LIGHT  := Color(0.0, 0.0, 0.0, 1.0)      # Negro
+const COLOR_DIVIDER       := Color(1.0, 1.0, 1.0, 0.55)     # Blanco (línea del divisor)
 
 # Velocidad de scroll en píxeles por segundo
 const SCROLL_SPEED_NORMAL := 35.0
@@ -42,7 +42,7 @@ const FADE_OUT_TIME       := 0.5
 const END_HOLD_TIME       := 6.0     # Pausa final tras los créditos (matches original wait 6000)
 
 # Tamaños de tipo (estilo GBA-ish: pequeño, legible, con outline)
-const SIZE_TITLE      := 38
+const SIZE_TITLE      := 8     # tamaño nativo de credit_title.fnt (GBA); subir si hace falta
 const SIZE_HEADER     := 24
 const SIZE_SUBHEADER  := 20
 const SIZE_TEXT       := 18
@@ -51,7 +51,9 @@ const SIZE_TABLE      := 16    # Tabla 3 columnas (asset/work/name)
 const NAMES_PER_LINE  := 2     # Máximo de autores por línea en columna name de tabla
 const SIZE_END        := 56
 const OUTLINE_PX      := 4
-const CREDIT_FONT     := "res://assets/fonts/bmp/credit.fnt"   # sprite-font LT (créditos)
+const CREDIT_FONT       := "res://assets/fonts/bmp/credit.fnt"          # cuerpo, GBA/Original (bitmap)
+const CREDIT_TITLE_FONT := "res://assets/fonts/bmp/credit_title.fnt"    # título, GBA/Original (bitmap)
+const CREDIT_FONT_HD    := "res://assets/fonts/Fire_Emblem_Heroes_Font.ttf"  # HD: TTF FE Heroes (todo)
 
 # Layout
 const PILLAR_WIDTH    := 28
@@ -73,13 +75,30 @@ var _header_panel: Panel
 var _credit_font_res = null            # sprite-font LT de créditos (cacheada)
 
 
-## Fuente de créditos (credit.fnt), cargada una vez. null si no existe.
+## Fuente del CUERPO de créditos, cacheada. GBA/Original: credit.fnt (bitmap).
+## HD: la TTF de FE Heroes (p() no traduce .fnt→.ttf, así que se elige a mano).
 func _credit_font():
 	if _credit_font_res == null:
-		var p := AssetSet.p(CREDIT_FONT)
+		var path := CREDIT_FONT
+		if AssetSet.current() == "HD":
+			path = CREDIT_FONT_HD
+		var p := AssetSet.p(path)
 		if ResourceLoader.exists(p):
 			_credit_font_res = load(p)
 	return _credit_font_res
+
+var _credit_title_font_res = null
+## Fuente del TÍTULO ("C R E D I T S"), cacheada. GBA/Original: credit_title.fnt.
+## HD: la misma TTF de FE Heroes que el cuerpo (HD solo tiene esa fuente).
+func _credit_title_font():
+	if _credit_title_font_res == null:
+		var path := CREDIT_TITLE_FONT
+		if AssetSet.current() == "HD":
+			path = CREDIT_FONT_HD
+		var p := AssetSet.p(path)
+		if ResourceLoader.exists(p):
+			_credit_title_font_res = load(p)
+	return _credit_title_font_res
 var _end_label: Label = null
 
 # Credits content. Edit freely — `type` controls the style.
@@ -97,31 +116,35 @@ var credits_data: Array = [
 	# ---------- TEASER (matches the original "MORE YET TO COME") ----------
 	{ "type": "spacer", "size": 200 },
 	{ "type": "header", "text": "MORE YET TO COME" },
+	{ "type": "spacer", "size": 8 },
+	{ "type": "text", "text": "(check my patreon for updates)", "font_size": 14 },
 	{ "type": "spacer", "size": 200 },
 	{ "type": "divider" },
 	{ "type": "spacer", "size": 60 },
 
 	# ---------- AUTHORSHIP (matches original order) ----------
 	{ "type": "header", "text": "A REMAKE BY" },
-	{ "type": "subheader", "text": "SirAxelloid1460" },
-	{ "type": "spacer", "size": SECTION_GAP },
-
-	{ "type": "header", "text": "LEX TALIONIS ENGINE BY" },
-	{ "type": "subheader", "text": "rainlash" },
+	{ "type": "subheader", "text": "SirAxelloid1460 with the help of\nClaude Code AI and The Fire Emblem Fan Community" },
 	{ "type": "spacer", "size": SECTION_GAP * 2 },
 
 	{ "type": "divider" },
 	{ "type": "spacer", "size": 40 },
 
-	# ---------- PROGRAMMING ----------
-	# Original LT contributors + SirAxelloid1460 (Godot port)
-	{ "type": "header", "text": "PROGRAMMING" },
+	# ---------- PROGRAMMING (dividido: port Godot / versión LT original) ----------
+	{ "type": "header", "text": "PROGRAMMING (GODOT VERSION)", "key": "CRPROGRAMMINGGODOT" },
 	{ "type": "spacer", "size": 12 },
-	{ "type": "grid", "columns": 3, "names": [
-		"rainlash", "mag", "SirAxelloid1460",
-		"KD", "Beccarte", "TheeBill",
-		"LordTweed", "ZessDynamite", "Klokinator",
-		"Nemid", "Legendary Super Shaggy", "Lorwyn Boi"
+	{ "type": "table", "columns": 3, "fracs": [0.05, 0.43, 0.04, 0.43, 0.05], "cols": [1, 2, 3], "mono": true, "rows": [
+		["SirAxelloid1460", "&", "Claude Code AI"],
+	] },
+	{ "type": "spacer", "size": SECTION_GAP },
+
+	{ "type": "header", "text": "PROGRAMMING (LEX TALIONIS VERSION)", "key": "CRPROGRAMMINGLT" },
+	{ "type": "spacer", "size": 12 },
+	{ "type": "table", "columns": 3, "fracs": [0.05, 0.30, 0.30, 0.30, 0.05], "cols": [1, 2, 3], "mono": true, "rows": [
+		["rainlash",     "Beccarte",               "LordTweed"],
+		["mag",          "Legendary Super Shaggy", "KD"],
+		["ZessDynamite", "Klokinator",             "Nemid"],
+		["TheeBill",     "",                       "Lorwyn Boi"],
 	] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
@@ -140,15 +163,16 @@ var credits_data: Array = [
 	{ "type": "header", "text": "INFORMATION RESOURCES" },
 	{ "type": "text", "text": "Serenes Forest" },
 	{ "type": "text", "text": "Fire Emblem Wiki" },
-	{ "type": "text", "text": "LordGlenn" },
+	{ "type": "text", "text": "Fire Emblem Wars Of Dragons" },
+	{ "type": "text", "text": "Fire Emblem Fandom" },
+	{ "type": "text", "text": "Fire Emblem Fan Community" },
 	{ "type": "spacer", "size": SECTION_GAP },
 
 	{ "type": "divider" },
 	{ "type": "spacer", "size": 40 },
 
 	# ---------- MAP SPRITES & CUSTOM CLASS CARDS (52 contributors) ----------
-	{ "type": "header", "text": "MAP SPRITES" },
-	{ "type": "subheader", "text": "& Custom Class Cards", "key": "CRSUBCLASSCARDS" },
+	{ "type": "header", "text": "MAP SPRITES & CUSTOM CLASS CARDS", "key": "CRMAPSPRITES" },
 	{ "type": "spacer", "size": 16 },
 	# --- Créditos comunitarios del grid original (comentados de momento) ---
 	# { "type": "grid", "columns": 4, "names": [
@@ -165,7 +189,7 @@ var credits_data: Array = [
 	#	"Mikey_Seregon", "StreetHero", "Blood", "Huichelaar",
 	#	"Seal", "Mobile21", "Team SALVAGED", "Teraspark"
 	# ] },
-	{ "type": "table", "rows": [
+	{ "type": "table", "columns": 3, "fracs": [0.05, 0.30, 0.30, 0.30, 0.05], "cols": [1, 2, 3], "rows": [
 		["Original FE4 & FE5", "Ripping & Formatting", "Stephano, Zane"],
 	] },
 	{ "type": "spacer", "size": SECTION_GAP },
@@ -181,8 +205,8 @@ var credits_data: Array = [
 	# { "type": "text", "text": "SirAxelloid1460" },
 	# { "type": "text", "text": "FEUniverse" },
 	{ "type": "spacer", "size": 16 },
-	{ "type": "table", "rows": [
-		["HD", "Weapons", "Kazkirigiri"],
+	{ "type": "table", "columns": 3, "fracs": [0.05, 0.30, 0.30, 0.30, 0.05], "cols": [1, 2, 3], "rows": [
+		["HD", "FEH Weapons", "Kazkirigiri"],
 	] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
@@ -192,18 +216,18 @@ var credits_data: Array = [
 	# ---------- PORTRAIT DESIGN (32 contributors) ----------
 	{ "type": "header", "text": "PORTRAIT DESIGN" },
 	{ "type": "spacer", "size": 16 },
-	{ "type": "grid", "columns": 3, "names": [
-		"SirAxelloid1460", "Treasure Artwork Compilation", "Melia",
-		"TheBlindArcher", "Nayr", "BoneSethMan",
-		"Vampire Elf", "Aeorys Kirru", "Blackavar",
-		"TheeBill", "Renoud", "Blade",
-		"Atey", "Nobody", "flyingace24",
-		"Dalsin", "MageKnight404", "Jeigan",
-		"Leo Valkirye", "SquareRootOfPi", "Miss Tama",
-		"Kai Shinen", "Arcfalchion", "Zelkami",
-		"NoetherianRing", "Ruby", "Sterling Glovner",
-		"Vilkalizer", "Wasdye", "Obsidian Daddy",
-		"TBA", "Vyland"
+	{ "type": "table", "columns": 3, "fracs": [0.05, 0.30, 0.30, 0.30, 0.05], "cols": [1, 2, 3], "mono": true, "rows": [
+		["SirAxelloid1460", "Treasure Artwork Compilation", "Melia"],
+		["TheBlindArcher",  "Nayr",                         "BoneSethMan"],
+		["Vampire Elf",     "Aeorys Kirru",                 "Blackavar"],
+		["TheeBill",        "Renoud",                       "Blade"],
+		["Atey",            "Nobody",                       "flyingace24"],
+		["Dalsin",          "MageKnight404",                "Jeigan"],
+		["Leo Valkirye",    "SquareRootOfPi",               "Miss Tama"],
+		["Kai Shinen",      "Arcfalchion",                  "Zelkami"],
+		["NoetherianRing",  "Ruby",                         "Sterling Glovner"],
+		["Vilkalizer",      "Wasdye",                       "Obsidian Daddy"],
+		["TBA",             "Vyland",                       ""],
 	] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
@@ -230,7 +254,7 @@ var credits_data: Array = [
 
 		["Ballista", "Repalette", "Pushwall"],
 
-		["Bandit / Mtn. Thief", "Original", "Flasuban"],
+		["Bandit", "Original", "Flasuban"],
 
 		["Barbarian", "HeadBand, Metal Bracers", "RRSKAI"],
 
@@ -312,7 +336,7 @@ var credits_data: Array = [
 		["",               "Julia, Deirdre",  "GabrielKnight, SirKnite31, Seal, Sacred War"],
 		["",               "Linoan, Sara",    "Mikey_Seregon, Aviv"],
 
-		["Loptyr Mage", "Rip", "(Unknown)", { "name": { "italic": true, "dim": true } }],
+		["Loptrian Mage", "Rip", "(Unknown)", { "name": { "italic": true, "dim": true } }],
 
 		["Lord", "Animation", "UltraFenix"],
 		["",     "Still",     "Jeorge_Reds"],
@@ -421,22 +445,23 @@ var credits_data: Array = [
 	{ "type": "header", "text": "WRITING & TRANSLATIONS" },
 	{ "type": "spacer", "size": 16 },
 	{ "type": "table", "columns": 2, "rows": [
-		["FE4 English",         "Project Naga"],
-		["FE4 Spanish",         "Everdrive"],
+		["FE4 English",         "Project Naga, Lil'Nordion, SirAxelloid1460 (Reconciliation)"],
+		["FE4 Spanish", "DarkAdvent"],
+		["FE4 Partial German", "Sephie & Slomo"],
 		["FE5 English",         "Cirosan & Miacis"],
 		["FE5 Italian",         "EnDavio"],
 		["FE5 Spanish",         "Dark Advent Team (Xabier)"],
-		["Missing Translations","Claude Code (AI)"],
+		["Missing Translations","Claude Code AI"],
 		["Transcription",       "SirAxelloid1460"],
 		["GBA Latin fonts",     "LT Engine, FEXP"],
-		["Japanese GBA fonts",  "MonadABXY"],
+		["GBA Japanese fonts",  "MonadABXY"],
 		["HD fonts",            "FE Heroes"],
 	] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
 	# ---------- MUSIC ----------
 	{ "type": "header", "text": "MUSIC" },
-	{ "type": "subheader", "text": "FE4 OST" },
+	{ "type": "subheader", "text": "FE4 and FE5 OST" },
 	{ "type": "spacer", "size": 8 },
 	{ "type": "text", "text": "© Nintendo / Intelligent Systems" },
 	{ "type": "spacer", "size": SECTION_GAP },
@@ -444,15 +469,6 @@ var credits_data: Array = [
 	# ---------- TOOLS (both stacks) ----------
 	{ "type": "header", "text": "BUILT WITH" },
 	{ "type": "subheader", "text": "Godot Engine 4  ·  GDScript" },
-	{ "type": "spacer", "size": SECTION_GAP },
-
-	{ "type": "header", "text": "ORIGINAL LT TOOLING" },
-	{ "type": "spacer", "size": 12 },
-	{ "type": "grid", "columns": 3, "names": [
-		"Python", "Pygame", "GIMP",
-		"Audacity", "Freemake Video Converter 4.0.0", "Sublime Text Editor",
-		"IDLE"
-	] },
 	{ "type": "spacer", "size": SECTION_GAP * 2 },
 
 	{ "type": "divider" },
@@ -461,8 +477,8 @@ var credits_data: Array = [
 	# ---------- DISCLAIMER ----------
 	{ "type": "header", "text": "DISCLAIMER" },
 	{ "type": "spacer", "size": 16 },
-	{ "type": "subheader", "text": "This Fire Emblem 4 and 5 remake is a non-profit fangame and released for free.", "key": "CRDISCLAIMER1" },
-	{ "type": "subheader", "text": "Developed using Godot 4 and Claude Code AI, as well as the Lex Talionis Engine (Pygame) during the earliest versions of this project.", "key": "CRDISCLAIMER2" },
+	{ "type": "subheader", "text": "This Fire Emblem 4 and 5 remake is a non-profit fangame and released for free.", "key": "CRDISCLAIMER1", "wrap_frac": 0.66 },
+	{ "type": "subheader", "text": "Developed using Godot 4 and Claude Code AI, as well as rainlash's Lex Talionis Engine during the earliest versions of this project.", "key": "CRDISCLAIMER2", "wrap_frac": 0.66 },
 	{ "type": "spacer", "size": SECTION_GAP * 2 },
 
 	{ "type": "divider" },
@@ -471,11 +487,7 @@ var credits_data: Array = [
 	# ---------- SPECIAL THANKS (personal, named) ----------
 	{ "type": "header", "text": "SPECIAL THANKS TO" },
 	{ "type": "spacer", "size": 24 },
-	{ "type": "subheader", "text": "Beccarte" },
-	{ "type": "text", "text": "for tolerating my constant 'Help!' cries and being such a tremendous programmer" },
-	{ "type": "spacer", "size": 32 },
-	{ "type": "subheader", "text": "Vyland" },
-	{ "type": "text", "text": "for his constant help with the mouth and blinking animations" },
+	{ "type": "subheader", "text": "Beccarte, Vyland, rainlash and the whole, amazing Fire Emblem Fans Community", "wrap_frac": 0.66 },
 	{ "type": "spacer", "size": SECTION_GAP * 2 },
 
 	{ "type": "divider" },
@@ -587,8 +599,8 @@ func _build_header() -> void:
 	_header_panel.offset_bottom = 70
 
 	var sb := StyleBoxFlat.new()
-	sb.bg_color = Color(0.06, 0.07, 0.16, 0.85)
-	sb.border_color = COLOR_TITLE
+	sb.bg_color = Color(0.0, 0.0, 0.0, 1.0)   # Opaco: oculta el texto que pasa por debajo
+	sb.border_color = COLOR_OUTLINE
 	sb.border_width_bottom = 2
 	sb.border_width_top = 0
 	sb.border_width_left = 0
@@ -601,13 +613,14 @@ func _build_header() -> void:
 	title.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	title.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-	var _tf = _credit_font()
+	var _tf = _credit_title_font()
 	if _tf:
 		title.add_theme_font_override("font", _tf)
 	title.add_theme_font_size_override("font_size", SIZE_TITLE)
 	title.add_theme_color_override("font_color", COLOR_TITLE)
 	title.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
-	title.add_theme_constant_override("outline_size", OUTLINE_PX + 2)
+	# Outline pequeño acorde al tamaño nativo del título (subir junto con SIZE_TITLE)
+	title.add_theme_constant_override("outline_size", 1)
 	_header_panel.add_child(title)
 
 
@@ -654,8 +667,11 @@ func _build_scroll_content() -> void:
 				y += tbl.get_minimum_size().y + LINE_GAP
 			_:
 				var lbl := _make_label(entry)
-				lbl.position = Vector2(0, y)
 				container.add_child(lbl)
+				# Vertical por offsets (el horizontal ya lo fija _make_label con
+				# anclas 0.5; usar position lo sobreescribiría y descentraría).
+				lbl.offset_top = y
+				lbl.offset_bottom = y
 				y += lbl.get_minimum_size().y + LINE_GAP
 
 	_content_height = y
@@ -712,12 +728,25 @@ func _make_label(entry: Dictionary) -> Label:
 			lbl.add_theme_font_size_override("font_size", SIZE_TEXT)
 			lbl.add_theme_color_override("font_color", COLOR_TEXT)
 
-	# Centramos el label respecto a un ancho máximo
-	lbl.custom_minimum_size = Vector2(min(CONTENT_MAX_W, _get_inner_width()), 0)
-	# Lo desplazamos horizontalmente al centro tras conocer su tamaño
-	lbl.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
-	lbl.offset_left = 0
-	lbl.offset_right = 0
+	# Override opcional de tamaño de fuente por entrada (p. ej. líneas pequeñas)
+	if entry.has("font_size"):
+		lbl.add_theme_font_size_override("font_size", int(entry["font_size"]))
+
+	# Ancho de envoltura: por defecto el bloque de créditos (min(CONTENT_MAX_W, inner));
+	# si la entrada trae "wrap_frac", se limita a esa fracción del ancho interno
+	# (p. ej. 0.66 = 66% de pantalla, usado en DISCLAIMER y SPECIAL THANKS).
+	var iw := _get_inner_width()
+	var wrap_w: float = iw * float(entry["wrap_frac"]) if entry.has("wrap_frac") else min(float(CONTENT_MAX_W), iw)
+	# Se fija el ancho y se centra por anclas (0.5): el bloque queda centrado sea
+	# cual sea el ancho del contenedor, y el auto-ajuste parte a ese ancho.
+	lbl.custom_minimum_size = Vector2(wrap_w, 0)
+	lbl.anchor_left = 0.5
+	lbl.anchor_right = 0.5
+	lbl.anchor_top = 0.0
+	lbl.anchor_bottom = 0.0
+	lbl.offset_left = -wrap_w / 2.0
+	lbl.offset_right = wrap_w / 2.0
+	lbl.size = Vector2(wrap_w, 0)
 	return lbl
 
 
@@ -782,31 +811,58 @@ func _make_table(entry: Dictionary) -> Control:
 		columns_count = 3
 	var inner_w := _get_inner_width()
 	var line_height := SIZE_TABLE + 10
-	var pad_left := 12.0
-
-	# Geometría según número de columnas
-	var col_w_asset: float
-	var col_w_work: float
-	var col_w_name: float
-	var col_x_asset: float
-	var col_x_work: float
-	var col_x_name: float
-
-	if columns_count == 3:
-		col_w_asset = inner_w * 0.38
-		col_w_work  = inner_w * 0.27
-		col_w_name  = inner_w * 0.35
-		col_x_asset = 0.0
-		col_x_work  = col_w_asset
-		col_x_name  = col_w_asset + col_w_work
+	# Geometría de 5 columnas físicas, con columnas espaciadoras vacías (*) que
+	# actúan como separadores naturales:
+	#   3 columnas (Combat):  Asset | * | Part    | * | Credito
+	#   2 columnas (W&T):      *    | Language | * | Credito | *
+	# fracs = anchos relativos (suman 1.0). idx_* = índice de la columna física
+	# donde va cada contenido (-1 = no aplica).
+	var fracs: Array
+	var idx_asset: int
+	var idx_work: int
+	var idx_name: int
+	if entry.has("fracs"):
+		# Layout a medida: "fracs" = 5 anchos (suman 1.0); "cols" = índices físicos
+		# de las columnas de contenido: [asset, work, name] en 3-col, [asset, name]
+		# en 2-col. El resto de columnas quedan como separadores vacíos.
+		fracs = entry["fracs"]
+		var cc: Array = entry.get("cols", ([1, 2, 3] if columns_count == 3 else [1, 3]))
+		idx_asset = int(cc[0])
+		if columns_count == 3:
+			idx_work = int(cc[1])
+			idx_name = int(cc[2])
+		else:
+			idx_work = -1
+			idx_name = int(cc[1])
+	elif columns_count == 3:
+		fracs = [0.30, 0.04, 0.28, 0.04, 0.34]
+		idx_asset = 0    # Asset
+		idx_work  = 2    # Part
+		idx_name  = 4    # Credito
 	else:
-		# 2 columnas: label / value
-		col_w_asset = inner_w * 0.40
-		col_w_work  = 0.0
-		col_w_name  = inner_w * 0.60
-		col_x_asset = 0.0
-		col_x_work  = 0.0
-		col_x_name  = col_w_asset
+		fracs = [0.05, 0.43, 0.04, 0.43, 0.05]
+		idx_asset = 1    # Language
+		idx_work  = -1   # sin columna central de contenido
+		idx_name  = 3    # Credito
+
+	# x y ancho (px) de cada columna física, acumulando las fracciones
+	var col_x: Array[float] = []
+	var col_w: Array[float] = []
+	var acc := 0.0
+	for fr in fracs:
+		col_x.append(acc * inner_w)
+		col_w.append(float(fr) * inner_w)
+		acc += float(fr)
+
+	# "mono": todas las celdas en color de texto (blanco perla). Para tablas que
+	# en realidad son listas de créditos (nombres), no asset/work/name.
+	var mono: bool = bool(entry.get("mono", false))
+	var c_asset: Color = COLOR_TEXT if mono else COLOR_HEADER
+	var c_work: Color = COLOR_TEXT if mono else COLOR_SUBHEADER
+	# En tablas mono (listas de créditos) todas las columnas van centradas;
+	# en las semánticas se mantiene 1ª derecha / central centrada / última izquierda.
+	var a_asset: int = HORIZONTAL_ALIGNMENT_CENTER if mono else HORIZONTAL_ALIGNMENT_RIGHT
+	var a_name: int = HORIZONTAL_ALIGNMENT_CENTER if mono else HORIZONTAL_ALIGNMENT_LEFT
 
 	var wrapper := Control.new()
 	wrapper.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
@@ -842,9 +898,16 @@ func _make_table(entry: Dictionary) -> Control:
 		var st_work:  Dictionary = styles.get("work",  {})
 		var st_name:  Dictionary = styles.get("name",  {})
 
-		# Trocear columnas multi-valor en chunks de NAMES_PER_LINE
-		var work_lines: Array[String] = _wrap_csv(work_text, NAMES_PER_LINE) if columns_count == 3 else ([""] as Array[String])
-		var name_lines: Array[String] = _wrap_csv(name_text, NAMES_PER_LINE)
+		# Máximo de items por línea: global NAMES_PER_LINE, salvo override por fila
+		# ("names_per_line" en el dict de estilos). Útil cuando un crédito lleva "&"
+		# y no debe compartir línea con otro (p. ej. "Sephie & Slomo").
+		var npl: int = int(styles.get("names_per_line", NAMES_PER_LINE))
+
+		# Trocear columnas multi-valor. WORK: por conteo (npl). NAME (créditos):
+		# por conteo Y por ancho — fuerza línea nueva si el texto supera el 90%
+		# del ancho de su columna.
+		var work_lines: Array[String] = _wrap_csv(work_text, npl) if columns_count == 3 else ([""] as Array[String])
+		var name_lines: Array[String] = _wrap_credit(name_text, npl, col_w[idx_name])
 
 		# El bloque es tan alto como la columna más larga
 		var lines_count: int = max(work_lines.size(), name_lines.size())
@@ -852,26 +915,27 @@ func _make_table(entry: Dictionary) -> Control:
 			lines_count = 1
 		var block_height := lines_count * line_height
 
-		# Primera columna solo en la primera línea del bloque
+		# ASSET / LANGUAGE (columna izquierda de contenido): alineada a la derecha,
+		# solo en la primera línea del bloque.
 		_add_table_cell(wrapper, asset_text,
-			Vector2(col_x_asset + pad_left, y),
-			Vector2(col_w_asset - pad_left, line_height),
-			COLOR_HEADER, st_asset)
+			Vector2(col_x[idx_asset], y),
+			Vector2(col_w[idx_asset], line_height),
+			c_asset, st_asset, a_asset)
 
-		# WORK (solo si hay 3 columnas): una celda por sub-línea
+		# PART (solo 3 columnas): una celda por sub-línea, centrada
 		if columns_count == 3:
 			for li in range(work_lines.size()):
 				_add_table_cell(wrapper, work_lines[li],
-					Vector2(col_x_work, y + li * line_height),
-					Vector2(col_w_work, line_height),
-					COLOR_SUBHEADER, st_work)
+					Vector2(col_x[idx_work], y + li * line_height),
+					Vector2(col_w[idx_work], line_height),
+					c_work, st_work, HORIZONTAL_ALIGNMENT_CENTER)
 
-		# NAME (última columna): una celda por sub-línea
+		# CREDITO (última columna de contenido): una celda por sub-línea, a la izquierda
 		for li in range(name_lines.size()):
 			_add_table_cell(wrapper, name_lines[li],
-				Vector2(col_x_name, y + li * line_height),
-				Vector2(col_w_name, line_height),
-				COLOR_TEXT, st_name)
+				Vector2(col_x[idx_name], y + li * line_height),
+				Vector2(col_w[idx_name], line_height),
+				COLOR_TEXT, st_name, a_name)
 
 		y += block_height
 
@@ -899,7 +963,42 @@ func _wrap_csv(text: String, per_line: int) -> Array[String]:
 	return out
 
 
-func _add_table_cell(parent: Control, text: String, pos: Vector2, sz: Vector2, color: Color, style: Dictionary = {}) -> void:
+func _wrap_credit(text: String, per_line: int, col_width: float) -> Array[String]:
+	# Como _wrap_csv pero, además del tope de `per_line` items, fuerza salto de
+	# línea si al añadir el siguiente autor la línea superaría el 90% del ancho
+	# de la columna (medido con la fuente real de créditos). Un autor que por sí
+	# solo excede el 90% se queda en su línea (no se puede partir un nombre).
+	var items: Array[String] = []
+	for piece in text.split(","):
+		var clean: String = piece.strip_edges()
+		if clean != "":
+			items.append(clean)
+	var out: Array[String] = []
+	if items.is_empty():
+		out.append("")
+		return out
+	var font = _credit_font()
+	var max_w := col_width * 0.9
+	var cur := ""
+	var cur_count := 0
+	for it in items:
+		var candidate: String = it if cur == "" else cur + ", " + it
+		var too_wide := false
+		if font != null and max_w > 0.0:
+			too_wide = font.get_string_size(candidate, HORIZONTAL_ALIGNMENT_LEFT, -1.0, SIZE_TABLE).x > max_w
+		if cur != "" and (cur_count >= per_line or too_wide):
+			out.append(cur)
+			cur = it
+			cur_count = 1
+		else:
+			cur = candidate
+			cur_count += 1
+	if cur != "":
+		out.append(cur)
+	return out
+
+
+func _add_table_cell(parent: Control, text: String, pos: Vector2, sz: Vector2, color: Color, style: Dictionary = {}, align: int = HORIZONTAL_ALIGNMENT_LEFT) -> void:
 	# style admite estos flags opcionales:
 	#   "italic": bool   — sesga el texto horizontalmente para simular cursiva
 	#   "dim":    bool   — atenúa el color (útil para etiquetas tipo "Unknown")
@@ -915,7 +1014,7 @@ func _add_table_cell(parent: Control, text: String, pos: Vector2, sz: Vector2, c
 	var _cf = _credit_font()
 	if _cf:
 		lbl.add_theme_font_override("font", _cf)
-	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+	lbl.horizontal_alignment = align
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.clip_text = true
 	lbl.add_theme_font_size_override("font_size", SIZE_TABLE)
