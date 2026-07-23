@@ -62,14 +62,14 @@ SAFY,Safy,Safy,Safy,サフィ,Safy,Safy,Safy
 SHIVA,Shiva,Shiva,Shiva,シヴァ,Shiva,Shiva,Shiva
 TANYA,Tanya,Tanya,Tanya,タニア,Tanya,Tanya,Tanya
 WEISSMAN,Weismann,Weismann,Weismann,ワイズマン,Weismann,Weismann,Weismann
-MANA,Muirne,Muirne,Muirne,マナ,Muirne,Muirne,Muirne
-RADNEY,Creidne,Creidne,Creidne,ラドネイ,Creidne,Creidne,Creidne
-RODDLEVAN,Dalvin,Dalvin,Dalvin,ロドルバン,Dalvin,Dalvin,Dalvin
+MUIRNE,Muirne,Muirne,Muirne,マナ,Muirne,Muirne,Muirne
+CREIDNE,Creidne,Creidne,Creidne,ラドネイ,Creidne,Creidne,Creidne
+DALVIN,Dalvin,Dalvin,Dalvin,ロドルバン,Dalvin,Dalvin,Dalvin
 OIFEY,Oifaye,Oifaye,Oifaye,オイフェ,Oifaye,Oifaye,Oifaye
 TRISTAN,Tristan,Tristan,Tristan,トリスタン,Tristan,Tristan,Tristan
-DIMNA,Deimne,Deimne,Deimne,ディムナ,Deimne,Deimne,Deimne
+DEIMNE,Deimne,Deimne,Deimne,ディムナ,Deimne,Deimne,Deimne
 JULIA,Julia,Julia,Julia,ユリア,Julia,Julia,Julia
-FEMINA,Hermina,Hermina,Hermina,フェミナ,Hermina,Hermina,Hermina
+HERMINA,Hermina,Hermina,Hermina,フェミナ,Hermina,Hermina,Hermina
 AMID,Amid,Amid,Amid,アミッド,Amid,Amid,Amid
 JOHAN,Iuchar,Iuchar,Iuchar,ヨハン,Iuchar,Iuchar,Iuchar
 JOHALVA,Iucharba,Iucharba,Iucharba,ヨハルヴァ,Iucharba,Iucharba,Iucharba
@@ -82,7 +82,7 @@ LINDA,Linda,Linda,Linda,リンダ,Linda,Linda,Linda
 ASAELLO,Asaello,Asaello,Asaello,アサエロ,Asaello,Asaello,Asaello
 HAWK,Hawk,Hawk,Hawk,ホーク,Hawk,Hawk,Hawk
 HANNIBAL,Hannibal,Hannibal,Hannibal,ハンニバル,Hannibal,Hannibal,Hannibal
-SHARLOW,Charlot,Charlot,Charlot,シャルロー,Charlot,Charlot,Charlot
+CHARLOT,Charlot,Charlot,Charlot,シャルロー,Charlot,Charlot,Charlot
 BRIGHTON,Brighton,Brighton,Brighton,ブライトン,Brighton,Brighton,Brighton
 MACHYUA,Machyua,Machyua,Machyua,マチュア,Machyua,Machyua,Machyua
 FERGUS,Fergus,Fergus,Fergus,フェルグス,Fergus,Fergus,Fergus
@@ -98,7 +98,7 @@ ROBERT,Robert,Robert,Robert,ロベルト,Robert,Robert,Robert
 FRED,Fred,Fred,Fred,フレッド,Fred,Fred,Fred
 OLWEN,Olwen,Olwen,Olwen,オルエン,Olwen,Olwen,Olwen
 SALEM,Salem,Salem,Salem,セイラム,Salem,Salem,Salem
-PAHN,Perne,Perne,Perne,パーン,Perne,Perne,Perne
+PERNE,Perne,Perne,Perne,パーン,Perne,Perne,Perne
 TINA,Tina,Tina,Tina,ティナ,Tina,Tina,Tina
 TROUDE,Troude,Troude,Troude,トルード,Troude,Troude,Troude
 GLADE,Glade,Glade,Glade,グレイド,Glade,Glade,Glade
@@ -166,7 +166,7 @@ FETRA,Fotla,Fotla,Fotla,フェトラ,Fotla,Fotla,Fotla
 BLOOM,Bloom,Bloom,Blume,ブルーム,Bloom,Bloom,Bloom
 MUHAMMED,Muhammad,Muhammad,Muhammad,ムハマド,Muhammad,Muhammad,Muhammad
 OVO,Ovo,Ovo,Ovo,オーヴォ,Ovo,Ovo,Ovo
-CORUTA,Coulter,Coulter,Coulter,コルータ,Coulter,Coulter,Coulter
+COULTER,Coulter,Coulter,Coulter,コルータ,Coulter,Coulter,Coulter
 MAIKOV,Maykov,Maykov,Maykov,マイコフ,Maykov,Maykov,Maykov
 KANATZ,Kanatz,Kanatz,Kanatz,カナッツ,Kanatz,Kanatz,Kanatz
 DISLER,Disler,Disler,Disler,ディスラー,Disler,Disler,Disler
@@ -251,3 +251,9 @@ ANNA,Anna,Anna,Anna,アンナ,Anna,Anna,Anna
 DRYAS,Dryas,Dryas,Dryas,ドリアス,Dryas,Dryas,Dryas
 AUGUST,August,August,August,アウグスト,August,August,August
 BROOK,Brook,Brook,Brook,ブルック,Brook,Brook,Brook
+EIN,Eins,Eins,Eins,アインス,Eins,Eins,Eins
+ZWEIFE5,Zwei,Zwei,Zwei,ツヴァイ,Zwei,Zwei,Zwei
+DREIFE5,Drei,Drei,Drei,ドライ,Drei,Drei,Drei
+FUNFFE5,Fünf,Fünf,Fünf,フュンフ,Fünf,Fünf,Fünf
+ELFFE5,Elf,Elf,Elf,エルフ,Elf,Elf,Elf
+ZWOLFFE5,Zwölf,Zwölf,Zwölf,ツヴェルフ,Zwölf,Zwölf,Zwölf
