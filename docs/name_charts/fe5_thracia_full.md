@@ -106,7 +106,6 @@ Español · Italiano**. `--` = sin dato; `??` = desconocido; `*` = nota de la fu
 | マスターランス | Masutā ransu | -- | Master Lance | -- | -- | -- | -- | -- | -- |
 | ゆうしゃのやり | Yūsha no yari | -- | Brave Lance | Brave Lance | Brave Lance | Lance héros | Kriegerlanze | Lanza del valor | Lancia forte |
 | ドラゴンランス | Doragonransu | -- | Dragonpike | Dragonpike | Dragonpike | Dracopique | Drachenlnz. | L dragón | Lc. draghi |
-| あんこくのやり | Ankoku no yari | -- | ?? | -- | -- | -- | -- | -- | -- |
 | ゲイボルグ | Geiborugu | Gae Bolg | Gáe Bolg | Gáe Bolg | Gáe Bolg | Gáe Bolg | Gáe Bolg | Gáe Bolg | Gáe Bolg |
 | グングニル | Gunguniru | Gungnir | Gungnir | Gungnir | Gungnir | Gungnir | Gungnir | Gungnir | Gungnir |
 
@@ -170,7 +169,6 @@ Español · Italiano**. `--` = sin dato; `??` = desconocido; `*` = nota de la fu
 | アンロック | Anrokku | -- | Unlock | Unlock | Unlock | Passe | Öffner | Abrir | Sblocco |
 | キア | Kia | -- | Kia | Kia | Kia | Kia | Kia | Kia | Kia |
 | リターン | Ritān | -- | ?? | Return | Return | Retour | Rückkehr | Regreso | Ritorno |
-| ウォッチ | Wottchi | -- | Watch | -- | -- | -- | -- | -- | -- |
 
 ### Tomos (Tomes)
 
@@ -268,7 +266,6 @@ Español · Italiano**. `--` = sin dato; `??` = desconocido; `*` = nota de la fu
 | ぬすむ | Nusumu | -- | Steal | Steal | Steal | Voler | Stehlen | Robar | Furto |
 | まちぶせ | Machibuse | -- | Vantage | Vantage | Vantage | Initiative | Vorteil | Emboscada | Vantaggio |
 | いかり | Ikari | -- | Wrath | Wrath | Wrath | Courroux | Ingrimm | Furia | Ira |
-| シナズ | Shinazu | -- | ?? | -- | -- | -- | -- | -- | -- |
 
 ## Clases (Classes)
 
@@ -336,15 +333,3 @@ Español · Italiano**. `--` = sin dato; `??` = desconocido; `*` = nota de la fu
 | エンペラー | Enperā | Emperor | Emperor | -- | -- | -- | -- | -- | -- |
 | ジュニアロード | Junia rōdo | Junior Lord | Junior Lord | -- | -- | -- | -- | -- | -- |
 | ダークプリンス | Dāku purinsu | Dark Prince | Dark Prince | -- | -- | -- | -- | -- | -- |
-
-## Notas — objetos/habilidades sin usar (unused / no lanzados)
-
-Entradas presentes en los datos pero **sin uso real** (nunca aparecen en el juego
-jugable / nunca se han lanzado en ninguna entrega). No necesitan nombre de
-proyecto salvo que se quieran implementar.
-
-| Kana | Romaji | Categoría | Nota |
-|---|---|---|---|
-| あんこくのやり | Ankoku no yari | Ítems: Lanzas | Lanza **sin usar**; nunca lanzada en ningún juego. |
-| ウォッチ | Wottchi (Watch) | Ítems: Bastones | En Thracia 776 está **sin usar** (unused). |
-| シナズ | Shinazu | Habilidades | Habilidad **sin usar / no lanzada** (como あんこくのやり). |
