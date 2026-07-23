@@ -2,36 +2,35 @@
   "FE4": {
     "Personajes — Primera generación": {
       "Sigurd": "シグルド",
-      "Naoise": "ノイッシュ",
       "Alec": "アレク",
       "Arden": "アーダン",
-      "Azelle": "アゼル",
       "Lex": "レックス",
       "Quan": "キュアン",
       "Ethlyn": "エスリン",
       "Finn": "フィン",
       "Midir": "ミデェール",
       "Dew": "デュー",
-      "Edain": "エーディン",
       "Ayra": "アイラ",
       "Deirdre": "ディアドラ",
       "Jamke": "ジャムカ",
-      "Chulainn": "ホリン",
       "Lachesis": "ラケシス",
       "Beowolf": "ベオウルフ",
       "Lewyn": "レヴィン",
-      "Silvia": "シルヴィア",
       "Erinys": "フュリー",
       "Tailtiu": "ティルテュ",
-      "Claud": "クロード",
-      "Brigid": "ブリギッド"
+      "Brigid": "ブリギッド",
+      "Aideen": "エーディン",
+      "Azel": "アゼル",
+      "Claude": "クロード",
+      "Holyn": "ホリン",
+      "Noish": "ノイッシュ",
+      "Sylvia": "シルヴィア"
     },
     "Personajes — Segunda generación (hijos)": {
       "Seliph": "セリス",
       "Lana": "ラナ",
       "Larcei": "ラクチェ",
       "Ulster": "スカサハ",
-      "Oifey": "オイフェ",
       "Diarmuid": "デルムッド",
       "Lester": "レスター",
       "Julia": "ユリア",
@@ -50,7 +49,8 @@
       "Ced": "セティ",
       "Hannibal": "ハンニバル",
       "Coirpre": "コープル",
-      "Altena": "アルテナ"
+      "Altena": "アルテナ",
+      "Oifaye": "オイフェ"
     },
     "Personajes — Segunda generación (sustitutos)": {
       "Muirne": "マナ",
@@ -75,13 +75,13 @@
       "Aida": "アイダ"
     },
     "Enemigos — Primera generación": {
-      "Cimbaeth": "キンボイス",
-      "Munnir": "ガンドルフ",
       "Sandima": "サンディマ",
       "Chagall": "シャガール",
       "Andrey": "アンドレイ",
       "Lombard": "ランゴバルト",
-      "Reptor": "レプトール"
+      "Reptor": "レプトール",
+      "Gandolf": "ガンドルフ",
+      "Kinbois": "キンボイス"
     },
     "Enemigos — Segunda generación": {
       "Danann": "ダナン",
@@ -132,12 +132,12 @@
       "Forseti": "フォルセティ"
     },
     "Deadlords 魔将 — nombre FE4 (autor)": {
-      "Mus": "アインス",
       "Bovis": "ツヴァイ",
-      "Tigris": "ドライ",
-      "Draco": "フュンフ",
       "Canis": "エルフ",
-      "Porcus": "ツヴェルフ"
+      "Draco": "フュンフ",
+      "Mus": "アインス",
+      "Porcus": "ツヴェルフ",
+      "Tigris": "ドライ"
     },
     "Enemigos menores (autor)": {
       "Alvar": "アルヴァ",
@@ -155,8 +155,8 @@
       "Dagon": "ダゴン",
       "DiMaggio": "デマジオ",
       "Disler": "ディスラー",
+      "Dobarl": "ドバール",
       "Donovan": "ドノバン",
-      "Duvall": "ドバール",
       "Díthorba": "ディートバ",
       "Elliot": "エリオット",
       "Equus": "ズイーベン",
@@ -168,7 +168,7 @@
       "Gallus": "ツェーン",
       "Gerrard": "ゲラルド",
       "Harold": "ハロルド",
-      "Jacobi": "ジャコバン",
+      "Jacoban": "ジャコバン",
       "Javarro": "ジャバロー",
       "Judah": "ジュダ",
       "Kanatz": "カナッツ",
@@ -188,9 +188,9 @@
       "Ovo": "オーヴォ",
       "Palmark": "パルマーク",
       "Pamela": "パメラ",
-      "Papilio": "パピヨン",
+      "Papilion": "パピヨン",
       "Philip": "フィリップ",
-      "Pizare": "ピサール",
+      "Pizarl": "ピサール",
       "Ridale": "リデール",
       "Rodan": "ロダン",
       "Schmidt": "シュミット",
@@ -265,18 +265,18 @@
       "Veld": "ベルド"
     },
     "Jefes menores (autor)": {
+      "Alphand": "アルファン",
+      "Fraus": "フラウス",
       "List": "リスト",
       "Mueller": "ミュラー",
-      "Palman": "パルマン",
-      "Flaus": "フラウス",
-      "Alphand": "アルファン"
+      "Palman": "パルマン"
     },
     "Deadlords 魔将 — nombre FE5 (autor)": {
-      "Eins": "アインス",
-      "Zwei": "ツヴァイ",
       "Drei": "ドライ",
-      "Fünf": "フュンフ",
+      "Eins": "アインス",
       "Elf": "エルフ",
+      "Fünf": "フュンフ",
+      "Zwei": "ツヴァイ",
       "Zwölf": "ツヴェルフ"
     },
     "Enemigos menores (autor)": {
@@ -300,7 +300,7 @@
       "Merlock": "マーロック",
       "Moore": "ムーア",
       "Nikalaf": "ニカラフ",
-      "Oltof": "オルトフ",
+      "Oltoph": "オルトフ",
       "Paulus": "パウルス",
       "Rumei": "ルーメイ",
       "Seimetol": "セイメトル",

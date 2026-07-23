@@ -82,8 +82,12 @@ verificados por el autor del proyecto desde fuentes propias. Se irán ampliando.
 | リスト | Risuto | List | Jefe cap. 13 (General lv12). |
 | ミュラー | Myura / Mueller | Mueller | Jefe cap. 17A (MageKnight). Alemán *Müller*; nid `Myuler`; fireemblemwod: Myuler. |
 | パルマン | Paruman | Palman | Jefe cap. 17B (General). Antes localizado "Pernell". |
-| フラウス | Furausu | Flaus | Jefe cap. 21 (Bishop). Antes localizado "Fricke". |
+| フラウス | Furausu | Fraus | Jefe cap. 21 (Bishop). name `Fraus` / nid `Flaus`; antes "Fricke". |
 | アルファン | Arufan / Alphan | Alphand | Jefe cap. 23 (DarkBishop). Antes localizado "Empropus". |
+
+> Nota de grafía — **Oltoph** (オルトフ, jefe cap. 11x): "Oltoph" es traducción
+> **fan** y es el `name`/`nid` que usa el proyecto; la forma **oficial** es
+> **Oltof** (se conserva aquí como referencia).
 
 ## Deadlords (魔将) — compartidos con FE4
 

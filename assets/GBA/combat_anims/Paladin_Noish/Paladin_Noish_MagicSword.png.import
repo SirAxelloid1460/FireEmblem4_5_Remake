@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://k1ncws3uiyxq"
-path="res://.godot/imported/Paladin_Naoise_MagicSword.png-128e6d2f2ea8faa61a008a559bafd1c4.ctex"
+path="res://.godot/imported/Paladin_Noish_MagicSword.png-128e6d2f2ea8faa61a008a559bafd1c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GBA/combat_anims/Paladin_Naoise/Paladin_Naoise_MagicSword.png"
-dest_files=["res://.godot/imported/Paladin_Naoise_MagicSword.png-128e6d2f2ea8faa61a008a559bafd1c4.ctex"]
+source_file="res://assets/GBA/combat_anims/Paladin_Noish/Paladin_Noish_MagicSword.png"
+dest_files=["res://.godot/imported/Paladin_Noish_MagicSword.png-128e6d2f2ea8faa61a008a559bafd1c4.ctex"]
 
 [params]
 

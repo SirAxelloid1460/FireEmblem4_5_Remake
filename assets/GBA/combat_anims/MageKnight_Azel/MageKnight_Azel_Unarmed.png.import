@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sh87wthp718k"
-path="res://.godot/imported/Paladin_Naoise_Lance.png-aa2884f7b3d6492fe449e0c414ad3900.ctex"
+uid="uid://dbp8tclkshidi"
+path="res://.godot/imported/MageKnight_Azel_Unarmed.png-4faae8ad7a2ec0e63ac5cab4b7bd75f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GBA/combat_anims/Paladin_Naoise/Paladin_Naoise_Lance.png"
-dest_files=["res://.godot/imported/Paladin_Naoise_Lance.png-aa2884f7b3d6492fe449e0c414ad3900.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Azel/MageKnight_Azel_Unarmed.png"
+dest_files=["res://.godot/imported/MageKnight_Azel_Unarmed.png-4faae8ad7a2ec0e63ac5cab4b7bd75f4.ctex"]
 
 [params]
 

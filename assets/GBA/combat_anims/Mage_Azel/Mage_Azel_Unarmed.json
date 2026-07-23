@@ -1,6 +1,6 @@
 {
-  "class": "MageKnight",
-  "variant": "Azelle",
+  "class": "Mage",
+  "variant": "Azel",
   "weapon": "Unarmed",
   "tile_size": [
     240,
@@ -32,7 +32,7 @@
     "Stand": [
       {
         "cmd": "frame",
-        "ticks": 1,
+        "ticks": 3,
         "frame": "Magic_000"
       },
       {
@@ -42,5 +42,5 @@
       }
     ]
   },
-  "generated_from": "MageKnight_Azelle_MagicAnima.json"
+  "generated_from": "Mage_Azel_MagicAnima.json"
 }

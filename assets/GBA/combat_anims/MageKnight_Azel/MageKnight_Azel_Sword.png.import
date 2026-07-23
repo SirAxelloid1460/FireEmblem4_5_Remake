@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duxn80btp5sho"
-path="res://.godot/imported/Mage_Azelle_MagicAnima.png-44877c37fdc2510276037f15d04dd211.ctex"
+uid="uid://bvdclkajp3cey"
+path="res://.godot/imported/MageKnight_Azel_Sword.png-ef7fec425f4ea112c9902922d66f3866.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GBA/combat_anims/Mage_Azelle/Mage_Azelle_MagicAnima.png"
-dest_files=["res://.godot/imported/Mage_Azelle_MagicAnima.png-44877c37fdc2510276037f15d04dd211.ctex"]
+source_file="res://assets/GBA/combat_anims/MageKnight_Azel/MageKnight_Azel_Sword.png"
+dest_files=["res://.godot/imported/MageKnight_Azel_Sword.png-ef7fec425f4ea112c9902922d66f3866.ctex"]
 
 [params]
 

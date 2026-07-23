@@ -1,7 +1,7 @@
 [
  {
   "nid": "Aideen",
-  "name": "Edain",
+  "name": "Aideen",
   "desc": "Sigurd's childhood friend and one of the two daughters of Duke Ring of Jungby.",
   "klass": "Priestess",
   "level": 1,
@@ -308,7 +308,7 @@
  },
  {
   "nid": "Azel",
-  "name": "Azelle",
+  "name": "Azel",
   "desc": "Nobleman of House Velthomer of Grannvale and the younger half-brother of Duke Arvis",
   "klass": "Mage",
   "level": 1,
@@ -556,7 +556,7 @@
  },
  {
   "nid": "Claude",
-  "name": "Claud",
+  "name": "Claude",
   "desc": "Duke of Edda Castle and priest of Bragi Church, of whom he's direct descendant.",
   "klass": "HighPriest",
   "level": 1,
@@ -1223,7 +1223,7 @@
  },
  {
   "nid": "Gandolf",
-  "name": "Munnir",
+  "name": "Gandolf",
   "desc": "Elder son of King Batur of Verdane, and Kinbois and Jamke's brother.",
   "klass": "Warrior",
   "level": 20,
@@ -1365,7 +1365,7 @@
  },
  {
   "nid": "Holyn",
-  "name": "Chulainn",
+  "name": "Holyn",
   "desc": "The son of the Lord of Sophara Castle in Isaach and a distant relative of Ayra.",
   "klass": "Mercenary",
   "level": 1,
@@ -1467,7 +1467,7 @@
  },
  {
   "nid": "Kinbois",
-  "name": "Cimbaeth",
+  "name": "Kinbois",
   "desc": "Second son of King Batur of Verdane, and Gandolf and Jamke's brother.",
   "klass": "Warrior",
   "level": 10,
@@ -1780,7 +1780,7 @@
  },
  {
   "nid": "Noish",
-  "name": "Naoise",
+  "name": "Noish",
   "desc": "Dutiful knight of Chalphy. He is calm and serious, with a strong sense of honor.",
   "klass": "Cavalier",
   "level": 1,
@@ -2084,7 +2084,7 @@
  },
  {
   "nid": "Sylvia",
-  "name": "Silvia",
+  "name": "Sylvia",
   "desc": "Traveling dancer who follows Lewyn and aids the war-suffering civilians.",
   "klass": "Dancer",
   "level": 1,
@@ -3347,7 +3347,7 @@
  },
  {
   "nid": "Oifey",
-  "name": "Oifey",
+  "name": "Oifaye",
   "desc": "",
   "klass": "Paladin",
   "level": 15,
@@ -6630,7 +6630,7 @@
  },
  {
   "nid": "Jacoban",
-  "name": "Jacobi",
+  "name": "Jacoban",
   "desc": "FE4 boss (3).",
   "klass": "Hero",
   "level": 20,
@@ -6665,7 +6665,7 @@
  },
  {
   "nid": "Papil",
-  "name": "Papilio",
+  "name": "Papilion",
   "desc": "FE4 boss (3).",
   "klass": "DragonKnight",
   "level": 20,
@@ -6701,7 +6701,7 @@
  },
  {
   "nid": "Pizarl",
-  "name": "Pizare",
+  "name": "Pizarl",
   "desc": "FE4 boss (3).",
   "klass": "Warrior",
   "level": 20,
@@ -6736,7 +6736,7 @@
  },
  {
   "nid": "Dobarl",
-  "name": "Duvall",
+  "name": "Dobarl",
   "desc": "FE4 boss (3).",
   "klass": "Warrior",
   "level": 20,
@@ -9525,7 +9525,7 @@
  },
  {
   "nid": "Oltoph",
-  "name": "Oltof",
+  "name": "Oltoph",
   "desc": "FE5 boss (11x).",
   "klass": "Bishop",
   "level": 8,
@@ -10123,7 +10123,7 @@
  },
  {
   "nid": "Flaus",
-  "name": "Flaus",
+  "name": "Fraus",
   "desc": "FE5 boss (21).",
   "klass": "Bishop",
   "level": 19,
@@ -10242,7 +10242,7 @@
   ]
  },
  {
-  "nid": "Cohen",
+  "nid": "Cowen",
   "name": "Cowen",
   "desc": "FE5 boss (22).",
   "klass": "Baron",
