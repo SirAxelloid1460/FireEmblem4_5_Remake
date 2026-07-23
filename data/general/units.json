@@ -3220,7 +3220,7 @@
   ]
  },
  {
-  "nid": "Mana",
+  "nid": "Muirne",
   "name": "Muirne",
   "desc": "",
   "klass": "Priestess",
@@ -3262,7 +3262,7 @@
   ]
  },
  {
-  "nid": "Radney",
+  "nid": "Creidne",
   "name": "Creidne",
   "desc": "",
   "klass": "Swordfighter",
@@ -3433,7 +3433,7 @@
   ]
  },
  {
-  "nid": "Dimna",
+  "nid": "Deimne",
   "name": "Deimne",
   "desc": "",
   "klass": "ArcherKnight",
@@ -3520,7 +3520,7 @@
   ]
  },
  {
-  "nid": "Femina",
+  "nid": "Hermina",
   "name": "Hermina",
   "desc": "",
   "klass": "PegasusKnight",
@@ -4079,7 +4079,7 @@
   ]
  },
  {
-  "nid": "Sharlow",
+  "nid": "Charlot",
   "name": "Charlot",
   "desc": "",
   "klass": "Priest",

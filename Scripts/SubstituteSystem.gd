@@ -16,11 +16,11 @@
 #
 #   Madre        Hijo canon (M)   Hija canon (F)   Sub. (M)     Sub. (F)
 #   ─────────────────────────────────────────────────────────────────────
-#   Aideen       Lester (Bow)     Lana (Staff)     Dimna        Muirne
-#   Ayra         Skasaher (Sword) Larcei (Sword)   Dalvin       Radney
+#   Aideen       Lester (Bow)     Lana (Staff)     Deimne       Muirne
+#   Ayra         Skasaher (Sword) Larcei (Sword)   Dalvin       Creidne
 #   Lachesis     Diarmuid (Sword) Nanna (Staff)    Tristan      Jeanne
 #   Sylvia       Coirpre (Staff)  Lene (Refresh)   Charlot      Laylea
-#   Erinys       Ced (Wind)       Fee (Lance/Fly)  Hawk         Femina
+#   Erinys       Ced (Wind)       Fee (Lance/Fly)  Hawk         Hermina
 #   Brigid       Faval (Bow)      Patty (Sword)    Asaello      Daisy
 #   Tailtiu      Arthur (Wind)    Tinny (Thunder)  Amid         Linda
 #
@@ -55,7 +55,7 @@ extends RefCounted
 
 const SUBSTITUTE_DEFS: Dictionary = {
 	# === Aideen / Edain ===
-	"Dimna": {
+	"Deimne": {
 		"replaces": "Lester", "mother_id": "Aideen", "gender": "M",
 		"klass": "BowFighter", "tier": 1, "level": 5,
 		"desc": "Wandering archer who joined the resistance after losing his family. Works hard but lacks innate gift.",
@@ -86,7 +86,7 @@ const SUBSTITUTE_DEFS: Dictionary = {
 		"start_items": ["IronSword"],
 		"skills": ["Pursuit"],
 	},
-	"Radney": {
+	"Creidne": {
 		"replaces": "Larcei", "mother_id": "Ayra", "gender": "F",
 		"klass": "SwordFighter", "tier": 1, "level": 5,
 		"desc": "Hot-blooded swordswoman who hates men due to Isaachian cruelty.",
@@ -149,7 +149,7 @@ const SUBSTITUTE_DEFS: Dictionary = {
 		"start_items": ["Wind"],
 		"skills": [],
 	},
-	"Femina": {
+	"Hermina": {
 		"replaces": "Fee", "mother_id": "Erinys", "gender": "F",
 		"klass": "PegasusKnight", "tier": 1, "level": 5,
 		"desc": "Pegasus Knight fangirl of Sigurd and Erinys; achieved her dream by joining Seliph.",
@@ -207,11 +207,11 @@ const SUBSTITUTE_DEFS: Dictionary = {
 # ── Tabla inversa: madre → sustitutos por género ─────────────────────────────
 
 const MOTHER_TO_SUBSTITUTES: Dictionary = {
-	"Aideen":   { "M": "Dimna",      "F": "Muirne" },
-	"Ayra":     { "M": "Dalvin",     "F": "Radney" },
+	"Aideen":   { "M": "Deimne",     "F": "Muirne" },
+	"Ayra":     { "M": "Dalvin",     "F": "Creidne" },
 	"Lachesis": { "M": "Tristan",    "F": "Jeanne" },
 	"Sylvia":   { "M": "Charlot",    "F": "Laylea" },
-	"Erinys":   { "M": "Hawk",       "F": "Femina" },
+	"Erinys":   { "M": "Hawk",       "F": "Hermina" },
 	"Brigid":   { "M": "Asaello",    "F": "Daisy" },
 	"Tailtiu":  { "M": "Amid",       "F": "Linda" },
 }

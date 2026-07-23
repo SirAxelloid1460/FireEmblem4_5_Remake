@@ -104,7 +104,7 @@
 | Hicks | CavalierA | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
 | Johan | CavalierA | M | ⬜ | ⬜ | ✅ | Axe, HandAxe |
 | Lex | CavalierA | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
-| Dimna | CavalierB | M | ⬜ | ⬜ | ✅ | Bow |
+| Deimne | CavalierB | M | ⬜ | ⬜ | ✅ | Bow |
 | Midir | CavalierB | M | ✅ | ⬜ | ✅ | Bow |
 | Robert | CavalierB | M | ⬜ | ⬜ | ✅ | Bow |
 | Selphina | CavalierB | F | ✅ | ⬜ | ✅ | Bow |
@@ -164,15 +164,15 @@
 | Fred | Paladin | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Oifey | Paladin | M | ⬜ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Erinys | PegasusKnight | M | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
-| Femina | PegasusKnight | F | ⬜ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
+| Hermina | PegasusKnight | F | ⬜ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Misha | PegasusKnight | F | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Karin | PegasusRider | F | ✅ | ⬜ | ✅ | Javelin, Lance, MagicSword, Sword |
 | Coirpre | Priest | M | ✅ | ⬜ | ✅ | MagicStaff |
-| Sharlow | Priest | M | ⬜ | ⬜ | ✅ | MagicStaff |
+| Charlot | Priest | M | ⬜ | ⬜ | ✅ | MagicStaff |
 | Sleuf | Priest | M | ✅ | ⬜ | ✅ | MagicStaff |
 | Aideen | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
 | Linoan | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
-| Mana | Priestess | F | ⬜ | ⬜ | ✅ | MagicStaff |
+| Muirne | Priestess | F | ⬜ | ⬜ | ✅ | MagicStaff |
 | Safy | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
 | Sara | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
 | Tina | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
@@ -185,7 +185,7 @@
 | Ayra | Swordfighter | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Machyua | Swordfighter | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Mareeta | Swordfighter | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
-| Radney | Swordfighter | F | ⬜ | ⬜ | ✅ | MagicSword, Sword |
+| Creidne | Swordfighter | F | ⬜ | ⬜ | ✅ | MagicSword, Sword |
 | Dalvin | Swordfighter | M | ⬜ | ⬜ | ✅ | MagicSword, Sword |
 | Shiva | Swordfighter | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Troude | Swordfighter | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
