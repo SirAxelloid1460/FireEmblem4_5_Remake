@@ -437,7 +437,7 @@
  },
  {
   "id": "Ballistae",
-  "name": "Ballistae",
+  "name": "Ballista",
   "desc": "A common ballistae.",
   "tier": 1,
   "movement_group": "Armors",
