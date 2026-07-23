@@ -71,9 +71,9 @@ Son las armas con nombre propio del proyecto — el sistema de Named Weapons que
 |---|---|---|---|---|---|
 | Darkness Sword | 13 | 6 | 70 | 1 | Mareeta. Brave + Awareness |
 | Mareeta's Sword | 11 | 6 | 80 | 1 | Mareeta. Brave + Awareness |
-| Beo Sword | 16 | 13 | 70 | 1 | Delmud/Fergus. Da Ambush + Wrath |
+| Beo Sword | 16 | 13 | 70 | 1 | Diarmuid/Fergus. Da Ambush + Wrath |
 | Holy Sword | 17 | 11 | 65 | 1 | Olwen. Brave + Effective horses + Mag+10 + Prayer |
-| Blaggi Sword | 15 | 12 | 70 | 1 | Leaf/Nanna/Delmud/Fergus. Effective armoured + Niega Loputo + Prayer |
+| Blaggi Sword | 15 | 12 | 70 | 1 | Leaf/Nanna/Diarmuid/Fergus. Effective armoured + Niega Loputo + Prayer |
 | Loputo Sword | 15 | 20 | 70 | 1 | Raydrik/Mus. Halves enemy ATK + Mag+20 |
 | Mistoltin | 30 | 5 | 80 | 1 | Skl+20 + Mdf+10 + Critical |
 | Tyrfing | 30 | 7 | 80 | 1 | Skl+10 + Spd+10 + Mdf+20 + Prayer |

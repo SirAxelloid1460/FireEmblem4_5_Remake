@@ -1,0 +1,369 @@
+{
+  "class": "Paladin",
+  "variant": "Eve",
+  "weapon": "Javelin",
+  "tile_size": [
+    240,
+    160
+  ],
+  "frame_size": [
+    240,
+    160
+  ],
+  "padding": 0,
+  "grid": [
+    5,
+    4
+  ],
+  "sheet_size": [
+    1200,
+    640
+  ],
+  "frame_count": 18,
+  "frames": {
+    "Lance_000": {
+      "tile": [
+        0,
+        0
+      ]
+    },
+    "Lance_056": {
+      "tile": [
+        1,
+        0
+      ]
+    },
+    "Lance_057": {
+      "tile": [
+        2,
+        0
+      ]
+    },
+    "Lance_058": {
+      "tile": [
+        3,
+        0
+      ]
+    },
+    "Lance_059": {
+      "tile": [
+        4,
+        0
+      ]
+    },
+    "Lance_060": {
+      "tile": [
+        0,
+        1
+      ]
+    },
+    "Lance_061": {
+      "tile": [
+        1,
+        1
+      ]
+    },
+    "Lance_062": {
+      "tile": [
+        2,
+        1
+      ]
+    },
+    "Lance_063": {
+      "tile": [
+        3,
+        1
+      ]
+    },
+    "Lance_064": {
+      "tile": [
+        4,
+        1
+      ]
+    },
+    "Lance_065": {
+      "tile": [
+        0,
+        2
+      ]
+    },
+    "Lance_066": {
+      "tile": [
+        1,
+        2
+      ]
+    },
+    "Lance_067": {
+      "tile": [
+        2,
+        2
+      ]
+    },
+    "Lance_068": {
+      "tile": [
+        3,
+        2
+      ]
+    },
+    "Lance_069": {
+      "tile": [
+        4,
+        2
+      ]
+    },
+    "Lance_070": {
+      "tile": [
+        0,
+        3
+      ]
+    },
+    "Lance_071": {
+      "tile": [
+        1,
+        3
+      ]
+    },
+    "Lance_072": {
+      "tile": [
+        2,
+        3
+      ]
+    }
+  },
+  "poses": {
+    "Attack": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_056"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_057"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 1"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_058"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_059"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Lance_060"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Javelin"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_061"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 15,
+        "frame": "Lance_062"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_062"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_062"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_063"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_056"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_056"
+      }
+    ],
+    "Critical": [
+      {
+        "cmd": "frame",
+        "ticks": 6,
+        "frame": "Lance_056"
+      },
+      {
+        "cmd": "sound",
+        "id": "Heavy Spear Spin"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_064"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_065"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_066"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_067"
+      },
+      {
+        "cmd": "sound",
+        "id": "Horse Step 1"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_068"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_058"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_059"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 8,
+        "frame": "Lance_060"
+      },
+      {
+        "cmd": "spell",
+        "args": [
+          "Javelin"
+        ]
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_061"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 15,
+        "frame": "Lance_062"
+      },
+      {
+        "cmd": "start_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_062"
+      },
+      {
+        "cmd": "end_loop"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 4,
+        "frame": "Lance_062"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_063"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_056"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_056"
+      }
+    ],
+    "Dodge": [
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_069"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 1,
+        "frame": "Lance_070"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_071"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 25,
+        "frame": "Lance_071"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_072"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      }
+    ],
+    "Stand": [
+      {
+        "cmd": "frame",
+        "ticks": 2,
+        "frame": "Lance_000"
+      },
+      {
+        "cmd": "frame",
+        "ticks": 3,
+        "frame": "Lance_000"
+      }
+    ]
+  }
+}

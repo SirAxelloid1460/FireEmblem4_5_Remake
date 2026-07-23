@@ -517,7 +517,7 @@
   "effective_bonus": 0,
   "prf_tags": [],
   "prf_units": [
-   "Delmud",
+   "Diarmuid",
    "Fergus"
   ],
   "status_on_equip": "Wrath,Vantage",
@@ -585,7 +585,7 @@
    [
     "prf_unit",
     [
-     "Delmud",
+     "Diarmuid",
      "Fergus"
     ]
    ]
@@ -811,7 +811,7 @@
    "Leif",
    "Nanna",
    "Fergus",
-   "Delmud"
+   "Diarmuid"
   ],
   "status_on_equip": "Prayer,Blaggi",
   "status_on_hit": "",
@@ -895,7 +895,7 @@
      "Leif",
      "Nanna",
      "Fergus",
-     "Delmud"
+     "Diarmuid"
     ]
    ]
   ]
@@ -3327,7 +3327,7 @@
  },
  {
   "nid": "Gae Bolg",
-  "name": "Gae Bolg",
+  "name": "Gáe Bolg",
   "desc": "Sacred lance of the crusader Njörun.",
   "weapon_type": "Lance",
   "might": 25,
@@ -6789,7 +6789,7 @@
  {
   "nid": "Loptous",
   "name": "Loptous",
-  "desc": "Holy Dark tome of the crusader Loptyr. Increases Resistance and halves enemy's strength.",
+  "desc": "Holy Dark tome of the crusader Loptous. Increases Resistance and halves enemy's strength.",
   "weapon_type": "Dark",
   "might": 30,
   "hit": 70,
@@ -7792,7 +7792,7 @@
  },
  {
   "nid": "Mjolnir",
-  "name": "Mjolnir",
+  "name": "Mjölnir",
   "desc": "Holy thunder of the crusader Thrud.",
   "weapon_type": "Anima",
   "might": 25,

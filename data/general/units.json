@@ -1,7 +1,7 @@
 [
  {
   "nid": "Aideen",
-  "name": "Edain",
+  "name": "Aideen",
   "desc": "Sigurd's childhood friend and one of the two daughters of Duke Ring of Jungby.",
   "klass": "Priestess",
   "level": 1,
@@ -101,7 +101,7 @@
  {
   "nid": "Alvar",
   "name": "Alvar",
-  "desc": "Elite knight of Nordion and younger triplet brother of Eve and Eva.",
+  "desc": "Elite knight of Nordion and the younger triplet brother of Eve and Evar.",
   "klass": "Paladin",
   "level": 8,
   "gender": "M",
@@ -308,7 +308,7 @@
  },
  {
   "nid": "Azel",
-  "name": "Azelle",
+  "name": "Azel",
   "desc": "Nobleman of House Velthomer of Grannvale and the younger half-brother of Duke Arvis",
   "klass": "Mage",
   "level": 1,
@@ -355,7 +355,7 @@
  {
   "nid": "Beowulf",
   "name": "Beowulf",
-  "desc": "A mercenary from Conote alongside Voltz, his friend, and partner.",
+  "desc": "A mercenary from Conote alongside Waltz, his friend, and partner.",
   "klass": "FreeKnight",
   "level": 1,
   "gender": "M",
@@ -457,7 +457,7 @@
  {
   "nid": "Brigid",
   "name": "Brigid",
-  "desc": "Elder daughter of Duke Ring of Yngvi, twin sister of Edain, and half-sister of Andrei.",
+  "desc": "Elder daughter of Duke Ring of Jungby, twin sister of Edain, and half-sister of Andrey.",
   "klass": "Sniper",
   "level": 1,
   "gender": "F",
@@ -556,7 +556,7 @@
  },
  {
   "nid": "Claude",
-  "name": "Claud",
+  "name": "Claude",
   "desc": "Duke of Edda Castle and priest of Bragi Church, of whom he's direct descendant.",
   "klass": "HighPriest",
   "level": 1,
@@ -711,7 +711,7 @@
  {
   "nid": "Dew",
   "name": "Dew",
-  "desc": "A little boy assigned to guard Aideen when they were realesed from Marpha.",
+  "desc": "A little boy assigned to guard Aideen when they were released from Marpha.",
   "klass": "Thief",
   "level": 1,
   "gender": "M",
@@ -758,7 +758,7 @@
  {
   "nid": "DiMaggio",
   "name": "DiMaggio",
-  "desc": "Bandit Cheif under Gandolf orders.",
+  "desc": "Bandit Chief under Gandolf's orders.",
   "klass": "Fighter",
   "level": 10,
   "gender": "M",
@@ -997,9 +997,9 @@
   ]
  },
  {
-  "nid": "Evan",
-  "name": "Evan",
-  "desc": "Elite knight of Nordion and the middle triplet brother of Eve and Alva.",
+  "nid": "Eve",
+  "name": "Eve",
+  "desc": "Elite knight of Nordion and the middle triplet brother of Evar and Alvar.",
   "klass": "Paladin",
   "level": 8,
   "gender": "M",
@@ -1039,7 +1039,7 @@
   "holy_blood": {},
   "tags": [],
   "affinity": "Fire",
-  "portrait_nid": "Evan",
+  "portrait_nid": "Eve",
   "games": [
    "FE4"
   ]
@@ -1047,7 +1047,7 @@
  {
   "nid": "Evar",
   "name": "Evar",
-  "desc": "Elite knight of Nordion and the older triplet brother of Eva and Alva.",
+  "desc": "Elite knight of Nordion and the older triplet brother of Eve and Alvar.",
   "klass": "Paladin",
   "level": 8,
   "gender": "M",
@@ -1223,7 +1223,7 @@
  },
  {
   "nid": "Gandolf",
-  "name": "Munnir",
+  "name": "Gandolf",
   "desc": "Elder son of King Batur of Verdane, and Kinbois and Jamke's brother.",
   "klass": "Warrior",
   "level": 20,
@@ -1319,7 +1319,7 @@
  {
   "nid": "Gerrard",
   "name": "Gerrard",
-  "desc": "Bandit Cheif under Gandolf orders.",
+  "desc": "Bandit Chief under Gandolf's orders.",
   "klass": "Fighter",
   "level": 20,
   "gender": "M",
@@ -1365,7 +1365,7 @@
  },
  {
   "nid": "Holyn",
-  "name": "Chulainn",
+  "name": "Holyn",
   "desc": "The son of the Lord of Sophara Castle in Isaach and a distant relative of Ayra.",
   "klass": "Mercenary",
   "level": 1,
@@ -1467,7 +1467,7 @@
  },
  {
   "nid": "Kinbois",
-  "name": "Cimbaeth",
+  "name": "Kinbois",
   "desc": "Second son of King Batur of Verdane, and Gandolf and Jamke's brother.",
   "klass": "Warrior",
   "level": 10,
@@ -1730,7 +1730,7 @@
  {
   "nid": "Midir",
   "name": "Midir",
-  "desc": "Knight in the service of Grannvale's House Jungby, used to with bow fighting.",
+  "desc": "Knight in the service of Grannvale's House Jungby, used to bow fighting.",
   "klass": "ArcherKnight",
   "level": 1,
   "gender": "M",
@@ -1780,7 +1780,7 @@
  },
  {
   "nid": "Noish",
-  "name": "Naoise",
+  "name": "Noish",
   "desc": "Dutiful knight of Chalphy. He is calm and serious, with a strong sense of honor.",
   "klass": "Cavalier",
   "level": 1,
@@ -1935,7 +1935,7 @@
  {
   "nid": "Quan",
   "name": "Quan",
-  "desc": "Lenster's Prince and Gáe Bolg's inheritor. Husband of Ethlyn and old friend Sigurd.",
+  "desc": "Lenster's Prince and Gáe Bolg's inheritor. Husband of Ethlyn and old friend of Sigurd.",
   "klass": "DukeKnight",
   "level": 1,
   "gender": "M",
@@ -1984,7 +1984,7 @@
  {
   "nid": "Sandima",
   "name": "Sandima",
-  "desc": "A member of the Loptyr Church, responsible for bewitching King Batur.",
+  "desc": "A member of the Loptrian Church, responsible for bewitching King Batur.",
   "klass": "DarkMage",
   "level": 10,
   "gender": "M",
@@ -2084,7 +2084,7 @@
  },
  {
   "nid": "Sylvia",
-  "name": "Silvia",
+  "name": "Sylvia",
   "desc": "Traveling dancer who follows Lewyn and aids the war-suffering civilians.",
   "klass": "Dancer",
   "level": 1,
@@ -2321,7 +2321,9 @@
    "Bow": 1
   },
   "holy_blood": {},
-  "tags": [],
+  "tags": [
+   "Boss"
+  ],
   "affinity": "Ice",
   "portrait_nid": "Bucks",
   "games": [
@@ -2707,7 +2709,7 @@
  {
   "nid": "Mareeta",
   "name": "Mareeta",
-  "desc": "Adoptive daughter of Eyvel and a naturally gifted swordfigther of the Fiana Freeblades.",
+  "desc": "Adoptive daughter of Eyvel and a naturally gifted swordfighter of the Fiana Freeblades.",
   "klass": "Swordfighter",
   "level": 2,
   "gender": "F",
@@ -2760,7 +2762,7 @@
  {
   "nid": "Marty",
   "name": "Marty",
-  "desc": "Member of the Mount Violdrake Bandits and ally of the Fiana Freeblades. ",
+  "desc": "Member of the Mount Violdrake Bandits and ally of the Fiana Freeblades.",
   "klass": "Bandit",
   "level": 1,
   "gender": "M",
@@ -2807,7 +2809,7 @@
  {
   "nid": "Nanna",
   "name": "Nanna",
-  "desc": "Daugther of Lachesis of Nordion and Finn, and younger sister of Darmuid.",
+  "desc": "Daughter of Lachesis of Nordion and Finn, and younger sister of Diarmuid.",
   "klass": "Troubadour",
   "level": 1,
   "gender": "F",
@@ -3218,7 +3220,7 @@
   ]
  },
  {
-  "nid": "Mana",
+  "nid": "Muirne",
   "name": "Muirne",
   "desc": "",
   "klass": "Priestess",
@@ -3260,7 +3262,7 @@
   ]
  },
  {
-  "nid": "Radney",
+  "nid": "Creidne",
   "name": "Creidne",
   "desc": "",
   "klass": "Swordfighter",
@@ -3302,7 +3304,7 @@
   ]
  },
  {
-  "nid": "Roddlevan",
+  "nid": "Dalvin",
   "name": "Dalvin",
   "desc": "",
   "klass": "Swordfighter",
@@ -3345,7 +3347,7 @@
  },
  {
   "nid": "Oifey",
-  "name": "Oifey",
+  "name": "Oifaye",
   "desc": "",
   "klass": "Paladin",
   "level": 15,
@@ -3431,7 +3433,7 @@
   ]
  },
  {
-  "nid": "Dimna",
+  "nid": "Deimne",
   "name": "Deimne",
   "desc": "",
   "klass": "ArcherKnight",
@@ -3518,7 +3520,7 @@
   ]
  },
  {
-  "nid": "Femina",
+  "nid": "Hermina",
   "name": "Hermina",
   "desc": "",
   "klass": "PegasusKnight",
@@ -4077,7 +4079,7 @@
   ]
  },
  {
-  "nid": "Sharlow",
+  "nid": "Charlot",
   "name": "Charlot",
   "desc": "",
   "klass": "Priest",
@@ -4749,7 +4751,7 @@
   ]
  },
  {
-  "nid": "Pahn",
+  "nid": "Perne",
   "name": "Perne",
   "desc": "",
   "klass": "Rogue",
@@ -5505,8 +5507,8 @@
   ]
  },
  {
-  "nid": "Delmud",
-  "name": "Delmud",
+  "nid": "Diarmuid",
+  "name": "Diarmuid",
   "desc": "",
   "klass": "FreeKnight",
   "level": 3,
@@ -5541,7 +5543,7 @@
   "holy_blood": {},
   "tags": [],
   "affinity": "",
-  "portrait_nid": "Delmud",
+  "portrait_nid": "Diarmuid",
   "games": [
    "FE4",
    "FE5"
@@ -5563,48 +5565,6 @@
     }
    }
   }
- },
- {
-  "nid": "Cyas",
-  "name": "Cyas",
-  "desc": "",
-  "klass": "HighPriest",
-  "level": 12,
-  "gender": "M",
-  "bases": {
-   "HP": 23,
-   "STR": 0,
-   "MAG": 18,
-   "SKL": 16,
-   "SPD": 12,
-   "LCK": 5,
-   "DEF": 4,
-   "RES": 0,
-   "CON": 5,
-   "MOV": 7
-  },
-  "growths": {
-   "HP": 50,
-   "STR": 0,
-   "MAG": 35,
-   "SKL": 40,
-   "SPD": 40,
-   "LCK": 55,
-   "DEF": 15,
-   "RES": 0,
-   "CON": 0,
-   "MOV": 0
-  },
-  "starting_items": [],
-  "learned_skills": [],
-  "wexp_gain": {},
-  "holy_blood": {},
-  "tags": [],
-  "affinity": "",
-  "portrait_nid": "Cyas",
-  "games": [
-   "FE5"
-  ]
  },
  {
   "nid": "Ced",
@@ -5859,7 +5819,7 @@
  {
   "nid": "Manfroy",
   "name": "Manfroy",
-  "desc": "Archbishop of the Loptous cult who orchestrated Grannvale's fall.",
+  "desc": "Archbishop of the Loptrian cult who orchestrated Grannvale's fall.",
   "klass": "DarkBishop",
   "level": 30,
   "gender": "M",
@@ -5937,7 +5897,7 @@
  {
   "nid": "Travant",
   "name": "Travant",
-  "desc": "King of Thracia and wielder of Daínn's blood; Altena and Areone's adoptive father.",
+  "desc": "King of Thracia and wielder of Dáinn's blood; Altena and Areone's adoptive father.",
   "klass": "DragonMaster",
   "level": 30,
   "gender": "M",
@@ -6021,7 +5981,7 @@
  {
   "nid": "Ishtar",
   "name": "Ishtar",
-  "desc": "Princess of Friege and 'Goddess of Thunder'; Major Thrud blood, wields the Mjolnir.",
+  "desc": "Princess of Friege and 'Goddess of Thunder'; Major Thrud blood, wields the Mjölnir.",
   "klass": "Sage",
   "level": 27,
   "gender": "F",
@@ -6102,7 +6062,7 @@
  {
   "nid": "Veld",
   "name": "Veld",
-  "desc": "Dark Bishop of the Loptous cult and final antagonist of Thracia 776.",
+  "desc": "Dark Bishop of the Loptrian cult and final antagonist of Thracia 776.",
   "klass": "DarkBishop",
   "level": 20,
   "gender": "M",
@@ -6148,7 +6108,7 @@
  {
   "nid": "Mua",
   "name": "Moore",
-  "desc": "Dark Bishop of the Loptous cult (Thracia 776, ch. 17A).",
+  "desc": "Dark Bishop of the Loptrian cult (Thracia 776, ch. 17A).",
   "klass": "DarkBishop",
   "level": 12,
   "gender": "M",
@@ -6481,7 +6441,7 @@
   ]
  },
  {
-  "nid": "Ulster",
+  "nid": "Skasaher",
   "name": "Scáthach",
   "desc": "Ayra's son; a swordsman.",
   "klass": "Swordfighter",
@@ -6519,7 +6479,7 @@
   },
   "tags": [],
   "affinity": "",
-  "portrait_nid": "Ulster",
+  "portrait_nid": "Skasaher",
   "games": [
    "FE4"
   ]
@@ -6670,7 +6630,7 @@
  },
  {
   "nid": "Jacoban",
-  "name": "Jacobi",
+  "name": "Jacoban",
   "desc": "FE4 boss (3).",
   "klass": "Hero",
   "level": 20,
@@ -6705,7 +6665,7 @@
  },
  {
   "nid": "Papil",
-  "name": "Papilio",
+  "name": "Papilion",
   "desc": "FE4 boss (3).",
   "klass": "DragonKnight",
   "level": 20,
@@ -6741,7 +6701,7 @@
  },
  {
   "nid": "Pizarl",
-  "name": "Pizare",
+  "name": "Pizarl",
   "desc": "FE4 boss (3).",
   "klass": "Warrior",
   "level": 20,
@@ -6776,7 +6736,7 @@
  },
  {
   "nid": "Dobarl",
-  "name": "Duvall",
+  "name": "Dobarl",
   "desc": "FE4 boss (3).",
   "klass": "Warrior",
   "level": 20,
@@ -7134,7 +7094,7 @@
  },
  {
   "nid": "Langobalt",
-  "name": "Lombard",
+  "name": "Langbalt",
   "desc": "FE4 boss (5).",
   "klass": "Baron",
   "level": 30,
@@ -7812,7 +7772,7 @@
   ]
  },
  {
-  "nid": "Coruta",
+  "nid": "Coulter",
   "name": "Coulter",
   "desc": "FE4 boss (8).",
   "klass": "DragonKnight",
@@ -7841,7 +7801,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Coruta",
+  "portrait_nid": "Coulter",
   "games": [
    "FE4"
   ]
@@ -7919,8 +7879,8 @@
   ]
  },
  {
-  "nid": "Distler",
-  "name": "Distler",
+  "nid": "Disler",
+  "name": "Disler",
   "desc": "FE4 boss (9).",
   "klass": "General",
   "level": 22,
@@ -7950,7 +7910,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Distler",
+  "portrait_nid": "Disler",
   "games": [
    "FE4"
   ]
@@ -8107,7 +8067,7 @@
  },
  {
   "nid": "Ridale",
-  "name": "Riddell",
+  "name": "Ridale",
   "desc": "FE4 boss (10).",
   "klass": "Paladin",
   "level": 28,
@@ -8190,7 +8150,7 @@
  },
  {
   "nid": "Morigan",
-  "name": "Morrigan",
+  "name": "Morigan",
   "desc": "FE4 boss (10).",
   "klass": "DarkBishop",
   "level": 25,
@@ -8341,7 +8301,7 @@
  },
  {
   "nid": "Yupheel",
-  "name": "Juphiel",
+  "name": "Yupheel",
   "desc": "FE4 boss (F).",
   "klass": "DarkBishop",
   "level": 29,
@@ -8453,7 +8413,7 @@
   ]
  },
  {
-  "nid": "Daggon",
+  "nid": "Dagon",
   "name": "Dagon",
   "desc": "FE4 boss (F).",
   "klass": "DarkBishop",
@@ -8482,7 +8442,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Daggon",
+  "portrait_nid": "Dagon",
   "games": [
    "FE4"
   ]
@@ -8659,7 +8619,7 @@
  },
  {
   "nid": "Maybell",
-  "name": "Mabel",
+  "name": "Maybell",
   "desc": "FE4 boss (F).",
   "klass": "FalconKnight",
   "level": 25,
@@ -9198,43 +9158,6 @@
   ]
  },
  {
-  "nid": "Bachus",
-  "name": "Bachus",
-  "desc": "FE5 boss (2).",
-  "klass": "Warrior",
-  "level": 4,
-  "gender": "M",
-  "bases": {
-   "HP": 31,
-   "STR": 11,
-   "MAG": 3,
-   "SKL": 6,
-   "SPD": 8,
-   "LCK": 3,
-   "DEF": 9,
-   "RES": 0,
-   "CON": 14,
-   "MOV": 6
-  },
-  "growths": {},
-  "starting_items": [
-   "Iron Axe",
-   "Iron Bow",
-   "Vulnerary"
-  ],
-  "learned_skills": [],
-  "wexp_gain": {},
-  "holy_blood": {},
-  "tags": [
-   "Boss"
-  ],
-  "affinity": "",
-  "portrait_nid": "Bachus",
-  "games": [
-   "FE5"
-  ]
- },
- {
   "nid": "Robos",
   "name": "Lobos",
   "desc": "FE5 boss (3).",
@@ -9419,8 +9342,46 @@
   ]
  },
  {
-  "nid": "Gomez",
-  "name": "Gomez",
+  "nid": "Brook",
+  "name": "Brook",
+  "desc": "FE5 boss.",
+  "klass": "General",
+  "level": 16,
+  "gender": "M",
+  "bases": {
+   "HP": 46,
+   "STR": 17,
+   "MAG": 5,
+   "SKL": 14,
+   "SPD": 10,
+   "LCK": 12,
+   "DEF": 18,
+   "RES": 0,
+   "CON": 19,
+   "MOV": 6
+  },
+  "growths": {},
+  "starting_items": [
+   "Master Lance",
+   "Armour Cutter",
+   "Master Bow",
+   "Knight Killer"
+  ],
+  "learned_skills": [],
+  "wexp_gain": {},
+  "holy_blood": {},
+  "tags": [
+   "Boss"
+  ],
+  "affinity": "",
+  "portrait_nid": "Brook",
+  "games": [
+   "FE5"
+  ]
+ },
+ {
+  "nid": "Gomes",
+  "name": "Gomes",
   "desc": "FE5 boss (8x).",
   "klass": "Warrior",
   "level": 5,
@@ -9449,7 +9410,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Gomez",
+  "portrait_nid": "Gomes",
   "games": [
    "FE5"
   ]
@@ -9786,7 +9747,7 @@
  },
  {
   "nid": "Makroy",
-  "name": "McCloy",
+  "name": "Makroy",
   "desc": "FE5 boss (14).",
   "klass": "DragonKnight",
   "level": 15,
@@ -9822,7 +9783,7 @@
   ]
  },
  {
-  "nid": "Codha",
+  "nid": "Codda",
   "name": "Codda",
   "desc": "FE5 boss (14x).",
   "klass": "DarkBishop",
@@ -9858,7 +9819,7 @@
  },
  {
   "nid": "Aihiman",
-  "name": "Eichmann",
+  "name": "Aihiman",
   "desc": "FE5 boss (14x).",
   "klass": "Mercenary",
   "level": 10,
@@ -9969,8 +9930,8 @@
   ]
  },
  {
-  "nid": "Merlot",
-  "name": "Merlot",
+  "nid": "Myuler",
+  "name": "Mueller",
   "desc": "FE5 boss (17A).",
   "klass": "MageKnight",
   "level": 14,
@@ -10000,14 +9961,14 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Merlot",
+  "portrait_nid": "Mueller",
   "games": [
    "FE5"
   ]
  },
  {
-  "nid": "Pernell",
-  "name": "Pernell",
+  "nid": "Palman",
+  "name": "Palman",
   "desc": "FE5 boss (17B).",
   "klass": "General",
   "level": 14,
@@ -10036,13 +9997,13 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Pernell",
+  "portrait_nid": "Palman",
   "games": [
    "FE5"
   ]
  },
  {
-  "nid": "Gustaf",
+  "nid": "Gustav",
   "name": "Gustav",
   "desc": "FE5 boss (18).",
   "klass": "Baron",
@@ -10079,8 +10040,8 @@
   ]
  },
  {
-  "nid": "Wolf",
-  "name": "Wolf",
+  "nid": "Wolff",
+  "name": "Wolff",
   "desc": "FE5 boss (19).",
   "klass": "Baron",
   "level": 15,
@@ -10110,7 +10071,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Wolf",
+  "portrait_nid": "Wolff",
   "games": [
    "FE5"
   ]
@@ -10199,8 +10160,8 @@
   ]
  },
  {
-  "nid": "Fricke",
-  "name": "Fricke",
+  "nid": "Flaus",
+  "name": "Fraus",
   "desc": "FE5 boss (21).",
   "klass": "Bishop",
   "level": 19,
@@ -10230,7 +10191,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Fricke",
+  "portrait_nid": "Flaus",
   "games": [
    "FE5"
   ]
@@ -10319,7 +10280,7 @@
   ]
  },
  {
-  "nid": "Cohen",
+  "nid": "Cowen",
   "name": "Cowen",
   "desc": "FE5 boss (22).",
   "klass": "Baron",
@@ -10357,8 +10318,8 @@
   ]
  },
  {
-  "nid": "Empropus",
-  "name": "Empropus",
+  "nid": "Alphand",
+  "name": "Alphand",
   "desc": "FE5 boss (23).",
   "klass": "DarkBishop",
   "level": 13,
@@ -10386,7 +10347,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Empropus",
+  "portrait_nid": "Alphand",
   "games": [
    "FE5"
   ]
@@ -10461,7 +10422,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Ein",
+  "portrait_nid": "Eins",
   "games": [
    "FE5"
   ]
@@ -10718,7 +10679,7 @@
  },
  {
   "nid": "Palmark",
-  "name": "Palmarch",
+  "name": "Palmark",
   "desc": "FE4 NPC: bishop awaiting Seliph in Ch.10.",
   "klass": "Bishop",
   "level": 20,
@@ -10777,7 +10738,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "",
+  "portrait_nid": "Zwei",
   "games": [
    "FE5"
   ]
@@ -10810,7 +10771,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "",
+  "portrait_nid": "Drei",
   "games": [
    "FE5"
   ]
@@ -10843,7 +10804,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "",
+  "portrait_nid": "Funf",
   "games": [
    "FE5"
   ]
@@ -10876,7 +10837,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "",
+  "portrait_nid": "Elf",
   "games": [
    "FE5"
   ]
@@ -10909,7 +10870,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "",
+  "portrait_nid": "Zwolf",
   "games": [
    "FE5"
   ]
@@ -10948,9 +10909,9 @@
   ]
  },
  {
-  "nid": "Rleve",
-  "name": "Rinecock",
-  "desc": "FE5 boss (Cap.16B): obispo Loptyrio con bastón Berserk (fireemblemwod: Rinecock).",
+  "nid": "Rinecock",
+  "name": "Linecock",
+  "desc": "FE5 boss (Cap.16B): obispo Loptriano con bastón Berserk (fireemblemwod: Rinecock).",
   "klass": "DarkBishop",
   "level": 5,
   "gender": "M",
@@ -10977,7 +10938,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Rleve",
+  "portrait_nid": "Rinecock",
   "games": [
    "FE5"
   ]

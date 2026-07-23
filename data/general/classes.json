@@ -437,7 +437,7 @@
  },
  {
   "id": "Ballistae",
-  "name": "Ballistae",
+  "name": "Ballista",
   "desc": "A common ballistae.",
   "tier": 1,
   "movement_group": "Armors",
@@ -2349,7 +2349,7 @@
  {
   "id": "DarkMage",
   "name": "Dark Mage",
-  "desc": "A seasoned follower of the dark god Loptyr with great magical powers.",
+  "desc": "A seasoned follower of the dark god Loptous with great magical powers.",
   "tier": 2,
   "movement_group": "Mages",
   "promotes_from": "LoptoMage",
@@ -5426,7 +5426,7 @@
  },
  {
   "id": "PegasusKnight",
-  "name": "Pegasus Knigh",
+  "name": "Pegasus Knight",
   "desc": "",
   "tier": 1,
   "movement_group": "Fliers",

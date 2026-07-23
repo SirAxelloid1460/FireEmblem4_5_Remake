@@ -11,13 +11,13 @@
 
 - Solo FE4: 63
 - Solo FE5: 52
-- Cross-game (FE4+FE5): 7 → ['Finn', 'Leif', 'Nanna', 'Oifey', 'Hannibal', 'Delmud', 'Ced']
+- Cross-game (FE4+FE5): 7 → ['Finn', 'Leif', 'Nanna', 'Oifey', 'Hannibal', 'Diarmuid', 'Ced']
 
 
 ## Añadidos en esta tanda (58, datos reales de Serenes)
 
-- **FE5 jugables**: ~35 (Asbel, Olwen, Fergus, Karin, Cain, Fred, Glade, Dean, Sara, Miranda, Misha, Xavier, Amalda, Conomor, Galzus, Sleuf, Linoan, Homer, Eda, Ralf, Ilios, Salem, Tina, Troude, Shannam, Pahn, Selphina, Carrion, Alva, Robert, Hicks, Dalsin, Brighton, Machyua, Cyas…).
-- **FE4 sustitutos + reclutas fijos**: Mana, Radney, Roddlevan, Tristan, Dimna, Femina, Amid, Daisy, Jeanne, Laylea, Linda, Asaello, Hawk, Sharlow, Oifey, Julia, Johan, Johalva, Shannan, Ares, Hannibal.
+- **FE5 jugables**: ~35 (Asbel, Olwen, Fergus, Karin, Cain, Fred, Glade, Dean, Sara, Miranda, Misha, Xavier, Amalda, Conomor, Galzus, Sleuf, Linoan, Homer, Eda, Ralf, Ilios, Salem, Tina, Troude, Shannam, Perne, Selphina, Carrion, Alva, Robert, Hicks, Dalsin, Brighton, Machyua, Cyas…).
+- **FE4 sustitutos + reclutas fijos**: Muirne, Creidne, Dalvin, Tristan, Deimne, Hermina, Amid, Daisy, Jeanne, Laylea, Linda, Asaello, Hawk, Charlot, Oifey, Julia, Johan, Johalva, Shannan, Ares, Hannibal.
 
 
 ## Pendientes — NO añadidos (sin inventar stats)
@@ -25,7 +25,7 @@
 ### FE4 gen2 hijos con herencia (stats dependen del padre elegido)
 **Resuelto con modelo BASE + MODIFICADOR-POR-PADRE** (fuente: fireemblemwod).
 - Datos: `data/general/gen2_children.json` (14 hijos: Lester, Lana, Larcei, Ulster,
-  Delmud, Nanna, Coirpre, Lene, Ced, Fee, Faval, Patty, Arthur, Tine). Cada uno con
+  Diarmuid, Nanna, Coirpre, Lene, Ced, Fee, Faval, Patty, Arthur, Tine). Cada uno con
   clase real, sangre personal, skills, arma, `max_stats` (tope de clase),
   `base_stats`/`base_growths` (piso = mín entre padres) y `father_mods[padre]`
   (deltas de base y growth + skills que aporta cada padre) para los 13 padres.
@@ -80,12 +80,12 @@ cada unidad cross-game lleva un campo `versions` en `units.json`:
 `LevelLoader._resolve_game_version` elige: `FE4_ONLY`→FE4, `FE5_ONLY`→FE5,
 `SAGA_MODE`→la de menor suma de bases (desempate por nivel). El bloque elegido
 sobreescribe los campos que declara; el resto se hereda del nivel superior.
-Cross-game: **Finn, Leif, Nanna, Oifey, Hannibal, Delmud, Ced, Coirpre**
+Cross-game: **Finn, Leif, Nanna, Oifey, Hannibal, Diarmuid, Ced, Coirpre**
 (stats por versión pendientes de rellenar).
 
 ## Notas de datos
 - FE5: `MOV = Mov×10`, `CON = Build`, `RES = 0` (Serenes no lista Res en FE5; base canónico 0).
 - FE4: `CON`/`MOV` tomados de la clase (fijos por clase en FE4); `RES` = columna Mdf.
 - `wexp_gain`/`starting_items`/`affinity` vacíos (no provistos por Serenes) — el acceso a armas lo da la clase. `holy_blood` (FE4) parseado a dict {sangre: rango}.
-- 10 units nuevos sin retrato aún (renderizan en blanco, sin crash): Mana, Radney, Roddlevan, Dimna, Femina, Johan, Johalva, Sharlow, Pahn, Cyas.
+- 10 units nuevos sin retrato aún (renderizan en blanco, sin crash): Muirne, Creidne, Dalvin, Deimne, Hermina, Johan, Johalva, Charlot, Perne, Cyas.
 
