@@ -7772,7 +7772,7 @@
   ]
  },
  {
-  "nid": "Coruta",
+  "nid": "Coulter",
   "name": "Coulter",
   "desc": "FE4 boss (8).",
   "klass": "DragonKnight",
@@ -7801,7 +7801,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Coruta",
+  "portrait_nid": "Coulter",
   "games": [
    "FE4"
   ]
