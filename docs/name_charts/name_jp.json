@@ -130,6 +130,13 @@
       "Valflame": "ファラフレイム",
       "Mjölnir": "トールハンマー",
       "Forseti": "フォルセティ"
+    },
+    "Deadlords 魔将 — nombre FE4 (autor)": {
+      "Bovis": "ツヴァイ",
+      "Tigris": "ドライ",
+      "Draco": "フュンフ",
+      "Canis": "エルフ",
+      "Porcus": "ツヴェルフ"
     }
   },
   "FE5": {
@@ -197,6 +204,13 @@
       "List": "リスト",
       "Mueller": "ミュラー",
       "Palman": "パルマン"
+    },
+    "Deadlords 魔将 — nombre FE5 (autor)": {
+      "Zwei": "ツヴァイ",
+      "Drei": "ドライ",
+      "Fünf": "フュンフ",
+      "Elf": "エルフ",
+      "Zwölf": "ツヴェルフ"
     }
   }
 }

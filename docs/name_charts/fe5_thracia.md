@@ -82,3 +82,17 @@ verificados por el autor del proyecto desde fuentes propias. Se irán ampliando.
 | リスト | Risuto | List | Jefe cap. 13 (General lv12). |
 | ミュラー | Myura / Mueller | Mueller | Jefe cap. 17A (MageKnight). Alemán *Müller*; nid `Myuler`; fireemblemwod: Myuler. |
 | パルマン | Paruman | Palman | Jefe cap. 17B (General). Antes localizado "Pernell". |
+
+## Deadlords (魔将) — compartidos con FE4
+
+Los mismos personajes en FE4 y FE5 (mismo katakana), con **nombre mostrado y
+stats distintos por juego**. Katakana = número alemán original; FE4 los localiza
+como zodiaco chino en latín, FE5 mantiene el número alemán.
+
+| Japonés | Nº alemán | Nombre FE4 | Nombre FE5 |
+|---|---|---|---|
+| ツヴァイ | Zwei (2) | Bovis | Zwei |
+| ドライ | Drei (3) | Tigris | Drei |
+| フュンフ | Fünf (5) | Draco | Fünf |
+| エルフ | Elf (11) | Canis | Elf |
+| ツヴェルフ | Zwölf (12) | Porcus | Zwölf |
