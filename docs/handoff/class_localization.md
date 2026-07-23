@@ -47,7 +47,7 @@ sesión de traducción.
 | Mage Knight | マージナイト | Chevalier mage | Jinete mago | Magieritter | Mago cavalier |
 | Master Knight | マスターナイト | — | — | — | — |
 | Mountain Thief | マウンテンシーフ | Bandit | Forajido | Bandit | Brigante |
-| Pegasus Knigh | ペガサスナイト | Chevalier pégase | Caballero pegaso | Pegasus-Ritter | Cavaliere pegaso |
+| Pegasus Knight | ペガサスナイト | Chevalier pégase | Caballero pegaso | Pegasus-Ritter | Cavaliere pegaso |
 | Pegasus Rider | ペガサスライダー | — | — | — | — |
 | Pirate | パイレーツ | Pirate | Pirata | Pirat | Pirata |
 | Priest | プリースト | Vicaire | Sacerdote | Heiler | Sacerdote |
