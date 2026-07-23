@@ -21,7 +21,7 @@
 ## Personajes — cobertura de assets (122)
 - con retrato: **111/122** · sin retrato (11): GenoaGuard, Muirne, Creidne, Dalvin, Deimne, Hermina, Johan, Johalva, Charlot, Perne, Cyas
 - con map sprite: **122/122** · sin: —
-- con combat anim: **100/122** · sin (22): Alvar, Azel, Eldigan, Elliot, Eve, Evar, Lewyn, Quan, Tailtiu, Voltz, Zain, Oifey, Amid, Linda, Asbel, Fred, Glade, Homer, Miranda, Amalda, Conomor, Delmud
+- con combat anim: **100/122** · sin (22): Alvar, Azel, Eldigan, Elliot, Eve, Evar, Lewyn, Quan, Tailtiu, Voltz, Zain, Oifey, Amid, Linda, Asbel, Fred, Glade, Homer, Miranda, Amalda, Conomor, Diarmuid
 - starting_items colgantes: ninguno ✅
 - learned_skills colgantes: ninguno ✅
 

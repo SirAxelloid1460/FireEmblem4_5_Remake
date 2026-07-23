@@ -128,7 +128,7 @@
 | Halvan | Fighter | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
 | Johalva | Fighter | M | ⬜ | ⬜ | ✅ | Axe, HandAxe |
 | Osian | Fighter | M | ✅ | ⬜ | ✅ | Axe, HandAxe |
-| Delmud | ForrestKnight | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
+| Diarmuid | ForrestKnight | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Voltz | ForrestKnight | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Boldor | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |
 | Hannibal | General | M | ✅ | ⬜ | ✅ | Axe, Bow, HandAxe, Javelin, Lance, MagicSword, Sword |

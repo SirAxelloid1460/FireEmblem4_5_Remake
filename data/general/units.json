@@ -5507,8 +5507,8 @@
   ]
  },
  {
-  "nid": "Delmud",
-  "name": "Delmud",
+  "nid": "Diarmuid",
+  "name": "Diarmuid",
   "desc": "",
   "klass": "FreeKnight",
   "level": 3,
@@ -5543,7 +5543,7 @@
   "holy_blood": {},
   "tags": [],
   "affinity": "",
-  "portrait_nid": "Delmud",
+  "portrait_nid": "Diarmuid",
   "games": [
    "FE4",
    "FE5"

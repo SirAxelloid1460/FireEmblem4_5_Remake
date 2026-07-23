@@ -317,7 +317,7 @@ static func _build_substitute_def(sub_id: String, father: Dictionary,
 const MOTHER_TO_CHILDREN: Dictionary = {
 	"Aideen":   { "M": "Lester",  "F": "Lana" },
 	"Ayra":     { "M": "Skasaher",  "F": "Larcei" },
-	"Lachesis": { "M": "Delmud",  "F": "Nanna" },
+	"Lachesis": { "M": "Diarmuid",  "F": "Nanna" },
 	"Sylvia":   { "M": "Coirpre", "F": "Lene" },
 	"Erinys":   { "M": "Ced",     "F": "Fee" },
 	"Brigid":   { "M": "Faval",   "F": "Patty" },

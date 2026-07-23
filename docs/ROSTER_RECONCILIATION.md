@@ -11,7 +11,7 @@
 
 - Solo FE4: 63
 - Solo FE5: 52
-- Cross-game (FE4+FE5): 7 → ['Finn', 'Leif', 'Nanna', 'Oifey', 'Hannibal', 'Delmud', 'Ced']
+- Cross-game (FE4+FE5): 7 → ['Finn', 'Leif', 'Nanna', 'Oifey', 'Hannibal', 'Diarmuid', 'Ced']
 
 
 ## Añadidos en esta tanda (58, datos reales de Serenes)
@@ -25,7 +25,7 @@
 ### FE4 gen2 hijos con herencia (stats dependen del padre elegido)
 **Resuelto con modelo BASE + MODIFICADOR-POR-PADRE** (fuente: fireemblemwod).
 - Datos: `data/general/gen2_children.json` (14 hijos: Lester, Lana, Larcei, Ulster,
-  Delmud, Nanna, Coirpre, Lene, Ced, Fee, Faval, Patty, Arthur, Tine). Cada uno con
+  Diarmuid, Nanna, Coirpre, Lene, Ced, Fee, Faval, Patty, Arthur, Tine). Cada uno con
   clase real, sangre personal, skills, arma, `max_stats` (tope de clase),
   `base_stats`/`base_growths` (piso = mín entre padres) y `father_mods[padre]`
   (deltas de base y growth + skills que aporta cada padre) para los 13 padres.
@@ -80,7 +80,7 @@ cada unidad cross-game lleva un campo `versions` en `units.json`:
 `LevelLoader._resolve_game_version` elige: `FE4_ONLY`→FE4, `FE5_ONLY`→FE5,
 `SAGA_MODE`→la de menor suma de bases (desempate por nivel). El bloque elegido
 sobreescribe los campos que declara; el resto se hereda del nivel superior.
-Cross-game: **Finn, Leif, Nanna, Oifey, Hannibal, Delmud, Ced, Coirpre**
+Cross-game: **Finn, Leif, Nanna, Oifey, Hannibal, Diarmuid, Ced, Coirpre**
 (stats por versión pendientes de rellenar).
 
 ## Notas de datos

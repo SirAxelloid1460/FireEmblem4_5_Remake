@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hgbyu2wesjmm"
-path="res://.godot/imported/Delmud.png-95faf8184a49972b391efc230249e538.ctex"
+path="res://.godot/imported/Diarmuid.png-95faf8184a49972b391efc230249e538.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/GBA/portraits/characters/Delmud.png"
-dest_files=["res://.godot/imported/Delmud.png-95faf8184a49972b391efc230249e538.ctex"]
+source_file="res://assets/GBA/portraits/characters/Diarmuid.png"
+dest_files=["res://.godot/imported/Diarmuid.png-95faf8184a49972b391efc230249e538.ctex"]
 
 [params]
 

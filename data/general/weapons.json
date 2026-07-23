@@ -517,7 +517,7 @@
   "effective_bonus": 0,
   "prf_tags": [],
   "prf_units": [
-   "Delmud",
+   "Diarmuid",
    "Fergus"
   ],
   "status_on_equip": "Wrath,Vantage",
@@ -585,7 +585,7 @@
    [
     "prf_unit",
     [
-     "Delmud",
+     "Diarmuid",
      "Fergus"
     ]
    ]
@@ -811,7 +811,7 @@
    "Leif",
    "Nanna",
    "Fergus",
-   "Delmud"
+   "Diarmuid"
   ],
   "status_on_equip": "Prayer,Blaggi",
   "status_on_hit": "",
@@ -895,7 +895,7 @@
      "Leif",
      "Nanna",
      "Fergus",
-     "Delmud"
+     "Diarmuid"
     ]
    ]
   ]
