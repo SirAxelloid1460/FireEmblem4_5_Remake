@@ -83,6 +83,7 @@ verificados por el autor del proyecto desde fuentes propias. Se irán ampliando.
 | ミュラー | Myura / Mueller | Mueller | Jefe cap. 17A (MageKnight). Alemán *Müller*; nid `Myuler`; fireemblemwod: Myuler. |
 | パルマン | Paruman | Palman | Jefe cap. 17B (General). Antes localizado "Pernell". |
 | フラウス | Furausu | Flaus | Jefe cap. 21 (Bishop). Antes localizado "Fricke". |
+| アルファン | Arufan / Alphan | Alphand | Jefe cap. 23 (DarkBishop). Antes localizado "Empropus". |
 
 ## Deadlords (魔将) — compartidos con FE4
 

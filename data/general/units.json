@@ -10280,8 +10280,8 @@
   ]
  },
  {
-  "nid": "Empropus",
-  "name": "Empropus",
+  "nid": "Alphand",
+  "name": "Alphand",
   "desc": "FE5 boss (23).",
   "klass": "DarkBishop",
   "level": 13,
@@ -10309,7 +10309,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Empropus",
+  "portrait_nid": "Alphand",
   "games": [
    "FE5"
   ]
