@@ -17,7 +17,7 @@
 #   Madre        Hijo canon (M)   Hija canon (F)   Sub. (M)     Sub. (F)
 #   ─────────────────────────────────────────────────────────────────────
 #   Aideen       Lester (Bow)     Lana (Staff)     Dimna        Muirne
-#   Ayra         Skasaher (Sword) Larcei (Sword)   Roddlevan    Radney
+#   Ayra         Skasaher (Sword) Larcei (Sword)   Dalvin       Radney
 #   Lachesis     Diarmuid (Sword) Nanna (Staff)    Tristan      Jeanne
 #   Sylvia       Coirpre (Staff)  Lene (Refresh)   Charlot      Laylea
 #   Erinys       Ced (Wind)       Fee (Lance/Fly)  Hawk         Femina
@@ -76,7 +76,7 @@ const SUBSTITUTE_DEFS: Dictionary = {
 		"skills": [],
 	},
 	# === Ayra ===
-	"Roddlevan": {
+	"Dalvin": {
 		"replaces": "Skasaher", "mother_id": "Ayra", "gender": "M",
 		"klass": "SwordFighter", "tier": 1, "level": 5,
 		"desc": "Quiet swordman from Isaach who lost his parents in the early war.",
@@ -208,7 +208,7 @@ const SUBSTITUTE_DEFS: Dictionary = {
 
 const MOTHER_TO_SUBSTITUTES: Dictionary = {
 	"Aideen":   { "M": "Dimna",      "F": "Muirne" },
-	"Ayra":     { "M": "Roddlevan",  "F": "Radney" },
+	"Ayra":     { "M": "Dalvin",     "F": "Radney" },
 	"Lachesis": { "M": "Tristan",    "F": "Jeanne" },
 	"Sylvia":   { "M": "Charlot",    "F": "Laylea" },
 	"Erinys":   { "M": "Hawk",       "F": "Femina" },

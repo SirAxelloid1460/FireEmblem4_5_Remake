@@ -186,7 +186,7 @@
 | Machyua | Swordfighter | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Mareeta | Swordfighter | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Radney | Swordfighter | F | ⬜ | ⬜ | ✅ | MagicSword, Sword |
-| Roddlevan | Swordfighter | M | ⬜ | ⬜ | ✅ | MagicSword, Sword |
+| Dalvin | Swordfighter | M | ⬜ | ⬜ | ✅ | MagicSword, Sword |
 | Shiva | Swordfighter | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Troude | Swordfighter | M | ✅ | ⬜ | ✅ | MagicSword, Sword |
 | Eyvel | Swordmaster | F | ✅ | ⬜ | ✅ | MagicSword, Sword |
