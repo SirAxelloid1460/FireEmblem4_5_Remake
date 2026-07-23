@@ -93,6 +93,7 @@ como zodiaco chino en latín, FE5 mantiene el número alemán.
 
 | Japonés | Nº alemán | Nombre FE4 | Nombre FE5 |
 |---|---|---|---|
+| アインス | Eins (1) | Mus | Eins |
 | ツヴァイ | Zwei (2) | Bovis | Zwei |
 | ドライ | Drei (3) | Tigris | Drei |
 | フュンフ | Fünf (5) | Draco | Fünf |
