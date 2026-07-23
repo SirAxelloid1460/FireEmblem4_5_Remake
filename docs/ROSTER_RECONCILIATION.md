@@ -16,7 +16,7 @@
 
 ## Añadidos en esta tanda (58, datos reales de Serenes)
 
-- **FE5 jugables**: ~35 (Asbel, Olwen, Fergus, Karin, Cain, Fred, Glade, Dean, Sara, Miranda, Misha, Xavier, Amalda, Conomor, Galzus, Sleuf, Linoan, Homer, Eda, Ralf, Ilios, Salem, Tina, Troude, Shannam, Pahn, Selphina, Carrion, Alva, Robert, Hicks, Dalsin, Brighton, Machyua, Cyas…).
+- **FE5 jugables**: ~35 (Asbel, Olwen, Fergus, Karin, Cain, Fred, Glade, Dean, Sara, Miranda, Misha, Xavier, Amalda, Conomor, Galzus, Sleuf, Linoan, Homer, Eda, Ralf, Ilios, Salem, Tina, Troude, Shannam, Perne, Selphina, Carrion, Alva, Robert, Hicks, Dalsin, Brighton, Machyua, Cyas…).
 - **FE4 sustitutos + reclutas fijos**: Mana, Radney, Dalvin, Tristan, Dimna, Femina, Amid, Daisy, Jeanne, Laylea, Linda, Asaello, Hawk, Sharlow, Oifey, Julia, Johan, Johalva, Shannan, Ares, Hannibal.
 
 
@@ -87,5 +87,5 @@ Cross-game: **Finn, Leif, Nanna, Oifey, Hannibal, Delmud, Ced, Coirpre**
 - FE5: `MOV = Mov×10`, `CON = Build`, `RES = 0` (Serenes no lista Res en FE5; base canónico 0).
 - FE4: `CON`/`MOV` tomados de la clase (fijos por clase en FE4); `RES` = columna Mdf.
 - `wexp_gain`/`starting_items`/`affinity` vacíos (no provistos por Serenes) — el acceso a armas lo da la clase. `holy_blood` (FE4) parseado a dict {sangre: rango}.
-- 10 units nuevos sin retrato aún (renderizan en blanco, sin crash): Mana, Radney, Dalvin, Dimna, Femina, Johan, Johalva, Sharlow, Pahn, Cyas.
+- 10 units nuevos sin retrato aún (renderizan en blanco, sin crash): Mana, Radney, Dalvin, Dimna, Femina, Johan, Johalva, Sharlow, Perne, Cyas.
 

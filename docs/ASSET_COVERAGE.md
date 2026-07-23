@@ -177,7 +177,7 @@
 | Sara | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
 | Tina | Priestess | F | ✅ | ⬜ | ✅ | MagicStaff |
 | Lachesis | Princess | F | ✅ | ⬜ | ✅ | MagicStaff, MagicSword, Sword |
-| Pahn | Rogue | M | ⬜ | ⬜ | ✅ | MagicSword, Sword |
+| Perne | Rogue | M | ⬜ | ⬜ | ✅ | MagicSword, Sword |
 | Arvis | Sage | M | ⬜ | ⬜ | ✅ | MagicAnima, MagicStaff |
 | Ced | Sage | M | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
 | Hawk | Sage | M | ✅ | ⬜ | ✅ | MagicAnima, MagicStaff |
