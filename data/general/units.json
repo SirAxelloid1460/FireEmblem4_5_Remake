@@ -8150,7 +8150,7 @@
  },
  {
   "nid": "Morigan",
-  "name": "Morrigan",
+  "name": "Morigan",
   "desc": "FE4 boss (10).",
   "klass": "DarkBishop",
   "level": 25,
@@ -8301,7 +8301,7 @@
  },
  {
   "nid": "Yupheel",
-  "name": "Juphiel",
+  "name": "Yupheel",
   "desc": "FE4 boss (F).",
   "klass": "DarkBishop",
   "level": 29,
@@ -8619,7 +8619,7 @@
  },
  {
   "nid": "Maybell",
-  "name": "Mabel",
+  "name": "Maybell",
   "desc": "FE4 boss (F).",
   "klass": "FalconKnight",
   "level": 25,
@@ -9342,8 +9342,8 @@
   ]
  },
  {
-  "nid": "Gomez",
-  "name": "Gomez",
+  "nid": "Gomes",
+  "name": "Gomes",
   "desc": "FE5 boss (8x).",
   "klass": "Warrior",
   "level": 5,
@@ -9372,7 +9372,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Gomez",
+  "portrait_nid": "Gomes",
   "games": [
    "FE5"
   ]
@@ -9525,7 +9525,7 @@
  },
  {
   "nid": "Oltoph",
-  "name": "Oltoph",
+  "name": "Oltof",
   "desc": "FE5 boss (11x).",
   "klass": "Bishop",
   "level": 8,
@@ -9709,7 +9709,7 @@
  },
  {
   "nid": "Makroy",
-  "name": "McCloy",
+  "name": "Makroy",
   "desc": "FE5 boss (14).",
   "klass": "DragonKnight",
   "level": 15,
@@ -9781,7 +9781,7 @@
  },
  {
   "nid": "Aihiman",
-  "name": "Eichmann",
+  "name": "Aihiman",
   "desc": "FE5 boss (14x).",
   "klass": "Mercenary",
   "level": 10,
@@ -10641,7 +10641,7 @@
  },
  {
   "nid": "Palmark",
-  "name": "Palmarch",
+  "name": "Palmark",
   "desc": "FE4 NPC: bishop awaiting Seliph in Ch.10.",
   "klass": "Bishop",
   "level": 20,
@@ -10872,7 +10872,7 @@
  },
  {
   "nid": "Rinecock",
-  "name": "Rinecock",
+  "name": "Linecock",
   "desc": "FE5 boss (Cap.16B): obispo Loptriano con bastón Berserk (fireemblemwod: Rinecock).",
   "klass": "DarkBishop",
   "level": 5,
