@@ -170,7 +170,7 @@ Español · Italiano**. `--` = sin dato; `??` = desconocido; `*` = nota de la fu
 | アンロック | Anrokku | -- | Unlock | Unlock | Unlock | Passe | Öffner | Abrir | Sblocco |
 | キア | Kia | -- | Kia | Kia | Kia | Kia | Kia | Kia | Kia |
 | リターン | Ritān | -- | ?? | Return | Return | Retour | Rückkehr | Regreso | Ritorno |
-| ウォッチ | Wottchi | -- | ?? | -- | -- | -- | -- | -- | -- |
+| ウォッチ | Wottchi | -- | Watch | -- | -- | -- | -- | -- | -- |
 
 ### Tomos (Tomes)
 
@@ -336,3 +336,15 @@ Español · Italiano**. `--` = sin dato; `??` = desconocido; `*` = nota de la fu
 | エンペラー | Enperā | Emperor | Emperor | -- | -- | -- | -- | -- | -- |
 | ジュニアロード | Junia rōdo | Junior Lord | Junior Lord | -- | -- | -- | -- | -- | -- |
 | ダークプリンス | Dāku purinsu | Dark Prince | Dark Prince | -- | -- | -- | -- | -- | -- |
+
+## Notas — objetos/habilidades sin usar (unused / no lanzados)
+
+Entradas presentes en los datos pero **sin uso real** (nunca aparecen en el juego
+jugable / nunca se han lanzado en ninguna entrega). No necesitan nombre de
+proyecto salvo que se quieran implementar.
+
+| Kana | Romaji | Categoría | Nota |
+|---|---|---|---|
+| あんこくのやり | Ankoku no yari | Ítems: Lanzas | Lanza **sin usar**; nunca lanzada en ningún juego. |
+| ウォッチ | Wottchi (Watch) | Ítems: Bastones | En Thracia 776 está **sin usar** (unused). |
+| シナズ | Shinazu | Habilidades | Habilidad **sin usar / no lanzada** (como あんこくのやり). |
