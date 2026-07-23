@@ -10122,8 +10122,8 @@
   ]
  },
  {
-  "nid": "Fricke",
-  "name": "Fricke",
+  "nid": "Flaus",
+  "name": "Flaus",
   "desc": "FE5 boss (21).",
   "klass": "Bishop",
   "level": 19,
@@ -10153,7 +10153,7 @@
    "Boss"
   ],
   "affinity": "",
-  "portrait_nid": "Fricke",
+  "portrait_nid": "Flaus",
   "games": [
    "FE5"
   ]
