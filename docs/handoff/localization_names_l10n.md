@@ -395,6 +395,34 @@ NAME_RAYDRIK,Raydrik,,,レイドリック,,
 NAME_VELD,Veld,,,ベルド,,
 ```
 
+## ⚠️ Renombres de nid (sesión de juego) — reconciliar claves de Characters.csv
+
+Esta sesión alineó varios **nid** internos con el nombre mostrado (y añadió
+1 unidad nueva). La `Translations FE45 - Characters.csv` que subiste usa como
+**clave** (1ª columna) el nid **viejo** en varios casos; si la localización de
+nombres se va a indexar por el nid de la unidad, esas claves hay que
+actualizarlas. El **texto mostrado** (columnas en/es/… ) ya es correcto.
+
+| Clave actual en CSV | nid nuevo (unidad) | Mostrado | Juego |
+|---|---|---|---|
+| `RODDLEVAN` | `Dalvin` | Dalvin | FE4 |
+| `PAHN` | `Perne` | Perne | FE5 |
+| `CORUTA` | `Coulter` | Coulter | FE4 |
+| `DIMNA` | `Deimne` | Deimne | FE4 |
+| `MANA` | `Muirne` | Muirne | FE4 |
+| `RADNEY` | `Creidne` | Creidne | FE4 |
+| `SHARLOW` | `Charlot` | Charlot | FE4 |
+| `FEMINA` | `Hermina` | Hermina | FE4 |
+| `DIARMUID` | `Diarmuid` | Diarmuid | FE4/FE5 | *(ya coincide; antes el nid era `Delmud`, ahora unificado a `Diarmuid`; `Delmud` queda solo como NoJ en las charts)* |
+
+Además, unidad **nueva** creada esta sesión (ya presente en tu CSV como `BROOK`):
+`Brook` (ブルック) — jefe FE5 General. Sin cambios necesarios en la clave.
+
+> Sugerencia (opcional): si el sistema de nombres se indexa por nid, cambiar
+> las 8 claves de arriba al nid nuevo. Si en cambio usa una clave estable tipo
+> `NAME_*` (como propone este handoff), no hace falta tocar nada más que
+> mantener el mapeo clave→unidad en el código de carga.
+
 ## Pendiente (no en las charts todavía)
 Enemigos menores / jefes secundarios sin entrada en las charts actuales
 (Elliot, Gerrard, Macbeth, los jefes-bestia de FE4, los jefes con número
