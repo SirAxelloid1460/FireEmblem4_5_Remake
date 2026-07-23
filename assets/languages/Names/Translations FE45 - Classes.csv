@@ -1,0 +1,76 @@
+,en,es,de,ja,fr,it,pt
+CLASS_LORD,Lord,Lord,Lord,ジュニアロード,Lord,Lord,Lord
+CLASS_KNIGHTLORD,Knight Lord,Lord caballero,Edelmann,ロードナイト,Lord Equus,Lord cavaliere,Knight Lord
+CLASS_PRINCE,Prince,Prince,Prince,プリンス,Prince,Prince,Prince
+CLASS_PRINCESS,Princess,Princesa,Prinzessin,プリンセス,Princesse,Principessa,Princess
+CLASS_MASTERKNIGHT,Master Knight,Master Knight,Master Knight,マスターナイト,Master Knight,Master Knight,Master Knight
+CLASS_CAVALIER,Cavalier,Jinete,Kavalier,ソシアルナイト,Cavalier,Fantino,Cavalier
+CLASS_TROUBADOUR,Troubadour,Trovador,Troubadour,トルバドール,Troubadour,Trobairitz,Troubadour
+CLASS_SWORDKNIGHT,Sword Knight,Sword Knight,Sword Knight,フリーナイト,Sword Knight,Sword Knight,Sword Knight
+CLASS_FORESTKNIGHT,Forest Knight,Jinete arquero,Waldläufer,フォレストナイト,Rôdeur,Ranger,Forest Knight
+CLASS_LANCEKNIGHT,Lance Knight,Caballero lanza,Lanzenritter,ランスナイト,Cavalier lancier,Cavaliere lanza,Lance Knight
+CLASS_DUKEKNIGHT,Duke Knight,Duke Knight,Duke Knight,デュークナイト,Duke Knight,Duke Knight,Duke Knight
+CLASS_AXEKNIGHT,Axe Knight,Caballero hacha,Axtritter,アクスナイト,Cavalier bipenne,Cavaliere ascia,Axe Knight
+CLASS_GREATKNIGHT,Great Knight,Jinete pesado,Erzritter,グレートナイト,Grand chevalier,Gran cavalier,Great Knight
+CLASS_BOWKNIGHT,Bow Knight,Bow Knight,Bow Knight,アーチナイト,Bow Knight,Bow Knight,Bow Knight
+CLASS_ARCHKNIGHT,Arch Knight,Caballero arco,Bogenritter,ボウナイト,Cavalier archer,Cavalier arco,Arch Knight
+CLASS_ARMRLANCE,Armr. Lance,Caballero,Ritter,アーマー,Chevalier,Cavaliere,Armr. Lance
+CLASS_ARMRSWORD,Armr. Sword,Caballero espada,Schwertritter,ソードアーマー,Cuirassier (épée),Corazziere spada,Armr. Sword
+CLASS_ARMOREDAXE,Armored Axe,Caballero hacha,Axtritter,アクスアーマー,Cuirassier (hache),Corazziere ascia,Armored Axe
+CLASS_ARMOREDBOW,Armored Bow,Armored Bow,Armored Bow,ボウアーマー,Armored Bow,Armored Bow,Armored Bow
+CLASS_GENERAL,General,General,General,ジェネラル,Général,Generale,General
+CLASS_MYRMIDON,Myrmidon,Luchador espada,Schwertkämpfer,ソードファイター,Soldat (épée),Soldato spada,Myrmidon
+CLASS_SWORDMASTER,Swordmaster,Soldado espada,Schwertmeister,ソードマスター,Soldat (épée),Soldato spada,Swordmaster
+CLASS_HERO,Hero,Hero,Hero,フォーレスト,Hero,Hero,Hero
+CLASS_FIGHTER,Fighter,Soldado hacha,Axtkämpfer,アクスファイター,Soldat (hache),Soldato ascia,Fighter
+CLASS_WARRIOR,Warrior,Guerrero,Krieger,ウォーリア,Guerrier,Guerriero,Warrior
+CLASS_ARCHER,Archer,Archer,Archer,ボウファイター,Archer,Archer,Archer
+CLASS_SNIPER,Sniper,Tirador,Scharfschütze,スナイパー,Archer d'élite,Tiratore scelto,Sniper
+CLASS_THIEF,Thief,Ladrón,Dieb,シーフ,Voleur,Ladro,Thief
+CLASS_ROGUE,Rogue,Rogue,Rogue,シーフファイター,Rogue,Rogue,Rogue
+CLASS_BARBARIAN,Barbarian,Saqueador,Barbar,バーバリアン,Barbare,Barbaro,Barbarian
+CLASS_BRIGAND,Brigand,Forajido,Bandit,マウンテンシーフ,Bandit,Brigante,Brigand
+CLASS_PIRATE,Pirate,Pirata,Pirat,パイレーツ,Pirate,Pirata,Pirate
+CLASS_HUNTER,Hunter,Cazador,Jäger,ハンター,Chasseur,Cacciatore,Hunter
+CLASS_PEGASUSKNIGHT,Pegasus Knight,Caballero pegaso,Pegasus-Ritter,ペガサスナイト,Chevalier pégase,Cavaliere pegaso,Pegasus Knight
+CLASS_FALCONKNIGHT,Falcon Knight,Auriga,Falkenritter,ファルコンナイト,Chevalier faucon,Cavaliere falco,Falcon Knight
+CLASS_DRACORIDER,Dracorider,Dracorider,Dracorider,ドラゴンライダー,Dracorider,Dracorider,Dracorider
+CLASS_DRACOKNIGHT,Dracoknight,Jinete wyvern,Wyvernritter,ドラゴンナイト,Chevalier wyverne,Cavaliere viverna,Dracoknight
+CLASS_DRAGONMASTER,Dragonmaster,Paladín wyvern,Wyvernlord,ドラゴンマスター,Lord wyverne,Lord viverna,Dragonmaster
+CLASS_DANCER,Dancer,Bailarina,Tänzerin,ダンサー,Danseuse,Danzatrice,Dancer
+CLASS_MAGE,Mage,Mago,Magier,マージ,Mage,Mago,Mage
+CLASS_FIREMAGE,Fire Mage,Mago Fuego,Feuermagier,ファイアマージ,Mage feu,Mago fuoco,Fire Mage
+CLASS_THUNDERMAGE,Thunder Mage,Mago Trueno,Donnermagier,サンダーマージ,Mage foudre,Mago tuono,Thunder Mage
+CLASS_WINDMAGE,Wind Mage,Mago Viento,Windmagier,ウインドマージ,Mage vent,Mago vento,Wind Mage
+CLASS_MAGEKNIGHT,Mage Knight,Jinete mago,Magieritter,マージナイト,Chevalier mage,Mago cavalier,Mage Knight
+CLASS_WARMAGE,War Mage,War Mage,War Mage,マージファイター,War Mage,War Mage,War Mage
+CLASS_BARD,Bard,Bardo,Barde,バード,Barde,Bardo,Bard
+CLASS_PRIESTESS,Priestess,Priestess,Priestess,シャーマン,Priestess,Priestess,Priestess
+CLASS_SAGE,Sage,Sabio,Weiser,セイジ,Sage,Saggio,Sage
+CLASS_PRIEST,Priest,Sacerdote,Heiler,プリースト,Vicaire,Sacerdote,Priest
+CLASS_HIGHPRIEST,High Priest,High Priest,High Priest,ハイプリースト,High Priest,High Priest,High Priest
+CLASS_BISHOP,Bishop,Obispo,Bischof,ビショップ,Evêque,Vescovo,Bishop
+CLASS_CIVILIAN,Civilian,Aldeano,Dörfler,シビリアン,Villageois,Cittadino,Civilian
+CLASS_DARKMAGE,Dark Mage,Mago oscuro,Dunkelmagier,ダークマージ,Mage noir,Mago nero,Dark Mage
+CLASS_DARKBISHOP,Dark Bishop,Obispo oscuro,Dunkelbischof,ダークビショップ,Évêque noir,Vescovo oscuro,Dark Bishop
+CLASS_DARKPRINCE,Dark Prince,Dark Prince,Dark Prince,ダークプリンス,Dark Prince,Dark Prince,Dark Prince
+CLASS_BARON,Baron,Barón,Baron,バロン,Baron,Barone,Baron
+CLASS_QUEEN,Queen,Reina,Königin,クイーン,Reine,Regina,Queen
+CLASS_EMPEROR,Emperor,Emperor,Emperor,エンペラー,Emperor,Emperor,Emperor
+CLASS_BALLISTICIAN,Ballistician,Ballesta,Ballista,ロングアーチ,Baliste,Balista,Ballistician
+CLASS_BALLISTICIAN_2,Ballistician,Ballesta asesina,Meister-Ballista,キラーアーチ,Baliste létale,Balista letale,Ballistician
+CLASS_BALLISTICIAN_3,Ballistician,Ballesta de hierro,Eisen-Ballista,アイアンアーチ,Baliste-fer,Balista ferro,Ballistician
+CLASS_BALLISTICIAN_4,Ballistician,Ballistician,Ballistician,グレートアーチ,Ballistician,Ballistician,Ballistician
+CLASS_SOLDIER,Soldier,Soldado,Soldat,ソルジャー,Soldat,Soldato,Soldier
+CLASS_SWORDSOLDIER,Sword Soldier,Sword Soldier,Sword Soldier,ソードソルジャー,Sword Soldier,Sword Soldier,Sword Soldier
+CLASS_SPEARSOLDIER,Spear Soldier,Spear Soldier,Spear Soldier,スピアソルジャー,Spear Soldier,Spear Soldier,Spear Soldier
+CLASS_AXESOLDIER,Axe Soldier,Axe Soldier,Axe Soldier,アクスソルジャー,Axe Soldier,Axe Soldier,Axe Soldier
+CLASS_BOWSOLDIER,Bow Soldier,Arquero,Schütze,アーチャー,Archer,Arciere,Bow Soldier
+CLASS_LORD_2,Lord,Lord,Lord,ロード,Lord,Lord,Lord
+CLASS_ARMOREDLANCE,Armored Lance,Lanza acorazado,Lanzenmeister,ランスアーマー,Chevalier lance,Armigero lancia,Armored Lance
+CLASS_HERO_2,Hero,Mercenario,Söldner,マーシナリー,Mercenaire,Mercenario,Hero
+CLASS_BERSERKER,Berserker,Bárbaro,Berserker,バーサーカー,Berserker,Berserker,Berserker
+CLASS_PEGASUSRIDER,Pegasus Rider,Pegasus Rider,Pegasus Rider,ペガサスライダー,Pegasus Rider,Pegasus Rider,Pegasus Rider
+CLASS_CLERIC,Cleric,Clériga,Geistliche,シスター,Prêtre,Chierico,Cleric
+CLASS_LOPTRIANMAGE,Loptrian Mage,Loptrian Mage,Loptrian Mage,ロプトマージ,Loptrian Mage,Loptrian Mage,Loptrian Mage
+CLASS_VENINBALLISTA,Venin Ballista,Venin Ballista,Venin Ballista,ポイズンアーチ,Venin Ballista,Venin Ballista,Venin Ballista

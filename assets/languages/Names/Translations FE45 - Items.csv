@@ -1,0 +1,197 @@
+,en,es,de,ja,fr,it,pt
+ITEM_IRONSWORD,Iron Sword,Espada de hierro,Eisenschwert,てつの剣,Epée-fer,Spada ferro,Iron Sword
+ITEM_STEELSWORD,Steel Sword,Espada de acero,Stahlschwert,はがねの剣,Epée-acier,Spada acciaio,Steel Sword
+ITEM_SILVERSWORD,Silver Sword,Espada de plata,Silberschwert,ぎんの剣,Epée-argent,Spada argento,Silver Sword
+ITEM_IRONBLADE,Iron Blade,Sable de hierro,Eisenklinge,てつの大剣,Lame-fer,Lama ferro,Iron Blade
+ITEM_STEELBLADE,Steel Blade,Sable de acero,Stahlklinge,はがねの大剣,Lame-acier,Lama acciaio,Steel Blade
+ITEM_SILVERBLADE,Silver Blade,Sable de plata,Silberklinge,ぎんの大剣,Lame-argent,Lama argento,Silver Blade
+ITEM_MIRACLESWORD,Miracle sword,Miracle sword,Miracle sword,いのりの剣,Miracle sword,Miracle sword,Miracle sword
+ITEM_THIEFSSWORD,Thief's sword,Thief's sword,Thief's sword,とうぞくの剣,Thief's sword,Thief's sword,Thief's sword
+ITEM_BERSERKEDGE,Berserk edge,Berserk edge,Berserk edge,バサークの剣,Berserk edge,Berserk edge,Berserk edge
+ITEM_BRAVESWORD,Brave Sword,Espada del valor,Kriegerschwert,ゆうしゃの剣,Epée héros,Spada forte,Brave Sword
+ITEM_SLEEPEDGE,Sleep edge,Sleep edge,Sleep edge,スリープの剣,Sleep edge,Sleep edge,Sleep edge
+ITEM_SLIMSWORD,Slim Sword,Espada delgada,Leichtschwert,ほそみの剣,Epée fine,Spada sottile,Slim Sword
+ITEM_SHIELDSWORD,Shield Sword,Salvaguardia,Abschirmung,まもりの剣,Épée protectrice,Salvaguardia,Shield Sword
+ITEM_BARRIERSWORD,Barrier Sword,Hoja defensiva,Barriereklinge,バリアの剣,Lame barrière,Lama barriera,Barrier Sword
+ITEM_EARTHSWORD,Earth Sword,Espada terrestre,Erdschwert,だいちの剣,Épée terrestre,Spada terrestre,Earth Sword
+ITEM_FLAMESWORD,Flame sword,Flame sword,Flame sword,ほのおの剣,Flame sword,Flame sword,Flame sword
+ITEM_BOLTSWORD,Bolt Sword,Espada rayo,Blitzschwert,いかずちの剣,Épée foudre,Spada folgore,Bolt Sword
+ITEM_WINDSWORD,Wind Sword,Espada de viento,Windschwert,かぜの剣,Eolame,Spada di vento,Wind Sword
+ITEM_LIGHTBRAND,Light Brand,Espada luminosa,Lichtklinge,ひかりの剣,Épée-Lumière,Spada di luce,Light Brand
+ITEM_ARMORSLAYER,Armorslayer,Machacacorazas,Panzerbrecher,ざんてつの剣,Cuiracide,Frangicotta,Armorslayer
+ITEM_WINGSLAYER,Wingslayer,Cortaplumas,Flügelstutzer,つばめがえし,Coupe-ailes,Tarpa ali,Wingslayer
+ITEM_BROKENSWORD,Broken Sword,Espada rota,Zerbrochenes Schwert,こわれた剣,Épée cassée,Spada rotta,Broken Sword
+ITEM_SILENCEEDGE,Silence edge,Silence edge,Silence edge,サイレスの剣,Silence edge,Silence edge,Silence edge
+ITEM_IRONLANCE,Iron Lance,Lanza de hierro,Eisenlanze,てつのやり,Lance-fer,Lancia ferro,Iron Lance
+ITEM_STEELLANCE,Steel Lance,Lanza de acero,Stahllanze,はがねのやり,Lance-acier,Lancia acciaio,Steel Lance
+ITEM_SILVERLANCE,Silver Lance,Lanza de plata,Silberlanze,ぎんのやり,Lance-argent,Lancia argento,Silver Lance
+ITEM_JAVELIN,Javelin,Jabalina,Langspeer,てやり,Javelot,Giavellotto,Javelin
+ITEM_HORSESLAYER,Horseslayer,Antijinetes,Rittertod,ナイトキラー,Caballucide,Picca,Horseslayer
+ITEM_BRAVELANCE,Brave Lance,Lanza del valor,Kriegerlanze,ゆうしゃのやり,Lance héros,Lancia forte,Brave Lance
+ITEM_SLIMLANCE,Slim Lance,Lanza delgada,Leichtlanze,ほそみのやり,Lance fine,Lancia sottile,Slim Lance
+ITEM_BROKENLANCE,Broken Lance,Lanza rota,Zerbrochene Lanze,こわれたやり,Lance cassée,Lancia rotta,Broken Lance
+ITEM_IRONAXE,Iron Axe,Hacha de hierro,Eisenaxt,てつのおの,Hache-fer,Ascia ferro,Iron Axe
+ITEM_STEELAXE,Steel Axe,Hacha de plata,Stahlaxt,はがねのおの,Hache-acier,Ascia acciaio,Steel Axe
+ITEM_SILVERAXE,Silver Axe,Hacha plata,Silberaxt,ぎんのおの,Hache argent,Ascia argento,Silver Axe
+ITEM_BRAVEAXE,Brave Axe,Hacha del valor,Kriegeraxt,ゆうしゃのおの,Hache héros,Ascia forte,Brave Axe
+ITEM_HANDAXE,Hand Axe,Hacha de mano,Wurfbeil,ておの,Hachette,Scure,Hand Axe
+ITEM_BROKENAXE,Broken Axe,Hacha rota,Zerbrochene Axt,こわれたおの,Hache cassée,Ascia rotta,Broken Axe
+ITEM_IRONBOW,Iron Bow,Arco de hierro,Eisenbogen,てつのゆみ,Arc-fer,Arco ferro,Iron Bow
+ITEM_STEELBOW,Steel Bow,Arco de acero,Stahlbogen,はがねのゆみ,Arc-acier,Arco acciaio,Steel Bow
+ITEM_SILVERBOW,Silver Bow,Arco de plata,Silberbogen,ぎんのゆみ,Arc-argent,Arco argento,Silver Bow
+ITEM_BRAVEBOW,Brave Bow,Arco del valor,Kriegerbogen,ゆうしゃのゆみ,Arc héros,Arco forte,Brave Bow
+ITEM_KILLERBOW,Killer Bow,Arco asesino,Meisterbogen,キラーボウ,Arc létal,Arco letale,Killer Bow
+ITEM_BROKENBOW,Broken Bow,Arco roto,Zerbrochener Bogen,こわれたゆみ,Arc cassé,Arco rotto,Broken Bow
+ITEM_BALLISTA,Ballista,Ballesta,Ballista,ロングアーチ,Baliste,Balista,Ballista
+ITEM_KILLERBALLISTA,Killer Ballista,Ballesta asesina,Meister-Ballista,キラーアーチ,Baliste létale,Balista letale,Killer Ballista
+ITEM_IRONBALLISTA,Iron Ballista,Ballesta de hierro,Eisen-Ballista,アイアンアーチ,Baliste-fer,Balista ferro,Iron Ballista
+ITEM_GREATBALLISTA,Great ballista,Great ballista,Great ballista,グレートアーチ,Great ballista,Great ballista,Great ballista
+ITEM_FIRE,Fire,Fuego,Feuer,ファイアー,Feu,Fuoco,Fire
+ITEM_ELFIRE,Elfire,Elfire,Elfenlicht,エルファイアー,Inferno,Fuoco d'elfo,Elfire
+ITEM_BOLGANONE,Bolganone,Bolganone,Bolganone,ボルガノン,Bolganone,Bolganone,Bolganone
+ITEM_METEOR,Meteor,Meteorito,Meteor,メティオ,Météorite,Meteora,Meteor
+ITEM_THUNDER,Thunder,Trueno,Donner,サンダー,Foudre,Tuono,Thunder
+ITEM_ELTHUNDER,Elthunder,Elthunder,Elfendonner,エルサンダー,Eclairs,Lampi d'elfo,Elthunder
+ITEM_THORON,Thoron,Grimorio Thoron,Thorons Macht,トローン,Tome de Thoron,Tomo di Thoron,Thoron
+ITEM_BOLTING,Bolting,Rayos,Gewitter,サンダストーム,Fulguration,Tempesta,Bolting
+ITEM_WIND,Wind,Aire,Wind,ウインド,Vent,Vento,Wind
+ITEM_ELWIND,Elwind,Elwind,Elfenwind,エルウインド,Tempête,Vento d'elfo,Elwind
+ITEM_TORNADO,Tornado,Tornado,Tornado,トルネード,Tornade,Tornado,Tornado
+ITEM_BLIZZARD,Blizzard,Ventisca,Blizzard,ブリザード,Blizzard,Bufera,Blizzard
+ITEM_LIGHTNING,Lightning,Relámpago,Blitz,ライトニング,Lumière,Lampo,Lightning
+ITEM_AURA,Aura,Aura,Aura,オーラ,Aura,Aurora,Aura
+ITEM_NOSFERATU,Nosferatu,Nosferatu,Nosferatu,リザイア,Nosferatu,Nosferatu,Nosferatu
+ITEM_JORMUNGAND,Jormungand,Jormungand,Jormungand,ヨツムンガンド,Jormungand,Jormungand,Jormungand
+ITEM_FENRIR,Fenrir,Fenrir,Fenrir,フェンリル,Fenrir,Fenrir,Fenrir
+ITEM_HEL,Hel,Hel,Hel,ヘル,Hel,Hel,Hel
+ITEM_DRAINEDTOME,Drained tome,Drained tome,Drained tome,きえたまどう書,Drained tome,Drained tome,Drained tome
+ITEM_HEAL,Heal,Curar,Heilung,ライブの杖,Soin,Cura,Heal
+ITEM_MEND,Mend,Mejorar,Pflege,リライブの杖,Cure,Rimedio,Mend
+ITEM_RECOVER,Recover,Recuperar,Erholung,リカバーの杖,Restitution,Recupero,Recover
+ITEM_PHYSIC,Physic,Sanar,Purgativ,リブローの杖,Remède,Lenimento,Physic
+ITEM_FORTIFY,Fortify,Fortalecer,Stärkung,リザーブの杖,Halo,Balsamo,Fortify
+ITEM_RETURN,Return,Regreso,Rückkehr,リターンの杖,Retour,Ritorno,Return
+ITEM_WARP,Warp,Transportar,Teleport,ワープの杖,Téléport,Teletrasportare,Warp
+ITEM_RESCUE,Rescue,Rescatar,Rettung,レスキューの杖,Secours,Soccorso,Rescue
+ITEM_RESTORE,Restore,Restaurar,Erneuerung,レストの杖,Vitalis,Ripristino,Restore
+ITEM_SILENCE,Silence,Silenciar,Schweigen,サイレスの杖,Silence,Silenzio,Silence
+ITEM_SLEEP,Sleep,Dormir,Schlaf,スリープの杖,Sommeil,Sonno,Sleep
+ITEM_BERSERK,Berserk,Bárbaro,Berserker,バサークの杖,Furie,Berserk,Berserk
+ITEM_BROKENSTAFF,Broken staff,Broken staff,Broken staff,こわれた杖,Broken staff,Broken staff,Broken staff
+ITEM_CHARM,Charm,Charm,Charm,チャームの杖,Charm,Charm,Charm
+ITEM_THIEF,Thief,Thief,Thief,シーフの杖,Thief,Thief,Thief
+ITEM_TYRFING,Tyrfing,Tyrfing,Tyrfing,ティルフィング,Tyrfing,Tyrfing,Tyrfing
+ITEM_BALMUNG,Balmung,Balmung,Balmung,バルムンク,Balmung,Balmung,Balmung
+ITEM_MYSTLETAINN,Mystletainn,Mistilteinn,Misteltein,ミストルティン,Mistilteinn,Mystletainn,Mystletainn
+ITEM_GUNGNIR,Gungnir,Gungnir,Gungnir,グングニル,Gungnir,Gungnir,Gungnir
+ITEM_GAEBOLG,Gáe Bolg,Gáe Bolg,Gáe Bolg,ゲイボルグ,Gáe Bolg,Gáe Bolg,Gáe Bolg
+ITEM_HELSWATH,Helswath,Phuria,Hels Zorn,スワンチカ,Helswath,Helswath,Helswath
+ITEM_YEWFELLE,Yewfelle,Yewfelle,Yewfelle,イチイバル,Yewfelle,Yewfelle,Yewfelle
+ITEM_VALFLAME,Valflame,Valflame,Valflamme,ファラフレイム,Valflamme,Valflame,Valflame
+ITEM_MJOLNIR,Mjölnir,Mjölnir,Mjölnir,トールハンマー,Mjölnir,Mjölnir,Mjölnir
+ITEM_FORSETI,Forseti,Forseti,Forseti,フォルセティ,Forseti,Forseti,Forseti
+ITEM_NAGA,Naga,Naga,Naga,ナーガ,Naga,Naga,Naga
+ITEM_VALKYRIE,Valkyrie,Valkyrie,Valkyrie,バルキリーの杖,Valkyrie,Valkyrie,Valkyrie
+ITEM_LOPTOUS,Loptous,Loptous,Loptous,ロプトウス,Loptous,Loptous,Loptous
+ITEM_POWERRING,Power Ring,Power Ring,Power Ring,パワーリング,Power Ring,Power Ring,Power Ring
+ITEM_MAGICRING,Magic ring,Magic ring,Magic ring,マジックリング,Magic ring,Magic ring,Magic ring
+ITEM_SKILLRING,Skill ring,Skill ring,Skill ring,スキルリング,Skill ring,Skill ring,Skill ring
+ITEM_SPEEDRING,Speed Ring,Speed Ring,Speed Ring,スピードリング,Speed Ring,Speed Ring,Speed Ring
+ITEM_SHIELDRING,Shield ring,Shield ring,Shield ring,シールドリング,Shield ring,Shield ring,Shield ring
+ITEM_BARRIERRING,Barrier ring,Barrier ring,Barrier ring,バリアリング,Barrier ring,Barrier ring,Barrier ring
+ITEM_LEGRING,Leg ring,Leg ring,Leg ring,レッグリング,Leg ring,Leg ring,Leg ring
+ITEM_RETURNBAND,Return band,Return band,Return band,リターンリング,Return band,Return band,Return band
+ITEM_KNIGHTRING,Knight Ring,Knight Ring,Knight Ring,ナイトリング,Knight Ring,Knight Ring,Knight Ring
+ITEM_PARAGONBAND,Paragon band,Paragon band,Paragon band,エリートリング,Paragon band,Paragon band,Paragon band
+ITEM_PURSUITBAND,Pursuit band,Pursuit band,Pursuit band,ついげきリング,Pursuit band,Pursuit band,Pursuit band
+ITEM_THIEFSBAND,Thief's band,Thief's band,Thief's band,シーフのうでわ,Thief's band,Thief's band,Thief's band
+ITEM_BARGAINBAND,Bargain band,Bargain band,Bargain band,ねぎりのうでわ,Bargain band,Bargain band,Bargain band
+ITEM_MIRACLEBAND,Miracle band,Miracle band,Miracle band,いのりのうでわ,Miracle band,Miracle band,Miracle band
+ITEM_RENEWALBAND,Renewal band,Renewal band,Renewal band,ライブのうでわ,Renewal band,Renewal band,Renewal band
+ITEM_CIRCLET,Circlet,Circlet,Circlet,サークレット,Circlet,Circlet,Circlet
+ITEM_RECOVERRING,Recover Ring,Recover Ring,Recover Ring,リカバーリング,Recover Ring,Recover Ring,Recover Ring
+ITEM_SHORTSWORD,Shortsword,Shortsword,Shortsword,ショートソード,Shortsword,Shortsword,Shortsword
+ITEM_VENINEDGE,Venin Edge,Esp. envenenada,Giftschwert,どくの剣,Épée venin,Spada velenosa,Venin Edge
+ITEM_PARAGONSWORD,Paragon Sword,Paragon Sword,Paragon Sword,エリートの剣,Paragon Sword,Paragon Sword,Paragon Sword
+ITEM_LONGSWORD,Longsword,Longsword,Longsword,ロングソード,Longsword,Longsword,Longsword
+ITEM_RAPIER,Rapier,Estoque,Rapier,レイピア,Rapière,Spadino,Rapier
+ITEM_KILLINGEDGE,Killing Edge,Espada asesina,Schnitter,キルソード,Fer létal,Lama letale,Killing Edge
+ITEM_KINGMAKER,Kingmaker,Kingmaker,Kingmaker,おうじゃの剣,Kingmaker,Kingmaker,Kingmaker
+ITEM_GREATSWORD,Greatsword,Greatsword,Greatsword,グレートソード,Greatsword,Greatsword,Greatsword
+ITEM_LIGHTNINGSWORD,Lightning Sword,Espada rayo,Blitzschwert,いかずちの剣,Épée foudre,Spada folgore,Lightning Sword
+ITEM_MASTERSWORD,Master Sword,Meisterschwert,Meisterschwert,マスターソード,Meisterschwert,Meisterschwert,Master Sword
+ITEM_SHADOWSWORD,Shadow Sword,Espada oscura,Schattenschwert,あんこくの剣,Épée d'ombre,Spada ombra,Shadow Sword
+ITEM_MAREETASSWORD,Mareeta's Sword,Espada Mareeta,Mareetas Schwert,マリータの剣,Épée de Mareeta,Spada di Mareeta,Mareeta's Sword
+ITEM_BEOBLADE,Beo Blade,Beo Blade,Beo Blade,ベオの剣,Beo Blade,Beo Blade,Beo Blade
+ITEM_BLESSEDSWORD,Blessed Sword,Espada bendita,Sakralschwert,せいなる剣,Épée bénie,Spada benedetta,Blessed Sword
+ITEM_BRAGISBLADE,Bragi's Blade,Bragi's Blade,Bragi's Blade,ブラギの剣,Bragi's Blade,Bragi's Blade,Bragi's Blade
+ITEM_LOPTRIANFANG,Loptrian Fang,Loptrian Fang,Loptrian Fang,ロプトの剣,Loptrian Fang,Loptrian Fang,Loptrian Fang
+ITEM_SHORTLANCE,Short Lance,Short Lance,Short Lance,ショートランス,Short Lance,Short Lance,Short Lance
+ITEM_VENINLANCE,Venin Lance,Lanza envenenada,Giftlanze,どくのやり,Lance-venin,Lancia velenosa,Venin Lance
+ITEM_LONGLANCE,Long Lance,Long Lance,Long Lance,ロングランス,Long Lance,Long Lance,Long Lance
+ITEM_GREATLANCE,Greatlance,Greatlance,Greatlance,グレートランス,Greatlance,Greatlance,Greatlance
+ITEM_KILLERLANCE,Killer Lance,Lanza asesina,Meisterlanze,キラーランス,Lance létale,Lancia letale,Killer Lance
+ITEM_RIDERSBANE,Ridersbane,Antijinetes,Rittertod,ナイトキラー,Caballucide,Picca,Ridersbane
+ITEM_MASTERLANCE,Master Lance,Master Lance,Master Lance,マスターランス,Master Lance,Master Lance,Master Lance
+ITEM_DRAGONPIKE,Dragonpike,L dragón,Drachenlnz.,ドラゴンランス,Dracopique,Lc. draghi,Dragonpike
+ITEM_VENINAXE,Venin Axe,Hacha envenenada,Giftaxt,どくのおの,Hache-venin,Hache poison,Venin Axe
+ITEM_DEVILAXE,Devil Axe,Hacha demoníaca,Teufelsaxt,デビルアクス,Hache noire,Ascia demonica,Devil Axe
+ITEM_KILLERAXE,Killer Axe,Hacha asesina,Meisteraxt,キラーアクス,Hache létale,Ascia letale,Killer Axe
+ITEM_HAMMER,Hammer,Martillo,Hammer,ハンマー,Marteau,Martello,Hammer
+ITEM_POLEAX,Poleax,Alabarda,Stabaxt,ポールアクス,Hache polaire,Alabarda,Poleax
+ITEM_BATTLEAXE,Battle Axe,Hacha de guerra,Kampfaxt,バトルアクス,Hache bellum,Ascia guerra,Battle Axe
+ITEM_MASTERAXE,Master Axe,Master Axe,Master Axe,マスターアクス,Master Axe,Master Axe,Master Axe
+ITEM_VOUGE,Vouge,Guja,Vouge,プージ,Voulge,Roncone,Vouge
+ITEM_SHORTBOW,Short Bow,Arco corto,Kurzbogen,ショートボウ,Arc court,Arco corto,Short Bow
+ITEM_VENINBOW,Venin Bow,Arco envenenado,Giftbogen,どくの弓,Arc-venin,Arco velenoso,Venin Bow
+ITEM_LONGBOW,Longbow,Longbow,Longbow,ロングボウ,Longbow,Longbow,Longbow
+ITEM_GREATBOW,Greatbow,Greatbow,Greatbow,グレートボウ,Greatbow,Greatbow,Greatbow
+ITEM_MASTERBOW,Master Bow,Meisterbogen,Meisterbogen,マスターボウ,Meisterbogen,Meisterbogen,Master Bow
+ITEM_VENINBALLISTA,Venin Ballista,Venin Ballista,Venin Ballista,ポイズンアーチ,Venin Ballista,Venin Ballista,Venin Ballista
+ITEM_TORCH,Torch,Antorcha,Fackel,トーチ,Torche,Torcia,Torch
+ITEM_ENSORCEL,Ensorcel,Ensorcel,Ensorcel,Ｍアップ,Ensorcel,Ensorcel,Ensorcel
+ITEM_REWARP,Rewarp,Teletransportar,Fortschritt,リワープ,Téléportation,Teletrasporto,Rewarp
+ITEM_HAMMERNE,Hammerne,Hammerne,Hammerne,リペア,Hammerne,Hammerne,Hammerne
+ITEM_UNLOCK,Unlock,Abrir,Öffner,アンロック,Passe,Sblocco,Unlock
+ITEM_KIA,Kia,Kia,Kia,キア,Kia,Kia,Kia
+ITEM_DIRETHUNDER,Dire Thunder,Trueno funesto,Fataler Donner,ダイムサンダ,Tonnerre double,Tuono potente,Dire Thunder
+ITEM_GRAFCALIBUR,Grafcalibur,Grafcalibur,Graphcalibur,グラフカリバー,Grafcalibur,Grafcalibur,Grafcalibur
+ITEM_JORMUNGANDR,Jörmungandr,Jörmungandr,Jörmungandr,ヨツムンガンド,Jörmungandr,Jörmungandr,Jörmungandr
+ITEM_VENIN,Venin,Venin,Venin,ポイズン,Venin,Venin,Venin
+ITEM_STONE,Stone,Petrificar,Versteinerung,ストーン,Pétrifié,Pietra,Stone
+ITEM_VULNERARY,Vulnerary,Poción,Heilmittel,きずぐすり,Potion,Unguento,Vulnerary
+ITEM_PUREWATER,Pure Water,Agua Pura,Weihwasser,せいすい,Eau pure,Acqua Pura,Pure Water
+ITEM_ANTITOXIN,Antitoxin,Antídoto,Antidot,どくけし,Antidote,Antitossina,Antitoxin
+ITEM_DOORKEY,Door Key,Llave puerta,Türschlüssel,とびらのかぎ,Clé porte,Chiave porta,Door Key
+ITEM_BRIDGEKEY,Bridge Key,Llave puente,Brückschlüssel,はねばしのかぎ,Clé pont,Chiave ponte,Bridge Key
+ITEM_CHESTKEY,Chest Key,Llave cofre,Truhenschlüssel,たからのかぎ,Clé coffre,Chiave cassa,Chest Key
+ITEM_LOCKPICK,Lockpick,Ganzúas,Dietrich,とうぞくのかぎ,Crochet,Chiave scasso,Lockpick
+ITEM_VIPCARD,VIP Card,Tarjeta miembro,Mitglied-Karte,メンバーカード,Carte membre,Biglie bonus,VIP Card
+ITEM_SDRINK,S Drink,Poción de vigor,G-Getränk,Ｓドリンク,Boisson S,Elisir speciale,S Drink
+ITEM_MASTERSEAL,Master Seal,Sello maestro,Meistersiegel,ナイトプルフ,Magister,Sigillo supremo,Master Seal
+ITEM_LIFERING,Life Ring,Life Ring,Life Ring,ライブリング,Life Ring,Life Ring,Life Ring
+ITEM_STRENGTHRING,Strength Ring,Strength Ring,Strength Ring,パワーリング,Strength Ring,Strength Ring,Strength Ring
+ITEM_LUCKRING,Luck Ring,Luck Ring,Luck Ring,ラックリング,Luck Ring,Luck Ring,Luck Ring
+ITEM_BODYRING,Body Ring,Body Ring,Body Ring,ボディリング,Body Ring,Body Ring,Body Ring
+ITEM_PARAGONMANUAL,Paragon Manual,Paragon Manual,Paragon Manual,エリートＭ,Paragon Manual,Paragon Manual,Paragon Manual
+ITEM_WRATHMANUAL,Wrath Manual,Wrath Manual,Wrath Manual,いかりＭ,Wrath Manual,Wrath Manual,Wrath Manual
+ITEM_VANTAGEMANUAL,Vantage Manual,Vantage Manual,Vantage Manual,まちぶせＭ,Vantage Manual,Vantage Manual,Vantage Manual
+ITEM_ACCOSTMANUAL,Accost Manual,Accost Manual,Accost Manual,とつげきＭ,Accost Manual,Accost Manual,Accost Manual
+ITEM_SOLMANUAL,Sol Manual,Sol Manual,Sol Manual,たいようＭ,Sol Manual,Sol Manual,Sol Manual
+ITEM_NIHILMANUAL,Nihil Manual,Nihil Manual,Nihil Manual,みきりＭ,Nihil Manual,Nihil Manual,Nihil Manual
+ITEM_LUNAMANUAL,Luna Manual,Luna Manual,Luna Manual,げっこうＭ,Luna Manual,Luna Manual,Luna Manual
+ITEM_ADEPTMANUAL,Adept Manual,Adept Manual,Adept Manual,れんぞくＭ,Adept Manual,Adept Manual,Adept Manual
+ITEM_HEZULSSCROLL,Hezul's Scroll,Hezul's Scroll,Hezul's Scroll,ヘズルの書,Hezul's Scroll,Hezul's Scroll,Hezul's Scroll
+ITEM_BALDRSSCROLL,Baldr's Scroll,Baldr's Scroll,Baldr's Scroll,バルドの書,Baldr's Scroll,Baldr's Scroll,Baldr's Scroll
+ITEM_CEDSSCROLL,Ced's Scroll,Ced's Scroll,Ced's Scroll,セティの書,Ced's Scroll,Ced's Scroll,Ced's Scroll
+ITEM_ODSSCROLL,Od's Scroll,Od's Scroll,Od's Scroll,オードの書,Od's Scroll,Od's Scroll,Od's Scroll
+ITEM_NEIRSSCROLL,Neir's Scroll,Neir's Scroll,Neir's Scroll,ネールの書,Neir's Scroll,Neir's Scroll,Neir's Scroll
+ITEM_FJALARSSCROLL,Fjalar's Scroll,Fjalar's Scroll,Fjalar's Scroll,ファラの書,Fjalar's Scroll,Fjalar's Scroll,Fjalar's Scroll
+ITEM_HEIMSSCROLL,Heim's Scroll,Heim's Scroll,Heim's Scroll,ヘイムの書,Heim's Scroll,Heim's Scroll,Heim's Scroll
+ITEM_DAINNSSCROLL,Dáinn's Scroll,Dáinn's Scroll,Dáinn's Scroll,ダインの書,Dáinn's Scroll,Dáinn's Scroll,Dáinn's Scroll
+ITEM_ULLURSSCROLL,Ullur's Scroll,Ullur's Scroll,Ullur's Scroll,ウルの書,Ullur's Scroll,Ullur's Scroll,Ullur's Scroll
+ITEM_BRAGISSCROLL,Bragi's Scroll,Bragi's Scroll,Bragi's Scroll,ブラギの書,Bragi's Scroll,Bragi's Scroll,Bragi's Scroll
+ITEM_NJORUNSSCROLL,Njörun's Scroll,Njörun's Scroll,Njörun's Scroll,ノヴァの書,Njörun's Scroll,Njörun's Scroll,Njörun's Scroll
+ITEM_THRUDSSCROLL,Thrud's Scroll,Thrud's Scroll,Thrud's Scroll,トードの書,Thrud's Scroll,Thrud's Scroll,Thrud's Scroll
+ITEM_BARGAINMANUAL,Bargain Manual,Bargain Manual,Bargain Manual,ねぎりＭ,Bargain Manual,Bargain Manual,Bargain Manual
+ITEM_MIRACLEMANUAL,Miracle Manual,Miracle Manual,Miracle Manual,いのりＭ,Miracle Manual,Miracle Manual,Miracle Manual
