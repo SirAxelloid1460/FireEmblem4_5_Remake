@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784890168
+::res://::1784891436
 icon.png::CompressedTexture2D::5796228232867755098::1714553776::1784419739::1::::<><><>0<>0<>85d8504b263b0bda2244463b196f6b35<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1784389909::0::1::::<><><>0<>0<><>::
 ::res://assets/::1784644658
@@ -4152,7 +4152,7 @@ mode_select.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scr
 options_menu.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784890147
+::res://Scripts/::1784891396
 ActionMenu.gd::GDScript::6413271467111799318::1784583376::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784389909::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784389909::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
@@ -4210,7 +4210,7 @@ Item.gd::GDScript::7925141334164720406::1784389909::0::1::::Item<>RefCounted<><>
 ItemDatabase.gd::GDScript::6527273458596669064::1784389909::0::1::::ItemDatabase<>RefCounted<><>0<>0<><>::
 Items.gd::GDScript::1388330204127410334::1784389909::0::1::::ItemCatalog<>RefCounted<><>0<>0<><>::
 LabelAnimText.gd::GDScript::2867877076981210681::1784389909::0::1::::LabelAnimText<>Control<><>0<>0<><>::
-Language.gd::GDScript::2907556366295349689::1784890147::0::1::::LanguageScreen<>SelectMenu<><>0<>0<><>::
+Language.gd::GDScript::2907556366295349689::1784891396::0::1::::LanguageScreen<>SelectMenu<><>0<>0<><>::
 LaraPromotion.gd::GDScript::4107297915193857152::1784389909::0::1::::LaraPromotion<>RefCounted<><>0<>0<><>::
 LevelData.gd::GDScript::802805939506090972::1784389909::0::1::::LevelData<>Resource<><>0<>0<><>::
 LevelLoader.gd::GDScript::2900491532752613919::1784389909::0::1::::LevelLoader<>RefCounted<><>0<>0<><>::
