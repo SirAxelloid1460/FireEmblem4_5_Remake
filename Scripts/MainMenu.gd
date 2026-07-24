@@ -70,7 +70,7 @@ const UI_FONT := "res://assets/fonts/bmp/text.fnt"   # sprite-font LT
 # avanzar, cancelación al retroceder, error en acciones no disponibles.
 const SFX_NAV     := "Select 5"
 const SFX_CONFIRM := "Select 4"
-const SFX_CANCEL  := "Step Back 1"
+const SFX_CANCEL  := "Select 4"   # retroceder usa el MISMO sonido que avanzar
 const SFX_ERROR   := "Error"
 const SOUNDROOM_SCRIPT := "res://Scripts/SoundRoom.gd"
 const BTN_W := 620
@@ -174,6 +174,10 @@ func _ready() -> void:
 
 	_show_only(null)            # oculta columnas
 	_press.visible = true       # el shimmer lo anima _process()
+
+	# Si el ratón se (des)activa en Opciones (overlay), actualizar en vivo el
+	# mouse_filter de los botones para que dejen/vuelvan a reaccionar al hover.
+	InputConfig.mouse_toggled.connect(_on_mouse_toggled)
 
 	# Sin fundido de entrada: el corte desde Intro es directo (sin fade). El _fade
 	# sólo se usa en las transiciones internas del menú.
@@ -334,8 +338,10 @@ func _input(event: InputEvent) -> void:
 	# Sólo cuenta como actividad una PULSACIÓN discreta (tecla, click o botón de
 	# mando) con el juego en primer plano. El MOVIMIENTO del ratón (o del stick)
 	# NO cuenta: no reinicia la inactividad ni corta la demo.
+	# El click SOLO cuenta si el ratón está habilitado (con el ratón OFF no debe
+	# cortar la demo ni contar como actividad).
 	var active: bool = (event is InputEventKey and event.pressed and not event.echo) \
-		or (event is InputEventMouseButton and event.pressed) \
+		or (InputConfig.mouse_enabled and event is InputEventMouseButton and event.pressed) \
 		or (event is InputEventJoypadButton and event.pressed)
 	if not active:
 		return
@@ -343,6 +349,17 @@ func _input(event: InputEvent) -> void:
 	if _is_demo_active():
 		_stop_demo()
 		get_viewport().set_input_as_handled()
+
+
+## Actualiza el mouse_filter de TODOS los botones al (des)activar el ratón.
+func _on_mouse_toggled(on: bool) -> void:
+	_set_buttons_mouse(self, on)
+
+func _set_buttons_mouse(node: Node, on: bool) -> void:
+	for c in node.get_children():
+		if c is Button:
+			(c as Button).mouse_filter = Control.MOUSE_FILTER_STOP if on else Control.MOUSE_FILTER_IGNORE
+		_set_buttons_mouse(c, on)
 
 
 func _is_demo_active() -> bool:
@@ -514,8 +531,10 @@ func _build_saves() -> void:
 	# grande, MISMO tamaño de panel (520×76).
 	_saves_root.add_child(_titled_panel(_trd("RESUMECHAPTER", "Resume Chapter"),
 			Vector2((vp.x - 520) / 2.0, 30), Vector2(520, 76), 50, COLOR_GOLD))
-	# "R Info" arriba a la derecha (texto suelto, agrandado).
-	var rinfo := _panel_label("R  " + _trd("INFO", "Info"), 40, COLOR_TEXT)
+	# "R Info" arriba a la derecha: el glyph "R" se sustituye por la TECLA realmente
+	# vinculada al botón R (acción ui_page_right), según el remapeo actual.
+	var info_key: String = InputConfig.key_label("ui_page_right")
+	var rinfo := _panel_label(info_key + "  " + _trd("INFO", "Info"), 40, COLOR_TEXT)
 	rinfo.position = Vector2(vp.x - 340, 40)
 	rinfo.size = Vector2(300, 56)
 	rinfo.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
@@ -662,7 +681,9 @@ func _make_button(text: String, id: String, width: float = BTN_W,
 	b.custom_minimum_size = Vector2(width, BTN_H)
 	b.alignment = HORIZONTAL_ALIGNMENT_CENTER
 	b.focus_mode = Control.FOCUS_ALL
-	b.mouse_filter = Control.MOUSE_FILTER_STOP
+	# Con el ratón OFF, IGNORE: el botón no reacciona al hover (ni cambia de placa)
+	# ni al click. Se actualiza en vivo vía InputConfig.mouse_toggled (ver _ready).
+	b.mouse_filter = Control.MOUSE_FILTER_STOP if InputConfig.mouse_enabled else Control.MOUSE_FILTER_IGNORE
 	b.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	# Fuente serif estilo logo (small-caps).
 	var f := load(AssetSet.p(UI_FONT))
@@ -724,12 +745,13 @@ func _build_desc() -> void:
 	_desc_panel.add_child(np)
 	_desc = Label.new()
 	_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	_desc.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	# Arranca arriba-izquierda del panel (no centrado) y con texto bastante mayor.
+	_desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+	_desc.vertical_alignment = VERTICAL_ALIGNMENT_TOP
 	var f := load(AssetSet.p(UI_FONT))
 	if f != null:
 		_desc.add_theme_font_override("font", f)
-	_desc.add_theme_font_size_override("font_size", 32)
+	_desc.add_theme_font_size_override("font_size", 48)
 	_desc.add_theme_color_override("font_color", COLOR_TEXT)
 	_desc.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
 	_desc.add_theme_constant_override("outline_size", OUTLINE_PX - 1)

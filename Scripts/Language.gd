@@ -157,7 +157,8 @@ func _make_flag(lang: Dictionary) -> Control:
 	var b := Button.new()
 	b.custom_minimum_size = Vector2(FLAG_W, FLAG_H)
 	b.focus_mode = Control.FOCUS_ALL if ready else Control.FOCUS_NONE
-	b.mouse_filter = Control.MOUSE_FILTER_STOP if ready else Control.MOUSE_FILTER_IGNORE
+	# Con el ratón OFF, IGNORE: no reacciona al hover.
+	b.mouse_filter = (Control.MOUSE_FILTER_STOP if InputConfig.mouse_enabled else Control.MOUSE_FILTER_IGNORE) if ready else Control.MOUSE_FILTER_IGNORE
 	b.disabled = not ready
 	b.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	var empty := StyleBoxEmpty.new()

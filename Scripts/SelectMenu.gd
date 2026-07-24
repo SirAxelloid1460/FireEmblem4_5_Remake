@@ -62,7 +62,7 @@ void fragment() {
 
 const SFX_NAV     := "Select 5"
 const SFX_CONFIRM := "Select 4"
-const SFX_CANCEL  := "Step Back 1"
+const SFX_CANCEL  := "Select 4"   # retroceder usa el MISMO sonido que avanzar
 
 var _cursor: TextureRect
 var _cursor_target: Button = null
@@ -340,7 +340,8 @@ func _make_option(it: Dictionary) -> Button:
 	b.alignment = _option_align()
 	# Deshabilitada (W.I.P): botón inaccesible (el cursor la salta) y texto gris.
 	b.focus_mode = Control.FOCUS_ALL if enabled else Control.FOCUS_NONE
-	b.mouse_filter = Control.MOUSE_FILTER_STOP if enabled else Control.MOUSE_FILTER_IGNORE
+	# Con el ratón OFF, IGNORE: no reacciona al hover (ni cambia de estado visual).
+	b.mouse_filter = (Control.MOUSE_FILTER_STOP if InputConfig.mouse_enabled else Control.MOUSE_FILTER_IGNORE) if enabled else Control.MOUSE_FILTER_IGNORE
 	b.disabled = not enabled
 	var fs := _fit_fs if _fit_fs > 0 else _option_font_size()
 	b.custom_minimum_size = Vector2(0, fs + 12)

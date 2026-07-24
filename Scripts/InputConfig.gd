@@ -61,6 +61,10 @@ func _ready() -> void:
 # juego reacciona). Botones extra no se mapean solos (el jugador los remapea).
 var mouse_enabled: bool = true
 
+## Emitida al activar/desactivar el ratón (para que la UI actualice en vivo el
+## mouse_filter de sus botones: con el ratón OFF no deben reaccionar al hover).
+signal mouse_toggled(enabled: bool)
+
 ## Activa/desactiva el ratón (mapea o desmapea izq/der) y lo persiste.
 func set_mouse_enabled(on: bool) -> void:
 	mouse_enabled = on
@@ -70,6 +74,7 @@ func set_mouse_enabled(on: bool) -> void:
 	cfg.load(CFG)
 	cfg.set_value("input", "mouse", on)
 	cfg.save(CFG)
+	mouse_toggled.emit(on)
 
 ## Con el ratón desactivado, consume los eventos de ratón antes de que lleguen a
 ## la GUI (bloquea click/scroll/hover). Con él activado, no interfiere.
