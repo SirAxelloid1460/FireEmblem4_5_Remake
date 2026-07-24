@@ -86,7 +86,7 @@ func _scan(t: int) -> Array[String]:
 	dir.list_dir_begin()
 	var fn := dir.get_next()
 	while fn != "":
-		if not dir.current_is_dir() and fn.to_lower().ends_with(".ogg"):
+		if not dir.current_is_dir() and fn.to_lower().ends_with(".mp3"):
 			out.append(fn.get_basename())
 		fn = dir.get_next()
 	dir.list_dir_end()
@@ -344,7 +344,7 @@ func _toggle_play() -> void:
 
 
 func _play_current() -> void:
-	var path := AssetSet.p(str(TABS[_tab]["dir"]) + _tracks[_cursor] + ".ogg")
+	var path := AssetSet.p(str(TABS[_tab]["dir"]) + _tracks[_cursor] + ".mp3")
 	if not ResourceLoader.exists(path):
 		return
 	var stream = load(path)
