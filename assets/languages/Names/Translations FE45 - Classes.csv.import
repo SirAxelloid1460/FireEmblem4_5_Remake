@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://xhmgc6ltgnhn"
+
+[deps]
+
+files=["res://assets/languages/Names/Translations FE45 - Classes.en.translation", "res://assets/languages/Names/Translations FE45 - Classes.es.translation", "res://assets/languages/Names/Translations FE45 - Classes.de.translation", "res://assets/languages/Names/Translations FE45 - Classes.ja.translation", "res://assets/languages/Names/Translations FE45 - Classes.fr.translation", "res://assets/languages/Names/Translations FE45 - Classes.it.translation", "res://assets/languages/Names/Translations FE45 - Classes.pt.translation"]
+
+source_file="res://assets/languages/Names/Translations FE45 - Classes.csv"
+dest_files=["res://assets/languages/Names/Translations FE45 - Classes.en.translation", "res://assets/languages/Names/Translations FE45 - Classes.es.translation", "res://assets/languages/Names/Translations FE45 - Classes.de.translation", "res://assets/languages/Names/Translations FE45 - Classes.ja.translation", "res://assets/languages/Names/Translations FE45 - Classes.fr.translation", "res://assets/languages/Names/Translations FE45 - Classes.it.translation", "res://assets/languages/Names/Translations FE45 - Classes.pt.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

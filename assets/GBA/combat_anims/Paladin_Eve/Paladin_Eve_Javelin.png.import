@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bybsb58nix3wr"
-path="res://.godot/imported/Paladin_Eve_Javelin.png-1c6c7507288e7b005979204b1e565ec1.ctex"
+path="res://.godot/imported/Paladin_Eve_Javelin.png-c6f7b7ba7d6e22f638f58b4ccf3a6ed0.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/GBA/combat_anims/Paladin_Eve/Paladin_Eve_Javelin.png"
-dest_files=["res://.godot/imported/Paladin_Eve_Javelin.png-1c6c7507288e7b005979204b1e565ec1.ctex"]
+dest_files=["res://.godot/imported/Paladin_Eve_Javelin.png-c6f7b7ba7d6e22f638f58b4ccf3a6ed0.ctex"]
 
 [params]
 

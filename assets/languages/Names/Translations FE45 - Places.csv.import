@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bw7rmcwrw1jrh"
+
+[deps]
+
+files=["res://assets/languages/Names/Translations FE45 - Places.en.translation", "res://assets/languages/Names/Translations FE45 - Places.es.translation", "res://assets/languages/Names/Translations FE45 - Places.de.translation", "res://assets/languages/Names/Translations FE45 - Places.ja.translation", "res://assets/languages/Names/Translations FE45 - Places.fr.translation", "res://assets/languages/Names/Translations FE45 - Places.it.translation", "res://assets/languages/Names/Translations FE45 - Places.pt.translation"]
+
+source_file="res://assets/languages/Names/Translations FE45 - Places.csv"
+dest_files=["res://assets/languages/Names/Translations FE45 - Places.en.translation", "res://assets/languages/Names/Translations FE45 - Places.es.translation", "res://assets/languages/Names/Translations FE45 - Places.de.translation", "res://assets/languages/Names/Translations FE45 - Places.ja.translation", "res://assets/languages/Names/Translations FE45 - Places.fr.translation", "res://assets/languages/Names/Translations FE45 - Places.it.translation", "res://assets/languages/Names/Translations FE45 - Places.pt.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

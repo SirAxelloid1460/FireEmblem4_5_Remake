@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bbokiy6fp40p5"
+
+[deps]
+
+files=["res://assets/languages/Names/Translations FE45 - Titles.en.translation", "res://assets/languages/Names/Translations FE45 - Titles.es.translation", "res://assets/languages/Names/Translations FE45 - Titles.de.translation", "res://assets/languages/Names/Translations FE45 - Titles.ja.translation", "res://assets/languages/Names/Translations FE45 - Titles.fr.translation", "res://assets/languages/Names/Translations FE45 - Titles.it.translation", "res://assets/languages/Names/Translations FE45 - Titles.pt.translation"]
+
+source_file="res://assets/languages/Names/Translations FE45 - Titles.csv"
+dest_files=["res://assets/languages/Names/Translations FE45 - Titles.en.translation", "res://assets/languages/Names/Translations FE45 - Titles.es.translation", "res://assets/languages/Names/Translations FE45 - Titles.de.translation", "res://assets/languages/Names/Translations FE45 - Titles.ja.translation", "res://assets/languages/Names/Translations FE45 - Titles.fr.translation", "res://assets/languages/Names/Translations FE45 - Titles.it.translation", "res://assets/languages/Names/Translations FE45 - Titles.pt.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

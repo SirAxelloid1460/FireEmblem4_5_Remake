@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://du4p24tnf84vi"
-path="res://.godot/imported/MageKnight_Azel_MagicSword.png-1f9417a154f84da0ada445fc34010197.ctex"
+path="res://.godot/imported/MageKnight_Azel_MagicSword.png-12dc2d2d73d7fbaed7ea76a9e8c95b88.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/GBA/combat_anims/MageKnight_Azel/MageKnight_Azel_MagicSword.png"
-dest_files=["res://.godot/imported/MageKnight_Azel_MagicSword.png-1f9417a154f84da0ada445fc34010197.ctex"]
+dest_files=["res://.godot/imported/MageKnight_Azel_MagicSword.png-12dc2d2d73d7fbaed7ea76a9e8c95b88.ctex"]
 
 [params]
 

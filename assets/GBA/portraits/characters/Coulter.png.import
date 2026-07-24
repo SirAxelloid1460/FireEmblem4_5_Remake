@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmqijju8v6y8l"
-path="res://.godot/imported/Coulter.png-09b29b250f16f3631b155de051308129.ctex"
+path="res://.godot/imported/Coulter.png-27404de1c7e21daba1232f3532fd685a.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/GBA/portraits/characters/Coulter.png"
-dest_files=["res://.godot/imported/Coulter.png-09b29b250f16f3631b155de051308129.ctex"]
+dest_files=["res://.godot/imported/Coulter.png-27404de1c7e21daba1232f3532fd685a.ctex"]
 
 [params]
 

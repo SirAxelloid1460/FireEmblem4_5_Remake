@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ebb4y10hvu1u"
+
+[deps]
+
+files=["res://assets/languages/Names/Translations FE45 - Characters.en.translation", "res://assets/languages/Names/Translations FE45 - Characters.es.translation", "res://assets/languages/Names/Translations FE45 - Characters.de.translation", "res://assets/languages/Names/Translations FE45 - Characters.ja.translation", "res://assets/languages/Names/Translations FE45 - Characters.fr.translation", "res://assets/languages/Names/Translations FE45 - Characters.it.translation", "res://assets/languages/Names/Translations FE45 - Characters.pt.translation"]
+
+source_file="res://assets/languages/Names/Translations FE45 - Characters.csv"
+dest_files=["res://assets/languages/Names/Translations FE45 - Characters.en.translation", "res://assets/languages/Names/Translations FE45 - Characters.es.translation", "res://assets/languages/Names/Translations FE45 - Characters.de.translation", "res://assets/languages/Names/Translations FE45 - Characters.ja.translation", "res://assets/languages/Names/Translations FE45 - Characters.fr.translation", "res://assets/languages/Names/Translations FE45 - Characters.it.translation", "res://assets/languages/Names/Translations FE45 - Characters.pt.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

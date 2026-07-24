@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fslylteqi7tq"
-path="res://.godot/imported/Skasaher.png-06ff9ef1fa34fce073ebb829b5629189.ctex"
+path="res://.godot/imported/Skasaher.png-5eb4ee80f6f4b12bb3fbf34ec29bed49.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/GBA/portraits/characters/Skasaher.png"
-dest_files=["res://.godot/imported/Skasaher.png-06ff9ef1fa34fce073ebb829b5629189.ctex"]
+dest_files=["res://.godot/imported/Skasaher.png-5eb4ee80f6f4b12bb3fbf34ec29bed49.ctex"]
 
 [params]
 

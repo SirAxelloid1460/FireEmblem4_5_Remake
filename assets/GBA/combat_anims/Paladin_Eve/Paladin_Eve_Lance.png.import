@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m5drrsqxghnw"
-path="res://.godot/imported/Paladin_Eve_Lance.png-cc33dec336139af1a274cdc05a263575.ctex"
+path="res://.godot/imported/Paladin_Eve_Lance.png-cd9d705330021dfb2b0906872c7127fa.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/GBA/combat_anims/Paladin_Eve/Paladin_Eve_Lance.png"
-dest_files=["res://.godot/imported/Paladin_Eve_Lance.png-cc33dec336139af1a274cdc05a263575.ctex"]
+dest_files=["res://.godot/imported/Paladin_Eve_Lance.png-cd9d705330021dfb2b0906872c7127fa.ctex"]
 
 [params]
 

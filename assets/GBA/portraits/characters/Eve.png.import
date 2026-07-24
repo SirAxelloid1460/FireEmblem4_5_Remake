@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://iqf13euokk8l"
-path="res://.godot/imported/Eve.png-bb52a053ecfe0363b53379c252ee8505.ctex"
+path="res://.godot/imported/Eve.png-5da8f7adccb99b8f6f0beed807916fbd.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/GBA/portraits/characters/Eve.png"
-dest_files=["res://.godot/imported/Eve.png-bb52a053ecfe0363b53379c252ee8505.ctex"]
+dest_files=["res://.godot/imported/Eve.png-5da8f7adccb99b8f6f0beed807916fbd.ctex"]
 
 [params]
 

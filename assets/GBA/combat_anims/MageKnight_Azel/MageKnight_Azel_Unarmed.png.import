@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbp8tclkshidi"
-path="res://.godot/imported/MageKnight_Azel_Unarmed.png-4faae8ad7a2ec0e63ac5cab4b7bd75f4.ctex"
+path="res://.godot/imported/MageKnight_Azel_Unarmed.png-bccb796358d5ea74c91dae110554aadc.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/GBA/combat_anims/MageKnight_Azel/MageKnight_Azel_Unarmed.png"
-dest_files=["res://.godot/imported/MageKnight_Azel_Unarmed.png-4faae8ad7a2ec0e63ac5cab4b7bd75f4.ctex"]
+dest_files=["res://.godot/imported/MageKnight_Azel_Unarmed.png-bccb796358d5ea74c91dae110554aadc.ctex"]
 
 [params]
 

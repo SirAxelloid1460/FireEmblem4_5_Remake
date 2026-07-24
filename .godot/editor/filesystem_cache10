@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784649522
+::res://::1784885648
 icon.png::CompressedTexture2D::5796228232867755098::1714553776::1784419739::1::::<><><>0<>0<>85d8504b263b0bda2244463b196f6b35<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1784389909::0::1::::<><><>0<>0<><>::
 ::res://assets/::1784644658
@@ -65,7 +65,7 @@ field_water2.png::CompressedTexture2D::3750888368558599479::1784389909::17843904
 lava.png::CompressedTexture2D::6538871118545233248::1784389909::1784390490::1::::<><><>0<>0<>8755acaf2a83ae187ba4d04404821bca<>res://.godot/imported/lava.png-83ea7b3345d91a95b1612437d15226ae.ctex::
 mystic_blue.png::CompressedTexture2D::8954227396542811296::1784389909::1784390489::1::::<><><>0<>0<>25bde102f1391f016b570820276e0b0f<>res://.godot/imported/mystic_blue.png-eb7bc6068ea86d5bda4881e346a4a273.ctex::
 ship_water.png::CompressedTexture2D::1952403657710807083::1784389909::1784390489::1::::<><><>0<>0<>09fc60a9ed2ea868e6a71c4240572654<>res://.godot/imported/ship_water.png-df0dbe4b872ba7ec6010fafa3013b0bd.ctex::
-::res://assets/GBA/combat_anims/::1784389912
+::res://assets/GBA/combat_anims/::1784817271
 palettes.txt::TextFile::-1::1784389912::0::1::::<><><>0<>0<><>::
 ::res://assets/GBA/combat_anims/ArcherKnight_Female/::1784390490
 ArcherKnight_Female_Bow.json::JSON::-1::1784389909::0::1::::<><><>0<>0<><>::
@@ -655,15 +655,15 @@ MageKnight_Arthur_Sword.json::JSON::-1::1784389910::0::1::::<><><>0<>0<><>::
 MageKnight_Arthur_Sword.png::CompressedTexture2D::1318277914296584178::1784389910::1784390482::1::::<><><>0<>0<>3bf2d430f3b1e473f546c285315270a5<>res://.godot/imported/MageKnight_Arthur_Sword.png-263bb6a46721d960fae5173c8a16b190.ctex::
 MageKnight_Arthur_Unarmed.json::JSON::-1::1784389910::0::1::::<><><>0<>0<><>::
 MageKnight_Arthur_Unarmed.png::CompressedTexture2D::5190635057002086603::1784389910::1784390482::1::::<><><>0<>0<>6d1f1c493c3195495eeb0745c843a997<>res://.godot/imported/MageKnight_Arthur_Unarmed.png-f3fdade43b370c06b0fcc479ade7b4b1.ctex::
-::res://assets/GBA/combat_anims/MageKnight_Azelle/::1784390482
-MageKnight_Azelle_MagicAnima.json::JSON::-1::1784389910::0::1::::<><><>0<>0<><>::
-MageKnight_Azelle_MagicAnima.png::CompressedTexture2D::152668239085240329::1784389910::1784390482::1::::<><><>0<>0<>b57b678d3c52b3867086c24c3b6b2be0<>res://.godot/imported/MageKnight_Azelle_MagicAnima.png-902e88c71c718b12922a884b1d7fce39.ctex::
-MageKnight_Azelle_MagicSword.json::JSON::-1::1784389910::0::1::::<><><>0<>0<><>::
-MageKnight_Azelle_MagicSword.png::CompressedTexture2D::8623866403161725054::1784389910::1784390482::1::::<><><>0<>0<>4b26b4ac7c5aa9b14b38ff9a3c7c6f53<>res://.godot/imported/MageKnight_Azelle_MagicSword.png-1f9417a154f84da0ada445fc34010197.ctex::
-MageKnight_Azelle_Sword.json::JSON::-1::1784389910::0::1::::<><><>0<>0<><>::
-MageKnight_Azelle_Sword.png::CompressedTexture2D::3866721136736015512::1784389911::1784390481::1::::<><><>0<>0<>3e2f82202724829c2a17036a954cd565<>res://.godot/imported/MageKnight_Azelle_Sword.png-ef7fec425f4ea112c9902922d66f3866.ctex::
-MageKnight_Azelle_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-MageKnight_Azelle_Unarmed.png::CompressedTexture2D::7262454274391960166::1784389911::1784390480::1::::<><><>0<>0<>416df6ff019cdc5664b9bee1c134b22b<>res://.godot/imported/MageKnight_Azelle_Unarmed.png-4faae8ad7a2ec0e63ac5cab4b7bd75f4.ctex::
+::res://assets/GBA/combat_anims/MageKnight_Azel/::1784817271
+MageKnight_Azel_MagicAnima.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+MageKnight_Azel_MagicAnima.png::CompressedTexture2D::152668239085240329::1784817271::1784885654::1::::<><><>0<>0<>46b4ae297c29366f2f4cc16d4c10e81b<>res://.godot/imported/MageKnight_Azel_MagicAnima.png-b6bf055e635c744bee228cc94af100e7.ctex::
+MageKnight_Azel_MagicSword.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+MageKnight_Azel_MagicSword.png::CompressedTexture2D::8623866403161725054::1784817271::1784885653::1::::<><><>0<>0<>c0cf24025d7c17e57bc3cfb48fc00d80<>res://.godot/imported/MageKnight_Azel_MagicSword.png-12dc2d2d73d7fbaed7ea76a9e8c95b88.ctex::
+MageKnight_Azel_Sword.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+MageKnight_Azel_Sword.png::CompressedTexture2D::3866721136736015512::1784817271::1784885654::1::::<><><>0<>0<>01999dbf42adc05da02c8a502bb38c54<>res://.godot/imported/MageKnight_Azel_Sword.png-9776ea237d56f263fc2eea8847aa54d1.ctex::
+MageKnight_Azel_Unarmed.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+MageKnight_Azel_Unarmed.png::CompressedTexture2D::7262454274391960166::1784817271::1784885653::1::::<><><>0<>0<>08688cdd0c301c1b6cebb2dd6b8b0d5d<>res://.godot/imported/MageKnight_Azel_Unarmed.png-bccb796358d5ea74c91dae110554aadc.ctex::
 ::res://assets/GBA/combat_anims/MageKnight_Female/::1784390481
 MageKnight_Female_MagicAnima.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 MageKnight_Female_MagicAnima.png::CompressedTexture2D::415305550258892151::1784389911::1784390481::1::::<><><>0<>0<>b254a5b32e272dad7c82b9624b66ea64<>res://.godot/imported/MageKnight_Female_MagicAnima.png-eb2687740bfd9b1340b273d9755c036c.ctex::
@@ -760,11 +760,11 @@ Mage_Asbel_MagicAnima.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Mage_Asbel_MagicAnima.png::CompressedTexture2D::3559586059991205839::1784389911::1784390482::1::::<><><>0<>0<>9ab8183a7f0b9d84e0fc8ea0d9711c61<>res://.godot/imported/Mage_Asbel_MagicAnima.png-2579f14511e76c70f6588a0f35f47904.ctex::
 Mage_Asbel_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Mage_Asbel_Unarmed.png::CompressedTexture2D::557455643766141903::1784389911::1784390482::1::::<><><>0<>0<>81ca6b585f1a21719be94d578c9e1010<>res://.godot/imported/Mage_Asbel_Unarmed.png-a0d02c53014d5a0f328810bcd92bc22c.ctex::
-::res://assets/GBA/combat_anims/Mage_Azelle/::1784390482
-Mage_Azelle_MagicAnima.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Mage_Azelle_MagicAnima.png::CompressedTexture2D::8611369179801227588::1784389911::1784390482::1::::<><><>0<>0<>cbaf005f1e3e4898f9dbb87802af8951<>res://.godot/imported/Mage_Azelle_MagicAnima.png-44877c37fdc2510276037f15d04dd211.ctex::
-Mage_Azelle_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Mage_Azelle_Unarmed.png::CompressedTexture2D::6723716994648265294::1784389911::1784390482::1::::<><><>0<>0<>21796eecbb820102a4b9940c0113b04f<>res://.godot/imported/Mage_Azelle_Unarmed.png-a0c5a7e4e49b11c74e20ca35efcf4a94.ctex::
+::res://assets/GBA/combat_anims/Mage_Azel/::1784817271
+Mage_Azel_MagicAnima.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Mage_Azel_MagicAnima.png::CompressedTexture2D::8611369179801227588::1784817271::1784885653::1::::<><><>0<>0<>1784a7650ffc446f5454afc22b78c2dc<>res://.godot/imported/Mage_Azel_MagicAnima.png-fcc6eade90f6a776c32bc52b0a76325d.ctex::
+Mage_Azel_Unarmed.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Mage_Azel_Unarmed.png::CompressedTexture2D::6723716994648265294::1784817271::1784885653::1::::<><><>0<>0<>14d93dfad2be683707b6d4ca49f6d716<>res://.godot/imported/Mage_Azel_Unarmed.png-a16563eb16c88a6987263e3c5ffd30a0.ctex::
 ::res://assets/GBA/combat_anims/Mage_Female/::1784390482
 Mage_Female_MagicAnima.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Mage_Female_MagicAnima.png::CompressedTexture2D::2140948648556431398::1784389911::1784390482::1::::<><><>0<>0<>8e12bef906dcf165d514fe209898881f<>res://.godot/imported/Mage_Female_MagicAnima.png-16ee3813fa14391f827e09c83703b2ac.ctex::
@@ -926,17 +926,6 @@ Paladin_Ethlyn_Sword.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Ethlyn_Sword.png::CompressedTexture2D::6740450634820296653::1784389911::1784390480::1::::<><><>0<>0<>cc83c6294ace03a34441167b2775f296<>res://.godot/imported/Paladin_Ethlyn_Sword.png-65c385a7cd4c4d4c9894224ff179cf44.ctex::
 Paladin_Ethlyn_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Ethlyn_Unarmed.png::CompressedTexture2D::1180158618496600598::1784389911::1784390479::1::::<><><>0<>0<>877bdb0dd1727bb1d173a3f20a2c4c34<>res://.godot/imported/Paladin_Ethlyn_Unarmed.png-9c9e6dcf9c4463eb723143aedee6896a.ctex::
-::res://assets/GBA/combat_anims/Paladin_Evan/::1784390480
-Paladin_Evan_Javelin.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Paladin_Evan_Javelin.png::CompressedTexture2D::4074113627704977669::1784389911::1784390480::1::::<><><>0<>0<>22c96f6a4d6f842a2bce46762872b626<>res://.godot/imported/Paladin_Evan_Javelin.png-1c6c7507288e7b005979204b1e565ec1.ctex::
-Paladin_Evan_Lance.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Paladin_Evan_Lance.png::CompressedTexture2D::904410887214243340::1784389911::1784390480::1::::<><><>0<>0<>86e60d69b6ede051b50cd77bd8f7591e<>res://.godot/imported/Paladin_Evan_Lance.png-cc33dec336139af1a274cdc05a263575.ctex::
-Paladin_Evan_MagicSword.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Paladin_Evan_MagicSword.png::CompressedTexture2D::4235371725822856469::1784389911::1784390480::1::::<><><>0<>0<>2829d08cff23f1f0e9c9cd2d74b70d2a<>res://.godot/imported/Paladin_Evan_MagicSword.png-0f170a9298e698f56a3e8b0350e4b3cb.ctex::
-Paladin_Evan_Sword.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Paladin_Evan_Sword.png::CompressedTexture2D::2447032161978491877::1784389911::1784390480::1::::<><><>0<>0<>06f34d404551c74dd5f8abeaf5c7d7bd<>res://.godot/imported/Paladin_Evan_Sword.png-7da7e09b514addcb994aad90e306180e.ctex::
-Paladin_Evan_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Paladin_Evan_Unarmed.png::CompressedTexture2D::7504734452245673628::1784389911::1784390480::1::::<><><>0<>0<>313baebee84cdf138c2f5a94ac98c54b<>res://.godot/imported/Paladin_Evan_Unarmed.png-eded1fda3276c2cf99474b69460b318a.ctex::
 ::res://assets/GBA/combat_anims/Paladin_Evar/::1784390480
 Paladin_Evar_Javelin.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Evar_Javelin.png::CompressedTexture2D::3766149830301247904::1784389911::1784390480::1::::<><><>0<>0<>b3b3bbe279076216f08105581836ff42<>res://.godot/imported/Paladin_Evar_Javelin.png-ec3005a6fb33fd78d83324bc10efc035.ctex::
@@ -948,6 +937,17 @@ Paladin_Evar_Sword.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Evar_Sword.png::CompressedTexture2D::8868547329208190408::1784389911::1784390480::1::::<><><>0<>0<>47f96662dc8de23c728b88fb7ef7ba36<>res://.godot/imported/Paladin_Evar_Sword.png-337818d12dee1293abe819157f102f00.ctex::
 Paladin_Evar_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Evar_Unarmed.png::CompressedTexture2D::1949527315817114491::1784389911::1784390480::1::::<><><>0<>0<>7cceeeb6c7898e70c9a2c8b9a82577ee<>res://.godot/imported/Paladin_Evar_Unarmed.png-e1adc8cde56b6d2d221104a0923756cf.ctex::
+::res://assets/GBA/combat_anims/Paladin_Eve/::1784817271
+Paladin_Eve_Javelin.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Paladin_Eve_Javelin.png::CompressedTexture2D::4074113627704977669::1784817271::1784885653::1::::<><><>0<>0<>4fd3e329d4fcf4d1000636e302754a62<>res://.godot/imported/Paladin_Eve_Javelin.png-c6f7b7ba7d6e22f638f58b4ccf3a6ed0.ctex::
+Paladin_Eve_Lance.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Paladin_Eve_Lance.png::CompressedTexture2D::904410887214243340::1784817271::1784885653::1::::<><><>0<>0<>7c22bed920691f1113f9ae643a7da102<>res://.godot/imported/Paladin_Eve_Lance.png-cd9d705330021dfb2b0906872c7127fa.ctex::
+Paladin_Eve_MagicSword.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Paladin_Eve_MagicSword.png::CompressedTexture2D::4235371725822856469::1784817271::1784885653::1::::<><><>0<>0<>008594b6921769071b3abd55205ed0dc<>res://.godot/imported/Paladin_Eve_MagicSword.png-9a942cd462be502a46c97dea1a1f830b.ctex::
+Paladin_Eve_Sword.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Paladin_Eve_Sword.png::CompressedTexture2D::2447032161978491877::1784817271::1784885653::1::::<><><>0<>0<>155abfca51ca31ddfdfbc9b77817a2c4<>res://.godot/imported/Paladin_Eve_Sword.png-2d25c59f032dee6d644b0d1df28c1135.ctex::
+Paladin_Eve_Unarmed.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Paladin_Eve_Unarmed.png::CompressedTexture2D::7504734452245673628::1784817271::1784885653::1::::<><><>0<>0<>d48eb1590357c5d6227b8f47ea368326<>res://.godot/imported/Paladin_Eve_Unarmed.png-771b4a229c28fd9971a4fbfb312242ad.ctex::
 ::res://assets/GBA/combat_anims/Paladin_Female/::1784390480
 Paladin_Female_MagicStaff.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Female_MagicStaff.png::CompressedTexture2D::2023721662347483462::1784389911::1784390480::1::::<><><>0<>0<>1f567bba72db482a0fae746b0188acb6<>res://.godot/imported/Paladin_Female_MagicStaff.png-58b72d566e187d4ed86c961d67ed5bdb.ctex::
@@ -986,17 +986,17 @@ Paladin_Nanna_Sword.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Nanna_Sword.png::CompressedTexture2D::6943135883109082917::1784389911::1784390486::1::::<><><>0<>0<>2622642256a9a3b217aa98f18a522669<>res://.godot/imported/Paladin_Nanna_Sword.png-a2e35d9770747468386bc64ddfbc1beb.ctex::
 Paladin_Nanna_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Nanna_Unarmed.png::CompressedTexture2D::4532682866123210135::1784389911::1784390486::1::::<><><>0<>0<>27c5315adb4f2adc88f13fec13c5a70a<>res://.godot/imported/Paladin_Nanna_Unarmed.png-0acd50f8e7dcd51917666072e5355f61.ctex::
-::res://assets/GBA/combat_anims/Paladin_Naoise/::1784390486
-Paladin_Naoise_Javelin.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Paladin_Naoise_Javelin.png::CompressedTexture2D::4076975847317920292::1784389911::1784390486::1::::<><><>0<>0<>e3e7133d8df411b65519d27b9357faba<>res://.godot/imported/Paladin_Naoise_Javelin.png-a339010894a829978c8de50e2f1c8af3.ctex::
-Paladin_Naoise_Lance.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Paladin_Naoise_Lance.png::CompressedTexture2D::1279911821133620324::1784389911::1784390486::1::::<><><>0<>0<>5cc47c059e30dc58c824aa3ebc06e5e1<>res://.godot/imported/Paladin_Naoise_Lance.png-aa2884f7b3d6492fe449e0c414ad3900.ctex::
-Paladin_Naoise_MagicSword.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Paladin_Naoise_MagicSword.png::CompressedTexture2D::756356335099096062::1784389911::1784390486::1::::<><><>0<>0<>0f4b1dfebde9276b7c688dfd4e5427f6<>res://.godot/imported/Paladin_Naoise_MagicSword.png-128e6d2f2ea8faa61a008a559bafd1c4.ctex::
-Paladin_Naoise_Sword.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Paladin_Naoise_Sword.png::CompressedTexture2D::3330369013762217733::1784389911::1784390486::1::::<><><>0<>0<>b543084b339051b9026f90808b0aa36c<>res://.godot/imported/Paladin_Naoise_Sword.png-e639fd18cb91cfaa7c1e7e4b5d72299e.ctex::
-Paladin_Naoise_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
-Paladin_Naoise_Unarmed.png::CompressedTexture2D::6063245465338795277::1784389911::1784390486::1::::<><><>0<>0<>771376ada25a38a5c8979b09677d9412<>res://.godot/imported/Paladin_Naoise_Unarmed.png-24c695b51019cf202474989b02fe603b.ctex::
+::res://assets/GBA/combat_anims/Paladin_Noish/::1784817271
+Paladin_Noish_Javelin.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Paladin_Noish_Javelin.png::CompressedTexture2D::4076975847317920292::1784817271::1784885653::1::::<><><>0<>0<>268ffaade8e1ec4fc98d6bc29de82096<>res://.godot/imported/Paladin_Noish_Javelin.png-657d6f195cbc13b18a8f43147b5a1004.ctex::
+Paladin_Noish_Lance.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Paladin_Noish_Lance.png::CompressedTexture2D::1279911821133620324::1784817271::1784885653::1::::<><><>0<>0<>099704fa72ec0932506a10a524df89e6<>res://.godot/imported/Paladin_Noish_Lance.png-8aedc7cd7c684058b7301ca88a979307.ctex::
+Paladin_Noish_MagicSword.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Paladin_Noish_MagicSword.png::CompressedTexture2D::756356335099096062::1784817271::1784885653::1::::<><><>0<>0<>f9c4aefb71cbe202e6e7e6aba9f9aac5<>res://.godot/imported/Paladin_Noish_MagicSword.png-e9e65af3d74e826290e1fecec2fb8783.ctex::
+Paladin_Noish_Sword.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Paladin_Noish_Sword.png::CompressedTexture2D::3330369013762217733::1784817271::1784885653::1::::<><><>0<>0<>6a06a0373b34435aede727d2180c43c0<>res://.godot/imported/Paladin_Noish_Sword.png-f4f174650ed51e5d019ed36d32158c4a.ctex::
+Paladin_Noish_Unarmed.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+Paladin_Noish_Unarmed.png::CompressedTexture2D::6063245465338795277::1784817271::1784885653::1::::<><><>0<>0<>5fed33a623b565c4a8cd42f240cba678<>res://.godot/imported/Paladin_Noish_Unarmed.png-63491a5f8e48e538c93150a07c3f74dd.ctex::
 ::res://assets/GBA/combat_anims/PegasusKnight_Generic/::1784390486
 PegasusKnight_Generic_Javelin.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 PegasusKnight_Generic_Javelin.png::CompressedTexture2D::9117209841916594789::1784389911::1784390486::1::::<><><>0<>0<>7ba55bb7d64c2c56616648d91a8553b5<>res://.godot/imported/PegasusKnight_Generic_Javelin.png-136c235ed00c5f31e60bc5b5de799a95.ctex::
@@ -2733,7 +2733,7 @@ Village-Ranged.png::CompressedTexture2D::3734162137679042231::1784389920::178439
 Wall-Melee.png::CompressedTexture2D::1973477364951017493::1784389920::1784390477::1::::<><><>0<>0<>8505777395012f265a7c7f4c929d5aab<>res://.godot/imported/Wall-Melee.png-b340bf5de6554e9518dca5a1062f79ff.ctex::
 Wall-Ranged.png::CompressedTexture2D::6619539954358839840::1784389920::1784390477::1::::<><><>0<>0<>41ddd4a5998c83514f770c1f4b9d1af6<>res://.godot/imported/Wall-Ranged.png-27cbfab4e946a3e5623cd29df56abebc.ctex::
 ::res://assets/GBA/portraits/::1784389920
-::res://assets/GBA/portraits/characters/::1784390478
+::res://assets/GBA/portraits/characters/::1784817271
 Aida.png::CompressedTexture2D::7008317258586410126::1784389920::1784390477::1::::<><><>0<>0<>b293482447d22450168ce0a4b3840c3c<>res://.godot/imported/Aida.png-9165d1e7e2a72dbccfe67f4cf604ad56.ctex::
 Aideen.png::CompressedTexture2D::3562563555345461269::1784389920::1784390477::1::::<><><>0<>0<>5b9f277dd2ef736e519ff269d70b5b0e<>res://.godot/imported/Aideen.png-8433c61a866e5eb6640824bab7ddd76c.ctex::
 Aihiman.png::CompressedTexture2D::4877647303837276314::1784389920::1784390477::1::::<><><>0<>0<>13fcf2fd453acd42f646dfd992d97ad8<>res://.godot/imported/Aihiman.png-b88ea878b5bc1d6dc5bc103d037933ba.ctex::
@@ -2785,13 +2785,13 @@ Codda.png::CompressedTexture2D::3746305734574098065::1784389920::1784390477::1::
 Coirpre.png::CompressedTexture2D::5644114449869874444::1784389920::1784390477::1::::<><><>0<>0<>7e558962ac0fc4ff6c813e79fd5fa5bb<>res://.godot/imported/Coirpre.png-b4739475433879c46ec1e0e9aa7cefc6.ctex::
 Colho.png::CompressedTexture2D::4309298478706254355::1784389920::1784390477::1::::<><><>0<>0<>a861f8923c58e4d9f4cf773cb54079e5<>res://.godot/imported/Colho.png-78e214b738dc8fe404ebe9746f091a4f.ctex::
 Conomor.png::CompressedTexture2D::1893563730337261201::1784389920::1784390477::1::::<><><>0<>0<>e8ce4314a10f47e4cb21894bb603ecdc<>res://.godot/imported/Conomor.png-230dfde4364fe859f285e29a6825ccb1.ctex::
-Coruta.png::CompressedTexture2D::8035060532022842933::1784389920::1784390477::1::::<><><>0<>0<>f523d660ac28bf688f1895d9504344be<>res://.godot/imported/Coruta.png-09b29b250f16f3631b155de051308129.ctex::
+Coulter.png::CompressedTexture2D::8035060532022842933::1784817271::1784885653::1::::<><><>0<>0<>b24e212d1e51f0e08f4a975dc29f21fe<>res://.godot/imported/Coulter.png-27404de1c7e21daba1232f3532fd685a.ctex::
 Cowen.png::CompressedTexture2D::7375214051651381318::1784389920::1784390477::1::::<><><>0<>0<>2e7a9cd1d5bbfd636ae0888f70614667<>res://.godot/imported/Cowen.png-aa7297f9c31fc3acab2498dff1b59626.ctex::
 Creidne.png::CompressedTexture2D::6441016976726992830::1784389920::1784390477::1::::<><><>0<>0<>19871a2950df129ad97c5082c508c663<>res://.godot/imported/Creidne.png-f2a36ca943a398a0ee79ffcd3385ddab.ctex::
 Cuvuli.png::CompressedTexture2D::5327589651084287826::1784389920::1784390477::1::::<><><>0<>0<>8a99b4f49537e8a1f2d92b9f6a5ed572<>res://.godot/imported/Cuvuli.png-94b0eee42c72be2181dedfa382cf919f.ctex::
 Daccar.png::CompressedTexture2D::7847689291299410104::1784389920::1784390478::1::::<><><>0<>0<>057e5318ea394dbfe5f5d550b1b57745<>res://.godot/imported/Daccar.png-69aee8954126572249a3968198e7252d.ctex::
 Dagdar.png::CompressedTexture2D::4064917188842996109::1784389920::1784390478::1::::<><><>0<>0<>974b899dc220913f5ef59d9f17f40da3<>res://.godot/imported/Dagdar.png-ae810d6d944af70b615ec6348a9c6c89.ctex::
-Daggon.png::CompressedTexture2D::3547273840241648949::1784389920::1784390478::1::::<><><>0<>0<>5ed781b8303783edfde96e824134eb26<>res://.godot/imported/Daggon.png-3ed776f81f26fb12d9244c55c0dda7ef.ctex::
+Dagon.png::CompressedTexture2D::3547273840241648949::1784817271::1784885653::1::::<><><>0<>0<>31023a9e3c1621667358d8e398eda3c9<>res://.godot/imported/Dagon.png-c561cb88f0d19597466d294d6225df4d.ctex::
 Daisy.png::CompressedTexture2D::8427729978069086955::1784389920::1784390478::1::::<><><>0<>0<>852eb3ee243e5d8da5dc201805f62b8c<>res://.godot/imported/Daisy.png-b04617b0f640fc6eb5b4e5b8487847db.ctex::
 Dalsin.png::CompressedTexture2D::1061385171866762721::1784389920::1784390478::1::::<><><>0<>0<>29efac8ae631a74dc38226b2e4b7503f<>res://.godot/imported/Dalsin.png-30d0c71c64157f7389fea1015b0d2069.ctex::
 Dalvin.png::CompressedTexture2D::6259683969531170096::1784389920::1784390478::1::::<><><>0<>0<>84507426154c0424066e8ce30ca3a50b<>res://.godot/imported/Dalvin.png-3d9c645588bf4c45a71aeb4139f311d4.ctex::
@@ -2799,10 +2799,10 @@ Danann.png::CompressedTexture2D::4205586796777943874::1784389920::1784390478::1:
 Deen.png::CompressedTexture2D::3871940902440548639::1784389920::1784390478::1::::<><><>0<>0<>32c52a614940be4cd474e44a93b61aec<>res://.godot/imported/Deen.png-2e5fc89e67c90f97ee05b117271b76b5.ctex::
 Deimne.png::CompressedTexture2D::4765015089929448622::1784389920::1784390478::1::::<><><>0<>0<>71eb0b5fc4b3c25711c68eba83ef7c8a<>res://.godot/imported/Deimne.png-80849904e814088698685bceffc33e1a.ctex::
 Deirdre.png::CompressedTexture2D::7222698177609930666::1784389920::1784390478::1::::<><><>0<>0<>0f463acd14c304ffa4d21024453fab67<>res://.godot/imported/Deirdre.png-5ed1faf4329de557a1765d842f9840f2.ctex::
-Delmud.png::CompressedTexture2D::503812841219434392::1784389920::1784390478::1::::<><><>0<>0<>86d28959ac1f4dddd85dc4db9a853e73<>res://.godot/imported/Delmud.png-95faf8184a49972b391efc230249e538.ctex::
 Dew.png::CompressedTexture2D::1552607101267314845::1784389920::1784390478::1::::<><><>0<>0<>c780d5812e2be89903590906281610b8<>res://.godot/imported/Dew.png-a1ec228d2db1847972245bb44440816f.ctex::
+Diarmuid.png::CompressedTexture2D::503812841219434392::1784817271::1784885653::1::::<><><>0<>0<>100564bd83a39c673138324dd140e92c<>res://.godot/imported/Diarmuid.png-ecb6a108841b2a5d7ce057ee092b44c4.ctex::
 DiMaggio.png::CompressedTexture2D::5739162727671452349::1784389920::1784390478::1::::<><><>0<>0<>79adf0886faf7359bb6445e57ad52cfb<>res://.godot/imported/DiMaggio.png-cb9727a701dc7e73d9af758b14438662.ctex::
-Distler.png::CompressedTexture2D::540663496298570229::1784389920::1784390478::1::::<><><>0<>0<>c84fb0b087e55b44da9238200710cc04<>res://.godot/imported/Distler.png-a1dca5d13c1b0d3cee4b68316a802c53.ctex::
+Disler.png::CompressedTexture2D::540663496298570229::1784817271::1784885653::1::::<><><>0<>0<>18855926ebf1543b301f487931361e50<>res://.godot/imported/Disler.png-d235460087be3a4ca6c48c23f32be996.ctex::
 Dithorba.png::CompressedTexture2D::3660600488568686310::1784389920::1784390478::1::::<><><>0<>0<>3f69b31b0cc936b34f86fae980ce4ac8<>res://.godot/imported/Dithorba.png-13a1751a9f51b0b468dd98a786fb73e4.ctex::
 Dobalzark.png::CompressedTexture2D::4839855006781503554::1784389920::1784390478::1::::<><><>0<>0<>a53b077089ecb7e08ab569a0e2e73824<>res://.godot/imported/Dobalzark.png-48e1293cdd4238ad99c60e8a25def4a8.ctex::
 Dobarl.png::CompressedTexture2D::5660097620961514798::1784389920::1784390478::1::::<><><>0<>0<>a2ef9d77849d8f04bd96020f9a5322c7<>res://.godot/imported/Dobarl.png-6aa8965b55cc366d36d9833e7ac9ea1e.ctex::
@@ -2814,8 +2814,8 @@ Eliu.png::CompressedTexture2D::5672292549334684793::1784389920::1784390478::1:::
 Elliot.png::CompressedTexture2D::1267600237209890751::1784389920::1784390478::1::::<><><>0<>0<>32d596ff16aac332c3a8f72068ab1f03<>res://.godot/imported/Elliot.png-11f572cced2049b20f1ad4624fdfa817.ctex::
 Erinys.png::CompressedTexture2D::2171206537920901803::1784389920::1784390478::1::::<><><>0<>0<>da168f4dbf2e16ea3ce4905423ccce39<>res://.godot/imported/Erinys.png-de1242efca537219484941922be4358c.ctex::
 Ethlyn.png::CompressedTexture2D::5365982922314436423::1784389920::1784390478::1::::<><><>0<>0<>5d0a7fe250aceb77f5e626bcf05c3d58<>res://.godot/imported/Ethlyn.png-998292fc69b4e959f233cd05649fae9c.ctex::
-Evan.png::CompressedTexture2D::594892286535419717::1784389920::1784390478::1::::<><><>0<>0<>e7fc2384c99e52d2c3ce8fbbe8c77663<>res://.godot/imported/Evan.png-bb52a053ecfe0363b53379c252ee8505.ctex::
 Evar.png::CompressedTexture2D::4941670842731622682::1784389920::1784390478::1::::<><><>0<>0<>95b1f5f7c8685eb2fabe94e1036c0131<>res://.godot/imported/Evar.png-87a2158c9de0259f21f477d66f94cf6a.ctex::
+Eve.png::CompressedTexture2D::594892286535419717::1784817271::1784885652::1::::<><><>0<>0<>83e32a887e0556e788cdcf5fd1985fb5<>res://.godot/imported/Eve.png-5da8f7adccb99b8f6f0beed807916fbd.ctex::
 Eyvel.png::CompressedTexture2D::8250519060033775189::1784389920::1784390478::1::::<><><>0<>0<>1be3378278ec1a245261dc9ef3391357<>res://.godot/imported/Eyvel.png-c0fb8a67e21b17b4c828b8183d36426a.ctex::
 FakeElliot.png::CompressedTexture2D::158209311184389378::1784389920::1784390478::1::::<><><>0<>0<>f2bdde130e3c2b2854ec4fc5b51c9755<>res://.godot/imported/FakeElliot.png-6d45216a8c26c9122d1932b2abeb8049.ctex::
 FakeHolyn.png::CompressedTexture2D::229440411047023058::1784389920::1784390478::1::::<><><>0<>0<>b758295008afcc0232949f3a972b7880<>res://.godot/imported/FakeHolyn.png-ff268096a1cbb7f0750996a835f781f7.ctex::
@@ -2836,7 +2836,7 @@ Galzus.png::CompressedTexture2D::2232902292933819961::1784389920::1784390478::1:
 Gandolf.png::CompressedTexture2D::2773803007762974163::1784389920::1784390478::1::::<><><>0<>0<>0fc7f541d07d423fd3e01facd8799630<>res://.godot/imported/Gandolf.png-83dae354f6421fcc9db8a1fe331def17.ctex::
 Gerrard.png::CompressedTexture2D::1199187185604896100::1784389920::1784390478::1::::<><><>0<>0<>8d8998b6d45a6700d3b1f91f235e3d13<>res://.godot/imported/Gerrard.png-1220696f27a7f9b65d7f8424d60b7177.ctex::
 Glade.png::CompressedTexture2D::5733123289947721915::1784389920::1784390478::1::::<><><>0<>0<>30c2edce52aeac3d5d369bea863fe52f<>res://.godot/imported/Glade.png-50d6c3cfcef167ed32e1171c40213cb9.ctex::
-Gomez.png::CompressedTexture2D::356625799616946601::1784389920::1784390478::1::::<><><>0<>0<>0704d0cddfcfc15a1d84045b02981683<>res://.godot/imported/Gomez.png-653b35a9003248aa7b872f5ef3d91413.ctex::
+Gomes.png::CompressedTexture2D::356625799616946601::1784817271::1784885652::1::::<><><>0<>0<>dfc09d261bdb0af11db6c53b1f98021a<>res://.godot/imported/Gomes.png-1d0b8d6ae0c884f76ed1dd50a78f58d5.ctex::
 Gustav.png::CompressedTexture2D::4809995782714578034::1784389920::1784390478::1::::<><><>0<>0<>7f02edfd211efa15e6f7bc6bf4dc50d7<>res://.godot/imported/Gustav.png-a048c88a5a62848fd551ed1b1c81b294.ctex::
 Halvan.png::CompressedTexture2D::8590576976483070792::1784389920::1784390478::1::::<><><>0<>0<>8fece1b10a860cfe3a9a35eda593abe5<>res://.godot/imported/Halvan.png-b6bf911ac4cb736020b7837d45d246f7.ctex::
 Hannibal.png::CompressedTexture2D::7351280506259995690::1784389920::1784390478::1::::<><><>0<>0<>8b1e6cd43c4945dc01078fbc78e7ef87<>res://.godot/imported/Hannibal.png-ab88ea89b48b306dc3d3a3252547bab0.ctex::
@@ -2958,6 +2958,7 @@ Shannan.png::CompressedTexture2D::8850290106283545807::1784389920::1784390476::1
 ShannanKid.png::CompressedTexture2D::8113668199130979783::1784389920::1784390476::1::::<><><>0<>0<>110c747115c8396597ccfa69cb81168c<>res://.godot/imported/ShannanKid.png-e8e8a2e96b63d810bde3b70f55a42116.ctex::
 Shiva.png::CompressedTexture2D::8773286905493204485::1784389920::1784390476::1::::<><><>0<>0<>cbfa489f33cd067c49a593a48b56a2fe<>res://.godot/imported/Shiva.png-e3a585d223f7ada9dea16a1f032e9805.ctex::
 Sigurd.png::CompressedTexture2D::6961691626165293177::1784389920::1784390476::1::::<><><>0<>0<>351e8f1b0a1268ee70b3a77a48ab4401<>res://.godot/imported/Sigurd.png-bada0a07a7d7acad9642e6044f62f29c.ctex::
+Skasaher.png::CompressedTexture2D::388814371048997142::1784817271::1784885652::1::::<><><>0<>0<>6a663d420bd9e6669ac7b2f914e2067c<>res://.godot/imported/Skasaher.png-5eb4ee80f6f4b12bb3fbf34ec29bed49.ctex::
 Slayder.png::CompressedTexture2D::7508783221205843778::1784389920::1784390476::1::::<><><>0<>0<>bfd3771fe4c6c14faf2c4b13bda51028<>res://.godot/imported/Slayder.png-519532c3961f0063810a0e44ce55cdfc.ctex::
 Sleuf.png::CompressedTexture2D::4698036535643567951::1784389920::1784390476::1::::<><><>0<>0<>0a4be32ebc5d08a713f8563809728842<>res://.godot/imported/Sleuf.png-d17939e08b22c5d45c3bb6bfe52e55bb.ctex::
 Sylvia.png::CompressedTexture2D::44068835758840581::1784389920::1784390476::1::::<><><>0<>0<>55f5f8ab47e066cd98e1a99f702abf6f<>res://.godot/imported/Sylvia.png-4baed3d0b1a84ed73ef4bb409d3a2a2c.ctex::
@@ -2969,13 +2970,12 @@ Travant.png::CompressedTexture2D::5609233743979730337::1784389920::1784390476::1
 Tristan.png::CompressedTexture2D::9127971764114165468::1784389920::1784390476::1::::<><><>0<>0<>0b7cf49825f28414babbe32d695f5506<>res://.godot/imported/Tristan.png-3bbcb0d029f959c361448e7fce0739e2.ctex::
 Troude.png::CompressedTexture2D::8834028593221309840::1784389920::1784390476::1::::<><><>0<>0<>e111838a6b1c3b2c4e36dfa18631cf6d<>res://.godot/imported/Troude.png-b80a1c63f150e72b2fcba0db2a85f653.ctex::
 Truman.png::CompressedTexture2D::3202049002201354571::1784389920::1784390476::1::::<><><>0<>0<>f33c1e312f7de49411ab7d64d056a50c<>res://.godot/imported/Truman.png-962462dab283c656788cf451ecd1054c.ctex::
-Ulster.png::CompressedTexture2D::388814371048997142::1784389920::1784390476::1::::<><><>0<>0<>c1242033d107ae1c4be7d687e2992728<>res://.godot/imported/Ulster.png-06ff9ef1fa34fce073ebb829b5629189.ctex::
 Vaja.png::CompressedTexture2D::7999376189866509967::1784389920::1784390476::1::::<><><>0<>0<>a909031454d73f98172274bb776d94ed<>res://.godot/imported/Vaja.png-d7d1d5e66c2fc7eace48a68e5df2c63e.ctex::
 Vampa.png::CompressedTexture2D::2047028670112093262::1784389920::1784390476::1::::<><><>0<>0<>4f4933efccaa675c722f74f14ca3698c<>res://.godot/imported/Vampa.png-98611cdb665ed5f45a8030322de72e51.ctex::
 Veld.png::CompressedTexture2D::5882679889655875317::1784389920::1784390476::1::::<><><>0<>0<>0e96537891bdc86f0b8a9b6898ebceea<>res://.godot/imported/Veld.png-0d4b27bffb90a6863186193cfa3c9ba6.ctex::
 Voltz.png::CompressedTexture2D::3924551141477637607::1784389920::1784390476::1::::<><><>0<>0<>6acf05715a0c3f42e858d2345cd11db8<>res://.godot/imported/Voltz.png-7cdbe85ec9361079479ad34484582354.ctex::
 Weissman.png::CompressedTexture2D::6198442077921214029::1784389920::1784390476::1::::<><><>0<>0<>3c23cf427e3b475ad5d6b64cc40ff382<>res://.godot/imported/Weissman.png-306ed2d41d677aa6f71bbc0e6cbc8542.ctex::
-Wolf.png::CompressedTexture2D::6289283370080115426::1784389920::1784390476::1::::<><><>0<>0<>6d791e8ca75d913677d0bbe55350bc0c<>res://.godot/imported/Wolf.png-8f53282c1cdd42b256eb0712687c0d46.ctex::
+Wolff.png::CompressedTexture2D::6289283370080115426::1784817271::1784885652::1::::<><><>0<>0<>831277d605b7a5013cb7cec44dd91aaa<>res://.godot/imported/Wolff.png-a91caa76baaab2001dfb28ade46e9692.ctex::
 Xavier.png::CompressedTexture2D::245458485799090621::1784389920::1784390476::1::::<><><>0<>0<>4afd922109f9cde5e9987ef78f139f29<>res://.godot/imported/Xavier.png-e217073dae4d556ec2c7aa8aa557cb80.ctex::
 Yupheel.png::CompressedTexture2D::5780728980421138786::1784389920::1784390476::1::::<><><>0<>0<>a5a39d78ed186826331ff55cf4942836<>res://.godot/imported/Yupheel.png-a237575564b3767eba44479247124831.ctex::
 Yuria.png::CompressedTexture2D::4884102444214414067::1784389920::1784390476::1::::<><><>0<>0<>92a180950a2c2c330dce4074199bf9fc<>res://.godot/imported/Yuria.png-b6229e0735b2e4b6145fc5a5939de8cc.ctex::
@@ -3405,7 +3405,7 @@ logo1.png::CompressedTexture2D::8032125651993206790::1784389921::1784390477::1::
 logo2.png::CompressedTexture2D::6066725996412016955::1784389921::1784390477::1::::<><><>0<>0<>e98d5d80d37edc1e854638de138a127e<>res://.godot/imported/logo2.png-09c4369452ceb3522c7058f4320aa6d3.ctex::
 title1_background.png::CompressedTexture2D::5134709640215468372::1784389921::1784390477::1::::<><><>0<>0<>af9826883bc2750da0867897f289c3bd<>res://.godot/imported/title1_background.png-3b7a6b3d581ba953b021406a18676a92.ctex::
 title2_background.png::CompressedTexture2D::5408798187678863261::1784389921::1784390477::1::::<><><>0<>0<>e89f191a5ef6bf133116739eaf17fea7<>res://.godot/imported/title2_background.png-44a49e1f94e553a36ef62d53b119fe94.ctex::
-::res://assets/HD/::1784644664
+::res://assets/HD/::1784793926
 ::res://assets/HD/animations/::1784389922
 ::res://assets/HD/autotiles/::1784389922
 ::res://assets/HD/combat_anims/::1784389922
@@ -3418,8 +3418,9 @@ title2_background.png::CompressedTexture2D::5408798187678863261::1784389921::178
 Fire_Emblem_Heroes_Font.ttf::FontFile::4468105078313121114::1504032078::1784419738::1::::<><><>0<>0<>2111bb2e10f1be08617fb8e85a8bccd5<>res://.godot/imported/Fire_Emblem_Heroes_Font.ttf-587e12f1c247c12e1f2e527902f5a8f6.fontdata::
 ::res://assets/HD/highlights/::1784389922
 ::res://assets/HD/icons6/::1784389922
-::res://assets/HD/icons16/::1784389922
 ::res://assets/HD/icons32/::1784389922
+::res://assets/HD/icons144/::1784747073
+Axe.png::CompressedTexture2D::5536924532585726438::1784747028::1784885653::1::::<><><>0<>0<>f8b3db0627bcbcb043249fd3d993b389<>res://.godot/imported/Axe.png-3df7faa1bffb50cc9aeb1af6754b1532.ctex::
 ::res://assets/HD/info_menu/::1784389922
 ::res://assets/HD/map_icons/::1784389922
 ::res://assets/HD/map_sprites/::1784389922
@@ -3437,34 +3438,84 @@ Fire_Emblem_Heroes_Font.ttf::FontFile::4468105078313121114::1504032078::17844197
 ::res://assets/HD/tilesets/::1784389922
 ::res://assets/HD/title/::1784389922
 ::res://assets/HD/videos/::1784389922
-::res://assets/languages/::1784389913
-::res://assets/languages/Flags/::1784648087
-de.png::CompressedTexture2D::6616309817090447157::1784389913::1784649527::1::::<><><>0<>0<>6ac29dfa08dd17a069fd9988b3b85adf<>res://.godot/imported/de.png-1219d0c9387e4af2616b94f526f45d86.ctex::
-en.png::CompressedTexture2D::1830620738966779921::1784389913::1784649527::1::::<><><>0<>0<>48228b0b6849671f66ab8e3f945ed2b9<>res://.godot/imported/en.png-8ecfd48bd152dfe710c4cabc0b32c0af.ctex::
-es.png::CompressedTexture2D::3622426124080247967::1784389913::1784649527::1::::<><><>0<>0<>e0197912399e6eed627aa6ead9e23cee<>res://.godot/imported/es.png-5e76d623c30cb053ed6f2c76fc46680a.ctex::
-fr.png::CompressedTexture2D::7195595710634261420::1784389913::1784649527::1::::<><><>0<>0<>10cc05a9a3fa3972b9560eb7a8bc57fb<>res://.godot/imported/fr.png-4655374f6e5ba750fecac50097c72b3d.ctex::
-it.png::CompressedTexture2D::4110678305777171762::1784389913::1784649527::1::::<><><>0<>0<>331ec6a0c3d293ad3e917a466d3876ac<>res://.godot/imported/it.png-75893210c59a6f5e0911590344bbbac6.ctex::
-ja.png::CompressedTexture2D::93899182682407450::1784389913::1784649527::1::::<><><>0<>0<>86dc9432f933637153a5086de9f2bc24<>res://.godot/imported/ja.png-9ba0f781003e48c62eb1b6afc061ac3b.ctex::
-::res://assets/languages/Menus/::1784648086
-Translations FE45 - MainMenu.it.translation::OptimizedTranslation::5721091348594468859::1784649526::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.csv::Translation::5127242888532208358::1784648950::1784649526::1::::<><><>0<>0<>a4c5df40d94239be82cba3ad100556b4<>res://assets/languages/Menus/Translations FE45 - MainMenu.en.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.es.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.de.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.ja.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.fr.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.it.translation::
-Translations FE45 - MainMenu.de.translation::OptimizedTranslation::8936700650430381375::1784649526::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.en.translation::OptimizedTranslation::8817530577582386794::1784649526::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.es.translation::OptimizedTranslation::847647670746001290::1784649526::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.fr.translation::OptimizedTranslation::3048930378286196056::1784649526::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.ja.translation::OptimizedTranslation::5118320353881303997::1784649526::0::1::::<><><>0<>0<><>::
-::res://assets/languages/Scenes/::1784648086
-Translations FE45 - Credits.it.translation::OptimizedTranslation::4032813682645190452::1784649526::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.csv::Translation::8722933851759645887::1784645639::1784649526::1::::<><><>0<>0<>a799cb7401d8dd88fee5e1d44c5f8222<>res://assets/languages/Scenes/Translations FE45 - Credits.en.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.es.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.de.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.ja.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.fr.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.it.translation::
-Translations FE45 - Credits.de.translation::OptimizedTranslation::2821423505291399863::1784649526::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.en.translation::OptimizedTranslation::5412188258512102619::1784649526::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.es.translation::OptimizedTranslation::9179755138946583816::1784649526::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.fr.translation::OptimizedTranslation::4155141866644078568::1784649526::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.ja.translation::OptimizedTranslation::66948769071755839::1784649526::0::1::::<><><>0<>0<><>::
-::res://assets/languages/Scenes/FE5/::1784648086
-Translations FE45 - FE5CHAP1.csv::Translation::3225907030478842641::1784642538::1784649526::1::::<><><>0<>0<>ee271ac88179d2eeea7a30b9a5622861<>res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation::
+::res://assets/languages/::1784816922
+::res://assets/languages/Flags/::1784816922
+de.png::CompressedTexture2D::6616309817090447157::1784389913::1784885652::1::::<><><>0<>0<>6ac29dfa08dd17a069fd9988b3b85adf<>res://.godot/imported/de.png-1219d0c9387e4af2616b94f526f45d86.ctex::
+en.png::CompressedTexture2D::1830620738966779921::1784389913::1784885652::1::::<><><>0<>0<>48228b0b6849671f66ab8e3f945ed2b9<>res://.godot/imported/en.png-8ecfd48bd152dfe710c4cabc0b32c0af.ctex::
+es.png::CompressedTexture2D::3622426124080247967::1784389913::1784885652::1::::<><><>0<>0<>e0197912399e6eed627aa6ead9e23cee<>res://.godot/imported/es.png-5e76d623c30cb053ed6f2c76fc46680a.ctex::
+fr.png::CompressedTexture2D::7195595710634261420::1784389913::1784885652::1::::<><><>0<>0<>10cc05a9a3fa3972b9560eb7a8bc57fb<>res://.godot/imported/fr.png-4655374f6e5ba750fecac50097c72b3d.ctex::
+it.png::CompressedTexture2D::4110678305777171762::1784389913::1784885652::1::::<><><>0<>0<>331ec6a0c3d293ad3e917a466d3876ac<>res://.godot/imported/it.png-75893210c59a6f5e0911590344bbbac6.ctex::
+ja.png::CompressedTexture2D::93899182682407450::1784389913::1784885652::1::::<><><>0<>0<>86dc9432f933637153a5086de9f2bc24<>res://.godot/imported/ja.png-9ba0f781003e48c62eb1b6afc061ac3b.ctex::
+pt.png::CompressedTexture2D::6308309880286253350::1784816561::1784885652::1::::<><><>0<>0<>e4031733ce1d432260d606720fc02138<>res://.godot/imported/pt.png-e045b88f1820ccfb1d1ca7af2a3e5f88.ctex::
+::res://assets/languages/Menus/::1784885624
+Translations FE45 - MainMenu.csv::Translation::5127242888532208358::1784816762::1784885624::1::::<><><>0<>0<>a4c5df40d94239be82cba3ad100556b4<>res://assets/languages/Menus/Translations FE45 - MainMenu.en.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.es.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.de.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.ja.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.fr.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.it.translation::
+Translations FE45 - MainMenu.de.translation::OptimizedTranslation::8936700650430381375::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.en.translation::OptimizedTranslation::8817530577582386794::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.es.translation::OptimizedTranslation::847647670746001290::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.fr.translation::OptimizedTranslation::3048930378286196056::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.it.translation::OptimizedTranslation::3265800045771253870::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.ja.translation::OptimizedTranslation::5118320353881303997::1784885624::0::1::::<><><>0<>0<><>::
+::res://assets/languages/Names/::1784885624
+Translations FE45 - Characters.csv::Translation::282933559193605392::1784818589::1784885624::1::::<><><>0<>0<>8411bb085f2c82d817b7308c2c0b703c<>res://assets/languages/Names/Translations FE45 - Characters.en.translation<*>res://assets/languages/Names/Translations FE45 - Characters.es.translation<*>res://assets/languages/Names/Translations FE45 - Characters.de.translation<*>res://assets/languages/Names/Translations FE45 - Characters.ja.translation<*>res://assets/languages/Names/Translations FE45 - Characters.fr.translation<*>res://assets/languages/Names/Translations FE45 - Characters.it.translation<*>res://assets/languages/Names/Translations FE45 - Characters.pt.translation::
+Translations FE45 - Characters.de.translation::OptimizedTranslation::1393471008756690349::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Characters.en.translation::OptimizedTranslation::4402345474501178810::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Characters.es.translation::OptimizedTranslation::2972798880065010878::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Characters.fr.translation::OptimizedTranslation::1948019690946891939::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Characters.it.translation::OptimizedTranslation::4851816302194798306::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Characters.ja.translation::OptimizedTranslation::6165601521200299245::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Characters.pt.translation::OptimizedTranslation::1530369921903451350::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Classes.csv::Translation::1629533520090858543::1784816843::1784885624::1::::<><><>0<>0<>25a5a9af6c246457d8b331ca78be87c7<>res://assets/languages/Names/Translations FE45 - Classes.en.translation<*>res://assets/languages/Names/Translations FE45 - Classes.es.translation<*>res://assets/languages/Names/Translations FE45 - Classes.de.translation<*>res://assets/languages/Names/Translations FE45 - Classes.ja.translation<*>res://assets/languages/Names/Translations FE45 - Classes.fr.translation<*>res://assets/languages/Names/Translations FE45 - Classes.it.translation<*>res://assets/languages/Names/Translations FE45 - Classes.pt.translation::
+Translations FE45 - Classes.de.translation::OptimizedTranslation::3724885283597466057::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Classes.en.translation::OptimizedTranslation::3925581064916006432::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Classes.es.translation::OptimizedTranslation::4851131868608213526::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Classes.fr.translation::OptimizedTranslation::4025297106428145598::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Classes.it.translation::OptimizedTranslation::6696252883584376223::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Classes.ja.translation::OptimizedTranslation::2984150658445405932::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Classes.pt.translation::OptimizedTranslation::6582661741668250267::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Items.csv::Translation::6292952864533908824::1784816843::1784885624::1::::<><><>0<>0<>100c3abe75eb98cd0b41986f6af09c38<>res://assets/languages/Names/Translations FE45 - Items.en.translation<*>res://assets/languages/Names/Translations FE45 - Items.es.translation<*>res://assets/languages/Names/Translations FE45 - Items.de.translation<*>res://assets/languages/Names/Translations FE45 - Items.ja.translation<*>res://assets/languages/Names/Translations FE45 - Items.fr.translation<*>res://assets/languages/Names/Translations FE45 - Items.it.translation<*>res://assets/languages/Names/Translations FE45 - Items.pt.translation::
+Translations FE45 - Items.de.translation::OptimizedTranslation::4678397521704510268::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Items.en.translation::OptimizedTranslation::7599176772571585008::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Items.es.translation::OptimizedTranslation::3730175829865724081::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Items.fr.translation::OptimizedTranslation::5867123202909070488::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Items.it.translation::OptimizedTranslation::6514266911713469203::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Items.ja.translation::OptimizedTranslation::2076713975531739415::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Items.pt.translation::OptimizedTranslation::7532471593409935222::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Places.csv::Translation::3997689090098846909::1784816843::1784885624::1::::<><><>0<>0<>1cb66c77a1e471dc3b8973722b5f6a35<>res://assets/languages/Names/Translations FE45 - Places.en.translation<*>res://assets/languages/Names/Translations FE45 - Places.es.translation<*>res://assets/languages/Names/Translations FE45 - Places.de.translation<*>res://assets/languages/Names/Translations FE45 - Places.ja.translation<*>res://assets/languages/Names/Translations FE45 - Places.fr.translation<*>res://assets/languages/Names/Translations FE45 - Places.it.translation<*>res://assets/languages/Names/Translations FE45 - Places.pt.translation::
+Translations FE45 - Places.de.translation::OptimizedTranslation::8804188705010441228::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Places.en.translation::OptimizedTranslation::475114068624356544::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Places.es.translation::OptimizedTranslation::6569299577003936202::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Places.fr.translation::OptimizedTranslation::3222474302355179853::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Places.it.translation::OptimizedTranslation::615415244906431121::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Places.ja.translation::OptimizedTranslation::3663383023166610421::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Places.pt.translation::OptimizedTranslation::6134248292518742132::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Skills.csv::Translation::2905650018455237057::1784816843::1784885624::1::::<><><>0<>0<>27e83859a9f0eae5cd120c17a5ab4a16<>res://assets/languages/Names/Translations FE45 - Skills.en.translation<*>res://assets/languages/Names/Translations FE45 - Skills.es.translation<*>res://assets/languages/Names/Translations FE45 - Skills.de.translation<*>res://assets/languages/Names/Translations FE45 - Skills.ja.translation<*>res://assets/languages/Names/Translations FE45 - Skills.fr.translation<*>res://assets/languages/Names/Translations FE45 - Skills.it.translation<*>res://assets/languages/Names/Translations FE45 - Skills.pt.translation::
+Translations FE45 - Skills.de.translation::OptimizedTranslation::6723995477153230869::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Skills.en.translation::OptimizedTranslation::7077742178085376050::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Skills.es.translation::OptimizedTranslation::943816766425827808::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Skills.fr.translation::OptimizedTranslation::1113927537652677159::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Skills.it.translation::OptimizedTranslation::1200803001381019706::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Skills.ja.translation::OptimizedTranslation::8485909906565720354::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Skills.pt.translation::OptimizedTranslation::8777681401527245621::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Titles.csv::Translation::2486133580864605880::1784816843::1784885624::1::::<><><>0<>0<>3de4f7ed030f1079c290ce946192cc05<>res://assets/languages/Names/Translations FE45 - Titles.en.translation<*>res://assets/languages/Names/Translations FE45 - Titles.es.translation<*>res://assets/languages/Names/Translations FE45 - Titles.de.translation<*>res://assets/languages/Names/Translations FE45 - Titles.ja.translation<*>res://assets/languages/Names/Translations FE45 - Titles.fr.translation<*>res://assets/languages/Names/Translations FE45 - Titles.it.translation<*>res://assets/languages/Names/Translations FE45 - Titles.pt.translation::
+Translations FE45 - Titles.de.translation::OptimizedTranslation::6837154922641453348::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Titles.en.translation::OptimizedTranslation::3092292292278189162::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Titles.es.translation::OptimizedTranslation::3826234934800566996::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Titles.fr.translation::OptimizedTranslation::3706122499386129453::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Titles.it.translation::OptimizedTranslation::4312856914977141004::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Titles.ja.translation::OptimizedTranslation::6634772926595823502::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Titles.pt.translation::OptimizedTranslation::8781224951606954775::1784885624::0::1::::<><><>0<>0<><>::
+::res://assets/languages/Scenes/::1784885624
+Translations FE45 - Credits.csv::Translation::8722933851759645887::1784816762::1784885624::1::::<><><>0<>0<>a799cb7401d8dd88fee5e1d44c5f8222<>res://assets/languages/Scenes/Translations FE45 - Credits.en.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.es.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.de.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.ja.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.fr.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.it.translation::
+Translations FE45 - Credits.de.translation::OptimizedTranslation::2821423505291399863::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.en.translation::OptimizedTranslation::5412188258512102619::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.es.translation::OptimizedTranslation::9179755138946583816::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.fr.translation::OptimizedTranslation::4155141866644078568::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.it.translation::OptimizedTranslation::2913844006921317191::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.ja.translation::OptimizedTranslation::66948769071755839::1784885624::0::1::::<><><>0<>0<><>::
+::res://assets/languages/Scenes/FE5/::1784885624
+Translations FE45 - FE5CHAP1.csv::Translation::3225907030478842641::1784816762::1784885624::1::::<><><>0<>0<>ee271ac88179d2eeea7a30b9a5622861<>res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation::
 Translations FE45 - FE5CHAP1.de.translation::OptimizedTranslation::2885176193741406857::1784389913::0::1::::<><><>0<>0<><>::
-Translations FE45 - FE5CHAP1.en.translation::OptimizedTranslation::6268921531056584035::1784649526::0::1::::<><><>0<>0<><>::
+Translations FE45 - FE5CHAP1.en.translation::OptimizedTranslation::6268921531056584035::1784885624::0::1::::<><><>0<>0<><>::
 Translations FE45 - FE5CHAP1.es.translation::OptimizedTranslation::1984109186085072664::1784389913::0::1::::<><><>0<>0<><>::
 Translations FE45 - FE5CHAP1.fr.translation::OptimizedTranslation::3857403708506720552::1784389913::0::1::::<><><>0<>0<><>::
 Translations FE45 - FE5CHAP1.ja.translation::OptimizedTranslation::1396422818418963801::1784389913::0::1::::<><><>0<>0<><>::
@@ -3748,11 +3799,11 @@ support_ranks.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 fe4.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 ::res://data/fe4/events/::1784389924
 manifest.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-::res://data/fe4/events/0/::1784389924
+::res://data/fe4/events/0/::1784817271
 Aideen_s_Kidnap.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 AzelSigurdTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 CEVillage.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-Chronology.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
+Chronology.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 CWVillage.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 DeathDiMaggio.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 DeathGerrard.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -3777,7 +3828,7 @@ SetSupportValues.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 SigurdArvisTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 SVillage.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 TownTutorial.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-::res://data/fe4/events/1/::1784389924
+::res://data/fe4/events/1/::1784817271
 AddNordionGuardTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 AideenDewSpawn.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 AideenEthlynTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -3806,20 +3857,20 @@ GenoaSeize.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 Intro.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 JamkeRecruitment.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 LexAxe.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-MarphaSeize.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
+MarphaSeize.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 MidirAideenTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 Narration.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 NordionGuardTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 NorthVillage.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-Outro.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
+Outro.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 PreBase.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 QuanAyraTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 QuanFinnTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 RemoveNordionGuardTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 SigurdAideenTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-SouthVillage.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
+SouthVillage.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 VerdaneSeize.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-::res://data/fe4/events/2/::1784389924
+::res://data/fe4/events/2/::1784817271
 AgustySeized.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 AlecSylviaTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 AnphonySeized.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -3842,7 +3893,7 @@ Destructibles.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 DewLachesisTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 East1Village.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 East2Village.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-East3Village.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
+East3Village.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 East4Village.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 ElliotAttack.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 ErinysRecruit.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -3864,9 +3915,9 @@ FightVoltz.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 FightVoltzBeowulf.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 FightZain.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 HeirheinSeized.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-Intro.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
+Intro.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 KillMackilyLeft.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-LachesisRecruit.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
+LachesisRecruit.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 LewynSylviaSpawn.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 MackilyAttack.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 MackilyConvo.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -3874,7 +3925,7 @@ MackilySeized.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 MackilySpawn.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 Narration.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 OpenDoors.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-Outro.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
+Outro.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 PhillipAttack.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 PreBase.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 QuanFinnTalk.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -3920,11 +3971,11 @@ DeathSylvia.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 Debug_Setup.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 NarrationMapNodes.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 Quick_End.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-::res://data/fe4/levels/::1784389924
+::res://data/fe4/levels/::1784817271
 _index.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 0.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 1.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-2.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
+2.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 998.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 999.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 DEBUG.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -4002,20 +4053,20 @@ T4.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 T4x.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 Thracia.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 WorldMap.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-::res://data/general/::1784389924
-classes.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
+::res://data/general/::1784817271
+classes.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 class_proportions.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
 game_classes_wod_source.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-gen2_children.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-gen2_inheritance_source.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-items.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-portrait_offsets.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-skills.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-units.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-weapons.json::JSON::-1::1784389924::0::1::::<><><>0<>0<><>::
-::res://docs/::1784649395
+gen2_children.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+gen2_inheritance_source.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+items.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+portrait_offsets.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+skills.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+units.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+weapons.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+::res://docs/::1784817271
 ARENA_FE4_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
-ASSET_COVERAGE.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
+ASSET_COVERAGE.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
 AUTO_CINEMATICS_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 BaseCastle_InterChapter_Design.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 CASTLE_README.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -4036,9 +4087,9 @@ original_fe5_map_sprites.md::TextFile::-1::1784418094::0::1::::<><><>0<>0<><>::
 PendingMechanics_Review.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 PortPlan.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 ProjectData_Analysis.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
-RESOURCE_AUDIT.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
-ROSTER_RECONCILIATION.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
-Spreadsheet_Analysis.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
+RESOURCE_AUDIT.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+ROSTER_RECONCILIATION.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+Spreadsheet_Analysis.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
 ::res://docs/_deprecated/::1784389924
 ArenaMenu.gd.txt::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 BlacksmithMenu.gd.txt::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
@@ -4062,8 +4113,23 @@ Chapter01.it.json::JSON::-1::1784641641::0::1::::<><><>0<>0<><>::
 Chapter01.jp.json::JSON::-1::1784641641::0::1::::<><><>0<>0<><>::
 prologue_fe5.scene.json::JSON::-1::1784583376::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1784583376::0::1::::<><><>0<>0<><>::
-::res://docs/handoff/::1784649395
+::res://docs/handoff/::1784818471
+assetset_fonts_for_credits.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+class_localization.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+credits_loptrian_mage.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+deadlords_fe4_fe5.md::TextFile::-1::1784818471::0::1::::<><><>0<>0<><>::
+localization_content_frdees_it.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+localization_names_l10n.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+rename_evan_eve_credits.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
 save_menu_l10n.md::TextFile::-1::1784649395::0::1::::<><><>0<>0<><>::
+::res://docs/name_charts/::1784817271
+community_votes.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+fe4_genealogy.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+fe4_genealogy_full.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+fe5_thracia.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+fe5_thracia_full.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
+name_jp.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
+README.md::TextFile::-1::1784817271::0::1::::<><><>0<>0<><>::
 ::res://docs/palettes/::1784390477
 DROP_IMAGES_HERE.md::TextFile::-1::1784389924::0::1::::<><><>0<>0<><>::
 fe4_mapsprites_a.png::CompressedTexture2D::7917233036582995449::1784389924::1784390477::1::::<><><>0<>0<>687ff7458bc803f5c874bf0befaadf1a<>res://.godot/imported/fe4_mapsprites_a.png-7efcd8f05a847171e103651901e71c2f.ctex::
@@ -4086,7 +4152,7 @@ mode_select.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scr
 options_menu.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784649395
+::res://Scripts/::1784817271
 ActionMenu.gd::GDScript::6413271467111799318::1784583376::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784389909::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784389909::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
@@ -4120,7 +4186,7 @@ ConsumableData.gd::GDScript::7398558622788852579::1784389909::0::1::::Consumable
 ControlsMenu.gd::GDScript::8511848274970140504::1784641641::0::1::::ControlsMenu<>Control<><>0<>0<><>::
 ConvoyPanel.gd::GDScript::3179861064650906737::1784389909::0::1::::ConvoyPanel<>Panel<><>0<>0<><>::
 ConvoySystem.gd::GDScript::297960422385837843::1784389909::0::1::::ConvoySystem<>Node<><>0<>0<><>::
-CreditsScreen.gd::GDScript::1294854678071032857::1784644538::0::1::::CreditsScreen<>Control<><>0<>0<><>::
+CreditsScreen.gd::GDScript::1294854678071032857::1784749161::0::1::::CreditsScreen<>Control<><>0<>0<><>::
 DevilWeaponSystem.gd::GDScript::5835400362288249445::1784389909::0::1::::DevilWeaponSystem<>RefCounted<><>0<>0<><>::
 DialogueAnimations.gd::GDScript::1096554163329153284::1784389909::0::1::::DialogueAnimations<>Node<><>0<>0<><>::
 DialogueBox.gd::GDScript::145382810046375353::1784389909::0::1::::DialogueBox<>Control<><>0<>0<><>::
@@ -4150,7 +4216,7 @@ LevelData.gd::GDScript::802805939506090972::1784389909::0::1::::LevelData<>Resou
 LevelLoader.gd::GDScript::2900491532752613919::1784389909::0::1::::LevelLoader<>RefCounted<><>0<>0<><>::
 LevelUpScreen.gd::GDScript::2074851621102138785::1784389909::0::1::::LevelUpScreen<>Control<><>0<>0<><>::
 LocationMarker.gd::GDScript::1836486964086790272::1784389909::0::1::::LocationMarker<>Node2D<><>0<>0<><>::
-MainMenu.gd::GDScript::8175898352055706196::1784649395::0::1::::MainMenu<>Control<><>0<>0<><>::
+MainMenu.gd::GDScript::8175898352055706196::1784817271::0::1::::MainMenu<>Control<><>0<>0<><>::
 MapActions.gd::GDScript::3535448452538133979::1784389909::0::1::::MapActions<>RefCounted<><>0<>0<><>::
 MapBackground.gd::GDScript::3738451975226640230::1784389909::0::1::::MapBackground<>Node2D<><>0<>0<><>::
 ModeSelect.gd::GDScript::3174370287506302631::1784641641::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
@@ -4166,7 +4232,7 @@ SelectMenu.gd::GDScript::439202066668374422::1784641641::0::1::::SelectMenu<>Con
 ShopPanel.gd::GDScript::473820464989183141::1784389909::0::1::::ShopPanel<>Panel<><>0<>0<><>::
 SkillData.gd::GDScript::7693736634377838352::1784389909::0::1::::SkillData<>Resource<><>0<>0<><>::
 SoundRoom.gd::GDScript::3311604537699361751::1784583376::0::1::::SoundRoom<>Control<><>0<>0<><>::
-SubstituteSystem.gd::GDScript::119895372994411184::1784389909::0::1::::SubstituteSystem<>RefCounted<><>0<>0<><>::
+SubstituteSystem.gd::GDScript::119895372994411184::1784817271::0::1::::SubstituteSystem<>RefCounted<><>0<>0<><>::
 SupportSystem.gd::GDScript::2046322873708120284::1784389909::0::1::::SupportSystem<>Node<><>0<>0<><>::
 TerrainSystem.gd::GDScript::79259312568237195::1784389909::0::1::::TerrainSystem<>RefCounted<><>0<>0<><>::
 TilemapLoader.gd::GDScript::7967886734629350198::1784389909::0::1::::TilemapLoader<>RefCounted<><>0<>0<><>::

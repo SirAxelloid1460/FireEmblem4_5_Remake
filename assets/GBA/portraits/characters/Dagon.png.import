@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqslc1wowkuo0"
-path="res://.godot/imported/Dagon.png-3ed776f81f26fb12d9244c55c0dda7ef.ctex"
+path="res://.godot/imported/Dagon.png-c561cb88f0d19597466d294d6225df4d.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/GBA/portraits/characters/Dagon.png"
-dest_files=["res://.godot/imported/Dagon.png-3ed776f81f26fb12d9244c55c0dda7ef.ctex"]
+dest_files=["res://.godot/imported/Dagon.png-c561cb88f0d19597466d294d6225df4d.ctex"]
 
 [params]
 

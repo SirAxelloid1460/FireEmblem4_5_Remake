@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bhnrvp07o2370"
+
+[deps]
+
+files=["res://assets/languages/Names/Translations FE45 - Skills.en.translation", "res://assets/languages/Names/Translations FE45 - Skills.es.translation", "res://assets/languages/Names/Translations FE45 - Skills.de.translation", "res://assets/languages/Names/Translations FE45 - Skills.ja.translation", "res://assets/languages/Names/Translations FE45 - Skills.fr.translation", "res://assets/languages/Names/Translations FE45 - Skills.it.translation", "res://assets/languages/Names/Translations FE45 - Skills.pt.translation"]
+
+source_file="res://assets/languages/Names/Translations FE45 - Skills.csv"
+dest_files=["res://assets/languages/Names/Translations FE45 - Skills.en.translation", "res://assets/languages/Names/Translations FE45 - Skills.es.translation", "res://assets/languages/Names/Translations FE45 - Skills.de.translation", "res://assets/languages/Names/Translations FE45 - Skills.ja.translation", "res://assets/languages/Names/Translations FE45 - Skills.fr.translation", "res://assets/languages/Names/Translations FE45 - Skills.it.translation", "res://assets/languages/Names/Translations FE45 - Skills.pt.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

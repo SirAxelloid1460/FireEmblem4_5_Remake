@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf7onw5cry3j"
-path="res://.godot/imported/MageKnight_Azel_MagicAnima.png-902e88c71c718b12922a884b1d7fce39.ctex"
+path="res://.godot/imported/MageKnight_Azel_MagicAnima.png-b6bf055e635c744bee228cc94af100e7.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/GBA/combat_anims/MageKnight_Azel/MageKnight_Azel_MagicAnima.png"
-dest_files=["res://.godot/imported/MageKnight_Azel_MagicAnima.png-902e88c71c718b12922a884b1d7fce39.ctex"]
+dest_files=["res://.godot/imported/MageKnight_Azel_MagicAnima.png-b6bf055e635c744bee228cc94af100e7.ctex"]
 
 [params]
 
