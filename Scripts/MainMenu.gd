@@ -45,7 +45,7 @@ const CREDITS_SCRIPT := "res://Scripts/CreditsScreen.gd"
 # Sound Room la reproducción es normal (desde 0).
 const THEME_FE4 := "res://assets/music/fe4/102 - Fire Emblem Theme.mp3"
 const THEME_FE5 := "res://assets/music/fe5/103 Fire Emblem theme.mp3"
-const THEME_LOOP_FE4 := 30.5   # FE4: empieza/loopea desde 30.5 s
+const THEME_LOOP_FE4 := 30.8   # FE4: empieza/loopea desde 30.8 s
 const THEME_LOOP_FE5 := 13.5   # FE5: empieza/loopea desde 13.5 s
 
 # Arte del título por MODO (GameMode autoload: FE4_ONLY=0, FE5_ONLY=1, SAGA=2).
