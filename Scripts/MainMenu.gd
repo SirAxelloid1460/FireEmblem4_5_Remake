@@ -317,6 +317,12 @@ func _process(delta: float) -> void:
 func _update_idle(delta: float) -> void:
 	if _busy or _is_demo_active():
 		return
+	# La demo/attract SOLO arranca en Press Start o en el menú principal (donde se
+	# elige New Game). En los submenús (New Game / Extras / Resume Chapter) no se
+	# dispara: se resetea el contador.
+	if _state != St.PRESS_START and _state != St.MAIN:
+		_idle_time = 0.0
+		return
 	_idle_time += delta
 	if _idle_time >= AFK_SECONDS:
 		_start_demo()
@@ -523,17 +529,21 @@ func _build_saves() -> void:
 		_saves_col.add_child(_make_button(_trd("NODATA", "-- NO DATA --"),
 				"slot%d" % i, SLOT_W, SLOT_TINT_EMPTY))
 
-	# Panel PLAY TIME abajo-derecha.
+	# Panel PLAY TIME abajo-derecha (texto agrandado).
 	_saves_root.add_child(_titled_panel(_trd("PLAYTIME", "PLAY TIME") + "   0:00.00",
-			Vector2(vp.x - 300 - 40, vp.y - 66 - 40), Vector2(300, 66), 24, COLOR_GOLD))
+			Vector2(vp.x - 420 - 40, vp.y - 96 - 40), Vector2(420, 96), 40, COLOR_GOLD))
 
-	# Iconos de acción (copiar/borrar) — placeholders; se colocan en la ranura
-	# enfocada solo en modo "load". Arte real pendiente (ver docs/handoff/).
-	_icon_copy = _placeholder_icon("C")
-	_icon_erase = _placeholder_icon("D")
+	# Barra de INFO de acciones abajo-IZQUIERDA (lado opuesto al cursor-espada, que
+	# apunta a la ranura enfocada): así los iconos copiar/borrar no quedan tapados
+	# por el cursor. Solo visible en modo "load". Arte real pendiente.
+	var iy: float = vp.y - 44 - 40
+	_icon_copy = _action_info("C", _trd("COPY", "Copy"))
+	_icon_copy.position = Vector2(40, iy)
 	_icon_copy.visible = false
-	_icon_erase.visible = false
 	_saves_root.add_child(_icon_copy)
+	_icon_erase = _action_info("D", _trd("ERASE", "Erase"))
+	_icon_erase.position = Vector2(40 + 220, iy)
+	_icon_erase.visible = false
 	_saves_root.add_child(_icon_erase)
 
 
@@ -591,19 +601,31 @@ func _placeholder_icon(letter: String) -> Control:
 	return c
 
 
-## Coloca los iconos copiar/borrar flanqueando la ranura enfocada (solo "load").
-func _position_slot_icons(slot: Control) -> void:
-	if _icon_copy == null or _saves_root == null:
+## Muestra/oculta la barra de info de acciones (solo modo "load"). Su posición es
+## fija (abajo-izquierda, ver _build_saves), no depende de la ranura enfocada.
+func _position_slot_icons(_slot: Control) -> void:
+	if _icon_copy == null:
 		return
 	var show: bool = (_state == St.SAVES and _saves_mode == "load")
 	_icon_copy.visible = show
 	_icon_erase.visible = show
-	if not show:
-		return
-	var base: Vector2 = slot.global_position - _saves_root.global_position
-	var cy: float = (slot.size.y - 44) / 2.0
-	_icon_copy.position = base + Vector2(-56, cy)                 # copiar a la izquierda
-	_icon_erase.position = base + Vector2(slot.size.x + 12, cy)   # borrar a la derecha
+
+
+## Info de acción: icono placeholder + rótulo (para la barra inferior del submenú
+## de guardado). Devuelve un Control que agrupa ambos.
+func _action_info(letter: String, text: String) -> Control:
+	var root := Control.new()
+	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	root.size = Vector2(44 + 8 + 150, 44)
+	var ic := _placeholder_icon(letter)
+	root.add_child(ic)
+	var l := _panel_label(text, 32, COLOR_TEXT)
+	l.position = Vector2(44 + 8, 0)
+	l.size = Vector2(150, 44)
+	l.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	l.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+	root.add_child(l)
+	return root
 
 
 ## Stylebox de placa FE (title_menu_dark, 136×24): se estira entera al tamaño del

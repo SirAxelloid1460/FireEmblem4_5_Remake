@@ -18,6 +18,11 @@ config/name="FE4 FE5 Remake"
 config/description="Remake fan híbrido de Fire Emblem 4 + 5 (port desde LT-maker)."
 run/main_scene="res://Scenes/language.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://icon.png"
+
+[audio]
+
+buses/default_bus_layout="res://default_bus_layout.tres"
 
 [autoload]
 
