@@ -1,9 +1,10 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784893495
+::res://::1784896051
 default_bus_layout.tres::AudioBusLayout::-1::1784893479::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::5796228232867755098::1714553776::1784419739::1::::<><><>0<>0<>85d8504b263b0bda2244463b196f6b35<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1784389909::0::1::::<><><>0<>0<><>::
-::res://assets/::1784644658
+::res://assets/::1784895109
+assetset_fonts_for_credits.md::TextFile::-1::1784721825::0::1::::<><><>0<>0<><>::
 ::res://assets/GBA/::1784644658
 ::res://assets/GBA/animations/::1784390490
 animations.json::JSON::-1::1784389909::0::1::::<><><>0<>0<><>::
@@ -1813,15 +1814,15 @@ gba-fe-dialogue.ttf::FontFile::4532858660381649778::1680869772::1784419738::1:::
 IMFellFrenchCanonSC-Regular.ttf::FontFile::7762413525348139854::1663820830::1784419738::1::::<><><>0<>0<>768220ed70415f1b86b9fde9d1470871<>res://.godot/imported/IMFellFrenchCanonSC-Regular.ttf-b748ea443e481577d738e40f821ef907.fontdata::
 Mona10x12.ttf::FontFile::5089057930565369319::1784638372::1784648087::1::::<><><>0<>0<>5d8ca3da8513675d78d1ca585293dadd<>res://.godot/imported/Mona10x12.ttf-c625266f0f71c2ce86e672173834846d.fontdata::
 Mona12TextJP.ttf::FontFile::241805257965245026::1784641641::1784648087::1::::<><><>0<>0<>f34e7a212e630493548d04befbfee927<>res://.godot/imported/Mona12TextJP.ttf-a88a79bc71d057b3ac7605205014ec89.fontdata::
-::res://assets/GBA/fonts/bmp/::1784648087
+::res://assets/GBA/fonts/bmp/::1784895130
 chapter-yellow.png::CompressedTexture2D::7667694330716814111::1784448721::1784464819::1::::<><><>0<>0<>e99ba540e1e7c825f3e520d34f5b55a7<>res://.godot/imported/chapter-yellow.png-e917be8fd1b5124dbd79cecddad079e3.ctex::
 chapter.fnt::FontFile::8476143355435191830::1784448721::1784464819::1::::<><><>0<>0<>3ce9ed93497ecd2676e6ce2a67ea09da<>res://.godot/imported/chapter.fnt-cc4f52cf251b05040c4181b62c1203d7.fontdata::
 class-purple.png::CompressedTexture2D::8579094779501185560::1784448721::1784464819::1::::<><><>0<>0<>2ad8d913a43fedc68ba64d9d99bf9b90<>res://.godot/imported/class-purple.png-f7bfa681d419a8f12e0e9bffec2ccef2.ctex::
 class.fnt::FontFile::708430534465462010::1784448721::1784464819::1::::<><><>0<>0<>d56a4640c8db6f31136cfbd093ec7a25<>res://.godot/imported/class.fnt-92883b846415a39b8bf511441eeaf3a7.fontdata::
 convo-black.png::CompressedTexture2D::6615458721854276139::1784448721::1784464819::1::::<><><>0<>0<>a52a027c19213ef1d2a8c66b2f709773<>res://.godot/imported/convo-black.png-a17271d3b27f685a5489199175631fcf.ctex::
 convo.fnt::FontFile::4349002849208045577::1784448721::1784464819::1::::<><><>0<>0<>b8cb42e0b0ebe1d128fe9a8703559785<>res://.godot/imported/convo.fnt-effe467d13a295784a7f3b78263fca34.fontdata::
-credit-white.png::CompressedTexture2D::2602210422788119621::1784448721::1784464819::1::::<><><>0<>0<>86ded7bc19fdb5bf583a591963db2b8f<>res://.godot/imported/credit-white.png-90f13ef8e5dc9e95d8b33d60434fb123.ctex::
-credit.fnt::FontFile::1543781552953635248::1784448721::1784464819::1::::<><><>0<>0<>23ae2e12fec5c9b47c08dd64d22cc698<>res://.godot/imported/credit.fnt-77f7a1acf457f8f6ef103c87d90b5672.fontdata::
+credit-white.png::CompressedTexture2D::2602210422788119621::1784894619::1784896054::1::::<><><>0<>0<>86ded7bc19fdb5bf583a591963db2b8f<>res://.godot/imported/credit-white.png-90f13ef8e5dc9e95d8b33d60434fb123.ctex::
+credit.fnt::FontFile::1543781552953635248::1784894619::1784464819::1::::<><><>0<>0<>23ae2e12fec5c9b47c08dd64d22cc698<>res://.godot/imported/credit.fnt-77f7a1acf457f8f6ef103c87d90b5672.fontdata::
 credit_title-white.png::CompressedTexture2D::3456243723162201609::1784448721::1784464819::1::::<><><>0<>0<>96f6e7b70a9f9293f58a43a345b758be<>res://.godot/imported/credit_title-white.png-72d29302a1014778141ec9cb7f318f73.ctex::
 credit_title.fnt::FontFile::8146862061928424195::1784448721::1784464819::1::::<><><>0<>0<>add3c66d8c251006c3ecaf316e05f059<>res://.godot/imported/credit_title.fnt-c5652e4da459818da853ff0da40a332d.fontdata::
 hiragana-white.png::::6599822450645692708::1784641641::1784648086::0::::<><><>0<>0<>7fc67c60ea90ba3c6a7d24bc0f5b5823<>::
@@ -3440,22 +3441,22 @@ Axe.png::CompressedTexture2D::5536924532585726438::1784747028::1784885653::1::::
 ::res://assets/HD/title/::1784389922
 ::res://assets/HD/videos/::1784389922
 ::res://assets/languages/::1784816922
-::res://assets/languages/Flags/::1784885652
-de.png::CompressedTexture2D::6616309817090447157::1784389913::1784885652::1::::<><><>0<>0<>6ac29dfa08dd17a069fd9988b3b85adf<>res://.godot/imported/de.png-1219d0c9387e4af2616b94f526f45d86.ctex::
-en.png::CompressedTexture2D::1830620738966779921::1784389913::1784885652::1::::<><><>0<>0<>48228b0b6849671f66ab8e3f945ed2b9<>res://.godot/imported/en.png-8ecfd48bd152dfe710c4cabc0b32c0af.ctex::
-es.png::CompressedTexture2D::3622426124080247967::1784389913::1784885652::1::::<><><>0<>0<>e0197912399e6eed627aa6ead9e23cee<>res://.godot/imported/es.png-5e76d623c30cb053ed6f2c76fc46680a.ctex::
-fr.png::CompressedTexture2D::7195595710634261420::1784389913::1784885652::1::::<><><>0<>0<>10cc05a9a3fa3972b9560eb7a8bc57fb<>res://.godot/imported/fr.png-4655374f6e5ba750fecac50097c72b3d.ctex::
-it.png::CompressedTexture2D::4110678305777171762::1784389913::1784885652::1::::<><><>0<>0<>331ec6a0c3d293ad3e917a466d3876ac<>res://.godot/imported/it.png-75893210c59a6f5e0911590344bbbac6.ctex::
-ja.png::CompressedTexture2D::93899182682407450::1784389913::1784885652::1::::<><><>0<>0<>86dc9432f933637153a5086de9f2bc24<>res://.godot/imported/ja.png-9ba0f781003e48c62eb1b6afc061ac3b.ctex::
+::res://assets/languages/Flags/::1784895130
+de.png::CompressedTexture2D::6616309817090447157::1784389913::1784896054::1::::<><><>0<>0<>6ac29dfa08dd17a069fd9988b3b85adf<>res://.godot/imported/de.png-1219d0c9387e4af2616b94f526f45d86.ctex::
+en.png::CompressedTexture2D::1830620738966779921::1784389913::1784896054::1::::<><><>0<>0<>48228b0b6849671f66ab8e3f945ed2b9<>res://.godot/imported/en.png-8ecfd48bd152dfe710c4cabc0b32c0af.ctex::
+es.png::CompressedTexture2D::3622426124080247967::1784389913::1784896054::1::::<><><>0<>0<>e0197912399e6eed627aa6ead9e23cee<>res://.godot/imported/es.png-5e76d623c30cb053ed6f2c76fc46680a.ctex::
+fr.png::CompressedTexture2D::7195595710634261420::1784389913::1784896054::1::::<><><>0<>0<>10cc05a9a3fa3972b9560eb7a8bc57fb<>res://.godot/imported/fr.png-4655374f6e5ba750fecac50097c72b3d.ctex::
+it.png::CompressedTexture2D::4110678305777171762::1784389913::1784896054::1::::<><><>0<>0<>331ec6a0c3d293ad3e917a466d3876ac<>res://.godot/imported/it.png-75893210c59a6f5e0911590344bbbac6.ctex::
+ja.png::CompressedTexture2D::93899182682407450::1784389913::1784896054::1::::<><><>0<>0<>86dc9432f933637153a5086de9f2bc24<>res://.godot/imported/ja.png-9ba0f781003e48c62eb1b6afc061ac3b.ctex::
 pt.png::CompressedTexture2D::6308309880286253350::1784816561::1784885652::1::::<><><>0<>0<>e4031733ce1d432260d606720fc02138<>res://.godot/imported/pt.png-e045b88f1820ccfb1d1ca7af2a3e5f88.ctex::
-::res://assets/languages/Menus/::1784885624
-Translations FE45 - MainMenu.csv::Translation::5127242888532208358::1784816762::1784885624::1::::<><><>0<>0<>a4c5df40d94239be82cba3ad100556b4<>res://assets/languages/Menus/Translations FE45 - MainMenu.en.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.es.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.de.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.ja.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.fr.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.it.translation::
-Translations FE45 - MainMenu.de.translation::OptimizedTranslation::8936700650430381375::1784885624::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.en.translation::OptimizedTranslation::8817530577582386794::1784885624::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.es.translation::OptimizedTranslation::847647670746001290::1784885624::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.fr.translation::OptimizedTranslation::3048930378286196056::1784885624::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.it.translation::OptimizedTranslation::3265800045771253870::1784885624::0::1::::<><><>0<>0<><>::
-Translations FE45 - MainMenu.ja.translation::OptimizedTranslation::5118320353881303997::1784885624::0::1::::<><><>0<>0<><>::
+::res://assets/languages/Menus/::1784895130
+Translations FE45 - MainMenu.csv::Translation::5127242888532208358::1784816762::1784896054::1::::<><><>0<>0<>a4c5df40d94239be82cba3ad100556b4<>res://assets/languages/Menus/Translations FE45 - MainMenu.en.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.es.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.de.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.ja.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.fr.translation<*>res://assets/languages/Menus/Translations FE45 - MainMenu.it.translation::
+Translations FE45 - MainMenu.de.translation::OptimizedTranslation::8936700650430381375::1784896054::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.en.translation::OptimizedTranslation::8817530577582386794::1784896054::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.es.translation::OptimizedTranslation::847647670746001290::1784896054::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.fr.translation::OptimizedTranslation::3048930378286196056::1784896054::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.it.translation::OptimizedTranslation::3265800045771253870::1784896054::0::1::::<><><>0<>0<><>::
+Translations FE45 - MainMenu.ja.translation::OptimizedTranslation::5118320353881303997::1784896054::0::1::::<><><>0<>0<><>::
 ::res://assets/languages/Names/::1784885624
 Translations FE45 - Characters.csv::Translation::282933559193605392::1784818589::1784885624::1::::<><><>0<>0<>8411bb085f2c82d817b7308c2c0b703c<>res://assets/languages/Names/Translations FE45 - Characters.en.translation<*>res://assets/languages/Names/Translations FE45 - Characters.es.translation<*>res://assets/languages/Names/Translations FE45 - Characters.de.translation<*>res://assets/languages/Names/Translations FE45 - Characters.ja.translation<*>res://assets/languages/Names/Translations FE45 - Characters.fr.translation<*>res://assets/languages/Names/Translations FE45 - Characters.it.translation<*>res://assets/languages/Names/Translations FE45 - Characters.pt.translation::
 Translations FE45 - Characters.de.translation::OptimizedTranslation::1393471008756690349::1784885624::0::1::::<><><>0<>0<><>::
@@ -3505,18 +3506,18 @@ Translations FE45 - Titles.fr.translation::OptimizedTranslation::370612249938612
 Translations FE45 - Titles.it.translation::OptimizedTranslation::4312856914977141004::1784885624::0::1::::<><><>0<>0<><>::
 Translations FE45 - Titles.ja.translation::OptimizedTranslation::6634772926595823502::1784885624::0::1::::<><><>0<>0<><>::
 Translations FE45 - Titles.pt.translation::OptimizedTranslation::8781224951606954775::1784885624::0::1::::<><><>0<>0<><>::
-::res://assets/languages/Scenes/::1784885624
-Translations FE45 - Credits.csv::Translation::8722933851759645887::1784816762::1784885624::1::::<><><>0<>0<>a799cb7401d8dd88fee5e1d44c5f8222<>res://assets/languages/Scenes/Translations FE45 - Credits.en.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.es.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.de.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.ja.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.fr.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.it.translation::
-Translations FE45 - Credits.de.translation::OptimizedTranslation::2821423505291399863::1784885624::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.en.translation::OptimizedTranslation::5412188258512102619::1784885624::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.es.translation::OptimizedTranslation::9179755138946583816::1784885624::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.fr.translation::OptimizedTranslation::4155141866644078568::1784885624::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.it.translation::OptimizedTranslation::2913844006921317191::1784885624::0::1::::<><><>0<>0<><>::
-Translations FE45 - Credits.ja.translation::OptimizedTranslation::66948769071755839::1784885624::0::1::::<><><>0<>0<><>::
-::res://assets/languages/Scenes/FE5/::1784885624
-Translations FE45 - FE5CHAP1.csv::Translation::3225907030478842641::1784816762::1784885624::1::::<><><>0<>0<>ee271ac88179d2eeea7a30b9a5622861<>res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation::
+::res://assets/languages/Scenes/::1784895130
+Translations FE45 - Credits.csv::Translation::8722933851759645887::1784816762::1784896054::1::::<><><>0<>0<>a799cb7401d8dd88fee5e1d44c5f8222<>res://assets/languages/Scenes/Translations FE45 - Credits.en.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.es.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.de.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.ja.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.fr.translation<*>res://assets/languages/Scenes/Translations FE45 - Credits.it.translation::
+Translations FE45 - Credits.de.translation::OptimizedTranslation::2821423505291399863::1784896054::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.en.translation::OptimizedTranslation::5412188258512102619::1784896054::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.es.translation::OptimizedTranslation::9179755138946583816::1784896054::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.fr.translation::OptimizedTranslation::4155141866644078568::1784896054::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.it.translation::OptimizedTranslation::2913844006921317191::1784896054::0::1::::<><><>0<>0<><>::
+Translations FE45 - Credits.ja.translation::OptimizedTranslation::66948769071755839::1784896054::0::1::::<><><>0<>0<><>::
+::res://assets/languages/Scenes/FE5/::1784895130
+Translations FE45 - FE5CHAP1.csv::Translation::3225907030478842641::1784816762::1784896054::1::::<><><>0<>0<>ee271ac88179d2eeea7a30b9a5622861<>res://assets/languages/Scenes/FE5/Translations FE45 - FE5CHAP1.en.translation::
 Translations FE45 - FE5CHAP1.de.translation::OptimizedTranslation::2885176193741406857::1784389913::0::1::::<><><>0<>0<><>::
-Translations FE45 - FE5CHAP1.en.translation::OptimizedTranslation::6268921531056584035::1784885624::0::1::::<><><>0<>0<><>::
+Translations FE45 - FE5CHAP1.en.translation::OptimizedTranslation::6268921531056584035::1784896054::0::1::::<><><>0<>0<><>::
 Translations FE45 - FE5CHAP1.es.translation::OptimizedTranslation::1984109186085072664::1784389913::0::1::::<><><>0<>0<><>::
 Translations FE45 - FE5CHAP1.fr.translation::OptimizedTranslation::3857403708506720552::1784389913::0::1::::<><><>0<>0<><>::
 Translations FE45 - FE5CHAP1.ja.translation::OptimizedTranslation::1396422818418963801::1784389913::0::1::::<><><>0<>0<><>::
@@ -4187,7 +4188,7 @@ ConsumableData.gd::GDScript::7398558622788852579::1784389909::0::1::::Consumable
 ControlsMenu.gd::GDScript::8511848274970140504::1784641641::0::1::::ControlsMenu<>Control<><>0<>0<><>::
 ConvoyPanel.gd::GDScript::3179861064650906737::1784389909::0::1::::ConvoyPanel<>Panel<><>0<>0<><>::
 ConvoySystem.gd::GDScript::297960422385837843::1784389909::0::1::::ConvoySystem<>Node<><>0<>0<><>::
-CreditsScreen.gd::GDScript::1294854678071032857::1784749161::0::1::::CreditsScreen<>Control<><>0<>0<><>::
+CreditsScreen.gd::GDScript::1294854678071032857::1784895502::0::1::::CreditsScreen<>Control<><>0<>0<><>::
 DevilWeaponSystem.gd::GDScript::5835400362288249445::1784389909::0::1::::DevilWeaponSystem<>RefCounted<><>0<>0<><>::
 DialogueAnimations.gd::GDScript::1096554163329153284::1784389909::0::1::::DialogueAnimations<>Node<><>0<>0<><>::
 DialogueBox.gd::GDScript::145382810046375353::1784389909::0::1::::DialogueBox<>Control<><>0<>0<><>::

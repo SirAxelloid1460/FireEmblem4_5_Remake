@@ -35,19 +35,19 @@ const COLOR_PILLAR_LIGHT  := Color(0.0, 0.0, 0.0, 1.0)      # Negro
 const COLOR_DIVIDER       := Color(1.0, 1.0, 1.0, 0.55)     # Blanco (línea del divisor)
 
 # Velocidad de scroll en píxeles por segundo
-const SCROLL_SPEED_NORMAL := 35.0
-const SCROLL_SPEED_FAST   := 140.0   # Mantener A (ui_accept) para acelerar
+const SCROLL_SPEED_NORMAL := 70.0
+const SCROLL_SPEED_FAST   := SCROLL_SPEED_NORMAL * 4.0   # Mantener A (ui_accept): x4
 const FADE_IN_TIME        := 0.6
 const FADE_OUT_TIME       := 0.5
 const END_HOLD_TIME       := 6.0     # Pausa final tras los créditos (matches original wait 6000)
 
 # Tamaños de tipo (estilo GBA-ish: pequeño, legible, con outline)
-const SIZE_TITLE      := 8     # tamaño nativo de credit_title.fnt (GBA); subir si hace falta
-const SIZE_HEADER     := 24
-const SIZE_SUBHEADER  := 20
-const SIZE_TEXT       := 18
-const SIZE_GRID       := 15    # Más pequeño para listas masivas de la comunidad
-const SIZE_TABLE      := 16    # Tabla 3 columnas (asset/work/name)
+const SIZE_TITLE      := 24    # credit_title nativo 8 (se escala ~3x)
+const SIZE_HEADER     := 34
+const SIZE_SUBHEADER  := 28
+const SIZE_TEXT       := 26
+const SIZE_GRID       := 22
+const SIZE_TABLE      := 24    # Tabla asset/work/name
 const NAMES_PER_LINE  := 2     # Máximo de autores por línea en columna name de tabla
 const SIZE_END        := 56
 const OUTLINE_PX      := 4
@@ -117,7 +117,7 @@ var credits_data: Array = [
 	{ "type": "spacer", "size": 200 },
 	{ "type": "header", "text": "MORE YET TO COME" },
 	{ "type": "spacer", "size": 8 },
-	{ "type": "text", "text": "(check my patreon for updates)", "font_size": 14 },
+	{ "type": "text", "text": "(check my patreon for updates)", "font_size": 22 },
 	{ "type": "spacer", "size": 200 },
 	{ "type": "divider" },
 	{ "type": "spacer", "size": 60 },
@@ -134,7 +134,7 @@ var credits_data: Array = [
 	{ "type": "header", "text": "PROGRAMMING (GODOT VERSION)", "key": "CRPROGRAMMINGGODOT" },
 	{ "type": "spacer", "size": 12 },
 	{ "type": "table", "columns": 3, "fracs": [0.05, 0.43, 0.04, 0.43, 0.05], "cols": [1, 2, 3], "mono": true, "rows": [
-		["SirAxelloid1460", "&", "Claude Code AI"],
+		["SirAxelloid1460", "&", "Claude Code AI", { "work": { "size": 30 } }],
 	] },
 	{ "type": "spacer", "size": SECTION_GAP },
 
@@ -659,20 +659,23 @@ func _build_scroll_content() -> void:
 				var grid := _make_grid(entry)
 				grid.position = Vector2(0, y)
 				container.add_child(grid)
-				y += grid.get_minimum_size().y + LINE_GAP
+				# custom_minimum_size (no get_minimum_size, que en un Control base
+				# devuelve 0 y no respeta el mínimo → todo se apilaría).
+				y += grid.custom_minimum_size.y + LINE_GAP
 			"table":
 				var tbl := _make_table(entry)
 				tbl.position = Vector2(0, y)
 				container.add_child(tbl)
-				y += tbl.get_minimum_size().y + LINE_GAP
+				y += tbl.custom_minimum_size.y + LINE_GAP
 			_:
 				var lbl := _make_label(entry)
 				container.add_child(lbl)
 				# Vertical por offsets (el horizontal ya lo fija _make_label con
 				# anclas 0.5; usar position lo sobreescribiría y descentraría).
+				var lh: float = lbl.custom_minimum_size.y
 				lbl.offset_top = y
-				lbl.offset_bottom = y
-				y += lbl.get_minimum_size().y + LINE_GAP
+				lbl.offset_bottom = y + lh
+				y += lh + LINE_GAP
 
 	_content_height = y
 	# Hacemos que el container se centre horizontalmente y tenga ancho de pista
@@ -717,36 +720,44 @@ func _make_label(entry: Dictionary) -> Label:
 	lbl.add_theme_constant_override("outline_size", OUTLINE_PX)
 
 	var t: String = entry.get("type", "text")
+	var fs: int = SIZE_TEXT
 	match t:
 		"header":
-			lbl.add_theme_font_size_override("font_size", SIZE_HEADER)
+			fs = SIZE_HEADER
 			lbl.add_theme_color_override("font_color", COLOR_HEADER)
 		"subheader":
-			lbl.add_theme_font_size_override("font_size", SIZE_SUBHEADER)
+			fs = SIZE_SUBHEADER
 			lbl.add_theme_color_override("font_color", COLOR_SUBHEADER)
 		_:
-			lbl.add_theme_font_size_override("font_size", SIZE_TEXT)
+			fs = SIZE_TEXT
 			lbl.add_theme_color_override("font_color", COLOR_TEXT)
 
 	# Override opcional de tamaño de fuente por entrada (p. ej. líneas pequeñas)
 	if entry.has("font_size"):
-		lbl.add_theme_font_size_override("font_size", int(entry["font_size"]))
+		fs = int(entry["font_size"])
+	lbl.add_theme_font_size_override("font_size", fs)
 
 	# Ancho de envoltura: por defecto el bloque de créditos (min(CONTENT_MAX_W, inner));
 	# si la entrada trae "wrap_frac", se limita a esa fracción del ancho interno
 	# (p. ej. 0.66 = 66% de pantalla, usado en DISCLAIMER y SPECIAL THANKS).
 	var iw := _get_inner_width()
 	var wrap_w: float = iw * float(entry["wrap_frac"]) if entry.has("wrap_frac") else min(float(CONTENT_MAX_W), iw)
-	# Se fija el ancho y se centra por anclas (0.5): el bloque queda centrado sea
-	# cual sea el ancho del contenedor, y el auto-ajuste parte a ese ancho.
-	lbl.custom_minimum_size = Vector2(wrap_w, 0)
+	# ALTURA real del texto ya ajustado a wrap_w. Godot no la calcula de forma
+	# fiable en get_minimum_size() para autowrap antes del layout, así que la
+	# medimos con la fuente (si no, las secciones se solapan por altura a 0).
+	var wrap_h: float = float(fs)
+	if _cf:
+		wrap_h = _cf.get_multiline_string_size(lbl.text, HORIZONTAL_ALIGNMENT_CENTER, wrap_w, fs).y
+	# Se fija ancho+alto y se centra por anclas (0.5): el bloque queda centrado
+	# sea cual sea el ancho del contenedor, y el auto-ajuste parte a ese ancho.
+	lbl.custom_minimum_size = Vector2(wrap_w, wrap_h)
 	lbl.anchor_left = 0.5
 	lbl.anchor_right = 0.5
 	lbl.anchor_top = 0.0
 	lbl.anchor_bottom = 0.0
 	lbl.offset_left = -wrap_w / 2.0
 	lbl.offset_right = wrap_w / 2.0
-	lbl.size = Vector2(wrap_w, 0)
+	lbl.size = Vector2(wrap_w, wrap_h)
 	return lbl
 
 
@@ -1017,22 +1028,22 @@ func _add_table_cell(parent: Control, text: String, pos: Vector2, sz: Vector2, c
 	lbl.horizontal_alignment = align
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.clip_text = true
-	lbl.add_theme_font_size_override("font_size", SIZE_TABLE)
+	# Tamaño por celda: "size" en el dict de estilo, o SIZE_TABLE por defecto.
+	lbl.add_theme_font_size_override("font_size", int(style.get("size", SIZE_TABLE)))
 	lbl.add_theme_color_override("font_color", final_color)
 	lbl.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
 	lbl.add_theme_constant_override("outline_size", OUTLINE_PX - 1)
 	lbl.position = pos
 	lbl.size = sz
 
-	if style.get("italic", false):
-		# Godot 4 no expone "italic" directo en Label sin una fuente cursiva.
-		# Simulamos cursiva con un FontVariation que aplica sesgo horizontal.
+	# Cursiva simulada con FontVariation (sesgo horizontal). SOLO en HD (TTF):
+	# los bitmap fonts (GBA/Original) no soportan variation_transform y salen
+	# como cuadros (tofu). En bitmap se omite la cursiva (queda el dim si lo hay).
+	if style.get("italic", false) and AssetSet.current() == "HD":
 		var fv := FontVariation.new()
 		var theme_font := lbl.get_theme_font("font")
 		if theme_font:
 			fv.base_font = theme_font
-		# Un sesgo de ~0.18 da una inclinación cercana a la cursiva clásica.
-		# (FontVariation.transform sesga el texto al renderizar.)
 		fv.variation_transform = Transform2D(Vector2(1, 0), Vector2(0.18, 1), Vector2(0, 0))
 		lbl.add_theme_font_override("font", fv)
 
@@ -1040,10 +1051,14 @@ func _add_table_cell(parent: Control, text: String, pos: Vector2, sz: Vector2, c
 
 
 func _make_divider() -> Control:
-	# Divisor dorado: línea con dos rombos en los extremos
+	# Divisor: línea con dos rombos en los extremos.
+	# El Control debe tener el ancho de la pista, o la línea (anclada a él) y los
+	# rombos (anclados a la derecha) quedan a ancho 0 / fuera y no se ven.
+	var iw := _get_inner_width()
 	var c := Control.new()
 	c.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	c.custom_minimum_size = Vector2(0, 8)
+	c.custom_minimum_size = Vector2(iw, 8)
+	c.size = Vector2(iw, 8)
 
 	var line := ColorRect.new()
 	line.color = COLOR_DIVIDER
@@ -1091,13 +1106,13 @@ func _build_hint() -> void:
 	# Pequeño texto en la esquina inferior con las teclas
 	var hint := Label.new()
 	hint.text = "A: Fast Forward     B / Esc: Skip"
-	hint.add_theme_font_size_override("font_size", 14)
+	hint.add_theme_font_size_override("font_size", 24)
 	hint.add_theme_color_override("font_color", COLOR_DIM)
 	hint.add_theme_color_override("font_outline_color", COLOR_OUTLINE)
 	hint.add_theme_constant_override("outline_size", 3)
 	hint.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
 	hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	hint.offset_top = -28
+	hint.offset_top = -36
 	hint.offset_bottom = -8
 	add_child(hint)
 
