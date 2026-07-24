@@ -364,7 +364,9 @@ func _make_option(it: Dictionary) -> Button:
 	# Solo las opciones habilitadas reaccionan al foco / ratón / confirmación.
 	if enabled:
 		b.focus_entered.connect(_on_option_focus.bind(b, id))
-		b.mouse_entered.connect(b.grab_focus)
+		# Hover solo enfoca si el ratón está habilitado (el consumo global de
+		# InputConfig no bloquea el mouse_entered, que va por posición del viewport).
+		b.mouse_entered.connect(func(): if InputConfig.mouse_enabled: b.grab_focus())
 		b.pressed.connect(_on_option_pressed.bind(id))
 	return b
 

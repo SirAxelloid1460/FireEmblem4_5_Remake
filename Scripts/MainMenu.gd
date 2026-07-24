@@ -683,7 +683,9 @@ func _make_button(text: String, id: String, width: float = BTN_W,
 	b.set_meta("id", id)
 	b.pressed.connect(_on_button_pressed.bind(id))
 	b.focus_entered.connect(_on_button_focus.bind(b, id))
-	b.mouse_entered.connect(b.grab_focus)
+	# Hover solo enfoca con el ratón habilitado (InputConfig no bloquea el
+	# mouse_entered, que va por posición del viewport).
+	b.mouse_entered.connect(func(): if InputConfig.mouse_enabled: b.grab_focus())
 	return b
 
 

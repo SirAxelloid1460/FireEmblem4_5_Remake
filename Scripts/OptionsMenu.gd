@@ -353,6 +353,8 @@ func _build_options_panel(panel_size: Vector2) -> Control:
 
 ## Hover del ratón sobre una fila → la selecciona (como navegar con ↑/↓).
 func _on_row_hover(i: int) -> void:
+	if not InputConfig.mouse_enabled:
+		return
 	if i < 0 or i >= _ui.size() or _ui[i] == null or _sel == i:
 		return
 	_sel = i

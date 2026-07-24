@@ -197,7 +197,9 @@ func _make_flag(lang: Dictionary) -> Control:
 	else:
 		_flag_btns.append(b)
 		b.focus_entered.connect(_on_flag_focus.bind(b, id))
-		b.mouse_entered.connect(b.grab_focus)
+		# Hover solo enfoca con el ratón habilitado (InputConfig no bloquea el
+		# mouse_entered, que va por posición del viewport).
+		b.mouse_entered.connect(func(): if InputConfig.mouse_enabled: b.grab_focus())
 		b.pressed.connect(_on_flag_pressed.bind(id))
 	return b
 
