@@ -4,20 +4,20 @@ extends SelectMenu
 # ============================================================
 # LANGUAGE — Menú 1 del arranque: selección de idioma.
 # ============================================================
-# Rediseño: UN SOLO panel con
-#   · Título "Idioma" arriba (estilo panel de opciones) que se RE-TRADUCE EN VIVO
-#     al idioma de la bandera enfocada (English→"Language", Español→"Idioma", …).
-#   · Un GRID de BANDERAS (sin palabras): la identidad del idioma la da el título
-#     y la propia bandera.
+# Rediseño (estilo pantalla de opciones):
+#   · PLACA de TÍTULO separada arriba (fondo claro), con "Idioma" que se
+#     RE-TRADUCE EN VIVO al idioma de la bandera enfocada (English→"Language",
+#     Español→"Idioma", …).
+#   · PANEL de contenido debajo con un GRID de BANDERAS (sin palabras). El grid
+#     tiene CAPACIDAD RESERVADA (filas/huecos libres) para añadir más idiomas a
+#     futuro sin rehacer el layout: no se llena entero con las banderas actuales.
 #
 # Reutiliza la maquinaria de SelectMenu (fondo con parallax de runas + niebla,
-# cursor-mano, SFX, fuentes) pero sobreescribe `_ready`/`_process` para montar el
-# layout de panel único en vez de la lista + preview por defecto.
+# cursor-mano, SFX, fuentes) pero sobreescribe `_ready`/`_process`.
 #
 # Idiomas: en, es (listos) y de, fr, it, ja, pt (W.I.P). Los W.I.P salen con la
 # bandera atenuada + etiqueta "W.I.P" y NO son enfocables (el cursor los salta);
-# sus traducciones incompletas caen a inglés (locale/fallback = "en"). "ja" se
-# mostraría en latín en otros sitios porque la sprite-font LT no trae kana.
+# sus traducciones incompletas caen a inglés (locale/fallback = "en").
 # ============================================================
 
 const FLAGS := "res://assets/languages/Flags/"
@@ -25,7 +25,7 @@ const NEXT_SCENE := "res://Scenes/mode_select.tscn"   # Idioma → Modo → Intr
 
 # Fondo: base de runas de Jugdral (parallax). La niebla la pone SelectMenu.
 const BG_BASE := "res://assets/panoramas/default_background.png"
-const PANEL_TITLE_BG := "res://assets/menus/menu_bg_white.png"
+const TITLE_BG := "res://assets/menus/menu_bg_white.png"   # placa clara del título (como Opciones)
 
 # Idiomas y si su traducción está lista para jugar. Los no-listos = W.I.P.
 const LANGS := [
@@ -38,15 +38,19 @@ const LANGS := [
 	{ "id": "pt", "ready": false },
 ]
 
-const GRID_COLS := 3
-const GRID_HSEP := 26
-const GRID_VSEP := 22
-const FLAG_W := 208
-const FLAG_H := 128
-const FLAG_PAD := 6                 # margen bandera↔borde del botón
-const FLAG_DIM_WIP := 0.32          # opacidad de las banderas W.I.P
-const FLAG_DIM_IDLE := 0.80         # banderas listas sin foco
-const TITLE_FS := 72
+# Grid con HUECO RESERVADO: se dimensiona para GRID_COLS × GRID_CAP_ROWS ranuras
+# (capacidad), pero solo se rellenan las de LANGS. Así queda espacio visible para
+# futuras banderas sin tocar el layout.
+const GRID_COLS := 4
+const GRID_CAP_ROWS := 3            # capacidad de filas (>= filas usadas ahora)
+const GRID_HSEP := 30
+const GRID_VSEP := 26
+const FLAG_W := 150
+const FLAG_H := 92
+const FLAG_PAD := 8                 # margen bandera↔borde de su celda
+const FLAG_DIM_WIP := 0.34          # opacidad de las banderas W.I.P (las listas van opacas)
+
+const TITLE_FS := 84
 
 # Palabra "Idioma" por locale — respaldo si TranslationServer no resuelve la clave
 # LANGUAGE para ese locale. Deriva del CSV de menús (celdas vacías → inglés).
@@ -57,75 +61,92 @@ const TITLE_FALLBACK := {
 }
 
 var _title_lbl: Label = null
+var _content_panel: Control = null
+var _focus_frame: Panel = null           # marco dorado sobre la bandera enfocada
 var _flag_btns: Array = []               # solo banderas enfocables (ready)
-var _flag_tex: Dictionary = {}           # Button -> TextureRect de su bandera
 
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_build_bg()                          # fondo runas + parallax + niebla (base)
-	_build_panel()
+	_build_layout()
 	_build_cursor()                      # cursor-mano de la base
-	# Enfocar la primera bandera lista sin sonar como navegación manual.
 	if not _flag_btns.is_empty():
 		_skip_next_nav = true
 		_flag_btns[0].call_deferred("grab_focus")
 
 
-# ── Layout: panel único (título + grid de banderas) ─────────────────────────
-func _build_panel() -> void:
+# ── Layout: placa de título (arriba) + panel de banderas (debajo) ───────────
+func _build_layout() -> void:
 	var vp: Vector2 = get_viewport_rect().size
 
-	var rows: int = int(ceil(float(LANGS.size()) / float(GRID_COLS)))
 	var grid_w: float = GRID_COLS * FLAG_W + (GRID_COLS - 1) * GRID_HSEP
-	var grid_h: float = rows * FLAG_H + (rows - 1) * GRID_VSEP
+	var cap_grid_h: float = GRID_CAP_ROWS * FLAG_H + (GRID_CAP_ROWS - 1) * GRID_VSEP
+	var pad: float = 46.0
+	var content_w: float = grid_w + pad * 2.0
+	var content_h: float = cap_grid_h + pad * 2.0
 
-	var title_y: float = 44.0
-	var title_h: float = 92.0
-	var gap: float = 22.0
-	var grid_y: float = title_y + title_h + gap
-	var pad_x: float = 56.0
-	var pw: float = grid_w + pad_x * 2.0
-	var ph: float = grid_y + grid_h + 48.0
+	var title_w: float = 600.0
+	var title_h: float = 138.0
+	var gap: float = 24.0
 
-	var panel := NinePatchRect.new()
-	panel.texture = load(AssetSet.p(PANEL))
-	panel.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	panel.patch_margin_left = 14
-	panel.patch_margin_right = 14
-	panel.patch_margin_top = 22
-	panel.patch_margin_bottom = 22
-	panel.position = Vector2(round((vp.x - pw) / 2.0), round((vp.y - ph) / 2.0))
-	panel.size = Vector2(pw, ph)
-	add_child(panel)
+	var total_h: float = title_h + gap + content_h
+	var top: float = round((vp.y - total_h) / 2.0)
 
-	# Título re-traducible (arranca en el idioma de la primera bandera lista).
+	# ── Placa de título (separada, fondo claro estilo Opciones) ──
+	var title_root := Control.new()
+	title_root.position = Vector2(round((vp.x - title_w) / 2.0), top)
+	title_root.size = Vector2(title_w, title_h)
+	title_root.modulate.a = 0.85
+	add_child(title_root)
+	var tnp := _nine(TITLE_BG, 8)
+	tnp.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	title_root.add_child(tnp)
 	_title_lbl = Label.new()
 	_title_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_title_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	_title_lbl.auto_translate_mode = Control.AUTO_TRANSLATE_MODE_DISABLED
 	_title_lbl.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	_title_lbl.position = Vector2(0, title_y)
-	_title_lbl.size = Vector2(pw, title_h)
+	_title_lbl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_apply_font(_title_lbl, TITLE_FS, COLOR_GOLD, 4)
-	var first_id: String = str(LANGS[0]["id"])
-	_title_lbl.text = _title_for_locale(first_id)
-	panel.add_child(_title_lbl)
+	_title_lbl.text = _title_for_locale(str(LANGS[0]["id"]))
+	title_root.add_child(_title_lbl)
 
-	# Grid de banderas, centrado en el panel.
+	# ── Panel de contenido (banderas) ──
+	_content_panel = Control.new()
+	_content_panel.position = Vector2(round((vp.x - content_w) / 2.0), top + title_h + gap)
+	_content_panel.size = Vector2(content_w, content_h)
+	add_child(_content_panel)
+	var cnp := _nine(PANEL, 14, 22)
+	cnp.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_content_panel.add_child(cnp)
+
+	# Grid TOP-alineado dentro del panel: las filas usadas arriba, capacidad libre
+	# abajo (espacio reservado para futuras banderas).
 	var grid := GridContainer.new()
 	grid.columns = GRID_COLS
 	grid.add_theme_constant_override("h_separation", GRID_HSEP)
 	grid.add_theme_constant_override("v_separation", GRID_VSEP)
-	grid.position = Vector2(round((pw - grid_w) / 2.0), grid_y)
-	grid.size = Vector2(grid_w, grid_h)
-	panel.add_child(grid)
+	grid.position = Vector2(round((content_w - grid_w) / 2.0), pad)
+	_content_panel.add_child(grid)
 	for lang in LANGS:
 		grid.add_child(_make_flag(lang))
 
+	# Marco de foco (dorado), encima de las banderas; se mueve al enfocar.
+	_focus_frame = Panel.new()
+	var sb := StyleBoxFlat.new()
+	sb.bg_color = Color(0, 0, 0, 0)
+	sb.border_color = COLOR_GOLD
+	sb.set_border_width_all(4)
+	sb.set_corner_radius_all(3)
+	_focus_frame.add_theme_stylebox_override("panel", sb)
+	_focus_frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_focus_frame.visible = false
+	_content_panel.add_child(_focus_frame)
 
-## Una celda del grid: Button con la bandera de fondo. W.I.P → atenuada + etiqueta,
-## no enfocable (el cursor la salta).
+
+## Una celda del grid: Button con la bandera. Listas = opacas y enfocables; W.I.P
+## = atenuada + etiqueta, no enfocable (el cursor la salta).
 func _make_flag(lang: Dictionary) -> Control:
 	var id := str(lang.get("id", ""))
 	var ready: bool = bool(lang.get("ready", false))
@@ -153,7 +174,8 @@ func _make_flag(lang: Dictionary) -> Control:
 	var fp := AssetSet.p(FLAGS + id + ".png")
 	if ResourceLoader.exists(fp):
 		flag.texture = load(fp)
-	flag.modulate = Color(1, 1, 1, FLAG_DIM_WIP if not ready else FLAG_DIM_IDLE)
+	if not ready:
+		flag.modulate = Color(1, 1, 1, FLAG_DIM_WIP)
 	b.add_child(flag)
 
 	if not ready:
@@ -164,10 +186,9 @@ func _make_flag(lang: Dictionary) -> Control:
 		tag.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		tag.auto_translate_mode = Control.AUTO_TRANSLATE_MODE_DISABLED
 		tag.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-		_apply_font(tag, 30, COLOR_GOLD, 4)
+		_apply_font(tag, 26, COLOR_GOLD, 4)
 		b.add_child(tag)
 	else:
-		_flag_tex[b] = flag
 		_flag_btns.append(b)
 		b.focus_entered.connect(_on_flag_focus.bind(b, id))
 		b.mouse_entered.connect(b.grab_focus)
@@ -178,11 +199,11 @@ func _make_flag(lang: Dictionary) -> Control:
 # ── Interacción ─────────────────────────────────────────────────────────────
 func _on_flag_focus(b: Button, id: String) -> void:
 	_move_cursor_to(b)                   # base: fija _cursor_target y lo hace visible
-	# Realce: la bandera enfocada a plena opacidad, el resto (listas) atenuadas.
-	for other in _flag_tex.keys():
-		var t: TextureRect = _flag_tex[other]
-		if t != null:
-			t.modulate = Color(1, 1, 1, 1.0 if other == b else FLAG_DIM_IDLE)
+	# Marco dorado sobre la bandera enfocada.
+	if _focus_frame != null and _content_panel != null:
+		_focus_frame.position = b.global_position - _content_panel.global_position
+		_focus_frame.size = b.size
+		_focus_frame.visible = true
 	# Título en el idioma enfocado.
 	if _title_lbl != null:
 		_title_lbl.text = _title_for_locale(id)
@@ -213,7 +234,7 @@ func _process(delta: float) -> void:
 	var b := _cursor_target
 	var hw := 15 * HAND_SCALE
 	_cursor.global_position = Vector2(
-		b.global_position.x - hw - 4 + BOB_SEQ[_bob_i],
+		b.global_position.x - hw - 6 + BOB_SEQ[_bob_i],
 		b.global_position.y + (b.size.y - 12 * HAND_SCALE) * 0.5)
 
 
@@ -226,6 +247,18 @@ func _title_for_locale(loc: String) -> String:
 		if m != "":
 			return m
 	return str(TITLE_FALLBACK.get(loc, "Language"))
+
+
+## NinePatchRect con el skin indicado (margen uniforme, o L/R = m, T/B = mv).
+func _nine(tex_path: String, m: int, mv: int = -1) -> NinePatchRect:
+	var n := NinePatchRect.new()
+	n.texture = load(AssetSet.p(tex_path))
+	n.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	n.patch_margin_left = m
+	n.patch_margin_right = m
+	n.patch_margin_top = m if mv < 0 else mv
+	n.patch_margin_bottom = m if mv < 0 else mv
+	return n
 
 
 func _apply_font(l: Label, fs: int, col: Color, outline: int) -> void:
