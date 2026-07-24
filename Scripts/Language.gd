@@ -117,7 +117,10 @@ func _build_layout() -> void:
 	_content_panel.position = Vector2(content_x, content_y)
 	_content_panel.size = Vector2(content_w, content_h)
 	add_child(_content_panel)
-	var cnp := _nine(PANEL, 14, 22)
+	# NinePatch con TILE_FIT: el borde ornamentado del asset (menu_box_6x, 144×144)
+	# se TESELA en vez de estirarse, evitando el "hiper-ensanchado" de sus zonas
+	# decorativas al escalar el panel a lo ancho.
+	var cnp := _nine(PANEL, 24, 30, true)
 	cnp.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_content_panel.add_child(cnp)
 
@@ -189,7 +192,7 @@ func _make_flag(lang: Dictionary) -> Control:
 		tag.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		tag.auto_translate_mode = Control.AUTO_TRANSLATE_MODE_DISABLED
 		tag.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-		_apply_font(tag, 26, COLOR_GOLD, 4)
+		_apply_font(tag, 52, COLOR_GOLD, 5)
 		b.add_child(tag)
 	else:
 		_flag_btns.append(b)
@@ -253,7 +256,8 @@ func _title_for_locale(loc: String) -> String:
 
 
 ## NinePatchRect con el skin indicado (margen uniforme, o L/R = m, T/B = mv).
-func _nine(tex_path: String, m: int, mv: int = -1) -> NinePatchRect:
+## `tile` = tesela los bordes (AXIS_STRETCH_MODE_TILE_FIT) en vez de estirarlos.
+func _nine(tex_path: String, m: int, mv: int = -1, tile: bool = false) -> NinePatchRect:
 	var n := NinePatchRect.new()
 	n.texture = load(AssetSet.p(tex_path))
 	n.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
@@ -261,6 +265,9 @@ func _nine(tex_path: String, m: int, mv: int = -1) -> NinePatchRect:
 	n.patch_margin_right = m
 	n.patch_margin_top = m if mv < 0 else mv
 	n.patch_margin_bottom = m if mv < 0 else mv
+	if tile:
+		n.axis_stretch_horizontal = NinePatchRect.AXIS_STRETCH_MODE_TILE_FIT
+		n.axis_stretch_vertical = NinePatchRect.AXIS_STRETCH_MODE_TILE_FIT
 	return n
 
 

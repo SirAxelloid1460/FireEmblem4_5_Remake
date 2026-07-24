@@ -51,15 +51,15 @@ func _ready() -> void:
 		# de fábrica). Así el mapa es determinista y sin teclas duplicadas.
 		var saved: int = int(cfg.get_value(SECTION, str(spec["action"]), 0))
 		_set_key(action, saved if saved != 0 else int(spec["def"]))
-	# Ratón: aplica el ajuste guardado (por defecto desactivado).
-	set_mouse_enabled(bool(cfg.get_value("input", "mouse", false)))
+	# Ratón: aplica el ajuste guardado (por defecto ACTIVADO — "Todos").
+	set_mouse_enabled(bool(cfg.get_value("input", "mouse", true)))
 
 
 # ── Ratón ─────────────────────────────────────────────────────────────────────
 # Activado: clic izq = A (ui_accept), der = B (ui_cancel), y el juego reconoce
 # hover/click/scroll. Desactivado: se consume TODO evento de ratón (nada del
 # juego reacciona). Botones extra no se mapean solos (el jugador los remapea).
-var mouse_enabled: bool = false
+var mouse_enabled: bool = true
 
 ## Activa/desactiva el ratón (mapea o desmapea izq/der) y lo persiste.
 func set_mouse_enabled(on: bool) -> void:
