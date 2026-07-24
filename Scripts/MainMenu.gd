@@ -510,13 +510,14 @@ func _build_saves() -> void:
 	_saves_root.visible = false
 	add_child(_saves_root)
 
-	# Título "Resume Chapter" (panel blanco, arriba centrado).
+	# Título "Resume Chapter" (panel blanco, arriba centrado). Texto un poco más
+	# grande, MISMO tamaño de panel (520×76).
 	_saves_root.add_child(_titled_panel(_trd("RESUMECHAPTER", "Resume Chapter"),
-			Vector2((vp.x - 520) / 2.0, 30), Vector2(520, 76), 40, COLOR_GOLD))
-	# "R Info" arriba a la derecha (texto suelto).
-	var rinfo := _panel_label("R  " + _trd("INFO", "Info"), 26, COLOR_TEXT)
-	rinfo.position = Vector2(vp.x - 230, 48)
-	rinfo.size = Vector2(190, 40)
+			Vector2((vp.x - 520) / 2.0, 30), Vector2(520, 76), 50, COLOR_GOLD))
+	# "R Info" arriba a la derecha (texto suelto, agrandado).
+	var rinfo := _panel_label("R  " + _trd("INFO", "Info"), 40, COLOR_TEXT)
+	rinfo.position = Vector2(vp.x - 340, 40)
+	rinfo.size = Vector2(300, 56)
 	rinfo.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	_saves_root.add_child(rinfo)
 
@@ -542,7 +543,7 @@ func _build_saves() -> void:
 	_icon_copy.visible = false
 	_saves_root.add_child(_icon_copy)
 	_icon_erase = _action_info("D", _trd("ERASE", "Erase"))
-	_icon_erase.position = Vector2(40 + 220, iy)
+	_icon_erase.position = Vector2(40 + 250, iy)
 	_icon_erase.visible = false
 	_saves_root.add_child(_icon_erase)
 
@@ -616,12 +617,12 @@ func _position_slot_icons(_slot: Control) -> void:
 func _action_info(letter: String, text: String) -> Control:
 	var root := Control.new()
 	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	root.size = Vector2(44 + 8 + 150, 44)
+	root.size = Vector2(44 + 8 + 170, 44)
 	var ic := _placeholder_icon(letter)
 	root.add_child(ic)
-	var l := _panel_label(text, 32, COLOR_TEXT)
+	var l := _panel_label(text, 38, COLOR_TEXT)
 	l.position = Vector2(44 + 8, 0)
-	l.size = Vector2(150, 44)
+	l.size = Vector2(170, 44)
 	l.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	l.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 	root.add_child(l)
