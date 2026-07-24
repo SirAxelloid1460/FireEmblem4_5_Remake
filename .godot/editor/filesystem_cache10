@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784885648
+::res://::1784890168
 icon.png::CompressedTexture2D::5796228232867755098::1714553776::1784419739::1::::<><><>0<>0<>85d8504b263b0bda2244463b196f6b35<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1784389909::0::1::::<><><>0<>0<><>::
 ::res://assets/::1784644658
@@ -655,7 +655,7 @@ MageKnight_Arthur_Sword.json::JSON::-1::1784389910::0::1::::<><><>0<>0<><>::
 MageKnight_Arthur_Sword.png::CompressedTexture2D::1318277914296584178::1784389910::1784390482::1::::<><><>0<>0<>3bf2d430f3b1e473f546c285315270a5<>res://.godot/imported/MageKnight_Arthur_Sword.png-263bb6a46721d960fae5173c8a16b190.ctex::
 MageKnight_Arthur_Unarmed.json::JSON::-1::1784389910::0::1::::<><><>0<>0<><>::
 MageKnight_Arthur_Unarmed.png::CompressedTexture2D::5190635057002086603::1784389910::1784390482::1::::<><><>0<>0<>6d1f1c493c3195495eeb0745c843a997<>res://.godot/imported/MageKnight_Arthur_Unarmed.png-f3fdade43b370c06b0fcc479ade7b4b1.ctex::
-::res://assets/GBA/combat_anims/MageKnight_Azel/::1784817271
+::res://assets/GBA/combat_anims/MageKnight_Azel/::1784885654
 MageKnight_Azel_MagicAnima.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 MageKnight_Azel_MagicAnima.png::CompressedTexture2D::152668239085240329::1784817271::1784885654::1::::<><><>0<>0<>46b4ae297c29366f2f4cc16d4c10e81b<>res://.godot/imported/MageKnight_Azel_MagicAnima.png-b6bf055e635c744bee228cc94af100e7.ctex::
 MageKnight_Azel_MagicSword.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
@@ -760,7 +760,7 @@ Mage_Asbel_MagicAnima.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Mage_Asbel_MagicAnima.png::CompressedTexture2D::3559586059991205839::1784389911::1784390482::1::::<><><>0<>0<>9ab8183a7f0b9d84e0fc8ea0d9711c61<>res://.godot/imported/Mage_Asbel_MagicAnima.png-2579f14511e76c70f6588a0f35f47904.ctex::
 Mage_Asbel_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Mage_Asbel_Unarmed.png::CompressedTexture2D::557455643766141903::1784389911::1784390482::1::::<><><>0<>0<>81ca6b585f1a21719be94d578c9e1010<>res://.godot/imported/Mage_Asbel_Unarmed.png-a0d02c53014d5a0f328810bcd92bc22c.ctex::
-::res://assets/GBA/combat_anims/Mage_Azel/::1784817271
+::res://assets/GBA/combat_anims/Mage_Azel/::1784885653
 Mage_Azel_MagicAnima.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 Mage_Azel_MagicAnima.png::CompressedTexture2D::8611369179801227588::1784817271::1784885653::1::::<><><>0<>0<>1784a7650ffc446f5454afc22b78c2dc<>res://.godot/imported/Mage_Azel_MagicAnima.png-fcc6eade90f6a776c32bc52b0a76325d.ctex::
 Mage_Azel_Unarmed.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
@@ -937,7 +937,7 @@ Paladin_Evar_Sword.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Evar_Sword.png::CompressedTexture2D::8868547329208190408::1784389911::1784390480::1::::<><><>0<>0<>47f96662dc8de23c728b88fb7ef7ba36<>res://.godot/imported/Paladin_Evar_Sword.png-337818d12dee1293abe819157f102f00.ctex::
 Paladin_Evar_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Evar_Unarmed.png::CompressedTexture2D::1949527315817114491::1784389911::1784390480::1::::<><><>0<>0<>7cceeeb6c7898e70c9a2c8b9a82577ee<>res://.godot/imported/Paladin_Evar_Unarmed.png-e1adc8cde56b6d2d221104a0923756cf.ctex::
-::res://assets/GBA/combat_anims/Paladin_Eve/::1784817271
+::res://assets/GBA/combat_anims/Paladin_Eve/::1784885653
 Paladin_Eve_Javelin.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 Paladin_Eve_Javelin.png::CompressedTexture2D::4074113627704977669::1784817271::1784885653::1::::<><><>0<>0<>4fd3e329d4fcf4d1000636e302754a62<>res://.godot/imported/Paladin_Eve_Javelin.png-c6f7b7ba7d6e22f638f58b4ccf3a6ed0.ctex::
 Paladin_Eve_Lance.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
@@ -986,7 +986,7 @@ Paladin_Nanna_Sword.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Nanna_Sword.png::CompressedTexture2D::6943135883109082917::1784389911::1784390486::1::::<><><>0<>0<>2622642256a9a3b217aa98f18a522669<>res://.godot/imported/Paladin_Nanna_Sword.png-a2e35d9770747468386bc64ddfbc1beb.ctex::
 Paladin_Nanna_Unarmed.json::JSON::-1::1784389911::0::1::::<><><>0<>0<><>::
 Paladin_Nanna_Unarmed.png::CompressedTexture2D::4532682866123210135::1784389911::1784390486::1::::<><><>0<>0<>27c5315adb4f2adc88f13fec13c5a70a<>res://.godot/imported/Paladin_Nanna_Unarmed.png-0acd50f8e7dcd51917666072e5355f61.ctex::
-::res://assets/GBA/combat_anims/Paladin_Noish/::1784817271
+::res://assets/GBA/combat_anims/Paladin_Noish/::1784885653
 Paladin_Noish_Javelin.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
 Paladin_Noish_Javelin.png::CompressedTexture2D::4076975847317920292::1784817271::1784885653::1::::<><><>0<>0<>268ffaade8e1ec4fc98d6bc29de82096<>res://.godot/imported/Paladin_Noish_Javelin.png-657d6f195cbc13b18a8f43147b5a1004.ctex::
 Paladin_Noish_Lance.json::JSON::-1::1784817271::0::1::::<><><>0<>0<><>::
@@ -2733,7 +2733,7 @@ Village-Ranged.png::CompressedTexture2D::3734162137679042231::1784389920::178439
 Wall-Melee.png::CompressedTexture2D::1973477364951017493::1784389920::1784390477::1::::<><><>0<>0<>8505777395012f265a7c7f4c929d5aab<>res://.godot/imported/Wall-Melee.png-b340bf5de6554e9518dca5a1062f79ff.ctex::
 Wall-Ranged.png::CompressedTexture2D::6619539954358839840::1784389920::1784390477::1::::<><><>0<>0<>41ddd4a5998c83514f770c1f4b9d1af6<>res://.godot/imported/Wall-Ranged.png-27cbfab4e946a3e5623cd29df56abebc.ctex::
 ::res://assets/GBA/portraits/::1784389920
-::res://assets/GBA/portraits/characters/::1784817271
+::res://assets/GBA/portraits/characters/::1784885653
 Aida.png::CompressedTexture2D::7008317258586410126::1784389920::1784390477::1::::<><><>0<>0<>b293482447d22450168ce0a4b3840c3c<>res://.godot/imported/Aida.png-9165d1e7e2a72dbccfe67f4cf604ad56.ctex::
 Aideen.png::CompressedTexture2D::3562563555345461269::1784389920::1784390477::1::::<><><>0<>0<>5b9f277dd2ef736e519ff269d70b5b0e<>res://.godot/imported/Aideen.png-8433c61a866e5eb6640824bab7ddd76c.ctex::
 Aihiman.png::CompressedTexture2D::4877647303837276314::1784389920::1784390477::1::::<><><>0<>0<>13fcf2fd453acd42f646dfd992d97ad8<>res://.godot/imported/Aihiman.png-b88ea878b5bc1d6dc5bc103d037933ba.ctex::
@@ -3419,7 +3419,7 @@ Fire_Emblem_Heroes_Font.ttf::FontFile::4468105078313121114::1504032078::17844197
 ::res://assets/HD/highlights/::1784389922
 ::res://assets/HD/icons6/::1784389922
 ::res://assets/HD/icons32/::1784389922
-::res://assets/HD/icons144/::1784747073
+::res://assets/HD/icons144/::1784885653
 Axe.png::CompressedTexture2D::5536924532585726438::1784747028::1784885653::1::::<><><>0<>0<>f8b3db0627bcbcb043249fd3d993b389<>res://.godot/imported/Axe.png-3df7faa1bffb50cc9aeb1af6754b1532.ctex::
 ::res://assets/HD/info_menu/::1784389922
 ::res://assets/HD/map_icons/::1784389922
@@ -3439,7 +3439,7 @@ Axe.png::CompressedTexture2D::5536924532585726438::1784747028::1784885653::1::::
 ::res://assets/HD/title/::1784389922
 ::res://assets/HD/videos/::1784389922
 ::res://assets/languages/::1784816922
-::res://assets/languages/Flags/::1784816922
+::res://assets/languages/Flags/::1784885652
 de.png::CompressedTexture2D::6616309817090447157::1784389913::1784885652::1::::<><><>0<>0<>6ac29dfa08dd17a069fd9988b3b85adf<>res://.godot/imported/de.png-1219d0c9387e4af2616b94f526f45d86.ctex::
 en.png::CompressedTexture2D::1830620738966779921::1784389913::1784885652::1::::<><><>0<>0<>48228b0b6849671f66ab8e3f945ed2b9<>res://.godot/imported/en.png-8ecfd48bd152dfe710c4cabc0b32c0af.ctex::
 es.png::CompressedTexture2D::3622426124080247967::1784389913::1784885652::1::::<><><>0<>0<>e0197912399e6eed627aa6ead9e23cee<>res://.godot/imported/es.png-5e76d623c30cb053ed6f2c76fc46680a.ctex::
@@ -4152,7 +4152,7 @@ mode_select.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scr
 options_menu.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784817271
+::res://Scripts/::1784890147
 ActionMenu.gd::GDScript::6413271467111799318::1784583376::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784389909::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784389909::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
@@ -4210,7 +4210,7 @@ Item.gd::GDScript::7925141334164720406::1784389909::0::1::::Item<>RefCounted<><>
 ItemDatabase.gd::GDScript::6527273458596669064::1784389909::0::1::::ItemDatabase<>RefCounted<><>0<>0<><>::
 Items.gd::GDScript::1388330204127410334::1784389909::0::1::::ItemCatalog<>RefCounted<><>0<>0<><>::
 LabelAnimText.gd::GDScript::2867877076981210681::1784389909::0::1::::LabelAnimText<>Control<><>0<>0<><>::
-Language.gd::GDScript::2907556366295349689::1784641641::0::1::::LanguageScreen<>SelectMenu<><>0<>0<><>::
+Language.gd::GDScript::2907556366295349689::1784890147::0::1::::LanguageScreen<>SelectMenu<><>0<>0<><>::
 LaraPromotion.gd::GDScript::4107297915193857152::1784389909::0::1::::LaraPromotion<>RefCounted<><>0<>0<><>::
 LevelData.gd::GDScript::802805939506090972::1784389909::0::1::::LevelData<>Resource<><>0<>0<><>::
 LevelLoader.gd::GDScript::2900491532752613919::1784389909::0::1::::LevelLoader<>RefCounted<><>0<>0<><>::
