@@ -34,6 +34,7 @@ GameManager="*res://Scripts/GameManager.gd"
 FadeCanvas="*res://Scripts/FadeCanvas.gd"
 InputConfig="*res://Scripts/InputConfig.gd"
 DialogueL10n="*res://Scripts/DialogueL10n.gd"
+SettingsBoot="*res://Scripts/SettingsBoot.gd"
 
 [debug]
 
