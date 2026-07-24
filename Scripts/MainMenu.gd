@@ -490,17 +490,17 @@ func _animate_cursor(delta: float) -> void:
 
 # --- Columnas de botones ---
 func _build_columns() -> void:
-	# Menú principal: New Game · Continue · Load · Restart · Extras. El texto es la
+	# Menú principal: New Game · [Continue · Load · Restart] · Extras. El texto es la
 	# CLAVE de traducción (los Button se auto-traducen con el locale activo).
-	# NOTA: el sistema de guardado real aún NO existe; Continue/Load/Restart son de
-	# momento solo la UI (deslizan al submenú o muestran aviso).
-	_main_col = _make_column([
-		{ "id": "newgame",  "text": "NEWGAME" },
-		{ "id": "continue", "text": "CONTINUE" },
-		{ "id": "load",     "text": "LOAD" },
-		{ "id": "restart",  "text": "RESTART" },
-		{ "id": "extras",   "text": "EXTRAS" },
-	])
+	# Continue/Load/Restart SOLO aparecen si existe alguna partida guardada: sin
+	# guardados no sirven de nada, así que se OCULTAN (no se crean).
+	var items: Array = [{ "id": "newgame", "text": "NEWGAME" }]
+	if SaveSystem.has_save_file():
+		items.append({ "id": "continue", "text": "CONTINUE" })
+		items.append({ "id": "load",     "text": "LOAD" })
+		items.append({ "id": "restart",  "text": "RESTART" })
+	items.append({ "id": "extras", "text": "EXTRAS" })
+	_main_col = _make_column(items)
 	# Dificultad: placas TINTADAS por dificultad y más estrechas (columna izquierda);
 	# la descripción va en un panel a la derecha (_build_desc). Ver imagen de ref.
 	_newgame_col = VBoxContainer.new()
