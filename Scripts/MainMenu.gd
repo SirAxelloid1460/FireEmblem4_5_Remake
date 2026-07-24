@@ -40,8 +40,13 @@ const TITLE_SUB  := "Genealogy of the Holy War   ·   Thracia 776"
 const GAME_SCENE := "res://Scenes/main_game.tscn"
 const CREDITS_SCRIPT := "res://Scripts/CreditsScreen.gd"
 
-# Música de fondo del menú: el tema principal de Fire Emblem, en bucle.
-const THEME_MUSIC := "res://assets/music/102 - Fire Emblem Theme.ogg"
+# Música de fondo del menú: el tema de Fire Emblem del juego activo, en bucle.
+# En el MENÚ empieza y loopea desde un punto concreto (petición del autor); en el
+# Sound Room la reproducción es normal (desde 0).
+const THEME_FE4 := "res://assets/music/fe4/102 - Fire Emblem Theme.mp3"
+const THEME_FE5 := "res://assets/music/fe5/103 Fire Emblem theme.mp3"
+const THEME_LOOP_FE4 := 30.5   # FE4: empieza/loopea desde 30.5 s
+const THEME_LOOP_FE5 := 13.5   # FE5: empieza/loopea desde 13.5 s
 
 # Arte del título por MODO (GameMode autoload: FE4_ONLY=0, FE5_ONLY=1, SAGA=2).
 # El fondo y el logo cambian según la versión elegida en el menú de modo.
@@ -247,18 +252,23 @@ func _build_bg() -> void:
 ## Música de fondo: el tema de Fire Emblem en bucle (en el bus "Music" si existe,
 ## para que el volumen de Options lo controle).
 func _build_music() -> void:
-	var music_path := AssetSet.p(THEME_MUSIC)
+	# Tema según el juego activo (FE5_ONLY = modo 1 → FE5; resto → FE4).
+	var is_fe5: bool = (_mode() == 1)
+	var music_path := AssetSet.p(THEME_FE5 if is_fe5 else THEME_FE4)
+	var loop_start: float = THEME_LOOP_FE5 if is_fe5 else THEME_LOOP_FE4
 	if not ResourceLoader.exists(music_path):
 		return
 	_music = AudioStreamPlayer.new()
 	var stream = load(music_path)
 	if "loop" in stream:
-		stream.loop = true        # bucle sin cortes (Ogg Vorbis)
+		stream.loop = true               # bucle sin cortes
+	if "loop_offset" in stream:
+		stream.loop_offset = loop_start  # al llegar al final, vuelve a este punto
 	_music.stream = stream
 	if AudioServer.get_bus_index("Music") >= 0:
 		_music.bus = "Music"
 	add_child(_music)
-	_music.play()
+	_music.play(loop_start)              # y ARRANCA desde ese mismo punto
 
 
 func _build_title() -> void:

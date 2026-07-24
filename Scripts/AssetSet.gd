@@ -28,7 +28,7 @@ const CFG := "user://settings.cfg"
 # Carpetas GENERALES del proyecto: NO dependen del set gráfico, así que viven en
 # res://assets/<dir>/ (no en assets/{GBA,HD,Original}/). p() las devuelve tal cual.
 # Las traducciones y banderas de idioma son del proyecto, no de la calidad gráfica.
-const SHARED := ["languages"]
+const SHARED := ["languages", "music", "sfx"]
 
 # Sets cuyos recursos van SEPARADOS por juego (subcarpeta fe4/fe5). El set
 # "Original" usa el arte de los juegos originales, que colisionaría entre FE4 y
