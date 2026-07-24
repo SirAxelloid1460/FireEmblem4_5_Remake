@@ -38,16 +38,22 @@ const LANGS := [
 	{ "id": "pt", "ready": false },
 ]
 
-# Grid con HUECO RESERVADO: se dimensiona para GRID_COLS × GRID_CAP_ROWS ranuras
-# (capacidad), pero solo se rellenan las de LANGS. Así queda espacio visible para
-# futuras banderas sin tocar el layout.
+# Márgenes de layout (px, en el viewport nativo):
+const SCREEN_MARGIN := 24           # panel de contenido ↔ bordes de pantalla
+const TITLE_MARGIN := 12            # placa de título ↔ bordes de pantalla (arriba/lados)
+const TITLE_H := 104                # alto (reducido) de la placa de título
+const GAP_TITLE := 12               # separación placa de título ↔ panel de contenido
+const GRID_TOP_PAD := 34            # separación grid ↔ borde superior del panel
+
+# Grid de banderas. El panel de contenido es grande (margen 24px a pantalla), así
+# que las banderas actuales ocupan solo la parte superior y queda ESPACIO LIBRE
+# para futuras sin tocar el layout.
 const GRID_COLS := 4
-const GRID_CAP_ROWS := 3            # capacidad de filas (>= filas usadas ahora)
 const GRID_HSEP := 30
 const GRID_VSEP := 26
 const FLAG_W := 150
 const FLAG_H := 92
-const FLAG_PAD := 8                 # margen bandera↔borde de su celda
+const FLAG_PAD := 4                 # margen bandera↔borde de su celda (bandera ~ marco)
 const FLAG_DIM_WIP := 0.34          # opacidad de las banderas W.I.P (las listas van opacas)
 
 const TITLE_FS := 84
@@ -81,22 +87,12 @@ func _build_layout() -> void:
 	var vp: Vector2 = get_viewport_rect().size
 
 	var grid_w: float = GRID_COLS * FLAG_W + (GRID_COLS - 1) * GRID_HSEP
-	var cap_grid_h: float = GRID_CAP_ROWS * FLAG_H + (GRID_CAP_ROWS - 1) * GRID_VSEP
-	var pad: float = 46.0
-	var content_w: float = grid_w + pad * 2.0
-	var content_h: float = cap_grid_h + pad * 2.0
 
-	var title_w: float = 600.0
-	var title_h: float = 138.0
-	var gap: float = 24.0
-
-	var total_h: float = title_h + gap + content_h
-	var top: float = round((vp.y - total_h) / 2.0)
-
-	# ── Placa de título (separada, fondo claro estilo Opciones) ──
+	# ── Placa de título: pegada arriba, 12px de margen con los bordes ──
+	var title_w: float = vp.x - TITLE_MARGIN * 2.0
 	var title_root := Control.new()
-	title_root.position = Vector2(round((vp.x - title_w) / 2.0), top)
-	title_root.size = Vector2(title_w, title_h)
+	title_root.position = Vector2(TITLE_MARGIN, TITLE_MARGIN)
+	title_root.size = Vector2(title_w, TITLE_H)
 	title_root.modulate.a = 0.85
 	add_child(title_root)
 	var tnp := _nine(TITLE_BG, 8)
@@ -112,22 +108,26 @@ func _build_layout() -> void:
 	_title_lbl.text = _title_for_locale(str(LANGS[0]["id"]))
 	title_root.add_child(_title_lbl)
 
-	# ── Panel de contenido (banderas) ──
+	# ── Panel de contenido: 24px de margen a los bordes, 12px bajo el título ──
+	var content_x: float = SCREEN_MARGIN
+	var content_y: float = TITLE_MARGIN + TITLE_H + GAP_TITLE
+	var content_w: float = vp.x - SCREEN_MARGIN * 2.0
+	var content_h: float = vp.y - content_y - SCREEN_MARGIN
 	_content_panel = Control.new()
-	_content_panel.position = Vector2(round((vp.x - content_w) / 2.0), top + title_h + gap)
+	_content_panel.position = Vector2(content_x, content_y)
 	_content_panel.size = Vector2(content_w, content_h)
 	add_child(_content_panel)
 	var cnp := _nine(PANEL, 14, 22)
 	cnp.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_content_panel.add_child(cnp)
 
-	# Grid TOP-alineado dentro del panel: las filas usadas arriba, capacidad libre
-	# abajo (espacio reservado para futuras banderas).
+	# Grid arriba-centrado en el panel grande: las banderas actuales ocupan solo la
+	# parte superior; el resto del panel queda como espacio reservado a futuro.
 	var grid := GridContainer.new()
 	grid.columns = GRID_COLS
 	grid.add_theme_constant_override("h_separation", GRID_HSEP)
 	grid.add_theme_constant_override("v_separation", GRID_VSEP)
-	grid.position = Vector2(round((content_w - grid_w) / 2.0), pad)
+	grid.position = Vector2(round((content_w - grid_w) / 2.0), GRID_TOP_PAD)
 	_content_panel.add_child(grid)
 	for lang in LANGS:
 		grid.add_child(_make_flag(lang))
@@ -165,6 +165,9 @@ func _make_flag(lang: Dictionary) -> Control:
 	var flag := TextureRect.new()
 	flag.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	flag.stretch_mode = TextureRect.STRETCH_SCALE
+	# CLAVE: sin esto el TextureRect impone como mínimo el tamaño NATIVO de la
+	# textura (banderas grandes) y desborda la celda pisando a las vecinas.
+	flag.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	flag.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	flag.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	flag.offset_left = FLAG_PAD
