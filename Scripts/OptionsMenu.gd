@@ -146,7 +146,7 @@ func _build_specs() -> void:
 	_row_toggle("gameplay", "auto_end", "AUTOEND", false, "AUTOENDDESC")
 	_row_toggle("gameplay", "confirm_end", "CONFIRMEND", true, "CONFIRMENDDESC")
 	_row_toggle("gameplay", "tutorials", "HINTS", true, "HINTSDESC")
-	_row_toggle("input", "mouse", "MOUSE", false, "MOUSEDESC")
+	_row_toggle("input", "mouse", "MOUSE", true, "MOUSEDESC")
 
 
 # Cada fila guarda sus CLAVES (lkey/dkey/ckeys) además del texto ya traducido,
@@ -338,9 +338,26 @@ func _build_options_panel(panel_size: Vector2) -> Control:
 	if ResourceLoader.exists(isheet):
 		_icon_sheet = load(isheet)
 	_icon_i = 0
-	for spec in _specs:
-		_ui.append(_build_row(spec))
+	for i in range(_specs.size()):
+		var row = _build_row(_specs[i])
+		_ui.append(row)
+		# Soporte de ratón: pasar por encima de una fila la SELECCIONA (hover). El
+		# clic izquierdo la cambia (ver _input → ui_accept). Con el ratón desactivado
+		# InputConfig consume los eventos, así que hover/clic no llegan (Ninguno).
+		if row != null and row.has("node"):
+			var node: Control = row["node"]
+			node.mouse_filter = Control.MOUSE_FILTER_PASS   # PASS: deja pasar la rueda al ScrollContainer
+			node.mouse_entered.connect(_on_row_hover.bind(i))
 	return root
+
+
+## Hover del ratón sobre una fila → la selecciona (como navegar con ↑/↓).
+func _on_row_hover(i: int) -> void:
+	if i < 0 or i >= _ui.size() or _ui[i] == null or _sel == i:
+		return
+	_sel = i
+	_play_sfx(SFX_NAV)
+	_refresh()
 
 
 ## Barra de descripción: panel negro (0.5) a pantalla completa, pegado al fondo.
@@ -618,6 +635,10 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("ui_accept"):
 		if _sel == CTRL_SEL:
 			_open_controls()
+		elif event is InputEventMouseButton and _sel >= 0 and _sel < _ui.size() and _ui[_sel] != null:
+			# Clic izquierdo del ratón sobre una fila de valor = cambiarla (como →).
+			_play_sfx(SFX_CHANGE)
+			_change(1)
 		_handled()
 
 
