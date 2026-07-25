@@ -61,7 +61,7 @@ const COLOR_KEY_DARK := Color(0.55, 0.40, 0.08, 1.0)   # tecla (dorado oscuro)
 const COLOR_ACT_DARK := Color(0.16, 0.16, 0.22, 1.0)   # acción (casi negro)
 # Visualizador de onda pixelado (reacciona al audio del bus Music).
 const WAVE_BARS  := 26
-const WAVE_COLOR := Color(0.34, 0.42, 0.86, 1.0)
+const WAVE_COLOR := Color(0.314, 0.157, 0.0, 1.0)   # marrón del borde del panel
 const WAVE_MIN_F := 45.0
 const WAVE_MAX_F := 11000.0
 
@@ -169,12 +169,12 @@ func _build_ui() -> void:
 	var left_w: float = 340.0
 	var content_h: float = vp.y - top - 24
 
-	# ── Panel IZQUIERDO: asset "reproductor" (pantalla azul + cuerpo blanco) ──
-	var f: float = SP_SCALE
-	var sp_w: float = 73.0 * f
-	var sp_h: float = 112.0 * f
-	var sp_x: float = 24.0 + (left_w - sp_w) / 2.0
+	# ── Panel IZQUIERDO: asset "reproductor" a ALTURA COMPLETA (mismo bottom que el
+	# panel de la lista), apretado al ancho de la columna → escala NO uniforme ──
+	var sp_x: float = 24.0
 	var sp_y: float = top
+	var sp_w: float = left_w
+	var sp_h: float = content_h
 	var player_img := TextureRect.new()
 	player_img.texture = load(AssetSet.p(SP_IMG))
 	player_img.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
@@ -184,12 +184,15 @@ func _build_ui() -> void:
 	player_img.position = Vector2(sp_x, sp_y)
 	player_img.size = Vector2(sp_w, sp_h)
 	add_child(player_img)
+	# Escalas independientes del asset (73×112 → sp_w×sp_h).
+	var fx: float = sp_w / 73.0
+	var fy: float = sp_h / 112.0
 
 	# Visualizador de onda sobre la PANTALLA AZUL (barras pixeladas, reactivas).
-	var bx: float = sp_x + SP_BLUE.position.x * f
-	var by: float = sp_y + SP_BLUE.position.y * f
-	var bw: float = SP_BLUE.size.x * f
-	var bh: float = SP_BLUE.size.y * f
+	var bx: float = sp_x + SP_BLUE.position.x * fx
+	var by: float = sp_y + SP_BLUE.position.y * fy
+	var bw: float = SP_BLUE.size.x * fx
+	var bh: float = SP_BLUE.size.y * fy
 	_wave_bar_w = (bw - (WAVE_BARS - 1) * _wave_gap) / WAVE_BARS
 	_wave_bx = bx
 	_wave_cy = by + bh / 2.0
@@ -204,27 +207,28 @@ func _build_ui() -> void:
 		_bars.append(bar)
 		_bar_h.append(2.0)
 
-	# Leyenda de controles sobre el CUERPO BLANCO (texto oscuro).
-	var wx: float = sp_x + SP_WHITE.position.x * f
-	var wy: float = sp_y + SP_WHITE.position.y * f
-	var ww: float = SP_WHITE.size.x * f
-	var wh: float = SP_WHITE.size.y * f
+	# Leyenda de controles sobre el CUERPO BLANCO (texto oscuro), repartida en alto.
+	var wx: float = sp_x + SP_WHITE.position.x * fx
+	var wy: float = sp_y + SP_WHITE.position.y * fy
+	var ww: float = SP_WHITE.size.x * fx
+	var wh: float = SP_WHITE.size.y * fy
 	var legend := [
 		["ui_accept", "Play"], ["ui_start", "Stop"], ["ui_select", "Random"],
 		["ui_page_left", "< FE"], ["ui_page_right", "FE >"],
 	]
+	var fs: int = 34
 	var row_h: float = wh / legend.size()
 	for i in range(legend.size()):
 		var entry: Array = legend[i]
-		var ry: float = wy + i * row_h + (row_h - 40) / 2.0
-		var k := _label(InputConfig.key_label(str(entry[0])), 32, COLOR_KEY_DARK, 2)
-		k.position = Vector2(wx + 10, ry)
-		k.size = Vector2(ww * 0.55, 40)
+		var ry: float = wy + i * row_h + (row_h - fs) / 2.0
+		var k := _label(InputConfig.key_label(str(entry[0])), fs, COLOR_KEY_DARK, 2)
+		k.position = Vector2(wx + 12, ry)
+		k.size = Vector2(ww * 0.55, fs + 10)
 		k.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 		add_child(k)
-		var a := _label(str(entry[1]), 32, COLOR_ACT_DARK, 2)
-		a.position = Vector2(wx + 10 + ww * 0.5, ry)
-		a.size = Vector2(ww * 0.5 - 10, 40)
+		var a := _label(str(entry[1]), fs, COLOR_ACT_DARK, 2)
+		a.position = Vector2(wx + 12 + ww * 0.55, ry)
+		a.size = Vector2(ww * 0.45 - 12, fs + 10)
 		a.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 		add_child(a)
 
@@ -404,9 +408,15 @@ func _play_current() -> void:
 	var path := AssetSet.p(str(TABS[_tab]["dir"]) + _tracks[_cursor] + ".mp3")
 	if not ResourceLoader.exists(path):
 		return
+	# Copia propia: el mismo recurso lo cachea load() y el MENÚ le pone loop_offset
+	# (30.5/13.5). Duplicando + loop_offset 0, el SoundRoom loopea desde el principio.
 	var stream = load(path)
+	if stream != null:
+		stream = stream.duplicate()
 	if "loop" in stream:
 		stream.loop = true
+	if "loop_offset" in stream:
+		stream.loop_offset = 0.0
 	_player.stream = stream
 	_player.play()
 	_playing = _cursor
