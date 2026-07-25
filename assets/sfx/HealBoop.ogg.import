@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cyp6j0r4kdfbo"
-path="res://.godot/imported/HealBoop.ogg-c5b534d1521acdbcb1426e3a7ead8b87.oggvorbisstr"
+path="res://.godot/imported/HealBoop.ogg-aefd201b3d7247738b35c129b8bc6d7b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/HealBoop.ogg"
-dest_files=["res://.godot/imported/HealBoop.ogg-c5b534d1521acdbcb1426e3a7ead8b87.oggvorbisstr"]
+source_file="res://assets/sfx/HealBoop.ogg"
+dest_files=["res://.godot/imported/HealBoop.ogg-aefd201b3d7247738b35c129b8bc6d7b.oggvorbisstr"]
 
 [params]
 

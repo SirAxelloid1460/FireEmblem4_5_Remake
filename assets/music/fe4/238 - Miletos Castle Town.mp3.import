@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bvgwonhy4y5bl"
+path="res://.godot/imported/238 - Miletos Castle Town.mp3-8610ff759d2777f14459136f52f8d1b4.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/238 - Miletos Castle Town.mp3"
+dest_files=["res://.godot/imported/238 - Miletos Castle Town.mp3-8610ff759d2777f14459136f52f8d1b4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwu0pb46pp8xl"
+path="res://.godot/imported/245 - Enemy Message 1.mp3-ae003748e3ae5915f166f05e9d0b2914.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/245 - Enemy Message 1.mp3"
+dest_files=["res://.godot/imported/245 - Enemy Message 1.mp3-ae003748e3ae5915f166f05e9d0b2914.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

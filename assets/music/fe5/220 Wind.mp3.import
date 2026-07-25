@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cr4lbj43ylexw"
+path="res://.godot/imported/220 Wind.mp3-5a0d5db444ac807c91ccac0791db248b.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/220 Wind.mp3"
+dest_files=["res://.godot/imported/220 Wind.mp3-5a0d5db444ac807c91ccac0791db248b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

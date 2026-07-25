@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b2m1p1w74b5hc"
-path="res://.godot/imported/Gespenst1.ogg-57123ee11ee342e432fbe588a16144ef.oggvorbisstr"
+path="res://.godot/imported/Gespenst1.ogg-26de980ee6014663d8591e2db3761231.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Gespenst1.ogg"
-dest_files=["res://.godot/imported/Gespenst1.ogg-57123ee11ee342e432fbe588a16144ef.oggvorbisstr"]
+source_file="res://assets/sfx/Gespenst1.ogg"
+dest_files=["res://.godot/imported/Gespenst1.ogg-26de980ee6014663d8591e2db3761231.oggvorbisstr"]
 
 [params]
 

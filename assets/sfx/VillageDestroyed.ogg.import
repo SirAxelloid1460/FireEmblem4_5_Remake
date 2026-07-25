@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bfsh5p825q7st"
-path="res://.godot/imported/VillageDestroyed.ogg-d03f4e2bc8b4234db79bca468de541be.oggvorbisstr"
+path="res://.godot/imported/VillageDestroyed.ogg-1385a37ca40b92cca91802cf46a107d5.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/VillageDestroyed.ogg"
-dest_files=["res://.godot/imported/VillageDestroyed.ogg-d03f4e2bc8b4234db79bca468de541be.oggvorbisstr"]
+source_file="res://assets/sfx/VillageDestroyed.ogg"
+dest_files=["res://.godot/imported/VillageDestroyed.ogg-1385a37ca40b92cca91802cf46a107d5.oggvorbisstr"]
 
 [params]
 

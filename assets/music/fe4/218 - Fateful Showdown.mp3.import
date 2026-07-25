@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgfusfb2xxmff"
+path="res://.godot/imported/218 - Fateful Showdown.mp3-fce1def5e8d8c89756df08115a19863b.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/218 - Fateful Showdown.mp3"
+dest_files=["res://.godot/imported/218 - Fateful Showdown.mp3-fce1def5e8d8c89756df08115a19863b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

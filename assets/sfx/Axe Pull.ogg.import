@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://s078ddc5vja5"
-path="res://.godot/imported/Axe Pull.ogg-50909803a57a07dac0985bf0ea7a1c61.oggvorbisstr"
+path="res://.godot/imported/Axe Pull.ogg-ece31a7c1413cb760e3a2ea6cb5cb9c0.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Axe Pull.ogg"
-dest_files=["res://.godot/imported/Axe Pull.ogg-50909803a57a07dac0985bf0ea7a1c61.oggvorbisstr"]
+source_file="res://assets/sfx/Axe Pull.ogg"
+dest_files=["res://.godot/imported/Axe Pull.ogg-ece31a7c1413cb760e3a2ea6cb5cb9c0.oggvorbisstr"]
 
 [params]
 

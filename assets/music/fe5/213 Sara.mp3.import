@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hcyjxl7snntn"
+path="res://.godot/imported/213 Sara.mp3-ec5a82cc09f7ee613ab94cc59bb61906.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/213 Sara.mp3"
+dest_files=["res://.godot/imported/213 Sara.mp3-ec5a82cc09f7ee613ab94cc59bb61906.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

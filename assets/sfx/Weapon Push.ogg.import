@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cinvrb7cfv5pb"
-path="res://.godot/imported/Weapon Push.ogg-d2e98872e27eb88df553c6f0b2aec906.oggvorbisstr"
+path="res://.godot/imported/Weapon Push.ogg-a3a4656087f53bcf8b133a4a604e61a5.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Weapon Push.ogg"
-dest_files=["res://.godot/imported/Weapon Push.ogg-d2e98872e27eb88df553c6f0b2aec906.oggvorbisstr"]
+source_file="res://assets/sfx/Weapon Push.ogg"
+dest_files=["res://.godot/imported/Weapon Push.ogg-a3a4656087f53bcf8b133a4a604e61a5.oggvorbisstr"]
 
 [params]
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhidc1ck3gs4c"
+path="res://.godot/imported/220 - Versus Alvis.mp3-7546298ed3d5d153beb16d82c3236ee9.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/220 - Versus Alvis.mp3"
+dest_files=["res://.godot/imported/220 - Versus Alvis.mp3-7546298ed3d5d153beb16d82c3236ee9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dvxmqi74jehl6"
-path="res://.godot/imported/ValkyrieCharge.ogg-d41507336b583ed9bbd73a19f0d221f4.oggvorbisstr"
+path="res://.godot/imported/ValkyrieCharge.ogg-d95664c86209d98f3a9152538bf7d07a.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/ValkyrieCharge.ogg"
-dest_files=["res://.godot/imported/ValkyrieCharge.ogg-d41507336b583ed9bbd73a19f0d221f4.oggvorbisstr"]
+source_file="res://assets/sfx/ValkyrieCharge.ogg"
+dest_files=["res://.godot/imported/ValkyrieCharge.ogg-d95664c86209d98f3a9152538bf7d07a.oggvorbisstr"]
 
 [params]
 

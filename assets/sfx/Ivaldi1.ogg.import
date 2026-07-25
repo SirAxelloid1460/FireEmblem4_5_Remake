@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://4taf6llliwei"
-path="res://.godot/imported/Ivaldi1.ogg-5e549e8a3fca14499aa7898b6261e29a.oggvorbisstr"
+path="res://.godot/imported/Ivaldi1.ogg-9496e49bcc63a5098a16fe4a15b5bff0.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Ivaldi1.ogg"
-dest_files=["res://.godot/imported/Ivaldi1.ogg-5e549e8a3fca14499aa7898b6261e29a.oggvorbisstr"]
+source_file="res://assets/sfx/Ivaldi1.ogg"
+dest_files=["res://.godot/imported/Ivaldi1.ogg-9496e49bcc63a5098a16fe4a15b5bff0.oggvorbisstr"]
 
 [params]
 

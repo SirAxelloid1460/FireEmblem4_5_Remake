@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhfk8myj62dcm"
+path="res://.godot/imported/122 - Final Chapter (The Final Holy War).mp3-6b187bc1fd4a25a59e2f636e38c60c66.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/122 - Final Chapter (The Final Holy War).mp3"
+dest_files=["res://.godot/imported/122 - Final Chapter (The Final Holy War).mp3-6b187bc1fd4a25a59e2f636e38c60c66.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

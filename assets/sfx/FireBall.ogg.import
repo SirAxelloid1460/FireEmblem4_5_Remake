@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b6f18jd8g4kt4"
-path="res://.godot/imported/FireBall.ogg-baafbd19fe421c098f848e91d277fefc.oggvorbisstr"
+path="res://.godot/imported/FireBall.ogg-48f710278e51b04a8672590053c9602b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/FireBall.ogg"
-dest_files=["res://.godot/imported/FireBall.ogg-baafbd19fe421c098f848e91d277fefc.oggvorbisstr"]
+source_file="res://assets/sfx/FireBall.ogg"
+dest_files=["res://.godot/imported/FireBall.ogg-48f710278e51b04a8672590053c9602b.oggvorbisstr"]
 
 [params]
 

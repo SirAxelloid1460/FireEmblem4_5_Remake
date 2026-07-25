@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3ly6hvgksut"
+path="res://.godot/imported/336 - Velthomer Palace.mp3-0b3875923eb8b10096e725ac05f7ac70.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/336 - Velthomer Palace.mp3"
+dest_files=["res://.godot/imported/336 - Velthomer Palace.mp3-0b3875923eb8b10096e725ac05f7ac70.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

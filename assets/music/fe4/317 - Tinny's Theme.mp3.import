@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxah5m6bfqxp7"
+path="res://.godot/imported/317 - Tinny's Theme.mp3-3a9eda1063a923daa8a9af3cecbc1c4f.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/317 - Tinny's Theme.mp3"
+dest_files=["res://.godot/imported/317 - Tinny's Theme.mp3-3a9eda1063a923daa8a9af3cecbc1c4f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

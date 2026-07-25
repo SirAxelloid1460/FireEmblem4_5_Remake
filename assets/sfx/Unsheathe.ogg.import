@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ncbibla0lr65"
-path="res://.godot/imported/Unsheathe.ogg-9c7c81e75843aaa6c0e485e880479db0.oggvorbisstr"
+path="res://.godot/imported/Unsheathe.ogg-d9ad63006065c745906c5d625657f2d0.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Unsheathe.ogg"
-dest_files=["res://.godot/imported/Unsheathe.ogg-9c7c81e75843aaa6c0e485e880479db0.oggvorbisstr"]
+source_file="res://assets/sfx/Unsheathe.ogg"
+dest_files=["res://.godot/imported/Unsheathe.ogg-d9ad63006065c745906c5d625657f2d0.oggvorbisstr"]
 
 [params]
 

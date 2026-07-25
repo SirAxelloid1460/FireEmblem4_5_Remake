@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7octrb35o835"
+path="res://.godot/imported/109 - Chapter 4 (Dance in the Skies).mp3-9ceed180c175d0eef8a1ed19e9a3a7d5.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/109 - Chapter 4 (Dance in the Skies).mp3"
+dest_files=["res://.godot/imported/109 - Chapter 4 (Dance in the Skies).mp3-9ceed180c175d0eef8a1ed19e9a3a7d5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

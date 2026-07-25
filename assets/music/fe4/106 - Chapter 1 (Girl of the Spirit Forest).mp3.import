@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7hyobalxyl08"
+path="res://.godot/imported/106 - Chapter 1 (Girl of the Spirit Forest).mp3-e1c0894ec79f0aa6017d4848cf841421.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/106 - Chapter 1 (Girl of the Spirit Forest).mp3"
+dest_files=["res://.godot/imported/106 - Chapter 1 (Girl of the Spirit Forest).mp3-e1c0894ec79f0aa6017d4848cf841421.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

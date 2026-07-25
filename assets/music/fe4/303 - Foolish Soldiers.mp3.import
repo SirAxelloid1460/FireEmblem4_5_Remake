@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://8vk1lwqnuvul"
+path="res://.godot/imported/303 - Foolish Soldiers.mp3-78bfebf5e28643a17c4aa3417e80fbf1.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/303 - Foolish Soldiers.mp3"
+dest_files=["res://.godot/imported/303 - Foolish Soldiers.mp3-78bfebf5e28643a17c4aa3417e80fbf1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

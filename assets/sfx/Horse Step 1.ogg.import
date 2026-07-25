@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://nhjhub7s3vwh"
-path="res://.godot/imported/Horse Step 1.ogg-6be841bcd8b9b0d499766903f6fe5220.oggvorbisstr"
+path="res://.godot/imported/Horse Step 1.ogg-42b05a901683180ef2160ef73fd1828f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Horse Step 1.ogg"
-dest_files=["res://.godot/imported/Horse Step 1.ogg-6be841bcd8b9b0d499766903f6fe5220.oggvorbisstr"]
+source_file="res://assets/sfx/Horse Step 1.ogg"
+dest_files=["res://.godot/imported/Horse Step 1.ogg-42b05a901683180ef2160ef73fd1828f.oggvorbisstr"]
 
 [params]
 

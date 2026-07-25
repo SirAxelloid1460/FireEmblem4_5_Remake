@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwtv8ybyvffdw"
+path="res://.godot/imported/316 - Levin Speaks.mp3-9af542b64ae5f86c66a3eee14dc878f7.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/316 - Levin Speaks.mp3"
+dest_files=["res://.godot/imported/316 - Levin Speaks.mp3-9af542b64ae5f86c66a3eee14dc878f7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

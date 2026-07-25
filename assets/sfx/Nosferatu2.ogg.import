@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cyroy25tptrqn"
-path="res://.godot/imported/Nosferatu2.ogg-bbd2a30b4a70cc7e08c4d5d488ddcea3.oggvorbisstr"
+path="res://.godot/imported/Nosferatu2.ogg-f4dc37f904968d48a3af8a8e584a1d41.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Nosferatu2.ogg"
-dest_files=["res://.godot/imported/Nosferatu2.ogg-bbd2a30b4a70cc7e08c4d5d488ddcea3.oggvorbisstr"]
+source_file="res://assets/sfx/Nosferatu2.ogg"
+dest_files=["res://.godot/imported/Nosferatu2.ogg-f4dc37f904968d48a3af8a8e584a1d41.oggvorbisstr"]
 
 [params]
 

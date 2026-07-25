@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dkk6q53dmjab2"
+path="res://.godot/imported/121 - Towards the Light.mp3-37afd76f38ace8e656efbc06296972be.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/121 - Towards the Light.mp3"
+dest_files=["res://.godot/imported/121 - Towards the Light.mp3-37afd76f38ace8e656efbc06296972be.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

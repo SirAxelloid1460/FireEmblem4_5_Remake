@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b35dbmd1ths5o"
+path="res://.godot/imported/205 - Silesia Army.mp3-2829f2cf038183eb70de9581765aaf40.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/205 - Silesia Army.mp3"
+dest_files=["res://.godot/imported/205 - Silesia Army.mp3-2829f2cf038183eb70de9581765aaf40.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

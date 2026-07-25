@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://shchextngl4h"
+path="res://.godot/imported/120 Dark Bishops.mp3-2e3e72bd7111019202ec1b6701acb3e6.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/120 Dark Bishops.mp3"
+dest_files=["res://.godot/imported/120 Dark Bishops.mp3-2e3e72bd7111019202ec1b6701acb3e6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

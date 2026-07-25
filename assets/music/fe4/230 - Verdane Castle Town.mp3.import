@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3mnvfnbeuasa"
+path="res://.godot/imported/230 - Verdane Castle Town.mp3-ca011e871de1c6457cf6852a44c4abf2.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/230 - Verdane Castle Town.mp3"
+dest_files=["res://.godot/imported/230 - Verdane Castle Town.mp3-ca011e871de1c6457cf6852a44c4abf2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

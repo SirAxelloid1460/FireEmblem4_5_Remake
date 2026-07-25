@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b3pgrss187ptj"
-path="res://.godot/imported/SageCrit.ogg-7fd19078053bcc9094cbc20820e8a257.oggvorbisstr"
+path="res://.godot/imported/SageCrit.ogg-00241a37136d6fd62ba437db4c3e49f5.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/SageCrit.ogg"
-dest_files=["res://.godot/imported/SageCrit.ogg-7fd19078053bcc9094cbc20820e8a257.oggvorbisstr"]
+source_file="res://assets/sfx/SageCrit.ogg"
+dest_files=["res://.godot/imported/SageCrit.ogg-00241a37136d6fd62ba437db4c3e49f5.oggvorbisstr"]
 
 [params]
 

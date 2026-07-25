@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3efkwfkb04lm"
+path="res://.godot/imported/205 Go Leaf!.mp3-092478dce194aecd4e67d8098f0c61ae.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/205 Go Leaf!.mp3"
+dest_files=["res://.godot/imported/205 Go Leaf!.mp3-092478dce194aecd4e67d8098f0c61ae.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

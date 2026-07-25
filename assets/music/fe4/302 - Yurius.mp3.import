@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3v1fjilw7lk0"
+path="res://.godot/imported/302 - Yurius.mp3-5bac77e4382262d3c572b22af5c30db5.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/302 - Yurius.mp3"
+dest_files=["res://.godot/imported/302 - Yurius.mp3-5bac77e4382262d3c572b22af5c30db5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

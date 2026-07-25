@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dr6hantmqtrln"
+path="res://.godot/imported/138 Squadron A.mp3-4fe194b24f3a95b8f05c97405513acc5.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/138 Squadron A.mp3"
+dest_files=["res://.godot/imported/138 Squadron A.mp3-4fe194b24f3a95b8f05c97405513acc5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

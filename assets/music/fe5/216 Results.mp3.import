@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvn56dykg4td1"
+path="res://.godot/imported/216 Results.mp3-ea30206a19b229a9b7a010c30e73c740.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/216 Results.mp3"
+dest_files=["res://.godot/imported/216 Results.mp3-ea30206a19b229a9b7a010c30e73c740.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

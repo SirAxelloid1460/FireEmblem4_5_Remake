@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cco5rbhj1j0y3"
+path="res://.godot/imported/102 - Fire Emblem Theme.mp3-8b850db4fc4de88defefd1a6255c4b24.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/102 - Fire Emblem Theme.mp3"
+dest_files=["res://.godot/imported/102 - Fire Emblem Theme.mp3-8b850db4fc4de88defefd1a6255c4b24.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

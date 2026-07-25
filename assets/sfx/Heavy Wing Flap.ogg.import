@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bn56fxdl7v805"
-path="res://.godot/imported/Heavy Wing Flap.ogg-82c6ea7df85609d08c229d8b8eef9c02.oggvorbisstr"
+path="res://.godot/imported/Heavy Wing Flap.ogg-7bf0cd5ef466d4cc67a3ba038b81b527.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Heavy Wing Flap.ogg"
-dest_files=["res://.godot/imported/Heavy Wing Flap.ogg-82c6ea7df85609d08c229d8b8eef9c02.oggvorbisstr"]
+source_file="res://assets/sfx/Heavy Wing Flap.ogg"
+dest_files=["res://.godot/imported/Heavy Wing Flap.ogg-7bf0cd5ef466d4cc67a3ba038b81b527.oggvorbisstr"]
 
 [params]
 

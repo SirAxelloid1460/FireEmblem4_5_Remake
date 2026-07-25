@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dulkhm73qp5y1"
+path="res://.godot/imported/110 Advance A.mp3-c172710977b1e837f95cd4aa81768c78.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/110 Advance A.mp3"
+dest_files=["res://.godot/imported/110 Advance A.mp3-c172710977b1e837f95cd4aa81768c78.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

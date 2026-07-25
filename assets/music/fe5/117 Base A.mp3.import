@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ckpsc2myxeuxa"
+path="res://.godot/imported/117 Base A.mp3-5f68f5449ba0d19b4254ccd054a3e53b.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/117 Base A.mp3"
+dest_files=["res://.godot/imported/117 Base A.mp3-5f68f5449ba0d19b4254ccd054a3e53b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

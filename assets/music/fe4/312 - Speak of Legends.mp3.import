@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://clkk7xidsvky1"
+path="res://.godot/imported/312 - Speak of Legends.mp3-31218af46081d980f83012dc25cc3b57.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/312 - Speak of Legends.mp3"
+dest_files=["res://.godot/imported/312 - Speak of Legends.mp3-31218af46081d980f83012dc25cc3b57.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

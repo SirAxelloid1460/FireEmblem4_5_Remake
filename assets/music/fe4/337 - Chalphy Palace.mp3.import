@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bedh4qjafbw6"
+path="res://.godot/imported/337 - Chalphy Palace.mp3-2b2ec4273ae77895714fea6a73b89f97.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/337 - Chalphy Palace.mp3"
+dest_files=["res://.godot/imported/337 - Chalphy Palace.mp3-2b2ec4273ae77895714fea6a73b89f97.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

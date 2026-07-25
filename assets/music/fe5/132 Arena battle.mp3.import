@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqfh05pwg2vgn"
+path="res://.godot/imported/132 Arena battle.mp3-1202faccdc3bcb3f3983a005da7dbcc2.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/132 Arena battle.mp3"
+dest_files=["res://.godot/imported/132 Arena battle.mp3-1202faccdc3bcb3f3983a005da7dbcc2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

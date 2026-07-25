@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c3h4fet57y37w"
-path="res://.godot/imported/Unlock.ogg-0afed6df16f32dca833a6697858de2f9.oggvorbisstr"
+path="res://.godot/imported/Unlock.ogg-7a818b144b129b0d71a09919d7d5866e.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Unlock.ogg"
-dest_files=["res://.godot/imported/Unlock.ogg-0afed6df16f32dca833a6697858de2f9.oggvorbisstr"]
+source_file="res://assets/sfx/Unlock.ogg"
+dest_files=["res://.godot/imported/Unlock.ogg-7a818b144b129b0d71a09919d7d5866e.oggvorbisstr"]
 
 [params]
 

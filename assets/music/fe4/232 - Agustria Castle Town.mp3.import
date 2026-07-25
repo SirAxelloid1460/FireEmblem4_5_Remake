@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8lw84e0oea8d"
+path="res://.godot/imported/232 - Agustria Castle Town.mp3-c51f9630c2643f98c8664e3b72594744.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/232 - Agustria Castle Town.mp3"
+dest_files=["res://.godot/imported/232 - Agustria Castle Town.mp3-c51f9630c2643f98c8664e3b72594744.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

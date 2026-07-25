@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djtnbggvuwpya"
+path="res://.godot/imported/119 - Chapter 9 (For Whose Sake).mp3-bb6055c9759b24b80a2ac29eb7b5797a.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/119 - Chapter 9 (For Whose Sake).mp3"
+dest_files=["res://.godot/imported/119 - Chapter 9 (For Whose Sake).mp3-bb6055c9759b24b80a2ac29eb7b5797a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

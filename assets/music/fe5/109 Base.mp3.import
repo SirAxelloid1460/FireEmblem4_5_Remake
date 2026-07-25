@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhtinvl3fvpvm"
+path="res://.godot/imported/109 Base.mp3-b17866686044c63918d5b7069f2f7acd.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/109 Base.mp3"
+dest_files=["res://.godot/imported/109 Base.mp3-b17866686044c63918d5b7069f2f7acd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

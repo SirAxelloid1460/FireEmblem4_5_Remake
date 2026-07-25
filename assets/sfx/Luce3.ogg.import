@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dvhk0g2odb4la"
-path="res://.godot/imported/Luce3.ogg-f639d13be19a63093ba8b8c044110d97.oggvorbisstr"
+path="res://.godot/imported/Luce3.ogg-81199e6d07d9f5893c3fc333aeb65474.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Luce3.ogg"
-dest_files=["res://.godot/imported/Luce3.ogg-f639d13be19a63093ba8b8c044110d97.oggvorbisstr"]
+source_file="res://assets/sfx/Luce3.ogg"
+dest_files=["res://.godot/imported/Luce3.ogg-81199e6d07d9f5893c3fc333aeb65474.oggvorbisstr"]
 
 [params]
 

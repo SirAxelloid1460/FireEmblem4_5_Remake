@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://i60ws4xmmhpc"
+path="res://.godot/imported/315 - Decision 3.mp3-a6187ce84686244107667bcd69779c21.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/315 - Decision 3.mp3"
+dest_files=["res://.godot/imported/315 - Decision 3.mp3-a6187ce84686244107667bcd69779c21.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

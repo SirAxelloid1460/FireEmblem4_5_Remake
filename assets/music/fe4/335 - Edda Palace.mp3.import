@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://buqg7iewx65gj"
+path="res://.godot/imported/335 - Edda Palace.mp3-072e2716983db4ae5673b0dd63f8e2c0.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/335 - Edda Palace.mp3"
+dest_files=["res://.godot/imported/335 - Edda Palace.mp3-072e2716983db4ae5673b0dd63f8e2c0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

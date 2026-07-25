@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cjpa73e7fbuoa"
-path="res://.godot/imported/Battle Cry.ogg-921cd54bdd900d2dd23c11a391b1e7d1.oggvorbisstr"
+path="res://.godot/imported/Battle Cry.ogg-aa9457a394452be28ac6d2cfc0fe401a.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Battle Cry.ogg"
-dest_files=["res://.godot/imported/Battle Cry.ogg-921cd54bdd900d2dd23c11a391b1e7d1.oggvorbisstr"]
+source_file="res://assets/sfx/Battle Cry.ogg"
+dest_files=["res://.godot/imported/Battle Cry.ogg-aa9457a394452be28ac6d2cfc0fe401a.oggvorbisstr"]
 
 [params]
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgcehtt21km0p"
+path="res://.godot/imported/202 Victory minor.mp3-3554d8530ae7ad9183a58569e9cef23e.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/202 Victory minor.mp3"
+dest_files=["res://.godot/imported/202 Victory minor.mp3-3554d8530ae7ad9183a58569e9cef23e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

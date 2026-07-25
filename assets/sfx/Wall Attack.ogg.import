@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b27ocx6gggod4"
-path="res://.godot/imported/Wall Attack.ogg-744052b33030c9bcbe0458ef86baf3c9.oggvorbisstr"
+path="res://.godot/imported/Wall Attack.ogg-f2098b787c4abd4627d9293467953a53.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Wall Attack.ogg"
-dest_files=["res://.godot/imported/Wall Attack.ogg-744052b33030c9bcbe0458ef86baf3c9.oggvorbisstr"]
+source_file="res://assets/sfx/Wall Attack.ogg"
+dest_files=["res://.godot/imported/Wall Attack.ogg-f2098b787c4abd4627d9293467953a53.oggvorbisstr"]
 
 [params]
 

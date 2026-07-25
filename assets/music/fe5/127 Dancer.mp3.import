@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cna746csf05ei"
+path="res://.godot/imported/127 Dancer.mp3-0572d47829482101ea0369940280a8cb.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/127 Dancer.mp3"
+dest_files=["res://.godot/imported/127 Dancer.mp3-0572d47829482101ea0369940280a8cb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

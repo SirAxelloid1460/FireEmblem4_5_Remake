@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dkircr6a7h5or"
+path="res://.godot/imported/306 - Lover 1.mp3-9ea20eb8ae4dceb94c4897a2217641cb.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/306 - Lover 1.mp3"
+dest_files=["res://.godot/imported/306 - Lover 1.mp3-9ea20eb8ae4dceb94c4897a2217641cb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

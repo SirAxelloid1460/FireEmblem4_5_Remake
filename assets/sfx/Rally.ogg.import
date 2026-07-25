@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://brmjfk5bpl27h"
-path="res://.godot/imported/Rally.ogg-a770d479ba15be4ceb1de5fa1cf85e6e.oggvorbisstr"
+path="res://.godot/imported/Rally.ogg-ba853ae198329d7d323ed16e77c2f0e4.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Rally.ogg"
-dest_files=["res://.godot/imported/Rally.ogg-a770d479ba15be4ceb1de5fa1cf85e6e.oggvorbisstr"]
+source_file="res://assets/sfx/Rally.ogg"
+dest_files=["res://.godot/imported/Rally.ogg-ba853ae198329d7d323ed16e77c2f0e4.oggvorbisstr"]
 
 [params]
 

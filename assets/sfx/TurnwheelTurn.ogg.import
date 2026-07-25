@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://begoyth62tscs"
-path="res://.godot/imported/TurnwheelTurn.ogg-6a0274773aec07f5d1d40ad00a7712c0.oggvorbisstr"
+path="res://.godot/imported/TurnwheelTurn.ogg-d14ea5fcec30ccef49a2a30121693e3e.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/TurnwheelTurn.ogg"
-dest_files=["res://.godot/imported/TurnwheelTurn.ogg-6a0274773aec07f5d1d40ad00a7712c0.oggvorbisstr"]
+source_file="res://assets/sfx/TurnwheelTurn.ogg"
+dest_files=["res://.godot/imported/TurnwheelTurn.ogg-d14ea5fcec30ccef49a2a30121693e3e.oggvorbisstr"]
 
 [params]
 

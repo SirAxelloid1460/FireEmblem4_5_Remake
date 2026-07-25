@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cqrrp4avthb4i"
-path="res://.godot/imported/ShadowshotHit.ogg-6a019d328a4c670a6e54867202d64ec5.oggvorbisstr"
+path="res://.godot/imported/ShadowshotHit.ogg-66411b9b7830a9f1620a1b1e9b9e5234.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/ShadowshotHit.ogg"
-dest_files=["res://.godot/imported/ShadowshotHit.ogg-6a019d328a4c670a6e54867202d64ec5.oggvorbisstr"]
+source_file="res://assets/sfx/ShadowshotHit.ogg"
+dest_files=["res://.godot/imported/ShadowshotHit.ogg-66411b9b7830a9f1620a1b1e9b9e5234.oggvorbisstr"]
 
 [params]
 

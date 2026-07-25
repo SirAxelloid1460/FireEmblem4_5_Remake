@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://yr8c0tt36m47"
+path="res://.godot/imported/117 - Chapter 7 (Crossing the Desert).mp3-d4bde3aa24c42f1930f8e1c411e840c3.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/117 - Chapter 7 (Crossing the Desert).mp3"
+dest_files=["res://.godot/imported/117 - Chapter 7 (Crossing the Desert).mp3-d4bde3aa24c42f1930f8e1c411e840c3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

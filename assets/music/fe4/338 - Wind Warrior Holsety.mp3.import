@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bk6qbh5ctrl1v"
+path="res://.godot/imported/338 - Wind Warrior Holsety.mp3-2b127f995924d676f8d0d0739b1e0d24.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/338 - Wind Warrior Holsety.mp3"
+dest_files=["res://.godot/imported/338 - Wind Warrior Holsety.mp3-2b127f995924d676f8d0d0739b1e0d24.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

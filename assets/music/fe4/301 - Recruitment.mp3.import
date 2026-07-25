@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ciqgmibfn1x8p"
+path="res://.godot/imported/301 - Recruitment.mp3-10bd9ca38503afc76c20c0d2e515ae90.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/301 - Recruitment.mp3"
+dest_files=["res://.godot/imported/301 - Recruitment.mp3-10bd9ca38503afc76c20c0d2e515ae90.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

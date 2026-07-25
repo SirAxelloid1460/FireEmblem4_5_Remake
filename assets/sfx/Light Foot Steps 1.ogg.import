@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://kahnye2u7ak0"
-path="res://.godot/imported/Light Foot Steps 1.ogg-be0372d6a90498644101e3f10ad56e13.oggvorbisstr"
+path="res://.godot/imported/Light Foot Steps 1.ogg-e1c13fa814bfa38653fed6081cf59e1f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Light Foot Steps 1.ogg"
-dest_files=["res://.godot/imported/Light Foot Steps 1.ogg-be0372d6a90498644101e3f10ad56e13.oggvorbisstr"]
+source_file="res://assets/sfx/Light Foot Steps 1.ogg"
+dest_files=["res://.godot/imported/Light Foot Steps 1.ogg-e1c13fa814bfa38653fed6081cf59e1f.oggvorbisstr"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://boaebfrsscac4"
-path="res://.godot/imported/DemonSurge.ogg-908ef8238b7f933233c97105d283dd4c.oggvorbisstr"
+path="res://.godot/imported/DemonSurge.ogg-bc0e109229551ae88ecd1f5993314271.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/DemonSurge.ogg"
-dest_files=["res://.godot/imported/DemonSurge.ogg-908ef8238b7f933233c97105d283dd4c.oggvorbisstr"]
+source_file="res://assets/sfx/DemonSurge.ogg"
+dest_files=["res://.godot/imported/DemonSurge.ogg-bc0e109229551ae88ecd1f5993314271.oggvorbisstr"]
 
 [params]
 

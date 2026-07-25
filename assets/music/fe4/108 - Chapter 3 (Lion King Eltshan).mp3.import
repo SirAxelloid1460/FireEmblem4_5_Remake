@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://34qp2xaqw4vk"
+path="res://.godot/imported/108 - Chapter 3 (Lion King Eltshan).mp3-aea7747eff531e58685892d82d478bb4.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/108 - Chapter 3 (Lion King Eltshan).mp3"
+dest_files=["res://.godot/imported/108 - Chapter 3 (Lion King Eltshan).mp3-aea7747eff531e58685892d82d478bb4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

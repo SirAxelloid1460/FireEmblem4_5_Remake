@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://u1netc1jtc7m"
-path="res://.godot/imported/DruidCrit.ogg-96c702bc9b8f2d61c756421d923fab43.oggvorbisstr"
+path="res://.godot/imported/DruidCrit.ogg-1443e7cea5af2f09bbe913e78980eb8a.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/DruidCrit.ogg"
-dest_files=["res://.godot/imported/DruidCrit.ogg-96c702bc9b8f2d61c756421d923fab43.oggvorbisstr"]
+source_file="res://assets/sfx/DruidCrit.ogg"
+dest_files=["res://.godot/imported/DruidCrit.ogg-1443e7cea5af2f09bbe913e78980eb8a.oggvorbisstr"]
 
 [params]
 

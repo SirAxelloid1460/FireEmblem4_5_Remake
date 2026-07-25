@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://guk8y0nu6tce"
-path="res://.godot/imported/Hammerne.ogg-f51b0c19b39a89fe8d9e9e789ea28333.oggvorbisstr"
+path="res://.godot/imported/Hammerne.ogg-c4246e8b1a29ecdddb62fdc2658a37e9.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Hammerne.ogg"
-dest_files=["res://.godot/imported/Hammerne.ogg-f51b0c19b39a89fe8d9e9e789ea28333.oggvorbisstr"]
+source_file="res://assets/sfx/Hammerne.ogg"
+dest_files=["res://.godot/imported/Hammerne.ogg-c4246e8b1a29ecdddb62fdc2658a37e9.oggvorbisstr"]
 
 [params]
 

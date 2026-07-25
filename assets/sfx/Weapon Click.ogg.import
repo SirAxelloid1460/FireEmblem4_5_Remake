@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bds63onryydkf"
-path="res://.godot/imported/Weapon Click.ogg-db5634698f4a256bea084882e191000b.oggvorbisstr"
+path="res://.godot/imported/Weapon Click.ogg-9f9a480ccd6bbb997d5e99e33606cda7.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Weapon Click.ogg"
-dest_files=["res://.godot/imported/Weapon Click.ogg-db5634698f4a256bea084882e191000b.oggvorbisstr"]
+source_file="res://assets/sfx/Weapon Click.ogg"
+dest_files=["res://.godot/imported/Weapon Click.ogg-9f9a480ccd6bbb997d5e99e33606cda7.oggvorbisstr"]
 
 [params]
 

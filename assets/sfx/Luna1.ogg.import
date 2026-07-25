@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://r2pnu6krgxa1"
-path="res://.godot/imported/Luna1.ogg-22c7741258b7d41672e3ab5773ea8a87.oggvorbisstr"
+path="res://.godot/imported/Luna1.ogg-35e6c5500daf55de2711bacfcb6a965b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Luna1.ogg"
-dest_files=["res://.godot/imported/Luna1.ogg-22c7741258b7d41672e3ab5773ea8a87.oggvorbisstr"]
+source_file="res://assets/sfx/Luna1.ogg"
+dest_files=["res://.godot/imported/Luna1.ogg-35e6c5500daf55de2711bacfcb6a965b.oggvorbisstr"]
 
 [params]
 

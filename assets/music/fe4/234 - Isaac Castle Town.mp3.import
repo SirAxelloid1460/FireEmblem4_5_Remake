@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://50r1xyusdf3y"
+path="res://.godot/imported/234 - Isaac Castle Town.mp3-f3a53d985494548356ad881abaa47dee.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/234 - Isaac Castle Town.mp3"
+dest_files=["res://.godot/imported/234 - Isaac Castle Town.mp3-f3a53d985494548356ad881abaa47dee.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

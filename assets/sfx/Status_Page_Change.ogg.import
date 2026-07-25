@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bbqyxlv0totor"
-path="res://.godot/imported/Status_Page_Change.ogg-d5645ff68a5e2098a4f9fb69e073eed5.oggvorbisstr"
+path="res://.godot/imported/Status_Page_Change.ogg-e0287558666d2d70536e7dd5ce2638cb.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Status_Page_Change.ogg"
-dest_files=["res://.godot/imported/Status_Page_Change.ogg-d5645ff68a5e2098a4f9fb69e073eed5.oggvorbisstr"]
+source_file="res://assets/sfx/Status_Page_Change.ogg"
+dest_files=["res://.godot/imported/Status_Page_Change.ogg-e0287558666d2d70536e7dd5ce2638cb.oggvorbisstr"]
 
 [params]
 

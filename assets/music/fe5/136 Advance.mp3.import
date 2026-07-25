@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1nfbnddpes0w"
+path="res://.godot/imported/136 Advance.mp3-c428c6a2667dc118e3372c28cc89fada.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/136 Advance.mp3"
+dest_files=["res://.godot/imported/136 Advance.mp3-c428c6a2667dc118e3372c28cc89fada.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

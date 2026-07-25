@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bxe1xksrhxpk4"
-path="res://.godot/imported/Aircalibur.ogg-8176d11627a9e1bc599ce8cbf71c20b8.oggvorbisstr"
+path="res://.godot/imported/Aircalibur.ogg-613a1f6e21d4b0c3cceea7b73060591d.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Aircalibur.ogg"
-dest_files=["res://.godot/imported/Aircalibur.ogg-8176d11627a9e1bc599ce8cbf71c20b8.oggvorbisstr"]
+source_file="res://assets/sfx/Aircalibur.ogg"
+dest_files=["res://.godot/imported/Aircalibur.ogg-613a1f6e21d4b0c3cceea7b73060591d.oggvorbisstr"]
 
 [params]
 

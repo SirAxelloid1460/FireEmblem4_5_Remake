@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ghvs0yinbkrv"
-path="res://.godot/imported/DemonLightHit.ogg-abab8673b777ec737c463814862fcd83.oggvorbisstr"
+path="res://.godot/imported/DemonLightHit.ogg-75c8106e2b3d4351111e15db7e0589cd.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/DemonLightHit.ogg"
-dest_files=["res://.godot/imported/DemonLightHit.ogg-abab8673b777ec737c463814862fcd83.oggvorbisstr"]
+source_file="res://assets/sfx/DemonLightHit.ogg"
+dest_files=["res://.godot/imported/DemonLightHit.ogg-75c8106e2b3d4351111e15db7e0589cd.oggvorbisstr"]
 
 [params]
 

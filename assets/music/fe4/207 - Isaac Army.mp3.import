@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cof3a6ewxx5vi"
+path="res://.godot/imported/207 - Isaac Army.mp3-74c61c7f4052cefd9ae9b4155b02353f.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/207 - Isaac Army.mp3"
+dest_files=["res://.godot/imported/207 - Isaac Army.mp3-74c61c7f4052cefd9ae9b4155b02353f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bt00g2wjkik78"
-path="res://.godot/imported/SageRune.ogg-3d2f7cc0efbd07aafab09846c3d99c40.oggvorbisstr"
+path="res://.godot/imported/SageRune.ogg-be041e2b00d1a9e808497a15606fa5e1.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/SageRune.ogg"
-dest_files=["res://.godot/imported/SageRune.ogg-3d2f7cc0efbd07aafab09846c3d99c40.oggvorbisstr"]
+source_file="res://assets/sfx/SageRune.ogg"
+dest_files=["res://.godot/imported/SageRune.ogg-be041e2b00d1a9e808497a15606fa5e1.oggvorbisstr"]
 
 [params]
 

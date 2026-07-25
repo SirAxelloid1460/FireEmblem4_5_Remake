@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://pl474lqmkytc"
-path="res://.godot/imported/CombatDeath.ogg-ef28ad722b2d3df9b4a2200910a52acf.oggvorbisstr"
+path="res://.godot/imported/CombatDeath.ogg-52d3b56a1fd343b7b71ae7790c7d5295.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/CombatDeath.ogg"
-dest_files=["res://.godot/imported/CombatDeath.ogg-ef28ad722b2d3df9b4a2200910a52acf.oggvorbisstr"]
+source_file="res://assets/sfx/CombatDeath.ogg"
+dest_files=["res://.godot/imported/CombatDeath.ogg-52d3b56a1fd343b7b71ae7790c7d5295.oggvorbisstr"]
 
 [params]
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://r6gqeb2l8ww"
+path="res://.godot/imported/304 - Dew and Patty.mp3-a724a6dd73775750c90615ddaf1b32fd.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/304 - Dew and Patty.mp3"
+dest_files=["res://.godot/imported/304 - Dew and Patty.mp3-a724a6dd73775750c90615ddaf1b32fd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

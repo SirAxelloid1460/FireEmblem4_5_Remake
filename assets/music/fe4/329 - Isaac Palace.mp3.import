@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dtpfk71cgwxq3"
+path="res://.godot/imported/329 - Isaac Palace.mp3-a70c3903c292257d583b099434b4c34f.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/329 - Isaac Palace.mp3"
+dest_files=["res://.godot/imported/329 - Isaac Palace.mp3-a70c3903c292257d583b099434b4c34f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

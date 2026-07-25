@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://5kid2q43i8qr"
-path="res://.godot/imported/Experience Gain Old.ogg-c7688b08bc277d069444a4a84983aae0.oggvorbisstr"
+path="res://.godot/imported/Experience Gain Old.ogg-f984b4d748e248c37180d40fe8984658.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Experience Gain Old.ogg"
-dest_files=["res://.godot/imported/Experience Gain Old.ogg-c7688b08bc277d069444a4a84983aae0.oggvorbisstr"]
+source_file="res://assets/sfx/Experience Gain Old.ogg"
+dest_files=["res://.godot/imported/Experience Gain Old.ogg-f984b4d748e248c37180d40fe8984658.oggvorbisstr"]
 
 [params]
 

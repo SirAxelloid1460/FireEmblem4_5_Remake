@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bn0esttw6iuku"
+path="res://.godot/imported/201 - Victory is Near.mp3-31766cd0a10a52a961b9387f0a1b3ef8.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/201 - Victory is Near.mp3"
+dest_files=["res://.godot/imported/201 - Victory is Near.mp3-31766cd0a10a52a961b9387f0a1b3ef8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgtqn2bvpuw0c"
+path="res://.godot/imported/241 - A New Advance.mp3-508ec7f1deb82c6faf8a55d507e9fd34.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/241 - A New Advance.mp3"
+dest_files=["res://.godot/imported/241 - A New Advance.mp3-508ec7f1deb82c6faf8a55d507e9fd34.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

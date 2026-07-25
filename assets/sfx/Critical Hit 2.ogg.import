@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ddxgd46xou234"
-path="res://.godot/imported/Critical Hit 2.ogg-44c0f206f5c0720b7071bd33a044738b.oggvorbisstr"
+path="res://.godot/imported/Critical Hit 2.ogg-550938dafd497bf1c02a2811f8aacc38.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Critical Hit 2.ogg"
-dest_files=["res://.godot/imported/Critical Hit 2.ogg-44c0f206f5c0720b7071bd33a044738b.oggvorbisstr"]
+source_file="res://assets/sfx/Critical Hit 2.ogg"
+dest_files=["res://.godot/imported/Critical Hit 2.ogg-550938dafd497bf1c02a2811f8aacc38.oggvorbisstr"]
 
 [params]
 

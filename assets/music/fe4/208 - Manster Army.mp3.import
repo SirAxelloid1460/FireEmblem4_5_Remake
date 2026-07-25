@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ddc3rcwc8o5g2"
+path="res://.godot/imported/208 - Manster Army.mp3-77c8e3b5cb9507a594aa02f8f30bfe1a.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/208 - Manster Army.mp3"
+dest_files=["res://.godot/imported/208 - Manster Army.mp3-77c8e3b5cb9507a594aa02f8f30bfe1a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

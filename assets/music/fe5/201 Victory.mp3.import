@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://n5uem2ndpjm2"
+path="res://.godot/imported/201 Victory.mp3-9f2534c49b9ae15741b5ecbcc1f7b6c3.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/201 Victory.mp3"
+dest_files=["res://.godot/imported/201 Victory.mp3-9f2534c49b9ae15741b5ecbcc1f7b6c3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

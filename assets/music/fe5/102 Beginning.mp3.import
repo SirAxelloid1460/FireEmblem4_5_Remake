@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://coy5tkucoudr4"
+path="res://.godot/imported/102 Beginning.mp3-feb4ae5a185cf5249cd0c712a88058a9.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/102 Beginning.mp3"
+dest_files=["res://.godot/imported/102 Beginning.mp3-feb4ae5a185cf5249cd0c712a88058a9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

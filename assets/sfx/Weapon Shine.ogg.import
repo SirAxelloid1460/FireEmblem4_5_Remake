@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://8h36xsubeqj6"
-path="res://.godot/imported/Weapon Shine.ogg-34996f618409774819f01113de3705d0.oggvorbisstr"
+path="res://.godot/imported/Weapon Shine.ogg-1a0193c4dde995be7e94fee0e59ea120.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Weapon Shine.ogg"
-dest_files=["res://.godot/imported/Weapon Shine.ogg-34996f618409774819f01113de3705d0.oggvorbisstr"]
+source_file="res://assets/sfx/Weapon Shine.ogg"
+dest_files=["res://.godot/imported/Weapon Shine.ogg-1a0193c4dde995be7e94fee0e59ea120.oggvorbisstr"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dmv8dl6p5p1c7"
-path="res://.godot/imported/DebuffRecover.ogg-c05f927d02318bb05c365da121a6ce72.oggvorbisstr"
+path="res://.godot/imported/DebuffRecover.ogg-8878441f38e8a391a250c2b0cb115fd5.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/DebuffRecover.ogg"
-dest_files=["res://.godot/imported/DebuffRecover.ogg-c05f927d02318bb05c365da121a6ce72.oggvorbisstr"]
+source_file="res://assets/sfx/DebuffRecover.ogg"
+dest_files=["res://.godot/imported/DebuffRecover.ogg-8878441f38e8a391a250c2b0cb115fd5.oggvorbisstr"]
 
 [params]
 

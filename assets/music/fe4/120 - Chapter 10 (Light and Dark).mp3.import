@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c25e1ayhl4u3k"
+path="res://.godot/imported/120 - Chapter 10 (Light and Dark).mp3-16d43c9e4b6fe7d8d0d7b7b5b7e3b02e.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/120 - Chapter 10 (Light and Dark).mp3"
+dest_files=["res://.godot/imported/120 - Chapter 10 (Light and Dark).mp3-16d43c9e4b6fe7d8d0d7b7b5b7e3b02e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

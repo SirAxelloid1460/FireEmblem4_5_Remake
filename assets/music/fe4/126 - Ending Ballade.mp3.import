@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://puooiwxxukvs"
+path="res://.godot/imported/126 - Ending Ballade.mp3-75ccb0084354371e8e24d6914fbd304e.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/126 - Ending Ballade.mp3"
+dest_files=["res://.godot/imported/126 - Ending Ballade.mp3-75ccb0084354371e8e24d6914fbd304e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

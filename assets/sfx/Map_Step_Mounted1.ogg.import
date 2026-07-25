@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cuvnl5tcy8u7c"
-path="res://.godot/imported/Map_Step_Mounted1.ogg-3df46e0cb84d18686bb2afcd85fa495a.oggvorbisstr"
+path="res://.godot/imported/Map_Step_Mounted1.ogg-51060b8f981d009acc0a786337b9a58b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Map_Step_Mounted1.ogg"
-dest_files=["res://.godot/imported/Map_Step_Mounted1.ogg-3df46e0cb84d18686bb2afcd85fa495a.oggvorbisstr"]
+source_file="res://assets/sfx/Map_Step_Mounted1.ogg"
+dest_files=["res://.godot/imported/Map_Step_Mounted1.ogg-51060b8f981d009acc0a786337b9a58b.oggvorbisstr"]
 
 [params]
 

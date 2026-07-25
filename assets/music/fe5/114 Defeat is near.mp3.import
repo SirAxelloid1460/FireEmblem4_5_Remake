@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgjalk6uoahwj"
+path="res://.godot/imported/114 Defeat is near.mp3-b686362d1717b1148466a87b2d515241.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/114 Defeat is near.mp3"
+dest_files=["res://.godot/imported/114 Defeat is near.mp3-b686362d1717b1148466a87b2d515241.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

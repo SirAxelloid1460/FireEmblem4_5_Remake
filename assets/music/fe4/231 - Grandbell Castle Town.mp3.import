@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cig8cve55aw1t"
+path="res://.godot/imported/231 - Grandbell Castle Town.mp3-06a254a2c6122104ecba4235df75603e.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/231 - Grandbell Castle Town.mp3"
+dest_files=["res://.godot/imported/231 - Grandbell Castle Town.mp3-06a254a2c6122104ecba4235df75603e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

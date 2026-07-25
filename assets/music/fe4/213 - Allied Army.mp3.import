@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://fpm12yf1y0ph"
+path="res://.godot/imported/213 - Allied Army.mp3-0f9fdb3b7f94a6b59de4a77e5bfa24bb.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/213 - Allied Army.mp3"
+dest_files=["res://.godot/imported/213 - Allied Army.mp3-0f9fdb3b7f94a6b59de4a77e5bfa24bb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

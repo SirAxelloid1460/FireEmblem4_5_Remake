@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://drxgpecbeywhk"
-path="res://.godot/imported/SilenceCrack.ogg-dab3194f45bcffb5c0206aaea2de6e19.oggvorbisstr"
+path="res://.godot/imported/SilenceCrack.ogg-3fedfd78b1f96762ff8d1a34aee846ad.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/SilenceCrack.ogg"
-dest_files=["res://.godot/imported/SilenceCrack.ogg-dab3194f45bcffb5c0206aaea2de6e19.oggvorbisstr"]
+source_file="res://assets/sfx/SilenceCrack.ogg"
+dest_files=["res://.godot/imported/SilenceCrack.ogg-3fedfd78b1f96762ff8d1a34aee846ad.oggvorbisstr"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://yuori373q83p"
-path="res://.godot/imported/Lightning1.ogg-30ee30aff593efced82abce605624ef8.oggvorbisstr"
+path="res://.godot/imported/Lightning1.ogg-4660374a2aad48480098e2444f342f40.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Lightning1.ogg"
-dest_files=["res://.godot/imported/Lightning1.ogg-30ee30aff593efced82abce605624ef8.oggvorbisstr"]
+source_file="res://assets/sfx/Lightning1.ogg"
+dest_files=["res://.godot/imported/Lightning1.ogg-4660374a2aad48480098e2444f342f40.oggvorbisstr"]
 
 [params]
 

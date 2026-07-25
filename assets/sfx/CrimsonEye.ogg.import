@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cu4uli07bwrqi"
-path="res://.godot/imported/CrimsonEye.ogg-2106cdec62ac67fe01f8353f72cb9507.oggvorbisstr"
+path="res://.godot/imported/CrimsonEye.ogg-1a168bbb3ad97a8bf344885935c7c14c.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/CrimsonEye.ogg"
-dest_files=["res://.godot/imported/CrimsonEye.ogg-2106cdec62ac67fe01f8353f72cb9507.oggvorbisstr"]
+source_file="res://assets/sfx/CrimsonEye.ogg"
+dest_files=["res://.godot/imported/CrimsonEye.ogg-1a168bbb3ad97a8bf344885935c7c14c.oggvorbisstr"]
 
 [params]
 

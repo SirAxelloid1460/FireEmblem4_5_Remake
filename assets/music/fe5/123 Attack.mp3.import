@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cp82xpjb1c50j"
+path="res://.godot/imported/123 Attack.mp3-bffd01fa6adea7cf6ec2a1674d1bef5f.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/123 Attack.mp3"
+dest_files=["res://.godot/imported/123 Attack.mp3-bffd01fa6adea7cf6ec2a1674d1bef5f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

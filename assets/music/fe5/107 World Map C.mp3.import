@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cg0y5pownsnl7"
+path="res://.godot/imported/107 World Map C.mp3-9b959af2f801a5c76b1c1127e77f3baf.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/107 World Map C.mp3"
+dest_files=["res://.godot/imported/107 World Map C.mp3-9b959af2f801a5c76b1c1127e77f3baf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

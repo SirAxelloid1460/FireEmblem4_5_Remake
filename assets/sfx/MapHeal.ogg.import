@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://5wq1rmdwrbtv"
-path="res://.godot/imported/MapHeal.ogg-2b72e6b86ef33920c44b25cf23c0bb66.oggvorbisstr"
+path="res://.godot/imported/MapHeal.ogg-63771f764a4b7d51ee6276158666f387.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/MapHeal.ogg"
-dest_files=["res://.godot/imported/MapHeal.ogg-2b72e6b86ef33920c44b25cf23c0bb66.oggvorbisstr"]
+source_file="res://assets/sfx/MapHeal.ogg"
+dest_files=["res://.godot/imported/MapHeal.ogg-63771f764a4b7d51ee6276158666f387.oggvorbisstr"]
 
 [params]
 

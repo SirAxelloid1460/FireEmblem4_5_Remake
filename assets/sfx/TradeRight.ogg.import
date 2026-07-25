@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bx4ex322dy0hj"
-path="res://.godot/imported/TradeRight.ogg-9b2c3db209901c15893f343e04a1a06a.oggvorbisstr"
+path="res://.godot/imported/TradeRight.ogg-186813faad225c1c053e59e9ddee7208.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/TradeRight.ogg"
-dest_files=["res://.godot/imported/TradeRight.ogg-9b2c3db209901c15893f343e04a1a06a.oggvorbisstr"]
+source_file="res://assets/sfx/TradeRight.ogg"
+dest_files=["res://.godot/imported/TradeRight.ogg-186813faad225c1c053e59e9ddee7208.oggvorbisstr"]
 
 [params]
 

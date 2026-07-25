@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b85etkd3o54hh"
+path="res://.godot/imported/226 - Level Up!.mp3-953ed7c1cdbeeac85543bce374eeda6b.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe4/226 - Level Up!.mp3"
+dest_files=["res://.godot/imported/226 - Level Up!.mp3-953ed7c1cdbeeac85543bce374eeda6b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

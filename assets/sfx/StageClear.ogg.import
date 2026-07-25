@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bgigdcqgiw4di"
-path="res://.godot/imported/StageClear.ogg-5e9a19194e77aab07bac860c1ad6582d.oggvorbisstr"
+path="res://.godot/imported/StageClear.ogg-6c831521eaf41a390d2448c9ca5b1db2.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/StageClear.ogg"
-dest_files=["res://.godot/imported/StageClear.ogg-5e9a19194e77aab07bac860c1ad6582d.oggvorbisstr"]
+source_file="res://assets/sfx/StageClear.ogg"
+dest_files=["res://.godot/imported/StageClear.ogg-6c831521eaf41a390d2448c9ca5b1db2.oggvorbisstr"]
 
 [params]
 

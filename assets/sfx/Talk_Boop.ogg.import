@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://chcd75pwmcrne"
-path="res://.godot/imported/Talk_Boop.ogg-d97a7ad92ca3efb9c624c2a9de7d813b.oggvorbisstr"
+path="res://.godot/imported/Talk_Boop.ogg-37d6b81b768b533c3790f7cc538a1529.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Talk_Boop.ogg"
-dest_files=["res://.godot/imported/Talk_Boop.ogg-d97a7ad92ca3efb9c624c2a9de7d813b.oggvorbisstr"]
+source_file="res://assets/sfx/Talk_Boop.ogg"
+dest_files=["res://.godot/imported/Talk_Boop.ogg-37d6b81b768b533c3790f7cc538a1529.oggvorbisstr"]
 
 [params]
 

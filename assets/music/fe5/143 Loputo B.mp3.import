@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnmw5h35sif55"
+path="res://.godot/imported/143 Loputo B.mp3-595410cf45fbbc165e512bbb326f5f39.mp3str"
+
+[deps]
+
+source_file="res://assets/music/fe5/143 Loputo B.mp3"
+dest_files=["res://.godot/imported/143 Loputo B.mp3-595410cf45fbbc165e512bbb326f5f39.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ckgrf64qxih56"
-path="res://.godot/imported/Weapon Swing.ogg-f2f95884715f8ea83374baf777a9ad8e.oggvorbisstr"
+path="res://.godot/imported/Weapon Swing.ogg-fc61c4e5d3809b28ded4cbbd49723fed.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Weapon Swing.ogg"
-dest_files=["res://.godot/imported/Weapon Swing.ogg-f2f95884715f8ea83374baf777a9ad8e.oggvorbisstr"]
+source_file="res://assets/sfx/Weapon Swing.ogg"
+dest_files=["res://.godot/imported/Weapon Swing.ogg-fc61c4e5d3809b28ded4cbbd49723fed.oggvorbisstr"]
 
 [params]
 

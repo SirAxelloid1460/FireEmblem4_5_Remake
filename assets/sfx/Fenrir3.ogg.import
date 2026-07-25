@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cloed1cf7k0sp"
-path="res://.godot/imported/Fenrir3.ogg-c39ca6dcdc43cc81720a50d4961e6a38.oggvorbisstr"
+path="res://.godot/imported/Fenrir3.ogg-8120ec3088372d6f05f0f8a320aac49d.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/GBA/sfx/Fenrir3.ogg"
-dest_files=["res://.godot/imported/Fenrir3.ogg-c39ca6dcdc43cc81720a50d4961e6a38.oggvorbisstr"]
+source_file="res://assets/sfx/Fenrir3.ogg"
+dest_files=["res://.godot/imported/Fenrir3.ogg-8120ec3088372d6f05f0f8a320aac49d.oggvorbisstr"]
 
 [params]
 
