@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784964807
+::res://::1784968982
 default_bus_layout.tres::AudioBusLayout::-1::1784893479::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::5796228232867755098::1714553776::1784419739::1::::<><><>0<>0<>85d8504b263b0bda2244463b196f6b35<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1784389909::0::1::::<><><>0<>0<><>::
@@ -2236,7 +2236,7 @@ marker_interact.png::CompressedTexture2D::7029020101436880997::1784389914::17843
 marker_steal.png::CompressedTexture2D::3435762072264309862::1784389914::1784390475::1::::<><><>0<>0<>57ccbd5ef6447a3a6d9c95810c157ca0<>res://.godot/imported/marker_steal.png-2164c3acf4a936653c4867e6383685e1.ctex::
 marker_talk.png::CompressedTexture2D::2263735099670079106::1784389914::1784390475::1::::<><><>0<>0<>5af334cbd173c2b5836baf727bf50b25<>res://.godot/imported/marker_talk.png-a931a84143e7e33bfcdab9dc1513159b.ctex::
 marker_warning.png::CompressedTexture2D::8335221100271413922::1784389914::1784390475::1::::<><><>0<>0<>fa66cb9078089dc3208222ad4e6ccb68<>res://.godot/imported/marker_warning.png-abfb168f8ab781cc1d2e2100ae279dce.ctex::
-::res://assets/GBA/menus/::1784469161
+::res://assets/GBA/menus/::1784968948
 chapter_select_blue.png::CompressedTexture2D::3799479140596005484::1784389914::1784390475::1::::<><><>0<>0<>83eba1b4235f08a00d0aab359c4b935e<>res://.godot/imported/chapter_select_blue.png-42c00d245a73839b5b8440624876d65e.ctex::
 chapter_select_blue_flicker.png::CompressedTexture2D::8707443795568880730::1784389914::1784390475::1::::<><><>0<>0<>5c3566f2a080a29fbcdacc94ca015063<>res://.godot/imported/chapter_select_blue_flicker.png-4936b7e78a049f6cb5131ebf35083b99.ctex::
 chapter_select_blue_highlight.png::CompressedTexture2D::3506856499879247458::1784389914::1784390475::1::::<><><>0<>0<>ed7c613d5769fee70997f47c148b529b<>res://.godot/imported/chapter_select_blue_highlight.png-04365af66e11760edd5ef99dbbf5083f.ctex::
@@ -2299,7 +2299,7 @@ promotion_description.png::CompressedTexture2D::2233458882933805574::1784389914:
 purple_background.png::CompressedTexture2D::5956122340121024025::1784389914::1784390475::1::::<><><>0<>0<>17fe419c8dc495b3c0383d7eae51f97d<>res://.godot/imported/purple_background.png-ce91bc504949e6d4a71c16dc2cab71e8.ctex::
 rescue_window.png::CompressedTexture2D::7926985902697416565::1784389914::1784390476::1::::<><><>0<>0<>b56968a52f16828f0c16cde5ca3bc9a5<>res://.godot/imported/rescue_window.png-9ac5d95cb753d0a5a25715725cf455ca.ctex::
 sort_arrow.png::CompressedTexture2D::6298568740021478412::1784389914::1784390476::1::::<><><>0<>0<>0d330ec0c2e37acf90272652578ae1a7<>res://.godot/imported/sort_arrow.png-c1978d5c0996e93d00fe8b530a1e2f85.ctex::
-sound_player.png::CompressedTexture2D::91300049453171178::1784389914::1784390476::1::::<><><>0<>0<>01f4fde717f47ec420057ee0362c8049<>res://.godot/imported/sound_player.png-e00edfcd8244b7e45292b3692777f14f.ctex::
+sound_player.png::CompressedTexture2D::91300049453171178::1784967077::1784968948::1::::<><><>0<>0<>01f4fde717f47ec420057ee0362c8049<>res://.godot/imported/sound_player.png-e00edfcd8244b7e45292b3692777f14f.ctex::
 sound_room_volume.png::CompressedTexture2D::6949861547870564105::1784389914::1784390476::1::::<><><>0<>0<>ad199d83725666f69362791f243586c1<>res://.godot/imported/sound_room_volume.png-efae7cbed9f6d5187e8dd3e72c7cd11b.ctex::
 tile_info_destructible.png::CompressedTexture2D::1729985348406635635::1784389914::1784390476::1::::<><><>0<>0<>71d1786f4be88c6569c0f64604574e0b<>res://.godot/imported/tile_info_destructible.png-2b3f2ed86f669aa466cb9b2d3283c183.ctex::
 tile_info_destructible_opaque.png::CompressedTexture2D::7477362744706406855::1784389914::1784390475::1::::<><><>0<>0<>2d89a550e6abb88a4ca227afb9932298<>res://.godot/imported/tile_info_destructible_opaque.png-463685cd1f89dfc3b267fb57698c8603.ctex::
@@ -4082,7 +4082,7 @@ mode_select.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scr
 options_menu.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784964734
+::res://Scripts/::1784968962
 ActionMenu.gd::GDScript::6413271467111799318::1784583376::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784389909::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784389909::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
@@ -4146,7 +4146,7 @@ LevelData.gd::GDScript::802805939506090972::1784389909::0::1::::LevelData<>Resou
 LevelLoader.gd::GDScript::2900491532752613919::1784389909::0::1::::LevelLoader<>RefCounted<><>0<>0<><>::
 LevelUpScreen.gd::GDScript::2074851621102138785::1784389909::0::1::::LevelUpScreen<>Control<><>0<>0<><>::
 LocationMarker.gd::GDScript::1836486964086790272::1784389909::0::1::::LocationMarker<>Node2D<><>0<>0<><>::
-MainMenu.gd::GDScript::8175898352055706196::1784964734::0::1::::MainMenu<>Control<><>0<>0<><>::
+MainMenu.gd::GDScript::8175898352055706196::1784968962::0::1::::MainMenu<>Control<><>0<>0<><>::
 MapActions.gd::GDScript::3535448452538133979::1784389909::0::1::::MapActions<>RefCounted<><>0<>0<><>::
 MapBackground.gd::GDScript::3738451975226640230::1784389909::0::1::::MapBackground<>Node2D<><>0<>0<><>::
 ModeSelect.gd::GDScript::3174370287506302631::1784641641::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
@@ -4162,7 +4162,7 @@ SelectMenu.gd::GDScript::439202066668374422::1784918066::0::1::::SelectMenu<>Con
 SettingsBoot.gd::GDScript::4265931997446965623::1784900551::0::1::::<>Node<><>0<>0<><>::
 ShopPanel.gd::GDScript::473820464989183141::1784389909::0::1::::ShopPanel<>Panel<><>0<>0<><>::
 SkillData.gd::GDScript::7693736634377838352::1784389909::0::1::::SkillData<>Resource<><>0<>0<><>::
-SoundRoom.gd::GDScript::3311604537699361751::1784919138::0::1::::SoundRoom<>Control<><>0<>0<><>::
+SoundRoom.gd::GDScript::3311604537699361751::1784968962::0::1::::SoundRoom<>Control<><>0<>0<><>::
 SubstituteSystem.gd::GDScript::119895372994411184::1784817271::0::1::::SubstituteSystem<>RefCounted<><>0<>0<><>::
 SupportSystem.gd::GDScript::2046322873708120284::1784389909::0::1::::SupportSystem<>Node<><>0<>0<><>::
 TerrainSystem.gd::GDScript::79259312568237195::1784389909::0::1::::TerrainSystem<>RefCounted<><>0<>0<><>::
