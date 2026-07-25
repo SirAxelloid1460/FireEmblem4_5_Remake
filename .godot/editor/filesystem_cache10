@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784919167
+::res://::1784964807
 default_bus_layout.tres::AudioBusLayout::-1::1784893479::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::5796228232867755098::1714553776::1784419739::1::::<><><>0<>0<>85d8504b263b0bda2244463b196f6b35<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 README.md::TextFile::-1::1784389909::0::1::::<><><>0<>0<><>::
@@ -3053,7 +3053,7 @@ Translations FE45 - FE5CHAP1.es.translation::OptimizedTranslation::1984109186085
 Translations FE45 - FE5CHAP1.fr.translation::OptimizedTranslation::3857403708506720552::1784389913::0::1::::<><><>0<>0<><>::
 Translations FE45 - FE5CHAP1.ja.translation::OptimizedTranslation::1396422818418963801::1784389913::0::1::::<><><>0<>0<><>::
 ::res://assets/music/::1784918159
-::res://assets/music/fe4/::1784918172
+::res://assets/music/fe4/::1784919171
 101 - Beginning.mp3::AudioStreamMP3::5891474120775123798::1234207848::1784919171::1::::<><><>0<>0<>d7d14643a887d4a5bc1a7a2b8c8c4d0a<>res://.godot/imported/101 - Beginning.mp3-84de1e2f560324786e079bb7d16c151f.mp3str::
 102 - Fire Emblem Theme.mp3::AudioStreamMP3::4943972275279508984::1234207862::1784919171::1::::<><><>0<>0<>f4342cb5c237d5fbc436b016f9b241e6<>res://.godot/imported/102 - Fire Emblem Theme.mp3-8b850db4fc4de88defefd1a6255c4b24.mp3str::
 103 - Jugdral Chronology.mp3::AudioStreamMP3::1520454764092067767::1234207872::1784919171::1::::<><><>0<>0<>fd7a2563a3efbb3110e3040a0c7a426f<>res://.godot/imported/103 - Jugdral Chronology.mp3-89ec37634ad63830b97cc6b727f51c0b.mp3str::
@@ -3168,7 +3168,7 @@ Translations FE45 - FE5CHAP1.ja.translation::OptimizedTranslation::1396422818418
 337 - Chalphy Palace.mp3::AudioStreamMP3::78642554493047255::1234374916::1784919170::1::::<><><>0<>0<>c9602e831e9fb56d3004a9ccb9a18a79<>res://.godot/imported/337 - Chalphy Palace.mp3-2b2ec4273ae77895714fea6a73b89f97.mp3str::
 338 - Wind Warrior Holsety.mp3::AudioStreamMP3::3153278502251972781::1234378030::1784919170::1::::<><><>0<>0<>49f0c235862e32ea8e90c0d08273dc3c<>res://.godot/imported/338 - Wind Warrior Holsety.mp3-2b127f995924d676f8d0d0739b1e0d24.mp3str::
 339 - Part 1 Map Melody.mp3::AudioStreamMP3::8391513908464977564::1234210318::1784919170::1::::<><><>0<>0<>6f3d6cbe8b56531b85234ae20f1cf09c<>res://.godot/imported/339 - Part 1 Map Melody.mp3-affe49b5b9ef4fc358d3a6e4cfc84eb6.mp3str::
-::res://assets/music/fe5/::1784918189
+::res://assets/music/fe5/::1784919171
 101 Blow'in in the wind.mp3::AudioStreamMP3::3097823470850035432::1265393104::1784919170::1::::<><><>0<>0<>487715b90263c0c9cabe5d54dc52a11b<>res://.godot/imported/101 Blow'in in the wind.mp3-46d3c368cff108278b94a3f8f431c5fa.mp3str::
 102 Beginning.mp3::AudioStreamMP3::5806886240523236523::1265393320::1784919170::1::::<><><>0<>0<>0a4ba3c8997c56b30496f99fa8a5eedf<>res://.godot/imported/102 Beginning.mp3-feb4ae5a185cf5249cd0c712a88058a9.mp3str::
 103 Fire Emblem theme.mp3::AudioStreamMP3::3943893831871827078::1265393348::1784919170::1::::<><><>0<>0<>65d63c68f3c472a9443a8a4adeacfd5f<>res://.godot/imported/103 Fire Emblem theme.mp3-bff7ed47fbb64feaab380bbc06ff3e29.mp3str::
@@ -3485,7 +3485,7 @@ Warrior-stand.png::CompressedTexture2D::4845623704031381155::1784413852::1784419
 ::res://assets/Original/fe5/tilesets/::1784393727
 ::res://assets/Original/fe5/title/::1784393727
 ::res://assets/Original/fe5/videos/::1784393727
-::res://assets/sfx/::1784390474
+::res://assets/sfx/::1784919182
 Aircalibur.ogg::AudioStreamOggVorbis::4010641867278484853::1784389920::1784919182::1::::<><><>0<>0<>9e7fd2064084673fabafa74ffd6294f0<>res://.godot/imported/Aircalibur.ogg-613a1f6e21d4b0c3cceea7b73060591d.oggvorbisstr::
 Apocalypse1.ogg::AudioStreamOggVorbis::5696042022580811627::1784389920::1784919182::1::::<><><>0<>0<>f3ea600af0f0a674c05d7b35f74f527a<>res://.godot/imported/Apocalypse1.ogg-998e3a04f260416065555c08eb31c1b6.oggvorbisstr::
 Apocalypse2.ogg::AudioStreamOggVorbis::2255566990840711984::1784389920::1784919182::1::::<><><>0<>0<>0284144adf2ccb36ca1363352ff1943b<>res://.godot/imported/Apocalypse2.ogg-ccad5b38a319e5f22f684072c368c281.oggvorbisstr::
@@ -4082,7 +4082,7 @@ mode_select.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scr
 options_menu.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/OptionsMenu.gd
 promotion_screen.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/PromotionScreen.gd
 world_map.tscn::PackedScene::-1::1784389909::0::1::::<><><>0<>0<><>::res://Scripts/WorldMap.gd<>res://Scripts/DialogueBox.gd
-::res://Scripts/::1784919138
+::res://Scripts/::1784964734
 ActionMenu.gd::GDScript::6413271467111799318::1784583376::0::1::::ActionMenu<>Control<><>0<>0<><>::
 AIController.gd::GDScript::2132801386937792507::1784389909::0::1::::AIController<>RefCounted<><>0<>0<><>::
 AnimatedTitleBackground.gd::GDScript::8347244243898519168::1784389909::0::1::::AnimatedTitleBackground<>Sprite2D<><>0<>0<><>::
@@ -4146,7 +4146,7 @@ LevelData.gd::GDScript::802805939506090972::1784389909::0::1::::LevelData<>Resou
 LevelLoader.gd::GDScript::2900491532752613919::1784389909::0::1::::LevelLoader<>RefCounted<><>0<>0<><>::
 LevelUpScreen.gd::GDScript::2074851621102138785::1784389909::0::1::::LevelUpScreen<>Control<><>0<>0<><>::
 LocationMarker.gd::GDScript::1836486964086790272::1784389909::0::1::::LocationMarker<>Node2D<><>0<>0<><>::
-MainMenu.gd::GDScript::8175898352055706196::1784919138::0::1::::MainMenu<>Control<><>0<>0<><>::
+MainMenu.gd::GDScript::8175898352055706196::1784964734::0::1::::MainMenu<>Control<><>0<>0<><>::
 MapActions.gd::GDScript::3535448452538133979::1784389909::0::1::::MapActions<>RefCounted<><>0<>0<><>::
 MapBackground.gd::GDScript::3738451975226640230::1784389909::0::1::::MapBackground<>Node2D<><>0<>0<><>::
 ModeSelect.gd::GDScript::3174370287506302631::1784641641::0::1::::ModeSelect<>SelectMenu<><>0<>0<><>::
