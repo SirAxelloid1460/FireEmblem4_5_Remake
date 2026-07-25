@@ -3,9 +3,10 @@
 # SOUND ROOM — reproductor de la banda sonora, estilo FE (GBA).
 # ============================================================
 # Pantalla autocontenida (construida por código). Layout inspirado en la Sound
-# Room de FE8: barra de título con el NOMBRE de la pista, panel de controles a la
-# izquierda (Play/Stop/Random) + preview, y un GRID NUMERADO de pistas a la
-# derecha con cursor-mano. PESTAÑAS FE4/FE5 para separar la música de cada juego
+# Room de FE8: barra de título con el NOMBRE de la pista, a la izquierda el asset
+# "reproductor" (sound_player.png) con leyenda de controles sobre su cuerpo BLANCO
+# y un VISUALIZADOR de onda pixelado (reactivo al audio) sobre su PANTALLA AZUL, y
+# un GRID NUMERADO de pistas a la derecha con cursor-mano. PESTAÑAS FE4/FE5
 # (se leen de res://assets/music/fe4 y .../fe5, re-enraizadas por AssetSet).
 #
 # Controles:
@@ -49,6 +50,21 @@ const COLOR_TEXT     := Color(0.88, 0.90, 0.94, 1.0)
 const COLOR_DIM      := Color(0.55, 0.58, 0.66, 1.0)
 const COLOR_OUTLINE  := Color(0.05, 0.05, 0.10, 1.0)
 
+# Panel izquierdo = asset "reproductor". Regiones en px del PNG (73×112):
+#   pantalla azul (onda) arriba; cuerpo blanco (controles) debajo.
+const SP_IMG   := "res://assets/menus/sound_player.png"
+const SP_SCALE := 4
+const SP_BLUE  := Rect2(2, 4, 65, 16)      # pantalla (visualizador de onda)
+const SP_WHITE := Rect2(4, 25, 63, 74)     # cuerpo (leyenda de controles)
+# Texto sobre fondo BLANCO del asset → colores OSCUROS.
+const COLOR_KEY_DARK := Color(0.55, 0.40, 0.08, 1.0)   # tecla (dorado oscuro)
+const COLOR_ACT_DARK := Color(0.16, 0.16, 0.22, 1.0)   # acción (casi negro)
+# Visualizador de onda pixelado (reacciona al audio del bus Music).
+const WAVE_BARS  := 26
+const WAVE_COLOR := Color(0.34, 0.42, 0.86, 1.0)
+const WAVE_MIN_F := 45.0
+const WAVE_MAX_F := 11000.0
+
 var _tab: int = 0                    # pestaña activa (índice en TABS)
 var _tracks: Array[String] = []      # pistas de la pestaña activa (sin extensión)
 var _cursor: int = 0                 # índice seleccionado dentro de _tracks
@@ -65,6 +81,18 @@ var _hand: TextureRect               # cursor-mano
 var _grid_root: Control              # contenedor del grid (para posicionar la mano)
 var _player: AudioStreamPlayer
 var _sfx: AudioStreamPlayer
+
+# Visualizador de onda.
+var _bars: Array = []                # ColorRect por barra
+var _bar_h: Array = []               # altura suavizada por barra
+var _wave_bx: float = 0.0            # x inicial de las barras
+var _wave_cy: float = 0.0            # línea central (vertical)
+var _wave_bar_w: float = 0.0
+var _wave_gap: float = 2.0
+var _wave_max_h: float = 0.0         # altura máxima (pico → bordes de la pantalla)
+var _spectrum: AudioEffectSpectrumAnalyzerInstance = null
+var _fx_bus: int = -1
+var _fx_added: bool = false          # si añadimos el analizador (para quitarlo al salir)
 
 
 func _ready() -> void:
@@ -141,35 +169,64 @@ func _build_ui() -> void:
 	var left_w: float = 340.0
 	var content_h: float = vp.y - top - 24
 
-	# ── Panel IZQUIERDO: preview + leyenda de controles ──
-	var lpanel := _nine(PANEL, 24, 30, true)
-	lpanel.position = Vector2(24, top)
-	lpanel.size = Vector2(left_w, content_h)
-	add_child(lpanel)
-	# Recuadro de "preview" (placeholder azul).
-	var preview := ColorRect.new()
-	preview.color = Color(0.30, 0.45, 0.62, 1.0)
-	preview.position = Vector2(40, 40)
-	preview.size = Vector2(left_w - 80, 120)
-	lpanel.add_child(preview)
-	# Leyenda de controles (tecla vinculada + acción).
+	# ── Panel IZQUIERDO: asset "reproductor" (pantalla azul + cuerpo blanco) ──
+	var f: float = SP_SCALE
+	var sp_w: float = 73.0 * f
+	var sp_h: float = 112.0 * f
+	var sp_x: float = 24.0 + (left_w - sp_w) / 2.0
+	var sp_y: float = top
+	var player_img := TextureRect.new()
+	player_img.texture = load(AssetSet.p(SP_IMG))
+	player_img.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	player_img.stretch_mode = TextureRect.STRETCH_SCALE
+	player_img.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	player_img.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	player_img.position = Vector2(sp_x, sp_y)
+	player_img.size = Vector2(sp_w, sp_h)
+	add_child(player_img)
+
+	# Visualizador de onda sobre la PANTALLA AZUL (barras pixeladas, reactivas).
+	var bx: float = sp_x + SP_BLUE.position.x * f
+	var by: float = sp_y + SP_BLUE.position.y * f
+	var bw: float = SP_BLUE.size.x * f
+	var bh: float = SP_BLUE.size.y * f
+	_wave_bar_w = (bw - (WAVE_BARS - 1) * _wave_gap) / WAVE_BARS
+	_wave_bx = bx
+	_wave_cy = by + bh / 2.0
+	_wave_max_h = bh
+	for i in range(WAVE_BARS):
+		var bar := ColorRect.new()
+		bar.color = WAVE_COLOR
+		bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		bar.position = Vector2(bx + i * (_wave_bar_w + _wave_gap), _wave_cy - 1)
+		bar.size = Vector2(_wave_bar_w, 2)
+		add_child(bar)
+		_bars.append(bar)
+		_bar_h.append(2.0)
+
+	# Leyenda de controles sobre el CUERPO BLANCO (texto oscuro).
+	var wx: float = sp_x + SP_WHITE.position.x * f
+	var wy: float = sp_y + SP_WHITE.position.y * f
+	var ww: float = SP_WHITE.size.x * f
+	var wh: float = SP_WHITE.size.y * f
 	var legend := [
 		["ui_accept", "Play"], ["ui_start", "Stop"], ["ui_select", "Random"],
 		["ui_page_left", "< FE"], ["ui_page_right", "FE >"],
 	]
-	var ly: float = 190.0
-	for entry in legend:
-		var k := _label(InputConfig.key_label(str(entry[0])), 34, COLOR_GOLD, 4)
-		k.position = Vector2(40, ly)
-		k.size = Vector2(120, 46)
+	var row_h: float = wh / legend.size()
+	for i in range(legend.size()):
+		var entry: Array = legend[i]
+		var ry: float = wy + i * row_h + (row_h - 40) / 2.0
+		var k := _label(InputConfig.key_label(str(entry[0])), 32, COLOR_KEY_DARK, 2)
+		k.position = Vector2(wx + 10, ry)
+		k.size = Vector2(ww * 0.55, 40)
 		k.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
-		lpanel.add_child(k)
-		var a := _label(str(entry[1]), 34, COLOR_TEXT, 4)
-		a.position = Vector2(168, ly)
-		a.size = Vector2(left_w - 200, 46)
+		add_child(k)
+		var a := _label(str(entry[1]), 32, COLOR_ACT_DARK, 2)
+		a.position = Vector2(wx + 10 + ww * 0.5, ry)
+		a.size = Vector2(ww * 0.5 - 10, 40)
 		a.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
-		lpanel.add_child(a)
-		ly += 58.0
+		add_child(a)
 
 	# ── Panel DERECHO: sub-cabecera (nombre + número) + pestañas + grid ──
 	var rx: float = 24 + left_w + 16
@@ -373,6 +430,54 @@ func _build_audio() -> void:
 	if AudioServer.get_bus_index("SFX") >= 0:
 		_sfx.bus = "SFX"
 	add_child(_sfx)
+	_setup_spectrum()
+
+
+## Analizador de espectro en el bus Music (para el visualizador de onda). Si no
+## existe, lo añade (y lo marca para quitarlo al salir).
+func _setup_spectrum() -> void:
+	_fx_bus = AudioServer.get_bus_index("Music")
+	if _fx_bus < 0:
+		return
+	var idx: int = -1
+	for i in range(AudioServer.get_bus_effect_count(_fx_bus)):
+		if AudioServer.get_bus_effect(_fx_bus, i) is AudioEffectSpectrumAnalyzer:
+			idx = i
+			break
+	if idx < 0:
+		AudioServer.add_bus_effect(_fx_bus, AudioEffectSpectrumAnalyzer.new())
+		idx = AudioServer.get_bus_effect_count(_fx_bus) - 1
+		_fx_added = true
+	var inst := AudioServer.get_bus_effect_instance(_fx_bus, idx)
+	if inst is AudioEffectSpectrumAnalyzerInstance:
+		_spectrum = inst
+
+
+## Quita el analizador del bus si lo añadimos nosotros (no dejar efectos sueltos).
+func _exit_tree() -> void:
+	if _fx_added and _fx_bus >= 0:
+		for i in range(AudioServer.get_bus_effect_count(_fx_bus) - 1, -1, -1):
+			if AudioServer.get_bus_effect(_fx_bus, i) is AudioEffectSpectrumAnalyzer:
+				AudioServer.remove_bus_effect(_fx_bus, i)
+				break
+
+
+## Actualiza las barras del visualizador desde el espectro (cada frame).
+func _process(_delta: float) -> void:
+	if _spectrum == null or _bars.is_empty():
+		return
+	for i in range(WAVE_BARS):
+		var lo: float = WAVE_MIN_F * pow(WAVE_MAX_F / WAVE_MIN_F, float(i) / WAVE_BARS)
+		var hi: float = WAVE_MIN_F * pow(WAVE_MAX_F / WAVE_MIN_F, float(i + 1) / WAVE_BARS)
+		var mag: float = _spectrum.get_magnitude_for_frequency_range(lo, hi).length()
+		# -65 dB..0 dB → 0..1; escalado a la altura de la pantalla.
+		var energy: float = clampf((65.0 + linear_to_db(maxf(mag, 0.0000001))) / 65.0, 0.0, 1.0)
+		var target: float = maxf(2.0, energy * _wave_max_h)
+		_bar_h[i] = lerpf(float(_bar_h[i]), target, 0.35)   # suavizado
+		var bar: ColorRect = _bars[i]
+		var h: float = _bar_h[i]
+		bar.size.y = h
+		bar.position.y = _wave_cy - h / 2.0    # simétrica respecto al centro
 
 
 func _play_sfx(path: String) -> void:

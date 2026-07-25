@@ -937,9 +937,9 @@ func _apply_state() -> void:
 			_press.visible = false
 			_title.visible = false       # tras Start el logo desaparece (sólo fondo)
 			_show_only(_main_col)
-			# 5 botones (New Game·Continue·Load·Restart·Extras): centrar en vertical.
-			var main_h: float = 5 * BTN_H + 4 * 16
-			_slide_in(_main_col, -BTN_W - 240, center_x, maxf(20.0, (vh - main_h) * 0.5))
+			# Centrar en vertical según el nº REAL de botones (varía: sin guardados
+			# solo New Game + Extras), para que SIEMPRE partan del centro.
+			_slide_in(_main_col, -BTN_W - 240, center_x, _col_center_y(_main_col))
 			_focus_first(_main_col)
 		St.NEWGAME:
 			# Dificultad: columna a la IZQUIERDA (entra desde la izquierda) +
@@ -950,7 +950,7 @@ func _apply_state() -> void:
 			_focus_first(_newgame_col)
 		St.EXTRAS:
 			_show_only(_extras_col)
-			_slide_in(_extras_col, vw + 80, center_x, 240)
+			_slide_in(_extras_col, vw + 80, center_x, _col_center_y(_extras_col))
 			_focus_first(_extras_col)
 		St.SAVES:
 			# Submenú de guardado: la raíz entera se desliza desde la derecha.
@@ -971,6 +971,14 @@ func _show_only(keep: Control) -> void:
 		_icon_erase.visible = false
 	if keep == null:
 		_cursor.visible = false
+
+
+## Y para centrar verticalmente una columna de botones según su nº REAL de hijos
+## (alto = n·BTN_H + (n-1)·separación, con separación 16 como en _make_column).
+func _col_center_y(col: VBoxContainer) -> float:
+	var n: int = col.get_child_count()
+	var h: float = n * BTN_H + maxi(0, n - 1) * 16
+	return maxf(20.0, (get_viewport_rect().size.y - h) * 0.5)
 
 
 ## Devuelve el primer botón de una columna (VBoxContainer > [Button...]).
