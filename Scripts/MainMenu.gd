@@ -45,7 +45,7 @@ const CREDITS_SCRIPT := "res://Scripts/CreditsScreen.gd"
 # Sound Room la reproducción es normal (desde 0).
 const THEME_FE4 := "res://assets/music/fe4/102 - Fire Emblem Theme.mp3"
 const THEME_FE5 := "res://assets/music/fe5/103 Fire Emblem theme.mp3"
-const THEME_LOOP_FE4 := 30.5   # FE4: empieza/loopea desde 30.5 s
+const THEME_LOOP_FE4 := 30.8   # FE4: empieza/loopea desde 30.8 s
 const THEME_LOOP_FE5 := 13.5   # FE5: empieza/loopea desde 13.5 s
 
 # Arte del título por MODO (GameMode autoload: FE4_ONLY=0, FE5_ONLY=1, SAGA=2).
@@ -490,17 +490,17 @@ func _animate_cursor(delta: float) -> void:
 
 # --- Columnas de botones ---
 func _build_columns() -> void:
-	# Menú principal: New Game · Continue · Load · Restart · Extras. El texto es la
+	# Menú principal: New Game · [Continue · Load · Restart] · Extras. El texto es la
 	# CLAVE de traducción (los Button se auto-traducen con el locale activo).
-	# NOTA: el sistema de guardado real aún NO existe; Continue/Load/Restart son de
-	# momento solo la UI (deslizan al submenú o muestran aviso).
-	_main_col = _make_column([
-		{ "id": "newgame",  "text": "NEWGAME" },
-		{ "id": "continue", "text": "CONTINUE" },
-		{ "id": "load",     "text": "LOAD" },
-		{ "id": "restart",  "text": "RESTART" },
-		{ "id": "extras",   "text": "EXTRAS" },
-	])
+	# Continue/Load/Restart SOLO aparecen si existe alguna partida guardada: sin
+	# guardados no sirven de nada, así que se OCULTAN (no se crean).
+	var items: Array = [{ "id": "newgame", "text": "NEWGAME" }]
+	if SaveSystem.has_save_file():
+		items.append({ "id": "continue", "text": "CONTINUE" })
+		items.append({ "id": "load",     "text": "LOAD" })
+		items.append({ "id": "restart",  "text": "RESTART" })
+	items.append({ "id": "extras", "text": "EXTRAS" })
+	_main_col = _make_column(items)
 	# Dificultad: placas TINTADAS por dificultad y más estrechas (columna izquierda);
 	# la descripción va en un panel a la derecha (_build_desc). Ver imagen de ref.
 	_newgame_col = VBoxContainer.new()
