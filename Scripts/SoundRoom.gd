@@ -79,6 +79,12 @@ var _tab_lbls: Array[Label] = []     # rótulos de pestañas FE4/FE5
 var _cells: Array = []               # celdas del grid: { root, num, hi }
 var _hand: TextureRect               # cursor-mano
 var _grid_root: Control              # contenedor del grid (para posicionar la mano)
+# Dimensiones de celda (se APRIETAN al ancho del panel derecho en _build_ui).
+var _cw: float = CELL_W
+var _ch: float = CELL_H
+var _chs: float = CELL_HSEP
+var _cvs: float = CELL_VSEP
+var _num_fs: int = 40
 var _player: AudioStreamPlayer
 var _sfx: AudioStreamPlayer
 
@@ -166,15 +172,17 @@ func _build_ui() -> void:
 	title_root.add_child(_title_lbl)
 
 	var top: float = 16 + 96 + 14
-	var left_w: float = 340.0
 	var content_h: float = vp.y - top - 24
 
-	# ── Panel IZQUIERDO: asset "reproductor" a ALTURA COMPLETA (mismo bottom que el
-	# panel de la lista), apretado al ancho de la columna → escala NO uniforme ──
+	# ── Panel IZQUIERDO: asset "reproductor" a ALTURA COMPLETA, escala UNIFORME
+	# (proporcional, sin deformar). Su ancho define la columna izquierda; el panel
+	# de la lista (derecha) se aprieta con el espacio restante. ──
+	var f: float = content_h / 112.0
 	var sp_x: float = 24.0
 	var sp_y: float = top
-	var sp_w: float = left_w
+	var sp_w: float = 73.0 * f
 	var sp_h: float = content_h
+	var left_w: float = sp_w
 	var player_img := TextureRect.new()
 	player_img.texture = load(AssetSet.p(SP_IMG))
 	player_img.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
@@ -184,9 +192,8 @@ func _build_ui() -> void:
 	player_img.position = Vector2(sp_x, sp_y)
 	player_img.size = Vector2(sp_w, sp_h)
 	add_child(player_img)
-	# Escalas independientes del asset (73×112 → sp_w×sp_h).
-	var fx: float = sp_w / 73.0
-	var fy: float = sp_h / 112.0
+	var fx: float = f
+	var fy: float = f
 
 	# Visualizador de onda sobre la PANTALLA AZUL (barras pixeladas, reactivas).
 	var bx: float = sp_x + SP_BLUE.position.x * fx
@@ -232,13 +239,22 @@ func _build_ui() -> void:
 		a.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 		add_child(a)
 
-	# ── Panel DERECHO: sub-cabecera (nombre + número) + pestañas + grid ──
+	# ── Panel DERECHO (lista): se APRIETA con el espacio que deja el panel izq. ──
 	var rx: float = 24 + left_w + 16
 	var rw: float = vp.x - rx - 24
 	var rpanel := _nine(PANEL, 24, 30, true)
 	rpanel.position = Vector2(rx, top)
 	rpanel.size = Vector2(rw, content_h)
 	add_child(rpanel)
+
+	# Escala del grid para que quepa apretado en el ancho disponible (nunca amplía).
+	var nat_gw: float = COLS * CELL_W + (COLS - 1) * CELL_HSEP
+	var gs: float = clampf((rw - 96.0) / nat_gw, 0.5, 1.0)
+	_cw = CELL_W * gs
+	_ch = CELL_H * gs
+	_chs = CELL_HSEP * gs
+	_cvs = CELL_VSEP * gs
+	_num_fs = maxi(26, int(40 * gs))
 
 	# Pestañas FE4 / FE5 (arriba del panel derecho).
 	var tx: float = 40.0
@@ -257,9 +273,9 @@ func _build_ui() -> void:
 	_num_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	rpanel.add_child(_num_lbl)
 
-	# Grid numerado (ventana COLS×ROWS).
+	# Grid numerado (ventana COLS×ROWS), apretado y centrado en el panel.
 	_grid_root = Control.new()
-	var grid_w: float = COLS * CELL_W + (COLS - 1) * CELL_HSEP
+	var grid_w: float = COLS * _cw + (COLS - 1) * _chs
 	_grid_root.position = Vector2((rw - grid_w) / 2.0, 96)
 	rpanel.add_child(_grid_root)
 	for r in range(ROWS):
@@ -283,14 +299,14 @@ func _build_ui() -> void:
 ## Celda del grid: placa con el número de pista. Devuelve { root, num, hi }.
 func _make_cell(c: int, r: int) -> Dictionary:
 	var root := Control.new()
-	root.position = Vector2(c * (CELL_W + CELL_HSEP), r * (CELL_H + CELL_VSEP))
-	root.size = Vector2(CELL_W, CELL_H)
+	root.position = Vector2(c * (_cw + _chs), r * (_ch + _cvs))
+	root.size = Vector2(_cw, _ch)
 	var hi := ColorRect.new()      # realce de fondo (celda seleccionada)
 	hi.color = Color(0.30, 0.45, 0.62, 0.0)
 	hi.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	hi.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	root.add_child(hi)
-	var num := _label("", 40, COLOR_TEXT, 4)
+	var num := _label("", _num_fs, COLOR_TEXT, 4)
 	num.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	root.add_child(num)
 	return { "root": root, "num": num, "hi": hi }
@@ -338,8 +354,8 @@ func _refresh() -> void:
 		var vc: int = _cursor % COLS
 		_hand.visible = true
 		_hand.position = Vector2(
-			vc * (CELL_W + CELL_HSEP) - 56,
-			vr * (CELL_H + CELL_VSEP) + (CELL_H - 48) / 2.0)
+			vc * (_cw + _chs) - 56,
+			vr * (_ch + _cvs) + (_ch - 48) / 2.0)
 	else:
 		_hand.visible = false
 
