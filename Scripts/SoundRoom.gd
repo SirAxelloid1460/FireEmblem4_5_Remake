@@ -61,7 +61,7 @@ const COLOR_KEY_DARK := Color(0.55, 0.40, 0.08, 1.0)   # tecla (dorado oscuro)
 const COLOR_ACT_DARK := Color(0.16, 0.16, 0.22, 1.0)   # acción (casi negro)
 # Visualizador de onda pixelado (reacciona al audio del bus Music).
 const WAVE_BARS  := 26
-const WAVE_COLOR := Color(0.34, 0.42, 0.86, 1.0)
+const WAVE_COLOR := Color(0.314, 0.157, 0.0, 1.0)   # marrón del borde del panel
 const WAVE_MIN_F := 45.0
 const WAVE_MAX_F := 11000.0
 
@@ -79,6 +79,12 @@ var _tab_lbls: Array[Label] = []     # rótulos de pestañas FE4/FE5
 var _cells: Array = []               # celdas del grid: { root, num, hi }
 var _hand: TextureRect               # cursor-mano
 var _grid_root: Control              # contenedor del grid (para posicionar la mano)
+# Dimensiones de celda (se APRIETAN al ancho del panel derecho en _build_ui).
+var _cw: float = CELL_W
+var _ch: float = CELL_H
+var _chs: float = CELL_HSEP
+var _cvs: float = CELL_VSEP
+var _num_fs: int = 40
 var _player: AudioStreamPlayer
 var _sfx: AudioStreamPlayer
 
@@ -166,15 +172,17 @@ func _build_ui() -> void:
 	title_root.add_child(_title_lbl)
 
 	var top: float = 16 + 96 + 14
-	var left_w: float = 340.0
 	var content_h: float = vp.y - top - 24
 
-	# ── Panel IZQUIERDO: asset "reproductor" (pantalla azul + cuerpo blanco) ──
-	var f: float = SP_SCALE
-	var sp_w: float = 73.0 * f
-	var sp_h: float = 112.0 * f
-	var sp_x: float = 24.0 + (left_w - sp_w) / 2.0
+	# ── Panel IZQUIERDO: asset "reproductor" a ALTURA COMPLETA, escala UNIFORME
+	# (proporcional, sin deformar). Su ancho define la columna izquierda; el panel
+	# de la lista (derecha) se aprieta con el espacio restante. ──
+	var f: float = content_h / 112.0
+	var sp_x: float = 24.0
 	var sp_y: float = top
+	var sp_w: float = 73.0 * f
+	var sp_h: float = content_h
+	var left_w: float = sp_w
 	var player_img := TextureRect.new()
 	player_img.texture = load(AssetSet.p(SP_IMG))
 	player_img.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
@@ -184,12 +192,14 @@ func _build_ui() -> void:
 	player_img.position = Vector2(sp_x, sp_y)
 	player_img.size = Vector2(sp_w, sp_h)
 	add_child(player_img)
+	var fx: float = f
+	var fy: float = f
 
 	# Visualizador de onda sobre la PANTALLA AZUL (barras pixeladas, reactivas).
-	var bx: float = sp_x + SP_BLUE.position.x * f
-	var by: float = sp_y + SP_BLUE.position.y * f
-	var bw: float = SP_BLUE.size.x * f
-	var bh: float = SP_BLUE.size.y * f
+	var bx: float = sp_x + SP_BLUE.position.x * fx
+	var by: float = sp_y + SP_BLUE.position.y * fy
+	var bw: float = SP_BLUE.size.x * fx
+	var bh: float = SP_BLUE.size.y * fy
 	_wave_bar_w = (bw - (WAVE_BARS - 1) * _wave_gap) / WAVE_BARS
 	_wave_bx = bx
 	_wave_cy = by + bh / 2.0
@@ -204,37 +214,47 @@ func _build_ui() -> void:
 		_bars.append(bar)
 		_bar_h.append(2.0)
 
-	# Leyenda de controles sobre el CUERPO BLANCO (texto oscuro).
-	var wx: float = sp_x + SP_WHITE.position.x * f
-	var wy: float = sp_y + SP_WHITE.position.y * f
-	var ww: float = SP_WHITE.size.x * f
-	var wh: float = SP_WHITE.size.y * f
+	# Leyenda de controles sobre el CUERPO BLANCO (texto oscuro), repartida en alto.
+	var wx: float = sp_x + SP_WHITE.position.x * fx
+	var wy: float = sp_y + SP_WHITE.position.y * fy
+	var ww: float = SP_WHITE.size.x * fx
+	var wh: float = SP_WHITE.size.y * fy
 	var legend := [
 		["ui_accept", "Play"], ["ui_start", "Stop"], ["ui_select", "Random"],
 		["ui_page_left", "< FE"], ["ui_page_right", "FE >"],
 	]
+	var fs: int = 34
 	var row_h: float = wh / legend.size()
 	for i in range(legend.size()):
 		var entry: Array = legend[i]
-		var ry: float = wy + i * row_h + (row_h - 40) / 2.0
-		var k := _label(InputConfig.key_label(str(entry[0])), 32, COLOR_KEY_DARK, 2)
-		k.position = Vector2(wx + 10, ry)
-		k.size = Vector2(ww * 0.55, 40)
+		var ry: float = wy + i * row_h + (row_h - fs) / 2.0
+		var k := _label(InputConfig.key_label(str(entry[0])), fs, COLOR_KEY_DARK, 2)
+		k.position = Vector2(wx + 12, ry)
+		k.size = Vector2(ww * 0.55, fs + 10)
 		k.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 		add_child(k)
-		var a := _label(str(entry[1]), 32, COLOR_ACT_DARK, 2)
-		a.position = Vector2(wx + 10 + ww * 0.5, ry)
-		a.size = Vector2(ww * 0.5 - 10, 40)
+		var a := _label(str(entry[1]), fs, COLOR_ACT_DARK, 2)
+		a.position = Vector2(wx + 12 + ww * 0.55, ry)
+		a.size = Vector2(ww * 0.45 - 12, fs + 10)
 		a.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 		add_child(a)
 
-	# ── Panel DERECHO: sub-cabecera (nombre + número) + pestañas + grid ──
+	# ── Panel DERECHO (lista): se APRIETA con el espacio que deja el panel izq. ──
 	var rx: float = 24 + left_w + 16
 	var rw: float = vp.x - rx - 24
 	var rpanel := _nine(PANEL, 24, 30, true)
 	rpanel.position = Vector2(rx, top)
 	rpanel.size = Vector2(rw, content_h)
 	add_child(rpanel)
+
+	# Escala del grid para que quepa apretado en el ancho disponible (nunca amplía).
+	var nat_gw: float = COLS * CELL_W + (COLS - 1) * CELL_HSEP
+	var gs: float = clampf((rw - 96.0) / nat_gw, 0.5, 1.0)
+	_cw = CELL_W * gs
+	_ch = CELL_H * gs
+	_chs = CELL_HSEP * gs
+	_cvs = CELL_VSEP * gs
+	_num_fs = maxi(26, int(40 * gs))
 
 	# Pestañas FE4 / FE5 (arriba del panel derecho).
 	var tx: float = 40.0
@@ -253,9 +273,9 @@ func _build_ui() -> void:
 	_num_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	rpanel.add_child(_num_lbl)
 
-	# Grid numerado (ventana COLS×ROWS).
+	# Grid numerado (ventana COLS×ROWS), apretado y centrado en el panel.
 	_grid_root = Control.new()
-	var grid_w: float = COLS * CELL_W + (COLS - 1) * CELL_HSEP
+	var grid_w: float = COLS * _cw + (COLS - 1) * _chs
 	_grid_root.position = Vector2((rw - grid_w) / 2.0, 96)
 	rpanel.add_child(_grid_root)
 	for r in range(ROWS):
@@ -279,14 +299,14 @@ func _build_ui() -> void:
 ## Celda del grid: placa con el número de pista. Devuelve { root, num, hi }.
 func _make_cell(c: int, r: int) -> Dictionary:
 	var root := Control.new()
-	root.position = Vector2(c * (CELL_W + CELL_HSEP), r * (CELL_H + CELL_VSEP))
-	root.size = Vector2(CELL_W, CELL_H)
+	root.position = Vector2(c * (_cw + _chs), r * (_ch + _cvs))
+	root.size = Vector2(_cw, _ch)
 	var hi := ColorRect.new()      # realce de fondo (celda seleccionada)
 	hi.color = Color(0.30, 0.45, 0.62, 0.0)
 	hi.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	hi.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	root.add_child(hi)
-	var num := _label("", 40, COLOR_TEXT, 4)
+	var num := _label("", _num_fs, COLOR_TEXT, 4)
 	num.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	root.add_child(num)
 	return { "root": root, "num": num, "hi": hi }
@@ -334,8 +354,8 @@ func _refresh() -> void:
 		var vc: int = _cursor % COLS
 		_hand.visible = true
 		_hand.position = Vector2(
-			vc * (CELL_W + CELL_HSEP) - 56,
-			vr * (CELL_H + CELL_VSEP) + (CELL_H - 48) / 2.0)
+			vc * (_cw + _chs) - 56,
+			vr * (_ch + _cvs) + (_ch - 48) / 2.0)
 	else:
 		_hand.visible = false
 
@@ -404,9 +424,15 @@ func _play_current() -> void:
 	var path := AssetSet.p(str(TABS[_tab]["dir"]) + _tracks[_cursor] + ".mp3")
 	if not ResourceLoader.exists(path):
 		return
+	# Copia propia: el mismo recurso lo cachea load() y el MENÚ le pone loop_offset
+	# (30.5/13.5). Duplicando + loop_offset 0, el SoundRoom loopea desde el principio.
 	var stream = load(path)
+	if stream != null:
+		stream = stream.duplicate()
 	if "loop" in stream:
 		stream.loop = true
+	if "loop_offset" in stream:
+		stream.loop_offset = 0.0
 	_player.stream = stream
 	_player.play()
 	_playing = _cursor
